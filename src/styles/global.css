@@ -82,6 +82,14 @@ body {
   background-clip: text;
   color: transparent;
   text-shadow: none;
+  /* background-clip:text paints only inside the box — Devanagari matras
+     (ी, ें, the shirorekha) extend beyond it and would render invisible.
+     Generous line-height + padding grow the painted area; negative margin
+     cancels the layout impact. */
+  display: inline-block;
+  line-height: 1.5;
+  padding: 0.18em 0.1em;
+  margin: -0.18em -0.1em;
 }
 
 .glow-gold {
