@@ -7,7 +7,9 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://kashidwar.com',
   output: 'static',
-  trailingSlash: 'never',
+  // Cloudflare Pages 308-redirects directory URLs to the trailing-slash form,
+  // so the whole site (canonicals, sitemap, internal links) uses that form too.
+  trailingSlash: 'always',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],

@@ -2,15 +2,16 @@
 // English-first labels: many visitors (South India, international) don't read
 // Devanagari — Hindi script is decorative only, never the sole carrier of info.
 const links = [
-  { href: '/ghats', label: 'Ghats' },
-  { href: '/mandir', label: 'Mandir' },
-  { href: '/khana', label: 'Khana' },
-  { href: '/festivals', label: 'Festivals' },
-  { href: '/tips', label: 'Tips' },
+  { href: '/ghats/', label: 'Ghats' },
+  { href: '/mandir/', label: 'Mandir' },
+  { href: '/khana/', label: 'Khana' },
+  { href: '/festivals/', label: 'Festivals' },
+  { href: '/tips/', label: 'Tips' },
 ];
 
-const current = Astro.url.pathname;
-const isActive = (href: string) => current === href || current.startsWith(href + '/');
+// hrefs end with '/' so startsWith also matches child routes (/ghats/assi/)
+const current = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : Astro.url.pathname + '/';
+const isActive = (href: string) => current.startsWith(href);
 ---
 
 <header

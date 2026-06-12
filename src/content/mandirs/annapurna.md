@@ -19,7 +19,7 @@ relatedFestivals: ["dev-deepawali", "mahashivratri"]
 relatedMandirs: ["kashi-vishwanath", "kaal-bhairav"]
 ---
 
-Of all the theological arrangements in Kashi, the loveliest is this: the Lord of the Universe lives here — and his food comes from his wife's kitchen next door. The Annapurna Devi Mandir stands a few steps from [Kashi Vishwanath](/mandir/kashi-vishwanath), and in the city's imagination she is not a minor consort shrine but the **queen of Kashi**, the goddess of nourishment without whom the lord of everything would go hungry. *Anna* is food; *purna* is fullness. Her name is a promise.
+Of all the theological arrangements in Kashi, the loveliest is this: the Lord of the Universe lives here — and his food comes from his wife's kitchen next door. The Annapurna Devi Mandir stands a few steps from [Kashi Vishwanath](/mandir/kashi-vishwanath/), and in the city's imagination she is not a minor consort shrine but the **queen of Kashi**, the goddess of nourishment without whom the lord of everything would go hungry. *Anna* is food; *purna* is fullness. Her name is a promise.
 
 ## When Shiva held out a bowl
 
@@ -31,4 +31,4 @@ The present temple was raised in the 18th century by the Maratha Peshwa **Baji R
 
 The everyday murti of Annapurna holds her ladle and vessel in serene silver-black; but once a year, around **Annakut** (the day after Diwali), the temple unveils its **golden Annapurna** — a solid-gold image shown for a single day, with Shiva's begging form before her — and half the city queues through the night for the darshan. In 2021 the temple also received home a beautiful 18th-century Annapurna idol repatriated from a Canadian museum, a small act of the goddess gathering her things back.
 
-Do as pilgrims have always done: Vishwanath first, Annapurna immediately after — the lord, then the lunch. Then walk down to [Dashashwamedh](/ghats/dashashwamedh) and let the [khana of Banaras](/khana) continue the goddess's argument in practical form.
+Do as pilgrims have always done: Vishwanath first, Annapurna immediately after — the lord, then the lunch. Then walk down to [Dashashwamedh](/ghats/dashashwamedh/) and let the [khana of Banaras](/khana/) continue the goddess's argument in practical form.

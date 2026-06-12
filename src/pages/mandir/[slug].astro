@@ -17,7 +17,7 @@ const d = mandir.data;
 
 const crumbs = [
   { name: 'Home', href: '/' },
-  { name: 'Mandir', href: '/mandir' },
+  { name: 'Mandir', href: '/mandir/' },
   { name: d.name, href: `/mandir/${mandir.id}` },
 ];
 
@@ -27,7 +27,7 @@ const attractionSchema = {
   name: d.name,
   alternateName: d.hindiName,
   description: d.description,
-  url: `https://kashidwar.com/mandir/${mandir.id}`,
+  url: `https://kashidwar.com/mandir/${mandir.id}/`,
   image: `https://kashidwar.com/images/${d.image}-1280.webp`,
   geo: { '@type': 'GeoCoordinates', latitude: d.lat, longitude: d.lng },
   address: {
@@ -113,9 +113,9 @@ const facts = [
           <nav class="card-diya rounded-xl bg-white/70 p-5" aria-label="Continue exploring">
             <h2 class="text-xs font-semibold tracking-[0.18em] text-saffron uppercase">Plan the day</h2>
             <ul class="mt-3 space-y-2 text-sm">
-              <li><a class="text-maroon transition hover:text-saffron" href="/mandir">← All mandir guides</a></li>
-              <li><a class="text-maroon transition hover:text-saffron" href="/tips">Etiquette & aarti timings</a></li>
-              <li><a class="text-maroon transition hover:text-saffron" href="/festivals">Festival calendar</a></li>
+              <li><a class="text-maroon transition hover:text-saffron" href="/mandir/">← All mandir guides</a></li>
+              <li><a class="text-maroon transition hover:text-saffron" href="/tips/">Etiquette & aarti timings</a></li>
+              <li><a class="text-maroon transition hover:text-saffron" href="/festivals/">Festival calendar</a></li>
             </ul>
           </nav>
         </div>

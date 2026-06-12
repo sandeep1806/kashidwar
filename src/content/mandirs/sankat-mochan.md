@@ -23,7 +23,7 @@ Ask a Banarasi which temple they actually *go* to — not for festivals, not for
 
 ## Born of a poet's vision
 
-The temple stands, tradition says, exactly where **Hanuman appeared to Tulsidas** — the saint-poet of the Ramcharitmanas, whose home ghat lies a couple of kilometres east at [Tulsi Ghat](/ghats/tulsi). The story goes that Tulsidas, told that a particular "leper" who attended his Manas recitations was Hanuman in disguise, chased him down and clung to his feet; the deity yielded, gave darshan, and the poet raised a shrine on the spot. The murti, endearingly, faces **toward Rama** — devotion depicted mid-act, which is the whole theology of Hanuman in one architectural decision.
+The temple stands, tradition says, exactly where **Hanuman appeared to Tulsidas** — the saint-poet of the Ramcharitmanas, whose home ghat lies a couple of kilometres east at [Tulsi Ghat](/ghats/tulsi/). The story goes that Tulsidas, told that a particular "leper" who attended his Manas recitations was Hanuman in disguise, chased him down and clung to his feet; the deity yielded, gave darshan, and the poet raised a shrine on the spot. The murti, endearingly, faces **toward Rama** — devotion depicted mid-act, which is the whole theology of Hanuman in one architectural decision.
 
 Set in a large, shady compound full of peepal trees and monkeys with a confident sense of entitlement, the temple feels less like a monument and more like a courtyard that prayer never leaves. Devotees sit for hours reading the Sundara Kanda; vermilion-coated Hanuman watches from behind a constant curtain of marigolds.
 
@@ -35,4 +35,4 @@ The prasad here is famous in its own right: **besan ke laddoo**, heavy, grainy a
 
 Every April, the temple hosts **Sankat Mochan Sangeet Samaroh** — five or six all-night sessions where India's greatest classical musicians perform *to the deity*, free, with the audience packed on durries in the courtyard. Bhimsen Joshi sang here; Ravi Shankar played here; today's masters consider the invitation a summons. There is no greener room in Indian music than this courtyard at 3 am. If your trip overlaps, cancel anything else.
 
-Pair your visit with [Tulsi Manas Mandir](/mandir/tulsi-manas) and [Durga Kund](/mandir/durga-kund) nearby — the three form the classic southern temple loop, an easy auto ride from [Assi Ghat](/ghats/assi).
+Pair your visit with [Tulsi Manas Mandir](/mandir/tulsi-manas/) and [Durga Kund](/mandir/durga-kund/) nearby — the three form the classic southern temple loop, an easy auto ride from [Assi Ghat](/ghats/assi/).

@@ -19,11 +19,11 @@ relatedFestivals: ["nag-nathaiya"]
 relatedMandirs: ["durga-kund", "sankat-mochan"]
 ---
 
-Most temples enshrine a deity; this one enshrines a *book* — and in Banaras, that distinction collapses beautifully. The Tulsi Manas Mandir, a serene white-marble structure beside [Durga Kund](/mandir/durga-kund), is dedicated to Rama, but its real devotion is to the **Ramcharitmanas**: the entire epic, all seven kandas, engraved verse by verse across its inner walls and corridors. You do not merely visit this temple. You *read* it — or watch grandmothers doing so, moving slowly along the marble with their lips forming chaupais they have known for seventy years.
+Most temples enshrine a deity; this one enshrines a *book* — and in Banaras, that distinction collapses beautifully. The Tulsi Manas Mandir, a serene white-marble structure beside [Durga Kund](/mandir/durga-kund/), is dedicated to Rama, but its real devotion is to the **Ramcharitmanas**: the entire epic, all seven kandas, engraved verse by verse across its inner walls and corridors. You do not merely visit this temple. You *read* it — or watch grandmothers doing so, moving slowly along the marble with their lips forming chaupais they have known for seventy years.
 
 ## Why here
 
-The temple stands, by tradition, in the area where **Goswami Tulsidas** composed much of the Manas in the sixteenth century — his Banaras years stretching between this southern quarter and his riverside home at [Tulsi Ghat](/ghats/tulsi). When the philanthropist **Seth Ratan Lal Sureka** built the temple in 1964 (inaugurated by President Radhakrishnan, with Kashi's pandits in full attendance), the design brief was essentially Tulsidas's own argument in marble: scripture belongs to everyone, in the people's language, in the open. Where medieval pandits had once scorned the Manas for being written in Awadhi instead of Sanskrit, here Awadhi gets the full classical treatment — white Makrana marble, formal gardens, fountains — the vernacular crowned.
+The temple stands, by tradition, in the area where **Goswami Tulsidas** composed much of the Manas in the sixteenth century — his Banaras years stretching between this southern quarter and his riverside home at [Tulsi Ghat](/ghats/tulsi/). When the philanthropist **Seth Ratan Lal Sureka** built the temple in 1964 (inaugurated by President Radhakrishnan, with Kashi's pandits in full attendance), the design brief was essentially Tulsidas's own argument in marble: scripture belongs to everyone, in the people's language, in the open. Where medieval pandits had once scorned the Manas for being written in Awadhi instead of Sanskrit, here Awadhi gets the full classical treatment — white Makrana marble, formal gardens, fountains — the vernacular crowned.
 
 ## Walking through a poem
 
@@ -31,4 +31,4 @@ Inside, the effect is unlike any other temple in the city: cool, bright, quiet, 
 
 ## Fitting it in
 
-The temple anchors the easy **southern triangle**: [Sankat Mochan](/mandir/sankat-mochan) for Hanuman's energy, Durga Kund's red blaze next door, and the Manas Mandir for cool marble and poetry, all within a couple of kilometres of [Assi Ghat](/ghats/assi). Come in the late afternoon, read a kanda's worth of walls, catch the dusk aarti, and finish with chai on Assi's steps as the river goes dark. Few evenings in Kashi are gentler.
+The temple anchors the easy **southern triangle**: [Sankat Mochan](/mandir/sankat-mochan/) for Hanuman's energy, Durga Kund's red blaze next door, and the Manas Mandir for cool marble and poetry, all within a couple of kilometres of [Assi Ghat](/ghats/assi/). Come in the late afternoon, read a kanda's worth of walls, catch the dusk aarti, and finish with chai on Assi's steps as the river goes dark. Few evenings in Kashi are gentler.

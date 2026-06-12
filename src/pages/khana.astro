@@ -12,7 +12,7 @@ const rendered = await Promise.all(
 
 const crumbs = [
   { name: 'Home', href: '/' },
-  { name: 'Khana', href: '/khana' },
+  { name: 'Khana', href: '/khana/' },
 ];
 
 const itemListSchema = {
@@ -23,7 +23,7 @@ const itemListSchema = {
     '@type': 'ListItem',
     position: i + 1,
     name: dish.data.name,
-    url: `https://kashidwar.com/khana#${dish.id}`,
+    url: `https://kashidwar.com/khana/#${dish.id}`,
   })),
 };
 ---
@@ -127,9 +127,9 @@ const itemListSchema = {
           kulhad over glass, and let your stomach acclimatise for a day before the full
           syllabus. Most of the old city's classics are pure vegetarian — this is a temple
           town to its bones. Pair the food trail with the
-          <a href="/ghats">ghats</a> it lives beside, and if your trip lands in winter,
+          <a href="/ghats/">ghats</a> it lives beside, and if your trip lands in winter,
           plan mornings around malaiyo and evenings around
-          <a href="/festivals/dev-deepawali">Dev Deepawali</a>. Annapurna looks after the rest.
+          <a href="/festivals/dev-deepawali/">Dev Deepawali</a>. Annapurna looks after the rest.
         </p>
       </div>
     </div>

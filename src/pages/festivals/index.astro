@@ -10,7 +10,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
 
 const crumbs = [
   { name: 'Home', href: '/' },
-  { name: 'Festivals', href: '/festivals' },
+  { name: 'Festivals', href: '/festivals/' },
 ];
 
 const itemListSchema = {
@@ -21,7 +21,7 @@ const itemListSchema = {
     '@type': 'ListItem',
     position: i + 1,
     name: festival.data.name,
-    url: `https://kashidwar.com/festivals/${festival.id}`,
+    url: `https://kashidwar.com/festivals/${festival.id}/`,
   })),
 };
 ---
@@ -59,7 +59,7 @@ const itemListSchema = {
           festivals.map((festival, i) => (
             <div class={`reveal reveal-delay-${i % 2}`}>
               <ContentCard
-                href={`/festivals/${festival.id}`}
+                href={`/festivals/${festival.id}/`}
                 name={festival.data.name}
                 hindiName={festival.data.hindiName}
                 excerpt={festival.data.excerpt}
@@ -81,13 +81,13 @@ const itemListSchema = {
           All of Kashi's great festivals follow the lunar panchang, so dates drift against
           the Gregorian calendar each year — always reconfirm before booking. The richest
           single window is <strong>Kartik (October–November)</strong>: the
-          <a href="/festivals/ganga-mahotsav">Ganga Mahotsav</a> concerts, the
-          <a href="/festivals/nag-nathaiya">Nag Nathaiya</a> leela at
-          <a href="/ghats/tulsi">Tulsi Ghat</a> and
-          <a href="/festivals/dev-deepawali">Dev Deepawali's</a> million lamps all fall within
-          three weeks, in perfect weather. <a href="/festivals/mahashivratri">Mahashivratri</a>
+          <a href="/festivals/ganga-mahotsav/">Ganga Mahotsav</a> concerts, the
+          <a href="/festivals/nag-nathaiya/">Nag Nathaiya</a> leela at
+          <a href="/ghats/tulsi/">Tulsi Ghat</a> and
+          <a href="/festivals/dev-deepawali/">Dev Deepawali's</a> million lamps all fall within
+          three weeks, in perfect weather. <a href="/festivals/mahashivratri/">Mahashivratri</a>
           (February–March) is the city's own wedding party. Hotels for these windows fill
-          months ahead — see our <a href="/tips">yatra tips</a> for season-by-season advice.
+          months ahead — see our <a href="/tips/">yatra tips</a> for season-by-season advice.
         </p>
       </div>
     </div>

@@ -17,7 +17,7 @@ const d = ghat.data;
 
 const crumbs = [
   { name: 'Home', href: '/' },
-  { name: 'Ghats', href: '/ghats' },
+  { name: 'Ghats', href: '/ghats/' },
   { name: d.name, href: `/ghats/${ghat.id}` },
 ];
 
@@ -27,7 +27,7 @@ const attractionSchema = {
   name: d.name,
   alternateName: d.hindiName,
   description: d.description,
-  url: `https://kashidwar.com/ghats/${ghat.id}`,
+  url: `https://kashidwar.com/ghats/${ghat.id}/`,
   image: `https://kashidwar.com/images/${d.image}-1280.webp`,
   geo: { '@type': 'GeoCoordinates', latitude: d.lat, longitude: d.lng },
   address: {
@@ -100,9 +100,9 @@ const attractionSchema = {
           <nav class="card-diya rounded-xl bg-white/70 p-5" aria-label="Continue exploring">
             <h2 class="text-xs font-semibold tracking-[0.18em] text-saffron uppercase">Keep walking</h2>
             <ul class="mt-3 space-y-2 text-sm">
-              <li><a class="text-maroon transition hover:text-saffron" href="/ghats">← All 12 ghats</a></li>
-              <li><a class="text-maroon transition hover:text-saffron" href="/tips">Boat ride & aarti tips</a></li>
-              <li><a class="text-maroon transition hover:text-saffron" href="/khana">Banarasi food nearby</a></li>
+              <li><a class="text-maroon transition hover:text-saffron" href="/ghats/">← All 12 ghats</a></li>
+              <li><a class="text-maroon transition hover:text-saffron" href="/tips/">Boat ride & aarti tips</a></li>
+              <li><a class="text-maroon transition hover:text-saffron" href="/khana/">Banarasi food nearby</a></li>
             </ul>
           </nav>
         </div>

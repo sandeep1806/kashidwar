@@ -37,7 +37,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
           ghats.map((ghat, i) => (
             <div class={`reveal reveal-delay-${i}`}>
               <ContentCard
-                href={`/ghats/${ghat.id}`}
+                href={`/ghats/${ghat.id}/`}
                 name={ghat.data.name}
                 hindiName={ghat.data.hindiName}
                 excerpt={ghat.data.excerpt}
@@ -50,7 +50,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
       </div>
       <p class="reveal mt-10 text-center">
         <a
-          href="/ghats"
+          href="/ghats/"
           class="inline-block rounded-full border border-saffron/50 px-6 py-2.5 text-sm font-semibold text-saffron transition hover:bg-saffron hover:text-white"
         >
           All twelve ghats →
@@ -85,7 +85,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
           mandirs.map((mandir, i) => (
             <div class={`reveal reveal-delay-${i}`}>
               <ContentCard
-                href={`/mandir/${mandir.id}`}
+                href={`/mandir/${mandir.id}/`}
                 name={mandir.data.name}
                 hindiName={mandir.data.hindiName}
                 excerpt={mandir.data.excerpt}
@@ -100,7 +100,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
       </div>
       <p class="reveal mt-10 text-center">
         <a
-          href="/mandir"
+          href="/mandir/"
           class="inline-block rounded-full border border-gold/50 px-6 py-2.5 text-sm font-semibold text-gold-light transition hover:bg-gold/15"
         >
           All mandir guides →
@@ -132,7 +132,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
               </div>
               <p class="mt-2 text-sm leading-relaxed text-maroon-deep/70">{dish.data.excerpt}</p>
               <p class="mt-4 text-sm font-medium">
-                <a href="/khana" class="text-gold transition-colors hover:text-saffron">
+                <a href="/khana/" class="text-gold transition-colors hover:text-saffron">
                   Read the food guide →
                 </a>
               </p>
@@ -164,7 +164,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
           festivals.map((festival, i) => (
             <div class={`reveal reveal-delay-${i}`}>
               <ContentCard
-                href={`/festivals/${festival.id}`}
+                href={`/festivals/${festival.id}/`}
                 name={festival.data.name}
                 hindiName={festival.data.hindiName}
                 excerpt={festival.data.excerpt}
@@ -179,7 +179,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
       </div>
       <p class="reveal mt-10 text-center">
         <a
-          href="/festivals"
+          href="/festivals/"
           class="inline-block rounded-full border border-gold/50 px-6 py-2.5 text-sm font-semibold text-gold-light transition hover:bg-gold/15"
         >
           The festival calendar →
@@ -199,7 +199,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
         about the bhang question — our practical guide answers what every yatri asks.
       </p>
       <a
-        href="/tips"
+        href="/tips/"
         class="mt-6 inline-block rounded-full bg-saffron px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-saffron/25 transition hover:bg-gold"
       >
         Read the Yatra Tips

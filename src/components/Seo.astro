@@ -28,7 +28,9 @@ const {
 } = Astro.props;
 
 const site = Astro.site ?? new URL('https://kashidwar.com');
-const canonical = new URL(Astro.url.pathname.replace(/\/$/, '') || '/', site).href;
+// Canonical form on Cloudflare Pages is WITH trailing slash (matches 308s)
+const withSlash = (p: string) => (p.endsWith('/') || /\.[a-z0-9]+$/i.test(p) ? p : p + '/');
+const canonical = new URL(withSlash(Astro.url.pathname), site).href;
 const ogImageUrl = new URL(ogImage, site).href;
 
 const websiteSchema = {
@@ -51,7 +53,7 @@ const breadcrumbSchema =
           '@type': 'ListItem',
           position: i + 1,
           name: crumb.name,
-          item: new URL(crumb.href, site).href,
+          item: new URL(withSlash(crumb.href), site).href,
         })),
       }
     : null;

@@ -10,7 +10,7 @@ const mandirs = (await getCollection('mandirs')).sort((a, b) => a.data.order - b
 
 const crumbs = [
   { name: 'Home', href: '/' },
-  { name: 'Mandir', href: '/mandir' },
+  { name: 'Mandir', href: '/mandir/' },
 ];
 
 const itemListSchema = {
@@ -21,7 +21,7 @@ const itemListSchema = {
     '@type': 'ListItem',
     position: i + 1,
     name: mandir.data.name,
-    url: `https://kashidwar.com/mandir/${mandir.id}`,
+    url: `https://kashidwar.com/mandir/${mandir.id}/`,
   })),
 };
 ---
@@ -59,7 +59,7 @@ const itemListSchema = {
           mandirs.map((mandir, i) => (
             <div class={`reveal reveal-delay-${i % 3}`}>
               <ContentCard
-                href={`/mandir/${mandir.id}`}
+                href={`/mandir/${mandir.id}/`}
                 name={mandir.data.name}
                 hindiName={mandir.data.hindiName}
                 excerpt={mandir.data.excerpt}
@@ -83,11 +83,11 @@ const itemListSchema = {
           and modest dress is everywhere appreciated. Mondays belong to Shiva, Tuesdays and
           Saturdays to Hanuman, festival days to everyone at once — plan accordingly, or
           embrace the queue as the first ritual. The classic sequence is
-          <a href="/mandir/kashi-vishwanath">Vishwanath</a> with a Ganga bath at
-          <a href="/ghats/dashashwamedh">Dashashwamedh</a>, then
-          <a href="/mandir/annapurna">Annapurna</a> beside him, and
-          <a href="/mandir/kaal-bhairav">Kaal Bhairav's</a> permission before you leave the
-          city. Our <a href="/tips">yatra tips</a> page covers the practical details.
+          <a href="/mandir/kashi-vishwanath/">Vishwanath</a> with a Ganga bath at
+          <a href="/ghats/dashashwamedh/">Dashashwamedh</a>, then
+          <a href="/mandir/annapurna/">Annapurna</a> beside him, and
+          <a href="/mandir/kaal-bhairav/">Kaal Bhairav's</a> permission before you leave the
+          city. Our <a href="/tips/">yatra tips</a> page covers the practical details.
         </p>
       </div>
     </div>

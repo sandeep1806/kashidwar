@@ -23,7 +23,7 @@ const resolve = (slugs: string[], collection: { id: string; data: { name: string
   slugs
     .map((slug) => collection.find((entry) => entry.id === slug))
     .filter((entry) => entry !== undefined)
-    .map((entry) => ({ href: `${base}/${entry.id}`, name: entry.data.name, excerpt: entry.data.excerpt }));
+    .map((entry) => ({ href: `${base}/${entry.id}/`, name: entry.data.name, excerpt: entry.data.excerpt }));
 
 const groups = [
   { heading: 'Nearby ghats', items: resolve(ghats, allGhats, '/ghats') },

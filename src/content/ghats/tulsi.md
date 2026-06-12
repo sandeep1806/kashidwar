@@ -23,7 +23,7 @@ A few minutes' walk north of Assi, the riverfront rises to a ghat that belongs l
 
 Climb the steps and you can still visit the small house where Tulsidas is said to have composed portions of the **Ramcharitmanas** — his retelling of the Ramayana, not in scholarly Sanskrit but in Awadhi, the language of the kitchen and the field. The pandits of his day were scandalised; the people were electrified. Within a generation the Manas had become what it remains: the scripture of the north Indian heart, sung in homes that own no other book. In the house, kept with moving simplicity, are his *khadau* (wooden sandals), his pillow, and a manuscript — relics not of a king but of a poet, which feels exactly right for Banaras.
 
-Legend adds that Hanuman appeared to Tulsidas, and that the poet founded the nearby [Sankat Mochan temple](/mandir/sankat-mochan) at the spot of the vision; the [Tulsi Manas Mandir](/mandir/tulsi-manas), whose marble walls carry the entire Manas, stands a short ride inland. This whole southern quarter is effectively Tulsidas's parish.
+Legend adds that Hanuman appeared to Tulsidas, and that the poet founded the nearby [Sankat Mochan temple](/mandir/sankat-mochan/) at the spot of the vision; the [Tulsi Manas Mandir](/mandir/tulsi-manas/), whose marble walls carry the entire Manas, stands a short ride inland. This whole southern quarter is effectively Tulsidas's parish.
 
 ## Wrestlers and the drowned sun
 
@@ -31,6 +31,6 @@ Tulsi Ghat also guards two older treasures. The **Swaminath Akhada** — one of 
 
 ## Krishna comes to the Kadamb tree
 
-The ghat's most famous hour comes each Kartik (around November) with the **Nag Nathaiya** — the leela Tulsidas himself instituted four centuries ago. A boy playing Krishna leaps from a Kadamb branch into the Ganga to subdue the serpent Kaliya, rising triumphant on the snake's hood while half of Banaras watches from steps and boats. It lasts minutes; people plan their year around it. We've written the full story in our [Nag Nathaiya guide](/festivals/nag-nathaiya).
+The ghat's most famous hour comes each Kartik (around November) with the **Nag Nathaiya** — the leela Tulsidas himself instituted four centuries ago. A boy playing Krishna leaps from a Kadamb branch into the Ganga to subdue the serpent Kaliya, rising triumphant on the snake's hood while half of Banaras watches from steps and boats. It lasts minutes; people plan their year around it. We've written the full story in our [Nag Nathaiya guide](/festivals/nag-nathaiya/).
 
-Quiet, scholarly, muscular and devoted all at once, Tulsi Ghat is Banaras in miniature — best visited with the [morning crowd at Assi](/ghats/assi) and a slow hour to spare.
+Quiet, scholarly, muscular and devoted all at once, Tulsi Ghat is Banaras in miniature — best visited with the [morning crowd at Assi](/ghats/assi/) and a slow hour to spare.

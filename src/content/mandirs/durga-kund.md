@@ -23,7 +23,7 @@ Some temples you find by address; Durga Kund you find by colour. The whole struc
 
 ## The goddess who stayed
 
-The legend belongs to the Puranic deep end. When the demon Shumbha-Nishumbha (in the telling attached to the Devi Mahatmya cycle) menaced the three worlds, Durga rode out and destroyed him — and afterwards, rather than return to Vindhyachal, she chose to **rest here**, guarding Kashi's southern approaches forever. The murti in the sanctum, accordingly, is *swayambhu* — no sculptor's bill was ever paid; the goddess is held to have manifested herself. She faces the city as its southern protector, completing a divine security arrangement in which [Kaal Bhairav](/mandir/kaal-bhairav) polices the inner city and Durga holds the southern marches.
+The legend belongs to the Puranic deep end. When the demon Shumbha-Nishumbha (in the telling attached to the Devi Mahatmya cycle) menaced the three worlds, Durga rode out and destroyed him — and afterwards, rather than return to Vindhyachal, she chose to **rest here**, guarding Kashi's southern approaches forever. The murti in the sanctum, accordingly, is *swayambhu* — no sculptor's bill was ever paid; the goddess is held to have manifested herself. She faces the city as its southern protector, completing a divine security arrangement in which [Kaal Bhairav](/mandir/kaal-bhairav/) polices the inner city and Durga holds the southern marches.
 
 The temple as built form dates to the 18th century, raised by **Rani Bhabani of Natore**, the great Bengali zamindar-queen whose philanthropy dotted Banaras — which is why the architecture's elegant Nagara spire carries a faint Bengal accent, and why Bengali pilgrims treat the temple as partly their own.
 
@@ -33,4 +33,4 @@ Beside the temple spreads the **Durga Kund**, the stepped sacred pool that gives
 
 A famous local touch: the temple monkeys, the *prasad* sellers' pyramids of laddoos, and the old practice — now symbolic — of animal sacrifice, long since replaced by offerings of kushmanda (ash gourd) split open before the goddess.
 
-Durga Kund sits on the classic southern loop: ten minutes' walk from [Sankat Mochan](/mandir/sankat-mochan), five from [Tulsi Manas Mandir](/mandir/tulsi-manas), and an easy auto from [Assi Ghat](/ghats/assi). Go at sandhya aarti, when the red walls hold the last light and the bells start up over the water.
+Durga Kund sits on the classic southern loop: ten minutes' walk from [Sankat Mochan](/mandir/sankat-mochan/), five from [Tulsi Manas Mandir](/mandir/tulsi-manas/), and an easy auto from [Assi Ghat](/ghats/assi/). Go at sandhya aarti, when the red walls hold the last light and the bells start up over the water.

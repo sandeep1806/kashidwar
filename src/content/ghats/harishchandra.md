@@ -17,7 +17,7 @@ relatedFestivals: ["mahashivratri"]
 relatedGhats: ["kedar", "assi", "manikarnika"]
 ---
 
-Two fires burn eternally in Kashi, and the older story belongs to the smaller flame. Harishchandra Ghat, on the southern sweep of the riverfront between [Kedar](/ghats/kedar) and [Assi](/ghats/assi), is the city's second cremation ground — less thronged than Manikarnika, and carrying a legend that every Indian child once knew by heart.
+Two fires burn eternally in Kashi, and the older story belongs to the smaller flame. Harishchandra Ghat, on the southern sweep of the riverfront between [Kedar](/ghats/kedar/) and [Assi](/ghats/assi/), is the city's second cremation ground — less thronged than Manikarnika, and carrying a legend that every Indian child once knew by heart.
 
 ## The king who would not lie
 
@@ -27,7 +27,7 @@ The test reached its unbearable peak when his own wife arrived at the ghat carry
 
 ## The quieter mahashamshan
 
-Many families, particularly from the southern districts, prefer Harishchandra for last rites; some hold it to be even older than Manikarnika as a cremation site. An electric crematorium was added in the 1980s alongside the traditional wood pyres. The same etiquette applies as at [Manikarnika](/ghats/manikarnika): **no photography of the pyres**, sober dress, quiet voice, upper steps. The fires here are fewer and the atmosphere more intimate — which, if anything, asks for greater care from the visitor.
+Many families, particularly from the southern districts, prefer Harishchandra for last rites; some hold it to be even older than Manikarnika as a cremation site. An electric crematorium was added in the 1980s alongside the traditional wood pyres. The same etiquette applies as at [Manikarnika](/ghats/manikarnika/): **no photography of the pyres**, sober dress, quiet voice, upper steps. The fires here are fewer and the atmosphere more intimate — which, if anything, asks for greater care from the visitor.
 
 ## Around the ghat
 

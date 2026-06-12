@@ -4,14 +4,14 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 
 const crumbs = [
   { name: 'Home', href: '/' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Contact', href: '/contact/' },
 ];
 
 const contactSchema = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
   name: 'Contact Kashi Dwar',
-  url: 'https://kashidwar.com/contact',
+  url: 'https://kashidwar.com/contact/',
 };
 ---
 
@@ -51,7 +51,7 @@ const contactSchema = {
           </p>
           <p class="mt-3 text-xs text-maroon-deep/50">
             We aim to reply within a few days. Travel questions are welcome, though our
-            <a href="/tips" class="underline">yatra tips</a> answer the most common ones.
+            <a href="/tips/" class="underline">yatra tips</a> answer the most common ones.
           </p>
         </div>
 

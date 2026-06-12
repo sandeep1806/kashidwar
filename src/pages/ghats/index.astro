@@ -10,7 +10,7 @@ const ghats = (await getCollection('ghats')).sort((a, b) => a.data.order - b.dat
 
 const crumbs = [
   { name: 'Home', href: '/' },
-  { name: 'Ghats', href: '/ghats' },
+  { name: 'Ghats', href: '/ghats/' },
 ];
 
 const itemListSchema = {
@@ -21,7 +21,7 @@ const itemListSchema = {
     '@type': 'ListItem',
     position: i + 1,
     name: ghat.data.name,
-    url: `https://kashidwar.com/ghats/${ghat.id}`,
+    url: `https://kashidwar.com/ghats/${ghat.id}/`,
   })),
 };
 ---
@@ -59,7 +59,7 @@ const itemListSchema = {
           ghats.map((ghat, i) => (
             <div class={`reveal reveal-delay-${i % 3}`}>
               <ContentCard
-                href={`/ghats/${ghat.id}`}
+                href={`/ghats/${ghat.id}/`}
                 name={ghat.data.name}
                 hindiName={ghat.data.hindiName}
                 excerpt={ghat.data.excerpt}
@@ -79,15 +79,15 @@ const itemListSchema = {
         <h2>Walking the riverfront</h2>
         <p>
           The classic way to meet the ghats is the <strong>dawn boat ride</strong> from
-          <a href="/ghats/assi">Assi</a> to <a href="/ghats/panchganga">Panchganga</a> — an hour
+          <a href="/ghats/assi/">Assi</a> to <a href="/ghats/panchganga/">Panchganga</a> — an hour
           of drifting past every facade as the sun lifts out of the far bank, with the bathing
           crowds, temple bells and woodsmoke arriving in that order. Our
-          <a href="/tips">yatra tips</a> cover fair boat prices and timing. On foot, the
+          <a href="/tips/">yatra tips</a> cover fair boat prices and timing. On foot, the
           riverfront walkway connects nearly everything: south of
-          <a href="/ghats/dashashwamedh">Dashashwamedh</a> the steps are calmer and local;
+          <a href="/ghats/dashashwamedh/">Dashashwamedh</a> the steps are calmer and local;
           north of it the lanes grow older and denser until they reach the fires of
-          <a href="/ghats/manikarnika">Manikarnika</a>. Time your visit to
-          <a href="/festivals/dev-deepawali">Dev Deepawali</a> and you'll see all eighty-four
+          <a href="/ghats/manikarnika/">Manikarnika</a>. Time your visit to
+          <a href="/festivals/dev-deepawali/">Dev Deepawali</a> and you'll see all eighty-four
           ghats wearing a million diyas at once.
         </p>
       </div>

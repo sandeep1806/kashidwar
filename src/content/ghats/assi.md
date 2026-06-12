@@ -23,7 +23,7 @@ Every city has a neighbourhood where its old soul and young blood drink chai at 
 
 The ghat takes its name from the Assi, a modest stream that once flowed grandly enough to mark the city's southern boundary — Kashi traditionally stretches from the Assi in the south to the Varuna in the north, and some say *Varanasi* itself is the land between the two. The Puranas tell that Goddess Durga, after slaying the demons Shumbha and Nishumbha, cast down her sword here, and the river sprang up along its mark. Bathing at this sangam, especially in the month of Magh and on solar eclipses, is held to be specially meritorious — the Kashi Khand calls it the *Saimbeda Tirtha*.
 
-This is also Tulsidas country. The poet-saint who gave north India its Ramcharitmanas spent his final years on this stretch, and his presence still anchors the neighbourhood — [Tulsi Ghat](/ghats/tulsi) is the very next ghat upstream, and the [Tulsi Manas Mandir](/mandir/tulsi-manas) and [Sankat Mochan](/mandir/sankat-mochan) temples are a short rickshaw ride inland.
+This is also Tulsidas country. The poet-saint who gave north India its Ramcharitmanas spent his final years on this stretch, and his presence still anchors the neighbourhood — [Tulsi Ghat](/ghats/tulsi/) is the very next ghat upstream, and the [Tulsi Manas Mandir](/mandir/tulsi-manas/) and [Sankat Mochan](/mandir/sankat-mochan/) temples are a short rickshaw ride inland.
 
 ## Subah-e-Banaras: the city's good morning
 
@@ -33,4 +33,4 @@ The mood here is younger than the other ghats — Banaras Hindu University is tw
 
 ## A practical doorway
 
-Travellers staying near Lanka or BHU often make Assi their base camp, and it works beautifully: morning aarti here, then a **boat from Assi to Dashashwamedh** — the classic full-riverfront ride that passes all the great ghats in one slow hour (our [boat ride guide](/tips) has fair-price pointers). Evenings, walk north along the river as far as your legs ask, and come back for dinner in the lanes. During [Ganga Mahotsav](/festivals/ganga-mahotsav) and [Dev Deepawali](/festivals/dev-deepawali), Assi's wide steps become one of the best — and slightly less crushed — places to be.
+Travellers staying near Lanka or BHU often make Assi their base camp, and it works beautifully: morning aarti here, then a **boat from Assi to Dashashwamedh** — the classic full-riverfront ride that passes all the great ghats in one slow hour (our [boat ride guide](/tips/) has fair-price pointers). Evenings, walk north along the river as far as your legs ask, and come back for dinner in the lanes. During [Ganga Mahotsav](/festivals/ganga-mahotsav/) and [Dev Deepawali](/festivals/dev-deepawali/), Assi's wide steps become one of the best — and slightly less crushed — places to be.
