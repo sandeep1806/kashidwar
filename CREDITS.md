@@ -24,6 +24,7 @@ Downloaded: **2026-06-12**, via Unsplash CDN with WebP conversion
 | `varanasi-sadhu-portrait-*.webp` | Portrait of a smiling sadhu, Varanasi | Pratyush Mishra | https://unsplash.com/photos/a-man-in-a-turban-with-a-bird-on-his-shoulder-mQBKw9zlH5Y | Unsplash |
 | `varanasi-riverside-market-*.webp` | Crowded riverside market with colorful umbrellas, Varanasi | hsin-you chen | https://unsplash.com/photos/crowded-riverside-market-with-people-and-colorful-umbrellas-a0Yl32-W9Xs | Unsplash |
 | `varanasi-masaan-holi-*.webp` | Masaan Holi celebration, Varanasi | Harsh Pandey | https://unsplash.com/photos/man-in-grey-jacket-with-orange-turban-D0ONyzGkc6w | Unsplash |
+| `mahadev-shiva-ganga-*.webp` | Statue of Lord Shiva meditating on the banks of the Ganga, Rishikesh (added 2026-06-12) | Jayanth Muppaneni | https://unsplash.com/photos/a-statue-of-a-person-sitting-on-top-of-a-rock-fksv4IkwlVc | Unsplash |
 
 ## SVG art
 

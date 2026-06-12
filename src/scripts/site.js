@@ -89,27 +89,100 @@ function initSweep() {
   });
 }
 
-/* ---------- ambient temple bell (user-initiated only, never autoplay) ---------- */
+/* ---------- ambient temple ghanta (user-initiated only, never autoplay) ----------
+   Synthesized bronze bell: a low "hum" note an octave under the strike,
+   inharmonic upper partials (bell ratios), each as a slightly detuned pair
+   so the tail shimmers/beats like real bell metal, plus a brief strike
+   transient and a generated-impulse reverb for temple air. No audio file. */
 let audioCtx = null;
+let bellBus = null;
 let bellOn = false;
 let bellTimer = null;
 
-function ringBell() {
-  if (!audioCtx) return;
+// [ratio to strike note, gain, decay seconds] — classic bell partial ratios
+const GHANTA_PARTIALS = [
+  [0.5, 0.55, 9.5], // hum — the long "om" that carries
+  [1.0, 1.0, 7.0], // prime (strike note)
+  [1.183, 0.42, 5.0], // tierce
+  [1.506, 0.28, 4.2], // quint
+  [2.0, 0.32, 3.2], // nominal
+  [2.514, 0.13, 2.4],
+  [2.662, 0.11, 2.2],
+  [3.011, 0.06, 1.6],
+  [4.166, 0.035, 1.1],
+];
+
+function buildBellBus() {
+  // dry + soft generated reverb (no IR file: shaped noise burst)
+  const out = audioCtx.createGain();
+  out.gain.value = 1;
+  const seconds = 2.6;
+  const len = Math.floor(audioCtx.sampleRate * seconds);
+  const ir = audioCtx.createBuffer(2, len, audioCtx.sampleRate);
+  for (let ch = 0; ch < 2; ch++) {
+    const data = ir.getChannelData(ch);
+    for (let i = 0; i < len; i++) {
+      data[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 3.2);
+    }
+  }
+  const reverb = audioCtx.createConvolver();
+  reverb.buffer = ir;
+  const wet = audioCtx.createGain();
+  wet.gain.value = 0.35;
+  out.connect(audioCtx.destination);
+  out.connect(reverb);
+  reverb.connect(wet);
+  wet.connect(audioCtx.destination);
+  return out;
+}
+
+function ringBell(velocity = 1) {
+  if (!audioCtx || !bellBus) return;
   const now = audioCtx.currentTime;
-  // A temple bell ≈ a few inharmonic partials with long decay
-  [392, 523.25, 784, 1046.5].forEach((freq, i) => {
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
-    osc.type = 'sine';
-    osc.frequency.value = freq * (1 + i * 0.002);
-    gain.gain.setValueAtTime(0, now);
-    gain.gain.linearRampToValueAtTime(0.07 / (i + 1), now + 0.012);
-    gain.gain.exponentialRampToValueAtTime(0.0001, now + 6 - i * 0.7);
-    osc.connect(gain).connect(audioCtx.destination);
-    osc.start(now);
-    osc.stop(now + 6);
+  const f0 = 232; // deep mandir ghanta, not a hand-bell
+
+  GHANTA_PARTIALS.forEach(([ratio, gain, decay]) => {
+    [-0.7, 0.7].forEach((detune) => {
+      const osc = audioCtx.createOscillator();
+      const g = audioCtx.createGain();
+      osc.type = 'sine';
+      osc.frequency.value = f0 * ratio + detune;
+      const peak = (0.085 * gain * velocity) / 2;
+      g.gain.setValueAtTime(0, now);
+      g.gain.linearRampToValueAtTime(peak, now + 0.006);
+      g.gain.exponentialRampToValueAtTime(0.00006, now + decay);
+      osc.connect(g).connect(bellBus);
+      osc.start(now);
+      osc.stop(now + decay + 0.1);
+    });
   });
+
+  // strike transient: 45ms of bandpassed noise = the clapper's "tnn"
+  const nLen = Math.floor(audioCtx.sampleRate * 0.045);
+  const noise = audioCtx.createBuffer(1, nLen, audioCtx.sampleRate);
+  const nd = noise.getChannelData(0);
+  for (let i = 0; i < nLen; i++) nd[i] = (Math.random() * 2 - 1) * (1 - i / nLen);
+  const src = audioCtx.createBufferSource();
+  src.buffer = noise;
+  const bp = audioCtx.createBiquadFilter();
+  bp.type = 'bandpass';
+  bp.frequency.value = f0 * 2.6;
+  bp.Q.value = 1.1;
+  const ng = audioCtx.createGain();
+  ng.gain.setValueAtTime(0.12 * velocity, now);
+  ng.gain.exponentialRampToValueAtTime(0.0001, now + 0.05);
+  src.connect(bp).connect(ng).connect(bellBus);
+  src.start(now);
+}
+
+function scheduleNextRing() {
+  if (!bellOn) return;
+  // unhurried, slightly irregular — like a far courtyard, not an alarm
+  const delay = 12000 + Math.random() * 8000;
+  bellTimer = setTimeout(() => {
+    ringBell(0.75 + Math.random() * 0.25);
+    scheduleNextRing();
+  }, delay);
 }
 
 function initBell() {
@@ -124,12 +197,13 @@ function initBell() {
         const Ctx = window.AudioContext || window.webkitAudioContext;
         if (!Ctx) return;
         audioCtx = new Ctx();
+        bellBus = buildBellBus();
       }
       if (audioCtx.state === 'suspended') audioCtx.resume();
-      ringBell();
-      bellTimer = setInterval(ringBell, 11000);
+      ringBell(1);
+      scheduleNextRing();
     } else {
-      clearInterval(bellTimer);
+      clearTimeout(bellTimer);
     }
   });
 }

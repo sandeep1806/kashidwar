@@ -18,6 +18,66 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
 >
   <Hero />
 
+  {/* ---- Mahadev ki Nagri — the city belongs to Shiva, say it first ---- */}
+  <section class="texture-silk relative overflow-hidden bg-indigo-deep py-20">
+    <div
+      lang="hi"
+      aria-hidden="true"
+      class="watermark-om devanagari pointer-events-none absolute -top-8 -left-4 text-[10rem] leading-none text-gold select-none"
+    >
+      ॐ
+    </div>
+    <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2">
+      <figure class="reveal card-diya overflow-hidden rounded-2xl">
+        <img
+          src="/images/mahadev-shiva-ganga-640.webp"
+          srcset="/images/mahadev-shiva-ganga-640.webp 640w, /images/mahadev-shiva-ganga-1280.webp 1280w"
+          sizes="(min-width: 1024px) 560px, 100vw"
+          alt="Statue of Lord Shiva meditating on the banks of the Ganga"
+          width="1280"
+          height="960"
+          loading="lazy"
+          decoding="async"
+          class="card-img h-full w-full object-cover"
+        />
+      </figure>
+      <div class="reveal reveal-delay-1">
+        <p class="text-xs font-semibold tracking-[0.3em] text-gold-light uppercase">
+          Mahadev ki Nagri
+        </p>
+        <p lang="hi" class="devanagari-gold mt-2 text-4xl sm:text-5xl">महादेव की नगरी</p>
+        <h2 class="font-display mt-3 text-3xl font-semibold text-cream sm:text-4xl">
+          The City That Belongs to Shiva
+        </h2>
+        <p class="mt-5 leading-relaxed text-cream/75">
+          Kashi is not a city that worships Mahadev — it is Mahadev's own home. The
+          tradition says he never leaves: not in flood, not in famine, not even when the
+          universe dissolves. Every lane ends at a linga, every morning begins with
+          <em>Har Har Mahadev</em>, and the Ganga herself flows out of his hair. To visit
+          Kashi is to be his houseguest.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a
+            href="/mandir/kashi-vishwanath/"
+            class="rounded-full bg-saffron px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-saffron/30 transition hover:bg-gold"
+          >
+            Kashi Vishwanath Darshan
+          </a>
+          <a
+            href="/festivals/mahashivratri/"
+            class="rounded-full border border-gold/50 px-6 py-3 text-sm font-semibold text-gold-light transition hover:bg-gold/10"
+          >
+            Mahashivratri in Kashi
+          </a>
+        </div>
+        <p class="mt-6 text-sm tracking-wide text-gold/70">
+          <span lang="hi" class="devanagari">हर हर महादेव</span>
+          <span class="mx-1.5 text-gold/40">·</span>Har Har Mahadev 🙏
+        </p>
+      </div>
+    </div>
+  </section>
+
   {/* ---- Ghats preview (light / morning) ---- */}
   <section class="texture-paper bg-cream py-20">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
