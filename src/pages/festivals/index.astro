@@ -1,0 +1,95 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ContentCard from '../../components/ContentCard.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import SilkDivider from '../../components/SilkDivider.astro';
+
+const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order - b.data.order);
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Festivals', href: '/festivals' },
+];
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Major Festivals of Varanasi',
+  itemListElement: festivals.map((festival, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: festival.data.name,
+    url: `https://kashidwar.com/festivals/${festival.id}`,
+  })),
+};
+---
+
+<BaseLayout
+  title="Varanasi Festivals: Dev Deepawali, Mahashivratri & More"
+  description="Varanasi festival guide with dates — Dev Deepawali's million diyas, Mahashivratri in Shiva's city, Ganga Mahotsav's riverfront concerts and the Nag Nathaiya leela."
+  breadcrumbs={crumbs}
+  jsonLd={[itemListSchema]}
+>
+  <section class="texture-silk bg-maroon-deep pt-10 pb-14">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <Breadcrumbs crumbs={crumbs} tone="dark" />
+      <p class="devanagari-gold mt-8 text-3xl">उत्सव</p>
+      <h1 class="font-display mt-2 max-w-3xl text-4xl font-semibold text-cream sm:text-5xl">
+        Festivals of Kashi
+      </h1>
+      <p class="mt-5 max-w-2xl leading-relaxed text-cream/70">
+        Banaras keeps a calendar denser than its lanes — the saying goes
+        <em>"saat vaar, nau tyohaar"</em>: seven days in a week, nine festivals. These four
+        are worth planning an entire yatra around, from the night a million diyas answer the
+        full moon to the afternoon a boy-Krishna leaps into the river.
+      </p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
+    <AdSlot position="header-below" />
+  </div>
+
+  <section class="texture-paper bg-cream py-14">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="grid gap-7 sm:grid-cols-2">
+        {
+          festivals.map((festival, i) => (
+            <div class={`reveal reveal-delay-${i % 2}`}>
+              <ContentCard
+                href={`/festivals/${festival.id}`}
+                name={festival.data.name}
+                hindiName={festival.data.hindiName}
+                excerpt={festival.data.excerpt}
+                image={festival.data.image}
+                alt={festival.data.heroAlt}
+                meta={festival.data.month}
+                eager={i < 2}
+              />
+            </div>
+          ))
+        }
+      </div>
+
+      <SilkDivider class="mt-14" />
+
+      <div class="prose-kashi reveal mx-auto mt-6">
+        <h2>Timing your yatra to the calendar</h2>
+        <p>
+          All of Kashi's great festivals follow the lunar panchang, so dates drift against
+          the Gregorian calendar each year — always reconfirm before booking. The richest
+          single window is <strong>Kartik (October–November)</strong>: the
+          <a href="/festivals/ganga-mahotsav">Ganga Mahotsav</a> concerts, the
+          <a href="/festivals/nag-nathaiya">Nag Nathaiya</a> leela at
+          <a href="/ghats/tulsi">Tulsi Ghat</a> and
+          <a href="/festivals/dev-deepawali">Dev Deepawali's</a> million lamps all fall within
+          three weeks, in perfect weather. <a href="/festivals/mahashivratri">Mahashivratri</a>
+          (February–March) is the city's own wedding party. Hotels for these windows fill
+          months ahead — see our <a href="/tips">yatra tips</a> for season-by-season advice.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

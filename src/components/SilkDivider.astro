@@ -1,0 +1,33 @@
+---
+/**
+ * Animated Banarasi silk pattern divider — woven paisley-ish motif as inline
+ * SVG with a slow shimmer sweep. Tiny, GPU-friendly, decorative only.
+ */
+interface Props {
+  tone?: 'light' | 'dark';
+  class?: string;
+}
+const { tone = 'light', class: className = '' } = Astro.props;
+const stroke = tone === 'dark' ? '#ecc55c' : '#d4a017';
+---
+
+<div class:list={['relative mx-auto my-2 max-w-xs overflow-hidden py-4', className]} aria-hidden="true">
+  <svg viewBox="0 0 320 24" class="h-6 w-full" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <g stroke={stroke} stroke-width="1" opacity="0.7">
+      <path d="M4 12 H120" stroke-dasharray="1 5" />
+      <path d="M200 12 H316" stroke-dasharray="1 5" />
+      {/* central boota (paisley bud) */}
+      <path d="M160 4 C152 8 150 16 160 20 C170 16 168 8 160 4 Z" />
+      <circle cx="160" cy="12" r="2.2" fill={stroke} stroke="none" />
+      <path d="M138 12 c4 -4 8 -4 12 0 c-4 4 -8 4 -12 0 Z" />
+      <path d="M170 12 c4 -4 8 -4 12 0 c-4 4 -8 4 -12 0 Z" />
+      <circle cx="128" cy="12" r="1.4" fill={stroke} stroke="none" />
+      <circle cx="192" cy="12" r="1.4" fill={stroke} stroke="none" />
+    </g>
+  </svg>
+  {/* shimmer sweep */}
+  <div
+    class="animate-shimmer-x pointer-events-none absolute inset-y-0 left-1/2 w-16 -translate-x-1/2 bg-gradient-to-r from-transparent via-gold-light/25 to-transparent"
+  >
+  </div>
+</div>

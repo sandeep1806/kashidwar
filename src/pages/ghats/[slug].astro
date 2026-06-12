@@ -1,0 +1,112 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import SilkDivider from '../../components/SilkDivider.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+export async function getStaticPaths() {
+  const ghats = await getCollection('ghats');
+  return ghats.map((ghat) => ({ params: { slug: ghat.id }, props: { ghat } }));
+}
+
+const { ghat } = Astro.props;
+const { Content } = await render(ghat);
+const d = ghat.data;
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Ghats', href: '/ghats' },
+  { name: d.name, href: `/ghats/${ghat.id}` },
+];
+
+const attractionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TouristAttraction',
+  name: d.name,
+  alternateName: d.hindiName,
+  description: d.description,
+  url: `https://kashidwar.com/ghats/${ghat.id}`,
+  image: `https://kashidwar.com/images/${d.image}-1280.webp`,
+  geo: { '@type': 'GeoCoordinates', latitude: d.lat, longitude: d.lng },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Varanasi',
+    addressRegion: 'Uttar Pradesh',
+    addressCountry: 'IN',
+  },
+  touristType: ['Pilgrims', 'Cultural travellers'],
+  isAccessibleForFree: true,
+};
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.description}
+  ogType="article"
+  ogImage={`/images/${d.image}-1280.webp`}
+  breadcrumbs={crumbs}
+  jsonLd={[attractionSchema]}
+>
+  <PageHero
+    title={d.name}
+    hindiName={d.hindiName}
+    kicker="Ghats of Kashi"
+    image={d.image}
+    alt={d.heroAlt}
+    crumbs={crumbs}
+  />
+
+  <div class="texture-paper bg-cream">
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1fr_300px]">
+      <div>
+        {/* quick facts */}
+        <div class="reveal grid gap-4 sm:grid-cols-3">
+          <div class="card-diya rounded-xl bg-white/70 p-5">
+            <h2 class="text-xs font-semibold tracking-[0.18em] text-saffron uppercase">Why it matters</h2>
+            <p class="mt-2 text-sm leading-relaxed text-maroon-deep/80">{d.significance}</p>
+          </div>
+          <div class="card-diya rounded-xl bg-white/70 p-5">
+            <h2 class="text-xs font-semibold tracking-[0.18em] text-saffron uppercase">Best time</h2>
+            <p class="mt-2 text-sm leading-relaxed text-maroon-deep/80">{d.bestTime}</p>
+          </div>
+          <div class="card-diya rounded-xl bg-white/70 p-5">
+            <h2 class="text-xs font-semibold tracking-[0.18em] text-saffron uppercase">How to reach</h2>
+            <p class="mt-2 text-sm leading-relaxed text-maroon-deep/80">{d.howToReach}</p>
+          </div>
+        </div>
+
+        <article class="prose-kashi reveal mt-10">
+          <Content />
+        </article>
+
+        <div class="mt-10">
+          <AdSlot position="in-content" />
+        </div>
+
+        <SilkDivider class="mt-10" />
+
+        <RelatedLinks
+          ghats={d.relatedGhats}
+          mandirs={d.relatedMandirs}
+          festivals={d.relatedFestivals}
+        />
+      </div>
+
+      <aside class="hidden lg:block">
+        <div class="sticky top-24 space-y-6">
+          <AdSlot position="sidebar" />
+          <nav class="card-diya rounded-xl bg-white/70 p-5" aria-label="Continue exploring">
+            <h2 class="text-xs font-semibold tracking-[0.18em] text-saffron uppercase">Keep walking</h2>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li><a class="text-maroon transition hover:text-saffron" href="/ghats">← All 12 ghats</a></li>
+              <li><a class="text-maroon transition hover:text-saffron" href="/tips">Boat ride & aarti tips</a></li>
+              <li><a class="text-maroon transition hover:text-saffron" href="/khana">Banarasi food nearby</a></li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>

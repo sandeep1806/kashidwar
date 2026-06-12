@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import AdSlot from '../components/AdSlot.astro';
+import SilkDivider from '../components/SilkDivider.astro';
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Yatra Tips', href: '/tips' },
+];
+
+const faqs = [
+  {
+    q: 'What is the best season to visit Varanasi?',
+    a: 'October to March is ideal — cool mornings, golden light, and the festival season: Dev Deepawali and Ganga Mahotsav in November, Mahashivratri in February–March. April to June is very hot (cross 40°C); July to September brings the monsoon, when the swollen Ganga submerges the lower ghat steps and boat rides may be restricted, though the city has its own moody beauty then.',
+  },
+  {
+    q: 'How do I reach Varanasi?',
+    a: 'By air: Lal Bahadur Shastri International Airport (VNS, Babatpur) is about 25 km from the ghats, with direct flights from Delhi, Mumbai and most metros — prepaid taxis and cabs take 45–75 minutes to the old city. By train: Varanasi Junction (BSB) and Banaras (BSBS) are the main stations, 3–4 km from Godowlia; Pandit Deen Dayal Upadhyaya Junction (Mughalsarai) also serves many long-distance trains. By road, NH-19/NH-31 connect Delhi, Prayagraj, Lucknow and Patna. In the old city, walk or take e-rickshaws — cars cannot enter the lanes.',
+  },
+  {
+    q: 'How much does a boat ride on the Ganga cost?',
+    a: 'For a shared group boat expect roughly ₹100–200 per person for the standard hour; a private rowboat typically ₹500–1,500 per hour depending on season and bargaining, with motorboats more. Rates multiply on Dev Deepawali. Always agree the price, route and duration before boarding, and pay at the end. Dawn (Assi to Panchganga and back) is the classic ride; life jackets are worth asking for, especially with children.',
+  },
+  {
+    q: 'What are the Ganga aarti timings in Varanasi?',
+    a: 'The grand evening Ganga aarti at Dashashwamedh Ghat starts around 6:30–7 pm in winter and closer to 7 pm in summer — arrive 45–60 minutes early for a good spot, or watch from a boat. Assi Ghat holds the Subah-e-Banaras morning aarti at dawn (roughly 5–6 am), followed by yoga and classical music. Both happen every single day and are free.',
+  },
+  {
+    q: 'What should I wear and how should I behave at temples and ghats?',
+    a: 'Modest dress everywhere: shoulders and knees covered serves for both temples and ghats. Major temples (Kashi Vishwanath, Sankat Mochan) ban phones, cameras, bags and leather — use the lockers at the gates and carry photo ID. Never photograph cremations at Manikarnika or Harishchandra ghats, ignore touts offering "ceremony views" for money, remove shoes where locals do, and ask before photographing sadhus or bathing pilgrims.',
+  },
+  {
+    q: 'Is Varanasi safe for solo and female travellers?',
+    a: 'Broadly yes — the ghats and old city are busy and well-watched into the evening, and pilgrims of every age wander them. Use normal city sense: prepaid or app-based taxis from stations, avoid deserted ghat stretches late at night, keep valuables minimal, and be politely firm with persistent guides and touts. The tourist police booths near Dashashwamedh and Assi are responsive.',
+  },
+  {
+    q: 'What about bhang in Varanasi — is it legal and should I try it?',
+    a: 'Bhang (a cannabis preparation) is sold legally at government-authorised shops in Varanasi and is traditional on Mahashivratri and Holi, usually mixed in thandai. If you choose to try it: start with a quarter of the suggested amount (effects arrive slowly, after 45–90 minutes, and last hours), never before a boat ride or a travel day, and never combine it with alcohol. Plain thandai is excellent and needs no caveats.',
+  },
+  {
+    q: 'How many days do I need in Varanasi?',
+    a: 'Two full days cover the essentials: a dawn boat ride and ghat walk, Kashi Vishwanath and Annapurna darshan, the evening aarti, and a food trail. Three to four days lets you add the southern temple loop (Sankat Mochan, Durga Kund, Tulsi Manas), Sarnath (the Buddha\'s first sermon site, 10 km away), a Banarasi silk weaving visit, and unhurried hours on the steps — which are, honestly, the whole point.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
+---
+
+<BaseLayout
+  title="Varanasi Travel Tips: Best Season, Boat Rides & Aarti Times"
+  description="Practical Varanasi yatra tips — best season to visit, how to reach, fair boat-ride prices, Ganga aarti timings, temple etiquette, safety and the bhang question, answered honestly."
+  breadcrumbs={crumbs}
+  jsonLd={[faqSchema]}
+>
+  <section class="relative isolate overflow-hidden bg-indigo-night">
+    <img
+      src="/images/varanasi-boats-rowing-ganga-1280.webp"
+      srcset="/images/varanasi-boats-rowing-ganga-640.webp 640w, /images/varanasi-boats-rowing-ganga-1280.webp 1280w"
+      sizes="100vw"
+      alt="People rowing wooden boats on the Ganga at Varanasi"
+      width="1280"
+      height="800"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+      class="absolute inset-0 h-full w-full object-cover opacity-60"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-indigo-deep via-indigo-night/55 to-indigo-night/25" aria-hidden="true"></div>
+    <div class="relative mx-auto max-w-6xl px-4 pt-24 pb-12 sm:px-6 sm:pt-32 sm:pb-16">
+      <Breadcrumbs crumbs={crumbs} tone="dark" />
+      <p class="devanagari-gold mt-6 text-3xl">यात्रा</p>
+      <h1 class="font-display mt-2 max-w-3xl text-4xl font-semibold text-cream sm:text-5xl">
+        Yatra Tips for Kashi
+      </h1>
+      <p class="mt-5 max-w-2xl leading-relaxed text-cream/80">
+        Everything we tell friends before their first trip — seasons, boats, aarti timings,
+        temple etiquette and the questions everyone asks quietly. Honest answers, no
+        brochure-speak.
+      </p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
+    <AdSlot position="header-below" />
+  </div>
+
+  <div class="texture-paper bg-cream py-12">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6">
+      <div class="space-y-5">
+        {
+          faqs.map((faq, i) => (
+            <>
+              <section class="card-diya reveal rounded-xl bg-white/70 p-6 sm:p-7">
+                <h2 class="font-display text-xl font-semibold text-maroon sm:text-2xl">{faq.q}</h2>
+                <p class="mt-3 leading-relaxed text-maroon-deep/80">{faq.a}</p>
+              </section>
+              {i === 3 && <AdSlot position="in-content" />}
+            </>
+          ))
+        }
+      </div>
+
+      <SilkDivider class="mt-12" />
+
+      <div class="prose-kashi reveal mt-4">
+        <h2>The one tip that matters most</h2>
+        <p>
+          Schedule less. Kashi rewards the unhurried: the city's best moments — a chess game
+          on <a href="/ghats/kedar">Kedar Ghat's</a> steps, a shehnai drifting from a wedding,
+          the lamplighter at dusk — cannot be booked in advance. Do the
+          <a href="/ghats/dashashwamedh">aarti</a>, the
+          <a href="/mandir/kashi-vishwanath">darshan</a> and the
+          <a href="/khana">kachori</a>, then leave at least one morning gloriously empty,
+          sitting on a ghat with chai, letting Banaras happen to you. It will.
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

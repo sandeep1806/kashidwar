@@ -1,0 +1,44 @@
+---
+/** Visible breadcrumb trail. The matching BreadcrumbList JSON-LD is emitted by Seo.astro. */
+interface Crumb {
+  name: string;
+  href: string;
+}
+
+interface Props {
+  crumbs: Crumb[];
+  tone?: 'light' | 'dark';
+}
+
+const { crumbs, tone = 'light' } = Astro.props;
+const linkColor =
+  tone === 'dark'
+    ? 'text-cream/60 hover:text-gold-light'
+    : 'text-maroon/60 hover:text-saffron';
+const currentColor = tone === 'dark' ? 'text-cream/90' : 'text-maroon';
+---
+
+<nav aria-label="Breadcrumb" class="text-xs sm:text-sm">
+  <ol class="flex flex-wrap items-center gap-1.5">
+    {
+      crumbs.map((crumb, i) => (
+        <li class="flex items-center gap-1.5">
+          {i > 0 && (
+            <span aria-hidden="true" class={tone === 'dark' ? 'text-gold/50' : 'text-gold'}>
+              ›
+            </span>
+          )}
+          {i === crumbs.length - 1 ? (
+            <span aria-current="page" class={`font-medium ${currentColor}`}>
+              {crumb.name}
+            </span>
+          ) : (
+            <a href={crumb.href} class={`transition-colors ${linkColor}`}>
+              {crumb.name}
+            </a>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>

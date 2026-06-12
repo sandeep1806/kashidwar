@@ -1,0 +1,28 @@
+---
+/**
+ * AdSense-ready placeholder. Space is reserved with CSS aspect-ratio so real
+ * ad units drop in later with ZERO layout shift (CLS). Do not remove the
+ * <!-- AD SLOT --> marker — it's where the AdSense snippet goes.
+ */
+interface Props {
+  position: 'header-below' | 'in-content' | 'sidebar';
+  class?: string;
+}
+
+const { position, class: className = '' } = Astro.props;
+
+const variant =
+  position === 'sidebar'
+    ? 'ad-slot--sidebar'
+    : position === 'header-below'
+      ? 'ad-slot--leaderboard'
+      : 'ad-slot--rectangle';
+---
+
+<!-- AD SLOT: {position} -->
+<div
+  class:list={['ad-slot', variant, className]}
+  data-ad-position={position}
+  aria-hidden="true"
+>
+</div>

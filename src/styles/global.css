@@ -1,0 +1,422 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Kashi Dwar design tokens — see CLAUDE.md › Design Rules
+   ============================================================ */
+@theme {
+  --color-maroon: #6b1f2a;
+  --color-maroon-deep: #4a1119;
+  --color-saffron: #e8861c;
+  --color-saffron-light: #f5a94e;
+  --color-gold: #d4a017;
+  --color-gold-light: #ecc55c;
+  --color-cream: #faf3e3;
+  --color-cream-dark: #f0e6cf;
+  --color-indigo-night: #1a1a3e;
+  --color-indigo-deep: #10102a;
+  --color-ganga: #2e5e73;
+  --color-ganga-light: #5b8ca1;
+
+  --font-devanagari: "Tiro Devanagari Hindi", "Noto Serif Devanagari", serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --animate-flicker: flicker 2.6s ease-in-out infinite;
+  --animate-drift: drift 24s linear infinite;
+  --animate-shimmer-x: shimmer-x 7s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 6s ease-in-out infinite;
+  --animate-bob: bob 5s ease-in-out infinite;
+}
+
+/* ---------- base ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: #2c1a14;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-saffron);
+  color: #fff;
+}
+
+/* Subtle handmade-paper texture for light sections (pure CSS, ~0 bytes) */
+.texture-paper {
+  background-image:
+    radial-gradient(circle at 18% 28%, rgba(107, 31, 42, 0.025) 0, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(212, 160, 23, 0.035) 0, transparent 45%),
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(107, 31, 42, 0.012) 3px 4px);
+}
+
+/* Silk weave texture for dark "night aarti" sections */
+.texture-silk {
+  background-image:
+    repeating-linear-gradient(45deg, transparent 0 14px, rgba(212, 160, 23, 0.05) 14px 15px),
+    repeating-linear-gradient(-45deg, transparent 0 14px, rgba(232, 134, 28, 0.035) 14px 15px);
+}
+
+/* ---------- Devanagari as art ---------- */
+.devanagari {
+  font-family: var(--font-devanagari);
+}
+
+.devanagari-gold {
+  font-family: var(--font-devanagari);
+  background: linear-gradient(165deg, #ecc55c 10%, #d4a017 38%, #b8860b 62%, #ecc55c 95%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+.glow-gold {
+  filter: drop-shadow(0 0 18px rgba(212, 160, 23, 0.45));
+}
+
+/* Slow-pulsing sacred watermark (footers / dividers) */
+.watermark-om {
+  animation: pulse-soft 9s ease-in-out infinite;
+}
+
+/* ---------- scroll reveal (driven by src/scripts/reveal.js) ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px) scale(0.985);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.reveal-delay-1 { transition-delay: 0.12s; }
+.reveal-delay-2 { transition-delay: 0.24s; }
+.reveal-delay-3 { transition-delay: 0.36s; }
+
+/* ---------- diya-glow cards ---------- */
+.card-diya {
+  position: relative;
+  transition: box-shadow 0.6s ease, border-color 0.6s ease, transform 0.6s ease;
+  border: 1px solid rgba(212, 160, 23, 0.18);
+  overflow: hidden;
+}
+
+.card-diya:hover,
+.card-diya:focus-within {
+  border-color: rgba(212, 160, 23, 0.65);
+  box-shadow:
+    0 0 0 1px rgba(212, 160, 23, 0.25),
+    0 10px 40px -12px rgba(232, 134, 28, 0.4),
+    0 0 32px -6px rgba(212, 160, 23, 0.3);
+  transform: translateY(-3px);
+}
+
+.card-diya .card-img {
+  transition: transform 4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-diya:hover .card-img,
+.card-diya:focus-within .card-img {
+  transform: scale(1.07);
+}
+
+/* ---------- hero animations ---------- */
+/* Sky panel is 200% tall: top half = deep night, bottom half = dawn.
+   Sliding it up by 50% plays night → dawn over ~5s on load. */
+@keyframes dawn-sky {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.hero-sky {
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    #0b0b22 0%,
+    #10102a 22%,
+    #1a1a3e 38%,
+    #1a1a3e 52%,
+    #2b2152 62%,
+    #4a2244 72%,
+    #6b1f2a 80%,
+    #a8531f 88%,
+    #e8861c 94%,
+    #ecc55c 100%
+  );
+  animation: dawn-sky 5s cubic-bezier(0.45, 0.05, 0.35, 1) 0.4s forwards;
+}
+
+@keyframes sun-rise {
+  from { transform: translateY(46px) scale(0.85); opacity: 0; }
+  to   { transform: translateY(0) scale(1);       opacity: 1; }
+}
+
+.hero-sun {
+  opacity: 0;
+  animation: sun-rise 3.2s cubic-bezier(0.33, 1, 0.68, 1) 2.2s forwards;
+}
+
+/* Water shimmer: thin light streaks sliding sideways */
+@keyframes water-streaks {
+  from { background-position: 0 0; }
+  to   { background-position: 240px 0; }
+}
+
+.hero-water-shimmer {
+  background-image: repeating-linear-gradient(
+    93deg,
+    transparent 0 34px,
+    rgba(236, 197, 92, 0.055) 34px 37px,
+    transparent 37px 64px,
+    rgba(232, 134, 28, 0.04) 64px 66px
+  );
+  background-size: 240px 100%;
+  animation: water-streaks 13s linear infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  45%      { opacity: 0.78; transform: scale(0.92); }
+  70%      { opacity: 0.92; transform: scale(1.05); }
+}
+
+@keyframes drift {
+  0%   { transform: translateX(-6vw); }
+  100% { transform: translateX(106vw); }
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+
+@keyframes shimmer-x {
+  0%, 100% { transform: translateX(0);     opacity: 0.55; }
+  50%      { transform: translateX(26px);  opacity: 0.95; }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.16; }
+  50%      { opacity: 0.38; }
+}
+
+/* Letter-by-letter Devanagari tagline reveal */
+@keyframes letter-in {
+  from { opacity: 0; transform: translateY(0.35em); filter: blur(6px); }
+  to   { opacity: 1; transform: translateY(0);      filter: blur(0); }
+}
+
+.tagline-letter {
+  display: inline-block;
+  opacity: 0;
+  animation: letter-in 0.85s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  animation-delay: calc(1.1s + var(--i) * 0.085s);
+}
+
+@keyframes hero-sub-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-sub {
+  opacity: 0;
+  animation: hero-sub-in 1.2s ease 2.6s forwards;
+}
+
+/* ---------- view-transition: soft fade + saffron sweep ---------- */
+@keyframes saffron-sweep {
+  from { transform: translateX(-100%); opacity: 0.9; }
+  to   { transform: translateX(100%);  opacity: 0; }
+}
+
+::view-transition-old(root) {
+  animation: 0.3s ease both fade-out-vt;
+}
+
+::view-transition-new(root) {
+  animation: 0.45s ease both fade-in-vt;
+}
+
+@keyframes fade-out-vt { to { opacity: 0; } }
+@keyframes fade-in-vt  { from { opacity: 0; } }
+
+.sweep-light {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background: linear-gradient(100deg, transparent 20%, rgba(232, 134, 28, 0.18) 50%, transparent 80%);
+  transform: translateX(-100%);
+}
+
+html.is-transitioning .sweep-light {
+  animation: saffron-sweep 0.6s ease-out;
+}
+
+/* ---------- Ganga flow line (scroll-linked, src/scripts/ganga-flow.js) ---------- */
+.ganga-flow {
+  position: fixed;
+  top: 0;
+  left: max(0.6rem, calc((100vw - 80rem) / 2 - 2.2rem));
+  height: 100vh;
+  width: 3px;
+  z-index: 30;
+  pointer-events: none;
+}
+
+.ganga-flow .flow-track {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent, rgba(212, 160, 23, 0.12) 12%, rgba(212, 160, 23, 0.12) 88%, transparent);
+  border-radius: 999px;
+}
+
+.ganga-flow .flow-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transform-origin: top;
+  transform: scaleY(var(--scroll-progress, 0));
+  background: linear-gradient(to bottom, var(--color-saffron), var(--color-gold) 60%, var(--color-gold-light));
+  border-radius: 999px;
+  box-shadow: 0 0 12px rgba(212, 160, 23, 0.55);
+}
+
+/* ---------- ad slots: reserve space, zero CLS ---------- */
+.ad-slot {
+  display: block;
+  width: 100%;
+  background: rgba(107, 31, 42, 0.03);
+  border: 1px dashed rgba(107, 31, 42, 0.12);
+  border-radius: 0.5rem;
+}
+
+.ad-slot--leaderboard { aspect-ratio: 728 / 90; max-width: 728px; margin-inline: auto; }
+.ad-slot--rectangle   { aspect-ratio: 300 / 250; max-width: 336px; margin-inline: auto; }
+.ad-slot--sidebar     { aspect-ratio: 300 / 600; max-width: 300px; }
+
+/* ---------- prose styling for markdown article bodies ---------- */
+.prose-kashi {
+  max-width: 68ch;
+  font-size: 1.075rem;
+  line-height: 1.85;
+  color: #3a2620;
+}
+
+.prose-kashi h2 {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: var(--color-maroon);
+  margin-top: 2.4em;
+  margin-bottom: 0.7em;
+  line-height: 1.25;
+}
+
+.prose-kashi h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-maroon);
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.prose-kashi p {
+  margin-bottom: 1.25em;
+}
+
+.prose-kashi a {
+  color: var(--color-saffron);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: rgba(232, 134, 28, 0.4);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.3s ease;
+}
+
+.prose-kashi a:hover {
+  text-decoration-color: var(--color-saffron);
+}
+
+.prose-kashi strong { color: var(--color-maroon-deep); }
+
+.prose-kashi blockquote {
+  border-left: 3px solid var(--color-gold);
+  padding-left: 1.2em;
+  font-style: italic;
+  color: var(--color-maroon);
+  margin-block: 1.6em;
+}
+
+.prose-kashi ul, .prose-kashi ol {
+  padding-left: 1.4em;
+  margin-bottom: 1.25em;
+}
+
+.prose-kashi ul { list-style: disc; }
+.prose-kashi ol { list-style: decimal; }
+.prose-kashi li { margin-bottom: 0.45em; }
+
+/* ---------- reduced motion: static beauty, nothing broken ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001s !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .tagline-letter,
+  .hero-sub {
+    opacity: 1;
+    animation: none;
+  }
+
+  /* Land the hero sky on its final dawn state */
+  .hero-sky {
+    animation: none;
+    transform: translateY(-50%);
+  }
+
+  .hero-sun {
+    animation: none;
+    opacity: 1;
+  }
+
+  .hero-water-shimmer {
+    animation: none;
+  }
+
+  [data-parallax] {
+    transform: none !important;
+  }
+
+  .ganga-flow { display: none; }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}

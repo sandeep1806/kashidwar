@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Privacy Policy', href: '/privacy' },
+];
+
+const lastUpdated = 'June 12, 2026';
+---
+
+<BaseLayout
+  title="Privacy Policy — Kashi Dwar (kashidwar.com)"
+  description="Kashi Dwar's privacy policy — what data we do and don't collect, how cookies and third-party advertising (such as Google AdSense) may be used, and your choices."
+  breadcrumbs={crumbs}
+>
+  <section class="texture-silk bg-indigo-night pt-10 pb-14">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6">
+      <Breadcrumbs crumbs={crumbs} tone="dark" />
+      <h1 class="font-display mt-8 text-4xl font-semibold text-cream sm:text-5xl">
+        Privacy Policy
+      </h1>
+      <p class="mt-4 text-sm text-cream/60">Last updated: {lastUpdated}</p>
+    </div>
+  </section>
+
+  <div class="texture-paper bg-cream py-12">
+    <div class="prose-kashi mx-auto max-w-3xl px-4 sm:px-6">
+      <p>
+        Kashi Dwar ("we", "this site", kashidwar.com) is a content website about Varanasi.
+        We believe in collecting as little of your data as possible — ideally none. This page
+        explains plainly what happens when you visit.
+      </p>
+
+      <h2>What we collect directly: nothing</h2>
+      <p>
+        Kashi Dwar is a static website. We do not require accounts, do not have login forms,
+        do not run our own analytics by default, and do not collect, store or sell personal
+        information. If you email us, we see your email address and message and use them only
+        to reply; we don't add you to any list.
+      </p>
+
+      <h2>Cookies</h2>
+      <p>
+        The site itself does not set cookies for its own functionality. However, third-party
+        services described below may set cookies when enabled. You can clear or block cookies
+        in your browser settings at any time; the site will work fully without them.
+      </p>
+
+      <h2>Advertising (Google AdSense) — disclosure</h2>
+      <p>
+        We may display advertising served by <strong>Google AdSense</strong> or similar
+        third-party networks to support the cost of running this site. When advertising is
+        active:
+      </p>
+      <ul>
+        <li>
+          Third-party vendors, including Google, use cookies (such as the DoubleClick/Ad
+          cookie) to serve ads based on your prior visits to this and other websites.
+        </li>
+        <li>
+          Google's use of advertising cookies enables it and its partners to serve
+          personalised ads. You can opt out of personalised advertising at
+          <a href="https://adssettings.google.com" rel="noopener nofollow">Google Ads Settings</a>,
+          or via <a href="https://youradchoices.com" rel="noopener nofollow">youradchoices.com</a>.
+        </li>
+        <li>
+          Visitors in the EEA/UK and other regions with consent requirements will be shown a
+          consent mechanism before any advertising cookies are set, as required by law and by
+          Google's EU User Consent Policy.
+        </li>
+      </ul>
+      <p>
+        Ads are always visually distinguishable from our editorial content, and our
+        recommendations are never paid placements.
+      </p>
+
+      <h2>Analytics</h2>
+      <p>
+        If we add privacy-respecting analytics in future (to learn which guides help people
+        most), we will prefer cookieless, aggregate tools and update this page before doing so.
+      </p>
+
+      <h2>Third-party links and embedded content</h2>
+      <p>
+        Our pages link to external sites (official temple portals, photographers' pages,
+        booking resources). Once you leave kashidwar.com, those sites' own privacy policies
+        apply. Fonts are currently loaded from Google Fonts, which may log requests as
+        described in Google's privacy policy.
+      </p>
+
+      <h2>Children's privacy</h2>
+      <p>
+        This site is a general-audience travel guide and does not knowingly collect any
+        information from children under 13.
+      </p>
+
+      <h2>Your rights</h2>
+      <p>
+        Depending on your jurisdiction (GDPR in the EU/UK, CCPA in California, DPDP Act in
+        India), you may have rights to access, correct or delete personal data. Since we hold
+        none beyond any email you've sent us, exercising these rights is simple: write to us
+        and we'll delete your correspondence on request.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        We'll update this page whenever our practices change — for example, before enabling
+        advertising or analytics — and revise the "last updated" date above.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy: <a href="/contact">contact us</a> or email
+        <a href="mailto:namaste@kashidwar.com">namaste@kashidwar.com</a>.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,184 @@
+---
+/**
+ * Full-viewport animated dawn on the Ganga — pure layered SVG/CSS, no video,
+ * no JS beyond the shared parallax handler. Layers (back → front):
+ *   1. sky (night→dawn slide, .hero-sky)   parallax 0.5
+ *   2. rising sun glow                      parallax 0.5
+ *   3. far temple skyline silhouette        parallax 0.32
+ *   4. near ghat steps + spires silhouette  parallax 0.18
+ *   5. water with shimmer + floating diyas  parallax 0
+ *   6. tagline (letter-by-letter Devanagari reveal)
+ */
+const tagline = 'आपका द्वार काशी की ओर';
+// Split on spaces so conjuncts/matras stay intact; reveal word by word
+const words = tagline.split(' ');
+---
+
+<section
+  class="relative isolate flex min-h-svh flex-col justify-center overflow-hidden bg-indigo-deep"
+  aria-label="Dawn over the ghats of Kashi"
+>
+  {/* 1 · sky */}
+  <div class="absolute inset-0 overflow-hidden" data-parallax="0.5" aria-hidden="true">
+    <div class="hero-sky absolute inset-x-0 top-0"></div>
+  </div>
+
+  {/* 2 · rising sun */}
+  <div
+    class="hero-sun absolute bottom-[24%] left-1/2 -ml-20 h-40 w-40 rounded-full"
+    data-parallax="0.5"
+    aria-hidden="true"
+    style="background: radial-gradient(circle, rgba(236,197,92,.95) 0%, rgba(232,134,28,.55) 38%, rgba(232,134,28,0) 70%);"
+  >
+  </div>
+
+  {/* 3 · far skyline */}
+  <svg
+    class="absolute right-0 bottom-[23%] left-0 h-[30vh] w-full"
+    data-parallax="0.32"
+    viewBox="0 0 1440 300"
+    preserveAspectRatio="xMidYMax slice"
+    aria-hidden="true"
+  >
+    <path
+      fill="#241a3e"
+      opacity="0.85"
+      d="M0 300 V240 h40 v-30 l18 -14 18 14 v30 h60 v-52 l14 -10 4 -26 8 -18 8 18 4 26 14 10 v52 h70 v-26 h36 v-44 l22 -18 22 18 v44 h50 v26 h80 v-60 l12 -8 3 -22 7 -16 7 16 3 22 12 8 v60 h90 v-30 h44 v-38 l20 -15 20 15 v38 h40 v30 h80 v-48 l16 -12 5 -30 9 -20 9 20 5 30 16 12 v48 h90 v-24 h40 v-40 l18 -14 18 14 v40 h46 v24 h70 v-54 l13 -9 4 -24 7 -17 7 17 4 24 13 9 v54 h60 v-28 h38 v-36 l19 -16 19 16 v36 h44 v28 h60 V300 Z"
+    ></path>
+  </svg>
+
+  {/* 4 · near ghat: spires + stepped ghats */}
+  <svg
+    class="absolute right-0 bottom-[18%] left-0 h-[34vh] w-full"
+    data-parallax="0.18"
+    viewBox="0 0 1440 340"
+    preserveAspectRatio="xMidYMax slice"
+    aria-hidden="true"
+  >
+    <g fill="#120d26">
+      {/* big shikhara left */}
+      <path
+        d="M120 340 v-150 h16 v-30 l10 -8 6 -34 6 -22 5 -14 5 14 6 22 6 34 10 8 v30 h16 v150 Z"
+      ></path>
+      <path d="M168 64 l6 -18 2 -10 2 10 6 18 -8 6 Z"></path>
+      {/* dome shrine */}
+      <path d="M260 340 v-96 h12 v-18 c0 -22 16 -36 30 -36 c14 0 30 14 30 36 v18 h12 v96 Z"></path>
+      <path d="M298 184 l4 -14 2 -8 2 8 4 14 Z"></path>
+      {/* tall shikhara centre-right */}
+      <path
+        d="M1080 340 v-180 h18 v-36 l12 -10 7 -40 7 -26 6 -16 6 16 7 26 7 40 12 10 v36 h18 v180 Z"
+      ></path>
+      <path d="M1138 48 l7 -20 3 -12 3 12 7 20 -10 8 Z"></path>
+      {/* small pavilion right */}
+      <path d="M1290 340 v-80 h10 v-14 l24 -20 24 20 v14 h10 v80 Z"></path>
+      {/* ghat steps descending to water, full width */}
+      <path
+        d="M0 340 v-20 h60 v-12 h70 v-14 h80 v-12 h90 v-14 h110 v-12 h130 v-14 h160 v14 h130 v12 h110 v14 h90 v12 h80 v14 h70 v12 h60 v20 Z"
+        opacity="0.96"
+      ></path>
+      {/* umbrellas (Banarasi ghat parasols) */}
+      <path d="M540 282 q22 -18 44 0 l-2 4 h-40 Z M561 284 h2 v36 h-2 Z"></path>
+      <path d="M860 268 q20 -16 40 0 l-2 4 h-36 Z M879 270 h2 v34 h-2 Z"></path>
+    </g>
+  </svg>
+
+  {/* 5 · the Ganga */}
+  <div class="absolute inset-x-0 bottom-0 h-[20%]" aria-hidden="true">
+    <div
+      class="absolute inset-0"
+      style="background: linear-gradient(to bottom, #1d2c4a 0%, #16213c 45%, #0e1428 100%);"
+    >
+    </div>
+    {/* sun reflection */}
+    <div
+      class="hero-sun absolute top-0 left-1/2 h-full w-32 -translate-x-1/2"
+      style="background: radial-gradient(ellipse 50% 90% at 50% 0%, rgba(236,197,92,.22), rgba(236,197,92,0) 70%); filter: blur(10px);"
+    >
+    </div>
+    <div class="hero-water-shimmer absolute inset-0"></div>
+
+    {/* floating diyas */}
+    <div class="animate-drift absolute top-[30%] left-0" style="animation-duration: 26s;">
+      <div class="animate-bob">
+        <svg width="26" height="20" viewBox="0 0 26 20">
+          <ellipse cx="13" cy="16" rx="9" ry="3.5" fill="#3a1410"></ellipse>
+          <path d="M5 15 q8 5 16 0 l-2 3 q-6 3 -12 0 Z" fill="#2a0e0b"></path>
+          <path
+            class="animate-flicker"
+            d="M13 4 q3 4 0 9 q-3 -5 0 -9"
+            fill="#ecc55c"
+            style="filter: drop-shadow(0 0 5px rgba(236,197,92,.9));"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <div class="animate-drift absolute top-[58%] left-0" style="animation-duration: 38s; animation-delay: -14s;">
+      <div class="animate-bob" style="animation-delay: -2s;">
+        <svg width="20" height="16" viewBox="0 0 26 20">
+          <ellipse cx="13" cy="16" rx="9" ry="3.5" fill="#3a1410"></ellipse>
+          <path d="M5 15 q8 5 16 0 l-2 3 q-6 3 -12 0 Z" fill="#2a0e0b"></path>
+          <path
+            class="animate-flicker"
+            d="M13 4 q3 4 0 9 q-3 -5 0 -9"
+            fill="#ecc55c"
+            style="filter: drop-shadow(0 0 5px rgba(236,197,92,.85)); animation-delay: -1.2s;"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <div class="animate-drift absolute top-[44%] left-0" style="animation-duration: 32s; animation-delay: -25s;">
+      <div class="animate-bob" style="animation-delay: -3.4s;">
+        <svg width="16" height="13" viewBox="0 0 26 20">
+          <ellipse cx="13" cy="16" rx="9" ry="3.5" fill="#3a1410"></ellipse>
+          <path d="M5 15 q8 5 16 0 l-2 3 q-6 3 -12 0 Z" fill="#2a0e0b"></path>
+          <path
+            class="animate-flicker"
+            d="M13 4 q3 4 0 9 q-3 -5 0 -9"
+            fill="#ecc55c"
+            style="filter: drop-shadow(0 0 4px rgba(236,197,92,.8)); animation-delay: -0.6s;"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  {/* 6 · tagline */}
+  <div class="relative z-10 mx-auto max-w-4xl px-4 pb-[26vh] text-center sm:px-6">
+    <h1 class="sr-only">Kashi Dwar — your guide to Varanasi: ghats, temples, food and festivals</h1>
+    <p
+      class="devanagari glow-gold text-4xl leading-snug sm:text-6xl lg:text-7xl"
+      aria-label={tagline}
+    >
+      {
+        words.map((word, i) => (
+          <>
+            {/* gradient applied per-word: background-clip:text breaks on an
+                ancestor when children animate transform/filter */}
+            <span class="tagline-letter devanagari-gold" style={`--i: ${i * 2}`} aria-hidden="true">
+              {word}
+            </span>
+            {i < words.length - 1 && ' '}
+          </>
+        ))
+      }
+    </p>
+    <p class="hero-sub mx-auto mt-6 max-w-xl text-base text-cream/85 sm:text-lg">
+      Your doorway to the eternal city — its ghats, its temples, its food, its festivals.
+      Written like a friend from Banaras showing you around.
+    </p>
+    <div class="hero-sub mt-8 flex flex-wrap items-center justify-center gap-3">
+      <a
+        href="/ghats"
+        class="rounded-full bg-saffron px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-saffron/30 transition hover:bg-gold hover:shadow-gold/40"
+      >
+        Explore the Ghats
+      </a>
+      <a
+        href="/tips"
+        class="rounded-full border border-gold/50 px-6 py-3 text-sm font-semibold text-gold-light transition hover:border-gold hover:bg-gold/10"
+      >
+        Plan your Yatra
+      </a>
+    </div>
+  </div>
+</section>

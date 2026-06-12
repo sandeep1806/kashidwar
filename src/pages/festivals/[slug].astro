@@ -1,0 +1,112 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import SilkDivider from '../../components/SilkDivider.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+export async function getStaticPaths() {
+  const festivals = await getCollection('festivals');
+  return festivals.map((festival) => ({ params: { slug: festival.id }, props: { festival } }));
+}
+
+const { festival } = Astro.props;
+const { Content } = await render(festival);
+const d = festival.data;
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Festivals', href: '/festivals' },
+  { name: d.name, href: `/festivals/${festival.id}` },
+];
+
+const eventSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  name: `${d.name} — Varanasi`,
+  alternateName: d.hindiName,
+  description: d.description,
+  startDate: d.nextDate,
+  eventSchedule: { '@type': 'Schedule', repeatFrequency: 'P1Y', description: d.month },
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  eventStatus: 'https://schema.org/EventScheduled',
+  location: {
+    '@type': 'Place',
+    name: d.location,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Varanasi',
+      addressRegion: 'Uttar Pradesh',
+      addressCountry: 'IN',
+    },
+  },
+  image: `https://kashidwar.com/images/${d.image}-1280.webp`,
+  isAccessibleForFree: true,
+  organizer: { '@type': 'Organization', name: 'Traditional / civic celebration, Varanasi' },
+};
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.description}
+  ogType="article"
+  ogImage={`/images/${d.image}-1280.webp`}
+  breadcrumbs={crumbs}
+  jsonLd={[eventSchema]}
+>
+  <PageHero
+    title={d.name}
+    hindiName={d.hindiName}
+    kicker="Festivals of Kashi"
+    image={d.image}
+    alt={d.heroAlt}
+    crumbs={crumbs}
+  />
+
+  <div class="texture-paper bg-cream">
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1fr_300px]">
+      <div>
+        <div class="reveal grid gap-4 sm:grid-cols-2">
+          <div class="card-diya rounded-xl bg-white/70 p-5">
+            <h2 class="text-xs font-semibold tracking-[0.18em] text-saffron uppercase">When</h2>
+            <p class="mt-2 text-sm leading-relaxed text-maroon-deep/80">
+              {d.month}. Next: <strong>{new Date(d.nextDate + 'T00:00:00').toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}</strong>
+              (lunar calendar — reconfirm with the panchang).
+            </p>
+          </div>
+          <div class="card-diya rounded-xl bg-white/70 p-5">
+            <h2 class="text-xs font-semibold tracking-[0.18em] text-saffron uppercase">Where</h2>
+            <p class="mt-2 text-sm leading-relaxed text-maroon-deep/80">{d.location}</p>
+          </div>
+        </div>
+
+        <article class="prose-kashi reveal mt-10">
+          <Content />
+        </article>
+
+        <div class="mt-10">
+          <AdSlot position="in-content" />
+        </div>
+
+        <SilkDivider class="mt-10" />
+
+        <RelatedLinks ghats={d.relatedGhats} mandirs={d.relatedMandirs} />
+      </div>
+
+      <aside class="hidden lg:block">
+        <div class="sticky top-24 space-y-6">
+          <AdSlot position="sidebar" />
+          <nav class="card-diya rounded-xl bg-white/70 p-5" aria-label="Continue exploring">
+            <h2 class="text-xs font-semibold tracking-[0.18em] text-saffron uppercase">Plan around it</h2>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li><a class="text-maroon transition hover:text-saffron" href="/festivals">← All festivals</a></li>
+              <li><a class="text-maroon transition hover:text-saffron" href="/tips">Season & booking tips</a></li>
+              <li><a class="text-maroon transition hover:text-saffron" href="/khana">What to eat that week</a></li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>

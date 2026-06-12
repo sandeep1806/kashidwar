@@ -1,0 +1,83 @@
+---
+/**
+ * Every page gets: unique title + description, canonical, OG + Twitter cards,
+ * WebSite + BreadcrumbList JSON-LD, plus any page-specific schema passed in.
+ * See CLAUDE.md › SEO Rules.
+ */
+interface Crumb {
+  name: string;
+  href: string;
+}
+
+interface Props {
+  title: string; // 50-60 chars, unique per page
+  description: string; // 150-160 chars, unique per page
+  ogType?: string;
+  ogImage?: string;
+  breadcrumbs?: Crumb[];
+  jsonLd?: object[]; // page-specific schema (TouristAttraction, Event, FAQPage...)
+}
+
+const {
+  title,
+  description,
+  ogType = 'website',
+  ogImage = '/og-default.jpg',
+  breadcrumbs = [],
+  jsonLd = [],
+} = Astro.props;
+
+const site = Astro.site ?? new URL('https://kashidwar.com');
+const canonical = new URL(Astro.url.pathname.replace(/\/$/, '') || '/', site).href;
+const ogImageUrl = new URL(ogImage, site).href;
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Kashi Dwar',
+  alternateName: 'काशी द्वार',
+  url: site.href,
+  description:
+    'Kashi Dwar is a lovingly written guide to Varanasi — its ghats, temples, food, festivals and travel wisdom.',
+  inLanguage: 'en',
+};
+
+const breadcrumbSchema =
+  breadcrumbs.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: breadcrumbs.map((crumb, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: crumb.name,
+          item: new URL(crumb.href, site).href,
+        })),
+      }
+    : null;
+
+const schemas = [websiteSchema, ...(breadcrumbSchema ? [breadcrumbSchema] : []), ...jsonLd];
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+{/* hreflang-ready: Hindi versions land under /hi/ in a later phase */}
+<link rel="alternate" hreflang="en" href={canonical} />
+<link rel="alternate" hreflang="x-default" href={canonical} />
+
+<meta property="og:type" content={ogType} />
+<meta property="og:site_name" content="Kashi Dwar" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImageUrl} />
+<meta property="og:locale" content="en_IN" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageUrl} />
+
+{schemas.map((schema) => <script type="application/ld+json" set:html={JSON.stringify(schema)} />)}

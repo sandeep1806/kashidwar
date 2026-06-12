@@ -1,0 +1,95 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ContentCard from '../../components/ContentCard.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import SilkDivider from '../../components/SilkDivider.astro';
+
+const mandirs = (await getCollection('mandirs')).sort((a, b) => a.data.order - b.data.order);
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Mandir', href: '/mandir' },
+];
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Essential Temples of Varanasi',
+  itemListElement: mandirs.map((mandir, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: mandir.data.name,
+    url: `https://kashidwar.com/mandir/${mandir.id}`,
+  })),
+};
+---
+
+<BaseLayout
+  title="Varanasi Temples Guide: Darshan Timings for 6 Key Mandirs"
+  description="Varanasi mandir guide — Kashi Vishwanath darshan timings, Sankat Mochan, Durga Kund, Kaal Bhairav, Annapurna and Tulsi Manas, with queue tips, dress code and history."
+  breadcrumbs={crumbs}
+  jsonLd={[itemListSchema]}
+>
+  <section class="texture-silk bg-indigo-night pt-10 pb-14">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <Breadcrumbs crumbs={crumbs} tone="dark" />
+      <p class="devanagari-gold mt-8 text-3xl">मंदिर</p>
+      <h1 class="font-display mt-2 max-w-3xl text-4xl font-semibold text-cream sm:text-5xl">
+        Mandir Darshan in Kashi
+      </h1>
+      <p class="mt-5 max-w-2xl leading-relaxed text-cream/70">
+        They say Kashi holds more temples than any census can finish counting — shrines in
+        walls, lingas under peepal trees, gods at every turning. These six are the spine of
+        any yatra: the Jyotirlinga himself, his queen, his kotwal, the goddess of the south,
+        the reliever of troubles, and a scripture written in marble.
+      </p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
+    <AdSlot position="header-below" />
+  </div>
+
+  <section class="texture-paper bg-cream py-14">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          mandirs.map((mandir, i) => (
+            <div class={`reveal reveal-delay-${i % 3}`}>
+              <ContentCard
+                href={`/mandir/${mandir.id}`}
+                name={mandir.data.name}
+                hindiName={mandir.data.hindiName}
+                excerpt={mandir.data.excerpt}
+                image={mandir.data.image}
+                alt={mandir.data.heroAlt}
+                meta={mandir.data.timings}
+                eager={i < 3}
+              />
+            </div>
+          ))
+        }
+      </div>
+
+      <SilkDivider class="mt-14" />
+
+      <div class="prose-kashi reveal mx-auto mt-6">
+        <h2>A note on darshan etiquette</h2>
+        <p>
+          Kashi's temples are living shrines, not museums. Phones and cameras are banned in
+          the major ones (free lockers wait at the gates), leather is best left at your hotel,
+          and modest dress is everywhere appreciated. Mondays belong to Shiva, Tuesdays and
+          Saturdays to Hanuman, festival days to everyone at once — plan accordingly, or
+          embrace the queue as the first ritual. The classic sequence is
+          <a href="/mandir/kashi-vishwanath">Vishwanath</a> with a Ganga bath at
+          <a href="/ghats/dashashwamedh">Dashashwamedh</a>, then
+          <a href="/mandir/annapurna">Annapurna</a> beside him, and
+          <a href="/mandir/kaal-bhairav">Kaal Bhairav's</a> permission before you leave the
+          city. Our <a href="/tips">yatra tips</a> page covers the practical details.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

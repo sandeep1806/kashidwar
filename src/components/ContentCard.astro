@@ -1,0 +1,46 @@
+---
+/**
+ * Diya-glow card used on index pages and home previews.
+ * Image is a 640×420 WebP from public/images — explicit dimensions, lazy.
+ */
+interface Props {
+  href: string;
+  name: string;
+  hindiName?: string;
+  excerpt: string;
+  image: string; // basename without size suffix, e.g. "varanasi-boat-ghat-steps"
+  alt: string;
+  meta?: string; // small label line, e.g. best time / timings
+  eager?: boolean; // above-the-fold cards skip lazy loading
+  class?: string;
+}
+
+const { href, name, hindiName, excerpt, image, alt, meta, eager = false, class: className = '' } = Astro.props;
+---
+
+<article class:list={['card-diya group rounded-xl bg-white/70 shadow-sm', className]}>
+  <a href={href} class="block focus:outline-none">
+    <div class="overflow-hidden rounded-t-xl">
+      <img
+        src={`/images/${image}-640.webp`}
+        alt={alt}
+        width="640"
+        height="420"
+        loading={eager ? 'eager' : 'lazy'}
+        decoding="async"
+        class="card-img aspect-[640/420] w-full object-cover"
+      />
+    </div>
+    <div class="p-5">
+      <div class="flex items-baseline justify-between gap-3">
+        <h3 class="font-display text-xl font-semibold text-maroon">{name}</h3>
+        {hindiName && <span class="devanagari shrink-0 text-base text-gold">{hindiName}</span>}
+      </div>
+      <p class="mt-2 text-sm leading-relaxed text-maroon-deep/70">{excerpt}</p>
+      {meta && <p class="mt-3 text-xs font-medium tracking-wide text-saffron">{meta}</p>}
+      <p class="mt-3 text-sm font-medium text-gold transition-colors group-hover:text-saffron">
+        Explore <span aria-hidden="true">→</span>
+      </p>
+    </div>
+  </a>
+</article>

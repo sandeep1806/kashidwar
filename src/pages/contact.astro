@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Contact', href: '/contact' },
+];
+
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contact Kashi Dwar',
+  url: 'https://kashidwar.com/contact',
+};
+---
+
+<BaseLayout
+  title="Contact Kashi Dwar — Corrections, Tips & Collaborations"
+  description="Get in touch with Kashi Dwar — send corrections to our Varanasi guides, share local tips, ask travel questions or propose collaborations. We read everything."
+  breadcrumbs={crumbs}
+  jsonLd={[contactSchema]}
+>
+  <section class="texture-silk bg-indigo-night pt-10 pb-14">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6">
+      <Breadcrumbs crumbs={crumbs} tone="dark" />
+      <p class="devanagari-gold mt-8 text-3xl">संपर्क</p>
+      <h1 class="font-display mt-2 text-4xl font-semibold text-cream sm:text-5xl">Contact Us</h1>
+      <p class="mt-5 max-w-2xl leading-relaxed text-cream/70">
+        A timing that's changed, a shop we missed, a story from your yatra — write to us.
+        Every message is read by a person.
+      </p>
+    </div>
+  </section>
+
+  <div class="texture-paper bg-cream py-14">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6">
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="card-diya reveal rounded-xl bg-white/70 p-6">
+          <h2 class="font-display text-xl font-semibold text-maroon">✉️ Email</h2>
+          <p class="mt-2 text-sm leading-relaxed text-maroon-deep/75">
+            For everything — corrections, questions, collaborations:
+          </p>
+          <p class="mt-3">
+            <a
+              href="mailto:namaste@kashidwar.com"
+              class="font-semibold text-saffron underline decoration-saffron/40 underline-offset-4 transition hover:decoration-saffron"
+            >
+              namaste@kashidwar.com
+            </a>
+          </p>
+          <p class="mt-3 text-xs text-maroon-deep/50">
+            We aim to reply within a few days. Travel questions are welcome, though our
+            <a href="/tips" class="underline">yatra tips</a> answer the most common ones.
+          </p>
+        </div>
+
+        <div class="card-diya reveal reveal-delay-1 rounded-xl bg-white/70 p-6">
+          <h2 class="font-display text-xl font-semibold text-maroon">🛠 Corrections</h2>
+          <p class="mt-2 text-sm leading-relaxed text-maroon-deep/75">
+            Kashi changes daily and we'd rather be accurate than proud. If a timing, price
+            or detail on any page is out of date, tell us the page and what changed — we
+            update fast and gratefully.
+          </p>
+        </div>
+
+        <div class="card-diya reveal reveal-delay-1 rounded-xl bg-white/70 p-6 sm:col-span-2">
+          <h2 class="font-display text-xl font-semibold text-maroon">🤝 Collaborations & press</h2>
+          <p class="mt-2 text-sm leading-relaxed text-maroon-deep/75">
+            We're happy to hear from photographers with Varanasi archives, local writers,
+            researchers and tourism bodies. Note that our editorial recommendations are not
+            for sale — sponsored placement is politely declined, always.
+          </p>
+        </div>
+      </div>
+
+      <p class="reveal devanagari watermark-om mt-12 text-center text-2xl text-gold">
+        ॐ नमः शिवाय
+      </p>
+    </div>
+  </div>
+</BaseLayout>

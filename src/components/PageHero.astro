@@ -1,0 +1,55 @@
+---
+/**
+ * Detail-page hero: full-width photo with an indigo-to-transparent dusk
+ * overlay, Devanagari accent and title. Image is the LCP element on these
+ * pages, so it loads eagerly with high priority.
+ */
+import Breadcrumbs from './Breadcrumbs.astro';
+
+interface Crumb {
+  name: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  hindiName?: string;
+  kicker?: string;
+  image: string; // basename without size suffix
+  alt: string;
+  crumbs: Crumb[];
+}
+
+const { title, hindiName, kicker, image, alt, crumbs } = Astro.props;
+---
+
+<section class="relative isolate overflow-hidden bg-indigo-night">
+  <img
+    src={`/images/${image}-1280.webp`}
+    srcset={`/images/${image}-640.webp 640w, /images/${image}-1280.webp 1280w`}
+    sizes="100vw"
+    alt={alt}
+    width="1280"
+    height="800"
+    loading="eager"
+    fetchpriority="high"
+    decoding="async"
+    class="absolute inset-0 h-full w-full object-cover opacity-70"
+  />
+  <div
+    class="absolute inset-0 bg-gradient-to-t from-indigo-deep via-indigo-night/55 to-indigo-night/20"
+    aria-hidden="true"
+  >
+  </div>
+
+  <div class="relative mx-auto max-w-6xl px-4 pt-24 pb-12 sm:px-6 sm:pt-36 sm:pb-16">
+    <Breadcrumbs crumbs={crumbs} tone="dark" />
+    {kicker && (
+      <p class="mt-6 text-xs font-semibold tracking-[0.25em] text-gold-light uppercase">{kicker}</p>
+    )}
+    <h1 class="font-display mt-2 max-w-3xl text-4xl font-semibold text-cream sm:text-5xl">
+      {title}
+    </h1>
+    {hindiName && <p class="devanagari-gold mt-3 text-2xl sm:text-3xl">{hindiName}</p>}
+  </div>
+</section>
