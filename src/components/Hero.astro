@@ -146,15 +146,16 @@ const words = tagline.split(' ');
   <div class="relative z-10 mx-auto max-w-4xl px-4 pb-[26vh] text-center sm:px-6">
     <h1 class="sr-only">Kashi Dwar — your guide to Varanasi: ghats, temples, food and festivals</h1>
     <p
+      lang="hi"
       class="devanagari glow-gold text-4xl leading-snug sm:text-6xl lg:text-7xl"
-      aria-label={tagline}
+      aria-hidden="true"
     >
       {
         words.map((word, i) => (
           <>
             {/* gradient applied per-word: background-clip:text breaks on an
                 ancestor when children animate transform/filter */}
-            <span class="tagline-letter devanagari-gold" style={`--i: ${i * 2}`} aria-hidden="true">
+            <span class="tagline-letter devanagari-gold" style={`--i: ${i * 2}`}>
               {word}
             </span>
             {i < words.length - 1 && ' '}
@@ -162,7 +163,11 @@ const words = tagline.split(' ');
         ))
       }
     </p>
-    <p class="hero-sub mx-auto mt-6 max-w-xl text-base text-cream/85 sm:text-lg">
+    {/* transliteration so the tagline is readable without Devanagari */}
+    <p class="hero-sub mt-4 text-sm font-medium tracking-[0.18em] text-gold-light/90 uppercase sm:text-base">
+      Aapka dwaar, Kashi ki ore
+    </p>
+    <p class="hero-sub mx-auto mt-5 max-w-xl text-base text-cream/85 sm:text-lg">
       Your doorway to the eternal city — its ghats, its temples, its food, its festivals.
       Written like a friend from Banaras showing you around.
     </p>

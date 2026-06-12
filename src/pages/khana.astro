@@ -50,7 +50,7 @@ const itemListSchema = {
     <div class="absolute inset-0 bg-gradient-to-t from-indigo-deep via-indigo-night/55 to-indigo-night/25" aria-hidden="true"></div>
     <div class="relative mx-auto max-w-6xl px-4 pt-24 pb-12 sm:px-6 sm:pt-32 sm:pb-16">
       <Breadcrumbs crumbs={crumbs} tone="dark" />
-      <p class="devanagari-gold mt-6 text-3xl">खाना</p>
+      <p lang="hi" aria-hidden="true" class="devanagari-gold mt-6 text-3xl">खाना</p>
       <h1 class="font-display mt-2 max-w-3xl text-4xl font-semibold text-cream sm:text-5xl">
         The Banarasi Food Guide
       </h1>
@@ -92,7 +92,7 @@ const itemListSchema = {
                     <h2 id={`${dish.id}-h`} class="font-display text-3xl font-semibold text-maroon">
                       {dish.data.name}
                     </h2>
-                    <span class="devanagari text-xl text-gold">{dish.data.hindiName}</span>
+                    <span lang="hi" class="devanagari text-xl text-gold">{dish.data.hindiName}</span>
                   </div>
                   <div class="mt-4 grid gap-3 text-sm sm:grid-cols-2">
                     <p class="rounded-lg bg-cream/80 px-4 py-2.5 text-maroon-deep/80">

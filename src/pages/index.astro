@@ -22,7 +22,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
   <section class="texture-paper bg-cream py-20">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <div class="reveal text-center">
-        <p class="devanagari text-2xl text-gold">घाट</p>
+        <p lang="hi" aria-hidden="true" class="devanagari text-2xl text-gold">घाट <span lang="en" class="font-body text-xs tracking-[0.3em] text-gold/70 uppercase">Ghats</span></p>
         <h2 class="font-display mt-2 text-3xl font-semibold text-maroon sm:text-4xl">
           The Ghats of Kashi
         </h2>
@@ -70,7 +70,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
   <section class="texture-silk bg-indigo-night py-20">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <div class="reveal text-center">
-        <p class="devanagari watermark-om text-2xl text-gold">ॐ नमः शिवाय</p>
+        <p lang="hi" aria-hidden="true" class="devanagari watermark-om text-2xl text-gold">ॐ नमः शिवाय <span lang="en" class="font-body text-xs tracking-[0.3em] text-gold/70 uppercase">Om Namah Shivaya</span></p>
         <h2 class="font-display mt-2 text-3xl font-semibold text-cream sm:text-4xl">
           Mandir Darshan
         </h2>
@@ -113,7 +113,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
   <section class="texture-paper bg-cream py-20">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <div class="reveal text-center">
-        <p class="devanagari text-2xl text-gold">खाना</p>
+        <p lang="hi" aria-hidden="true" class="devanagari text-2xl text-gold">खाना <span lang="en" class="font-body text-xs tracking-[0.3em] text-gold/70 uppercase">Khana · Food</span></p>
         <h2 class="font-display mt-2 text-3xl font-semibold text-maroon sm:text-4xl">
           Banarasi Khana
         </h2>
@@ -128,7 +128,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
             <article class={`card-diya reveal reveal-delay-${i} rounded-xl bg-white/70 p-6 shadow-sm`}>
               <div class="flex items-baseline justify-between gap-3">
                 <h3 class="font-display text-xl font-semibold text-maroon">{dish.data.name}</h3>
-                <span class="devanagari shrink-0 text-base text-gold">{dish.data.hindiName}</span>
+                <span lang="hi" class="devanagari shrink-0 text-base text-gold">{dish.data.hindiName}</span>
               </div>
               <p class="mt-2 text-sm leading-relaxed text-maroon-deep/70">{dish.data.excerpt}</p>
               <p class="mt-4 text-sm font-medium">
@@ -149,7 +149,7 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
   <section class="texture-silk bg-maroon-deep py-20">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <div class="reveal text-center">
-        <p class="devanagari text-2xl text-gold-light">उत्सव</p>
+        <p lang="hi" aria-hidden="true" class="devanagari text-2xl text-gold-light">उत्सव <span lang="en" class="font-body text-xs tracking-[0.3em] text-gold-light/70 uppercase">Utsav · Festivals</span></p>
         <h2 class="font-display mt-2 text-3xl font-semibold text-cream sm:text-4xl">
           When the City Celebrates
         </h2>

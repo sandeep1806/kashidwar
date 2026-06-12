@@ -36,6 +36,13 @@ The visitor should *feel* Kashi the moment the page loads: dawn on the Ganga, di
 - Pre-dawn indigo `#1A1A3E` (`indigo-night`)
 - Ganga blue accents `#2E5E73` (`ganga`)
 
+### Language rule (English-first — IMPORTANT)
+Many visitors (South India, international) do not read Devanagari. Therefore:
+- **Devanagari is decoration, never the sole carrier of information.** Every Hindi-script element must be paired with English or Roman transliteration (e.g. "हर हर महादेव · Har Har Mahadev").
+- Nav labels, buttons, headings: always English/Roman script.
+- Mark Devanagari elements `lang="hi"`; mark purely decorative ones `aria-hidden="true"`.
+- A real language selector ships only when translated content exists (Hindi `/hi/`, possibly Tamil/Telugu later — hreflang structure is ready). Never ship a selector with no content behind it.
+
 ### Typography
 - Devanagari display: **Tiro Devanagari Hindi** (Google Font) — treated as ART: large decorative headings with gold gradient (`.devanagari-gold` utility)
 - Body/headings: Inter / system stack; serif display: Cormorant Garamond

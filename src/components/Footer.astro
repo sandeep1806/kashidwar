@@ -35,7 +35,7 @@ const columns = [
   {/* slow-pulsing sacred watermark */}
   <div
     aria-hidden="true"
-    class="watermark-om devanagari pointer-events-none absolute -right-6 -bottom-10 text-[11rem] leading-none text-gold select-none"
+    lang="hi" class="watermark-om devanagari pointer-events-none absolute -right-6 -bottom-10 text-[11rem] leading-none text-gold select-none"
   >
     ॐ
   </div>
@@ -43,12 +43,18 @@ const columns = [
   <div class="relative mx-auto max-w-6xl px-4 py-14 sm:px-6">
     <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
       <div>
-        <p class="devanagari-gold text-3xl">काशी द्वार</p>
-        <p class="mt-3 max-w-xs text-sm leading-relaxed text-cream/60">
-          आपका द्वार काशी की ओर — your doorway to the eternal city. Written with
-          love, one ghat at a time.
+        <p>
+          <span lang="hi" class="devanagari-gold text-3xl">काशी द्वार</span>
+          <span class="ml-2 align-baseline text-xs tracking-[0.2em] text-cream/50 uppercase">Kashi Dwar</span>
         </p>
-        <p class="devanagari mt-5 text-sm tracking-wide text-gold/70">हर हर महादेव 🙏</p>
+        <p class="mt-3 max-w-xs text-sm leading-relaxed text-cream/60">
+          Aapka dwaar, Kashi ki ore — your doorway to the eternal city. Written
+          with love, one ghat at a time.
+        </p>
+        <p class="mt-5 text-sm tracking-wide text-gold/70">
+          <span lang="hi" class="devanagari">हर हर महादेव</span>
+          <span class="mx-1.5 text-gold/40">·</span>Har Har Mahadev 🙏
+        </p>
       </div>
 
       {
@@ -78,7 +84,10 @@ const columns = [
       class="mt-12 flex flex-col items-center justify-between gap-3 border-t border-gold/15 pt-6 text-xs text-cream/50 sm:flex-row"
     >
       <p>© {year} Kashi Dwar · kashidwar.com</p>
-      <p class="devanagari text-gold/60">ॐ नमः शिवाय</p>
+      <p class="text-gold/60">
+        <span lang="hi" class="devanagari">ॐ नमः शिवाय</span>
+        <span class="mx-1.5 text-gold/40">·</span>Om Namah Shivaya
+      </p>
     </div>
   </div>
 </footer>

@@ -61,6 +61,15 @@ body {
     repeating-linear-gradient(-45deg, transparent 0 14px, rgba(232, 134, 28, 0.035) 14px 15px);
 }
 
+/* Hide scrollbars on the mobile nav strip without disabling scroll */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* ---------- Devanagari as art ---------- */
 .devanagari {
   font-family: var(--font-devanagari);

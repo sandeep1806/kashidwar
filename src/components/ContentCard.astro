@@ -34,7 +34,7 @@ const { href, name, hindiName, excerpt, image, alt, meta, eager = false, class: 
     <div class="p-5">
       <div class="flex items-baseline justify-between gap-3">
         <h3 class="font-display text-xl font-semibold text-maroon">{name}</h3>
-        {hindiName && <span class="devanagari shrink-0 text-base text-gold">{hindiName}</span>}
+        {hindiName && <span lang="hi" class="devanagari shrink-0 text-base text-gold">{hindiName}</span>}
       </div>
       <p class="mt-2 text-sm leading-relaxed text-maroon-deep/70">{excerpt}</p>
       {meta && <p class="mt-3 text-xs font-medium tracking-wide text-saffron">{meta}</p>}
