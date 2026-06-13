@@ -31,6 +31,21 @@ const { title, description, ogType, ogImage, breadcrumbs, jsonLd } = Astro.props
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="theme-color" content="#1a1a3e" />
 
+    {/* Google Analytics 4 — loads on every page; enhanced measurement tracks
+        Astro view-transition (History API) navigations automatically */}
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G6VN84753L"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-G6VN84753L');
+    </script>
+
     <Seo
       title={title}
       description={description}
