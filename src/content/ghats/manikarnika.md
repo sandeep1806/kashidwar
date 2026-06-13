@@ -15,6 +15,17 @@ heroAlt: "Wooden boat resting beside the stone steps of a Varanasi ghat"
 relatedMandirs: ["kashi-vishwanath", "kaal-bhairav"]
 relatedFestivals: ["mahashivratri"]
 relatedGhats: ["dashashwamedh", "scindia", "panchganga"]
+mapX: 855
+mapY: 398
+mapCategories: ["ghat"]
+nameLocalized:
+  ta: "மணிகர்ணிகா காட்"
+  te: "మణికర్ణిక ఘాట్"
+shortDescriptor:
+  en: "The great cremation ghat where moksha is granted"
+  hi: "महान श्मशान घाट जहाँ मोक्ष मिलता है"
+  ta: "மோட்சம் அளிக்கும் மாபெரும் தகனக் காட்"
+  te: "మోక్షం ప్రసాదించే మహా దహన ఘాట్"
 ---
 
 There is one ghat in Kashi where the tourist's camera should stay down and the heart should stay open. Manikarnika is the **mahashamshan** — the great cremation ground — and it is unlike anywhere else on earth, because here cremation is not hidden away at the city's edge. It sits at the very centre of the riverfront, fires burning day and night, while ten metres away children fly kites and boatmen argue about cricket. Kashi does not look away from death. That is the whole point of Kashi.

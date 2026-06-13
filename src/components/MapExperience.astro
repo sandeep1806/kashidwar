@@ -1,0 +1,354 @@
+---
+/**
+ * Kashi Darshan Map — original, hand-illustrated SVG of the Varanasi riverfront.
+ * 100% drawn in code (no Google/Mapbox/OSM tiles, nothing to attribute).
+ *
+ * Data-driven: hotspots come from the ghats + mandirs collections (mapX/mapY/
+ * mapCategories/shortDescriptor/nameLocalized) plus a few non-collection markers
+ * (food streets) in src/data/mapMarkers.ts. Adding more ghats = content only.
+ */
+import { getCollection } from 'astro:content';
+import { mapMarkers } from '../data/mapMarkers';
+import { useTranslations, localizedPath } from '../i18n/utils';
+import { languages, type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+type Spot = {
+  id: string;
+  type: 'ghat' | 'mandir' | 'food';
+  href: string;
+  x: number;
+  y: number;
+  cats: string[];
+  primary: string; // name in the current locale's script
+  devanagari: string; // always present
+  roman: string; // English/romanised name
+  desc: string;
+  big?: boolean; // Vishwanath gets the golden spire
+};
+
+const ghats = await getCollection('ghats');
+const mandirs = await getCollection('mandirs');
+
+function fromEntry(entry: any, type: 'ghat' | 'mandir'): Spot | null {
+  const d = entry.data;
+  if (d.mapX == null || d.mapY == null) return null;
+  const primary =
+    lang === 'en'
+      ? d.name
+      : lang === 'hi'
+        ? d.hindiName
+        : (d.nameLocalized?.[lang] ?? d.name);
+  return {
+    id: entry.id,
+    type,
+    href: `/${type === 'ghat' ? 'ghats' : 'mandir'}/${entry.id}/`,
+    x: d.mapX,
+    y: d.mapY,
+    cats: d.mapCategories ?? [],
+    primary,
+    devanagari: d.hindiName,
+    roman: d.name,
+    desc: d.shortDescriptor?.[lang] ?? d.shortDescriptor?.en ?? '',
+    big: entry.id === 'kashi-vishwanath',
+  };
+}
+
+const ghatSpots = ghats.map((g) => fromEntry(g, 'ghat')).filter(Boolean) as Spot[];
+const mandirSpots = mandirs.map((m) => fromEntry(m, 'mandir')).filter(Boolean) as Spot[];
+const foodSpots: Spot[] = mapMarkers.map((m) => ({
+  id: m.id,
+  type: 'food',
+  href: m.href,
+  x: m.mapX,
+  y: m.mapY,
+  cats: [m.category],
+  primary: m.name[lang],
+  devanagari: m.name.hi,
+  roman: m.name.en,
+  desc: m.descriptor[lang],
+}));
+
+const spots: Spot[] = [...ghatSpots, ...mandirSpots, ...foodSpots];
+
+// south→north order for the list fallback
+const listSpots = [...spots].sort((a, b) => a.x - b.x);
+
+// stagger ghat labels into two rows so adjacent names don't collide
+const ghatRow = new Map(
+  [...ghatSpots].sort((a, b) => a.x - b.x).map((s, i) => [s.id, i % 2])
+);
+const labelY = (s: Spot) =>
+  s.type === 'ghat' ? s.y + (ghatRow.get(s.id) === 0 ? 28 : 46) : s.y + 20;
+
+const altLine = (s: Spot) => (lang === 'hi' ? s.roman : s.devanagari);
+
+// hreflang-style language switcher targets
+const langLinks = (Object.keys(languages) as Lang[]).map((l) => ({
+  code: l,
+  label: languages[l],
+  href: localizedPath('/map/', l),
+}));
+
+// JSON-LD: ItemList of TouristAttraction for every ghat/mandir (crawl depth)
+const itemList = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Kashi Darshan Map — ghats and temples of Varanasi',
+  itemListElement: [...ghatSpots, ...mandirSpots].map((s, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'TouristAttraction',
+      name: s.roman,
+      url: new URL(s.href, 'https://kashidwar.com').href,
+    },
+  })),
+};
+---
+
+<section class="texture-silk bg-indigo-night pt-10 pb-16">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    {/* heading + language switcher */}
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p lang="hi" aria-hidden="true" class="devanagari-gold text-3xl">काशी दर्शन</p>
+        <h1 class="font-display mt-1 text-4xl font-semibold text-cream sm:text-5xl">
+          {t('map.heading')}
+        </h1>
+      </div>
+      <nav class="lang-switch flex items-center gap-1" aria-label={t('map.langLabel')}>
+        {
+          langLinks.map((l) => (
+            <a href={l.href} hreflang={l.code} aria-current={l.code === lang ? 'true' : undefined}>
+              {l.label}
+            </a>
+          ))
+        }
+      </nav>
+    </div>
+    <p class="mt-4 max-w-2xl leading-relaxed text-cream/70">{t('map.intro')}</p>
+
+    {/* legend filter chips */}
+    <div class="mt-6 flex flex-wrap items-center gap-2">
+      <span class="mr-1 text-xs tracking-[0.2em] text-gold/70 uppercase">{t('map.legend')}</span>
+      <button type="button" class="cat-chip is-active" aria-pressed="true" data-cat-chip="all">
+        {t('map.all')}
+      </button>
+      <button type="button" class="cat-chip" aria-pressed="false" data-cat-chip="ghat">
+        {t('map.cat.ghat')}
+      </button>
+      <button type="button" class="cat-chip" aria-pressed="false" data-cat-chip="mandir">
+        {t('map.cat.mandir')}
+      </button>
+      <button type="button" class="cat-chip" aria-pressed="false" data-cat-chip="aarti">
+        {t('map.cat.aarti')}
+      </button>
+      <button type="button" class="cat-chip" aria-pressed="false" data-cat-chip="food">
+        {t('map.cat.food')}
+      </button>
+    </div>
+
+    {/* the map */}
+    <div class="map-frame mt-5" data-map-frame data-filter="all">
+      <div class="map-zoom">
+        <button type="button" data-zoom-in aria-label="Zoom in">+</button>
+        <button type="button" data-zoom-out aria-label="Zoom out">−</button>
+        <button type="button" data-zoom-reset aria-label="Reset zoom">⤢</button>
+      </div>
+
+      <div class="map-stage" data-map-stage>
+        <svg
+          class={`map-svg lang-${lang}`}
+          viewBox="0 0 1200 680"
+          role="img"
+          aria-label={t('map.heading')}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="mapSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#241a4e"></stop>
+              <stop offset="46%" stop-color="#46315f"></stop>
+              <stop offset="74%" stop-color="#9a4f3c"></stop>
+              <stop offset="100%" stop-color="#e0863a"></stop>
+            </linearGradient>
+            <radialGradient id="mapSun" cx="50%" cy="100%" r="60%">
+              <stop offset="0%" stop-color="rgba(255,228,150,0.9)"></stop>
+              <stop offset="40%" stop-color="rgba(236,170,70,0.35)"></stop>
+              <stop offset="100%" stop-color="rgba(236,170,70,0)"></stop>
+            </radialGradient>
+            <linearGradient id="mapRiver" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2e5e73"></stop>
+              <stop offset="55%" stop-color="#1d3b51"></stop>
+              <stop offset="100%" stop-color="#0e1f30"></stop>
+            </linearGradient>
+          </defs>
+
+          {/* sky + sun */}
+          <rect x="0" y="0" width="1200" height="480" fill="url(#mapSky)"></rect>
+          <ellipse cx="600" cy="470" rx="360" ry="220" fill="url(#mapSun)"></ellipse>
+
+          {/* distant skyline silhouette */}
+          <path
+            d="M0 360 h120 v-34 l16 -22 16 22 v34 h90 v-54 l12 -8 4 -22 6 -14 6 14 4 22 12 8 v54 h120 v-30 h70 v-40 l18 -16 18 16 v40 h60 v30 h150 v-48 l14 -10 5 -26 7 -16 7 16 5 26 14 10 v48 h120 v-34 h80 v-26 l16 -14 16 14 v26 h70 v34 h150 V360 h-1200 V480 H0 Z"
+            fill="#1c1536"
+            opacity="0.8"
+          ></path>
+
+          {/* the city band behind the ghats */}
+          <rect x="0" y="360" width="1200" height="120" fill="#191243"></rect>
+
+          {/* corridor path lines: Vishwanath ↔ Dashashwamedh / Lalita */}
+          <g stroke="rgba(236,197,92,0.4)" stroke-width="2" stroke-dasharray="3 6" fill="none">
+            <path d="M660 215 C 640 300, 612 340, 600 372"></path>
+            <path d="M660 215 C 700 300, 752 345, 770 380"></path>
+          </g>
+
+          {/* the Ganga */}
+          <path d="M0 470 Q 600 430 1200 470 L1200 680 L0 680 Z" fill="url(#mapRiver)"></path>
+          {/* gentle waterlines */}
+          <g stroke="rgba(120,170,190,0.25)" stroke-width="2" fill="none">
+            <path d="M40 520 Q 600 488 1160 520"></path>
+            <path d="M40 560 Q 600 532 1160 560"></path>
+            <path d="M40 604 Q 600 580 1160 604"></path>
+          </g>
+
+          {/* stepped ghat bank along the crescent */}
+          <path
+            d="M0 470 Q 600 430 1200 470 L1200 458 Q 600 418 0 458 Z"
+            fill="#2a2150"
+            opacity="0.9"></path>
+
+          {/* hotspots */}
+          <g class="map-hotspots">
+            {
+              spots.map((s) => {
+                const tipBelow = s.y < 250;
+                const fx = Math.min(Math.max(s.x - 100, 6), 994);
+                const fy = tipBelow ? s.y + 18 : s.y - 96;
+                return (
+                  <a
+                    href={s.href}
+                    class="hotspot"
+                    data-cat={s.cats.join(' ')}
+                    aria-label={`${s.primary} — ${s.desc}`}
+                  >
+                    <circle class="focus-ring" cx={s.x} cy={s.y} r="20" fill="none" stroke="#ecc55c" stroke-width="2" />
+                    <g class="marker">
+                      {s.type === 'mandir' ? (
+                        <g>
+                          <path
+                            d={`M${s.x - (s.big ? 16 : 12)} ${s.y} L${s.x} ${s.y - (s.big ? 46 : 34)} L${s.x + (s.big ? 16 : 12)} ${s.y} Z`}
+                            fill={s.big ? '#f0c64a' : '#d4a017'}
+                          />
+                          <circle cx={s.x} cy={s.y - (s.big ? 50 : 38)} r={s.big ? 4 : 3} fill="#f4ead0" />
+                          {s.big && (
+                            <circle cx={s.x} cy={s.y - 22} r="30" fill="rgba(240,198,74,0.18)" />
+                          )}
+                        </g>
+                      ) : s.type === 'food' ? (
+                        <g>
+                          <path d={`M${s.x - 7} ${s.y - 3} a7 7 0 0 0 14 0 Z`} fill="#e8861c" />
+                          <rect x={s.x - 1} y={s.y - 12} width="2" height="6" fill="#e8861c" />
+                        </g>
+                      ) : (
+                        <g>
+                          <path
+                            d={`M${s.x - 12} ${s.y + 8} h24 M${s.x - 9} ${s.y + 3} h18 M${s.x - 6} ${s.y - 2} h12`}
+                            stroke="#caa24a"
+                            stroke-width="2.4"
+                            stroke-linecap="round"
+                          />
+                          <circle cx={s.x} cy={s.y - 9} r="5" fill="#ecc55c" />
+                        </g>
+                      )}
+                    </g>
+
+                    <text class="spot-name" x={s.x} y={labelY(s)} text-anchor="middle">
+                      {s.primary}
+                    </text>
+
+                    <foreignObject class="spot-tip" x={fx} y={fy} width="200" height="90">
+                      <div xmlns="http://www.w3.org/1999/xhtml" class="tip-box">
+                        <div class={`tip-name ${lang === 'ta' ? 'tamil' : lang === 'te' ? 'telugu' : lang === 'hi' ? 'devanagari' : ''}`}>
+                          {s.primary}
+                        </div>
+                        <div class={`tip-alt ${lang === 'hi' ? '' : 'devanagari'}`}>{altLine(s)}</div>
+                        <div class="tip-desc">{s.desc}</div>
+                      </div>
+                    </foreignObject>
+                  </a>
+                );
+              })
+            }
+          </g>
+        </svg>
+
+        {/* ambient diyas + shimmer over the river (decorative, non-blocking) */}
+        <div class="river-shimmer hero-water-shimmer" aria-hidden="true"></div>
+        <div class="map-diyas" aria-hidden="true">
+          <div class="animate-bob" style="left:18%; top:30%;">
+            <svg width="24" height="18" viewBox="0 0 26 20"
+              ><ellipse cx="13" cy="16" rx="9" ry="3.5" fill="#3a1410"></ellipse><path
+                d="M5 15 q8 5 16 0 l-2 3 q-6 3 -12 0 Z"
+                fill="#2a0e0b"></path><path class="animate-flicker" d="M13 4 q3 4 0 9 q-3 -5 0 -9"
+                fill="#ecc55c" style="filter:drop-shadow(0 0 5px rgba(236,197,92,.9))"></path></svg
+            >
+          </div>
+          <div class="animate-bob" style="left:52%; top:52%; animation-delay:-2s;">
+            <svg width="18" height="14" viewBox="0 0 26 20"
+              ><ellipse cx="13" cy="16" rx="9" ry="3.5" fill="#3a1410"></ellipse><path
+                d="M5 15 q8 5 16 0 l-2 3 q-6 3 -12 0 Z"
+                fill="#2a0e0b"></path><path class="animate-flicker" d="M13 4 q3 4 0 9 q-3 -5 0 -9"
+                fill="#ecc55c" style="filter:drop-shadow(0 0 4px rgba(236,197,92,.85)); animation-delay:-1s;"></path></svg
+            >
+          </div>
+          <div class="animate-bob" style="left:80%; top:36%; animation-delay:-3.4s;">
+            <svg width="21" height="16" viewBox="0 0 26 20"
+              ><ellipse cx="13" cy="16" rx="9" ry="3.5" fill="#3a1410"></ellipse><path
+                d="M5 15 q8 5 16 0 l-2 3 q-6 3 -12 0 Z"
+                fill="#2a0e0b"></path><path class="animate-flicker" d="M13 4 q3 4 0 9 q-3 -5 0 -9"
+                fill="#ecc55c" style="filter:drop-shadow(0 0 5px rgba(236,197,92,.85)); animation-delay:-2.1s;"></path></svg
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="mt-3 text-center text-xs text-cream/45">{t('map.hint')}</p>
+  </div>
+
+  {/* mobile / progressive-enhancement list of the same places (also crawlable) */}
+  <div class="mx-auto mt-12 max-w-4xl px-4 sm:px-6">
+    <h2 class="font-display text-2xl font-semibold text-cream/90">{t('map.listHeading')}</h2>
+    <ul class="mt-5 grid gap-2 sm:grid-cols-2">
+      {
+        listSpots.map((s) => (
+          <li>
+            <a
+              href={s.href}
+              class="card-diya flex items-center justify-between gap-3 rounded-xl border border-gold/15 bg-indigo-deep/50 px-4 py-3 transition hover:border-gold/40"
+            >
+              <span class="min-w-0">
+                <span
+                  class={`loc-name block truncate font-medium text-cream ${lang === 'ta' ? 'tamil' : lang === 'te' ? 'telugu' : lang === 'hi' ? 'devanagari' : ''}`}
+                >
+                  {s.primary}
+                </span>
+                <span class="block truncate text-xs text-cream/55">{s.desc}</span>
+              </span>
+              <span class="shrink-0 text-xs text-gold/70">{t('map.openGuide')} →</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+
+  <script type="application/ld+json" set:html={JSON.stringify(itemList)} />
+  <script src="../scripts/mapPanZoom.js"></script>
+</section>

@@ -31,6 +31,10 @@ Downloaded: **2026-06-12**, via Unsplash CDN with WebP conversion
 All decorative SVG (hero dawn scene, silk dividers, diyas, icons, patterns) is
 custom-drawn for this project — no external assets, no license obligations.
 
+The **Kashi Darshan Map** (`src/components/MapExperience.astro`) is 100% original
+SVG artwork drawn in code — no Google Maps, Mapbox, OpenStreetMap tiles, and no
+traced or copied maps or photographs. Nothing to attribute.
+
 ## Adding new images — checklist
 
 1. Source ONLY from Unsplash / Pexels / Pixabay (AdSense-safe free commercial licenses)

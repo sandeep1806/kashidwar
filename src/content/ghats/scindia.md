@@ -15,6 +15,17 @@ heroAlt: "Boats floating on the Ganga at sunset with a temple on the Varanasi sk
 relatedMandirs: ["kaal-bhairav", "kashi-vishwanath"]
 relatedFestivals: ["dev-deepawali"]
 relatedGhats: ["manikarnika", "panchganga", "dashashwamedh"]
+mapX: 940
+mapY: 410
+mapCategories: ["ghat"]
+nameLocalized:
+  ta: "சிந்தியா காட்"
+  te: "సింధియా ఘాట్"
+shortDescriptor:
+  en: "The half-sunken, tilted Ratneshwar Mahadev temple"
+  hi: "आधा डूबा, झुका हुआ रत्नेश्वर महादेव मंदिर"
+  ta: "பாதி மூழ்கிய, சாய்ந்த ரத்னேஸ்வர் மகாதேவ் கோயில்"
+  te: "సగం మునిగిన, వంగిన రత్నేశ్వర్ మహాదేవ్ ఆలయం"
 ---
 
 Every visitor's camera roll from Varanasi contains one particular temple: a graceful stone shikhara at the water's edge, leaning like a tired pilgrim, its lower half drowned in the Ganga for most of the year. That is **Ratneshwar Mahadev** — and the ghat it adorns, just north of Manikarnika, is Scindia Ghat, one of the most quietly beautiful stretches of the riverfront.

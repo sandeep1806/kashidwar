@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MapExperience from '../../components/MapExperience.astro';
+import { useTranslations, alternatesFor } from '../../i18n/utils';
+
+const lang = 'te' as const;
+const t = useTranslations(lang);
+---
+
+<BaseLayout
+  title={t('map.title')}
+  description={t('map.description')}
+  lang={lang}
+  alternates={alternatesFor('/map/')}
+>
+  <MapExperience lang={lang} />
+</BaseLayout>

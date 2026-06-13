@@ -15,6 +15,17 @@ heroAlt: "Palace facades rising above the ghats and boats of Varanasi"
 relatedMandirs: ["kashi-vishwanath", "annapurna"]
 relatedFestivals: ["ganga-mahotsav"]
 relatedGhats: ["dashashwamedh", "lalita", "darbhanga"]
+mapX: 685
+mapY: 382
+mapCategories: ["ghat"]
+nameLocalized:
+  ta: "மான் மந்திர் காட்"
+  te: "మాన్ మందిర్ ఘాట్"
+shortDescriptor:
+  en: "Raja Man Singh's palace and stone observatory"
+  hi: "राजा मान सिंह का महल और पत्थर की वेधशाला"
+  ta: "ராஜா மான் சிங்கின் அரண்மனை மற்றும் கல் வானியல் கூடம்"
+  te: "రాజా మాన్ సింగ్ రాజభవనం మరియు రాతి వేధశాల"
 ---
 
 Kashi mostly looks inward and upward — toward moksha, toward Shiva. Man Mandir Ghat is the delicious exception: here the city looked *up at the actual sky*, with brass-edged instruments and Rajput precision. This is the ghat where astronomy moved in upstairs from the prayers.

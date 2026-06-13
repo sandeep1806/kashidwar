@@ -15,6 +15,17 @@ heroAlt: "The giant pranam hands sculpture at Namo Ghat, Varanasi, with chhatris
 relatedMandirs: ["kaal-bhairav", "kashi-vishwanath"]
 relatedFestivals: ["dev-deepawali", "ganga-mahotsav"]
 relatedGhats: ["panchganga", "dashashwamedh", "assi"]
+mapX: 1110
+mapY: 440
+mapCategories: ["ghat"]
+nameLocalized:
+  ta: "நமோ காட்"
+  te: "నమో ఘాట్"
+shortDescriptor:
+  en: "The new riverfront plaza with giant pranam hands"
+  hi: "विशाल प्रणाम हाथों वाला नया घाट प्रांगण"
+  ta: "பிரம்மாண்ட பிரணாம் கைகளுடன் கூடிய புதிய காட் வளாகம்"
+  te: "భారీ ప్రణామ హస్తాలతో కొత్త నదీతీర ప్రాంగణం"
 ---
 
 Every city eventually builds a room for its future, and Kashi — three thousand years old and unbothered by trends — built hers at the northern bend of the river. Namo Ghat is the city's newest doorway: the old **Khidkiya Ghat** ("the window ghat," where the city once peeped out at the river), reborn in phases between 2021 and 2023 as a vast, open riverfront plaza unlike anything else on the seven-kilometre crescent.

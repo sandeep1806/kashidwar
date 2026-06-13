@@ -10,6 +10,11 @@ interface Crumb {
   href: string;
 }
 
+interface Alternate {
+  hreflang: string;
+  href: string;
+}
+
 interface Props {
   title: string;
   description: string;
@@ -17,13 +22,24 @@ interface Props {
   ogImage?: string;
   breadcrumbs?: Crumb[];
   jsonLd?: object[];
+  lang?: 'en' | 'hi' | 'ta' | 'te';
+  alternates?: Alternate[];
 }
 
-const { title, description, ogType, ogImage, breadcrumbs, jsonLd } = Astro.props;
+const {
+  title,
+  description,
+  ogType,
+  ogImage,
+  breadcrumbs,
+  jsonLd,
+  lang = 'en',
+  alternates,
+} = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -53,6 +69,8 @@ const { title, description, ogType, ogImage, breadcrumbs, jsonLd } = Astro.props
       ogImage={ogImage}
       breadcrumbs={breadcrumbs}
       jsonLd={jsonLd}
+      lang={lang}
+      alternates={alternates}
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,6 +79,23 @@ const { title, description, ogType, ogImage, breadcrumbs, jsonLd } = Astro.props
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
     />
+    {/* Tamil & Telugu faces load only on those locales' pages */}
+    {
+      lang === 'ta' && (
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600&display=swap"
+        />
+      )
+    }
+    {
+      lang === 'te' && (
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600&display=swap"
+        />
+      )
+    }
 
     <ClientRouter />
   </head>
@@ -74,13 +109,13 @@ const { title, description, ogType, ogImage, breadcrumbs, jsonLd } = Astro.props
       <div class="flow-fill"></div>
     </div>
 
-    <Nav />
+    <Nav lang={lang} />
 
     <main id="main">
       <slot />
     </main>
 
-    <Footer />
+    <Footer lang={lang} />
 
     <script src="../scripts/site.js"></script>
   </body>

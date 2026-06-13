@@ -15,6 +15,17 @@ heroAlt: "Temples, palaces and boats along the Varanasi riverfront on the Ganga"
 relatedMandirs: ["kashi-vishwanath", "annapurna"]
 relatedFestivals: ["dev-deepawali", "ganga-mahotsav"]
 relatedGhats: ["man-mandir", "lalita", "manikarnika"]
+mapX: 600
+mapY: 380
+mapCategories: ["ghat", "aarti"]
+nameLocalized:
+  ta: "தசாஸ்வமேத் காட்"
+  te: "దశాశ్వమేధ్ ఘాట్"
+shortDescriptor:
+  en: "Varanasi's grandest evening Ganga aarti"
+  hi: "वाराणसी की सबसे भव्य संध्या गंगा आरती"
+  ta: "வாரணாசியின் மிக மகத்தான மாலை கங்கா ஆரத்தி"
+  te: "వారణాసి అత్యంత వైభవ సాయంత్రం గంగా ఆరతి"
 ---
 
 If Kashi has a heartbeat, you can hear it loudest at Dashashwamedh Ghat. This is the ghat your boatman points to with pride, the one every first-time yatri is led to, the stage on which the city performs its most beloved ritual — the evening Ganga aarti.

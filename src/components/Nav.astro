@@ -1,12 +1,24 @@
 ---
 // English-first labels: many visitors (South India, international) don't read
 // Devanagari — Hindi script is decorative only, never the sole carrier of info.
+// On localized map pages the chrome labels switch script via the i18n dict;
+// non-map links still point to the English pages (the only ones built so far).
+import { useTranslations, localizedPath } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang?: Lang;
+}
+const { lang = 'en' } = Astro.props;
+const t = useTranslations(lang);
+
 const links = [
-  { href: '/ghats/', label: 'Ghats' },
-  { href: '/mandir/', label: 'Mandir' },
-  { href: '/khana/', label: 'Khana' },
-  { href: '/festivals/', label: 'Festivals' },
-  { href: '/tips/', label: 'Tips' },
+  { href: '/ghats/', label: t('nav.ghats') },
+  { href: '/mandir/', label: t('nav.mandir') },
+  { href: '/khana/', label: t('nav.khana') },
+  { href: '/festivals/', label: t('nav.festivals') },
+  { href: '/tips/', label: t('nav.tips') },
+  { href: localizedPath('/map/', lang), label: t('nav.map'), highlight: true },
 ];
 
 // hrefs end with '/' so startsWith also matches child routes (/ghats/assi/)
@@ -42,7 +54,9 @@ const isActive = (href: string) => current.startsWith(href);
                   'rounded-full px-2 py-1.5 transition-colors duration-300 sm:px-3.5',
                   isActive(link.href)
                     ? 'bg-gold/15 text-gold-light'
-                    : 'text-cream/85 hover:bg-cream/10 hover:text-gold-light',
+                    : link.highlight
+                      ? 'text-gold-light/90 hover:bg-gold/10 hover:text-gold-light'
+                      : 'text-cream/85 hover:bg-cream/10 hover:text-gold-light',
                 ]}
               >
                 {link.label}

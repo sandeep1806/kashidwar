@@ -15,6 +15,17 @@ heroAlt: "Pilgrims and boats along the riverbank at a Varanasi ghat"
 relatedMandirs: ["kashi-vishwanath", "annapurna", "kaal-bhairav"]
 relatedFestivals: ["mahashivratri", "dev-deepawali"]
 relatedGhats: ["dashashwamedh", "manikarnika", "man-mandir"]
+mapX: 770
+mapY: 388
+mapCategories: ["ghat"]
+nameLocalized:
+  ta: "லலிதா காட்"
+  te: "లలిత ఘాట్"
+shortDescriptor:
+  en: "Nepali wood temple and the Lalita Devi shrine"
+  hi: "नेपाली काष्ठ मंदिर और ललिता देवी का धाम"
+  ta: "நேபாளி மரக் கோயில் மற்றும் லலிதா தேவி சன்னதி"
+  te: "నేపాలీ చెక్క ఆలయం మరియు లలిత దేవి మందిరం"
 ---
 
 Halfway between the spectacle of Dashashwamedh and the solemnity of Manikarnika, the riverfront makes room for a guest from the Himalayas. Lalita Ghat is Kashi's Nepali quarter — built by the kings of Kathmandu, crowned by a temple that looks airlifted from the Bagmati, and now, in its newest role, the river-doorway to the grandest temple project in modern India.

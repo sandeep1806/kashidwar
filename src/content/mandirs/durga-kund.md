@@ -17,6 +17,17 @@ heroAlt: "A devotee in an orange turban during a Varanasi celebration"
 relatedGhats: ["assi", "tulsi", "kedar"]
 relatedFestivals: ["nag-nathaiya"]
 relatedMandirs: ["sankat-mochan", "tulsi-manas", "annapurna"]
+mapX: 300
+mapY: 120
+mapCategories: ["mandir"]
+nameLocalized:
+  ta: "துர்கா குண்ட்"
+  te: "దుర్గా కుండ్"
+shortDescriptor:
+  en: "The red Durga temple beside its sacred tank"
+  hi: "पवित्र कुंड के किनारे लाल दुर्गा मंदिर"
+  ta: "புனிதக் குளத்தருகே சிவப்பு துர்கா கோயில்"
+  te: "పవిత్ర కుండం పక్కన ఎర్రని దుర్గా ఆలయం"
 ---
 
 Some temples you find by address; Durga Kund you find by colour. The whole structure — shikhara, walls, gateways — is painted a deep, declarative red-ochre, the colour of sindoor and of the goddess herself, glowing above its great square pool like an ember set in stone. Of all Kashi's temples, this is the most photogenic from the street, and one of the most beloved within it.

@@ -17,6 +17,17 @@ heroAlt: "A smiling sadhu with a turban in Varanasi"
 relatedGhats: ["assi", "tulsi"]
 relatedFestivals: ["nag-nathaiya"]
 relatedMandirs: ["tulsi-manas", "durga-kund"]
+mapX: 175
+mapY: 150
+mapCategories: ["mandir"]
+nameLocalized:
+  ta: "சங்கட் மோசன்"
+  te: "సంకట్ మోచన్"
+shortDescriptor:
+  en: "Tulsidas's Hanuman, the remover of troubles"
+  hi: "तुलसीदास के हनुमान, संकट हरने वाले"
+  ta: "துளசிதாஸின் அனுமன், துன்பம் நீக்குபவர்"
+  te: "తులసీదాస్ హనుమంతుడు, కష్టాలను తొలగించేవాడు"
 ---
 
 Ask a Banarasi which temple they actually *go* to — not for festivals, not for visiting relatives, but on an ordinary anxious Tuesday — and the answer, overwhelmingly, is Sankat Mochan. The name means "reliever of troubles," and the temple wears it like a job description. Exam results, court dates, marriages, visas: Hanuman here has heard it all, and the city trusts him with a familiarity that borders on affectionate impertinence.

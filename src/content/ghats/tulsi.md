@@ -15,6 +15,17 @@ heroAlt: "A boatman rowing a wooden boat on the Ganga at Varanasi"
 relatedMandirs: ["tulsi-manas", "sankat-mochan"]
 relatedFestivals: ["nag-nathaiya"]
 relatedGhats: ["assi", "chet-singh", "harishchandra"]
+mapX: 175
+mapY: 424
+mapCategories: ["ghat"]
+nameLocalized:
+  ta: "துளசி காட்"
+  te: "తులసి ఘాట్"
+shortDescriptor:
+  en: "Where Tulsidas lived; stage of the Nag Nathaiya play"
+  hi: "तुलसीदास का निवास; नाग नथैया लीला का मंच"
+  ta: "துளசிதாஸ் வாழ்ந்த இடம்; நாக் நத்தையா நாடக மேடை"
+  te: "తులసీదాస్ నివసించిన చోటు; నాగ నతైయా నాటక వేదిక"
 ---
 
 A few minutes' walk north of Assi, the riverfront rises to a ghat that belongs less to the gods than to a single human being — and one of the greatest who ever wrote in any Indian language. Tulsi Ghat, formerly Lolark Ghat, was renamed for **Goswami Tulsidas**, who lived here in the closing years of his life and died here in 1623, having given north India its most beloved book.

@@ -1,9 +1,17 @@
 ---
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang?: Lang;
+}
+const { lang = 'en' } = Astro.props;
+const t = useTranslations(lang);
 const year = new Date().getFullYear();
 
 const columns = [
   {
-    heading: 'Explore',
+    heading: t('footer.explore'),
     links: [
       { href: '/ghats/', label: 'Ghats of Kashi' },
       { href: '/mandir/', label: 'Mandir Darshan' },
@@ -23,9 +31,9 @@ const columns = [
   {
     heading: 'Kashi Dwar',
     links: [
-      { href: '/about/', label: 'About' },
-      { href: '/contact/', label: 'Contact' },
-      { href: '/privacy/', label: 'Privacy Policy' },
+      { href: '/about/', label: t('footer.about') },
+      { href: '/contact/', label: t('footer.contact') },
+      { href: '/privacy/', label: t('footer.privacy') },
     ],
   },
 ];
@@ -48,8 +56,7 @@ const columns = [
           <span class="ml-2 align-baseline text-xs tracking-[0.2em] text-cream/50 uppercase">Kashi Dwar</span>
         </p>
         <p class="mt-3 max-w-xs text-sm leading-relaxed text-cream/60">
-          Aapka dwaar, Kashi ki ore — your doorway to the eternal city. Written
-          with love, one ghat at a time.
+          {t('footer.tagline')}
         </p>
         <p class="mt-5 text-sm tracking-wide text-gold/70">
           <span lang="hi" class="devanagari">हर हर महादेव</span>

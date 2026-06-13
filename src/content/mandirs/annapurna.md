@@ -17,6 +17,17 @@ heroAlt: "A busy Varanasi market street with colorful umbrellas near the river"
 relatedGhats: ["dashashwamedh", "lalita"]
 relatedFestivals: ["dev-deepawali", "mahashivratri"]
 relatedMandirs: ["kashi-vishwanath", "kaal-bhairav"]
+mapX: 720
+mapY: 232
+mapCategories: ["mandir"]
+nameLocalized:
+  ta: "அன்னபூர்ணா"
+  te: "అన్నపూర్ణ"
+shortDescriptor:
+  en: "Goddess of food, queen beside Vishwanath"
+  hi: "अन्न की देवी, विश्वनाथ के साथ नगर-रानी"
+  ta: "உணவின் தேவி, விஸ்வநாதர் அருகே நகர அரசி"
+  te: "ఆహార దేవత, విశ్వనాథుని పక్కన నగర రాణి"
 ---
 
 Of all the theological arrangements in Kashi, the loveliest is this: the Lord of the Universe lives here — and his food comes from his wife's kitchen next door. The Annapurna Devi Mandir stands a few steps from [Kashi Vishwanath](/mandir/kashi-vishwanath/), and in the city's imagination she is not a minor consort shrine but the **queen of Kashi**, the goddess of nourishment without whom the lord of everything would go hungry. *Anna* is food; *purna* is fullness. Her name is a promise.

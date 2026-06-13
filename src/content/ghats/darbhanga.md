@@ -15,6 +15,17 @@ heroAlt: "People rowing a boat on the Ganga past the Varanasi riverfront"
 relatedMandirs: ["kashi-vishwanath", "annapurna"]
 relatedFestivals: ["dev-deepawali", "ganga-mahotsav"]
 relatedGhats: ["man-mandir", "dashashwamedh", "chet-singh"]
+mapX: 515
+mapY: 382
+mapCategories: ["ghat"]
+nameLocalized:
+  ta: "தர்பங்கா காட்"
+  te: "దర్భంగా ఘాట్"
+shortDescriptor:
+  en: "Grand Maratha-era palace facade on the river"
+  hi: "नदी पर मराठा-कालीन भव्य महल का अग्रभाग"
+  ta: "ஆற்றின் மீது மராத்தியர் கால பிரம்மாண்ட அரண்மனை முகப்பு"
+  te: "నదిపై మరాఠా కాలపు గంభీర రాజభవన ముఖభాగం"
 ---
 
 Some ghats whisper their history; Darbhanga declaims it from a colonnade. Walk south from Dashashwamedh and the riverfront suddenly goes full opera: a cliff of pale sandstone, ranks of tall Greek-style columns, domed chhatris and balconies stacked like a wedding cake — the most theatrical single facade on the entire six-kilometre sweep of the ghats.

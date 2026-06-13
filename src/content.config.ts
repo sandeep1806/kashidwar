@@ -4,7 +4,28 @@ import { glob } from 'astro/loaders';
 /**
  * All site data lives in content collections so Phase 3 (interactive 84-ghats
  * map) and Phase 5 (AI yatra planner) can reuse it. Keep lat/lng accurate.
+ *
+ * Phase 3 map fields (mapX/mapY/mapCategories/shortDescriptor/nameLocalized) are
+ * OPTIONAL and additive — the Kashi Darshan Map reads them and places a hotspot
+ * automatically. Adding more ghats toward "84" needs only new content entries
+ * with these fields, never code changes.
  */
+const localizedString = z.object({
+  en: z.string(),
+  hi: z.string(),
+  ta: z.string(),
+  te: z.string(),
+});
+
+const mapFields = {
+  mapX: z.number().optional(), // SVG viewBox x (0–1200)
+  mapY: z.number().optional(), // SVG viewBox y (0–680)
+  mapCategories: z.array(z.enum(['ghat', 'mandir', 'aarti', 'food'])).default([]),
+  shortDescriptor: localizedString.optional(), // one-line map tooltip, per locale
+  nameLocalized: z
+    .object({ ta: z.string().optional(), te: z.string().optional() })
+    .optional(), // hindiName already carries the Devanagari form
+};
 
 const ghats = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/ghats' }),
@@ -25,6 +46,7 @@ const ghats = defineCollection({
     relatedMandirs: z.array(z.string()).default([]), // slugs
     relatedFestivals: z.array(z.string()).default([]),
     relatedGhats: z.array(z.string()).default([]),
+    ...mapFields,
   }),
 });
 
@@ -49,6 +71,7 @@ const mandirs = defineCollection({
     relatedGhats: z.array(z.string()).default([]),
     relatedFestivals: z.array(z.string()).default([]),
     relatedMandirs: z.array(z.string()).default([]),
+    ...mapFields,
   }),
 });
 

@@ -12,7 +12,7 @@ The visitor should *feel* Kashi the moment the page loads: dawn on the Ganga, di
 |-------|-------|--------|
 | **1** | Static guide site (this build) — ghats, mandir, khana, festivals, tips | ✅ Built |
 | **2** | "Aaj Kashi Mein" live widget — panchang, Ganga aarti countdown, weather | Planned |
-| **3** | 84 Ghats interactive map (**reuses ghat content collections** — keep lat/lng in frontmatter) | Planned |
+| **3** | Kashi Darshan Map — interactive, illustrated, 4-language (en/hi/ta/te). **Data-driven from the ghats/mandirs collections.** | ✅ Built |
 | **4** | Kashi AI Guide chatbot (Anthropic API on Cloudflare Workers) | Planned |
 | **5** | AI Yatra Planner (itinerary generator) | Planned |
 
@@ -25,6 +25,15 @@ The visitor should *feel* Kashi the moment the page loads: dawn on the Ganga, di
 - `@astrojs/sitemap` generates sitemap.xml; `public/robots.txt` points to it
 - **Gotcha:** `vite@^7` is pinned as a devDependency so `@tailwindcss/vite` dedupes onto Astro 6's Vite 7 — without it the plugin installs its own Vite 8 and the build fails (`Missing field tsconfigPaths`)
 - Site URL is `https://kashidwar.com` (set in `astro.config.mjs` — required for canonical URLs & sitemap)
+
+## i18n & the Kashi Darshan Map (Phase 3 — done)
+
+- **i18n foundation** (`astro.config.mjs` → `i18n`): `defaultLocale: 'en'`, locales `en/hi/ta/te`, `prefixDefaultLocale: false`. English stays at the root; Hindi/Tamil/Telugu are path-prefixed (`/hi`, `/ta`, `/te`).
+- **Strings live in `src/i18n/ui.ts`** (`ui[lang][key]`); helpers in `src/i18n/utils.ts` (`useTranslations`, `getLangFromUrl`, `localizedPath`, `alternatesFor`). No i18n library — vanilla TS.
+- **Scope so far:** only the **map experience + chrome** (nav, footer, legend, chips, place names, descriptors, titles/meta) is localized. hi/ta/te strings are **machine-translated → flag for native review**. The 25+ long-form articles are still English; map hotspots link to those English pages. **Translating the long-form articles is the next task** (would add `/hi/ghats/[slug]` etc.).
+- **`BaseLayout` / `Nav` / `Footer` / `Seo` take an optional `lang` prop.** `Seo` accepts `alternates` → real hreflang set (en/hi/ta/te + x-default); without it, pages keep the single-language self-reference. Tamil/Telugu webfonts (`Noto Sans Tamil/Telugu`) load only on those locales' pages.
+- **The map is 100% data-driven.** Hotspots come from the `ghats`/`mandirs` collections via the optional `mapX/mapY/mapCategories/shortDescriptor/nameLocalized` fields (see `content.config.ts`). Non-collection points (food streets) live in `src/data/mapMarkers.ts`. **Adding ghats toward "84" = new content entries + coords, NO code changes.**
+- Map art is original inline SVG (`src/components/MapExperience.astro`, viewBox `1200×680`); pan/zoom + legend filter in `src/scripts/mapPanZoom.js` (vanilla, ~3KB). Hotspot names are real `<text>` (crawlable); a tooltip (foreignObject) and a tappable list below add detail + the mobile fallback. Routes: `src/pages/map.astro` + `src/pages/{hi,ta,te}/map.astro` (thin wrappers over the component). Homepage has a teaser linking to `/map/`.
 
 ## Design Rules
 

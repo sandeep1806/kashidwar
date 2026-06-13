@@ -15,6 +15,17 @@ heroAlt: "Boats resting on the riverbank beside the ghats of Varanasi"
 relatedMandirs: ["sankat-mochan", "durga-kund"]
 relatedFestivals: ["mahashivratri"]
 relatedGhats: ["kedar", "assi", "manikarnika"]
+mapX: 345
+mapY: 398
+mapCategories: ["ghat"]
+nameLocalized:
+  ta: "ஹரிச்சந்திரா காட்"
+  te: "హరిశ్చంద్ర ఘాట్"
+shortDescriptor:
+  en: "Ancient cremation ghat of the truthful king"
+  hi: "सत्यवादी राजा का प्राचीन श्मशान घाट"
+  ta: "சத்திய ராஜாவின் பழமையான தகனக் காட்"
+  te: "సత్యవంతుడైన రాజు ప్రాచీన దహన ఘాట్"
 ---
 
 Two fires burn eternally in Kashi, and the older story belongs to the smaller flame. Harishchandra Ghat, on the southern sweep of the riverfront between [Kedar](/ghats/kedar/) and [Assi](/ghats/assi/), is the city's second cremation ground — less thronged than Manikarnika, and carrying a legend that every Indian child once knew by heart.

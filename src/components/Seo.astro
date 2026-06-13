@@ -9,6 +9,11 @@ interface Crumb {
   href: string;
 }
 
+interface Alternate {
+  hreflang: string;
+  href: string; // site-absolute path, e.g. /hi/map/
+}
+
 interface Props {
   title: string; // 50-60 chars, unique per page
   description: string; // 150-160 chars, unique per page
@@ -16,6 +21,8 @@ interface Props {
   ogImage?: string;
   breadcrumbs?: Crumb[];
   jsonLd?: object[]; // page-specific schema (TouristAttraction, Event, FAQPage...)
+  lang?: string;
+  alternates?: Alternate[]; // localized variants → real hreflang set
 }
 
 const {
@@ -25,6 +32,8 @@ const {
   ogImage = '/og-default.jpg',
   breadcrumbs = [],
   jsonLd = [],
+  lang = 'en',
+  alternates,
 } = Astro.props;
 
 const site = Astro.site ?? new URL('https://kashidwar.com');
@@ -32,6 +41,24 @@ const site = Astro.site ?? new URL('https://kashidwar.com');
 const withSlash = (p: string) => (p.endsWith('/') || /\.[a-z0-9]+$/i.test(p) ? p : p + '/');
 const canonical = new URL(withSlash(Astro.url.pathname), site).href;
 const ogImageUrl = new URL(ogImage, site).href;
+
+const ogLocaleMap: Record<string, string> = {
+  en: 'en_IN',
+  hi: 'hi_IN',
+  ta: 'ta_IN',
+  te: 'te_IN',
+};
+const ogLocale = ogLocaleMap[lang] ?? 'en_IN';
+
+// When a page provides localized variants, emit the real hreflang set;
+// otherwise fall back to the single-language self-reference.
+const hreflangs =
+  alternates && alternates.length
+    ? alternates.map((a) => ({ hreflang: a.hreflang, href: new URL(a.href, site).href }))
+    : [
+        { hreflang: 'en', href: canonical },
+        { hreflang: 'x-default', href: canonical },
+      ];
 
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -65,9 +92,7 @@ const schemas = [websiteSchema, ...(breadcrumbSchema ? [breadcrumbSchema] : []),
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
 
-{/* hreflang-ready: Hindi versions land under /hi/ in a later phase */}
-<link rel="alternate" hreflang="en" href={canonical} />
-<link rel="alternate" hreflang="x-default" href={canonical} />
+{hreflangs.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
 
 <meta property="og:type" content={ogType} />
 <meta property="og:site_name" content="Kashi Dwar" />
@@ -75,7 +100,7 @@ const schemas = [websiteSchema, ...(breadcrumbSchema ? [breadcrumbSchema] : []),
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={ogImageUrl} />
-<meta property="og:locale" content="en_IN" />
+<meta property="og:locale" content={ogLocale} />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />

@@ -15,6 +15,17 @@ heroAlt: "Morning blue-hour view of boats and the riverfront cityscape at Varana
 relatedMandirs: ["kaal-bhairav", "kashi-vishwanath"]
 relatedFestivals: ["dev-deepawali", "ganga-mahotsav"]
 relatedGhats: ["scindia", "manikarnika", "dashashwamedh"]
+mapX: 1025
+mapY: 424
+mapCategories: ["ghat"]
+nameLocalized:
+  ta: "பஞ்சகங்கா காட்"
+  te: "పంచగంగా ఘాట్"
+shortDescriptor:
+  en: "Confluence of five rivers, crowned with sky-lamps"
+  hi: "पाँच नदियों का संगम, आकाशदीपों से सुशोभित"
+  ta: "ஐந்து ஆறுகளின் சங்கமம், வான் விளக்குகளால் அலங்காரம்"
+  te: "ఐదు నదుల సంగమం, ఆకాశ దీపాలతో అలంకృతం"
 ---
 
 Stand at Panchganga at dawn and you are, the tradition insists, standing at the meeting of five rivers. You can see only one — the Ganga, wide and pewter-coloured in the early light. The other four arrive invisibly: the Yamuna, the Saraswati, the Kirana and the Dhutpapa, subterranean and mythical, braiding themselves into the great river exactly here. Kashi has always preferred its geography metaphysical, and Panchganga is the most beautiful proof.

@@ -15,6 +15,17 @@ heroAlt: "Boats gathered on the Ganga beside the bathing ghats of Varanasi"
 relatedMandirs: ["kashi-vishwanath", "durga-kund"]
 relatedFestivals: ["mahashivratri"]
 relatedGhats: ["harishchandra", "chet-singh", "dashashwamedh"]
+mapX: 430
+mapY: 388
+mapCategories: ["ghat"]
+nameLocalized:
+  ta: "கேதார் காட்"
+  te: "కేదార్ ఘాట్"
+shortDescriptor:
+  en: "Kashi's own Kedarnath — a swayambhu Shiva linga"
+  hi: "काशी का अपना केदारनाथ — स्वयंभू शिवलिंग"
+  ta: "காசியின் சொந்த கேதார்நாத் — சுயம்பு சிவலிங்கம்"
+  te: "కాశీ సొంత కేదార్‌నాథ్ — స్వయంభూ శివలింగం"
 ---
 
 You will know Kedar Ghat before anyone tells you its name. From the river it announces itself in broad strokes of red-ochre and white — the candy-striped stairway and temple walls painted in the South Indian temple fashion, rising from the water like a flag planted by the Deccan in the middle of Uttar Pradesh. This is the most South Indian corner of Kashi, and one of its most quietly joyful.

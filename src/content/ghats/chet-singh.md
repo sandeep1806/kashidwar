@@ -15,6 +15,17 @@ heroAlt: "A wooden boat beside the stone steps of a quiet Varanasi ghat"
 relatedMandirs: ["sankat-mochan", "tulsi-manas"]
 relatedFestivals: ["nag-nathaiya", "dev-deepawali"]
 relatedGhats: ["assi", "tulsi", "harishchandra"]
+mapX: 260
+mapY: 410
+mapCategories: ["ghat"]
+nameLocalized:
+  ta: "சேத் சிங் காட்"
+  te: "చేత్ సింగ్ ఘాట్"
+shortDescriptor:
+  en: "Riverside fort of the rebel raja of Banaras"
+  hi: "बनारस के विद्रोही राजा का नदी-किनारे का किला"
+  ta: "பனாரஸின் கிளர்ச்சி ராஜாவின் ஆற்றங்கரைக் கோட்டை"
+  te: "బనారస్ తిరుగుబాటు రాజు నదీతీర కోట"
 ---
 
 Most of the riverfront tells stories of gods and moksha. Chet Singh Ghat tells one of gunpowder. The small fort that rises from these steps — round bastions, battlements, gates built for keeping people out rather than welcoming them in — was the stage for the most dramatic political episode in the ghats' history: the week in 1781 when Banaras rose against the East India Company and very nearly won.

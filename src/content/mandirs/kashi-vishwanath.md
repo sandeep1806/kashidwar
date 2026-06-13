@@ -17,6 +17,17 @@ heroAlt: "A temple spire above the Ganga at sunset in Varanasi"
 relatedGhats: ["lalita", "dashashwamedh", "manikarnika"]
 relatedFestivals: ["mahashivratri", "dev-deepawali"]
 relatedMandirs: ["annapurna", "kaal-bhairav"]
+mapX: 660
+mapY: 205
+mapCategories: ["mandir"]
+nameLocalized:
+  ta: "காசி விஸ்வநாத்"
+  te: "కాశీ విశ్వనాథ్"
+shortDescriptor:
+  en: "The golden Jyotirlinga — Shiva's own home"
+  hi: "स्वर्ण ज्योतिर्लिंग — शिव का अपना धाम"
+  ta: "தங்க ஜோதிர்லிங்கம் — சிவனின் சொந்த இல்லம்"
+  te: "బంగారు జ్యోతిర్లింగం — శివుని సొంత నివాసం"
 ---
 
 Everything else in this city is commentary; Vishwanath is the text. Kashi exists because Shiva, the tradition says, chose this patch of high ground above the Ganga as his permanent home — and the Kashi Vishwanath Mandir, one of the twelve Jyotirlingas where the lord blazed forth as a column of light, is the address itself. For a believing Hindu, darshan here, paired with a bath in the Ganga, is among the holiest acts a life can hold.

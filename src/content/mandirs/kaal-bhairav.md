@@ -17,6 +17,17 @@ heroAlt: "Deep blue early morning over the Ganga and the Varanasi skyline"
 relatedGhats: ["panchganga", "scindia", "manikarnika"]
 relatedFestivals: ["mahashivratri"]
 relatedMandirs: ["kashi-vishwanath", "annapurna"]
+mapX: 880
+mapY: 150
+mapCategories: ["mandir"]
+nameLocalized:
+  ta: "கால் பைரவ்"
+  te: "కాల్ భైరవ్"
+shortDescriptor:
+  en: "The fierce kotwal who guards Kashi"
+  hi: "काशी की रक्षा करने वाले उग्र कोतवाल"
+  ta: "காசியைக் காக்கும் கடுமையான கோத்வால்"
+  te: "కాశీని కాపాడే ఉగ్ర కొత్వాల్"
 ---
 
 Kashi has a government older than any in Delhi or Lucknow, and its police chief has held the post since before time was issued. **Kaal Bhairav** — Shiva in his terrifying aspect, black-faced, moustached like a lathi-wielding thanedar, riding a dog — is the **kotwal of Kashi**: the city's eternal magistrate, gatekeeper and enforcer. The tradition is precise on the bureaucracy of it: nobody may *reside* in Kashi without his permission, no pilgrimage here is complete without reporting to him, and even Kala, Time-as-Death himself, must apply through this office — hence the name, "the Bhairav of Time," or, more bluntly, "the one even Death fears."

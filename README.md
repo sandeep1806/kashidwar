@@ -90,4 +90,11 @@ public/
 - Images are pre-sized WebP with explicit `width`/`height` (no CLS) and lazy-load below the fold; detail-page heroes use `fetchpriority="high"`.
 - Note: the repo pins `vite@^7` as a devDependency so `@tailwindcss/vite` resolves against Astro 6's Vite rather than pulling its own Vite 8 (build breaks otherwise).
 
+## Languages (i18n) — `/`, `/hi`, `/ta`, `/te`
+
+- English lives at the root; Hindi/Tamil/Telugu are path-prefixed (`astro.config.mjs` → `i18n`, `prefixDefaultLocale: false`). UI strings: `src/i18n/ui.ts`; helpers: `src/i18n/utils.ts`.
+- **Currently localized:** the Kashi Darshan Map (`/map`, `/hi/map`, `/ta/map`, `/te/map`) and the site chrome (nav, footer, legend, place names, descriptors, titles/meta). The long-form ghat/mandir/festival articles are still English; map hotspots link to them.
+- ⚠️ **The hi/ta/te strings in `src/i18n/ui.ts`, `mapMarkers.ts` and the content frontmatter (`shortDescriptor`, `nameLocalized`) are machine-translated.** Have a native speaker review them before promoting the localized pages. Translating the long-form articles is the planned next step.
+- The map itself (`src/components/MapExperience.astro`) is data-driven: it places a hotspot for any ghat/mandir that has `mapX`/`mapY` in its frontmatter — adding more ghats needs only content, no code.
+
 हर हर महादेव 🙏

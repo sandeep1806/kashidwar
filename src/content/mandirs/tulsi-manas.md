@@ -17,6 +17,17 @@ heroAlt: "Rows of lighted diya lamps glowing in the dark"
 relatedGhats: ["tulsi", "assi"]
 relatedFestivals: ["nag-nathaiya"]
 relatedMandirs: ["durga-kund", "sankat-mochan"]
+mapX: 405
+mapY: 138
+mapCategories: ["mandir"]
+nameLocalized:
+  ta: "துளசி மானஸ்"
+  te: "తులసి మానస్"
+shortDescriptor:
+  en: "Marble temple of the Ramcharitmanas"
+  hi: "रामचरितमानस का संगमरमर मंदिर"
+  ta: "ராமசரிதமானஸின் பளிங்குக் கோயில்"
+  te: "రామచరితమానస్ పాలరాతి ఆలయం"
 ---
 
 Most temples enshrine a deity; this one enshrines a *book* — and in Banaras, that distinction collapses beautifully. The Tulsi Manas Mandir, a serene white-marble structure beside [Durga Kund](/mandir/durga-kund/), is dedicated to Rama, but its real devotion is to the **Ramcharitmanas**: the entire epic, all seven kandas, engraved verse by verse across its inner walls and corridors. You do not merely visit this temple. You *read* it — or watch grandmothers doing so, moving slowly along the marble with their lips forming chaupais they have known for seventy years.

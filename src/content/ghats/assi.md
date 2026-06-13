@@ -15,6 +15,17 @@ heroAlt: "Morning Ganga aarti being performed at Assi Ghat in Varanasi"
 relatedMandirs: ["sankat-mochan", "tulsi-manas", "durga-kund"]
 relatedFestivals: ["ganga-mahotsav", "dev-deepawali"]
 relatedGhats: ["tulsi", "chet-singh", "harishchandra"]
+mapX: 90
+mapY: 440
+mapCategories: ["ghat", "aarti"]
+nameLocalized:
+  ta: "அஸ்ஸி காட்"
+  te: "అస్సీ ఘాట్"
+shortDescriptor:
+  en: "Sunrise aarti where the Assi stream meets the Ganga"
+  hi: "जहाँ अस्सी नदी गंगा से मिलती है — सुबह की आरती"
+  ta: "அஸ்ஸி ஆறு கங்கையில் கலக்கும் இடம் — விடியல் ஆரத்தி"
+  te: "అస్సీ నది గంగలో కలిసే చోటు — ఉదయ ఆరతి"
 ---
 
 Every city has a neighbourhood where its old soul and young blood drink chai at the same tapri. In Kashi, that place is Assi Ghat — the southernmost of the great ghats, broad and open and sunlit, where the sacred geography of the city begins.

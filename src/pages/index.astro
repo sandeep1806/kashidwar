@@ -122,6 +122,76 @@ const festivals = (await getCollection('festivals')).sort((a, b) => a.data.order
     </div>
   </section>
 
+  {/* ---- Kashi Darshan Map teaser ---- */}
+  <section class="texture-silk relative overflow-hidden bg-indigo-deep py-20">
+    <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2">
+      <a
+        href="/map/"
+        aria-label="Open the interactive Kashi Darshan Map"
+        class="reveal card-diya group block overflow-hidden rounded-2xl border border-gold/20"
+      >
+        <svg viewBox="0 0 600 300" class="block w-full" role="img" aria-hidden="true">
+          <defs>
+            <linearGradient id="teaseSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#241a4e"></stop>
+              <stop offset="60%" stop-color="#6b3a52"></stop>
+              <stop offset="100%" stop-color="#e0863a"></stop>
+            </linearGradient>
+            <linearGradient id="teaseRiver" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2e5e73"></stop>
+              <stop offset="100%" stop-color="#0e1f30"></stop>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="600" height="300" fill="url(#teaseSky)"></rect>
+          <ellipse cx="300" cy="210" rx="180" ry="110" fill="rgba(255,225,150,0.28)"></ellipse>
+          <path
+            d="M0 150 h60 v-20 l10 -14 10 14 v20 h60 v-30 l10 -7 4 -16 5 16 10 7 v30 h70 v-22 h40 v-26 l12 -10 12 10 v26 h40 v22 h80 v-30 l10 -7 4 -16 5 16 10 7 v30 h70 V150 Z"
+            fill="#1c1536"
+            opacity="0.85"></path>
+          <path d="M0 205 Q 300 182 600 205 L600 300 L0 300 Z" fill="url(#teaseRiver)"></path>
+          {
+            [70, 150, 230, 300, 370, 450, 530].map((cx, i) => (
+              <circle
+                cx={cx}
+                cy={200 - Math.round(26 * Math.sin((Math.PI * i) / 6))}
+                r="5"
+                fill="#ecc55c"
+                style="filter:drop-shadow(0 0 5px rgba(236,197,92,.9))"
+              />
+            ))
+          }
+          <path
+            d="M300 174 L312 150 M300 174 L288 150"
+            stroke="rgba(236,197,92,0.5)"
+            stroke-width="2"
+            stroke-dasharray="3 5"></path>
+          <path d="M300 150 l-12 -28 l24 0 Z" fill="#f0c64a"></path>
+        </svg>
+      </a>
+
+      <div class="reveal reveal-delay-1">
+        <p class="text-xs font-semibold tracking-[0.3em] text-gold-light uppercase">New</p>
+        <p lang="hi" class="devanagari-gold mt-2 text-4xl sm:text-5xl">काशी दर्शन</p>
+        <h2 class="font-display mt-3 text-3xl font-semibold text-cream sm:text-4xl">
+          The Kashi Darshan Map
+        </h2>
+        <p class="mt-5 leading-relaxed text-cream/75">
+          The whole riverfront, drawn as one living crescent — every ghat, the great temples
+          and the Ganga between them. Hover any place to learn what it is, then open its full
+          guide. Now in English, Hindi, Tamil and Telugu.
+        </p>
+        <div class="mt-7">
+          <a
+            href="/map/"
+            class="rounded-full bg-saffron px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-saffron/30 transition hover:bg-gold"
+          >
+            Explore the interactive map →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <SilkDivider />
 
   {/* in-content ad slot — reserved space, no CLS */}
