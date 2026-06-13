@@ -17,6 +17,8 @@ interface Props {
 }
 const { lang } = Astro.props;
 const t = useTranslations(lang);
+const enHint = t('map.englishHint'); // '' for English; '(in English)' translated otherwise
+const guidesNote = t('map.guidesNote');
 
 type Spot = {
   id: string;
@@ -133,6 +135,14 @@ const itemList = {
       </nav>
     </div>
     <p class="mt-4 max-w-2xl leading-relaxed text-cream/70">{t('map.intro')}</p>
+    {
+      guidesNote && (
+        <p class="mt-3 inline-flex items-center gap-2 rounded-full border border-gold/25 bg-gold/5 px-4 py-1.5 text-sm text-gold-light/80">
+          <span aria-hidden="true">🌐</span>
+          {guidesNote}
+        </p>
+      )
+    }
 
     {/* legend filter chips */}
     <div class="mt-6 flex flex-wrap items-center gap-2">
@@ -236,7 +246,7 @@ const itemList = {
                     href={s.href}
                     class="hotspot"
                     data-cat={s.cats.join(' ')}
-                    aria-label={`${s.primary} — ${s.desc}`}
+                    aria-label={`${s.primary} — ${s.desc}${enHint ? ' ' + enHint : ''}`}
                   >
                     <circle class="focus-ring" cx={s.x} cy={s.y} r="20" fill="none" stroke="#ecc55c" stroke-width="2" />
                     <g class="marker">
@@ -280,6 +290,11 @@ const itemList = {
                         </div>
                         <div class={`tip-alt ${lang === 'hi' ? '' : 'devanagari'}`}>{altLine(s)}</div>
                         <div class="tip-desc">{s.desc}</div>
+                        {enHint && (
+                          <div class="tip-alt" style="margin-top:5px; color:rgba(236,197,92,.82)">
+                            → {t('map.openGuide')} {enHint}
+                          </div>
+                        )}
                       </div>
                     </foreignObject>
                   </a>
@@ -341,7 +356,9 @@ const itemList = {
                 </span>
                 <span class="block truncate text-xs text-cream/55">{s.desc}</span>
               </span>
-              <span class="shrink-0 text-xs text-gold/70">{t('map.openGuide')} →</span>
+              <span class="shrink-0 text-xs text-gold/70">
+                {t('map.openGuide')}{enHint ? ` ${enHint}` : ''} →
+              </span>
             </a>
           </li>
         ))

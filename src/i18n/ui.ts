@@ -47,6 +47,8 @@ export const ui = {
     'map.ganga': 'The Ganga',
     'map.hint': 'Drag to pan · pinch or scroll to zoom',
     'map.langLabel': 'Language',
+    'map.englishHint': '', // en: guides are already in English
+    'map.guidesNote': '',
   },
   hi: {
     'nav.ghats': 'घाट',
@@ -78,6 +80,8 @@ export const ui = {
     'map.ganga': 'गंगा',
     'map.hint': 'खींचें · ज़ूम के लिए पिंच या स्क्रॉल करें',
     'map.langLabel': 'भाषा',
+    'map.englishHint': '(अंग्रेज़ी में)',
+    'map.guidesNote': 'विस्तृत मार्गदर्शिकाएँ अभी अंग्रेज़ी में हैं — स्थानीय भाषाओं में जल्द आ रही हैं।',
   },
   ta: {
     'nav.ghats': 'காட்கள்',
@@ -109,6 +113,8 @@ export const ui = {
     'map.ganga': 'கங்கை',
     'map.hint': 'நகர்த்த இழுக்கவும் · பெரிதாக்க பிஞ்ச் அல்லது ஸ்க்ரோல் செய்யவும்',
     'map.langLabel': 'மொழி',
+    'map.englishHint': '(ஆங்கிலத்தில்)',
+    'map.guidesNote': 'முழு வழிகாட்டிகள் தற்போது ஆங்கிலத்தில் உள்ளன — மொழியாக்கம் விரைவில் வரும்.',
   },
   te: {
     'nav.ghats': 'ఘాట్‌లు',
@@ -140,6 +146,8 @@ export const ui = {
     'map.ganga': 'గంగా',
     'map.hint': 'జరపడానికి లాగండి · జూమ్ కోసం పించ్ లేదా స్క్రోల్ చేయండి',
     'map.langLabel': 'భాష',
+    'map.englishHint': '(ఆంగ్లంలో)',
+    'map.guidesNote': 'పూర్తి గైడ్‌లు ప్రస్తుతం ఆంగ్లంలో ఉన్నాయి — త్వరలో అనువాదం వస్తుంది.',
   },
 } as const;
 
