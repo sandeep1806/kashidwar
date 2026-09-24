@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "siteName": "काशी",
+    "title": "काशी — प्रकाश की नगरी",
+    "description": "काशी — घाट, मंदिर, सारनाथ और हर आस्था की कहानी। रात से भोर तक गंगा किनारे एक यात्रा।"
+  },
+  "hero": {
+    "title": "काशी — जो इतिहास से भी पुरानी है",
+    "titleSecondary": "Kashi — older than history itself",
+    "subtitle": "अंधेरे में एक दीया जलता है। घाट जागते हैं। गंगा बहती रहती है — जैसे सदियों से बहती आई है।",
+    "cta": "यात्रा आरंभ करें"
+  },
+  "nav": {
+    "places": "स्थान",
+    "faiths": "आस्थाएँ",
+    "projects": "परियोजनाएँ",
+    "festivals": "उत्सव",
+    "food": "स्वाद",
+    "itineraries": "यात्रा-योजना",
+    "practical": "जानकारी"
+  },
+  "common": {
+    "skip": "छोड़ें",
+    "skipToContent": "मुख्य सामग्री पर जाएँ",
+    "language": "भाषा",
+    "chooseLanguage": "भाषा चुनें",
+    "sound": "ध्वनि",
+    "soundOn": "ध्वनि चालू",
+    "soundOff": "ध्वनि बंद",
+    "close": "बंद करें",
+    "readMore": "और पढ़ें",
+    "bestTime": "उत्तम समय",
+    "sources": "स्रोत",
+    "lastVerified": "अंतिम सत्यापन"
+  },
+  "status": {
+    "completed": "पूर्ण",
+    "under_construction": "निर्माणाधीन",
+    "announced": "घोषित"
+  }
+}

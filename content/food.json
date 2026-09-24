@@ -1,0 +1,44 @@
+[
+  {
+    "id": "kachori-sabzi",
+    "name_en": "Kachori-Sabzi",
+    "name_hi": "कचौड़ी-सब्ज़ी",
+    "type": "breakfast",
+    "vegetarian": true,
+    "season": "All year, mornings",
+    "where": ["Kachori Gali, near Vishwanath Gali", "Ram Bhandar, Thatheri Bazaar", "Lanka crossing"],
+    "summary": "The city's breakfast: puffed kachoris fried in ghee, served on leaf plates with a thin spiced potato curry and a jalebi to finish. Eaten standing, early, before the lanes fill.",
+    "image": "/media/food/kachori-sabzi.jpg",
+    "sources": []
+  },
+  {
+    "id": "malaiyo",
+    "name_en": "Malaiyo",
+    "name_hi": "मलइयो",
+    "type": "sweet",
+    "vegetarian": true,
+    "season": "Winter only, roughly November to February",
+    "where": ["Chowk", "Thatheri Bazaar", "Godowlia"],
+    "summary": "Milk churned into a saffron foam and set overnight in the winter dew, then served in a clay kulhad with pistachio. It dissolves before it can be chewed, and it exists only while the nights stay cold.",
+    "image": "/media/food/malaiyo.jpg",
+    "sources": []
+  },
+  {
+    "id": "banarasi-paan",
+    "name_en": "Banarasi Paan",
+    "name_hi": "बनारसी पान",
+    "type": "paan",
+    "vegetarian": true,
+    "season": "All year",
+    "where": ["Keshav Tambul Bhandar, Lanka", "Chowk", "Any corner of the old city"],
+    "summary": "Betel leaf folded around lime, catechu, gulkand and spices, sweet or plain. Granted a Geographical Indication tag in 2023. Offered after meals, at weddings, and to anyone who lingers at a shop long enough.",
+    "image": "/media/food/banarasi-paan.jpg",
+    "sources": [
+      {
+        "title": "Press Information Bureau — GI tags for Banarasi products",
+        "url": "https://pib.gov.in/",
+        "accessed": "2026-09-24"
+      }
+    ]
+  }
+]

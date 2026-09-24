@@ -1,0 +1,84 @@
+[
+  {
+    "id": "kashi-vishwanath-corridor",
+    "name_en": "Shri Kashi Vishwanath Dham (Corridor)",
+    "name_hi": "श्री काशी विश्वनाथ धाम",
+    "faith": ["hindu"],
+    "type": "heritage",
+    "lat": 25.3106,
+    "lng": 83.0116,
+    "summary": "A 5-lakh-square-foot precinct that links the Vishwanath temple to the Ganga at Lalita Ghat, with a pilgrim facilitation centre, museum, viewing gallery and food court. Inaugurated 13 December 2021.",
+    "bestTime": "Early morning or after the evening aarti",
+    "image": "/media/projects/kashi-vishwanath-corridor.jpg",
+    "status": "completed",
+    "agency": "Shri Kashi Vishwanath Special Area Development Board, Government of Uttar Pradesh",
+    "timeline": "Foundation March 2019 · Inaugurated 13 December 2021 · Phase 2 expansion announced",
+    "verified": true,
+    "lastVerified": "2026-09-24",
+    "sources": [
+      {
+        "title": "Outlook India — PM Modi to inaugurate Kashi Vishwanath Corridor",
+        "url": "https://www.outlookindia.com/national/india-news-pm-modi-to-inaugurate-kashi-vishwanath-corridor-project-this-month-news-403579",
+        "accessed": "2026-09-24"
+      },
+      {
+        "title": "BYJU'S — What is Kashi Vishwanath Corridor Project?",
+        "url": "https://byjus.com/current-affairs/kashi-vishwanath-temple-corridor/",
+        "accessed": "2026-09-24"
+      }
+    ]
+  },
+  {
+    "id": "namo-ghat",
+    "name_en": "Namo Ghat (Khidkiya Ghat redevelopment)",
+    "name_hi": "नमो घाट",
+    "faith": [],
+    "type": "tourism",
+    "lat": 25.3253,
+    "lng": 83.0343,
+    "summary": "The old Khidkiya Ghat rebuilt across 81,000 sq m with an open-air theatre, floating jetty and bathing areas, a helipad and step-free access — the first ghat in Varanasi accessible to differently-abled visitors. Inaugurated 15 November 2024.",
+    "bestTime": "Sunset, and Dev Deepawali evening",
+    "image": "/media/projects/namo-ghat.jpg",
+    "status": "completed",
+    "agency": "Varanasi Smart City Ltd with Indian Oil Foundation",
+    "timeline": "Phase 1 opened 2022 · Full inauguration 15 November 2024 · Cost ₹91.06 crore",
+    "verified": true,
+    "lastVerified": "2026-09-24",
+    "sources": [
+      {
+        "title": "ThePrint — Vice President Dhankhar to inaugurate Namo Ghat in Varanasi",
+        "url": "https://theprint.in/india/vice-president-dhankhar-to-inaugurate-namo-ghat-in-varanasi-on-friday/2356944/",
+        "accessed": "2026-09-24"
+      },
+      {
+        "title": "Kashi Official Web Portal — Namo Ghat",
+        "url": "https://kashi.gov.in/project-details/namo-ghat",
+        "accessed": "2026-09-24"
+      }
+    ]
+  },
+  {
+    "id": "varanasi-ropeway",
+    "name_en": "Varanasi Urban Ropeway (Cantt – Godowlia)",
+    "name_hi": "वाराणसी रोपवे (कैंट – गोदौलिया)",
+    "faith": [],
+    "type": "transport",
+    "lat": 25.3282,
+    "lng": 82.9866,
+    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple. About 150 ten-seat cabins are planned, with a trip time of roughly 16 minutes.",
+    "bestTime": "Not yet open to the public",
+    "image": "/media/projects/varanasi-ropeway.jpg",
+    "status": "under_construction",
+    "agency": "National Highways Logistics Management Ltd (NHLML) · built by Vishwa Samudra Engineering",
+    "timeline": "Foundation March 2023 · Trial runs 2025 · Opening targeted late 2026 (source: Wikipedia, to be re-verified in Phase 5)",
+    "verified": true,
+    "lastVerified": "2026-09-24",
+    "sources": [
+      {
+        "title": "Wikipedia — Kashi ropeway",
+        "url": "https://en.wikipedia.org/wiki/Kashi_ropeway",
+        "accessed": "2026-09-24"
+      }
+    ]
+  }
+]

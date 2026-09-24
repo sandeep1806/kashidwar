@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "siteName": "Kashi",
+    "title": "Kashi — The City of Light",
+    "description": "Kashi — ghats, temples, Sarnath and the story of every faith. One journey from night to dawn on the Ganga."
+  },
+  "hero": {
+    "title": "Kashi — older than history itself",
+    "titleSecondary": "काशी — जो इतिहास से भी पुरानी है",
+    "subtitle": "A single lamp is lit in the dark. The ghats wake. The Ganga keeps flowing, the way it has for longer than anyone remembers.",
+    "cta": "Begin the journey"
+  },
+  "nav": {
+    "places": "Places",
+    "faiths": "Faiths",
+    "projects": "Projects",
+    "festivals": "Festivals",
+    "food": "Food",
+    "itineraries": "Itineraries",
+    "practical": "Practical"
+  },
+  "common": {
+    "skip": "Skip",
+    "skipToContent": "Skip to content",
+    "language": "Language",
+    "chooseLanguage": "Choose language",
+    "sound": "Sound",
+    "soundOn": "Sound on",
+    "soundOff": "Sound off",
+    "close": "Close",
+    "readMore": "Read more",
+    "bestTime": "Best time",
+    "sources": "Sources",
+    "lastVerified": "Last verified"
+  },
+  "status": {
+    "completed": "Completed",
+    "under_construction": "Under construction",
+    "announced": "Announced"
+  }
+}

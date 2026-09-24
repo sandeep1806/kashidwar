@@ -1,0 +1,56 @@
+[
+  {
+    "id": "dev-deepawali",
+    "name_en": "Dev Deepawali",
+    "name_hi": "देव दीपावली",
+    "faith": ["hindu"],
+    "when": "Kartik Purnima, fifteen days after Diwali",
+    "months": [11],
+    "where": "All the ghats, Assi to Rajghat",
+    "summary": "The night the gods are said to descend to bathe in the Ganga. More than a million earthen lamps line every step of every ghat, and the river carries thousands more. The Ganga Mahotsav concludes the same evening.",
+    "image": "/media/festivals/dev-deepawali.jpg",
+    "sources": [
+      {
+        "title": "Uttar Pradesh Tourism — Dev Deepawali",
+        "url": "https://uptourism.gov.in/",
+        "accessed": "2026-09-24"
+      }
+    ]
+  },
+  {
+    "id": "maha-shivratri",
+    "name_en": "Maha Shivratri",
+    "name_hi": "महाशिवरात्रि",
+    "faith": ["hindu"],
+    "when": "Phalguna Krishna Chaturdashi",
+    "months": [2, 3],
+    "where": "Kashi Vishwanath Temple and the Shiv Baraat route through the old city",
+    "summary": "Shiva's night in Shiva's own city. The temple stays open through the night for darshan, and the next day the Shiv Baraat, the wedding procession of Shiva, winds through the old city with music, ash-smeared ascetics and dancing crowds.",
+    "image": "/media/festivals/maha-shivratri.jpg",
+    "sources": [
+      {
+        "title": "Shri Kashi Vishwanath Temple Trust",
+        "url": "https://shrikashivishwanath.org/",
+        "accessed": "2026-09-24"
+      }
+    ]
+  },
+  {
+    "id": "ganga-mahotsav",
+    "name_en": "Ganga Mahotsav",
+    "name_hi": "गंगा महोत्सव",
+    "faith": ["secular"],
+    "when": "Five days ending on Kartik Purnima",
+    "months": [11],
+    "where": "Rajendra Prasad Ghat and neighbouring ghats",
+    "summary": "A five-day festival of classical music and dance on the riverfront, organised by Uttar Pradesh Tourism, with crafts, boat races and food stalls. It ends with Dev Deepawali.",
+    "image": "/media/festivals/ganga-mahotsav.jpg",
+    "sources": [
+      {
+        "title": "Uttar Pradesh Tourism — Ganga Mahotsav",
+        "url": "https://uptourism.gov.in/",
+        "accessed": "2026-09-24"
+      }
+    ]
+  }
+]

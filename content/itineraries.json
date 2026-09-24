@@ -1,0 +1,96 @@
+[
+  {
+    "id": "one-day",
+    "days": 1,
+    "title_en": "One dawn to one dusk",
+    "title_hi": "एक भोर से एक साँझ तक",
+    "summary": "The river at sunrise, the temple, the lanes, and the lamps at night.",
+    "plan": [
+      {
+        "day": 1,
+        "theme": "The river, the temple, the lanes",
+        "stops": [
+          { "time": "05:30", "placeId": "assi-ghat", "title": "Subah-e-Banaras at Assi Ghat", "note": "Morning aarti, ragas and yoga as the sun rises over the far bank.", "marker": "sunrise" },
+          { "time": "06:30", "title": "Boat from Assi to Dashashwamedh", "note": "An hour on the water past most of the main ghats, including Manikarnika." },
+          { "time": "08:00", "placeId": "kashi-vishwanath", "title": "Kashi Vishwanath darshan", "note": "Enter through the corridor from Lalita Ghat." },
+          { "time": "09:30", "title": "Kachori-sabzi breakfast", "note": "Kachori Gali is a short walk from the temple." },
+          { "time": "11:00", "title": "Walk the galis", "note": "Vishwanath Gali, Thatheri Bazaar and the brass and silk lanes toward Chowk." },
+          { "time": "16:30", "title": "Rest at the ghats", "note": "Tea on the steps as the light softens." },
+          { "time": "18:00", "placeId": "dashashwamedh-ghat", "title": "Ganga Aarti", "note": "Arrive early for a place on the steps or a boat.", "marker": "sunset" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "two-days",
+    "days": 2,
+    "title_en": "Kashi and Sarnath",
+    "title_hi": "काशी और सारनाथ",
+    "summary": "Day one on the river; day two where the Buddha first taught, and the south of the city.",
+    "plan": [
+      {
+        "day": 1,
+        "theme": "The river, the temple, the lanes",
+        "stops": [
+          { "time": "05:30", "placeId": "assi-ghat", "title": "Subah-e-Banaras at Assi Ghat", "note": "Morning aarti as the sun rises.", "marker": "sunrise" },
+          { "time": "06:30", "title": "Boat to Dashashwamedh", "note": "Past the ghats, including Manikarnika." },
+          { "time": "08:00", "placeId": "kashi-vishwanath", "title": "Kashi Vishwanath darshan", "note": "Through the corridor." },
+          { "time": "10:00", "title": "Breakfast and the galis", "note": "Kachori-sabzi, then Thatheri Bazaar and Chowk." },
+          { "time": "18:00", "placeId": "dashashwamedh-ghat", "title": "Ganga Aarti", "note": "From the steps or a boat.", "marker": "sunset" }
+        ]
+      },
+      {
+        "day": 2,
+        "theme": "Sarnath and the south",
+        "stops": [
+          { "time": "07:00", "placeId": "sarnath", "title": "Sarnath", "note": "Dhamek Stupa, the excavated monasteries, Mulagandha Kuti Vihar and the museum with the Ashokan lion capital." },
+          { "time": "12:30", "title": "Lunch back in the city", "note": "Lanka or Assi." },
+          { "time": "15:00", "placeId": "bhu-new-vishwanath", "title": "BHU campus and the New Vishwanath Temple", "note": "Wide avenues, the Bharat Kala Bhavan museum." },
+          { "time": "17:00", "placeId": "sankat-mochan", "title": "Sankat Mochan Hanuman Temple", "note": "Tuesday and Saturday evenings are the busiest." },
+          { "time": "18:30", "placeId": "durga-kund", "title": "Durga Kund Temple", "note": "The red temple by its tank, lit for the evening.", "marker": "sunset" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "three-days",
+    "days": 3,
+    "title_en": "Every faith of Kashi",
+    "title_hi": "काशी की हर आस्था",
+    "summary": "Two days as above, then a third across the city's Buddhist, Jain, Bhakti, Sikh, Islamic and Christian sites, ending at Namo Ghat.",
+    "plan": [
+      {
+        "day": 1,
+        "theme": "The river, the temple, the lanes",
+        "stops": [
+          { "time": "05:30", "placeId": "assi-ghat", "title": "Subah-e-Banaras at Assi Ghat", "note": "Morning aarti as the sun rises.", "marker": "sunrise" },
+          { "time": "06:30", "title": "Boat to Dashashwamedh", "note": "Past the ghats." },
+          { "time": "08:00", "placeId": "kashi-vishwanath", "title": "Kashi Vishwanath darshan", "note": "Through the corridor." },
+          { "time": "18:00", "placeId": "dashashwamedh-ghat", "title": "Ganga Aarti", "note": "From the steps or a boat.", "marker": "sunset" }
+        ]
+      },
+      {
+        "day": 2,
+        "theme": "Sarnath and the south",
+        "stops": [
+          { "time": "07:00", "placeId": "sarnath", "title": "Sarnath", "note": "Dhamek Stupa, Mulagandha Kuti Vihar, the museum." },
+          { "time": "15:00", "placeId": "bhu-new-vishwanath", "title": "BHU and the New Vishwanath Temple", "note": "Campus and museum." },
+          { "time": "17:30", "placeId": "sankat-mochan", "title": "Sankat Mochan", "note": "Evening aarti.", "marker": "sunset" }
+        ]
+      },
+      {
+        "day": 3,
+        "theme": "One Kashi, every faith",
+        "stops": [
+          { "time": "08:00", "placeId": "bhelupur-jain", "title": "Bhelupur Jain Temple", "note": "Birthplace of Parshvanath, the 23rd Tirthankara.", "marker": "sunrise" },
+          { "time": "09:30", "placeId": "ravidas-janmasthan", "title": "Shri Guru Ravidas Janmasthan, Seer Govardhanpur", "note": "The birthplace temple of the Bhakti saint." },
+          { "time": "11:30", "placeId": "kabir-math", "title": "Kabir Chaura Math", "note": "Where Kabir lived and taught." },
+          { "time": "13:00", "placeId": "gurudwara-guru-bagh", "title": "Gurudwara Guru Bagh", "note": "Associated with Guru Tegh Bahadur's stay in Kashi; langar at midday." },
+          { "time": "15:00", "placeId": "alamgir-mosque", "title": "Alamgir Mosque and Panchganga Ghat", "note": "The mosque above the ghat where five rivers are said to meet." },
+          { "time": "16:30", "placeId": "st-marys-church", "title": "St. Mary's Church, Cantonment", "note": "One of the oldest churches in north India, from 1810." },
+          { "time": "17:45", "placeId": "namo-ghat", "title": "Namo Ghat at sunset", "note": "The new open riverfront at the northern end of the city.", "marker": "sunset" }
+        ]
+      }
+    ]
+  }
+]

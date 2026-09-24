@@ -1,0 +1,71 @@
+[
+  {
+    "id": "kashi-vishwanath",
+    "name_en": "Kashi Vishwanath Temple",
+    "name_hi": "काशी विश्वनाथ मंदिर",
+    "faith": ["hindu"],
+    "type": "temple",
+    "lat": 25.3109,
+    "lng": 83.0107,
+    "summary": "The jyotirlinga at the heart of the city. The present temple was built by Ahilyabai Holkar in 1780; its gold-plated spire was gifted by Maharaja Ranjit Singh in 1835. Since 2021 the corridor opens the temple directly to the river at Lalita Ghat.",
+    "bestTime": "Mangala Aarti before dawn (around 03:00), or after the evening Sapta Rishi Aarti",
+    "image": "/media/places/kashi-vishwanath.jpg",
+    "sources": [
+      {
+        "title": "Shri Kashi Vishwanath Temple Trust",
+        "url": "https://shrikashivishwanath.org/",
+        "accessed": "2026-09-24"
+      }
+    ],
+    "tips": [
+      "Phones, bags and leather are not allowed inside; lockers are available near the corridor gates.",
+      "Queues are shortest in the first hour after opening."
+    ]
+  },
+  {
+    "id": "dashashwamedh-ghat",
+    "name_en": "Dashashwamedh Ghat",
+    "name_hi": "दशाश्वमेध घाट",
+    "faith": ["hindu"],
+    "type": "ghat",
+    "lat": 25.3068,
+    "lng": 83.0104,
+    "summary": "The ghat where the city gathers. Named for the ten-horse sacrifice Brahma is said to have performed here, it is the stage for the evening Ganga Aarti, when seven priests raise tiered lamps in unison to the sound of conch and bell.",
+    "bestTime": "Evening Aarti begins at sunset (around 18:00 in winter, 19:00 in summer); arrive 45 minutes early",
+    "image": "/media/places/dashashwamedh-ghat.jpg",
+    "sources": [
+      {
+        "title": "Varanasi District — Tourist Places",
+        "url": "https://varanasi.nic.in/tourist-places/",
+        "accessed": "2026-09-24"
+      }
+    ],
+    "tips": [
+      "Watching from a boat on the water gives the fullest view of the lamps.",
+      "The ghat steps fill quickly; the upper platforms near Man Mandir stay calmer."
+    ]
+  },
+  {
+    "id": "assi-ghat",
+    "name_en": "Assi Ghat",
+    "name_hi": "अस्सी घाट",
+    "faith": ["hindu"],
+    "type": "ghat",
+    "lat": 25.2883,
+    "lng": 83.0064,
+    "summary": "The southernmost ghat, where the Assi stream once met the Ganga. Every dawn the Subah-e-Banaras aarti, yoga and classical music greet the sun. Tulsidas is said to have written parts of the Ramcharitmanas nearby.",
+    "bestTime": "Sunrise, for Subah-e-Banaras (starts about 45 minutes before dawn)",
+    "image": "/media/places/assi-ghat.jpg",
+    "sources": [
+      {
+        "title": "Subah-e-Banaras",
+        "url": "https://subahebanaras.in/",
+        "accessed": "2026-09-24"
+      }
+    ],
+    "tips": [
+      "Boats from Assi to Dashashwamedh at sunrise pass most of the main ghats in about an hour.",
+      "The lanes behind the ghat have the city's most relaxed cafés."
+    ]
+  }
+]
