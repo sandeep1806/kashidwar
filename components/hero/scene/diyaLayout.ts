@@ -1,0 +1,49 @@
+/** Deterministic diya layout + the shared wave function (JS mirror of the GLSL). */
+export interface DiyaSpec {
+  x: number;
+  z: number;
+  seed: number;
+  scale: number;
+}
+
+function mulberry32(a: number) {
+  return () => {
+    a |= 0;
+    a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+export function makeDiyas(count: number, seed = 108): DiyaSpec[] {
+  const rnd = mulberry32(seed);
+  const out: DiyaSpec[] = [];
+  let guard = 0;
+  while (out.length < count && guard++ < count * 40) {
+    const x = (rnd() * 2 - 1) * 11;
+    const z = -10 + rnd() * 13; // -10 … 3
+    // Keep a quieter lane down the middle so the title stays legible.
+    if (Math.abs(x) < 2.4 && z > -4 && rnd() < 0.75) continue;
+    if (out.some((d) => Math.hypot(d.x - x, d.z - z) < 0.75)) continue;
+    out.push({ x, z, seed: rnd() * 1000, scale: 0.75 + rnd() * 0.55 });
+  }
+  return out;
+}
+
+/** Must match `wave()` in Water.tsx exactly. */
+export function waveHeight(x: number, z: number, t: number): number {
+  return (
+    Math.sin(x * 0.8 + t * 0.9) * 0.06 +
+    Math.sin(z * 1.3 - t * 0.7) * 0.05 +
+    Math.sin((x + z) * 0.5 + t * 0.5) * 0.04
+  );
+}
+
+export const WAVE_GLSL = /* glsl */ `
+float wave(vec2 p, float t) {
+  return sin(p.x * 0.8 + t * 0.9) * 0.06
+       + sin(p.y * 1.3 - t * 0.7) * 0.05
+       + sin((p.x + p.y) * 0.5 + t * 0.5) * 0.04;
+}
+`;

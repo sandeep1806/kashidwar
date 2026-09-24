@@ -26,30 +26,41 @@ import {
 } from "next/font/google";
 import { LOCALES, type Locale, type Script } from "./i18n/locales";
 
+/*
+ * No font is preloaded. Preloaded woff2 files compete with the stylesheet for
+ * bandwidth on slow mobile links and pushed FCP/LCP past 2 s in Lighthouse.
+ * With `display: swap` the H1 paints instantly in the size-adjusted fallback,
+ * the web fonts arrive under the page loader, and repeat visits hit the cache.
+ */
 export const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["600", "700"],
-  style: ["normal", "italic"],
   variable: "--font-display-latin",
   display: "swap",
+  preload: false,
 });
 
 export const inter = Inter({
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
   variable: "--font-body-latin",
   display: "swap",
+  preload: false,
 });
 
 export const tiroDevanagari = Tiro_Devanagari_Hindi({
-  subsets: ["devanagari", "latin"],
+  subsets: ["devanagari"],
   weight: "400",
   variable: "--font-display-deva",
   display: "swap",
+  preload: false,
 });
 
 // --- Regional body/display faces (one per script) -----------------------------
+// Static 400 only: the variable file is ~120 KB and sits on the LCP path for
+// every Devanagari locale. Headings use Tiro; body needs one weight.
 const notoDevanagari = Noto_Sans_Devanagari({
   subsets: ["devanagari", "latin"],
+  weight: "400",
   variable: "--font-regional",
   display: "swap",
   preload: false,

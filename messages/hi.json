@@ -31,11 +31,17 @@
     "readMore": "और पढ़ें",
     "bestTime": "उत्तम समय",
     "sources": "स्रोत",
-    "lastVerified": "अंतिम सत्यापन"
+    "lastVerified": "अंतिम सत्यापन",
+    "loading": "दीया जल रहा है…"
   },
   "status": {
     "completed": "पूर्ण",
     "under_construction": "निर्माणाधीन",
     "announced": "घोषित"
+  },
+  "journey": {
+    "title": "एक रात, एक भोर",
+    "titleSecondary": "One night, one dawn",
+    "text": "यहाँ से हर खंड प्रकाश की ओर एक कदम है — अस्सी की भोर से दशाश्वमेध की आरती तक।"
   }
 }

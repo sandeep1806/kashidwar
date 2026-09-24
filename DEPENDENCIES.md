@@ -37,7 +37,13 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 - `npm audit` — 0 vulnerabilities (2026-09-24).
 - `npm outdated` after resolution — only `typescript` (7.x) and `@types/node` (26.x), both intentionally held.
 
+## Phase 2 check · 2026-09-24
+- `npm outdated`: unchanged (typescript 7.x and @types/node 26.x intentionally held). `npm audit`: 0 vulnerabilities.
+- No new project dependencies. Lighthouse 13.5.0 and puppeteer-core were installed in the session scratchpad (not in `package.json`) for verification.
+- `@react-three/fiber` 9.8.0 logs `THREE.Clock … deprecated` against three 0.186; upstream issue, harmless.
+
 ## Deliberately not installed
+- `@react-three/postprocessing` — bloom is faked with additive billboards (see PROGRESS.md Phase 2).
 
 - No marker-cluster plugin yet. DESIGN.md asks for clustering at low zoom; Phase 4 will either implement a small grid cluster in-house or ask before adding `leaflet.markercluster`.
 - No Lottie runtime yet. If Phase 2's mobile hero fallback needs Lottie, it will be raised then; a static image/video fallback needs nothing extra.

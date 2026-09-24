@@ -1,11 +1,20 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import SmoothScroll from "@/components/motion/SmoothScroll";
+import PageLoader from "@/components/ui/PageLoader";
 import { fontClassesFor } from "@/lib/fonts";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { routing } from "@/lib/i18n/routing";
 import "../globals.css";
+
+/**
+ * Runs before the loader markup is parsed: if this session already saw the
+ * diya ignite, hide the overlay instantly so repeat navigations don't flash.
+ */
+const LOADER_SNIPPET =
+  "try{if(sessionStorage.getItem('kashi:loader')==='1')document.documentElement.setAttribute('data-loader','done')}catch(e){}";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -31,10 +40,10 @@ export default async function LocaleLayout({
 }: LayoutProps<"/[locale]">) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
-  // Enables static rendering for this locale segment.
   setRequestLocale(locale);
 
   const meta = LOCALES[locale as Locale];
+  const t = await getTranslations("common");
 
   return (
     <html
@@ -42,9 +51,26 @@ export default async function LocaleLayout({
       dir="ltr"
       data-script={meta.script}
       className={`${fontClassesFor(locale as Locale)} h-full`}
+      suppressHydrationWarning
     >
       <body className="min-h-dvh flex flex-col font-body text-kashi-ash">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <script dangerouslySetInnerHTML={{ __html: LOADER_SNIPPET }} />
+        <a
+          href="#content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[110] focus:rounded-kashi focus:bg-kashi-saffron focus:px-4 focus:py-2 focus:text-kashi-night"
+        >
+          {t("skipToContent")}
+        </a>
+        {/*
+          No NextIntlClientProvider yet: every component that renders copy is a
+          Server Component, and client components receive strings as props.
+          Add the provider with a scoped `messages` subset when a client
+          component genuinely needs useTranslations.
+        */}
+        <SmoothScroll>
+          <PageLoader labels={{ loading: t("loading"), skip: t("skip") }} />
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );

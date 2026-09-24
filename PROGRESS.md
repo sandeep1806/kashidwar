@@ -34,3 +34,39 @@
 - Image paths in content point to `/media/...` files that do not exist yet; Phase 4+ adds optimized assets.
 - Clustering for the Leaflet map needs a decision in Phase 4 (in-house vs `leaflet.markercluster`).
 - Generated `AGENTS.md` from Next 16 is kept (next dev re-creates it); `CLAUDE.md` references it on line 1.
+
+## Phase 2 — Hero + page loader · 2026-09-24 · ✅ (CHECKPOINT)
+
+**Did**
+- **Page loader** (`components/ui/PageLoader.tsx`): black → diya ignites (0.1 s) → gold glow (0.35 s) → indigo light spreads (0.7 s) → overlay fades (1.3–1.75 s). Pure CSS keyframes so it starts on first paint with zero JS; skip button; once per session via `sessionStorage` + an inline script that hides it before paint on repeat visits; reduced motion → single 300 ms fade.
+- **Hero** (`components/hero/`): `Hero.tsx` (server) renders the bilingual H1, subtitle and saffron CTA immediately. `HeroFallback.tsx` is a server-rendered SVG dawn scene (sky, hazy far bank, 18 diyas with reflections) that is the background everywhere. `HeroScene.tsx` probes the device after hydration and, only on capable desktops, `next/dynamic`-loads `HeroCanvas.tsx` (R3F) which fades in over the SVG.
+- **R3F scene** (`components/hero/scene/`): custom water shader (vertex ripples + per-lamp light streaks toward the camera, alpha fade to the sky), 54 instanced clay diyas that bob on the same wave function, instanced flame + glow billboards with per-instance flicker, drei `Sparkles` embers, `PerformanceMonitor` that drops DPR under load, window-pointer camera parallax. Render loop pauses when the hero leaves the viewport. Five draw calls.
+- **Motion provider** (`components/motion/SmoothScroll.tsx`): loads GSAP (+ScrollTrigger +SplitText) and Lenis via dynamic import at idle time, drives Lenis from `gsap.ticker`, exposes `useLenis()` / `useGsap()` through `useSyncExternalStore`. Lenis `anchors: true` makes the CTA's `#journey` link smooth-scroll with no extra code. Skipped entirely under reduced motion.
+- **Device gate** (`lib/device.ts`): reduced motion, touch/narrow, ≤4 cores, ≤4 GB, data-saver, no WebGL2 or software renderer → fallback. QA override `?hero=full|fallback`.
+- SVG favicon (`app/icon.svg`) replaces the 26 KB `.ico`. Skip-to-content link.
+
+**Verification (production build, Lighthouse 13.5 mobile preset, Chrome 154, best of 2 runs each)**
+| Build | Perf | LCP (sim) | FCP | TBT | Notes |
+|---|---|---|---|---|---|
+| first working build | 77 | 4.5 s | 1.8 s | 240 ms | 5 preloaded woff2 (270 KB) + GSAP in initial JS |
+| fonts trimmed, GSAP lazy, CSS loader | 86 | 3.5 s | 2.0 s | 220 ms | |
+| static Noto 400, no font preload | 89 | 3.2 s | 2.0 s | 180 ms | |
+| **no client intl provider (final)** | **93 / 92** | **2.3 s** | 2.0 s | 190–220 ms | A11y 100 · BP 100 · SEO 91 (robots.txt → Phase 9) |
+- Observed (unthrottled) FCP = LCP = 0.23 s; LCP element is the H1. CLS 0. Zero console errors in all modes; the only console message is `THREE.Clock … deprecated` emitted by @react-three/fiber 9.8 itself.
+- Initial JS 169 KB gz (react-dom 69, Next runtime 46 + 38, app 7). three/R3F/drei load only on the desktop 3D path (≈240 KB gz async chunk).
+- Headless checks (puppeteer-core + system Chrome, scratchpad harness): 3D path renders a 1.5× canvas and fades in; mobile emulation never requests the 3D chunk; `prefers-reduced-motion` → no Lenis, no canvas, loader = 300 ms fade, hero text visible immediately; loader overlay verified on top with black background at 700 ms.
+- `npm run build` ✅ · `npm run lint` ✅ · `tsc --noEmit` ✅.
+
+**Decisions**
+- **No post-processing package.** "Soft bloom" is faked with additive glow billboards; `@react-three/postprocessing` is not in CLAUDE.md's list and a real bloom pass costs a full-screen render on every frame.
+- **Fonts are not preloaded.** Preloaded woff2 competed with the stylesheet for bandwidth on slow 4G; with `display: swap` the H1 paints in the size-adjusted fallback and the swap happens under the loader. Noto Sans Devanagari body is static 400 (≈50 KB) instead of the 121 KB variable file. Display stack lists Cormorant before Tiro so punctuation such as "—" doesn't pull a second Latin subset.
+- **GSAP and Lenis load after hydration at idle** (≤1.5 s), so they never sit in the LCP/TBT window. Components animate via `useGsap()`; the hook returns null until the bundle is ready.
+- **No `NextIntlClientProvider` in the layout for now.** All copy renders in Server Components; client components receive strings as props. This kept use-intl and the merged message bundle out of the initial JS. Add the provider with a scoped `messages` subset the first time a client component genuinely needs `useTranslations`.
+- **React Compiler lint** (`react-hooks/set-state-in-effect`, `immutability`) is enforced by eslint-config-next 16. Three-js materials are declared in JSX and mutated through refs in `useFrame`; stores replace setState-in-effect.
+- **Tailwind gotcha:** a class glued to a template interpolation (`` `bg-black${x}` ``) is invisible to the scanner and silently missing from the CSS. Keep classes in plain string literals.
+
+**Needs review at this checkpoint**
+- Look at the 3D hero on a real GPU (headless SwiftShader only proves it renders). Lamp density, flame size and the water's blue may want tuning.
+- The camera parallax range (±0.7 units) and Lenis `lerp: 0.1` feel are judgment calls.
+- Loader pacing: 1.75 s total; the "light spreads" beat is an indigo radial scaling from centre.
+- Lighthouse variance is ±2 points between runs; 90+ is met but not with a wide margin. Phase 9 should analyse the two anonymous Next runtime chunks (46 KB + 38 KB gz).

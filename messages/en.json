@@ -31,11 +31,17 @@
     "readMore": "Read more",
     "bestTime": "Best time",
     "sources": "Sources",
-    "lastVerified": "Last verified"
+    "lastVerified": "Last verified",
+    "loading": "Lighting the lamp…"
   },
   "status": {
     "completed": "Completed",
     "under_construction": "Under construction",
     "announced": "Announced"
+  },
+  "journey": {
+    "title": "One night, one dawn",
+    "titleSecondary": "एक रात, एक भोर",
+    "text": "From here, every section is a step toward light, from the first bells at Assi to the flames of the Dashashwamedh aarti."
   }
 }
