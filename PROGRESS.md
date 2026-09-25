@@ -164,3 +164,20 @@ Loader 2.2 s (DESIGN.md said ≤ 1.8 s; overridden by checkpoint feedback), wate
 **Verification**: build ✅ lint ✅ tsc ✅; Puppeteer desktop + mobile: 7 festival cards / 12 month cells, 8 food cards, tabs switch by click and ArrowRight, 3 days rendered on the 3-day plan with sunrise/sunset markers, 4 practical cards + 6 etiquette lines; console clean. Lighthouse in the summary below.
 
 **Needs review**: festival "when" rules and the practical travel facts (flight cities, Vande Bharat timing, distances) are from general knowledge and should be spot-checked by someone local; the thandai entry mentions licensed bhang counters factually.
+
+## Phase 7 — Languages · 2026-09-25 · ✅
+
+**Did**
+- `messages/` now has all 13 locales (hi, en, ta, te, kn, ml, bn, or, as, mr, gu, pa, sa) with an identical 190-key structure (parity script passes; `request.ts` deep-merges each over English as a safety net).
+- Content prose translated into **Hindi** for every entry (22 places, 14 projects, 7 festivals, 8 dishes, all itinerary stops) via `i18n.hi` blocks in `content/*.json`; `lib/content.ts → localize()/localizeItinerary()` applies them, English is the fallback for the other 11 locales.
+- Place / festival / food names: original Devanagari + Latin transliteration in every non-Devanagari locale.
+- **Language switcher** (`components/ui/LanguageSwitcher.tsx`): fixed top-right, script sample + native name for each of the 13 languages, `role="menu"`, arrow/Home/End/Esc keyboard support, focus returns to the trigger, locale-aware links keep the current page.
+- Fonts per locale were already wired in Phase 1 (`lib/fonts.ts`): the matching Noto Sans face is attached to `<html>` only for that locale's script.
+- `TRANSLATION_REVIEW.md` lists what a native speaker must check, religious terms first.
+
+**Verification**: build ✅ (16 static pages), lint ✅, tsc ✅; screenshots at 1440 px and 412 px for Tamil and Malayalam (longest scripts) show no overflow in hero, chips, cards or tiles; switcher opens and navigates by keyboard; console clean.
+
+**Decisions / needs review**
+- Prose for the 11 regional locales stays English until native translators work through TRANSLATION_REVIEW.md; translating ~10k words × 11 languages by machine would have produced text nobody had checked.
+- Sanskrit UI strings exist because the brief asked for them, but see the review file: a headings-plus-verses treatment may serve Sanskrit better.
+- Faiths verses in Gurmukhi/Arabic/Greek rely on system fonts outside their own locale.

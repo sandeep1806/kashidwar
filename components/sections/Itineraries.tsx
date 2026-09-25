@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Reveal from "@/components/motion/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { itineraries, places } from "@/lib/content";
+import { itineraries, localizeItinerary, places } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import ItineraryTabsClient from "./ItineraryTabsClient";
 
@@ -21,7 +21,7 @@ export default async function Itineraries({ locale }: { locale: Locale }) {
       </div>
       <div className="mt-12">
         <ItineraryTabsClient
-          itineraries={itineraries}
+          itineraries={itineraries.map((it) => localizeItinerary(it, locale))}
           tabs={tabs}
           dayTemplate={t.raw("day")}
           sunrise={t("sunrise")}

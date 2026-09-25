@@ -4,6 +4,7 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import SmoothScroll from "@/components/motion/SmoothScroll";
 import SunriseBackground from "@/components/motion/SunriseBackground";
+import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import PageLoader from "@/components/ui/PageLoader";
 import { fontClassesFor } from "@/lib/fonts";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
@@ -71,6 +72,7 @@ export default async function LocaleLayout({
         <SmoothScroll>
           <SunriseBackground />
           <PageLoader labels={{ loading: t("loading"), skip: t("skip") }} />
+          <LanguageSwitcher current={locale as Locale} label={t("chooseLanguage")} />
           {children}
         </SmoothScroll>
       </body>

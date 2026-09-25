@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Reveal from "@/components/motion/Reveal";
 import StaggerCards from "@/components/motion/StaggerCards";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { foods } from "@/lib/content";
+import { foods, localize } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 
 export default async function Food({ locale }: { locale: Locale }) {
@@ -18,7 +18,7 @@ export default async function Food({ locale }: { locale: Locale }) {
         </Reveal>
       </div>
       <StaggerCards className="container-kashi mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {foods.map((f) => (
+        {foods.map((raw) => localize(raw, locale)).map((f) => (
           <article key={f.id} className="flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-5 transition-[translate,border-color] duration-500 ease-enter hover:-translate-y-1 hover:border-kashi-diya/50">
             <div className="flex items-center gap-2 text-[0.7rem]">
               <span className="rounded-full border border-kashi-diya/40 px-2 py-0.5 text-kashi-diya">{t(`types.${f.type}`)}</span>
@@ -39,7 +39,7 @@ export default async function Food({ locale }: { locale: Locale }) {
               </div>
               <div>
                 <dt className="uppercase tracking-[0.18em] text-kashi-diya/80">{t("where")}</dt>
-                <dd className="mt-0.5 text-kashi-ash/85">{f.where.join(" · ")}</dd>
+                <dd className="mt-0.5 text-kashi-ash/85">{(Array.isArray(f.where) ? f.where : [f.where]).join(" · ")}</dd>
               </div>
             </dl>
           </article>

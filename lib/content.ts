@@ -50,8 +50,28 @@ export interface Source {
   accessed: string;
 }
 
+/**
+ * Optional per-locale overrides for the prose fields of a content entry.
+ * `localize(entry, locale)` returns a copy with the overrides applied and
+ * English as the fallback, so a partially translated locale never breaks.
+ */
+export type LocalizedFields = Partial<{
+  summary: string;
+  bestTime: string;
+  story: string;
+  tips: string[];
+  timeline: string;
+  agency: string;
+  when: string;
+  where: string | string[];
+  season: string;
+  title: string;
+  theme: string;
+}>;
+
 export interface Place {
   id: string;
+  i18n?: Record<string, LocalizedFields>;
   name_en: string;
   name_hi: string;
   faith: Faith[];
@@ -75,6 +95,7 @@ export type ProjectType = "transport" | "heritage" | "tourism" | "infrastructure
 
 export interface Project {
   id: string;
+  i18n?: Record<string, LocalizedFields>;
   name_en: string;
   name_hi: string;
   faith: Faith[];
@@ -96,6 +117,7 @@ export interface Project {
 
 export interface Festival {
   id: string;
+  i18n?: Record<string, LocalizedFields>;
   name_en: string;
   name_hi: string;
   faith: Faith[];
@@ -113,6 +135,7 @@ export type FoodType = "breakfast" | "sweet" | "drink" | "street" | "paan";
 
 export interface Food {
   id: string;
+  i18n?: Record<string, LocalizedFields>;
   name_en: string;
   name_hi: string;
   type: FoodType;
@@ -126,6 +149,7 @@ export interface Food {
 
 export interface ItineraryStop {
   time: string;
+  i18n?: Record<string, { title?: string; note?: string }>;
   /** Place id from places.json, when the stop is a listed place */
   placeId?: string;
   title: string;
@@ -137,11 +161,13 @@ export interface ItineraryStop {
 export interface ItineraryDay {
   day: number;
   theme: string;
+  i18n?: Record<string, { theme?: string }>;
   stops: ItineraryStop[];
 }
 
 export interface Itinerary {
   id: string;
+  i18n?: Record<string, { summary?: string }>;
   days: number;
   title_en: string;
   title_hi: string;
@@ -210,4 +236,21 @@ export function placeMatches(place: Place, filter: PlaceFilter): boolean {
     default:
       return place.faith.includes(filter);
   }
+}
+
+/** Apply a locale's overrides (if any) over the English fields. Shallow, field by field. */
+export function localize<T extends { i18n?: Record<string, object> }>(entry: T, locale: string): T {
+  const over = entry.i18n?.[locale];
+  if (!over) return entry;
+  return { ...entry, ...over };
+}
+
+export function localizeItinerary(it: Itinerary, locale: string): Itinerary {
+  return {
+    ...localize(it, locale),
+    plan: it.plan.map((d) => ({
+      ...localize(d, locale),
+      stops: d.stops.map((s) => localize(s, locale)),
+    })),
+  };
 }

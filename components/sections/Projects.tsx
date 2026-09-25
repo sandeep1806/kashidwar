@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Reveal from "@/components/motion/Reveal";
 import StaggerCards from "@/components/motion/StaggerCards";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { projects, type Project, type ProjectStatus } from "@/lib/content";
+import { localize, projects, type Project, type ProjectStatus } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 
 const ORDER: ProjectStatus[] = ["under_construction", "announced", "completed"];
@@ -30,7 +30,8 @@ export default async function Projects({ locale }: { locale: Locale }) {
   const fmt = new Intl.DateTimeFormat(meta.bcp47, { dateStyle: "long" });
   const latest = projects.reduce((d, p) => (p.lastVerified > d ? p.lastVerified : d), "");
 
-  const groups = ORDER.map((status) => ({ status, items: projects.filter((p) => p.status === status) })).filter((g) => g.items.length);
+  const localized = projects.map((p) => localize(p, locale));
+  const groups = ORDER.map((status) => ({ status, items: localized.filter((p) => p.status === status) })).filter((g) => g.items.length);
 
   return (
     <section id="projects" aria-labelledby="projects-title" className="section-kashi scroll-mt-4">

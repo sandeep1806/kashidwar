@@ -3,7 +3,7 @@ import Reveal from "@/components/motion/Reveal";
 import StaggerCards from "@/components/motion/StaggerCards";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { festivals, type Faith } from "@/lib/content";
+import { festivals, localize, type Faith } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 
 /** Calendar strip (12 months, lamps where festivals fall) + festival cards in month order. */
@@ -11,7 +11,7 @@ export default async function Festivals({ locale }: { locale: Locale }) {
   const t = await getTranslations("festivals");
   const months = t.raw("months") as string[];
   const devanagari = LOCALES[locale].script === "devanagari";
-  const sorted = festivals.slice().sort((a, b) => Math.min(...a.months) - Math.min(...b.months));
+  const sorted = festivals.map((f) => localize(f, locale)).sort((a, b) => Math.min(...a.months) - Math.min(...b.months));
 
   return (
     <section id="festivals" aria-labelledby="festivals-title" className="section-kashi scroll-mt-4">

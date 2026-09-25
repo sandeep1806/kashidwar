@@ -3,7 +3,7 @@ import path from "node:path";
 import { getTranslations } from "next-intl/server";
 import Reveal from "@/components/motion/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { FAITHS, PLACE_FILTERS, places, type Faith, type PlaceFilter } from "@/lib/content";
+import { FAITHS, PLACE_FILTERS, localize, places, type Faith, type PlaceFilter } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import PlacesExplorer, { type ExplorerLabels, type ExplorerPlace } from "./PlacesExplorer";
 
@@ -15,11 +15,11 @@ export default async function Places({ locale }: { locale: Locale }) {
   const devanagari = LOCALES[locale].script === "devanagari";
   const publicDir = path.join(process.cwd(), "public");
 
-  const items: ExplorerPlace[] = places.map((place) => ({
-    place,
-    primaryName: devanagari ? place.name_hi : place.name_en,
-    secondaryName: devanagari ? place.name_en : place.name_hi,
-    hasImage: existsSync(path.join(publicDir, place.image)),
+  const items: ExplorerPlace[] = places.map((raw) => ({
+    place: localize(raw, locale),
+    primaryName: devanagari ? raw.name_hi : raw.name_en,
+    secondaryName: devanagari ? raw.name_en : raw.name_hi,
+    hasImage: existsSync(path.join(publicDir, raw.image)),
   }));
 
   const allFaiths: Faith[] = [...FAITHS, "secular"];

@@ -13,7 +13,13 @@
     ],
     "summary": "The city's breakfast: puffed kachoris fried in ghee, served on leaf plates with a thin spiced potato curry and a jalebi to finish. Eaten standing, early, before the lanes fill.",
     "image": "/media/food/kachori-sabzi.jpg",
-    "sources": []
+    "sources": [],
+    "i18n": {
+      "hi": {
+        "summary": "शहर का नाश्ता: घी में तली फूली कचौड़ियाँ, पत्तल पर पतली मसालेदार आलू की सब्ज़ी और अंत में एक जलेबी। खड़े-खड़े, सुबह जल्दी, गलियाँ भरने से पहले।",
+        "season": "साल भर, सुबह"
+      }
+    }
   },
   {
     "id": "jalebi",
@@ -29,7 +35,13 @@
     ],
     "summary": "Coils of fermented batter fried crisp and dropped into saffron syrup, eaten hot with the kachori or with a cup of hot milk. Thinner and crunchier in Banaras than almost anywhere else.",
     "image": "/media/food/jalebi.jpg",
-    "sources": []
+    "sources": [],
+    "i18n": {
+      "hi": {
+        "summary": "खमीर उठे घोल की कुंडलियाँ कुरकुरी तलकर केसरिया चाशनी में डाली जाती हैं, कचौड़ी के साथ या गरम दूध के कुल्हड़ के साथ गरमागरम खाई जाती हैं। बनारस में लगभग कहीं से भी पतली और कुरकुरी।",
+        "season": "साल भर, सुबह"
+      }
+    }
   },
   {
     "id": "banarasi-paan",
@@ -51,7 +63,13 @@
         "url": "https://pib.gov.in/",
         "accessed": "2026-09-25"
       }
-    ]
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "चूना, कत्था, गुलकंद और मसालों को लपेटता पान का पत्ता, मीठा या सादा। 2023 में भौगोलिक संकेत (जीआई) टैग मिला। भोजन के बाद, विवाहों में, और दुकान पर देर तक रुकने वाले हर किसी को पेश।",
+        "season": "साल भर"
+      }
+    }
   },
   {
     "id": "malaiyo",
@@ -67,7 +85,13 @@
     ],
     "summary": "Milk churned into a saffron foam and set overnight in the winter dew, then served in a clay kulhad with pistachio. It dissolves before it can be chewed, and it exists only while the nights stay cold.",
     "image": "/media/food/malaiyo.jpg",
-    "sources": []
+    "sources": [],
+    "i18n": {
+      "hi": {
+        "summary": "केसरिया झाग में मथा दूध, सर्दी की ओस में रात भर जमाया, फिर पिस्ते के साथ मिट्टी के कुल्हड़ में। चबाने से पहले ही घुल जाता है, और सिर्फ़ तब तक मिलता है जब तक रातें ठंडी रहें।",
+        "season": "सिर्फ़ सर्दियों में, लगभग नवंबर से फ़रवरी"
+      }
+    }
   },
   {
     "id": "thandai",
@@ -83,7 +107,13 @@
     ],
     "summary": "Cold milk ground with almonds, fennel, rose, pepper and cardamom, poured over ice. On Shivratri and Holi some shops add bhang, which is legal from licensed counters in the city; ask, and start small.",
     "image": "/media/food/thandai.jpg",
-    "sources": []
+    "sources": [],
+    "i18n": {
+      "hi": {
+        "summary": "बादाम, सौंफ़, गुलाब, काली मिर्च और इलायची के साथ पिसा ठंडा दूध, बर्फ़ पर। शिवरात्रि और होली पर कुछ दुकानें भाँग मिलाती हैं, जो शहर में लाइसेंसी दुकानों से वैध है; पूछें, और थोड़े से शुरू करें।",
+        "season": "साल भर; महाशिवरात्रि और होली का पेय"
+      }
+    }
   },
   {
     "id": "lassi",
@@ -99,7 +129,13 @@
     ],
     "summary": "Thick curd whipped with sugar and topped with a slab of malai, in a kulhad you smash afterwards. Mango, saffron and rabri versions exist, but the plain one is the test of a shop.",
     "image": "/media/food/lassi.jpg",
-    "sources": []
+    "sources": [],
+    "i18n": {
+      "hi": {
+        "summary": "चीनी के साथ मथा गाढ़ा दही, ऊपर मलाई की परत, ऐसे कुल्हड़ में जिसे बाद में फोड़ देते हैं। आम, केसर और रबड़ी वाली भी हैं, पर सादी ही दुकान की असली परख है।",
+        "season": "साल भर, गर्मियों में सबसे अच्छी"
+      }
+    }
   },
   {
     "id": "tamatar-chaat",
@@ -115,7 +151,13 @@
     ],
     "summary": "Tomatoes cooked down with potato, spices and ghee into a hot, sweet-sour mash, finished with crisp namak-para and coriander. Banaras's own chaat, unknown almost anywhere else.",
     "image": "/media/food/tamatar-chaat.jpg",
-    "sources": []
+    "sources": [],
+    "i18n": {
+      "hi": {
+        "summary": "टमाटर को आलू, मसालों और घी के साथ पकाकर बना गरम, खट्टा-मीठा मिश्रण, ऊपर कुरकुरे नमकपारे और धनिया। बनारस की अपनी चाट, और कहीं शायद ही मिले।",
+        "season": "साल भर, शाम"
+      }
+    }
   },
   {
     "id": "launglata",
@@ -131,6 +173,12 @@
     ],
     "summary": "A pastry parcel of khoya and dry fruit, sealed with a single clove, fried and dipped in syrup. Eaten warm; the clove is the signature and the name.",
     "image": "/media/food/launglata.jpg",
-    "sources": []
+    "sources": [],
+    "i18n": {
+      "hi": {
+        "summary": "खोया और मेवे की पेस्ट्री की पोटली, एक लौंग से बंद, तली और चाशनी में डुबोई। गरम खाई जाती है; लौंग ही पहचान और नाम है।",
+        "season": "साल भर; होली की पसंद"
+      }
+    }
   }
 ]

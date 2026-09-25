@@ -10,16 +10,101 @@
         "day": 1,
         "theme": "The river, the temple, the lanes",
         "stops": [
-          { "time": "05:30", "placeId": "assi-ghat", "title": "Subah-e-Banaras at Assi Ghat", "note": "Morning aarti, ragas and yoga as the sun rises over the far bank.", "marker": "sunrise" },
-          { "time": "06:30", "title": "Boat from Assi to Dashashwamedh", "note": "An hour on the water past most of the main ghats, including Manikarnika." },
-          { "time": "08:00", "placeId": "kashi-vishwanath", "title": "Kashi Vishwanath darshan", "note": "Enter through the corridor from Lalita Ghat." },
-          { "time": "09:30", "title": "Kachori-sabzi breakfast", "note": "Kachori Gali is a short walk from the temple." },
-          { "time": "11:00", "title": "Walk the galis", "note": "Vishwanath Gali, Thatheri Bazaar and the brass and silk lanes toward Chowk." },
-          { "time": "16:30", "title": "Rest at the ghats", "note": "Tea on the steps as the light softens." },
-          { "time": "18:00", "placeId": "dashashwamedh-ghat", "title": "Ganga Aarti", "note": "Arrive early for a place on the steps or a boat.", "marker": "sunset" }
-        ]
+          {
+            "time": "05:30",
+            "placeId": "assi-ghat",
+            "title": "Subah-e-Banaras at Assi Ghat",
+            "note": "Morning aarti, ragas and yoga as the sun rises over the far bank.",
+            "marker": "sunrise",
+            "i18n": {
+              "hi": {
+                "title": "अस्सी घाट पर सुबह-ए-बनारस",
+                "note": "सुबह की आरती, राग और योग, जब सूरज उस पार से उगता है।"
+              }
+            }
+          },
+          {
+            "time": "06:30",
+            "title": "Boat from Assi to Dashashwamedh",
+            "note": "An hour on the water past most of the main ghats, including Manikarnika.",
+            "i18n": {
+              "hi": {
+                "title": "अस्सी से दशाश्वमेध तक नाव",
+                "note": "एक घंटे पानी पर, मणिकर्णिका सहित अधिकांश प्रमुख घाटों के पास से।"
+              }
+            }
+          },
+          {
+            "time": "08:00",
+            "placeId": "kashi-vishwanath",
+            "title": "Kashi Vishwanath darshan",
+            "note": "Enter through the corridor from Lalita Ghat.",
+            "i18n": {
+              "hi": {
+                "title": "काशी विश्वनाथ दर्शन",
+                "note": "ललिता घाट से कॉरिडोर होकर प्रवेश करें।"
+              }
+            }
+          },
+          {
+            "time": "09:30",
+            "title": "Kachori-sabzi breakfast",
+            "note": "Kachori Gali is a short walk from the temple.",
+            "i18n": {
+              "hi": {
+                "title": "कचौड़ी-सब्ज़ी का नाश्ता",
+                "note": "कचौड़ी गली मंदिर से थोड़ी पैदल दूरी पर है।"
+              }
+            }
+          },
+          {
+            "time": "11:00",
+            "title": "Walk the galis",
+            "note": "Vishwanath Gali, Thatheri Bazaar and the brass and silk lanes toward Chowk.",
+            "i18n": {
+              "hi": {
+                "title": "गलियों की सैर",
+                "note": "विश्वनाथ गली, ठठेरी बाज़ार और चौक की ओर पीतल और रेशम की गलियाँ।"
+              }
+            }
+          },
+          {
+            "time": "16:30",
+            "title": "Rest at the ghats",
+            "note": "Tea on the steps as the light softens.",
+            "i18n": {
+              "hi": {
+                "title": "घाटों पर विश्राम",
+                "note": "सीढ़ियों पर चाय, जब रोशनी नरम पड़ती है।"
+              }
+            }
+          },
+          {
+            "time": "18:00",
+            "placeId": "dashashwamedh-ghat",
+            "title": "Ganga Aarti",
+            "note": "Arrive early for a place on the steps or a boat.",
+            "marker": "sunset",
+            "i18n": {
+              "hi": {
+                "title": "गंगा आरती",
+                "note": "सीढ़ियों या नाव पर जगह के लिए जल्दी पहुँचें।"
+              }
+            }
+          }
+        ],
+        "i18n": {
+          "hi": {
+            "theme": "नदी, मंदिर, गलियाँ"
+          }
+        }
       }
-    ]
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "सूर्योदय पर नदी, मंदिर, गलियाँ, और रात में दीये।"
+      }
+    }
   },
   {
     "id": "two-days",
@@ -32,25 +117,150 @@
         "day": 1,
         "theme": "The river, the temple, the lanes",
         "stops": [
-          { "time": "05:30", "placeId": "assi-ghat", "title": "Subah-e-Banaras at Assi Ghat", "note": "Morning aarti as the sun rises.", "marker": "sunrise" },
-          { "time": "06:30", "title": "Boat to Dashashwamedh", "note": "Past the ghats, including Manikarnika." },
-          { "time": "08:00", "placeId": "kashi-vishwanath", "title": "Kashi Vishwanath darshan", "note": "Through the corridor." },
-          { "time": "10:00", "title": "Breakfast and the galis", "note": "Kachori-sabzi, then Thatheri Bazaar and Chowk." },
-          { "time": "18:00", "placeId": "dashashwamedh-ghat", "title": "Ganga Aarti", "note": "From the steps or a boat.", "marker": "sunset" }
-        ]
+          {
+            "time": "05:30",
+            "placeId": "assi-ghat",
+            "title": "Subah-e-Banaras at Assi Ghat",
+            "note": "Morning aarti as the sun rises.",
+            "marker": "sunrise",
+            "i18n": {
+              "hi": {
+                "title": "अस्सी घाट पर सुबह-ए-बनारस",
+                "note": "सुबह की आरती, राग और योग, जब सूरज उस पार से उगता है।"
+              }
+            }
+          },
+          {
+            "time": "06:30",
+            "title": "Boat to Dashashwamedh",
+            "note": "Past the ghats, including Manikarnika.",
+            "i18n": {
+              "hi": {
+                "title": "दशाश्वमेध तक नाव",
+                "note": "घाटों के पास से, मणिकर्णिका सहित।"
+              }
+            }
+          },
+          {
+            "time": "08:00",
+            "placeId": "kashi-vishwanath",
+            "title": "Kashi Vishwanath darshan",
+            "note": "Through the corridor.",
+            "i18n": {
+              "hi": {
+                "title": "काशी विश्वनाथ दर्शन",
+                "note": "ललिता घाट से कॉरिडोर होकर प्रवेश करें।"
+              }
+            }
+          },
+          {
+            "time": "10:00",
+            "title": "Breakfast and the galis",
+            "note": "Kachori-sabzi, then Thatheri Bazaar and Chowk.",
+            "i18n": {
+              "hi": {
+                "title": "नाश्ता और गलियाँ",
+                "note": "कचौड़ी-सब्ज़ी, फिर ठठेरी बाज़ार और चौक।"
+              }
+            }
+          },
+          {
+            "time": "18:00",
+            "placeId": "dashashwamedh-ghat",
+            "title": "Ganga Aarti",
+            "note": "From the steps or a boat.",
+            "marker": "sunset",
+            "i18n": {
+              "hi": {
+                "title": "गंगा आरती",
+                "note": "सीढ़ियों या नाव पर जगह के लिए जल्दी पहुँचें।"
+              }
+            }
+          }
+        ],
+        "i18n": {
+          "hi": {
+            "theme": "नदी, मंदिर, गलियाँ"
+          }
+        }
       },
       {
         "day": 2,
         "theme": "Sarnath and the south",
         "stops": [
-          { "time": "07:00", "placeId": "sarnath", "title": "Sarnath", "note": "Dhamek Stupa, the excavated monasteries, Mulagandha Kuti Vihar and the museum with the Ashokan lion capital." },
-          { "time": "12:30", "title": "Lunch back in the city", "note": "Lanka or Assi." },
-          { "time": "15:00", "placeId": "bhu-new-vishwanath", "title": "BHU campus and the New Vishwanath Temple", "note": "Wide avenues, the Bharat Kala Bhavan museum." },
-          { "time": "17:00", "placeId": "sankat-mochan", "title": "Sankat Mochan Hanuman Temple", "note": "Tuesday and Saturday evenings are the busiest." },
-          { "time": "18:30", "placeId": "durga-kund", "title": "Durga Kund Temple", "note": "The red temple by its tank, lit for the evening.", "marker": "sunset" }
-        ]
+          {
+            "time": "07:00",
+            "placeId": "sarnath",
+            "title": "Sarnath",
+            "note": "Dhamek Stupa, the excavated monasteries, Mulagandha Kuti Vihar and the museum with the Ashokan lion capital.",
+            "i18n": {
+              "hi": {
+                "title": "सारनाथ",
+                "note": "धमेख स्तूप, खुदाई से निकले विहार, मूलगंध कुटी विहार और अशोक के सिंह-शीर्ष वाला संग्रहालय।"
+              }
+            }
+          },
+          {
+            "time": "12:30",
+            "title": "Lunch back in the city",
+            "note": "Lanka or Assi.",
+            "i18n": {
+              "hi": {
+                "title": "शहर लौटकर दोपहर का भोजन",
+                "note": "लंका या अस्सी।"
+              }
+            }
+          },
+          {
+            "time": "15:00",
+            "placeId": "bhu-new-vishwanath",
+            "title": "BHU campus and the New Vishwanath Temple",
+            "note": "Wide avenues, the Bharat Kala Bhavan museum.",
+            "i18n": {
+              "hi": {
+                "title": "बीएचयू परिसर और नया विश्वनाथ मंदिर",
+                "note": "चौड़ी सड़कें, भारत कला भवन संग्रहालय।"
+              }
+            }
+          },
+          {
+            "time": "17:00",
+            "placeId": "sankat-mochan",
+            "title": "Sankat Mochan Hanuman Temple",
+            "note": "Tuesday and Saturday evenings are the busiest.",
+            "i18n": {
+              "hi": {
+                "title": "संकट मोचन हनुमान मंदिर",
+                "note": "मंगलवार और शनिवार की शामें सबसे व्यस्त।"
+              }
+            }
+          },
+          {
+            "time": "18:30",
+            "placeId": "durga-kund",
+            "title": "Durga Kund Temple",
+            "note": "The red temple by its tank, lit for the evening.",
+            "marker": "sunset",
+            "i18n": {
+              "hi": {
+                "title": "दुर्गा कुंड मंदिर",
+                "note": "कुंड के पास लाल मंदिर, शाम को रोशन।"
+              }
+            }
+          }
+        ],
+        "i18n": {
+          "hi": {
+            "theme": "सारनाथ और दक्षिण"
+          }
+        }
       }
-    ]
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "पहला दिन नदी पर; दूसरा वहाँ जहाँ बुद्ध ने पहला उपदेश दिया, और शहर के दक्षिण में।"
+      }
+    }
   },
   {
     "id": "three-days",
@@ -63,34 +273,212 @@
         "day": 1,
         "theme": "The river, the temple, the lanes",
         "stops": [
-          { "time": "05:30", "placeId": "assi-ghat", "title": "Subah-e-Banaras at Assi Ghat", "note": "Morning aarti as the sun rises.", "marker": "sunrise" },
-          { "time": "06:30", "title": "Boat to Dashashwamedh", "note": "Past the ghats." },
-          { "time": "08:00", "placeId": "kashi-vishwanath", "title": "Kashi Vishwanath darshan", "note": "Through the corridor." },
-          { "time": "18:00", "placeId": "dashashwamedh-ghat", "title": "Ganga Aarti", "note": "From the steps or a boat.", "marker": "sunset" }
-        ]
+          {
+            "time": "05:30",
+            "placeId": "assi-ghat",
+            "title": "Subah-e-Banaras at Assi Ghat",
+            "note": "Morning aarti as the sun rises.",
+            "marker": "sunrise",
+            "i18n": {
+              "hi": {
+                "title": "अस्सी घाट पर सुबह-ए-बनारस",
+                "note": "सुबह की आरती, राग और योग, जब सूरज उस पार से उगता है।"
+              }
+            }
+          },
+          {
+            "time": "06:30",
+            "title": "Boat to Dashashwamedh",
+            "note": "Past the ghats.",
+            "i18n": {
+              "hi": {
+                "title": "दशाश्वमेध तक नाव",
+                "note": "घाटों के पास से, मणिकर्णिका सहित।"
+              }
+            }
+          },
+          {
+            "time": "08:00",
+            "placeId": "kashi-vishwanath",
+            "title": "Kashi Vishwanath darshan",
+            "note": "Through the corridor.",
+            "i18n": {
+              "hi": {
+                "title": "काशी विश्वनाथ दर्शन",
+                "note": "ललिता घाट से कॉरिडोर होकर प्रवेश करें।"
+              }
+            }
+          },
+          {
+            "time": "18:00",
+            "placeId": "dashashwamedh-ghat",
+            "title": "Ganga Aarti",
+            "note": "From the steps or a boat.",
+            "marker": "sunset",
+            "i18n": {
+              "hi": {
+                "title": "गंगा आरती",
+                "note": "सीढ़ियों या नाव पर जगह के लिए जल्दी पहुँचें।"
+              }
+            }
+          }
+        ],
+        "i18n": {
+          "hi": {
+            "theme": "नदी, मंदिर, गलियाँ"
+          }
+        }
       },
       {
         "day": 2,
         "theme": "Sarnath and the south",
         "stops": [
-          { "time": "07:00", "placeId": "sarnath", "title": "Sarnath", "note": "Dhamek Stupa, Mulagandha Kuti Vihar, the museum." },
-          { "time": "15:00", "placeId": "bhu-new-vishwanath", "title": "BHU and the New Vishwanath Temple", "note": "Campus and museum." },
-          { "time": "17:30", "placeId": "sankat-mochan", "title": "Sankat Mochan", "note": "Evening aarti.", "marker": "sunset" }
-        ]
+          {
+            "time": "07:00",
+            "placeId": "sarnath",
+            "title": "Sarnath",
+            "note": "Dhamek Stupa, Mulagandha Kuti Vihar, the museum.",
+            "i18n": {
+              "hi": {
+                "title": "सारनाथ",
+                "note": "धमेख स्तूप, खुदाई से निकले विहार, मूलगंध कुटी विहार और अशोक के सिंह-शीर्ष वाला संग्रहालय।"
+              }
+            }
+          },
+          {
+            "time": "15:00",
+            "placeId": "bhu-new-vishwanath",
+            "title": "BHU and the New Vishwanath Temple",
+            "note": "Campus and museum.",
+            "i18n": {
+              "hi": {
+                "title": "बीएचयू और नया विश्वनाथ मंदिर",
+                "note": "परिसर और संग्रहालय।"
+              }
+            }
+          },
+          {
+            "time": "17:30",
+            "placeId": "sankat-mochan",
+            "title": "Sankat Mochan",
+            "note": "Evening aarti.",
+            "marker": "sunset",
+            "i18n": {
+              "hi": {
+                "title": "संकट मोचन",
+                "note": "शाम की आरती।"
+              }
+            }
+          }
+        ],
+        "i18n": {
+          "hi": {
+            "theme": "सारनाथ और दक्षिण"
+          }
+        }
       },
       {
         "day": 3,
         "theme": "One Kashi, every faith",
         "stops": [
-          { "time": "08:00", "placeId": "bhelupur-jain", "title": "Bhelupur Jain Temple", "note": "Birthplace of Parshvanath, the 23rd Tirthankara.", "marker": "sunrise" },
-          { "time": "09:30", "placeId": "ravidas-janmasthan", "title": "Shri Guru Ravidas Janmasthan, Seer Govardhanpur", "note": "The birthplace temple of the Bhakti saint." },
-          { "time": "11:30", "placeId": "kabir-math", "title": "Kabir Chaura Math", "note": "Where Kabir lived and taught." },
-          { "time": "13:00", "placeId": "gurudwara-guru-bagh", "title": "Gurudwara Guru Bagh", "note": "Associated with Guru Tegh Bahadur's stay in Kashi; langar at midday." },
-          { "time": "15:00", "placeId": "alamgir-mosque", "title": "Alamgir Mosque and Panchganga Ghat", "note": "The mosque above the ghat where five rivers are said to meet." },
-          { "time": "16:30", "placeId": "st-marys-church", "title": "St. Mary's Church, Cantonment", "note": "One of the oldest churches in north India, from 1810." },
-          { "time": "17:45", "placeId": "namo-ghat", "title": "Namo Ghat at sunset", "note": "The new open riverfront at the northern end of the city.", "marker": "sunset" }
-        ]
+          {
+            "time": "08:00",
+            "placeId": "bhelupur-jain",
+            "title": "Bhelupur Jain Temple",
+            "note": "Birthplace of Parshvanath, the 23rd Tirthankara.",
+            "marker": "sunrise",
+            "i18n": {
+              "hi": {
+                "title": "भेलूपुर जैन मंदिर",
+                "note": "23वें तीर्थंकर पार्श्वनाथ की जन्मस्थली।"
+              }
+            }
+          },
+          {
+            "time": "09:30",
+            "placeId": "ravidas-janmasthan",
+            "title": "Shri Guru Ravidas Janmasthan, Seer Govardhanpur",
+            "note": "The birthplace temple of the Bhakti saint.",
+            "i18n": {
+              "hi": {
+                "title": "श्री गुरु रविदास जन्मस्थान, सीर गोवर्धनपुर",
+                "note": "भक्ति संत का जन्मस्थान मंदिर।"
+              }
+            }
+          },
+          {
+            "time": "11:30",
+            "placeId": "kabir-math",
+            "title": "Kabir Chaura Math",
+            "note": "Where Kabir lived and taught.",
+            "i18n": {
+              "hi": {
+                "title": "कबीर चौरा मठ",
+                "note": "जहाँ कबीर रहे और सिखाया।"
+              }
+            }
+          },
+          {
+            "time": "13:00",
+            "placeId": "gurudwara-guru-bagh",
+            "title": "Gurudwara Guru Bagh",
+            "note": "Associated with Guru Tegh Bahadur's stay in Kashi; langar at midday.",
+            "i18n": {
+              "hi": {
+                "title": "गुरुद्वारा गुरु बाग़",
+                "note": "काशी में गुरु तेग़ बहादुर के प्रवास से जुड़ा; दोपहर में लंगर।"
+              }
+            }
+          },
+          {
+            "time": "15:00",
+            "placeId": "alamgir-mosque",
+            "title": "Alamgir Mosque and Panchganga Ghat",
+            "note": "The mosque above the ghat where five rivers are said to meet.",
+            "i18n": {
+              "hi": {
+                "title": "आलमगीर मस्जिद और पंचगंगा घाट",
+                "note": "उस घाट के ऊपर मस्जिद जहाँ कहते हैं पाँच नदियाँ मिलती हैं।"
+              }
+            }
+          },
+          {
+            "time": "16:30",
+            "placeId": "st-marys-church",
+            "title": "St. Mary's Church, Cantonment",
+            "note": "One of the oldest churches in north India, from 1810.",
+            "i18n": {
+              "hi": {
+                "title": "सेंट मैरी चर्च, छावनी",
+                "note": "1810 का, उत्तर भारत के सबसे पुराने चर्चों में।"
+              }
+            }
+          },
+          {
+            "time": "17:45",
+            "placeId": "namo-ghat",
+            "title": "Namo Ghat at sunset",
+            "note": "The new open riverfront at the northern end of the city.",
+            "marker": "sunset",
+            "i18n": {
+              "hi": {
+                "title": "सूर्यास्त पर नमो घाट",
+                "note": "शहर के उत्तरी छोर पर नया खुला रिवरफ़्रंट।"
+              }
+            }
+          }
+        ],
+        "i18n": {
+          "hi": {
+            "theme": "एक काशी, हर आस्था"
+          }
+        }
       }
-    ]
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "ऊपर के दो दिन, फिर तीसरा दिन शहर के बौद्ध, जैन, भक्ति, सिख, इस्लामी और ईसाई स्थलों में, नमो घाट पर समाप्त।"
+      }
+    }
   }
 ]
