@@ -7,6 +7,7 @@ export interface ProjectItem extends Pick<Project, "id" | "status" | "type" | "a
   primaryName: string;
   secondaryName: string;
   lastVerifiedLabel: string;
+  href: string;
   photo: PhotoData | null;
 }
 export interface ProjectLabels {
@@ -17,6 +18,7 @@ export interface ProjectLabels {
   sources: string;
   lastVerified: string;
   unverified: string;
+  readMore: string;
 }
 
 /** Status badge per DESIGN.md: Completed = gold, Under construction = saffron pulse, Announced = ash outline. */
@@ -53,7 +55,7 @@ export default function ProjectsList({ groups, labels }: { groups: { status: Pro
                   <StatusBadge status={p.status} label={labels.groups[p.status]} />
                   <span className="rounded-full bg-kashi-rudraksha/50 px-2 py-0.5 text-[0.7rem] text-kashi-ash/80">{labels.types[p.type]}</span>
                 </div>
-                <h4 className="mt-4 text-[1.3rem] leading-snug text-kashi-white">{p.primaryName}</h4>
+                <h4 className="mt-4 text-[1.3rem] leading-snug text-kashi-white"><a href={p.href} className="hover:text-kashi-marigold">{p.primaryName}</a></h4>
                 <p className="text-sm text-kashi-ash/70">{p.secondaryName}</p>
                 <p className="mt-4 text-kashi-ash/90">{p.summary}</p>
                 <dl className="mt-5 space-y-3 text-sm">
@@ -82,6 +84,10 @@ export default function ProjectsList({ groups, labels }: { groups: { status: Pro
                   <p className="mt-1">
                     {labels.lastVerified}: <time dateTime={p.lastVerified}>{p.lastVerifiedLabel}</time>
                   </p>
+                  <a href={p.href} className="mt-3 inline-flex items-center gap-2 text-sm text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">
+                    {labels.readMore}
+                    <span aria-hidden="true">→</span>
+                  </a>
                 </footer>
               </article>
             ))}

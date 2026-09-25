@@ -6,6 +6,7 @@ import type { Locale } from "@/lib/i18n/locales";
 import { getPlacesProps } from "@/lib/sectionProps";
 import StaggerCards from "@/components/motion/StaggerCards";
 import PlaceCard from "@/components/ui/PlaceCard";
+import { pageUrl } from "@/lib/pages";
 import PlacesExplorer from "./PlacesExplorer";
 
 /**
@@ -30,11 +31,12 @@ export default async function Places({ locale }: { locale: Locale }) {
         items={items}
         labels={labels}
         detailsUrl={`/${locale}/places.json`}
+        pageBase={`/${locale}/places/`}
         grid={
           <Static>
             <StaggerCards className="mt-10 grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 xl:grid-cols-4">
               {items.map((item) => (
-                <PlaceCard key={item.place.id} place={item.place} primaryName={item.primaryName} secondaryName={item.secondaryName} photo={item.photo} labels={labels} />
+                <PlaceCard key={item.place.id} place={item.place} primaryName={item.primaryName} secondaryName={item.secondaryName} photo={item.photo} labels={labels} href={pageUrl(locale, "places", item.place.id)} />
               ))}
             </StaggerCards>
           </Static>

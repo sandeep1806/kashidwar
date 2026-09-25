@@ -2,7 +2,16 @@
   "meta": {
     "siteName": "কাশী",
     "title": "কাশী — আলোর শহর",
-    "description": "কাশী — ঘাট, মন্দির, সারনাথ আর প্রতিটি বিশ্বাসের গল্প। গঙ্গার তীরে রাত থেকে ভোর পর্যন্ত এক যাত্রা।"
+    "description": "কাশী — ঘাট, মন্দির, সারনাথ আর প্রতিটি বিশ্বাসের গল্প। গঙ্গার তীরে রাত থেকে ভোর পর্যন্ত এক যাত্রা।",
+    "homeTitle": "কাশী (বারাণসী) — ঘাট, মন্দির, সারনাথ ও ভ্রমণ নির্দেশিকা",
+    "placeTitle": "{name} — বারাণসীর {type}",
+    "festivalTitle": "বারাণসীতে {name} {year} — তারিখ ও নির্দেশিকা",
+    "projectTitle": "{name}, বারাণসী — অবস্থা ও সময়রেখা",
+    "itineraryTitle": "{n} দিনের বারাণসী ভ্রমণসূচি: {title}",
+    "placeDescription": "{name}, বারাণসী (বেনারস): {summary}",
+    "festivalDescription": "বারাণসীতে (বেনারস) {name}, {when}। {summary}",
+    "projectDescription": "{name}, বারাণসী: {summary}",
+    "itineraryDescription": "বারাণসীর (বেনারস) জন্য {n} দিনের পরিকল্পনা: {summary}"
   },
   "hero": {
     "title": "কাশী — ইতিহাসের চেয়েও প্রাচীন",
@@ -308,5 +317,31 @@
     "fonts": "হরফ: Cormorant Garamond, Inter, Tiro Devanagari Hindi ও Noto পরিবার — SIL Open Font License।",
     "data": "স্থান, প্রকল্প ও উৎসবের তথ্য প্রতিটি কার্ডে সূত্র উল্লেখ করে; প্রকল্পের অবস্থা পুনরায় যাচাই করে তারিখসহ দেওয়া।",
     "back": "কাশীতে ফিরুন"
+  },
+  "page": {
+    "home": "প্রথম পাতা",
+    "backTo": "{section}-এ ফিরে যান",
+    "howToReach": "কীভাবে পৌঁছাবেন",
+    "fromHub": "{hub} থেকে {km} কিমি",
+    "straightLine": "এগুলি সরলরেখায় মাপা দূরত্ব; গলিপথ ধরে সড়কপথে দূরত্ব আরও বেশি।",
+    "hubJunction": "বারাণসী জংশন (ক্যান্ট) স্টেশন",
+    "hubAirport": "লাল বাহাদুর শাস্ত্রী বিমানবন্দর",
+    "hubGodowlia": "গোদৌলিয়া মোড়, যেখানে পুরোনো শহরের জন্য গাড়ি থামে",
+    "googleMaps": "গুগল ম্যাপসে পথনির্দেশ",
+    "osm": "ওপেনস্ট্রিটম্যাপে দেখুন",
+    "onMap": "মানচিত্রে",
+    "related": "সম্পর্কিত স্থান",
+    "festivalsHere": "এখানকার উৎসব",
+    "prev": "আগের",
+    "next": "পরের",
+    "readMore": "আরও পড়ুন",
+    "openPage": "পুরো পাতা খুলুন",
+    "datesIn": "{year}-এর তারিখ",
+    "datesTbc": "{year}-এর তারিখ এখনও ঘোষিত হয়নি",
+    "reachVaranasi": "বারাণসী পৌঁছানো",
+    "itineraryDays": "{n} দিনের ভ্রমণসূচি",
+    "otherItineraries": "অন্যান্য ভ্রমণসূচি",
+    "location": "অবস্থান",
+    "mapLoading": "মানচিত্র লোড হচ্ছে…"
   }
 }

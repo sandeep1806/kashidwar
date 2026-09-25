@@ -9,6 +9,8 @@
 //   node scripts/heading-font/shape.mjs scripts/heading-font/TiroDevanagariHindi-Regular.ttf scripts/heading-font/corpus.txt /tmp/shaped.json
 //   python3 scripts/heading-font/subset.py        # needs fonttools + brotli
 //
+// `npm run build` runs scripts/heading-font/check.mjs first and fails if a
+// heading/name character is missing from the subset; this is the fix.
 // Re-run after changing headings, names or verses. Text outside the corpus
 // still renders (the subset keeps every Devanagari letter the corpus uses),
 // but a conjunct the corpus never formed would fall back to half-forms.
@@ -26,8 +28,17 @@ const grab = (p) => p.evaluate(() => {
   }
   return out;
 });
+// Detail pages: every one in the Devanagari locales, plus English (Hindi secondary lines).
+const content = (f) => JSON.parse(readFileSync(new URL(`../../content/${f}.json`, import.meta.url), "utf8"));
+const DETAIL = [
+  ...content("places").map((x) => `/places/${x.id}`),
+  ...content("festivals").map((x) => `/festivals/${x.id}`),
+  ...content("projects").map((x) => `/projects/${x.id}`),
+  ...content("itineraries").map((x) => `/itineraries/${x.days}-day`),
+];
 for (const loc of LOCALES) {
-  for (const path of [`/${loc}`, `/${loc}/credits`]) {
+  const paths = [`/${loc}`, `/${loc}/credits`, ...(["hi", "mr", "sa", "en"].includes(loc) ? DETAIL.map((d) => `/${loc}${d}`) : [])];
+  for (const path of paths) {
     const p = await browser.newPage(); await p.setViewport({ width: 1280, height: 900 });
     await p.goto("http://localhost:3999" + path, { waitUntil: "load" });
     // apply the deferred font classes now, as the idle swap would

@@ -2,7 +2,16 @@
   "meta": {
     "siteName": "ਕਾਸ਼ੀ",
     "title": "ਕਾਸ਼ੀ — ਰੌਸ਼ਨੀ ਦਾ ਸ਼ਹਿਰ",
-    "description": "ਕਾਸ਼ੀ — ਘਾਟ, ਮੰਦਰ, ਸਾਰਨਾਥ ਅਤੇ ਹਰ ਧਰਮ ਦੀ ਕਹਾਣੀ। ਗੰਗਾ ਕਿਨਾਰੇ ਰਾਤ ਤੋਂ ਸਵੇਰ ਤੱਕ ਇੱਕ ਯਾਤਰਾ।"
+    "description": "ਕਾਸ਼ੀ — ਘਾਟ, ਮੰਦਰ, ਸਾਰਨਾਥ ਅਤੇ ਹਰ ਧਰਮ ਦੀ ਕਹਾਣੀ। ਗੰਗਾ ਕਿਨਾਰੇ ਰਾਤ ਤੋਂ ਸਵੇਰ ਤੱਕ ਇੱਕ ਯਾਤਰਾ।",
+    "homeTitle": "ਕਾਸ਼ੀ (ਵਾਰਾਣਸੀ) — ਘਾਟ, ਮੰਦਰ, ਸਾਰਨਾਥ ਅਤੇ ਯਾਤਰਾ ਗਾਈਡ",
+    "placeTitle": "{name} — ਵਾਰਾਣਸੀ ਵਿੱਚ {type}",
+    "festivalTitle": "ਵਾਰਾਣਸੀ ਵਿੱਚ {name} {year} — ਤਰੀਕਾਂ ਅਤੇ ਜਾਣਕਾਰੀ",
+    "projectTitle": "{name}, ਵਾਰਾਣਸੀ — ਸਥਿਤੀ ਅਤੇ ਸਮਾਂ-ਸੀਮਾ",
+    "itineraryTitle": "{n} ਦਿਨਾਂ ਦੀ ਵਾਰਾਣਸੀ ਯਾਤਰਾ-ਯੋਜਨਾ: {title}",
+    "placeDescription": "{name}, ਵਾਰਾਣਸੀ (ਬਨਾਰਸ): {summary}",
+    "festivalDescription": "ਵਾਰਾਣਸੀ (ਬਨਾਰਸ) ਵਿੱਚ {name}, {when}। {summary}",
+    "projectDescription": "{name}, ਵਾਰਾਣਸੀ: {summary}",
+    "itineraryDescription": "ਵਾਰਾਣਸੀ (ਬਨਾਰਸ) ਲਈ {n} ਦਿਨਾਂ ਦੀ ਯੋਜਨਾ: {summary}"
   },
   "hero": {
     "title": "ਕਾਸ਼ੀ — ਇਤਿਹਾਸ ਤੋਂ ਵੀ ਪੁਰਾਣੀ",
@@ -308,5 +317,31 @@
     "fonts": "ਅੱਖਰ-ਰੂਪ: Cormorant Garamond, Inter, Tiro Devanagari Hindi ਅਤੇ Noto ਪਰਿਵਾਰ — SIL Open Font License।",
     "data": "ਥਾਂ, ਪ੍ਰੋਜੈਕਟ ਅਤੇ ਤਿਉਹਾਰਾਂ ਦੀ ਜਾਣਕਾਰੀ ਹਰ ਕਾਰਡ ਉੱਤੇ ਸਰੋਤ ਦੱਸਦੀ ਹੈ; ਪ੍ਰੋਜੈਕਟਾਂ ਦੀ ਸਥਿਤੀ ਦੁਬਾਰਾ ਜਾਂਚ ਕੇ ਤਾਰੀਖ਼ ਨਾਲ ਦਿੱਤੀ ਗਈ ਹੈ।",
     "back": "ਕਾਸ਼ੀ ਵੱਲ ਵਾਪਸ"
+  },
+  "page": {
+    "home": "ਮੁੱਖ ਪੰਨਾ",
+    "backTo": "{section} 'ਤੇ ਵਾਪਸ ਜਾਓ",
+    "howToReach": "ਕਿਵੇਂ ਪਹੁੰਚੀਏ",
+    "fromHub": "{hub} ਤੋਂ {km} ਕਿ.ਮੀ.",
+    "straightLine": "ਇਹ ਸਿੱਧੀ ਲਕੀਰ ਵਾਲੀਆਂ ਦੂਰੀਆਂ ਹਨ; ਗਲੀਆਂ ਰਾਹੀਂ ਸੜਕ ਰਸਤੇ ਦੂਰੀ ਹੋਰ ਵੱਧ ਹੈ।",
+    "hubJunction": "ਵਾਰਾਣਸੀ ਜੰਕਸ਼ਨ (ਕੈਂਟ) ਸਟੇਸ਼ਨ",
+    "hubAirport": "ਲਾਲ ਬਹਾਦੁਰ ਸ਼ਾਸਤਰੀ ਹਵਾਈ ਅੱਡਾ",
+    "hubGodowlia": "ਗੋਦੌਲੀਆ ਚੌਕ, ਜਿੱਥੇ ਪੁਰਾਣੇ ਸ਼ਹਿਰ ਲਈ ਗੱਡੀਆਂ ਰੁਕਦੀਆਂ ਹਨ",
+    "googleMaps": "ਗੂਗਲ ਮੈਪਸ ਵਿੱਚ ਰਸਤਾ",
+    "osm": "ਓਪਨਸਟ੍ਰੀਟਮੈਪ 'ਤੇ ਦੇਖੋ",
+    "onMap": "ਨਕਸ਼ੇ 'ਤੇ",
+    "related": "ਸੰਬੰਧਿਤ ਥਾਵਾਂ",
+    "festivalsHere": "ਇੱਥੋਂ ਦੇ ਤਿਉਹਾਰ",
+    "prev": "ਪਿਛਲਾ",
+    "next": "ਅਗਲਾ",
+    "readMore": "ਹੋਰ ਪੜ੍ਹੋ",
+    "openPage": "ਪੂਰਾ ਪੰਨਾ ਖੋਲ੍ਹੋ",
+    "datesIn": "{year} ਦੀਆਂ ਤਰੀਕਾਂ",
+    "datesTbc": "{year} ਦੀਆਂ ਤਰੀਕਾਂ ਅਜੇ ਐਲਾਨੀਆਂ ਨਹੀਂ ਗਈਆਂ",
+    "reachVaranasi": "ਵਾਰਾਣਸੀ ਕਿਵੇਂ ਪਹੁੰਚੀਏ",
+    "itineraryDays": "{n} ਦਿਨਾਂ ਦੀ ਯਾਤਰਾ-ਯੋਜਨਾ",
+    "otherItineraries": "ਹੋਰ ਯਾਤਰਾ-ਯੋਜਨਾਵਾਂ",
+    "location": "ਸਥਾਨ",
+    "mapLoading": "ਨਕਸ਼ਾ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…"
   }
 }

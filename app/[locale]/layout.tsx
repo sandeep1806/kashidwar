@@ -6,6 +6,7 @@ import SmoothScroll from "@/components/motion/SmoothScroll";
 import SunriseBackground from "@/components/motion/SunriseBackground";
 import { FaithGlyphSprite } from "@/components/ui/FaithGlyph";
 import Static from "@/components/ui/Static";
+import RevealController from "@/components/motion/RevealController";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import DeferredFonts from "@/components/ui/DeferredFonts";
 import PageLoader from "@/components/ui/PageLoader";
@@ -17,6 +18,7 @@ import IncenseCursor from "@/components/motion/IncenseCursor";
 import { fontClassesFor, fontLoadSpecsFor } from "@/lib/fonts";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { routing } from "@/lib/i18n/routing";
+import { languageAlternates } from "@/lib/pages";
 import { SITE_URL } from "@/lib/site";
 import "../globals.css";
 
@@ -42,13 +44,12 @@ export async function generateMetadata({
 }: Omit<LayoutProps<"/[locale]">, "children">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  const languages = Object.fromEntries(routing.locales.map((l) => [LOCALES[l].bcp47, `/${l}`]));
-  languages["x-default"] = "/hi";
+  const languages = languageAlternates("");
   const bcp47 = LOCALES[locale as Locale]?.bcp47 ?? "hi-IN";
   return {
     metadataBase: new URL(SITE_URL),
     title: {
-      default: t("title"),
+      default: t("homeTitle"),
       template: `%s · ${t("siteName")}`,
     },
     description: t("description"),
@@ -57,14 +58,14 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       siteName: t("siteName"),
-      title: t("title"),
+      title: t("homeTitle"),
       description: t("description"),
       url: `/${locale}`,
       locale: bcp47.replace("-", "_"),
       alternateLocale: routing.locales.filter((l) => l !== locale).map((l) => LOCALES[l].bcp47.replace("-", "_")),
       images: [{ url: `/media/og/og-${locale}.png`, width: 1200, height: 630, alt: t("title") }],
     },
-    twitter: { card: "summary_large_image", title: t("title"), description: t("description"), images: [`/media/og/og-${locale}.png`] },
+    twitter: { card: "summary_large_image", title: t("homeTitle"), description: t("description"), images: [`/media/og/og-${locale}.png`] },
     robots: { index: true, follow: true },
     manifest: "/manifest.webmanifest",
     icons: {
@@ -103,6 +104,7 @@ export default async function LocaleLayout({
     >
       <body className="min-h-dvh flex flex-col font-body text-kashi-ash">
         <script dangerouslySetInnerHTML={{ __html: LOADER_SNIPPET(fonts.deferred) }} />
+        <RevealController />
         <DeferredFonts classes={fonts.deferred} fonts={fontLoadSpecsFor(locale as Locale)} sample={meta.sample} />
         <Static>
           <FaithGlyphSprite />

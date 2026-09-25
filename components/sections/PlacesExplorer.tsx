@@ -45,6 +45,7 @@ export interface ExplorerLabels extends PlaceLabels {
   approxCoords: string;
   cluster: string;
   share: string;
+  openPage: string;
   linkCopied: string;
   englishNote: string | null;
 }
@@ -93,6 +94,7 @@ export default function PlacesExplorer({
   items,
   labels,
   detailsUrl,
+  pageBase,
   grid,
 }: {
   items: ExplorerPlace[];
@@ -105,6 +107,8 @@ export default function PlacesExplorer({
   grid: ReactNode;
   /** Prerendered JSON with each place's summary, story, tips and sources */
   detailsUrl: string;
+  /** e.g. "/hi/places/": each place has a page at pageBase + id */
+  pageBase: string;
 }) {
   const hashFilter = useSyncExternalStore(subscribeHash, readHashFilter, () => null);
   const [picked, setPicked] = useState<PlaceFilter | null>(null);
@@ -147,7 +151,7 @@ export default function PlacesExplorer({
   const [copied, setCopied] = useState(false);
   const share = async () => {
     if (!selected) return;
-    const url = window.location.href;
+    const url = new URL(pageBase + selected.place.id, window.location.origin).href;
     try {
       if (navigator.share) {
         await navigator.share({ title: selected.primaryName, url });
@@ -191,8 +195,12 @@ export default function PlacesExplorer({
     });
   }, [filter]);
   const onGridClick = (e: MouseEvent<HTMLDivElement>) => {
+    // Modified clicks (new tab, etc.) follow the link to the place page.
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     const id = (e.target as Element).closest<HTMLElement>("[data-place-open]")?.dataset.placeOpen;
-    if (id) writePlaceParam(id);
+    if (!id) return;
+    e.preventDefault();
+    writePlaceParam(id);
   };
 
   const sel = selected?.place;
@@ -311,6 +319,10 @@ export default function PlacesExplorer({
                 </svg>
                 {copied ? labels.linkCopied : labels.share}
               </button>
+              <a href={pageBase + sel.id} className="inline-flex items-center gap-2 rounded-full border border-kashi-diya/40 px-4 py-2 text-sm text-kashi-diya transition-colors hover:border-kashi-marigold hover:text-kashi-marigold">
+                {labels.openPage}
+                <span aria-hidden="true">→</span>
+              </a>
               {sel.coordsVerified === false && <span className="text-xs text-kashi-ash/60">{labels.approxCoords}</span>}
             </div>
             {detail && detail.sources.length > 0 && (

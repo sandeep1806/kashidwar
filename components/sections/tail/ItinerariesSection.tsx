@@ -2,12 +2,12 @@ import type { ItinerariesProps } from "@/lib/sectionProps";
 import Static from "@/components/ui/Static";
 import ItineraryTabs from "../ItineraryTabs";
 
-export default function ItinerariesSection({ itineraries, tabs, dayTemplate, sunrise, sunset, placesNote, placeNames }: ItinerariesProps) {
+export default function ItinerariesSection({ itineraries, tabs, dayTemplate, sunrise, sunset, placesNote, placeNames, openPage, pageHrefs }: ItinerariesProps) {
   return (
     <div className="mt-12">
       <ItineraryTabs
         itineraries={itineraries}
-        labels={{ tabs, dayTemplate, sunrise, sunset }}
+        labels={{ tabs, dayTemplate, sunrise, sunset, openPage, pageHrefs }}
         placeNames={placeNames}
       />
       <Static>

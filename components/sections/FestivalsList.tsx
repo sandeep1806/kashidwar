@@ -8,10 +8,11 @@ export interface FestivalItem extends Pick<Festival, "id" | "months" | "when" | 
   primaryName: string;
   secondaryName: string;
   glyph: Faith;
+  href: string;
   photo: PhotoData | null;
 }
 
-export default function FestivalsList({ items, months, labels }: { items: FestivalItem[]; months: string[]; labels: { when: string; where: string; lunarNote: string } }) {
+export default function FestivalsList({ items, months, labels }: { items: FestivalItem[]; months: string[]; labels: { when: string; where: string; lunarNote: string; readMore: string } }) {
   return (
     <>
       <Reveal className="container-kashi mt-12">
@@ -43,7 +44,7 @@ export default function FestivalsList({ items, months, labels }: { items: Festiv
                 <FaithGlyph faith={f.glyph} className="h-5 w-5" />
               </span>
               <div>
-                <h3 className="text-[1.3rem] leading-snug text-kashi-white">{f.primaryName}</h3>
+                <h3 className="text-[1.3rem] leading-snug text-kashi-white"><a href={f.href} className="hover:text-kashi-marigold">{f.primaryName}</a></h3>
                 <p className="text-sm text-kashi-ash/70">{f.secondaryName}</p>
               </div>
             </div>
@@ -54,6 +55,10 @@ export default function FestivalsList({ items, months, labels }: { items: Festiv
               <dt className="text-kashi-diya/80">{labels.where}</dt>
               <dd className="text-kashi-ash/85">{f.where}</dd>
             </dl>
+            <a href={f.href} className="mt-auto inline-flex items-center gap-2 pt-5 text-sm text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">
+              {labels.readMore}
+              <span aria-hidden="true">→</span>
+            </a>
           </article>
         ))}
       </StaggerCards>

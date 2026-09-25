@@ -12,7 +12,8 @@ export interface PlaceLabels {
 
 /**
  * Portrait 3:4 card with an arch-framed image (DESIGN.md → Place card).
- * Server component: the explorer island opens it via `data-place-open`.
+ * Server component and a real link to the place page; the explorer island
+ * intercepts plain clicks (via `data-place-open`) to open the quick view.
  */
 export default function PlaceCard({
   place,
@@ -20,18 +21,21 @@ export default function PlaceCard({
   secondaryName,
   photo,
   labels,
+  href,
 }: {
   place: Place;
   primaryName: string;
   secondaryName: string;
   photo: PhotoData | null;
   labels: PlaceLabels;
+  /** The place's own page; a plain click opens the quick-view modal instead */
+  href: string;
 }) {
   const faiths: Faith[] = place.faith.length ? place.faith : ["secular"];
   return (
     <article className="group flex flex-col" data-place-card="" data-type={place.type} data-faith={place.faith.join(" ")}>
-      <button
-        type="button"
+      <a
+        href={href}
         data-place-open={place.id}
         className="place-card relative flex w-full flex-col overflow-hidden rounded-kashi sm:aspect-[3/4] border border-kashi-rudraksha/60 bg-kashi-indigo/40 text-left transition-[translate,box-shadow,border-color] duration-500 ease-enter hover:-translate-y-1.5 hover:border-kashi-diya/60 hover:shadow-glow focus-visible:-translate-y-1.5 focus-visible:border-kashi-diya"
       >
@@ -69,7 +73,7 @@ export default function PlaceCard({
             </span>
           </div>
         </div>
-      </button>
+      </a>
       <p className="mt-2 hidden items-start gap-2 px-1 text-xs text-kashi-ash/70 sm:flex">
         <span className="shrink-0 text-kashi-diya/80">{labels.bestTime}:</span>
         <span className="line-clamp-2">{place.bestTime}</span>

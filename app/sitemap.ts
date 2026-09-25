@@ -1,17 +1,25 @@
 import type { MetadataRoute } from "next";
-import { LOCALES, locales } from "@/lib/i18n/locales";
+import { locales } from "@/lib/i18n/locales";
+import { languageAlternates } from "@/lib/pages";
 import { SITE_URL } from "@/lib/site";
+import { sitemapPages } from "@/lib/sitemapEntries";
 
-/** One entry per locale, each carrying hreflang alternates for all the others. */
+/**
+ * Every page (home, places, festivals, projects, itineraries, credits) in all
+ * 13 locales, each carrying hreflang alternates for the others and
+ * x-default → English. Photos are listed in /sitemap-images.xml.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const languages = Object.fromEntries(locales.map((l) => [LOCALES[l].bcp47, `${SITE_URL}/${l}`]));
-  languages["x-default"] = `${SITE_URL}/hi`;
   const lastModified = new Date();
-  return locales.map((l) => ({
-    url: `${SITE_URL}/${l}`,
-    lastModified,
-    changeFrequency: "weekly",
-    priority: l === "hi" || l === "en" ? 1 : 0.8,
-    alternates: { languages },
-  }));
+  return sitemapPages().flatMap((page) => {
+    const languages = Object.fromEntries(Object.entries(languageAlternates(page.path)).map(([k, v]) => [k, `${SITE_URL}${v}`]));
+    return locales.map((l) => ({
+      url: `${SITE_URL}/${l}${page.path}`,
+      lastModified,
+      changeFrequency: page.changeFrequency,
+      priority: l === "hi" || l === "en" ? page.priority : Math.round(page.priority * 80) / 100,
+      alternates: { languages },
+    }));
+  });
 }
+

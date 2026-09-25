@@ -9,6 +9,9 @@ export interface ItineraryLabels {
   dayTemplate: string;
   sunrise: string;
   sunset: string;
+  openPage: string;
+  /** Page URL of each itinerary, same order as `itineraries` */
+  pageHrefs: string[];
 }
 
 function SunGlyph({ set = false, className = "h-4 w-4" }: { set?: boolean; className?: string }) {
@@ -62,6 +65,11 @@ export default function ItineraryTabs({
 
       <div role="tabpanel" id={`${id}-panel-${active}`} aria-labelledby={`${id}-tab-${active}`} className="mx-auto mt-10 max-w-3xl">
         <p className="text-center text-lg text-kashi-ash/90">{current.summary}</p>
+        <p className="mt-3 text-center text-sm">
+          <a href={labels.pageHrefs[active]} className="text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">
+            {labels.openPage} →
+          </a>
+        </p>
         {current.plan.map((day) => (
           <div key={day.day} className="mt-10">
             <h3 className="flex items-center gap-4 text-h3 text-kashi-white">

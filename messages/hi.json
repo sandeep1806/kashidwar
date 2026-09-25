@@ -2,7 +2,16 @@
   "meta": {
     "siteName": "काशी",
     "title": "काशी — प्रकाश की नगरी",
-    "description": "काशी — घाट, मंदिर, सारनाथ और हर आस्था की कहानी। रात से भोर तक गंगा किनारे एक यात्रा।"
+    "description": "काशी — घाट, मंदिर, सारनाथ और हर आस्था की कहानी। रात से भोर तक गंगा किनारे एक यात्रा।",
+    "homeTitle": "काशी (वाराणसी) — घाट, मंदिर, सारनाथ और यात्रा गाइड",
+    "placeTitle": "{name} — वाराणसी में {type}",
+    "festivalTitle": "वाराणसी में {name} {year} — तिथियाँ और जानकारी",
+    "projectTitle": "{name}, वाराणसी — स्थिति और समय-सीमा",
+    "itineraryTitle": "{n} दिन की वाराणसी यात्रा-योजना: {title}",
+    "placeDescription": "{name}, वाराणसी (बनारस): {summary}",
+    "festivalDescription": "वाराणसी (बनारस) में {name}, {when}। {summary}",
+    "projectDescription": "{name}, वाराणसी: {summary}",
+    "itineraryDescription": "वाराणसी (बनारस) के लिए {n} दिन की योजना: {summary}"
   },
   "hero": {
     "title": "काशी — जो इतिहास से भी पुरानी है",
@@ -308,5 +317,31 @@
     "fonts": "टाइपफ़ेस: Cormorant Garamond, Inter, Tiro Devanagari Hindi और Noto परिवार, SIL Open Font License के अंतर्गत।",
     "data": "स्थान, परियोजना और उत्सव से जुड़े तथ्य हर कार्ड पर अपने स्रोत बताते हैं; परियोजनाओं की स्थिति दोबारा जाँचकर तारीख़ के साथ दी गई है।",
     "back": "काशी पर लौटें"
+  },
+  "page": {
+    "home": "मुखपृष्ठ",
+    "backTo": "{section} पर लौटें",
+    "howToReach": "कैसे पहुँचें",
+    "fromHub": "{hub} से {km} किमी",
+    "straightLine": "ये सीधी दूरियाँ हैं; गलियों से सड़क मार्ग इससे लंबा है।",
+    "hubJunction": "वाराणसी जंक्शन (कैंट) स्टेशन",
+    "hubAirport": "लाल बहादुर शास्त्री हवाई अड्डा",
+    "hubGodowlia": "गोदौलिया चौराहा, जहाँ पुराने शहर के लिए गाड़ियाँ रुकती हैं",
+    "googleMaps": "गूगल मैप्स में रास्ता",
+    "osm": "ओपनस्ट्रीटमैप पर देखें",
+    "onMap": "नक्शे पर",
+    "related": "संबंधित स्थान",
+    "festivalsHere": "यहाँ के उत्सव",
+    "prev": "पिछला",
+    "next": "अगला",
+    "readMore": "और पढ़ें",
+    "openPage": "पूरा पृष्ठ खोलें",
+    "datesIn": "{year} की तिथियाँ",
+    "datesTbc": "{year} की तिथियाँ अभी घोषित नहीं",
+    "reachVaranasi": "वाराणसी कैसे पहुँचें",
+    "itineraryDays": "{n} दिन की यात्रा-योजना",
+    "otherItineraries": "अन्य यात्रा-योजनाएँ",
+    "location": "स्थान",
+    "mapLoading": "नक्शा लोड हो रहा है…"
   }
 }

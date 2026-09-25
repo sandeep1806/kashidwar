@@ -66,5 +66,8 @@ All non-English, non-Hindi strings were machine-generated in one pass on 2026-09
 | all (gurudwara photos, labels) | Patna spellings (ta/te பாட்னா/పాట్నా, mr पाटणा vs the shrine's official पटना); Assamese চাহিব for Sahib; Singh as सिंह/सिंग; pa ਖੰਡੇ ਵਾਲਾ; Sanskrit label phrasing न वाराणस्यां गृहीतम्; Odia chip vs alt wording differ |
 | all | Nag Nathaiya, Sonwa Mandap, Seer Goverdhanpur, Mulagandha Kuti Vihar, Rangbhari spellings; "St. Mary's" transliterated vs a local word for saint |
 
+## Priority 1d — detail-page titles and labels (messages `meta.*Title`, `page.*`)
+Machine-translated 2026-09-25. Check: ta படித்துறைகள் vs காட்கள் for ghats; te ముఖపుట (Home); ml മുഖപ്പേജ്; bn প্রথম পাতা, বেনারস; as loanwords জংচন, ষ্টেচন, কেণ্ট, মেপছ, অ'পেনষ্ট্ৰীটমেপ; or ପର୍ବପର୍ବାଣି, ଦିନିଆ; mr आराखडा (itinerary), कँट; gu હવાઈમથક and the ungendered placeTitle; pa ਗਾਈਡ in the home title; sa — the whole namespace (घट्टाः, polite imperatives, जंक्शन). Godowlia's spelling in every script. Read each `placeTitle` with a real `{type}` filled in.
+
 ## Locale ↔ font check
 Fonts load per script via `lib/fonts.ts`. Verses in Gurmukhi, Arabic and Greek inside the Faiths tiles render with system fonts on locales that don't load those scripts; if they look wrong on a target device, add `preload: false` subset faces for `gurmukhi` and an Arabic Noto face.

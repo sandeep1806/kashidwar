@@ -11,6 +11,11 @@
       11
     ],
     "where": "All the ghats, Assi to Rajghat",
+    "placeIds": [
+      "assi-ghat",
+      "dashashwamedh-ghat",
+      "namo-ghat"
+    ],
     "summary": "The night the gods are said to descend to bathe in the Ganga. More than a million earthen lamps line every step of every ghat, and the river carries thousands more. The Ganga Mahotsav concludes the same evening.",
     "image": "/media/festivals/dev-deepawali.jpg",
     "sources": [
@@ -101,6 +106,9 @@
       3
     ],
     "where": "Kashi Vishwanath Temple and the Shiv Baraat route through the old city",
+    "placeIds": [
+      "kashi-vishwanath"
+    ],
     "summary": "Shiva's night in Shiva's own city. The temple stays open through the night for darshan, and the next day the Shiv Baraat, the wedding procession of Shiva, winds through the old city with music, ash-smeared ascetics and dancing crowds.",
     "image": "/media/festivals/maha-shivratri.jpg",
     "sources": [
@@ -185,6 +193,9 @@
       11
     ],
     "where": "Rajendra Prasad Ghat and neighbouring ghats",
+    "placeIds": [
+      "dashashwamedh-ghat"
+    ],
     "summary": "A five-day festival of classical music and dance on the riverfront, organised by Uttar Pradesh Tourism, with crafts, boat races and food stalls. It ends with Dev Deepawali.",
     "image": "/media/festivals/ganga-mahotsav.jpg",
     "sources": [
@@ -269,6 +280,7 @@
       10
     ],
     "where": "Nati Imli",
+    "placeIds": [],
     "summary": "For a few minutes at dusk, on a small open ground at Nati Imli, Ram returns from exile and embraces his brother Bharat. The tableau has been staged for more than four centuries; the Kashi Naresh attends by tradition and the Yadav community carries the chariots.",
     "image": "/media/festivals/bharat-milap.jpg",
     "sources": [
@@ -359,6 +371,7 @@
       11
     ],
     "where": "Tulsi Ghat",
+    "placeIds": [],
     "summary": "A boy dressed as Krishna leaps from a kadamba branch into the Ganga to subdue the serpent Kaliya, and rises standing on its hood playing the flute. Tulsidas began the lila at Tulsi Ghat; the whole riverfront watches from boats.",
     "image": "/media/festivals/nag-nathaiya.jpg",
     "sources": [
@@ -449,6 +462,10 @@
       5
     ],
     "where": "Sarnath",
+    "placeIds": [
+      "sarnath",
+      "mulagandha-kuti-vihar"
+    ],
     "summary": "The full moon of the Buddha's birth, enlightenment and passing. At Sarnath the relics kept in Mulagandha Kuti Vihar are carried in procession, monks from every tradition chant at the Dhamek Stupa, and the deer park fills with pilgrims from across Asia.",
     "image": "/media/festivals/buddha-purnima.jpg",
     "sources": [
@@ -539,6 +556,9 @@
       10
     ],
     "where": "Ramnagar, across the river",
+    "placeIds": [
+      "ramnagar-fort"
+    ],
     "summary": "For a month the whole town of Ramnagar becomes the stage: Ayodhya, Janakpur and Lanka are permanent sites, the audience walks between them, and no electric lights or loudspeakers are used. Begun by the Maharaja of Banaras in the 1830s; Ramlila is on UNESCO's intangible-heritage list.",
     "image": "/media/festivals/ramnagar-ramlila.jpg",
     "sources": [
@@ -629,6 +649,9 @@
       8
     ],
     "where": "Kashi Vishwanath Temple and the ghats",
+    "placeIds": [
+      "kashi-vishwanath"
+    ],
     "summary": "Shiva's month. Kanwariyas in saffron fill their pots at the ghats and carry Ganga water to pour over the linga, and each Monday the temple dresses the deity in a different shringar. Queues on Sawan Mondays run for hours; early morning is the time to go.",
     "image": "/media/festivals/shravan.jpg",
     "sources": [
@@ -719,6 +742,9 @@
       6
     ],
     "where": "Dashashwamedh and every ghat",
+    "placeIds": [
+      "dashashwamedh-ghat"
+    ],
     "summary": "The day the Ganga is said to have descended from heaven to earth. Bathers crowd the steps from before sunrise, and the evening aarti is at its most elaborate, with lamps and flowers floated on the river.",
     "image": "/media/festivals/ganga-dussehra.jpg",
     "sources": [
@@ -809,6 +835,10 @@
       3
     ],
     "where": "Kashi Vishwanath Temple; Harishchandra and Manikarnika Ghats",
+    "placeIds": [
+      "kashi-vishwanath",
+      "manikarnika-ghat"
+    ],
     "summary": "On Rangbhari Ekadashi Shiva is said to bring Parvati home to Kashi after their wedding, and the temple and lanes turn red with gulal. The next day ascetics and devotees mark Masaan Holi with ash at the cremation ghats: a ritual of the city's own, to be watched quietly and without photographing the pyres.",
     "image": "/media/festivals/rangbhari.jpg",
     "sources": [
@@ -899,6 +929,10 @@
       11
     ],
     "where": "Assi, Dashashwamedh, Rajghat and other ghats",
+    "placeIds": [
+      "assi-ghat",
+      "dashashwamedh-ghat"
+    ],
     "summary": "Four days of fasting and offerings to the sun, kept mostly by women. At dusk and again at dawn the ghats fill with families standing waist-deep in the river, holding bamboo baskets of fruit and thekua up to the setting and the rising sun.",
     "image": "/media/festivals/chhath.jpg",
     "sources": [
@@ -989,6 +1023,9 @@
       2
     ],
     "where": "Shri Guru Ravidas Janmasthan, Seer Govardhanpur",
+    "placeIds": [
+      "ravidas-janmasthan"
+    ],
     "summary": "The birth anniversary of the saint Ravidas brings one of the largest gatherings in the city to his birthplace temple at Seer Govardhanpur. Special trains arrive from Punjab, the temple is lit gold, kirtan runs day and night, and langar feeds everyone who comes.",
     "image": "/media/festivals/ravidas-jayanti.jpg",
     "sources": [
@@ -1078,6 +1115,9 @@
       6
     ],
     "where": "Kabir Chaura Math and Lahartara",
+    "placeIds": [
+      "kabir-math"
+    ],
     "summary": "Kabir's birth is remembered where he lived and where he was found as a child. At Kabir Chaura Math singers of the Kabir Panth gather for bhajans and readings of his couplets, and processions link the math with Lahartara.",
     "image": "/media/festivals/kabir-jayanti.jpg",
     "sources": [
@@ -1167,6 +1207,10 @@
       11
     ],
     "where": "Gurudwara Guru Ka Bagh, Gurudwara Bari Sangat and the city's sangats",
+    "placeIds": [
+      "gurudwara-guru-ka-bagh",
+      "gurudwara-bari-sangat"
+    ],
     "summary": "The birth of Guru Nanak, who came to Kashi in 1507 and spoke with its pandits at the garden now marked by Gurudwara Guru Ka Bagh. An Akhand Path ends at dawn, a nagar kirtan with the Guru Granth Sahib winds through the lanes, and langar is served to all.",
     "image": "/media/festivals/guru-nanak-jayanti.jpg",
     "sources": [
@@ -1257,6 +1301,9 @@
       1
     ],
     "where": "Bhelupur Jain temples",
+    "placeIds": [
+      "bhelupur-jain"
+    ],
     "summary": "The birth of Parshvanath, the 23rd Tirthankara, in Kashi itself. Jain pilgrims gather at Bhelupur, the place Jains hold as his birthplace, for abhishek of the Tirthankara's image, processions and the day-long fast many keep on Posh Dashami.",
     "image": "/media/festivals/parshvanath.jpg",
     "sources": [
@@ -1346,6 +1393,7 @@
       3
     ],
     "where": "Lat Sarai Eidgah and the city's mosques",
+    "placeIds": [],
     "summary": "The end of the Ramadan fast. Thousands gather for morning prayers at Lat Sarai Eidgah and the city's mosques, and then the lanes of Madanpura, Dalmandi and Nai Sadak fill with sewaiyan, new clothes and visits between neighbours of every faith.",
     "image": "/media/festivals/eid.jpg",
     "sources": [
@@ -1436,6 +1484,7 @@
       7
     ],
     "where": "Shivala, Doshipura and the city's imambaras",
+    "placeIds": [],
     "summary": "Ten days of mourning for Imam Husain, martyred at Karbala. Tazias of paper, mica and bamboo, some of the most intricate in north India made in Shivala, are carried through the lanes on Ashura to the city's karbalas, and craftsmen and mourners from Hindu families have long been part of the procession.",
     "image": "/media/festivals/muharram.jpg",
     "sources": [
@@ -1525,6 +1574,9 @@
       12
     ],
     "where": "St. Mary's Cathedral and St. Mary's Church, Cantonment",
+    "placeIds": [
+      "st-marys-church"
+    ],
     "summary": "Midnight services in the Cantonment's churches, carols sung by congregations from across the city through December, and a three-day fair outside St. Mary's Cathedral from Christmas Day, with food stalls and music that draw families of every faith.",
     "image": "/media/festivals/christmas.jpg",
     "sources": [
@@ -1614,6 +1666,10 @@
       12
     ],
     "where": "Namo Ghat, BHU and venues across the city",
+    "placeIds": [
+      "namo-ghat",
+      "bhu-new-vishwanath"
+    ],
     "summary": "Two weeks of Tamil–Kashi exchange: delegations of students, artisans and pilgrims from Tamil Nadu, Carnatic music and bharatanatyam on the ghats, exhibitions of Tamil crafts and food. The fourth edition ran from 2 to 15 December 2025.",
     "image": "/media/festivals/kashi-tamil-sangamam.jpg",
     "sources": [

@@ -2,7 +2,16 @@
   "meta": {
     "siteName": "Kashi",
     "title": "Kashi — The City of Light",
-    "description": "Kashi — ghats, temples, Sarnath and the story of every faith. One journey from night to dawn on the Ganga."
+    "description": "Kashi — ghats, temples, Sarnath and the story of every faith. One journey from night to dawn on the Ganga.",
+    "homeTitle": "Kashi (Varanasi) — Ghats, Temples, Sarnath & Travel Guide",
+    "placeTitle": "{name} — {type} in Varanasi",
+    "festivalTitle": "{name} {year} in Varanasi — dates and guide",
+    "projectTitle": "{name}, Varanasi — status and timeline",
+    "itineraryTitle": "{n}-day Varanasi itinerary: {title}",
+    "placeDescription": "{name}, Varanasi (Banaras): {summary}",
+    "festivalDescription": "{name} in Varanasi (Banaras), {when}. {summary}",
+    "projectDescription": "{name}, Varanasi: {summary}",
+    "itineraryDescription": "A {n}-day plan for Varanasi (Banaras): {summary}"
   },
   "hero": {
     "title": "Kashi — older than history itself",
@@ -308,5 +317,31 @@
     "fonts": "Typefaces: Cormorant Garamond, Inter, Tiro Devanagari Hindi and the Noto family, under the SIL Open Font License.",
     "data": "Place, project and festival facts cite their sources on each card; project statuses are re-checked and dated.",
     "back": "Back to Kashi"
+  },
+  "page": {
+    "home": "Home",
+    "backTo": "Back to {section}",
+    "howToReach": "How to reach",
+    "fromHub": "{km} km from {hub}",
+    "straightLine": "Straight-line distances; by road through the lanes it is further.",
+    "hubJunction": "Varanasi Junction (Cantt) station",
+    "hubAirport": "Lal Bahadur Shastri Airport",
+    "hubGodowlia": "Godowlia crossing, where cars stop for the old city",
+    "googleMaps": "Directions in Google Maps",
+    "osm": "View on OpenStreetMap",
+    "onMap": "On the map",
+    "related": "Related places",
+    "festivalsHere": "Festivals here",
+    "prev": "Previous",
+    "next": "Next",
+    "readMore": "Read more",
+    "openPage": "Open the full page",
+    "datesIn": "Dates in {year}",
+    "datesTbc": "{year} dates not yet announced",
+    "reachVaranasi": "Reaching Varanasi",
+    "itineraryDays": "{n}-day itinerary",
+    "otherItineraries": "Other itineraries",
+    "location": "Location",
+    "mapLoading": "Loading map…"
   }
 }

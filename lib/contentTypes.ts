@@ -120,6 +120,8 @@ export interface Festival {
   /** Gregorian months, 1–12, in which it usually falls */
   months: number[];
   where: string;
+  /** Listed places named in `where` (links on the festival page) */
+  placeIds: string[];
   summary: string;
   image: string;
   sources: Source[];

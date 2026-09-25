@@ -83,6 +83,14 @@ Photos are self-hosted; nothing is hotlinked. Each one is keyed `group/id` (`pla
 
 Sensitivity rules for picks: no cremations or bodies at Manikarnika, nothing from inside the Kashi Vishwanath sanctum, no close-ups of identifiable people bathing, praying or at funerals, and the same care for every faith.
 
+### Detail pages and SEO
+- Every place, festival, project and itinerary has a page in all 13 locales: `/[locale]/places/<id>`, `/festivals/<id>`, `/projects/<id>`, `/itineraries/<n>-day`, generated statically from the JSON (`app/[locale]/*/[id]/page.tsx`, helpers in `lib/pages.ts`). Home cards and the place modal link to them; a plain click on a place card still opens the quick view.
+- "How to reach" on place/project pages is computed from the coordinates (straight-line distance to Varanasi Junction, the airport and Godowlia) plus Google Maps / OpenStreetMap links; festival pages link their venues (`placeIds` in festivals.json).
+- Festival dates for the current year live in `content/festival-dates-2026.json` (verified with sources). Event JSON-LD is emitted only for verified dates. Add next year's file and bump `FESTIVAL_YEAR` in `lib/festivalDates.ts` each year.
+- `app/sitemap.ts` lists every page × locale with hreflang alternates (x-default → English); `/sitemap-images.xml` lists each page's photos. Both are in robots.txt.
+- `node scripts/check-seo.mjs` (after a build) checks titles, descriptions, canonicals, hreflang and JSON-LD (Google's Event and BreadcrumbList rules) on every prerendered page.
+- `npm run build` first runs `scripts/heading-font/check.mjs`, which fails if a heading/name character is missing from the Tiro subset.
+
 ### Rendering model (performance)
 - Text-only sections are server components wrapped in `components/ui/Static.tsx`: their HTML is server-rendered, but React does not hydrate it (an empty `dangerouslySetInnerHTML` on the client keeps the server's children). Only islands hydrate: the 3D hero, the Day-in-Kashi scroller, the places explorer (filters, modal, map; the cards themselves are static and filtered via `hidden`), itinerary tabs, aarti flame animation, header menus, section dots and the sound toggle.
 - Never put an interactive component inside `<Static>`: it would render but never hydrate.

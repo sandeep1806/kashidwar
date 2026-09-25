@@ -5,7 +5,8 @@ import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { SECTIONS } from "@/lib/sections";
 
 /** Footer: sections, languages, credits and attribution, verification note. */
-export default async function SiteFooter({ locale }: { locale: Locale }) {
+/** `path`: locale-less path of the current page ("" on the home page). */
+export default async function SiteFooter({ locale, path = "" }: { locale: Locale; path?: string }) {
   const t = await getTranslations("footer");
   const nav = await getTranslations("nav");
   const meta = await getTranslations("meta");
@@ -28,7 +29,7 @@ export default async function SiteFooter({ locale }: { locale: Locale }) {
           <ul className="mt-3 space-y-1.5">
             {SECTIONS.map((s) => (
               <li key={s.id}>
-                <a href={`#${s.id}`} className="hover:text-kashi-white">{nav(s.key)}</a>
+                <a href={path ? `/${locale}#${s.id}` : `#${s.id}`} className="hover:text-kashi-white">{nav(s.key)}</a>
               </li>
             ))}
           </ul>
@@ -38,7 +39,7 @@ export default async function SiteFooter({ locale }: { locale: Locale }) {
           <ul className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1.5">
             {locales.map((l) => (
               <li key={l}>
-                <a href={`/${l}`} lang={LOCALES[l].bcp47} hrefLang={LOCALES[l].bcp47} aria-current={l === locale ? "true" : undefined} className={l === locale ? "text-kashi-diya" : "hover:text-kashi-white"}>
+                <a href={`/${l}${path}`} lang={LOCALES[l].bcp47} hrefLang={LOCALES[l].bcp47} aria-current={l === locale ? "true" : undefined} className={l === locale ? "text-kashi-diya" : "hover:text-kashi-white"}>
                   {LOCALES[l].nativeName}
                 </a>
               </li>

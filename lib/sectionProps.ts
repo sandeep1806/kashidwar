@@ -1,4 +1,5 @@
 import { getPhoto } from "@/lib/photos";
+import { itinerarySlug, pageUrl } from "@/lib/pages";
 import { getTranslations } from "next-intl/server";
 import { faithEntries, festivals, foods, getPlace, itineraries, localize, localizeItinerary, places, projects, type Itinerary, type ProjectStatus } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
@@ -33,13 +34,14 @@ export async function getProjectsProps(locale: Locale) {
   const latest = projects.reduce((d, p) => (p.lastVerified > d ? p.lastVerified : d), "");
   const items: ProjectItem[] = projects.map((raw) => {
     const p = localize(raw, locale);
-    return { id: p.id, status: p.status, type: p.type, agency: p.agency, timeline: p.timeline, summary: p.summary, verified: p.verified, lastVerified: p.lastVerified, sources: p.sources.map(({ title, url }) => ({ title, url })), photo: getPhoto(`projects/${p.id}`, locale), primaryName: devanagari ? p.name_hi : p.name_en, secondaryName: devanagari ? p.name_en : p.name_hi, lastVerifiedLabel: fmt.format(new Date(p.lastVerified + "T00:00:00Z")) };
+    return { id: p.id, href: pageUrl(locale, "projects", p.id), status: p.status, type: p.type, agency: p.agency, timeline: p.timeline, summary: p.summary, verified: p.verified, lastVerified: p.lastVerified, sources: p.sources.map(({ title, url }) => ({ title, url })), photo: getPhoto(`projects/${p.id}`, locale), primaryName: devanagari ? p.name_hi : p.name_en, secondaryName: devanagari ? p.name_en : p.name_hi, lastVerifiedLabel: fmt.format(new Date(p.lastVerified + "T00:00:00Z")) };
   });
   const groups = ORDER.map((status) => ({ status, items: items.filter((p) => p.status === status) })).filter((g) => g.items.length);
   const labels: ProjectLabels = {
     groups: Object.fromEntries(ORDER.map((s) => [s, t(`groups.${s}`)])) as Record<ProjectStatus, string>,
     types: Object.fromEntries(PROJECT_TYPES.map((k) => [k, t(`types.${k}`)])),
     agency: t("agency"),
+    readMore: (await getTranslations({ locale, namespace: "page" }))("readMore"),
     timeline: t("timeline"),
     sources: t("sources"),
     lastVerified: t("lastVerified"),
@@ -64,14 +66,14 @@ export async function getFestivalsProps(locale: Locale) {
   const items: FestivalItem[] = festivals
     .map((raw) => {
       const f = localize(raw, locale);
-      return { id: f.id, months: f.months, when: f.when, where: f.where, summary: f.summary, photo: getPhoto(`festivals/${f.id}`, locale), primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, glyph: f.faith[0] ?? "secular" };
+      return { id: f.id, href: pageUrl(locale, "festivals", f.id), months: f.months, when: f.when, where: f.where, summary: f.summary, photo: getPhoto(`festivals/${f.id}`, locale), primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, glyph: f.faith[0] ?? "secular" };
     })
     .sort((a, b) => Math.min(...a.months) - Math.min(...b.months));
   return {
     heading: { id: "festivals", title: t("title"), secondary: t("titleSecondary"), intro: t("intro") } as HeadingProps,
     items,
     months: t.raw("months") as string[],
-    labels: { when: t("when"), where: t("where"), lunarNote: t("lunarNote") },
+    labels: { when: t("when"), where: t("where"), lunarNote: t("lunarNote"), readMore: (await getTranslations({ locale, namespace: "page" }))("readMore") },
   };
 }
 export type FestivalsProps = Awaited<ReturnType<typeof getFestivalsProps>>;
@@ -107,6 +109,8 @@ export async function getItinerariesProps(locale: Locale) {
     sunrise: t("sunrise"),
     sunset: t("sunset"),
     placesNote: t("placesNote"),
+    openPage: (await getTranslations({ locale, namespace: "page" }))("openPage"),
+    pageHrefs: list.map((it) => pageUrl(locale, "itineraries", itinerarySlug(it))),
     placeNames: Object.fromEntries(places.map((p) => [p.id, devanagari ? p.name_hi : p.name_en])),
   };
 }
@@ -174,6 +178,7 @@ export async function getPlacesProps(locale: Locale) {
     approxCoords: t("approxCoords"),
     cluster: t.raw("cluster"),
     share: t("share"),
+    openPage: (await getTranslations({ locale, namespace: "page" }))("openPage"),
     linkCopied: t("linkCopied"),
     englishNote: proseFallsBack(locale) ? (await getTranslations({ locale, namespace: "common" }))("englishNote") : null,
   };

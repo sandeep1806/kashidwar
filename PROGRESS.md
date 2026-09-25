@@ -292,3 +292,12 @@ Reversed the Phase 9 lazy-body decision on advice that search, social previews a
 - Photos from outside Varanasi now carry a visible, localized chip ("Not taken in Varanasi" / "Artwork, not from Varanasi"): both gurudwaras, Muharram, the Kashi Tamil Sangamam coach (Chennai), jalebi (Delhi), and the Guru Nanak, Parshvanath and Kabir artworks.
 - Indic uppercase labels no longer get Latin letter-spacing.
 - Deployed as Worker version 6fe07da6 and pushed. Live https://kashidwar.com/hi from this machine (3 runs): performance 74 / 88 / 88 (LCP follows this network's 270–580 ms TTFB), accessibility 100, SEO 100, best practices 77–81 (Cloudflare Bot Fight Mode script, left on by decision). Compressed /hi is 72 KB (Brotli), up from 61 KB: unhydrated sections ship their markup in the RSC payload instead of compact props.
+
+## SEO structure · 2026-09-25 · ✅
+- 59 detail pages × 13 locales (23 places, 19 festivals, 14 projects, 3 itineraries) = 767 new static pages, 793 HTML pages in all. Each has photo, full text, "how to reach", related places, prev/next and breadcrumb; places and festival venues have a lazy map. Home cards, festival/project cards, itinerary tabs and the place modal link to them; the modal's share link is the page URL.
+- Unique localized titles and descriptions per page (templates in `messages/*/meta`); home title "Kashi (Varanasi) — Ghats, Temples, Sarnath & Travel Guide" in 13 languages.
+- JSON-LD: WebSite + TouristDestination on home; TouristAttraction with geo per place; Event per festival with verified 2026 dates (16 of 19; Ganga Mahotsav only proposed 20–23 Nov, Parshvanath Janma Kalyanak has no 2026 date, Kashi Tamil Sangamam 2026 not announced — these show "dates not yet announced" and emit no Event); TouristTrip per itinerary; BreadcrumbList everywhere. `scripts/check-seo.mjs`: all 793 pages pass.
+- hreflang x-default → /en. Sitemap: every page in every locale with alternates; image sitemap at /sitemap-images.xml.
+- Heading-font gate in `npm run build`; the subset was rebuilt with the new sub-page headings (224 glyphs, 21.8 KB, 263 corpus lines verified).
+- Lighthouse mobile, local, 5 runs: home 94 (all five), /hi/places/sarnath 95 median (92–95); accessibility and best practices 100; SEO 92 only for the localhost canonical.
+- Date notes: Ramnagar Ramlila's end (25 Oct) is computed as Sharad Purnima; Nag Nathaiya's date is from the Varanasi panchang, not an organiser announcement.

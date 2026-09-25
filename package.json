@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/heading-font/check.mjs && next build",
     "start": "next start",
     "lint": "eslint",
     "cf:build": "node scripts/cf-build.mjs",
