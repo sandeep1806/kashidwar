@@ -176,7 +176,7 @@ export default function PlacesExplorer({
         {withCount(labels.results, visible.length)}
       </p>
 
-      <StaggerCards className="mt-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <StaggerCards className="mt-10 grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map((item) => (
           <PlaceCard
             key={item.place.id}

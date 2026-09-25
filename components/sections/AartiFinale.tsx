@@ -2,9 +2,9 @@ import Reveal from "@/components/motion/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
 import type { Locale } from "@/lib/i18n/locales";
 import { getFinaleProps } from "@/lib/sectionProps";
-import FinaleBody from "./tail/FinaleBody";
+import FinaleSection from "./tail/FinaleSection";
 
-/** The end of the journey (DESIGN.md → Aarti finale). Copy is server-rendered; the lamps load on approach. */
+/** The end of the journey (DESIGN.md → Aarti finale). Lamps render with the page; only the flicker waits for GSAP. */
 export default async function AartiFinale({ locale }: { locale: Locale }) {
   const props = await getFinaleProps(locale);
   return (
@@ -16,7 +16,7 @@ export default async function AartiFinale({ locale }: { locale: Locale }) {
           <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{props.heading.intro}</p>
         </Reveal>
       </div>
-      <FinaleBody {...props} />
+      <FinaleSection {...props} />
     </section>
   );
 }

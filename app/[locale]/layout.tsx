@@ -8,7 +8,9 @@ import { FaithGlyphSprite } from "@/components/ui/FaithGlyph";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import DeferredFonts from "@/components/ui/DeferredFonts";
 import PageLoader from "@/components/ui/PageLoader";
+import SectionMenu from "@/components/ui/SectionMenu";
 import SiteHeader from "@/components/ui/SiteHeader";
+import { SECTIONS } from "@/lib/sections";
 import SoundToggle from "@/components/ui/SoundToggle";
 import IncenseCursor from "@/components/motion/IncenseCursor";
 import { fontClassesFor } from "@/lib/fonts";
@@ -85,6 +87,8 @@ export default async function LocaleLayout({
   const meta = LOCALES[locale as Locale];
   const t = await getTranslations("common");
   const siteName = (await getTranslations("meta"))("siteName");
+  const nav = await getTranslations("nav");
+  const sectionItems = SECTIONS.map((s) => ({ id: s.id, label: nav(s.key) }));
   // Display faces apply at once; body faces are attached after first paint (see DeferredFonts).
   const fonts = fontClassesFor(locale as Locale);
 
@@ -116,6 +120,7 @@ export default async function LocaleLayout({
           <SunriseBackground />
           <PageLoader labels={{ loading: t("loading"), skip: t("skip") }} />
           <SiteHeader brand={meta.name === "English" ? "Kashi · काशी" : `${siteName} · Kashi`} homeHref={`/${locale}#hero`}>
+            <SectionMenu label={nav("menu")} items={sectionItems} basePath={`/${locale}`} />
             <LanguageSwitcher current={locale as Locale} label={t("chooseLanguage")} />
           </SiteHeader>
           <SoundToggle labels={{ on: t("soundOn"), off: t("soundOff") }} />

@@ -11,6 +11,9 @@ import Places from "@/components/sections/Places";
 import Practical from "@/components/sections/Practical";
 import Projects from "@/components/sections/Projects";
 import JsonLd from "@/components/ui/JsonLd";
+import SectionDots from "@/components/ui/SectionDots";
+import SiteFooter from "@/components/ui/SiteFooter";
+import { SECTIONS } from "@/lib/sections";
 import type { Locale } from "@/lib/i18n/locales";
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
@@ -18,6 +21,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   setRequestLocale(locale);
   const loc = locale as Locale;
   const meta = await getTranslations("meta");
+  const nav = await getTranslations("nav");
 
   return (
     <main id="content" className="flex flex-1 flex-col">
@@ -39,6 +43,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <Practical locale={loc} />
       <RippleWipe />
       <AartiFinale locale={loc} />
+      <SectionDots label={nav("sectionsNav")} items={SECTIONS.map((s) => ({ id: s.id, label: nav(s.key) }))} />
+      <SiteFooter locale={loc} />
     </main>
   );
 }

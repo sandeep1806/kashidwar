@@ -133,11 +133,11 @@ export default function DayInKashiScroller({
         {scenes.map((scene, i) => (
           <article
             key={scene.id}
-            className="cv-auto relative isolate flex min-h-[80vh] items-end overflow-hidden"
+            className={`cv-auto day-scene day-scene-${scene.id} relative isolate flex min-h-[70vh] items-end overflow-hidden`}
           >
             <Image src={scene.art} alt="" fill sizes="100vw" unoptimized className="-z-10 object-cover" />
             <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-kashi-night/90 via-kashi-night/40 to-transparent" />
-            <Reveal className="container-kashi relative pb-16 pt-32" delay={0.1 * i}>
+            <Reveal className="container-kashi relative pb-12 pt-24" delay={0.1 * i}>
               <SceneCopy scene={scene} lit />
             </Reveal>
           </article>
@@ -153,7 +153,7 @@ export default function DayInKashiScroller({
           <article
             key={scene.id}
             data-panel
-            className="relative isolate flex h-full w-screen shrink-0 items-end overflow-hidden"
+            className={`day-scene day-scene-${scene.id} relative isolate flex h-full w-screen shrink-0 items-end overflow-hidden`}
           >
             <Image src={scene.art} alt="" fill sizes="100vw" unoptimized className="-z-10 object-cover" />
             <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-kashi-night/90 via-kashi-night/40 to-transparent" />

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Faith, Place } from "@/lib/contentTypes";
 import FaithGlyph from "./FaithGlyph";
+import PlaceArt from "./PlaceArt";
 
 export interface PlaceLabels {
   faiths: Record<Faith, string>;
@@ -31,10 +32,10 @@ export default function PlaceCard({
       <button
         type="button"
         onClick={() => onOpen(place)}
-        className="place-card relative flex aspect-[3/4] w-full flex-col overflow-hidden rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 text-left transition-[translate,box-shadow,border-color] duration-500 ease-enter hover:-translate-y-1.5 hover:border-kashi-diya/60 hover:shadow-glow focus-visible:-translate-y-1.5 focus-visible:border-kashi-diya"
+        className="place-card relative flex w-full flex-col overflow-hidden rounded-kashi sm:aspect-[3/4] border border-kashi-rudraksha/60 bg-kashi-indigo/40 text-left transition-[translate,box-shadow,border-color] duration-500 ease-enter hover:-translate-y-1.5 hover:border-kashi-diya/60 hover:shadow-glow focus-visible:-translate-y-1.5 focus-visible:border-kashi-diya"
       >
         <span className="sr-only">{labels.openDetails}: </span>
-        <div className="arch relative mx-3 mt-3 aspect-[4/5] overflow-hidden">
+        <div className="arch relative mx-2 mt-2 aspect-square overflow-hidden sm:mx-3 sm:mt-3 sm:aspect-[4/5]">
           {hasImage ? (
             <Image
               src={place.image}
@@ -44,16 +45,17 @@ export default function PlaceCard({
               className="object-cover transition-transform duration-700 ease-enter group-hover:scale-105"
             />
           ) : (
-            <div className={`place-art place-art-${faiths[0]} flex h-full w-full items-center justify-center`}>
-              <FaithGlyph faith={faiths[0]} className="h-16 w-16 text-kashi-diya/80" />
+            <div className={`place-art place-art-${faiths[0]} relative flex h-full w-full items-center justify-center`}>
+              <PlaceArt type={place.type} className="h-3/5 w-3/5 text-kashi-diya/75" />
+              <FaithGlyph faith={faiths[0]} className="absolute right-3 top-3 h-5 w-5 text-kashi-diya/60 sm:h-6 sm:w-6" />
             </div>
           )}
           <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-kashi-night/80 to-transparent" />
         </div>
-        <div className="flex flex-1 flex-col px-4 pb-4 pt-3">
-          <h3 className="text-[1.25rem] leading-snug text-kashi-white">{primaryName}</h3>
-          <p className="mt-0.5 text-sm text-kashi-ash/70">{secondaryName}</p>
-          <div className="mt-auto flex flex-wrap items-center gap-1.5 pt-3">
+        <div className="flex flex-1 flex-col px-3 pb-3 pt-2 sm:px-4 sm:pb-4 sm:pt-3">
+          <h3 className="text-base leading-snug text-kashi-white sm:text-[1.25rem]">{primaryName}</h3>
+          <p className="mt-0.5 line-clamp-1 text-xs text-kashi-ash/70 sm:text-sm">{secondaryName}</p>
+          <div className="mt-auto flex flex-wrap items-center gap-1 pt-2 sm:gap-1.5 sm:pt-3">
             {faiths.map((f) => (
               <span
                 key={f}
@@ -69,7 +71,7 @@ export default function PlaceCard({
           </div>
         </div>
       </button>
-      <p className="mt-2 flex items-start gap-2 px-1 text-xs text-kashi-ash/70">
+      <p className="mt-2 hidden items-start gap-2 px-1 text-xs text-kashi-ash/70 sm:flex">
         <span className="shrink-0 text-kashi-diya/80">{labels.bestTime}:</span>
         <span className="line-clamp-2">{place.bestTime}</span>
       </p>

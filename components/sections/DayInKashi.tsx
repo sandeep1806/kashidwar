@@ -25,7 +25,7 @@ export default async function DayInKashi({ locale }: { locale: Locale }) {
 
   return (
     <section id="journey" aria-labelledby="day-title" className="scroll-mt-4">
-      <div className="container-kashi pb-16 pt-[16vh] text-center">
+      <div className="container-kashi pb-10 pt-[12vh] text-center">
         <SectionHeading id="day-title" locale={locale} title={t("title")} secondary={t("titleSecondary")} />
         <Reveal>
           <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{t("intro")}</p>

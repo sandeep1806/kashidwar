@@ -408,3 +408,8 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
 @keyframes sound-ring { from { transform: scale(1); opacity: 0.7; } to { transform: scale(1.7); opacity: 0; } }
 .sound-ring { animation: sound-ring 2.4s ease-out infinite; }
 @media (prefers-reduced-motion: reduce) { .sound-ring { animation: none; } }
+
+/* Day in Kashi: each panel carries its own sky, so it is never an empty band while art loads */
+.day-scene-dawn { background: linear-gradient(180deg, #1C1B3A 0%, #3A2450 55%, #7A3B2C 85%, #0B0A14 100%); }
+.day-scene-noon { background: linear-gradient(180deg, #B8652A 0%, #5A3A2E 60%, #0B0A14 100%); }
+.day-scene-dusk { background: linear-gradient(180deg, #0B0A14 0%, #1C1B3A 55%, #5E2E30 90%, #0B0A14 100%); }

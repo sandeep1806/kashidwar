@@ -17,7 +17,12 @@
     "festivals": "Festivals",
     "food": "Food",
     "itineraries": "Itineraries",
-    "practical": "Practical"
+    "practical": "Practical",
+    "day": "A day in Kashi",
+    "aarti": "Aarti",
+    "menu": "Sections",
+    "top": "Back to top",
+    "sectionsNav": "Page sections"
   },
   "common": {
     "skip": "Skip",
@@ -278,5 +283,28 @@
     "notFoundTitle": "This lane leads nowhere",
     "notFoundText": "The page you were looking for is not in Kashi. Turn back to the river.",
     "back": "Back to the ghats"
+  },
+  "footer": {
+    "sections": "Explore",
+    "languages": "Languages",
+    "credits": "Credits",
+    "creditsLink": "Photo & data credits",
+    "mapData": "Map data © OpenStreetMap contributors, ODbL.",
+    "photos": "Photographs: Wikimedia Commons contributors under CC licences — see credits.",
+    "verified": "Project statuses last verified {date}.",
+    "sourcesNote": "Every project, place and festival links to its sources; statuses marked unconfirmed could not be verified from an official source.",
+    "tagline": "A journey from night to dawn on the Ganga.",
+    "rights": "Text and design © {year} Kashi. Photographs remain their authors' under the licences listed on the credits page."
+  },
+  "credits": {
+    "title": "Credits",
+    "intro": "The photographs on this site come from Wikimedia Commons and are used under their free licences. Each is listed with its author, licence and original file.",
+    "photos": "Photographs",
+    "none": "No photographs are in use yet.",
+    "other": "Maps, type and data",
+    "map": "Map data © OpenStreetMap contributors (ODbL); map rendered with Leaflet.",
+    "fonts": "Typefaces: Cormorant Garamond, Inter, Tiro Devanagari Hindi and the Noto family, under the SIL Open Font License.",
+    "data": "Place, project and festival facts cite their sources on each card; project statuses are re-checked and dated.",
+    "back": "Back to Kashi"
   }
 }
