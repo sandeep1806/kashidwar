@@ -3,17 +3,26 @@
     "id": "dev-deepawali",
     "name_en": "Dev Deepawali",
     "name_hi": "देव दीपावली",
-    "faith": ["hindu"],
+    "faith": [
+      "hindu"
+    ],
     "when": "Kartik Purnima, fifteen days after Diwali",
-    "months": [11],
+    "months": [
+      11
+    ],
     "where": "All the ghats, Assi to Rajghat",
     "summary": "The night the gods are said to descend to bathe in the Ganga. More than a million earthen lamps line every step of every ghat, and the river carries thousands more. The Ganga Mahotsav concludes the same evening.",
     "image": "/media/festivals/dev-deepawali.jpg",
     "sources": [
       {
-        "title": "Uttar Pradesh Tourism — Dev Deepawali",
+        "title": "Wikipedia — Dev Deepavali (Varanasi)",
+        "url": "https://en.wikipedia.org/wiki/Dev_Deepavali_(Varanasi)",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Uttar Pradesh Tourism",
         "url": "https://uptourism.gov.in/",
-        "accessed": "2026-09-24"
+        "accessed": "2026-09-25"
       }
     ]
   },
@@ -21,9 +30,14 @@
     "id": "maha-shivratri",
     "name_en": "Maha Shivratri",
     "name_hi": "महाशिवरात्रि",
-    "faith": ["hindu"],
+    "faith": [
+      "hindu"
+    ],
     "when": "Phalguna Krishna Chaturdashi",
-    "months": [2, 3],
+    "months": [
+      2,
+      3
+    ],
     "where": "Kashi Vishwanath Temple and the Shiv Baraat route through the old city",
     "summary": "Shiva's night in Shiva's own city. The temple stays open through the night for darshan, and the next day the Shiv Baraat, the wedding procession of Shiva, winds through the old city with music, ash-smeared ascetics and dancing crowds.",
     "image": "/media/festivals/maha-shivratri.jpg",
@@ -31,7 +45,7 @@
       {
         "title": "Shri Kashi Vishwanath Temple Trust",
         "url": "https://shrikashivishwanath.org/",
-        "accessed": "2026-09-24"
+        "accessed": "2026-09-25"
       }
     ]
   },
@@ -39,17 +53,132 @@
     "id": "ganga-mahotsav",
     "name_en": "Ganga Mahotsav",
     "name_hi": "गंगा महोत्सव",
-    "faith": ["secular"],
+    "faith": [
+      "secular"
+    ],
     "when": "Five days ending on Kartik Purnima",
-    "months": [11],
+    "months": [
+      11
+    ],
     "where": "Rajendra Prasad Ghat and neighbouring ghats",
     "summary": "A five-day festival of classical music and dance on the riverfront, organised by Uttar Pradesh Tourism, with crafts, boat races and food stalls. It ends with Dev Deepawali.",
     "image": "/media/festivals/ganga-mahotsav.jpg",
     "sources": [
       {
-        "title": "Uttar Pradesh Tourism — Ganga Mahotsav",
+        "title": "Uttar Pradesh Tourism",
         "url": "https://uptourism.gov.in/",
-        "accessed": "2026-09-24"
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "bharat-milap",
+    "name_en": "Bharat Milap",
+    "name_hi": "भरत मिलाप",
+    "faith": [
+      "hindu"
+    ],
+    "when": "The day after Vijayadashami (Ashwin)",
+    "months": [
+      10
+    ],
+    "where": "Nati Imli",
+    "summary": "For a few minutes at dusk, on a small open ground at Nati Imli, Ram returns from exile and embraces his brother Bharat. The tableau has been staged for more than four centuries; the Kashi Naresh attends by tradition and the Yadav community carries the chariots.",
+    "image": "/media/festivals/bharat-milap.jpg",
+    "sources": [
+      {
+        "title": "Wikipedia — Bharat Milap",
+        "url": "https://en.wikipedia.org/wiki/Bharat_Milap",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Uttar Pradesh Tourism",
+        "url": "https://uptourism.gov.in/",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "nag-nathaiya",
+    "name_en": "Nag Nathaiya",
+    "name_hi": "नाग नथैया",
+    "faith": [
+      "hindu"
+    ],
+    "when": "Kartik Shukla Chaturthi",
+    "months": [
+      10,
+      11
+    ],
+    "where": "Tulsi Ghat",
+    "summary": "A boy dressed as Krishna leaps from a kadamba branch into the Ganga to subdue the serpent Kaliya, and rises standing on its hood playing the flute. Tulsidas began the lila at Tulsi Ghat; the whole riverfront watches from boats.",
+    "image": "/media/festivals/nag-nathaiya.jpg",
+    "sources": [
+      {
+        "title": "Uttar Pradesh Tourism",
+        "url": "https://uptourism.gov.in/",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Varanasi District — Culture & Heritage",
+        "url": "https://varanasi.nic.in/culture-heritage/",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "buddha-purnima",
+    "name_en": "Buddha Purnima",
+    "name_hi": "बुद्ध पूर्णिमा",
+    "faith": [
+      "buddhist"
+    ],
+    "when": "Vaishakha Purnima",
+    "months": [
+      4,
+      5
+    ],
+    "where": "Sarnath",
+    "summary": "The full moon of the Buddha's birth, enlightenment and passing. At Sarnath the relics kept in Mulagandha Kuti Vihar are carried in procession, monks from every tradition chant at the Dhamek Stupa, and the deer park fills with pilgrims from across Asia.",
+    "image": "/media/festivals/buddha-purnima.jpg",
+    "sources": [
+      {
+        "title": "Wikipedia — Sarnath",
+        "url": "https://en.wikipedia.org/wiki/Sarnath",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Uttar Pradesh Tourism",
+        "url": "https://uptourism.gov.in/",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "ramnagar-ramlila",
+    "name_en": "Ramlila of Ramnagar",
+    "name_hi": "रामनगर की रामलीला",
+    "faith": [
+      "hindu"
+    ],
+    "when": "31 days from Anant Chaturdashi to Ashwin Purnima",
+    "months": [
+      9,
+      10
+    ],
+    "where": "Ramnagar, across the river",
+    "summary": "For a month the whole town of Ramnagar becomes the stage: Ayodhya, Janakpur and Lanka are permanent sites, the audience walks between them, and no electric lights or loudspeakers are used. Begun by the Maharaja of Banaras in the 1830s; Ramlila is on UNESCO's intangible-heritage list.",
+    "image": "/media/festivals/ramnagar-ramlila.jpg",
+    "sources": [
+      {
+        "title": "Wikipedia — Ramlila",
+        "url": "https://en.wikipedia.org/wiki/Ramlila",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "UNESCO — Ramlila, the traditional performance of the Ramayana",
+        "url": "https://ich.unesco.org/en/RL/ramlila-the-traditional-performance-of-the-ramayana-00110",
+        "accessed": "2026-09-25"
       }
     ]
   }

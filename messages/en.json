@@ -184,5 +184,85 @@
       "infrastructure": "Infrastructure",
       "culture": "Culture"
     }
+  },
+  "festivals": {
+    "title": "A year of festivals",
+    "titleSecondary": "उत्सवों का वर्ष",
+    "intro": "Kashi's calendar runs on the moon. Every month some flame is lit: on a ghat, in a temple, or across the river.",
+    "when": "When",
+    "where": "Where",
+    "months": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "lunarNote": "Dates follow the lunar calendar and shift every year; check before you travel."
+  },
+  "food": {
+    "title": "The taste of Banaras",
+    "titleSecondary": "बनारसी स्वाद",
+    "intro": "Food here is eaten standing, from a clay cup or a leaf plate, and it changes from dawn to midnight.",
+    "season": "Season",
+    "where": "Where",
+    "veg": "Vegetarian",
+    "types": {
+      "breakfast": "Breakfast",
+      "sweet": "Sweet",
+      "drink": "Drink",
+      "street": "Chaat",
+      "paan": "Paan"
+    }
+  },
+  "itineraries": {
+    "title": "Itineraries",
+    "titleSecondary": "यात्रा-योजना",
+    "intro": "One day, two or three: every plan starts before sunrise and ends at the aarti.",
+    "dayTab": "{days, plural, one {# day} other {# days}}",
+    "day": "Day {n}",
+    "sunrise": "Sunrise",
+    "sunset": "Sunset",
+    "placesNote": "Named places are described in the Places section"
+  },
+  "practical": {
+    "title": "Practical",
+    "titleSecondary": "जानकारी",
+    "intro": "Getting here, when to come, and how to behave on the ghats and in the temples.",
+    "reach": "How to reach",
+    "air": {
+      "title": "By air",
+      "text": "Lal Bahadur Shastri International Airport (Babatpur) is 25 km north-west of the city, with direct flights from Delhi, Mumbai, Bengaluru, Kolkata and Hyderabad; a prepaid taxi to the ghats takes about an hour."
+    },
+    "rail": {
+      "title": "By rail",
+      "text": "Varanasi Junction (Cantt) is the main station; Banaras (Manduadih) and Kashi stations also serve the city. The Vande Bharat from Delhi takes about 8 hours; Cantt to Godowlia is 20–30 minutes by auto."
+    },
+    "road": {
+      "title": "By road",
+      "text": "On NH-19 (Delhi–Kolkata) and NH-31; Lucknow is 300 km, Prayagraj 120 km. Cars cannot enter the old-city lanes: from Godowlia it is on foot or by cycle-rickshaw."
+    },
+    "season": {
+      "title": "Best season",
+      "text": "October to March: cool mornings, clear skies, Dev Deepawali and Shivratri. April–June climbs past 40 °C; in July–September the Ganga rises, many ghats go under water and boat services can stop."
+    },
+    "etiquette": {
+      "title": "Etiquette",
+      "items": [
+        "Leave shoes, leather and phones outside temples; keep shoulders and knees covered.",
+        "Do not photograph cremations at Manikarnika or Harishchandra Ghat; watch from a distance and in silence.",
+        "At the aarti, do not stand in front of the priests' platforms; watch from the steps or a boat.",
+        "Agree boat and guide prices before you start; avoid touts offering 'special darshan'.",
+        "Nothing plastic goes into the Ganga; buy only clay diyas.",
+        "Cover your head in a gurudwara, stay outside a mosque at prayer times, keep quiet during a church service."
+      ]
+    }
   }
 }

@@ -150,3 +150,17 @@ Loader 2.2 s (DESIGN.md said ≤ 1.8 s; overridden by checkpoint feedback), wate
 - Verses: Gurmukhi and Arabic render in system fonts on non-Punjabi locales (Noto Gurmukhi is only loaded for `pa`); Phase 7 can add a small subset font if the fallbacks look poor on your devices.
 - Projects `verified: false` for two items; the ropeway's opening date has moved three times, so it is marked under construction with the latest target only.
 - Project cards have no images yet (placeholders not shown; the card is text-first by design).
+
+## Phase 6 — Festivals, food, itineraries, practical · 2026-09-25 · ✅
+
+**Did**
+- `content/festivals.json`: 7 festivals (Dev Deepawali, Maha Shivratri, Ganga Mahotsav, Bharat Milap, Nag Nathaiya, Buddha Purnima, Ramlila of Ramnagar) with lunar rule, months, place, summary, sources. `content/food.json`: 8 dishes with type, season, where-to-find, summary. Itineraries (1/2/3-day) unchanged from Phase 1 with sunrise/sunset markers.
+- **Festivals**: a 12-month calendar strip (lamp dots where festivals fall, sr-only names per month) + cards in month order with faith glyph, when and where. Lunar-date note; no Gregorian dates are hard-coded, so nothing goes stale.
+- **Food**: four-column grid, type chip, vegetarian mark, season and shop list.
+- **Itineraries**: accessible tabs (roles, arrow keys) over a vertical timeline; sunrise/sunset stops get a glowing sun glyph; named stops link to the Places section.
+- **Practical**: air / rail / road / best-season cards and an etiquette list (ghats, cremation ghats, aarti, boats, plastic, other faiths' places).
+- All copy for these sections lives in `messages/*.json`; content in `/content`.
+
+**Verification**: build ✅ lint ✅ tsc ✅; Puppeteer desktop + mobile: 7 festival cards / 12 month cells, 8 food cards, tabs switch by click and ArrowRight, 3 days rendered on the 3-day plan with sunrise/sunset markers, 4 practical cards + 6 etiquette lines; console clean. Lighthouse in the summary below.
+
+**Needs review**: festival "when" rules and the practical travel facts (flight cities, Vande Bharat timing, distances) are from general knowledge and should be spot-checked by someone local; the thandai entry mentions licensed bhang counters factually.

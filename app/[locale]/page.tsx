@@ -3,6 +3,10 @@ import Hero from "@/components/hero/Hero";
 import RippleWipe from "@/components/motion/RippleWipe";
 import DayInKashi from "@/components/sections/DayInKashi";
 import Faiths from "@/components/sections/Faiths";
+import Festivals from "@/components/sections/Festivals";
+import Food from "@/components/sections/Food";
+import Itineraries from "@/components/sections/Itineraries";
+import Practical from "@/components/sections/Practical";
 import Places from "@/components/sections/Places";
 import Projects from "@/components/sections/Projects";
 import type { Locale } from "@/lib/i18n/locales";
@@ -22,6 +26,12 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <Faiths locale={locale as Locale} />
       <RippleWipe />
       <Projects locale={locale as Locale} />
+      <RippleWipe />
+      <Festivals locale={locale as Locale} />
+      <Food locale={locale as Locale} />
+      <RippleWipe />
+      <Itineraries locale={locale as Locale} />
+      <Practical locale={locale as Locale} />
     </main>
   );
 }
