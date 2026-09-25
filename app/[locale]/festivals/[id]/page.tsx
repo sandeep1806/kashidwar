@@ -9,7 +9,7 @@ import EnglishNote from "@/components/ui/EnglishNote";
 import FestivalDateLine from "@/components/ui/FestivalDateLine";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 import { festivals, localize, type Faith } from "@/lib/content";
-import { FESTIVAL_YEAR, formatFestivalRange, verifiedDate } from "@/lib/festivalDates";
+import { festivalDateView, festivalTiming, timingSources } from "@/lib/festivalDates";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, breadcrumbLd, festivalPlaces, alternatesFor, metaDescription, neighbours, pagePath, pageUrl } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
@@ -34,8 +34,9 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/festival
   const t = await getTranslations({ locale, namespace: "meta" });
   const { primary } = names(loc, raw);
   const path = pagePath("festivals", id);
-  // Only promise dates in the title when the page can show a verified one.
-  const title = verifiedDate(id) ? t("festivalTitle", { name: primary, year: String(FESTIVAL_YEAR) }) : t("festivalTitleTbc", { name: primary });
+  // Titles name a year only for a verified upcoming (or current) occurrence.
+  const next = festivalTiming(raw).next;
+  const title = next ? t("festivalTitle", { name: primary, year: String(next.year) }) : t("festivalTitleTbc", { name: primary });
   const description = metaDescription(t("festivalDescription", { name: primary, when: f.when, summary: f.summary }));
   const photo = getPhoto(`festivals/${id}`, loc);
   const image = photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`;
@@ -68,8 +69,9 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
   const path = pagePath("festivals", id);
   const faiths: Faith[] = raw.faith.length ? raw.faith : ["secular"];
   const photo = getPhoto(`festivals/${id}`, loc);
-  const dated = verifiedDate(id);
-  const dateLabel = dated ? formatFestivalRange(LOCALES[loc].bcp47, dated.startDate, dated.endDate) : t("datesTbc", { year: String(FESTIVAL_YEAR) });
+  const timing = festivalTiming(raw);
+  const dated = timing.next; // Event JSON-LD: the next verified occurrence only, never a past one
+  const dateView = festivalDateView(raw, LOCALES[loc].bcp47, t, timing);
   const venues = festivalPlaces(raw);
   const { prev, next } = neighbours(festivals, index);
   const home = `/${locale}`;
@@ -87,14 +89,14 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
     ld.unshift({
       "@context": "https://schema.org",
       "@type": "Event",
-      "@id": absolute(`/${locale}${path}#event-${FESTIVAL_YEAR}`),
-      name: `${primary} ${FESTIVAL_YEAR}`,
+      "@id": absolute(`/${locale}${path}#event-${dated.year}`),
+      name: `${primary} ${dated.year}`,
       alternateName: secondary,
       description: f.summary,
       url: absolute(`/${locale}${path}`),
       inLanguage: LOCALES[loc].bcp47,
       startDate: dated.startDate,
-      endDate: dated.endDate ?? dated.startDate,
+      endDate: dated.endDate,
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       isAccessibleForFree: true,
@@ -124,7 +126,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
         ))}
         title={primary}
         secondary={secondary}
-        subtitle={<FestivalDateLine iso={dated?.startDate ?? null} label={dateLabel} heading={t("datesIn", { year: String(FESTIVAL_YEAR) })} />}
+        subtitle={<FestivalDateLine view={dateView} />}
         lead={<p>{f.summary}</p>}
         photo={photo}
         island={
@@ -172,12 +174,12 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
               <p>{practical("rail.text")}</p>
             </div>
           </Block>
-          <Sources label={tp("sources")} sources={[...raw.sources, ...(dated?.sources ?? [])]} />
+          <Sources label={tp("sources")} sources={[...raw.sources, ...timingSources(timing)]} />
         </div>
         <aside>
           <Facts
             items={[
-              { label: t("datesIn", { year: String(FESTIVAL_YEAR) }), value: dateLabel },
+              { label: dateView.featured.prefix ?? t("dateNext"), value: dateView.featured.text },
               { label: tf("when"), value: `${f.when} · ${raw.months.map((m) => months[m - 1]).join("–")}` },
               { label: tf("where"), value: f.where },
             ]}

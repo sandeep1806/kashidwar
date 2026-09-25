@@ -5,9 +5,11 @@
  *   - indexed locales (lib/seo.ts INDEXED_LOCALES): robots "index, follow", hreflang
  *     for each indexed locale + x-default → /en; other locales: "noindex, follow", no hreflang
  *   - sitemap.xml and sitemap-images.xml list indexed locales only
- *   - festival dates: Event JSON-LD startDate must be shown visibly (data-event-date
- *     + <time>); a title mentioning the festival year must have a verified visible date;
- *     every festival page shows a date line
+ *   - festival dates, against the page's build date (<meta name="build-date">):
+ *     the featured date (next occurrence / in progress / expected month) is never in
+ *     the past; Event JSON-LD = the featured verified occurrence only (never a past or
+ *     unconfirmed one); a year in the title = the featured occurrence's year;
+ *     "last held" dates are in the past; every festival page features a date
  *   - image frames: every element with the `arch` class contains an <img> or the
  *     ArtFallback placeholder (data-art-fallback); an empty arch fails
  *   - titles and descriptions unique within each locale
@@ -21,7 +23,6 @@ import { join, relative } from "node:path";
 
 const dir = new URL("../.next/server/app/", import.meta.url).pathname;
 const seoTs = readFileSync(new URL("../lib/seo.ts", import.meta.url), "utf8");
-const YEAR = readFileSync(new URL("../lib/festivalDates.ts", import.meta.url), "utf8").match(/FESTIVAL_YEAR = (\d{4})/)[1];
 const INDEXED = JSON.parse(seoTs.match(/INDEXED_LOCALES = (\[[^\]]*\])/)[1].replace(/'/g, '"'));
 const files = [];
 (function walk(d) {
@@ -153,17 +154,35 @@ for (const file of files) {
     try { data = JSON.parse(m[1]); } catch { bad(file, "JSON-LD does not parse"); continue; }
     for (const o of [data].flat()) { checkLd(file, o); if (o["@type"] === "Event") events.push(o); }
   }
-  // Visible dates: <p data-event-date="YYYY-MM-DD|tbc">…<time dateTime="…">label</time></p>
-  const shown = [...html.matchAll(/data-event-date="([^"]+)"[^>]*>.*?<time(?: dateTime="([^"]*)")?>([^<]+)<\/time>/gs)].map((m) => ({ iso: m[1], dt: m[2], label: m[3].trim() }));
-  for (const s of shown) {
-    if (!s.label) bad(file, "empty festival date label");
-    if (s.iso !== "tbc" && s.dt !== s.iso) bad(file, `date line ${s.iso} has <time dateTime="${s.dt}">`);
+  // Festival dates (FestivalDateLine): featured next/now/expected + "last held".
+  const build = html.match(/<meta name="build-date" content="(\d{4}-\d{2}-\d{2})"/)?.[1];
+  if (!build) bad(file, "no build-date meta");
+  const featured = [...html.matchAll(/<p data-featured="" data-event-date="([^"]+)"(?: data-event-end="([^"]+)")?[^>]*>.*?<time(?: dateTime="([^"]*)")?>([^<]+)<\/time>/gs)].map((m) => ({ iso: m[1], end: m[2], dt: m[3], label: m[4].trim() }));
+  const lastHeld = [...html.matchAll(/data-last-held="([^"]+)"/g)].map((m) => m[1]);
+  for (const f of featured) {
+    if (!f.label) bad(file, "empty featured date");
+    if (f.iso.startsWith("expected-")) {
+      if (build && f.iso.slice(9) < build.slice(0, 7)) bad(file, `expected month ${f.iso.slice(9)} is before the build month`);
+    } else {
+      if (f.dt !== f.iso) bad(file, `featured date ${f.iso} has <time dateTime="${f.dt}">`);
+      if (build && (f.end ?? f.iso) < build) bad(file, `featured date ${f.iso}–${f.end} is in the past (build ${build})`);
+    }
   }
-  for (const e of events) if (!shown.some((s) => s.iso === e.startDate)) bad(file, `Event startDate ${e.startDate} is not shown on the page`);
+  for (const d of lastHeld) if (build && d >= build) bad(file, `"last held" ${d} is not in the past`);
+  for (const e of events) {
+    if (!featured.some((f) => f.iso === e.startDate)) bad(file, `Event ${e.startDate} is not the featured date`);
+    if (build && (e.endDate ?? e.startDate) < build) bad(file, `Event ${e.startDate} is in the past`);
+    if (lastHeld.includes(e.startDate)) bad(file, `Event marks up a past occurrence ${e.startDate}`);
+    if (!String(e.name).includes(e.startDate.slice(0, 4))) bad(file, `Event name "${e.name}" does not carry its year`);
+  }
   const isFestival = /\/festivals\//.test(relative(dir, file));
-  if (isFestival && !shown.length) bad(file, "festival page shows no date line");
-  if (title?.includes(YEAR) && !shown.some((s) => s.iso !== "tbc")) bad(file, `title mentions ${YEAR} but the page shows no verified date`);
-  if (isFestival && shown.some((s) => s.iso !== "tbc") !== events.length > 0) bad(file, "visible verified date and Event JSON-LD disagree");
+  const mainFeatured = featured[0];
+  if (isFestival) {
+    if (!mainFeatured) bad(file, "festival page features no date");
+    else if (mainFeatured.iso.startsWith("expected-") ? events.length > 0 : events.length !== 1) bad(file, "Event JSON-LD must exist exactly when a verified next date is featured");
+  }
+  const titleYear = title?.match(/\b(20\d\d)\b/)?.[1];
+  if (titleYear && isFestival && !(mainFeatured && !mainFeatured.iso.startsWith("expected-") && mainFeatured.iso.startsWith(titleYear))) bad(file, `title says ${titleYear} but the featured date is ${mainFeatured?.iso}`);
 }
 // Sitemaps: indexed locales only.
 for (const [name, re] of [["sitemap.xml.body", /<loc>([^<]+)<\/loc>/g], ["sitemap-images.xml.body", /<loc>([^<]+)<\/loc>/g]]) {

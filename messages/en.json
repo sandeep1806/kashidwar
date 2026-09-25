@@ -343,6 +343,11 @@
     "itineraryDays": "{n}-day itinerary",
     "otherItineraries": "Other itineraries",
     "location": "Location",
-    "mapLoading": "Loading map…"
+    "mapLoading": "Loading map…",
+    "dateNext": "Next",
+    "dateNow": "On now",
+    "dateExpected": "Next: expected {month} {year} — date not yet announced",
+    "dateLastHeld": "Last held: {date}",
+    "nextUp": "Coming up next"
   }
 }

@@ -20,6 +20,7 @@ import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { routing } from "@/lib/i18n/routing";
 import { alternatesFor } from "@/lib/pages";
 import { isIndexed } from "@/lib/seo";
+import { BUILD_DATE } from "@/lib/festivalDates";
 import { SITE_URL } from "@/lib/site";
 import "../globals.css";
 
@@ -69,6 +70,8 @@ export async function generateMetadata({
     // Regional locales: noindex until reviewed (lib/seo.ts → INDEXED_LOCALES).
     robots: isIndexed(locale) ? { index: true, follow: true } : { index: false, follow: true },
     manifest: "/manifest.webmanifest",
+    // The date festival "next occurrence" logic ran against (scripts/check-seo.mjs reads it).
+    other: { "build-date": BUILD_DATE },
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "48x48" },

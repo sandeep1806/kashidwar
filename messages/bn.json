@@ -343,6 +343,11 @@
     "itineraryDays": "{n} দিনের ভ্রমণসূচি",
     "otherItineraries": "অন্যান্য ভ্রমণসূচি",
     "location": "অবস্থান",
-    "mapLoading": "মানচিত্র লোড হচ্ছে…"
+    "mapLoading": "মানচিত্র লোড হচ্ছে…",
+    "dateNext": "পরবর্তী",
+    "dateNow": "এখন চলছে",
+    "dateExpected": "পরবর্তী: {month} {year}-এ প্রত্যাশিত — তারিখ এখনও ঘোষিত হয়নি",
+    "dateLastHeld": "শেষবার অনুষ্ঠিত: {date}",
+    "nextUp": "সবার আগে আসছে"
   }
 }

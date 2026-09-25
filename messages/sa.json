@@ -343,6 +343,11 @@
     "itineraryDays": "{n}-दिवसीया यात्रायोजना",
     "otherItineraries": "अन्याः यात्रायोजनाः",
     "location": "स्थानम्",
-    "mapLoading": "मानचित्रम् आरोप्यते…"
+    "mapLoading": "मानचित्रम् आरोप्यते…",
+    "dateNext": "आगामी",
+    "dateNow": "सम्प्रति प्रचलति",
+    "dateExpected": "आगामी: {month} {year} इति अपेक्षितम् — तिथिः अद्यापि न उद्घोषिता",
+    "dateLastHeld": "पूर्वम् आयोजितम्: {date}",
+    "nextUp": "सर्वप्रथमम् आगामि"
   }
 }

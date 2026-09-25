@@ -86,10 +86,20 @@ Sensitivity rules for picks: no cremations or bodies at Manikarnika, nothing fro
 ### Detail pages and SEO
 - Every place, festival, project and itinerary has a page in all 13 locales: `/[locale]/places/<id>`, `/festivals/<id>`, `/projects/<id>`, `/itineraries/<n>-day`, generated statically from the JSON (`app/[locale]/*/[id]/page.tsx`, helpers in `lib/pages.ts`). Home cards and the place modal link to them; a plain click on a place card still opens the quick view.
 - "How to reach" on place/project pages is computed from the coordinates (straight-line distance to Varanasi Junction, the airport and Godowlia) plus Google Maps / OpenStreetMap links; festival pages link their venues (`placeIds` in festivals.json).
-- Festival dates for the current year live in `content/festival-dates-2026.json` (verified with sources). Event JSON-LD is emitted only for verified dates. Add next year's file and bump `FESTIVAL_YEAR` in `lib/festivalDates.ts` each year.
+- Festival dates live in `content/festival-dates.json` as `{ id: { "2026": {…}, "2027": {…} } }`, each with `verified`, `note` and `sources`. See **Festival dates** below.
 - `app/sitemap.ts` lists every page × locale with hreflang alternates (x-default → English); `/sitemap-images.xml` lists each page's photos. Both are in robots.txt.
 - `node scripts/check-seo.mjs` (after a build) checks titles, descriptions, canonicals, hreflang and JSON-LD (Google's Event and BreadcrumbList rules) on every prerendered page.
 - `npm run build` first runs `scripts/heading-font/check.mjs`, which fails if a heading/name character is missing from the Tiro subset.
+
+### Festival dates (next occurrence)
+Pages always feature a festival's **next** occurrence, computed at build time (`lib/festivalDates.ts`, build date in `<meta name="build-date">`): the next verified date (or "On now" while it runs), else "Next: expected <month> <year> — date not yet announced" from an unverified entry or the festival's usual months. The last verified occurrence shows smaller as "Last held". Titles name a year and Event JSON-LD is emitted only for the verified next occurrence. Home festival cards are sorted by what comes next; the first is badged "Coming up next". `node scripts/check-seo.mjs` fails if any featured date is before the build date.
+
+To keep this current without manual edits the site rebuilds weekly: `worker.js` (the Worker entry, wrapping OpenNext's) has a `scheduled` handler, and `wrangler.jsonc` sets `triggers.crons` to Mondays 00:30 UTC. The handler POSTs to a Workers Builds **Deploy Hook**. One-time setup:
+1. Connect the repo in Workers Builds if it is not already (Workers & Pages → kashidwar → Settings → Builds: branch `redesign`, build command `npm run cf:build`, deploy command `npx opennextjs-cloudflare deploy`).
+2. Settings → Builds → Deploy Hooks → create a hook for `redesign`.
+3. `npx wrangler secret put DEPLOY_HOOK_URL` and paste the hook URL. Until then the cron logs a warning and does nothing.
+
+Each year, add the next year's dates (with sources) to `content/festival-dates.json`; anything missing falls back to "expected <month>".
 
 ### Indexing a locale
 Only the locales in `INDEXED_LOCALES` (`lib/seo.ts`, currently `["hi", "en"]`) are indexable. Pages in the other 11 locales carry `<meta name="robots" content="noindex, follow">`, have no hreflang links, and are left out of `sitemap.xml` and `sitemap-images.xml`; hreflang is exchanged only between indexed locales, with x-default → `/en`.

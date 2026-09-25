@@ -343,6 +343,11 @@
     "itineraryDays": "{n} ਦਿਨਾਂ ਦੀ ਯਾਤਰਾ-ਯੋਜਨਾ",
     "otherItineraries": "ਹੋਰ ਯਾਤਰਾ-ਯੋਜਨਾਵਾਂ",
     "location": "ਸਥਾਨ",
-    "mapLoading": "ਨਕਸ਼ਾ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…"
+    "mapLoading": "ਨਕਸ਼ਾ ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ…",
+    "dateNext": "ਅਗਲੀ ਵਾਰ",
+    "dateNow": "ਹੁਣ ਚੱਲ ਰਿਹਾ ਹੈ",
+    "dateExpected": "ਅਗਲੀ ਵਾਰ: {month} {year} ਵਿੱਚ ਉਮੀਦ — ਤਾਰੀਖ਼ ਅਜੇ ਐਲਾਨੀ ਨਹੀਂ ਗਈ",
+    "dateLastHeld": "ਪਿਛਲੀ ਵਾਰ: {date}",
+    "nextUp": "ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਆਉਣ ਵਾਲਾ"
   }
 }

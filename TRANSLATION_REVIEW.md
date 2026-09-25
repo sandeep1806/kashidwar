@@ -73,5 +73,8 @@ Machine-translated 2026-09-25. Check: ta படித்துறைகள் vs
 - `meta.festivalTitleTbc` (festival title when this year's date is unconfirmed; must not mention a year): mr uses the gender-neutral "वाराणसीतील {name} — केव्हा आणि काय घडते"; ta/pa say "comes" rather than "falls"; ml is a looser rendering; sa phrasing.
 - `page.fromHub` now says "in a straight line" in every locale (ta நேர்கோட்டில், te సరళరేఖలో, kn ನೇರ ರೇಖೆಯಲ್ಲಿ, ml നേർരേഖയിൽ, bn সরলরেখায়, or ସିଧା ରେଖାରେ, as পোন ৰেখাত, mr सरळ रेषेत, gu સીધી રેખામાં, pa ਸਿੱਧੀ ਲਕੀਰ ਵਿੱਚ, sa ऋजुरेखया).
 
+## Priority 1f — festival date labels (`page.dateNext`, `dateNow`, `dateExpected`, `dateLastHeld`, `nextUp`)
+kn/pa "Next" follows Hindi अगली बार (ಮುಂದಿನ ಬಾರಿ, ਅਗਲੀ ਵਾਰ); mr/pa masculine forms (येणारा, ਆਉਣ ਵਾਲਾ, ਚੱਲ ਰਿਹਾ ਹੈ); suffixes joined to {year} (`{year}లో`, `{year}ರಲ್ಲಿ`, `{year}-ൽ`, `{year}-এ`, `{year}ରେ`, `{year}ত`, `{year}માં`); sa "सम्प्रति प्रचलति", "तिथिः अद्यापि न उद्घोषिता". Sanskrit dates use Intl's sa-IN format (२४ नवंबरमासः २०२६).
+
 ## Locale ↔ font check
 Fonts load per script via `lib/fonts.ts`. Language names in the switcher and footer use tiny per-script Noto Sans subsets (`lib/fonts/lang/`, built by `scripts/lang-fonts/build.py`); rebuild them if a native name or greeting in `lib/i18n/locales.ts` changes (the build check fails otherwise). Verses in Gurmukhi, Arabic and Greek inside the Faiths tiles render with system fonts on locales that don't load those scripts; if they look wrong on a target device, add `preload: false` subset faces for `gurmukhi` and an Arabic Noto face.

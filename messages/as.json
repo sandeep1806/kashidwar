@@ -343,6 +343,11 @@
     "itineraryDays": "{n} দিনৰ ভ্ৰমণসূচী",
     "otherItineraries": "অন্যান্য ভ্ৰমণসূচী",
     "location": "অৱস্থান",
-    "mapLoading": "মানচিত্ৰ লোড হৈ আছে…"
+    "mapLoading": "মানচিত্ৰ লোড হৈ আছে…",
+    "dateNext": "পৰৱৰ্তী",
+    "dateNow": "এতিয়া চলি আছে",
+    "dateExpected": "পৰৱৰ্তী: {month} {year}ত আশা কৰা হৈছে — তাৰিখ এতিয়াও ঘোষণা কৰা হোৱা নাই",
+    "dateLastHeld": "শেষবাৰ অনুষ্ঠিত: {date}",
+    "nextUp": "সকলোতকৈ আগতে আহিছে"
   }
 }

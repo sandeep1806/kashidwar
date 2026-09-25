@@ -343,6 +343,11 @@
     "itineraryDays": "{n} ଦିନିଆ ଭ୍ରମଣ ଯୋଜନା",
     "otherItineraries": "ଅନ୍ୟ ଭ୍ରମଣ ଯୋଜନା",
     "location": "ସ୍ଥାନ",
-    "mapLoading": "ମାନଚିତ୍ର ଲୋଡ୍ ହେଉଛି…"
+    "mapLoading": "ମାନଚିତ୍ର ଲୋଡ୍ ହେଉଛି…",
+    "dateNext": "ପରବର୍ତ୍ତୀ",
+    "dateNow": "ବର୍ତ୍ତମାନ ଚାଲିଛି",
+    "dateExpected": "ପରବର୍ତ୍ତୀ: {month} {year}ରେ ଆଶା କରାଯାଉଛି — ତାରିଖ ଏପର୍ଯ୍ୟନ୍ତ ଘୋଷଣା ହୋଇନାହିଁ",
+    "dateLastHeld": "ଗତ ଥର ଅନୁଷ୍ଠିତ: {date}",
+    "nextUp": "ସବୁଠୁ ଆଗରେ ଆସୁଛି"
   }
 }

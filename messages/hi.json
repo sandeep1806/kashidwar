@@ -343,6 +343,11 @@
     "itineraryDays": "{n} दिन की यात्रा-योजना",
     "otherItineraries": "अन्य यात्रा-योजनाएँ",
     "location": "स्थान",
-    "mapLoading": "नक्शा लोड हो रहा है…"
+    "mapLoading": "नक्शा लोड हो रहा है…",
+    "dateNext": "अगली बार",
+    "dateNow": "अभी चल रहा है",
+    "dateExpected": "अगली बार: {month} {year} में अपेक्षित — तिथि अभी घोषित नहीं",
+    "dateLastHeld": "पिछली बार: {date}",
+    "nextUp": "सबसे पहले आने वाला"
   }
 }

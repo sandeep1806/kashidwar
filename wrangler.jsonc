@@ -1,7 +1,8 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "kashidwar",
-  "main": ".open-next/worker.js",
+  // worker.js wraps .open-next/worker.js and adds the weekly rebuild cron.
+  "main": "worker.js",
   "compatibility_date": "2026-09-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   // Apex only. www.kashidwar.com is a zone Redirect Rule (301 → apex) and
@@ -23,6 +24,9 @@
     "binding": "IMAGES"
   },
   "observability": { "enabled": true },
+  // Weekly rebuild (Mondays 00:30 UTC = 06:00 IST) so festival pages roll over
+  // to the next occurrence: worker.js calls the DEPLOY_HOOK_URL secret.
+  "triggers": { "crons": ["30 0 * * 1"] },
   "vars": {
     // Public origin of the site. Used for canonical URLs, hreflang, sitemap,
     // robots, OpenGraph and JSON-LD. scripts/cf-build.mjs injects it into

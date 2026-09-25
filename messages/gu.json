@@ -343,6 +343,11 @@
     "itineraryDays": "{n} દિવસનો પ્રવાસ કાર્યક્રમ",
     "otherItineraries": "અન્ય પ્રવાસ કાર્યક્રમો",
     "location": "સ્થાન",
-    "mapLoading": "નકશો લોડ થઈ રહ્યો છે…"
+    "mapLoading": "નકશો લોડ થઈ રહ્યો છે…",
+    "dateNext": "આગામી",
+    "dateNow": "હાલ ચાલુ છે",
+    "dateExpected": "આગામી: {month} {year}માં અપેક્ષિત — તારીખ હજી જાહેર થઈ નથી",
+    "dateLastHeld": "છેલ્લી વાર: {date}",
+    "nextUp": "સૌથી પહેલાં આવનાર"
   }
 }

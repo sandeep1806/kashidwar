@@ -343,6 +343,11 @@
     "itineraryDays": "{n} दिवसांचा प्रवास आराखडा",
     "otherItineraries": "इतर प्रवास आराखडे",
     "location": "स्थान",
-    "mapLoading": "नकाशा लोड होत आहे…"
+    "mapLoading": "नकाशा लोड होत आहे…",
+    "dateNext": "पुढील",
+    "dateNow": "सध्या सुरू आहे",
+    "dateExpected": "पुढील: {month} {year} मध्ये अपेक्षित — तारीख अद्याप जाहीर नाही",
+    "dateLastHeld": "मागील वेळी: {date}",
+    "nextUp": "सर्वात आधी येणारा"
   }
 }

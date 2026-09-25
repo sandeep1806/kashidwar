@@ -343,6 +343,11 @@
     "itineraryDays": "{n} ದಿನಗಳ ಪ್ರವಾಸ ಯೋಜನೆ",
     "otherItineraries": "ಇತರ ಪ್ರವಾಸ ಯೋಜನೆಗಳು",
     "location": "ಸ್ಥಳ",
-    "mapLoading": "ನಕ್ಷೆ ಲೋಡ್ ಆಗುತ್ತಿದೆ…"
+    "mapLoading": "ನಕ್ಷೆ ಲೋಡ್ ಆಗುತ್ತಿದೆ…",
+    "dateNext": "ಮುಂದಿನ ಬಾರಿ",
+    "dateNow": "ಈಗ ನಡೆಯುತ್ತಿದೆ",
+    "dateExpected": "ಮುಂದಿನ ಬಾರಿ: {month} {year}ರಲ್ಲಿ ನಿರೀಕ್ಷಿತ — ದಿನಾಂಕ ಇನ್ನೂ ಘೋಷಿಸಿಲ್ಲ",
+    "dateLastHeld": "ಕೊನೆಯ ಬಾರಿ ನಡೆದದ್ದು: {date}",
+    "nextUp": "ಮುಂದೆ ಬರಲಿದೆ"
   }
 }
