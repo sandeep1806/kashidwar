@@ -47,6 +47,13 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 - `npm audit`: 0 vulnerabilities.
 - Verification tooling used from the session scratchpad only (not in package.json): Lighthouse 13.5.0, puppeteer-core driving system Chrome 154, Vercel CLI 60 via npx.
 
+## Phase 9.2 · 2026-09-25 — Cloudflare Workers
+| Package | Version | Peer range checked | Notes |
+|---|---|---|---|
+| @opennextjs/cloudflare | 1.20.6 | next `>=15.5.24<16 \|\| >=16.3.3` ✓ (16.3.6), wrangler ^4.125 | OpenNext adapter; `opennextjs-cloudflare build/preview/deploy` |
+| wrangler (dev) | 4.140.0 | — | local Workers runtime for `npm run preview`, deploys |
+- `npm audit`: 0 vulnerabilities after install.
+
 ## Deliberately not installed
 - `@react-three/postprocessing` — bloom is faked with additive billboards (see PROGRESS.md Phase 2).
 

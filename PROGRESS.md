@@ -243,3 +243,16 @@ Reversed the Phase 9 lazy-body decision on advice that search, social previews a
 - The remaining perf structure (client lists, JSON-free client helpers, ssr:false modal, deferred body fonts + block display faces, interaction-only motion bundle on touch) is what keeps it above 90 with full text.
 
 **Not done here, by request:** Vercel deploy (`npx vercel login` → `npx vercel --prod`, set `NEXT_PUBLIC_SITE_URL`, then check /hi, /en, /ta).
+
+## Phase 9.2 — Cloudflare Workers deploy · 2026-09-25 · ✅
+
+**Did**
+- Deploy target changed from Vercel to **Cloudflare Workers via OpenNext** (`@opennextjs/cloudflare` 1.20.6, `wrangler` 4.140.0). `wrangler.jsonc`: worker `kashidwar`, `nodejs_compat` + `global_fetch_strictly_public`, assets binding for the prerendered pages, self service binding, Images binding, observability, `vars.NEXT_PUBLIC_SITE_URL = https://kashidwar.com` and `NEXT_PUBLIC_IMAGE_OPTIMIZATION = off`. `open-next.config.ts` with the default (no R2) config since nothing is dynamic. `image-loader.ts` (Cloudflare Images URL loader, passthrough until enabled). `public/_headers` immutable cache for `/_next/static`. `scripts/cf-build.mjs` exposes the wrangler vars to `next build` so the prerendered canonical/hreflang/sitemap/OG URLs are right; a Workers Builds environment variable of the same name overrides it.
+- `package.json` scripts: `cf:build`, `preview`, `deploy`, `upload`, `cf-typegen`. `.node-version` = 22.
+- Vercel-specific bits removed (`.vercel` ignore, `_vercel` in the proxy matcher, Vercel URLs in docs and defaults). CLAUDE.md deploy line updated.
+- README: Workers Builds settings (build `npm run cf:build`, deploy `npx opennextjs-cloudflare deploy`, env `NEXT_PUBLIC_SITE_URL=https://kashidwar.com`) and the kashidwar.com cut-over steps.
+- Repo: remote `origin` = github.com/sandeep1806/kashidwar; this project pushed on branch **`redesign`**, `main` untouched. Secrets scan before push: no `.env` files tracked (`.env*` ignored, only the placeholder `.env.example` kept), no keys/tokens in tracked files.
+
+**OpenGraph images.** They are per-locale PNGs in `public/media/og/`, served as static assets — not `ImageResponse` routes. `ImageResponse` renders with Satori, which cannot shape Indic scripts (conjuncts and matras come out wrong; vercel/satori#516), so a Hindi/Tamil/Bengali title would be broken. The PNGs are rendered by Chrome from the same message files; regenerate with the scratchpad `og.mjs` (or any headless Chrome) when titles change.
+
+**Verified under `npm run preview` (wrangler dev, local Workers runtime)** — see the checkpoint report for the exact results of: 13 locale routes, `/` redirect, 404 for unknown paths, `sitemap.xml` + `robots.txt`, hreflang + canonical + OG image URLs pointing at kashidwar.com, OG PNGs served, JSON-LD present, and the interactive smoke test (filters, modal, map, finale).

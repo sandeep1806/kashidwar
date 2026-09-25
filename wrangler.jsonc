@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kashidwar",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "kashidwar"
+    }
+  ],
+  "images": {
+    "binding": "IMAGES"
+  },
+  "observability": { "enabled": true },
+  "vars": {
+    // Public origin of the site. Used for canonical URLs, hreflang, sitemap,
+    // robots, OpenGraph and JSON-LD. scripts/cf-build.mjs injects it into
+    // `next build` (the prerendered pages bake it in); a build-environment
+    // variable of the same name (Workers Builds) takes precedence.
+    "NEXT_PUBLIC_SITE_URL": "https://kashidwar.com",
+    // "on" once Cloudflare Images (transformations) is enabled on the zone;
+    // "off" serves photos as-is through next/image's custom loader.
+    "NEXT_PUBLIC_IMAGE_OPTIMIZATION": "off"
+  }
+}

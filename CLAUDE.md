@@ -20,7 +20,7 @@ Read DESIGN.md before writing any UI. Do not deviate from the design system with
 - i18n: `next-intl`
 - Map: `leaflet` + `react-leaflet` (dynamic import, `ssr: false`)
 - Content: JSON in `/content` (places, projects, festivals, food, itineraries) — never hardcode copy in JSX
-- Deploy: Vercel
+- Deploy: Cloudflare Workers via `@opennextjs/cloudflare` (Workers Builds from GitHub)
 
 ## Dependency policy (mandatory)
 - Scaffold with `npx create-next-app@latest`. Install every package with `@latest`.

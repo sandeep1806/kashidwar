@@ -17,7 +17,8 @@ Node ≥ 20.9 (developed on 22). Copy `.env.example` to `.env.local` if you want
 
 | Variable | Purpose |
 |---|---|
-| `NEXT_PUBLIC_SITE_URL` | Canonical origin for metadata, sitemap, robots, JSON-LD (default `https://kashidwar.vercel.app`) |
+| `NEXT_PUBLIC_SITE_URL` | Canonical origin for metadata, sitemap, robots, JSON-LD. Set in `wrangler.jsonc` → `vars` (and in Workers Builds) to `https://kashidwar.com` |
+| `NEXT_PUBLIC_IMAGE_OPTIMIZATION` | `on` once Cloudflare Images is enabled on the zone; `off` (default) serves photos unchanged |
 | `NEXT_PUBLIC_MAP_TILE_URL` / `NEXT_PUBLIC_MAP_ATTRIBUTION` / `NEXT_PUBLIC_MAP_TILES_ARE_DARK` | Map tile provider (default: OpenStreetMap darkened with CSS) |
 
 Docs that steer the work: `CLAUDE.md` (rules), `DESIGN.md` (design system), `PROMPTS.md` (phases), `PROGRESS.md` (what was built and why), `DEPENDENCIES.md` (versions), `TRANSLATION_REVIEW.md` (what native speakers should check).
@@ -86,5 +87,36 @@ Every section's text is server-rendered into the initial HTML (search engines, s
 - 3D only in the hero, only on capable desktops (`lib/device.ts`); mobile gets the SVG fallback.
 - Faiths are presented equally and ordered by arrival in Kashi.
 
-## Deploy
-Vercel: `npx vercel` (login first), set `NEXT_PUBLIC_SITE_URL` to the production domain. `next build` prerenders all 13 locales statically; the only runtime code is the locale proxy.
+## Deploy — Cloudflare Workers (OpenNext)
+
+The site runs on Cloudflare Workers through `@opennextjs/cloudflare`. Every page, the sitemap, robots and the OpenGraph images are prerendered at build time and served as static assets; the Worker only runs the locale redirect proxy and the 404/error fallbacks. Config: `wrangler.jsonc` (worker `kashidwar`, `nodejs_compat`, assets binding, vars), `open-next.config.ts`, `image-loader.ts`.
+
+```bash
+npm run preview   # build with OpenNext and serve on the local Workers runtime (wrangler dev)
+npm run deploy    # build and deploy with your own Cloudflare login (npx wrangler login)
+npm run cf:build  # build only → .open-next/
+```
+
+`scripts/cf-build.mjs` reads `vars` from `wrangler.jsonc` and exposes them to `next build`, because `NEXT_PUBLIC_*` values are inlined into the prerendered pages. A variable already set in the environment (for example by Workers Builds) wins.
+
+### Workers Builds (deploy from GitHub)
+In the Cloudflare dashboard → Workers & Pages → the `kashidwar` Worker → Settings → Builds, connect `sandeep1806/kashidwar` and use:
+
+| Setting | Value |
+|---|---|
+| Production branch | `master` (the repo's default; merge `redesign` into it when ready — preview builds run for other branches) |
+| Build command | `npm run cf:build` |
+| Deploy command | `npx opennextjs-cloudflare deploy` |
+| Root directory | `/` |
+| Build variable | `NEXT_PUBLIC_SITE_URL=https://kashidwar.com` |
+| Node version | 22 (`.node-version`) |
+
+Preview deployments of non-production branches get a `*.workers.dev` URL; their canonical tags still point at kashidwar.com, which is what you want for search engines.
+
+### Domain cut-over (kashidwar.com currently serves the older site)
+1. Merge `redesign` into `master` (or set `redesign` as the production branch temporarily) so Workers Builds deploys this project to the `kashidwar` Worker.
+2. Check the deployment on its `workers.dev` URL: `/hi`, `/en`, `/ta`, `/sitemap.xml`, `/robots.txt`, a wrong path for the 404.
+3. In the Worker → Settings → Domains & Routes, add the custom domain `kashidwar.com` (and `www.kashidwar.com`, redirected to the apex). Cloudflare updates DNS automatically when the zone is on the same account.
+4. Remove or disable whatever currently serves the old site on that hostname (its Pages project / Worker route) so the new Worker takes the hostname.
+5. Confirm `https://kashidwar.com/` redirects to `/hi`, that `<link rel="canonical">` and the sitemap use `https://kashidwar.com`, and resubmit the sitemap in Google Search Console and Bing Webmaster Tools.
+6. Optional: enable Cloudflare Images on the zone and set `NEXT_PUBLIC_IMAGE_OPTIMIZATION=on` for resized AVIF/WebP photos.
