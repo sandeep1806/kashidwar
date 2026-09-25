@@ -3,69 +3,637 @@
     "id": "kashi-vishwanath",
     "name_en": "Kashi Vishwanath Temple",
     "name_hi": "काशी विश्वनाथ मंदिर",
-    "faith": ["hindu"],
+    "faith": [
+      "hindu"
+    ],
     "type": "temple",
     "lat": 25.3109,
     "lng": 83.0107,
+    "coordsVerified": true,
     "summary": "The jyotirlinga at the heart of the city. The present temple was built by Ahilyabai Holkar in 1780; its gold-plated spire was gifted by Maharaja Ranjit Singh in 1835. Since 2021 the corridor opens the temple directly to the river at Lalita Ghat.",
+    "story": "Kashi is called the city of Shiva, and this is where the city keeps him. Pilgrims who have walked for weeks end their journey here with a single glimpse of the linga.",
     "bestTime": "Mangala Aarti before dawn (around 03:00), or after the evening Sapta Rishi Aarti",
     "image": "/media/places/kashi-vishwanath.jpg",
+    "tips": [
+      "Phones, bags and leather are not allowed inside; lockers are available near the corridor gates.",
+      "Queues are shortest in the first hour after opening."
+    ],
     "sources": [
       {
         "title": "Shri Kashi Vishwanath Temple Trust",
         "url": "https://shrikashivishwanath.org/",
-        "accessed": "2026-09-24"
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Wikipedia — Kashi Vishwanath Temple",
+        "url": "https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple",
+        "accessed": "2026-09-25"
       }
-    ],
-    "tips": [
-      "Phones, bags and leather are not allowed inside; lockers are available near the corridor gates.",
-      "Queues are shortest in the first hour after opening."
     ]
   },
   {
     "id": "dashashwamedh-ghat",
     "name_en": "Dashashwamedh Ghat",
     "name_hi": "दशाश्वमेध घाट",
-    "faith": ["hindu"],
+    "faith": [
+      "hindu"
+    ],
     "type": "ghat",
     "lat": 25.3068,
     "lng": 83.0104,
-    "summary": "The ghat where the city gathers. Named for the ten-horse sacrifice Brahma is said to have performed here, it is the stage for the evening Ganga Aarti, when seven priests raise tiered lamps in unison to the sound of conch and bell.",
-    "bestTime": "Evening Aarti begins at sunset (around 18:00 in winter, 19:00 in summer); arrive 45 minutes early",
+    "coordsVerified": true,
+    "summary": "The ghat where the city gathers. Named for the ten-horse sacrifice Brahma is said to have performed here, it is the stage for the evening Ganga Aarti, when seven priests raise tiered lamps in unison to conch and bell.",
+    "bestTime": "Evening Aarti begins at sunset (about 18:00 in winter, 19:00 in summer); arrive 45 minutes early",
     "image": "/media/places/dashashwamedh-ghat.jpg",
+    "tips": [
+      "Watching from a boat on the water gives the fullest view of the lamps.",
+      "The upper platforms near Man Mandir Ghat stay calmer than the steps."
+    ],
     "sources": [
       {
         "title": "Varanasi District — Tourist Places",
         "url": "https://varanasi.nic.in/tourist-places/",
-        "accessed": "2026-09-24"
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Wikipedia — Dashashwamedh Ghat",
+        "url": "https://en.wikipedia.org/wiki/Dashashwamedh_Ghat",
+        "accessed": "2026-09-25"
       }
-    ],
-    "tips": [
-      "Watching from a boat on the water gives the fullest view of the lamps.",
-      "The ghat steps fill quickly; the upper platforms near Man Mandir stay calmer."
     ]
   },
   {
     "id": "assi-ghat",
     "name_en": "Assi Ghat",
     "name_hi": "अस्सी घाट",
-    "faith": ["hindu"],
+    "faith": [
+      "hindu"
+    ],
     "type": "ghat",
     "lat": 25.2883,
     "lng": 83.0064,
-    "summary": "The southernmost ghat, where the Assi stream once met the Ganga. Every dawn the Subah-e-Banaras aarti, yoga and classical music greet the sun. Tulsidas is said to have written parts of the Ramcharitmanas nearby.",
+    "coordsVerified": true,
+    "summary": "The southernmost ghat, where the Assi stream once met the Ganga. Every dawn the Subah-e-Banaras aarti, yoga and classical music greet the sun. Tulsidas is said to have lived and written nearby.",
     "bestTime": "Sunrise, for Subah-e-Banaras (starts about 45 minutes before dawn)",
     "image": "/media/places/assi-ghat.jpg",
+    "tips": [
+      "Boats from Assi to Dashashwamedh at sunrise pass most of the main ghats in about an hour.",
+      "The lanes behind the ghat have the city's most relaxed cafés."
+    ],
     "sources": [
       {
         "title": "Subah-e-Banaras",
         "url": "https://subahebanaras.in/",
-        "accessed": "2026-09-24"
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Wikipedia — Assi Ghat",
+        "url": "https://en.wikipedia.org/wiki/Assi_Ghat",
+        "accessed": "2026-09-25"
       }
+    ]
+  },
+  {
+    "id": "manikarnika-ghat",
+    "name_en": "Manikarnika Ghat",
+    "name_hi": "मणिकर्णिका घाट",
+    "faith": [
+      "hindu"
     ],
+    "type": "ghat",
+    "lat": 25.3109,
+    "lng": 83.0141,
+    "coordsVerified": true,
+    "summary": "The great cremation ghat, where the fires are said never to have gone out. In the city's belief, to die in Kashi and be cremated here is to be released from rebirth. It is a place of grief and of faith, watched quietly and from a distance.",
+    "bestTime": "Seen from a passing boat; there is no 'best' hour, and photography is not appropriate",
+    "image": "/media/places/manikarnika-ghat.jpg",
     "tips": [
-      "Boats from Assi to Dashashwamedh at sunrise pass most of the main ghats in about an hour.",
-      "The lanes behind the ghat have the city's most relaxed cafés."
+      "Do not photograph the pyres or the mourners.",
+      "Decline offers of a 'special view' for money; the families do not benefit."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Manikarnika Ghat",
+        "url": "https://en.wikipedia.org/wiki/Manikarnika_Ghat",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "namo-ghat",
+    "name_en": "Namo Ghat",
+    "name_hi": "नमो घाट",
+    "faith": [],
+    "type": "ghat",
+    "lat": 25.3265,
+    "lng": 83.0385,
+    "coordsVerified": true,
+    "summary": "The old Khidkiya Ghat rebuilt as a broad, step-free riverfront at the northern end of the city: an open-air theatre, a floating jetty, a helipad and the three folded-hands sculptures that gave it its name. Inaugurated in November 2024.",
+    "bestTime": "Sunset, or Dev Deepawali evening",
+    "image": "/media/places/namo-ghat.jpg",
+    "tips": [
+      "It is the easiest ghat for wheelchairs and prams.",
+      "Boats and the cruise terminal for Sarnath-side trips leave from here."
+    ],
+    "sources": [
+      {
+        "title": "Kashi Official Web Portal — Namo Ghat",
+        "url": "https://kashi.gov.in/project-details/namo-ghat",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "ThePrint — Namo Ghat inauguration",
+        "url": "https://theprint.in/india/vice-president-dhankhar-to-inaugurate-namo-ghat-in-varanasi-on-friday/2356944/",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "panchganga-ghat",
+    "name_en": "Panchganga Ghat",
+    "name_hi": "पंचगंगा घाट",
+    "faith": [
+      "hindu",
+      "bhakti"
+    ],
+    "type": "ghat",
+    "lat": 25.315,
+    "lng": 83.0185,
+    "coordsVerified": false,
+    "summary": "Where five rivers are said to meet, four of them unseen. The Bindu Madhav temple stands here, and on these steps, tradition says, the weaver Kabir received his mantra from the saint Ramananda before dawn.",
+    "bestTime": "Early morning, when the steps are quiet; Kartik month evenings for the lamp-towers",
+    "image": "/media/places/panchganga-ghat.jpg",
+    "tips": [
+      "Climb the steps to the Alamgir Mosque terrace for the widest view of the river bend.",
+      "Akash-deep lamps are hoisted on tall bamboo here through the month of Kartik."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Panchganga Ghat",
+        "url": "https://en.wikipedia.org/wiki/Panchganga_Ghat",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Wikipedia — Alamgir Mosque",
+        "url": "https://en.wikipedia.org/wiki/Alamgir_Mosque",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "sarnath",
+    "name_en": "Sarnath — Dhamek Stupa",
+    "name_hi": "सारनाथ — धमेख स्तूप",
+    "faith": [
+      "buddhist"
+    ],
+    "type": "stupa",
+    "lat": 25.3808,
+    "lng": 83.0245,
+    "coordsVerified": true,
+    "summary": "Ten kilometres from the ghats, the deer park where the Buddha gave his first teaching after enlightenment. The Dhamek Stupa, 43 metres of brick and carved stone from the Gupta age, marks the spot; the monastery ruins, the Ashokan pillar stump and the museum's lion capital surround it.",
+    "story": "Five companions who had left the Buddha in disappointment sat here and heard him set the wheel of dharma in motion. The sangha began with those five.",
+    "bestTime": "Opening time (sunrise) before the tour buses; Buddha Purnima (April–May) for the full-moon celebrations",
+    "image": "/media/places/sarnath.jpg",
+    "tips": [
+      "The Archaeological Museum (closed Fridays) holds the original Lion Capital of Ashoka.",
+      "Allow half a day: the stupa, Mulagandha Kuti Vihar, the Thai and Tibetan temples and the museum are all walkable."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Dhamek Stupa",
+        "url": "https://en.wikipedia.org/wiki/Dhamek_Stupa",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Wikipedia — Sarnath",
+        "url": "https://en.wikipedia.org/wiki/Sarnath",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "mulagandha-kuti-vihar",
+    "name_en": "Mulagandha Kuti Vihar",
+    "name_hi": "मूलगंध कुटी विहार",
+    "faith": [
+      "buddhist"
+    ],
+    "type": "monastery",
+    "lat": 25.3796,
+    "lng": 83.0256,
+    "coordsVerified": false,
+    "summary": "The modern temple of Sarnath, built by the Maha Bodhi Society in 1931 beside the ruins of the Buddha's own hut. Its walls carry the Japanese painter Kosetsu Nosu's frescoes of the Buddha's life, and a bodhi tree grown from a cutting of the Anuradhapura tree stands outside.",
+    "bestTime": "Evening, when the relics are exposed and the chanting begins (around 18:00)",
+    "image": "/media/places/mulagandha-kuti-vihar.jpg",
+    "tips": [
+      "Shoes come off at the door; the frescoes are best seen in morning light.",
+      "The bell is rung at the evening service; sit at the back and listen."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Sarnath",
+        "url": "https://en.wikipedia.org/wiki/Sarnath",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Maha Bodhi Society of India",
+        "url": "https://www.mahabodhisociety.org/",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "ramnagar-fort",
+    "name_en": "Ramnagar Fort",
+    "name_hi": "रामनगर किला",
+    "faith": [],
+    "type": "fort",
+    "lat": 25.27,
+    "lng": 83.029,
+    "coordsVerified": false,
+    "summary": "The sandstone fort of the Maharajas of Banaras, built in 1750 by Raja Balwant Singh on the far bank opposite Tulsi Ghat. Its Saraswati Bhawan museum keeps vintage cars, palanquins, arms and an astronomical clock; every autumn the month-long Ramnagar Ramlila unfolds around it.",
+    "bestTime": "Late afternoon; October for the Ramlila",
+    "image": "/media/places/ramnagar-fort.jpg",
+    "tips": [
+      "Reach it by the Sant Ravidas bridge or, in low water, by a boat from Assi Ghat.",
+      "The museum is inside the fort; the family still lives in part of the palace."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Ramnagar Fort",
+        "url": "https://en.wikipedia.org/wiki/Ramnagar_Fort",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "bhu-new-vishwanath",
+    "name_en": "BHU & New Vishwanath Temple",
+    "name_hi": "काशी हिन्दू विश्वविद्यालय व नया विश्वनाथ मंदिर",
+    "faith": [
+      "hindu"
+    ],
+    "type": "university",
+    "lat": 25.262,
+    "lng": 82.9895,
+    "coordsVerified": false,
+    "summary": "Banaras Hindu University, founded by Madan Mohan Malaviya in 1916, is one of Asia's largest residential campuses. At its centre the Birla-built New Vishwanath Temple (1966) is open to all; Bharat Kala Bhavan holds miniature paintings, textiles and sculpture from across north India.",
+    "bestTime": "Morning; the museum is closed on Sundays",
+    "image": "/media/places/bhu.jpg",
+    "tips": [
+      "The temple has no entry restrictions and the Gita is carved on its walls.",
+      "Cycle-rickshaws run the long avenues inside the campus."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Banaras Hindu University",
+        "url": "https://en.wikipedia.org/wiki/Banaras_Hindu_University",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Wikipedia — Bharat Kala Bhavan",
+        "url": "https://en.wikipedia.org/wiki/Bharat_Kala_Bhavan",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "durga-kund",
+    "name_en": "Durga Kund Temple",
+    "name_hi": "दुर्गा मंदिर (दुर्गा कुंड)",
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.2886,
+    "lng": 82.9993,
+    "coordsVerified": true,
+    "summary": "The red temple beside its square tank, built in the 18th century by Rani Bhabani of Natore in the Nagara style. Ochre-washed spires, a stepped kund, and the monkeys that gave it its old nickname.",
+    "bestTime": "Early morning or the Navratri evenings (spring and autumn)",
+    "image": "/media/places/durga-kund.jpg",
+    "tips": [
+      "Tulsi Manas Temple is a two-minute walk; visit both together.",
+      "Keep food out of sight because of the monkeys."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Durga Mandir, Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Durga_Mandir,_Varanasi",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "sankat-mochan",
+    "name_en": "Sankat Mochan Hanuman Temple",
+    "name_hi": "संकट मोचन हनुमान मंदिर",
+    "faith": [
+      "hindu",
+      "bhakti"
+    ],
+    "type": "temple",
+    "lat": 25.2821,
+    "lng": 83.0,
+    "coordsVerified": true,
+    "summary": "Founded by the poet-saint Tulsidas, who is said to have had a vision of Hanuman here. The name means 'reliever of troubles'. Every April the temple hosts the Sankat Mochan Sangeet Samaroh, when India's greatest musicians play through the night for free.",
+    "bestTime": "Tuesday and Saturday evenings for the crowds and singing; April for the music festival",
+    "image": "/media/places/sankat-mochan.jpg",
+    "tips": [
+      "The laddoo prasad is bought inside and offered, then shared.",
+      "Phones are deposited at the gate."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Sankat Mochan Hanuman Temple",
+        "url": "https://en.wikipedia.org/wiki/Sankat_Mochan_Hanuman_Temple",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "kaal-bhairav",
+    "name_en": "Kaal Bhairav Temple",
+    "name_hi": "काल भैरव मंदिर",
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.3187,
+    "lng": 83.0069,
+    "coordsVerified": false,
+    "summary": "Bhairav is the kotwal, the police chief of Kashi: nothing is said to happen in the city without his leave. The present temple in Visheshwarganj dates from the 17th century. Pilgrims tie a black thread from the temple around the wrist for protection.",
+    "bestTime": "Morning; Sundays and Tuesdays are busiest",
+    "image": "/media/places/kaal-bhairav.jpg",
+    "tips": [
+      "Newcomers to the city traditionally pay respects here before Vishwanath.",
+      "The silver-faced image is glimpsed through a small window; queues move quickly."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Kaal Bhairav Mandir, Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Kaal_Bhairav_Mandir,_Varanasi",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "tulsi-manas",
+    "name_en": "Tulsi Manas Temple",
+    "name_hi": "तुलसी मानस मंदिर",
+    "faith": [
+      "hindu",
+      "bhakti"
+    ],
+    "type": "temple",
+    "lat": 25.2872,
+    "lng": 83.0004,
+    "coordsVerified": true,
+    "summary": "A white marble temple from 1964 on the spot where, by tradition, Tulsidas composed the Ramcharitmanas. The whole epic is inscribed on its walls, and the upper floor turns the story into moving tableaux.",
+    "bestTime": "Evening, when the verses on the walls are lit",
+    "image": "/media/places/tulsi-manas.jpg",
+    "tips": [
+      "The garden is a calm place to read the verses.",
+      "Open through the afternoon, unlike most temples."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Tulsi Manas Mandir",
+        "url": "https://en.wikipedia.org/wiki/Tulsi_Manas_Mandir",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "bharat-mata",
+    "name_en": "Bharat Mata Mandir",
+    "name_hi": "भारत माता मंदिर",
+    "faith": [
+      "secular"
+    ],
+    "type": "temple",
+    "lat": 25.3172,
+    "lng": 82.9893,
+    "coordsVerified": true,
+    "summary": "A temple with no deity: instead a relief map of undivided India carved in Makrana marble, 9.5 metres across, with every mountain and river to scale. Built by Babu Shiv Prasad Gupta and opened by Mahatma Gandhi in 1936 on the Kashi Vidyapith campus.",
+    "bestTime": "Any time; mornings are quietest",
+    "image": "/media/places/bharat-mata.jpg",
+    "tips": [
+      "Walk the gallery above the map to see the whole subcontinent at once.",
+      "It is a ten-minute walk from Cantt station."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Bharat Mata Mandir",
+        "url": "https://en.wikipedia.org/wiki/Bharat_Mata_Mandir",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "alamgir-mosque",
+    "name_en": "Alamgir Mosque",
+    "name_hi": "आलमगीर मस्जिद (बेनी माधव का धरहरा)",
+    "faith": [
+      "islamic"
+    ],
+    "type": "mosque",
+    "lat": 25.3153,
+    "lng": 83.0178,
+    "coordsVerified": true,
+    "summary": "The 17th-century mosque that crowns Panchganga Ghat, known locally as Beni Madhav ka Dharahara. Its plinth and lower walls belong to the older Bindu Madhav temple; its high minarets once marked the skyline for boats coming up the river.",
+    "bestTime": "Late afternoon from the river, when the light is on the façade",
+    "image": "/media/places/alamgir-mosque.jpg",
+    "tips": [
+      "Non-Muslim visitors may see the courtyard outside prayer times; dress modestly.",
+      "The terrace looks down on the whole northern sweep of ghats."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Alamgir Mosque",
+        "url": "https://en.wikipedia.org/wiki/Alamgir_Mosque",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "kabir-math",
+    "name_en": "Kabir Chaura Math",
+    "name_hi": "कबीर चौरा मठ",
+    "faith": [
+      "bhakti"
+    ],
+    "type": "math",
+    "lat": 25.3219,
+    "lng": 83.0069,
+    "coordsVerified": false,
+    "summary": "The seat of the Kabir Panth, in the neighbourhood where the weaver-poet Kabir lived and sang in the 15th century. The math keeps his loom, his sandals and a samadhi shrine, and still prints his couplets that belong to no single religion.",
+    "story": "'Moko kahan dhundhe re bande, main to tere paas mein' — why search for me, friend, when I am right beside you. Kabir mocked temple and mosque alike and both claim him.",
+    "bestTime": "Morning; Kabir Jayanti (Jyeshtha Purnima, May–June) for the gathering of singers",
+    "image": "/media/places/kabir-math.jpg",
+    "tips": [
+      "Ask to see the loom and the manuscript room.",
+      "Lahartara, where Kabir was found as a baby by a pond, is a separate site 5 km west."
+    ],
+    "sources": [
+      {
+        "title": "Incredible India — Kabir Chaura Math",
+        "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/kabir-chaura-math",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Wikipedia — Kabir Chaura",
+        "url": "https://en.wikipedia.org/wiki/Kabir_Chaura",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "ravidas-janmasthan",
+    "name_en": "Shri Guru Ravidas Janmasthan",
+    "name_hi": "श्री गुरु रविदास जन्मस्थान, सीर गोवर्धनपुर",
+    "faith": [
+      "bhakti"
+    ],
+    "type": "temple",
+    "lat": 25.2566,
+    "lng": 82.9988,
+    "coordsVerified": true,
+    "summary": "The birthplace temple of the 15th-century saint Ravidas at Seer Govardhanpur, begun in 1965 and completed in 1994. Ravidas, a cobbler by caste, taught that devotion needs no intermediary; forty of his hymns are in the Guru Granth Sahib. On Ravidas Jayanti lakhs of pilgrims arrive from Punjab.",
+    "bestTime": "Ravidas Jayanti (Magh Purnima, February) for the festival; otherwise mornings",
+    "image": "/media/places/ravidas-janmasthan.jpg",
+    "tips": [
+      "Langar (a free community meal) is served to all.",
+      "The gold-domed temple is south of BHU; an auto from Lanka takes ten minutes."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Shri Guru Ravidas Janam Asthan",
+        "url": "https://en.wikipedia.org/wiki/Shri_Guru_Ravidas_Janam_Asthan",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Kashi Official Web Portal — Shri Guru Ravidas Janm Sthan Mandir",
+        "url": "https://kashi.gov.in/listing-details/shri-guru-ravidas-janm-sthan-mandir",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "bhelupur-jain",
+    "name_en": "Bhelupur Jain Temple (Parshvanath birthplace)",
+    "name_hi": "भेलूपुर जैन मंदिर (पार्श्वनाथ जन्मस्थली)",
+    "faith": [
+      "jain"
+    ],
+    "type": "temple",
+    "lat": 25.2995,
+    "lng": 82.9999,
+    "coordsVerified": true,
+    "summary": "Jains hold Bhelupur as the place of three kalyanakas of Parshvanath, the 23rd Tirthankara: his conception, birth and renunciation, some 2,800 years ago. Digambar and Shwetambar temples stand side by side, and Jain images found here date to the 9th–11th centuries.",
+    "bestTime": "Morning; Parshvanath Janma Kalyanak (Paush Krishna Dashami, December–January)",
+    "image": "/media/places/bhelupur-jain.jpg",
+    "tips": [
+      "Leather items are left outside; visit before noon when the temples are open.",
+      "Sarnath also has a Jain temple to Shreyansanath, the 11th Tirthankara, born nearby."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Parshvanath Jain temples, Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Parshvanath_Jain_temples,_Varanasi",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Kashi Official Web Portal — Parshvanath Digambar Jain Temple, Bhelupur",
+        "url": "https://kashi.gov.in/listing-details/parshvanath-digambar-jain-temple-bhelupur",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "gurudwara-guru-bagh",
+    "name_en": "Gurudwara Guru Bagh (Bari Sangat, Nichibagh)",
+    "name_hi": "गुरुद्वारा गुरु बाग़ (बड़ी संगत, नीचीबाग़)",
+    "faith": [
+      "sikh"
+    ],
+    "type": "gurudwara",
+    "lat": 25.3147,
+    "lng": 83.0114,
+    "coordsVerified": true,
+    "summary": "The oldest Sikh sangat in Banaras, in the Nichibagh lanes near Chowk. Guru Tegh Bahadur stayed here for months in 1666 and the room where he meditated is kept as his Tap Asthan; Guru Gobind Singh visited in 1670. Old hukamnamas from the Gurus are preserved.",
+    "bestTime": "Morning kirtan; Guru Nanak Jayanti (Kartik Purnima) and the Gurus' gurpurabs",
+    "image": "/media/places/gurudwara-guru-bagh.jpg",
+    "tips": [
+      "Cover your head and remove shoes; langar is open to everyone.",
+      "It is a short walk from Kashi Vishwanath through the Chowk lanes."
+    ],
+    "sources": [
+      {
+        "title": "SikhiWiki — Gurudwara Bari Sangat Sri Guru Tegh Bahadur (Varanasi)",
+        "url": "https://www.sikhiwiki.org/index.php/Gurudwara_Bari_Sangat_Sri_Guru_Tegh_Bahadur_(Varanasi)",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Mappls — Gurudwara Bari Sangat, Nichi Bagh",
+        "url": "https://www.mappls.com/place-gurudwara+bari+sangat+sri+guru+tegh+bahadur-nichi+bagh-varanasi-uttar+pradesh-221001-4j2oq9",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "st-marys-church",
+    "name_en": "St. Mary's Church, Cantonment",
+    "name_hi": "सेंट मैरी चर्च, छावनी",
+    "faith": [
+      "christian"
+    ],
+    "type": "church",
+    "lat": 25.329,
+    "lng": 82.983,
+    "coordsVerified": false,
+    "summary": "The oldest church in Varanasi and among the oldest Protestant churches in north India: foundation laid in April 1810 by the chaplain Daniel Corrie, completed in 1812. A low tower, a spire and louvred doors in the shade of the Cantonment's old trees; Queen Elizabeth II worshipped here on her 1961 visit.",
+    "bestTime": "Sunday morning service; Christmas Eve",
+    "image": "/media/places/st-marys-church.jpg",
+    "tips": [
+      "It stands near the IG Police office, a few minutes from Cantt railway station.",
+      "Visitors of all faiths are welcome outside service hours; ask the caretaker."
+    ],
+    "sources": [
+      {
+        "title": "Free Press Journal — Varanasi's oldest church, St. Mary's",
+        "url": "https://www.freepressjournal.in/lifestyle/christmas-2024-did-you-know-varanasis-oldest-church-is-st-marys-church-where-queen-elizabeth-prayed",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Churches of Varanasi: Historical and Architectural Aspects (academia.edu)",
+        "url": "https://www.academia.edu/98617959/Churches_of_Varanasi_Historical_and_Architectural_Aspects",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "chunar-fort",
+    "name_en": "Chunar Fort (day trip)",
+    "name_hi": "चुनार किला",
+    "faith": [],
+    "type": "fort",
+    "lat": 25.1255,
+    "lng": 82.8747,
+    "coordsVerified": true,
+    "summary": "A sandstone fortress on a bend of the Ganga 23 km south-west of the city, held in turn by Sher Shah Suri (1532), Humayun, Akbar and the East India Company. The Sonwa Mandap pavilion, the deep well and the ramparts above the river are the reasons to go.",
+    "bestTime": "Winter mornings; allow four hours including the drive",
+    "image": "/media/places/chunar-fort.jpg",
+    "tips": [
+      "Taxis from Varanasi take about an hour; local trains stop at Chunar station.",
+      "Chunar is also where the sandstone for Ashoka's pillars was quarried."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Chunar Fort",
+        "url": "https://en.wikipedia.org/wiki/Chunar_Fort",
+        "accessed": "2026-09-25"
+      }
     ]
   }
 ]

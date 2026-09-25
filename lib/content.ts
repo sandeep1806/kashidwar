@@ -61,6 +61,8 @@ export interface Place {
   bestTime: string;
   image: string;
   sources: Source[];
+  /** false when lat/lng were placed from a locality description, not a cited coordinate */
+  coordsVerified?: boolean;
   story?: string;
   tips?: string[];
   /** Optional verse shown in original script + transliteration + translation */
@@ -154,4 +156,36 @@ export const itineraries = itinerariesJson as Itinerary[];
 
 export function getPlace(id: string): Place | undefined {
   return places.find((p) => p.id === id);
+}
+
+/** Filter chips for the Places section (DESIGN.md → Place card, PROMPTS.md Phase 4). */
+export const PLACE_FILTERS = [
+  "all",
+  "ghats",
+  "temples",
+  "buddhist",
+  "jain",
+  "sikh",
+  "islamic",
+  "christian",
+  "bhakti",
+  "heritage",
+] as const;
+export type PlaceFilter = (typeof PLACE_FILTERS)[number];
+
+const HERITAGE_TYPES: PlaceType[] = ["fort", "museum", "heritage", "university"];
+
+export function placeMatches(place: Place, filter: PlaceFilter): boolean {
+  switch (filter) {
+    case "all":
+      return true;
+    case "ghats":
+      return place.type === "ghat";
+    case "temples":
+      return place.type === "temple";
+    case "heritage":
+      return HERITAGE_TYPES.includes(place.type);
+    default:
+      return place.faith.includes(filter);
+  }
 }

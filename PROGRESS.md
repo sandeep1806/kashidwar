@@ -97,3 +97,23 @@ Loader 2.2 s (DESIGN.md said ≤ 1.8 s; overridden by checkpoint feedback), wate
 **Needs review**
 - Desktop pinned scroller: hydration renders the vertical layout first and switches to the pinned one when GSAP arrives at idle; a visitor who scrolls to it within ~1 s could see the switch.
 - Lighthouse margin over 90 is thin; Phase 9 will look at the Flight payload size and CSS.
+
+## Phase 4 — Places + map · 2026-09-25 · ✅
+
+**Did**
+- `content/places.json`: 22 places, full schema (id, bilingual names, faith[], type, lat/lng, summary, bestTime, tips, story where it earns it, sources[]). Coordinates cited from Wikipedia / kashi.gov.in / Mappls for 16; the other 6 carry `coordsVerified: false` and the modal says "Location approximate": Panchganga Ghat, Mulagandha Kuti Vihar, Ramnagar Fort (Wikipedia gives 2-digit precision), BHU/New Vishwanath, Kaal Bhairav (Wikipedia's coordinate lands near Cantt, far from Visheshwarganj; used the locality), St. Mary's Church.
+- **Places section** (`components/sections/Places.tsx` server → `PlacesExplorer.tsx` client): ten filter chips (All / Ghats / Temples / Buddhist / Jain / Sikh / Islamic / Christian / Bhakti / Heritage) with `aria-pressed`, live result count, deep-linkable via `#places/<filter>` (faith tiles in Phase 5 link here), portrait 3:4 cards with an arch-framed image slot, faith badges with line glyphs, type chip and best-time line, staggered fade-up, hover lift + gold edge glow.
+- **Detail modal** (`components/ui/Modal.tsx`, `motion` AnimatePresence): focus moves in and returns, Tab trapped, Esc / backdrop close, Lenis + body scroll held; summary, story, best time, tips, sources and "Show on map" which flies the map to the pin.
+- **Map** (`components/ui/KashiMap.tsx`, react-leaflet 5, `next/dynamic` ssr:false, mounted only when within 600 px of the viewport): gold SVG pins, in-house grid clustering (64 px cells, cluster click fits bounds), view follows the active filter, wheel zoom off so it never fights page scroll.
+- `FaithGlyph`: trishul, dharma-chakra, lotus, khanda, crescent, cross, ektara, diya — 1.5 px gold line icons, equal weight.
+- Photos: none exist yet, so cards show a faith-toned placeholder with the glyph. `Places.tsx` checks `public/<image>` at build time and switches to `next/image` automatically when a file appears.
+
+**Verification**
+- build ✅ lint ✅ tsc ✅. Puppeteer: 22 cards, Jain filter → 1 card and `#places/jain`, modal opens with focus inside and closes on Esc, map mounts with 18 tiles, 4 pins + 4 clusters at city zoom; console clean on desktop and mobile.
+- Lighthouse mobile: 90 / 85 (LCP 2.9–3.3 s, TBT 160–220 ms), A11y 100, BP 100, SEO 92. The extra SSR'd cards add to the document parse task; see Phase 9.
+
+**Decisions / needs review**
+- **CARTO tiles need an API key now.** The keyless Dark Matter URL from DESIGN.md returns tiles watermarked "API KEY REQUIRED". Default switched to OpenStreetMap tiles with a CSS invert/hue filter (`.map-dark`) that lands in the night/indigo palette. `NEXT_PUBLIC_MAP_TILE_URL` / `NEXT_PUBLIC_MAP_ATTRIBUTION` / `NEXT_PUBLIC_MAP_TILES_ARE_DARK` (see `.env.example`) switch to CARTO once you have a key. OSM's tile policy tolerates light use; for a public launch a keyed provider is the right call.
+- Clustering is in-house (no `leaflet.markercluster`): 22 pins do not justify a dependency.
+- Summaries, tips and stories are English in `places.json` for every locale until Phase 7 decides where translated content lives.
+- `motion` is now in the client bundle for the modal (first use of the package).

@@ -64,5 +64,57 @@
         "caption": "Seven tiered lamps rise together. Bells, conch, smoke, and the whole ghat catches like a single flame."
       }
     }
+  },
+  "places": {
+    "title": "Places of Kashi",
+    "titleSecondary": "काशी के स्थान",
+    "intro": "Ghats, temples, stupas, mosques, gurudwaras, churches and the maths of the saints, all in one city. Filter them, find them on the map, and read each one's story.",
+    "filters": {
+      "all": "All",
+      "ghats": "Ghats",
+      "temples": "Temples",
+      "buddhist": "Buddhist",
+      "jain": "Jain",
+      "sikh": "Sikh",
+      "islamic": "Islamic",
+      "christian": "Christian",
+      "bhakti": "Bhakti saints",
+      "heritage": "Heritage"
+    },
+    "faiths": {
+      "hindu": "Hindu",
+      "buddhist": "Buddhist",
+      "jain": "Jain",
+      "sikh": "Sikh",
+      "islamic": "Islamic",
+      "christian": "Christian",
+      "bhakti": "Bhakti",
+      "secular": "Shared heritage"
+    },
+    "types": {
+      "ghat": "Ghat",
+      "temple": "Temple",
+      "stupa": "Stupa",
+      "monastery": "Vihar",
+      "mosque": "Mosque",
+      "church": "Church",
+      "gurudwara": "Gurudwara",
+      "math": "Math",
+      "fort": "Fort",
+      "museum": "Museum",
+      "university": "University",
+      "heritage": "Heritage"
+    },
+    "results": "{count} places",
+    "bestTime": "Best time",
+    "tips": "Tips",
+    "sources": "Sources",
+    "showOnMap": "Show on map",
+    "openDetails": "Open details",
+    "close": "Close",
+    "mapTitle": "Map of Kashi",
+    "mapLoading": "Loading the map…",
+    "approxCoords": "Location approximate",
+    "cluster": "{count} places — click to zoom"
   }
 }

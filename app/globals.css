@@ -329,3 +329,33 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
 
 /* SplitText pieces need a box to move in */
 [data-title] > div { display: inline-block; }
+
+/* ------------------------------------------------------------------
+   Phase 4: places, map
+   ------------------------------------------------------------------ */
+.place-art { background: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-diya) 12%, transparent), transparent 70%), linear-gradient(180deg, var(--kashi-indigo), var(--kashi-night)); }
+.place-art-hindu, .place-art-bhakti { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-saffron) 22%, transparent), transparent 70%), linear-gradient(180deg, #2a1c34, var(--kashi-night)); }
+.place-art-buddhist { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-marigold) 18%, transparent), transparent 70%), linear-gradient(180deg, #1c2a3a, var(--kashi-night)); }
+.place-art-jain { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-white) 10%, transparent), transparent 70%), linear-gradient(180deg, #2b2340, var(--kashi-night)); }
+.place-art-sikh { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-saffron) 18%, transparent), transparent 70%), linear-gradient(180deg, #23283f, var(--kashi-night)); }
+.place-art-islamic { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, #4fb08a 14%, transparent), transparent 70%), linear-gradient(180deg, #1c2a30, var(--kashi-night)); }
+.place-art-christian { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-diya) 12%, transparent), transparent 70%), linear-gradient(180deg, #2a2438, var(--kashi-night)); }
+.place-art-secular { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-ganga) 40%, transparent), transparent 70%), linear-gradient(180deg, var(--kashi-ganga), var(--kashi-night)); }
+
+/* Leaflet, dark. .map-dark turns light raster tiles into night + gold-friendly tones */
+.map-dark .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(195deg) brightness(0.58) contrast(1.05) saturate(0.28) sepia(0.2);
+}
+.leaflet-container { background: var(--kashi-night); font-family: var(--font-body-active); }
+.leaflet-container .leaflet-control-attribution { background: color-mix(in oklab, var(--kashi-night) 80%, transparent); color: var(--kashi-ash); font-size: 10px; }
+.leaflet-container .leaflet-control-attribution a { color: var(--kashi-diya); }
+.leaflet-bar a { background: var(--kashi-indigo); color: var(--kashi-white); border-bottom-color: var(--kashi-rudraksha); }
+.leaflet-bar a:hover { background: var(--kashi-rudraksha); }
+.kashi-pin { filter: drop-shadow(0 0 6px rgba(255, 210, 122, 0.55)); cursor: pointer; }
+.kashi-pin svg { transition: transform 0.3s var(--ease-enter); transform-origin: 50% 100%; }
+.kashi-pin:hover svg { transform: scale(1.15); }
+.kashi-cluster span {
+  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 9999px;
+  background: color-mix(in oklab, var(--kashi-night) 85%, transparent); border: 1.5px solid var(--kashi-diya);
+  color: var(--kashi-diya); font-size: 14px; box-shadow: 0 0 14px rgba(255, 210, 122, 0.35); cursor: pointer;
+}
