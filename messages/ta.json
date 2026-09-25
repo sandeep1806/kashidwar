@@ -11,7 +11,8 @@
     "placeDescription": "{name}, வாரணாசி (பனாரஸ்): {summary}",
     "festivalDescription": "வாரணாசியில் (பனாரஸ்) {name}, {when}. {summary}",
     "projectDescription": "{name}, வாரணாசி: {summary}",
-    "itineraryDescription": "வாரணாசிக்கான (பனாரஸ்) {n} நாள் திட்டம்: {summary}"
+    "itineraryDescription": "வாரணாசிக்கான (பனாரஸ்) {n} நாள் திட்டம்: {summary}",
+    "festivalTitleTbc": "வாரணாசியில் {name} — எப்போது வருகிறது, என்ன நடக்கிறது"
   },
   "hero": {
     "title": "காசி — வரலாற்றை விடப் பழமையானது",

@@ -11,7 +11,8 @@
     "placeDescription": "{name}, వారణాసి (బనారస్): {summary}",
     "festivalDescription": "వారణాసి (బనారస్)లో {name}, {when}. {summary}",
     "projectDescription": "{name}, వారణాసి: {summary}",
-    "itineraryDescription": "వారణాసి (బనారస్) కోసం {n} రోజుల ప్రణాళిక: {summary}"
+    "itineraryDescription": "వారణాసి (బనారస్) కోసం {n} రోజుల ప్రణాళిక: {summary}",
+    "festivalTitleTbc": "వారణాసిలో {name} — ఎప్పుడు వస్తుంది, ఏమి జరుగుతుంది"
   },
   "hero": {
     "title": "కాశీ — చరిత్ర కంటే పురాతనమైనది",

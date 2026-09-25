@@ -11,7 +11,8 @@
     "placeDescription": "{name}, Varanasi (Banaras): {summary}",
     "festivalDescription": "{name} in Varanasi (Banaras), {when}. {summary}",
     "projectDescription": "{name}, Varanasi: {summary}",
-    "itineraryDescription": "A {n}-day plan for Varanasi (Banaras): {summary}"
+    "itineraryDescription": "A {n}-day plan for Varanasi (Banaras): {summary}",
+    "festivalTitleTbc": "{name} in Varanasi — when it falls and what happens"
   },
   "hero": {
     "title": "Kashi — older than history itself",

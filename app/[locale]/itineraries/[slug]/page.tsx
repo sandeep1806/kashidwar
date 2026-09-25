@@ -112,7 +112,7 @@ export default async function ItineraryPage({ params }: PageProps<"/[locale]/iti
           <>
             <LinkCards
               title={t("related")}
-              items={placeIds.slice(0, 8).map((id) => ({ href: pageUrl(loc, "places", id), name: placeName(id), secondary: devanagari ? getPlace(id)!.name_en : getPlace(id)!.name_hi, photo: getPhoto(`places/${id}`, loc) }))}
+              items={placeIds.slice(0, 8).map((id) => ({ href: pageUrl(loc, "places", id), name: placeName(id), secondary: devanagari ? getPlace(id)!.name_en : getPlace(id)!.name_hi, photo: getPhoto(`places/${id}`, loc), faith: getPlace(id)!.faith[0] ?? "secular", type: getPlace(id)!.type }))}
             />
             <PrevNext
               prev={{ href: pageUrl(loc, "itineraries", itinerarySlug(prev)), label: t("prev"), name: t("itineraryDays", { n: String(prev.days) }) }}

@@ -6,9 +6,10 @@ import LdJson from "@/components/pages/LdJson";
 import PageMap from "@/components/pages/PageMap";
 import PageShell from "@/components/pages/PageShell";
 import EnglishNote from "@/components/ui/EnglishNote";
+import FestivalDateLine from "@/components/ui/FestivalDateLine";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 import { festivals, localize, type Faith } from "@/lib/content";
-import { FESTIVAL_YEAR, festivalDate } from "@/lib/festivalDates";
+import { FESTIVAL_YEAR, formatFestivalRange, verifiedDate } from "@/lib/festivalDates";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, breadcrumbLd, festivalPlaces, alternatesFor, metaDescription, neighbours, pagePath, pageUrl } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
@@ -23,12 +24,6 @@ export function generateStaticParams() {
 const names = (locale: Locale, p: { name_en: string; name_hi: string }) =>
   LOCALES[locale].script === "devanagari" ? { primary: p.name_hi, secondary: p.name_en } : { primary: p.name_en, secondary: p.name_hi };
 
-function formatRange(locale: Locale, start: string, end: string | null) {
-  const fmt = new Intl.DateTimeFormat(LOCALES[locale].bcp47, { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
-  const s = new Date(start + "T00:00:00Z");
-  if (!end || end === start) return fmt.format(s);
-  return fmt.formatRange(s, new Date(end + "T00:00:00Z"));
-}
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/festivals/[id]">): Promise<Metadata> {
   const { locale, id } = await params;
@@ -39,7 +34,8 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/festival
   const t = await getTranslations({ locale, namespace: "meta" });
   const { primary } = names(loc, raw);
   const path = pagePath("festivals", id);
-  const title = t("festivalTitle", { name: primary, year: String(FESTIVAL_YEAR) });
+  // Only promise dates in the title when the page can show a verified one.
+  const title = verifiedDate(id) ? t("festivalTitle", { name: primary, year: String(FESTIVAL_YEAR) }) : t("festivalTitleTbc", { name: primary });
   const description = metaDescription(t("festivalDescription", { name: primary, when: f.when, summary: f.summary }));
   const photo = getPhoto(`festivals/${id}`, loc);
   const image = photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`;
@@ -72,8 +68,8 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
   const path = pagePath("festivals", id);
   const faiths: Faith[] = raw.faith.length ? raw.faith : ["secular"];
   const photo = getPhoto(`festivals/${id}`, loc);
-  const date = festivalDate(id);
-  const dated = date?.verified && date.startDate ? date : null;
+  const dated = verifiedDate(id);
+  const dateLabel = dated ? formatFestivalRange(LOCALES[loc].bcp47, dated.startDate, dated.endDate) : t("datesTbc", { year: String(FESTIVAL_YEAR) });
   const venues = festivalPlaces(raw);
   const { prev, next } = neighbours(festivals, index);
   const home = `/${locale}`;
@@ -128,6 +124,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
         ))}
         title={primary}
         secondary={secondary}
+        subtitle={<FestivalDateLine iso={dated?.startDate ?? null} label={dateLabel} heading={t("datesIn", { year: String(FESTIVAL_YEAR) })} />}
         lead={<p>{f.summary}</p>}
         photo={photo}
         island={
@@ -146,7 +143,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
           <>
             <LinkCards
               title={t("related")}
-              items={venues.map((r) => ({ href: pageUrl(loc, "places", r.id), ...(() => { const n = names(loc, r); return { name: n.primary, secondary: n.secondary }; })(), photo: getPhoto(`places/${r.id}`, loc) }))}
+              items={venues.map((r) => ({ href: pageUrl(loc, "places", r.id), ...(() => { const n = names(loc, r); return { name: n.primary, secondary: n.secondary }; })(), photo: getPhoto(`places/${r.id}`, loc), faith: r.faith[0] ?? "secular", type: r.type }))}
             />
             <PrevNext
               prev={{ href: pageUrl(loc, "festivals", prev.id), label: t("prev"), name: names(loc, prev).primary }}
@@ -180,7 +177,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
         <aside>
           <Facts
             items={[
-              { label: t("datesIn", { year: String(FESTIVAL_YEAR) }), value: dated ? formatRange(loc, dated.startDate!, dated.endDate) : t("datesTbc", { year: String(FESTIVAL_YEAR) }) },
+              { label: t("datesIn", { year: String(FESTIVAL_YEAR) }), value: dateLabel },
               { label: tf("when"), value: `${f.when} · ${raw.months.map((m) => months[m - 1]).join("–")}` },
               { label: tf("where"), value: f.where },
             ]}

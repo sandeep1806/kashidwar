@@ -452,21 +452,26 @@
     "bestTime": "—",
     "image": "/media/projects/heritage-corridors.jpg",
     "status": "announced",
-    "agency": "Varanasi Development Authority · Varanasi Nagar Nigam",
+    "agency": "Varanasi Development Authority (heritage corridors) · KIPRF and Varanasi Smart City (parks) · funded by BPCL CSR",
     "timeline": "Announced September 2026 · work yet to start",
     "verified": true,
     "lastVerified": "2026-09-25",
     "sources": [
       {
-        "title": "The News Mill — Varanasi to upgrade heritage corridors and renovate 119 parks (September 2026)",
-        "url": "https://thenewsmill.com/2026/09/varanasi-to-upgrade-heritage-corridors-and-renovate-119-parks-with-rs-69-crore-investment/",
+        "title": "Amar Ujala — बदल रही काशी की तस्वीर: सारनाथ-मैदागिन में बनेंगे फूड स्ट्रीट हब, संवरेंगे 119 पार्क (8 Sep 2026)",
+        "url": "https://www.amarujala.com/uttar-pradesh/varanasi/food-street-hubs-to-be-developed-in-sarnath-and-maidagin-119-parks-to-be-revamped-in-varanasi-2026-09-08",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "DD India (Prasar Bharati) — BPCL to spend Rs 69.21 crore on Varanasi parks, food hubs and heritage routes (8 Sep 2026)",
+        "url": "https://ddindia.co.in/2026/09/bpcl-to-spend-rs-69-21-crore-on-varanasi-parks-food-hubs-and-heritage-routes/",
         "accessed": "2026-09-25"
       }
     ],
     "i18n": {
       "hi": {
         "summary": "सितंबर 2026 में घोषित: पुराने शहर के धरोहर गलियारों के कायाकल्प और 119 नगरपालिका पार्कों के नवीनीकरण के लिए लगभग ₹69 करोड़, रोशनी, हरियाली और बैठने की व्यवस्था के साथ।",
-        "agency": "वाराणसी विकास प्राधिकरण · वाराणसी नगर निगम",
+        "agency": "वाराणसी विकास प्राधिकरण (विरासत गलियारे) · KIPRF व वाराणसी स्मार्ट सिटी (पार्क) · बीपीसीएल सीएसआर निधि से",
         "timeline": "घोषित सितंबर 2026 · काम अभी शुरू नहीं"
       }
     }

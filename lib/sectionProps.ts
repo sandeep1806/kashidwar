@@ -1,4 +1,5 @@
 import { getPhoto } from "@/lib/photos";
+import { FESTIVAL_YEAR, formatFestivalRange, verifiedDate } from "@/lib/festivalDates";
 import { itinerarySlug, pageUrl } from "@/lib/pages";
 import { getTranslations } from "next-intl/server";
 import { faithEntries, festivals, foods, getPlace, itineraries, localize, localizeItinerary, places, projects, type Itinerary, type ProjectStatus } from "@/lib/content";
@@ -34,7 +35,7 @@ export async function getProjectsProps(locale: Locale) {
   const latest = projects.reduce((d, p) => (p.lastVerified > d ? p.lastVerified : d), "");
   const items: ProjectItem[] = projects.map((raw) => {
     const p = localize(raw, locale);
-    return { id: p.id, href: pageUrl(locale, "projects", p.id), status: p.status, type: p.type, agency: p.agency, timeline: p.timeline, summary: p.summary, verified: p.verified, lastVerified: p.lastVerified, sources: p.sources.map(({ title, url }) => ({ title, url })), photo: getPhoto(`projects/${p.id}`, locale), primaryName: devanagari ? p.name_hi : p.name_en, secondaryName: devanagari ? p.name_en : p.name_hi, lastVerifiedLabel: fmt.format(new Date(p.lastVerified + "T00:00:00Z")) };
+    return { id: p.id, href: pageUrl(locale, "projects", p.id), faith: p.faith[0] ?? "secular", status: p.status, type: p.type, agency: p.agency, timeline: p.timeline, summary: p.summary, verified: p.verified, lastVerified: p.lastVerified, sources: p.sources.map(({ title, url }) => ({ title, url })), photo: getPhoto(`projects/${p.id}`, locale), primaryName: devanagari ? p.name_hi : p.name_en, secondaryName: devanagari ? p.name_en : p.name_hi, lastVerifiedLabel: fmt.format(new Date(p.lastVerified + "T00:00:00Z")) };
   });
   const groups = ORDER.map((status) => ({ status, items: items.filter((p) => p.status === status) })).filter((g) => g.items.length);
   const labels: ProjectLabels = {
@@ -62,11 +63,13 @@ export type ProjectsProps = Awaited<ReturnType<typeof getProjectsProps>>;
 
 export async function getFestivalsProps(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "festivals" });
+  const tpage = await getTranslations({ locale, namespace: "page" });
   const devanagari = LOCALES[locale].script === "devanagari";
   const items: FestivalItem[] = festivals
     .map((raw) => {
       const f = localize(raw, locale);
-      return { id: f.id, href: pageUrl(locale, "festivals", f.id), months: f.months, when: f.when, where: f.where, summary: f.summary, photo: getPhoto(`festivals/${f.id}`, locale), primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, glyph: f.faith[0] ?? "secular" };
+      const vd = verifiedDate(f.id);
+      return { id: f.id, href: pageUrl(locale, "festivals", f.id), dateIso: vd?.startDate ?? null, dateLabel: vd ? formatFestivalRange(LOCALES[locale].bcp47, vd.startDate, vd.endDate) : tpage("datesTbc", { year: String(FESTIVAL_YEAR) }), months: f.months, when: f.when, where: f.where, summary: f.summary, photo: getPhoto(`festivals/${f.id}`, locale), primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, glyph: f.faith[0] ?? "secular" };
     })
     .sort((a, b) => Math.min(...a.months) - Math.min(...b.months));
   return {

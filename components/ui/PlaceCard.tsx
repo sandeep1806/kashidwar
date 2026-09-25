@@ -1,7 +1,7 @@
 import type { Faith, PhotoData, PlaceLite as Place } from "@/lib/contentTypes";
 import FaithGlyph from "./FaithGlyph";
 import Photo from "./Photo";
-import PlaceArt from "./PlaceArt";
+import ArtFallback from "./ArtFallback";
 
 export interface PlaceLabels {
   faiths: Record<Faith, string>;
@@ -48,10 +48,7 @@ export default function PlaceCard({
               className="photo-zoom"
             />
           ) : (
-            <div className={`place-art place-art-${faiths[0]} relative flex h-full w-full items-center justify-center`}>
-              <PlaceArt type={place.type} className="h-3/5 w-3/5 text-kashi-diya/75" />
-              <FaithGlyph faith={faiths[0]} className="absolute right-3 top-3 h-5 w-5 text-kashi-diya/60 sm:h-6 sm:w-6" />
-            </div>
+            <ArtFallback faith={faiths[0]} type={place.type} />
           )}
           <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-kashi-night/80 to-transparent" />
         </div>

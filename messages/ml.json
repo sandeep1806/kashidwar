@@ -11,7 +11,8 @@
     "placeDescription": "{name}, വാരാണസി (ബനാറസ്): {summary}",
     "festivalDescription": "വാരാണസിയിൽ (ബനാറസ്) {name}, {when}. {summary}",
     "projectDescription": "{name}, വാരാണസി: {summary}",
-    "itineraryDescription": "വാരാണസിക്കായി (ബനാറസ്) ഒരു {n} ദിവസത്തെ പദ്ധതി: {summary}"
+    "itineraryDescription": "വാരാണസിക്കായി (ബനാറസ്) ഒരു {n} ദിവസത്തെ പദ്ധതി: {summary}",
+    "festivalTitleTbc": "വാരാണസിയിൽ {name} — എപ്പോഴാണ്, എന്താണ് നടക്കുന്നത്"
   },
   "hero": {
     "title": "കാശി — ചരിത്രത്തെക്കാൾ പഴക്കമുള്ളത്",

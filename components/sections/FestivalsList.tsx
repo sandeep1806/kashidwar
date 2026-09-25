@@ -2,6 +2,7 @@ import Reveal from "@/components/motion/Reveal";
 import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
 import FaithGlyph from "@/components/ui/FaithGlyph";
+import FestivalDateLine from "@/components/ui/FestivalDateLine";
 import type { Faith, Festival, PhotoData } from "@/lib/contentTypes";
 
 export interface FestivalItem extends Pick<Festival, "id" | "months" | "when" | "where" | "summary"> {
@@ -9,6 +10,9 @@ export interface FestivalItem extends Pick<Festival, "id" | "months" | "when" | 
   secondaryName: string;
   glyph: Faith;
   href: string;
+  /** ISO start of the verified date this year, or null */
+  dateIso: string | null;
+  dateLabel: string;
   photo: PhotoData | null;
 }
 
@@ -38,7 +42,7 @@ export default function FestivalsList({ items, months, labels }: { items: Festiv
       <StaggerCards className="container-kashi mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {items.map((f) => (
           <article key={f.id} className="group grain flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-6 transition-[border-color,box-shadow] duration-500 ease-enter hover:border-kashi-diya/50 hover:shadow-glow">
-            <CardPhoto photo={f.photo} className="-mx-3 -mt-3 mb-5" />
+            <CardPhoto photo={f.photo} faith={f.glyph} className="-mx-3 -mt-3 mb-5" />
             <div className="flex items-center gap-3">
               <span className="grid h-10 w-10 place-items-center rounded-full border border-kashi-diya/40 text-kashi-diya">
                 <FaithGlyph faith={f.glyph} className="h-5 w-5" />
@@ -48,6 +52,7 @@ export default function FestivalsList({ items, months, labels }: { items: Festiv
                 <p className="text-sm text-kashi-ash/70">{f.secondaryName}</p>
               </div>
             </div>
+            <div className="mt-3"><FestivalDateLine iso={f.dateIso} label={f.dateLabel} compact /></div>
             <p className="mt-4 text-kashi-ash/90">{f.summary}</p>
             <dl className="mt-5 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
               <dt className="text-kashi-diya/80">{labels.when}</dt>

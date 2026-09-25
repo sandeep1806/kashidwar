@@ -11,7 +11,8 @@
     "placeDescription": "{name}, ವಾರಣಾಸಿ (ಬನಾರಸ್): {summary}",
     "festivalDescription": "ವಾರಣಾಸಿಯಲ್ಲಿ (ಬನಾರಸ್) {name}, {when}. {summary}",
     "projectDescription": "{name}, ವಾರಣಾಸಿ: {summary}",
-    "itineraryDescription": "ವಾರಣಾಸಿಗೆ (ಬನಾರಸ್) {n} ದಿನಗಳ ಯೋಜನೆ: {summary}"
+    "itineraryDescription": "ವಾರಣಾಸಿಗೆ (ಬನಾರಸ್) {n} ದಿನಗಳ ಯೋಜನೆ: {summary}",
+    "festivalTitleTbc": "ವಾರಾಣಸಿಯಲ್ಲಿ {name} — ಯಾವಾಗ ಬರುತ್ತದೆ ಮತ್ತು ಏನು ನಡೆಯುತ್ತದೆ"
   },
   "hero": {
     "title": "ಕಾಶಿ — ಇತಿಹಾಸಕ್ಕಿಂತಲೂ ಪುರಾತನ",

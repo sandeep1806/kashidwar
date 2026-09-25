@@ -11,7 +11,8 @@
     "placeDescription": "{name}, वाराणसी (बनारस): {summary}",
     "festivalDescription": "वाराणस्यां (बनारस) {name}, {when}। {summary}",
     "projectDescription": "{name}, वाराणसी: {summary}",
-    "itineraryDescription": "वाराणस्याः (बनारस) कृते {n}-दिवसीया योजना: {summary}"
+    "itineraryDescription": "वाराणस्याः (बनारस) कृते {n}-दिवसीया योजना: {summary}",
+    "festivalTitleTbc": "वाराणस्यां {name} — कदा भवति, किं च सम्पद्यते"
   },
   "hero": {
     "title": "काशी — इतिहासादपि प्राचीना",

@@ -11,7 +11,8 @@
     "placeDescription": "{name}, বারাণসী (বেনারস): {summary}",
     "festivalDescription": "বারাণসীতে (বেনারস) {name}, {when}। {summary}",
     "projectDescription": "{name}, বারাণসী: {summary}",
-    "itineraryDescription": "বারাণসীর (বেনারস) জন্য {n} দিনের পরিকল্পনা: {summary}"
+    "itineraryDescription": "বারাণসীর (বেনারস) জন্য {n} দিনের পরিকল্পনা: {summary}",
+    "festivalTitleTbc": "বারাণসীতে {name} — কবে পড়ে এবং কী হয়"
   },
   "hero": {
     "title": "কাশী — ইতিহাসের চেয়েও প্রাচীন",

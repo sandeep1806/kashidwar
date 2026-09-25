@@ -105,6 +105,7 @@ export default async function PlacePage({ params }: PageProps<"/[locale]/places/
         path={path}
         crumbs={crumbs}
         faith={faiths[0]}
+        placeType={raw.type}
         chips={
           <>
             {faiths.map((f) => (
@@ -134,11 +135,11 @@ export default async function PlacePage({ params }: PageProps<"/[locale]/places/
           <>
             <LinkCards
               title={t("related")}
-              items={related.map((r) => ({ href: pageUrl(loc, "places", r.id), ...(() => { const n = names(loc, r); return { name: n.primary, secondary: n.secondary }; })(), photo: getPhoto(`places/${r.id}`, loc) }))}
+              items={related.map((r) => ({ href: pageUrl(loc, "places", r.id), ...(() => { const n = names(loc, r); return { name: n.primary, secondary: n.secondary }; })(), photo: getPhoto(`places/${r.id}`, loc), faith: r.faith[0] ?? "secular", type: r.type }))}
             />
             <LinkCards
               title={t("festivalsHere")}
-              items={fests.map((f) => ({ href: pageUrl(loc, "festivals", f.id), ...(() => { const n = names(loc, f); return { name: n.primary, secondary: n.secondary }; })(), photo: getPhoto(`festivals/${f.id}`, loc), meta: localize(f, loc).when }))}
+              items={fests.map((f) => ({ href: pageUrl(loc, "festivals", f.id), ...(() => { const n = names(loc, f); return { name: n.primary, secondary: n.secondary }; })(), photo: getPhoto(`festivals/${f.id}`, loc), faith: f.faith[0] ?? "secular", meta: localize(f, loc).when }))}
             />
             <PrevNext
               prev={{ href: pageUrl(loc, "places", prev.id), label: t("prev"), name: names(loc, prev).primary }}

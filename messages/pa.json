@@ -11,7 +11,8 @@
     "placeDescription": "{name}, ਵਾਰਾਣਸੀ (ਬਨਾਰਸ): {summary}",
     "festivalDescription": "ਵਾਰਾਣਸੀ (ਬਨਾਰਸ) ਵਿੱਚ {name}, {when}। {summary}",
     "projectDescription": "{name}, ਵਾਰਾਣਸੀ: {summary}",
-    "itineraryDescription": "ਵਾਰਾਣਸੀ (ਬਨਾਰਸ) ਲਈ {n} ਦਿਨਾਂ ਦੀ ਯੋਜਨਾ: {summary}"
+    "itineraryDescription": "ਵਾਰਾਣਸੀ (ਬਨਾਰਸ) ਲਈ {n} ਦਿਨਾਂ ਦੀ ਯੋਜਨਾ: {summary}",
+    "festivalTitleTbc": "ਵਾਰਾਣਸੀ ਵਿੱਚ {name} — ਕਦੋਂ ਆਉਂਦਾ ਹੈ ਅਤੇ ਕੀ ਹੁੰਦਾ ਹੈ"
   },
   "hero": {
     "title": "ਕਾਸ਼ੀ — ਇਤਿਹਾਸ ਤੋਂ ਵੀ ਪੁਰਾਣੀ",

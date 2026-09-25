@@ -95,7 +95,7 @@ export default async function ProjectPage({ params }: PageProps<"/[locale]/proje
           <>
             <LinkCards
               title={t("related")}
-              items={nearby.map((r) => ({ href: pageUrl(loc, "places", r.id), ...(() => { const n = names(loc, r); return { name: n.primary, secondary: n.secondary }; })(), photo: getPhoto(`places/${r.id}`, loc) }))}
+              items={nearby.map((r) => ({ href: pageUrl(loc, "places", r.id), ...(() => { const n = names(loc, r); return { name: n.primary, secondary: n.secondary }; })(), photo: getPhoto(`places/${r.id}`, loc), faith: r.faith[0] ?? "secular", type: r.type }))}
             />
             <PrevNext
               prev={{ href: pageUrl(loc, "projects", prev.id), label: t("prev"), name: names(loc, prev).primary }}

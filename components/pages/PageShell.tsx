@@ -3,8 +3,8 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import SiteFooter from "@/components/ui/SiteFooter";
 import Static from "@/components/ui/Static";
 import Photo from "@/components/ui/Photo";
-import FaithGlyph from "@/components/ui/FaithGlyph";
-import type { Faith, PhotoData } from "@/lib/contentTypes";
+import ArtFallback from "@/components/ui/ArtFallback";
+import type { Faith, PhotoData, PlaceType } from "@/lib/contentTypes";
 import type { Locale } from "@/lib/i18n/locales";
 
 export interface Crumb {
@@ -24,9 +24,11 @@ export default function PageShell({
   chips,
   title,
   secondary,
+  subtitle,
   lead,
   photo,
   faith,
+  placeType,
   children,
   island,
   after,
@@ -38,9 +40,13 @@ export default function PageShell({
   chips?: ReactNode;
   title: string;
   secondary: string;
+  /** Shown directly under the H1 (e.g. a festival's date) */
+  subtitle?: ReactNode;
   lead?: ReactNode;
   photo: PhotoData | null;
   faith: Faith;
+  /** Silhouette for the placeholder when there is no photo */
+  placeType?: PlaceType;
   children: ReactNode;
   /** Interactive part (map), hydrated */
   island?: ReactNode;
@@ -70,15 +76,14 @@ export default function PageShell({
               <div>
                 {chips && <div className="mb-4 flex flex-wrap items-center gap-2 text-xs">{chips}</div>}
                 <SectionHeading as="h1" id="page-title" locale={locale} title={title} secondary={secondary} align="left" />
+                {subtitle && <div className="mt-5">{subtitle}</div>}
                 {lead && <div className="mt-6 text-lg leading-relaxed text-kashi-ash/90">{lead}</div>}
               </div>
               <div className="arch relative aspect-[4/5] w-full overflow-hidden border border-kashi-rudraksha/60 shadow-glow sm:aspect-[5/4] md:aspect-[4/5]">
                 {photo ? (
                   <Photo photo={photo} sizes="(min-width: 768px) 42vw, 92vw" priority />
                 ) : (
-                  <div className={`place-art place-art-${faith} flex h-full w-full items-center justify-center`}>
-                    <FaithGlyph faith={faith} className="h-1/3 w-1/3 text-kashi-diya/70" />
-                  </div>
+                  <ArtFallback faith={faith} type={placeType} />
                 )}
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-kashi-night/70 to-transparent" />
               </div>

@@ -11,7 +11,8 @@
     "placeDescription": "{name}, वाराणसी (बनारस): {summary}",
     "festivalDescription": "वाराणसी (बनारस) येथे {name}, {when}. {summary}",
     "projectDescription": "{name}, वाराणसी: {summary}",
-    "itineraryDescription": "वाराणसीसाठी (बनारस) {n} दिवसांचा आराखडा: {summary}"
+    "itineraryDescription": "वाराणसीसाठी (बनारस) {n} दिवसांचा आराखडा: {summary}",
+    "festivalTitleTbc": "वाराणसीतील {name} — केव्हा आणि काय घडते"
   },
   "hero": {
     "title": "काशी — इतिहासाहूनही प्राचीन",

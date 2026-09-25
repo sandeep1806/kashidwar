@@ -3,10 +3,16 @@
     "startDate": "2026-11-24",
     "endDate": "2026-11-24",
     "verified": true,
-    "note": "Kartik Purnima. Drik Panchang (Varanasi) lists Dev Diwali on Tue 24 Nov 2026; Purnima runs until 8:23 PM that day, so the pradosh deepdan falls on the 24th. Varanasi divisional administration's preparatory meeting (Aug 2026) also names 24 Nov.",
+    "note": "Kartik Purnima. Drik Panchang (Varanasi) lists Dev Diwali on Tue 24 Nov 2026; Purnima runs until 8:23 PM that day, so the pradosh deepdan falls on the 24th. The UP Government 2026 holiday list gives Kartik Purnima (with Guru Nanak Jayanti) on 24 Nov, and the Varanasi divisional administration's preparatory meeting (Aug 2026, see Ganga Mahotsav sources) also names 24 Nov.",
     "sources": [
-      { "title": "Drik Panchang: Varanasi day panchang, 24 Nov 2026", "url": "https://www.drikpanchang.com/panchang/day-panchang.html?geoname-id=1253405&date=24/11/2026" },
-      { "title": "Live Aaryaavart: Dev Deepawali, 4 days of Ganga Mahotsav, then the lamps of Kashi (Aug 2026)", "url": "https://www.liveaaryaavart.com/2026/08/Ganga-mahotsav-varanasi.html" }
+      {
+        "title": "Drik Panchang: Varanasi day panchang, 24 Nov 2026",
+        "url": "https://www.drikpanchang.com/panchang/day-panchang.html?geoname-id=1253405&date=24/11/2026"
+      },
+      {
+        "title": "Government of Uttar Pradesh (Sachivalaya Prashasan Anubhag-3) — Public and restricted holidays list 2026",
+        "url": "https://up.gov.in/downloadmedia/siteContent/202603311653593952HOLIDAY-2026.pdf"
+      }
     ]
   },
   "maha-shivratri": {
@@ -15,19 +21,26 @@
     "verified": true,
     "note": "Phalguna Krishna Chaturdashi. UP gazetted holiday on 15 Feb 2026. Amar Ujala reported about 4 lakh darshans at Kashi Vishwanath Dham by 9 AM on 15 Feb 2026.",
     "sources": [
-      { "title": "Amar Ujala: Maha Shivratri 2026 at Kashi Vishwanath Dham (15 Feb 2026)", "url": "https://www.amarujala.com/uttar-pradesh/varanasi/maha-shivratri-2026-kashi-vishwanath-dham-four-lakh-devotees-visiting-and-offers-darshan-pujan-2026-02-15" },
-      { "title": "Shasnadesh.com: UP Government 2026 public holiday list", "url": "https://www.shasnadesh.com/2025/12/download-uttar-pradesh-government.html" }
+      {
+        "title": "Amar Ujala: Maha Shivratri 2026 at Kashi Vishwanath Dham (15 Feb 2026)",
+        "url": "https://www.amarujala.com/uttar-pradesh/varanasi/maha-shivratri-2026-kashi-vishwanath-dham-four-lakh-devotees-visiting-and-offers-darshan-pujan-2026-02-15"
+      },
+      {
+        "title": "Government of Uttar Pradesh (Sachivalaya Prashasan Anubhag-3) — Public and restricted holidays list 2026",
+        "url": "https://up.gov.in/downloadmedia/siteContent/202603311653593952HOLIDAY-2026.pdf"
+      }
     ]
   },
   "ganga-mahotsav": {
     "startDate": "2026-11-20",
     "endDate": "2026-11-23",
     "verified": false,
-    "note": "At a preparatory meeting in Aug 2026, Varanasi Divisional Commissioner S. Rajlingam called 20-23 Nov (4 days, main stage at Rajghat, events also at Namo Ghat) 'proposed', with Dev Deepawali following on 24 Nov. That is 4 days, not the traditional 5 ending on Kartik Purnima. UP Tourism has not confirmed it; re-check uptourism.gov.in nearer the date.",
+    "note": "No official 2026 dates yet. A preparatory meeting in Aug 2026 discussed 20–23 Nov (Rajghat, with Dev Deepawali on 24 Nov), reported only by local outlets; UP Tourism had not announced dates as of 25 Sep 2026. Re-check uptourism.gov.in nearer the date.",
     "sources": [
-      { "title": "Live Aaryaavart: 4 days of Ganga Mahotsav, then Dev Deepawali (Aug 2026)", "url": "https://www.liveaaryaavart.com/2026/08/Ganga-mahotsav-varanasi.html" },
-      { "title": "Desi Khabar: Ganga Mahotsav to begin 20 Nov (Aug 2026)", "url": "https://www.desikhabar.in/2026/08/20-18-2026.html" },
-      { "title": "UP Tourism: Ganga Mahotsav", "url": "https://uptourism.gov.in/en/page/ganga-mahotsav" }
+      {
+        "title": "Uttar Pradesh Tourism",
+        "url": "https://uptourism.gov.in/"
+      }
     ]
   },
   "bharat-milap": {
@@ -36,8 +49,14 @@
     "verified": true,
     "note": "The day after Vijayadashami (20 Oct 2026 per DoPT/UP lists). Drik Panchang (Varanasi) lists 'Kashi Bharat Milap' on Wed 21 Oct 2026 (Dashami until 2:11 PM, then Ekadashi). Nati Imli Bharat Milap is held at sunset.",
     "sources": [
-      { "title": "Drik Panchang: Varanasi day panchang, 21 Oct 2026", "url": "https://www.drikpanchang.com/panchang/day-panchang.html?geoname-id=1253405&date=21/10/2026" },
-      { "title": "Drik Panchang: Vijayadashami 2026", "url": "https://www.drikpanchang.com/festivals/vijayadashami/vijayadashami-date-time.html" }
+      {
+        "title": "Drik Panchang: Varanasi day panchang, 21 Oct 2026",
+        "url": "https://www.drikpanchang.com/panchang/day-panchang.html?geoname-id=1253405&date=21/10/2026"
+      },
+      {
+        "title": "Drik Panchang: Vijayadashami 2026",
+        "url": "https://www.drikpanchang.com/festivals/vijayadashami/vijayadashami-date-time.html"
+      }
     ]
   },
   "nag-nathaiya": {
@@ -46,8 +65,14 @@
     "verified": true,
     "note": "Kartik Shukla Chaturthi. Drik Panchang (Varanasi) shows Chaturthi until 8:42 PM on Fri 13 Nov 2026, which covers the afternoon leela at Tulsi Ghat. No organiser (Akhara Goswami Tulsidas) announcement found yet. Same day as Chhath Nahay Khay.",
     "sources": [
-      { "title": "Drik Panchang: Varanasi day panchang, 13 Nov 2026", "url": "https://www.drikpanchang.com/panchang/day-panchang.html?geoname-id=1253405&date=13/11/2026" },
-      { "title": "Wikipedia: Nag Nathaiya (observed on Kartik Shukla Chaturthi)", "url": "https://en.wikipedia.org/wiki/Nag_Nathaiya" }
+      {
+        "title": "Drik Panchang: Varanasi day panchang, 13 Nov 2026",
+        "url": "https://www.drikpanchang.com/panchang/day-panchang.html?geoname-id=1253405&date=13/11/2026"
+      },
+      {
+        "title": "Wikipedia: Nag Nathaiya (observed on Kartik Shukla Chaturthi)",
+        "url": "https://en.wikipedia.org/wiki/Nag_Nathaiya"
+      }
     ]
   },
   "buddha-purnima": {
@@ -56,8 +81,14 @@
     "verified": true,
     "note": "Vaishakha Purnima. Holiday on Fri 1 May 2026 in both the DoPT (central) and UP lists. Purnima ran from 9:12 PM on 30 Apr to 10:52 PM on 1 May.",
     "sources": [
-      { "title": "StaffNews: DoPT list of holidays 2026 (O.M.)", "url": "https://www.staffnews.in/2025/07/list-of-holidays-2026-dopt-order-reg-closed-and-restricted-holidays.html" },
-      { "title": "Dainik Jagran English: Buddha Purnima 2026 date", "url": "https://english.dainikjagranmpcg.com/religion/-buddha-purnima-2026-date-timings-significance-celebrations/article-17645" }
+      {
+        "title": "DoPT — Holidays to be observed in Central Government Offices during the year 2026 (O.M. F.No.12/2/2023-JCA, 3 Jul 2025)",
+        "url": "https://dopt.gov.in/sites/default/files/Holidays%20to%20be%20observed%20in%20Central%20Government%20Offices%20during%20the%20year%202026.pdf"
+      },
+      {
+        "title": "Dainik Jagran English: Buddha Purnima 2026 date",
+        "url": "https://english.dainikjagranmpcg.com/religion/-buddha-purnima-2026-date-timings-significance-celebrations/article-17645"
+      }
     ]
   },
   "ramnagar-ramlila": {
@@ -66,9 +97,22 @@
     "verified": true,
     "note": "Begins on Anant Chaturdashi, Fri 25 Sep 2026 (confirmed by local report and the UP holiday list). The end date is computed, not announced: 31 days reaches Ashwin (Sharad) Purnima, which Drik Panchang puts on Sun 25 Oct 2026 (Purnima 11:55 AM on 25 Oct to 9:41 AM on 26 Oct). Some sites give 26 Oct for Sharad Purnima.",
     "sources": [
-      { "title": "KTV Varanasi: 229-year-old Ramnagar Ramlila from 25 September (Sep 2026)", "url": "https://www.ktvvaranasi.com/2026/09/229-year-old%20Ramnagar%20Ramlila%20begins%20on%20September%2025%20religious%20rituals%20commenced%20with%20Ganesh%20Puja..html" },
-      { "title": "Aaj Tak: Anant Chaturdashi 2026 on 25 September", "url": "https://www.aajtak.in/religion/news/story/anant-chaturdashi-2026-date-ganesh-visarjan-kab-hoga-shubh-muhurat-puja-vidhi-tvisg-dskc-2647045-2026-09-23" },
-      { "title": "Drik Panchang: Sharad Purnima 2026", "url": "https://www.drikpanchang.com/purnima/sharad/sharad-purnima-date-time.html?year=2026" }
+      {
+        "title": "Amar Ujala — रामनगर रामलीला की शुरुआत: मशाल की रोशनी में गूंजेंगी मानस की चौपाइयां, एक महीने तक राममय रहेगा रामनगर (25 Sep 2026)",
+        "url": "https://www.amarujala.com/uttar-pradesh/varanasi/ramnagar-ramlila-start-verses-from-manas-to-resonate-in-glow-of-torches-in-varanasi-2026-09-25"
+      },
+      {
+        "title": "Government of Uttar Pradesh (Sachivalaya Prashasan Anubhag-3) — Public and restricted holidays list 2026",
+        "url": "https://up.gov.in/downloadmedia/siteContent/202603311653593952HOLIDAY-2026.pdf"
+      },
+      {
+        "title": "Aaj Tak: Anant Chaturdashi 2026 on 25 September",
+        "url": "https://www.aajtak.in/religion/news/story/anant-chaturdashi-2026-date-ganesh-visarjan-kab-hoga-shubh-muhurat-puja-vidhi-tvisg-dskc-2647045-2026-09-23"
+      },
+      {
+        "title": "Drik Panchang: Sharad Purnima 2026",
+        "url": "https://www.drikpanchang.com/purnima/sharad/sharad-purnima-date-time.html?year=2026"
+      }
     ]
   },
   "shravan": {
@@ -77,18 +121,34 @@
     "verified": true,
     "note": "Purnimanta Shravan as followed in UP, 30 Jul to 28 Aug 2026 (Raksha Bandhan / Shravan Purnima is 28 Aug). Shravan Somvar falls on 3, 10, 17 and 24 Aug. Amar Ujala Varanasi confirms the 30 Jul start, and the Kashi Vishwanath temple administration published a shringar schedule for the four Mondays.",
     "sources": [
-      { "title": "Amar Ujala Varanasi: Sawan 2026 begins 30 July", "url": "https://www.amarujala.com/uttar-pradesh/varanasi/sawan-2026-jalabhishek-processions-will-be-taken-out-to-propitiate-lord-shiva-in-varanasi-2026-07-20" },
-      { "title": "Prabhat Khabar: Four shringars of Baba Vishwanath in Sawan 2026", "url": "https://www.prabhatkhabar.com/religion/sawan-2026-babas-four-divine-adornments-on-all-four-mondays-at-kashi-vishwanath" }
+      {
+        "title": "Amar Ujala Varanasi: Sawan 2026 begins 30 July",
+        "url": "https://www.amarujala.com/uttar-pradesh/varanasi/sawan-2026-jalabhishek-processions-will-be-taken-out-to-propitiate-lord-shiva-in-varanasi-2026-07-20"
+      },
+      {
+        "title": "Prabhat Khabar: Four shringars of Baba Vishwanath in Sawan 2026",
+        "url": "https://www.prabhatkhabar.com/religion/sawan-2026-babas-four-divine-adornments-on-all-four-mondays-at-kashi-vishwanath"
+      }
     ]
   },
   "ganga-dussehra": {
-    "startDate": "2026-05-25",
-    "endDate": "2026-05-25",
+    "startDate": "2026-05-26",
+    "endDate": "2026-05-26",
     "verified": true,
-    "note": "Jyeshtha Shukla Dashami. Drik Panchang gives Mon 25 May 2026 (Dashami 4:30 AM on 25 May to about 5:10 AM on 26 May). KTV Varanasi reported the ghat snan on that day. 2026 has an Adhik Jyeshtha, and Ganga Dussehra was observed in the first (adhik) Jyeshtha, not the nija month in June. One aggregator lists 26 May.",
+    "note": "Jyeshtha Shukla Dashami (in the adhik Jyeshtha of 2026). Varanasi observed it on Tue 26 May: Amar Ujala's Varanasi desk reported the main ghat snan (about 3 lakh devotees) that day, following udaya tithi as announced by the Kashi Vishwanath Nyas. Drik Panchang and Aaj Tak list 25 May, when the Dashami tithi began (4:30 AM).",
     "sources": [
-      { "title": "Drik Panchang: Ganga Dussehra 2026", "url": "https://www.drikpanchang.com/festivals/ganga-dussehra/ganga-dussehra-date-time.html?year=2026" },
-      { "title": "KTV Varanasi: Ganga Dussehra celebrated in Varanasi (May 2026)", "url": "https://www.ktvvaranasi.com/2026/05/Ganga%20Dussehra%20celebrated%20in%20Varanasi%20devotees%20took%20a%20holy%20dip.html" }
+      {
+        "title": "Drik Panchang: Ganga Dussehra 2026",
+        "url": "https://www.drikpanchang.com/festivals/ganga-dussehra/ganga-dussehra-date-time.html?year=2026"
+      },
+      {
+        "title": "Aaj Tak — Ganga Dussehra 2026: 25 या 26 मई कब है गंगा दशहरा? (gives Mon 25 May)",
+        "url": "https://www.aajtak.in/religion/news/story/ganga-dussehra-2026-date-muhurt-vrat-kataha-tvisz-dskc-2559103-2026-05-24"
+      },
+      {
+        "title": "Amar Ujala — Ganga Dussehra: नौतपा की गर्मी में गंगा का शीतल स्नान कर तर गए श्रद्धालु (Varanasi, 26 May 2026)",
+        "url": "https://www.amarujala.com/uttar-pradesh/varanasi/ganga-dussehra-heat-nautapa-devotees-found-spiritual-solace-through-refreshing-dip-ganges-2026-05-26"
+      }
     ]
   },
   "rangbhari-masaan-holi": {
@@ -97,28 +157,46 @@
     "verified": true,
     "note": "Rangbhari (Amalaki) Ekadashi, Phalguna Shukla Ekadashi, fell on Fri 27 Feb 2026. Masaan (chita-bhasma) Holi at Manikarnika Ghat was on Sat 28 Feb. Main Holi (Dhulandi) was 4 Mar 2026.",
     "sources": [
-      { "title": "Aaj Tak: Masan Holi 2026 date (27 Feb 2026)", "url": "https://www.aajtak.in/religion/news/story/masan-holi-2026-kab-hai-varanasi-manikarnika-ghat-bhasm-holi-kyun-manate-hain-shiv-se-juda-rahasya-tvisg-dskc-2480800-2026-02-27" },
-      { "title": "India TV Hindi: Masan Holi 2026 at Manikarnika", "url": "https://www.indiatv.in/religion/festivals-masal-holi-2026-date-kashi-ke-manikarnika-ghat-par-kis-din-kheli-jati-hai-masan-holi-kaise-shuru-hua-ye-tradition-2026-02-25-1200432" }
+      {
+        "title": "Aaj Tak: Masan Holi 2026 date (27 Feb 2026)",
+        "url": "https://www.aajtak.in/religion/news/story/masan-holi-2026-kab-hai-varanasi-manikarnika-ghat-bhasm-holi-kyun-manate-hain-shiv-se-juda-rahasya-tvisg-dskc-2480800-2026-02-27"
+      },
+      {
+        "title": "India TV Hindi: Masan Holi 2026 at Manikarnika",
+        "url": "https://www.indiatv.in/religion/festivals-masal-holi-2026-date-kashi-ke-manikarnika-ghat-par-kis-din-kheli-jati-hai-masan-holi-kaise-shuru-hua-ye-tradition-2026-02-25-1200432"
+      }
     ]
   },
   "chhath": {
     "startDate": "2026-11-13",
     "endDate": "2026-11-16",
     "verified": true,
-    "note": "Nahay Khay 13 Nov, Kharna 14 Nov, Sandhya Arghya 15 Nov (main day, Shashthi), Usha Arghya 16 Nov. Drik Panchang lists Chhath Puja on 15 Nov, and the UP holiday list covers 15-16 Nov.",
+    "note": "Nahay Khay 13 Nov, Kharna 14 Nov, Sandhya Arghya 15 Nov (main day, Shashthi), Usha Arghya 16 Nov. Drik Panchang lists Chhath Puja on 15 Nov, and the UP list has 15 Nov as a restricted holiday.",
     "sources": [
-      { "title": "Drik Panchang: Chhath Puja 2026", "url": "https://www.drikpanchang.com/festivals/chhath-puja/chhath-puja-date-time.html?year=2026" },
-      { "title": "greytHR: Uttar Pradesh holidays 2026", "url": "https://www.greythr.com/wiki/acts/st-uttar-pradesh/holidays/2026/" }
+      {
+        "title": "Drik Panchang: Chhath Puja 2026",
+        "url": "https://www.drikpanchang.com/festivals/chhath-puja/chhath-puja-date-time.html?year=2026"
+      },
+      {
+        "title": "Government of Uttar Pradesh (Sachivalaya Prashasan Anubhag-3) — Public and restricted holidays list 2026",
+        "url": "https://up.gov.in/downloadmedia/siteContent/202603311653593952HOLIDAY-2026.pdf"
+      }
     ]
   },
   "ravidas-jayanti": {
     "startDate": "2026-02-01",
     "endDate": "2026-02-01",
     "verified": true,
-    "note": "Magh Purnima, Sun 1 Feb 2026. UP gazetted holiday. All India Radio reported the nationwide observance that day. Main gathering at Sri Guru Ravidas Janam Asthan, Seer Govardhanpur.",
+    "note": "Magh Purnima, Sun 1 Feb 2026. A restricted holiday in the UP list. All India Radio reported the nationwide observance that day. Main gathering at Sri Guru Ravidas Janam Asthan, Seer Govardhanpur.",
     "sources": [
-      { "title": "News On AIR: Ravidas Jayanti celebrated across country (1 Feb 2026)", "url": "https://www.newsonair.gov.in/ravidas-jayanti-celebrated-across-country-president-murmu-extends-greetings/" },
-      { "title": "greytHR: Uttar Pradesh holidays 2026", "url": "https://www.greythr.com/wiki/acts/st-uttar-pradesh/holidays/2026/" }
+      {
+        "title": "News On AIR: Ravidas Jayanti celebrated across country (1 Feb 2026)",
+        "url": "https://www.newsonair.gov.in/ravidas-jayanti-celebrated-across-country-president-murmu-extends-greetings/"
+      },
+      {
+        "title": "Government of Uttar Pradesh (Sachivalaya Prashasan Anubhag-3) — Public and restricted holidays list 2026",
+        "url": "https://up.gov.in/downloadmedia/siteContent/202603311653593952HOLIDAY-2026.pdf"
+      }
     ]
   },
   "kabir-jayanti": {
@@ -127,7 +205,10 @@
     "verified": true,
     "note": "Jyeshtha Purnima (nija Jyeshtha), Mon 29 Jun 2026. Purnima 3:06 AM on 29 Jun to 5:26 AM on 30 Jun.",
     "sources": [
-      { "title": "Drik Panchang: Sant Kabirdas Jayanti 2026", "url": "https://www.drikpanchang.com/hindu-saints/kabirdas/sant-kabir-jayanti.html?year=2026" }
+      {
+        "title": "Drik Panchang: Sant Kabirdas Jayanti 2026",
+        "url": "https://www.drikpanchang.com/hindu-saints/kabirdas/sant-kabir-jayanti.html?year=2026"
+      }
     ]
   },
   "guru-nanak-jayanti": {
@@ -136,8 +217,14 @@
     "verified": true,
     "note": "Kartik Purnima Gurpurab, Tue 24 Nov 2026. SGPC Nanakshahi 558 calendar, DoPT and UP holiday lists all agree. Same day as Dev Deepawali.",
     "sources": [
-      { "title": "SGPC: Nanakshahi Calendar", "url": "https://sgpc.net/nanakshahi-calendar/" },
-      { "title": "StaffNews: DoPT list of holidays 2026 (O.M.)", "url": "https://www.staffnews.in/2025/07/list-of-holidays-2026-dopt-order-reg-closed-and-restricted-holidays.html" }
+      {
+        "title": "SGPC: Nanakshahi Calendar",
+        "url": "https://sgpc.net/nanakshahi-calendar/"
+      },
+      {
+        "title": "DoPT — Holidays to be observed in Central Government Offices during the year 2026 (O.M. F.No.12/2/2023-JCA, 3 Jul 2025)",
+        "url": "https://dopt.gov.in/sites/default/files/Holidays%20to%20be%20observed%20in%20Central%20Government%20Offices%20during%20the%20year%202026.pdf"
+      }
     ]
   },
   "parshvanath-janma-kalyanak": {
@@ -146,8 +233,14 @@
     "verified": false,
     "note": "No Purnimanta Paush Krishna Dashami (Jain 'Posh Dashmi', i.e. Gujarati Magshar Vad 10) falls in calendar 2026. The previous one was about 14 Dec 2025 and the next about 1-2 Jan 2027 (Kartik Purnima is 24 Nov 2026, so Margashirsha Purnima is around 23-24 Dec 2026). By Amanta month naming, 'Paush Krishna Dashami' is 12 Jan 2026 (Drik Panchang Krishna Dashami list), but Jain temples do not use that date for Posh Dashmi. Confirm with Shri Parshvanath Digambar/Shvetambar temples, Bhelupur.",
     "sources": [
-      { "title": "Drik Panchang: Krishna Dashami dates 2026 (Varanasi)", "url": "https://www.drikpanchang.com/panchang/tithi/daily/krishna-dashami-date-time.html?year=2026&geoname-id=1253405" },
-      { "title": "Jainsite: Posh Dashmi Vidhi (Magshar Vad 9-11)", "url": "https://jainsite.com/jainism_post/posh-dashmi-vidhi/" }
+      {
+        "title": "Drik Panchang: Krishna Dashami dates 2026 (Varanasi)",
+        "url": "https://www.drikpanchang.com/panchang/tithi/daily/krishna-dashami-date-time.html?year=2026&geoname-id=1253405"
+      },
+      {
+        "title": "Jainsite: Posh Dashmi Vidhi (Magshar Vad 9-11)",
+        "url": "https://jainsite.com/jainism_post/posh-dashmi-vidhi/"
+      }
     ]
   },
   "eid-al-fitr": {
@@ -156,8 +249,14 @@
     "verified": true,
     "note": "1 Shawwal 1447 AH. The Shawwal crescent was sighted in India on 20 Mar and Eid was celebrated on Sat 21 Mar 2026, matching the DoPT and UP holiday lists. Saudi Arabia and the UAE marked it a day earlier, on 20 Mar.",
     "sources": [
-      { "title": "News24: Eid ul-Fitr 2026, India to celebrate on March 21", "url": "https://news24online.com/world/eid-ul-fitr-2026-moon-sighting-date-timing-live-updates-saudi-arabia-uae-dubai-iran-qatar-expected-to-sight-moon-today-celebrate-eid-on-march-20-india-to-observe-today/778806/" },
-      { "title": "StaffNews: DoPT list of holidays 2026 (O.M.)", "url": "https://www.staffnews.in/2025/07/list-of-holidays-2026-dopt-order-reg-closed-and-restricted-holidays.html" }
+      {
+        "title": "News24: Eid ul-Fitr 2026, India to celebrate on March 21",
+        "url": "https://news24online.com/world/eid-ul-fitr-2026-moon-sighting-date-timing-live-updates-saudi-arabia-uae-dubai-iran-qatar-expected-to-sight-moon-today-celebrate-eid-on-march-20-india-to-observe-today/778806/"
+      },
+      {
+        "title": "DoPT — Holidays to be observed in Central Government Offices during the year 2026 (O.M. F.No.12/2/2023-JCA, 3 Jul 2025)",
+        "url": "https://dopt.gov.in/sites/default/files/Holidays%20to%20be%20observed%20in%20Central%20Government%20Offices%20during%20the%20year%202026.pdf"
+      }
     ]
   },
   "muharram": {
@@ -166,8 +265,14 @@
     "verified": true,
     "note": "startDate is 1 Muharram 1448 AH, which began in India on 17 Jun 2026 after the crescent was sighted. endDate is Youm-e-Ashura (10 Muharram, the main day, tazia processions), Fri 26 Jun 2026, matching the DoPT holiday list. Gulf states observed Ashura on 25 Jun. UP lists 25-26 Jun.",
     "sources": [
-      { "title": "Amar Ujala: Muharram 2026 date (25 Jun 2026)", "url": "https://www.amarujala.com/lifestyle/muharram-kab-hai-2026-date-history-significance-in-hindi-2026-06-25" },
-      { "title": "India TV: Muharram holiday 2026, Ashura date", "url": "https://www.indiatvnews.com/lifestyle/spirituality/muharram-holiday-2026-when-is-muharram-in-india-ashura-date-public-holiday-or-not-2026-06-24-1045907" }
+      {
+        "title": "Amar Ujala: Muharram 2026 date (25 Jun 2026)",
+        "url": "https://www.amarujala.com/lifestyle/muharram-kab-hai-2026-date-history-significance-in-hindi-2026-06-25"
+      },
+      {
+        "title": "India TV: Muharram holiday 2026, Ashura date",
+        "url": "https://www.indiatvnews.com/lifestyle/spirituality/muharram-holiday-2026-when-is-muharram-in-india-ashura-date-public-holiday-or-not-2026-06-24-1045907"
+      }
     ]
   },
   "christmas": {
@@ -176,8 +281,14 @@
     "verified": true,
     "note": "Fixed date, Fri 25 Dec 2026. Gazetted in both the DoPT and UP lists. Midnight Mass on the night of 24 Dec (e.g. St Mary's Cathedral, Varanasi Cantt).",
     "sources": [
-      { "title": "StaffNews: DoPT list of holidays 2026 (O.M.)", "url": "https://www.staffnews.in/2025/07/list-of-holidays-2026-dopt-order-reg-closed-and-restricted-holidays.html" },
-      { "title": "Shasnadesh.com: UP Government 2026 public holiday list", "url": "https://www.shasnadesh.com/2025/12/download-uttar-pradesh-government.html" }
+      {
+        "title": "DoPT — Holidays to be observed in Central Government Offices during the year 2026 (O.M. F.No.12/2/2023-JCA, 3 Jul 2025)",
+        "url": "https://dopt.gov.in/sites/default/files/Holidays%20to%20be%20observed%20in%20Central%20Government%20Offices%20during%20the%20year%202026.pdf"
+      },
+      {
+        "title": "Government of Uttar Pradesh (Sachivalaya Prashasan Anubhag-3) — Public and restricted holidays list 2026",
+        "url": "https://up.gov.in/downloadmedia/siteContent/202603311653593952HOLIDAY-2026.pdf"
+      }
     ]
   },
   "kashi-tamil-sangamam-festival": {
@@ -186,8 +297,14 @@
     "verified": false,
     "note": "No 2026 edition (KTS 5.0) has been announced as of 25 Sep 2026. The latest edition, KTS 4.0 ('Tamil Karkalam'), was inaugurated in Varanasi on 2 Dec 2025 and ran until mid-Dec 2025. One travel blog lists 'KTS 5.0: 2-15 Dec 2026', which appears to copy the 2025 dates; no official source confirms it.",
     "sources": [
-      { "title": "News On AIR: Kashi Tamil Sangamam 4.0 inaugurated in Varanasi (2 Dec 2025)", "url": "https://www.newsonair.gov.in/kashi-tamil-sangamam-4-0-inaugurated-in-varanasi" },
-      { "title": "IIT Madras: Kashi Tamil Sangamam portal", "url": "https://kashitamil.iitm.ac.in/home" }
+      {
+        "title": "News On AIR: Kashi Tamil Sangamam 4.0 inaugurated in Varanasi (2 Dec 2025)",
+        "url": "https://www.newsonair.gov.in/kashi-tamil-sangamam-4-0-inaugurated-in-varanasi"
+      },
+      {
+        "title": "IIT Madras: Kashi Tamil Sangamam portal",
+        "url": "https://kashitamil.iitm.ac.in/home"
+      }
     ]
   }
 }

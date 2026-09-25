@@ -5,6 +5,11 @@
  *   - indexed locales (lib/seo.ts INDEXED_LOCALES): robots "index, follow", hreflang
  *     for each indexed locale + x-default → /en; other locales: "noindex, follow", no hreflang
  *   - sitemap.xml and sitemap-images.xml list indexed locales only
+ *   - festival dates: Event JSON-LD startDate must be shown visibly (data-event-date
+ *     + <time>); a title mentioning the festival year must have a verified visible date;
+ *     every festival page shows a date line
+ *   - image frames: every element with the `arch` class contains an <img> or the
+ *     ArtFallback placeholder (data-art-fallback); an empty arch fails
  *   - titles and descriptions unique within each locale
  *   - JSON-LD parses; Google rich-result rules for Event and BreadcrumbList
  *     (developers.google.com/search/docs/appearance/structured-data), and
@@ -16,6 +21,7 @@ import { join, relative } from "node:path";
 
 const dir = new URL("../.next/server/app/", import.meta.url).pathname;
 const seoTs = readFileSync(new URL("../lib/seo.ts", import.meta.url), "utf8");
+const YEAR = readFileSync(new URL("../lib/festivalDates.ts", import.meta.url), "utf8").match(/FESTIVAL_YEAR = (\d{4})/)[1];
 const INDEXED = JSON.parse(seoTs.match(/INDEXED_LOCALES = (\[[^\]]*\])/)[1].replace(/'/g, '"'));
 const files = [];
 (function walk(d) {
@@ -27,8 +33,37 @@ const files = [];
 })(dir);
 
 const problems = [];
+
+/** Arch frames (class token "arch") that contain neither an <img> nor data-art-fallback. */
+const VOID = new Set(["img", "source", "br", "hr", "input", "meta", "link", "wbr", "area", "base", "col", "embed", "track"]);
+function emptyArches(html) {
+  const body = html.replace(/<script\b[\s\S]*?<\/script>/gi, "").replace(/<style\b[\s\S]*?<\/style>/gi, "");
+  const stack = []; // { tag, arch, filled }
+  let empty = 0, total = 0;
+  for (const m of body.matchAll(/<(\/?)([a-zA-Z][\w:-]*)([^>]*?)(\/?)>/g)) {
+    const [, close, rawTag, attrs, selfClose] = m;
+    const tag = rawTag.toLowerCase();
+    if (close) {
+      // pop to the matching tag (tolerates sloppy nesting)
+      for (let i = stack.length - 1; i >= 0; i--) {
+        if (stack[i].tag !== tag) continue;
+        const [el] = stack.splice(i, stack.length - i).slice(0, 1);
+        if (el.arch) { total++; if (!el.filled) empty++; }
+        break;
+      }
+      continue;
+    }
+    const filling = tag === "img" || /\bdata-art-fallback\b/.test(attrs);
+    if (filling) for (const s of stack) s.filled = true;
+    if (VOID.has(tag) || selfClose) continue;
+    const cls = attrs.match(/\bclass="([^"]*)"/)?.[1] ?? "";
+    stack.push({ tag, arch: cls.split(/\s+/).includes("arch"), filled: filling });
+  }
+  return { empty, total };
+}
 const bad = (file, msg) => problems.push(`${relative(dir, file)}: ${msg}`);
 const titles = new Map(), descs = new Map();
+let archTotal = 0;
 const isoDate = /^\d{4}-\d{2}-\d{2}(T[\d:.+-Z]+)?$/;
 const absUrl = (u) => typeof u === "string" && /^https:\/\//.test(u);
 const counts = {};
@@ -109,11 +144,26 @@ for (const file of files) {
   const loc = relative(dir, file).split(/[/.]/)[0];
   if (title) titles.set(loc + "|" + title, [...(titles.get(loc + "|" + title) ?? []), file]);
   if (desc) descs.set(loc + "|" + desc, [...(descs.get(loc + "|" + desc) ?? []), file]);
+  const arches = emptyArches(html);
+  if (arches.empty) bad(file, `${arches.empty} of ${arches.total} image frames are empty (no photo and no ArtFallback)`);
+  archTotal += arches.total;
+  const events = [];
   for (const m of html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)) {
     let data;
     try { data = JSON.parse(m[1]); } catch { bad(file, "JSON-LD does not parse"); continue; }
-    for (const o of [data].flat()) checkLd(file, o);
+    for (const o of [data].flat()) { checkLd(file, o); if (o["@type"] === "Event") events.push(o); }
   }
+  // Visible dates: <p data-event-date="YYYY-MM-DD|tbc">…<time dateTime="…">label</time></p>
+  const shown = [...html.matchAll(/data-event-date="([^"]+)"[^>]*>.*?<time(?: dateTime="([^"]*)")?>([^<]+)<\/time>/gs)].map((m) => ({ iso: m[1], dt: m[2], label: m[3].trim() }));
+  for (const s of shown) {
+    if (!s.label) bad(file, "empty festival date label");
+    if (s.iso !== "tbc" && s.dt !== s.iso) bad(file, `date line ${s.iso} has <time dateTime="${s.dt}">`);
+  }
+  for (const e of events) if (!shown.some((s) => s.iso === e.startDate)) bad(file, `Event startDate ${e.startDate} is not shown on the page`);
+  const isFestival = /\/festivals\//.test(relative(dir, file));
+  if (isFestival && !shown.length) bad(file, "festival page shows no date line");
+  if (title?.includes(YEAR) && !shown.some((s) => s.iso !== "tbc")) bad(file, `title mentions ${YEAR} but the page shows no verified date`);
+  if (isFestival && shown.some((s) => s.iso !== "tbc") !== events.length > 0) bad(file, "visible verified date and Event JSON-LD disagree");
 }
 // Sitemaps: indexed locales only.
 for (const [name, re] of [["sitemap.xml.body", /<loc>([^<]+)<\/loc>/g], ["sitemap-images.xml.body", /<loc>([^<]+)<\/loc>/g]]) {
@@ -129,6 +179,7 @@ for (const [name, re] of [["sitemap.xml.body", /<loc>([^<]+)<\/loc>/g], ["sitema
 for (const [t, fs] of titles) if (fs.length > 1) problems.push(`duplicate title "${t}" on ${fs.length} pages: ${fs.slice(0, 3).map((f) => relative(dir, f)).join(", ")}`);
 for (const [d, fs] of descs) if (fs.length > 1) problems.push(`duplicate description on ${fs.length} pages: ${fs.slice(0, 3).map((f) => relative(dir, f)).join(", ")} — "${d.slice(0, 60)}…"`);
 
+console.log(`${archTotal} image frames checked`);
 console.log(`${files.length} pages · JSON-LD: ${Object.entries(counts).map(([k, v]) => `${k} ${v}`).join(", ")}`);
 if (problems.length) {
   console.error(`\n✖ ${problems.length} problem(s):\n  ` + problems.slice(0, 60).join("\n  "));
