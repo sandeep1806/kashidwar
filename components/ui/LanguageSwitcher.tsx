@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
+import { fontClassForScript, tiroDevanagari } from "@/lib/fonts";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 
 /** Swap the leading locale segment of the current path. Plain links: a locale switch is a full navigation. */
@@ -117,7 +118,7 @@ export default function LanguageSwitcher({
                   onClick={() => setOpen(false)}
                   className={`flex items-center justify-between gap-3 rounded-lg px-3 py-2 text-sm outline-none transition-colors hover:bg-kashi-saffron/15 focus-visible:bg-kashi-saffron/20 ${active ? "text-kashi-diya" : "text-kashi-ash"}`}
                 >
-                  <span className="flex items-baseline gap-3">
+                  <span className={`flex items-baseline gap-3 ${m.script === "devanagari" ? tiroDevanagari.className : fontClassForScript(m.script)}`}>
                     <span className="w-24 text-base text-kashi-white">{m.sample}</span>
                     <span>{m.nativeName}</span>
                   </span>

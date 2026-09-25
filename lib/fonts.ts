@@ -114,7 +114,7 @@ const notoGurmukhi = Noto_Sans_Gurmukhi({
   preload: false,
 });
 
-const regionalByScript: Record<Script, { variable: string } | null> = {
+const regionalByScript: Record<Script, { variable: string; className: string } | null> = {
   latin: null,
   devanagari: notoDevanagari,
   tamil: notoTamil,
@@ -126,6 +126,16 @@ const regionalByScript: Record<Script, { variable: string } | null> = {
   gujarati: notoGujarati,
   gurmukhi: notoGurmukhi,
 };
+
+/**
+ * className of the regional face for a script (or "" for Latin). Used by the
+ * language switcher so every entry shows in its own typeface; the woff2 only
+ * downloads when the menu opens, because the faces are declared with
+ * `preload: false`.
+ */
+export function fontClassForScript(script: Script): string {
+  return regionalByScript[script]?.className ?? "";
+}
 
 /** Class list for <html> so the right CSS variables exist for this locale. */
 export function fontClassesFor(locale: Locale): string {

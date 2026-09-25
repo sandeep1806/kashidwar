@@ -131,6 +131,17 @@
   /* Letter-spacing only on Latin display; never all-caps for Indic scripts */
   :root[data-script="latin"] :is(h1, h2) { letter-spacing: 0.02em; }
 
+  /* Long-word scripts (Malayalam, Tamil, Kannada, Telugu …): a smaller display
+     scale on phones and a last-resort break so a single word cannot clip. */
+  :root:not([data-script="latin"]):not([data-script="devanagari"]) h1 {
+    font-size: clamp(2.1rem, 6vw, 5.5rem);
+    overflow-wrap: anywhere;
+  }
+  :root:not([data-script="latin"]):not([data-script="devanagari"]) h2 {
+    font-size: clamp(1.7rem, 3.6vw, 3.25rem);
+    overflow-wrap: anywhere;
+  }
+
   p { text-wrap: pretty; }
   a { color: inherit; text-underline-offset: 0.2em; }
 
