@@ -256,3 +256,10 @@ Reversed the Phase 9 lazy-body decision on advice that search, social previews a
 **OpenGraph images.** They are per-locale PNGs in `public/media/og/`, served as static assets — not `ImageResponse` routes. `ImageResponse` renders with Satori, which cannot shape Indic scripts (conjuncts and matras come out wrong; vercel/satori#516), so a Hindi/Tamil/Bengali title would be broken. The PNGs are rendered by Chrome from the same message files; regenerate with the scratchpad `og.mjs` (or any headless Chrome) when titles change.
 
 **Verified under `npm run preview` (wrangler dev, local Workers runtime)** — see the checkpoint report for the exact results of: 13 locale routes, `/` redirect, 404 for unknown paths, `sitemap.xml` + `robots.txt`, hreflang + canonical + OG image URLs pointing at kashidwar.com, OG PNGs served, JSON-LD present, and the interactive smoke test (filters, modal, map, finale).
+
+## Phase 9.3 — Domain cut-over · 2026-09-25 · ✅
+- kashidwar.com removed from the old Pages project (by the owner, in the dashboard) and attached to the `kashidwar` Worker as a custom domain (`routes: [{ pattern: "kashidwar.com", custom_domain: true }]`), deployed as version 7b0af293.
+- www.kashidwar.com stays a proxied DNS record handled by a zone Redirect Rule (301 → apex, query string preserved); it is intentionally not attached to the Worker.
+- Verified live: `/` → 307 `/hi`; `/hi`, `/en`, `/ta` 200 with canonical `https://kashidwar.com/<locale>`; `www.kashidwar.com/en` → 301 `https://kashidwar.com/en` → 200; unknown path 404; sitemap 200; robots points at kashidwar.com; TLS valid.
+- Wrangler now disables the workers.dev URL and per-branch preview URLs, since `workers_dev` is not set. Add `"workers_dev": true, "preview_urls": true` to wrangler.jsonc if you want them back (for example for Workers Builds previews of branches).
+- Still open: pause the old Pages project's Git builds (it rebuilds every push, and its `redesign` preview builds fail).

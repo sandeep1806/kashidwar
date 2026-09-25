@@ -4,6 +4,11 @@
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-09-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // Apex only. www.kashidwar.com is a zone Redirect Rule (301 → apex) and
+  // keeps its own proxied DNS record; it is deliberately not attached here.
+  "routes": [
+    { "pattern": "kashidwar.com", "custom_domain": true }
+  ],
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
