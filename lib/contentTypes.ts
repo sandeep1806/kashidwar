@@ -232,6 +232,8 @@ export interface PhotoData {
   /** Tiny WebP data URL shown while the photo loads */
   blur: string;
   alt: string;
+  /** Shown on the photo when it was taken (or the artwork made) outside Varanasi */
+  note?: string;
 }
 
 /** The part of a place the grid, filters and map need on page load. */

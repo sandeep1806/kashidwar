@@ -158,6 +158,7 @@
   "width": 960,
   "height": 952,
   "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoIAAgAA4BaJZgCdADzesjgAPlCQMK+5naBNJ6Mr3BQJ1OOZKBZLDmOAxDfq51UdwLIw0Vgy4nJ6ogA",
+  "elsewhere": "art",
   "alt": {
    "en": "Old fresco of Guru Nanak from the Baoli Sahib at Goindwal, Punjab",
    "hi": "गोइंदवाल (पंजाब) की बाउली साहिब का गुरु नानक का पुराना भित्तिचित्र",
@@ -183,6 +184,7 @@
   "width": 960,
   "height": 1840,
   "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoIAA8AA4BaJbACdADYrQyAAPjAYhdejNgRakwqIcvjQrIGDdVVQFxQEUvW1CoqCOLeNPAA",
+  "elsewhere": "art",
   "alt": {
    "en": "18th-century Amber painting of Kabir at his loom",
    "hi": "करघे पर बैठे कबीर का 18वीं सदी का आमेर शैली का चित्र",
@@ -208,6 +210,7 @@
   "width": 960,
   "height": 712,
   "blur": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAYAA4BaJZQCdAEOZ98+AADyp6QTjIL+CB6uX6Aw6JT8i2cj4IAA",
+  "elsewhere": "photo",
   "alt": {
    "en": "A train coach painted for the 2022 Kashi Tamil Sangamam",
    "hi": "2022 के काशी तमिल संगमम के लिए सजाया गया रेल डिब्बा",
@@ -258,6 +261,7 @@
   "width": 960,
   "height": 640,
   "blur": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAUAA4BaJYwCdADze7hYAPwPPG5hz+KRz8EGtfdIKvyL1HQ/fjQA",
+  "elsewhere": "photo",
   "alt": {
    "en": "A tazia carried in a Muharram procession in Delhi",
    "hi": "दिल्ली में मुहर्रम के जुलूस में ले जाया जाता ताज़िया",
@@ -308,6 +312,7 @@
   "width": 960,
   "height": 585,
   "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAUAA4BaJQBOgBuCK+WAAMocdc/Ekq+kUtq960WQWTsMAAA=",
+  "elsewhere": "art",
   "alt": {
    "en": "Early 19th-century mural of Parshvanath, the 23rd Tirthankara, from a Jain temple in Multan",
    "hi": "मुल्तान के एक जैन मंदिर का 19वीं सदी के आरंभ का तेईसवें तीर्थंकर पार्श्वनाथ का भित्तिचित्र",
@@ -464,6 +469,7 @@
   "width": 960,
   "height": 720,
   "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACQAQCdASoIAAYAA4BaJZwAAp1m8kAA/u7vtk5V/46X4RRsZw3mHQ1rEnJYVVKbrAA=",
+  "elsewhere": "photo",
   "alt": {
    "en": "Jalebis being fried in a wide pan of hot oil",
    "hi": "गरम तेल की चौड़ी कड़ाही में तली जाती जलेबियाँ",
@@ -852,6 +858,58 @@
    "gu": "દુર્ગા કુંડ ખાતેનું લાલ દુર્ગા મંદિર",
    "pa": "ਦੁਰਗਾ ਕੁੰਡ ਵਿਖੇ ਲਾਲ ਰੰਗ ਦਾ ਦੁਰਗਾ ਮੰਦਰ",
    "sa": "दुर्गाकुण्डे रक्तवर्णं दुर्गामन्दिरम्"
+  }
+ },
+ "places/gurudwara-bari-sangat": {
+  "src": "/media/photos/places/gurudwara-bari-sangat",
+  "widths": [
+   480,
+   960
+  ],
+  "width": 960,
+  "height": 539,
+  "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAQAA4BaJQBOgB8wjdDgAP5VKTMGL4PBiXByWkyRihoNIAA=",
+  "elsewhere": "photo",
+  "alt": {
+   "en": "Takht Sri Patna Sahib in Patna, with its Nishan Sahib (not taken in Varanasi)",
+   "hi": "पटना का तख़्त श्री पटना साहिब और उसका निशान साहिब (वाराणसी की तस्वीर नहीं)",
+   "ta": "பாட்னாவில் உள்ள தக்த் ஸ்ரீ பாட்னா சாஹிப் மற்றும் அதன் நிஷான் சாஹிப் (வாரணாசியில் எடுக்கப்பட்டது அல்ல)",
+   "te": "పాట్నాలోని తఖ్త్ శ్రీ పాట్నా సాహిబ్, దాని నిషాన్ సాహిబ్ (వారణాసిలో తీసినది కాదు)",
+   "kn": "ಪಟ್ನಾದಲ್ಲಿರುವ ತಖ್ತ್ ಶ್ರೀ ಪಟ್ನಾ ಸಾಹಿಬ್ ಮತ್ತು ಅದರ ನಿಶಾನ್ ಸಾಹಿಬ್ (ವಾರಾಣಸಿಯಲ್ಲಿ ತೆಗೆದದ್ದಲ್ಲ)",
+   "ml": "പട്നയിലെ തഖ്ത് ശ്രീ പട്ന സാഹിബും അതിന്റെ നിശാൻ സാഹിബും (വാരാണസിയിൽ എടുത്തതല്ല)",
+   "bn": "পাটনার তখত শ্রী পাটনা সাহিব ও তার নিশান সাহিব (বারাণসীতে তোলা নয়)",
+   "or": "ପାଟଣାର ତଖ୍ତ ଶ୍ରୀ ପାଟଣା ସାହିବ ଓ ଏହାର ନିଶାନ ସାହିବ (ବାରାଣସୀରେ ଉଠାଯାଇନାହିଁ)",
+   "as": "পাটনাৰ তখত শ্ৰী পাটনা চাহিব আৰু ইয়াৰ নিশান চাহিব (বাৰাণসীত তোলা নহয়)",
+   "mr": "पाटणा येथील तख्त श्री पटना साहिब आणि त्याचा निशान साहिब (वाराणसीत काढलेले नाही)",
+   "gu": "પટનાનું તખ્ત શ્રી પટના સાહિબ અને તેનું નિશાન સાહિબ (વારાણસીની તસવીર નથી)",
+   "pa": "ਪਟਨਾ ਵਿੱਚ ਤਖ਼ਤ ਸ੍ਰੀ ਪਟਨਾ ਸਾਹਿਬ ਅਤੇ ਇਸ ਦਾ ਨਿਸ਼ਾਨ ਸਾਹਿਬ (ਵਾਰਾਣਸੀ ਦੀ ਤਸਵੀਰ ਨਹੀਂ)",
+   "sa": "पटनानगरस्थं तख्त श्री पटना साहिब तस्य निशान साहिब च (न वाराणस्यां गृहीतम्)"
+  }
+ },
+ "places/gurudwara-guru-ka-bagh": {
+  "src": "/media/photos/places/gurudwara-guru-ka-bagh",
+  "widths": [
+   480,
+   960
+  ],
+  "width": 960,
+  "height": 987,
+  "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoIAAgAA4BaJbACdAD0mXSgzAAA+puSg5R6Re3hdHlMkBozgIDUns9fbQFHnIMttUn7cIDa+gfgGCAA",
+  "elsewhere": "photo",
+  "alt": {
+   "en": "A blue Nishan Sahib bearing the Khanda at Baba Phoola Singh di Burj, Amritsar (not taken in Varanasi)",
+   "hi": "अमृतसर में बाबा फूला सिंह दी बुर्ज पर खंडा चिह्न वाला नीला निशान साहिब (वाराणसी की तस्वीर नहीं)",
+   "ta": "அமிர்தசரஸில் உள்ள பாபா பூலா சிங் தி புர்ஜில் கண்டா சின்னம் கொண்ட நீல நிஷான் சாஹிப் (வாரணாசியில் எடுக்கப்பட்டது அல்ல)",
+   "te": "అమృత్‌సర్‌లోని బాబా ఫూలా సింగ్ ది బుర్జ్ వద్ద ఖండా చిహ్నం ఉన్న నీలి నిషాన్ సాహిబ్ (వారణాసిలో తీసినది కాదు)",
+   "kn": "ಅಮೃತಸರದ ಬಾಬಾ ಫೂಲಾ ಸಿಂಗ್ ದಿ ಬುರ್ಜ್‌ನಲ್ಲಿ ಖಂಡಾ ಚಿಹ್ನೆಯಿರುವ ನೀಲಿ ನಿಶಾನ್ ಸಾಹಿಬ್ (ವಾರಾಣಸಿಯಲ್ಲಿ ತೆಗೆದದ್ದಲ್ಲ)",
+   "ml": "അമൃത്സറിലെ ബാബാ ഫൂലാ സിംഗ് ദി ബുർജിൽ ഖണ്ഡ ചിഹ്നമുള്ള നീല നിശാൻ സാഹിബ് (വാരാണസിയിൽ എടുത്തതല്ല)",
+   "bn": "অমৃতসরের বাবা ফুলা সিং দি বুর্জে খন্ডা চিহ্নযুক্ত নীল নিশান সাহিব (বারাণসীতে তোলা নয়)",
+   "or": "ଅମୃତସରର ବାବା ଫୁଲା ସିଂହ ଦି ବୁର୍ଜରେ ଖଣ୍ଡା ଚିହ୍ନ ଥିବା ନୀଳ ନିଶାନ ସାହିବ (ବାରାଣସୀରେ ଉଠାଯାଇନାହିଁ)",
+   "as": "অমৃতসৰৰ বাবা ফুলা সিং দি বুৰ্জত খণ্ডা চিহ্নযুক্ত নীলা নিশান চাহিব (বাৰাণসীত তোলা নহয়)",
+   "mr": "अमृतसरमधील बाबा फूला सिंह दी बुर्ज येथे खंडा चिन्ह असलेला निळा निशान साहिब (वाराणसीत काढलेले नाही)",
+   "gu": "અમૃતસરમાં બાબા ફૂલા સિંહ દી બુર્જ પર ખંડા ચિહ્નવાળું વાદળી નિશાન સાહિબ (વારાણસીની તસવીર નથી)",
+   "pa": "ਬਾਬਾ ਫੂਲਾ ਸਿੰਘ ਦੀ ਬੁਰਜ, ਅੰਮ੍ਰਿਤਸਰ ਵਿਖੇ ਖੰਡੇ ਵਾਲਾ ਨੀਲਾ ਨਿਸ਼ਾਨ ਸਾਹਿਬ (ਵਾਰਾਣਸੀ ਦੀ ਤਸਵੀਰ ਨਹੀਂ)",
+   "sa": "अमृतसरनगरे बाबा फूला सिंह दी बुर्ज इत्यत्र खण्डाचिह्नाङ्कितं नीलं निशान साहिब (न वाराणस्यां गृहीतम्)"
   }
  },
  "places/kashi-vishwanath": {

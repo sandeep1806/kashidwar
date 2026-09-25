@@ -1,5 +1,3 @@
-"use client";
-
 import Reveal from "@/components/motion/Reveal";
 import StaggerCards from "@/components/motion/StaggerCards";
 import type { PracticalProps } from "@/lib/sectionProps";

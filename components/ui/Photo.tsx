@@ -25,6 +25,7 @@ export default function Photo({
   decorative?: boolean;
 }) {
   return (
+    <>
     <picture>
       <source type="image/avif" srcSet={set(photo, "avif")} sizes={sizes} />
       <source type="image/webp" srcSet={set(photo, "webp")} sizes={sizes} />
@@ -40,5 +41,7 @@ export default function Photo({
         style={{ backgroundImage: `url(${photo.blur})`, ...style }}
       />
     </picture>
+    {photo.note && <span className="photo-note">{photo.note}</span>}
+    </>
   );
 }

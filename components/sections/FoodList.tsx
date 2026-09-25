@@ -1,5 +1,3 @@
-"use client";
-
 import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
 import type { Food, PhotoData } from "@/lib/contentTypes";

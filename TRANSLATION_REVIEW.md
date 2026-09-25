@@ -63,6 +63,7 @@ All non-English, non-Hindi strings were machine-generated in one pass on 2026-09
 | gu | રેતિયો પથ્થર; ઓટલા; મોહરમ / તાજિયો; સબ્જી (Gujarati usually says શાક) |
 | pa | ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ, ਸ੍ਰੀ ਗੁਰੂ ਰਵਿਦਾਸ ਜੀ, ਭਗਤ ਕਬੀਰ ਜੀ; ਮੰਦਰ for the Guru Ravidas Janam Asthan; ਨਾਮ-ਫੱਟਾ |
 | sa | घट्ट for ghat; मस्जिद् case forms; वयनयन्त्र (loom); नदीविहारनौका (cruise ship); महागिरिजागृहम् (cathedral); mixed Hindi food words |
+| all (gurudwara photos, labels) | Patna spellings (ta/te பாட்னா/పాట్నా, mr पाटणा vs the shrine's official पटना); Assamese চাহিব for Sahib; Singh as सिंह/सिंग; pa ਖੰਡੇ ਵਾਲਾ; Sanskrit label phrasing न वाराणस्यां गृहीतम्; Odia chip vs alt wording differ |
 | all | Nag Nathaiya, Sonwa Mandap, Seer Goverdhanpur, Mulagandha Kuti Vihar, Rangbhari spellings; "St. Mary's" transliterated vs a local word for saint |
 
 ## Locale ↔ font check

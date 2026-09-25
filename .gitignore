@@ -49,3 +49,4 @@ cloudflare-env.d.ts
 
 # photo sourcing scratch (candidates + review thumbnails)
 scripts/.images/
+scripts/heading-font/subset-check.ttf

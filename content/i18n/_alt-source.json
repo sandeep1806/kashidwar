@@ -230,5 +230,13 @@
  "hero/hero": {
   "en": "Wooden boats moored along the ghats at dawn",
   "hi": "भोर में घाटों के किनारे बँधी लकड़ी की नावें"
+ },
+ "places/gurudwara-bari-sangat": {
+  "en": "Takht Sri Patna Sahib in Patna, with its Nishan Sahib (not taken in Varanasi)",
+  "hi": "पटना का तख़्त श्री पटना साहिब और उसका निशान साहिब (वाराणसी की तस्वीर नहीं)"
+ },
+ "places/gurudwara-guru-ka-bagh": {
+  "en": "A blue Nishan Sahib bearing the Khanda at Baba Phoola Singh di Burj, Amritsar (not taken in Varanasi)",
+  "hi": "अमृतसर में बाबा फूला सिंह दी बुर्ज पर खंडा चिह्न वाला नीला निशान साहिब (वाराणसी की तस्वीर नहीं)"
  }
 }

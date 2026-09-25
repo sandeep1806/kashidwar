@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import SmoothScroll from "@/components/motion/SmoothScroll";
 import SunriseBackground from "@/components/motion/SunriseBackground";
 import { FaithGlyphSprite } from "@/components/ui/FaithGlyph";
+import Static from "@/components/ui/Static";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import DeferredFonts from "@/components/ui/DeferredFonts";
 import PageLoader from "@/components/ui/PageLoader";
@@ -103,7 +104,9 @@ export default async function LocaleLayout({
       <body className="min-h-dvh flex flex-col font-body text-kashi-ash">
         <script dangerouslySetInnerHTML={{ __html: LOADER_SNIPPET(fonts.deferred) }} />
         <DeferredFonts classes={fonts.deferred} fonts={fontLoadSpecsFor(locale as Locale)} sample={meta.sample} />
-        <FaithGlyphSprite />
+        <Static>
+          <FaithGlyphSprite />
+        </Static>
         <a
           href="#content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[110] focus:rounded-kashi focus:bg-kashi-saffron focus:px-4 focus:py-2 focus:text-kashi-night"

@@ -182,7 +182,8 @@
    "en": "Old fresco of Guru Nanak from the Baoli Sahib at Goindwal, Punjab",
    "hi": "गोइंदवाल (पंजाब) की बाउली साहिब का गुरु नानक का पुराना भित्तिचित्र"
   },
-  "author": "Unknown artist"
+  "author": "Unknown artist",
+  "elsewhere": "art"
  },
  {
   "key": "festivals/parshvanath-janma-kalyanak",
@@ -190,7 +191,8 @@
   "alt": {
    "en": "Early 19th-century mural of Parshvanath, the 23rd Tirthankara, from a Jain temple in Multan",
    "hi": "मुल्तान के एक जैन मंदिर का 19वीं सदी के आरंभ का तेईसवें तीर्थंकर पार्श्वनाथ का भित्तिचित्र"
-  }
+  },
+  "elsewhere": "art"
  },
  {
   "key": "festivals/muharram",
@@ -198,7 +200,8 @@
   "alt": {
    "en": "A tazia carried in a Muharram procession in Delhi",
    "hi": "दिल्ली में मुहर्रम के जुलूस में ले जाया जाता ताज़िया"
-  }
+  },
+  "elsewhere": "photo"
  },
  {
   "key": "festivals/rangbhari-masaan-holi",
@@ -220,7 +223,8 @@
   "alt": {
    "en": "A train coach painted for the 2022 Kashi Tamil Sangamam",
    "hi": "2022 के काशी तमिल संगमम के लिए सजाया गया रेल डिब्बा"
-  }
+  },
+  "elsewhere": "photo"
  },
  {
   "key": "festivals/ramnagar-ramlila",
@@ -245,7 +249,8 @@
   "alt": {
    "en": "18th-century Amber painting of Kabir at his loom",
    "hi": "करघे पर बैठे कबीर का 18वीं सदी का आमेर शैली का चित्र"
-  }
+  },
+  "elsewhere": "art"
  },
  {
   "key": "festivals/buddha-purnima",
@@ -309,7 +314,8 @@
   "alt": {
    "en": "Jalebis being fried in a wide pan of hot oil",
    "hi": "गरम तेल की चौड़ी कड़ाही में तली जाती जलेबियाँ"
-  }
+  },
+  "elsewhere": "photo"
  },
  {
   "key": "food/banarasi-paan",
@@ -476,5 +482,23 @@
    "en": "Wooden boats moored along the ghats at dawn",
    "hi": "भोर में घाटों के किनारे बँधी लकड़ी की नावें"
   }
+ },
+ {
+  "key": "places/gurudwara-bari-sangat",
+  "title": "File:Takht Sri Patna Sahib 02.jpg",
+  "alt": {
+   "en": "Takht Sri Patna Sahib in Patna, with its Nishan Sahib (not taken in Varanasi)",
+   "hi": "पटना का तख़्त श्री पटना साहिब और उसका निशान साहिब (वाराणसी की तस्वीर नहीं)"
+  },
+  "elsewhere": "photo"
+ },
+ {
+  "key": "places/gurudwara-guru-ka-bagh",
+  "title": "File:Nishan Sahib in blue, at Baba Phoola Singh di Burj in Amritsar.jpg",
+  "alt": {
+   "en": "A blue Nishan Sahib bearing the Khanda at Baba Phoola Singh di Burj, Amritsar (not taken in Varanasi)",
+   "hi": "अमृतसर में बाबा फूला सिंह दी बुर्ज पर खंडा चिह्न वाला नीला निशान साहिब (वाराणसी की तस्वीर नहीं)"
+  },
+  "elsewhere": "photo"
  }
 ]

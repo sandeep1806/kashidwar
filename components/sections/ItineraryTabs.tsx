@@ -5,7 +5,8 @@ import type { Itinerary } from "@/lib/contentTypes";
 
 export interface ItineraryLabels {
   tabs: string[];
-  day: (n: number) => string;
+  /** e.g. "Day {n}" */
+  dayTemplate: string;
   sunrise: string;
   sunset: string;
 }
@@ -64,7 +65,7 @@ export default function ItineraryTabs({
         {current.plan.map((day) => (
           <div key={day.day} className="mt-10">
             <h3 className="flex items-center gap-4 text-h3 text-kashi-white">
-              <span>{labels.day(day.day)}</span>
+              <span>{labels.dayTemplate.replace("{n}", String(day.day))}</span>
               <span className="text-base font-normal text-kashi-ash/70">{day.theme}</span>
             </h3>
             <ol className="relative mt-6 border-l border-kashi-diya/30 pl-8">

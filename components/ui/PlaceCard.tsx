@@ -10,28 +10,29 @@ export interface PlaceLabels {
   openDetails: string;
 }
 
-/** Portrait 3:4 card with an arch-framed image (DESIGN.md → Place card). */
+/**
+ * Portrait 3:4 card with an arch-framed image (DESIGN.md → Place card).
+ * Server component: the explorer island opens it via `data-place-open`.
+ */
 export default function PlaceCard({
   place,
   primaryName,
   secondaryName,
   photo,
   labels,
-  onOpen,
 }: {
   place: Place;
   primaryName: string;
   secondaryName: string;
   photo: PhotoData | null;
   labels: PlaceLabels;
-  onOpen: (place: Place) => void;
 }) {
   const faiths: Faith[] = place.faith.length ? place.faith : ["secular"];
   return (
-    <article className="group flex flex-col">
+    <article className="group flex flex-col" data-place-card="" data-type={place.type} data-faith={place.faith.join(" ")}>
       <button
         type="button"
-        onClick={() => onOpen(place)}
+        data-place-open={place.id}
         className="place-card relative flex w-full flex-col overflow-hidden rounded-kashi sm:aspect-[3/4] border border-kashi-rudraksha/60 bg-kashi-indigo/40 text-left transition-[translate,box-shadow,border-color] duration-500 ease-enter hover:-translate-y-1.5 hover:border-kashi-diya/60 hover:shadow-glow focus-visible:-translate-y-1.5 focus-visible:border-kashi-diya"
       >
         <span className="sr-only">{labels.openDetails}: </span>

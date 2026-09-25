@@ -1,5 +1,3 @@
-"use client";
-
 import StaggerCards from "@/components/motion/StaggerCards";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 import type { FaithEntry } from "@/lib/contentTypes";

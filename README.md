@@ -78,9 +78,16 @@ Photos are self-hosted; nothing is hotlinked. Each one is keyed `group/id` (`pla
 1. **Your own photo:** put it at `raw/<group>/<id>.jpg` (or .png/.webp). It overrides any Commons pick and needs no credit line.
 2. **Wikimedia Commons:** `node scripts/fetch-images.mjs [group]` collects licence-filtered candidates (CC0, CC BY, CC BY-SA, public domain) with review thumbnails in `scripts/.images/`. Check each file's title, description, categories and location on Commons, then add `{ key, title, alt: { en, hi } }` to `scripts/image-picks.json`. Unsplash and Pexels are skipped: no API keys were set when this was built, so those providers are not implemented yet.
 3. Regional alt text lives in `content/i18n/alt-<locale>.json` (`{ "group/id": "…" }`).
+3b. Photos taken (or artworks made) outside Varanasi get `"elsewhere": "photo"` or `"art"` in the pick; the site then shows a localized chip ("Not taken in Varanasi" / "Artwork, not from Varanasi", texts in `content/i18n/photo-notes.json`).
 4. `node scripts/optimize-images.mjs` downloads, grades (dark and warm), resizes (cards 480/960 px ≤ 150 KB; scenes 640/960/1600 px ≤ 140 KB; hero 640 px ≤ 200 KB) and writes AVIF + WebP to `public/media/photos/`, plus `content/photos.json` (sizes, blur placeholder, alt text) and `content/credits.json` (title, author, licence, source), which feeds `/<locale>/credits`. Add `--force` to re-encode.
 
 Sensitivity rules for picks: no cremations or bodies at Manikarnika, nothing from inside the Kashi Vishwanath sanctum, no close-ups of identifiable people bathing, praying or at funerals, and the same care for every faith.
+
+### Rendering model (performance)
+- Text-only sections are server components wrapped in `components/ui/Static.tsx`: their HTML is server-rendered, but React does not hydrate it (an empty `dangerouslySetInnerHTML` on the client keeps the server's children). Only islands hydrate: the 3D hero, the Day-in-Kashi scroller, the places explorer (filters, modal, map; the cards themselves are static and filtered via `hidden`), itinerary tabs, aarti flame animation, header menus, section dots and the sound toggle.
+- Never put an interactive component inside `<Static>`: it would render but never hydrate.
+- Scroll reveals (`Reveal`, `StaggerCards`, `TextReveal`, `RippleWipe`) only write data attributes; `components/motion/RevealController.tsx` animates them with IntersectionObservers.
+- Devanagari display face: `lib/fonts/tiro-devanagari-headings.woff2` is Tiro Devanagari Hindi subset to the glyphs the display text uses (about 20 KB), preloaded. After changing headings, names, verses or switcher labels, rebuild it with the steps at the top of `scripts/heading-font/crawl-corpus.mjs`.
 
 ### Add a language
 1. Add the code to `locales` and its metadata (`nativeName`, `sample`, `script`, `bcp47`) to `LOCALES` in `lib/i18n/locales.ts`.

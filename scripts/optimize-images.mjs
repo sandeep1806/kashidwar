@@ -8,7 +8,8 @@
  *   node scripts/optimize-images.mjs --force    # re-encode photos that already exist
  *
  * Inputs
- *   scripts/image-picks.json   [{ key: "places/assi-ghat", title: "File:…", alt: { en, hi }, crop?: [x, y, w, h], author?: "…" }]
+ *   scripts/image-picks.json   [{ key: "places/assi-ghat", title: "File:…", alt: { en, hi }, crop?: [x, y, w, h], author?: "…",
+ *                               elsewhere?: "photo" | "art" }]
  *                              (crop is in fractions of the original, e.g. to cut off a watermark)
  *   content/i18n/alt-<locale>.json  { key: alt } for the regional locales (optional)
  *   raw/<group>/<id>.(jpg|jpeg|png|webp)  owner photos override Commons (no credit line needed)
@@ -181,6 +182,8 @@ for (const pick of picks) {
     height,
     blur: `data:image/webp;base64,${blur.toString("base64")}`,
     ...(pick.crop ? { crop: pick.crop } : {}),
+    // "photo" | "art": taken (or made) outside Varanasi; the site shows a label.
+    ...(pick.elsewhere ? { elsewhere: pick.elsewhere } : {}),
     alt,
   };
   if (credit) {

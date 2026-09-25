@@ -22,8 +22,8 @@ import {
   Noto_Sans_Oriya,
   Noto_Sans_Tamil,
   Noto_Sans_Telugu,
-  Tiro_Devanagari_Hindi,
 } from "next/font/google";
+import localFont from "next/font/local";
 import { LOCALES, type Locale, type Script } from "./i18n/locales";
 
 /*
@@ -53,12 +53,22 @@ export const inter = Inter({
   preload: false,
 });
 
-export const tiroDevanagari = Tiro_Devanagari_Hindi({
-  subsets: ["devanagari"],
+/*
+ * Tiro Devanagari Hindi, subset to the 207 glyphs the site's display text
+ * actually uses (headings, names, verses, Hindi secondary lines in every
+ * locale): 20 KB instead of 62 KB for Google's Devanagari subset. Built by
+ * scripts/heading-font/ (crawl → HarfBuzz shaping trace → fontTools subset,
+ * verified by re-shaping the corpus). Preloaded and applied at first paint,
+ * so Devanagari headings render once, in their real face.
+ */
+export const tiroDevanagari = localFont({
+  src: "./fonts/tiro-devanagari-headings.woff2",
   weight: "400",
   variable: "--font-display-deva",
   display: "block",
-  preload: false,
+  preload: true,
+  fallback: ["serif"],
+  adjustFontFallback: "Times New Roman",
 });
 
 // --- Regional body/display faces (one per script) -----------------------------
@@ -145,8 +155,8 @@ export function fontClassForScript(script: Script): string {
 
 /**
  * Font classes for <html>, split by when they should apply:
- *  - immediate: nothing at the moment (kept so a face can be promoted again).
- *  - deferred: every face, attached after first paint by <DeferredFonts>.
+ *  - immediate: the 20 KB heading subset of Tiro Devanagari (preloaded).
+ *  - deferred: every other face, attached after first paint by <DeferredFonts>.
  *    The display faces (Cormorant 37 KB, Tiro 62 KB, regional display faces)
  *    blocked the hero H1, which is the LCP element, and held Lighthouse mobile
  *    at 84. Deferred, the first paint uses system fonts and all faces swap in
@@ -156,8 +166,8 @@ export function fontClassForScript(script: Script): string {
 export function fontClassesFor(locale: Locale): { immediate: string; deferred: string } {
   const script = LOCALES[locale].script;
   const regional = regionalByScript[script];
-  const immediate: string[] = [];
-  const deferred = [cormorant.variable, inter.variable, tiroDevanagari.variable, regional?.variable ?? ""];
+  const immediate = [tiroDevanagari.variable];
+  const deferred = [cormorant.variable, inter.variable, regional?.variable ?? ""];
   return { immediate: immediate.filter(Boolean).join(" "), deferred: deferred.filter(Boolean).join(" ") };
 }
 
@@ -169,7 +179,7 @@ export function fontClassesFor(locale: Locale): { immediate: string; deferred: s
 export function fontLoadSpecsFor(locale: Locale): string[] {
   const regional = regionalByScript[LOCALES[locale].script] as { style?: { fontFamily: string } } | null;
   const family = (f: { style: { fontFamily: string } }) => f.style.fontFamily.split(",")[0].trim();
-  const specs = [`600 1em ${family(cormorant)}`, `400 1em ${family(inter)}`, `400 1em ${family(tiroDevanagari)}`];
+  const specs = [`600 1em ${family(cormorant)}`, `400 1em ${family(inter)}`];
   if (regional?.style) specs.push(`400 1em ${family(regional as { style: { fontFamily: string } })}`);
   return specs;
 }

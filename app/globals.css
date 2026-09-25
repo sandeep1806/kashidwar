@@ -346,14 +346,33 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
 }
 
 /* Below-the-fold blocks skip layout/paint until near the viewport */
+/* Tracked caps labels are a Latin idiom; spacing letters apart breaks Indic
+   clusters. Unlayered, so it overrides the tracking-* utilities. */
+:root:not([data-script="latin"]) .uppercase:not([lang="en"]) { letter-spacing: normal; }
+
 /* Photo <img> (components/ui/Photo.tsx): fills its frame over the blur placeholder. */
 .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background-size: cover; background-position: center; }
+/* "Not taken in Varanasi" chip (photo.note), bottom-left of the frame. */
+.photo-note { position: absolute; left: 0.5rem; bottom: 0.5rem; z-index: 1; max-width: calc(100% - 1rem); border-radius: 999px; padding: 0.15rem 0.55rem; font-size: 0.68rem; line-height: 1.3; color: var(--kashi-white); background: color-mix(in oklab, var(--kashi-night) 72%, transparent); backdrop-filter: blur(4px); }
 .photo-zoom { transition: transform 700ms var(--ease-enter); }
 .group:hover .photo-zoom { transform: scale(1.05); }
 .cv-auto { content-visibility: auto; contain-intrinsic-size: auto 80vh; }
-.cv-section { content-visibility: auto; contain-intrinsic-size: auto 120vh; }
+footer.cv-auto { contain-intrinsic-size: auto 130vh; }
+@media (min-width: 1024px) { footer.cv-auto { contain-intrinsic-size: auto 56vh; } }
+.cv-section { content-visibility: auto; contain-intrinsic-size: auto var(--cv-h, 120vh); }
+/* Estimated heights for skipped sections (measured 2026-09-25, /hi); "auto"
+   replaces them with the real height once a section has rendered, so these
+   only keep the scrollbar and anchor jumps close on first approach. */
+#places { --cv-h: 590vh; } #faiths { --cv-h: 420vh; } #projects { --cv-h: 1330vh; }
+#festivals { --cv-h: 1330vh; } #food { --cv-h: 580vh; } #itineraries { --cv-h: 180vh; }
+#practical { --cv-h: 200vh; } #aarti { --cv-h: 85vh; }
+@media (min-width: 1024px) {
+  #places { --cv-h: 450vh; } #faiths { --cv-h: 180vh; } #projects { --cv-h: 620vh; }
+  #festivals { --cv-h: 545vh; } #food { --cv-h: 180vh; } #itineraries { --cv-h: 170vh; }
+  #practical { --cv-h: 125vh; } #aarti { --cv-h: 92vh; }
+}
 /* Below lg only: on wide screens this section pins (position: fixed), which containment would break. */
-@media (max-width: 1023px) { .cv-below-lg { content-visibility: auto; contain-intrinsic-size: auto 250vh; } }
+@media (max-width: 1023px) { .cv-below-lg { content-visibility: auto; contain-intrinsic-size: auto 280vh; } }
 
 /* SplitText pieces need a box to move in */
 [data-title] > div { display: inline-block; }

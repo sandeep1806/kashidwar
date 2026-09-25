@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import Reveal from "@/components/motion/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
+import Static from "@/components/ui/Static";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { getPhoto } from "@/lib/photos";
 import dawnArt from "@/public/media/art/dawn.svg";
@@ -26,12 +27,14 @@ export default async function DayInKashi({ locale }: { locale: Locale }) {
 
   return (
     <section id="journey" aria-labelledby="day-title" className="cv-below-lg scroll-mt-4">
-      <div className="container-kashi pb-10 pt-[12vh] text-center">
+      <Static>
+        <div className="container-kashi pb-10 pt-[12vh] text-center">
         <SectionHeading id="day-title" locale={locale} title={t("title")} secondary={t("titleSecondary")} />
         <Reveal>
           <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{t("intro")}</p>
         </Reveal>
       </div>
+      </Static>
       <DayInKashiScroller scenes={scenes} script={LOCALES[locale].script} hint={t("hint")} />
     </section>
   );

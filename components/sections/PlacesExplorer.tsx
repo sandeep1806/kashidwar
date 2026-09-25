@@ -1,13 +1,12 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
-import StaggerCards from "@/components/motion/StaggerCards";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore, type MouseEvent, type ReactNode } from "react";
 import EnglishNote from "@/components/ui/EnglishNote";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 
 import Photo from "@/components/ui/Photo";
-import PlaceCard, { type PlaceLabels } from "@/components/ui/PlaceCard";
+import type { PlaceLabels } from "@/components/ui/PlaceCard";
 import { PLACE_FILTERS, placeMatches, type Faith, type PhotoData, type PlaceDetail, type PlaceFilter, type PlaceLite as Place } from "@/lib/contentTypes";
 
 const KashiMap = dynamic(() => import("@/components/ui/KashiMap"), { ssr: false });
@@ -94,9 +93,16 @@ export default function PlacesExplorer({
   items,
   labels,
   detailsUrl,
+  grid,
 }: {
   items: ExplorerPlace[];
   labels: ExplorerLabels;
+  /**
+   * The card grid, server-rendered inside <Static> (not hydrated). Cards carry
+   * data-place-open / data-type / data-faith; this island filters them by
+   * toggling `hidden` and opens places through one delegated click handler.
+   */
+  grid: ReactNode;
   /** Prerendered JSON with each place's summary, story, tips and sources */
   detailsUrl: string;
 }) {
@@ -176,6 +182,19 @@ export default function PlacesExplorer({
     if (selected && !details) prefetch();
   }, [selected, details, prefetch]);
 
+  // Filter the static cards in place.
+  const gridHost = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    gridHost.current?.querySelectorAll<HTMLElement>("[data-place-card]").forEach((card) => {
+      const place = { type: card.dataset.type as Place["type"], faith: (card.dataset.faith ?? "").split(" ").filter(Boolean) as Faith[] };
+      card.hidden = !placeMatches(place, filter);
+    });
+  }, [filter]);
+  const onGridClick = (e: MouseEvent<HTMLDivElement>) => {
+    const id = (e.target as Element).closest<HTMLElement>("[data-place-open]")?.dataset.placeOpen;
+    if (id) writePlaceParam(id);
+  };
+
   const sel = selected?.place;
   const detail = sel ? details?.[sel.id] : undefined;
   const selFaiths: Faith[] = sel ? (sel.faith.length ? sel.faith : ["secular"]) : [];
@@ -203,20 +222,8 @@ export default function PlacesExplorer({
         {withCount(labels.results, visible.length)}
       </p>
 
-      <div onPointerOver={prefetch} onFocusCapture={prefetch}>
-      <StaggerCards className="mt-10 grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 xl:grid-cols-4">
-        {visible.map((item) => (
-          <PlaceCard
-            key={item.place.id}
-            place={item.place}
-            primaryName={item.primaryName}
-            secondaryName={item.secondaryName}
-            photo={item.photo}
-            labels={labels}
-            onOpen={openPlace}
-          />
-        ))}
-      </StaggerCards>
+      <div ref={gridHost} onClick={onGridClick} onPointerOver={prefetch} onFocusCapture={prefetch}>
+        {grid}
       </div>
 
       <div

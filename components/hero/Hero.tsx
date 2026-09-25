@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { getPhoto } from "@/lib/photos";
+import Static from "@/components/ui/Static";
 import HeroFallback from "./HeroFallback";
 import HeroScene from "./HeroScene";
 
@@ -18,8 +19,11 @@ export default async function Hero({ locale }: { locale: Locale }) {
       aria-labelledby="hero-title"
       className="grain relative isolate flex min-h-dvh flex-col justify-end overflow-hidden bg-kashi-night"
     >
-      <HeroFallback photo={getPhoto("hero/hero", locale)} />
+      <Static>
+        <HeroFallback photo={getPhoto("hero/hero", locale)} />
+      </Static>
       <HeroScene />
+      <Static>
       {/* Legibility veil over the lower half */}
       <div
         aria-hidden="true"
@@ -69,6 +73,7 @@ export default async function Hero({ locale }: { locale: Locale }) {
           className="hero-rise mx-auto mt-14 h-16 w-px bg-gradient-to-b from-kashi-diya/70 to-transparent"
         />
       </div>
+      </Static>
     </section>
   );
 }

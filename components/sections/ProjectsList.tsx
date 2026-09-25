@@ -1,5 +1,3 @@
-"use client";
-
 import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
 import type { PhotoData, Project, ProjectStatus } from "@/lib/contentTypes";
@@ -37,7 +35,7 @@ export function StatusBadge({ status, label }: { status: ProjectStatus; label: s
   );
 }
 
-/** Client-rendered so the card markup is not serialised per project in the RSC payload. */
+/** Server component, rendered inside <Static> (no hydration). */
 export default function ProjectsList({ groups, labels }: { groups: { status: ProjectStatus; items: ProjectItem[] }[]; labels: ProjectLabels }) {
   return (
     <>
