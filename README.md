@@ -104,7 +104,7 @@ In the Cloudflare dashboard → Workers & Pages → the `kashidwar` Worker → S
 
 | Setting | Value |
 |---|---|
-| Production branch | `master` (the repo's default; merge `redesign` into it when ready — preview builds run for other branches) |
+| Production branch | `redesign` for the cut-over (see below); `master` still holds the older site |
 | Build command | `npm run cf:build` |
 | Deploy command | `npx opennextjs-cloudflare deploy` |
 | Root directory | `/` |
@@ -114,7 +114,7 @@ In the Cloudflare dashboard → Workers & Pages → the `kashidwar` Worker → S
 Preview deployments of non-production branches get a `*.workers.dev` URL; their canonical tags still point at kashidwar.com, which is what you want for search engines.
 
 ### Domain cut-over (kashidwar.com currently serves the older site)
-1. Merge `redesign` into `master` (or set `redesign` as the production branch temporarily) so Workers Builds deploys this project to the `kashidwar` Worker.
+1. `redesign` has no history in common with `master` (this is a fresh project, not a change to the old site), so a normal merge will not work. Point Workers Builds' production branch at `redesign`. Later, if you want `master` to be the long-term branch, replace it deliberately (for example rename the old `master` to `legacy-site`, then push `redesign` as the new `master`) rather than merging with `--allow-unrelated-histories`.
 2. Check the deployment on its `workers.dev` URL: `/hi`, `/en`, `/ta`, `/sitemap.xml`, `/robots.txt`, a wrong path for the 404.
 3. In the Worker → Settings → Domains & Routes, add the custom domain `kashidwar.com` (and `www.kashidwar.com`, redirected to the apex). Cloudflare updates DNS automatically when the zone is on the same account.
 4. Remove or disable whatever currently serves the old site on that hostname (its Pages project / Worker route) so the new Worker takes the hostname.
