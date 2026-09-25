@@ -62,14 +62,43 @@ function whenIdle(cb: () => void, timeout = 1500): () => void {
   return () => window.clearTimeout(id);
 }
 
+/**
+ * Touch / narrow devices: wait for the first sign of intent (scroll, touch,
+ * key, pointer) or 4 s, whichever first. Keeps the bundle's evaluation out of
+ * the mobile Total Blocking Time window; nothing on screen needs it until
+ * the visitor moves. Wide, fine-pointer devices load at idle so the pinned
+ * timeline is ready before it is reached.
+ */
+function whenIntent(cb: () => void, timeout = 4000): () => void {
+  const wide =
+    window.innerWidth >= 1024 && window.matchMedia("(pointer: fine)").matches;
+  if (wide) return whenIdle(cb);
+  const events = ["scroll", "touchstart", "pointerdown", "keydown", "wheel"];
+  let done = false;
+  const fire = () => {
+    if (done) return;
+    done = true;
+    cleanup();
+    cb();
+  };
+  const cleanup = () => {
+    events.forEach((e) => window.removeEventListener(e, fire));
+    window.clearTimeout(timer);
+  };
+  events.forEach((e) => window.addEventListener(e, fire, { passive: true, once: true }));
+  const timer = window.setTimeout(fire, timeout);
+  return () => {
+    done = true;
+    cleanup();
+  };
+}
+
 export default function SmoothScroll({ children }: { children: ReactNode }) {
   useEffect(() => {
     let cancelled = false;
     let cleanup: (() => void) | undefined;
 
-    // Wait for an idle moment (or 1.5 s) so the motion bundle never competes
-    // with hydration and first input.
-    const cancelIdle = whenIdle(async () => {
+    const cancelIdle = whenIntent(async () => {
       const g = await import("@/lib/gsap");
       if (cancelled) return;
       g.registerGsap();

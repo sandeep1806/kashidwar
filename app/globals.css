@@ -25,8 +25,10 @@
   --sky-4: var(--kashi-saffron);
   --sky-5: var(--kashi-diya);
 
-  /* Live background: Phase 3 writes to this from ScrollTrigger */
-  --bg-current: var(--kashi-night);
+  /* Sky layer, driven by scroll progress (SunriseBackground) */
+  --sky-top: var(--kashi-night);
+  --sky-bottom: var(--kashi-night);
+  --sky-glow: 0;
 
   /* Type scale */
   --text-h1: clamp(2.8rem, 7vw, 6.5rem);
@@ -107,14 +109,13 @@
     html { scroll-behavior: auto; }
   }
   body {
-    background-color: var(--bg-current);
+    background: transparent; /* the fixed .sky layer paints the sunrise */
     color: var(--kashi-ash);
     font-family: var(--font-body-active);
     font-size: var(--text-body);
     line-height: var(--leading-body);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    transition: background-color 0.3s linear;
   }
   h1, h2, h3, h4 {
     font-family: var(--font-display-active);
@@ -291,3 +292,40 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
   .page-loader { animation: loader-out 300ms linear 150ms both !important; }
   .page-loader :is(.loader-flame, .loader-glow, .loader-spread) { animation: none !important; }
 }
+
+/* ------------------------------------------------------------------
+   Phase 3: sky, lamps, dividers
+   ------------------------------------------------------------------ */
+.sky {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
+}
+.sky::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: var(--sky-glow);
+  background: radial-gradient(ellipse 75% 55% at 50% 105%, color-mix(in oklab, var(--kashi-diya) 42%, transparent), transparent 70%);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --sky-top: var(--kashi-indigo); --sky-bottom: var(--kashi-night); }
+}
+
+/* Timeline lamps: unlit until progress passes their mark */
+.lamp .lamp-flame {
+  opacity: 0.12;
+  transition: opacity 0.7s var(--ease-enter), filter 0.7s var(--ease-enter);
+}
+.lamp.is-lit .lamp-flame {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px rgba(255, 210, 122, 0.85));
+}
+
+/* Below-the-fold blocks skip layout/paint until near the viewport */
+.cv-auto { content-visibility: auto; contain-intrinsic-size: auto 80vh; }
+
+/* SplitText pieces need a box to move in */
+[data-title] > div { display: inline-block; }

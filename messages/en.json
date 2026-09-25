@@ -39,9 +39,30 @@
     "under_construction": "Under construction",
     "announced": "Announced"
   },
-  "journey": {
-    "title": "One night, one dawn",
-    "titleSecondary": "एक रात, एक भोर",
-    "text": "From here, every section is a step toward light, from the first bells at Assi to the flames of the Dashashwamedh aarti."
+  "day": {
+    "title": "A day in Kashi",
+    "titleSecondary": "काशी में एक दिन",
+    "intro": "In a single day the city is born three times: at dawn on the river, at noon in the lanes, and at dusk in the flame of the aarti.",
+    "hint": "Scroll to move through the day",
+    "scenes": {
+      "dawn": {
+        "time": "05:40",
+        "place": "Assi Ghat",
+        "title": "Subah-e-Banaras",
+        "caption": "The sun rises from the far bank. A conch sounds, the boats push off, and the steps slowly fill."
+      },
+      "noon": {
+        "time": "12:30",
+        "place": "The old lanes",
+        "title": "Noon in the galis",
+        "caption": "The smell of kachori, the flash of brass, silk threads on a loom, and a small shrine at every turn."
+      },
+      "dusk": {
+        "time": "18:40",
+        "place": "Dashashwamedh Ghat",
+        "title": "Ganga Aarti",
+        "caption": "Seven tiered lamps rise together. Bells, conch, smoke, and the whole ghat catches like a single flame."
+      }
+    }
   }
 }

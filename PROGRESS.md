@@ -70,3 +70,30 @@
 - The camera parallax range (±0.7 units) and Lenis `lerp: 0.1` feel are judgment calls.
 - Loader pacing: 1.75 s total; the "light spreads" beat is an indigo radial scaling from centre.
 - Lighthouse variance is ±2 points between runs; 90+ is met but not with a wide margin. Phase 9 should analyse the two anonymous Next runtime chunks (46 KB + 38 KB gz).
+
+## Phase 2.1 — Hero feel tweaks · 2026-09-25 · ✅
+Loader 2.2 s (DESIGN.md said ≤ 1.8 s; overridden by checkpoint feedback), water pushed from blue to darker indigo in both the shader and the SVG fallback, parallax −30 %, +20 % lamps clustered along the far bank.
+
+## Phase 3 — Scroll-bound sky + Day in Kashi · 2026-09-25 · ✅
+
+**Did**
+- **SunriseBackground** (`components/motion/SunriseBackground.tsx`): a fixed `.sky` layer behind the page whose top/bottom gradient stops and a gold glow are interpolated by GSAP ScrollTrigger (scrub 0.8) over the whole document. Stops: night → indigo → violet → ember → deep saffron; gold arrives as a radial glow layer whose opacity ramps to 0.85, so ash body text stays ≥ 4.5:1 on the base at every scroll position. Reduced motion → static indigo via CSS, no JS.
+- **Day in Kashi** (`components/sections/DayInKashi*.tsx`): server wrapper passes three translated scenes to a client scroller. Wide + motion-allowed: section pins, track scrubs horizontally through dawn (Assi) → noon (galis) → dusk (Dashashwamedh aarti); three lamps at the top ignite at 2 % / 50 % / 97 % progress with a progress hairline; scene titles reveal with SplitText inside the container animation, meta/caption fade up. Mobile, reduced motion, or before GSAP loads: the same scenes stacked vertically with `content-visibility: auto`.
+- Scene backdrops are static SVG files in `public/media/art/` rendered lazily with `next/image` (`fill`, `unoptimized`), ready to be replaced by AVIF photos.
+- **Motion primitives** (`components/motion/`): `Reveal` (fade-up once on enter), `StaggerCards` (children 60 px / 0.08 s), `RippleWipe` (concentric gold rings spread from a diya, scrubbed; static divider under reduced motion), `TextReveal` (SplitText: chars for Latin, words only for Indic scripts so conjuncts never break; sr-only twin carries the accessible text, `aria: "none"`). `SectionHeading` renders the bilingual H2 with `TextReveal`.
+- `lib/hooks.ts`: `useMediaQuery` / `useReducedMotionPref` via `useSyncExternalStore` (server snapshot false → no hydration mismatch).
+- Motion bundle loading: wide fine-pointer devices at idle; touch/narrow devices on first scroll/touch/key or 4 s, so its evaluation stays out of mobile TBT.
+
+**Verification**
+- `npm run build` ✅ `npm run lint` ✅ `tsc` ✅. Console clean on desktop, mobile and reduced-motion runs.
+- Puppeteer scroll probe: pin-spacer present on desktop, `--sky-top` interpolates `#0b0a14 → rgb(119,57,36)` across the page, lamps lit 0 → 1 → 2 as progress advances; vertical fallback on mobile with sky still interpolating.
+- Lighthouse mobile (production build, 4 runs): performance 94, 88, 93, 89 (median ≈ 91), LCP 2.5–3.2 s, TBT 100–180 ms, A11y 100, BP 100, SEO 92. Run-to-run variance is ±3 points on this machine; the remaining fixed cost is the document's own parse + style task (~240 ms throttled) and react-dom hydration.
+
+**Decisions**
+- Primitives use GSAP (already lazy-loaded) rather than `motion` for scroll-enter effects; `motion` is reserved for component enter/exit (modal, Phase 4) where `AnimatePresence` earns its bytes.
+- Inline SVG art was moved to files after Lighthouse showed it parsed twice (HTML + React Flight payload): HTML 108 KB → 51 KB, TBT 320 → ~120 ms.
+- Gold sky stop capped at `#8A3F1A` base + glow layer, not a gold fill, to keep body-text contrast.
+
+**Needs review**
+- Desktop pinned scroller: hydration renders the vertical layout first and switches to the pinned one when GSAP arrives at idle; a visitor who scrolls to it within ~1 s could see the switch.
+- Lighthouse margin over 90 is thin; Phase 9 will look at the Flight payload size and CSS.
