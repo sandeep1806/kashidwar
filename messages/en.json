@@ -37,7 +37,8 @@
     "bestTime": "Best time",
     "sources": "Sources",
     "lastVerified": "Last verified",
-    "loading": "Lighting the lamp…"
+    "loading": "Lighting the lamp…",
+    "englishNote": "Some details are shown in English."
   },
   "status": {
     "completed": "Completed",

@@ -9,31 +9,31 @@
     "type": "heritage",
     "lat": 25.3106,
     "lng": 83.0116,
-    "summary": "A 5-lakh-square-foot precinct that links the Vishwanath temple to the Ganga at Lalita Ghat, with a pilgrim facilitation centre, museum, viewing gallery and food court. Inaugurated 13 December 2021.",
+    "summary": "A 5-lakh-square-foot precinct that links the Vishwanath temple to the Ganga at Lalita Ghat — 23 buildings in phase 1, including pilgrim facilitation centres, a Vedic centre, city museum, viewing gallery and food court. Foundation laid 8 March 2019; phase 1 inaugurated 13 December 2021 at a cost of about ₹339 crore.",
     "bestTime": "Early morning or after the evening aarti",
     "image": "/media/projects/kashi-vishwanath-corridor.jpg",
     "status": "completed",
     "agency": "Shri Kashi Vishwanath Special Area Development Board, Government of Uttar Pradesh",
-    "timeline": "Foundation March 2019 · Inaugurated 13 December 2021 · Phase 2 expansion announced",
+    "timeline": "Foundation 8 March 2019 · Phase 1 inaugurated 13 December 2021",
     "verified": true,
     "lastVerified": "2026-09-25",
     "sources": [
       {
-        "title": "Outlook India — PM Modi to inaugurate Kashi Vishwanath Corridor",
-        "url": "https://www.outlookindia.com/national/india-news-pm-modi-to-inaugurate-kashi-vishwanath-corridor-project-this-month-news-403579",
+        "title": "PIB — PM inaugurates Shri Kashi Vishwanath Dham in Varanasi (13 December 2021)",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1780884",
         "accessed": "2026-09-25"
       },
       {
-        "title": "BYJU'S — What is Kashi Vishwanath Corridor Project?",
-        "url": "https://byjus.com/current-affairs/kashi-vishwanath-temple-corridor/",
+        "title": "PMIndia — PM inaugurates Shri Kashi Vishwanath Dham",
+        "url": "https://www.pmindia.gov.in/en/news_updates/pm-inaugurates-shri-kashi-vishwanath-dham-in-varanasi/",
         "accessed": "2026-09-25"
       }
     ],
     "i18n": {
       "hi": {
-        "summary": "5 लाख वर्ग फुट का परिसर जो विश्वनाथ मंदिर को ललिता घाट पर गंगा से जोड़ता है, यात्री सुविधा केंद्र, संग्रहालय, दर्शन गैलरी और फ़ूड कोर्ट के साथ। 13 दिसंबर 2021 को लोकार्पित।",
+        "summary": "5 लाख वर्ग फुट का परिसर जो विश्वनाथ मंदिर को ललिता घाट पर गंगा से जोड़ता है — चरण 1 में 23 भवन, जिनमें यात्री सुविधा केंद्र, वैदिक केंद्र, नगर संग्रहालय, दर्शन गैलरी और फ़ूड कोर्ट हैं। शिलान्यास 8 मार्च 2019; चरण 1 का लोकार्पण 13 दिसंबर 2021, लगभग ₹339 करोड़ की लागत।",
         "agency": "श्री काशी विश्वनाथ विशेष क्षेत्र विकास बोर्ड, उत्तर प्रदेश सरकार",
-        "timeline": "शिलान्यास मार्च 2019 · लोकार्पण 13 दिसंबर 2021 · चरण 2 विस्तार घोषित"
+        "timeline": "शिलान्यास 8 मार्च 2019 · चरण 1 लोकार्पण 13 दिसंबर 2021"
       }
     }
   },
@@ -81,31 +81,36 @@
     "type": "transport",
     "lat": 25.3282,
     "lng": 82.9866,
-    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple, in about 16 minutes. Trial runs began in July 2025; opening targets have moved from late 2025 to May 2026 and now to November 2026.",
+    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple, in about 16 minutes. Foundation laid 24 March 2023; trial runs on the Cantt–Rathyatra stretch began in 2025. As of 25 September 2026 it has not opened to the public; the latest published target is November 2026.",
     "bestTime": "Not yet open to the public",
     "image": "/media/projects/varanasi-ropeway.jpg",
     "status": "under_construction",
     "agency": "National Highways Logistics Management Ltd (NHLML) · built by Vishwa Samudra Engineering",
-    "timeline": "Foundation March 2023 · Trial runs from July 2025 · Opening now targeted for November 2026 (dates have slipped repeatedly)",
+    "timeline": "Foundation 24 March 2023 · Trial runs from 2025 · Not yet open (checked 25 September 2026); latest target November 2026",
     "verified": true,
     "lastVerified": "2026-09-25",
     "sources": [
+      {
+        "title": "Kashi Official Web Portal — Ropeway: as a project",
+        "url": "https://kashi.gov.in/project-details/ropeway-as-a-project",
+        "accessed": "2026-09-25"
+      },
       {
         "title": "Wikipedia — Kashi ropeway",
         "url": "https://en.wikipedia.org/wiki/Kashi_ropeway",
         "accessed": "2026-09-25"
       },
       {
-        "title": "Tirtha Yatra — Kashi ropeway set for May 2026 launch",
-        "url": "https://www.tirthayatra.org/varanasi-rope-car-to-carry-2-lakh-pilgrims-daily-kashi-project-set-for-may-2026-launch/",
+        "title": "Urban Transport News — Trial run commences for first urban ropeway in Varanasi",
+        "url": "https://urbantransportnews.com/news/trial-run-commences-for-first-urban-ropeway-in-varanasi",
         "accessed": "2026-09-25"
       }
     ],
     "i18n": {
       "hi": {
-        "summary": "भारत का पहला शहरी सार्वजनिक-परिवहन रोपवे: वाराणसी कैंट स्टेशन से विश्वनाथ मंदिर के पास गोदौलिया तक 3.75 किमी और पाँच स्टेशन, लगभग 16 मिनट में। ट्रायल जुलाई 2025 से; उद्घाटन लक्ष्य 2025 के अंत से मई 2026 और अब नवंबर 2026 तक खिसका है।",
+        "summary": "भारत का पहला शहरी सार्वजनिक-परिवहन रोपवे: वाराणसी कैंट स्टेशन से विश्वनाथ मंदिर के पास गोदौलिया तक 3.75 किमी और पाँच स्टेशन, लगभग 16 मिनट में। शिलान्यास 24 मार्च 2023; कैंट–रथयात्रा खंड पर ट्रायल 2025 में शुरू हुए। 25 सितंबर 2026 तक यह जनता के लिए नहीं खुला है; ताज़ा घोषित लक्ष्य नवंबर 2026 है।",
         "agency": "नेशनल हाईवेज़ लॉजिस्टिक्स मैनेजमेंट लिमिटेड (NHLML) · निर्माण विश्व समुद्र इंजीनियरिंग",
-        "timeline": "शिलान्यास मार्च 2023 · ट्रायल जुलाई 2025 से · उद्घाटन अब नवंबर 2026 लक्षित (तारीख़ें बार-बार टली हैं)"
+        "timeline": "शिलान्यास 24 मार्च 2023 · ट्रायल 2025 से · अभी नहीं खुला (25 सितंबर 2026 को जाँचा); ताज़ा लक्ष्य नवंबर 2026"
       }
     }
   },
@@ -297,31 +302,31 @@
     "type": "transport",
     "lat": 25.4525,
     "lng": 82.8594,
-    "summary": "A ₹2,869.65 crore expansion approved by the Union Cabinet in June 2024: a new 75,000 sq m terminal for 6 million passengers a year, runway extension with an under-runway road tunnel, parallel taxiway and apron. In June 2026 the civil aviation minister asked for completion within six months.",
+    "summary": "A ₹2,869.65 crore expansion approved by the Union Cabinet in June 2024: a new 75,000 sq m terminal for 6 million passengers a year, runway extension with an under-runway road tunnel, parallel taxiway and apron. Construction is under way; no official opening date has been announced.",
     "bestTime": "—",
     "image": "/media/projects/airport.jpg",
     "status": "under_construction",
     "agency": "Airports Authority of India (AAI)",
-    "timeline": "Cabinet approval June 2024 · Under construction · Target end of 2026",
+    "timeline": "Cabinet approval June 2024 · Under construction · Opening date not announced",
     "verified": true,
     "lastVerified": "2026-09-25",
     "sources": [
       {
-        "title": "PIB — Cabinet approves development of Lal Bahadur Shastri International Airport",
+        "title": "PIB — Cabinet approves development of Lal Bahadur Shastri International Airport, Varanasi",
         "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2026702&reg=48&lang=2",
         "accessed": "2026-09-25"
       },
       {
-        "title": "Impressive Times — minister pushes for early completion (June 2026)",
-        "url": "https://impressivetimes.com/national/varanasi-airport-new-terminal-expansion-ram-mohan-naidu/",
+        "title": "Airports Authority of India — Varanasi: construction of new terminal building (EPC)",
+        "url": "https://www.aai.aero/en/node/394724",
         "accessed": "2026-09-25"
       }
     ],
     "i18n": {
       "hi": {
-        "summary": "जून 2024 में केंद्रीय मंत्रिमंडल द्वारा स्वीकृत ₹2,869.65 करोड़ का विस्तार: सालाना 60 लाख यात्रियों के लिए 75,000 वर्ग मीटर का नया टर्मिनल, रनवे के नीचे सड़क सुरंग सहित रनवे विस्तार, समानांतर टैक्सीवे और एप्रन। जून 2026 में नागरिक उड्डयन मंत्री ने छह महीने में पूर्णता को कहा।",
+        "summary": "जून 2024 में केंद्रीय मंत्रिमंडल द्वारा स्वीकृत ₹2,869.65 करोड़ का विस्तार: सालाना 60 लाख यात्रियों के लिए 75,000 वर्ग मीटर का नया टर्मिनल, रनवे के नीचे सड़क सुरंग सहित रनवे विस्तार, समानांतर टैक्सीवे और एप्रन। निर्माण जारी है; उद्घाटन की कोई आधिकारिक तिथि घोषित नहीं हुई।",
         "agency": "भारतीय विमानपत्तन प्राधिकरण (AAI)",
-        "timeline": "मंत्रिमंडल स्वीकृति जून 2024 · निर्माणाधीन · लक्ष्य 2026 का अंत"
+        "timeline": "मंत्रिमंडल स्वीकृति जून 2024 · निर्माणाधीन · उद्घाटन तिथि घोषित नहीं"
       }
     }
   },
@@ -468,32 +473,37 @@
   },
   {
     "id": "highway-package-2026",
-    "name_en": "Highway package linking national highways to the Ring Road",
-    "name_hi": "राष्ट्रीय राजमार्गों को रिंग रोड से जोड़ने वाला पैकेज",
+    "name_en": "Varuna and Ganga elevated corridors (NH-31 / NH-19 to the Ring Road)",
+    "name_hi": "वरुणा व गंगा एलिवेटेड कॉरिडोर (NH-31 / NH-19 से रिंग रोड)",
     "faith": [],
     "type": "transport",
     "lat": 25.4,
     "lng": 82.95,
-    "summary": "Reported in August 2026 as a package of more than ₹24,000 crore to connect national highways directly to the Varanasi Ring Road. Only secondary reporting was found; treat the scope and figure as unconfirmed.",
+    "summary": "Approved by the Union Cabinet in July 2026 to decongest the city: a 43.2 km, 6/4-lane mostly elevated corridor along the Varuna linking NH-31 to the Ring Road (₹10,998 crore), and a 46 km six-lane elevated corridor along the Ganga linking NH-19 to the Ring Road with a cable-stayed bridge (about ₹14,447 crore). About ₹25,445 crore in all, to be built by NHAI under the hybrid annuity model.",
     "bestTime": "—",
     "image": "/media/projects/highway-package.jpg",
     "status": "announced",
-    "agency": "Ministry of Road Transport and Highways / NHAI (reported)",
-    "timeline": "Reported approved August 2026 · no official notification found",
-    "verified": false,
+    "agency": "National Highways Authority of India (NHAI) · Ministry of Road Transport and Highways",
+    "timeline": "Cabinet approval July 2026 · Construction yet to start",
+    "verified": true,
     "lastVerified": "2026-09-25",
     "sources": [
       {
-        "title": "99acres — All about the Varanasi Ring Road project",
-        "url": "https://www.99acres.com/articles/all-about-the-varanasi-ring-road-project.html",
+        "title": "Business Standard — Cabinet approves ₹25,445 crore road corridor projects for Varanasi",
+        "url": "https://www.business-standard.com/economy/news/cabinet-approves-rs-25445-crore-road-corridor-projects-for-varanasi-126071501235_1.html",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "DD India — Cabinet approves two elevated corridors worth over ₹25,445 crore to decongest Varanasi",
+        "url": "https://ddindia.co.in/2026/07/cabinet-approves-two-elevated-corridors-worth-over-%E2%82%B925445-crore-to-decongest-varanasi/",
         "accessed": "2026-09-25"
       }
     ],
     "i18n": {
       "hi": {
-        "summary": "अगस्त 2026 में राष्ट्रीय राजमार्गों को सीधे वाराणसी रिंग रोड से जोड़ने वाले ₹24,000 करोड़ से अधिक के पैकेज की ख़बर आई। केवल द्वितीयक रिपोर्टिंग मिली; दायरा और राशि अपुष्ट मानें।",
-        "agency": "सड़क परिवहन एवं राजमार्ग मंत्रालय / NHAI (रिपोर्ट के अनुसार)",
-        "timeline": "अगस्त 2026 में स्वीकृति की ख़बर · कोई आधिकारिक अधिसूचना नहीं मिली"
+        "summary": "नगर की भीड़ घटाने के लिए जुलाई 2026 में केंद्रीय मंत्रिमंडल द्वारा स्वीकृत: वरुणा के किनारे NH-31 को रिंग रोड से जोड़ने वाला 43.2 किमी का 6/4-लेन, अधिकांशतः एलिवेटेड कॉरिडोर (₹10,998 करोड़), और गंगा के किनारे NH-19 को रिंग रोड से जोड़ने वाला 46 किमी का छह-लेन एलिवेटेड कॉरिडोर, केबल-स्टे पुल सहित (लगभग ₹14,447 करोड़)। कुल लगभग ₹25,445 करोड़, NHAI हाइब्रिड एन्युटी मॉडल पर बनाएगा।",
+        "agency": "भारतीय राष्ट्रीय राजमार्ग प्राधिकरण (NHAI) · सड़क परिवहन एवं राजमार्ग मंत्रालय",
+        "timeline": "मंत्रिमंडल स्वीकृति जुलाई 2026 · निर्माण अभी शुरू नहीं"
       }
     }
   }

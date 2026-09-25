@@ -420,13 +420,13 @@
           },
           {
             "time": "13:00",
-            "placeId": "gurudwara-guru-bagh",
-            "title": "Gurudwara Guru Bagh",
-            "note": "Associated with Guru Tegh Bahadur's stay in Kashi; langar at midday.",
+            "placeId": "gurudwara-bari-sangat",
+            "title": "Gurudwara Bari Sangat, Nichibagh",
+            "note": "Where Guru Tegh Bahadur stayed in 1666; langar at midday.",
             "i18n": {
               "hi": {
-                "title": "गुरुद्वारा गुरु बाग़",
-                "note": "काशी में गुरु तेग़ बहादुर के प्रवास से जुड़ा; दोपहर में लंगर।"
+                "title": "गुरुद्वारा बड़ी संगत, नीचीबाग़",
+                "note": "जहाँ 1666 में गुरु तेग़ बहादुर रहे; दोपहर में लंगर।"
               }
             }
           },

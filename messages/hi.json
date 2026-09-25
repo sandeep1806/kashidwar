@@ -37,7 +37,8 @@
     "bestTime": "उत्तम समय",
     "sources": "स्रोत",
     "lastVerified": "अंतिम सत्यापन",
-    "loading": "दीया जल रहा है…"
+    "loading": "दीया जल रहा है…",
+    "englishNote": "कुछ विवरण अंग्रेज़ी में दिए गए हैं।"
   },
   "status": {
     "completed": "पूर्ण",

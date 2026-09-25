@@ -3,6 +3,7 @@ import path from "node:path";
 import { getTranslations } from "next-intl/server";
 import { faithEntries, festivals, foods, getPlace, itineraries, localize, localizeItinerary, places, projects, type Itinerary, type ProjectStatus } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
+import { proseFallsBack } from "@/lib/proseLocale";
 import type { FestivalItem } from "@/components/sections/FestivalsList";
 import type { FoodItem } from "@/components/sections/FoodList";
 import type { ProjectItem, ProjectLabels } from "@/components/sections/ProjectsList";
@@ -45,7 +46,9 @@ export async function getProjectsProps(locale: Locale) {
     lastVerified: t("lastVerified"),
     unverified: t("unverified"),
   };
+  const common = await getTranslations({ locale, namespace: "common" });
   return {
+    englishNote: proseFallsBack(locale) ? common("englishNote") : null,
     heading: { id: "projects", title: t("title"), secondary: t("titleSecondary"), intro: t("intro") } as HeadingProps,
     legend: t("legend"),
     latestLabel: fmt.format(new Date(latest + "T00:00:00Z")),
@@ -81,7 +84,9 @@ export async function getFoodProps(locale: Locale) {
     const f = localize(raw, locale);
     return { ...f, primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, typeLabel: t(`types.${f.type}`) };
   });
+  const common = await getTranslations({ locale, namespace: "common" });
   return {
+    englishNote: proseFallsBack(locale) ? common("englishNote") : null,
     heading: { id: "food", title: t("title"), secondary: t("titleSecondary"), intro: t("intro") } as HeadingProps,
     items,
     labels: { season: t("season"), where: t("where"), veg: t("veg") },
@@ -93,7 +98,9 @@ export async function getItinerariesProps(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "itineraries" });
   const devanagari = LOCALES[locale].script === "devanagari";
   const list: Itinerary[] = itineraries.map((it) => localizeItinerary(it, locale));
+  const common = await getTranslations({ locale, namespace: "common" });
   return {
+    englishNote: proseFallsBack(locale) ? common("englishNote") : null,
     heading: { id: "itineraries", title: t("title"), secondary: t("titleSecondary"), intro: t("intro") } as HeadingProps,
     itineraries: list,
     tabs: list.map((it) => t("dayTab", { days: it.days })),
@@ -160,6 +167,7 @@ export async function getPlacesProps(locale: Locale) {
     cluster: t.raw("cluster"),
     share: t("share"),
     linkCopied: t("linkCopied"),
+    englishNote: proseFallsBack(locale) ? (await getTranslations({ locale, namespace: "common" }))("englishNote") : null,
   };
   return { items, labels };
 }

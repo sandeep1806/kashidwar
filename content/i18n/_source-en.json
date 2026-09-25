@@ -1,0 +1,212 @@
+{
+  "places": {
+    "kashi-vishwanath": {
+      "name_en": "Kashi Vishwanath Temple",
+      "summary": "The jyotirlinga at the heart of the city. The present temple was built by Ahilyabai Holkar in 1780; its gold-plated spire was gifted by Maharaja Ranjit Singh in 1835. Since 2021 the corridor opens the temple directly to the river at Lalita Ghat."
+    },
+    "dashashwamedh-ghat": {
+      "name_en": "Dashashwamedh Ghat",
+      "summary": "The ghat where the city gathers. Named for the ten-horse sacrifice Brahma is said to have performed here, it is the stage for the evening Ganga Aarti, when seven priests raise tiered lamps in unison to conch and bell."
+    },
+    "assi-ghat": {
+      "name_en": "Assi Ghat",
+      "summary": "The southernmost ghat, where the Assi stream once met the Ganga. Every dawn the Subah-e-Banaras aarti, yoga and classical music greet the sun. Tulsidas is said to have lived and written nearby."
+    },
+    "manikarnika-ghat": {
+      "name_en": "Manikarnika Ghat",
+      "summary": "The great cremation ghat, where the fires are said never to have gone out. In the city's belief, to die in Kashi and be cremated here is to be released from rebirth. It is a place of grief and of faith, watched quietly and from a distance."
+    },
+    "namo-ghat": {
+      "name_en": "Namo Ghat",
+      "summary": "The old Khidkiya Ghat rebuilt as a broad, step-free riverfront at the northern end of the city: an open-air theatre, a floating jetty, a helipad and the three folded-hands sculptures that gave it its name. Inaugurated in November 2024."
+    },
+    "panchganga-ghat": {
+      "name_en": "Panchganga Ghat",
+      "summary": "Where five rivers are said to meet, four of them unseen. The Bindu Madhav temple stands here, and on these steps, tradition says, the weaver Kabir received his mantra from the saint Ramananda before dawn."
+    },
+    "sarnath": {
+      "name_en": "Sarnath — Dhamek Stupa",
+      "summary": "Ten kilometres from the ghats, the deer park where the Buddha gave his first teaching after enlightenment. The Dhamek Stupa, 43 metres of brick and carved stone from the Gupta age, marks the spot; the monastery ruins, the Ashokan pillar stump and the museum's lion capital surround it. Inscribed on the UNESCO World Heritage List on 25 July 2026 as the Ancient Buddhist Site, Sarnath."
+    },
+    "mulagandha-kuti-vihar": {
+      "name_en": "Mulagandha Kuti Vihar",
+      "summary": "The modern temple of Sarnath, built by the Maha Bodhi Society in 1931 beside the ruins of the Buddha's own hut. Its walls carry the Japanese painter Kosetsu Nosu's frescoes of the Buddha's life, and a bodhi tree grown from a cutting of the Anuradhapura tree stands outside."
+    },
+    "ramnagar-fort": {
+      "name_en": "Ramnagar Fort",
+      "summary": "The sandstone fort of the Maharajas of Banaras, built in 1750 by Raja Balwant Singh on the far bank opposite Tulsi Ghat. Its Saraswati Bhawan museum keeps vintage cars, palanquins, arms and an astronomical clock; every autumn the month-long Ramnagar Ramlila unfolds around it."
+    },
+    "bhu-new-vishwanath": {
+      "name_en": "BHU & New Vishwanath Temple",
+      "summary": "Banaras Hindu University, founded by Madan Mohan Malaviya in 1916, is one of Asia's largest residential campuses. At its centre the Birla-built New Vishwanath Temple (1966) is open to all; Bharat Kala Bhavan holds miniature paintings, textiles and sculpture from across north India."
+    },
+    "durga-kund": {
+      "name_en": "Durga Kund Temple",
+      "summary": "The red temple beside its square tank, built in the 18th century by Rani Bhabani of Natore in the Nagara style. Ochre-washed spires, a stepped kund, and the monkeys that gave it its old nickname."
+    },
+    "sankat-mochan": {
+      "name_en": "Sankat Mochan Hanuman Temple",
+      "summary": "Founded by the poet-saint Tulsidas, who is said to have had a vision of Hanuman here. The name means 'reliever of troubles'. Every April the temple hosts the Sankat Mochan Sangeet Samaroh, when India's greatest musicians play through the night for free."
+    },
+    "kaal-bhairav": {
+      "name_en": "Kaal Bhairav Temple",
+      "summary": "Bhairav is the kotwal, the police chief of Kashi: nothing is said to happen in the city without his leave. The present temple in Visheshwarganj dates from the 17th century. Pilgrims tie a black thread from the temple around the wrist for protection."
+    },
+    "tulsi-manas": {
+      "name_en": "Tulsi Manas Temple",
+      "summary": "A white marble temple from 1964 on the spot where, by tradition, Tulsidas composed the Ramcharitmanas. The whole epic is inscribed on its walls, and the upper floor turns the story into moving tableaux."
+    },
+    "bharat-mata": {
+      "name_en": "Bharat Mata Mandir",
+      "summary": "A temple with no deity: instead a relief map of undivided India carved in Makrana marble, 9.5 metres across, with every mountain and river to scale. Built by Babu Shiv Prasad Gupta and opened by Mahatma Gandhi in 1936 on the Kashi Vidyapith campus."
+    },
+    "alamgir-mosque": {
+      "name_en": "Alamgir Mosque",
+      "summary": "The 17th-century mosque that crowns Panchganga Ghat, known locally as Beni Madhav ka Dharahara. Its plinth and lower walls belong to the older Bindu Madhav temple; its high minarets once marked the skyline for boats coming up the river."
+    },
+    "kabir-math": {
+      "name_en": "Kabir Chaura Math",
+      "summary": "The seat of the Kabir Panth, in the neighbourhood where the weaver-poet Kabir lived and sang in the 15th century. The math keeps his loom, his sandals and a samadhi shrine, and still prints his couplets that belong to no single religion."
+    },
+    "ravidas-janmasthan": {
+      "name_en": "Shri Guru Ravidas Janmasthan",
+      "summary": "The birthplace temple of the 15th-century saint Ravidas at Seer Govardhanpur, begun in 1965 and completed in 1994. Ravidas, a cobbler by caste, taught that devotion needs no intermediary; forty of his hymns are in the Guru Granth Sahib. On Ravidas Jayanti lakhs of pilgrims arrive from Punjab."
+    },
+    "bhelupur-jain": {
+      "name_en": "Bhelupur Jain Temple (Parshvanath birthplace)",
+      "summary": "Jains hold Bhelupur as the place of three kalyanakas of Parshvanath, the 23rd Tirthankara: his conception, birth and renunciation, some 2,800 years ago. Digambar and Shwetambar temples stand side by side, and Jain images found here date to the 9th–11th centuries."
+    },
+    "gurudwara-guru-ka-bagh": {
+      "name_en": "Gurudwara Guru Ka Bagh",
+      "summary": "Marks the garden where Guru Nanak stopped on his visit to Kashi at Shivaratri in 1507 and spoke with the city's pandits about devotion without outward marks. The white-marble gurudwara on Guru Nanak Road at Gurubagh was begun in 1969 for his 500th birth anniversary."
+    },
+    "gurudwara-bari-sangat": {
+      "name_en": "Gurudwara Bari Sangat (Nichibagh)",
+      "summary": "The oldest Sikh sangat in Banaras, in the Nichibagh lanes near Chowk. Guru Tegh Bahadur stayed here for several months in 1666 and the room where he meditated is kept as his Tap Asthan; Guru Gobind Singh visited in 1670. Old hukamnamas of the Gurus are preserved."
+    },
+    "st-marys-church": {
+      "name_en": "St. Mary's Church, Cantonment",
+      "summary": "The oldest church in Varanasi and among the oldest Protestant churches in north India: foundation laid in April 1810 by the chaplain Daniel Corrie, completed in 1812. A low tower, a spire and louvred doors in the shade of the Cantonment's old trees; Queen Elizabeth II worshipped here on her 1961 visit."
+    },
+    "chunar-fort": {
+      "name_en": "Chunar Fort (day trip)",
+      "summary": "A sandstone fortress on a bend of the Ganga 23 km south-west of the city, held in turn by Sher Shah Suri (1532), Humayun, Akbar and the East India Company. The Sonwa Mandap pavilion, the deep well and the ramparts above the river are the reasons to go."
+    }
+  },
+  "festivals": {
+    "dev-deepawali": {
+      "name_en": "Dev Deepawali",
+      "summary": "The night the gods are said to descend to bathe in the Ganga. More than a million earthen lamps line every step of every ghat, and the river carries thousands more. The Ganga Mahotsav concludes the same evening.",
+      "when": "Kartik Purnima, fifteen days after Diwali",
+      "where": "All the ghats, Assi to Rajghat"
+    },
+    "maha-shivratri": {
+      "name_en": "Maha Shivratri",
+      "summary": "Shiva's night in Shiva's own city. The temple stays open through the night for darshan, and the next day the Shiv Baraat, the wedding procession of Shiva, winds through the old city with music, ash-smeared ascetics and dancing crowds.",
+      "when": "Phalguna Krishna Chaturdashi",
+      "where": "Kashi Vishwanath Temple and the Shiv Baraat route through the old city"
+    },
+    "ganga-mahotsav": {
+      "name_en": "Ganga Mahotsav",
+      "summary": "A five-day festival of classical music and dance on the riverfront, organised by Uttar Pradesh Tourism, with crafts, boat races and food stalls. It ends with Dev Deepawali.",
+      "when": "Five days ending on Kartik Purnima",
+      "where": "Rajendra Prasad Ghat and neighbouring ghats"
+    },
+    "bharat-milap": {
+      "name_en": "Bharat Milap",
+      "summary": "For a few minutes at dusk, on a small open ground at Nati Imli, Ram returns from exile and embraces his brother Bharat. The tableau has been staged for more than four centuries; the Kashi Naresh attends by tradition and the Yadav community carries the chariots.",
+      "when": "The day after Vijayadashami (Ashwin)",
+      "where": "Nati Imli"
+    },
+    "nag-nathaiya": {
+      "name_en": "Nag Nathaiya",
+      "summary": "A boy dressed as Krishna leaps from a kadamba branch into the Ganga to subdue the serpent Kaliya, and rises standing on its hood playing the flute. Tulsidas began the lila at Tulsi Ghat; the whole riverfront watches from boats.",
+      "when": "Kartik Shukla Chaturthi",
+      "where": "Tulsi Ghat"
+    },
+    "buddha-purnima": {
+      "name_en": "Buddha Purnima",
+      "summary": "The full moon of the Buddha's birth, enlightenment and passing. At Sarnath the relics kept in Mulagandha Kuti Vihar are carried in procession, monks from every tradition chant at the Dhamek Stupa, and the deer park fills with pilgrims from across Asia.",
+      "when": "Vaishakha Purnima",
+      "where": "Sarnath"
+    },
+    "ramnagar-ramlila": {
+      "name_en": "Ramlila of Ramnagar",
+      "summary": "For a month the whole town of Ramnagar becomes the stage: Ayodhya, Janakpur and Lanka are permanent sites, the audience walks between them, and no electric lights or loudspeakers are used. Begun by the Maharaja of Banaras in the 1830s; Ramlila is on UNESCO's intangible-heritage list.",
+      "when": "31 days from Anant Chaturdashi to Ashwin Purnima",
+      "where": "Ramnagar, across the river"
+    },
+    "shravan": {
+      "name_en": "Shravan (Sawan) at Kashi Vishwanath",
+      "summary": "Shiva's month. Kanwariyas in saffron fill their pots at the ghats and carry Ganga water to pour over the linga, and each Monday the temple dresses the deity in a different shringar. Queues on Sawan Mondays run for hours; early morning is the time to go.",
+      "when": "The lunar month of Shravan; its Mondays (Sawan Somvar) above all",
+      "where": "Kashi Vishwanath Temple and the ghats"
+    },
+    "ganga-dussehra": {
+      "name_en": "Ganga Dussehra",
+      "summary": "The day the Ganga is said to have descended from heaven to earth. Bathers crowd the steps from before sunrise, and the evening aarti is at its most elaborate, with lamps and flowers floated on the river.",
+      "when": "Jyeshtha Shukla Dashami, closing a ten-day observance",
+      "where": "Dashashwamedh and every ghat"
+    },
+    "rangbhari-masaan-holi": {
+      "name_en": "Rangbhari Ekadashi & Masaan Holi",
+      "summary": "On Rangbhari Ekadashi Shiva is said to bring Parvati home to Kashi after their wedding, and the temple and lanes turn red with gulal. The next day ascetics and devotees mark Masaan Holi with ash at the cremation ghats: a ritual of the city's own, to be watched quietly and without photographing the pyres.",
+      "when": "Phalguna Shukla Ekadashi and the day after, just before Holi",
+      "where": "Kashi Vishwanath Temple; Harishchandra and Manikarnika Ghats"
+    },
+    "chhath": {
+      "name_en": "Chhath at the ghats",
+      "summary": "Four days of fasting and offerings to the sun, kept mostly by women. At dusk and again at dawn the ghats fill with families standing waist-deep in the river, holding bamboo baskets of fruit and thekua up to the setting and the rising sun.",
+      "when": "Kartik Shukla Chaturthi to Saptami (four days)",
+      "where": "Assi, Dashashwamedh, Rajghat and other ghats"
+    },
+    "ravidas-jayanti": {
+      "name_en": "Guru Ravidas Jayanti",
+      "summary": "The birth anniversary of the saint Ravidas brings one of the largest gatherings in the city to his birthplace temple at Seer Govardhanpur. Special trains arrive from Punjab, the temple is lit gold, kirtan runs day and night, and langar feeds everyone who comes.",
+      "when": "Magh Purnima",
+      "where": "Shri Guru Ravidas Janmasthan, Seer Govardhanpur"
+    },
+    "kabir-jayanti": {
+      "name_en": "Kabir Jayanti",
+      "summary": "Kabir's birth is remembered where he lived and where he was found as a child. At Kabir Chaura Math singers of the Kabir Panth gather for bhajans and readings of his couplets, and processions link the math with Lahartara.",
+      "when": "Jyeshtha Purnima",
+      "where": "Kabir Chaura Math and Lahartara"
+    },
+    "guru-nanak-jayanti": {
+      "name_en": "Guru Nanak Jayanti (Prakash Purab)",
+      "summary": "The birth of Guru Nanak, who came to Kashi in 1507 and spoke with its pandits at the garden now marked by Gurudwara Guru Ka Bagh. An Akhand Path ends at dawn, a nagar kirtan with the Guru Granth Sahib winds through the lanes, and langar is served to all.",
+      "when": "Kartik Purnima — the same full moon as Dev Deepawali",
+      "where": "Gurudwara Guru Ka Bagh, Gurudwara Bari Sangat and the city's sangats"
+    },
+    "parshvanath-janma-kalyanak": {
+      "name_en": "Parshvanath Janma Kalyanak",
+      "summary": "The birth of Parshvanath, the 23rd Tirthankara, in Kashi itself. Jain pilgrims gather at Bhelupur, the place Jains hold as his birthplace, for abhishek of the Tirthankara's image, processions and the day-long fast many keep on Posh Dashami.",
+      "when": "Paush Krishna Dashami (Posh Dashami)",
+      "where": "Bhelupur Jain temples"
+    },
+    "eid-al-fitr": {
+      "name_en": "Eid al-Fitr",
+      "summary": "The end of the Ramadan fast. Thousands gather for morning prayers at Lat Sarai Eidgah and the city's mosques, and then the lanes of Madanpura, Dalmandi and Nai Sadak fill with sewaiyan, new clothes and visits between neighbours of every faith.",
+      "when": "1 Shawwal, at the end of Ramadan (moves about 11 days earlier each year)",
+      "where": "Lat Sarai Eidgah and the city's mosques"
+    },
+    "muharram": {
+      "name_en": "Muharram",
+      "summary": "Ten days of mourning for Imam Husain, martyred at Karbala. Tazias of paper, mica and bamboo, some of the most intricate in north India made in Shivala, are carried through the lanes on Ashura to the city's karbalas, and craftsmen and mourners from Hindu families have long been part of the procession.",
+      "when": "The first ten days of Muharram, ending on Ashura (moves about 11 days earlier each year)",
+      "where": "Shivala, Doshipura and the city's imambaras"
+    },
+    "christmas": {
+      "name_en": "Christmas",
+      "summary": "Midnight services in the Cantonment's churches, carols sung by congregations from across the city through December, and a three-day fair outside St. Mary's Cathedral from Christmas Day, with food stalls and music that draw families of every faith.",
+      "when": "25 December; carols through Advent",
+      "where": "St. Mary's Cathedral and St. Mary's Church, Cantonment"
+    },
+    "kashi-tamil-sangamam-festival": {
+      "name_en": "Kashi Tamil Sangamam",
+      "summary": "Two weeks of Tamil–Kashi exchange: delegations of students, artisans and pilgrims from Tamil Nadu, Carnatic music and bharatanatyam on the ghats, exhibitions of Tamil crafts and food. The fourth edition ran from 2 to 15 December 2025.",
+      "when": "An annual edition, usually in December or February; the 2026 edition has not been announced",
+      "where": "Namo Ghat, BHU and venues across the city"
+    }
+  }
+}

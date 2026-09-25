@@ -263,3 +263,9 @@ Reversed the Phase 9 lazy-body decision on advice that search, social previews a
 - Verified live: `/` → 307 `/hi`; `/hi`, `/en`, `/ta` 200 with canonical `https://kashidwar.com/<locale>`; `www.kashidwar.com/en` → 301 `https://kashidwar.com/en` → 200; unknown path 404; sitemap 200; robots points at kashidwar.com; TLS valid.
 - Wrangler now disables the workers.dev URL and per-branch preview URLs, since `workers_dev` is not set. Add `"workers_dev": true, "preview_urls": true` to wrangler.jsonc if you want them back (for example for Workers Builds previews of branches).
 - Still open: pause the old Pages project's Git builds (it rebuilds every push, and its `redesign` preview builds fail).
+
+## QA pass — content · 2026-09-25 · ✅
+- Festivals: 7 → 19 entries, one or more for every faith and every month. Added Shravan, Ganga Dussehra, Rangbhari/Masaan Holi, Chhath, Ravidas Jayanti, Kabir Jayanti, Guru Nanak Jayanti, Parshvanath Janma Kalyanak, Eid al-Fitr, Muharram, Christmas and Kashi Tamil Sangamam. Each has cited sources and Hindi text.
+- Places: Guru Ka Bagh (Guru Nanak, 1507) and Bari Sangat (Guru Tegh Bahadur, 1666) are separate gurudwaras and are now split into two entries. Sarnath uses UNESCO's inscription wording and source.
+- Projects: every entry re-checked on 2026-09-25 and weak sources replaced with PIB, AAI, kashi.gov.in, UNESCO, Business Standard and DD India. The ropeway is under construction with a November 2026 target. Only the Cantt station redevelopment stays unverified.
+- Regional locales: place and festival summaries translated for all 11 regional locales (`content/i18n/*.json`, merged by `scripts/merge-i18n.mjs`). Sections still in English show a localized note. TRANSLATION_REVIEW.md lists the terms the translators flagged.

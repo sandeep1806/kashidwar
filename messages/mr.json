@@ -37,7 +37,8 @@
     "bestTime": "उत्तम वेळ",
     "sources": "स्रोत",
     "lastVerified": "शेवटची पडताळणी",
-    "loading": "दिवा लावत आहोत…"
+    "loading": "दिवा लावत आहोत…",
+    "englishNote": "काही तपशील इंग्रजीत दिले आहेत."
   },
   "status": {
     "completed": "पूर्ण",

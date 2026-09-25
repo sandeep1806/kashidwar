@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import StaggerCards from "@/components/motion/StaggerCards";
+import EnglishNote from "@/components/ui/EnglishNote";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 
 import PlaceCard, { type PlaceLabels } from "@/components/ui/PlaceCard";
@@ -33,6 +34,7 @@ export interface ExplorerLabels extends PlaceLabels {
   cluster: string;
   share: string;
   linkCopied: string;
+  englishNote: string | null;
 }
 
 const withCount = (template: string, n: number) => template.replace("{count}", String(n));
@@ -222,6 +224,7 @@ export default function PlacesExplorer({
               <span className="mt-1 block font-body text-base tracking-normal text-kashi-ash/70">{selected.secondaryName}</span>
             </h3>
             <p className="mt-6 text-lg leading-relaxed text-kashi-ash">{sel.summary}</p>
+            {labels.englishNote && <EnglishNote text={labels.englishNote} className="mt-4" />}
             {sel.story && <p className="mt-4 border-l-2 border-kashi-diya/50 pl-4 italic text-kashi-ash/85">{sel.story}</p>}
             <dl className="mt-6 grid gap-4 sm:grid-cols-2">
               <div>
