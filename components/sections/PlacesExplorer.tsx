@@ -31,6 +31,8 @@ export interface ExplorerLabels extends PlaceLabels {
   mapLoading: string;
   approxCoords: string;
   cluster: string;
+  share: string;
+  linkCopied: string;
 }
 
 const withCount = (template: string, n: number) => template.replace("{count}", String(n));
@@ -46,6 +48,33 @@ function subscribeHash(cb: () => void) {
   return () => window.removeEventListener("hashchange", cb);
 }
 
+/*
+ * Shareable place links: `?place=<id>` opens that place's modal. The URL is
+ * the single source of truth — opening/closing rewrites it (replaceState plus
+ * a local event), and the component reads it back through a store, so a
+ * pasted link, a reload and the back button all behave the same.
+ */
+const URL_EVENT = "kashi:url";
+function readPlaceParam(): string | null {
+  return new URLSearchParams(window.location.search).get("place");
+}
+function subscribeUrl(cb: () => void) {
+  window.addEventListener("popstate", cb);
+  window.addEventListener(URL_EVENT, cb);
+  return () => {
+    window.removeEventListener("popstate", cb);
+    window.removeEventListener(URL_EVENT, cb);
+  };
+}
+function writePlaceParam(id: string | null) {
+  const url = new URL(window.location.href);
+  if (id) url.searchParams.set("place", id);
+  else url.searchParams.delete("place");
+  if (id && !url.hash) url.hash = "places";
+  history.replaceState(null, "", url.pathname + url.search + url.hash);
+  window.dispatchEvent(new Event(URL_EVENT));
+}
+
 export default function PlacesExplorer({
   items,
   labels,
@@ -57,7 +86,7 @@ export default function PlacesExplorer({
   const [picked, setPicked] = useState<PlaceFilter | null>(null);
   const filter: PlaceFilter = picked ?? hashFilter ?? "all";
 
-  const [selected, setSelected] = useState<ExplorerPlace | null>(null);
+  const placeParam = useSyncExternalStore(subscribeUrl, readPlaceParam, () => null);
   const [focus, setFocus] = useState<Place | null>(null);
   const [mapWanted, setMapWanted] = useState(false);
   const mapHost = useRef<HTMLDivElement>(null);
@@ -88,13 +117,36 @@ export default function PlacesExplorer({
     setFocus(null);
     history.replaceState(null, "", f === "all" ? "#places" : `#places/${f}`);
   };
-  const openPlace = useCallback((p: Place) => setSelected(byId.get(p.id) ?? null), [byId]);
-  const close = useCallback(() => setSelected(null), []);
+  const selected = placeParam ? (byId.get(placeParam) ?? null) : null;
+  const openPlace = useCallback((p: Place) => writePlaceParam(p.id), []);
+  const close = useCallback(() => writePlaceParam(null), []);
+  const [copied, setCopied] = useState(false);
+  const share = async () => {
+    if (!selected) return;
+    const url = window.location.href;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: selected.primaryName, url });
+        return;
+      }
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      /* dismissed */
+    }
+  };
+
+  // Arriving from a shared ?place= link: bring the section into view once.
+  useEffect(() => {
+    if (readPlaceParam()) document.getElementById("places")?.scrollIntoView({ block: "start" });
+  }, []);
+
   const showOnMap = () => {
     if (!selected) return;
     setFocus(selected.place);
     setMapWanted(true);
-    setSelected(null);
+    writePlaceParam(null);
     mapHost.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
@@ -196,6 +248,16 @@ export default function PlacesExplorer({
                 className="inline-flex items-center gap-2 rounded-kashi bg-kashi-saffron px-5 py-2.5 text-sm font-medium text-kashi-night transition-colors hover:bg-kashi-marigold"
               >
                 {labels.showOnMap}
+              </button>
+              <button
+                type="button"
+                onClick={share}
+                className="inline-flex items-center gap-2 rounded-kashi border border-kashi-diya/40 px-5 py-2.5 text-sm text-kashi-diya transition-colors hover:border-kashi-marigold hover:text-kashi-marigold"
+              >
+                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v14" />
+                </svg>
+                {copied ? labels.linkCopied : labels.share}
               </button>
               {sel.coordsVerified === false && <span className="text-xs text-kashi-ash/60">{labels.approxCoords}</span>}
             </div>

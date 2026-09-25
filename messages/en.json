@@ -115,7 +115,9 @@
     "mapTitle": "Map of Kashi",
     "mapLoading": "Loading the map…",
     "approxCoords": "Location approximate",
-    "cluster": "{count} places — click to zoom"
+    "cluster": "{count} places — click to zoom",
+    "share": "Share",
+    "linkCopied": "Link copied"
   },
   "faiths": {
     "title": "One Kashi, every faith",

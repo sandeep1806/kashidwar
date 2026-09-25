@@ -72,7 +72,7 @@ export default function LanguageSwitcher({
   const meta = LOCALES[current];
 
   return (
-    <div className="fixed right-4 top-4 z-[80] sm:right-6 sm:top-6">
+    <div className="relative">
       <button
         ref={trigger}
         type="button"
@@ -86,7 +86,7 @@ export default function LanguageSwitcher({
             setOpen(true);
           }
         }}
-        className="flex items-center gap-2 rounded-full border border-kashi-diya/40 bg-kashi-night/70 px-3.5 py-2 text-sm text-kashi-white backdrop-blur-md transition-colors hover:border-kashi-marigold focus-visible:border-kashi-marigold"
+        className="flex h-9 items-center gap-2 rounded-full border border-kashi-diya/40 bg-kashi-night/60 px-3 text-sm text-kashi-white transition-colors hover:border-kashi-marigold focus-visible:border-kashi-marigold"
       >
         <span aria-hidden="true" className="text-base leading-none">{meta.sample}</span>
         <span className="hidden sm:inline">{meta.nativeName}</span>
@@ -102,7 +102,7 @@ export default function LanguageSwitcher({
           id={`${id}-menu`}
           role="menu"
           aria-label={label}
-          className="grain absolute right-0 mt-2 max-h-[70vh] w-72 overflow-y-auto rounded-kashi border border-kashi-diya/25 bg-kashi-indigo/95 p-2 shadow-glow-lg backdrop-blur-md"
+          className="grain absolute right-0 mt-2 max-h-[70vh] w-[min(18rem,calc(100vw-2rem))] overflow-y-auto rounded-kashi border border-kashi-diya/25 bg-kashi-indigo/95 p-2 shadow-glow-lg backdrop-blur-md"
         >
           {locales.map((loc) => {
             const m = LOCALES[loc];

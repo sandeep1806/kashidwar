@@ -1,0 +1,17 @@
+{
+  "name": "Kashi — काशी · The City of Light",
+  "short_name": "Kashi",
+  "description": "Kashi (Varanasi): ghats, temples, Sarnath and every faith of the city, in 13 languages.",
+  "start_url": "/hi",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0B0A14",
+  "theme_color": "#0B0A14",
+  "lang": "hi-IN",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

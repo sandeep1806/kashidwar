@@ -158,6 +158,8 @@ export async function getPlacesProps(locale: Locale) {
     mapLoading: t("mapLoading"),
     approxCoords: t("approxCoords"),
     cluster: t.raw("cluster"),
+    share: t("share"),
+    linkCopied: t("linkCopied"),
   };
   return { items, labels };
 }

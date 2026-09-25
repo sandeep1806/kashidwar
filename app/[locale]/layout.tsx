@@ -8,6 +8,7 @@ import { FaithGlyphSprite } from "@/components/ui/FaithGlyph";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import DeferredFonts from "@/components/ui/DeferredFonts";
 import PageLoader from "@/components/ui/PageLoader";
+import SiteHeader from "@/components/ui/SiteHeader";
 import SoundToggle from "@/components/ui/SoundToggle";
 import IncenseCursor from "@/components/motion/IncenseCursor";
 import { fontClassesFor } from "@/lib/fonts";
@@ -24,6 +25,10 @@ const LOADER_SNIPPET = (fontClasses: string) =>
   "try{if(sessionStorage.getItem('kashi:loader')==='1'){var h=document.documentElement;h.setAttribute('data-loader','done');h.className+=' " +
   fontClasses +
   "'}}catch(e){}";
+
+// Only the 13 prerendered locales exist. Without this, `/anything.txt` matched
+// [locale] with locale="anything.txt" and crashed (500) instead of a 404.
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -58,6 +63,14 @@ export async function generateMetadata({
     },
     twitter: { card: "summary_large_image", title: t("title"), description: t("description"), images: [`/media/og/og-${locale}.png`] },
     robots: { index: true, follow: true },
+    manifest: "/manifest.webmanifest",
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "48x48" },
+        { url: "/icon.svg", type: "image/svg+xml" },
+      ],
+      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+    },
   };
 }
 
@@ -71,6 +84,7 @@ export default async function LocaleLayout({
 
   const meta = LOCALES[locale as Locale];
   const t = await getTranslations("common");
+  const siteName = (await getTranslations("meta"))("siteName");
   // Display faces apply at once; body faces are attached after first paint (see DeferredFonts).
   const fonts = fontClassesFor(locale as Locale);
 
@@ -101,7 +115,9 @@ export default async function LocaleLayout({
         <SmoothScroll>
           <SunriseBackground />
           <PageLoader labels={{ loading: t("loading"), skip: t("skip") }} />
-          <LanguageSwitcher current={locale as Locale} label={t("chooseLanguage")} />
+          <SiteHeader brand={meta.name === "English" ? "Kashi · काशी" : `${siteName} · Kashi`} homeHref={`/${locale}#hero`}>
+            <LanguageSwitcher current={locale as Locale} label={t("chooseLanguage")} />
+          </SiteHeader>
           <SoundToggle labels={{ on: t("soundOn"), off: t("soundOff") }} />
           <IncenseCursor />
           {children}

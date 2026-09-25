@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useRef, type ReactNode } from "react";
+import { createPortal } from "react-dom";
 import { useLenis } from "@/components/motion/SmoothScroll";
 
 /**
@@ -69,12 +70,16 @@ export default function Modal({
 
   const ease = [0.215, 0.61, 0.355, 1] as const;
 
-  return (
+  // Portal to <body>: the sections use `content-visibility`, whose containment
+  // makes them the containing block for `position: fixed` — rendered in place,
+  // the modal was positioned (and clipped) inside the section, not the viewport.
+  // This component is only loaded client-side (dynamic, ssr:false).
+  return createPortal(
     <AnimatePresence>
       {open && (
         <motion.div
           key="backdrop"
-          className="fixed inset-0 z-[90] flex items-end justify-center bg-kashi-night/80 p-0 backdrop-blur-sm sm:items-center sm:p-6"
+          className="fixed inset-0 z-[90] flex items-end justify-center bg-kashi-night/80 p-0 backdrop-blur-sm sm:items-center sm:p-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -89,7 +94,7 @@ export default function Modal({
             aria-modal="true"
             aria-labelledby={labelledBy}
             data-lenis-prevent
-            className="grain relative max-h-[92dvh] w-full max-w-3xl overflow-y-auto rounded-t-kashi border border-kashi-diya/25 bg-kashi-indigo shadow-glow-lg sm:rounded-kashi"
+            className="grain relative max-h-[92dvh] w-full max-w-3xl overflow-y-auto overscroll-contain rounded-t-kashi border border-kashi-diya/25 bg-kashi-indigo shadow-glow-lg sm:max-h-[calc(100dvh-4rem)] sm:rounded-kashi"
             initial={reduced ? { opacity: 0 } : { opacity: 0, y: 40, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={reduced ? { opacity: 0 } : { opacity: 0, y: 24, scale: 0.98 }}
@@ -109,6 +114,7 @@ export default function Modal({
           </motion.div>
         </motion.div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body,
   );
 }

@@ -38,8 +38,8 @@
   --leading-body: 1.7;
 
   /* Font stacks — the active pair is chosen per <html data-script> below */
-  --font-display-active: var(--font-display-latin), var(--font-display-deva), Georgia, serif;
-  --font-body-active: var(--font-regional, var(--font-body-latin)), var(--font-body-latin), system-ui, sans-serif;
+  --font-display-active: var(--font-display-latin, Georgia), var(--font-display-deva, serif), Georgia, serif;
+  --font-body-active: var(--font-regional, var(--font-body-latin, system-ui)), var(--font-body-latin, system-ui), system-ui, sans-serif;
 
   /* Motion (GSAP mirrors these: power3.out / expo.inOut) */
   --ease-enter: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -55,16 +55,16 @@
 
 /* Script → font pairing. Set by app/[locale]/layout.tsx. */
 :root[data-script="latin"] {
-  --font-display-active: var(--font-display-latin), Georgia, serif;
-  --font-body-active: var(--font-body-latin), system-ui, sans-serif;
+  --font-display-active: var(--font-display-latin, Georgia), Georgia, serif;
+  --font-body-active: var(--font-body-latin, system-ui), system-ui, sans-serif;
 }
 :root[data-script="devanagari"] {
-  --font-display-active: var(--font-display-latin), var(--font-display-deva), var(--font-regional), serif;
-  --font-body-active: var(--font-regional), var(--font-body-latin), system-ui, sans-serif;
+  --font-display-active: var(--font-display-latin, Georgia), var(--font-display-deva, serif), var(--font-regional, serif), serif;
+  --font-body-active: var(--font-regional, system-ui), var(--font-body-latin, system-ui), system-ui, sans-serif;
 }
 :root:not([data-script="latin"]):not([data-script="devanagari"]) {
-  --font-display-active: var(--font-regional), var(--font-display-latin), serif;
-  --font-body-active: var(--font-regional), var(--font-body-latin), system-ui, sans-serif;
+  --font-display-active: var(--font-regional, serif), var(--font-display-latin, Georgia), serif;
+  --font-body-active: var(--font-regional, system-ui), var(--font-body-latin, system-ui), system-ui, sans-serif;
 }
 
 @theme inline {
@@ -81,7 +81,7 @@
 
   --font-display: var(--font-display-active);
   --font-body: var(--font-body-active);
-  --font-display-latin: var(--font-display-latin), Georgia, serif;
+  --font-display-latin: var(--font-display-latin, Georgia), Georgia, serif;
 
   --text-h1: var(--text-h1);
   --text-h2: var(--text-h2);
@@ -176,7 +176,7 @@
 @utility bilingual-secondary {
   display: block;
   margin-top: 0.6em;
-  font-family: var(--font-display-latin), Georgia, serif;
+  font-family: var(--font-display-latin, Georgia), Georgia, serif;
   font-size: clamp(0.95rem, 1.4vw, 1.25rem);
   font-weight: 600;
   letter-spacing: 0.18em;
@@ -187,7 +187,7 @@
 @utility bilingual-secondary-indic {
   display: block;
   margin-top: 0.6em;
-  font-family: var(--font-display-deva), var(--font-regional), serif;
+  font-family: var(--font-display-deva, serif), var(--font-regional, serif), serif;
   font-size: clamp(1.05rem, 1.6vw, 1.4rem);
   letter-spacing: 0;
   font-variant-caps: normal;
@@ -369,10 +369,24 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
   filter: invert(1) hue-rotate(195deg) brightness(0.58) contrast(1.05) saturate(0.28) sepia(0.2);
 }
 .leaflet-container { background: var(--kashi-night); font-family: var(--font-body-active); }
-.leaflet-container .leaflet-control-attribution { background: color-mix(in oklab, var(--kashi-night) 80%, transparent); color: var(--kashi-ash); font-size: 10px; }
-.leaflet-container .leaflet-control-attribution a { color: var(--kashi-diya); }
-.leaflet-bar a { background: var(--kashi-indigo); color: var(--kashi-white); border-bottom-color: var(--kashi-rudraksha); }
-.leaflet-bar a:hover { background: var(--kashi-rudraksha); }
+/* Attribution is a licence requirement (OSM / CARTO): small and muted, but legible */
+.leaflet-container .leaflet-control-container .leaflet-control-attribution {
+  background: color-mix(in oklab, var(--kashi-night) 82%, transparent);
+  color: color-mix(in oklab, var(--kashi-ash) 85%, transparent);
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 2px 8px;
+  margin: 0;
+  border-top-left-radius: 8px;
+  max-width: calc(100% - 16px);
+  white-space: normal;
+  backdrop-filter: blur(4px);
+}
+.leaflet-container .leaflet-control-container .leaflet-control-attribution a { color: var(--kashi-diya); text-decoration: underline; text-underline-offset: 2px; }
+.leaflet-container .leaflet-control-container .leaflet-control-attribution .leaflet-attribution-flag { display: none !important; }
+.leaflet-container .leaflet-control-container .leaflet-bar { border: 1px solid color-mix(in oklab, var(--kashi-diya) 30%, transparent); box-shadow: none; }
+.leaflet-container .leaflet-control-container .leaflet-bar a { background: var(--kashi-indigo); color: var(--kashi-white); border-bottom-color: var(--kashi-rudraksha); }
+.leaflet-container .leaflet-control-container .leaflet-bar a:hover { background: var(--kashi-rudraksha); color: var(--kashi-diya); }
 .kashi-pin { filter: drop-shadow(0 0 6px rgba(255, 210, 122, 0.55)); cursor: pointer; }
 .kashi-pin svg { transition: transform 0.3s var(--ease-enter); transform-origin: 50% 100%; }
 .kashi-pin:hover svg { transform: scale(1.15); }
