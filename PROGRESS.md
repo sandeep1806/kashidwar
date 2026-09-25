@@ -181,3 +181,21 @@ Loader 2.2 s (DESIGN.md said ≤ 1.8 s; overridden by checkpoint feedback), wate
 - Prose for the 11 regional locales stays English until native translators work through TRANSLATION_REVIEW.md; translating ~10k words × 11 languages by machine would have produced text nobody had checked.
 - Sanskrit UI strings exist because the brief asked for them, but see the review file: a headings-plus-verses treatment may serve Sanskrit better.
 - Faiths verses in Gurmukhi/Arabic/Greek rely on system fonts outside their own locale.
+
+## Phase 7.1 — Long-script fixes · 2026-09-25 · ✅
+Malayalam/Tamil/Kannada/Telugu headings get a smaller display scale on phones plus `overflow-wrap: anywhere`; the switcher shows each language in its own Noto face (downloaded only when the menu opens).
+
+## Phase 8 — Sound, cursor, polish · 2026-09-25 · ✅
+
+**Did**
+- **Ambient sound** (`lib/ambient.ts`, `components/ui/SoundToggle.tsx`): synthesised with the Web Audio API because no recordings exist — brown-noise river through a drifting low-pass, struck bell tones at random intervals, a faint conch sweep every minute or so. Master gain capped at −18 dBFS, 2 s fade-in, fade-out on stop, stops when the tab is hidden. Bell toggle bottom-right, muted by default, choice persisted in `localStorage` (a remembered "on" still waits for a tap, per autoplay rules).
+- **Incense cursor** (`components/motion/IncenseCursor.tsx`): fixed canvas, puffs emitted every ~6 px of pointer travel, rise and sway, fade in 1.6–2.8 s; the rAF loop sleeps when nothing is alive. Never mounted on touch, coarse pointers or reduced motion.
+- **Aarti finale** (`components/sections/AartiFinale.tsx` + `AartiFlames.tsx`): seven tiered lamps, each flame on its own GSAP `repeatRefresh` tween (random scale/opacity/x every 0.12–0.32 s = noise-driven flicker), a gold radial glow rising from the bottom, closing lines in all 13 locales, and a bell cue on enter when sound is on.
+- **Dividers** with the diya glyph were already `RippleWipe` (Phase 3); now used between all major sections. **Grain** now rides on the fixed sky layer (`.sky::before`, opacity 0.04) so every dark surface has it.
+- **Reduced-motion audit**: loader → 300 ms fade; sunrise → static indigo; Day-in-Kashi → stacked, no scrub; Reveal/StaggerCards/TextReveal/RippleWipe → no-ops; hero → SVG fallback, `hero-rise` delay 0; status pulse, sound ring, fallback diya flicker → `animation: none`; incense cursor and aarti flicker → not started; modal → 300 ms fade. Verified with `prefers-reduced-motion` emulated: no canvas, no flame transforms, console clean.
+
+**Verification**: build ✅ lint ✅ tsc ✅; Puppeteer: cursor canvas paints on pointer movement; toggle → `aria-pressed=true` + `localStorage kashi:sound=1`, second tap reverts; 84 flames with changing transforms; grain opacity 0.04; console clean in both modes.
+
+**Decisions**
+- Synthesised audio instead of recordings: zero bytes to download, no licensing, and it can be swapped for real recordings later by replacing `lib/ambient.ts` (same `start/stop/bell` interface).
+- The finale's flames are SVG + GSAP rather than a second R3F scene: it runs on mobile too.

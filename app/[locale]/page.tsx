@@ -7,6 +7,7 @@ import Festivals from "@/components/sections/Festivals";
 import Food from "@/components/sections/Food";
 import Itineraries from "@/components/sections/Itineraries";
 import Practical from "@/components/sections/Practical";
+import AartiFinale from "@/components/sections/AartiFinale";
 import Places from "@/components/sections/Places";
 import Projects from "@/components/sections/Projects";
 import type { Locale } from "@/lib/i18n/locales";
@@ -32,6 +33,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <RippleWipe />
       <Itineraries locale={locale as Locale} />
       <Practical locale={locale as Locale} />
+      <RippleWipe />
+      <AartiFinale locale={locale as Locale} />
     </main>
   );
 }

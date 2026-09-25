@@ -264,5 +264,12 @@
         "Cover your head in a gurudwara, stay outside a mosque at prayer times, keep quiet during a church service."
       ]
     }
+  },
+  "finale": {
+    "title": "The Ganga Aarti",
+    "titleSecondary": "गंगा आरती",
+    "text": "Every evening, as the sun goes down behind the city, the lamps are raised at Dashashwamedh. The journey that began with one diya ends here, with a thousand.",
+    "closing": "ॐ नमः शिवाय · Har Har Gange",
+    "closingSecondary": "Come to Kashi. The lamps are lit."
   }
 }

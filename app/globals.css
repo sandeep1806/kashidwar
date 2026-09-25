@@ -314,6 +314,15 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
   pointer-events: none;
   background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
 }
+/* Page-wide film grain rides on the sky layer (opacity 0.04, DESIGN.md) */
+.sky::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  background-size: 160px 160px;
+}
 .sky::after {
   content: "";
   position: absolute;
@@ -375,3 +384,11 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
 @keyframes status-pulse { 0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(224, 120, 42, 0.6); } 50% { opacity: 0.6; box-shadow: 0 0 0 5px rgba(224, 120, 42, 0); } }
 .status-pulse { animation: status-pulse 1.8s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) { .status-pulse { animation: none; } }
+
+/* Phase 8: aarti finale + sound toggle */
+.aarti-glow {
+  background: radial-gradient(ellipse 70% 60% at 50% 100%, color-mix(in oklab, var(--kashi-diya) 55%, transparent), color-mix(in oklab, var(--kashi-saffron) 25%, transparent) 40%, transparent 75%);
+}
+@keyframes sound-ring { from { transform: scale(1); opacity: 0.7; } to { transform: scale(1.7); opacity: 0; } }
+.sound-ring { animation: sound-ring 2.4s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) { .sound-ring { animation: none; } }

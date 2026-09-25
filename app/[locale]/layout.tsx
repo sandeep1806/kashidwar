@@ -6,6 +6,8 @@ import SmoothScroll from "@/components/motion/SmoothScroll";
 import SunriseBackground from "@/components/motion/SunriseBackground";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import PageLoader from "@/components/ui/PageLoader";
+import SoundToggle from "@/components/ui/SoundToggle";
+import IncenseCursor from "@/components/motion/IncenseCursor";
 import { fontClassesFor } from "@/lib/fonts";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { routing } from "@/lib/i18n/routing";
@@ -73,6 +75,8 @@ export default async function LocaleLayout({
           <SunriseBackground />
           <PageLoader labels={{ loading: t("loading"), skip: t("skip") }} />
           <LanguageSwitcher current={locale as Locale} label={t("chooseLanguage")} />
+          <SoundToggle labels={{ on: t("soundOn"), off: t("soundOff") }} />
+          <IncenseCursor />
           {children}
         </SmoothScroll>
       </body>
