@@ -5,8 +5,10 @@ import { useEffect, useRef } from "react";
 import Reveal from "@/components/motion/Reveal";
 import { useGsap } from "@/components/motion/SmoothScroll";
 import DiyaGlyph from "@/components/ui/DiyaGlyph";
+import LazyPhoto from "@/components/ui/LazyPhoto";
 import { prefersReducedMotion } from "@/lib/device";
 import { useMediaQuery, useReducedMotionPref } from "@/lib/hooks";
+import type { PhotoData } from "@/lib/contentTypes";
 import type { Script } from "@/lib/i18n/locales";
 
 export interface DayScene {
@@ -17,6 +19,7 @@ export interface DayScene {
   caption: string;
   /** Static SVG/AVIF backdrop from public/media */
   art: StaticImageData;
+  photo: PhotoData | null;
 }
 
 const LAMP_MARKS = [0.02, 0.5, 0.97];
@@ -135,7 +138,7 @@ export default function DayInKashiScroller({
             key={scene.id}
             className={`cv-auto day-scene day-scene-${scene.id} relative isolate flex min-h-[70vh] items-end overflow-hidden`}
           >
-            <Image src={scene.art} alt="" fill sizes="100vw" unoptimized className="-z-10 object-cover" />
+            <SceneBackdrop scene={scene} />
             <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-kashi-night/90 via-kashi-night/40 to-transparent" />
             <Reveal className="container-kashi relative pb-12 pt-24" delay={0.1 * i}>
               <SceneCopy scene={scene} lit />
@@ -155,7 +158,7 @@ export default function DayInKashiScroller({
             data-panel
             className={`day-scene day-scene-${scene.id} relative isolate flex h-full w-screen shrink-0 items-end overflow-hidden`}
           >
-            <Image src={scene.art} alt="" fill sizes="100vw" unoptimized className="-z-10 object-cover" />
+            <SceneBackdrop scene={scene} />
             <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-kashi-night/90 via-kashi-night/40 to-transparent" />
             <div className={`container-kashi relative pb-20 ${i % 2 ? "text-right" : ""}`}>
               <SceneCopy scene={scene} split />
@@ -218,5 +221,13 @@ function SceneCopy({
         {scene.caption}
       </p>
     </div>
+  );
+}
+
+function SceneBackdrop({ scene }: { scene: DayScene }) {
+  return scene.photo ? (
+    <LazyPhoto photo={scene.photo} sizes="100vw" className="-z-10" />
+  ) : (
+    <Image src={scene.art} alt="" fill sizes="100vw" unoptimized className="-z-10 object-cover" />
   );
 }

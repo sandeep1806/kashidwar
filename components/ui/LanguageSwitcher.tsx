@@ -122,7 +122,7 @@ export default function LanguageSwitcher({
                     <span className="w-24 text-base text-kashi-white">{m.sample}</span>
                     <span>{m.nativeName}</span>
                   </span>
-                  <span className="text-xs text-kashi-ash/50">{m.name}</span>
+                  <span className="text-xs text-kashi-ash/70">{m.name}</span>
                 </a>
               </li>
             );

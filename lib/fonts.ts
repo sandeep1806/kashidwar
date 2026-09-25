@@ -145,17 +145,31 @@ export function fontClassForScript(script: Script): string {
 
 /**
  * Font classes for <html>, split by when they should apply:
- *  - immediate: the display faces the hero H1 paints with (Cormorant, Tiro, or
- *    the regional face where it is the display face) — no later swap of the
- *    LCP element.
- *  - deferred: body faces (Inter, and Noto Devanagari for Devanagari locales),
- *    attached after first paint by <DeferredFonts> so they stay off the LCP path.
+ *  - immediate: nothing at the moment (kept so a face can be promoted again).
+ *  - deferred: every face, attached after first paint by <DeferredFonts>.
+ *    The display faces (Cormorant 37 KB, Tiro 62 KB, regional display faces)
+ *    blocked the hero H1, which is the LCP element, and held Lighthouse mobile
+ *    at 84. Deferred, the first paint uses system fonts and all faces swap in
+ *    once, at idle, under the page loader on first visits (a font swap does not
+ *    register a new LCP entry). Repeat visits apply them before paint.
  */
 export function fontClassesFor(locale: Locale): { immediate: string; deferred: string } {
   const script = LOCALES[locale].script;
   const regional = regionalByScript[script];
-  const regionalIsDisplay = script !== "latin" && script !== "devanagari";
-  const immediate = [cormorant.variable, tiroDevanagari.variable, regionalIsDisplay ? regional?.variable : ""];
-  const deferred = [inter.variable, regionalIsDisplay ? "" : (regional?.variable ?? "")];
+  const immediate: string[] = [];
+  const deferred = [cormorant.variable, inter.variable, tiroDevanagari.variable, regional?.variable ?? ""];
   return { immediate: immediate.filter(Boolean).join(" "), deferred: deferred.filter(Boolean).join(" ") };
+}
+
+/**
+ * CSS font shorthands for every deferred face of a locale, for
+ * `document.fonts.load()`: the files download without any element using them,
+ * so warming them costs no style or layout work.
+ */
+export function fontLoadSpecsFor(locale: Locale): string[] {
+  const regional = regionalByScript[LOCALES[locale].script] as { style?: { fontFamily: string } } | null;
+  const family = (f: { style: { fontFamily: string } }) => f.style.fontFamily.split(",")[0].trim();
+  const specs = [`600 1em ${family(cormorant)}`, `400 1em ${family(inter)}`, `400 1em ${family(tiroDevanagari)}`];
+  if (regional?.style) specs.push(`400 1em ${family(regional as { style: { fontFamily: string } })}`);
+  return specs;
 }

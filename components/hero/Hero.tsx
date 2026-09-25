@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
+import { getPhoto } from "@/lib/photos";
 import HeroFallback from "./HeroFallback";
 import HeroScene from "./HeroScene";
 
@@ -17,7 +18,7 @@ export default async function Hero({ locale }: { locale: Locale }) {
       aria-labelledby="hero-title"
       className="grain relative isolate flex min-h-dvh flex-col justify-end overflow-hidden bg-kashi-night"
     >
-      <HeroFallback />
+      <HeroFallback photo={getPhoto("hero/hero", locale)} />
       <HeroScene />
       {/* Legibility veil over the lower half */}
       <div

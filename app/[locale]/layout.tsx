@@ -13,7 +13,7 @@ import SiteHeader from "@/components/ui/SiteHeader";
 import { SECTIONS } from "@/lib/sections";
 import SoundToggle from "@/components/ui/SoundToggle";
 import IncenseCursor from "@/components/motion/IncenseCursor";
-import { fontClassesFor } from "@/lib/fonts";
+import { fontClassesFor, fontLoadSpecsFor } from "@/lib/fonts";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { routing } from "@/lib/i18n/routing";
 import { SITE_URL } from "@/lib/site";
@@ -102,7 +102,7 @@ export default async function LocaleLayout({
     >
       <body className="min-h-dvh flex flex-col font-body text-kashi-ash">
         <script dangerouslySetInnerHTML={{ __html: LOADER_SNIPPET(fonts.deferred) }} />
-        <DeferredFonts classes={fonts.deferred} sample={meta.sample} />
+        <DeferredFonts classes={fonts.deferred} fonts={fontLoadSpecsFor(locale as Locale)} sample={meta.sample} />
         <FaithGlyphSprite />
         <a
           href="#content"

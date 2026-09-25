@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { prefersReducedMotion } from "@/lib/device";
+import { useRef } from "react";
 import type { Script } from "@/lib/i18n/locales";
-import { useGsap } from "./SmoothScroll";
+import { useRevealOnEnter } from "./useRevealOnEnter";
 
 /**
  * Heading text reveal (DESIGN.md → Section enter): SplitText pieces rise from
@@ -21,30 +20,27 @@ export default function TextReveal({
   className?: string;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const g = useGsap();
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!g || !el || prefersReducedMotion()) return;
-    if (el.getBoundingClientRect().top < window.innerHeight * 0.85) return;
-    const byChar = script === "latin";
-    const split = g.SplitText.create(el, {
-      type: byChar ? "chars,words" : "words",
-      autoSplit: true,
-      aria: "none", // the sr-only twin carries the accessible text
-      onSplit: (self) =>
-        g.gsap.from(byChar ? self.chars : self.words, {
-          yPercent: 60,
-          opacity: 0,
-          filter: "blur(6px)",
-          stagger: byChar ? 0.02 : 0.06,
-          duration: 0.8,
-          ease: "power3.out",
-          scrollTrigger: { trigger: el, start: "top 85%", once: true },
-        }),
-    });
-    return () => split.revert();
-  }, [g, script]);
+  const pieces = useRef<Element[]>([]);
+  const byChar = script === "latin";
+  // Split only when the heading approaches (SplitText measures lines, which
+  // would force layout of every skipped section if done for all at once).
+  useRevealOnEnter(
+    ref,
+    (g, el) => {
+      g.SplitText.create(el, {
+        type: byChar ? "chars,words" : "words",
+        aria: "none", // the sr-only twin carries the accessible text
+        onSplit: (self) => {
+          pieces.current = byChar ? self.chars : self.words;
+          g.gsap.set(pieces.current, { yPercent: 60, opacity: 0, filter: "blur(6px)" });
+        },
+      });
+    },
+    (g) => {
+      g.gsap.to(pieces.current, { yPercent: 0, opacity: 1, filter: "blur(0px)", stagger: byChar ? 0.02 : 0.06, duration: 0.8, ease: "power3.out" });
+    },
+    [byChar],
+  );
 
   return (
     <>

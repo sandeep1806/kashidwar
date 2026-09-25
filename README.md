@@ -32,10 +32,11 @@ components/hero/     SVG fallback + lazy R3F scene (Water, Diyas, Rig)
 components/sections/ DayInKashi, Places, Faiths, Projects, Festivals, Food, Itineraries, Practical, AartiFinale
 components/motion/   SmoothScroll (GSAP + Lenis provider), SunriseBackground, Reveal, StaggerCards, RippleWipe, TextReveal, IncenseCursor
 components/ui/       PlaceCard, Modal, KashiMap, FaithGlyph, DiyaGlyph, LanguageSwitcher, SoundToggle, PageLoader, SectionHeading, JsonLd
-content/             places.json, projects.json, faiths.json, festivals.json, food.json, itineraries.json
+content/             places.json, projects.json, faiths.json, festivals.json, food.json, itineraries.json,
+                     photos.json + credits.json (generated), i18n/ (regional prose and photo alt text)
 messages/            <locale>.json — every UI string
 lib/                 content.ts (types + localize), i18n/, fonts.ts, gsap.ts, device.ts, ambient.ts, site.ts
-public/media/        art/ (scene SVGs), og/ (OpenGraph images), places/ projects/ festivals/ food/ (photos, when you add them)
+public/media/        art/ (fallback scene SVGs), og/ (OpenGraph images), photos/<group>/ (generated AVIF + WebP)
 ```
 
 ## Editing content
@@ -62,7 +63,7 @@ Every entry has English prose plus an optional `i18n` block for per-locale overr
 ### Add a place
 1. Append to `content/places.json` with the schema above. `type` is one of `ghat | temple | stupa | monastery | mosque | church | gurudwara | math | fort | museum | university | heritage`; `faith` uses `hindu | buddhist | jain | sikh | islamic | christian | bhakti | secular`.
 2. Cite the coordinate source in `sources`; set `coordsVerified: false` if you placed it by locality.
-3. Drop a photo at the `image` path (AVIF or WebP, ≥ 1200 px tall, portrait). `Places.tsx` detects the file at build time and switches from the glyph placeholder to `next/image` automatically.
+3. Add a photo (see **Photos** below). Without one the card shows its drawn placeholder.
 4. To list it under a faith tile, add its id to that faith's `sites` in `content/faiths.json`.
 
 ### Add a project
@@ -70,6 +71,16 @@ Append to `content/projects.json`: `status` ∈ `completed | under_construction 
 
 ### Add a festival / dish / itinerary
 Same pattern in `festivals.json` (lunar `when` rule + `months` 1–12), `food.json` (`type` ∈ `breakfast | sweet | drink | street | paan`), `itineraries.json` (stops with `time`, optional `placeId`, and `marker: "sunrise" | "sunset"`).
+
+### Photos
+Photos are self-hosted; nothing is hotlinked. Each one is keyed `group/id` (`places/assi-ghat`, `festivals/chhath`, `food/lassi`, `projects/ganga-cruise`, `scenes/dawn`, `hero/hero`).
+
+1. **Your own photo:** put it at `raw/<group>/<id>.jpg` (or .png/.webp). It overrides any Commons pick and needs no credit line.
+2. **Wikimedia Commons:** `node scripts/fetch-images.mjs [group]` collects licence-filtered candidates (CC0, CC BY, CC BY-SA, public domain) with review thumbnails in `scripts/.images/`. Check each file's title, description, categories and location on Commons, then add `{ key, title, alt: { en, hi } }` to `scripts/image-picks.json`. Unsplash and Pexels are skipped: no API keys were set when this was built, so those providers are not implemented yet.
+3. Regional alt text lives in `content/i18n/alt-<locale>.json` (`{ "group/id": "…" }`).
+4. `node scripts/optimize-images.mjs` downloads, grades (dark and warm), resizes (cards 480/960 px ≤ 150 KB; scenes 640/960/1600 px ≤ 140 KB; hero 640 px ≤ 200 KB) and writes AVIF + WebP to `public/media/photos/`, plus `content/photos.json` (sizes, blur placeholder, alt text) and `content/credits.json` (title, author, licence, source), which feeds `/<locale>/credits`. Add `--force` to re-encode.
+
+Sensitivity rules for picks: no cremations or bodies at Manikarnika, nothing from inside the Kashi Vishwanath sanctum, no close-ups of identifiable people bathing, praying or at funerals, and the same care for every faith.
 
 ### Add a language
 1. Add the code to `locales` and its metadata (`nativeName`, `sample`, `script`, `bcp47`) to `LOCALES` in `lib/i18n/locales.ts`.

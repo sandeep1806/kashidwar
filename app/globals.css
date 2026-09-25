@@ -346,8 +346,14 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
 }
 
 /* Below-the-fold blocks skip layout/paint until near the viewport */
+/* Photo <img> (components/ui/Photo.tsx): fills its frame over the blur placeholder. */
+.photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background-size: cover; background-position: center; }
+.photo-zoom { transition: transform 700ms var(--ease-enter); }
+.group:hover .photo-zoom { transform: scale(1.05); }
 .cv-auto { content-visibility: auto; contain-intrinsic-size: auto 80vh; }
 .cv-section { content-visibility: auto; contain-intrinsic-size: auto 120vh; }
+/* Below lg only: on wide screens this section pins (position: fixed), which containment would break. */
+@media (max-width: 1023px) { .cv-below-lg { content-visibility: auto; contain-intrinsic-size: auto 250vh; } }
 
 /* SplitText pieces need a box to move in */
 [data-title] > div { display: inline-block; }

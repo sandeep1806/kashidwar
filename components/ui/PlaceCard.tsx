@@ -1,6 +1,6 @@
-import Image from "next/image";
-import type { Faith, Place } from "@/lib/contentTypes";
+import type { Faith, PhotoData, PlaceLite as Place } from "@/lib/contentTypes";
 import FaithGlyph from "./FaithGlyph";
+import Photo from "./Photo";
 import PlaceArt from "./PlaceArt";
 
 export interface PlaceLabels {
@@ -15,14 +15,14 @@ export default function PlaceCard({
   place,
   primaryName,
   secondaryName,
-  hasImage,
+  photo,
   labels,
   onOpen,
 }: {
   place: Place;
   primaryName: string;
   secondaryName: string;
-  hasImage: boolean;
+  photo: PhotoData | null;
   labels: PlaceLabels;
   onOpen: (place: Place) => void;
 }) {
@@ -36,13 +36,11 @@ export default function PlaceCard({
       >
         <span className="sr-only">{labels.openDetails}: </span>
         <div className="arch relative mx-2 mt-2 aspect-square overflow-hidden sm:mx-3 sm:mt-3 sm:aspect-[4/5]">
-          {hasImage ? (
-            <Image
-              src={place.image}
-              alt=""
-              fill
-              sizes="(min-width: 1280px) 300px, (min-width: 768px) 33vw, 80vw"
-              className="object-cover transition-transform duration-700 ease-enter group-hover:scale-105"
+          {photo ? (
+            <Photo
+              photo={photo}
+              sizes="(min-width: 1280px) 290px, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 46vw"
+              className="photo-zoom"
             />
           ) : (
             <div className={`place-art place-art-${faiths[0]} relative flex h-full w-full items-center justify-center`}>

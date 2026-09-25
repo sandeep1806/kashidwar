@@ -46,3 +46,6 @@ cloudflare-env.d.ts
 
 # keep the placeholder example
 !.env.example
+
+# photo sourcing scratch (candidates + review thumbnails)
+scripts/.images/

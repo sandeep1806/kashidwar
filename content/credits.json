@@ -1,1 +1,524 @@
-[]
+[
+  {
+    "key": "festivals/buddha-purnima",
+    "file": "/media/photos/festivals/buddha-purnima-960.webp",
+    "title": "Dhamek Stupa, Sarnath, Varanasi, Uttar Pradesh 01",
+    "author": "Paramanu Sarkar",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dhamek_Stupa,_Sarnath,_Varanasi,_Uttar_Pradesh_01.jpg"
+  },
+  {
+    "key": "festivals/chhath",
+    "file": "/media/photos/festivals/chhath-960.webp",
+    "title": "Chhath Puja Varanasi",
+    "author": "Coplanar",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chhath_Puja_Varanasi.jpg"
+  },
+  {
+    "key": "festivals/christmas",
+    "file": "/media/photos/festivals/christmas-960.webp",
+    "title": "Saint Mary's Cathedral in Varanasi-1",
+    "author": "David Castor (dcastor)",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Saint_Mary%27s_Cathedral_in_Varanasi-1.jpg"
+  },
+  {
+    "key": "festivals/dev-deepawali",
+    "file": "/media/photos/festivals/dev-deepawali-960.webp",
+    "title": "Dev Deepavali at Varanasi DSC04305 12",
+    "author": "Sumita Roy Dutta",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dev_Deepavali_at_Varanasi_DSC04305_12.jpg"
+  },
+  {
+    "key": "festivals/eid-al-fitr",
+    "file": "/media/photos/festivals/eid-al-fitr-960.webp",
+    "title": "Alamgir Mosque, Varanasi, Uttar Pradesh, India (2011) 57777)",
+    "author": "Aleksandr Zykov from Russia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Alamgir_Mosque,_Varanasi,_Uttar_Pradesh,_India_(2011)_57777).jpg"
+  },
+  {
+    "key": "festivals/ganga-dussehra",
+    "file": "/media/photos/festivals/ganga-dussehra-960.webp",
+    "title": "Ganga ghat.1",
+    "author": "Rituraj Suryawanshi",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Ganga_ghat.1.jpg"
+  },
+  {
+    "key": "festivals/guru-nanak-jayanti",
+    "file": "/media/photos/festivals/guru-nanak-jayanti-960.webp",
+    "title": "Fresco of Guru Nanak from above the entrance of the Baoli Sahib located in Goindwal",
+    "author": "Unknown artist",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Fresco_of_Guru_Nanak_from_above_the_entrance_of_the_Baoli_Sahib_located_in_Goindwal.jpg"
+  },
+  {
+    "key": "festivals/kabir-jayanti",
+    "file": "/media/photos/festivals/kabir-jayanti-960.webp",
+    "title": "Painting of Kabir, Amber, ca.1750–1800",
+    "author": "Qa’im Khan Bin Zafar Bahadur",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Painting_of_Kabir,_Amber,_ca.1750%E2%80%931800.jpg"
+  },
+  {
+    "key": "festivals/kashi-tamil-sangamam-festival",
+    "file": "/media/photos/festivals/kashi-tamil-sangamam-festival-960.webp",
+    "title": "காசி தமிழ் சங்கமம் பயணத்திற்கான தொடருந்து பெட்டி",
+    "author": "Arularasan. G",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E0%AE%95%E0%AE%BE%E0%AE%9A%E0%AE%BF_%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AF%8D_%E0%AE%9A%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AE%AE%E0%AF%8D_%E0%AE%AA%E0%AE%AF%E0%AE%A3%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%B1%E0%AF%8D%E0%AE%95%E0%AE%BE%E0%AE%A9_%E0%AE%A4%E0%AF%8A%E0%AE%9F%E0%AE%B0%E0%AF%81%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AF%81_%E0%AE%AA%E0%AF%86%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF.jpg"
+  },
+  {
+    "key": "festivals/maha-shivratri",
+    "file": "/media/photos/festivals/maha-shivratri-960.webp",
+    "title": "Shri Kashi Vishwanath Temple 3",
+    "author": "Gannu03",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Shri_Kashi_Vishwanath_Temple_3.jpg"
+  },
+  {
+    "key": "festivals/muharram",
+    "file": "/media/photos/festivals/muharram-960.webp",
+    "title": "Muharram Delhi",
+    "author": "Ramesh Lalwani",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Muharram_Delhi.jpg"
+  },
+  {
+    "key": "festivals/nag-nathaiya",
+    "file": "/media/photos/festivals/nag-nathaiya-960.webp",
+    "title": "Varanasi 50a3 - Kadamba tree preparation for Nag Nathaiya festival (23854751418)",
+    "author": "juggadery",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Varanasi_50a3_-_Kadamba_tree_preparation_for_Nag_Nathaiya_festival_(23854751418).jpg"
+  },
+  {
+    "key": "festivals/parshvanath-janma-kalyanak",
+    "file": "/media/photos/festivals/parshvanath-janma-kalyanak-960.webp",
+    "title": "Mural depicting the 23rd Tirthankar from Parshvanath Jain Shwetambar temple in Multan, Punjab, circa early 19th century",
+    "author": "Unknown muralist(s)",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mural_depicting_the_23rd_Tirthankar_from_Parshvanath_Jain_Shwetambar_temple_in_Multan,_Punjab,_circa_early_19th_century.jpg"
+  },
+  {
+    "key": "festivals/ramnagar-ramlila",
+    "file": "/media/photos/festivals/ramnagar-ramlila-960.webp",
+    "title": "Ramnnagar Varanasi Ramlila",
+    "author": "Rosehubwiki, Kuber Patel",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ramnnagar_Varanasi_Ramlila.jpg"
+  },
+  {
+    "key": "festivals/rangbhari-masaan-holi",
+    "file": "/media/photos/festivals/rangbhari-masaan-holi-960.webp",
+    "title": "Rangbhari ekadashi at Varanasi",
+    "author": "Namanvr13",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rangbhari_ekadashi_at_Varanasi.jpg"
+  },
+  {
+    "key": "festivals/ravidas-jayanti",
+    "file": "/media/photos/festivals/ravidas-jayanti-960.webp",
+    "title": "Entrance through a gold plated door to the Guru Ravidas Temple sanctum, Seer Goverdhanpur, Varanasi",
+    "author": "Sandpacks",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Entrance_through_a_gold_plated_door_to_the_Guru_Ravidas_Temple_sanctum,_Seer_Goverdhanpur,_Varanasi.jpg"
+  },
+  {
+    "key": "festivals/shravan",
+    "file": "/media/photos/festivals/shravan-960.webp",
+    "title": "Shri Kashi Vishwanath Temple 4",
+    "author": "Gannu03",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Shri_Kashi_Vishwanath_Temple_4.jpg"
+  },
+  {
+    "key": "food/banarasi-paan",
+    "file": "/media/photos/food/banarasi-paan-960.webp",
+    "title": "Banarasi pan",
+    "author": "Sadhikapandey",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Banarasi_pan.jpg"
+  },
+  {
+    "key": "food/jalebi",
+    "file": "/media/photos/food/jalebi-960.webp",
+    "title": "Jalebi making process at Old and famous Jalebiwala shop at Chandni Chowk, DelhiIMG 20150401 135811",
+    "author": "Sumita Roy Dutta",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jalebi_making_process_at_Old_and_famous_Jalebiwala_shop_at_Chandni_Chowk,_DelhiIMG_20150401_135811.jpg"
+  },
+  {
+    "key": "food/kachori-sabzi",
+    "file": "/media/photos/food/kachori-sabzi-960.webp",
+    "title": "Kachori Sabzi",
+    "author": "Srutiagarwal123",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kachori_Sabzi.JPG"
+  },
+  {
+    "key": "food/lassi",
+    "file": "/media/photos/food/lassi-960.webp",
+    "title": "World's Best Lassi - Blue Lassi - Old City - Varanasi - Uttar Pradesh - India (12498958194)",
+    "author": "Adam Jones from Kelowna, BC, Canada",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:World%27s_Best_Lassi_-_Blue_Lassi_-_Old_City_-_Varanasi_-_Uttar_Pradesh_-_India_(12498958194).jpg"
+  },
+  {
+    "key": "food/launglata",
+    "file": "/media/photos/food/launglata-960.webp",
+    "title": "Labangalatika",
+    "author": "Marajozkee",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Labangalatika.jpg"
+  },
+  {
+    "key": "food/malaiyo",
+    "file": "/media/photos/food/malaiyo-960.webp",
+    "title": "Malaiyo sweet",
+    "author": "Sadhikapandey",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Malaiyo_sweet.jpg"
+  },
+  {
+    "key": "food/tamatar-chaat",
+    "file": "/media/photos/food/tamatar-chaat-960.webp",
+    "title": "Tamater Chaat (Tomato Chaat)",
+    "author": "Pandey jayesh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tamater_Chaat_(Tomato_Chaat).jpg"
+  },
+  {
+    "key": "food/thandai",
+    "file": "/media/photos/food/thandai-960.webp",
+    "title": "Thandai (Spiced Indian Milk Drink)",
+    "author": "Aparna Balasubramanian",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Thandai_(Spiced_Indian_Milk_Drink).JPG"
+  },
+  {
+    "key": "hero/hero",
+    "file": "/media/photos/hero/hero-640.webp",
+    "title": "Boats at sunrise Ganges River Varanasi Uttar Pradesh Schwiki",
+    "author": "Schwiki",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Boats_at_sunrise_Ganges_River_Varanasi_Uttar_Pradesh_Schwiki.jpg"
+  },
+  {
+    "key": "places/alamgir-mosque",
+    "file": "/media/photos/places/alamgir-mosque-960.webp",
+    "title": "Alamgir Mosque, Varanasi, Uttar Pradesh, India (2011) 62793)",
+    "author": "Aleksandr Zykov from Russia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Alamgir_Mosque,_Varanasi,_Uttar_Pradesh,_India_(2011)_62793).jpg"
+  },
+  {
+    "key": "places/assi-ghat",
+    "file": "/media/photos/places/assi-ghat-960.webp",
+    "title": "Assi Ghat on river Ganga",
+    "author": "Akarsh Kandpal",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Assi_Ghat_on_river_Ganga.jpg"
+  },
+  {
+    "key": "places/bharat-mata",
+    "file": "/media/photos/places/bharat-mata-960.webp",
+    "title": "Bharat Mata Mandir Varanasi India - panoramio",
+    "author": "Hiroki Ogawa",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bharat_Mata_Mandir_Varanasi_India_-_panoramio.jpg"
+  },
+  {
+    "key": "places/bhelupur-jain",
+    "file": "/media/photos/places/bhelupur-jain-960.webp",
+    "title": "Bhelupur Shwetambar temple (1)",
+    "author": "Pratyk321",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bhelupur_Shwetambar_temple_(1).jpg"
+  },
+  {
+    "key": "places/bhu-new-vishwanath",
+    "file": "/media/photos/places/bhu-new-vishwanath-960.webp",
+    "title": "New Vishwanath Temple (BHU)",
+    "author": "Heliophilous",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:New_Vishwanath_Temple_(BHU).jpg"
+  },
+  {
+    "key": "places/chunar-fort",
+    "file": "/media/photos/places/chunar-fort-960.webp",
+    "title": "Chunar Fort 2",
+    "author": "Rangan Datta Wiki",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chunar_Fort_2.jpg"
+  },
+  {
+    "key": "places/dashashwamedh-ghat",
+    "file": "/media/photos/places/dashashwamedh-ghat-960.webp",
+    "title": "Dashashwamedh Ghat, Ganga, Varanasi",
+    "author": "Ravi Raj Gupta",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dashashwamedh_Ghat,_Ganga,_Varanasi.jpg"
+  },
+  {
+    "key": "places/durga-kund",
+    "file": "/media/photos/places/durga-kund-960.webp",
+    "title": "Varanasi, India - Durga temple, Bhelupur (23430472781)",
+    "author": "Juan Antonio Segal from Madrid, Spain",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Varanasi,_India_-_Durga_temple,_Bhelupur_(23430472781).jpg"
+  },
+  {
+    "key": "places/kashi-vishwanath",
+    "file": "/media/photos/places/kashi-vishwanath-960.webp",
+    "title": "Shri Kashi Vishwanath Temple 7",
+    "author": "Gannu03",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Shri_Kashi_Vishwanath_Temple_7.jpg"
+  },
+  {
+    "key": "places/manikarnika-ghat",
+    "file": "/media/photos/places/manikarnika-ghat-960.webp",
+    "title": "Benares Ganga",
+    "author": "Борисов Алексей, Елизавета Лаврентьева",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Benares_Ganga.jpg"
+  },
+  {
+    "key": "places/mulagandha-kuti-vihar",
+    "file": "/media/photos/places/mulagandha-kuti-vihar-960.webp",
+    "title": "Mulgandh Kutti Vihar Sarnath India - panoramio",
+    "author": "Hiroki Ogawa",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mulgandh_Kutti_Vihar_Sarnath_India_-_panoramio.jpg"
+  },
+  {
+    "key": "places/namo-ghat",
+    "file": "/media/photos/places/namo-ghat-960.webp",
+    "title": "Namo Ghat , Varanasi",
+    "author": "Alok3033b",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Namo_Ghat_,_Varanasi.jpg"
+  },
+  {
+    "key": "places/panchganga-ghat",
+    "file": "/media/photos/places/panchganga-ghat-960.webp",
+    "title": "Varanasi (6706153019)",
+    "author": "Aleksandr Zykov from Russia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Varanasi_(6706153019).jpg"
+  },
+  {
+    "key": "places/ramnagar-fort",
+    "file": "/media/photos/places/ramnagar-fort-960.webp",
+    "title": "Ramnagar Fort, Ramnagar, Varanasi, Uttar Pradesh 03",
+    "author": "Paramanu Sarkar",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ramnagar_Fort,_Ramnagar,_Varanasi,_Uttar_Pradesh_03.jpg"
+  },
+  {
+    "key": "places/ravidas-janmasthan",
+    "file": "/media/photos/places/ravidas-janmasthan-960.webp",
+    "title": "Guru Ravidas Temple, Seer Goverdhanpur, Varanasi",
+    "author": "Sandpacks",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Guru_Ravidas_Temple,_Seer_Goverdhanpur,_Varanasi.jpg"
+  },
+  {
+    "key": "places/sankat-mochan",
+    "file": "/media/photos/places/sankat-mochan-960.webp",
+    "title": "Sankat Mochan Temple in Varanasi (8527226316)",
+    "author": "Matt Zimmerman",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sankat_Mochan_Temple_in_Varanasi_(8527226316).jpg"
+  },
+  {
+    "key": "places/sarnath",
+    "file": "/media/photos/places/sarnath-960.webp",
+    "title": "Dhamekh Stupa Sarnath India - panoramio",
+    "author": "Hiroki Ogawa",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dhamekh_Stupa_Sarnath_India_-_panoramio.jpg"
+  },
+  {
+    "key": "places/st-marys-church",
+    "file": "/media/photos/places/st-marys-church-960.webp",
+    "title": "496a Benares, India 1971 (51310319630)",
+    "author": "wilford peloquin",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:496a_Benares,_India_1971_(51310319630).jpg"
+  },
+  {
+    "key": "places/tulsi-manas",
+    "file": "/media/photos/places/tulsi-manas-960.webp",
+    "title": "Varanasi 07 - Tulsi Manas mandir (24424161768)",
+    "author": "juggadery",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Varanasi_07_-_Tulsi_Manas_mandir_(24424161768).jpg"
+  },
+  {
+    "key": "projects/airport-expansion",
+    "file": "/media/photos/projects/airport-expansion-960.webp",
+    "title": "Lal Bahadur Shastri Airport",
+    "author": "Davide Mauro",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lal_Bahadur_Shastri_Airport.jpg"
+  },
+  {
+    "key": "projects/banaras-station",
+    "file": "/media/photos/projects/banaras-station-960.webp",
+    "title": "Banaras railwaystation 10",
+    "author": "Gannu03",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Banaras_railwaystation_10.jpg"
+  },
+  {
+    "key": "projects/ganga-cruise",
+    "file": "/media/photos/projects/ganga-cruise-960.webp",
+    "title": "Ganga Vilas",
+    "author": "Antara Cruises",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ganga_Vilas.jpg"
+  },
+  {
+    "key": "projects/highway-package-2026",
+    "file": "/media/photos/projects/highway-package-2026-960.webp",
+    "title": "The Ganga River and Ramnagar bridge from Ramnagar fort, Vyasa kasi, Varanasi, U.P",
+    "author": "K.Venkataramana",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Ganga_River_and_Ramnagar_bridge_from_Ramnagar_fort,_Vyasa_kasi,_Varanasi,_U.P.jpg"
+  },
+  {
+    "key": "projects/kashi-tamil-sangamam",
+    "file": "/media/photos/projects/kashi-tamil-sangamam-960.webp",
+    "title": "KASI TAMIL SANGAM EXPRESS",
+    "author": "Raybellrich",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:KASI_TAMIL_SANGAM_EXPRESS.jpg"
+  },
+  {
+    "key": "projects/kashi-vishwanath-corridor",
+    "file": "/media/photos/projects/kashi-vishwanath-corridor-960.webp",
+    "title": "Ganga Dwar, Gateway of Corridor of Kashi Vishwanath Temple, Varanasi",
+    "author": "Ashvin Kaitabhya , clicked by Abhishek Pandey",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ganga_Dwar,_Gateway_of_Corridor_of_Kashi_Vishwanath_Temple,_Varanasi.webp"
+  },
+  {
+    "key": "projects/namo-ghat",
+    "file": "/media/photos/projects/namo-ghat-960.webp",
+    "title": "Namo Ghat",
+    "author": "Bimalsaha25",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Namo_Ghat.jpg"
+  },
+  {
+    "key": "projects/sarnath-redevelopment",
+    "file": "/media/photos/projects/sarnath-redevelopment-960.webp",
+    "title": "Archaeological ruins at Sarnath WLM22-01573",
+    "author": "Schwiki",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Archaeological_ruins_at_Sarnath_WLM22-01573.jpg"
+  },
+  {
+    "key": "projects/varanasi-cantt-station",
+    "file": "/media/photos/projects/varanasi-cantt-station-960.webp",
+    "title": "वाराणसी जंक्शन",
+    "author": "कृष्ण कान्त शर्मा",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%A3%E0%A4%B8%E0%A5%80_%E0%A4%9C%E0%A4%82%E0%A4%95%E0%A5%8D%E0%A4%B6%E0%A4%A8.jpg"
+  },
+  {
+    "key": "projects/varanasi-ring-road",
+    "file": "/media/photos/projects/varanasi-ring-road-960.webp",
+    "title": "Varanasi Ring Road Phase 1",
+    "author": "Monsieurupanshu",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Varanasi_Ring_Road_Phase_1.jpg"
+  },
+  {
+    "key": "scenes/dawn",
+    "file": "/media/photos/scenes/dawn-1600.webp",
+    "title": "Subah-e-Banaras with Ganga",
+    "author": "Divya Agarwal",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Subah-e-Banaras_with_Ganga.jpg"
+  },
+  {
+    "key": "scenes/dusk",
+    "file": "/media/photos/scenes/dusk-1600.webp",
+    "title": "Ganga Aarti at Dashashwamedh Ghat 67",
+    "author": "Goutam1962",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ganga_Aarti_at_Dashashwamedh_Ghat_67.jpg"
+  },
+  {
+    "key": "scenes/noon",
+    "file": "/media/photos/scenes/noon-1600.webp",
+    "title": "A lane leading to Meera Ghat, in Varanasi",
+    "author": "R. M. Calamar from Brooklyn, New York, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:A_lane_leading_to_Meera_Ghat,_in_Varanasi.jpg"
+  }
+]

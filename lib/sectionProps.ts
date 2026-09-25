@@ -1,5 +1,4 @@
-import { existsSync } from "node:fs";
-import path from "node:path";
+import { getPhoto } from "@/lib/photos";
 import { getTranslations } from "next-intl/server";
 import { faithEntries, festivals, foods, getPlace, itineraries, localize, localizeItinerary, places, projects, type Itinerary, type ProjectStatus } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
@@ -9,7 +8,7 @@ import type { FoodItem } from "@/components/sections/FoodList";
 import type { ProjectItem, ProjectLabels } from "@/components/sections/ProjectsList";
 import type { ExplorerLabels, ExplorerPlace } from "@/components/sections/PlacesExplorer";
 import type { FaithTile } from "@/components/sections/FaithTiles";
-import { FAITHS, PLACE_FILTERS, type Faith, type PlaceFilter } from "@/lib/contentTypes";
+import { FAITHS, PLACE_FILTERS, type Faith, type PlaceDetail, type PlaceFilter } from "@/lib/contentTypes";
 
 /**
  * Data for the sections below the fold that render client-side after
@@ -34,7 +33,7 @@ export async function getProjectsProps(locale: Locale) {
   const latest = projects.reduce((d, p) => (p.lastVerified > d ? p.lastVerified : d), "");
   const items: ProjectItem[] = projects.map((raw) => {
     const p = localize(raw, locale);
-    return { ...p, primaryName: devanagari ? p.name_hi : p.name_en, secondaryName: devanagari ? p.name_en : p.name_hi, lastVerifiedLabel: fmt.format(new Date(p.lastVerified + "T00:00:00Z")) };
+    return { id: p.id, status: p.status, type: p.type, agency: p.agency, timeline: p.timeline, summary: p.summary, verified: p.verified, lastVerified: p.lastVerified, sources: p.sources.map(({ title, url }) => ({ title, url })), photo: getPhoto(`projects/${p.id}`, locale), primaryName: devanagari ? p.name_hi : p.name_en, secondaryName: devanagari ? p.name_en : p.name_hi, lastVerifiedLabel: fmt.format(new Date(p.lastVerified + "T00:00:00Z")) };
   });
   const groups = ORDER.map((status) => ({ status, items: items.filter((p) => p.status === status) })).filter((g) => g.items.length);
   const labels: ProjectLabels = {
@@ -65,7 +64,7 @@ export async function getFestivalsProps(locale: Locale) {
   const items: FestivalItem[] = festivals
     .map((raw) => {
       const f = localize(raw, locale);
-      return { ...f, primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, glyph: f.faith[0] ?? "secular" };
+      return { id: f.id, months: f.months, when: f.when, where: f.where, summary: f.summary, photo: getPhoto(`festivals/${f.id}`, locale), primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, glyph: f.faith[0] ?? "secular" };
     })
     .sort((a, b) => Math.min(...a.months) - Math.min(...b.months));
   return {
@@ -82,7 +81,7 @@ export async function getFoodProps(locale: Locale) {
   const devanagari = LOCALES[locale].script === "devanagari";
   const items: FoodItem[] = foods.map((raw) => {
     const f = localize(raw, locale);
-    return { ...f, primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, typeLabel: t(`types.${f.type}`) };
+    return { id: f.id, season: f.season, where: f.where, summary: f.summary, vegetarian: f.vegetarian, photo: getPhoto(`food/${f.id}`, locale), primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, typeLabel: t(`types.${f.type}`) };
   });
   const common = await getTranslations({ locale, namespace: "common" });
   return {
@@ -132,6 +131,16 @@ export async function getFinaleProps(locale: Locale) {
     closingSecondary: t("closingSecondary"),
   };
 }
+/** Modal prose for every place in one locale (served by app/[locale]/places.json). */
+export function getPlaceDetails(locale: Locale): Record<string, PlaceDetail> {
+  return Object.fromEntries(
+    places.map((raw) => {
+      const p = localize(raw, locale);
+      return [p.id, { summary: p.summary, story: p.story, tips: p.tips, sources: p.sources.map(({ title, url }) => ({ title, url })) }];
+    }),
+  );
+}
+
 export type FinaleProps = Awaited<ReturnType<typeof getFinaleProps>>;
 
 const PLACE_TYPES = ["ghat", "temple", "stupa", "monastery", "mosque", "church", "gurudwara", "math", "fort", "museum", "university", "heritage"];
@@ -139,14 +148,13 @@ const PLACE_TYPES = ["ghat", "temple", "stupa", "monastery", "mosque", "church",
 export async function getPlacesProps(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "places" });
   const devanagari = LOCALES[locale].script === "devanagari";
-  const publicDir = path.join(process.cwd(), "public");
   const items: ExplorerPlace[] = places.map((raw) => {
-    const { image, sources, ...rest } = localize(raw, locale);
+    const p = localize(raw, locale);
     return {
-      place: { ...rest, image, sources: sources.map(({ title, url }) => ({ title, url, accessed: "" })) },
+      place: { id: p.id, name_en: p.name_en, faith: p.faith, type: p.type, lat: p.lat, lng: p.lng, bestTime: p.bestTime, coordsVerified: p.coordsVerified },
       primaryName: devanagari ? raw.name_hi : raw.name_en,
       secondaryName: devanagari ? raw.name_en : raw.name_hi,
-      hasImage: existsSync(path.join(publicDir, raw.image)),
+      photo: getPhoto(`places/${raw.id}`, locale),
     };
   });
   const allFaiths: Faith[] = [...FAITHS, "secular"];

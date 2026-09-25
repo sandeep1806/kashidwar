@@ -4,7 +4,7 @@ import type Lenis from "lenis";
 import { useEffect, useSyncExternalStore, type ReactNode } from "react";
 import { prefersReducedMotion } from "@/lib/device";
 
-type GsapModule = typeof import("@/lib/gsap");
+export type GsapModule = typeof import("@/lib/gsap");
 
 /**
  * Tiny external stores so consumers can subscribe to the live Lenis instance

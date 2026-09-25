@@ -14,7 +14,7 @@ export default async function SiteFooter({ locale }: { locale: Locale }) {
   const year = new Date(latest + "T00:00:00Z").getUTCFullYear();
 
   return (
-    <footer className="relative border-t border-kashi-diya/20 bg-kashi-night/90 pb-24 pt-16 text-sm text-kashi-ash/80">
+    <footer className="cv-auto relative border-t border-kashi-diya/20 bg-kashi-night/90 pb-24 pt-16 text-sm text-kashi-ash/80">
       <div className="container-kashi grid gap-10 md:grid-cols-[1.2fr_1fr_1fr_1.4fr]">
         <div>
           <p className="flex items-center gap-3 font-display text-2xl text-kashi-white">
@@ -58,7 +58,7 @@ export default async function SiteFooter({ locale }: { locale: Locale }) {
           </ul>
         </div>
       </div>
-      <p className="container-kashi mt-12 border-t border-kashi-diya/10 pt-6 text-xs text-kashi-ash/50">{t("rights", { year })}</p>
+      <p className="container-kashi mt-12 border-t border-kashi-diya/10 pt-6 text-xs text-kashi-ash/70">{t("rights", { year })}</p>
     </footer>
   );
 }

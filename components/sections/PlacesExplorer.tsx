@@ -6,18 +6,31 @@ import StaggerCards from "@/components/motion/StaggerCards";
 import EnglishNote from "@/components/ui/EnglishNote";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 
+import Photo from "@/components/ui/Photo";
 import PlaceCard, { type PlaceLabels } from "@/components/ui/PlaceCard";
-import { PLACE_FILTERS, placeMatches, type Faith, type Place, type PlaceFilter } from "@/lib/contentTypes";
+import { PLACE_FILTERS, placeMatches, type Faith, type PhotoData, type PlaceDetail, type PlaceFilter, type PlaceLite as Place } from "@/lib/contentTypes";
 
 const KashiMap = dynamic(() => import("@/components/ui/KashiMap"), { ssr: false });
 // The modal brings `motion` with it; fetch it on first open, not on page load.
 const Modal = dynamic(() => import("@/components/ui/Modal"), { ssr: false });
 
+/** One fetch per page: the modal prose for every place in this locale. */
+let detailsPromise: Promise<Record<string, PlaceDetail>> | null = null;
+function loadDetails(url: string) {
+  detailsPromise ??= fetch(url)
+    .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+    .catch((e) => {
+      detailsPromise = null;
+      throw e;
+    });
+  return detailsPromise;
+}
+
 export interface ExplorerPlace {
   place: Place;
   primaryName: string;
   secondaryName: string;
-  hasImage: boolean;
+  photo: PhotoData | null;
 }
 
 export interface ExplorerLabels extends PlaceLabels {
@@ -80,9 +93,12 @@ function writePlaceParam(id: string | null) {
 export default function PlacesExplorer({
   items,
   labels,
+  detailsUrl,
 }: {
   items: ExplorerPlace[];
   labels: ExplorerLabels;
+  /** Prerendered JSON with each place's summary, story, tips and sources */
+  detailsUrl: string;
 }) {
   const hashFilter = useSyncExternalStore(subscribeHash, readHashFilter, () => null);
   const [picked, setPicked] = useState<PlaceFilter | null>(null);
@@ -152,7 +168,16 @@ export default function PlacesExplorer({
     mapHost.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
+  const [details, setDetails] = useState<Record<string, PlaceDetail> | null>(null);
+  const prefetch = useCallback(() => {
+    loadDetails(detailsUrl).then(setDetails, () => {});
+  }, [detailsUrl]);
+  useEffect(() => {
+    if (selected && !details) prefetch();
+  }, [selected, details, prefetch]);
+
   const sel = selected?.place;
+  const detail = sel ? details?.[sel.id] : undefined;
   const selFaiths: Faith[] = sel ? (sel.faith.length ? sel.faith : ["secular"]) : [];
 
   return (
@@ -178,6 +203,7 @@ export default function PlacesExplorer({
         {withCount(labels.results, visible.length)}
       </p>
 
+      <div onPointerOver={prefetch} onFocusCapture={prefetch}>
       <StaggerCards className="mt-10 grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map((item) => (
           <PlaceCard
@@ -185,12 +211,13 @@ export default function PlacesExplorer({
             place={item.place}
             primaryName={item.primaryName}
             secondaryName={item.secondaryName}
-            hasImage={item.hasImage}
+            photo={item.photo}
             labels={labels}
             onOpen={openPlace}
           />
         ))}
       </StaggerCards>
+      </div>
 
       <div
         ref={mapHost}
@@ -209,6 +236,13 @@ export default function PlacesExplorer({
 
       <Modal open={!!selected} onClose={close} labelledBy="place-modal-title" closeLabel={labels.close}>
         {selected && sel && (
+          <>
+          {selected.photo && (
+            <div className="arch relative mx-4 mt-4 aspect-[16/9] overflow-hidden sm:mx-6 sm:mt-6">
+              <Photo photo={selected.photo} sizes="(min-width: 768px) 720px, 92vw" />
+              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-kashi-night/70 to-transparent" />
+            </div>
+          )}
           <div className="p-6 sm:p-10">
             <p className="mb-2 flex flex-wrap items-center gap-2 text-xs text-kashi-diya">
               {selFaiths.map((f) => (
@@ -223,20 +257,28 @@ export default function PlacesExplorer({
               {selected.primaryName}
               <span className="mt-1 block font-body text-base tracking-normal text-kashi-ash/70">{selected.secondaryName}</span>
             </h3>
-            <p className="mt-6 text-lg leading-relaxed text-kashi-ash">{sel.summary}</p>
+            {detail ? (
+              <p className="mt-6 text-lg leading-relaxed text-kashi-ash">{detail.summary}</p>
+            ) : (
+              <div aria-hidden="true" className="mt-6 space-y-3">
+                <div className="h-4 w-full animate-pulse rounded bg-kashi-ash/10" />
+                <div className="h-4 w-11/12 animate-pulse rounded bg-kashi-ash/10" />
+                <div className="h-4 w-4/5 animate-pulse rounded bg-kashi-ash/10" />
+              </div>
+            )}
             {labels.englishNote && <EnglishNote text={labels.englishNote} className="mt-4" />}
-            {sel.story && <p className="mt-4 border-l-2 border-kashi-diya/50 pl-4 italic text-kashi-ash/85">{sel.story}</p>}
+            {detail?.story && <p className="mt-4 border-l-2 border-kashi-diya/50 pl-4 italic text-kashi-ash/85">{detail.story}</p>}
             <dl className="mt-6 grid gap-4 sm:grid-cols-2">
               <div>
                 <dt className="text-xs uppercase tracking-[0.18em] text-kashi-diya">{labels.bestTime}</dt>
                 <dd className="mt-1 text-kashi-ash/90">{sel.bestTime}</dd>
               </div>
-              {sel.tips?.length ? (
+              {detail?.tips?.length ? (
                 <div>
                   <dt className="text-xs uppercase tracking-[0.18em] text-kashi-diya">{labels.tips}</dt>
                   <dd className="mt-1">
                     <ul className="list-disc space-y-1 pl-4 text-kashi-ash/90">
-                      {sel.tips.map((t) => (
+                      {detail.tips.map((t) => (
                         <li key={t}>{t}</li>
                       ))}
                     </ul>
@@ -264,10 +306,10 @@ export default function PlacesExplorer({
               </button>
               {sel.coordsVerified === false && <span className="text-xs text-kashi-ash/60">{labels.approxCoords}</span>}
             </div>
-            {sel.sources.length > 0 && (
+            {detail && detail.sources.length > 0 && (
               <p className="mt-6 text-xs text-kashi-ash/60">
                 {labels.sources}:{" "}
-                {sel.sources.map((s, i) => (
+                {detail.sources.map((s, i) => (
                   <span key={s.url}>
                     {i > 0 && " · "}
                     <a href={s.url} target="_blank" rel="noopener noreferrer" className="underline decoration-kashi-diya/40 underline-offset-2 hover:text-kashi-diya">
@@ -278,6 +320,7 @@ export default function PlacesExplorer({
               </p>
             )}
           </div>
+          </>
         )}
       </Modal>
     </div>

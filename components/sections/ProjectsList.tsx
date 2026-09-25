@@ -1,12 +1,15 @@
 "use client";
 
 import StaggerCards from "@/components/motion/StaggerCards";
-import type { Project, ProjectStatus } from "@/lib/contentTypes";
+import CardPhoto from "@/components/ui/CardPhoto";
+import type { PhotoData, Project, ProjectStatus } from "@/lib/contentTypes";
 
-export interface ProjectItem extends Project {
+export interface ProjectItem extends Pick<Project, "id" | "status" | "type" | "agency" | "timeline" | "summary" | "verified" | "lastVerified"> {
+  sources: { title: string; url: string }[];
   primaryName: string;
   secondaryName: string;
   lastVerifiedLabel: string;
+  photo: PhotoData | null;
 }
 export interface ProjectLabels {
   groups: Record<ProjectStatus, string>;
@@ -46,7 +49,8 @@ export default function ProjectsList({ groups, labels }: { groups: { status: Pro
           </h3>
           <StaggerCards className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {g.items.map((p) => (
-              <article key={p.id} className="grain relative flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-6 transition-[translate,border-color,box-shadow] duration-500 ease-enter hover:-translate-y-1 hover:border-kashi-diya/50 hover:shadow-glow">
+              <article key={p.id} className="group grain relative flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-6 transition-[translate,border-color,box-shadow] duration-500 ease-enter hover:-translate-y-1 hover:border-kashi-diya/50 hover:shadow-glow">
+                <CardPhoto photo={p.photo} className="-mx-3 -mt-3 mb-5" />
                 <div className="flex flex-wrap items-center gap-2">
                   <StatusBadge status={p.status} label={labels.groups[p.status]} />
                   <span className="rounded-full bg-kashi-rudraksha/50 px-2 py-0.5 text-[0.7rem] text-kashi-ash/80">{labels.types[p.type]}</span>

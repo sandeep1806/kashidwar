@@ -300,6 +300,7 @@
   "credits": {
     "title": "Credits",
     "intro": "The photographs on this site come from Wikimedia Commons and are used under their free licences. Each is listed with its author, licence and original file.",
+    "changes": "Changes: every photograph has been resized and colour-graded for this site, and some have been cropped.",
     "photos": "Photographs",
     "none": "No photographs are in use yet.",
     "other": "Maps, type and data",

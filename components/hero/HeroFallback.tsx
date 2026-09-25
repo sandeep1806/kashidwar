@@ -1,3 +1,5 @@
+import type { PhotoData } from "@/lib/contentTypes";
+
 /**
  * Static hero art: pre-dawn sky, a hazy far bank, and a scatter of diyas on
  * dark water. Server-rendered SVG, so it paints with the first HTML and is the
@@ -29,13 +31,17 @@ const DIYAS: { x: number; y: number; r: number; d: number }[] = [
   { x: 215, y: 574, r: 2.5, d: 0.3 },
 ];
 
-export default function HeroFallback() {
+/** 1×1 transparent GIF: wide screens pick this source, so they never fetch the photo. */
+const NOTHING = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+
+export default function HeroFallback({ photo }: { photo?: PhotoData | null }) {
   return (
     <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
       <svg
         viewBox="0 0 1600 900"
         preserveAspectRatio="xMidYMid slice"
-        className="h-full w-full"
+        // Phones show the photo instead, so the drawing is not laid out there.
+        className={photo ? "hidden h-full w-full md:block" : "h-full w-full"}
       >
         <defs>
           <linearGradient id="hf-sky" x1="0" y1="0" x2="0" y2="1">
@@ -97,6 +103,25 @@ export default function HeroFallback() {
           />
         ))}
       </svg>
+      {photo && (
+        // Phones get a real dawn photograph instead of the drawn river. It is
+        // the LCP image there, so it loads eagerly with high priority.
+        <picture>
+          <source media="(min-width: 768px)" srcSet={NOTHING} />
+          <source type="image/avif" srcSet={photo.widths.map((w) => `${photo.src}-${w}.avif ${w}w`).join(", ")} sizes="100vw" />
+          <source type="image/webp" srcSet={photo.widths.map((w) => `${photo.src}-${w}.webp ${w}w`).join(", ")} sizes="100vw" />
+          <img
+            src={`${photo.src}-${photo.widths[0]}.webp`}
+            alt=""
+            width={photo.width}
+            height={photo.height}
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover md:hidden"
+            style={{ backgroundImage: `url(${photo.blur})`, backgroundSize: "cover" }}
+          />
+        </picture>
+      )}
     </div>
   );
 }

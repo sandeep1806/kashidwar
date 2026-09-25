@@ -21,7 +21,7 @@ export default async function Places({ locale }: { locale: Locale }) {
           <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{t("intro")}</p>
         </Reveal>
       </div>
-      <PlacesExplorer items={items} labels={labels} />
+      <PlacesExplorer items={items} labels={labels} detailsUrl={`/${locale}/places.json`} />
     </section>
   );
 }

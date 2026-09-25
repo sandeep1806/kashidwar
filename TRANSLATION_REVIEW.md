@@ -30,7 +30,7 @@ All non-English, non-Hindi strings were machine-generated in one pass on 2026-09
 - **Translated (2026-09-25, machine, unreviewed):** place `summary` and festival `summary` / `when` / `where` for all 11 regional locales. The sources are `content/i18n/<locale>.json`, merged into `i18n.<locale>` blocks by `node scripts/merge-i18n.mjs`. Edit the per-locale file, then re-run the script.
 - **Still English in regional locales:** place stories, tips and timelines, projects, food, itineraries. These sections show the localized "content shown in English" note (`common.englishNote`).
 - Regional-script transliterations of place/festival/food names (e.g. காசி விஸ்வநாத் கோயில்). Add as `name_<locale>` fields if wanted; `Places.tsx` would need to prefer them.
-- Photo alt text is written in English and Hindi only.
+- Photo alt text: English and Hindi are in `scripts/image-picks.json`; the 11 regional locales are machine-translated in `content/i18n/alt-<locale>.json` (unreviewed). Re-run `node scripts/optimize-images.mjs` after editing them.
 
 ## Priority 1b — terms flagged by the translators (content prose)
 **Every regional locale**
@@ -48,6 +48,22 @@ All non-English, non-Hindi strings were machine-generated in one pass on 2026-09
 | Loanwords and coinages | Louvred doors (paraphrased in most files), spire, relief map, ochre, corridor (pa ਕੋਰੀਡੋਰ, sa वीथिकापथः). Sanskrit coinages: मस्जिद्-भवनम्, चर्च-भवनम्, आरक्षिप्रमुखः, हेलिकॉप्टर-अवतरणस्थलम्, ध्वनिविस्तारकयन्त्राणि, सैन्यनिवेशः; "ghat" as घट्टः in compounds. |
 | Small meaning shifts | Sarnath "43 metres of brick" became "43 metres tall" in ml/bn/or. "Play through the night for free" is ambiguous in English and kept ambiguous. Bharat Mata "no deity" became "no idol" in te/kn. mr/gu: "million" as ten lakh; अविभाजित used instead of अखंड भारत. |
 | Source fix | Bari Sangat's Guru Gobind Singh line now says he came in 1670 as a child, on the way from Patna to the Punjab. Regional files still say only "visited in 1670", which is correct but shorter. |
+
+## Priority 1c — photo alt text terms flagged by the translators
+| Locale | Check |
+|---|---|
+| ta | தசாஸ்வமேத் காட் and the mix of காட் / படித்துறை; சமணக் கோயில் for Jain temple; மலைய்யோ, தமாட்டர் சாட், லௌங்லதா, கேன்ட் |
+| te | ఠండాయి; డ్రైఫ్రూట్స్ for "nuts"; గోయింద్‌వాల్ బావోలీ సాహిబ్; ఉబ్బెత్తు పటం (relief map) |
+| kn | ಬಸದಿ vs ದೇವಾಲಯ for Jain temples; ಕ್ಯಾಥೊಲಿಕ್ ಪ್ರಧಾನಾಲಯ; ಉಬ್ಬು ನಕ್ಷೆ; ಗೋಇಂದವಾಲ್ |
+| ml | Bharat Mata relief-map phrasing; താസിയ; പരിപ്പുകൾ for "nuts"; കാന്റ് |
+| bn | ধামেক vs धमेख; টমাটর চাট kept as the dish name; কুলহড় vs ভাঁড় |
+| or | ଲଉଙ୍ଗଲତା, ସୋନୱା ମଣ୍ଡପ, ଗୋଇନ୍ଦୱାଲ; ଉଠାଣିଆ ଭାବେ ଖୋଦିତ for "in relief"; କ୍ୟାଣ୍ଟୋନମେଣ୍ଟ |
+| as | সীৰ গোবৰ্ধনপুৰ (স vs ছ); চাহিব vs ছাহিব; দোলা for palanquin; উচ্চাৱচ মানচিত্ৰ |
+| mr | ताजिया vs the more common ताबूत; मोहरम; संगममसाठी; वालुकाश्म for sandstone |
+| gu | રેતિયો પથ્થર; ઓટલા; મોહરમ / તાજિયો; સબ્જી (Gujarati usually says શાક) |
+| pa | ਸ੍ਰੀ ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ, ਸ੍ਰੀ ਗੁਰੂ ਰਵਿਦਾਸ ਜੀ, ਭਗਤ ਕਬੀਰ ਜੀ; ਮੰਦਰ for the Guru Ravidas Janam Asthan; ਨਾਮ-ਫੱਟਾ |
+| sa | घट्ट for ghat; मस्जिद् case forms; वयनयन्त्र (loom); नदीविहारनौका (cruise ship); महागिरिजागृहम् (cathedral); mixed Hindi food words |
+| all | Nag Nathaiya, Sonwa Mandap, Seer Goverdhanpur, Mulagandha Kuti Vihar, Rangbhari spellings; "St. Mary's" transliterated vs a local word for saint |
 
 ## Locale ↔ font check
 Fonts load per script via `lib/fonts.ts`. Verses in Gurmukhi, Arabic and Greek inside the Faiths tiles render with system fonts on locales that don't load those scripts; if they look wrong on a target device, add `preload: false` subset faces for `gurmukhi` and an Arabic Noto face.

@@ -207,7 +207,7 @@ export type PlaceFilter = (typeof PLACE_FILTERS)[number];
 
 const HERITAGE_TYPES: PlaceType[] = ["fort", "museum", "heritage", "university"];
 
-export function placeMatches(place: Place, filter: PlaceFilter): boolean {
+export function placeMatches(place: Pick<Place, "type" | "faith">, filter: PlaceFilter): boolean {
   switch (filter) {
     case "all":
       return true;
@@ -222,3 +222,25 @@ export function placeMatches(place: Place, filter: PlaceFilter): boolean {
   }
 }
 
+
+/** A self-hosted photo set: `${src}-${width}.avif|webp` for each width. */
+export interface PhotoData {
+  src: string;
+  widths: number[];
+  width: number;
+  height: number;
+  /** Tiny WebP data URL shown while the photo loads */
+  blur: string;
+  alt: string;
+}
+
+/** The part of a place the grid, filters and map need on page load. */
+export type PlaceLite = Pick<Place, "id" | "name_en" | "faith" | "type" | "lat" | "lng" | "bestTime" | "coordsVerified">;
+
+/** Modal prose, fetched from /<locale>/places.json when a modal opens. */
+export interface PlaceDetail {
+  summary: string;
+  story?: string;
+  tips?: string[];
+  sources: { title: string; url: string }[];
+}
