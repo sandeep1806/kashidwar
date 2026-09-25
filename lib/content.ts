@@ -2,6 +2,7 @@
  * Typed access to /content JSON. Never hardcode copy in JSX — add it here.
  * Schemas follow CLAUDE.md → Content rules.
  */
+import faithsJson from "@/content/faiths.json";
 import festivalsJson from "@/content/festivals.json";
 import foodJson from "@/content/food.json";
 import itinerariesJson from "@/content/itineraries.json";
@@ -148,6 +149,27 @@ export interface Itinerary {
   plan: ItineraryDay[];
 }
 
+export interface FaithVerse {
+  original: string;
+  transliteration: string;
+  /** BCP-47 of the original text (sa, pi, ar, pa, grc, hi) */
+  lang: string;
+  dir: "ltr" | "rtl";
+  attribution: string;
+}
+
+export interface FaithEntry {
+  id: Faith;
+  /** Order of arrival in Kashi (locale-independent, unlike alphabetical) */
+  order: number;
+  /** Places filter this faith deep-links to */
+  filter: PlaceFilter;
+  /** Place ids shown as key sites */
+  sites: string[];
+  verse: FaithVerse;
+}
+
+export const faithEntries = (faithsJson as FaithEntry[]).slice().sort((a, b) => a.order - b.order);
 export const places = placesJson as Place[];
 export const projects = projectsJson as Project[];
 export const festivals = festivalsJson as Festival[];

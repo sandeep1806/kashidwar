@@ -359,3 +359,8 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
   background: color-mix(in oklab, var(--kashi-night) 85%, transparent); border: 1.5px solid var(--kashi-diya);
   color: var(--kashi-diya); font-size: 14px; box-shadow: 0 0 14px rgba(255, 210, 122, 0.35); cursor: pointer;
 }
+
+/* Phase 5: status pulse (under construction) */
+@keyframes status-pulse { 0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(224, 120, 42, 0.6); } 50% { opacity: 0.6; box-shadow: 0 0 0 5px rgba(224, 120, 42, 0); } }
+.status-pulse { animation: status-pulse 1.8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .status-pulse { animation: none; } }

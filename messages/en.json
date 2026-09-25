@@ -116,5 +116,73 @@
     "mapLoading": "Loading the map…",
     "approxCoords": "Location approximate",
     "cluster": "{count} places — click to zoom"
+  },
+  "faiths": {
+    "title": "One Kashi, every faith",
+    "titleSecondary": "एक काशी, हर आस्था",
+    "intro": "The city belongs to no one tradition. Each has its own morning here, and all share one river. Below, in order of arrival, each with equal room.",
+    "order": "In order of arrival in Kashi",
+    "seePlaces": "See places",
+    "verseLabel": "A line",
+    "tiles": {
+      "hindu": {
+        "name": "Hindu",
+        "essence": "Shiva's own city, where even death is release.",
+        "translation": "To die in Kashi is liberation."
+      },
+      "jain": {
+        "name": "Jain",
+        "essence": "Birthplace of Parshvanath, the 23rd Tirthankara.",
+        "translation": "Souls render service to one another."
+      },
+      "buddhist": {
+        "name": "Buddhist",
+        "essence": "Sarnath, where the Buddha first taught.",
+        "translation": "May all beings be happy."
+      },
+      "islamic": {
+        "name": "Islamic",
+        "essence": "The weavers' lanes, a shared Ganga-Jamuni culture, minarets above the river.",
+        "translation": "In the name of God, the Most Gracious, the Most Merciful."
+      },
+      "bhakti": {
+        "name": "Bhakti saints",
+        "essence": "Kabir, Ravidas, Tulsidas: voices larger than temple or mosque.",
+        "translation": "Where do you search for me, friend? I am right beside you."
+      },
+      "sikh": {
+        "name": "Sikh",
+        "essence": "The sangat of Guru Nanak and Guru Tegh Bahadur at Nichibagh.",
+        "translation": "One Creator, whose name is Truth."
+      },
+      "christian": {
+        "name": "Christian",
+        "essence": "A two-hundred-year-old church in the Cantonment, and the city's schools and hospitals.",
+        "translation": "I am the light of the world."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects & the new Kashi",
+    "titleSecondary": "नई काशी",
+    "intro": "Beside the old city a new one is being built. Every status here was checked against a source; anything that could not be confirmed is listed as announced.",
+    "groups": {
+      "under_construction": "Under construction",
+      "announced": "Announced",
+      "completed": "Completed"
+    },
+    "agency": "Agency",
+    "timeline": "Timeline",
+    "sources": "Sources",
+    "lastVerified": "Last verified",
+    "unverified": "Not confirmed by an official source",
+    "legend": "Status",
+    "types": {
+      "transport": "Transport",
+      "heritage": "Heritage",
+      "tourism": "Tourism",
+      "infrastructure": "Infrastructure",
+      "culture": "Culture"
+    }
   }
 }

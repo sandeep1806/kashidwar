@@ -117,3 +117,36 @@ Loader 2.2 s (DESIGN.md said ≤ 1.8 s; overridden by checkpoint feedback), wate
 - Clustering is in-house (no `leaflet.markercluster`): 22 pins do not justify a dependency.
 - Summaries, tips and stories are English in `places.json` for every locale until Phase 7 decides where translated content lives.
 - `motion` is now in the client bundle for the modal (first use of the package).
+
+## Phase 5 — Faiths + Government projects · 2026-09-25 · ✅ (CHECKPOINT)
+
+**Did**
+- **One Kashi, every faith** (`components/sections/Faiths.tsx`, `content/faiths.json`): seven identical tiles — Hindu, Jain, Buddhist, Islamic, Bhakti saints, Sikh, Christian — ordered by arrival in the city (locale-independent, unlike alphabetical), each with its line glyph, one-line essence, a verse in its own script + transliteration + translation + attribution, key sites, and "See places" deep-linking to `#places/<filter>` (Hindu → Temples). Verses: Kāśī Khaṇḍa saying, Tattvārtha Sūtra 5.21, Pāli mettā line, Bismillāh, Kabīr's "Moko kahān ḍhūnḍhe", Mūl Mantar (Gurmukhi), John 8:12 (Greek).
+- **Projects** (`components/sections/Projects.tsx`, `content/projects.json`): 14 entries, each web-checked on 2026-09-25 with cited sources, `status`, `agency`, `timeline`, `verified`, `lastVerified`. Grouped Under construction → Announced → Completed; status badges per DESIGN.md (gold / saffron pulse / ash outline), agency, timeline, source links, per-card and section-level "last verified" dates, and a warning line on unverified items.
+
+**Statuses found (2026-09-25)**
+| Project | Status | Key fact |
+|---|---|---|
+| Kashi Vishwanath Corridor | completed | inaugurated 13 Dec 2021 |
+| Namo Ghat | completed | inaugurated 15 Nov 2024, ₹91.06 cr |
+| Ropeway (Cantt–Godowlia) | under construction | trials since Jul 2025; opening target slipped to Nov 2026 |
+| Ganga cruises / terminal | completed | Ganga Vilas 13 Jan 2023; Ravidas Ghat cruises; Tent City Oct–Jun |
+| Rudraksh Convention Centre | completed | 15 Jul 2021, JICA grant aid |
+| Varanasi Cantt station | **announced, verified: false** | 2018 list + Amrit Bharat scope; no dated source |
+| Banaras station (Manduadih) | completed | RITES ₹118 cr, 2018; renamed 2020–21 |
+| Ring Road | under construction | 61 km open except 2nd Ganga-bridge carriageway (Dec 2025) |
+| Airport expansion | under construction | ₹2,869.65 cr, target end-2026 |
+| Sarnath redevelopment | completed | works inaugurated; **UNESCO inscription 25 Jul 2026** |
+| Kashi Tamil Sangamam | completed | 4th edition 2–15 Dec 2025 |
+| Ganjari cricket stadium (new) | under construction | ~75 % built, expected late 2026 |
+| Heritage corridors + 119 parks (new) | announced | ₹69 cr, Sep 2026 |
+| ₹24,000 cr highway package (new) | **announced, verified: false** | secondary reporting only |
+
+**Verification**
+- build ✅ lint ✅ tsc ✅. Puppeteer: 7 tiles, 14 project cards, Jain tile → `#places/jain` with the grid filtered; console clean desktop + mobile. Lighthouse in the checkpoint report.
+
+**Decisions / needs review**
+- Order of faiths = arrival in Kashi. Alphabetical would change per language; antiquity is the same for everyone. Say if you'd rather alphabetical-in-English.
+- Verses: Gurmukhi and Arabic render in system fonts on non-Punjabi locales (Noto Gurmukhi is only loaded for `pa`); Phase 7 can add a small subset font if the fallbacks look poor on your devices.
+- Projects `verified: false` for two items; the ropeway's opening date has moved three times, so it is marked under construction with the latest target only.
+- Project cards have no images yet (placeholders not shown; the card is text-first by design).

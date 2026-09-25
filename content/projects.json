@@ -3,7 +3,9 @@
     "id": "kashi-vishwanath-corridor",
     "name_en": "Shri Kashi Vishwanath Dham (Corridor)",
     "name_hi": "श्री काशी विश्वनाथ धाम",
-    "faith": ["hindu"],
+    "faith": [
+      "hindu"
+    ],
     "type": "heritage",
     "lat": 25.3106,
     "lng": 83.0116,
@@ -14,17 +16,17 @@
     "agency": "Shri Kashi Vishwanath Special Area Development Board, Government of Uttar Pradesh",
     "timeline": "Foundation March 2019 · Inaugurated 13 December 2021 · Phase 2 expansion announced",
     "verified": true,
-    "lastVerified": "2026-09-24",
+    "lastVerified": "2026-09-25",
     "sources": [
       {
         "title": "Outlook India — PM Modi to inaugurate Kashi Vishwanath Corridor",
         "url": "https://www.outlookindia.com/national/india-news-pm-modi-to-inaugurate-kashi-vishwanath-corridor-project-this-month-news-403579",
-        "accessed": "2026-09-24"
+        "accessed": "2026-09-25"
       },
       {
         "title": "BYJU'S — What is Kashi Vishwanath Corridor Project?",
         "url": "https://byjus.com/current-affairs/kashi-vishwanath-temple-corridor/",
-        "accessed": "2026-09-24"
+        "accessed": "2026-09-25"
       }
     ]
   },
@@ -34,8 +36,8 @@
     "name_hi": "नमो घाट",
     "faith": [],
     "type": "tourism",
-    "lat": 25.3253,
-    "lng": 83.0343,
+    "lat": 25.3265,
+    "lng": 83.0385,
     "summary": "The old Khidkiya Ghat rebuilt across 81,000 sq m with an open-air theatre, floating jetty and bathing areas, a helipad and step-free access — the first ghat in Varanasi accessible to differently-abled visitors. Inaugurated 15 November 2024.",
     "bestTime": "Sunset, and Dev Deepawali evening",
     "image": "/media/projects/namo-ghat.jpg",
@@ -43,17 +45,17 @@
     "agency": "Varanasi Smart City Ltd with Indian Oil Foundation",
     "timeline": "Phase 1 opened 2022 · Full inauguration 15 November 2024 · Cost ₹91.06 crore",
     "verified": true,
-    "lastVerified": "2026-09-24",
+    "lastVerified": "2026-09-25",
     "sources": [
       {
         "title": "ThePrint — Vice President Dhankhar to inaugurate Namo Ghat in Varanasi",
         "url": "https://theprint.in/india/vice-president-dhankhar-to-inaugurate-namo-ghat-in-varanasi-on-friday/2356944/",
-        "accessed": "2026-09-24"
+        "accessed": "2026-09-25"
       },
       {
         "title": "Kashi Official Web Portal — Namo Ghat",
         "url": "https://kashi.gov.in/project-details/namo-ghat",
-        "accessed": "2026-09-24"
+        "accessed": "2026-09-25"
       }
     ]
   },
@@ -65,19 +67,335 @@
     "type": "transport",
     "lat": 25.3282,
     "lng": 82.9866,
-    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple. About 150 ten-seat cabins are planned, with a trip time of roughly 16 minutes.",
+    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple, in about 16 minutes. Trial runs began in July 2025; opening targets have moved from late 2025 to May 2026 and now to November 2026.",
     "bestTime": "Not yet open to the public",
     "image": "/media/projects/varanasi-ropeway.jpg",
     "status": "under_construction",
     "agency": "National Highways Logistics Management Ltd (NHLML) · built by Vishwa Samudra Engineering",
-    "timeline": "Foundation March 2023 · Trial runs 2025 · Opening targeted late 2026 (source: Wikipedia, to be re-verified in Phase 5)",
+    "timeline": "Foundation March 2023 · Trial runs from July 2025 · Opening now targeted for November 2026 (dates have slipped repeatedly)",
     "verified": true,
-    "lastVerified": "2026-09-24",
+    "lastVerified": "2026-09-25",
     "sources": [
       {
         "title": "Wikipedia — Kashi ropeway",
         "url": "https://en.wikipedia.org/wiki/Kashi_ropeway",
-        "accessed": "2026-09-24"
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Tirtha Yatra — Kashi ropeway set for May 2026 launch",
+        "url": "https://www.tirthayatra.org/varanasi-rope-car-to-carry-2-lakh-pilgrims-daily-kashi-project-set-for-may-2026-launch/",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "ganga-cruise",
+    "name_en": "Ganga cruises & cruise terminal",
+    "name_hi": "गंगा क्रूज़ व क्रूज़ टर्मिनल",
+    "faith": [],
+    "type": "tourism",
+    "lat": 25.2843,
+    "lng": 83.004,
+    "summary": "MV Ganga Vilas, the world's longest river cruise, was flagged off from Varanasi on 13 January 2023 for its 51-day run to Dibrugarh. Day cruises (Alaknanda, Gangotri and others) now run from Ravidas Ghat, and the Varanasi Development Authority's PPP Tent City on the far bank operates each October to June.",
+    "bestTime": "October–March evenings for the aarti cruise",
+    "image": "/media/projects/ganga-cruise.jpg",
+    "status": "completed",
+    "agency": "Inland Waterways Authority of India · Varanasi Development Authority (Tent City, PPP) · private operators",
+    "timeline": "Ganga Vilas flagged off 13 January 2023 · Tent City seasonal since 2023 · new cruise vessels added 2025–26",
+    "verified": true,
+    "lastVerified": "2026-09-25",
+    "sources": [
+      {
+        "title": "PM flags off MV Ganga Vilas in Varanasi",
+        "url": "https://www.pmindia.gov.in/en/news_updates/pm-flags-off-worlds-longest-river-cruise-mv-ganga-vilas-in-varanasi-via-video-conferencing/",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Kashi Darshan — River cruise at Ganga",
+        "url": "https://darshan.kashi.gov.in/explore-service/river-cruise-at-ganga",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "rudraksh-convention-centre",
+    "name_en": "Rudraksh International Cooperation & Convention Centre",
+    "name_hi": "रुद्राक्ष अंतरराष्ट्रीय सहयोग एवं सम्मेलन केंद्र",
+    "faith": [],
+    "type": "culture",
+    "lat": 25.3167,
+    "lng": 82.988,
+    "summary": "A 1,200-seat convention centre at Sigra built with Japanese grant aid through JICA, its façade studded with 108 rudraksha beads and its roof shaped like a Shiva linga. Inaugurated 15 July 2021; it hosts summits, concerts and the city's larger cultural festivals.",
+    "bestTime": "Check the events calendar; the building is lit after dark",
+    "image": "/media/projects/rudraksh.jpg",
+    "status": "completed",
+    "agency": "Government of India with Japan International Cooperation Agency (JICA) grant aid · operated by Varanasi Smart City Ltd",
+    "timeline": "Agreement 2015 · Construction 2018–2021 · Inaugurated 15 July 2021",
+    "verified": true,
+    "lastVerified": "2026-09-25",
+    "sources": [
+      {
+        "title": "PIB — PM inaugurates Rudraksh convention centre",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1735851",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Embassy of Japan in India — Varanasi convention centre opened",
+        "url": "https://www.in.emb-japan.go.jp/itpr_ja/11_000001_00283.html",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "varanasi-cantt-station",
+    "name_en": "Varanasi Cantt (Junction) station redevelopment",
+    "name_hi": "वाराणसी कैंट (जंक्शन) स्टेशन पुनर्विकास",
+    "faith": [],
+    "type": "transport",
+    "lat": 25.329,
+    "lng": 82.986,
+    "summary": "The city's main station was listed in 2018 among 90 stations to be rebuilt as 'world-class' hubs, and falls under the Amrit Bharat Station scheme. Facade, concourse and platform works have been reported, but no dated completion or budget could be confirmed from an official source.",
+    "bestTime": "—",
+    "image": "/media/projects/varanasi-cantt.jpg",
+    "status": "announced",
+    "agency": "Indian Railways (North Eastern / Northern Railway) · Amrit Bharat Station Scheme",
+    "timeline": "Listed for redevelopment 2018 · Amrit Bharat scheme scope · completion date unconfirmed",
+    "verified": false,
+    "lastVerified": "2026-09-25",
+    "sources": [
+      {
+        "title": "Wikipedia — Varanasi Junction railway station",
+        "url": "https://en.wikipedia.org/wiki/Varanasi_Cantonment_Railway_Station",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "PIB — Amrit Bharat Station Scheme progress",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2238954&reg=3&lang=2",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "banaras-station",
+    "name_en": "Banaras railway station (Manduadih)",
+    "name_hi": "बनारस रेलवे स्टेशन (मंडुआडीह)",
+    "faith": [],
+    "type": "transport",
+    "lat": 25.3065,
+    "lng": 82.9535,
+    "summary": "Manduadih was rebuilt by RITES for about ₹118 crore into a modern terminal with an airport-style concourse, completed in 2018, and renamed Banaras (code BSBS) in 2020–21. Further upgrades continue under the Amrit Bharat scheme.",
+    "bestTime": "—",
+    "image": "/media/projects/banaras-station.jpg",
+    "status": "completed",
+    "agency": "Indian Railways (North Eastern Railway) · RITES Ltd",
+    "timeline": "Modernisation completed 2018 · Renamed Banaras September 2020, effective 2021",
+    "verified": true,
+    "lastVerified": "2026-09-25",
+    "sources": [
+      {
+        "title": "Wikipedia — Banaras railway station",
+        "url": "https://en.wikipedia.org/wiki/Banaras_railway_station",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Kashi Official Web Portal — Modernisation of Banaras railway station",
+        "url": "https://kashi.gov.in/project-details/modernisation-of-banras-railway-station",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "varanasi-ring-road",
+    "name_en": "Varanasi Ring Road",
+    "name_hi": "वाराणसी रिंग रोड",
+    "faith": [],
+    "type": "transport",
+    "lat": 25.4,
+    "lng": 82.95,
+    "summary": "A 61 km orbital road in phases: Phase 1 (Harhua–Sandaha) is open; Phase 2 (Rajatalab–Harhua, with a new bridge over the Ganga) opened one carriageway of the bridge in December 2025, leaving the second carriageway to finish. Keeps through-traffic to Lucknow, Prayagraj, Azamgarh and Ghazipur out of the city.",
+    "bestTime": "—",
+    "image": "/media/projects/ring-road.jpg",
+    "status": "under_construction",
+    "agency": "National Highways Authority of India (NHAI)",
+    "timeline": "Phase 1 opened 2018 · Phase 2 substantially open December 2025 · second Ganga-bridge carriageway pending",
+    "verified": true,
+    "lastVerified": "2026-09-25",
+    "sources": [
+      {
+        "title": "Kashi Official Web Portal — Ring Road Phase 2",
+        "url": "https://kashi.gov.in/project-details/varanasi-ring-road-phase-2-construction-of-rajatalab-to-bajidpur-harhua",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Kashi Official Web Portal — Ring Road Phase 1",
+        "url": "https://kashi.gov.in/project-details/varanasi-ring-road-phase-i",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "airport-expansion",
+    "name_en": "Lal Bahadur Shastri Airport expansion",
+    "name_hi": "लाल बहादुर शास्त्री हवाई अड्डा विस्तार",
+    "faith": [],
+    "type": "transport",
+    "lat": 25.4525,
+    "lng": 82.8594,
+    "summary": "A ₹2,869.65 crore expansion approved by the Union Cabinet in June 2024: a new 75,000 sq m terminal for 6 million passengers a year, runway extension with an under-runway road tunnel, parallel taxiway and apron. In June 2026 the civil aviation minister asked for completion within six months.",
+    "bestTime": "—",
+    "image": "/media/projects/airport.jpg",
+    "status": "under_construction",
+    "agency": "Airports Authority of India (AAI)",
+    "timeline": "Cabinet approval June 2024 · Under construction · Target end of 2026",
+    "verified": true,
+    "lastVerified": "2026-09-25",
+    "sources": [
+      {
+        "title": "PIB — Cabinet approves development of Lal Bahadur Shastri International Airport",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2026702&reg=48&lang=2",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Impressive Times — minister pushes for early completion (June 2026)",
+        "url": "https://impressivetimes.com/national/varanasi-airport-new-terminal-expansion-ram-mohan-naidu/",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "sarnath-redevelopment",
+    "name_en": "Sarnath redevelopment & UNESCO listing",
+    "name_hi": "सारनाथ पुनर्विकास व यूनेस्को सूची",
+    "faith": [
+      "buddhist"
+    ],
+    "type": "heritage",
+    "lat": 25.3808,
+    "lng": 83.0245,
+    "summary": "Pedestrian-friendly streets, new sewers and drainage, and organised vending zones around the Buddhist site were inaugurated by the Prime Minister; food-street hubs at Sarnath and Maidagin followed. On 25 July 2026 the 'Ancient Buddhist Site, Sarnath' was inscribed on the UNESCO World Heritage List, India's 45th, and construction within 100 m of the heritage zone is now barred.",
+    "bestTime": "Sunrise at the stupa; Buddha Purnima",
+    "image": "/media/projects/sarnath.jpg",
+    "status": "completed",
+    "agency": "Uttar Pradesh Tourism · Varanasi Smart City Ltd · Archaeological Survey of India · Varanasi Development Authority",
+    "timeline": "Tourism works inaugurated 2024–25 · UNESCO inscription 25 July 2026 · heritage-zone building checks from September 2026",
+    "verified": true,
+    "lastVerified": "2026-09-25",
+    "sources": [
+      {
+        "title": "UNESCO — Ancient Buddhist Site of Sarnath inscribed",
+        "url": "https://www.unesco.org/en/articles/ancient-buddhist-site-sarnath-inscribed-unesco-world-heritage-list",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "PM inaugurates development projects in Varanasi",
+        "url": "https://www.pmindia.gov.in/en/news_updates/pm-lays-foundation-stone-and-inaugurates-multiple-development-projects-in-varanasi-uttar-pradesh/",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "kashi-tamil-sangamam",
+    "name_en": "Kashi Tamil Sangamam",
+    "name_hi": "काशी तमिल संगमम",
+    "faith": [],
+    "type": "culture",
+    "lat": 25.2677,
+    "lng": 82.9913,
+    "summary": "An annual festival of Tamil–Kashi ties: delegations from Tamil Nadu, exhibitions, music, food and academic exchange between IIT Madras and BHU. The fourth edition ran 2–15 December 2025 on the theme 'Learn Tamil'.",
+    "bestTime": "Early December, Namo Ghat and BHU venues",
+    "image": "/media/projects/kashi-tamil-sangamam.jpg",
+    "status": "completed",
+    "agency": "Ministry of Education, Government of India · IIT Madras · Banaras Hindu University",
+    "timeline": "First edition November 2022 · Fourth edition 2–15 December 2025 · next edition expected December 2026",
+    "verified": true,
+    "lastVerified": "2026-09-25",
+    "sources": [
+      {
+        "title": "PIB — Kashi Tamil Sangamam 4.0",
+        "url": "https://www.pib.gov.in/PressNoteDetails.aspx?NoteId=156270&ModuleId=3&reg=3&lang=1",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "News On AIR — Fourth edition of Kashi Tamil Sangamam begins",
+        "url": "https://www.newsonair.gov.in/fourth-edition-of-kashi-tamil-sangamam-to-begin-in-varanasi",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "ganjari-cricket-stadium",
+    "name_en": "Varanasi International Cricket Stadium, Ganjari",
+    "name_hi": "वाराणसी अंतरराष्ट्रीय क्रिकेट स्टेडियम, गंजारी",
+    "faith": [],
+    "type": "infrastructure",
+    "lat": 25.2286,
+    "lng": 82.8531,
+    "summary": "A 30,000-seat stadium at Ganjari, Rajatalab, designed around Shiva motifs: trishul-shaped floodlights, a damru-shaped canopy, crescent forms. Foundation laid 23 September 2023 at about ₹450 crore; roughly three-quarters built by 2026 and expected to open during the year.",
+    "bestTime": "—",
+    "image": "/media/projects/cricket-stadium.jpg",
+    "status": "under_construction",
+    "agency": "Board of Control for Cricket in India (BCCI) with Uttar Pradesh Cricket Association; land from Government of Uttar Pradesh",
+    "timeline": "Foundation 23 September 2023 · ~70–75% complete in 2026 · opening expected late 2026",
+    "verified": true,
+    "lastVerified": "2026-09-25",
+    "sources": [
+      {
+        "title": "Wikipedia — Varanasi Cricket Stadium",
+        "url": "https://en.wikipedia.org/wiki/Varanasi_Cricket_Stadium",
+        "accessed": "2026-09-25"
+      },
+      {
+        "title": "Kashi Official Web Portal — Varanasi International Cricket Stadium",
+        "url": "https://kashi.gov.in/project-details/varanasi-international-cricket-stadium",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "heritage-corridors-parks",
+    "name_en": "Heritage corridors & 119 parks renovation",
+    "name_hi": "विरासत गलियारे व 119 पार्कों का कायाकल्प",
+    "faith": [],
+    "type": "tourism",
+    "lat": 25.3176,
+    "lng": 83.006,
+    "summary": "Announced in September 2026: about ₹69 crore to revitalise heritage corridors in the old city and renovate 119 municipal parks with lighting, planting and seating.",
+    "bestTime": "—",
+    "image": "/media/projects/heritage-corridors.jpg",
+    "status": "announced",
+    "agency": "Varanasi Development Authority · Varanasi Nagar Nigam",
+    "timeline": "Announced September 2026 · work yet to start",
+    "verified": true,
+    "lastVerified": "2026-09-25",
+    "sources": [
+      {
+        "title": "The News Mill — Varanasi to upgrade heritage corridors and renovate 119 parks (September 2026)",
+        "url": "https://thenewsmill.com/2026/09/varanasi-to-upgrade-heritage-corridors-and-renovate-119-parks-with-rs-69-crore-investment/",
+        "accessed": "2026-09-25"
+      }
+    ]
+  },
+  {
+    "id": "highway-package-2026",
+    "name_en": "Highway package linking national highways to the Ring Road",
+    "name_hi": "राष्ट्रीय राजमार्गों को रिंग रोड से जोड़ने वाला पैकेज",
+    "faith": [],
+    "type": "transport",
+    "lat": 25.4,
+    "lng": 82.95,
+    "summary": "Reported in August 2026 as a package of more than ₹24,000 crore to connect national highways directly to the Varanasi Ring Road. Only secondary reporting was found; treat the scope and figure as unconfirmed.",
+    "bestTime": "—",
+    "image": "/media/projects/highway-package.jpg",
+    "status": "announced",
+    "agency": "Ministry of Road Transport and Highways / NHAI (reported)",
+    "timeline": "Reported approved August 2026 · no official notification found",
+    "verified": false,
+    "lastVerified": "2026-09-25",
+    "sources": [
+      {
+        "title": "99acres — All about the Varanasi Ring Road project",
+        "url": "https://www.99acres.com/articles/all-about-the-varanasi-ring-road-project.html",
+        "accessed": "2026-09-25"
       }
     ]
   }

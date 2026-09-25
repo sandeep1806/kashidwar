@@ -32,8 +32,8 @@ export default function PlaceCard({
         type="button"
         onClick={() => onOpen(place)}
         className="place-card relative flex aspect-[3/4] w-full flex-col overflow-hidden rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 text-left transition-[translate,box-shadow,border-color] duration-500 ease-enter hover:-translate-y-1.5 hover:border-kashi-diya/60 hover:shadow-glow focus-visible:-translate-y-1.5 focus-visible:border-kashi-diya"
-        aria-label={`${primaryName} — ${labels.openDetails}`}
       >
+        <span className="sr-only">{labels.openDetails}: </span>
         <div className="arch relative mx-3 mt-3 aspect-[4/5] overflow-hidden">
           {hasImage ? (
             <Image

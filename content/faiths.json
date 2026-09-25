@@ -1,0 +1,114 @@
+[
+  {
+    "id": "hindu",
+    "order": 1,
+    "filter": "temples",
+    "sites": [
+      "kashi-vishwanath",
+      "dashashwamedh-ghat",
+      "kaal-bhairav"
+    ],
+    "verse": {
+      "original": "काश्यां मरणान्मुक्तिः",
+      "transliteration": "Kāśyāṃ maraṇān muktiḥ",
+      "lang": "sa",
+      "dir": "ltr",
+      "attribution": "Traditional, Kāśī Khaṇḍa"
+    }
+  },
+  {
+    "id": "jain",
+    "order": 2,
+    "filter": "jain",
+    "sites": [
+      "bhelupur-jain",
+      "sarnath"
+    ],
+    "verse": {
+      "original": "परस्परोपग्रहो जीवानाम्",
+      "transliteration": "Parasparopagraho jīvānām",
+      "lang": "sa",
+      "dir": "ltr",
+      "attribution": "Tattvārtha Sūtra 5.21"
+    }
+  },
+  {
+    "id": "buddhist",
+    "order": 3,
+    "filter": "buddhist",
+    "sites": [
+      "sarnath",
+      "mulagandha-kuti-vihar"
+    ],
+    "verse": {
+      "original": "सब्बे सत्ता सुखिता होन्तु",
+      "transliteration": "Sabbe sattā sukhitā hontu",
+      "lang": "pi",
+      "dir": "ltr",
+      "attribution": "Pāli, Mettā chant"
+    }
+  },
+  {
+    "id": "islamic",
+    "order": 4,
+    "filter": "islamic",
+    "sites": [
+      "alamgir-mosque",
+      "panchganga-ghat"
+    ],
+    "verse": {
+      "original": "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "transliteration": "Bismillāhir-raḥmānir-raḥīm",
+      "lang": "ar",
+      "dir": "rtl",
+      "attribution": "Qur'ān, opening of every sūrah"
+    }
+  },
+  {
+    "id": "bhakti",
+    "order": 5,
+    "filter": "bhakti",
+    "sites": [
+      "kabir-math",
+      "ravidas-janmasthan",
+      "tulsi-manas"
+    ],
+    "verse": {
+      "original": "मोको कहाँ ढूँढ़े रे बंदे, मैं तो तेरे पास में",
+      "transliteration": "Moko kahān ḍhūnḍhe re bande, main to tere pās men",
+      "lang": "hi",
+      "dir": "ltr",
+      "attribution": "Kabīr"
+    }
+  },
+  {
+    "id": "sikh",
+    "order": 6,
+    "filter": "sikh",
+    "sites": [
+      "gurudwara-guru-bagh"
+    ],
+    "verse": {
+      "original": "ੴ ਸਤਿ ਨਾਮੁ",
+      "transliteration": "Ik Oaṅkār Sati Nāmu",
+      "lang": "pa",
+      "dir": "ltr",
+      "attribution": "Mūl Mantar, Gurū Granth Sāhib"
+    }
+  },
+  {
+    "id": "christian",
+    "order": 7,
+    "filter": "christian",
+    "sites": [
+      "st-marys-church"
+    ],
+    "verse": {
+      "original": "Ἐγώ εἰμι τὸ φῶς τοῦ κόσμου",
+      "transliteration": "Egō eimi to phōs tou kosmou",
+      "lang": "grc",
+      "dir": "ltr",
+      "attribution": "John 8:12"
+    }
+  }
+]
