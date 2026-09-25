@@ -23,6 +23,10 @@ const DIYAS: { x: number; y: number; r: number; d: number }[] = [
   { x: 205, y: 860, r: 10, d: 0.8 },
   { x: 1160, y: 870, r: 10.5, d: 2.2 },
   { x: 700, y: 595, r: 3.2, d: 1.0 },
+  { x: 610, y: 566, r: 2.4, d: 0.5 },
+  { x: 990, y: 568, r: 2.6, d: 1.4 },
+  { x: 1500, y: 572, r: 2.8, d: 2.1 },
+  { x: 215, y: 574, r: 2.5, d: 0.3 },
 ];
 
 export default function HeroFallback() {
@@ -41,8 +45,8 @@ export default function HeroFallback() {
             <stop offset="1" stopColor="#4A2E4E" />
           </linearGradient>
           <linearGradient id="hf-water" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#2A4560" />
-            <stop offset="0.3" stopColor="#1A3145" />
+            <stop offset="0" stopColor="#222A4C" />
+            <stop offset="0.3" stopColor="#171B38" />
             <stop offset="1" stopColor="#0B0A14" />
           </linearGradient>
           <linearGradient id="hf-bank" x1="0" y1="0" x2="0" y2="1">

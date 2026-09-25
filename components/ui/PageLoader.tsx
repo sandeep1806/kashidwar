@@ -7,7 +7,7 @@ import DiyaGlyph from "./DiyaGlyph";
 const SESSION_KEY = "kashi:loader";
 
 /**
- * Black → one diya ignites → light spreads → reveal. ≤ 1.8 s, skippable,
+ * Black → one diya ignites → light spreads → reveal. 2.2 s, skippable,
  * once per session. Pure CSS keyframes (see globals.css → "Page loader"), so
  * it starts on first paint without waiting for any JS; under reduced motion
  * the media query swaps it for a single 300 ms fade.

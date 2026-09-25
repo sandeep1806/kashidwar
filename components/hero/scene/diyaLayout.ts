@@ -16,18 +16,28 @@ function mulberry32(a: number) {
   };
 }
 
+/**
+ * `count` lamps across the whole river plus ~20% more clustered along the far
+ * bank (checkpoint-1 feedback), so the distance reads as a lit shoreline.
+ */
 export function makeDiyas(count: number, seed = 108): DiyaSpec[] {
   const rnd = mulberry32(seed);
   const out: DiyaSpec[] = [];
-  let guard = 0;
-  while (out.length < count && guard++ < count * 40) {
-    const x = (rnd() * 2 - 1) * 11;
-    const z = -10 + rnd() * 13; // -10 … 3
-    // Keep a quieter lane down the middle so the title stays legible.
-    if (Math.abs(x) < 2.4 && z > -4 && rnd() < 0.75) continue;
-    if (out.some((d) => Math.hypot(d.x - x, d.z - z) < 0.75)) continue;
-    out.push({ x, z, seed: rnd() * 1000, scale: 0.75 + rnd() * 0.55 });
-  }
+  const place = (n: number, zMin: number, zMax: number, minGap: number) => {
+    let guard = 0;
+    let placed = 0;
+    while (placed < n && guard++ < n * 60) {
+      const x = (rnd() * 2 - 1) * 11.5;
+      const z = zMin + rnd() * (zMax - zMin);
+      // Keep a quieter lane down the middle so the title stays legible.
+      if (Math.abs(x) < 2.4 && z > -4 && rnd() < 0.75) continue;
+      if (out.some((d) => Math.hypot(d.x - x, d.z - z) < minGap)) continue;
+      out.push({ x, z, seed: rnd() * 1000, scale: 0.75 + rnd() * 0.55 });
+      placed++;
+    }
+  };
+  place(count, -10, 3, 0.75);
+  place(Math.round(count * 0.2), -11.5, -6.5, 0.55);
   return out;
 }
 

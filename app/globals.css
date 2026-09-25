@@ -224,7 +224,7 @@
    ------------------------------------------------------------------ */
 html[data-loader="done"] .page-loader { display: none; }
 
-/* Page loader — black → diya ignites → light spreads → reveal (1.75 s total) */
+/* Page loader — black → diya ignites → light spreads → reveal (2.2 s total, tuned at checkpoint 1) */
 @keyframes loader-ignite {
   from { scale: 0.15; opacity: 0; }
   60%  { scale: 1.08; opacity: 1; }
@@ -246,10 +246,10 @@ html[data-loader="done"] .page-loader { display: none; }
   from { opacity: 1; }
   to   { opacity: 0; visibility: hidden; }
 }
-.page-loader { background: #000; animation: loader-out 0.45s cubic-bezier(0.45, 0, 0.55, 1) 1.3s both; }
-.page-loader .loader-flame  { transform-origin: 50% 85%; animation: loader-ignite 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s both; }
-.page-loader .loader-glow   { animation: loader-glow 0.9s var(--ease-enter) 0.35s both; }
-.page-loader .loader-spread { animation: loader-spread 0.75s var(--ease-wipe) 0.7s both; }
+.page-loader { background: #000; animation: loader-out 0.55s cubic-bezier(0.45, 0, 0.55, 1) 1.65s both; }
+.page-loader .loader-flame  { transform-origin: 50% 85%; animation: loader-ignite 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.12s both; }
+.page-loader .loader-glow   { animation: loader-glow 1.1s var(--ease-enter) 0.45s both; }
+.page-loader .loader-spread { animation: loader-spread 0.95s var(--ease-wipe) 0.9s both; }
 .page-loader.is-skipped { animation: loader-out-skip 0.25s ease-out both; }
 .page-loader.is-skipped :is(.loader-flame, .loader-glow, .loader-spread) { animation: none; }
 
@@ -269,10 +269,10 @@ html.lenis, html.lenis body { height: auto; }
 }
 .hero-rise {
   animation: hero-rise 1s var(--ease-enter) both;
-  animation-delay: 1.55s;
+  animation-delay: 1.95s;
 }
-.hero-rise + .hero-rise { animation-delay: 1.75s; }
-.hero-rise + .hero-rise + .hero-rise { animation-delay: 2.1s; }
+.hero-rise + .hero-rise { animation-delay: 2.15s; }
+.hero-rise + .hero-rise + .hero-rise { animation-delay: 2.5s; }
 html[data-loader="done"] .hero-rise { animation-delay: 0.1s; }
 html[data-loader="done"] .hero-rise + .hero-rise { animation-delay: 0.25s; }
 html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay: 0.45s; }

@@ -26,13 +26,13 @@ export default function Rig() {
     const step = Math.min(dt, 0.05);
     camera.position.x = THREE.MathUtils.damp(
       camera.position.x,
-      pointer.current.x * 0.7,
+      pointer.current.x * 0.49,
       2.2,
       step,
     );
     camera.position.y = THREE.MathUtils.damp(
       camera.position.y,
-      1.45 + pointer.current.y * 0.22,
+      1.45 + pointer.current.y * 0.155,
       2.2,
       step,
     );

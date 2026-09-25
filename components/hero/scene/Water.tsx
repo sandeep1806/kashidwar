@@ -5,7 +5,7 @@ import { useMemo, useRef } from "react";
 import * as THREE from "three";
 import { WAVE_GLSL, type DiyaSpec } from "./diyaLayout";
 
-const MAX_LIGHTS = 64;
+const MAX_LIGHTS = 80;
 
 const vertexShader = /* glsl */ `
 uniform float uTime;
@@ -41,9 +41,11 @@ void main() {
 
   // Cool Ganga near the viewer, sinking into night toward the far bank,
   // with a faint indigo sheen where the sky touches the water.
-  vec3 col = mix(uGanga, uNight, 0.58 + depth * 0.38);
-  col += uIndigo * (0.18 * depth);
-  col += vWave * 1.4 * uGanga;
+  // Ganga pushed toward indigo: less blue, more night (checkpoint-1 feedback).
+  vec3 base = mix(uGanga, uIndigo, 0.6);
+  vec3 col = mix(base, uNight, 0.62 + depth * 0.34);
+  col += uIndigo * (0.14 * depth);
+  col += vWave * 1.2 * base;
 
   // Each lamp leaves a broken streak of light pointing at the viewer.
   vec3 glow = vec3(0.0);
