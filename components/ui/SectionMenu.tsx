@@ -47,7 +47,7 @@ export default function SectionMenu({ label, items, basePath }: { label: string;
         <ul ref={list} id={`${id}-list`} className="grain absolute right-0 mt-2 w-60 rounded-kashi border border-kashi-diya/25 bg-kashi-indigo/95 p-2 shadow-glow-lg backdrop-blur-md">
           {items.map((s) => (
             <li key={s.id}>
-              <a href={`${basePath}#${s.id}`} onClick={() => setOpen(false)} className="block rounded-lg px-3 py-2 text-sm text-kashi-ash outline-none transition-colors hover:bg-kashi-saffron/15 hover:text-kashi-white focus-visible:bg-kashi-saffron/20">
+              <a href={`${basePath}#${s.id}`} onClick={() => setOpen(false)} className="flex min-h-11 items-center rounded-lg px-3 py-2 text-sm text-kashi-ash outline-none transition-colors hover:bg-kashi-saffron/15 hover:text-kashi-white focus-visible:bg-kashi-saffron/20">
                 {s.label}
               </a>
             </li>

@@ -301,3 +301,10 @@ Reversed the Phase 9 lazy-body decision on advice that search, social previews a
 - Heading-font gate in `npm run build`; the subset was rebuilt with the new sub-page headings (224 glyphs, 21.8 KB, 263 corpus lines verified).
 - Lighthouse mobile, local, 5 runs: home 94 (all five), /hi/places/sarnath 95 median (92–95); accessibility and best practices 100; SEO 92 only for the localhost canonical.
 - Date notes: Ramnagar Ramlila's end (25 Oct) is computed as Sharad Purnima; Nag Nathaiya's date is from the Varanasi panchang, not an organiser announcement.
+
+## Live QA + SEO pass · 2026-09-25 · ✅
+- **Indexing:** only `INDEXED_LOCALES = ["hi","en"]` (lib/seo.ts) are indexable; the 11 regional locales carry `noindex, follow`, no hreflang, and are out of both sitemaps (sitemap.xml now 122 URLs). README → "Indexing a locale".
+- **Festival dates** shown under every festival heading and on the home cards (localized), "dates not yet announced" otherwise; titles mention the year only when a verified date is shown; check-seo enforces title/date/Event agreement (mutation-tested).
+- **Photo fallbacks:** `ArtFallback` everywhere a photo can be missing; check-seo scans 4,277 arch frames and fails on any empty one.
+- **Sources:** 19 of 21 blog/aggregator citations replaced (UP and DoPT holiday-list PDFs, Amar Ujala, Aaj Tak, DD India); Ganga Mahotsav's two local-blog citations removed (still unverified, no official 2026 dates). Ganga Dussehra set to 26 May 2026 (observed in Varanasi per Amar Ujala) instead of the panchang's 25 May.
+- **Design:** per-script language-name fonts (10 subsets, 23 KB total, shaping verified); plain-case larger English line under H1s below 640px; 44×44 hit areas (sub-44px targets on /en, a place page and a festival page: 196 → 0); section dots fixed (the "footer" match was a project card's `<footer>`); distances say "in a straight line" in all 13 locales.

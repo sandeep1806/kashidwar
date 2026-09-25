@@ -59,14 +59,14 @@ export default function PageShell({
         <article className="section-kashi pb-6 pt-28 sm:pt-32">
           <div className="container-kashi">
             <nav aria-label="Breadcrumb" className="text-sm text-kashi-ash/70">
-              <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
+              <ol className="flex flex-wrap items-center gap-x-2">
                 {crumbs.map((c, i) => (
                   <li key={c.href} className="flex items-center gap-2">
                     {i > 0 && <span aria-hidden="true" className="text-kashi-diya/50">/</span>}
                     {i === crumbs.length - 1 ? (
                       <span aria-current="page" className="text-kashi-ash">{c.name}</span>
                     ) : (
-                      <a href={c.href} className="underline decoration-kashi-diya/30 underline-offset-4 hover:text-kashi-white">{c.name}</a>
+                      <a href={c.href} className="inline-flex min-h-11 items-center underline decoration-kashi-diya/30 underline-offset-4 hover:text-kashi-white">{c.name}</a>
                     )}
                   </li>
                 ))}

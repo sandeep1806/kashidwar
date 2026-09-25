@@ -143,15 +143,6 @@ const regionalByScript: Record<Script, { variable: string; className: string } |
   gurmukhi: notoGurmukhi,
 };
 
-/**
- * className of the regional face for a script (or "" for Latin). Used by the
- * language switcher so every entry shows in its own typeface; the woff2 only
- * downloads when the menu opens, because the faces are declared with
- * `preload: false`.
- */
-export function fontClassForScript(script: Script): string {
-  return regionalByScript[script]?.className ?? "";
-}
 
 /**
  * Font classes for <html>, split by when they should apply:
@@ -183,3 +174,27 @@ export function fontLoadSpecsFor(locale: Locale): string[] {
   if (regional?.style) specs.push(`400 1em ${family(regional as { style: { fontFamily: string } })}`);
   return specs;
 }
+
+/*
+ * Language names (switcher and footer): one tiny Noto Sans subset per script,
+ * containing only that script's native names and greetings (1.6–2.7 KB each;
+ * built by scripts/lang-fonts/build.py). Loaded only when a list renders, and
+ * all at Regular weight, so the 13 names look even.
+ */
+const langLatin = localFont({ src: "./fonts/lang/latin.woff2", weight: "400", display: "swap", preload: false, fallback: ["system-ui", "sans-serif"] });
+const langDevanagari = localFont({ src: "./fonts/lang/devanagari.woff2", weight: "400", display: "swap", preload: false, fallback: ["system-ui", "sans-serif"] });
+const langTamil = localFont({ src: "./fonts/lang/tamil.woff2", weight: "400", display: "swap", preload: false, fallback: ["system-ui", "sans-serif"] });
+const langTelugu = localFont({ src: "./fonts/lang/telugu.woff2", weight: "400", display: "swap", preload: false, fallback: ["system-ui", "sans-serif"] });
+const langKannada = localFont({ src: "./fonts/lang/kannada.woff2", weight: "400", display: "swap", preload: false, fallback: ["system-ui", "sans-serif"] });
+const langMalayalam = localFont({ src: "./fonts/lang/malayalam.woff2", weight: "400", display: "swap", preload: false, fallback: ["system-ui", "sans-serif"] });
+const langBengali = localFont({ src: "./fonts/lang/bengali.woff2", weight: "400", display: "swap", preload: false, fallback: ["system-ui", "sans-serif"] });
+const langOriya = localFont({ src: "./fonts/lang/oriya.woff2", weight: "400", display: "swap", preload: false, fallback: ["system-ui", "sans-serif"] });
+const langGujarati = localFont({ src: "./fonts/lang/gujarati.woff2", weight: "400", display: "swap", preload: false, fallback: ["system-ui", "sans-serif"] });
+const langGurmukhi = localFont({ src: "./fonts/lang/gurmukhi.woff2", weight: "400", display: "swap", preload: false, fallback: ["system-ui", "sans-serif"] });
+const LANG_FONTS: Record<Script, { className: string }> = {
+  latin: langLatin, devanagari: langDevanagari, tamil: langTamil, telugu: langTelugu, kannada: langKannada,
+  malayalam: langMalayalam, bengali: langBengali, oriya: langOriya, gujarati: langGujarati, gurmukhi: langGurmukhi,
+};
+
+/** className for a language's native name / greeting in its own script. */
+export const langFontClass = (script: Script): string => LANG_FONTS[script].className;

@@ -323,7 +323,7 @@
     "home": "Home",
     "backTo": "Back to {section}",
     "howToReach": "How to reach",
-    "fromHub": "{km} km from {hub}",
+    "fromHub": "{km} km from {hub} in a straight line",
     "straightLine": "Straight-line distances; by road through the lanes it is further.",
     "hubJunction": "Varanasi Junction (Cantt) station",
     "hubAirport": "Lal Bahadur Shastri Airport",

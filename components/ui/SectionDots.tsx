@@ -10,15 +10,35 @@ export default function SectionDots({ label, items }: { label: string; items: { 
   const [active, setActive] = useState<string | null>(null);
   useEffect(() => {
     const els = items.map((s) => document.getElementById(s.id)).filter((e): e is HTMLElement => !!e);
-    const io = new IntersectionObserver(
-      (entries) => {
-        const hit = entries.filter((e) => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (hit) setActive(hit.target.id);
-      },
-      { rootMargin: "-45% 0px -45% 0px", threshold: [0, 0.01] },
-    );
-    els.forEach((e) => io.observe(e));
-    return () => io.disconnect();
+    if (!els.length) return;
+    // Active = the last section whose top has passed 45% of the viewport. At the
+    // end of the page (footer in view, or scrolled to the bottom) it is the last
+    // section. Measuring a section element itself does not force layout of its
+    // content-visibility: auto contents.
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const line = window.innerHeight * 0.45;
+      const footer = document.getElementById("site-footer");
+      const atEnd =
+        window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4 ||
+        (footer ? footer.getBoundingClientRect().top < window.innerHeight * 0.6 : false);
+      let current: string | null = null;
+      if (atEnd) current = els[els.length - 1].id;
+      else for (const el of els) if (el.getBoundingClientRect().top <= line) current = el.id;
+      setActive(current);
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
   }, [items]);
 
   return (

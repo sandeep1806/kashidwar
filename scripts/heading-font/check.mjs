@@ -7,6 +7,7 @@
  * It reads the font's own cmap (WOFF2 → Brotli → cmap format 4/12), so it
  * checks the file that ships, not a list that could drift from it.
  * Fix a failure by rebuilding the subset: see scripts/heading-font/crawl-corpus.mjs.
+ * Also checks the language-name subsets (lib/fonts/lang/, scripts/lang-fonts/build.py).
  */
 import { readFileSync } from "node:fs";
 import { brotliDecompressSync } from "node:zlib";
@@ -134,4 +135,16 @@ if (missing.size) {
   console.error(`\n  Rebuild the heading-font subset: follow the steps at the top of scripts/heading-font/crawl-corpus.mjs\n`);
   process.exit(1);
 }
+// ---- Language-name subsets (lib/fonts/lang/<script>.woff2) --------------------
+const langMissing = [];
+for (const m of locTs.matchAll(/(\w+): \{[^}]*?nativeName: "([^"]+)", sample: "([^"]+)", script: "(\w+)"/g)) {
+  const [, loc, native, sample, script] = m;
+  const cmap = woff2Cmap(read(`lib/fonts/lang/${script}.woff2`));
+  for (const ch of native + sample) if (ch.trim() && !cmap.has(ch.codePointAt(0))) langMissing.push(`${loc}: "${ch}" missing from lib/fonts/lang/${script}.woff2`);
+}
+if (langMissing.length) {
+  console.error(`\n✖ language-name fonts are missing characters:\n   ${langMissing.join("\n   ")}\n\n  Rebuild them: python3 scripts/lang-fonts/build.py (see its header)\n`);
+  process.exit(1);
+}
+console.log(`✓ language-name fonts cover all 13 locales`);
 console.log(`✓ heading font covers all ${new Set(strings.flatMap(([, t]) => [...t].filter((c) => DEVA.test(c)))).size} Devanagari characters in ${strings.length} heading/name strings`);

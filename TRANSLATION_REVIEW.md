@@ -69,5 +69,9 @@ All non-English, non-Hindi strings were machine-generated in one pass on 2026-09
 ## Priority 1d — detail-page titles and labels (messages `meta.*Title`, `page.*`)
 Machine-translated 2026-09-25. Check: ta படித்துறைகள் vs காட்கள் for ghats; te ముఖపుట (Home); ml മുഖപ്പേജ്; bn প্রথম পাতা, বেনারস; as loanwords জংচন, ষ্টেচন, কেণ্ট, মেপছ, অ'পেনষ্ট্ৰীটমেপ; or ପର୍ବପର୍ବାଣି, ଦିନିଆ; mr आराखडा (itinerary), कँट; gu હવાઈમથક and the ungendered placeTitle; pa ਗਾਈਡ in the home title; sa — the whole namespace (घट्टाः, polite imperatives, जंक्शन). Godowlia's spelling in every script. Read each `placeTitle` with a real `{type}` filled in.
 
+## Priority 1e — strings added in the live-QA pass
+- `meta.festivalTitleTbc` (festival title when this year's date is unconfirmed; must not mention a year): mr uses the gender-neutral "वाराणसीतील {name} — केव्हा आणि काय घडते"; ta/pa say "comes" rather than "falls"; ml is a looser rendering; sa phrasing.
+- `page.fromHub` now says "in a straight line" in every locale (ta நேர்கோட்டில், te సరళరేఖలో, kn ನೇರ ರೇಖೆಯಲ್ಲಿ, ml നേർരേഖയിൽ, bn সরলরেখায়, or ସିଧା ରେଖାରେ, as পোন ৰেখাত, mr सरळ रेषेत, gu સીધી રેખામાં, pa ਸਿੱਧੀ ਲਕੀਰ ਵਿੱਚ, sa ऋजुरेखया).
+
 ## Locale ↔ font check
-Fonts load per script via `lib/fonts.ts`. Verses in Gurmukhi, Arabic and Greek inside the Faiths tiles render with system fonts on locales that don't load those scripts; if they look wrong on a target device, add `preload: false` subset faces for `gurmukhi` and an Arabic Noto face.
+Fonts load per script via `lib/fonts.ts`. Language names in the switcher and footer use tiny per-script Noto Sans subsets (`lib/fonts/lang/`, built by `scripts/lang-fonts/build.py`); rebuild them if a native name or greeting in `lib/i18n/locales.ts` changes (the build check fails otherwise). Verses in Gurmukhi, Arabic and Greek inside the Faiths tiles render with system fonts on locales that don't load those scripts; if they look wrong on a target device, add `preload: false` subset faces for `gurmukhi` and an Arabic Noto face.

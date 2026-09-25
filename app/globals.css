@@ -101,6 +101,21 @@
    Base
    ------------------------------------------------------------------ */
 @layer base {
+  /* Touch targets: every link and control gets an invisible hit area of at
+     least 44×44px, centred on it, without changing its visual size. In the
+     base layer, so utilities (absolute/fixed/sr-only) and Leaflet's own
+     positioning still win. */
+  :where(a[href], button, [role="tab"], [role="menuitem"], summary):not(.leaflet-container *) { position: relative; }
+  :where(a[href], button, [role="tab"], [role="menuitem"], summary):not(.leaflet-container *)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: max(100%, 44px);
+    height: max(100%, 44px);
+    transform: translate(-50%, -50%);
+  }
+
   html {
     background-color: var(--kashi-night);
     scroll-behavior: smooth;
@@ -349,6 +364,16 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
 /* Tracked caps labels are a Latin idiom; spacing letters apart breaks Indic
    clusters. Unlayered, so it overrides the tracking-* utilities. */
 :root:not([data-script="latin"]) .uppercase:not([lang="en"]) { letter-spacing: normal; }
+
+/* Phones: the English line under an H1 (hero, detail pages) was tiny in
+   spaced small caps. Plain case, larger, lighter tracking below 640px. */
+@media (max-width: 639px) {
+  h1 .bilingual-secondary { font-size: 1.2rem; font-variant-caps: normal; letter-spacing: 0.03em; line-height: 1.3; }
+}
+
+/* Map controls on touch screens: 44px buttons (Leaflet's own stack, so they
+   are sized directly instead of getting an overlapping hit area). */
+.leaflet-touch .leaflet-bar a { width: 44px; height: 44px; line-height: 44px; }
 
 /* Photo <img> (components/ui/Photo.tsx): fills its frame over the blur placeholder. */
 .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background-size: cover; background-position: center; }

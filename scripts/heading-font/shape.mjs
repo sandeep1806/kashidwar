@@ -5,10 +5,11 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import * as hb from "harfbuzzjs";
-const [fontPath, corpusPath, outPath] = process.argv.slice(2);
+const [fontPath, corpusPath, outPath, mode] = process.argv.slice(2);
+// mode "--all": shape every non-empty line (language-name fonts), not just Devanagari ones
 const data = readFileSync(fontPath);
 const font = new hb.Font(new hb.Face(new hb.Blob(data.buffer.slice(data.byteOffset, data.byteOffset + data.byteLength))));
-const lines = [...new Set(readFileSync(corpusPath, "utf8").split("\n"))].filter((l) => /[ऀ-ॿ꣠-ꣿ᳐-᳿]/.test(l));
+const lines = [...new Set(readFileSync(corpusPath, "utf8").split("\n"))].filter((l) => (mode === "--all" ? l.trim() !== "" : /[\u0900-\u097F\uA8E0-\uA8FF\u1CD0-\u1CFF]/.test(l)));
 const gids = new Set(); const sigs = [];
 for (const line of lines) {
   // every glyph that appears at any step of shaping (intermediate forms too)

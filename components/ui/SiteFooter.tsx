@@ -3,6 +3,7 @@ import DiyaGlyph from "@/components/ui/DiyaGlyph";
 import { projects } from "@/lib/content";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { SECTIONS } from "@/lib/sections";
+import { langFontClass } from "@/lib/fonts";
 
 /** Footer: sections, languages, credits and attribution, verification note. */
 /** `path`: locale-less path of the current page ("" on the home page). */
@@ -15,7 +16,7 @@ export default async function SiteFooter({ locale, path = "" }: { locale: Locale
   const year = new Date(latest + "T00:00:00Z").getUTCFullYear();
 
   return (
-    <footer className="cv-auto relative border-t border-kashi-diya/20 bg-kashi-night/90 pb-24 pt-16 text-sm text-kashi-ash/80">
+    <footer id="site-footer" className="cv-auto relative border-t border-kashi-diya/20 bg-kashi-night/90 pb-24 pt-16 text-sm text-kashi-ash/80">
       <div className="container-kashi grid gap-10 md:grid-cols-[1.2fr_1fr_1fr_1.4fr]">
         <div>
           <p className="flex items-center gap-3 font-display text-2xl text-kashi-white">
@@ -26,21 +27,21 @@ export default async function SiteFooter({ locale, path = "" }: { locale: Locale
         </div>
         <nav aria-label={t("sections")}>
           <h2 className="font-body text-xs uppercase tracking-[0.2em] text-kashi-diya">{t("sections")}</h2>
-          <ul className="mt-3 space-y-1.5">
+          <ul className="mt-1">
             {SECTIONS.map((s) => (
               <li key={s.id}>
-                <a href={path ? `/${locale}#${s.id}` : `#${s.id}`} className="hover:text-kashi-white">{nav(s.key)}</a>
+                <a href={path ? `/${locale}#${s.id}` : `#${s.id}`} className="inline-flex min-h-11 items-center hover:text-kashi-white">{nav(s.key)}</a>
               </li>
             ))}
           </ul>
         </nav>
         <nav aria-label={t("languages")}>
           <h2 className="font-body text-xs uppercase tracking-[0.2em] text-kashi-diya">{t("languages")}</h2>
-          <ul className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1.5">
+          <ul className="mt-1 grid grid-cols-2 gap-x-4">
             {locales.map((l) => (
               <li key={l}>
-                <a href={`/${l}${path}`} lang={LOCALES[l].bcp47} hrefLang={LOCALES[l].bcp47} aria-current={l === locale ? "true" : undefined} className={l === locale ? "text-kashi-diya" : "hover:text-kashi-white"}>
-                  {LOCALES[l].nativeName}
+                <a href={`/${l}${path}`} lang={LOCALES[l].bcp47} hrefLang={LOCALES[l].bcp47} aria-current={l === locale ? "true" : undefined} className={`inline-flex min-h-11 items-center ${l === locale ? "text-kashi-diya" : "hover:text-kashi-white"}`}>
+                  <span className={langFontClass(LOCALES[l].script)}>{LOCALES[l].nativeName}</span>
                 </a>
               </li>
             ))}

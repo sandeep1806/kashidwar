@@ -158,10 +158,10 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
           <Block title={t("howToReach")}>
             <p>{f.where}</p>
             {venues.length > 0 && raw.placeIds.length > 0 && (
-              <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+              <ul className="mt-2 flex flex-wrap gap-x-4 text-sm">
                 {venues.map((v) => (
                   <li key={v.id}>
-                    <a href={pageUrl(loc, "places", v.id)} className="text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">{names(loc, v).primary}</a>
+                    <a href={pageUrl(loc, "places", v.id)} className="inline-flex min-h-11 items-center text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">{names(loc, v).primary}</a>
                   </li>
                 ))}
               </ul>
