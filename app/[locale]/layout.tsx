@@ -18,7 +18,8 @@ import IncenseCursor from "@/components/motion/IncenseCursor";
 import { fontClassesFor, fontLoadSpecsFor } from "@/lib/fonts";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { routing } from "@/lib/i18n/routing";
-import { languageAlternates } from "@/lib/pages";
+import { alternatesFor } from "@/lib/pages";
+import { isIndexed } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 import "../globals.css";
 
@@ -44,7 +45,6 @@ export async function generateMetadata({
 }: Omit<LayoutProps<"/[locale]">, "children">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  const languages = languageAlternates("");
   const bcp47 = LOCALES[locale as Locale]?.bcp47 ?? "hi-IN";
   return {
     metadataBase: new URL(SITE_URL),
@@ -54,7 +54,7 @@ export async function generateMetadata({
     },
     description: t("description"),
     applicationName: t("siteName"),
-    alternates: { canonical: `/${locale}`, languages },
+    alternates: alternatesFor(locale, ""),
     openGraph: {
       type: "website",
       siteName: t("siteName"),
@@ -66,7 +66,8 @@ export async function generateMetadata({
       images: [{ url: `/media/og/og-${locale}.png`, width: 1200, height: 630, alt: t("title") }],
     },
     twitter: { card: "summary_large_image", title: t("homeTitle"), description: t("description"), images: [`/media/og/og-${locale}.png`] },
-    robots: { index: true, follow: true },
+    // Regional locales: noindex until reviewed (lib/seo.ts → INDEXED_LOCALES).
+    robots: isIndexed(locale) ? { index: true, follow: true } : { index: false, follow: true },
     manifest: "/manifest.webmanifest",
     icons: {
       icon: [

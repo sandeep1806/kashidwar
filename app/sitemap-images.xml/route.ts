@@ -1,8 +1,8 @@
-import { locales } from "@/lib/i18n/locales";
+import { INDEXED_LOCALES } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 import { PHOTOS, sitemapPages } from "@/lib/sitemapEntries";
 
-/** Image sitemap: every page in every locale with the self-hosted photos it shows. */
+/** Image sitemap: every page in the indexed locales with the self-hosted photos it shows. */
 export const dynamic = "force-static";
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -11,7 +11,7 @@ export function GET() {
   const urls = sitemapPages()
     .filter((p) => p.photoKeys.length)
     .flatMap((page) =>
-      locales.map((l) => {
+      INDEXED_LOCALES.map((l) => {
         const images = page.photoKeys
           .map((k) => PHOTOS[k])
           .filter(Boolean)

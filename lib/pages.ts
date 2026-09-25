@@ -1,6 +1,7 @@
 // Server-side helpers for the per-item pages (/[locale]/places/<id>, …).
 import { festivals, itineraries, places, projects, type Festival, type Itinerary, type Place, type Project } from "@/lib/content";
-import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
+import { LOCALES, type Locale } from "@/lib/i18n/locales";
+import { DEFAULT_INDEXED_LOCALE, INDEXED_LOCALES, isIndexed } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 
 export type Kind = "places" | "festivals" | "projects" | "itineraries";
@@ -27,11 +28,19 @@ export const pagePath = (kind: Kind, slug: string) => `/${kind}/${slug}`;
 export const pageUrl = (locale: Locale, kind: Kind, slug: string) => `/${locale}${pagePath(kind, slug)}`;
 export const absolute = (path: string) => `${SITE_URL}${path}`;
 
-/** hreflang map for a locale-less path ("" for home), x-default → English. */
+/** hreflang map for a locale-less path ("" for home): indexed locales only, x-default → English. */
 export function languageAlternates(path: string): Record<string, string> {
-  const languages: Record<string, string> = Object.fromEntries(locales.map((l) => [LOCALES[l].bcp47, `/${l}${path}`]));
-  languages["x-default"] = `/en${path}`;
+  const languages: Record<string, string> = Object.fromEntries(INDEXED_LOCALES.map((l) => [LOCALES[l].bcp47, `/${l}${path}`]));
+  languages["x-default"] = `/${DEFAULT_INDEXED_LOCALE}${path}`;
   return languages;
+}
+
+/**
+ * `alternates` for a page's metadata: a self canonical always; hreflang only
+ * on indexed locales (noindexed pages are not part of the hreflang set).
+ */
+export function alternatesFor(locale: string, path: string) {
+  return { canonical: `/${locale}${path}`, ...(isIndexed(locale) ? { languages: languageAlternates(path) } : {}) };
 }
 
 /** Great-circle distance in km. */

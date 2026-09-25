@@ -7,7 +7,7 @@ import PageShell from "@/components/pages/PageShell";
 import EnglishNote from "@/components/ui/EnglishNote";
 import { getPlace, itineraries, localizeItinerary } from "@/lib/content";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
-import { absolute, breadcrumbLd, itinerarySlug, languageAlternates, metaDescription, neighbours, pagePath, pageUrl } from "@/lib/pages";
+import { absolute, breadcrumbLd, itinerarySlug, alternatesFor, metaDescription, neighbours, pagePath, pageUrl } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
 import { proseFallsBack } from "@/lib/proseLocale";
 
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/itinerar
   return {
     title,
     description,
-    alternates: { canonical: `/${locale}${path}`, languages: languageAlternates(path) },
+    alternates: alternatesFor(locale, path),
     openGraph: { type: "article", title, description, url: `/${locale}${path}` },
   };
 }

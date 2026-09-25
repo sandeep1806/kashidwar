@@ -91,6 +91,14 @@ Sensitivity rules for picks: no cremations or bodies at Manikarnika, nothing fro
 - `node scripts/check-seo.mjs` (after a build) checks titles, descriptions, canonicals, hreflang and JSON-LD (Google's Event and BreadcrumbList rules) on every prerendered page.
 - `npm run build` first runs `scripts/heading-font/check.mjs`, which fails if a heading/name character is missing from the Tiro subset.
 
+### Indexing a locale
+Only the locales in `INDEXED_LOCALES` (`lib/seo.ts`, currently `["hi", "en"]`) are indexable. Pages in the other 11 locales carry `<meta name="robots" content="noindex, follow">`, have no hreflang links, and are left out of `sitemap.xml` and `sitemap-images.xml`; hreflang is exchanged only between indexed locales, with x-default → `/en`.
+
+To index a regional locale after a native speaker has reviewed it:
+1. Work through its rows in TRANSLATION_REVIEW.md (UI strings in `messages/<locale>.json`, prose in `content/i18n/<locale>.json` + `node scripts/merge-i18n.mjs`, alt text in `content/i18n/alt-<locale>.json` + `node scripts/optimize-images.mjs`).
+2. Add the code to `INDEXED_LOCALES` in `lib/seo.ts`. Nothing else changes: robots, hreflang and both sitemaps follow the list.
+3. `npm run build && node scripts/check-seo.mjs`, then deploy, and submit the sitemap again in Search Console.
+
 ### Rendering model (performance)
 - Text-only sections are server components wrapped in `components/ui/Static.tsx`: their HTML is server-rendered, but React does not hydrate it (an empty `dangerouslySetInnerHTML` on the client keeps the server's children). Only islands hydrate: the 3D hero, the Day-in-Kashi scroller, the places explorer (filters, modal, map; the cards themselves are static and filtered via `hidden`), itinerary tabs, aarti flame animation, header menus, section dots and the sound toggle.
 - Never put an interactive component inside `<Static>`: it would render but never hydrate.

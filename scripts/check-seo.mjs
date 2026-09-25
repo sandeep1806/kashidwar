@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 /**
  * SEO checks over the prerendered HTML in .next/server/app (run after `next build`):
- *   - every page: <title>, meta description, canonical, 14 hreflang links incl. x-default → /en
+ *   - every page: <title>, meta description, self canonical
+ *   - indexed locales (lib/seo.ts INDEXED_LOCALES): robots "index, follow", hreflang
+ *     for each indexed locale + x-default → /en; other locales: "noindex, follow", no hreflang
+ *   - sitemap.xml and sitemap-images.xml list indexed locales only
  *   - titles and descriptions unique within each locale
  *   - JSON-LD parses; Google rich-result rules for Event and BreadcrumbList
  *     (developers.google.com/search/docs/appearance/structured-data), and
@@ -12,6 +15,8 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 
 const dir = new URL("../.next/server/app/", import.meta.url).pathname;
+const seoTs = readFileSync(new URL("../lib/seo.ts", import.meta.url), "utf8");
+const INDEXED = JSON.parse(seoTs.match(/INDEXED_LOCALES = (\[[^\]]*\])/)[1].replace(/'/g, '"'));
 const files = [];
 (function walk(d) {
   for (const f of readdirSync(d)) {
@@ -85,11 +90,21 @@ for (const file of files) {
   if (!title) bad(file, "no <title>");
   if (!desc) bad(file, "no meta description");
   else if (desc.length > 320) bad(file, `description is ${desc.length} characters`);
+  const loc0 = relative(dir, file).split(/[/.]/)[0];
+  const robots = html.match(/<meta name="robots" content="(.*?)"/)?.[1];
   if (!canonical) bad(file, "no canonical");
-  if (alts.length !== 14) bad(file, `${alts.length} hreflang links (expected 14)`);
-  const xd = alts.find((a) => a[1] === "x-default")?.[2];
-  if (!xd || !/\/en(\/|$)/.test(new URL(xd).pathname + "/")) bad(file, `x-default is ${xd}`);
-  if (canonical && !alts.some((a) => a[2] === canonical)) bad(file, "canonical is not among its hreflang alternates");
+  else if (!new URL(canonical).pathname.startsWith(`/${loc0}`)) bad(file, `canonical ${canonical} is not this page`);
+  if (INDEXED.includes(loc0)) {
+    if (robots !== "index, follow") bad(file, `robots is "${robots}" (expected "index, follow")`);
+    if (alts.length !== INDEXED.length + 1) bad(file, `${alts.length} hreflang links (expected ${INDEXED.length + 1})`);
+    if (alts.some((a) => a[1] !== "x-default" && !INDEXED.some((l) => new URL(a[2]).pathname.split("/")[1] === l))) bad(file, "hreflang points at a noindexed locale");
+    const xd = alts.find((a) => a[1] === "x-default")?.[2];
+    if (!xd || !/\/en(\/|$)/.test(new URL(xd).pathname + "/")) bad(file, `x-default is ${xd}`);
+    if (canonical && !alts.some((a) => a[2] === canonical)) bad(file, "canonical is not among its hreflang alternates");
+  } else {
+    if (robots !== "noindex, follow") bad(file, `robots is "${robots}" (expected "noindex, follow")`);
+    if (alts.length) bad(file, `noindexed page has ${alts.length} hreflang links`);
+  }
   // Unique within a locale; the same words in two languages (e.g. mr/sa) are hreflang siblings.
   const loc = relative(dir, file).split(/[/.]/)[0];
   if (title) titles.set(loc + "|" + title, [...(titles.get(loc + "|" + title) ?? []), file]);
@@ -99,6 +114,17 @@ for (const file of files) {
     try { data = JSON.parse(m[1]); } catch { bad(file, "JSON-LD does not parse"); continue; }
     for (const o of [data].flat()) checkLd(file, o);
   }
+}
+// Sitemaps: indexed locales only.
+for (const [name, re] of [["sitemap.xml.body", /<loc>([^<]+)<\/loc>/g], ["sitemap-images.xml.body", /<loc>([^<]+)<\/loc>/g]]) {
+  let body;
+  try { body = readFileSync(join(dir, name), "utf8"); } catch { problems.push(`${name}: not found in the build`); continue; }
+  const locs = [...body.matchAll(re)].map((m) => new URL(m[1]).pathname.split("/")[1]);
+  const stray = [...new Set(locs.filter((l) => !INDEXED.includes(l)))];
+  if (stray.length) problems.push(`${name}: lists noindexed locales ${stray.join(", ")}`);
+  const hl = [...body.matchAll(/hreflang="([^"]+)" href="([^"]+)"/g)].filter((m) => m[1] !== "x-default" && !INDEXED.includes(new URL(m[2]).pathname.split("/")[1]));
+  if (hl.length) problems.push(`${name}: ${hl.length} hreflang alternates point at noindexed locales`);
+  console.log(`${name}: ${locs.length} URLs`);
 }
 for (const [t, fs] of titles) if (fs.length > 1) problems.push(`duplicate title "${t}" on ${fs.length} pages: ${fs.slice(0, 3).map((f) => relative(dir, f)).join(", ")}`);
 for (const [d, fs] of descs) if (fs.length > 1) problems.push(`duplicate description on ${fs.length} pages: ${fs.slice(0, 3).map((f) => relative(dir, f)).join(", ")} — "${d.slice(0, 60)}…"`);

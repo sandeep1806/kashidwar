@@ -1,5 +1,4 @@
 import photos from "@/content/photos.json";
-import { locales } from "@/lib/i18n/locales";
 import { SLUGS, type Kind } from "@/lib/pages";
 
 export interface SitemapPage {
@@ -28,5 +27,4 @@ export function sitemapPages(): SitemapPage[] {
   return [home, ...items, { path: "/credits", priority: 0.3, changeFrequency: "monthly", photoKeys: [] }];
 }
 
-export const LOCALE_LIST = locales;
 export const PHOTOS = photos as Record<string, { src: string; widths: number[] }>;

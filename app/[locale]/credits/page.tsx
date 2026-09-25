@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import credits from "@/content/credits.json";
-import { languageAlternates } from "@/lib/pages";
+import { alternatesFor } from "@/lib/pages";
 import { photoAlt } from "@/lib/photos";
 
 export interface Credit {
@@ -17,7 +17,7 @@ export interface Credit {
 export async function generateMetadata({ params }: PageProps<"/[locale]/credits">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "credits" });
-  return { title: t("title"), description: t("intro"), alternates: { canonical: `/${locale}/credits`, languages: languageAlternates("/credits") } };
+  return { title: t("title"), description: t("intro"), alternates: alternatesFor(locale, "/credits") };
 }
 
 /** Every photograph with author, licence and source (CC BY-SA requires author + licence link). */
