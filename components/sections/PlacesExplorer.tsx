@@ -4,11 +4,13 @@ import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import StaggerCards from "@/components/motion/StaggerCards";
 import FaithGlyph from "@/components/ui/FaithGlyph";
-import Modal from "@/components/ui/Modal";
+
 import PlaceCard, { type PlaceLabels } from "@/components/ui/PlaceCard";
-import { PLACE_FILTERS, placeMatches, type Faith, type Place, type PlaceFilter } from "@/lib/content";
+import { PLACE_FILTERS, placeMatches, type Faith, type Place, type PlaceFilter } from "@/lib/contentTypes";
 
 const KashiMap = dynamic(() => import("@/components/ui/KashiMap"), { ssr: false });
+// The modal brings `motion` with it; fetch it on first open, not on page load.
+const Modal = dynamic(() => import("@/components/ui/Modal"), { ssr: false });
 
 export interface ExplorerPlace {
   place: Place;

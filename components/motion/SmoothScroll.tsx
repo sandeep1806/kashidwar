@@ -64,12 +64,12 @@ function whenIdle(cb: () => void, timeout = 1500): () => void {
 
 /**
  * Touch / narrow devices: wait for the first sign of intent (scroll, touch,
- * key, pointer) or 4 s, whichever first. Keeps the bundle's evaluation out of
- * the mobile Total Blocking Time window; nothing on screen needs it until
- * the visitor moves. Wide, fine-pointer devices load at idle so the pinned
- * timeline is ready before it is reached.
+ * key, pointer). Nothing on a phone needs GSAP until the visitor moves — the
+ * hero is static, the timeline is stacked, reveals are no-ops until then —
+ * and a visitor who never scrolls never pays for the bundle. Wide,
+ * fine-pointer devices load at idle so the pinned timeline is ready in time.
  */
-function whenIntent(cb: () => void, timeout = 4000): () => void {
+function whenIntent(cb: () => void): () => void {
   const wide =
     window.innerWidth >= 1024 && window.matchMedia("(pointer: fine)").matches;
   if (wide) return whenIdle(cb);
@@ -81,12 +81,10 @@ function whenIntent(cb: () => void, timeout = 4000): () => void {
     cleanup();
     cb();
   };
-  const cleanup = () => {
-    events.forEach((e) => window.removeEventListener(e, fire));
-    window.clearTimeout(timer);
-  };
+  const cleanup = () => events.forEach((e) => window.removeEventListener(e, fire));
   events.forEach((e) => window.addEventListener(e, fire, { passive: true, once: true }));
-  const timer = window.setTimeout(fire, timeout);
+  // Already scrolled (restored position, anchor link)? Load right away.
+  if (window.scrollY > 0) fire();
   return () => {
     done = true;
     cleanup();

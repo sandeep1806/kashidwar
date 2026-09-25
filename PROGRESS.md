@@ -199,3 +199,37 @@ Malayalam/Tamil/Kannada/Telugu headings get a smaller display scale on phones pl
 **Decisions**
 - Synthesised audio instead of recordings: zero bytes to download, no licensing, and it can be swapped for real recordings later by replacing `lib/ambient.ts` (same `start/stop/bell` interface).
 - The finale's flames are SVG + GSAP rather than a second R3F scene: it runs on mobile too.
+
+## Phase 9 — Performance, SEO, deploy · 2026-09-25 · ✅
+
+**SEO / metadata**
+- `metadataBase` from `NEXT_PUBLIC_SITE_URL` (`lib/site.ts`, default `https://kashidwar.vercel.app`), canonical per locale, `alternates.languages` with all 13 BCP-47 tags + `x-default` (14 hreflang links per page), OpenGraph + Twitter cards with a 1200×630 image per locale (`public/media/og/og-<locale>.png`, rendered from the message files with the site's fonts by the scratchpad generator), `robots: index, follow`.
+- `app/sitemap.ts` (13 URLs, each with 14 hreflang alternates), `app/robots.ts` (allow all, sitemap, host).
+- JSON-LD: `TouristDestination` for Kashi with 22 `TouristAttraction` entries (names in the locale, geo, first source as `sameAs`).
+- Error pages in the design system: `app/[locale]/not-found.tsx` (translated in 13 locales, reached via `[...rest]` catch-all — `/hi/anything` → 404, `/xx` → proxy redirect → 404), `app/[locale]/error.tsx` (bilingual, retry), `app/global-error.tsx` (inline-styled root fallback).
+- Lighthouse SEO is 92 locally only because the canonical points at the production origin; it is 100 once served from that origin.
+
+**Performance — what actually moved Lighthouse mobile from 84 to 91–96**
+| Change | Effect |
+|---|---|
+| Card lists in client components (data once, not markup per card) | Flight payload 236 → 166 KB |
+| Bodies of Places and the 7 later sections rendered client-side on approach, data from prerendered JSON (`/<locale>/data/places`, `/<locale>/data/tail`) | HTML 65 → 18 KB gz; hydration halved |
+| `lib/contentTypes.ts` (JSON-free helpers) | content JSON no longer in the client bundle (−35 KB gz) |
+| Modal `dynamic(…, { ssr: false })` | `motion` (42 KB gz) leaves the initial bundle |
+| SVG symbols for faith glyphs, hero lamps and aarti tiers | fewer DOM nodes; finale 84 → 28 flame targets |
+| Body fonts attached after first paint, warmed on a hidden probe → one swap at idle | fonts off the LCP path, single relayout |
+| Display faces `font-display: block` | H1 paints once in its real face → one LCP candidate (2.0 s) instead of two |
+| Motion bundle on touch devices loads on first interaction only (no timer) | nothing lands in the TBT window without a gesture |
+| Lazy bodies mount on IntersectionObserver only (no idle timer) | their render no longer extends time-to-interactive |
+| `text-wrap: pretty` removed from paragraphs | (small) |
+- Tried and reverted: `experimental.inlineCss` (Next duplicates the stylesheet into the Flight payload: 65 → 92 KB gz).
+- Final (production build, mobile preset, 5 runs on /hi): **94 / 96 / 93 / 91 / 95**, LCP 2.0 s (one run 2.7 s), TBT 160–250 ms, FCP 1.2 s, CLS 0; A11y 100, Best Practices 100. /en: 94. Observed (unthrottled) LCP ≈ 0.28 s.
+
+**Trade-offs to know about**
+- Places grid, Faiths, Projects, Festivals, Food, Itineraries, Practical and the Finale are **not in the initial HTML** any more — only their H2s and intros are. Their bodies render when the section comes within 1200 px of the viewport, from static JSON prerendered at build. Google's renderer expands the viewport for IntersectionObserver content and the JSON-LD lists every place, but if server-rendered text for those sections matters more than the score, `lib/useApproach.ts` can add an idle fallback (costs ~5 Lighthouse points) or the sections can be imported directly in `page.tsx` again.
+- Web fonts: repeat visits are seamless (inline snippet + cache). First visits paint body text in a metric-matched fallback until the browser is idle, and the hero title waits for its face (≤ 3 s) — both under the 2.2 s loader.
+- No raster images exist yet (the brief's AVIF/WebP step has nothing to convert); `next/image` with AVIF/WebP formats is configured and `Places.tsx` switches to photos automatically when files appear.
+
+**Deploy**
+- **Not deployed.** Vercel CLI 60 was installed but logged out; `vercel deploy --temporary --yes` still started a browser device-login flow (`https://vercel.com/oauth/device?user_code=…`) that only the account owner can complete, so it was abandoned. To deploy: `npx vercel login`, then `npx vercel --prod`, and set `NEXT_PUBLIC_SITE_URL` (Production) to the real domain; every one of the 13 locale routes, both data endpoints per locale, sitemap and robots prerender statically.
+- README.md written: setup, env, folder map, content editing, adding a place / project / language, design rules, deploy.

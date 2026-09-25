@@ -41,8 +41,10 @@ async function loadMessages(locale: Locale): Promise<Messages> {
   }
 }
 
-export default getRequestConfig(async ({ requestLocale }) => {
-  const requested = await requestLocale;
+export default getRequestConfig(async ({ locale: explicit, requestLocale }) => {
+  // `locale` is set when a server function passes it explicitly (route handlers);
+  // otherwise it comes from the [locale] segment.
+  const requested = explicit ?? (await requestLocale);
   const locale = hasLocale(routing.locales, requested)
     ? requested
     : routing.defaultLocale;

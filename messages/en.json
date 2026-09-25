@@ -271,5 +271,10 @@
     "text": "Every evening, as the sun goes down behind the city, the lamps are raised at Dashashwamedh. The journey that began with one diya ends here, with a thousand.",
     "closing": "ॐ नमः शिवाय · Har Har Gange",
     "closingSecondary": "Come to Kashi. The lamps are lit."
+  },
+  "errors": {
+    "notFoundTitle": "This lane leads nowhere",
+    "notFoundText": "The page you were looking for is not in Kashi. Turn back to the river.",
+    "back": "Back to the ghats"
   }
 }

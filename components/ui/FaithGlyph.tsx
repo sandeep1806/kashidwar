@@ -1,4 +1,4 @@
-import type { Faith } from "@/lib/content";
+import type { Faith } from "@/lib/contentTypes";
 
 /**
  * Line glyphs, 1.5px stroke, gold (DESIGN.md → Iconography). One per faith,
@@ -66,6 +66,21 @@ const PATHS: Record<Faith, React.ReactNode> = {
   ),
 };
 
+/** Rendered once in the layout; every FaithGlyph then references a symbol instead of repeating paths. */
+export function FaithGlyphSprite() {
+  return (
+    <svg width="0" height="0" className="absolute" aria-hidden="true" focusable="false">
+      <defs>
+        {(Object.keys(PATHS) as Faith[]).map((f) => (
+          <symbol key={f} id={`glyph-${f}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            {PATHS[f]}
+          </symbol>
+        ))}
+      </defs>
+    </svg>
+  );
+}
+
 export default function FaithGlyph({
   faith,
   className = "h-5 w-5",
@@ -74,17 +89,8 @@ export default function FaithGlyph({
   className?: string;
 }) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      className={className}
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      {PATHS[faith]}
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" focusable="false">
+      <use href={`#glyph-${faith}`} />
     </svg>
   );
 }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { Faith, Place } from "@/lib/content";
+import type { Faith, Place } from "@/lib/contentTypes";
 import FaithGlyph from "./FaithGlyph";
 
 export interface PlaceLabels {

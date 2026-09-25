@@ -42,6 +42,11 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 - No new project dependencies. Lighthouse 13.5.0 and puppeteer-core were installed in the session scratchpad (not in `package.json`) for verification.
 - `@react-three/fiber` 9.8.0 logs `THREE.Clock … deprecated` against three 0.186; upstream issue, harmless.
 
+## Phase 9 check · 2026-09-25
+- `npm outdated`: `@react-three/fiber` 9.8.0 → **9.8.1** (patch, applied). Held on purpose: `typescript` 5.9.3 (7.x excluded by typescript-eslint peer range), `eslint` 9.39.5 (10.x breaks eslint-config-next's bundled react plugin), `@types/node` 22.x (matches the Node 22 runtime).
+- `npm audit`: 0 vulnerabilities.
+- Verification tooling used from the session scratchpad only (not in package.json): Lighthouse 13.5.0, puppeteer-core driving system Chrome 154, Vercel CLI 60 via npx.
+
 ## Deliberately not installed
 - `@react-three/postprocessing` — bloom is faked with additive billboards (see PROGRESS.md Phase 2).
 

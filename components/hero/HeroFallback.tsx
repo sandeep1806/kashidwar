@@ -79,36 +79,22 @@ export default function HeroFallback() {
         {/* reflected haze in the water */}
         <ellipse cx="800" cy="600" rx="900" ry="120" fill="url(#hf-horizon)" opacity="0.35" />
 
+        {/* one lamp (unit radius) drawn once; each placement scales it */}
+        <defs>
+          <g id="hf-lamp">
+            <rect x="-0.6" y="1" width="1.2" height="14" fill="url(#hf-reflect)" opacity="0.65" />
+            <ellipse rx="4" ry="2.4" fill="url(#hf-glow)" opacity="0.6" />
+            <ellipse rx="0.65" ry="0.85" fill="#FFE7B0" />
+          </g>
+        </defs>
         {DIYAS.map((p, i) => (
-          <g
+          <use
             key={i}
+            href="#hf-lamp"
+            transform={`translate(${p.x} ${p.y}) scale(${p.r})`}
             className={p.r >= 6 ? "hf-diya" : undefined}
             style={p.r >= 6 ? { animationDelay: `${p.d}s` } : undefined}
-          >
-            <rect
-              x={p.x - p.r * 0.6}
-              y={p.y + p.r}
-              width={p.r * 1.2}
-              height={p.r * 14}
-              fill="url(#hf-reflect)"
-              opacity="0.65"
-            />
-            <ellipse
-              cx={p.x}
-              cy={p.y}
-              rx={p.r * 4}
-              ry={p.r * 2.4}
-              fill="url(#hf-glow)"
-              opacity="0.6"
-            />
-            <ellipse
-              cx={p.x}
-              cy={p.y}
-              rx={p.r * 0.65}
-              ry={p.r * 0.85}
-              fill="#FFE7B0"
-            />
-          </g>
+          />
         ))}
       </svg>
     </div>

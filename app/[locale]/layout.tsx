@@ -4,21 +4,26 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import SmoothScroll from "@/components/motion/SmoothScroll";
 import SunriseBackground from "@/components/motion/SunriseBackground";
+import { FaithGlyphSprite } from "@/components/ui/FaithGlyph";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
+import DeferredFonts from "@/components/ui/DeferredFonts";
 import PageLoader from "@/components/ui/PageLoader";
 import SoundToggle from "@/components/ui/SoundToggle";
 import IncenseCursor from "@/components/motion/IncenseCursor";
 import { fontClassesFor } from "@/lib/fonts";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { routing } from "@/lib/i18n/routing";
+import { SITE_URL } from "@/lib/site";
 import "../globals.css";
 
 /**
  * Runs before the loader markup is parsed: if this session already saw the
  * diya ignite, hide the overlay instantly so repeat navigations don't flash.
  */
-const LOADER_SNIPPET =
-  "try{if(sessionStorage.getItem('kashi:loader')==='1')document.documentElement.setAttribute('data-loader','done')}catch(e){}";
+const LOADER_SNIPPET = (fontClasses: string) =>
+  "try{if(sessionStorage.getItem('kashi:loader')==='1'){var h=document.documentElement;h.setAttribute('data-loader','done');h.className+=' " +
+  fontClasses +
+  "'}}catch(e){}";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -29,12 +34,30 @@ export async function generateMetadata({
 }: Omit<LayoutProps<"/[locale]">, "children">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
+  const languages = Object.fromEntries(routing.locales.map((l) => [LOCALES[l].bcp47, `/${l}`]));
+  languages["x-default"] = "/hi";
+  const bcp47 = LOCALES[locale as Locale]?.bcp47 ?? "hi-IN";
   return {
+    metadataBase: new URL(SITE_URL),
     title: {
       default: t("title"),
       template: `%s · ${t("siteName")}`,
     },
     description: t("description"),
+    applicationName: t("siteName"),
+    alternates: { canonical: `/${locale}`, languages },
+    openGraph: {
+      type: "website",
+      siteName: t("siteName"),
+      title: t("title"),
+      description: t("description"),
+      url: `/${locale}`,
+      locale: bcp47.replace("-", "_"),
+      alternateLocale: routing.locales.filter((l) => l !== locale).map((l) => LOCALES[l].bcp47.replace("-", "_")),
+      images: [{ url: `/media/og/og-${locale}.png`, width: 1200, height: 630, alt: t("title") }],
+    },
+    twitter: { card: "summary_large_image", title: t("title"), description: t("description"), images: [`/media/og/og-${locale}.png`] },
+    robots: { index: true, follow: true },
   };
 }
 
@@ -48,17 +71,21 @@ export default async function LocaleLayout({
 
   const meta = LOCALES[locale as Locale];
   const t = await getTranslations("common");
+  // Display faces apply at once; body faces are attached after first paint (see DeferredFonts).
+  const fonts = fontClassesFor(locale as Locale);
 
   return (
     <html
       lang={meta.bcp47}
       dir="ltr"
       data-script={meta.script}
-      className={`${fontClassesFor(locale as Locale)} h-full`}
+      className={`${fonts.immediate} h-full`}
       suppressHydrationWarning
     >
       <body className="min-h-dvh flex flex-col font-body text-kashi-ash">
-        <script dangerouslySetInnerHTML={{ __html: LOADER_SNIPPET }} />
+        <script dangerouslySetInnerHTML={{ __html: LOADER_SNIPPET(fonts.deferred) }} />
+        <DeferredFonts classes={fonts.deferred} sample={meta.sample} />
+        <FaithGlyphSprite />
         <a
           href="#content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[110] focus:rounded-kashi focus:bg-kashi-saffron focus:px-4 focus:py-2 focus:text-kashi-night"

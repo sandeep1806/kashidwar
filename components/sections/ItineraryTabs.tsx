@@ -1,7 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
-import type { Itinerary } from "@/lib/content";
+import type { Itinerary } from "@/lib/contentTypes";
 
 export interface ItineraryLabels {
   tabs: string[];

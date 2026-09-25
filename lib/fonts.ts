@@ -32,11 +32,17 @@ import { LOCALES, type Locale, type Script } from "./i18n/locales";
  * With `display: swap` the H1 paints instantly in the size-adjusted fallback,
  * the web fonts arrive under the page loader, and repeat visits hit the cache.
  */
+/*
+ * Display faces use `display: "block"`: the hero title paints once, in its
+ * real face, instead of a fallback first and a re-paint (which registers a
+ * second, later Largest Contentful Paint). Up to 3 s of invisible heading is
+ * covered by the page loader on first visits; repeat visits are cached.
+ */
 export const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["600", "700"],
   variable: "--font-display-latin",
-  display: "swap",
+  display: "block",
   preload: false,
 });
 
@@ -51,7 +57,7 @@ export const tiroDevanagari = Tiro_Devanagari_Hindi({
   subsets: ["devanagari"],
   weight: "400",
   variable: "--font-display-deva",
-  display: "swap",
+  display: "block",
   preload: false,
 });
 
@@ -137,16 +143,19 @@ export function fontClassForScript(script: Script): string {
   return regionalByScript[script]?.className ?? "";
 }
 
-/** Class list for <html> so the right CSS variables exist for this locale. */
-export function fontClassesFor(locale: Locale): string {
+/**
+ * Font classes for <html>, split by when they should apply:
+ *  - immediate: the display faces the hero H1 paints with (Cormorant, Tiro, or
+ *    the regional face where it is the display face) — no later swap of the
+ *    LCP element.
+ *  - deferred: body faces (Inter, and Noto Devanagari for Devanagari locales),
+ *    attached after first paint by <DeferredFonts> so they stay off the LCP path.
+ */
+export function fontClassesFor(locale: Locale): { immediate: string; deferred: string } {
   const script = LOCALES[locale].script;
   const regional = regionalByScript[script];
-  return [
-    cormorant.variable,
-    inter.variable,
-    tiroDevanagari.variable,
-    regional?.variable ?? "",
-  ]
-    .filter(Boolean)
-    .join(" ");
+  const regionalIsDisplay = script !== "latin" && script !== "devanagari";
+  const immediate = [cormorant.variable, tiroDevanagari.variable, regionalIsDisplay ? regional?.variable : ""];
+  const deferred = [inter.variable, regionalIsDisplay ? "" : (regional?.variable ?? "")];
+  return { immediate: immediate.filter(Boolean).join(" "), deferred: deferred.filter(Boolean).join(" ") };
 }

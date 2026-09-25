@@ -79,7 +79,6 @@ export default function LanguageSwitcher({
         aria-haspopup="menu"
         aria-expanded={open}
         aria-controls={`${id}-menu`}
-        aria-label={`${label}: ${meta.nativeName}`}
         onClick={() => setOpen((o) => !o)}
         onKeyDown={(e) => {
           if (e.key === "ArrowDown" && !open) {
@@ -91,6 +90,7 @@ export default function LanguageSwitcher({
       >
         <span aria-hidden="true" className="text-base leading-none">{meta.sample}</span>
         <span className="hidden sm:inline">{meta.nativeName}</span>
+        <span className="sr-only">· {label}</span>
         <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 text-kashi-diya" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
           <path d="M6 9l6 6 6-6" />
         </svg>
