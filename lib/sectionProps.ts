@@ -181,30 +181,3 @@ export async function getFaithsProps(locale: Locale) {
   };
 }
 export type FaithsProps = Awaited<ReturnType<typeof getFaithsProps>>;
-
-/** Everything the lazily rendered bodies need, fetched once as /<locale>/data/tail. */
-export async function getTailProps(locale: Locale) {
-  const [faiths, projects, festivals, food, itineraries, practical, finale] = await Promise.all([
-    getFaithsProps(locale),
-    getProjectsProps(locale),
-    getFestivalsProps(locale),
-    getFoodProps(locale),
-    getItinerariesProps(locale),
-    getPracticalProps(locale),
-    getFinaleProps(locale),
-  ]);
-  return { faiths, projects, festivals, food, itineraries, practical, finale };
-}
-export type TailProps = Awaited<ReturnType<typeof getTailProps>>;
-
-/** Only the headings/intros (server-rendered); bodies come from the JSON endpoint. */
-export async function getTailHeadings(locale: Locale): Promise<Record<keyof TailProps, HeadingProps>> {
-  const ns = { faiths: "faiths", projects: "projects", festivals: "festivals", food: "food", itineraries: "itineraries", practical: "practical", finale: "finale" } as const;
-  const ids = { faiths: "faiths", projects: "projects", festivals: "festivals", food: "food", itineraries: "itineraries", practical: "practical", finale: "aarti" } as const;
-  const out = {} as Record<keyof TailProps, HeadingProps>;
-  for (const key of Object.keys(ns) as (keyof typeof ns)[]) {
-    const t = await getTranslations({ locale, namespace: ns[key] });
-    out[key] = { id: ids[key], title: t("title"), secondary: t("titleSecondary"), intro: key === "finale" ? t("text") : t("intro") };
-  }
-  return out;
-}

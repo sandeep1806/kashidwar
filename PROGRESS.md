@@ -233,3 +233,13 @@ Malayalam/Tamil/Kannada/Telugu headings get a smaller display scale on phones pl
 **Deploy**
 - **Not deployed.** Vercel CLI 60 was installed but logged out; `vercel deploy --temporary --yes` still started a browser device-login flow (`https://vercel.com/oauth/device?user_code=…`) that only the account owner can complete, so it was abandoned. To deploy: `npx vercel login`, then `npx vercel --prod`, and set `NEXT_PUBLIC_SITE_URL` (Production) to the real domain; every one of the 13 locale routes, both data endpoints per locale, sitemap and robots prerender statically.
 - README.md written: setup, env, folder map, content editing, adding a place / project / language, design rules, deploy.
+
+## Phase 9.1 — Server-render the text sections again · 2026-09-25 · ✅
+
+Reversed the Phase 9 lazy-body decision on advice that search, social previews and AI crawlers must see body text without executing JS. Places (22 cards), Faiths, Projects, Festivals, Food, Itineraries and Practical are server-rendered in the initial HTML again (client list components still keep the Flight payload to data-only). Lazy rendering remains only where it is visual: the Leaflet map (on approach), the Aarti lamps + flicker (on approach), the 3D hero (capable desktops), the place modal (on open). The `/data/*` JSON endpoints were removed.
+
+- HTML 18 → 56 KB gz; every summary, verse, timeline and etiquette line is greppable in the response.
+- Lighthouse mobile, production build, 5 runs on /hi: **91 / 90 / 93 / 94 / 92**, LCP 2.0–2.4 s, TBT 200–340 ms, FCP 1.4 s, CLS 0; A11y 100, BP 100.
+- The remaining perf structure (client lists, JSON-free client helpers, ssr:false modal, deferred body fonts + block display faces, interaction-only motion bundle on touch) is what keeps it above 90 with full text.
+
+**Not done here, by request:** Vercel deploy (`npx vercel login` → `npx vercel --prod`, set `NEXT_PUBLIC_SITE_URL`, then check /hi, /en, /ta).

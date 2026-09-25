@@ -1,19 +1,23 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Hero from "@/components/hero/Hero";
 import RippleWipe from "@/components/motion/RippleWipe";
+import AartiFinale from "@/components/sections/AartiFinale";
 import DayInKashi from "@/components/sections/DayInKashi";
+import Faiths from "@/components/sections/Faiths";
+import Festivals from "@/components/sections/Festivals";
+import Food from "@/components/sections/Food";
+import Itineraries from "@/components/sections/Itineraries";
 import Places from "@/components/sections/Places";
-import TailSections from "@/components/sections/tail/TailSections";
+import Practical from "@/components/sections/Practical";
+import Projects from "@/components/sections/Projects";
 import JsonLd from "@/components/ui/JsonLd";
 import type { Locale } from "@/lib/i18n/locales";
-import { getTailHeadings } from "@/lib/sectionProps";
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
   setRequestLocale(locale);
   const loc = locale as Locale;
   const meta = await getTranslations("meta");
-  const headings = await getTailHeadings(loc);
 
   return (
     <main id="content" className="flex flex-1 flex-col">
@@ -23,7 +27,18 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <DayInKashi locale={loc} />
       <RippleWipe />
       <Places locale={loc} />
-      <TailSections locale={loc} headings={headings} />
+      <RippleWipe />
+      <Faiths locale={loc} />
+      <RippleWipe />
+      <Projects locale={loc} />
+      <RippleWipe />
+      <Festivals locale={loc} />
+      <Food locale={loc} />
+      <RippleWipe />
+      <Itineraries locale={loc} />
+      <Practical locale={loc} />
+      <RippleWipe />
+      <AartiFinale locale={loc} />
     </main>
   );
 }

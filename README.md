@@ -77,8 +77,8 @@ Same pattern in `festivals.json` (lunar `when` rule + `months` 1–12), `food.js
 4. Optionally add `i18n.<code>` blocks in `content/*.json` and `og-<code>.png` in `public/media/og/` (see `scratchpad` note in PROGRESS.md for the generator).
 5. `npm run build` prerenders the new locale; the switcher, sitemap and hreflang pick it up automatically.
 
-## How the page loads (why some sections are client-rendered)
-The hero, the Day-in-Kashi timeline and every section heading are server-rendered. The bodies of Places, Faiths, Projects, Festivals, Food, Itineraries, Practical and the Aarti finale render client-side when they come near the viewport, from JSON prerendered at build (`/<locale>/data/places`, `/<locale>/data/tail`, built in `lib/sectionProps.ts` and served by `app/[locale]/data/[section]/route.ts`). This keeps the first paint small on slow phones (Lighthouse mobile 91–96). To server-render a section instead, import it in `app/[locale]/page.tsx` directly; see PROGRESS.md Phase 9 for the trade-off.
+## How the page loads
+Every section's text is server-rendered into the initial HTML (search engines, social previews and AI crawlers need no JavaScript to read it). Only visual heavyweights load on approach: the Leaflet map, the Aarti lamps, the 3D hero (capable desktops only) and the place modal (on open). Section data is prepared on the server in `lib/sectionProps.ts` and rendered by small client list components so filtering, tabs and animations work without duplicating markup in the hydration payload. Lighthouse mobile: 90–94.
 
 ## Design rules that the code enforces
 - Tokens are CSS variables in `app/globals.css` (`--kashi-*`), exposed to Tailwind via `@theme inline`. Gold is glow, not fill.

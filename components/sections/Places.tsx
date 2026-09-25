@@ -2,11 +2,17 @@ import { getTranslations } from "next-intl/server";
 import Reveal from "@/components/motion/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
 import type { Locale } from "@/lib/i18n/locales";
-import PlacesBody from "./PlacesBody";
+import { getPlacesProps } from "@/lib/sectionProps";
+import PlacesExplorer from "./PlacesExplorer";
 
-/** Heading + intro are server-rendered; the explorer body loads its data from /<locale>/data/places. */
+/**
+ * Server-rendered: every card's text is in the initial HTML. The explorer is a
+ * client component for filtering and the modal; the Leaflet map inside it
+ * still loads only when scrolled near.
+ */
 export default async function Places({ locale }: { locale: Locale }) {
   const t = await getTranslations("places");
+  const { items, labels } = await getPlacesProps(locale);
   return (
     <section id="places" aria-labelledby="places-title" className="cv-section section-kashi scroll-mt-4">
       <div className="container-kashi pb-12 text-center">
@@ -15,7 +21,7 @@ export default async function Places({ locale }: { locale: Locale }) {
           <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{t("intro")}</p>
         </Reveal>
       </div>
-      <PlacesBody locale={locale} loadingLabel={t("mapLoading")} />
+      <PlacesExplorer items={items} labels={labels} />
     </section>
   );
 }
