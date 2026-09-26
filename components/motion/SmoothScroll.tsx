@@ -37,6 +37,42 @@ export function useLenis(): Lenis | null {
 }
 
 /**
+ * Scroll an element into view: Lenis when it is running, native smooth
+ * scrolling otherwise, instant under reduced motion. Sections below the fold
+ * use `content-visibility: auto`, so the target can move once the sections
+ * passed on the way lay out; one correction after arrival fixes that.
+ */
+export function scrollToElement(el: HTMLElement, { block = "start", offset = 0 }: { block?: "start" | "center"; offset?: number } = {}) {
+  const reduced = prefersReducedMotion();
+  const target = () => {
+    const r = el.getBoundingClientRect();
+    const lead = block === "center" ? Math.max(0, (window.innerHeight - r.height) / 2) : offset;
+    return Math.max(0, window.scrollY + r.top - lead);
+  };
+  const lenis = lenisStore.get();
+  const settle = () => {
+    const y = target();
+    if (Math.abs(y - window.scrollY) < 3) return;
+    if (lenis) lenis.scrollTo(y, { immediate: true, force: true });
+    else window.scrollTo({ top: y, behavior: "instant" });
+  };
+  if (lenis && !reduced) {
+    lenis.scrollTo(target(), { duration: 1.2, force: true, onComplete: () => requestAnimationFrame(settle) });
+    return;
+  }
+  window.scrollTo({ top: target(), behavior: reduced ? "instant" : "smooth" });
+  let done = false;
+  const finish = () => {
+    if (done) return;
+    done = true;
+    window.removeEventListener("scrollend", finish);
+    requestAnimationFrame(settle);
+  };
+  window.addEventListener("scrollend", finish);
+  window.setTimeout(finish, reduced ? 50 : 1500);
+}
+
+/**
  * GSAP + ScrollTrigger + SplitText, registered, once the bundle has loaded
  * after hydration. Null before that. Animate in an effect keyed on the result:
  *

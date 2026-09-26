@@ -1,10 +1,12 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Hero from "@/components/hero/Hero";
+import HashLinks from "@/components/motion/HashLinks";
 import RippleWipe from "@/components/motion/RippleWipe";
 import AartiFinale from "@/components/sections/AartiFinale";
 import DayInKashi from "@/components/sections/DayInKashi";
 import Faiths from "@/components/sections/Faiths";
 import Festivals from "@/components/sections/Festivals";
+import FestivalMonthFilter from "@/components/sections/FestivalMonthFilter";
 import Food from "@/components/sections/Food";
 import Itineraries from "@/components/sections/Itineraries";
 import Places from "@/components/sections/Places";
@@ -47,6 +49,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <Static><Practical locale={loc} /></Static>
       <RippleWipe />
       <AartiFinale locale={loc} />
+      <HashLinks />
+      <FestivalMonthFilter />
       <SectionDots label={nav("sectionsNav")} items={SECTIONS.map((s) => ({ id: s.id, label: nav(s.key) }))} />
       <Static><SiteFooter locale={loc} /></Static>
     </main>

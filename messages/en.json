@@ -87,6 +87,7 @@
     "intro": "Ghats, temples, stupas, mosques, gurudwaras, churches and the maths of the saints, all in one city. Filter them, find them on the map, and read each one's story.",
     "filters": {
       "all": "All",
+      "hindu": "Hindu",
       "ghats": "Ghats",
       "temples": "Temples",
       "buddhist": "Buddhist",

@@ -440,6 +440,20 @@ footer.cv-auto { contain-intrinsic-size: auto 130vh; }
 .kashi-pin { filter: drop-shadow(0 0 6px rgba(255, 210, 122, 0.55)); cursor: pointer; }
 .kashi-pin svg { transition: transform 0.3s var(--ease-enter); transform-origin: 50% 100%; }
 .kashi-pin:hover svg { transform: scale(1.15); }
+.kashi-pin-focus { z-index: 1000 !important; filter: drop-shadow(0 0 10px rgba(255, 210, 122, 0.9)); }
+.kashi-pin-focus svg { transform: scale(1.2); }
+.kashi-pin-pulse {
+  position: absolute; left: 50%; top: 100%; width: 44px; height: 44px; margin: -24px 0 0 -22px;
+  border-radius: 9999px; border: 2px solid var(--kashi-diya); pointer-events: none;
+  animation: pin-pulse 1.6s var(--ease-enter) infinite;
+}
+@keyframes pin-pulse { from { transform: scale(0.3); opacity: 0.9; } to { transform: scale(1.4); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .kashi-pin-pulse { animation: none; opacity: 0.6; } }
+.leaflet-tooltip.kashi-pin-label {
+  background: var(--kashi-indigo); color: var(--kashi-white); border: 1px solid color-mix(in oklab, var(--kashi-diya) 50%, transparent);
+  border-radius: 9999px; padding: 4px 12px; font-size: 0.8rem; box-shadow: 0 0 18px rgba(255, 210, 122, 0.35);
+}
+.leaflet-tooltip.kashi-pin-label::before { border-top-color: color-mix(in oklab, var(--kashi-diya) 50%, transparent); }
 .kashi-cluster span {
   display: grid; place-items: center; width: 40px; height: 40px; border-radius: 9999px;
   background: color-mix(in oklab, var(--kashi-night) 85%, transparent); border: 1.5px solid var(--kashi-diya);

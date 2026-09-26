@@ -2,7 +2,7 @@
   {
     "id": "hindu",
     "order": 1,
-    "filter": "temples",
+    "filter": "hindu",
     "sites": [
       "kashi-vishwanath",
       "dashashwamedh-ghat",

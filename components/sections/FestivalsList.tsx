@@ -16,15 +16,16 @@ export interface FestivalItem extends Pick<Festival, "id" | "months" | "when" | 
   photo: PhotoData | null;
 }
 
-export default function FestivalsList({ items, months, labels }: { items: FestivalItem[]; months: string[]; labels: { when: string; where: string; lunarNote: string; readMore: string; nextUp: string } }) {
+export default function FestivalsList({ items, months, labels }: { items: FestivalItem[]; months: string[]; labels: { when: string; where: string; lunarNote: string; readMore: string; nextUp: string; all: string } }) {
   return (
     <>
       <Reveal className="container-kashi mt-12">
-        <ol className="grid grid-cols-6 gap-1 sm:grid-cols-12" aria-label={labels.when}>
+        {/* Each month is a link: <HashLinks> scrolls here, <FestivalMonthFilter> filters the cards. */}
+        <ol data-hash-target="" className="grid grid-cols-6 gap-1 sm:grid-cols-12" aria-label={labels.when}>
           {months.map((m, i) => {
             const here = items.filter((f) => f.months.includes(i + 1));
-            return (
-              <li key={m} className="flex flex-col items-center gap-2 rounded-kashi border border-kashi-rudraksha/40 px-1 py-3 text-center">
+            const body = (
+              <>
                 <span className="text-[0.65rem] uppercase tracking-[0.15em] text-kashi-ash/60">{m}</span>
                 <span className="flex h-5 items-end gap-0.5" aria-hidden="true">
                   {here.map((f) => (
@@ -32,10 +33,27 @@ export default function FestivalsList({ items, months, labels }: { items: Festiv
                   ))}
                 </span>
                 <span className="sr-only">{here.map((f) => f.primaryName).join(", ")}</span>
+              </>
+            );
+            return (
+              <li key={m}>
+                {here.length ? (
+                  <a href={`#festivals/${i + 1}`} data-month={i + 1} data-month-name={m} className="month-cell flex h-full flex-col items-center gap-2 rounded-kashi border border-kashi-rudraksha/40 px-1 py-3 text-center transition-colors duration-300 hover:border-kashi-marigold/70 aria-[current]:border-kashi-saffron aria-[current]:bg-kashi-saffron/15">
+                    {body}
+                  </a>
+                ) : (
+                  <span className="flex h-full flex-col items-center gap-2 rounded-kashi border border-kashi-rudraksha/20 px-1 py-3 text-center opacity-60">{body}</span>
+                )}
               </li>
             );
           })}
         </ol>
+        <p data-month-status="" hidden aria-live="polite" className="mt-4 text-center text-sm">
+          <span data-month-name="" className="mr-3 rounded-full bg-kashi-saffron/15 px-3 py-1 text-kashi-white" />
+          <a href="#festivals/all" className="inline-flex min-h-11 items-center rounded-full border border-kashi-diya/40 px-4 text-kashi-diya transition-colors hover:border-kashi-marigold hover:text-kashi-marigold">
+            {labels.all}
+          </a>
+        </p>
         <p className="mt-3 text-center text-xs text-kashi-ash/60">{labels.lunarNote}</p>
       </Reveal>
 
@@ -44,7 +62,7 @@ export default function FestivalsList({ items, months, labels }: { items: Festiv
           // Badge the soonest festival with a confirmed date (not an "expected month").
           const nextUp = f.id === items.find((x) => x.date.featured.kind !== "expected")?.id;
           return (
-          <article key={f.id} data-next-up={nextUp ? "" : undefined} className={`group grain relative flex flex-col rounded-kashi border bg-kashi-indigo/40 p-6 transition-[border-color,box-shadow] duration-500 ease-enter hover:border-kashi-diya/50 hover:shadow-glow ${nextUp ? "border-kashi-diya/60 shadow-glow" : "border-kashi-rudraksha/60"}`}>
+          <article key={f.id} data-festival-card="" data-months={f.months.join(" ")} data-next-up={nextUp ? "" : undefined} className={`group grain relative flex flex-col rounded-kashi border bg-kashi-indigo/40 p-6 transition-[border-color,box-shadow] duration-500 ease-enter hover:border-kashi-diya/50 hover:shadow-glow ${nextUp ? "border-kashi-diya/60 shadow-glow" : "border-kashi-rudraksha/60"}`}>
             {nextUp && (
               <span className="absolute right-4 top-4 z-[2] rounded-full bg-kashi-saffron px-3 py-1 text-xs font-medium text-kashi-night">{labels.nextUp}</span>
             )}

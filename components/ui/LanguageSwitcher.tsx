@@ -2,13 +2,33 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
+import { sectionOfHash } from "@/components/motion/HashLinks";
 import { langFontClass } from "@/lib/fonts";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
+import { SECTIONS } from "@/lib/sections";
 
 /** Swap the leading locale segment of the current path. Plain links: a locale switch is a full navigation. */
 function withLocale(pathname: string, locale: Locale): string {
   const rest = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "");
   return `/${locale}${rest}`;
+}
+
+/**
+ * On the home page, the section being read (the last one whose top has passed
+ * 45% of the viewport) as a hash, so a language switch lands in the same
+ * place. A deeper hash for that section (`#places/sikh`) is kept whole.
+ */
+function currentSectionHash(pathname: string): string {
+  if (!/^\/[a-z]{2}\/?$/.test(pathname)) return "";
+  const line = window.innerHeight * 0.45;
+  let current = "";
+  for (const { id } of SECTIONS) {
+    const el = document.getElementById(id);
+    if (el && el.getBoundingClientRect().top <= line) current = id;
+  }
+  if (!current) return "";
+  const { hash } = window.location;
+  return sectionOfHash(hash) === current ? hash : `#${current}`;
 }
 
 /**
@@ -115,7 +135,12 @@ export default function LanguageSwitcher({
                   hrefLang={m.bcp47}
                   lang={m.bcp47}
                   aria-current={active ? "true" : undefined}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => {
+                    setOpen(false);
+                    // Read at click time: the link then navigates with the hash.
+                    const hash = currentSectionHash(pathname);
+                    if (hash) e.currentTarget.href = withLocale(pathname, loc) + hash;
+                  }}
                   className={`flex items-center justify-between gap-3 min-h-11 rounded-lg px-3 py-2 text-sm outline-none transition-colors hover:bg-kashi-saffron/15 focus-visible:bg-kashi-saffron/20 ${active ? "text-kashi-diya" : "text-kashi-ash"}`}
                 >
                   <span className={`flex items-baseline gap-3 ${langFontClass(m.script)}`}>

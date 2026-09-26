@@ -76,7 +76,7 @@ export async function getFestivalsProps(locale: Locale) {
     heading: { id: "festivals", title: t("title"), secondary: t("titleSecondary"), intro: t("intro") } as HeadingProps,
     items,
     months: t.raw("months") as string[],
-    labels: { when: t("when"), where: t("where"), lunarNote: t("lunarNote"), readMore: tpage("readMore"), nextUp: tpage("nextUp") },
+    labels: { when: t("when"), where: t("where"), lunarNote: t("lunarNote"), readMore: tpage("readMore"), nextUp: tpage("nextUp"), all: (await getTranslations({ locale, namespace: "places" }))("filters.all") },
   };
 }
 export type FestivalsProps = Awaited<ReturnType<typeof getFestivalsProps>>;

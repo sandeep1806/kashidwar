@@ -3,7 +3,7 @@
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { useEffect, useMemo, useState } from "react";
-import { MapContainer, Marker, TileLayer, useMap, useMapEvents } from "react-leaflet";
+import { MapContainer, Marker, TileLayer, Tooltip, useMap, useMapEvents } from "react-leaflet";
 import type { PlaceLite as Place } from "@/lib/contentTypes";
 
 const CENTER: [number, number] = [25.305, 83.01];
@@ -29,6 +29,14 @@ const PIN_SVG =
 const pinIcon = L.divIcon({
   className: "kashi-pin",
   html: PIN_SVG,
+  iconSize: [28, 36],
+  iconAnchor: [14, 34],
+});
+
+/** The place sent here by "View on map": a pulsing ring under the pin (static under reduced motion). */
+const focusIcon = L.divIcon({
+  className: "kashi-pin kashi-pin-focus",
+  html: `<span class="kashi-pin-pulse" aria-hidden="true"></span>${PIN_SVG}`,
   iconSize: [28, 36],
   iconAnchor: [14, 34],
 });
@@ -70,23 +78,42 @@ function buildClusters(map: L.Map, places: Place[], cell = 64): Cluster[] {
 
 function ClusteredMarkers({
   places,
+  focus,
+  focusLabel,
   onSelect,
   clusterLabel,
 }: {
   places: Place[];
+  focus: Place | null;
+  focusLabel?: string;
   onSelect: (p: Place) => void;
   clusterLabel: (n: number) => string;
 }) {
   const map = useMap();
   const [zoom, setZoom] = useState(() => map.getZoom());
   useMapEvents({ zoomend: () => setZoom(map.getZoom()) });
+  // The focused place never merges into a cluster.
   const clusters = useMemo(() => {
     void zoom;
-    return buildClusters(map, places);
-  }, [map, places, zoom]);
+    return buildClusters(map, focus ? places.filter((p) => p.id !== focus.id) : places);
+  }, [map, places, focus, zoom]);
 
   return (
     <>
+      {focus && (
+        <Marker
+          key={`focus-${focus.id}`}
+          position={[focus.lat, focus.lng]}
+          icon={focusIcon}
+          zIndexOffset={1000}
+          title={focus.name_en}
+          eventHandlers={{ click: () => onSelect(focus) }}
+        >
+          <Tooltip permanent direction="top" offset={[0, -36]} className="kashi-pin-label">
+            {focusLabel ?? focus.name_en}
+          </Tooltip>
+        </Marker>
+      )}
       {clusters.map((c) =>
         c.places.length === 1 ? (
           <Marker
@@ -132,11 +159,14 @@ function ViewController({ places, focus }: { places: Place[]; focus: Place | nul
 export default function KashiMap({
   places,
   focus,
+  focusLabel,
   onSelect,
   clusterLabel,
 }: {
   places: Place[];
   focus: Place | null;
+  /** Localized name shown in the focused pin's label */
+  focusLabel?: string;
   onSelect: (p: Place) => void;
   clusterLabel: (n: number) => string;
 }) {
@@ -151,7 +181,7 @@ export default function KashiMap({
       attributionControl
     >
       <TileLayer url={TILE_URL} attribution={TILE_ATTRIBUTION} maxZoom={19} />
-      <ClusteredMarkers places={places} onSelect={onSelect} clusterLabel={clusterLabel} />
+      <ClusteredMarkers places={places} focus={focus} focusLabel={focusLabel} onSelect={onSelect} clusterLabel={clusterLabel} />
       <ViewController places={places} focus={focus} />
     </MapContainer>
   );

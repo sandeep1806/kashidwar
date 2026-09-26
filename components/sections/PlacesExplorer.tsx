@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore, type MouseEvent, type ReactNode } from "react";
+import { URL_EVENT, writeHash } from "@/components/motion/HashLinks";
+import { scrollToElement } from "@/components/motion/SmoothScroll";
 import EnglishNote from "@/components/ui/EnglishNote";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 
@@ -52,16 +54,18 @@ export interface ExplorerLabels extends PlaceLabels {
 
 const withCount = (template: string, n: number) => template.replace("{count}", String(n));
 
-/** `#places/jain` style hash → filter id, so faith tiles can deep-link into the grid. */
+/**
+ * `#places/jain` style hash → filter id, so faith tiles can deep-link into the
+ * grid (the click and the scroll are handled by <HashLinks>). A bare
+ * `#places` reads as "all".
+ */
 function readHashFilter(): PlaceFilter | null {
-  const m = /^#places\/([a-z]+)$/.exec(window.location.hash);
-  const f = m?.[1];
+  const { hash } = window.location;
+  if (hash === "#places") return "all";
+  const f = /^#places\/([a-z]+)$/.exec(hash)?.[1];
   return f && (PLACE_FILTERS as readonly string[]).includes(f) ? (f as PlaceFilter) : null;
 }
-function subscribeHash(cb: () => void) {
-  window.addEventListener("hashchange", cb);
-  return () => window.removeEventListener("hashchange", cb);
-}
+const filterHash = (f: PlaceFilter) => (f === "all" ? "#places" : `#places/${f}`);
 
 /*
  * Shareable place links: `?place=<id>` opens that place's modal. The URL is
@@ -69,24 +73,26 @@ function subscribeHash(cb: () => void) {
  * a local event), and the component reads it back through a store, so a
  * pasted link, a reload and the back button all behave the same.
  */
-const URL_EVENT = "kashi:url";
 function readPlaceParam(): string | null {
   return new URLSearchParams(window.location.search).get("place");
 }
 function subscribeUrl(cb: () => void) {
   window.addEventListener("popstate", cb);
+  window.addEventListener("hashchange", cb);
   window.addEventListener(URL_EVENT, cb);
   return () => {
     window.removeEventListener("popstate", cb);
+    window.removeEventListener("hashchange", cb);
     window.removeEventListener(URL_EVENT, cb);
   };
 }
-function writePlaceParam(id: string | null) {
+/** Open/close a place, keeping the active filter in the hash either way. */
+function writePlaceParam(id: string | null, filter: PlaceFilter) {
   const url = new URL(window.location.href);
   if (id) url.searchParams.set("place", id);
   else url.searchParams.delete("place");
-  if (id && !url.hash) url.hash = "places";
-  history.replaceState(null, "", url.pathname + url.search + url.hash);
+  if (!url.hash.startsWith("#places/")) url.hash = filterHash(filter);
+  history.replaceState(history.state, "", url.pathname + url.search + url.hash);
   window.dispatchEvent(new Event(URL_EVENT));
 }
 
@@ -110,12 +116,16 @@ export default function PlacesExplorer({
   /** e.g. "/hi/places/": each place has a page at pageBase + id */
   pageBase: string;
 }) {
-  const hashFilter = useSyncExternalStore(subscribeHash, readHashFilter, () => null);
-  const [picked, setPicked] = useState<PlaceFilter | null>(null);
-  const filter: PlaceFilter = picked ?? hashFilter ?? "all";
+  // The hash sets the filter; a hash that names no filter (another section,
+  // none at all) leaves the last one in place.
+  const hashFilter = useSyncExternalStore(subscribeUrl, readHashFilter, () => null);
+  const [filter, setFilter] = useState<PlaceFilter>("all");
+  if (hashFilter && hashFilter !== filter) setFilter(hashFilter);
 
   const placeParam = useSyncExternalStore(subscribeUrl, readPlaceParam, () => null);
-  const [focus, setFocus] = useState<Place | null>(null);
+  // The map's focused place belongs to the filter it was chosen under.
+  const [focused, setFocused] = useState<{ place: Place; filter: PlaceFilter } | null>(null);
+  const focus = focused?.filter === filter ? focused.place : null;
   const [mapWanted, setMapWanted] = useState(false);
   const mapHost = useRef<HTMLDivElement>(null);
 
@@ -137,17 +147,19 @@ export default function PlacesExplorer({
   }, []);
 
   const visible = useMemo(() => items.filter((i) => placeMatches(i.place, filter)), [items, filter]);
-  const visiblePlaces = useMemo(() => visible.map((i) => i.place), [visible]);
+  const visiblePlaces = useMemo(() => {
+    const list = visible.map((i) => i.place);
+    return focus && !list.includes(focus) ? [...list, focus] : list;
+  }, [visible, focus]);
   const byId = useMemo(() => new Map(items.map((i) => [i.place.id, i])), [items]);
 
   const choose = (f: PlaceFilter) => {
-    setPicked(f);
-    setFocus(null);
-    history.replaceState(null, "", f === "all" ? "#places" : `#places/${f}`);
+    setFilter(f);
+    writeHash(filterHash(f));
   };
   const selected = placeParam ? (byId.get(placeParam) ?? null) : null;
-  const openPlace = useCallback((p: Place) => writePlaceParam(p.id), []);
-  const close = useCallback(() => writePlaceParam(null), []);
+  const openPlace = useCallback((p: Place) => writePlaceParam(p.id, filter), [filter]);
+  const close = useCallback(() => writePlaceParam(null, filter), [filter]);
   const [copied, setCopied] = useState(false);
   const share = async () => {
     if (!selected) return;
@@ -172,10 +184,14 @@ export default function PlacesExplorer({
 
   const showOnMap = () => {
     if (!selected) return;
-    setFocus(selected.place);
+    setFocused({ place: selected.place, filter });
     setMapWanted(true);
-    writePlaceParam(null);
-    mapHost.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    close();
+    // Wait for the modal to let go of the page (body overflow, Lenis stop)
+    // before scrolling; the whole map ends up in view, centred.
+    window.setTimeout(() => {
+      if (mapHost.current) scrollToElement(mapHost.current, { block: "center" });
+    }, 80);
   };
 
   const [details, setDetails] = useState<Record<string, PlaceDetail> | null>(null);
@@ -200,7 +216,7 @@ export default function PlacesExplorer({
     const id = (e.target as Element).closest<HTMLElement>("[data-place-open]")?.dataset.placeOpen;
     if (!id) return;
     e.preventDefault();
-    writePlaceParam(id);
+    writePlaceParam(id, filter);
   };
 
   const sel = selected?.place;
@@ -209,7 +225,7 @@ export default function PlacesExplorer({
 
   return (
     <div className="container-kashi">
-      <div role="group" aria-label={labels.filters.all} className="flex flex-wrap justify-center gap-2">
+      <div data-hash-target="" role="group" aria-label={labels.filters.all} className="flex flex-wrap justify-center gap-2">
         {PLACE_FILTERS.map((f) => (
           <button
             key={f}
@@ -241,7 +257,7 @@ export default function PlacesExplorer({
         role="region"
       >
         {mapWanted ? (
-          <KashiMap places={visiblePlaces} focus={focus} onSelect={openPlace} clusterLabel={(n) => withCount(labels.cluster, n)} />
+          <KashiMap places={visiblePlaces} focus={focus} focusLabel={focus ? byId.get(focus.id)?.primaryName : undefined} onSelect={openPlace} clusterLabel={(n) => withCount(labels.cluster, n)} />
         ) : (
           <div className="flex h-full items-center justify-center bg-kashi-indigo/40 text-sm text-kashi-ash/60">
             {labels.mapLoading}

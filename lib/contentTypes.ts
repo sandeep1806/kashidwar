@@ -195,6 +195,7 @@ export interface FaithEntry {
 /** Filter chips for the Places section (DESIGN.md → Place card, PROMPTS.md Phase 4). */
 export const PLACE_FILTERS = [
   "all",
+  "hindu",
   "ghats",
   "temples",
   "buddhist",
