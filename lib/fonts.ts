@@ -2,7 +2,7 @@
  * next/font setup (DESIGN.md → Typography).
  *
  * Core pair, loaded everywhere:
- *   - Cormorant Garamond 600/700 → Latin display (temple-carved serif)
+ *   - Cormorant Garamond 600     → Latin display (temple-carved serif), heading subset
  *   - Inter (variable)           → Latin body
  *   - Tiro Devanagari Hindi      → Devanagari display (hi / mr / sa titles)
  *
@@ -11,7 +11,6 @@
  * download an @font-face when text actually uses it, so other scripts cost nothing.
  */
 import {
-  Cormorant_Garamond,
   Inter,
   Noto_Sans_Bengali,
   Noto_Sans_Devanagari,
@@ -33,17 +32,27 @@ import { LOCALES, type Locale, type Script } from "./i18n/locales";
  * the web fonts arrive under the page loader, and repeat visits hit the cache.
  */
 /*
- * Display faces use `display: "block"`: the hero title paints once, in its
- * real face, instead of a fallback first and a re-paint (which registers a
- * second, later Largest Contentful Paint). Up to 3 s of invisible heading is
- * covered by the page loader on first visits; repeat visits are cached.
+ * The two heading faces (the hero H1 is the LCP element) are small subsets,
+ * preloaded and applied from first paint with `display: "optional"`: the
+ * heading waits at most ~100 ms for its preloaded face (on a normal link it
+ * arrives in time and paints once, in the real face); on a slow link it paints
+ * in the metric-matched fallback and stays so for that page view. Never
+ * `block` (invisible text) and never `swap`: a swap re-paints the H1 in a
+ * larger face, which registers a second, later LCP (measured on /hi: 1.26 s).
+ *
+ * Cormorant Garamond, pinned at weight 600 (the only weight headings use) and
+ * subset to Latin, Latin-1, Latin Extended-A, IAST letters and punctuation:
+ * 22 KB instead of Google's 38 KB variable file. Built by
+ * scripts/heading-font/subset-latin.py.
  */
-export const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["600", "700"],
+export const cormorant = localFont({
+  src: "./fonts/cormorant-headings.woff2",
+  weight: "600",
   variable: "--font-display-latin",
-  display: "block",
-  preload: false,
+  display: "optional",
+  preload: true,
+  fallback: ["Georgia", "serif"],
+  adjustFontFallback: "Times New Roman",
 });
 
 export const inter = Inter({
@@ -65,7 +74,7 @@ export const tiroDevanagari = localFont({
   src: "./fonts/tiro-devanagari-headings.woff2",
   weight: "400",
   variable: "--font-display-deva",
-  display: "block",
+  display: "optional",
   preload: true,
   fallback: ["serif"],
   adjustFontFallback: "Times New Roman",
@@ -146,7 +155,8 @@ const regionalByScript: Record<Script, { variable: string; className: string } |
 
 /**
  * Font classes for <html>, split by when they should apply:
- *  - immediate: the 20 KB heading subset of Tiro Devanagari (preloaded).
+ *  - immediate: the two heading subsets, Tiro Devanagari (21 KB) and
+ *    Cormorant (22 KB), preloaded, display: optional.
  *  - deferred: every other face, attached after first paint by <DeferredFonts>.
  *    The display faces (Cormorant 37 KB, Tiro 62 KB, regional display faces)
  *    blocked the hero H1, which is the LCP element, and held Lighthouse mobile
@@ -157,8 +167,8 @@ const regionalByScript: Record<Script, { variable: string; className: string } |
 export function fontClassesFor(locale: Locale): { immediate: string; deferred: string } {
   const script = LOCALES[locale].script;
   const regional = regionalByScript[script];
-  const immediate = [tiroDevanagari.variable];
-  const deferred = [cormorant.variable, inter.variable, regional?.variable ?? ""];
+  const immediate = [tiroDevanagari.variable, cormorant.variable];
+  const deferred = [inter.variable, regional?.variable ?? ""];
   return { immediate: immediate.filter(Boolean).join(" "), deferred: deferred.filter(Boolean).join(" ") };
 }
 
@@ -170,7 +180,7 @@ export function fontClassesFor(locale: Locale): { immediate: string; deferred: s
 export function fontLoadSpecsFor(locale: Locale): string[] {
   const regional = regionalByScript[LOCALES[locale].script] as { style?: { fontFamily: string } } | null;
   const family = (f: { style: { fontFamily: string } }) => f.style.fontFamily.split(",")[0].trim();
-  const specs = [`600 1em ${family(cormorant)}`, `400 1em ${family(inter)}`];
+  const specs = [`400 1em ${family(inter)}`];
   if (regional?.style) specs.push(`400 1em ${family(regional as { style: { fontFamily: string } })}`);
   return specs;
 }

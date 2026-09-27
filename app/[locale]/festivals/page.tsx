@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import HashLinks from "@/components/motion/HashLinks";
 import ListingShell from "@/components/pages/ListingShell";
-import FestivalMonthFilter from "@/components/sections/FestivalMonthFilter";
+import LazyMonthFilter from "@/components/sections/LazyMonthFilter";
 import FestivalsList from "@/components/sections/FestivalsList";
 import type { Locale } from "@/lib/i18n/locales";
 import { alternatesFor } from "@/lib/pages";
@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/festival
   return { title: t("title"), description: t("intro"), alternates: alternatesFor(locale, "/festivals") };
 }
 
-/** Every festival in full (the home page shows them as a carousel on phones). */
+/** Every festival as a compact card linking to its page (the full text lives there). */
 export default async function FestivalsPage({ params }: PageProps<"/[locale]/festivals">) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -37,11 +37,11 @@ export default async function FestivalsPage({ params }: PageProps<"/[locale]/fes
       island={
         <>
           <HashLinks />
-          <FestivalMonthFilter />
+          <LazyMonthFilter />
         </>
       }
     >
-      <FestivalsList items={items} months={months} labels={labels} />
+      <FestivalsList items={items} months={months} labels={labels} compact />
     </ListingShell>
   );
 }

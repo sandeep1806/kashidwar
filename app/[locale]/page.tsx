@@ -6,7 +6,7 @@ import AartiFinale from "@/components/sections/AartiFinale";
 import DayInKashi from "@/components/sections/DayInKashi";
 import Faiths from "@/components/sections/Faiths";
 import Festivals from "@/components/sections/Festivals";
-import FestivalMonthFilter from "@/components/sections/FestivalMonthFilter";
+import LazyMonthFilter from "@/components/sections/LazyMonthFilter";
 import Food from "@/components/sections/Food";
 import Itineraries from "@/components/sections/Itineraries";
 import Places from "@/components/sections/Places";
@@ -50,7 +50,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <RippleWipe />
       <AartiFinale locale={loc} />
       <HashLinks />
-      <FestivalMonthFilter />
+      <LazyMonthFilter />
       <SectionDots label={nav("sectionsNav")} items={SECTIONS.map((s) => ({ id: s.id, label: nav(s.key) }))} />
       <Static><SiteFooter locale={loc} /></Static>
     </main>

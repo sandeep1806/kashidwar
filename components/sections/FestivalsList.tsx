@@ -4,6 +4,7 @@ import CardPhoto from "@/components/ui/CardPhoto";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 import FestivalDateLine from "@/components/ui/FestivalDateLine";
 import SeeAll from "@/components/ui/SeeAll";
+import { metaDescription } from "@/lib/pages";
 import type { FestivalDateView } from "@/lib/festivalDates";
 import type { Faith, Festival, PhotoData } from "@/lib/contentTypes";
 
@@ -18,11 +19,16 @@ export interface FestivalItem extends Pick<Festival, "id" | "months" | "when" | 
 }
 
 /**
+ * `compact`: the festivals page, where each card is a photo, name, next date
+ * and a short summary (first sentences, clamped to two lines) linking to the
+ * festival's own page, which carries the full text. The long parts are not
+ * rendered at all, which keeps that page's HTML small.
+ *
  * `carousel`: the home page, where phones and tablets get a snap carousel of
  * compact cards and a "See all" link to the festivals page (which renders the
  * full grid).
  */
-export default function FestivalsList({ items, months, labels, carousel }: { items: FestivalItem[]; months: string[]; labels: { when: string; where: string; lunarNote: string; readMore: string; nextUp: string; all: string }; carousel?: { href: string; label: string } }) {
+export default function FestivalsList({ items, months, labels, carousel, compact = false }: { items: FestivalItem[]; months: string[]; labels: { when: string; where: string; lunarNote: string; readMore: string; nextUp: string; all: string }; carousel?: { href: string; label: string }; compact?: boolean }) {
   // Under the home page's section H2 the cards are H3; on the festivals page, under its H1, H2.
   const H = carousel ? "h3" : "h2";
   return (
@@ -67,7 +73,7 @@ export default function FestivalsList({ items, months, labels, carousel }: { ite
 
       <div className="container-kashi mt-12">
       <StaggerCards className={carousel ? "carousel-sm grid gap-6 md:grid-cols-2 xl:grid-cols-3" : "grid gap-6 md:grid-cols-2 xl:grid-cols-3"} data-carousel={carousel ? "" : undefined}>
-        {items.map((f) => {
+        {items.map((f, i) => {
           // Badge the soonest festival with a confirmed date (not an "expected month").
           const nextUp = f.id === items.find((x) => x.date.featured.kind !== "expected")?.id;
           return (
@@ -75,7 +81,7 @@ export default function FestivalsList({ items, months, labels, carousel }: { ite
             {nextUp && (
               <span className="absolute right-4 top-4 z-[2] rounded-full bg-kashi-saffron px-3 py-1 text-xs font-medium text-kashi-night">{labels.nextUp}</span>
             )}
-            <CardPhoto photo={f.photo} faith={f.glyph} className="card-photo -mx-3 -mt-3 mb-5" carousel={!!carousel} />
+            <CardPhoto photo={f.photo} faith={f.glyph} className="card-photo -mx-3 -mt-3 mb-5" carousel={!!carousel} priority={compact && i === 0} />
             <div className="flex items-center gap-3">
               <span className="grid h-10 w-10 place-items-center rounded-full border border-kashi-diya/40 text-kashi-diya">
                 <FaithGlyph faith={f.glyph} className="h-5 w-5" />
@@ -86,13 +92,17 @@ export default function FestivalsList({ items, months, labels, carousel }: { ite
               </div>
             </div>
             <FestivalDateLine view={f.date} compact className="mt-3" />
-            <p className="card-summary mt-4 text-kashi-ash/90">{f.summary}</p>
-            <dl className="card-extra mt-5 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
+            {compact ? (
+              <p className="mt-3 line-clamp-2 text-kashi-ash/90">{metaDescription(f.summary, 140)}</p>
+            ) : (
+              <p className="card-summary mt-4 text-kashi-ash/90">{f.summary}</p>
+            )}
+            {!compact && <dl className="card-extra mt-5 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
               <dt className="text-kashi-diya/80">{labels.when}</dt>
               <dd className="text-kashi-ash/85">{f.when} · {f.months.map((m) => months[m - 1]).join("–")}</dd>
               <dt className="text-kashi-diya/80">{labels.where}</dt>
               <dd className="text-kashi-ash/85">{f.where}</dd>
-            </dl>
+            </dl>}
             <a href={f.href} className="mt-auto inline-flex items-center gap-2 pt-5 text-sm text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">
               {labels.readMore}
               <span aria-hidden="true">→</span>
