@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Block, LinkCards, PrevNext } from "@/components/pages/Blocks";
+import GuideLinks from "@/components/pages/GuideLinks";
 import LdJson from "@/components/pages/LdJson";
 import PageShell from "@/components/pages/PageShell";
 import EnglishNote from "@/components/ui/EnglishNote";
@@ -114,6 +115,7 @@ export default async function ItineraryPage({ params }: PageProps<"/[locale]/iti
               title={t("related")}
               items={placeIds.slice(0, 8).map((id) => ({ href: pageUrl(loc, "places", id), name: placeName(id), secondary: devanagari ? getPlace(id)!.name_en : getPlace(id)!.name_hi, photo: getPhoto(`places/${id}`, loc), faith: getPlace(id)!.faith[0] ?? "secular", type: getPlace(id)!.type }))}
             />
+            <GuideLinks locale={loc} kind="itineraries" id={slug} />
             <PrevNext
               prev={{ href: pageUrl(loc, "itineraries", itinerarySlug(prev)), label: t("prev"), name: t("itineraryDays", { n: String(prev.days) }) }}
               next={{ href: pageUrl(loc, "itineraries", itinerarySlug(next)), label: t("next"), name: t("itineraryDays", { n: String(next.days) }) }}

@@ -308,7 +308,10 @@
     "verified": "Project statuses last verified {date}.",
     "sourcesNote": "Every project, place and festival links to its sources; statuses marked unconfirmed could not be verified from an official source.",
     "tagline": "A journey from night to dawn on the Ganga.",
-    "rights": "Text and design © {year} Kashi. Photographs remain their authors' under the licences listed on the credits page."
+    "rights": "Text and design © {year} Kashidwar. Photographs remain their authors' under the licences listed on the credits page.",
+    "about": "About",
+    "contact": "Contact",
+    "guides": "Guides"
   },
   "credits": {
     "title": "Credits",
@@ -352,5 +355,29 @@
     "dateExpected": "Next: expected {month} {year} — date not yet announced",
     "dateLastHeld": "Last held: {date}",
     "nextUp": "Coming up next"
+  },
+  "guides": {
+    "title": "Guides to Kashi",
+    "titleSecondary": "काशी यात्रा गाइड",
+    "intro": "Practical guides for planning your visit — dates, timings, routes and what to expect — each checked against the sources it cites.",
+    "plan": "Plan your visit",
+    "planIntro": "Practical guides, checked against the sources they cite.",
+    "published": "Published {date}",
+    "updated": "Updated {date}",
+    "by": "By {brand}",
+    "contents": "In this guide",
+    "faq": "Frequently asked questions",
+    "sources": "Sources",
+    "related": "Related pages",
+    "unconfirmed": "Not officially confirmed — check before you travel",
+    "read": "Read the guide",
+    "relatedGuides": "Guides"
+  },
+  "about": {
+    "title": "About Kashidwar",
+    "titleSecondary": "काशीद्वार के बारे में",
+    "description": "Who makes kashidwar.com, why, and how every date, timing and status on it is checked.",
+    "contactTitle": "Contact",
+    "email": "Email"
   }
 }

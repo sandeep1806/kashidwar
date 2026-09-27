@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const languages = Object.fromEntries(Object.entries(languageAlternates(page.path)).map(([k, v]) => [k, `${SITE_URL}${v}`]));
     return INDEXED_LOCALES.map((l) => ({
       url: `${SITE_URL}/${l}${page.path}`,
-      lastModified,
+      lastModified: page.lastModified ? new Date(page.lastModified + "T00:00:00Z") : lastModified,
       changeFrequency: page.changeFrequency,
       priority: page.priority,
       alternates: { languages },

@@ -1,4 +1,5 @@
 import photos from "@/content/photos.json";
+import { guidePhoto, guides } from "@/lib/guides";
 import { SLUGS, type Kind } from "@/lib/pages";
 
 export interface SitemapPage {
@@ -8,6 +9,8 @@ export interface SitemapPage {
   changeFrequency: "weekly" | "monthly";
   /** Photo keys (content/photos.json) shown on the page */
   photoKeys: string[];
+  /** ISO date the page last changed (guides); otherwise the build date is used */
+  lastModified?: string;
 }
 
 const PHOTO_KEYS = Object.keys(photos);
@@ -31,7 +34,22 @@ export function sitemapPages(): SitemapPage[] {
     changeFrequency: g === "food" ? "monthly" : "weekly",
     photoKeys: group(g),
   }));
-  return [home, ...listings, ...items, { path: "/credits", priority: 0.3, changeFrequency: "monthly", photoKeys: [] }];
+  const photoKey = (g: (typeof guides)[number]) => {
+    const p = guidePhoto(g, "en");
+    return p ? [p.src.replace("/media/photos/", "")] : [];
+  };
+  const guidePages: SitemapPage[] = [
+    { path: "/guides", priority: 0.8, changeFrequency: "weekly", photoKeys: [] },
+    ...guides.map((g) => ({ path: `/guides/${g.slug}`, priority: 0.8, changeFrequency: "weekly" as const, photoKeys: photoKey(g), lastModified: g.updated })),
+  ];
+  return [
+    home,
+    ...listings,
+    ...guidePages,
+    ...items,
+    { path: "/about", priority: 0.4, changeFrequency: "monthly", photoKeys: [] },
+    { path: "/credits", priority: 0.3, changeFrequency: "monthly", photoKeys: [] },
+  ];
 }
 
 export const PHOTOS = photos as Record<string, { src: string; widths: number[] }>;

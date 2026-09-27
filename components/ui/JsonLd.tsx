@@ -1,10 +1,11 @@
 import { places } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
-import { SITE_URL } from "@/lib/site";
+import { BRAND, SITE_URL, organizationLd } from "@/lib/site";
 
 /**
  * schema.org TouristDestination for Kashi with its TouristAttractions
- * (every place, with geo and its page URL) plus the WebSite, per locale.
+ * (every place, with geo and its page URL) plus the Organization and the
+ * WebSite, per locale.
  */
 export default function JsonLd({
   locale,
@@ -46,16 +47,17 @@ export default function JsonLd({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
-    name: siteName,
-    alternateName: ["Kashidwar", "Kashi (Varanasi) travel guide"],
+    name: BRAND,
+    alternateName: [siteName, "Kashi (Varanasi) travel guide"],
     url: `${SITE_URL}/${locale}`,
     inLanguage: LOCALES[locale].bcp47,
+    publisher: { "@id": `${SITE_URL}/#organization` },
     about: { "@id": `${SITE_URL}/${locale}#destination` },
   };
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify([website, data]).replace(/</g, "\\u003c") }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationLd(), website, data]).replace(/</g, "\\u003c") }}
     />
   );
 }

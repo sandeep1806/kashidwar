@@ -70,7 +70,8 @@ export async function generateMetadata({
     },
     twitter: { card: "summary_large_image", title: t("homeTitle"), description: t("description"), images: [`/media/og/og-${locale}.png`] },
     // Regional locales: noindex until reviewed (lib/seo.ts → INDEXED_LOCALES).
-    robots: isIndexed(locale) ? { index: true, follow: true } : { index: false, follow: true },
+    // Indexed pages allow large image previews in search and Discover.
+    robots: isIndexed(locale) ? { index: true, follow: true, "max-image-preview": "large" } : { index: false, follow: true },
     manifest: "/manifest.webmanifest",
     // The date festival "next occurrence" logic ran against (scripts/check-seo.mjs reads it).
     other: { "build-date": BUILD_DATE },

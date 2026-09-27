@@ -2,7 +2,7 @@
 /**
  * SEO checks over the prerendered HTML in .next/server/app (run after `next build`):
  *   - every page: <title>, meta description, self canonical
- *   - indexed locales (lib/seo.ts INDEXED_LOCALES): robots "index, follow", hreflang
+ *   - indexed locales (lib/seo.ts INDEXED_LOCALES): robots "index, follow, max-image-preview:large", hreflang
  *     for each indexed locale + x-default → /en; other locales: "noindex, follow", no hreflang
  *   - sitemap.xml and sitemap-images.xml list indexed locales only
  *   - festival dates, against the page's build date (<meta name="build-date">):
@@ -15,7 +15,8 @@
  *   - titles and descriptions unique within each locale
  *   - JSON-LD parses; Google rich-result rules for Event and BreadcrumbList
  *     (developers.google.com/search/docs/appearance/structured-data), and
- *     schema.org basics for TouristAttraction, TouristTrip, WebSite
+ *     schema.org basics for TouristAttraction, TouristTrip, WebSite, Organization,
+ *     and Google's rules for Article (headline, image, dates, author) and FAQPage
  * Exits 1 with a list of problems.
  */
 import { readdirSync, readFileSync, statSync } from "node:fs";
@@ -106,6 +107,29 @@ function checkLd(file, o) {
     case "TouristTrip":
       if (!o.name || !o.itinerary?.itemListElement?.length) bad(file, "TouristTrip: needs name and itinerary");
       break;
+    case "Organization":
+      if (!o.name || !absUrl(o.url) || !absUrl(o.logo?.url ?? o.logo)) bad(file, "Organization: needs name, absolute url and logo");
+      if (o.sameAs && (!Array.isArray(o.sameAs) || o.sameAs.some((u) => !absUrl(u)))) bad(file, "Organization: sameAs must be absolute URLs");
+      break;
+    case "Article": {
+      if (!o.headline || o.headline.length > 110) bad(file, "Article: headline missing or over 110 characters");
+      if (![o.image].flat().every((u) => absUrl(u?.url ?? u))) bad(file, "Article: image must be absolute URL(s)");
+      for (const k of ["datePublished", "dateModified"]) if (!/^\d{4}-\d{2}-\d{2}/.test(o[k] ?? "")) bad(file, `Article: ${k} missing or not ISO 8601`);
+      if (o.dateModified < o.datePublished) bad(file, "Article: dateModified before datePublished");
+      if (!o.author?.name || !o.publisher?.name) bad(file, "Article: needs author.name and publisher.name");
+      break;
+    }
+    case "FAQPage": {
+      const qs = o.mainEntity ?? [];
+      if (!qs.length) bad(file, "FAQPage: no questions");
+      qs.forEach((q, i) => {
+        if (q["@type"] !== "Question" || !q.name || q.acceptedAnswer?.["@type"] !== "Answer" || !q.acceptedAnswer?.text) bad(file, `FAQPage[${i}]: needs Question name and Answer text`);
+      });
+      break;
+    }
+    case "AboutPage":
+      if (!absUrl(o.url) || !o.name) bad(file, "AboutPage: needs name and absolute url");
+      break;
     case "WebSite":
       if (!o.name || !absUrl(o.url)) bad(file, "WebSite: needs name and absolute url");
       break;
@@ -131,7 +155,7 @@ for (const file of files) {
   if (!canonical) bad(file, "no canonical");
   else if (!new URL(canonical).pathname.startsWith(`/${loc0}`)) bad(file, `canonical ${canonical} is not this page`);
   if (INDEXED.includes(loc0)) {
-    if (robots !== "index, follow") bad(file, `robots is "${robots}" (expected "index, follow")`);
+    if (robots !== "index, follow, max-image-preview:large") bad(file, `robots is "${robots}" (expected "index, follow, max-image-preview:large")`);
     if (alts.length !== INDEXED.length + 1) bad(file, `${alts.length} hreflang links (expected ${INDEXED.length + 1})`);
     if (alts.some((a) => a[1] !== "x-default" && !INDEXED.some((l) => new URL(a[2]).pathname.split("/")[1] === l))) bad(file, "hreflang points at a noindexed locale");
     const xd = alts.find((a) => a[1] === "x-default")?.[2];

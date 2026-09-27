@@ -15,7 +15,7 @@
 // still renders (the subset keeps every Devanagari letter the corpus uses),
 // but a conjunct the corpus never formed would fall back to half-forms.
 import puppeteer from "puppeteer-core";
-import { readFileSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 const LOCALES = ["hi","en","ta","te","kn","ml","bn","or","as","mr","gu","pa","sa"];
 const browser = await puppeteer.launch({ executablePath: "/usr/bin/google-chrome", headless: true, args: ["--no-sandbox"] });
 const texts = new Set();
@@ -35,6 +35,8 @@ const DETAIL = [
   ...content("festivals").map((x) => `/festivals/${x.id}`),
   ...content("projects").map((x) => `/projects/${x.id}`),
   ...content("itineraries").map((x) => `/itineraries/${x.days}-day`),
+  "/festivals", "/projects", "/food", "/about", "/guides",
+  ...readdirSync(new URL("../../content/guides/", import.meta.url)).filter((f) => f.endsWith(".json")).map((f) => `/guides/${f.slice(0, -5)}`),
 ];
 for (const loc of LOCALES) {
   const paths = [`/${loc}`, `/${loc}/credits`, ...(["hi", "mr", "sa", "en"].includes(loc) ? DETAIL.map((d) => `/${loc}${d}`) : [])];
@@ -57,6 +59,11 @@ const json = (f) => JSON.parse(readFileSync(new URL("../../" + f, import.meta.ur
 for (const l of ["hi", "mr", "sa"]) walk(json(`messages/${l}.json`));
 for (const f of ["places", "projects", "festivals", "food"]) for (const x of json(`content/${f}.json`)) extra.push(x.name_hi);
 walk(json("content/faiths.json"));
+// Guides: Hindi titles and section headings (rendered in the display face).
+for (const f of readdirSync(new URL("../../content/guides/", import.meta.url)).filter((f) => f.endsWith(".json"))) {
+  const g = json(`content/guides/${f}`);
+  extra.push(g.title_hi, ...g.sections.map((s) => s.heading_hi));
+}
 // Language switcher: native names and greetings (shown in the display face).
 const locTs = readFileSync(new URL("../../lib/i18n/locales.ts", import.meta.url), "utf8");
 for (const m of locTs.matchAll(/(?:nativeName|sample): "([^"]+)"/g)) extra.push(m[1]);

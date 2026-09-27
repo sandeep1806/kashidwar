@@ -1,0 +1,103 @@
+{
+  "updated": "2026-09-27",
+  "en": {
+    "lead": "Kashidwar — “the door to Kashi” — is an independent guide to Kashi, the city also called Varanasi and Banaras: its ghats and temples, every faith that lives here, the festivals of its year, and the projects changing it.",
+    "sections": [
+      {
+        "id": "who",
+        "heading": "Who runs kashidwar.com",
+        "body": [
+          "Kashidwar is an independent project. It is not an official website of any government body, temple trust, religious organisation or tour operator, and it does not sell tours, boat rides, rooms or darshan tickets.",
+          "Where this site describes a temple’s timings, a government project or a festival date, it links to the organisation that is responsible for it, so you can always check the source yourself."
+        ]
+      },
+      {
+        "id": "mission",
+        "heading": "Why this site exists",
+        "body": [
+          "To help people arrive in Kashi prepared: when to come, where to go, how to reach it, and what to expect, without the noise of advertising.",
+          "To present every tradition of the city — Hindu, Buddhist, Jain, Sikh, Muslim, Christian and the Bhakti saints — with equal care and in each tradition’s own words, without ranking any of them.",
+          "To be useful in the visitor’s own language: the site is available in Hindi, English and eleven other Indian languages."
+        ]
+      },
+      {
+        "id": "verification",
+        "heading": "How content is checked",
+        "body": [
+          "Every place, festival, project and guide lists the sources it is based on, and each fact is checked against them before it is published."
+        ],
+        "list": [
+          "Official sources come first: government departments and press releases, temple trusts, the Archaeological Survey of India, UNESCO, transport authorities.",
+          "Where no official source exists, only established newspapers are used, and the page says so.",
+          "Government projects carry a status — Completed, Under construction or Announced — with the date it was last verified. A status that cannot be confirmed from an official source is marked unconfirmed.",
+          "Festival dates follow the lunar calendar; each date shown is taken from a published panchang or an official holiday list, and a festival without an announced date says so instead of guessing.",
+          "Fares, timings and rules change. Guides say when a figure was last checked and advise confirming before you travel.",
+          "Photographs come from Wikimedia Commons under free licences, each credited to its author; a photograph not taken in Varanasi is labelled as such."
+        ]
+      },
+      {
+        "id": "updates",
+        "heading": "Updates and corrections",
+        "body": [
+          "Project statuses are re-checked regularly; the date of the last check is shown on every project and in the footer. Festival pages always point to the next occurrence, and the site rebuilds every week so those dates stay current.",
+          "Guides show when they were first published and when they were last updated. They are reviewed before the festival or season they cover, and whenever an official change is announced.",
+          "If you find a mistake, an outdated timing or a missing source, please write — corrections are made as soon as they can be verified."
+        ]
+      }
+    ],
+    "contact": [
+      "For corrections, suggestions, or photographs of Varanasi you would like to share under a free licence, write to:",
+      "Please include the page address and, for a correction, a link to the source."
+    ]
+  },
+  "hi": {
+    "lead": "काशीद्वार — “काशी का द्वार” — काशी के लिए एक स्वतंत्र मार्गदर्शक है, जिसे वाराणसी और बनारस भी कहा जाता है: इसके घाट और मंदिर, यहाँ बसी हर आस्था, वर्ष भर के उत्सव, और इसे बदलती परियोजनाएँ।",
+    "sections": [
+      {
+        "id": "who",
+        "heading": "kashidwar.com कौन चलाता है",
+        "body": [
+          "काशीद्वार एक स्वतंत्र परियोजना है। यह किसी सरकारी संस्था, मंदिर न्यास, धार्मिक संगठन या टूर ऑपरेटर की आधिकारिक वेबसाइट नहीं है, और यहाँ टूर, नाव, कमरे या दर्शन टिकट नहीं बेचे जाते।",
+          "जहाँ यह साइट किसी मंदिर के समय, सरकारी परियोजना या उत्सव की तिथि बताती है, वहाँ ज़िम्मेदार संस्था का लिंक दिया जाता है, ताकि आप स्रोत स्वयं जाँच सकें।"
+        ]
+      },
+      {
+        "id": "mission",
+        "heading": "यह साइट क्यों",
+        "body": [
+          "ताकि लोग तैयारी के साथ काशी पहुँचें: कब आएँ, कहाँ जाएँ, कैसे पहुँचें और क्या उम्मीद करें — विज्ञापनों के शोर के बिना।",
+          "ताकि नगर की हर परंपरा — हिंदू, बौद्ध, जैन, सिख, मुस्लिम, ईसाई और भक्ति संत — समान सम्मान के साथ और अपनी ही शब्दावली में प्रस्तुत हो, किसी को ऊँचा-नीचा बताए बिना।",
+          "ताकि जानकारी यात्री की अपनी भाषा में मिले: साइट हिंदी, अंग्रेज़ी और ग्यारह अन्य भारतीय भाषाओं में उपलब्ध है।"
+        ]
+      },
+      {
+        "id": "verification",
+        "heading": "जानकारी कैसे जाँची जाती है",
+        "body": [
+          "हर स्थान, उत्सव, परियोजना और गाइड के साथ उसके स्रोत दिए जाते हैं, और प्रकाशन से पहले हर तथ्य उन्हीं से मिलाया जाता है।"
+        ],
+        "list": [
+          "पहले आधिकारिक स्रोत: सरकारी विभाग और प्रेस विज्ञप्तियाँ, मंदिर न्यास, भारतीय पुरातत्व सर्वेक्षण, यूनेस्को, परिवहन प्राधिकरण।",
+          "जहाँ आधिकारिक स्रोत नहीं है, वहाँ केवल प्रतिष्ठित समाचार-पत्रों का उपयोग होता है, और पृष्ठ पर यह बताया जाता है।",
+          "सरकारी परियोजनाओं की स्थिति — पूर्ण, निर्माणाधीन या घोषित — अंतिम जाँच की तिथि के साथ दी जाती है। जो स्थिति आधिकारिक स्रोत से पुष्ट न हो, उसे ‘अपुष्ट’ लिखा जाता है।",
+          "उत्सवों की तिथियाँ चंद्र पंचांग पर चलती हैं; हर तिथि प्रकाशित पंचांग या आधिकारिक अवकाश-सूची से ली जाती है, और जिसकी तिथि घोषित नहीं हुई, वहाँ अनुमान के बजाय यही लिखा जाता है।",
+          "किराए, समय और नियम बदलते रहते हैं। गाइड बताते हैं कि कोई आँकड़ा कब जाँचा गया था, और यात्रा से पहले पुष्टि करने की सलाह देते हैं।",
+          "चित्र विकिमीडिया कॉमन्स से मुक्त लाइसेंस के अंतर्गत लिए गए हैं, हर चित्र के लेखक को श्रेय के साथ; जो चित्र वाराणसी में नहीं लिया गया, उस पर यह लिखा होता है।"
+        ]
+      },
+      {
+        "id": "updates",
+        "heading": "अद्यतन और सुधार",
+        "body": [
+          "परियोजनाओं की स्थिति नियमित रूप से दोबारा जाँची जाती है; अंतिम जाँच की तिथि हर परियोजना पर और फ़ुटर में दिखती है। उत्सव पृष्ठ सदा अगली तिथि दिखाते हैं, और साइट हर सप्ताह फिर से बनती है ताकि तिथियाँ ताज़ा रहें।",
+          "हर गाइड पर उसके पहले प्रकाशन और अंतिम अद्यतन की तिथि होती है। गाइड अपने उत्सव या मौसम से पहले, और किसी आधिकारिक बदलाव की घोषणा होने पर, दोबारा देखे जाते हैं।",
+          "यदि आपको कोई भूल, पुराना समय या छूटा हुआ स्रोत मिले, तो कृपया लिखें — पुष्टि होते ही सुधार किया जाता है।"
+        ]
+      }
+    ],
+    "contact": [
+      "सुधार, सुझाव, या वाराणसी के ऐसे चित्र जो आप मुक्त लाइसेंस के अंतर्गत साझा करना चाहें, इस पते पर लिखें:",
+      "कृपया पृष्ठ का पता और, सुधार के लिए, स्रोत का लिंक भी भेजें।"
+    ]
+  }
+}

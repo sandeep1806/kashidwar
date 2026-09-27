@@ -10,6 +10,7 @@ import LazyMonthFilter from "@/components/sections/LazyMonthFilter";
 import Food from "@/components/sections/Food";
 import Itineraries from "@/components/sections/Itineraries";
 import Places from "@/components/sections/Places";
+import PlanYourVisit from "@/components/sections/PlanYourVisit";
 import Practical from "@/components/sections/Practical";
 import Projects from "@/components/sections/Projects";
 import JsonLd from "@/components/ui/JsonLd";
@@ -45,6 +46,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <Static><Festivals locale={loc} /></Static>
       <Static><Food locale={loc} /></Static>
       <RippleWipe />
+      <Static><PlanYourVisit locale={loc} /></Static>
       <Itineraries locale={loc} />
       <Static><Practical locale={loc} /></Static>
       <RippleWipe />

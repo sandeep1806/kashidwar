@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Block, Facts, LinkCards, PrevNext, Sources } from "@/components/pages/Blocks";
+import GuideLinks from "@/components/pages/GuideLinks";
 import LdJson from "@/components/pages/LdJson";
 import PageMap from "@/components/pages/PageMap";
 import PageShell from "@/components/pages/PageShell";
@@ -141,6 +142,7 @@ export default async function PlacePage({ params }: PageProps<"/[locale]/places/
               title={t("festivalsHere")}
               items={fests.map((f) => ({ href: pageUrl(loc, "festivals", f.id), ...(() => { const n = names(loc, f); return { name: n.primary, secondary: n.secondary }; })(), photo: getPhoto(`festivals/${f.id}`, loc), faith: f.faith[0] ?? "secular", meta: localize(f, loc).when }))}
             />
+            <GuideLinks locale={loc} kind="places" id={id} />
             <PrevNext
               prev={{ href: pageUrl(loc, "places", prev.id), label: t("prev"), name: names(loc, prev).primary }}
               next={{ href: pageUrl(loc, "places", next.id), label: t("next"), name: names(loc, next).primary }}
