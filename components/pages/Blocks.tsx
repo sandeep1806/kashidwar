@@ -64,7 +64,7 @@ export function LinkCards({ title, items }: { title: string; items: LinkCard[] }
           <li key={it.href}>
             <a href={it.href} className="group flex h-full flex-col overflow-hidden rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 transition-[translate,border-color,box-shadow] duration-500 ease-enter hover:-translate-y-1 hover:border-kashi-diya/60 hover:shadow-glow">
               <div className="arch relative mx-2 mt-2 aspect-[4/3] overflow-hidden bg-kashi-indigo">
-                {it.photo ? <Photo photo={it.photo} sizes="(min-width: 1024px) 280px, 45vw" className="photo-zoom" /> : <ArtFallback faith={it.faith} type={it.type} />}
+                {it.photo ? <Photo photo={it.photo} sizes={[["(min-width: 1024px)", "264px", 4 / 3], [null, "calc(46vw - 16px)", 4 / 3]]} className="photo-zoom" /> : <ArtFallback faith={it.faith} type={it.type} />}
               </div>
               <div className="px-3 pb-3 pt-2">
                 <p className="font-display text-base leading-snug text-kashi-white sm:text-lg">{it.name}</p>

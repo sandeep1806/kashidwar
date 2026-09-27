@@ -33,12 +33,17 @@ const outDir = join(root, "public/media/photos");
 mkdirSync(cacheDir, { recursive: true });
 
 /** Widths and byte budgets per group (budget applies to the largest AVIF and WebP). */
+/*
+ * Card photos are shown up to ~640 CSS px wide once object-fit: cover crops a
+ * landscape photo into a portrait frame, so 1280 covers 2x screens; the
+ * full-bleed Day-in-Kashi scenes need 2400 on a 2x phone held upright.
+ */
 const PROFILES = {
-  places: { widths: [480, 960], budget: 150_000 },
-  festivals: { widths: [480, 960], budget: 150_000 },
-  food: { widths: [480, 960], budget: 150_000 },
-  projects: { widths: [480, 960], budget: 150_000 },
-  scenes: { widths: [640, 960, 1600], budget: 140_000 },
+  places: { widths: [360, 720, 1280], budget: 150_000 },
+  festivals: { widths: [360, 720, 1280], budget: 150_000 },
+  food: { widths: [360, 720, 1280], budget: 150_000 },
+  projects: { widths: [360, 720, 1280], budget: 150_000 },
+  scenes: { widths: [640, 960, 1600, 2400], budget: 260_000 },
   hero: { widths: [640], budget: 200_000 },
 };
 /** The dimmer groups sit behind text, so they are graded darker. */
@@ -163,7 +168,7 @@ for (const pick of picks) {
   for (const w of done ? [] : widths) {
     const top = w === widths.at(-1);
     for (const fmt of ["avif", "webp"]) {
-      const buf = await encode(base, w, fmt, top ? profile.budget : profile.budget * 0.6);
+      const buf = await encode(base, w, fmt, top ? profile.budget : Math.max(25_000, profile.budget * (w / widths.at(-1)) ** 2 * 1.4));
       writeFileSync(join(dir, `${id}-${w}.${fmt}`), buf);
       sizes[`${w}.${fmt}`] = buf.length;
     }

@@ -31,7 +31,9 @@ import "../globals.css";
 const LOADER_SNIPPET = (fontClasses: string) =>
   "try{if(sessionStorage.getItem('kashi:loader')==='1'){var h=document.documentElement;h.setAttribute('data-loader','done');h.className+=' " +
   fontClasses +
-  "'}}catch(e){}";
+  "'}}catch(e){}" +
+  // Blur-up: mark lazy photos loaded so they fade in over their placeholder (see Photo).
+  ";document.addEventListener('load',function(e){var t=e.target;t&&t.classList&&t.classList.contains('photo-fade')&&t.classList.add('is-loaded')},true)";
 
 // Only the 13 prerendered locales exist. Without this, `/anything.txt` matched
 // [locale] with locale="anything.txt" and crashed (500) instead of a 404.

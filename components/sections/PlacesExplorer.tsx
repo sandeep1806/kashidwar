@@ -291,7 +291,7 @@ export default function PlacesExplorer({
           <>
           {selected.photo && (
             <div className="arch relative mx-4 mt-4 aspect-[16/9] overflow-hidden sm:mx-6 sm:mt-6">
-              <Photo photo={selected.photo} sizes="(min-width: 768px) 720px, 92vw" />
+              <Photo photo={selected.photo} sizes={[["(min-width: 768px)", "720px", 16 / 9], [null, "92vw", 16 / 9]]} />
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-kashi-night/70 to-transparent" />
             </div>
           )}

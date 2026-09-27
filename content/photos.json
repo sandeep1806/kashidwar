@@ -2,11 +2,12 @@
  "festivals/buddha-purnima": {
   "src": "/media/photos/festivals/buddha-purnima",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 540,
+  "width": 1280,
+  "height": 720,
   "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJQBOgB5vdqIAAPzkvtv9GQ1QLKFX9Lrg4+j92zA0U0jQhA0yaoAA",
   "alt": {
    "en": "The Dhamek Stupa at Sarnath, where the Buddha gave his first sermon",
@@ -27,11 +28,12 @@
  "festivals/chhath": {
   "src": "/media/photos/festivals/chhath",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 1280,
+  "width": 1280,
+  "height": 1707,
   "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoIAAsAA4BaJagCdADz24o02gAA/mYQnXAyo5ELPAQ67yyr4tgz13b+caGwby2w1TFVDZ8MFz3dJuKag+30AAAA",
   "alt": {
    "en": "Crowds of devotees gathered at the ghats for Chhath Puja",
@@ -52,11 +54,12 @@
  "festivals/christmas": {
   "src": "/media/photos/festivals/christmas",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 640,
+  "width": 1280,
+  "height": 853,
   "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJQBOgB5vdqIAAPkUBag+0T/4z/hHPOeB/ZHbzfh1MLN4Opt7AAAA",
   "alt": {
    "en": "St. Mary's Cathedral, the Catholic cathedral of Varanasi",
@@ -77,11 +80,12 @@
  "festivals/dev-deepawali": {
   "src": "/media/photos/festivals/dev-deepawali",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 1280,
+  "width": 1280,
+  "height": 1707,
   "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoIAAsAA4BaJYwCdAD0qewtAAD+73HDczYNrgAQM38a4yH6/wAAAA==",
   "alt": {
    "en": "Rows of oil lamps lit on the ghat steps for Dev Deepawali",
@@ -102,11 +106,12 @@
  "festivals/eid-al-fitr": {
   "src": "/media/photos/festivals/eid-al-fitr",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 638,
+  "width": 1280,
+  "height": 850,
   "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoIAAUAA4BaJQBOgB6IK6GKAAD892xeAVLRLnAlYbIe/WnSYFs/6lyAtKtlEV6+NZQAAA==",
   "alt": {
    "en": "The Alamgir Mosque, Varanasi, against the sky",
@@ -127,11 +132,12 @@
  "festivals/ganga-dussehra": {
   "src": "/media/photos/festivals/ganga-dussehra",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoIAAYAA4BaJagCdADc9r/HAAD9nTBkiB4w8eU5kR8kQnCc6GQURyG2KIzWS0R8jvtN1LSHgAA=",
   "alt": {
    "en": "Aarti platforms on a Varanasi ghat at the river's edge",
@@ -152,7 +158,8 @@
  "festivals/guru-nanak-jayanti": {
   "src": "/media/photos/festivals/guru-nanak-jayanti",
   "widths": [
-   480,
+   360,
+   720,
    960
   ],
   "width": 960,
@@ -178,7 +185,8 @@
  "festivals/kabir-jayanti": {
   "src": "/media/photos/festivals/kabir-jayanti",
   "widths": [
-   480,
+   360,
+   720,
    960
   ],
   "width": 960,
@@ -204,11 +212,12 @@
  "festivals/kashi-tamil-sangamam-festival": {
   "src": "/media/photos/festivals/kashi-tamil-sangamam-festival",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 712,
+  "width": 1280,
+  "height": 949,
   "blur": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAYAA4BaJZQCdAEOZ98+AADyp6QTjIL+CB6uX6Aw6JT8i2cj4IAA",
   "elsewhere": "photo",
   "alt": {
@@ -230,11 +239,12 @@
  "festivals/maha-shivratri": {
   "src": "/media/photos/festivals/maha-shivratri",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAYAA4BaJQBOgCHM+UqAAPy02jdnpXYxR/8yqAG8x+PH2PP5SdI4LbbPQAAA",
   "alt": {
    "en": "The sandstone gateway of the Kashi Vishwanath temple complex",
@@ -255,7 +265,8 @@
  "festivals/muharram": {
   "src": "/media/photos/festivals/muharram",
   "widths": [
-   480,
+   360,
+   720,
    960
   ],
   "width": 960,
@@ -281,11 +292,12 @@
  "festivals/nag-nathaiya": {
   "src": "/media/photos/festivals/nag-nathaiya",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAYAA4BaJQBOgCHXXEIAAP5bYtmWABSRVSDbP1lAZtqKBb1AAA==",
   "alt": {
    "en": "A kadamba tree set up on the riverbank at Tulsi Ghat for Nag Nathaiya",
@@ -306,11 +318,12 @@
  "festivals/parshvanath-janma-kalyanak": {
   "src": "/media/photos/festivals/parshvanath-janma-kalyanak",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 585,
+  "width": 1280,
+  "height": 781,
   "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAUAA4BaJQBOgBuCK+WAAMocdc/Ekq+kUtq960WQWTsMAAA=",
   "elsewhere": "art",
   "alt": {
@@ -332,11 +345,12 @@
  "festivals/ramnagar-ramlila": {
   "src": "/media/photos/festivals/ramnagar-ramlila",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 641,
+  "width": 1280,
+  "height": 854,
   "blur": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAUAA4BaJZQCdADye+QAAP6tt09+rrmY5fjnV69c8xUk22ZmAAAA",
   "alt": {
    "en": "Night scene of the Ramnagar Ramlila with crowds around a lit stage",
@@ -357,7 +371,8 @@
  "festivals/rangbhari-masaan-holi": {
   "src": "/media/photos/festivals/rangbhari-masaan-holi",
   "widths": [
-   480,
+   360,
+   720,
    960
   ],
   "width": 960,
@@ -388,7 +403,8 @@
  "festivals/ravidas-jayanti": {
   "src": "/media/photos/festivals/ravidas-jayanti",
   "widths": [
-   480,
+   360,
+   720,
    960
   ],
   "width": 960,
@@ -413,11 +429,12 @@
  "festivals/shravan": {
   "src": "/media/photos/festivals/shravan",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAYAA4BaJQBOgB6J0xvAAADMonZpcVr7mwOYyhYVZTHDVfH06QiHJalWAAAA",
   "alt": {
    "en": "Pilgrims outside the gateway of the Kashi Vishwanath temple",
@@ -438,11 +455,12 @@
  "food/banarasi-paan": {
   "src": "/media/photos/food/banarasi-paan",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 1703,
+  "width": 1280,
+  "height": 2271,
   "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoIAA4AA4BaJYgCdAEf/T0tCOoAAP7vKPqUZXj9KztlFtaoSPcmJmBLLvZS+YKpZsrG69M0JRVuQz4Ir4EU9pAaK1xanBlqjbXAAA==",
   "alt": {
    "en": "A Banarasi paan wrapped in silver foil",
@@ -463,11 +481,12 @@
  "food/jalebi": {
   "src": "/media/photos/food/jalebi",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACQAQCdASoIAAYAA4BaJZwAAp1m8kAA/u7vtk5V/46X4RRsZw3mHQ1rEnJYVVKbrAA=",
   "elsewhere": "photo",
   "alt": {
@@ -489,11 +508,12 @@
  "food/kachori-sabzi": {
   "src": "/media/photos/food/kachori-sabzi",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 1280,
+  "width": 1280,
+  "height": 1707,
   "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoIAAsAA4BaJaACdAD0pMn36JAA/oQI9VuNnSG5Lv5EDLeXn3sdpIzECUE65BkPrgMS6HamLt2FyZoZmD7N0TXOg4W6+uv4SQAAAA==",
   "alt": {
    "en": "Kachoris with spicy potato sabzi, jalebi and sev",
@@ -514,11 +534,12 @@
  "food/lassi": {
   "src": "/media/photos/food/lassi",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoIAAYAA4BaJYwCw7EUpMewpbgAAP7m0LBTRcRz5QzG8DXf1vxAtobFoIdKqXp+BD+NF6gwI1RhAAAA",
   "alt": {
    "en": "A kulhad of lassi topped with fruit at Blue Lassi in the old city",
@@ -539,11 +560,12 @@
  "food/launglata": {
   "src": "/media/photos/food/launglata",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoIAAYAA4BaJagCdADbWrcGgADzpwcnLQwMVbt/tSADNTG1s825d3OCbDyb9bKJytusAAAA",
   "alt": {
    "en": "A stack of launglata sweets, each sealed with a clove",
@@ -564,11 +586,12 @@
  "food/malaiyo": {
   "src": "/media/photos/food/malaiyo",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 1703,
+  "width": 1280,
+  "height": 2271,
   "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoIAA4AA4BaJbACdAEWURBfns5ioAD+3h+75EKYFYbaBkYCeTWWlZmixASVrnXRdSfurkvtEJKsNLGkRCwF53MxcYSGX8yyFu4vWXvogRtpB7MZ3X2gAA==",
   "alt": {
    "en": "Kulhads of saffron malaiyo topped with pistachio, beside jalebi",
@@ -589,11 +612,12 @@
  "food/tamatar-chaat": {
   "src": "/media/photos/food/tamatar-chaat",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 692,
+  "width": 1280,
+  "height": 923,
   "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAYAA4BaJYgCdAD0rAR0IAD331A+AtAEyt7WT3PxIsT0YTSMAVetEVAAAA==",
   "alt": {
    "en": "Two clay bowls of tamatar chaat topped with coriander",
@@ -614,11 +638,12 @@
  "food/thandai": {
   "src": "/media/photos/food/thandai",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 1440,
+  "width": 1280,
+  "height": 1920,
   "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoIAAwAA4BaJbACdAC9n0OxgAAA290gqO4isBL46+XV/HWahgvidUI3hPSkGoyyXNA2y87ddUQ+iGq14VhH1MVdCrOh7AAA",
   "alt": {
    "en": "Thandai in clay cups garnished with nuts and saffron",
@@ -663,11 +688,12 @@
  "places/alamgir-mosque": {
   "src": "/media/photos/places/alamgir-mosque",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 638,
+  "width": 1280,
+  "height": 850,
   "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAUAA4BaJYwCdAEOZ/HeAPsj6c+BonwNpBsleN4uEt5uz+zXmSsa8sAAAA==",
   "alt": {
    "en": "Domes and minarets of the Alamgir Mosque above Panchganga Ghat",
@@ -688,11 +714,12 @@
  "places/assi-ghat": {
   "src": "/media/photos/places/assi-ghat",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 540,
+  "width": 1280,
+  "height": 720,
   "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAUAA4BaJQBOgB5vWRwAAM4rXpbbnpgPT1jeyQMGrWH09kYjoPjwAAA=",
   "alt": {
    "en": "Sunrise over the Ganga at Assi Ghat",
@@ -713,11 +740,12 @@
  "places/bharat-mata": {
   "src": "/media/photos/places/bharat-mata",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAYAA4BaJZQCdAD5jD4syYAA/cAEx72G1IUED1NjInecuFnS28mLfhIiAAAA",
   "alt": {
    "en": "The marble relief map of undivided India inside Bharat Mata Mandir",
@@ -738,11 +766,12 @@
  "places/bhelupur-jain": {
   "src": "/media/photos/places/bhelupur-jain",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 732,
+  "width": 1280,
+  "height": 976,
   "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoIAAYAA4BaJYgCdAEegnkPSTgA/OWJcUYipUXXIgRg8W22P31jQiCFdWiINobPfZZG0zy5gAA=",
   "alt": {
    "en": "The Shwetambar Jain temple at Bhelupur",
@@ -763,11 +792,12 @@
  "places/bhu-new-vishwanath": {
   "src": "/media/photos/places/bhu-new-vishwanath",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAYAA4BaJYgCdAEO6S7HugAA/s3mdrBsxIpuWHNjWbx3kBHo9rgsyOLHK8JGzRCQAA==",
   "alt": {
    "en": "The tall white shikhara of the New Vishwanath Temple at BHU",
@@ -788,11 +818,12 @@
  "places/chunar-fort": {
   "src": "/media/photos/places/chunar-fort",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 636,
+  "width": 1280,
+  "height": 848,
   "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoIAAUAA4BaJYgCdAEOJKFgAPqfpC6ygCGbJGAxo7xPxdRFRrqDA8unMTWFJhGnUD1xukQBBGQAAA==",
   "alt": {
    "en": "Sonwa Mandap, a carved pavilion inside Chunar Fort",
@@ -813,11 +844,12 @@
  "places/dashashwamedh-ghat": {
   "src": "/media/photos/places/dashashwamedh-ghat",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 638,
+  "width": 1280,
+  "height": 851,
   "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoIAAUAA4BaJZQAAxZQtOkAAP7mlV+r4PyWbM8ILT2EOAAA",
   "alt": {
    "en": "Dashashwamedh Ghat at dusk before the evening aarti, seen from the Ganga",
@@ -838,11 +870,12 @@
  "places/durga-kund": {
   "src": "/media/photos/places/durga-kund",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 640,
+  "width": 1280,
+  "height": 853,
   "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJYgCdAEOZ/HeAP7OByv9BwDDjA4lk2AYE65+3evNYYTByJLDPQAA",
   "alt": {
    "en": "The red Durga temple at Durga Kund",
@@ -863,11 +896,12 @@
  "places/gurudwara-bari-sangat": {
   "src": "/media/photos/places/gurudwara-bari-sangat",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 539,
+  "width": 1280,
+  "height": 718,
   "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAQAA4BaJQBOgB8wjdDgAP5VKTMGL4PBiXByWkyRihoNIAA=",
   "elsewhere": "photo",
   "alt": {
@@ -889,11 +923,12 @@
  "places/gurudwara-guru-ka-bagh": {
   "src": "/media/photos/places/gurudwara-guru-ka-bagh",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 987,
+  "width": 1280,
+  "height": 1316,
   "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoIAAgAA4BaJbACdAD0mXSgzAAA+puSg5R6Re3hdHlMkBozgIDUns9fbQFHnIMttUn7cIDa+gfgGCAA",
   "elsewhere": "photo",
   "alt": {
@@ -915,36 +950,44 @@
  "places/kashi-vishwanath": {
   "src": "/media/photos/places/kashi-vishwanath",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
-  "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAYAA4BaJYwCdAD5h1xXJgAA/urx7BV+bClGe6Q+sTJDub0jKT5GF80DwAAA",
+  "width": 1280,
+  "height": 797,
+  "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoIAAUAA4BaJZQCdADWvmAA/Y0R6p95dvlXWHRq+Q3aspPAAAA=",
+  "crop": [
+   0,
+   0.37,
+   0.6,
+   0.28
+  ],
   "alt": {
-   "en": "Carved sandstone gateway of the Kashi Vishwanath temple complex",
-   "hi": "काशी विश्वनाथ मंदिर परिसर का नक्काशीदार बलुआ पत्थर का प्रवेश-द्वार",
-   "ta": "காசி விஸ்வநாதர் கோயில் வளாகத்தின் செதுக்கப்பட்ட மணற்கல் நுழைவாயில்",
-   "te": "కాశీ విశ్వనాథ ఆలయ ప్రాంగణపు చెక్కిన ఇసుకరాతి ముఖద్వారం",
-   "kn": "ಕಾಶಿ ವಿಶ್ವನಾಥ ದೇವಾಲಯ ಸಂಕೀರ್ಣದ ಕೆತ್ತನೆಯ ಮರಳುಗಲ್ಲಿನ ಹೆಬ್ಬಾಗಿಲು",
-   "ml": "കാശി വിശ്വനാഥ ക്ഷേത്ര സമുച്ചയത്തിന്റെ കൊത്തുപണി ചെയ്ത മണൽക്കൽ കവാടം",
-   "bn": "কাশী বিশ্বনাথ মন্দির চত্বরের খোদাই করা বেলেপাথরের তোরণদ্বার",
-   "or": "କାଶୀ ବିଶ୍ୱନାଥ ମନ୍ଦିର ପରିସରର ଖୋଦିତ ବାଲିପଥରର ପ୍ରବେଶଦ୍ୱାର",
-   "as": "কাশী বিশ্বনাথ মন্দিৰ চৌহদৰ খোদিত বালিশিলৰ প্ৰৱেশদ্বাৰ",
-   "mr": "काशी विश्वनाथ मंदिर परिसराचे कोरीव वालुकाश्मातील प्रवेशद्वार",
-   "gu": "કાશી વિશ્વનાથ મંદિર પરિસરનું કોતરણીવાળું રેતિયા પથ્થરનું પ્રવેશદ્વાર",
-   "pa": "ਕਾਸ਼ੀ ਵਿਸ਼ਵਨਾਥ ਮੰਦਰ ਕੰਪਲੈਕਸ ਦਾ ਨੱਕਾਸ਼ੀਦਾਰ ਰੇਤਲੇ ਪੱਥਰ ਦਾ ਪ੍ਰਵੇਸ਼-ਦੁਆਰ",
-   "sa": "काशीविश्वनाथमन्दिरपरिसरस्य उत्कीर्णं बालुकाप्रस्तरमयं प्रवेशद्वारम्"
+   "en": "Gold-plated spire of Kashi Vishwanath Temple lit at dusk above the corridor wall, Varanasi",
+   "hi": "संध्या में आलोकित काशी विश्वनाथ मंदिर का स्वर्ण शिखर, वाराणसी",
+   "ta": "காசி விஸ்வநாதர் கோயிலின் பொன் வேய்ந்த சிகரம், அந்தியில் ஒளியூட்டப்பட்டு வழித்தடச் சுவருக்கு மேலே",
+   "te": "సంధ్యాకాంతిలో వెలిగిన కాశీ విశ్వనాథ ఆలయ స్వర్ణ శిఖరం, కారిడార్ గోడపైన",
+   "kn": "ಸಂಜೆಯ ಬೆಳಕಿನಲ್ಲಿ ಕಾರಿಡಾರ್ ಗೋಡೆಯ ಮೇಲೆ ಕಾಶಿ ವಿಶ್ವನಾಥ ದೇವಾಲಯದ ಚಿನ್ನದ ಶಿಖರ",
+   "ml": "സന്ധ്യയിൽ ഇടനാഴിയുടെ മതിലിന് മുകളിൽ തിളങ്ങുന്ന കാശി വിശ്വനാഥ ക്ഷേത്രത്തിന്റെ സ്വർണ്ണ ശിഖരം",
+   "bn": "সন্ধ্যায় আলোকিত কাশী বিশ্বনাথ মন্দিরের সোনার চূড়া, করিডরের দেওয়ালের উপরে",
+   "or": "ସନ୍ଧ୍ୟାରେ ଆଲୋକିତ କାଶୀ ବିଶ୍ୱନାଥ ମନ୍ଦିରର ସୁନା ଶିଖର, କରିଡର କାନ୍ଥ ଉପରେ",
+   "as": "সন্ধিয়া পোহৰত জিলিকি উঠা কাশী বিশ্বনাথ মন্দিৰৰ সোণালী চূড়া, কৰিডৰৰ বেৰৰ ওপৰত",
+   "mr": "संध्याकाळी उजळलेले काशी विश्वनाथ मंदिराचे सुवर्ण शिखर, कॉरिडॉरच्या भिंतीवरून",
+   "gu": "સંધ્યાએ ઝળહળતું કાશી વિશ્વનાથ મંદિરનું સુવર્ણ શિખર, કોરિડોરની દીવાલ ઉપર",
+   "pa": "ਸ਼ਾਮ ਵੇਲੇ ਰੌਸ਼ਨ ਕਾਸ਼ੀ ਵਿਸ਼ਵਨਾਥ ਮੰਦਰ ਦਾ ਸੁਨਹਿਰੀ ਸ਼ਿਖਰ, ਕੋਰੀਡੋਰ ਦੀ ਕੰਧ ਉੱਤੇ",
+   "sa": "सन्ध्यायां प्रकाशितं काशीविश्वनाथमन्दिरस्य सुवर्णशिखरम्, वीथिकाभित्तेः उपरि"
   }
  },
  "places/manikarnika-ghat": {
   "src": "/media/photos/places/manikarnika-ghat",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 717,
+  "width": 1280,
+  "height": 956,
   "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoIAAYAA4BaJQBOgB8uxpCAAM473Es44d6X1oleQIl2A1eFUz7gEgJCDhovjbygAAA=",
   "alt": {
    "en": "The leaning Ratneshwar Mahadev temple beside Manikarnika, seen from the river",
@@ -965,11 +1008,12 @@
  "places/mulagandha-kuti-vihar": {
   "src": "/media/photos/places/mulagandha-kuti-vihar",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoIAAYAA4BaJQBYdh6K51qsAAD+apc+iFXMHLTaAmfiRHO4J+AvHD5ExDSttg7dsSLX1GHKAAAAAA==",
   "alt": {
    "en": "The spire of the Mulagandha Kuti Vihar temple at Sarnath",
@@ -990,11 +1034,12 @@
  "places/namo-ghat": {
   "src": "/media/photos/places/namo-ghat",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 1707,
+  "width": 1280,
+  "height": 2276,
   "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoIAA4AA4BaJQBdgCLKIA997xMAAPa6NxI/HJni0P1rza17WQSI1J6lMDhL13hUJwqgoURQkwpGPMyvZTjL5Z2IAAA=",
   "alt": {
    "en": "The open terraces of Namo Ghat beside the Malviya bridge",
@@ -1015,11 +1060,12 @@
  "places/panchganga-ghat": {
   "src": "/media/photos/places/panchganga-ghat",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 638,
+  "width": 1280,
+  "height": 850,
   "blur": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAUAA4BaJQBOgB5u9xAA/idoUBGwac2H0E5g185RJ+IxV+9LVhAA",
   "alt": {
    "en": "Stone steps and shrines of Panchganga Ghat rising from the river",
@@ -1040,11 +1086,12 @@
  "places/ramnagar-fort": {
   "src": "/media/photos/places/ramnagar-fort",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 540,
+  "width": 1280,
+  "height": 720,
   "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoIAAUAA4BaJYwCdAEegKlHeAD+wYIjFbsurO94UzcQUNScAwA9DvB8MAA=",
   "alt": {
    "en": "Sandstone walls of Ramnagar Fort on the east bank of the Ganga",
@@ -1065,11 +1112,12 @@
  "places/ravidas-janmasthan": {
   "src": "/media/photos/places/ravidas-janmasthan",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAYAA4BaJQBOgB8xr68XwAD8jACkxTFhQvDuT3vrYeJiM4kkoVRXsaEFQE8IAAA=",
   "alt": {
    "en": "White façade of the Guru Ravidas temple at Seer Goverdhanpur",
@@ -1090,11 +1138,12 @@
  "places/sankat-mochan": {
   "src": "/media/photos/places/sankat-mochan",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 1440,
+  "width": 1280,
+  "height": 1920,
   "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoIAAwAA4BaJQBOgCHSzRrcAAD88yGsL7lzodlvxHXck01Drnn6ZfSjTtZCK7/brAlvGkVwQ/AAAA==",
   "alt": {
    "en": "Entrance to the Sankat Mochan Hanuman temple",
@@ -1115,11 +1164,12 @@
  "places/sarnath": {
   "src": "/media/photos/places/sarnath",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoIAAYAA4BaJQBOgCBrq5Cb2gAA9roi9mqP1K8zq7edOMN7YjKUGTSiF8UpBfq4HnT2QwyoAAA=",
   "alt": {
    "en": "The brick and stone drum of the Dhamek Stupa at Sarnath among trees",
@@ -1140,11 +1190,12 @@
  "places/st-marys-church": {
   "src": "/media/photos/places/st-marys-church",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 1463,
+  "width": 1280,
+  "height": 1951,
   "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoIAAwAA4BaJZgCdADzf/rLYADOIwlmsKo0zkHnYdsDMDc5JXRyvkC1+9B5v7+EuLvVLchs86ko8qfFVt2wgNzm7gAAAA==",
   "alt": {
    "en": "St. Mary's Church in the Cantonment, photographed in 1971",
@@ -1165,11 +1216,12 @@
  "places/tulsi-manas": {
   "src": "/media/photos/places/tulsi-manas",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAYAA4BaJQBOgB6GOPhwAPvIEDVo0nLcDyrm0tOlCxlY5P0c9YAA",
   "alt": {
    "en": "Marble hall of the Tulsi Manas temple with Ramcharitmanas verses on the walls",
@@ -1190,11 +1242,12 @@
  "projects/airport-expansion": {
   "src": "/media/photos/projects/airport-expansion",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAYAA4BaJbACdAEO4YIMAADMo+JGLmvtC50BCW0T0rt2keavsrTKGqgPQKJU4AA=",
   "alt": {
    "en": "Terminal of Lal Bahadur Shastri International Airport",
@@ -1215,11 +1268,12 @@
  "projects/banaras-station": {
   "src": "/media/photos/projects/banaras-station",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAYAA4BaJZACdAEQFMNnAAAA/Z1r6uEFBsP85iFgEyfvqlO4zNw1DWUUlMhLzQAAAA==",
   "alt": {
    "en": "The arched façade of Banaras railway station",
@@ -1240,11 +1294,12 @@
  "projects/ganga-cruise": {
   "src": "/media/photos/projects/ganga-cruise",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 640,
+  "width": 1280,
+  "height": 853,
   "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAUAA4BaJQBOgCHM/jvAAP3wM06VMwikvzUE+RihoNIAAAA=",
   "alt": {
    "en": "The river cruise ship MV Ganga Vilas on the Ganga",
@@ -1262,14 +1317,41 @@
    "sa": "गङ्गायां नदीविहारनौका एमवी गङ्गा विलास"
   }
  },
+ "projects/heritage-corridors-parks": {
+  "src": "/media/photos/projects/heritage-corridors-parks",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 720,
+  "blur": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAUAA4BaJbACdAD0eqnsAP6PhLsvCCIh70Gw99lU+daOJmU+e3AA",
+  "alt": {
+   "en": "Paved riverfront at Assi Ghat with a row of historic ghats along the Ganga, Varanasi",
+   "hi": "वाराणसी में अस्सी घाट का पक्का गंगा तट और घाटों की कतार",
+   "ta": "அஸ்ஸி காட்டின் கல் பதித்த நதிக்கரையும் கங்கையோரம் வரிசையான பழமையான காட்களும்",
+   "te": "అస్సీ ఘాట్ వద్ద రాళ్లు పరిచిన నదీతీరం, గంగ వెంట వరుసగా పురాతన ఘాట్‌లు",
+   "kn": "ಅಸ್ಸಿ ಘಾಟ್‌ನ ಕಲ್ಲು ಹಾಸಿದ ನದಿತೀರ ಮತ್ತು ಗಂಗೆಯ ಉದ್ದಕ್ಕೂ ಐತಿಹಾಸಿಕ ಘಾಟ್‌ಗಳ ಸಾಲು",
+   "ml": "അസ്സി ഘട്ടിലെ കല്ലുപാകിയ നദീതീരവും ഗംഗയോരത്തെ പുരാതന ഘട്ടുകളുടെ നിരയും",
+   "bn": "অসি ঘাটের বাঁধানো নদীতীর আর গঙ্গা বরাবর ঐতিহাসিক ঘাটের সারি",
+   "or": "ଅସି ଘାଟର ପଥର ପକା ନଦୀକୂଳ ଓ ଗଙ୍ଗା କୂଳରେ ଐତିହାସିକ ଘାଟର ଧାଡ଼ି",
+   "as": "অসি ঘাটৰ শিল পৰা নদীপাৰ আৰু গংগাৰ পাৰে পাৰে ঐতিহাসিক ঘাটৰ শাৰী",
+   "mr": "अस्सी घाटाचा फरसबंद नदीकाठ आणि गंगेकाठच्या ऐतिहासिक घाटांची रांग",
+   "gu": "અસ્સી ઘાટનો પથ્થર જડેલો નદીકિનારો અને ગંગા કિનારે ઐતિહાસિક ઘાટોની હાર",
+   "pa": "ਅੱਸੀ ਘਾਟ ਦਾ ਪੱਥਰ ਜੜਿਆ ਦਰਿਆ ਕੰਢਾ ਅਤੇ ਗੰਗਾ ਕੰਢੇ ਇਤਿਹਾਸਕ ਘਾਟਾਂ ਦੀ ਕਤਾਰ",
+   "sa": "अस्सीघट्टस्य शिलास्तृतं नदीतीरं गङ्गातटे ऐतिहासिकघट्टानां पङ्क्तिश्च"
+  }
+ },
  "projects/highway-package-2026": {
   "src": "/media/photos/projects/highway-package-2026",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 720,
+  "width": 1280,
+  "height": 960,
   "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoIAAYAA4BaJQBOgB5P3tAA/pUMYuH50vyKwlPRjhYFig6P8G1t4rtrzRwAAA==",
   "alt": {
    "en": "The Ganga and the Ramnagar bridge seen from Ramnagar Fort",
@@ -1290,11 +1372,12 @@
  "projects/kashi-tamil-sangamam": {
   "src": "/media/photos/projects/kashi-tamil-sangamam",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 493,
+  "width": 1280,
+  "height": 658,
   "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoIAAQAA4BaJaACdAD5WUpMAAD9k0ktLI4xmZcI6DJTXLYwbbO2lWRQoAA=",
   "alt": {
    "en": "Name board of the Kasi Tamil Sangamam Express between Kanniyakumari and Banaras",
@@ -1315,11 +1398,12 @@
  "projects/kashi-vishwanath-corridor": {
   "src": "/media/photos/projects/kashi-vishwanath-corridor",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 960,
+  "width": 1280,
+  "height": 1280,
   "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAgCdASoIAAgAA4BaJYgCdH8IwBggHr/gbgFMY2QAAP40ClEoIbs+cvo7gGvstNPLDPCjsC06P0eUfooxq7Q4zWpRxIAA",
   "alt": {
    "en": "Ganga Dwar, the riverside gateway of the Kashi Vishwanath corridor",
@@ -1340,11 +1424,12 @@
  "projects/namo-ghat": {
   "src": "/media/photos/projects/namo-ghat",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 1280,
+  "width": 1280,
+  "height": 1707,
   "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAABwAQCdASoIAAsAA4BaJQAAUz74AAD+s7EqtgHJQ6zsBi1R25qf+rkzkW3Xti8Ru88SzA/EuA4AAA==",
   "alt": {
    "en": "The giant folded-hands sculptures at Namo Ghat",
@@ -1365,11 +1450,12 @@
  "projects/sarnath-redevelopment": {
   "src": "/media/photos/projects/sarnath-redevelopment",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 531,
+  "width": 1280,
+  "height": 708,
   "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAQAA4BaJZgCdADx/MWAAP7MWNqtvrLEMEZmVEIDFOjFhu23+TNYAAA=",
   "alt": {
    "en": "Excavated brick monastery ruins at Sarnath",
@@ -1390,11 +1476,12 @@
  "projects/varanasi-cantt-station": {
   "src": "/media/photos/projects/varanasi-cantt-station",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 486,
+  "width": 1280,
+  "height": 648,
   "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoIAAQAA4BaJYgCdAEPAKk3AAD+3P6dcCT2gKoDRW1KUJkuP20TdgYAAAA=",
   "crop": [
    0,
@@ -1421,11 +1508,12 @@
  "projects/varanasi-ring-road": {
   "src": "/media/photos/projects/varanasi-ring-road",
   "widths": [
-   480,
-   960
+   360,
+   720,
+   1280
   ],
-  "width": 960,
-  "height": 467,
+  "width": 1280,
+  "height": 622,
   "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIABAAA4BaJQAAXOhLJhUAAP72qHNJ46JVOwG53erHQXX7wa7T9aXPuT0DwAAA",
   "alt": {
    "en": "Streetlights along the Varanasi Ring Road at night",
@@ -1443,30 +1531,58 @@
    "sa": "रात्रौ वाराणसी रिंग रोड मार्गस्य पार्श्वे मार्गदीपाः"
   }
  },
+ "projects/varanasi-ropeway": {
+  "src": "/media/photos/projects/varanasi-ropeway",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 850,
+  "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAUAA4BaJYgCdAD0IMSMAAD9u3NWrYOIL5hDOiNY0yXmsQAYkRcveH9aJA/4AAA=",
+  "elsewhere": "photo",
+  "alt": {
+   "en": "Urban ropeway gondola and tower in La Paz, Bolivia (illustrative)",
+   "hi": "ला पाज़, बोलीविया में शहरी रोपवे का केबिन और टावर (उदाहरण हेतु)",
+   "ta": "பொலிவியாவின் லா பாஸ் நகர ரோப்வே கேபினும் கோபுரமும் (எடுத்துக்காட்டு)",
+   "te": "బొలీవియాలోని లా పాజ్‌లో నగర రోప్‌వే క్యాబిన్, టవర్ (ఉదాహరణకు)",
+   "kn": "ಬೊಲಿವಿಯಾದ ಲಾ ಪಾಜ್‌ನ ನಗರ ರೋಪ್‌ವೇ ಕ್ಯಾಬಿನ್ ಮತ್ತು ಗೋಪುರ (ಉದಾಹರಣೆಗೆ)",
+   "ml": "ബൊളീവിയയിലെ ലാ പാസിലെ നഗര റോപ്‌വേ ക്യാബിനും ടവറും (ഉദാഹരണം)",
+   "bn": "বলিভিয়ার লা পাজে শহুরে রোপওয়ের কেবিন ও টাওয়ার (দৃষ্টান্ত হিসেবে)",
+   "or": "ବୋଲିଭିଆର ଲା ପାଜରେ ସହରୀ ରୋପୱେ କେବିନ ଓ ଟାୱାର (ଉଦାହରଣ ସ୍ୱରୂପ)",
+   "as": "বলিভিয়াৰ লা পাজত নগৰীয়া ৰোপৱেৰ কেবিন আৰু টাৱাৰ (উদাহৰণস্বৰূপে)",
+   "mr": "बोलिव्हियातील ला पाझ येथील शहरी रोपवेची केबिन आणि मनोरा (उदाहरणादाखल)",
+   "gu": "બોલિવિયાના લા પાઝમાં શહેરી રોપવેની કેબિન અને ટાવર (ઉદાહરણ રૂપે)",
+   "pa": "ਬੋਲੀਵੀਆ ਦੇ ਲਾ ਪਾਜ਼ ਵਿੱਚ ਸ਼ਹਿਰੀ ਰੋਪਵੇ ਦਾ ਕੈਬਿਨ ਅਤੇ ਟਾਵਰ (ਉਦਾਹਰਣ ਵਜੋਂ)",
+   "sa": "बोलीवियादेशस्य ला-पाज़्-नगरे नगरीयरज्जुमार्गस्य यानं स्तम्भश्च (उदाहरणार्थम्)"
+  }
+ },
  "scenes/dawn": {
   "src": "/media/photos/scenes/dawn",
   "widths": [
    640,
    960,
-   1600
+   1600,
+   2400
   ],
-  "width": 1600,
-  "height": 1067,
-  "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoIAAUAA4BaJYgCdAEPDe2VgAD+0PR20kJGXeT12Z15lF+fvNcAAA==",
+  "width": 2400,
+  "height": 1351,
+  "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoIAAUAA4BaJZQCdAEQCTPaAAD+6V8DZ6lzPazASNDxywCQeAA=",
   "alt": {
-   "en": "A lone boat on the Ganga as the sun rises through the haze",
-   "hi": "धुंध में उगते सूरज के बीच गंगा पर अकेली नाव",
-   "ta": "மூடுபனியினூடே சூரியன் உதிக்கையில் கங்கையில் தனியாக ஒரு படகு",
-   "te": "పొగమంచులోంచి సూర్యుడు ఉదయిస్తుండగా గంగపై ఒంటరి పడవ",
-   "kn": "ಮಂಜಿನ ನಡುವೆ ಸೂರ್ಯ ಉದಯಿಸುವಾಗ ಗಂಗೆಯ ಮೇಲೆ ಒಂಟಿ ದೋಣಿ",
-   "ml": "മൂടൽമഞ്ഞിലൂടെ സൂര്യൻ ഉദിക്കുമ്പോൾ ഗംഗയിൽ ഒറ്റയ്ക്കൊരു വഞ്ചി",
-   "bn": "কুয়াশা ভেদ করে সূর্য ওঠার সময় গঙ্গায় একটি নিঃসঙ্গ নৌকা",
-   "or": "କୁହୁଡ଼ି ଭେଦି ସୂର୍ଯ୍ୟ ଉଠୁଥିବା ବେଳେ ଗଙ୍ଗାରେ ଏକ ଏକାକୀ ଡଙ୍ଗା",
-   "as": "কুঁৱলী ভেদি সূৰ্য উঠাৰ সময়ত গংগাত এখন অকলশৰীয়া নাও",
-   "mr": "धुक्यातून सूर्य उगवत असताना गंगेवरील एकटी नाव",
-   "gu": "ધુમ્મસમાંથી ઊગતા સૂરજ વચ્ચે ગંગા પર એકલી હોડી",
-   "pa": "ਧੁੰਦ ਵਿੱਚੋਂ ਚੜ੍ਹਦੇ ਸੂਰਜ ਵੇਲੇ ਗੰਗਾ ਉੱਤੇ ਇਕੱਲੀ ਕਿਸ਼ਤੀ",
-   "sa": "कुहेलिकायाम् उदयति सूर्ये गङ्गायाम् एकाकिनी नौका"
+   "en": "Wooden boats moored at the ghat steps as the sun rises over the Ganga, Varanasi",
+   "hi": "गंगा पर उगते सूरज के समय घाट की सीढ़ियों से बंधी लकड़ी की नावें, वाराणसी",
+   "ta": "கங்கையின் மேல் சூரியன் உதிக்கும்போது காட் படிகளில் கட்டப்பட்ட மரப் படகுகள்",
+   "te": "గంగపై సూర్యోదయం వేళ ఘాట్ మెట్ల వద్ద కట్టిన చెక్క పడవలు",
+   "kn": "ಗಂಗೆಯ ಮೇಲೆ ಸೂರ್ಯೋದಯದ ವೇಳೆ ಘಾಟ್ ಮೆಟ್ಟಿಲುಗಳಿಗೆ ಕಟ್ಟಿದ ಮರದ ದೋಣಿಗಳು",
+   "ml": "ഗംഗയിൽ സൂര്യൻ ഉദിക്കുമ്പോൾ ഘട്ടിന്റെ പടവുകളിൽ കെട്ടിയിട്ട മരവള്ളങ്ങൾ",
+   "bn": "গঙ্গার উপর সূর্যোদয়ের সময় ঘাটের সিঁড়িতে বাঁধা কাঠের নৌকা",
+   "or": "ଗଙ୍ଗା ଉପରେ ସୂର୍ଯ୍ୟୋଦୟ ବେଳେ ଘାଟ ପାହାଚରେ ବନ୍ଧା କାଠ ଡଙ୍ଗା",
+   "as": "গংগাৰ ওপৰত সূৰ্যোদয়ৰ সময়ত ঘাটৰ খটখটিত বান্ধি থোৱা কাঠৰ নাও",
+   "mr": "गंगेवर सूर्योदय होताना घाटाच्या पायऱ्यांना बांधलेल्या लाकडी नावा",
+   "gu": "ગંગા પર સૂર્યોદય સમયે ઘાટનાં પગથિયાં પાસે બાંધેલી લાકડાની હોડીઓ",
+   "pa": "ਗੰਗਾ ਉੱਤੇ ਸੂਰਜ ਚੜ੍ਹਦੇ ਸਮੇਂ ਘਾਟ ਦੀਆਂ ਪੌੜੀਆਂ ਨਾਲ ਬੰਨ੍ਹੀਆਂ ਲੱਕੜ ਦੀਆਂ ਕਿਸ਼ਤੀਆਂ",
+   "sa": "गङ्गायाम् उदयति सूर्ये घट्टसोपानेषु बद्धाः काष्ठनौकाः"
   }
  },
  "scenes/dusk": {
@@ -1474,10 +1590,11 @@
   "widths": [
    640,
    960,
-   1600
+   1600,
+   2400
   ],
-  "width": 1600,
-  "height": 1067,
+  "width": 2400,
+  "height": 1600,
   "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoIAAUAA4BaJYwCdAEOuwWOAAD+74q5aFEwXcDPyDPdQgtnlpNgAA==",
   "alt": {
    "en": "The evening Ganga Aarti at Dashashwamedh Ghat seen from across the crowd",
@@ -1500,25 +1617,26 @@
   "widths": [
    640,
    960,
-   1600
+   1600,
+   2400
   ],
-  "width": 1600,
-  "height": 2400,
-  "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoIAAwAA4BaJYgCdAD0pDb80AAA/qpb+WoFFMcN0ZjvNgOqlz8iksjL+hJcoDOe0jWVyK6sd4AAAA==",
+  "width": 2400,
+  "height": 1600,
+  "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoIAAUAA4BaJQBOgCICC8E/AAD+g/9VAbZSwLMD9PCSnB3xwtybLOoAAAA=",
   "alt": {
-   "en": "A quiet lane of old houses leading down to Meera Ghat",
-   "hi": "मीरा घाट की ओर उतरती पुराने घरों वाली शांत गली",
-   "ta": "மீரா காட்டுக்கு இறங்கிச் செல்லும் பழைய வீடுகள் நிறைந்த அமைதியான சந்து",
-   "te": "మీరా ఘాట్ వైపు దిగే పాత ఇళ్ల నిశ్శబ్ద సందు",
-   "kn": "ಮೀರಾ ಘಾಟ್‌ನತ್ತ ಇಳಿಯುವ ಹಳೆಯ ಮನೆಗಳ ಶಾಂತ ಓಣಿ",
-   "ml": "മീരാ ഘാട്ടിലേക്ക് ഇറങ്ങുന്ന പഴയ വീടുകളുള്ള ശാന്തമായ ഇടവഴി",
-   "bn": "মীরা ঘাটের দিকে নেমে যাওয়া পুরোনো বাড়ির এক নিরিবিলি গলি",
-   "or": "ମୀରା ଘାଟ ଆଡ଼କୁ ଓହ୍ଲାଉଥିବା ପୁରୁଣା ଘରର ଏକ ନିରୋଳା ଗଳି",
-   "as": "মীৰা ঘাটলৈ নামি যোৱা পুৰণি ঘৰৰ এটা নিস্তব্ধ গলি",
-   "mr": "मीरा घाटाकडे उतरत जाणारी जुन्या घरांची शांत गल्ली",
-   "gu": "મીરા ઘાટ તરફ ઊતરતી જૂનાં ઘરોવાળી શાંત ગલી",
-   "pa": "ਮੀਰਾ ਘਾਟ ਵੱਲ ਉਤਰਦੀ ਪੁਰਾਣੇ ਘਰਾਂ ਵਾਲੀ ਸ਼ਾਂਤ ਗਲੀ",
-   "sa": "मीराघट्टं प्रति अवतरन्ती पुरातनगृहैः युक्ता शान्ता वीथिः"
+   "en": "A cow walks down a narrow stone-paved lane in old Varanasi",
+   "hi": "पुराने वाराणसी की संकरी पत्थर-पटी गली में चलती एक गाय",
+   "ta": "பழைய வாரணாசியின் கற்கள் பதித்த குறுகிய சந்தில் நடந்து செல்லும் ஒரு பசு",
+   "te": "పాత వారణాసిలో రాళ్లు పరిచిన ఇరుకైన సందులో నడుస్తున్న ఆవు",
+   "kn": "ಹಳೆಯ ವಾರಾಣಸಿಯ ಕಲ್ಲು ಹಾಸಿದ ಕಿರಿದಾದ ಓಣಿಯಲ್ಲಿ ನಡೆಯುತ್ತಿರುವ ಹಸು",
+   "ml": "പഴയ വാരാണസിയിലെ കല്ലുപാകിയ ഇടുങ്ങിയ ഇടവഴിയിലൂടെ നടക്കുന്ന പശു",
+   "bn": "পুরোনো বারাণসীর পাথর-বাঁধানো সরু গলিতে হেঁটে চলা একটি গরু",
+   "or": "ପୁରୁଣା ବାରାଣସୀର ପଥର ପକା ସରୁ ଗଳିରେ ଚାଲୁଥିବା ଏକ ଗାଈ",
+   "as": "পুৰণি বাৰাণসীৰ শিল পৰা ঠেক গলিৰে খোজ কাঢ়ি যোৱা এজনী গাই",
+   "mr": "जुन्या वाराणसीतील दगडी फरशीच्या अरुंद गल्लीतून चालणारी गाय",
+   "gu": "જૂના વારાણસીની પથ્થર જડેલી સાંકડી ગલીમાં ચાલતી એક ગાય",
+   "pa": "ਪੁਰਾਣੇ ਵਾਰਾਣਸੀ ਦੀ ਪੱਥਰ ਜੜੀ ਤੰਗ ਗਲੀ ਵਿੱਚ ਤੁਰਦੀ ਇੱਕ ਗਾਂ",
+   "sa": "प्राचीनवाराणस्याः शिलास्तृतायां संकीर्णवीथ्यां चरन्ती धेनुः"
   }
  }
 }

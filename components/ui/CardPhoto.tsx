@@ -1,11 +1,12 @@
 import type { Faith, PhotoData } from "@/lib/contentTypes";
 import ArtFallback from "./ArtFallback";
-import Photo from "./Photo";
+import Photo, { type CoverSize } from "./Photo";
 
 /** Arch-framed photo at the top of a text card; the glyph placeholder when there is none. */
-const GRID_SIZES = "(min-width: 1280px) 380px, (min-width: 768px) 45vw, 92vw";
+const A = 16 / 10;
+const GRID_SIZES: CoverSize[] = [["(min-width: 1280px)", "380px", A], ["(min-width: 768px)", "45vw", A], [null, "92vw", A]];
 /** Home page: carousel cards (min(78vw, 340px)) below lg, the grid above. */
-const CAROUSEL_SIZES = "(min-width: 1280px) 380px, (min-width: 1024px) 30vw, (min-width: 436px) 320px, 74vw";
+const CAROUSEL_SIZES: CoverSize[] = [["(min-width: 1280px)", "380px", A], ["(min-width: 1024px)", "30vw", A], ["(min-width: 436px)", "320px", A], [null, "74vw", A]];
 
 export default function CardPhoto({ photo, faith = "secular", className = "", carousel = false }: { photo?: PhotoData | null; faith?: Faith; className?: string; carousel?: boolean }) {
   return (

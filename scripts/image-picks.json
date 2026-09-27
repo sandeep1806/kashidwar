@@ -1,10 +1,16 @@
 [
  {
   "key": "places/kashi-vishwanath",
-  "title": "File:Shri Kashi Vishwanath Temple 7.jpg",
+  "title": "File:Kashi vishwanath temple varanasi.jpg",
+  "crop": [
+   0,
+   0.37,
+   0.6,
+   0.28
+  ],
   "alt": {
-   "en": "Carved sandstone gateway of the Kashi Vishwanath temple complex",
-   "hi": "काशी विश्वनाथ मंदिर परिसर का नक्काशीदार बलुआ पत्थर का प्रवेश-द्वार"
+   "en": "Gold-plated spire of Kashi Vishwanath Temple lit at dusk above the corridor wall, Varanasi",
+   "hi": "संध्या में आलोकित काशी विश्वनाथ मंदिर का स्वर्ण शिखर, वाराणसी"
   }
  },
  {
@@ -453,18 +459,18 @@
  },
  {
   "key": "scenes/dawn",
-  "title": "File:Subah-e-Banaras with Ganga.jpg",
+  "title": "File:Boats at sunrise Ganges River Varanasi Uttar Pradesh Schwiki.jpg",
   "alt": {
-   "en": "A lone boat on the Ganga as the sun rises through the haze",
-   "hi": "धुंध में उगते सूरज के बीच गंगा पर अकेली नाव"
+   "en": "Wooden boats moored at the ghat steps as the sun rises over the Ganga, Varanasi",
+   "hi": "गंगा पर उगते सूरज के समय घाट की सीढ़ियों से बंधी लकड़ी की नावें, वाराणसी"
   }
  },
  {
   "key": "scenes/noon",
-  "title": "File:A lane leading to Meera Ghat, in Varanasi.jpg",
+  "title": "File:Gali in Varanasi, India (16100253574).jpg",
   "alt": {
-   "en": "A quiet lane of old houses leading down to Meera Ghat",
-   "hi": "मीरा घाट की ओर उतरती पुराने घरों वाली शांत गली"
+   "en": "A cow walks down a narrow stone-paved lane in old Varanasi",
+   "hi": "पुराने वाराणसी की संकरी पत्थर-पटी गली में चलती एक गाय"
   }
  },
  {
@@ -500,5 +506,22 @@
    "hi": "अमृतसर में बाबा फूला सिंह दी बुर्ज पर खंडा चिह्न वाला नीला निशान साहिब (वाराणसी की तस्वीर नहीं)"
   },
   "elsewhere": "photo"
+ },
+ {
+  "key": "projects/heritage-corridors-parks",
+  "title": "File:Varanasi Assi Ghat.jpg",
+  "alt": {
+   "en": "Paved riverfront at Assi Ghat with a row of historic ghats along the Ganga, Varanasi",
+   "hi": "वाराणसी में अस्सी घाट का पक्का गंगा तट और घाटों की कतार"
+  }
+ },
+ {
+  "key": "projects/varanasi-ropeway",
+  "title": "File:Línea Roja de Mi Teleférico en La Paz, Bolivia.jpg",
+  "elsewhere": "photo",
+  "alt": {
+   "en": "Urban ropeway gondola and tower in La Paz, Bolivia (illustrative)",
+   "hi": "ला पाज़, बोलीविया में शहरी रोपवे का केबिन और टावर (उदाहरण हेतु)"
+  }
  }
 ]

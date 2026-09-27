@@ -47,7 +47,12 @@ export default function PlaceCard({
           {photo ? (
             <Photo
               photo={photo}
-              sizes="(min-width: 1280px) 290px, (min-width: 1024px) 30vw, (min-width: 640px) 45vw, 46vw"
+              sizes={[
+                ["(min-width: 1280px)", "266px", 4 / 5],
+                ["(min-width: 1024px)", "calc(30vw - 24px)", 4 / 5],
+                ["(min-width: 640px)", "calc(45vw - 24px)", 4 / 5],
+                [null, "calc(46vw - 16px)", 1],
+              ]}
               className="photo-zoom"
             />
           ) : (
