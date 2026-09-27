@@ -1,0 +1,32 @@
+# Build, lint and SEO checks. Runs on every pull request to redesign, and is started
+# on the weekly content-review branch by weekly-content-review.yml.
+name: CI
+
+on:
+  pull_request:
+    branches: [redesign]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - name: Build (includes the heading-font coverage gate)
+        run: npm run build
+      - run: npm run lint
+      - name: SEO checks
+        run: node scripts/check-seo.mjs

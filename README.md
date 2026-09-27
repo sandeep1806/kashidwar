@@ -177,3 +177,52 @@ Researched articles live in `content/guides/<slug>.json` (English + Hindi; other
 2. Choose **kashidwar.com** from the list (the zone is proxied, so pick **automatic setup** — Cloudflare injects the beacon at the edge; no code change or token needed).
 3. Save; data appears within minutes under Web Analytics → kashidwar.com. It sets no cookies and stores no personal data, so no banner is required.
 If you ever turn the proxy off, switch to the manual JS snippet and add its `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "…"}'>` to `app/[locale]/layout.tsx`.
+
+## Weekly content review (AI, human-merged)
+Every Monday at 05:00 IST, `.github/workflows/weekly-content-review.yml` runs Anthropic's
+[Claude Code GitHub Action](https://github.com/anthropics/claude-code-action) (pinned to
+v1.0.235 by commit SHA) to re-check the site's facts, and opens **one pull request** titled
+"Weekly content review YYYY-MM-DD". Nothing is merged automatically.
+
+**What it checks** — defined in [`.claude/content-review.md`](.claude/content-review.md), a plain
+Markdown brief you can edit (add or remove checks, change source rules, change the PR format):
+project statuses/timelines/sources; newly announced festival dates for the next 12 months;
+volatile guide facts (darshan and aarti timings, Sugam fee, ropeway and Sarnath fares and hours);
+significant new developments (only with an official or major-news source); broken source links;
+Commons photo candidates for places without a photo. It follows CLAUDE.md and DESIGN.md,
+writes original summaries (never copied text), updates English and Hindi together and lists
+other locales in TRANSLATION_REVIEW.md. If nothing changed it only moves "last verified" dates.
+
+**Guardrails**
+- The agent only edits files and writes the PR description; the workflow itself commits,
+  pushes and opens the PR. A workflow step fails the run if anything outside
+  `content/*.json`, `content/guides/*.json` or `TRANSLATION_REVIEW.md` changed, or if a JSON
+  file is invalid.
+- The review job's token has only `contents: write` and `pull-requests: write`. The agent's
+  tools are limited to reading/editing files, web search/fetch, `curl` (link checks), and the
+  build/lint/SEO commands; `git push`, `git commit` and `gh` are denied to it.
+- CI (`.github/workflows/ci.yml`: build incl. heading-font gate, lint, `check-seo`) runs on the
+  PR branch. PRs opened with the workflow token do not trigger `pull_request` workflows, so the
+  review workflow starts CI on the branch explicitly; its result shows on the PR's commit.
+  Optional: Settings → Branches → protect `redesign` and require the "CI / check" status.
+
+**Run it manually:** Actions → Weekly content review → Run workflow (branch `redesign`), or
+`gh workflow run weekly-content-review.yml --ref redesign`, then `gh run watch`.
+
+**Change the model or budget:** `REVIEW_MODEL` / `REVIEW_MAX_TURNS` at the top of the workflow.
+**Change the schedule:** the `cron` line (UTC; `30 23 * * 0` = Monday 05:00 IST).
+
+## Deploy from GitHub
+Workers Builds is not connected to this repository, so `.github/workflows/deploy.yml` deploys:
+on every push to `redesign` (including merged content-review PRs), every Monday 06:00 IST
+(a rebuild so "next festival" dates roll forward — this replaces the Workers Builds deploy hook
+described above), and on demand (Actions → Deploy → Run workflow). Until its secrets exist it
+logs a warning and skips.
+
+**Repository secrets to add** (Settings → Secrets and variables → Actions → New repository secret,
+or `gh secret set NAME`):
+| Secret | Value |
+|---|---|
+| `ANTHROPIC_API_KEY` | An Anthropic API key (console.anthropic.com → API keys). Used only by the weekly review. |
+| `CLOUDFLARE_API_TOKEN` | Cloudflare → My Profile → API Tokens → Create token → template **Edit Cloudflare Workers** (account: yours; zone: kashidwar.com). |
+| `CLOUDFLARE_ACCOUNT_ID` | The account ID shown by `npx wrangler whoami` (or the dashboard's Workers overview). |
