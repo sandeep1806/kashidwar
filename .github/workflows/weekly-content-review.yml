@@ -47,6 +47,7 @@ jobs:
         run: echo "today=$(TZ=Asia/Kolkata date +%F)" >> "$GITHUB_OUTPUT"
 
       - name: Content review (Claude)
+        id: claude
         uses: anthropics/claude-code-action@756cc22e19660d20e8cc9496b4f242475a7f7790 # v1.0.235
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -63,6 +64,17 @@ jobs:
             --max-turns ${{ env.REVIEW_MAX_TURNS }}
             --allowedTools "Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(python3:*),Bash(jq:*),Bash(npm run build),Bash(npm run lint),Bash(node scripts/check-seo.mjs),Bash(git diff:*),Bash(git status:*)"
             --disallowedTools "Bash(git push:*),Bash(git commit:*),Bash(gh:*)"
+
+      # The action hides the transcript (it can contain fetched pages); print only which
+      # tool calls were denied, so the allow-list can be tuned.
+      - name: Denied tool calls
+        if: always()
+        env:
+          EXEC: ${{ steps.claude.outputs.execution_file }}
+        run: |
+          [ -f "$EXEC" ] || { echo "no execution file"; exit 0; }
+          jq -r '.. | objects | select(has("permission_denials")) | .permission_denials[] | "- \(.tool_name): \(.tool_input | tostring | .[0:240])"' "$EXEC" | sort | uniq -c | sort -rn | tee -a "$GITHUB_STEP_SUMMARY" || true
+          jq -r '[.. | objects | select(.type? == "result")][-1].result // "" | .[0:3000]' "$EXEC" | sed 's/^/> /' || true
 
       - name: Only content files may change
         run: |
