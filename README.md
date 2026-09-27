@@ -217,7 +217,9 @@ Workers Builds is not connected to this repository, so `.github/workflows/deploy
 on every push to `redesign` (including merged content-review PRs), every Monday 06:00 IST
 (a rebuild so "next festival" dates roll forward — this replaces the Workers Builds deploy hook
 described above), and on demand (Actions → Deploy → Run workflow). Until its secrets exist it
-logs a warning and skips.
+logs a warning and skips. A manual run with **check_only** ticked only verifies the Cloudflare
+credentials (`wrangler whoami`, `wrangler deployments list`) and deploys nothing:
+`gh workflow run deploy.yml --ref redesign -f check_only=true`.
 
 **Repository secrets to add** (Settings → Secrets and variables → Actions → New repository secret,
 or `gh secret set NAME`):

@@ -9,6 +9,11 @@ on:
   schedule:
     - cron: "30 0 * * 1" # Mondays 06:00 IST: rebuild so "next festival" dates stay current
   workflow_dispatch:
+    inputs:
+      check_only:
+        description: "Only check the Cloudflare credentials (no build, no deploy)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -30,26 +35,35 @@ jobs:
         run: |
           if [ -n "$CLOUDFLARE_API_TOKEN" ] && [ -n "$CLOUDFLARE_ACCOUNT_ID" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"
           else echo "::warning::CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID are not set; skipping the deploy (see README → Deploy from GitHub)."; fi
-      - if: steps.secrets.outputs.ok == 'true'
+      - name: Credentials check only (read-only)
+        if: steps.secrets.outputs.ok == 'true' && inputs.check_only
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@4 whoami
+          npx --yes wrangler@4 deployments list --name kashidwar | tail -n 12
+          echo "Credentials work; check_only is set, so nothing is built or deployed." >> "$GITHUB_STEP_SUMMARY"
+      - if: steps.secrets.outputs.ok == 'true' && !inputs.check_only
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: redesign
-      - if: steps.secrets.outputs.ok == 'true'
+      - if: steps.secrets.outputs.ok == 'true' && !inputs.check_only
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version-file: .node-version
           cache: npm
-      - if: steps.secrets.outputs.ok == 'true'
+      - if: steps.secrets.outputs.ok == 'true' && !inputs.check_only
         run: npm ci
       - name: Check before deploying
-        if: steps.secrets.outputs.ok == 'true'
+        if: steps.secrets.outputs.ok == 'true' && !inputs.check_only
         run: npm run lint
       - name: Build and deploy
-        if: steps.secrets.outputs.ok == 'true'
+        if: steps.secrets.outputs.ok == 'true' && !inputs.check_only
         run: npm run deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       - name: SEO checks on the deployed build
-        if: steps.secrets.outputs.ok == 'true'
+        if: steps.secrets.outputs.ok == 'true' && !inputs.check_only
         run: node scripts/check-seo.mjs
