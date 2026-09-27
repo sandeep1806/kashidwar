@@ -1,6 +1,11 @@
 // Server-side only: imports every guide. Guides are researched articles in
 // English and Hindi (content/guides/<slug>.json); other locales show English.
 import devDeepawali from "@/content/guides/dev-deepawali-2026.json";
+import gangaAarti from "@/content/guides/ganga-aarti-varanasi.json";
+import vishwanathDarshan from "@/content/guides/kashi-vishwanath-darshan.json";
+import twoDays from "@/content/guides/varanasi-in-2-days.json";
+import ropeway from "@/content/guides/varanasi-ropeway.json";
+import toSarnath from "@/content/guides/varanasi-to-sarnath.json";
 import type { Locale } from "@/lib/i18n/locales";
 import type { Kind } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
@@ -41,8 +46,11 @@ export interface Guide {
   notes?: string;
 }
 
-/** Newest first. Add a guide by importing its JSON here. */
-export const guides: Guide[] = ([devDeepawali] as Guide[]).sort((a, b) => b.published.localeCompare(a.published));
+/** Newest first (ties keep this order). Add a guide by importing its JSON here. */
+export const guides: Guide[] = ([devDeepawali, vishwanathDarshan, gangaAarti, ropeway, toSarnath, twoDays] as Guide[])
+  .map((g, i) => ({ g, i }))
+  .sort((a, b) => b.g.published.localeCompare(a.g.published) || a.i - b.i)
+  .map(({ g }) => g);
 
 export const guideBySlug = (slug: string) => guides.find((g) => g.slug === slug);
 

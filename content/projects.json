@@ -81,15 +81,23 @@
     "type": "transport",
     "lat": 25.3282,
     "lng": 82.9866,
-    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple, in about 16 minutes. Foundation laid 24 March 2023; trial runs on the Cantt–Rathyatra stretch began in 2025. As of 25 September 2026 it has not opened to the public; the latest published target is November 2026.",
+    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple, in about 16 minutes. Foundation laid 24 March 2023; trial runs on the Cantt–Rathyatra stretch began in 2025. As of 27 September 2026 it has not opened to the public; the latest published target is November 2026.",
     "bestTime": "Not yet open to the public",
     "image": "/media/projects/varanasi-ropeway.jpg",
     "status": "under_construction",
     "agency": "National Highways Logistics Management Ltd (NHLML) · built by Vishwa Samudra Engineering",
-    "timeline": "Foundation 24 March 2023 · Trial runs from 2025 · Not yet open (checked 25 September 2026); latest target November 2026",
+    "timeline": "Foundation 24 March 2023 · Trial runs from 2025 · Not yet open (checked 27 September 2026); latest target November 2026",
     "verified": true,
-    "lastVerified": "2026-09-25",
+    "lastVerified": "2026-09-27",
     "sources": [
+      {
+        "title": "Amar Ujala — Trial of 148 ropeway gondolas, Cantt to Godowlia in 16 minutes (25 Aug 2026)",
+        "url": "https://www.amarujala.com/uttar-pradesh/varanasi/trial-run-of-148-ropeway-gondolas-will-be-conducted-in-varanasi-after-raksha-bandhan-2026-2026-08-25"
+      },
+      {
+        "title": "Times Now Hindi — Varanasi urban ropeway: trials under way, fares and opening (Sep 2026)",
+        "url": "https://www.timesnowhindi.com/business/indias-first-urban-ropeway-in-varanasi-trial-runs-are-currently-being-conducted-know-from-fare-to-everything-article-156222202"
+      },
       {
         "title": "Kashi Official Web Portal — Ropeway: as a project",
         "url": "https://kashi.gov.in/project-details/ropeway-as-a-project",
@@ -108,9 +116,9 @@
     ],
     "i18n": {
       "hi": {
-        "summary": "भारत का पहला शहरी सार्वजनिक-परिवहन रोपवे: वाराणसी कैंट स्टेशन से विश्वनाथ मंदिर के पास गोदौलिया तक 3.75 किमी और पाँच स्टेशन, लगभग 16 मिनट में। शिलान्यास 24 मार्च 2023; कैंट–रथयात्रा खंड पर ट्रायल 2025 में शुरू हुए। 25 सितंबर 2026 तक यह जनता के लिए नहीं खुला है; ताज़ा घोषित लक्ष्य नवंबर 2026 है।",
+        "summary": "भारत का पहला शहरी सार्वजनिक-परिवहन रोपवे: वाराणसी कैंट स्टेशन से विश्वनाथ मंदिर के पास गोदौलिया तक 3.75 किमी और पाँच स्टेशन, लगभग 16 मिनट में। शिलान्यास 24 मार्च 2023; कैंट–रथयात्रा खंड पर ट्रायल 2025 में शुरू हुए। 27 सितंबर 2026 तक यह जनता के लिए नहीं खुला है; ताज़ा घोषित लक्ष्य नवंबर 2026 है।",
         "agency": "नेशनल हाईवेज़ लॉजिस्टिक्स मैनेजमेंट लिमिटेड (NHLML) · निर्माण विश्व समुद्र इंजीनियरिंग",
-        "timeline": "शिलान्यास 24 मार्च 2023 · ट्रायल 2025 से · अभी नहीं खुला (25 सितंबर 2026 को जाँचा); ताज़ा लक्ष्य नवंबर 2026"
+        "timeline": "शिलान्यास 24 मार्च 2023 · ट्रायल 2025 से · अभी नहीं खुला (27 सितंबर 2026 को जाँचा); ताज़ा लक्ष्य नवंबर 2026"
       }
     }
   },

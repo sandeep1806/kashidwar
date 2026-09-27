@@ -164,3 +164,16 @@ Preview deployments of non-production branches get a `*.workers.dev` URL; their 
 4. Remove or disable whatever currently serves the old site on that hostname (its Pages project / Worker route) so the new Worker takes the hostname.
 5. Confirm `https://kashidwar.com/` redirects to `/hi`, that `<link rel="canonical">` and the sitemap use `https://kashidwar.com`, and resubmit the sitemap in Google Search Console and Bing Webmaster Tools.
 6. Optional: enable Cloudflare Images on the zone and set `NEXT_PUBLIC_IMAGE_OPTIMIZATION=on` for resized AVIF/WebP photos.
+
+## Owner placeholders (fill in)
+- `lib/site.ts` → `CONTACT_EMAIL` (shown on /about#contact and in Organization JSON-LD). Currently `contact@kashidwar.com`: either create it (Cloudflare → kashidwar.com → Email → Email Routing → add `contact@` forwarding to your inbox) or replace it.
+- `lib/site.ts` → `SOCIAL_PROFILES`: add the full URLs of the site's official profiles; they become `Organization.sameAs`.
+
+## Guides
+Researched articles live in `content/guides/<slug>.json` (English + Hindi; other locales show English with a note) and are registered in `lib/guides.ts`. Each section cites sources by index and can be flagged `"unconfirmed": true` (shown as "Not officially confirmed"). `related` links them to places/festivals/projects/itineraries, which link back automatically. Bump `updated` whenever a fact changes. After adding Hindi headings, rebuild the heading-font subset (steps at the top of `scripts/heading-font/crawl-corpus.mjs`).
+
+## Cloudflare Web Analytics (cookieless, no consent banner)
+1. Cloudflare dashboard → **Analytics & Logs → Web Analytics → Add a site**.
+2. Choose **kashidwar.com** from the list (the zone is proxied, so pick **automatic setup** — Cloudflare injects the beacon at the edge; no code change or token needed).
+3. Save; data appears within minutes under Web Analytics → kashidwar.com. It sets no cookies and stores no personal data, so no banner is required.
+If you ever turn the proxy off, switch to the manual JS snippet and add its `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "…"}'>` to `app/[locale]/layout.tsx`.
