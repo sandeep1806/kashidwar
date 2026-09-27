@@ -1,6 +1,7 @@
 import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
 import SeeAll from "@/components/ui/SeeAll";
+import { metaDescription } from "@/lib/pages";
 import type { Faith, PhotoData, Project, ProjectStatus } from "@/lib/contentTypes";
 
 export interface ProjectItem extends Pick<Project, "id" | "status" | "type" | "agency" | "timeline" | "summary" | "verified" | "lastVerified"> {
@@ -41,8 +42,10 @@ export function StatusBadge({ status, label }: { status: ProjectStatus; label: s
 
 /**
  * Server component, rendered inside <Static> (no hydration). `carousel`: the
- * home page, where phones and tablets get one snap carousel of compact cards
- * per status and a "See all" link to the projects page.
+ * home page, where each card is photo, status, name, a two-line summary and
+ * a link (agency, timeline and sources live on the projects page and each
+ * project's page), shown as one snap carousel per status on phones and
+ * tablets with a "See all" link.
  */
 export default function ProjectsList({ groups, labels, carousel }: { groups: { status: ProjectStatus; items: ProjectItem[] }[]; labels: ProjectLabels; carousel?: { href: string; label: string } }) {
   // Home: status H3s and card H4s under the section H2; projects page: one level up, under its H1.
@@ -65,8 +68,18 @@ export default function ProjectsList({ groups, labels, carousel }: { groups: { s
                 </div>
                 <CardH className="mt-4 text-[1.3rem] leading-snug text-kashi-white"><a href={p.href} className="hover:text-kashi-marigold">{p.primaryName}</a></CardH>
                 <p className="text-sm text-kashi-ash/70">{p.secondaryName}</p>
-                <p className="card-summary mt-4 text-kashi-ash/90">{p.summary}</p>
-                <dl className="card-extra mt-5 space-y-3 text-sm">
+                {carousel ? (
+                  <>
+                    <p className="mt-3 line-clamp-2 text-kashi-ash/90">{metaDescription(p.summary, 140)}</p>
+                    <a href={p.href} className="mt-auto inline-flex items-center gap-2 pt-5 text-sm text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">
+                      {labels.readMore}
+                      <span aria-hidden="true">→</span>
+                    </a>
+                  </>
+                ) : (
+                  <>
+                <p className="mt-4 text-kashi-ash/90">{p.summary}</p>
+                <dl className="mt-5 space-y-3 text-sm">
                   <div>
                     <dt className="text-[0.65rem] uppercase tracking-[0.2em] text-kashi-diya/80">{labels.agency}</dt>
                     <dd className="mt-0.5 text-kashi-ash/85">{p.agency}</dd>
@@ -77,8 +90,8 @@ export default function ProjectsList({ groups, labels, carousel }: { groups: { s
                   </div>
                 </dl>
                 <footer className="mt-auto pt-5 text-xs text-kashi-ash/60">
-                  {!p.verified && <p className="card-extra mb-2 text-kashi-marigold/90">⚠ {labels.unverified}</p>}
-                  <p className="card-extra">
+                  {!p.verified && <p className="mb-2 text-kashi-marigold/90">⚠ {labels.unverified}</p>}
+                  <p>
                     {labels.sources}:{" "}
                     {p.sources.map((s, i) => (
                       <span key={s.url}>
@@ -89,7 +102,7 @@ export default function ProjectsList({ groups, labels, carousel }: { groups: { s
                       </span>
                     ))}
                   </p>
-                  <p className="card-extra mt-1">
+                  <p className="mt-1">
                     {labels.lastVerified}: <time dateTime={p.lastVerified}>{p.lastVerifiedLabel}</time>
                   </p>
                   <a href={p.href} className="mt-3 inline-flex items-center gap-2 text-sm text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">
@@ -97,6 +110,8 @@ export default function ProjectsList({ groups, labels, carousel }: { groups: { s
                     <span aria-hidden="true">→</span>
                   </a>
                 </footer>
+                  </>
+                )}
               </article>
             ))}
           </StaggerCards>

@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import DiyaGlyph from "@/components/ui/DiyaGlyph";
+import { StaticDiyaGlyph as DiyaGlyph } from "@/components/ui/DiyaGlyph";
 import { projects } from "@/lib/content";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { SECTIONS } from "@/lib/sections";

@@ -212,5 +212,5 @@ export type FaithsProps = Awaited<ReturnType<typeof getFaithsProps>>;
 /** The listing page a home-page carousel's "See all" points to. */
 export async function seeAllLink(locale: Locale, section: "festivals" | "projects" | "food") {
   const common = await getTranslations({ locale, namespace: "common" });
-  return { href: `/${locale}/${section}`, label: common("seeAll") };
+  return { href: `/${locale}/${section}`, label: common("seeAll"), readMore: common("readMore") };
 }

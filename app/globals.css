@@ -392,8 +392,8 @@ footer.cv-auto { contain-intrinsic-size: auto 130vh; }
 @media (min-width: 1024px) { footer.cv-auto { contain-intrinsic-size: auto 56vh; } }
 /*
  * Home-page card rows (festivals, projects, food): a horizontal snap carousel
- * of compact cards below lg, the full grid above. One DOM for both, so every
- * word stays in the HTML; the long parts (.card-extra) are only hidden here.
+ * of compact cards below lg, a grid above (same markup). The long card
+ * details are not on the home page at all; the listing pages carry them.
  */
 @media (max-width: 1023.98px) {
   .carousel-sm {
@@ -404,8 +404,6 @@ footer.cv-auto { contain-intrinsic-size: auto 130vh; }
   }
   .carousel-sm::-webkit-scrollbar { display: none; }
   .carousel-sm > * { flex: 0 0 min(78vw, 340px); scroll-snap-align: start; padding: 1rem; }
-  .carousel-sm .card-extra { display: none; }
-  .carousel-sm .card-summary { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; margin-top: 0.5rem; font-size: 0.9rem; }
   .carousel-sm .card-photo { margin: -0.25rem -0.25rem 0.75rem; }
   /* Places: the first 8 cards until "Show all" */
   [data-collapsed] [data-extra] { display: none; }

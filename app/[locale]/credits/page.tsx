@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import credits from "@/content/credits.json";
 import { alternatesFor } from "@/lib/pages";
 import { photoAlt } from "@/lib/photos";
+import Static from "@/components/ui/Static";
 
 export interface Credit {
   key: string;
@@ -28,6 +29,7 @@ export default async function CreditsPage({ params }: PageProps<"/[locale]/credi
   const list = credits as Credit[];
   return (
     <main id="content" className="container-kashi min-h-dvh pb-24 pt-32">
+      <Static>
       <h1 className="text-h2 text-glow">{t("title")}</h1>
       <p className="mt-6 max-w-2xl text-lg text-kashi-ash/90">{t("intro")}</p>
       <p className="mt-3 max-w-2xl text-kashi-ash/80">{t("changes")}</p>
@@ -61,6 +63,7 @@ export default async function CreditsPage({ params }: PageProps<"/[locale]/credi
         <li>{t("data")}</li>
       </ul>
       <p className="mt-12"><a href={`/${locale}`} className="text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4">{t("back")}</a></p>
+      </Static>
     </main>
   );
 }

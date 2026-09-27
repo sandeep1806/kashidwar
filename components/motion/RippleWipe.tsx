@@ -1,5 +1,5 @@
 import type { CSSProperties } from "react";
-import DiyaGlyph from "@/components/ui/DiyaGlyph";
+import { StaticDiyaGlyph as DiyaGlyph } from "@/components/ui/DiyaGlyph";
 import Static from "@/components/ui/Static";
 
 /** Small diyas afloat on the water line: position, drift span, duration, delay (negative = already under way). */

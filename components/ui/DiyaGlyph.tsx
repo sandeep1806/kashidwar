@@ -4,14 +4,21 @@ import { useId } from "react";
  * The diya glyph: a clay lamp with a single flame. Used by the page loader and
  * (from Phase 8) by section dividers. Pure SVG, colors from design tokens.
  */
-export default function DiyaGlyph({
-  className,
-  flameClassName,
-}: {
-  className?: string;
-  flameClassName?: string;
-}) {
-  const id = useId();
+export default function DiyaGlyph(props: { className?: string; flameClassName?: string }) {
+  return <DiyaSvg uid={useId()} {...props} />;
+}
+
+let staticCount = 0;
+/**
+ * The same glyph without hooks, for server markup rendered to HTML once
+ * (inside <Static>, which renders outside a React render pass). Gradient ids
+ * come from a counter; they only need to be unique within the page.
+ */
+export function StaticDiyaGlyph(props: { className?: string; flameClassName?: string }) {
+  return <DiyaSvg uid={`dg${(staticCount++).toString(36)}`} {...props} />;
+}
+
+function DiyaSvg({ uid: id, className, flameClassName }: { uid: string; className?: string; flameClassName?: string }) {
   const flameGrad = `${id}-flame`;
   const coreGrad = `${id}-core`;
   const bowlGrad = `${id}-bowl`;

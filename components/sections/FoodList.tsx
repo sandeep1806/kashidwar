@@ -1,6 +1,7 @@
 import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
 import SeeAll from "@/components/ui/SeeAll";
+import { metaDescription } from "@/lib/pages";
 import type { Food, PhotoData } from "@/lib/contentTypes";
 
 export interface FoodItem extends Pick<Food, "id" | "season" | "where" | "summary" | "vegetarian"> {
@@ -11,10 +12,11 @@ export interface FoodItem extends Pick<Food, "id" | "season" | "where" | "summar
 }
 
 /**
- * `carousel`: the home page, where phones and tablets get a snap carousel of
- * compact cards, each linking to its entry on the food page.
+ * `carousel`: the home page, where each card is photo, name, a two-line
+ * summary and a link to its entry on the food page (season and where live
+ * there), shown as a snap carousel on phones and tablets.
  */
-export default function FoodList({ items, labels, carousel }: { items: FoodItem[]; labels: { season: string; where: string; veg: string }; carousel?: { href: string; label: string } }) {
+export default function FoodList({ items, labels, carousel }: { items: FoodItem[]; labels: { season: string; where: string; veg: string }; carousel?: { href: string; label: string; readMore: string } }) {
   // H3 under the home page's section H2; H2 on the food page, under its H1.
   const H = carousel ? "h3" : "h2";
   return (
@@ -37,8 +39,18 @@ export default function FoodList({ items, labels, carousel }: { items: FoodItem[
             {carousel ? <a href={`${carousel.href}#${f.id}`} className="hover:text-kashi-marigold">{f.primaryName}</a> : f.primaryName}
           </H>
           <p className="text-sm text-kashi-ash/70">{f.secondaryName}</p>
-          <p className="card-summary mt-3 text-sm text-kashi-ash/90">{f.summary}</p>
-          <dl className="card-extra mt-4 space-y-2 text-xs">
+          {carousel ? (
+            <>
+              <p className="mt-3 line-clamp-2 text-sm text-kashi-ash/90">{metaDescription(f.summary, 120)}</p>
+              <a href={`${carousel.href}#${f.id}`} className="mt-auto inline-flex items-center gap-2 pt-4 text-sm text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">
+                {carousel.readMore}
+                <span aria-hidden="true">→</span>
+              </a>
+            </>
+          ) : (
+            <>
+          <p className="mt-3 text-sm text-kashi-ash/90">{f.summary}</p>
+          <dl className="mt-4 space-y-2 text-xs">
             <div>
               <dt className="uppercase tracking-[0.18em] text-kashi-diya/80">{labels.season}</dt>
               <dd className="mt-0.5 text-kashi-ash/85">{f.season}</dd>
@@ -48,6 +60,8 @@ export default function FoodList({ items, labels, carousel }: { items: FoodItem[
               <dd className="mt-0.5 text-kashi-ash/85">{(Array.isArray(f.where) ? f.where : [f.where]).join(" · ")}</dd>
             </div>
           </dl>
+            </>
+          )}
         </article>
       ))}
     </StaggerCards>
