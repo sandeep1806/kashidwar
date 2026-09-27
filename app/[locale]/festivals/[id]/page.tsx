@@ -77,7 +77,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
   const home = `/${locale}`;
   const crumbs = [
     { name: t("home"), href: home },
-    { name: nav("festivals"), href: `${home}#festivals` },
+    { name: nav("festivals"), href: `${home}/festivals` },
     { name: primary, href: `/${locale}${path}` },
   ];
   const months = tf.raw("months") as string[];
@@ -150,7 +150,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
             <PrevNext
               prev={{ href: pageUrl(loc, "festivals", prev.id), label: t("prev"), name: names(loc, prev).primary }}
               next={{ href: pageUrl(loc, "festivals", next.id), label: t("next"), name: names(loc, next).primary }}
-              back={{ href: `${home}#festivals`, label: t("backTo", { section: nav("festivals") }) }}
+              back={{ href: `${home}/festivals`, label: t("backTo", { section: nav("festivals") }) }}
             />
           </>
         }

@@ -1,5 +1,6 @@
 import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
+import SeeAll from "@/components/ui/SeeAll";
 import type { Faith, PhotoData, Project, ProjectStatus } from "@/lib/contentTypes";
 
 export interface ProjectItem extends Pick<Project, "id" | "status" | "type" | "agency" | "timeline" | "summary" | "verified" | "lastVerified"> {
@@ -38,28 +39,32 @@ export function StatusBadge({ status, label }: { status: ProjectStatus; label: s
   );
 }
 
-/** Server component, rendered inside <Static> (no hydration). */
-export default function ProjectsList({ groups, labels }: { groups: { status: ProjectStatus; items: ProjectItem[] }[]; labels: ProjectLabels }) {
+/**
+ * Server component, rendered inside <Static> (no hydration). `carousel`: the
+ * home page, where phones and tablets get one snap carousel of compact cards
+ * per status and a "See all" link to the projects page.
+ */
+export default function ProjectsList({ groups, labels, carousel }: { groups: { status: ProjectStatus; items: ProjectItem[] }[]; labels: ProjectLabels; carousel?: { href: string; label: string } }) {
   return (
     <>
       {groups.map((g) => (
-        <div key={g.status} className="container-kashi mt-14">
-          <h3 className="mb-6 flex items-center gap-4 text-h3 text-kashi-white">
+        <div key={g.status} className="container-kashi mt-14 max-lg:mt-10">
+          <h3 className="mb-6 max-lg:mb-2 flex items-center gap-4 text-h3 text-kashi-white">
             <span>{labels.groups[g.status]}</span>
             <span aria-hidden="true" className="h-px flex-1 bg-gradient-to-r from-kashi-diya/40 to-transparent" />
           </h3>
-          <StaggerCards className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <StaggerCards className={carousel ? "carousel-sm grid gap-6 md:grid-cols-2 xl:grid-cols-3" : "grid gap-6 md:grid-cols-2 xl:grid-cols-3"}>
             {g.items.map((p) => (
-              <article key={p.id} className="group grain relative flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-6 transition-[translate,border-color,box-shadow] duration-500 ease-enter hover:-translate-y-1 hover:border-kashi-diya/50 hover:shadow-glow">
-                <CardPhoto photo={p.photo} faith={p.faith} className="-mx-3 -mt-3 mb-5" />
+              <article key={p.id} id={carousel ? undefined : p.id} className="group grain relative flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-6 transition-[translate,border-color,box-shadow] duration-500 ease-enter hover:-translate-y-1 hover:border-kashi-diya/50 hover:shadow-glow">
+                <CardPhoto photo={p.photo} faith={p.faith} className="card-photo -mx-3 -mt-3 mb-5" carousel={!!carousel} />
                 <div className="flex flex-wrap items-center gap-2">
                   <StatusBadge status={p.status} label={labels.groups[p.status]} />
                   <span className="rounded-full bg-kashi-rudraksha/50 px-2 py-0.5 text-[0.7rem] text-kashi-ash/80">{labels.types[p.type]}</span>
                 </div>
                 <h4 className="mt-4 text-[1.3rem] leading-snug text-kashi-white"><a href={p.href} className="hover:text-kashi-marigold">{p.primaryName}</a></h4>
                 <p className="text-sm text-kashi-ash/70">{p.secondaryName}</p>
-                <p className="mt-4 text-kashi-ash/90">{p.summary}</p>
-                <dl className="mt-5 space-y-3 text-sm">
+                <p className="card-summary mt-4 text-kashi-ash/90">{p.summary}</p>
+                <dl className="card-extra mt-5 space-y-3 text-sm">
                   <div>
                     <dt className="text-[0.65rem] uppercase tracking-[0.2em] text-kashi-diya/80">{labels.agency}</dt>
                     <dd className="mt-0.5 text-kashi-ash/85">{p.agency}</dd>
@@ -70,8 +75,8 @@ export default function ProjectsList({ groups, labels }: { groups: { status: Pro
                   </div>
                 </dl>
                 <footer className="mt-auto pt-5 text-xs text-kashi-ash/60">
-                  {!p.verified && <p className="mb-2 text-kashi-marigold/90">⚠ {labels.unverified}</p>}
-                  <p>
+                  {!p.verified && <p className="card-extra mb-2 text-kashi-marigold/90">⚠ {labels.unverified}</p>}
+                  <p className="card-extra">
                     {labels.sources}:{" "}
                     {p.sources.map((s, i) => (
                       <span key={s.url}>
@@ -82,7 +87,7 @@ export default function ProjectsList({ groups, labels }: { groups: { status: Pro
                       </span>
                     ))}
                   </p>
-                  <p className="mt-1">
+                  <p className="card-extra mt-1">
                     {labels.lastVerified}: <time dateTime={p.lastVerified}>{p.lastVerifiedLabel}</time>
                   </p>
                   <a href={p.href} className="mt-3 inline-flex items-center gap-2 text-sm text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">
@@ -95,6 +100,7 @@ export default function ProjectsList({ groups, labels }: { groups: { status: Pro
           </StaggerCards>
         </div>
       ))}
+      {carousel && <SeeAll href={carousel.href} label={carousel.label} />}
     </>
   );
 }

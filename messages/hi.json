@@ -48,7 +48,9 @@
     "sources": "स्रोत",
     "lastVerified": "अंतिम सत्यापन",
     "loading": "दीया जल रहा है…",
-    "englishNote": "कुछ विवरण अंग्रेज़ी में दिए गए हैं।"
+    "englishNote": "कुछ विवरण अंग्रेज़ी में दिए गए हैं।",
+    "seeAll": "सभी देखें",
+    "showAllCount": "सभी {count} देखें"
   },
   "status": {
     "completed": "पूर्ण",

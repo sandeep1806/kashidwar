@@ -3,6 +3,7 @@ import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 import FestivalDateLine from "@/components/ui/FestivalDateLine";
+import SeeAll from "@/components/ui/SeeAll";
 import type { FestivalDateView } from "@/lib/festivalDates";
 import type { Faith, Festival, PhotoData } from "@/lib/contentTypes";
 
@@ -16,7 +17,12 @@ export interface FestivalItem extends Pick<Festival, "id" | "months" | "when" | 
   photo: PhotoData | null;
 }
 
-export default function FestivalsList({ items, months, labels }: { items: FestivalItem[]; months: string[]; labels: { when: string; where: string; lunarNote: string; readMore: string; nextUp: string; all: string } }) {
+/**
+ * `carousel`: the home page, where phones and tablets get a snap carousel of
+ * compact cards and a "See all" link to the festivals page (which renders the
+ * full grid).
+ */
+export default function FestivalsList({ items, months, labels, carousel }: { items: FestivalItem[]; months: string[]; labels: { when: string; where: string; lunarNote: string; readMore: string; nextUp: string; all: string }; carousel?: { href: string; label: string } }) {
   return (
     <>
       <Reveal className="container-kashi mt-12">
@@ -57,16 +63,17 @@ export default function FestivalsList({ items, months, labels }: { items: Festiv
         <p className="mt-3 text-center text-xs text-kashi-ash/60">{labels.lunarNote}</p>
       </Reveal>
 
-      <StaggerCards className="container-kashi mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div className="container-kashi mt-12">
+      <StaggerCards className={carousel ? "carousel-sm grid gap-6 md:grid-cols-2 xl:grid-cols-3" : "grid gap-6 md:grid-cols-2 xl:grid-cols-3"} data-carousel={carousel ? "" : undefined}>
         {items.map((f) => {
           // Badge the soonest festival with a confirmed date (not an "expected month").
           const nextUp = f.id === items.find((x) => x.date.featured.kind !== "expected")?.id;
           return (
-          <article key={f.id} data-festival-card="" data-months={f.months.join(" ")} data-next-up={nextUp ? "" : undefined} className={`group grain relative flex flex-col rounded-kashi border bg-kashi-indigo/40 p-6 transition-[border-color,box-shadow] duration-500 ease-enter hover:border-kashi-diya/50 hover:shadow-glow ${nextUp ? "border-kashi-diya/60 shadow-glow" : "border-kashi-rudraksha/60"}`}>
+          <article key={f.id} id={carousel ? undefined : f.id} data-festival-card="" data-months={f.months.join(" ")} data-next-up={nextUp ? "" : undefined} className={`group grain relative flex flex-col rounded-kashi border bg-kashi-indigo/40 p-6 transition-[border-color,box-shadow] duration-500 ease-enter hover:border-kashi-diya/50 hover:shadow-glow ${nextUp ? "border-kashi-diya/60 shadow-glow" : "border-kashi-rudraksha/60"}`}>
             {nextUp && (
               <span className="absolute right-4 top-4 z-[2] rounded-full bg-kashi-saffron px-3 py-1 text-xs font-medium text-kashi-night">{labels.nextUp}</span>
             )}
-            <CardPhoto photo={f.photo} faith={f.glyph} className="-mx-3 -mt-3 mb-5" />
+            <CardPhoto photo={f.photo} faith={f.glyph} className="card-photo -mx-3 -mt-3 mb-5" carousel={!!carousel} />
             <div className="flex items-center gap-3">
               <span className="grid h-10 w-10 place-items-center rounded-full border border-kashi-diya/40 text-kashi-diya">
                 <FaithGlyph faith={f.glyph} className="h-5 w-5" />
@@ -77,8 +84,8 @@ export default function FestivalsList({ items, months, labels }: { items: Festiv
               </div>
             </div>
             <FestivalDateLine view={f.date} compact className="mt-3" />
-            <p className="mt-4 text-kashi-ash/90">{f.summary}</p>
-            <dl className="mt-5 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
+            <p className="card-summary mt-4 text-kashi-ash/90">{f.summary}</p>
+            <dl className="card-extra mt-5 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
               <dt className="text-kashi-diya/80">{labels.when}</dt>
               <dd className="text-kashi-ash/85">{f.when} · {f.months.map((m) => months[m - 1]).join("–")}</dd>
               <dt className="text-kashi-diya/80">{labels.where}</dt>
@@ -92,6 +99,8 @@ export default function FestivalsList({ items, months, labels }: { items: Festiv
           );
         })}
       </StaggerCards>
+      </div>
+      {carousel && <SeeAll href={carousel.href} label={carousel.label} />}
     </>
   );
 }

@@ -1,7 +1,7 @@
 import Reveal from "@/components/motion/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
 import type { Locale } from "@/lib/i18n/locales";
-import { getFoodProps } from "@/lib/sectionProps";
+import { getFoodProps, seeAllLink } from "@/lib/sectionProps";
 import EnglishNote from "@/components/ui/EnglishNote";
 import FoodList from "./FoodList";
 
@@ -16,7 +16,7 @@ export default async function Food({ locale }: { locale: Locale }) {
           {englishNote && <EnglishNote text={englishNote} className="mt-3" />}
         </Reveal>
       </div>
-      <FoodList items={items} labels={labels} />
+      <FoodList items={items} labels={labels} carousel={await seeAllLink(locale, "food")} />
     </section>
   );
 }

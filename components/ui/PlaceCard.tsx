@@ -22,6 +22,7 @@ export default function PlaceCard({
   photo,
   labels,
   href,
+  extra = false,
 }: {
   place: Place;
   primaryName: string;
@@ -30,10 +31,12 @@ export default function PlaceCard({
   labels: PlaceLabels;
   /** The place's own page; a plain click opens the quick-view modal instead */
   href: string;
+  /** Beyond the first 8: hidden below lg until "Show all" (the explorer keeps this in sync with the filter) */
+  extra?: boolean;
 }) {
   const faiths: Faith[] = place.faith.length ? place.faith : ["secular"];
   return (
-    <article className="group flex flex-col" data-place-card="" data-type={place.type} data-faith={place.faith.join(" ")}>
+    <article className="group flex flex-col" data-place-card="" data-extra={extra ? "" : undefined} data-type={place.type} data-faith={place.faith.join(" ")}>
       <a
         href={href}
         data-place-open={place.id}

@@ -48,7 +48,9 @@
     "sources": "সূত্র",
     "lastVerified": "শেষ যাচাই",
     "loading": "প্রদীপ জ্বালানো হচ্ছে…",
-    "englishNote": "কিছু বিবরণ ইংরেজিতে দেখানো হয়েছে।"
+    "englishNote": "কিছু বিবরণ ইংরেজিতে দেখানো হয়েছে।",
+    "seeAll": "সব দেখুন",
+    "showAllCount": "সব {count}টি দেখুন"
   },
   "status": {
     "completed": "সম্পন্ন",

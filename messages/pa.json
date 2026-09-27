@@ -48,7 +48,9 @@
     "sources": "ਸਰੋਤ",
     "lastVerified": "ਆਖ਼ਰੀ ਤਸਦੀਕ",
     "loading": "ਦੀਵਾ ਜਗਾ ਰਹੇ ਹਾਂ…",
-    "englishNote": "ਕੁਝ ਵੇਰਵੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਦਿੱਤੇ ਗਏ ਹਨ।"
+    "englishNote": "ਕੁਝ ਵੇਰਵੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਦਿੱਤੇ ਗਏ ਹਨ।",
+    "seeAll": "ਸਾਰੇ ਵੇਖੋ",
+    "showAllCount": "ਸਾਰੇ {count} ਵੇਖੋ"
   },
   "status": {
     "completed": "ਮੁਕੰਮਲ",

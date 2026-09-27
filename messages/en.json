@@ -48,7 +48,9 @@
     "sources": "Sources",
     "lastVerified": "Last verified",
     "loading": "Lighting the lamp…",
-    "englishNote": "Some details are shown in English."
+    "englishNote": "Some details are shown in English.",
+    "seeAll": "See all",
+    "showAllCount": "Show all {count}"
   },
   "status": {
     "completed": "Completed",

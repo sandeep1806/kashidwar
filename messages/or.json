@@ -48,7 +48,9 @@
     "sources": "ଉତ୍ସ",
     "lastVerified": "ଶେଷ ଯାଞ୍ଚ",
     "loading": "ଦୀପ ଜଳାଯାଉଛି…",
-    "englishNote": "କିଛି ବିବରଣୀ ଇଂରାଜୀରେ ଦିଆଯାଇଛି।"
+    "englishNote": "କିଛି ବିବରଣୀ ଇଂରାଜୀରେ ଦିଆଯାଇଛି।",
+    "seeAll": "ସବୁ ଦେଖନ୍ତୁ",
+    "showAllCount": "ସମସ୍ତ {count} ଦେଖନ୍ତୁ"
   },
   "status": {
     "completed": "ସମ୍ପୂର୍ଣ୍ଣ",

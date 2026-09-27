@@ -48,7 +48,9 @@
     "sources": "উৎস",
     "lastVerified": "শেষ পৰীক্ষা",
     "loading": "চাকি জ্বলোৱা হৈছে…",
-    "englishNote": "কিছুমান বিৱৰণ ইংৰাজীত দেখুওৱা হৈছে।"
+    "englishNote": "কিছুমান বিৱৰণ ইংৰাজীত দেখুওৱা হৈছে।",
+    "seeAll": "সকলো চাওক",
+    "showAllCount": "সকলো {count}টা চাওক"
   },
   "status": {
     "completed": "সম্পূৰ্ণ",

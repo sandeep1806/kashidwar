@@ -1,7 +1,7 @@
 import Reveal from "@/components/motion/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
 import type { Locale } from "@/lib/i18n/locales";
-import { getFestivalsProps } from "@/lib/sectionProps";
+import { getFestivalsProps, seeAllLink } from "@/lib/sectionProps";
 import FestivalsList from "./FestivalsList";
 
 export default async function Festivals({ locale }: { locale: Locale }) {
@@ -14,7 +14,7 @@ export default async function Festivals({ locale }: { locale: Locale }) {
           <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{heading.intro}</p>
         </Reveal>
       </div>
-      <FestivalsList items={items} months={months} labels={labels} />
+      <FestivalsList items={items} months={months} labels={labels} carousel={await seeAllLink(locale, "festivals")} />
     </section>
   );
 }

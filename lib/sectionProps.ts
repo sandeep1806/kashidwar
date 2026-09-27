@@ -183,6 +183,7 @@ export async function getPlacesProps(locale: Locale) {
     share: t("share"),
     openPage: (await getTranslations({ locale, namespace: "page" }))("openPage"),
     linkCopied: t("linkCopied"),
+    showAll: (await getTranslations({ locale, namespace: "common" })).raw("showAllCount"),
     englishNote: proseFallsBack(locale) ? (await getTranslations({ locale, namespace: "common" }))("englishNote") : null,
   };
   return { items, labels };
@@ -207,3 +208,9 @@ export async function getFaithsProps(locale: Locale) {
   };
 }
 export type FaithsProps = Awaited<ReturnType<typeof getFaithsProps>>;
+
+/** The listing page a home-page carousel's "See all" points to. */
+export async function seeAllLink(locale: Locale, section: "festivals" | "projects" | "food") {
+  const common = await getTranslations({ locale, namespace: "common" });
+  return { href: `/${locale}/${section}`, label: common("seeAll") };
+}

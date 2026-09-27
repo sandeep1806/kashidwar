@@ -48,7 +48,9 @@
     "sources": "स्रोत",
     "lastVerified": "शेवटची पडताळणी",
     "loading": "दिवा लावत आहोत…",
-    "englishNote": "काही तपशील इंग्रजीत दिले आहेत."
+    "englishNote": "काही तपशील इंग्रजीत दिले आहेत.",
+    "seeAll": "सर्व पहा",
+    "showAllCount": "सर्व {count} पहा"
   },
   "status": {
     "completed": "पूर्ण",

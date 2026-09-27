@@ -384,12 +384,34 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
 .cv-auto { content-visibility: auto; contain-intrinsic-size: auto 80vh; }
 footer.cv-auto { contain-intrinsic-size: auto 130vh; }
 @media (min-width: 1024px) { footer.cv-auto { contain-intrinsic-size: auto 56vh; } }
+/*
+ * Home-page card rows (festivals, projects, food): a horizontal snap carousel
+ * of compact cards below lg, the full grid above. One DOM for both, so every
+ * word stays in the HTML; the long parts (.card-extra) are only hidden here.
+ */
+@media (max-width: 1023.98px) {
+  .carousel-sm {
+    display: flex; gap: 1rem; overflow-x: auto; overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory; scrollbar-width: none;
+    margin-inline: calc(-1 * clamp(1rem, 4vw, 2.5rem)); padding: 0.5rem clamp(1rem, 4vw, 2.5rem) 1rem;
+    scroll-padding-inline: clamp(1rem, 4vw, 2.5rem);
+  }
+  .carousel-sm::-webkit-scrollbar { display: none; }
+  .carousel-sm > * { flex: 0 0 min(78vw, 340px); scroll-snap-align: start; padding: 1rem; }
+  .carousel-sm .card-extra { display: none; }
+  .carousel-sm .card-summary { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; margin-top: 0.5rem; font-size: 0.9rem; }
+  .carousel-sm .card-photo { margin: -0.25rem -0.25rem 0.75rem; }
+  /* Places: the first 8 cards until "Show all" */
+  [data-collapsed] [data-extra] { display: none; }
+}
+@media (min-width: 1024px) { .see-all-sm { display: none; } }
+
 .cv-section { content-visibility: auto; contain-intrinsic-size: auto var(--cv-h, 120vh); }
 /* Estimated heights for skipped sections (measured 2026-09-25, /hi); "auto"
    replaces them with the real height once a section has rendered, so these
    only keep the scrollbar and anchor jumps close on first approach. */
-#places { --cv-h: 590vh; } #faiths { --cv-h: 420vh; } #projects { --cv-h: 1330vh; }
-#festivals { --cv-h: 1330vh; } #food { --cv-h: 580vh; } #itineraries { --cv-h: 180vh; }
+#places { --cv-h: 330vh; } #faiths { --cv-h: 420vh; } #projects { --cv-h: 290vh; }
+#festivals { --cv-h: 165vh; } #food { --cv-h: 120vh; } #itineraries { --cv-h: 180vh; }
 #practical { --cv-h: 200vh; } #aarti { --cv-h: 85vh; }
 @media (min-width: 1024px) {
   #places { --cv-h: 450vh; } #faiths { --cv-h: 180vh; } #projects { --cv-h: 620vh; }

@@ -24,7 +24,14 @@ export function sitemapPages(): SitemapPage[] {
       photoKeys: kindPhoto(kind, slug),
     })),
   );
-  return [home, ...items, { path: "/credits", priority: 0.3, changeFrequency: "monthly", photoKeys: [] }];
+  const group = (g: string) => PHOTO_KEYS.filter((k) => k.startsWith(`${g}/`));
+  const listings: SitemapPage[] = (["festivals", "projects", "food"] as const).map((g) => ({
+    path: `/${g}`,
+    priority: 0.8,
+    changeFrequency: g === "food" ? "monthly" : "weekly",
+    photoKeys: group(g),
+  }));
+  return [home, ...listings, ...items, { path: "/credits", priority: 0.3, changeFrequency: "monthly", photoKeys: [] }];
 }
 
 export const PHOTOS = photos as Record<string, { src: string; widths: number[] }>;

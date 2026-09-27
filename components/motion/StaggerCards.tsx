@@ -5,9 +5,9 @@ import type { ReactNode } from "react";
  * (DESIGN.md → Cards). Wrap a grid; each direct child is one card. A server
  * component: <RevealController> does the animation.
  */
-export default function StaggerCards({ children, className }: { children: ReactNode; className?: string }) {
+export default function StaggerCards({ children, className, "data-carousel": carousel }: { children: ReactNode; className?: string; "data-carousel"?: string }) {
   return (
-    <div data-stagger="" className={className}>
+    <div data-stagger="" data-carousel={carousel} className={className}>
       {children}
     </div>
   );

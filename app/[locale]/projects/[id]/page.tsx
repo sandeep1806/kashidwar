@@ -68,7 +68,7 @@ export default async function ProjectPage({ params }: PageProps<"/[locale]/proje
   const fmt = new Intl.DateTimeFormat(LOCALES[loc].bcp47, { dateStyle: "long", timeZone: "UTC" });
   const crumbs = [
     { name: t("home"), href: home },
-    { name: nav("projects"), href: `${home}#projects` },
+    { name: nav("projects"), href: `${home}/projects` },
     { name: primary, href: `/${locale}${path}` },
   ];
   const statusLabel = tj(`groups.${raw.status}`);
@@ -100,7 +100,7 @@ export default async function ProjectPage({ params }: PageProps<"/[locale]/proje
             <PrevNext
               prev={{ href: pageUrl(loc, "projects", prev.id), label: t("prev"), name: names(loc, prev).primary }}
               next={{ href: pageUrl(loc, "projects", next.id), label: t("next"), name: names(loc, next).primary }}
-              back={{ href: `${home}#projects`, label: t("backTo", { section: nav("projects") }) }}
+              back={{ href: `${home}/projects`, label: t("backTo", { section: nav("projects") }) }}
             />
           </>
         }

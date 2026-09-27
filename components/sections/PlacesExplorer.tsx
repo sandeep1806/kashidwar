@@ -49,10 +49,14 @@ export interface ExplorerLabels extends PlaceLabels {
   share: string;
   openPage: string;
   linkCopied: string;
+  /** "Show all {count}" under the first 8 cards on phones and tablets */
+  showAll: string;
   englishNote: string | null;
 }
 
 const withCount = (template: string, n: number) => template.replace("{count}", String(n));
+/** Cards shown below lg before "Show all" */
+const COLLAPSED = 8;
 
 /**
  * `#places/jain` style hash → filter id, so faith tiles can deep-link into the
@@ -202,12 +206,17 @@ export default function PlacesExplorer({
     if (selected && !details) prefetch();
   }, [selected, details, prefetch]);
 
-  // Filter the static cards in place.
+  // Filter the static cards in place. Below lg only the first COLLAPSED
+  // matching cards show (CSS: [data-collapsed] [data-extra]) until "Show all".
   const gridHost = useRef<HTMLDivElement>(null);
+  const [expanded, setExpanded] = useState(false);
   useEffect(() => {
+    let shown = 0;
     gridHost.current?.querySelectorAll<HTMLElement>("[data-place-card]").forEach((card) => {
       const place = { type: card.dataset.type as Place["type"], faith: (card.dataset.faith ?? "").split(" ").filter(Boolean) as Faith[] };
-      card.hidden = !placeMatches(place, filter);
+      const on = placeMatches(place, filter);
+      card.hidden = !on;
+      card.toggleAttribute("data-extra", on && ++shown > COLLAPSED);
     });
   }, [filter]);
   const onGridClick = (e: MouseEvent<HTMLDivElement>) => {
@@ -246,9 +255,21 @@ export default function PlacesExplorer({
         {withCount(labels.results, visible.length)}
       </p>
 
-      <div ref={gridHost} onClick={onGridClick} onPointerOver={prefetch} onFocusCapture={prefetch}>
+      <div ref={gridHost} data-collapsed={expanded ? undefined : ""} onClick={onGridClick} onPointerOver={prefetch} onFocusCapture={prefetch}>
         {grid}
       </div>
+      {!expanded && visible.length > COLLAPSED && (
+        <p className="see-all-sm mt-6 text-center">
+          <button
+            type="button"
+            onClick={() => setExpanded(true)}
+            className="inline-flex min-h-11 items-center gap-2 rounded-full border border-kashi-diya/40 px-5 text-sm text-kashi-diya transition-colors hover:border-kashi-marigold hover:text-kashi-marigold"
+          >
+            {withCount(labels.showAll, visible.length)}
+            <span aria-hidden="true">↓</span>
+          </button>
+        </p>
+      )}
 
       <div
         ref={mapHost}

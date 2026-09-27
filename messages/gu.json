@@ -48,7 +48,9 @@
     "sources": "સ્રોત",
     "lastVerified": "છેલ્લી ચકાસણી",
     "loading": "દીવો પ્રગટાવી રહ્યા છીએ…",
-    "englishNote": "કેટલીક વિગતો અંગ્રેજીમાં દર્શાવી છે."
+    "englishNote": "કેટલીક વિગતો અંગ્રેજીમાં દર્શાવી છે.",
+    "seeAll": "બધું જુઓ",
+    "showAllCount": "બધા {count} જુઓ"
   },
   "status": {
     "completed": "પૂર્ણ",

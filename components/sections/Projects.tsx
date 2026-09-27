@@ -1,7 +1,7 @@
 import Reveal from "@/components/motion/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
 import type { Locale } from "@/lib/i18n/locales";
-import { getProjectsProps } from "@/lib/sectionProps";
+import { getProjectsProps, seeAllLink } from "@/lib/sectionProps";
 import EnglishNote from "@/components/ui/EnglishNote";
 import ProjectsList, { StatusBadge } from "./ProjectsList";
 
@@ -23,7 +23,7 @@ export default async function Projects({ locale }: { locale: Locale }) {
           {englishNote && <EnglishNote text={englishNote} className="mt-3" />}
         </Reveal>
       </div>
-      <ProjectsList groups={groups} labels={labels} />
+      <ProjectsList groups={groups} labels={labels} carousel={await seeAllLink(locale, "projects")} />
     </section>
   );
 }

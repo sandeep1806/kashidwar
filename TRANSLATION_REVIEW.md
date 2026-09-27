@@ -78,3 +78,7 @@ kn/pa "Next" follows Hindi अगली बार (ಮುಂದಿನ ಬಾರ�
 
 ## Locale ↔ font check
 Fonts load per script via `lib/fonts.ts`. Language names in the switcher and footer use tiny per-script Noto Sans subsets (`lib/fonts/lang/`, built by `scripts/lang-fonts/build.py`); rebuild them if a native name or greeting in `lib/i18n/locales.ts` changes (the build check fails otherwise). Verses in Gurmukhi, Arabic and Greek inside the Faiths tiles render with system fonts on locales that don't load those scripts; if they look wrong on a target device, add `preload: false` subset faces for `gurmukhi` and an Arabic Noto face.
+
+## Added 2026-09-27 (QA pass)
+- `common.seeAll` ("See all") and `common.showAllCount` ("Show all {count}") in all 13 locales, written without a native reviewer. Check the plural/counter forms in bn (টি), as (টা) and ml (എണ്ണവും).
+- `places.filters.hindu` reuses each locale's existing `places.faiths.hindu`.

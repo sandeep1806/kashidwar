@@ -1,5 +1,6 @@
 import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
+import SeeAll from "@/components/ui/SeeAll";
 import type { Food, PhotoData } from "@/lib/contentTypes";
 
 export interface FoodItem extends Pick<Food, "id" | "season" | "where" | "summary" | "vegetarian"> {
@@ -9,12 +10,18 @@ export interface FoodItem extends Pick<Food, "id" | "season" | "where" | "summar
   photo: PhotoData | null;
 }
 
-export default function FoodList({ items, labels }: { items: FoodItem[]; labels: { season: string; where: string; veg: string } }) {
+/**
+ * `carousel`: the home page, where phones and tablets get a snap carousel of
+ * compact cards, each linking to its entry on the food page.
+ */
+export default function FoodList({ items, labels, carousel }: { items: FoodItem[]; labels: { season: string; where: string; veg: string }; carousel?: { href: string; label: string } }) {
   return (
-    <StaggerCards className="container-kashi mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <>
+    <div className="container-kashi mt-12">
+    <StaggerCards className={carousel ? "carousel-sm grid gap-5 sm:grid-cols-2 lg:grid-cols-4" : "grid gap-5 sm:grid-cols-2 lg:grid-cols-4"}>
       {items.map((f) => (
-        <article key={f.id} className="group flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-5 transition-[translate,border-color] duration-500 ease-enter hover:-translate-y-1 hover:border-kashi-diya/50">
-          <CardPhoto photo={f.photo} className="-mx-2 -mt-2 mb-4" />
+        <article key={f.id} id={carousel ? undefined : f.id} className="group flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-5 transition-[translate,border-color] duration-500 ease-enter hover:-translate-y-1 hover:border-kashi-diya/50">
+          <CardPhoto photo={f.photo} className="card-photo -mx-2 -mt-2 mb-4" carousel={!!carousel} />
           <div className="flex items-center gap-2 text-[0.7rem]">
             <span className="rounded-full border border-kashi-diya/40 px-2 py-0.5 text-kashi-diya">{f.typeLabel}</span>
             {f.vegetarian && (
@@ -24,10 +31,12 @@ export default function FoodList({ items, labels }: { items: FoodItem[]; labels:
               </span>
             )}
           </div>
-          <h3 className="mt-3 text-[1.25rem] leading-snug text-kashi-white">{f.primaryName}</h3>
+          <h3 className="mt-3 text-[1.25rem] leading-snug text-kashi-white">
+            {carousel ? <a href={`${carousel.href}#${f.id}`} className="hover:text-kashi-marigold">{f.primaryName}</a> : f.primaryName}
+          </h3>
           <p className="text-sm text-kashi-ash/70">{f.secondaryName}</p>
-          <p className="mt-3 text-sm text-kashi-ash/90">{f.summary}</p>
-          <dl className="mt-4 space-y-2 text-xs">
+          <p className="card-summary mt-3 text-sm text-kashi-ash/90">{f.summary}</p>
+          <dl className="card-extra mt-4 space-y-2 text-xs">
             <div>
               <dt className="uppercase tracking-[0.18em] text-kashi-diya/80">{labels.season}</dt>
               <dd className="mt-0.5 text-kashi-ash/85">{f.season}</dd>
@@ -40,5 +49,8 @@ export default function FoodList({ items, labels }: { items: FoodItem[]; labels:
         </article>
       ))}
     </StaggerCards>
+    </div>
+    {carousel && <SeeAll href={carousel.href} label={carousel.label} />}
+    </>
   );
 }
