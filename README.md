@@ -179,10 +179,23 @@ Researched articles live in `content/guides/<slug>.json` (English + Hindi; other
 If you ever turn the proxy off, switch to the manual JS snippet and add its `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "…"}'>` to `app/[locale]/layout.tsx`.
 
 ## Weekly content review (AI, human-merged)
-Every Monday at 05:00 IST, `.github/workflows/weekly-content-review.yml` runs Anthropic's
-[Claude Code GitHub Action](https://github.com/anthropics/claude-code-action) (pinned to
-v1.0.235 by commit SHA) to re-check the site's facts, and opens **one pull request** titled
-"Weekly content review YYYY-MM-DD". Nothing is merged automatically.
+Anthropic's [Claude Code GitHub Action](https://github.com/anthropics/claude-code-action)
+(pinned to v1.0.235 by commit SHA) re-checks the site's facts and opens **one pull request**
+per run ("Weekly content review YYYY-MM-DD" / "Monthly content review YYYY-MM-DD"). Nothing is
+merged automatically. Both schedules call the same reusable workflow,
+`.github/workflows/content-review-run.yml`.
+
+| Workflow | When (IST) | Model | Caps | What it checks |
+|---|---|---|---|---|
+| `weekly-content-review.yml` | Mondays 05:00, except the first Monday | `claude-sonnet-5` | 40 turns, $3 | week 1 projects · week 2 festivals + dates · week 3 guides' volatile facts · week 4 new developments + broken links + photos · 5th Monday projects |
+| `monthly-content-review.yml` | first Monday 05:00 | `claude-opus-5-5` | 150 turns, $15 | everything |
+
+Caps are hard limits (`--max-turns`, `--max-budget-usd`). The agent keeps its PR summary up to
+date as it works and stops at ~80% of its turns, so a capped run still opens a PR with what it
+checked and what is left. The workflow appends the model, turns used and the cost reported by
+Claude Code to the PR's run notes, and records one line per run in `content/review-log.json`.
+"Last verified" dates move only for entries checked in that run. Change models, caps or the
+rotation in the `with:` block of each workflow and the "Focus" table in the brief.
 
 **What it checks** — defined in [`.claude/content-review.md`](.claude/content-review.md), a plain
 Markdown brief you can edit (add or remove checks, change source rules, change the PR format):
@@ -206,11 +219,13 @@ other locales in TRANSLATION_REVIEW.md. If nothing changed it only moves "last v
   review workflow starts CI on the branch explicitly; its result shows on the PR's commit.
   Optional: Settings → Branches → protect `redesign` and require the "CI / check" status.
 
-**Run it manually:** Actions → Weekly content review → Run workflow (branch `redesign`), or
-`gh workflow run weekly-content-review.yml --ref redesign`, then `gh run watch`.
+**Run it manually:** Actions → Weekly content review → Run workflow (pick a focus, or `auto`
+for this week's rotation), or `gh workflow run weekly-content-review.yml --ref redesign -f
+focus=guides`; the deep review: `gh workflow run monthly-content-review.yml --ref redesign`.
+Then `gh run watch`. Each run's step summary lists any denied tool calls and the cost.
 
-**Change the model or budget:** `REVIEW_MODEL` / `REVIEW_MAX_TURNS` at the top of the workflow.
-**Change the schedule:** the `cron` line (UTC; `30 23 * * 0` = Monday 05:00 IST).
+**Change the schedule:** the `cron` lines (UTC; `30 23 * * 0` = Monday 05:00 IST; the plan
+jobs pick the week of the month in IST).
 
 ## Deploy from GitHub
 Workers Builds is not connected to this repository, so `.github/workflows/deploy.yml` deploys:

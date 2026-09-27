@@ -2,7 +2,10 @@
 
 You are reviewing the content of kashidwar.com, a Varanasi (Kashi) travel guide, once a week.
 This file is the agent's brief; the repository owner edits it to change what is checked.
-The workflow that runs you is `.github/workflows/weekly-content-review.yml`.
+Runs come from `.github/workflows/weekly-content-review.yml` (Sonnet, small budget, one
+focus per week) and `.github/workflows/monthly-content-review.yml` (Opus, full review), both
+through `content-review-run.yml`. The prompt tells you the run type, the **focus** and the
+**budget** (turns and dollars).
 
 Follow `CLAUDE.md` and `DESIGN.md` in this repository at all times. In particular:
 every faith of Kashi is presented with equal care and no ranking; use each tradition's own
@@ -17,7 +20,7 @@ guide sections); nothing voyeuristic about cremation grounds.
    - `content/guides/*.json`
    - `TRANSLATION_REVIEW.md`
    Never touch code, `package*.json`, config, scripts, `messages/`, `content/i18n/`, photos,
-   workflows, `.claude/`, or secrets. The workflow rejects the run if any other path changes.
+   workflows, `.claude/`, or secrets, and not `content/review-log.json` (the workflow writes it). The workflow rejects the run if any other path changes.
 2. **Never copy text from news articles or other sites.** Read the source, then write an
    original, short summary in the site's voice (present tense, factual, no superlatives).
    Quoting official figures (dates, fares, timings, lengths) is fine.
@@ -36,10 +39,41 @@ guide sections); nothing voyeuristic about cremation grounds.
 6. **When unsure, do not change it** — mention it in the summary as "needs a human look".
 7. Keep JSON formatting as it is (the files use 2-space or 1-space indentation; match the file).
 
+## Focus: what each run checks
+
+The prompt names one focus. Do only the checks for that focus (numbers refer to the sections
+under "What to check"):
+
+| Focus | Checks | When |
+|---|---|---|
+| `projects` | 1 | weekly, week 1 of the month (and a 5th Monday) |
+| `festivals` | 2, plus the festival pages' own facts in `content/festivals.json` | weekly, week 2 |
+| `guides` | 3 | weekly, week 3 |
+| `developments` | 4 and 5 | weekly, week 4 |
+| `full` | 1–5 | monthly, first Monday |
+
+Update a "last verified" date (`lastVerified` on projects, `updated` on guides, a festival
+date's verification fields) **only for entries you actually re-checked in this run**.
+
+## Budget: stop and report
+
+Runs are capped (the prompt gives the turn and dollar limits; the run is cut off when it hits
+either). Partial work is fine and still becomes a pull request, so:
+
+1. After the first two or three entries, write `.content-review-pr.md` with the summary so far,
+   and update it after every few entries. If the run is cut off, that file is the report.
+2. Keep a running count of your turns. When about 80% of the turn budget is used (for example
+   32 of 40), stop checking, validate the files you touched, and finalise the summary: list
+   what was checked, and under "Run notes" what was **not** reached this time.
+3. Prefer finishing fewer entries properly over touching many superficially. Start with the
+   entries most likely to have changed (under-construction or announced projects, the next
+   festivals, fares and timings).
+4. Skip `npm run build` on weekly runs unless you changed dates or structure (CI builds the PR
+   anyway); always validate JSON with `python3 -m json.tool`.
+
 ## Working method
 
-Complete **every** check below before writing the summary; do not stop early. You have a large
-turn budget — use it. Work through projects, festivals and guides entry by entry (a TodoWrite
+Complete the checks for your focus, within the budget. Work entry by entry (a TodoWrite
 list helps). For link checks, loop over the URLs with `curl` in small batches. Use `python3`
 for reading or rewriting JSON when that is simpler than editing by hand, and `python3 -m
 json.tool <file>` to validate every file you touched.
@@ -94,7 +128,9 @@ page, a new guide) are proposals in the summary only.
 
 ## Before you finish
 
-Run `npm run build`, `npm run lint` and `node scripts/check-seo.mjs`. Fix any failure your edits
+Validate every JSON file you touched. On monthly runs (and weekly runs that changed dates or
+structure) also run `npm run build`, `npm run lint` and `node scripts/check-seo.mjs` if the
+budget allows — CI runs them on the pull request regardless. Fix any failure your edits
 caused (for example invalid JSON or a date the SEO check rejects). If the build's heading-font
 check fails because of new Hindi text, prefer existing spellings; otherwise report that the
 heading-font subset must be rebuilt (a maintainer task).
@@ -105,7 +141,7 @@ Write the pull-request body to `.content-review-pr.md` in the repository root (t
 moves it out before committing and uses it as the PR description). Plain language, in English:
 
 ```
-## Weekly content review <date>
+## <Weekly|Monthly> content review <date> — focus: <focus>
 
 <two or three sentences: what was checked and the headline changes>
 
@@ -129,9 +165,11 @@ moves it out before committing and uses it as the PR description). Plain languag
 <entries added to TRANSLATION_REVIEW.md>
 
 ### Run notes
-<which checks were completed in full, which only partly and why (for example a tool that was
-not allowed, a site that blocked requests, the turn budget); counts: projects re-verified,
-festivals checked, guides checked, links checked, broken links found>
+<focus; which checks were completed in full, which only partly and why (turn or budget limit,
+a tool that was not allowed, a site that blocked requests); what is left for the next run;
+counts: projects re-verified, festivals checked, guides checked, links checked, broken links;
+turns used (your count). The workflow appends the model, turns and estimated cost reported by
+Claude Code below this section.>
 ```
 
 Confidence is **High** (official source), **Medium** (one major-news source) or **Low**

@@ -1,0 +1,214 @@
+# One content-review run (reusable). Called by weekly-content-review.yml (Sonnet,
+# rotating focus, small budget) and monthly-content-review.yml (Opus, full review).
+# The agent's brief is .claude/content-review.md; README → "Weekly content review".
+name: Content review run
+
+on:
+  workflow_call:
+    inputs:
+      model:
+        type: string
+        required: true
+      max_turns:
+        type: number
+        required: true
+      max_budget_usd:
+        type: string
+        required: true
+      focus:
+        description: "projects | festivals | guides | developments | full"
+        type: string
+        required: true
+      kind:
+        description: "Weekly | Monthly (used in the PR title)"
+        type: string
+        required: true
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    # The bot gets only these two permissions.
+    permissions:
+      contents: write
+      pull-requests: write
+    outputs:
+      branch: ${{ steps.pr.outputs.branch }}
+      pr: ${{ steps.pr.outputs.pr }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: redesign
+          fetch-depth: 0
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - run: npm ci
+
+      - name: Date
+        id: date
+        run: echo "today=$(TZ=Asia/Kolkata date +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: Content review (Claude)
+        id: claude
+        # Hitting the turn or budget cap ends the agent early; its partial work (and the
+        # summary it keeps up to date) still becomes a pull request.
+        continue-on-error: true
+        uses: anthropics/claude-code-action@756cc22e19660d20e8cc9496b4f242475a7f7790 # v1.0.235
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # The workflow token (scoped to the two permissions above) instead of the Claude
+          # GitHub App, so no app install and no id-token permission are needed.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            Today is ${{ steps.date.outputs.today }} (Asia/Kolkata). Repository: ${{ github.repository }}.
+            Run type: ${{ inputs.kind }}. Focus for this run: ${{ inputs.focus }}.
+            Budget: at most ${{ inputs.max_turns }} turns and about $${{ inputs.max_budget_usd }}.
+            Read .claude/content-review.md and carry out the review it describes for this focus only,
+            following CLAUDE.md and DESIGN.md, and its budget rules (write the summary early, keep it
+            current, stop and finalise when about 80% of the turns are used). Edit only the files it
+            allows, keep the pull-request body in .content-review-pr.md, and do not commit, push or
+            open a pull request yourself.
+          claude_args: >-
+            --model ${{ inputs.model }}
+            --max-turns ${{ inputs.max_turns }}
+            --max-budget-usd ${{ inputs.max_budget_usd }}
+            --allowedTools "Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(python3:*),Bash(jq:*),Bash(npm run build),Bash(npm run lint),Bash(node scripts/check-seo.mjs),Bash(git diff:*),Bash(git status:*)"
+            --disallowedTools "Bash(git push:*),Bash(git commit:*),Bash(gh:*)"
+
+      # The action hides the transcript (it can contain fetched pages); report only the run's
+      # numbers, the denied tool calls and the agent's final message.
+      - name: Run report
+        id: report
+        if: always()
+        env:
+          EXEC: ${{ steps.claude.outputs.execution_file }}
+          MODEL: ${{ inputs.model }}
+          OUTCOME: ${{ steps.claude.outcome }}
+        run: |
+          turns=""; cost=""; subtype=""
+          if [ -f "$EXEC" ]; then
+            res=$(jq -c '[.. | objects | select(.type? == "result")][-1] // {}' "$EXEC")
+            turns=$(echo "$res" | jq -r '.num_turns // ""')
+            cost=$(echo "$res" | jq -r '.total_cost_usd // "" | if . == "" then "" else (. * 100 | round / 100 | tostring) end')
+            subtype=$(echo "$res" | jq -r '.subtype // ""')
+            echo "### Denied tool calls" >> "$GITHUB_STEP_SUMMARY"
+            jq -r '.. | objects | select(has("permission_denials")) | .permission_denials[] | "- \(.tool_name): \(.tool_input | tostring | .[0:240])"' "$EXEC" | sort | uniq -c | sort -rn | tee -a "$GITHUB_STEP_SUMMARY" || true
+            echo "$res" | jq -r '.result // "" | .[0:3000]' | sed 's/^/> /' || true
+          fi
+          {
+            echo "turns=$turns"; echo "cost=$cost"; echo "subtype=$subtype"
+          } >> "$GITHUB_OUTPUT"
+          echo "Model $MODEL · outcome $OUTCOME · $subtype · turns $turns · cost \$$cost" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Only content files may change
+        run: |
+          git add -A
+          git reset -q -- .content-review-pr.md 2>/dev/null || true
+          changed=$(git diff --cached --name-only)
+          echo "$changed"
+          bad=$(echo "$changed" | grep -vE '^(content/[^/]+\.json|content/guides/[^/]+\.json|TRANSLATION_REVIEW\.md)$' || true)
+          if [ -n "$(echo "$bad" | tr -d '[:space:]')" ]; then
+            echo "::error::The review changed files outside its allowed paths:"; echo "$bad"; exit 1
+          fi
+          for f in $(echo "$changed" | grep '\.json$' || true); do python3 -m json.tool "$f" > /dev/null || { echo "::error::Invalid JSON: $f"; exit 1; }; done
+
+      - name: Keep the review's work (artifact)
+        if: always()
+        run: |
+          mkdir -p "$RUNNER_TEMP/review"
+          git diff --cached > "$RUNNER_TEMP/review/content.patch" || true
+          cp .content-review-pr.md "$RUNNER_TEMP/review/" 2>/dev/null || true
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always()
+        with:
+          name: content-review-${{ github.run_id }}
+          path: ${{ runner.temp }}/review
+          if-no-files-found: ignore
+
+      - name: Open the pull request
+        id: pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TODAY: ${{ steps.date.outputs.today }}
+          KIND: ${{ inputs.kind }}
+          FOCUS: ${{ inputs.focus }}
+          MODEL: ${{ inputs.model }}
+          MAX_TURNS: ${{ inputs.max_turns }}
+          MAX_BUDGET: ${{ inputs.max_budget_usd }}
+          TURNS: ${{ steps.report.outputs.turns }}
+          COST: ${{ steps.report.outputs.cost }}
+          SUBTYPE: ${{ steps.report.outputs.subtype }}
+          OUTCOME: ${{ steps.claude.outcome }}
+        run: |
+          agent_changed=1; git diff --cached --quiet && agent_changed=0
+          if [ "$agent_changed" = 0 ] && [ ! -s .content-review-pr.md ]; then
+            echo "::error::The review produced neither changes nor a summary (outcome: $OUTCOME, $SUBTYPE). See the run report above."
+            exit 1
+          fi
+          body="$RUNNER_TEMP/pr-body.md"
+          if [ -s .content-review-pr.md ]; then mv .content-review-pr.md "$body"; else echo "## ${KIND} content review ${TODAY}" > "$body"; echo "(The agent wrote no summary.)" >> "$body"; fi
+          case "$SUBTYPE" in
+            error_max_turns) stop="stopped at the turn cap (${MAX_TURNS}); partial review";;
+            error_max_budget*) stop="stopped at the budget cap (\$${MAX_BUDGET}); partial review";;
+            success) stop="completed";;
+            *) stop="ended: ${SUBTYPE:-unknown} (step outcome ${OUTCOME})";;
+          esac
+          {
+            echo; echo "### Run cost (reported by Claude Code)"
+            echo "- ${KIND} review, focus **${FOCUS}**, model \`${MODEL}\`: ${stop}."
+            echo "- Turns used: ${TURNS:-?} of ${MAX_TURNS}. Estimated cost: \$${COST:-?} (cap \$${MAX_BUDGET})."
+            echo; echo "---"
+            echo "Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID} · CI runs on this branch automatically. No auto-merge: review and merge manually."
+          } >> "$body"
+          # Commit on top of the latest redesign, so the branch never carries older
+          # versions of files changed while the review ran (e.g. a workflow file,
+          # which this token may not push).
+          git stash push -q 2>/dev/null || true
+          git fetch -q origin redesign
+          branch="content-review/${TODAY}-${GITHUB_RUN_ID}"
+          git switch -c "$branch" origin/redesign
+          if [ "$agent_changed" = 1 ]; then
+            git stash pop -q || { echo "::error::The review's changes conflict with the latest redesign; see the content-review artifact."; exit 1; }
+          fi
+          # One line per run in the review history (the workflow writes it, not the agent).
+          python3 - <<'PY'
+          import json, os, pathlib
+          p = pathlib.Path("content/review-log.json")
+          log = json.loads(p.read_text()) if p.exists() else []
+          cost = os.environ.get("COST") or None
+          log.append({
+              "date": os.environ["TODAY"], "kind": os.environ["KIND"], "focus": os.environ["FOCUS"],
+              "model": os.environ["MODEL"], "turns": int(os.environ["TURNS"]) if os.environ.get("TURNS", "").isdigit() else None,
+              "costUsd": float(cost) if cost else None, "result": os.environ.get("SUBTYPE") or None,
+              "run": f'{os.environ["GITHUB_SERVER_URL"]}/{os.environ["GITHUB_REPOSITORY"]}/actions/runs/{os.environ["GITHUB_RUN_ID"]}',
+          })
+          p.write_text(json.dumps(log, indent=2) + "\n")
+          PY
+          git add -A
+          git reset -q -- .content-review-pr.md 2>/dev/null || true
+          git config user.name "kashidwar-content-review[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "${KIND} content review ${TODAY} (${FOCUS})"
+          git push -q origin "$branch"
+          url=$(gh pr create --base redesign --head "$branch" --title "${KIND} content review ${TODAY}" --body-file "$body")
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          echo "pr=$url" >> "$GITHUB_OUTPUT"
+          echo "Opened $url" >> "$GITHUB_STEP_SUMMARY"
+
+  # Pull requests opened with GITHUB_TOKEN do not trigger `pull_request` workflows,
+  # so start CI on the review branch explicitly (workflow_dispatch is allowed).
+  ci:
+    needs: review
+    if: needs.review.outputs.branch != ''
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "${{ needs.review.outputs.branch }}"

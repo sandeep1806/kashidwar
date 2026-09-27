@@ -1,0 +1,48 @@
+# Monthly deep content review: Opus, every check in .claude/content-review.md, on the first
+# Monday of the month (05:00 IST) and on demand. See README → "Weekly content review".
+name: Monthly content review
+
+on:
+  schedule:
+    - cron: "30 23 * * 0" # every Monday 05:00 IST; the plan job keeps only the first Monday
+  workflow_dispatch:
+
+concurrency:
+  group: content-review
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.plan.outputs.run }}
+    steps:
+      - id: plan
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          day=$(TZ=Asia/Kolkata date +%-d)
+          run=true
+          if [ "$EVENT" = "schedule" ] && [ "$day" -gt 7 ]; then run=false; fi
+          echo "IST day $day → run=$run" | tee -a "$GITHUB_STEP_SUMMARY"
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+
+  review:
+    needs: plan
+    if: needs.plan.outputs.run == 'true'
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    uses: ./.github/workflows/content-review-run.yml
+    secrets: inherit
+    with:
+      # Model, turn cap and dollar cap for the monthly run; change here.
+      model: claude-opus-5-5
+      max_turns: 150
+      max_budget_usd: "15"
+      focus: full
+      kind: Monthly

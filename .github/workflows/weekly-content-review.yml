@@ -1,151 +1,67 @@
-# Weekly AI content review: Claude re-verifies projects, festival dates, guide facts,
-# new developments, links and photos, then ONE pull request is opened for a human to
-# review and merge. Instructions for the agent: .claude/content-review.md (edit that
-# file to change what is checked). See README → "Weekly content review".
+# Weekly AI content review (cheap and bounded): Sonnet, 40 turns, $3 cap, one focus per
+# week of the month (IST): 1 projects · 2 festivals + dates · 3 guides' volatile facts ·
+# 4 new developments + broken links + photos · 5th Monday: projects again.
+# The first Monday is covered by the monthly full review (monthly-content-review.yml),
+# so the weekly schedule skips it. Brief: .claude/content-review.md.
 name: Weekly content review
 
 on:
   schedule:
     - cron: "30 23 * * 0" # Mondays 05:00 IST (Sunday 23:30 UTC)
   workflow_dispatch:
+    inputs:
+      focus:
+        description: "What to check (auto = this week's rotation)"
+        type: choice
+        options: [auto, projects, festivals, guides, developments]
+        default: auto
 
 concurrency:
-  group: weekly-content-review
+  group: content-review
   cancel-in-progress: false
 
-env:
-  # Model and turn budget for the review; change here.
-  REVIEW_MODEL: claude-opus-5-5
-  REVIEW_MAX_TURNS: "250"
+permissions:
+  contents: read
 
 jobs:
-  review:
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
-    # The bot gets only these two permissions.
+    outputs:
+      focus: ${{ steps.plan.outputs.focus }}
+      run: ${{ steps.plan.outputs.run }}
+    steps:
+      - id: plan
+        env:
+          EVENT: ${{ github.event_name }}
+          PICK: ${{ inputs.focus }}
+        run: |
+          day=$(TZ=Asia/Kolkata date +%-d)
+          week=$(( (day - 1) / 7 + 1 ))
+          case "$week" in
+            1) focus=projects;; 2) focus=festivals;; 3) focus=guides;; 4) focus=developments;; *) focus=projects;;
+          esac
+          if [ -n "$PICK" ] && [ "$PICK" != "auto" ]; then focus="$PICK"; fi
+          run=true
+          if [ "$EVENT" = "schedule" ] && [ "$week" = 1 ]; then run=false; echo "First Monday: the monthly full review runs instead."; fi
+          echo "IST day $day → week $week → focus $focus (run=$run)" | tee -a "$GITHUB_STEP_SUMMARY"
+          echo "focus=$focus" >> "$GITHUB_OUTPUT"
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+
+  review:
+    needs: plan
+    if: needs.plan.outputs.run == 'true'
+    # Caps the called workflow: its review job narrows to contents + pull-requests write,
+    # its CI trigger job to actions write.
     permissions:
       contents: write
       pull-requests: write
-    outputs:
-      branch: ${{ steps.pr.outputs.branch }}
-      pr: ${{ steps.pr.outputs.pr }}
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          ref: redesign
-          fetch-depth: 0
-
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version-file: .node-version
-          cache: npm
-
-      - run: npm ci
-
-      - name: Date
-        id: date
-        run: echo "today=$(TZ=Asia/Kolkata date +%F)" >> "$GITHUB_OUTPUT"
-
-      - name: Content review (Claude)
-        id: claude
-        uses: anthropics/claude-code-action@756cc22e19660d20e8cc9496b4f242475a7f7790 # v1.0.235
-        with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          # The workflow token (scoped to the two permissions above) instead of the Claude
-          # GitHub App, so no app install and no id-token permission are needed.
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          prompt: |
-            Today is ${{ steps.date.outputs.today }} (Asia/Kolkata). Repository: ${{ github.repository }}.
-            Read .claude/content-review.md and carry out the weekly content review it describes,
-            following CLAUDE.md and DESIGN.md. Edit only the files it allows, write the pull-request
-            body to .content-review-pr.md, and do not commit, push or open a pull request yourself.
-          claude_args: >-
-            --model ${{ env.REVIEW_MODEL }}
-            --max-turns ${{ env.REVIEW_MAX_TURNS }}
-            --allowedTools "Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(python3:*),Bash(jq:*),Bash(npm run build),Bash(npm run lint),Bash(node scripts/check-seo.mjs),Bash(git diff:*),Bash(git status:*)"
-            --disallowedTools "Bash(git push:*),Bash(git commit:*),Bash(gh:*)"
-
-      # The action hides the transcript (it can contain fetched pages); print only which
-      # tool calls were denied, so the allow-list can be tuned.
-      - name: Denied tool calls
-        if: always()
-        env:
-          EXEC: ${{ steps.claude.outputs.execution_file }}
-        run: |
-          [ -f "$EXEC" ] || { echo "no execution file"; exit 0; }
-          jq -r '.. | objects | select(has("permission_denials")) | .permission_denials[] | "- \(.tool_name): \(.tool_input | tostring | .[0:240])"' "$EXEC" | sort | uniq -c | sort -rn | tee -a "$GITHUB_STEP_SUMMARY" || true
-          jq -r '[.. | objects | select(.type? == "result")][-1].result // "" | .[0:3000]' "$EXEC" | sed 's/^/> /' || true
-
-      - name: Only content files may change
-        run: |
-          git add -A
-          git reset -q -- .content-review-pr.md
-          changed=$(git diff --cached --name-only)
-          echo "$changed"
-          bad=$(echo "$changed" | grep -vE '^(content/[^/]+\.json|content/guides/[^/]+\.json|TRANSLATION_REVIEW\.md)$' || true)
-          if [ -n "$bad" ]; then
-            echo "::error::The review changed files outside its allowed paths:"; echo "$bad"; exit 1
-          fi
-          for f in $(echo "$changed" | grep '\.json$' || true); do python3 -m json.tool "$f" > /dev/null || { echo "::error::Invalid JSON: $f"; exit 1; }; done
-
-      - name: Keep the review's work (artifact)
-        if: always()
-        run: |
-          mkdir -p "$RUNNER_TEMP/review"
-          git diff --cached > "$RUNNER_TEMP/review/content.patch" || true
-          cp .content-review-pr.md "$RUNNER_TEMP/review/" 2>/dev/null || true
-
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        if: always()
-        with:
-          name: content-review-${{ github.run_id }}
-          path: ${{ runner.temp }}/review
-          if-no-files-found: ignore
-
-      - name: Open the pull request
-        id: pr
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TODAY: ${{ steps.date.outputs.today }}
-        run: |
-          if git diff --cached --quiet; then
-            # Every run should at least move "last verified" dates; an empty diff means
-            # the review did not complete. Fail loudly instead of passing silently.
-            echo "::error::The review changed nothing (not even last-verified dates). See the run log and the content-review artifact."
-            [ -s .content-review-pr.md ] && cat .content-review-pr.md
-            exit 1
-          fi
-          branch="content-review/${TODAY}-${GITHUB_RUN_ID}"
-          body="$RUNNER_TEMP/pr-body.md"
-          if [ -s .content-review-pr.md ]; then mv .content-review-pr.md "$body"; else echo "Weekly content review ${TODAY} (the agent wrote no summary; see the run log: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})." > "$body"; fi
-          printf '\n\n---\nRun: %s/%s/actions/runs/%s · CI runs on this branch automatically. No auto-merge: review and merge manually.\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" >> "$body"
-          git config user.name "kashidwar-content-review[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Commit on top of the latest redesign, so the branch never carries older
-          # versions of files changed while the review ran (e.g. a workflow file,
-          # which this token may not push).
-          git stash push -q
-          git fetch -q origin redesign
-          git switch -c "$branch" origin/redesign
-          git stash pop -q || { echo "::error::The review's changes conflict with the latest redesign; see the content-review artifact."; exit 1; }
-          git add -A
-          git reset -q -- .content-review-pr.md 2>/dev/null || true
-          git commit -q -m "Weekly content review ${TODAY}"
-          git push -q origin "$branch"
-          url=$(gh pr create --base redesign --head "$branch" --title "Weekly content review ${TODAY}" --body-file "$body")
-          echo "branch=$branch" >> "$GITHUB_OUTPUT"
-          echo "pr=$url" >> "$GITHUB_OUTPUT"
-          echo "Opened $url" >> "$GITHUB_STEP_SUMMARY"
-
-  # Pull requests opened with GITHUB_TOKEN do not trigger `pull_request` workflows,
-  # so start CI on the review branch explicitly (workflow_dispatch is allowed).
-  ci:
-    needs: review
-    if: needs.review.outputs.branch != ''
-    runs-on: ubuntu-latest
-    permissions:
       actions: write
-    steps:
-      - env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "${{ needs.review.outputs.branch }}"
+    uses: ./.github/workflows/content-review-run.yml
+    secrets: inherit
+    with:
+      # Model, turn cap and dollar cap for the weekly run; change here.
+      model: claude-sonnet-5
+      max_turns: 40
+      max_budget_usd: "3"
+      focus: ${{ needs.plan.outputs.focus }}
+      kind: Weekly
