@@ -36,6 +36,14 @@ guide sections); nothing voyeuristic about cremation grounds.
 6. **When unsure, do not change it** — mention it in the summary as "needs a human look".
 7. Keep JSON formatting as it is (the files use 2-space or 1-space indentation; match the file).
 
+## Working method
+
+Complete **every** check below before writing the summary; do not stop early. You have a large
+turn budget — use it. Work through projects, festivals and guides entry by entry (a TodoWrite
+list helps). For link checks, loop over the URLs with `curl` in small batches. Use `python3`
+for reading or rewriting JSON when that is simpler than editing by hand, and `python3 -m
+json.tool <file>` to validate every file you touched.
+
 ## What to check
 
 ### 1. Projects — `content/projects.json`
@@ -119,6 +127,11 @@ moves it out before committing and uses it as the PR description). Plain languag
 
 ### Translations flagged
 <entries added to TRANSLATION_REVIEW.md>
+
+### Run notes
+<which checks were completed in full, which only partly and why (for example a tool that was
+not allowed, a site that blocked requests, the turn budget); counts: projects re-verified,
+festivals checked, guides checked, links checked, broken links found>
 ```
 
 Confidence is **High** (official source), **Medium** (one major-news source) or **Low**

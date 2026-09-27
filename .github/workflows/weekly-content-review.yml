@@ -61,7 +61,7 @@ jobs:
           claude_args: >-
             --model ${{ env.REVIEW_MODEL }}
             --max-turns ${{ env.REVIEW_MAX_TURNS }}
-            --allowedTools "Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,Bash(curl:*),Bash(npm run build),Bash(npm run lint),Bash(node scripts/check-seo.mjs),Bash(python3 -m json.tool:*),Bash(jq:*),Bash(git diff:*),Bash(git status:*)"
+            --allowedTools "Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(python3:*),Bash(jq:*),Bash(npm run build),Bash(npm run lint),Bash(node scripts/check-seo.mjs),Bash(git diff:*),Bash(git status:*)"
             --disallowedTools "Bash(git push:*),Bash(git commit:*),Bash(gh:*)"
 
       - name: Only content files may change
@@ -97,7 +97,11 @@ jobs:
           TODAY: ${{ steps.date.outputs.today }}
         run: |
           if git diff --cached --quiet; then
-            echo "Nothing changed; no pull request."; exit 0
+            # Every run should at least move "last verified" dates; an empty diff means
+            # the review did not complete. Fail loudly instead of passing silently.
+            echo "::error::The review changed nothing (not even last-verified dates). See the run log and the content-review artifact."
+            [ -s .content-review-pr.md ] && cat .content-review-pr.md
+            exit 1
           fi
           branch="content-review/${TODAY}-${GITHUB_RUN_ID}"
           body="$RUNNER_TEMP/pr-body.md"
