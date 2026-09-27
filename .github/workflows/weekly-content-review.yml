@@ -76,6 +76,20 @@ jobs:
           fi
           for f in $(echo "$changed" | grep '\.json$' || true); do python3 -m json.tool "$f" > /dev/null || { echo "::error::Invalid JSON: $f"; exit 1; }; done
 
+      - name: Keep the review's work (artifact)
+        if: always()
+        run: |
+          mkdir -p "$RUNNER_TEMP/review"
+          git diff --cached > "$RUNNER_TEMP/review/content.patch" || true
+          cp .content-review-pr.md "$RUNNER_TEMP/review/" 2>/dev/null || true
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: always()
+        with:
+          name: content-review-${{ github.run_id }}
+          path: ${{ runner.temp }}/review
+          if-no-files-found: ignore
+
       - name: Open the pull request
         id: pr
         env:
@@ -91,7 +105,15 @@ jobs:
           printf '\n\n---\nRun: %s/%s/actions/runs/%s · CI runs on this branch automatically. No auto-merge: review and merge manually.\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" >> "$body"
           git config user.name "kashidwar-content-review[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch -c "$branch"
+          # Commit on top of the latest redesign, so the branch never carries older
+          # versions of files changed while the review ran (e.g. a workflow file,
+          # which this token may not push).
+          git stash push -q
+          git fetch -q origin redesign
+          git switch -c "$branch" origin/redesign
+          git stash pop -q || { echo "::error::The review's changes conflict with the latest redesign; see the content-review artifact."; exit 1; }
+          git add -A
+          git reset -q -- .content-review-pr.md 2>/dev/null || true
           git commit -q -m "Weekly content review ${TODAY}"
           git push -q origin "$branch"
           url=$(gh pr create --base redesign --head "$branch" --title "Weekly content review ${TODAY}" --body-file "$body")
