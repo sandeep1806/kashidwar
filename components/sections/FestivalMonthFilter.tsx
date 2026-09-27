@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useSyncExternalStore } from "react";
+import { useEffect, useRef, useSyncExternalStore } from "react";
 import { URL_EVENT } from "@/components/motion/HashLinks";
 
 function readMonth(): number | null {
@@ -25,8 +25,14 @@ function subscribe(cb: () => void) {
  */
 export default function FestivalMonthFilter() {
   const month = useSyncExternalStore(subscribe, readMonth, () => null);
+  const touched = useRef(false);
 
   useEffect(() => {
+    // Nothing to undo until a month has been picked: touching the section on
+    // load (attributes, carousel scroll) would force layout of it while
+    // content-visibility is still skipping it.
+    if (month === null && !touched.current) return;
+    touched.current = true;
     const root = document.getElementById("festivals");
     if (!root) return;
     root.querySelectorAll<HTMLElement>("[data-festival-card]").forEach((card) => {

@@ -413,15 +413,16 @@ footer.cv-auto { contain-intrinsic-size: auto 130vh; }
 @media (min-width: 1024px) { .see-all-sm { display: none; } }
 
 .cv-section { content-visibility: auto; contain-intrinsic-size: auto var(--cv-h, 120vh); }
-/* Estimated heights for skipped sections (measured 2026-09-25, /hi); "auto"
-   replaces them with the real height once a section has rendered, so these
-   only keep the scrollbar and anchor jumps close on first approach. */
-#places { --cv-h: 330vh; } #faiths { --cv-h: 420vh; } #projects { --cv-h: 290vh; }
-#festivals { --cv-h: 165vh; } #food { --cv-h: 120vh; } #itineraries { --cv-h: 180vh; }
-#practical { --cv-h: 200vh; } #aarti { --cv-h: 85vh; }
+/* Estimated heights for skipped sections (measured 2026-09-27, /hi, 390 and
+   1440 px wide); "auto" replaces them with the real height once a section has
+   rendered, so these only keep the scrollbar and anchor jumps close on first
+   approach. */
+#places { --cv-h: 310vh; } #faiths { --cv-h: 420vh; } #projects { --cv-h: 277vh; }
+#festivals { --cv-h: 156vh; } #food { --cv-h: 115vh; } #itineraries { --cv-h: 183vh; }
+#practical { --cv-h: 201vh; } #aarti { --cv-h: 82vh; }
 @media (min-width: 1024px) {
-  #places { --cv-h: 450vh; } #faiths { --cv-h: 180vh; } #projects { --cv-h: 620vh; }
-  #festivals { --cv-h: 545vh; } #food { --cv-h: 180vh; } #itineraries { --cv-h: 170vh; }
+  #places { --cv-h: 453vh; } #faiths { --cv-h: 178vh; } #projects { --cv-h: 671vh; }
+  #festivals { --cv-h: 620vh; } #food { --cv-h: 180vh; } #itineraries { --cv-h: 171vh; }
   #practical { --cv-h: 125vh; } #aarti { --cv-h: 92vh; }
 }
 /* Below lg only: on wide screens this section pins (position: fixed), which containment would break. */
@@ -505,3 +506,79 @@ footer.cv-auto { contain-intrinsic-size: auto 130vh; }
 .day-scene-dawn { background: linear-gradient(180deg, #1C1B3A 0%, #3A2450 55%, #7A3B2C 85%, #0B0A14 100%); }
 .day-scene-noon { background: linear-gradient(180deg, #B8652A 0%, #5A3A2E 60%, #0B0A14 100%); }
 .day-scene-dusk { background: linear-gradient(180deg, #0B0A14 0%, #1C1B3A 55%, #5E2E30 90%, #0B0A14 100%); }
+
+/* ------------------------------------------------------------------
+   QA pass 2026-09-27: cinematic motion. Transforms and opacity only;
+   every rule here is static under prefers-reduced-motion.
+   ------------------------------------------------------------------ */
+
+/* Day in Kashi: sky tints over the backdrops (top of frame; the captions sit low) */
+.day-sky { position: absolute; inset: 0; pointer-events: none; }
+.day-sky-dawn { background: linear-gradient(180deg, rgba(122, 59, 110, 0.55) 0%, rgba(224, 120, 42, 0.2) 38%, transparent 62%); }
+.day-sky-noon { background: linear-gradient(180deg, rgba(242, 169, 59, 0.42) 0%, rgba(255, 210, 122, 0.12) 35%, transparent 60%); }
+.day-sky-dusk { background: linear-gradient(180deg, rgba(28, 27, 58, 0.72) 0%, rgba(184, 50, 42, 0.28) 40%, transparent 66%); }
+
+/* A lamp catching: one expanding ring of light when it lights */
+.lamp-burst {
+  position: absolute; left: 50%; top: 0.9rem; width: 3rem; height: 3rem; margin: -1.5rem 0 0 -1.5rem;
+  border-radius: 9999px; pointer-events: none; opacity: 0;
+  background: radial-gradient(circle, rgba(255, 210, 122, 0.75), rgba(224, 120, 42, 0.25) 45%, transparent 70%);
+}
+.lamp.is-lit .lamp-burst { animation: lamp-burst 1.1s var(--ease-enter) both; }
+@keyframes lamp-burst { 0% { opacity: 0; transform: scale(0.2); } 30% { opacity: 1; } 100% { opacity: 0; transform: scale(2.4); } }
+.lamp.is-lit .lamp-flame { animation: lamp-flicker 2.6s ease-in-out 1.1s infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes lamp-flicker { 0%, 100% { transform: scale(1, 1); } 30% { transform: scale(0.96, 1.06); } 60% { transform: scale(1.03, 0.95); } }
+
+/* Slow Ken Burns drift on large photos (hero fallback, Day scenes, page heroes) */
+.ken-burns { animation: ken-burns 28s ease-in-out infinite alternate; transform-origin: 60% 40%; }
+@keyframes ken-burns { from { transform: scale(1.02) translate3d(0, 0, 0); } to { transform: scale(1.1) translate3d(-1.8%, -1.2%, 0); } }
+
+/* Dividers: small diyas drifting and bobbing on the water line */
+/* A CSS-only lamp (no extra DOM): ::before is the clay bowl, ::after the flame, which bobs. */
+.drift-diya { position: absolute; top: 50%; width: 1.25rem; height: 1.25rem; margin-top: -0.95rem; animation: diya-drift var(--dur, 14s) ease-in-out var(--delay, 0s) infinite alternate; animation-play-state: paused; }
+.drift-diya::before { content: ""; position: absolute; inset: auto 0 0.1rem 0; height: 0.45rem; border-radius: 0 0 9999px 9999px; background: linear-gradient(#8a4b2f, var(--kashi-rudraksha)); border-top: 1px solid var(--kashi-diya); }
+.drift-diya::after {
+  content: ""; position: absolute; left: 50%; bottom: 0.5rem; width: 0.42rem; height: 0.42rem; margin-left: -0.21rem;
+  border-radius: 50% 0 50% 50%; background: radial-gradient(circle at 60% 60%, #fff1cc, var(--kashi-diya) 45%, var(--kashi-saffron));
+  box-shadow: 0 0 8px 2px rgba(255, 210, 122, 0.55); transform: rotate(-45deg);
+  animation: diya-bob 3.2s ease-in-out var(--delay, 0s) infinite; animation-play-state: inherit;
+}
+.ripple-wipe.in-view .drift-diya { animation-play-state: running; }
+@keyframes diya-drift { from { transform: translate3d(calc(var(--span, 60px) * -1), 0, 0); } to { transform: translate3d(var(--span, 60px), 0, 0); } }
+@keyframes diya-bob { 0%, 100% { transform: translateY(0) rotate(-48deg) scale(1); } 50% { transform: translateY(-2px) rotate(-42deg) scale(1.12); } }
+
+/* Aarti finale: warm glow builds, embers rise (the island adds .is-igniting / .is-lit) */
+.aarti-glow { transition: opacity 2.8s var(--ease-enter), transform 2.8s var(--ease-enter); transform-origin: 50% 100%; }
+.aarti.is-igniting .aarti-glow { opacity: 0.25; transform: scaleY(0.6); }
+.aarti.is-igniting.is-lit .aarti-glow { opacity: 1; transform: scaleY(1); }
+.aarti-embers { position: absolute; inset: auto 0 12% 0; height: 75%; pointer-events: none; overflow: hidden; }
+.ember {
+  position: absolute; bottom: 0; width: var(--s, 3px); height: var(--s, 3px); border-radius: 9999px;
+  background: #ffd27a; box-shadow: 0 0 6px 1px rgba(255, 170, 70, 0.8); opacity: 0;
+  animation: ember-rise var(--dur, 5s) linear var(--delay, 0s) infinite; animation-play-state: paused;
+}
+.aarti.embers-on .ember { animation-play-state: running; }
+@keyframes ember-rise {
+  0% { opacity: 0; transform: translate3d(0, 0, 0) scale(1); }
+  12% { opacity: 1; }
+  70% { opacity: 0.7; }
+  100% { opacity: 0; transform: translate3d(var(--drift, 20px), calc(var(--rise, 320px) * -1), 0) scale(0.4); }
+}
+
+/* Desktop card hover: gentle lift, gold edge glow, subtle photo zoom */
+@media (hover: hover) and (pointer: fine) {
+  .card-lift { transition: translate 0.5s var(--ease-enter), box-shadow 0.5s var(--ease-enter), border-color 0.5s var(--ease-enter); }
+  .card-lift:hover, .card-lift:focus-within {
+    translate: 0 -6px;
+    border-color: color-mix(in oklab, var(--kashi-diya) 60%, transparent);
+    box-shadow: 0 0 0 1px color-mix(in oklab, var(--kashi-diya) 30%, transparent), 0 18px 40px -20px rgba(0, 0, 0, 0.7), 0 0 32px -6px color-mix(in oklab, var(--kashi-diya) 45%, transparent);
+  }
+  .card-lift:hover .photo-zoom { transform: scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ken-burns, .drift-diya, .drift-diya::after, .ember, .lamp.is-lit .lamp-burst, .lamp.is-lit .lamp-flame { animation: none; }
+  .aarti-embers { display: none; }
+  .aarti-glow { transition: none; }
+  .card-lift, .card-lift:hover { translate: none; }
+}

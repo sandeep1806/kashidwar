@@ -117,7 +117,7 @@ export default function HeroFallback({ photo }: { photo?: PhotoData | null }) {
             height={photo.height}
             fetchPriority="high"
             decoding="async"
-            className="absolute inset-0 h-full w-full object-cover md:hidden"
+            className="ken-burns absolute inset-0 h-full w-full object-cover md:hidden"
             style={{ backgroundImage: `url(${photo.blur})`, backgroundSize: "cover" }}
           />
         </picture>

@@ -13,7 +13,7 @@ export default function FaithTiles({ tiles, labels }: { tiles: FaithTile[]; labe
   return (
     <StaggerCards className="container-kashi mt-14 flex flex-wrap justify-center gap-5">
       {tiles.map((f) => (
-        <article key={f.id} className="faith-tile grain relative flex w-full flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-6 sm:w-[calc(50%-0.625rem)] lg:w-[calc(25%-0.9375rem)]">
+        <article key={f.id} className="faith-tile card-lift grain relative flex w-full flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-6 sm:w-[calc(50%-0.625rem)] lg:w-[calc(25%-0.9375rem)]">
           <div className="flex items-center gap-3">
             <span className="grid h-11 w-11 place-items-center rounded-full border border-kashi-diya/40 text-kashi-diya">
               <FaithGlyph faith={f.id} className="h-6 w-6" />

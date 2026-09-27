@@ -15,12 +15,14 @@ export interface FoodItem extends Pick<Food, "id" | "season" | "where" | "summar
  * compact cards, each linking to its entry on the food page.
  */
 export default function FoodList({ items, labels, carousel }: { items: FoodItem[]; labels: { season: string; where: string; veg: string }; carousel?: { href: string; label: string } }) {
+  // H3 under the home page's section H2; H2 on the food page, under its H1.
+  const H = carousel ? "h3" : "h2";
   return (
     <>
     <div className="container-kashi mt-12">
     <StaggerCards className={carousel ? "carousel-sm grid gap-5 sm:grid-cols-2 lg:grid-cols-4" : "grid gap-5 sm:grid-cols-2 lg:grid-cols-4"}>
       {items.map((f) => (
-        <article key={f.id} id={carousel ? undefined : f.id} className="group flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-5 transition-[translate,border-color] duration-500 ease-enter hover:-translate-y-1 hover:border-kashi-diya/50">
+        <article key={f.id} id={carousel ? undefined : f.id} className="group flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-5 card-lift">
           <CardPhoto photo={f.photo} className="card-photo -mx-2 -mt-2 mb-4" carousel={!!carousel} />
           <div className="flex items-center gap-2 text-[0.7rem]">
             <span className="rounded-full border border-kashi-diya/40 px-2 py-0.5 text-kashi-diya">{f.typeLabel}</span>
@@ -31,9 +33,9 @@ export default function FoodList({ items, labels, carousel }: { items: FoodItem[
               </span>
             )}
           </div>
-          <h3 className="mt-3 text-[1.25rem] leading-snug text-kashi-white">
+          <H className="mt-3 text-[1.25rem] leading-snug text-kashi-white">
             {carousel ? <a href={`${carousel.href}#${f.id}`} className="hover:text-kashi-marigold">{f.primaryName}</a> : f.primaryName}
-          </h3>
+          </H>
           <p className="text-sm text-kashi-ash/70">{f.secondaryName}</p>
           <p className="card-summary mt-3 text-sm text-kashi-ash/90">{f.summary}</p>
           <dl className="card-extra mt-4 space-y-2 text-xs">

@@ -81,7 +81,7 @@ export default function PageShell({
               </div>
               <div className="arch relative aspect-[4/5] w-full overflow-hidden border border-kashi-rudraksha/60 shadow-glow sm:aspect-[5/4] md:aspect-[4/5]">
                 {photo ? (
-                  <Photo photo={photo} sizes={[["(min-width: 768px)", "42vw", 4 / 5], ["(min-width: 640px)", "92vw", 5 / 4], [null, "92vw", 4 / 5]]} priority />
+                  <Photo photo={photo} sizes={[["(min-width: 768px)", "42vw", 4 / 5], ["(min-width: 640px)", "92vw", 5 / 4], [null, "92vw", 4 / 5]]} priority className="ken-burns" />
                 ) : (
                   <ArtFallback faith={faith} type={placeType} />
                 )}

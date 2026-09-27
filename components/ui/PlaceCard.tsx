@@ -40,7 +40,7 @@ export default function PlaceCard({
       <a
         href={href}
         data-place-open={place.id}
-        className="place-card relative flex w-full flex-col overflow-hidden rounded-kashi sm:aspect-[3/4] border border-kashi-rudraksha/60 bg-kashi-indigo/40 text-left transition-[translate,box-shadow,border-color] duration-500 ease-enter hover:-translate-y-1.5 hover:border-kashi-diya/60 hover:shadow-glow focus-visible:-translate-y-1.5 focus-visible:border-kashi-diya"
+        className="place-card relative flex w-full flex-col overflow-hidden rounded-kashi sm:aspect-[3/4] border border-kashi-rudraksha/60 bg-kashi-indigo/40 text-left card-lift focus-visible:border-kashi-diya"
       >
         <span className="sr-only">{labels.openDetails}: </span>
         <div className="arch relative mx-2 mt-2 aspect-square overflow-hidden sm:mx-3 sm:mt-3 sm:aspect-[4/5]">

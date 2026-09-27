@@ -12,8 +12,10 @@ import { useGsap, type GsapModule } from "./SmoothScroll";
  *   [data-reveal]  fade up the element (data-reveal-y, data-reveal-delay)
  *   [data-stagger] fade up each direct child, 0.08 s apart
  *   [data-split]   SplitText by "chars" or "words" (Indic scripts: words only)
- *   [data-ripple]  RippleWipe rings, scrubbed with the scroll (ScrollTrigger
- *                  created only when the divider comes near)
+ *   [data-ripple]  RippleWipe rings and water line, scrubbed with the scroll
+ *                  (ScrollTrigger created only when the divider comes near);
+ *                  its drifting diyas run only while it is in view
+ *   .arch          photo frames: the arch opens (clip-path) as they arrive
  *
  * Two IntersectionObservers per element, no forced layout: when it comes
  * within 30% of a viewport below the fold it is put in its start state; when
@@ -33,6 +35,14 @@ function jobFor(g: GsapModule, el: HTMLElement): Job | null {
       play: () => gsap.to(el, { y: 0, opacity: 1, duration: 1, delay, ease: "power3.out" }),
     };
   }
+  if (el.classList.contains("arch")) {
+    // The temple-door frame opens upward and outward from a narrow arch.
+    const shape = (top: number, side: number) => `inset(${top}% ${side}% 0% ${side}% round 50% 50% 0% 0% / 40% 40% 0% 0%)`;
+    return {
+      prepare: () => gsap.set(el, { clipPath: shape(24, 20), opacity: 0.35 }),
+      play: () => gsap.to(el, { clipPath: shape(0, 0), opacity: 1, duration: 1.3, ease: "power3.out", clearProps: "clipPath,opacity" }),
+    };
+  }
   if (el.dataset.stagger !== undefined) {
     return {
       prepare: () => gsap.set(el.children, { y: 60, opacity: 0 }),
@@ -44,12 +54,19 @@ function jobFor(g: GsapModule, el: HTMLElement): Job | null {
     return {
       prepare: () => {},
       play: () => {},
-      scrub: () =>
+      scrub: () => {
+        const scrollTrigger = { trigger: el, start: "top 95%", end: "bottom 45%", scrub: 0.5 };
         gsap.fromTo(
           gsap.utils.toArray<SVGElement>("[data-ring]", el),
           { scale: 0.15, opacity: 0, transformOrigin: "50% 50%" },
-          { scale: 1, opacity: 0.8, stagger: 0.12, ease: "expo.inOut", scrollTrigger: { trigger: el, start: "top 95%", end: "bottom 45%", scrub: 0.5 } },
-        ),
+          { scale: 1, opacity: 0.8, stagger: 0.12, ease: "expo.inOut", scrollTrigger },
+        );
+        // The water line wipes outward from the diya.
+        const left = el.querySelector("[data-line=l]");
+        const right = el.querySelector("[data-line=r]");
+        if (left) gsap.fromTo(left, { scaleX: 0 }, { scaleX: 1, svgOrigin: "640 80", ease: "expo.inOut", scrollTrigger: { ...scrollTrigger } });
+        if (right) gsap.fromTo(right, { scaleX: 0 }, { scaleX: 1, svgOrigin: "960 80", ease: "expo.inOut", scrollTrigger: { ...scrollTrigger } });
+      },
     };
   }
   if (el.dataset.split) {
@@ -112,10 +129,16 @@ export default function RevealController() {
       },
       { rootMargin: "0px 0px 30% 0px" },
     );
-    observers.push(near, enter);
-    document.querySelectorAll("[data-reveal], [data-stagger], [data-split], [data-ripple]").forEach((el) => near.observe(el));
+    // Divider floaters animate only while their divider is on screen.
+    const inView = new IntersectionObserver((entries) => {
+      for (const e of entries) e.target.classList.toggle("in-view", e.isIntersecting);
+    });
+    observers.push(near, enter, inView);
+    document.querySelectorAll("[data-reveal], [data-stagger], [data-split], [data-ripple], .arch").forEach((el) => near.observe(el));
+    document.querySelectorAll("[data-ripple]").forEach((el) => inView.observe(el));
     return () => {
       observers.forEach((o) => o.disconnect());
+      document.querySelectorAll(".ripple-wipe.in-view").forEach((el) => el.classList.remove("in-view"));
       ctx.revert();
     };
   }, [g]);

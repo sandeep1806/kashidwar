@@ -23,6 +23,8 @@ export interface FestivalItem extends Pick<Festival, "id" | "months" | "when" | 
  * full grid).
  */
 export default function FestivalsList({ items, months, labels, carousel }: { items: FestivalItem[]; months: string[]; labels: { when: string; where: string; lunarNote: string; readMore: string; nextUp: string; all: string }; carousel?: { href: string; label: string } }) {
+  // Under the home page's section H2 the cards are H3; on the festivals page, under its H1, H2.
+  const H = carousel ? "h3" : "h2";
   return (
     <>
       <Reveal className="container-kashi mt-12">
@@ -69,7 +71,7 @@ export default function FestivalsList({ items, months, labels, carousel }: { ite
           // Badge the soonest festival with a confirmed date (not an "expected month").
           const nextUp = f.id === items.find((x) => x.date.featured.kind !== "expected")?.id;
           return (
-          <article key={f.id} id={carousel ? undefined : f.id} data-festival-card="" data-months={f.months.join(" ")} data-next-up={nextUp ? "" : undefined} className={`group grain relative flex flex-col rounded-kashi border bg-kashi-indigo/40 p-6 transition-[border-color,box-shadow] duration-500 ease-enter hover:border-kashi-diya/50 hover:shadow-glow ${nextUp ? "border-kashi-diya/60 shadow-glow" : "border-kashi-rudraksha/60"}`}>
+          <article key={f.id} id={carousel ? undefined : f.id} data-festival-card="" data-months={f.months.join(" ")} data-next-up={nextUp ? "" : undefined} className={`group grain relative flex flex-col rounded-kashi border bg-kashi-indigo/40 p-6 card-lift ${nextUp ? "border-kashi-diya/60 shadow-glow" : "border-kashi-rudraksha/60"}`}>
             {nextUp && (
               <span className="absolute right-4 top-4 z-[2] rounded-full bg-kashi-saffron px-3 py-1 text-xs font-medium text-kashi-night">{labels.nextUp}</span>
             )}
@@ -79,7 +81,7 @@ export default function FestivalsList({ items, months, labels, carousel }: { ite
                 <FaithGlyph faith={f.glyph} className="h-5 w-5" />
               </span>
               <div>
-                <h3 className="text-[1.3rem] leading-snug text-kashi-white"><a href={f.href} className="hover:text-kashi-marigold">{f.primaryName}</a></h3>
+                <H className="text-[1.3rem] leading-snug text-kashi-white"><a href={f.href} className="hover:text-kashi-marigold">{f.primaryName}</a></H>
                 <p className="text-sm text-kashi-ash/70">{f.secondaryName}</p>
               </div>
             </div>

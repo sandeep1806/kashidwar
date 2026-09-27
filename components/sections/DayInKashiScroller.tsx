@@ -24,12 +24,24 @@ export interface DayScene {
 
 const LAMP_MARKS = [0.02, 0.5, 0.97];
 
+/** 0 → 1 as t goes from a to b (smoothstep). */
+const ramp = (t: number, a: number, b: number) => {
+  const x = Math.min(1, Math.max(0, (t - a) / (b - a)));
+  return x * x * (3 - 2 * x);
+};
+
 /**
  * Pinned horizontal scrub through dawn → noon → dusk on wide screens with
- * motion allowed. Lamps under the track ignite as progress passes each mark;
- * scene titles reveal with SplitText inside the container animation.
- * Everything else (mobile, reduced motion, before GSAP loads) gets the same
- * three scenes stacked vertically.
+ * motion allowed (DESIGN.md → Day-in-Kashi timeline). The sky tint shifts
+ * with progress (dawn rose → noon amber → dusk indigo and vermilion, three
+ * stacked layers crossfaded by opacity), backdrops drift against the track,
+ * lamps ignite as progress passes each mark, and titles and captions reveal
+ * inside the container animation.
+ *
+ * Phones and tablets get a lighter version of the same three scenes stacked
+ * vertically: backdrops move with a slow parallax, each scene's sky warms in
+ * and its lamp lights as it arrives. Reduced motion (and before GSAP loads):
+ * the static stacked panels, lamps lit.
  */
 export default function DayInKashiScroller({
   scenes,
@@ -57,6 +69,13 @@ export default function DayInKashiScroller({
       const panels = g.gsap.utils.toArray<HTMLElement>("[data-panel]", el);
       const lamps = g.gsap.utils.toArray<HTMLElement>("[data-lamp]", el);
       const bar = el.querySelector<HTMLElement>("[data-progress]");
+      const [skyDawn, skyNoon, skyDusk] = ["dawn", "noon", "dusk"].map((id) => el.querySelector<HTMLElement>(`[data-sky="${id}"]`));
+      const paintSky = (p: number) => {
+        if (skyDawn) skyDawn.style.opacity = String(1 - ramp(p, 0.1, 0.45));
+        if (skyNoon) skyNoon.style.opacity = String(ramp(p, 0.1, 0.45) * (1 - ramp(p, 0.55, 0.9)));
+        if (skyDusk) skyDusk.style.opacity = String(ramp(p, 0.55, 0.9));
+      };
+      paintSky(0);
       const distance = () => track.scrollWidth - window.innerWidth;
 
       const tween = g.gsap.to(track, {
@@ -75,8 +94,20 @@ export default function DayInKashiScroller({
               lamp.classList.toggle("is-lit", self.progress >= LAMP_MARKS[i]),
             );
             if (bar) bar.style.transform = `scaleX(${self.progress})`;
+            paintSky(self.progress);
           },
         },
+      });
+
+      // Backdrops drift against the track (parallax), transform only.
+      panels.forEach((panel) => {
+        const back = panel.querySelector<HTMLElement>("[data-backdrop]");
+        if (!back) return;
+        g.gsap.fromTo(back, { xPercent: -5 }, {
+          xPercent: 5,
+          ease: "none",
+          scrollTrigger: { trigger: panel, containerAnimation: tween, start: "left right", end: "right left", scrub: true },
+        });
       });
 
       panels.forEach((panel) => {
@@ -130,15 +161,60 @@ export default function DayInKashiScroller({
     };
   }, [g, horizontal, script]);
 
+  // Phones and tablets: parallax backdrops, sky warming in, lamps lighting.
+  // Created when the section comes within a viewport, so ScrollTrigger never
+  // measures it while content-visibility is still skipping it.
+  useEffect(() => {
+    const el = root.current;
+    if (!g || horizontal || !el || prefersReducedMotion()) return;
+    let ctx: gsap.Context | null = null;
+    const io = new IntersectionObserver(
+      ([e]) => {
+        if (!e.isIntersecting) return;
+        io.disconnect();
+        ctx = g.gsap.context(() => {
+          g.gsap.utils.toArray<HTMLElement>("[data-scene]", el).forEach((scene) => {
+            const back = scene.querySelector("[data-backdrop]");
+            if (back) {
+              g.gsap.fromTo(back, { yPercent: -6 }, {
+                yPercent: 6,
+                ease: "none",
+                scrollTrigger: { trigger: scene, start: "top bottom", end: "bottom top", scrub: true },
+              });
+            }
+            const sky = scene.querySelector("[data-sky]");
+            if (sky) {
+              g.gsap.fromTo(sky, { opacity: 0 }, {
+                opacity: 1,
+                ease: "none",
+                scrollTrigger: { trigger: scene, start: "top 95%", end: "top 35%", scrub: true },
+              });
+            }
+            const lamp = scene.querySelector("[data-lamp]");
+            if (lamp) g.ScrollTrigger.create({ trigger: scene, start: "top 60%", end: "max", toggleClass: { targets: lamp, className: "is-lit" } });
+          });
+        }, el);
+      },
+      { rootMargin: "100% 0px" },
+    );
+    io.observe(el);
+    return () => {
+      io.disconnect();
+      ctx?.revert();
+    };
+  }, [g, horizontal]);
+
   if (!horizontal) {
     return (
       <div ref={root} className="flex flex-col">
         {scenes.map((scene, i) => (
           <article
             key={scene.id}
+            data-scene
             className={`cv-auto day-scene day-scene-${scene.id} relative isolate flex min-h-[70vh] items-end overflow-hidden`}
           >
-            <SceneBackdrop scene={scene} />
+            <SceneBackdrop scene={scene} layout="stacked" />
+            <div data-sky className={`day-sky day-sky-${scene.id}`} aria-hidden="true" />
             <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-kashi-night/90 via-kashi-night/40 to-transparent" />
             <Reveal className="container-kashi relative pb-12 pt-24" delay={0.1 * i}>
               <SceneCopy scene={scene} lit />
@@ -158,7 +234,7 @@ export default function DayInKashiScroller({
             data-panel
             className={`day-scene day-scene-${scene.id} relative isolate flex h-full w-screen shrink-0 items-end overflow-hidden`}
           >
-            <SceneBackdrop scene={scene} />
+            <SceneBackdrop scene={scene} layout="pinned" />
             <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-kashi-night/90 via-kashi-night/40 to-transparent" />
             <div className={`container-kashi relative pb-20 ${i % 2 ? "text-right" : ""}`}>
               <SceneCopy scene={scene} split />
@@ -167,11 +243,19 @@ export default function DayInKashiScroller({
         ))}
       </div>
 
+      {/* The sky over the whole pinned view: three tints crossfaded by progress */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+        <div data-sky="dawn" className="day-sky day-sky-dawn" />
+        <div data-sky="noon" className="day-sky day-sky-noon opacity-0" />
+        <div data-sky="dusk" className="day-sky day-sky-dusk opacity-0" />
+      </div>
+
       {/* Lamps ignite as the day advances (top edge, clear of the captions) */}
       <div className="pointer-events-none absolute inset-x-0 top-6 flex flex-col items-center gap-3">
         <div className="flex items-end gap-10">
           {scenes.map((scene) => (
-            <div key={scene.id} data-lamp className="lamp flex flex-col items-center gap-2">
+            <div key={scene.id} data-lamp className="lamp relative flex flex-col items-center gap-2">
+              <span aria-hidden="true" className="lamp-burst" />
               <DiyaGlyph className="h-9 w-9" flameClassName="lamp-flame" />
               <span className="font-display-latin text-xs tracking-[0.2em] text-kashi-diya/80">
                 {scene.time}
@@ -203,7 +287,14 @@ function SceneCopy({
         <span className="font-display-latin tracking-[0.2em]">{scene.time}</span>
         <span aria-hidden="true" className="h-px w-8 bg-kashi-diya/60" />
         <span>{scene.place}</span>
-        {lit && <DiyaGlyph className="ml-1 h-5 w-5" />}
+        {lit && (
+          // Lit in the markup (reduced motion, no JS); the phone parallax
+          // effect relights it as the scene arrives.
+          <span data-lamp className="lamp is-lit relative ml-1 inline-flex">
+            <span aria-hidden="true" className="lamp-burst" />
+            <DiyaGlyph className="h-5 w-5" flameClassName="lamp-flame" />
+          </span>
+        )}
       </p>
       <h3 className="text-h2 leading-tight text-glow">
         {split ? (
@@ -224,10 +315,22 @@ function SceneCopy({
   );
 }
 
-function SceneBackdrop({ scene }: { scene: DayScene }) {
-  return scene.photo ? (
-    <LazyPhoto photo={scene.photo} sizes="100vw" className="-z-10" />
-  ) : (
-    <Image src={scene.art} alt="" fill sizes="100vw" unoptimized className="-z-10 object-cover" />
+/**
+ * The scene's photograph (or drawn fallback) in an oversized frame, so the
+ * parallax never shows an edge: 110% wide on the pinned track, 112% tall when
+ * stacked. `sizes` accounts for object-fit: cover in that frame.
+ */
+function SceneBackdrop({ scene, layout }: { scene: DayScene; layout: "pinned" | "stacked" }) {
+  const frame = layout === "pinned" ? "absolute inset-y-0 -left-[5%] -right-[5%] -z-10" : "absolute inset-x-0 -top-[6%] -bottom-[6%] -z-10";
+  const r = scene.photo ? scene.photo.width / scene.photo.height : 1.5;
+  const sizes = layout === "pinned" ? `max(110vw, ${Math.round(r * 100)}vh)` : `max(100vw, ${Math.round(r * 84)}vh)`;
+  return (
+    <div data-backdrop className={frame}>
+      {scene.photo ? (
+        <LazyPhoto photo={scene.photo} sizes={sizes} photoClassName="ken-burns" />
+      ) : (
+        <Image src={scene.art} alt="" fill sizes="100vw" unoptimized className="object-cover" />
+      )}
+    </div>
   );
 }

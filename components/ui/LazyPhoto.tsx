@@ -15,18 +15,21 @@ export default function LazyPhoto({
   photo,
   sizes,
   className = "",
+  photoClassName,
   margin = "300px 100%",
 }: {
   photo: PhotoData;
   sizes: string;
   className?: string;
+  /** Classes for the <img> itself (e.g. ken-burns) */
+  photoClassName?: string;
   margin?: string;
 }) {
   const { ref, ready } = useApproach<HTMLDivElement>(margin);
   const blur: CSSProperties = { backgroundImage: `url(${photo.blur})`, backgroundSize: "cover", backgroundPosition: "center" };
   return (
     <div ref={ref} className={`absolute inset-0 ${className}`} style={blur}>
-      {ready && <Photo photo={photo} sizes={sizes} />}
+      {ready && <Photo photo={photo} sizes={sizes} className={photoClassName} />}
     </div>
   );
 }

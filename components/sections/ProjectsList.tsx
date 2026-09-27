@@ -45,23 +45,25 @@ export function StatusBadge({ status, label }: { status: ProjectStatus; label: s
  * per status and a "See all" link to the projects page.
  */
 export default function ProjectsList({ groups, labels, carousel }: { groups: { status: ProjectStatus; items: ProjectItem[] }[]; labels: ProjectLabels; carousel?: { href: string; label: string } }) {
+  // Home: status H3s and card H4s under the section H2; projects page: one level up, under its H1.
+  const [GroupH, CardH] = carousel ? (["h3", "h4"] as const) : (["h2", "h3"] as const);
   return (
     <>
       {groups.map((g) => (
         <div key={g.status} className="container-kashi mt-14 max-lg:mt-10">
-          <h3 className="mb-6 max-lg:mb-2 flex items-center gap-4 text-h3 text-kashi-white">
+          <GroupH className="mb-6 max-lg:mb-2 flex items-center gap-4 text-h3 text-kashi-white">
             <span>{labels.groups[g.status]}</span>
             <span aria-hidden="true" className="h-px flex-1 bg-gradient-to-r from-kashi-diya/40 to-transparent" />
-          </h3>
+          </GroupH>
           <StaggerCards className={carousel ? "carousel-sm grid gap-6 md:grid-cols-2 xl:grid-cols-3" : "grid gap-6 md:grid-cols-2 xl:grid-cols-3"}>
             {g.items.map((p) => (
-              <article key={p.id} id={carousel ? undefined : p.id} className="group grain relative flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-6 transition-[translate,border-color,box-shadow] duration-500 ease-enter hover:-translate-y-1 hover:border-kashi-diya/50 hover:shadow-glow">
+              <article key={p.id} id={carousel ? undefined : p.id} className="group grain relative flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-6 card-lift">
                 <CardPhoto photo={p.photo} faith={p.faith} className="card-photo -mx-3 -mt-3 mb-5" carousel={!!carousel} />
                 <div className="flex flex-wrap items-center gap-2">
                   <StatusBadge status={p.status} label={labels.groups[p.status]} />
                   <span className="rounded-full bg-kashi-rudraksha/50 px-2 py-0.5 text-[0.7rem] text-kashi-ash/80">{labels.types[p.type]}</span>
                 </div>
-                <h4 className="mt-4 text-[1.3rem] leading-snug text-kashi-white"><a href={p.href} className="hover:text-kashi-marigold">{p.primaryName}</a></h4>
+                <CardH className="mt-4 text-[1.3rem] leading-snug text-kashi-white"><a href={p.href} className="hover:text-kashi-marigold">{p.primaryName}</a></CardH>
                 <p className="text-sm text-kashi-ash/70">{p.secondaryName}</p>
                 <p className="card-summary mt-4 text-kashi-ash/90">{p.summary}</p>
                 <dl className="card-extra mt-5 space-y-3 text-sm">

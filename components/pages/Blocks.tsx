@@ -62,7 +62,7 @@ export function LinkCards({ title, items }: { title: string; items: LinkCard[] }
       <ul className="mt-6 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
         {items.map((it) => (
           <li key={it.href}>
-            <a href={it.href} className="group flex h-full flex-col overflow-hidden rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 transition-[translate,border-color,box-shadow] duration-500 ease-enter hover:-translate-y-1 hover:border-kashi-diya/60 hover:shadow-glow">
+            <a href={it.href} className="group flex h-full flex-col overflow-hidden rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 card-lift">
               <div className="arch relative mx-2 mt-2 aspect-[4/3] overflow-hidden bg-kashi-indigo">
                 {it.photo ? <Photo photo={it.photo} sizes={[["(min-width: 1024px)", "264px", 4 / 3], [null, "calc(46vw - 16px)", 4 / 3]]} className="photo-zoom" /> : <ArtFallback faith={it.faith} type={it.type} />}
               </div>
