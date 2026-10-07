@@ -70,9 +70,14 @@ export default async function PlacePage({ params }: PageProps<"/[locale]/places/
   const fests = festivalsAt(id);
   const { prev, next } = neighbours(places, index);
   const home = `/${locale}`;
+  // Ghats and temples sit under their listing page; everything else under the home places section.
+  const parent =
+    raw.type === "ghat" ? { name: tp("ghatsTitle"), href: `${home}/ghats` }
+    : raw.type === "temple" ? { name: tp("templesTitle"), href: `${home}/temples` }
+    : { name: nav("places"), href: `${home}#places` };
   const crumbs = [
     { name: t("home"), href: home },
-    { name: nav("places"), href: `${home}#places` },
+    parent,
     { name: primary, href: `/${locale}${path}` },
   ];
   const lite = (x: typeof raw) => ({ id: x.id, name_en: x.name_en, faith: x.faith, type: x.type, lat: x.lat, lng: x.lng, bestTime: "", coordsVerified: x.coordsVerified });

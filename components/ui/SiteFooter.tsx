@@ -10,6 +10,7 @@ import { langFontClass } from "@/lib/fonts";
 export default async function SiteFooter({ locale, path = "" }: { locale: Locale; path?: string }) {
   const t = await getTranslations("footer");
   const nav = await getTranslations("nav");
+  const places = await getTranslations("places");
   const meta = await getTranslations("meta");
   const fmt = new Intl.DateTimeFormat(LOCALES[locale].bcp47, { dateStyle: "long" });
   const latest = projects.reduce((d, p) => (p.lastVerified > d ? p.lastVerified : d), "");
@@ -31,6 +32,22 @@ export default async function SiteFooter({ locale, path = "" }: { locale: Locale
             {SECTIONS.map((s) => (
               <li key={s.id}>
                 <a href={path ? `/${locale}#${s.id}` : `#${s.id}`} className="inline-flex min-h-11 items-center hover:text-kashi-white">{nav(s.key)}</a>
+              </li>
+            ))}
+          </ul>
+          {/* Listing pages: one crawlable link to each from every page of the site. */}
+          <ul className="mt-3 border-t border-kashi-diya/10 pt-2">
+            {(
+              [
+                ["/ghats", places("ghatsTitle")],
+                ["/temples", places("templesTitle")],
+                ["/festivals", nav("festivals")],
+                ["/projects", nav("projects")],
+                ["/food", nav("food")],
+              ] as const
+            ).map(([href, label]) => (
+              <li key={href}>
+                <a href={`/${locale}${href}`} className="inline-flex min-h-11 items-center hover:text-kashi-white">{label}</a>
               </li>
             ))}
           </ul>
