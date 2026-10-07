@@ -172,6 +172,16 @@ Preview deployments of non-production branches get a `*.workers.dev` URL; their 
 ## Guides
 Researched articles live in `content/guides/<slug>.json` (English + Hindi; other locales show English with a note) and are registered in `lib/guides.ts`. Each section cites sources by index and can be flagged `"unconfirmed": true` (shown as "Not officially confirmed"). `related` links them to places/festivals/projects/itineraries, which link back automatically. Bump `updated` whenever a fact changes. After adding Hindi headings, rebuild the heading-font subset (steps at the top of `scripts/heading-font/crawl-corpus.mjs`).
 
+## Search Console report
+`scripts/gsc-report.py` prints what Google Search Console knows about kashidwar.com: submitted sitemaps and their status, search performance for the last 28 days (totals, countries, pages, queries, per-locale), and URL Inspection for the home pages and a sample of sitemap URLs. Read-only; it uses a Google service account:
+
+```bash
+pip install google-api-python-client google-auth requests
+GSC_CREDENTIALS=/path/to/service-account.json python3 scripts/gsc-report.py --days 28 --inspect 10
+```
+
+The service account's `client_email` must be added once as a user on the property (Search Console → kashidwar.com → Settings → Users and permissions → Add user, permission Full). Set `GSC_SITE` if the property is not `sc-domain:kashidwar.com`. Keep the key file outside the repository.
+
 ## Cloudflare Web Analytics (cookieless, no consent banner)
 1. Cloudflare dashboard → **Analytics & Logs → Web Analytics → Add a site**.
 2. Choose **kashidwar.com** from the list (the zone is proxied, so pick **automatic setup** — Cloudflare injects the beacon at the edge; no code change or token needed).
