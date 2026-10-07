@@ -815,6 +815,21 @@
    "sa": "बीएचयू-परिसरे नूतनविश्वनाथमन्दिरस्य उन्नतं श्वेतं शिखरम्"
   }
  },
+ "places/chet-singh-ghat": {
+  "src": "/media/photos/places/chet-singh-ghat",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 720,
+  "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAUAA4BaJZgCdAEfaUH2AAD8i3u0S8H0DPtZbCoQWwmlvcjp/ss0gDUTFm0AAAA=",
+  "alt": {
+   "en": "The sandstone fort of Chet Singh Ghat seen from the Ganga",
+   "hi": "गंगा से दिखता चेत सिंह घाट का बलुआ पत्थर का किला"
+  }
+ },
  "places/chunar-fort": {
   "src": "/media/photos/places/chunar-fort",
   "widths": [
@@ -839,6 +854,21 @@
    "gu": "ચુનાર કિલ્લાની અંદર કોતરણીવાળો મંડપ, સોનવા મંડપ",
    "pa": "ਚੁਨਾਰ ਕਿਲ੍ਹੇ ਅੰਦਰ ਨੱਕਾਸ਼ੀਦਾਰ ਮੰਡਪ, ਸੋਨਵਾ ਮੰਡਪ",
    "sa": "चुनारदुर्गस्य अन्तः उत्कीर्णः मण्डपः, सोनवामण्डपः"
+  }
+ },
+ "places/darbhanga-ghat": {
+  "src": "/media/photos/places/darbhanga-ghat",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 1707,
+  "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoIAAsAA4BaJYgCdAEOgrZJ674AAP4cojRkIL9WFTUbUaM5T4Z8HCea7TbUd+l2Pj6oAA==",
+  "alt": {
+   "en": "Darbhanga Palace strung with lights for Diwali, seen from the Ganga",
+   "hi": "दीपावली पर रोशनी से सजा दरभंगा महल, गंगा से दिखता हुआ"
   }
  },
  "places/dashashwamedh-ghat": {
@@ -977,6 +1007,57 @@
    "gu": "સંધ્યાએ ઝળહળતું કાશી વિશ્વનાથ મંદિરનું સુવર્ણ શિખર, કોરિડોરની દીવાલ ઉપર",
    "pa": "ਸ਼ਾਮ ਵੇਲੇ ਰੌਸ਼ਨ ਕਾਸ਼ੀ ਵਿਸ਼ਵਨਾਥ ਮੰਦਰ ਦਾ ਸੁਨਹਿਰੀ ਸ਼ਿਖਰ, ਕੋਰੀਡੋਰ ਦੀ ਕੰਧ ਉੱਤੇ",
    "sa": "सन्ध्यायां प्रकाशितं काशीविश्वनाथमन्दिरस्य सुवर्णशिखरम्, वीथिकाभित्तेः उपरि"
+  }
+ },
+ "places/kedar-ghat": {
+  "src": "/media/photos/places/kedar-ghat",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 1912,
+  "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAwAA4BaJaACdAEOZlNaAADiB6zAHJ1BBvHM3IcIXs6Gi/8H1TccTftFQAAA",
+  "alt": {
+   "en": "Red-and-white striped steps and the Gauri Kedareshwar temple at Kedar Ghat",
+   "hi": "केदार घाट की लाल-सफ़ेद धारीदार सीढ़ियाँ और गौरी केदारेश्वर मंदिर"
+  }
+ },
+ "places/lalita-ghat": {
+  "src": "/media/photos/places/lalita-ghat",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 991,
+  "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAYAA4BaJYgCdAEfhiQo6gAA3mSvg5odQx0P/xnK32nusDcsjEWKlWQ+sAAA",
+  "crop": [
+   0.25,
+   0.265,
+   0.515,
+   0.49
+  ],
+  "alt": {
+   "en": "The Nepali temple above Lalita Ghat in a 19th-century photograph",
+   "hi": "19वीं सदी की तस्वीर में ललिता घाट के ऊपर नेपाली मंदिर"
+  }
+ },
+ "places/man-mandir-ghat": {
+  "src": "/media/photos/places/man-mandir-ghat",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 1059,
+  "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoIAAcAA4BaJYwCdAEU+MUQNAAA/u9qx2lmaOqdQaXqcd9KJMO6wiV7wpNByaVAAAA=",
+  "alt": {
+   "en": "Man Mandir palace lit at night above Man Mandir Ghat",
+   "hi": "रात में आलोकित मान मंदिर महल, मान मंदिर घाट के ऊपर"
   }
  },
  "places/manikarnika-ghat": {
@@ -1187,6 +1268,21 @@
    "sa": "सारनाथे वृक्षाणां मध्ये धमेखस्तूपस्य इष्टकाशिलामयः वर्तुलः आकारः"
   }
  },
+ "places/scindia-ghat": {
+  "src": "/media/photos/places/scindia-ghat",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 854,
+  "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAUAA4BaJZACdADzeRMAAP7MWRTLMCtTSWTQc7Dk2vTXiAAAAA==",
+  "alt": {
+   "en": "The leaning Ratneshwar Mahadev temple at Scindia Ghat, seen from the river",
+   "hi": "नदी से दिखता सिंधिया घाट का झुका हुआ रत्नेश्वर महादेव मंदिर"
+  }
+ },
  "places/st-marys-church": {
   "src": "/media/photos/places/st-marys-church",
   "widths": [
@@ -1211,6 +1307,21 @@
    "gu": "છાવણી વિસ્તારનું સેન્ટ મેરીઝ ચર્ચ, 1971માં લેવાયેલી તસવીર",
    "pa": "ਛਾਉਣੀ ਦਾ ਸੇਂਟ ਮੈਰੀਜ਼ ਚਰਚ, 1971 ਵਿੱਚ ਖਿੱਚੀ ਤਸਵੀਰ",
    "sa": "छावनीक्षेत्रस्य सेंट मेरीज़ चर्च, 1971 तमे वर्षे गृहीतं चित्रम्"
+  }
+ },
+ "places/tulsi-ghat": {
+  "src": "/media/photos/places/tulsi-ghat",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 853,
+  "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAUAA4BaJYwCdAEOuwSAAP6EFE7ZDg/bMeYAeZkprXJ+jnrAAA==",
+  "alt": {
+   "en": "The steps and painted arches of Tulsi Ghat in the evening",
+   "hi": "शाम के समय तुलसी घाट की सीढ़ियाँ और रंगी हुई मेहराबें"
   }
  },
  "places/tulsi-manas": {

@@ -279,6 +279,15 @@
     "source": "https://commons.wikimedia.org/wiki/File:New_Vishwanath_Temple_(BHU).jpg"
   },
   {
+    "key": "places/chet-singh-ghat",
+    "file": "/media/photos/places/chet-singh-ghat-1280.webp",
+    "title": "Chet Singh Ghat, Varanasi, India - October 2014",
+    "author": "Rickard Törnblad",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chet_Singh_Ghat,_Varanasi,_India_-_October_2014.jpg"
+  },
+  {
     "key": "places/chunar-fort",
     "file": "/media/photos/places/chunar-fort-1280.webp",
     "title": "Chunar Fort 2",
@@ -286,6 +295,15 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Chunar_Fort_2.jpg"
+  },
+  {
+    "key": "places/darbhanga-ghat",
+    "file": "/media/photos/places/darbhanga-ghat-1280.webp",
+    "title": "Diwali lights at Darbhanga Ghat",
+    "author": "Immanuelle",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Diwali_lights_at_Darbhanga_Ghat.jpg"
   },
   {
     "key": "places/dashashwamedh-ghat",
@@ -331,6 +349,33 @@
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Kashi_vishwanath_temple_varanasi.jpg"
+  },
+  {
+    "key": "places/kedar-ghat",
+    "file": "/media/photos/places/kedar-ghat-1280.webp",
+    "title": "Kedar Ghat 2011 August",
+    "author": "Antoine Taveneaux",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kedar_Ghat_2011_August.jpg"
+  },
+  {
+    "key": "places/lalita-ghat",
+    "file": "/media/photos/places/lalita-ghat-1280.webp",
+    "title": "Benares, the Nepalese Temple",
+    "author": "Getty Museum Collection",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Benares,_the_Nepalese_Temple.jpg"
+  },
+  {
+    "key": "places/man-mandir-ghat",
+    "file": "/media/photos/places/man-mandir-ghat-1280.webp",
+    "title": "Manmandir ghat -Varanasi - Uttar Pradesh -DSC0001",
+    "author": "Chiranjiviranjan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Manmandir_ghat_-Varanasi_-_Uttar_Pradesh_-DSC0001.jpg"
   },
   {
     "key": "places/manikarnika-ghat",
@@ -405,6 +450,15 @@
     "source": "https://commons.wikimedia.org/wiki/File:Dhamekh_Stupa_Sarnath_India_-_panoramio.jpg"
   },
   {
+    "key": "places/scindia-ghat",
+    "file": "/media/photos/places/scindia-ghat-1280.webp",
+    "title": "Ratneshwar Mahadev Temple, 2019",
+    "author": "Redeemer",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ratneshwar_Mahadev_Temple,_2019.jpg"
+  },
+  {
     "key": "places/st-marys-church",
     "file": "/media/photos/places/st-marys-church-1280.webp",
     "title": "496a Benares, India 1971 (51310319630)",
@@ -412,6 +466,15 @@
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:496a_Benares,_India_1971_(51310319630).jpg"
+  },
+  {
+    "key": "places/tulsi-ghat",
+    "file": "/media/photos/places/tulsi-ghat-1280.webp",
+    "title": "Tulsi Ghat",
+    "author": "Nandanupadhyay",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tulsi_Ghat.jpg"
   },
   {
     "key": "places/tulsi-manas",
