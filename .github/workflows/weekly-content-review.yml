@@ -1,4 +1,4 @@
-# Weekly AI content review (cheap and bounded): Sonnet, 40 turns, $3 cap, one focus per
+# Weekly AI content review (cheap and bounded): Sonnet, 60 turns, $4 cap, one focus per
 # week of the month (IST): 1 projects · 2 festivals + dates · 3 guides' volatile facts ·
 # 4 new developments + broken links + photos · 5th Monday: projects again.
 # The first Monday is covered by the monthly full review (monthly-content-review.yml),
@@ -61,7 +61,7 @@ jobs:
     with:
       # Model, turn cap and dollar cap for the weekly run; change here.
       model: claude-sonnet-5
-      max_turns: 40
-      max_budget_usd: "3"
+      max_turns: 60
+      max_budget_usd: "4"
       focus: ${{ needs.plan.outputs.focus }}
       kind: Weekly

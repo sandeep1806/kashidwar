@@ -187,7 +187,7 @@ merged automatically. Both schedules call the same reusable workflow,
 
 | Workflow | When (IST) | Model | Caps | What it checks |
 |---|---|---|---|---|
-| `weekly-content-review.yml` | Mondays 05:00, except the first Monday | `claude-sonnet-5` | 40 turns, $3 | week 1 projects · week 2 festivals + dates · week 3 guides' volatile facts · week 4 new developments + broken links + photos · 5th Monday projects |
+| `weekly-content-review.yml` | Mondays 05:00, except the first Monday | `claude-sonnet-5` | 60 turns, $4 | week 1 projects · week 2 festivals + dates · week 3 guides' volatile facts · week 4 new developments + broken links + photos · 5th Monday projects |
 | `monthly-content-review.yml` | first Monday 05:00 | `claude-opus-5-5` | 150 turns, $15 | everything |
 
 Caps are hard limits (`--max-turns`, `--max-budget-usd`). The agent keeps its PR summary up to
