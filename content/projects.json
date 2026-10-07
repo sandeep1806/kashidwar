@@ -81,15 +81,20 @@
     "type": "transport",
     "lat": 25.3282,
     "lng": 82.9866,
-    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple, in about 16 minutes. Foundation laid 24 March 2023; trial runs on the Cantt–Rathyatra stretch began in 2025. As of 27 September 2026 it has not opened to the public; the latest published target is November 2026.",
+    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple, in about 16 minutes. Foundation laid 24 March 2023; trial runs on the Cantt–Rathyatra stretch began in 2025. Physical work reached about 94% in September 2026; the district administration's published target for public operations is 24 November 2026, not yet officially confirmed.",
     "bestTime": "Not yet open to the public",
     "image": "/media/projects/varanasi-ropeway.jpg",
     "status": "under_construction",
     "agency": "National Highways Logistics Management Ltd (NHLML) · built by Vishwa Samudra Engineering",
-    "timeline": "Foundation 24 March 2023 · Trial runs from 2025 · Not yet open (checked 27 September 2026); latest target November 2026",
+    "timeline": "Foundation 24 March 2023 · Trial runs from 2025 · ~94% complete (September 2026) · targeted opening 24 November 2026 (unconfirmed)",
     "verified": true,
-    "lastVerified": "2026-09-27",
+    "lastVerified": "2026-10-07",
     "sources": [
+      {
+        "title": "Swarajya — Varanasi's urban ropeway project reaches 95% completion, operations expected by November (30 Sep 2026)",
+        "url": "https://swarajyamag.com/amp/story/news-brief/varanasis-urban-ropeway-project-reaches-95-per-cent-completion-operations-expected-by-november",
+        "accessed": "2026-10-07"
+      },
       {
         "title": "Amar Ujala — Trial of 148 ropeway gondolas, Cantt to Godowlia in 16 minutes (25 Aug 2026)",
         "url": "https://www.amarujala.com/uttar-pradesh/varanasi/trial-run-of-148-ropeway-gondolas-will-be-conducted-in-varanasi-after-raksha-bandhan-2026-2026-08-25"
@@ -116,9 +121,9 @@
     ],
     "i18n": {
       "hi": {
-        "summary": "भारत का पहला शहरी सार्वजनिक-परिवहन रोपवे: वाराणसी कैंट स्टेशन से विश्वनाथ मंदिर के पास गोदौलिया तक 3.75 किमी और पाँच स्टेशन, लगभग 16 मिनट में। शिलान्यास 24 मार्च 2023; कैंट–रथयात्रा खंड पर ट्रायल 2025 में शुरू हुए। 27 सितंबर 2026 तक यह जनता के लिए नहीं खुला है; ताज़ा घोषित लक्ष्य नवंबर 2026 है।",
+        "summary": "भारत का पहला शहरी सार्वजनिक-परिवहन रोपवे: वाराणसी कैंट स्टेशन से विश्वनाथ मंदिर के पास गोदौलिया तक 3.75 किमी और पाँच स्टेशन, लगभग 16 मिनट में। शिलान्यास 24 मार्च 2023; कैंट–रथयात्रा खंड पर ट्रायल 2025 में शुरू हुए। सितंबर 2026 तक लगभग 94% भौतिक कार्य पूरा; जिला प्रशासन का प्रकाशित लक्ष्य 24 नवंबर 2026 है, जो अभी आधिकारिक रूप से पुष्ट नहीं है।",
         "agency": "नेशनल हाईवेज़ लॉजिस्टिक्स मैनेजमेंट लिमिटेड (NHLML) · निर्माण विश्व समुद्र इंजीनियरिंग",
-        "timeline": "शिलान्यास 24 मार्च 2023 · ट्रायल 2025 से · अभी नहीं खुला (27 सितंबर 2026 को जाँचा); ताज़ा लक्ष्य नवंबर 2026"
+        "timeline": "शिलान्यास 24 मार्च 2023 · ट्रायल 2025 से · सितंबर 2026 में ~94% पूर्ण · लक्षित उद्घाटन 24 नवंबर 2026 (अपुष्ट)"
       }
     }
   },
@@ -209,7 +214,7 @@
     "agency": "Indian Railways (North Eastern / Northern Railway) · Amrit Bharat Station Scheme",
     "timeline": "Listed for redevelopment 2018 · Amrit Bharat scheme scope · completion date unconfirmed",
     "verified": false,
-    "lastVerified": "2026-09-25",
+    "lastVerified": "2026-10-07",
     "sources": [
       {
         "title": "Wikipedia — Varanasi Junction railway station",
@@ -281,7 +286,7 @@
     "agency": "National Highways Authority of India (NHAI)",
     "timeline": "Phase 1 opened 2018 · Phase 2 substantially open December 2025 · second Ganga-bridge carriageway pending",
     "verified": true,
-    "lastVerified": "2026-09-25",
+    "lastVerified": "2026-10-07",
     "sources": [
       {
         "title": "Kashi Official Web Portal — Ring Road Phase 2",
@@ -310,19 +315,24 @@
     "type": "transport",
     "lat": 25.4525,
     "lng": 82.8594,
-    "summary": "A ₹2,869.65 crore expansion approved by the Union Cabinet in June 2024: a new 75,000 sq m terminal for 6 million passengers a year, runway extension with an under-runway road tunnel, parallel taxiway and apron. Construction is under way; no official opening date has been announced.",
+    "summary": "A ₹2,869.65 crore expansion approved by the Union Cabinet in June 2024: a new 75,000 sq m terminal for 6 million passengers a year, runway extension with an under-runway road tunnel, parallel taxiway and apron. On 24 June 2026 the Civil Aviation Minister reviewed the under-construction terminal and directed completion within six months; no official opening date has been announced yet.",
     "bestTime": "—",
     "image": "/media/projects/airport.jpg",
     "status": "under_construction",
     "agency": "Airports Authority of India (AAI)",
-    "timeline": "Cabinet approval June 2024 · Under construction · Opening date not announced",
+    "timeline": "Cabinet approval June 2024 · Under construction · Minister's review 24 June 2026 set a six-month completion target · official opening date not announced",
     "verified": true,
-    "lastVerified": "2026-09-25",
+    "lastVerified": "2026-10-07",
     "sources": [
       {
         "title": "PIB — Cabinet approves development of Lal Bahadur Shastri International Airport, Varanasi",
         "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2026702&reg=48&lang=2",
         "accessed": "2026-09-25"
+      },
+      {
+        "title": "Aviation Defence Universe — Minister Naidu reviews new Varanasi terminal under construction (24 Jun 2026)",
+        "url": "https://www.aviation-defence-universe.com/minister-naidu-reviews-new-varanasi-terminal-under-construction/",
+        "accessed": "2026-10-07"
       },
       {
         "title": "Airports Authority of India — Varanasi: construction of new terminal building (EPC)",
@@ -332,9 +342,9 @@
     ],
     "i18n": {
       "hi": {
-        "summary": "जून 2024 में केंद्रीय मंत्रिमंडल द्वारा स्वीकृत ₹2,869.65 करोड़ का विस्तार: सालाना 60 लाख यात्रियों के लिए 75,000 वर्ग मीटर का नया टर्मिनल, रनवे के नीचे सड़क सुरंग सहित रनवे विस्तार, समानांतर टैक्सीवे और एप्रन। निर्माण जारी है; उद्घाटन की कोई आधिकारिक तिथि घोषित नहीं हुई।",
+        "summary": "जून 2024 में केंद्रीय मंत्रिमंडल द्वारा स्वीकृत ₹2,869.65 करोड़ का विस्तार: सालाना 60 लाख यात्रियों के लिए 75,000 वर्ग मीटर का नया टर्मिनल, रनवे के नीचे सड़क सुरंग सहित रनवे विस्तार, समानांतर टैक्सीवे और एप्रन। 24 जून 2026 को नागरिक उड्डयन मंत्री ने निर्माणाधीन टर्मिनल की समीक्षा की और छह महीने में पूरा करने का लक्ष्य दिया; उद्घाटन की कोई आधिकारिक तिथि अभी घोषित नहीं हुई।",
         "agency": "भारतीय विमानपत्तन प्राधिकरण (AAI)",
-        "timeline": "मंत्रिमंडल स्वीकृति जून 2024 · निर्माणाधीन · उद्घाटन तिथि घोषित नहीं"
+        "timeline": "मंत्रिमंडल स्वीकृति जून 2024 · निर्माणाधीन · 24 जून 2026 की समीक्षा में छह महीने का लक्ष्य · उद्घाटन तिथि अभी घोषित नहीं"
       }
     }
   },
@@ -420,15 +430,20 @@
     "type": "infrastructure",
     "lat": 25.2286,
     "lng": 82.8531,
-    "summary": "A 30,000-seat stadium at Ganjari, Rajatalab, designed around Shiva motifs: trishul-shaped floodlights, a damru-shaped canopy, crescent forms. Foundation laid 23 September 2023 at about ₹450 crore; roughly three-quarters built by 2026 and expected to open during the year.",
+    "summary": "A 30,000-seat stadium at Ganjari, Rajatalab, designed around Shiva motifs: trishul-shaped floodlights, a damru-shaped canopy, crescent forms. Foundation laid 23 September 2023 at about ₹450 crore; construction was about 90% complete by June 2026, with inauguration still expected by the end of 2026.",
     "bestTime": "—",
     "image": "/media/projects/cricket-stadium.jpg",
     "status": "under_construction",
     "agency": "Board of Control for Cricket in India (BCCI) with Uttar Pradesh Cricket Association; land from Government of Uttar Pradesh",
-    "timeline": "Foundation 23 September 2023 · ~70–75% complete in 2026 · opening expected late 2026",
+    "timeline": "Foundation 23 September 2023 · ~90% complete (June 2026) · opening expected late 2026",
     "verified": true,
-    "lastVerified": "2026-09-25",
+    "lastVerified": "2026-10-07",
     "sources": [
+      {
+        "title": "Khel Now — First look: Varanasi Cricket Stadium (5 Sep 2026)",
+        "url": "https://khelnow.com/cricket/first-look-varanasi-cricket-stadium-202609",
+        "accessed": "2026-10-07"
+      },
       {
         "title": "Wikipedia — Varanasi Cricket Stadium",
         "url": "https://en.wikipedia.org/wiki/Varanasi_Cricket_Stadium",
@@ -442,9 +457,9 @@
     ],
     "i18n": {
       "hi": {
-        "summary": "राजातालाब के गंजारी में 30,000 सीटों का स्टेडियम, शिव-प्रतीकों पर डिज़ाइन: त्रिशूल आकार की फ़्लडलाइटें, डमरू आकार की छतरी, अर्धचंद्र रूप। शिलान्यास 23 सितंबर 2023, लगभग ₹450 करोड़; 2026 तक लगभग तीन-चौथाई निर्मित, वर्ष के भीतर खुलने की उम्मीद।",
+        "summary": "राजातालाब के गंजारी में 30,000 सीटों का स्टेडियम, शिव-प्रतीकों पर डिज़ाइन: त्रिशूल आकार की फ़्लडलाइटें, डमरू आकार की छतरी, अर्धचंद्र रूप। शिलान्यास 23 सितंबर 2023, लगभग ₹450 करोड़; जून 2026 तक लगभग 90% निर्माण पूरा, उद्घाटन अब भी 2026 के अंत तक अपेक्षित।",
         "agency": "भारतीय क्रिकेट कंट्रोल बोर्ड (BCCI) उत्तर प्रदेश क्रिकेट संघ के साथ; भूमि उत्तर प्रदेश सरकार से",
-        "timeline": "शिलान्यास 23 सितंबर 2023 · 2026 में ~70–75% पूर्ण · उद्घाटन 2026 के अंत में अपेक्षित"
+        "timeline": "शिलान्यास 23 सितंबर 2023 · जून 2026 में ~90% पूर्ण · उद्घाटन 2026 के अंत में अपेक्षित"
       }
     }
   },
@@ -456,19 +471,24 @@
     "type": "tourism",
     "lat": 25.3176,
     "lng": 83.006,
-    "summary": "Announced in September 2026: about ₹69 crore to revitalise heritage corridors in the old city and renovate 119 municipal parks with lighting, planting and seating.",
+    "summary": "Announced in September 2026: two BPCL CSR MoUs worth ₹69.21 crore in all — about ₹48 crore to renovate 119 municipal parks and develop food-street hubs at Sarnath and Maidagin, and about ₹21.21 crore to revitalise heritage corridors in the old city with streetscape and façade work. Both have a 36-month implementation period; construction had not started as of early October 2026.",
     "bestTime": "—",
     "image": "/media/projects/heritage-corridors.jpg",
     "status": "announced",
     "agency": "Varanasi Development Authority (heritage corridors) · KIPRF and Varanasi Smart City (parks) · funded by BPCL CSR",
-    "timeline": "Announced September 2026 · work yet to start",
+    "timeline": "MoUs signed September 2026 · 36-month implementation period · work yet to start",
     "verified": true,
-    "lastVerified": "2026-09-25",
+    "lastVerified": "2026-10-07",
     "sources": [
       {
         "title": "Amar Ujala — बदल रही काशी की तस्वीर: सारनाथ-मैदागिन में बनेंगे फूड स्ट्रीट हब, संवरेंगे 119 पार्क (8 Sep 2026)",
         "url": "https://www.amarujala.com/uttar-pradesh/varanasi/food-street-hubs-to-be-developed-in-sarnath-and-maidagin-119-parks-to-be-revamped-in-varanasi-2026-09-08",
         "accessed": "2026-09-25"
+      },
+      {
+        "title": "PSUWatch — CSR Watch: BPCL to spend Rs 69.21 crore for redevelopment of 119 parks and heritage corridors in Varanasi",
+        "url": "https://psuwatch.com/csrwatch/csr-watch-bpcl-to-spend-rs-6921-crore-for-redevelopment-of-119-parks-and-heritage-corridors-in-varanasi",
+        "accessed": "2026-10-07"
       },
       {
         "title": "DD India (Prasar Bharati) — BPCL to spend Rs 69.21 crore on Varanasi parks, food hubs and heritage routes (8 Sep 2026)",
@@ -478,9 +498,9 @@
     ],
     "i18n": {
       "hi": {
-        "summary": "सितंबर 2026 में घोषित: पुराने शहर के धरोहर गलियारों के कायाकल्प और 119 नगरपालिका पार्कों के नवीनीकरण के लिए लगभग ₹69 करोड़, रोशनी, हरियाली और बैठने की व्यवस्था के साथ।",
+        "summary": "सितंबर 2026 में घोषित: बीपीसीएल सीएसआर के दो समझौते, कुल ₹69.21 करोड़ — लगभग ₹48 करोड़ 119 नगरपालिका पार्कों के नवीनीकरण और सारनाथ-मैदागिन में फ़ूड स्ट्रीट हब हेतु, और लगभग ₹21.21 करोड़ पुराने शहर के धरोहर गलियारों की सड़कों व अग्रभाग के सुधार हेतु। दोनों की कार्यान्वयन अवधि 36 महीने है; अक्टूबर 2026 की शुरुआत तक निर्माण शुरू नहीं हुआ था।",
         "agency": "वाराणसी विकास प्राधिकरण (विरासत गलियारे) · KIPRF व वाराणसी स्मार्ट सिटी (पार्क) · बीपीसीएल सीएसआर निधि से",
-        "timeline": "घोषित सितंबर 2026 · काम अभी शुरू नहीं"
+        "timeline": "समझौते सितंबर 2026 में हस्ताक्षरित · 36 महीने की कार्यान्वयन अवधि · काम अभी शुरू नहीं"
       }
     }
   },
@@ -499,7 +519,7 @@
     "agency": "National Highways Authority of India (NHAI) · Ministry of Road Transport and Highways",
     "timeline": "Cabinet approval July 2026 · Construction yet to start",
     "verified": true,
-    "lastVerified": "2026-09-25",
+    "lastVerified": "2026-10-07",
     "sources": [
       {
         "title": "Business Standard — Cabinet approves ₹25,445 crore road corridor projects for Varanasi",
