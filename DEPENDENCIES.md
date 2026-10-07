@@ -59,3 +59,8 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 
 - No marker-cluster plugin yet. DESIGN.md asks for clustering at low zoom; Phase 4 will either implement a small grid cluster in-house or ask before adding `leaflet.markercluster`.
 - No Lottie runtime yet. If Phase 2's mobile hero fallback needs Lottie, it will be raised then; a static image/video fallback needs nothing extra.
+
+## 2026-10-07 — Dependabot
+- `wrangler` 4.140.0 → **4.146.0** (dev; Dependabot PR #13), pulling `undici` ≥ 7.29.1 and clearing the ten undici advisories GitHub had open against the lockfile. `npm run build`, `npm run lint` and the deploy passed on the bumped version.
+- `sharp` 0.35.4 → **0.35.5** (dev; GHSA-wq5f-xc86-pv6w, librsvg) and `source-map-js` 1.2.1 → **1.2.2** (transitive via postcss; event-loop DoS). `overrides.sharp = "^0.35.5"` in package.json forces miniflare's nested copy onto the patched release too.
+- Still reported by `npm audit`, deliberately left: `braces` (dev-only, via eslint-config-next → fast-glob; the only "fix" downgrades eslint-config-next to 14.x). `npm run build`, `npm run lint` and the deploy pass.
