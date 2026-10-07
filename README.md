@@ -101,6 +101,9 @@ To keep this current without manual edits the site rebuilds weekly: `worker.js` 
 
 Each year, add the next year's dates (with sources) to `content/festival-dates.json`; anything missing falls back to "expected <month>".
 
+### Old-site URLs
+The previous kashidwar.com (Astro, branch `master`) used `/ghats/<slug>/`, `/mandir/<slug>/`, `/khana/`, `/map/`, `/tips/`, `/contact/`, `/privacy/`. `next.config.ts` (`LEGACY`) redirects each permanently (308) to its `/en` page, or to the places explorer with a filter (`/en#places/ghats`) when no page exists. Add a line there if Search Console shows another old URL with impressions (`scripts/gsc-report.py`).
+
 ### Indexing a locale
 Only the locales in `INDEXED_LOCALES` (`lib/seo.ts`, currently `["hi", "en"]`) are indexable. Pages in the other 11 locales carry `<meta name="robots" content="noindex, follow">`, have no hreflang links, and are left out of `sitemap.xml` and `sitemap-images.xml`; hreflang is exchanged only between indexed locales, with x-default → `/en`.
 
