@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "date": "2026-10-07",
+    "kind": "Weekly",
+    "focus": "projects",
+    "model": "claude-sonnet-5",
+    "turns": 41,
+    "costUsd": 1.93,
+    "result": "error_max_turns",
+    "run": "https://github.com/sandeep1806/kashidwar/actions/runs/37658876822"
+  }
+]

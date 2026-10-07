@@ -82,3 +82,6 @@ Fonts load per script via `lib/fonts.ts`. Language names in the switcher and foo
 ## Added 2026-09-27 (QA pass)
 - `common.seeAll` ("See all") and `common.showAllCount` ("Show all {count}") in all 13 locales, written without a native reviewer. Check the plural/counter forms in bn (টি), as (টা) and ml (എണ്ണവും).
 - `places.filters.hindu` reuses each locale's existing `places.faiths.hindu`.
+
+## Added 2026-10-07 (weekly content review — projects)
+- `content/projects.json`: English and Hindi `summary`/`timeline` rewritten for `varanasi-ropeway`, `ganjari-cricket-stadium` and `heritage-corridors-parks`; `lastVerified` moved for seven entries. Projects carry Hindi prose only (no `i18n.<locale>` blocks for the other 11 locales), so there is nothing further to translate; regional photo alt text (`content/i18n/alt-*.json`) is unchanged.
