@@ -136,7 +136,11 @@
     "approxCoords": "অৱস্থান আনুমানিক",
     "cluster": "{count}টা ঠাই — জুম কৰিবলৈ ক্লিক কৰক",
     "share": "শ্বেয়াৰ কৰক",
-    "linkCopied": "লিংক কপি হ'ল"
+    "linkCopied": "লিংক কপি হ'ল",
+    "ghatsTitle": "বাৰাণসীৰ ঘাট",
+    "templesTitle": "বাৰাণসীৰ মন্দিৰ",
+    "allGhats": "সকলো ঘাট",
+    "allTemples": "সকলো মন্দিৰ"
   },
   "faiths": {
     "title": "এক কাশী, প্ৰতিটো বিশ্বাস",

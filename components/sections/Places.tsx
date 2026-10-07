@@ -42,6 +42,12 @@ export default async function Places({ locale }: { locale: Locale }) {
           </Static>
         }
       />
+      <Static>
+        <p className="container-kashi mt-10 flex flex-wrap justify-center gap-3 text-center">
+          <a href={`/${locale}/ghats`} className="inline-flex min-h-11 items-center gap-2 rounded-full border border-kashi-diya/40 px-5 text-sm text-kashi-diya transition-colors hover:border-kashi-marigold hover:text-kashi-marigold">{t("allGhats")} <span aria-hidden="true">→</span></a>
+          <a href={`/${locale}/temples`} className="inline-flex min-h-11 items-center gap-2 rounded-full border border-kashi-diya/40 px-5 text-sm text-kashi-diya transition-colors hover:border-kashi-marigold hover:text-kashi-marigold">{t("allTemples")} <span aria-hidden="true">→</span></a>
+        </p>
+      </Static>
     </section>
   );
 }

@@ -136,7 +136,13 @@
     "approxCoords": "Location approximate",
     "cluster": "{count} places — click to zoom",
     "share": "Share",
-    "linkCopied": "Link copied"
+    "linkCopied": "Link copied",
+    "ghatsTitle": "Ghats of Varanasi",
+    "templesTitle": "Temples of Varanasi",
+    "ghatsIntro": "The riverfront steps of Kashi, from Assi in the south to Panchganga in the north: where the city bathes, prays, cremates its dead and lights its lamps. Each ghat has its own story.",
+    "templesIntro": "Kashi Vishwanath and the shrines around it, the goddess temples, the Hanuman temples of Tulsidas's quarter and the newer temples of the twentieth century. Timings, legends and how to reach each one.",
+    "allGhats": "All ghats",
+    "allTemples": "All temples"
   },
   "faiths": {
     "title": "One Kashi, every faith",

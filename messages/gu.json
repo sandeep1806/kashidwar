@@ -136,7 +136,11 @@
     "approxCoords": "સ્થાન અંદાજિત",
     "cluster": "{count} સ્થળો — ઝૂમ કરવા ક્લિક કરો",
     "share": "શેર કરો",
-    "linkCopied": "લિંક કૉપિ થઈ"
+    "linkCopied": "લિંક કૉપિ થઈ",
+    "ghatsTitle": "વારાણસીના ઘાટ",
+    "templesTitle": "વારાણસીનાં મંદિરો",
+    "allGhats": "બધા ઘાટ",
+    "allTemples": "બધાં મંદિરો"
   },
   "faiths": {
     "title": "એક કાશી, દરેક શ્રદ્ધા",

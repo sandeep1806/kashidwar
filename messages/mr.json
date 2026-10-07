@@ -136,7 +136,11 @@
     "approxCoords": "स्थान अंदाजे",
     "cluster": "{count} स्थळे — झूम करण्यासाठी क्लिक करा",
     "share": "शेअर करा",
-    "linkCopied": "लिंक कॉपी झाली"
+    "linkCopied": "लिंक कॉपी झाली",
+    "ghatsTitle": "वाराणसीचे घाट",
+    "templesTitle": "वाराणसीची मंदिरे",
+    "allGhats": "सर्व घाट",
+    "allTemples": "सर्व मंदिरे"
   },
   "faiths": {
     "title": "एक काशी, प्रत्येक श्रद्धा",

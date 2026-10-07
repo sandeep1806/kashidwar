@@ -85,3 +85,7 @@ Fonts load per script via `lib/fonts.ts`. Language names in the switcher and foo
 
 ## Added 2026-10-07 (weekly content review — projects)
 - `content/projects.json`: English and Hindi `summary`/`timeline` rewritten for `varanasi-ropeway`, `ganjari-cricket-stadium` and `heritage-corridors-parks`; `lastVerified` moved for seven entries. Projects carry Hindi prose only (no `i18n.<locale>` blocks for the other 11 locales), so there is nothing further to translate; regional photo alt text (`content/i18n/alt-*.json`) is unchanged.
+
+## Added 2026-10-07 (nine new places, two listing pages)
+- `content/places.json`: new entries `chet-singh-ghat`, `tulsi-ghat`, `scindia-ghat`, `lalita-ghat`, `harishchandra-ghat`, `kedar-ghat`, `man-mandir-ghat`, `darbhanga-ghat`, `annapurna-mandir` have English and Hindi prose only. The 11 regional locales (`content/i18n/<locale>.json` → `places.<id>.summary`) need summaries; until then they show English with the note. Hindi terms to check: स्वयंभू, अन्नक्षेत्र, श्मशान (used plainly, no euphemism), ध्रुपद मेला.
+- `messages/<locale>.json` → `places.ghatsTitle`, `places.templesTitle`, `places.allGhats`, `places.allTemples` written without a native reviewer in all 11 regional locales (`ghatsIntro`/`templesIntro` exist in en and hi only and fall back to English elsewhere). Tamil uses படித்துறை for ghat; Telugu/Kannada/Malayalam transliterate ఘాట్/ಘಾಟ್/ഘാട്ട് — confirm the preferred regional word.

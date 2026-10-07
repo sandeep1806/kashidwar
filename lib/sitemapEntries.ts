@@ -1,5 +1,6 @@
 import photos from "@/content/photos.json";
 import { guidePhoto, guides } from "@/lib/guides";
+import { places } from "@/lib/content";
 import { SLUGS, type Kind } from "@/lib/pages";
 
 export interface SitemapPage {
@@ -34,6 +35,12 @@ export function sitemapPages(): SitemapPage[] {
     changeFrequency: g === "food" ? "monthly" : "weekly",
     photoKeys: group(g),
   }));
+  // Place listings by type (ghats, temples): the photos of the places they list.
+  const typed = (type: "ghat" | "temple") => places.filter((pl) => pl.type === type).flatMap((pl) => kindPhoto("places", pl.id));
+  listings.push(
+    { path: "/ghats", priority: 0.8, changeFrequency: "monthly", photoKeys: typed("ghat") },
+    { path: "/temples", priority: 0.8, changeFrequency: "monthly", photoKeys: typed("temple") },
+  );
   const photoKey = (g: (typeof guides)[number]) => {
     const p = guidePhoto(g, "en");
     return p ? [p.src.replace("/media/photos/", "")] : [];

@@ -136,7 +136,11 @@
     "approxCoords": "অবস্থান আনুমানিক",
     "cluster": "{count}টি স্থান — জুম করতে ক্লিক করুন",
     "share": "শেয়ার করুন",
-    "linkCopied": "লিংক কপি হয়েছে"
+    "linkCopied": "লিংক কপি হয়েছে",
+    "ghatsTitle": "বারাণসীর ঘাট",
+    "templesTitle": "বারাণসীর মন্দির",
+    "allGhats": "সব ঘাট",
+    "allTemples": "সব মন্দির"
   },
   "faiths": {
     "title": "এক কাশী, প্রতিটি বিশ্বাস",

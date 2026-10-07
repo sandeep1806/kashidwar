@@ -1663,5 +1663,417 @@
         "summary": "నగరానికి నైరుతి దిశలో 23 కి.మీ. దూరంలో గంగా నది వంపుపై ఉన్న ఇసుకరాతి కోట; షేర్ షా సూరీ (1532), హుమాయూన్, అక్బర్, ఈస్ట్ ఇండియా కంపెనీ వరుసగా దీనిని తమ ఆధీనంలో ఉంచుకున్నారు. సోన్వా మండపం, లోతైన బావి, నదిపైన ప్రాకారాలు — ఇవే అక్కడికి వెళ్లడానికి కారణాలు."
       }
     }
+  },
+  {
+    "id": "chet-singh-ghat",
+    "name_en": "Chet Singh Ghat",
+    "name_hi": "चेत सिंह घाट",
+    "faith": [
+      "hindu"
+    ],
+    "type": "ghat",
+    "lat": 25.2952,
+    "lng": 83.0071,
+    "coordsVerified": true,
+    "summary": "A small sandstone fort rises straight from the steps: the riverside palace of Raja Chet Singh of Banaras. In August 1781 the Governor-General Warren Hastings tried to arrest him here, the city rose, and the Raja escaped down the wall to a boat. The uprising was crushed within weeks, but the fort still stands on the quiet stretch between Assi and Harishchandra ghats.",
+    "bestTime": "Late afternoon, when low light warms the fort walls; walk on to Assi for sunset",
+    "image": "/media/places/chet-singh-ghat.jpg",
+    "tips": [
+      "Ten minutes on foot north of Assi Ghat; from a boat, the round bastions are easy to pick out.",
+      "The ghat was called Shivala Ghat before it took the Raja's name; the Shivala temple quarter is just behind it."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Ghats in Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "Wikipedia — Chait Singh (Raja of Benares)",
+        "url": "https://en.wikipedia.org/wiki/Chait_Singh",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "OpenStreetMap — Chet Singh Ghat (coordinates)",
+        "url": "https://www.openstreetmap.org/search?query=Chet%20Singh%20Ghat%20Varanasi",
+        "accessed": "2026-10-07"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "सीढ़ियों से सीधे उठता बलुआ पत्थर का एक छोटा किला: बनारस के राजा चेत सिंह का नदी-किनारे का महल। अगस्त 1781 में गवर्नर-जनरल वॉरेन हेस्टिंग्स ने उन्हें यहीं बंदी बनाना चाहा, शहर उठ खड़ा हुआ और राजा दीवार से उतरकर नाव से निकल गए। विद्रोह कुछ ही हफ़्तों में कुचल दिया गया, पर किला आज भी अस्सी और हरिश्चंद्र घाट के बीच के शांत हिस्से पर खड़ा है।",
+        "bestTime": "देर दोपहर, जब ढलती रोशनी किले की दीवारों को गर्माती है; सूर्यास्त के लिए आगे अस्सी तक चलें",
+        "tips": [
+          "अस्सी घाट से उत्तर की ओर पैदल दस मिनट; नाव से गोल बुर्ज आसानी से पहचाने जाते हैं।",
+          "राजा का नाम पाने से पहले यह शिवाला घाट कहलाता था; शिवाला मंदिर मोहल्ला ठीक पीछे है।"
+        ]
+      }
+    }
+  },
+  {
+    "id": "tulsi-ghat",
+    "name_en": "Tulsi Ghat",
+    "name_hi": "तुलसी घाट",
+    "faith": [
+      "hindu",
+      "bhakti"
+    ],
+    "type": "ghat",
+    "lat": 25.2902,
+    "lng": 83.0063,
+    "coordsVerified": true,
+    "summary": "Just north of Assi, the ghat where Goswami Tulsidas lived his last years and died in 1623, having given north India the Ramcharitmanas in the people's Awadhi. His house above the steps keeps his wooden sandals and a Hanuman shrine. Each Kartik the Nag Nathaiya leela he began is still staged from these steps, and the Dhrupad Mela fills the ghat with music every spring.",
+    "bestTime": "Kartik (October–November) for Nag Nathaiya; early mornings the rest of the year, when the akhada wrestlers train",
+    "image": "/media/places/tulsi-ghat.jpg",
+    "tips": [
+      "Five minutes' walk north along the river from Assi Ghat.",
+      "The Sankat Mochan temple, which Tulsidas is said to have founded, and the Tulsi Manas temple are a short ride inland."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Tulsi Ghat",
+        "url": "https://en.wikipedia.org/wiki/Tulsi_Ghat",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "Wikipedia — Ghats in Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "OpenStreetMap — Tulsi Ghat (coordinates)",
+        "url": "https://www.openstreetmap.org/search?query=Tulsi%20Ghat%20Varanasi",
+        "accessed": "2026-10-07"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "अस्सी के ठीक उत्तर में वह घाट जहाँ गोस्वामी तुलसीदास ने अंतिम वर्ष बिताए और 1623 में देह त्यागी — उत्तर भारत को जनभाषा अवधी में रामचरितमानस देकर। सीढ़ियों के ऊपर उनका घर उनकी खड़ाऊँ और एक हनुमान मंदिर सँजोए है। हर कार्तिक में उनकी शुरू की हुई नाग नथैया लीला इन्हीं सीढ़ियों से खेली जाती है, और हर वसंत ध्रुपद मेला घाट को संगीत से भर देता है।",
+        "bestTime": "नाग नथैया के लिए कार्तिक (अक्टूबर–नवंबर); बाकी साल भोर में, जब अखाड़े के पहलवान अभ्यास करते हैं",
+        "tips": [
+          "अस्सी घाट से नदी के किनारे उत्तर की ओर पाँच मिनट पैदल।",
+          "संकट मोचन मंदिर, जिसकी स्थापना तुलसीदास ने की मानी जाती है, और तुलसी मानस मंदिर थोड़ी दूर भीतर हैं।"
+        ]
+      }
+    }
+  },
+  {
+    "id": "scindia-ghat",
+    "name_en": "Scindia Ghat",
+    "name_hi": "सिंधिया घाट",
+    "faith": [
+      "hindu"
+    ],
+    "type": "ghat",
+    "lat": 25.312,
+    "lng": 83.0154,
+    "coordsVerified": true,
+    "summary": "Rebuilt around 1830 by the Scindias of Gwalior, the ghat proved too heavy for the soft bank and part of it slid into the river. The result is the most photographed temple in Kashi: Ratneshwar Mahadev, leaning at the water's edge and standing in the Ganga for much of the year. The lanes above are the Siddha Kshetra, where tradition places the birth of Agni, the god of fire.",
+    "bestTime": "Dawn from a boat; winter, when low water shows more of the leaning temple",
+    "image": "/media/places/scindia-ghat.jpg",
+    "tips": [
+      "Directly north of Manikarnika Ghat; every Dashashwamedh–Panchganga boat ride passes it.",
+      "On foot, allow fifteen minutes through the lanes from Dashashwamedh."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Scindia Ghat",
+        "url": "https://en.wikipedia.org/wiki/Scindia_Ghat",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "Wikipedia — Ghats in Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "OpenStreetMap — Scindia Ghat (coordinates)",
+        "url": "https://www.openstreetmap.org/search?query=Scindia%20Ghat%20Varanasi",
+        "accessed": "2026-10-07"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "1830 के आसपास ग्वालियर के सिंधिया राजवंश द्वारा फिर से बनवाया गया यह घाट नरम किनारे के लिए भारी पड़ा और इसका एक हिस्सा नदी में धँस गया। नतीजा काशी का सबसे अधिक छायाचित्रित मंदिर है: पानी के किनारे झुका रत्नेश्वर महादेव, जो साल के बड़े हिस्से में गंगा में खड़ा रहता है। ऊपर की गलियाँ सिद्ध क्षेत्र हैं, जहाँ परंपरा अग्निदेव का जन्म मानती है।",
+        "bestTime": "नाव से भोर में; सर्दियों में, जब कम पानी झुके मंदिर का अधिक हिस्सा दिखाता है",
+        "tips": [
+          "मणिकर्णिका घाट के ठीक उत्तर; दशाश्वमेध–पंचगंगा की हर नाव इसके सामने से गुज़रती है।",
+          "पैदल दशाश्वमेध से गलियों में होकर लगभग पंद्रह मिनट।"
+        ]
+      }
+    }
+  },
+  {
+    "id": "lalita-ghat",
+    "name_en": "Lalita Ghat",
+    "name_hi": "ललिता घाट",
+    "faith": [
+      "hindu"
+    ],
+    "type": "ghat",
+    "lat": 25.3096,
+    "lng": 83.0128,
+    "coordsVerified": true,
+    "summary": "Nepal's gift to the riverfront. King Rana Bahadur Shah, living in exile here around 1800, began a copy of Kathmandu's Pashupatinath above the steps; his son finished it, and the carved-wood Nepali Mandir still stands between Dashashwamedh and Manikarnika. The ghat is named for Lalita Devi, whose shrine here is one of the city's shakti sites, and it is now the river entrance to the Kashi Vishwanath Dham corridor.",
+    "bestTime": "Early morning, for the temple woodwork in soft light and before the corridor crowds",
+    "image": "/media/places/lalita-ghat.jpg",
+    "tips": [
+      "A short walk north along the river from Dashashwamedh Ghat.",
+      "The Vishwanath Dham gates open from the ghat; shoes and phones follow the temple's rules from here."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Lalita Ghat",
+        "url": "https://en.wikipedia.org/wiki/Lalita_Ghat",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "Wikipedia — Ghats in Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "OpenStreetMap — Lalita Ghat (coordinates)",
+        "url": "https://www.openstreetmap.org/search?query=Lalita%20Ghat%20Varanasi",
+        "accessed": "2026-10-07"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "नदी-तट को नेपाल का उपहार। 1800 के आसपास यहाँ निर्वासन में रह रहे राजा रण बहादुर शाह ने सीढ़ियों के ऊपर काठमांडू के पशुपतिनाथ की प्रतिकृति शुरू की; उनके पुत्र ने उसे पूरा किया, और नक़्क़ाशीदार लकड़ी का नेपाली मंदिर आज भी दशाश्वमेध और मणिकर्णिका के बीच खड़ा है। घाट का नाम ललिता देवी पर है, जिनका यहाँ का मंदिर नगर के शक्ति स्थलों में गिना जाता है; अब यह काशी विश्वनाथ धाम गलियारे का नदी की ओर का प्रवेश द्वार भी है।",
+        "bestTime": "सुबह जल्दी — मंदिर की काष्ठकला कोमल रोशनी में, और गलियारे की भीड़ से पहले",
+        "tips": [
+          "दशाश्वमेध घाट से नदी के किनारे उत्तर की ओर थोड़ी दूर पैदल।",
+          "विश्वनाथ धाम के द्वार घाट से खुलते हैं; यहीं से जूते और फ़ोन के मंदिर-नियम लागू हैं।"
+        ]
+      }
+    }
+  },
+  {
+    "id": "harishchandra-ghat",
+    "name_en": "Harishchandra Ghat",
+    "name_hi": "हरिश्चंद्र घाट",
+    "faith": [
+      "hindu"
+    ],
+    "type": "ghat",
+    "lat": 25.2983,
+    "lng": 83.0071,
+    "coordsVerified": true,
+    "summary": "Kashi's second cremation ground, on the southern riverfront between Kedar and Assi ghats, and by some accounts the older of the two. It carries the legend of Raja Harishchandra, the king who kept his word through the loss of kingdom, family and freedom, and served here as keeper of the burning ground until the gods relented. An electric crematorium was added in the 1980s; wood pyres continue beside it.",
+    "bestTime": "Seen from a boat in early morning light; the steps are not a place to linger or photograph",
+    "image": "/media/places/harishchandra-ghat.jpg",
+    "tips": [
+      "Please do not photograph the rites or the mourners; the river view from a passing boat is the respectful way to see it.",
+      "Ten minutes' walk north from Assi Ghat, or a short ride from the Sonarpura crossing."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Ghats in Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "Outlook — Nadir of the Styx (the electric crematorium at Harishchandra Ghat)",
+        "url": "https://www.outlookindia.com/society/nadir-of-the-styx-news-277358",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "OpenStreetMap — Harishchandra Ghat (coordinates)",
+        "url": "https://www.openstreetmap.org/search?query=Harishchandra%20Ghat%20Varanasi",
+        "accessed": "2026-10-07"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "काशी का दूसरा श्मशान घाट, दक्षिणी तट पर केदार और अस्सी घाट के बीच, और कुछ परंपराओं में दोनों में पुराना। इससे राजा हरिश्चंद्र की कथा जुड़ी है — वह राजा जिसने राज्य, परिवार और स्वतंत्रता खोकर भी वचन निभाया और यहीं श्मशान के रखवाले के रूप में सेवा की, जब तक देवता पिघल न गए। 1980 के दशक में यहाँ विद्युत शवदाह गृह जुड़ा; उसके बग़ल में लकड़ी की चिताएँ आज भी जलती हैं।",
+        "bestTime": "भोर की रोशनी में नाव से देखें; सीढ़ियाँ रुकने या तस्वीरें लेने की जगह नहीं हैं",
+        "tips": [
+          "कृपया अंतिम संस्कार या शोकाकुल परिजनों की तस्वीरें न लें; गुज़रती नाव से नदी का दृश्य ही इसे देखने का सम्मानजनक तरीक़ा है।",
+          "अस्सी घाट से उत्तर की ओर पैदल दस मिनट, या सोनारपुरा चौराहे से थोड़ी दूरी।"
+        ]
+      }
+    }
+  },
+  {
+    "id": "kedar-ghat",
+    "name_en": "Kedar Ghat",
+    "name_hi": "केदार घाट",
+    "faith": [
+      "hindu"
+    ],
+    "type": "ghat",
+    "lat": 25.299,
+    "lng": 83.0072,
+    "coordsVerified": true,
+    "summary": "Red-and-white stripes climbing from the water mark the most South Indian corner of Kashi. The Gauri Kedareshwar temple above the steps is the presiding shrine of the Kedar Khand, the southern of the city's three sacred divisions, and its rough, self-manifested linga is honoured as Kashi's own Kedarnath. Tamil, Telugu and Bengali families have lived in these lanes for generations, and the steps fill early with bathers.",
+    "bestTime": "Early morning (about 5:30–8 am) for the bathing and rituals; Shravan Mondays and Mahashivratri are the ghat's great days",
+    "image": "/media/places/kedar-ghat.jpg",
+    "tips": [
+      "Midway between Dashashwamedh and Assi; about fifteen minutes' walk south from Godowlia via Sonarpura.",
+      "Khichdi is the traditional offering at Kedareshwar, recalling the legend of the linga's appearance."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Ghats in Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "Wikipedia — Kashi Khanda (the three khands of Kashi)",
+        "url": "https://en.wikipedia.org/wiki/Kashi_Khanda",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "OpenStreetMap — Kedar Ghat (coordinates)",
+        "url": "https://www.openstreetmap.org/search?query=Kedar%20Ghat%20Varanasi",
+        "accessed": "2026-10-07"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "पानी से ऊपर उठती लाल-सफ़ेद धारियाँ काशी के सबसे दक्षिण-भारतीय कोने की पहचान हैं। सीढ़ियों के ऊपर गौरी केदारेश्वर मंदिर नगर के तीन पवित्र खंडों में दक्षिणी केदार खंड का अधिष्ठाता है, और इसका खुरदरा स्वयंभू लिंग काशी का अपना केदारनाथ माना जाता है। तमिल, तेलुगु और बंगाली परिवार पीढ़ियों से इन गलियों में रहते हैं, और सीढ़ियाँ सुबह-सुबह स्नानार्थियों से भर जाती हैं।",
+        "bestTime": "सुबह जल्दी (लगभग 5:30–8 बजे) स्नान और पूजा के लिए; श्रावण के सोमवार और महाशिवरात्रि घाट के बड़े दिन हैं",
+        "tips": [
+          "दशाश्वमेध और अस्सी के बीचोबीच; गोदौलिया से सोनारपुरा होते हुए दक्षिण की ओर लगभग पंद्रह मिनट पैदल।",
+          "केदारेश्वर पर खिचड़ी का पारंपरिक भोग चढ़ता है, जो लिंग के प्रकट होने की कथा की याद दिलाता है।"
+        ]
+      }
+    }
+  },
+  {
+    "id": "man-mandir-ghat",
+    "name_en": "Man Mandir Ghat",
+    "name_hi": "मान मंदिर घाट",
+    "faith": [
+      "hindu",
+      "secular"
+    ],
+    "type": "ghat",
+    "lat": 25.3077,
+    "lng": 83.0107,
+    "coordsVerified": true,
+    "summary": "Raja Man Singh of Amber, Akbar's general, built the palace above this ghat around 1600; its carved stone balcony is among the oldest work on the riverfront. In 1737 his descendant Sawai Jai Singh II of Jaipur added an observatory on the roof, one of his five Jantar Mantars, and its masonry instruments for reading the sun and stars are still in place, two minutes south of Dashashwamedh.",
+    "bestTime": "Morning, when the observatory is open (Archaeological Survey of India ticket, daylight hours)",
+    "image": "/media/places/man-mandir-ghat.jpg",
+    "tips": [
+      "The observatory is listed by the ASI as the Man Singh Observatory; it is rarely crowded.",
+      "Look for the palace's northern balcony from the river; it gives the ghat its profile."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Jantar Mantar, Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Jantar_Mantar,_Varanasi",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "Wikipedia — Ghats in Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+        "accessed": "2026-10-07"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "अकबर के सेनापति, आमेर के राजा मान सिंह ने 1600 के आसपास इस घाट के ऊपर महल बनवाया; इसका नक़्क़ाशीदार पत्थर का झरोखा नदी-तट की सबसे पुरानी कारीगरी में गिना जाता है। 1737 में उनके वंशज जयपुर के सवाई जय सिंह द्वितीय ने छत पर एक वेधशाला जोड़ी — उनके पाँच जंतर-मंतरों में से एक — और सूर्य व तारों को पढ़ने के इसके पत्थर के यंत्र आज भी अपनी जगह हैं, दशाश्वमेध से दक्षिण की ओर दो मिनट पर।",
+        "bestTime": "सुबह, जब वेधशाला खुली हो (भारतीय पुरातत्व सर्वेक्षण का टिकट, दिन के उजाले में)",
+        "tips": [
+          "वेधशाला ASI की सूची में मान सिंह वेधशाला के नाम से है; यहाँ भीड़ कम ही होती है।",
+          "नदी से महल का उत्तरी झरोखा देखें; वही घाट की पहचान है।"
+        ]
+      }
+    }
+  },
+  {
+    "id": "darbhanga-ghat",
+    "name_en": "Darbhanga Ghat",
+    "name_hi": "दरभंगा घाट",
+    "faith": [
+      "hindu",
+      "secular"
+    ],
+    "type": "ghat",
+    "lat": 25.3052,
+    "lng": 83.0095,
+    "coordsVerified": true,
+    "summary": "The most theatrical facade on the riverfront: a cliff of pale Chunar sandstone with tall Greek-style columns, domed chhatris and stacked balconies. The palace was built in 1812 by Shridhara Narayana Munshi, a minister of the Nagpur estate, and bought in 1915 by Maharaja Rameshwar Singh of Darbhanga, whose name the ghat took. After an eighteen-year restoration it reopened as the Brijrama Palace heritage hotel.",
+    "bestTime": "Golden hour, when the columns glow; dawn for empty steps and still water",
+    "image": "/media/places/darbhanga-ghat.jpg",
+    "tips": [
+      "Five minutes' walk south of Dashashwamedh past Munshi and Rana Mahal ghats; every Assi–Manikarnika boat passes it.",
+      "The Darbhanga rajas were patrons of Dhrupad; the Dhrupad Mela is still held each spring at Tulsi Ghat."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Munshi Ghat (the 1812 palace and its 1915 purchase by Darbhanga)",
+        "url": "https://en.wikipedia.org/wiki/Munshi_Ghat",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "Outlook Traveller — Experience the royal heritage of Brijrama Palace",
+        "url": "https://www.outlooktraveller.com/stay/experience-royal-heritage-brijrama-palace",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "OpenStreetMap — Darbhanga Ghat (coordinates)",
+        "url": "https://www.openstreetmap.org/search?query=Darbhanga%20Ghat%20Varanasi",
+        "accessed": "2026-10-07"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "नदी-तट का सबसे नाटकीय अग्रभाग: चुनार के हल्के बलुआ पत्थर की चट्टान-सी दीवार, ऊँचे यूनानी शैली के स्तंभ, गुंबददार छतरियाँ और तह-दर-तह झरोखे। महल 1812 में नागपुर रियासत के मंत्री श्रीधर नारायण मुंशी ने बनवाया और 1915 में दरभंगा के महाराजा रामेश्वर सिंह ने ख़रीदा, जिनका नाम घाट को मिला। अठारह साल के जीर्णोद्धार के बाद यह बृजरामा पैलेस हेरिटेज होटल के रूप में फिर खुला।",
+        "bestTime": "सुनहरी शाम, जब स्तंभ दमकते हैं; ख़ाली सीढ़ियों और शांत पानी के लिए भोर",
+        "tips": [
+          "दशाश्वमेध से दक्षिण की ओर मुंशी और राणा महल घाट पार करते हुए पाँच मिनट पैदल; अस्सी–मणिकर्णिका की हर नाव इसके सामने से गुज़रती है।",
+          "दरभंगा के राजा ध्रुपद के संरक्षक थे; ध्रुपद मेला आज भी हर वसंत तुलसी घाट पर होता है।"
+        ]
+      }
+    }
+  },
+  {
+    "id": "annapurna-mandir",
+    "name_en": "Annapurna Devi Mandir",
+    "name_hi": "अन्नपूर्णा देवी मंदिर",
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.3106,
+    "lng": 83.0102,
+    "coordsVerified": true,
+    "summary": "A few steps from Kashi Vishwanath stands the temple of Annapurna, Parvati as the goddess of food and, in the city's telling, the queen of Kashi. The story has Shiva himself coming to her with a begging bowl after declaring food an illusion. Peshwa Baji Rao I built the present temple in 1729. Its free kitchen feeds pilgrims daily; the golden image of the goddess is shown only around Annakut, the day after Diwali.",
+    "bestTime": "Annakut (the day after Diwali) for the golden darshan; otherwise early morning, straight after Vishwanath",
+    "image": "/media/places/annapurna-mandir.jpg",
+    "tips": [
+      "Pilgrims take darshan at Vishwanath first and Annapurna immediately after; the same no-phone rules apply.",
+      "An 18th-century Annapurna image, taken from Varanasi in 1913 and returned by Canada's University of Regina, was installed in the Vishwanath Dham in November 2021."
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia — Annapurna Devi Mandir",
+        "url": "https://en.wikipedia.org/wiki/Annapurna_Devi_Mandir",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "MacKenzie Art Gallery / University of Regina — Stolen statue of Hindu goddess makes long-awaited journey home",
+        "url": "https://mackenzie.art/stolen-statue-of-hindu-goddess-makes-long-awaited-journey-home-after-over-100-years/",
+        "accessed": "2026-10-07"
+      },
+      {
+        "title": "OpenStreetMap — Annapurna Temple (coordinates)",
+        "url": "https://www.openstreetmap.org/search?query=Annapurna%20Temple%20Varanasi",
+        "accessed": "2026-10-07"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "काशी विश्वनाथ से कुछ ही क़दम पर अन्नपूर्णा का मंदिर है — अन्न की देवी के रूप में पार्वती, और नगर की कथा में काशी की रानी। कहते हैं, भोजन को माया कहने के बाद स्वयं शिव भिक्षापात्र लेकर उनके द्वार आए। वर्तमान मंदिर पेशवा बाजीराव प्रथम ने 1729 में बनवाया। इसका अन्नक्षेत्र रोज़ तीर्थयात्रियों को भोजन कराता है; देवी की स्वर्ण प्रतिमा के दर्शन केवल अन्नकूट — दीपावली के अगले दिन — के आसपास होते हैं।",
+        "bestTime": "स्वर्ण दर्शन के लिए अन्नकूट (दीपावली का अगला दिन); अन्यथा सुबह जल्दी, विश्वनाथ दर्शन के ठीक बाद",
+        "tips": [
+          "तीर्थयात्री पहले विश्वनाथ और उसके तुरंत बाद अन्नपूर्णा के दर्शन करते हैं; फ़ोन न ले जाने के वही नियम यहाँ भी हैं।",
+          "1913 में वाराणसी से ले जाई गई 18वीं सदी की अन्नपूर्णा प्रतिमा, जिसे कनाडा के रेजाइना विश्वविद्यालय ने लौटाया, नवंबर 2021 में विश्वनाथ धाम में स्थापित हुई।"
+        ]
+      }
+    }
   }
 ]

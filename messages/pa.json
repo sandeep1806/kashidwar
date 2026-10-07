@@ -136,7 +136,11 @@
     "approxCoords": "ਟਿਕਾਣਾ ਅੰਦਾਜ਼ਨ",
     "cluster": "{count} ਥਾਵਾਂ — ਜ਼ੂਮ ਕਰਨ ਲਈ ਕਲਿੱਕ ਕਰੋ",
     "share": "ਸਾਂਝਾ ਕਰੋ",
-    "linkCopied": "ਲਿੰਕ ਕਾਪੀ ਹੋਇਆ"
+    "linkCopied": "ਲਿੰਕ ਕਾਪੀ ਹੋਇਆ",
+    "ghatsTitle": "ਵਾਰਾਣਸੀ ਦੇ ਘਾਟ",
+    "templesTitle": "ਵਾਰਾਣਸੀ ਦੇ ਮੰਦਰ",
+    "allGhats": "ਸਾਰੇ ਘਾਟ",
+    "allTemples": "ਸਾਰੇ ਮੰਦਰ"
   },
   "faiths": {
     "title": "ਇੱਕ ਕਾਸ਼ੀ, ਹਰ ਧਰਮ",

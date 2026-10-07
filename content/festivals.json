@@ -371,7 +371,9 @@
       11
     ],
     "where": "Tulsi Ghat",
-    "placeIds": [],
+    "placeIds": [
+      "tulsi-ghat"
+    ],
     "summary": "A boy dressed as Krishna leaps from a kadamba branch into the Ganga to subdue the serpent Kaliya, and rises standing on its hood playing the flute. Tulsidas began the lila at Tulsi Ghat; the whole riverfront watches from boats.",
     "image": "/media/festivals/nag-nathaiya.jpg",
     "sources": [
