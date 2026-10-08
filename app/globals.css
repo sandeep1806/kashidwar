@@ -59,7 +59,12 @@
   --font-body-active: var(--font-body-latin, system-ui), system-ui, sans-serif;
 }
 :root[data-script="devanagari"] {
-  --font-display-active: var(--font-display-latin, Georgia), var(--font-display-deva, serif), var(--font-regional, serif), serif;
+  /* No --font-regional here: that variable is defined only when the deferred
+     body fonts land (DeferredFonts), and a heading whose stack changes after
+     first paint is re-recorded as a later, larger LCP. The hero H1 must keep
+     the face it first painted with (Tiro/Cormorant via display: optional, or
+     the serif fallback). */
+  --font-display-active: var(--font-display-latin, Georgia), var(--font-display-deva, serif), serif;
   --font-body-active: var(--font-regional, system-ui), var(--font-body-latin, system-ui), system-ui, sans-serif;
 }
 :root:not([data-script="latin"]):not([data-script="devanagari"]) {
