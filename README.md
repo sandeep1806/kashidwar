@@ -31,7 +31,7 @@ app/sitemap.ts       app/robots.ts   app/icon.svg
 components/hero/     SVG fallback + lazy R3F scene (Water, Diyas, Rig)
 components/sections/ DayInKashi, Places, Faiths, Projects, Festivals, Food, Itineraries, Practical, AartiFinale
 components/motion/   SmoothScroll (GSAP + Lenis provider), SunriseBackground, Reveal, StaggerCards, RippleWipe, TextReveal, IncenseCursor
-components/ui/       PlaceCard, Modal, KashiMap, FaithGlyph, DiyaGlyph, LanguageSwitcher, SoundToggle, PageLoader, SectionHeading, JsonLd
+components/ui/       PlaceCard, Modal, KashiMap, FaithGlyph, DiyaGlyph, LanguageSwitcher, SoundToggle, SectionHeading, JsonLd
 content/             places.json, projects.json, faiths.json, festivals.json, food.json, itineraries.json,
                      photos.json + credits.json (generated), i18n/ (regional prose and photo alt text)
 messages/            <locale>.json — every UI string

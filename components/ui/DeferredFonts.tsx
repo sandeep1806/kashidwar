@@ -24,7 +24,13 @@ export default function DeferredFonts({ classes, fonts, sample }: { classes: str
       const text = `Kashi काशी ${sample}`;
       Promise.all(fonts.map((f) => document.fonts.load(f, text).catch(() => [])))
         .then(() => {
-          if (!cancelled) document.documentElement.classList.add(...list);
+          if (cancelled) return;
+          document.documentElement.classList.add(...list);
+          try {
+            sessionStorage.setItem("kashi:fonts", "1");
+          } catch {
+            /* storage unavailable */
+          }
         });
     };
     let cancel: () => void;

@@ -27,8 +27,10 @@ import "../globals.css";
  * Runs before the loader markup is parsed: if this session already saw the
  * diya ignite, hide the overlay instantly so repeat navigations don't flash.
  */
-const LOADER_SNIPPET = (fontClasses: string) =>
-  "try{if(sessionStorage.getItem('kashi:loader')==='1'){var h=document.documentElement;h.setAttribute('data-loader','done');h.className+=' " +
+// Repeat visits (the session has loaded the body fonts once): attach their
+// classes before first paint so nothing swaps. First visits: see DeferredFonts.
+const FONT_SNIPPET = (fontClasses: string) =>
+  "try{if(sessionStorage.getItem('kashi:fonts')==='1'){var h=document.documentElement;h.className+=' " +
   fontClasses +
   "'}}catch(e){}" +
   // Blur-up: mark lazy photos loaded so they fade in over their placeholder (see Photo).
@@ -109,7 +111,7 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body className="min-h-dvh flex flex-col font-body text-kashi-ash">
-        <script dangerouslySetInnerHTML={{ __html: LOADER_SNIPPET(fonts.deferred) }} />
+        <script dangerouslySetInnerHTML={{ __html: FONT_SNIPPET(fonts.deferred) }} />
         <RevealController />
         <DeferredFonts classes={fonts.deferred} fonts={fontLoadSpecsFor(locale as Locale)} sample={meta.sample} />
         <Static>

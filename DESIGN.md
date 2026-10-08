@@ -47,7 +47,7 @@ Background gradient is bound to scroll progress (see Motion).
 ## Motion system
 | Moment | Behaviour |
 |---|---|
-| Page load | Black screen → one diya flame ignites center → light spreads → hero reveals (≤1.8s, skippable) |
+| Page load | ~~Black screen → diya → reveal~~ Removed 2026-10-08: the dark intro held the first viewport for 1.8 s (PageSpeed mobile 75). The hero paints at once; the secondary lines rise after the title. |
 | Hero | R3F scene: dozens of floating diyas on gently rippling water, soft bloom, parallax on mouse. Text paints instantly. |
 | Scroll | Body background gradient interpolates night→dawn→gold by `scrollProgress` (GSAP ScrollTrigger scrub) |
 | Section enter | Headings: SplitText char reveal from below with slight blur→sharp (0.8s, `power3.out`) |

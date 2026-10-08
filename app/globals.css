@@ -253,43 +253,10 @@
 }
 
 /* ------------------------------------------------------------------
-   Phase 2: loader, hero, Lenis
+   Phase 2: hero, Lenis
    ------------------------------------------------------------------ */
-html[data-loader="done"] .page-loader { display: none; }
-
-/* Page loader — black → diya ignites → light spreads → reveal (1.8 s total; the hero title stays visible above it) */
-@keyframes loader-ignite {
-  from { scale: 0.15; opacity: 0; }
-  60%  { scale: 1.08; opacity: 1; }
-  to   { scale: 1; opacity: 1; }
-}
-@keyframes loader-glow {
-  from { scale: 0.2; opacity: 0; }
-  to   { scale: 1; opacity: 1; }
-}
-@keyframes loader-spread {
-  from { scale: 0; opacity: 0; }
-  to   { scale: 1; opacity: 1; }
-}
-@keyframes loader-out {
-  from { opacity: 1; }
-  to   { opacity: 0; visibility: hidden; }
-}
-@keyframes loader-out-skip {
-  from { opacity: 1; }
-  to   { opacity: 0; visibility: hidden; }
-}
-.page-loader { background: #000; animation: loader-out 0.5s cubic-bezier(0.45, 0, 0.55, 1) 1.3s both; }
-.page-loader .loader-flame  { transform-origin: 50% 85%; animation: loader-ignite 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s both; }
-.page-loader .loader-glow   { animation: loader-glow 1s var(--ease-enter) 0.35s both; }
-.page-loader .loader-spread { animation: loader-spread 0.8s var(--ease-wipe) 0.7s both; }
-/* Site chrome waits for the reveal (the loader sits inside the hero, below the
-   title, so fixed elements would otherwise float over the dark screen). The
-   delayed keyframe is the no-JS fallback: everything appears by 2 s anyway. */
-@keyframes chrome-in { to { visibility: visible; } }
-html:not([data-loader="done"]) :is(.site-header, .sound-toggle, .section-dots) { visibility: hidden; animation: chrome-in 0s linear 2s forwards; }
-.page-loader.is-skipped { animation: loader-out-skip 0.25s ease-out both; }
-.page-loader.is-skipped :is(.loader-flame, .loader-glow, .loader-spread) { animation: none; }
+/* (The black → diya → reveal page loader was removed on 2026-10-08: it held the
+   first viewport dark for 1.8 s and cost ~20 PageSpeed points on mobile.) */
 
 /* Lenis (from lenis/dist/lenis.css) */
 html.lenis, html.lenis body { height: auto; }
@@ -300,20 +267,17 @@ html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth iframe { pointer-events: none; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 
-/* Hero secondary lines rise after the lamp is lit; instantly on repeat visits */
+/* Hero secondary lines rise just after the title */
 @keyframes hero-rise {
   from { opacity: 0; translate: 0 22px; }
   to   { opacity: 1; translate: 0 0; }
 }
 .hero-rise {
   animation: hero-rise 1s var(--ease-enter) both;
-  animation-delay: 1.55s;
+  animation-delay: 0.1s;
 }
-.hero-rise + .hero-rise { animation-delay: 1.75s; }
-.hero-rise + .hero-rise + .hero-rise { animation-delay: 2.1s; }
-html[data-loader="done"] .hero-rise { animation-delay: 0.1s; }
-html[data-loader="done"] .hero-rise + .hero-rise { animation-delay: 0.25s; }
-html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay: 0.45s; }
+.hero-rise + .hero-rise { animation-delay: 0.25s; }
+.hero-rise + .hero-rise + .hero-rise { animation-delay: 0.45s; }
 
 /* Static hero diyas breathe */
 @keyframes hf-flicker {
@@ -326,8 +290,6 @@ html[data-loader="done"] .hero-rise + .hero-rise + .hero-rise { animation-delay:
   .hero-rise { animation-delay: 0s !important; }
   .hf-diya { animation: none; }
   /* Loader collapses to one 300 ms fade; the global rule above would make it 0.01 ms */
-  .page-loader { animation: loader-out 300ms linear 150ms both !important; }
-  .page-loader :is(.loader-flame, .loader-glow, .loader-spread) { animation: none !important; }
 }
 
 /* ------------------------------------------------------------------
