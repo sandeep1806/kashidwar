@@ -273,11 +273,11 @@ html.lenis, html.lenis body { height: auto; }
   to   { opacity: 1; translate: 0 0; }
 }
 .hero-rise {
-  animation: hero-rise 1s var(--ease-enter) both;
+  animation: hero-rise 0.7s var(--ease-enter) both;
   animation-delay: 0.1s;
 }
-.hero-rise + .hero-rise { animation-delay: 0.25s; }
-.hero-rise + .hero-rise + .hero-rise { animation-delay: 0.45s; }
+.hero-rise + .hero-rise { animation-delay: 0.2s; }
+.hero-rise + .hero-rise + .hero-rise { animation-delay: 0.3s; }
 
 /* Static hero diyas breathe */
 @keyframes hf-flicker {
@@ -500,7 +500,9 @@ footer.cv-auto { contain-intrinsic-size: auto 130vh; }
 @keyframes lamp-flicker { 0%, 100% { transform: scale(1, 1); } 30% { transform: scale(0.96, 1.06); } 60% { transform: scale(1.03, 0.95); } }
 
 /* Slow Ken Burns drift on large photos (hero fallback, Day scenes, page heroes) */
-.ken-burns { animation: ken-burns 28s ease-in-out infinite alternate; transform-origin: 60% 40%; }
+/* Starts 6 s in: a viewport that keeps moving from the first frame never "settles" for
+   Speed Index; `backwards` holds the start frame during the delay so nothing jumps. */
+.ken-burns { animation: ken-burns 28s ease-in-out 6s infinite alternate backwards; transform-origin: 60% 40%; }
 @keyframes ken-burns { from { transform: scale(1.02) translate3d(0, 0, 0); } to { transform: scale(1.1) translate3d(-1.8%, -1.2%, 0); } }
 
 /* Dividers: small diyas drifting and bobbing on the water line */
