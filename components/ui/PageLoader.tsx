@@ -15,6 +15,15 @@ const SESSION_KEY = "kashi:loader";
  * SSR renders the overlay so the page never flashes before it. On repeat
  * visits an inline script in the layout hides it instantly and this component
  * unmounts itself right after hydration.
+ *
+ * It lives inside the hero section, *below* the title (z-5 under the text
+ * container's z-10): the H1 is visible from the first frame over the dark
+ * screen, so the loader never delays the largest contentful paint, and the
+ * reveal fades the overlay away beneath it. The lamp is lit below the title
+ * (68% down) so the flame never crosses the text. The header, sound toggle and
+ * section dots stay hidden by CSS until the loader is done (globals.css →
+ * "Page loader"). Detail pages have no loader: visitors landing from search
+ * get their content at once.
  */
 /**
  * Strings arrive as props from the server layout so this client component does
@@ -74,7 +83,7 @@ export default function PageLoader({
       onAnimationEnd={onAnimationEnd}
       // Keep every Tailwind class inside a plain string literal: the scanner
       // does not see a class that is glued to a `${}` interpolation.
-      className={["page-loader fixed inset-0 z-[100]", skipped ? "is-skipped" : ""]
+      className={["page-loader absolute inset-0 z-[5]", skipped ? "is-skipped" : ""]
         .join(" ")
         .trim()}
       role="status"
@@ -85,17 +94,17 @@ export default function PageLoader({
         className="loader-spread absolute inset-0 rounded-full"
         style={{
           background:
-            "radial-gradient(circle at 50% 55%, var(--kashi-indigo) 0%, var(--kashi-night) 65%)",
+            "radial-gradient(circle at 50% 70%, var(--kashi-indigo) 0%, var(--kashi-night) 65%)",
         }}
       />
       <div
-        className="loader-glow absolute left-1/2 top-1/2 h-[70vmin] w-[70vmin] -translate-x-1/2 -translate-y-1/2 rounded-full"
+        className="loader-glow absolute left-1/2 top-[68%] h-[70vmin] w-[70vmin] -translate-x-1/2 -translate-y-1/2 rounded-full"
         style={{
           background:
             "radial-gradient(circle, color-mix(in oklab, var(--kashi-diya) 55%, transparent) 0%, color-mix(in oklab, var(--kashi-saffron) 18%, transparent) 35%, transparent 68%)",
         }}
       />
-      <DiyaGlyph className="loader-flame absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 drop-shadow-[0_0_24px_rgba(255,210,122,0.55)]" />
+      <DiyaGlyph className="loader-flame absolute left-1/2 top-[68%] h-24 w-24 -translate-x-1/2 -translate-y-1/2 drop-shadow-[0_0_24px_rgba(255,210,122,0.55)]" />
       <button
         type="button"
         onClick={() => setSkipped(true)}

@@ -9,7 +9,6 @@ import Static from "@/components/ui/Static";
 import RevealController from "@/components/motion/RevealController";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import DeferredFonts from "@/components/ui/DeferredFonts";
-import PageLoader from "@/components/ui/PageLoader";
 import SectionMenu from "@/components/ui/SectionMenu";
 import SiteHeader from "@/components/ui/SiteHeader";
 import { SECTIONS } from "@/lib/sections";
@@ -130,7 +129,6 @@ export default async function LocaleLayout({
         */}
         <SmoothScroll>
           <SunriseBackground />
-          <PageLoader labels={{ loading: t("loading"), skip: t("skip") }} />
           <SiteHeader brand={meta.name === "English" ? "Kashi · काशी" : `${siteName} · Kashi`} homeHref={`/${locale}#hero`}>
             <SectionMenu label={nav("menu")} items={sectionItems} basePath={`/${locale}`} />
             <LanguageSwitcher current={locale as Locale} label={t("chooseLanguage")} />

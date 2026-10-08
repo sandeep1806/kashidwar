@@ -42,7 +42,7 @@ export default function SectionDots({ label, items }: { label: string; items: { 
   }, [items]);
 
   return (
-    <nav aria-label={label} className="fixed right-5 top-1/2 z-[60] hidden -translate-y-1/2 lg:block">
+    <nav aria-label={label} className="section-dots fixed right-5 top-1/2 z-[60] hidden -translate-y-1/2 lg:block">
       <ul className="flex flex-col items-end gap-3">
         {items.map((s) => {
           const on = s.id === active;

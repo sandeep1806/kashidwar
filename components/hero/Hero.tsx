@@ -4,6 +4,7 @@ import { getPhoto } from "@/lib/photos";
 import Static from "@/components/ui/Static";
 import HeroFallback from "./HeroFallback";
 import HeroScene from "./HeroScene";
+import PageLoader from "@/components/ui/PageLoader";
 
 /**
  * Pre-dawn on the Ganga. The title is server-rendered and paints with the
@@ -11,6 +12,7 @@ import HeroScene from "./HeroScene";
  */
 export default async function Hero({ locale }: { locale: Locale }) {
   const t = await getTranslations("hero");
+  const common = await getTranslations("common");
   const secondaryIsLatin = LOCALES[locale].script !== "latin";
 
   return (
@@ -23,6 +25,8 @@ export default async function Hero({ locale }: { locale: Locale }) {
         <HeroFallback photo={getPhoto("hero/hero", locale)} />
       </Static>
       <HeroScene />
+      {/* Black → diya → reveal, under the title so the H1 paints at once (see PageLoader). */}
+      <PageLoader labels={{ loading: common("loading"), skip: common("skip") }} />
       <Static>
       {/* Legibility veil over the lower half */}
       <div

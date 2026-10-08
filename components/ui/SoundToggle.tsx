@@ -88,7 +88,7 @@ export default function SoundToggle({ labels }: { labels: { on: string; off: str
       aria-pressed={active}
       aria-label={active ? labels.on : labels.off}
       title={active ? labels.on : labels.off}
-      className={`fixed bottom-5 right-5 z-[80] grid h-12 w-12 place-items-center rounded-full border bg-kashi-night/70 backdrop-blur-md transition-[border-color,box-shadow,color] duration-500 ease-enter sm:bottom-6 sm:right-6 ${
+      className={`sound-toggle fixed bottom-5 right-5 z-[80] grid h-12 w-12 place-items-center rounded-full border bg-kashi-night/70 backdrop-blur-md transition-[border-color,box-shadow,color] duration-500 ease-enter sm:bottom-6 sm:right-6 ${
         lit ? "border-kashi-diya text-kashi-diya shadow-glow" : "border-kashi-ash/30 text-kashi-ash/70 hover:border-kashi-marigold hover:text-kashi-white"
       }`}
     >
