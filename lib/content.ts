@@ -26,10 +26,14 @@ export function getPlace(id: string): Place | undefined {
 /** Apply a locale's overrides (if any) over the English fields. Shallow, field by field. */
 export function localize<T extends { i18n?: Record<string, object> }>(entry: T, locale: string): T {
   const { i18n, ...rest } = entry;
-  const over = i18n?.[locale];
+  const over = i18n?.[locale] as (Record<string, unknown> & { glance?: object }) | undefined;
   // The i18n map is dropped from the copy: it is server-only data and would
   // otherwise be serialised into the client payload for every locale.
-  return (over ? { ...rest, ...over } : rest) as T;
+  if (!over) return rest as T;
+  const base = rest as Record<string, unknown> & { glance?: object };
+  // `glance` holds both enumerated values (not translated) and free text (translated): merge, don't replace.
+  const glance = over.glance && base.glance ? { glance: { ...base.glance, ...over.glance } } : {};
+  return { ...base, ...over, ...glance } as T;
 }
 
 export function localizeItinerary(it: Itinerary, locale: string): Itinerary {

@@ -358,7 +358,48 @@
     "dateNow": "এখন চলছে",
     "dateExpected": "পরবর্তী: {month} {year}-এ প্রত্যাশিত — তারিখ এখনও ঘোষিত হয়নি",
     "dateLastHeld": "শেষবার অনুষ্ঠিত: {date}",
-    "nextUp": "সবার আগে আসছে"
+    "nextUp": "সবার আগে আসছে",
+    "glance": {
+      "title": "এক নজরে",
+      "timings": "সময়",
+      "entry": "প্রবেশ",
+      "duration": "কত সময় লাগে",
+      "crowd": "ভিড়",
+      "photography": "ছবি তোলা",
+      "dress": "পোশাক",
+      "season": "সেরা মাস",
+      "nearest": "নিকটতম স্থান",
+      "walkMin": "{min} মিনিট হাঁটা",
+      "rideMin": "অটো বা ট্যাক্সিতে প্রায় {min} মিনিট",
+      "km": "{km} কিমি",
+      "unverified": "সময় ও ফি সরকারি সূত্রে নিশ্চিত নয়; যাওয়ার আগে যাচাই করুন।",
+      "tipsHint": "জেনে রাখুন",
+      "crowdLevel": {
+        "quiet": "শান্ত",
+        "moderate": "মাঝারি",
+        "busy": "ভিড়",
+        "very-busy": "খুব ভিড়"
+      },
+      "photographyLevel": {
+        "allowed": "অনুমতি আছে",
+        "outside-only": "শুধু বাইরে",
+        "no": "অনুমতি নেই"
+      },
+      "dressLevel": {
+        "any": "পোশাকের নিয়ম নেই",
+        "modest": "শালীন পোশাক কাম্য",
+        "covered": "ঢাকা পোশাক আবশ্যক"
+      }
+    },
+    "readStory": "পুরো গল্প পড়ুন",
+    "gallery": {
+      "title": "ছবি",
+      "open": "ছবি {n} / {total} খুলুন",
+      "prev": "আগের ছবি",
+      "next": "পরের ছবি",
+      "close": "বন্ধ করুন",
+      "credit": "ছবি: {author} · {license}"
+    }
   },
   "guides": {
     "title": "কাশী গাইড",

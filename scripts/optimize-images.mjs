@@ -11,6 +11,8 @@
  *   scripts/image-picks.json   [{ key: "places/assi-ghat", title: "File:…", alt: { en, hi }, crop?: [x, y, w, h], author?: "…",
  *                               elsewhere?: "photo" | "art" }]
  *                              (crop is in fractions of the original, e.g. to cut off a watermark)
+ *                              Gallery extras use the key "places/assi-ghat#2", "#3", … (lib/photos.ts getGallery);
+ *                              their files are written as assi-ghat-2-<width>.<ext>.
  *   content/i18n/alt-<locale>.json  { key: alt } for the regional locales (optional)
  *   raw/<group>/<id>.(jpg|jpeg|png|webp)  owner photos override Commons (no credit line needed)
  *
@@ -80,8 +82,12 @@ async function commonsInfo(title) {
   };
 }
 
+/** "places/assi-ghat#2" → group "places", file id "assi-ghat-2" */
+const fileId = (key) => key.split("/")[1].replace("#", "-");
+
 async function original(key, title) {
-  const [group, id] = key.split("/");
+  const [group] = key.split("/");
+  const id = fileId(key);
   for (const ext of ["jpg", "jpeg", "png", "webp"]) {
     const p = join(root, "raw", group, `${id}.${ext}`);
     if (existsSync(p)) return { file: p, credit: null };
@@ -106,12 +112,16 @@ async function cropped(input, crop) {
     .toBuffer();
 }
 
-function graded(input, group) {
+async function graded(input, group) {
   const g = GRADE[group] ?? GRADE.default;
+  // A black-and-white original (1 band, e.g. an archival photograph) cannot take
+  // the per-channel warm tint: sharp refuses "band expansion using linear".
+  const { channels = 3 } = await sharp(input).rotate().metadata();
+  const avg = (a) => a.reduce((x, y) => x + y, 0) / a.length;
   return sharp(input, { failOn: "none" })
     .rotate()
     .modulate({ brightness: g.brightness, saturation: g.saturation })
-    .linear(g.warm, g.lift)
+    .linear(channels < 3 ? avg(g.warm) : g.warm, channels < 3 ? avg(g.lift) : g.lift)
     .toColourspace("srgb");
 }
 
@@ -150,12 +160,13 @@ function save() {
 }
 
 for (const pick of picks) {
-  const [group, id] = pick.key.split("/");
+  const [group] = pick.key.split("/");
+  const id = fileId(pick.key);
   if (only && group !== only) continue;
   const profile = PROFILES[group];
   const { file, credit } = await original(pick.key, pick.title);
   const input = await cropped(readFileSync(file), pick.crop);
-  const base = graded(input, group);
+  const base = await graded(input, group);
   const meta = await sharp(input).rotate().metadata();
   const dir = join(outDir, group);
   mkdirSync(dir, { recursive: true });

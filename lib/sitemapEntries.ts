@@ -15,7 +15,8 @@ export interface SitemapPage {
 }
 
 const PHOTO_KEYS = Object.keys(photos);
-const kindPhoto = (kind: Kind, slug: string) => (PHOTO_KEYS.includes(`${kind}/${slug}`) ? [`${kind}/${slug}`] : []);
+/** The page's main photo and its gallery extras (`kind/slug`, `kind/slug#2`, …). */
+const kindPhoto = (kind: Kind, slug: string) => PHOTO_KEYS.filter((k) => k === `${kind}/${slug}` || k.startsWith(`${kind}/${slug}#`));
 
 /** Every page of the site once (locale-less), with the photos it shows. */
 export function sitemapPages(): SitemapPage[] {

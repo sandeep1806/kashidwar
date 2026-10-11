@@ -360,7 +360,48 @@
     "dateNow": "On now",
     "dateExpected": "Next: expected {month} {year} — date not yet announced",
     "dateLastHeld": "Last held: {date}",
-    "nextUp": "Coming up next"
+    "nextUp": "Coming up next",
+    "glance": {
+      "title": "Visit at a glance",
+      "timings": "Timings",
+      "entry": "Entry",
+      "duration": "Time needed",
+      "crowd": "Crowd",
+      "photography": "Photography",
+      "dress": "Dress",
+      "season": "Best months",
+      "nearest": "Nearest listed place",
+      "walkMin": "{min} min walk",
+      "rideMin": "about {min} min by auto or taxi",
+      "km": "{km} km",
+      "unverified": "Timings and fees are not confirmed from an official source; check before you go.",
+      "tipsHint": "Good to know",
+      "crowdLevel": {
+        "quiet": "Quiet",
+        "moderate": "Moderate",
+        "busy": "Busy",
+        "very-busy": "Very busy"
+      },
+      "photographyLevel": {
+        "allowed": "Allowed",
+        "outside-only": "Outside only",
+        "no": "Not allowed"
+      },
+      "dressLevel": {
+        "any": "No dress code",
+        "modest": "Modest dress advised",
+        "covered": "Covered dress required"
+      }
+    },
+    "readStory": "Read the full story",
+    "gallery": {
+      "title": "Photos",
+      "open": "Open photo {n} of {total}",
+      "prev": "Previous photo",
+      "next": "Next photo",
+      "close": "Close",
+      "credit": "Photo: {author} · {license}"
+    }
   },
   "guides": {
     "title": "Guides to Kashi",

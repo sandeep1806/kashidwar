@@ -51,6 +51,8 @@ export interface Source {
  */
 export type LocalizedFields = Partial<{
   summary: string;
+  /** Free-text "at a glance" values (timings, entry, duration, season) */
+  glance: GlanceText;
   bestTime: string;
   story: string;
   tips: string[];
@@ -62,6 +64,35 @@ export type LocalizedFields = Partial<{
   title: string;
   theme: string;
 }>;
+
+export type Crowd = "quiet" | "moderate" | "busy" | "very-busy";
+export type Photography = "allowed" | "outside-only" | "no";
+export type Dress = "any" | "modest" | "covered";
+
+/** The free-text half of a place's "at a glance" facts (translatable). */
+export interface GlanceText {
+  /** Opening hours as a visitor meets them, e.g. "04:00–23:00; darshan pauses 11:30–12:00" */
+  timings?: string;
+  /** Entry fee, e.g. "Free" or "₹25 (Indian) · ₹300 (foreign)" */
+  entry?: string;
+  /** Typical visit, e.g. "45–60 min" */
+  duration?: string;
+  /** Best months, e.g. "Oct–Mar" */
+  season?: string;
+}
+
+/**
+ * Structured visitor facts shown as icons and chips instead of prose
+ * (CLAUDE.md → Content rules: every value sourced; `verified: false` when
+ * timings or fees come only from non-official pages).
+ */
+export interface Glance extends GlanceText {
+  crowd?: Crowd;
+  photography?: Photography;
+  dress?: Dress;
+  verified?: boolean;
+  sources?: Source[];
+}
 
 export interface Place {
   id: string;
@@ -80,6 +111,7 @@ export interface Place {
   coordsVerified?: boolean;
   story?: string;
   tips?: string[];
+  glance?: Glance;
   /** Optional verse shown in original script + transliteration + translation */
   verse?: { original: string; transliteration: string; translation: string; attribution: string };
 }

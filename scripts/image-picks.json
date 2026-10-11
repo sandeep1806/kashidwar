@@ -585,5 +585,523 @@
       "en": "Darbhanga Palace strung with lights for Diwali, seen from the Ganga",
       "hi": "दीपावली पर रोशनी से सजा दरभंगा महल, गंगा से दिखता हुआ"
     }
+  },
+  {
+    "key": "places/kashi-vishwanath#2",
+    "title": "File:Maharani Ahilyabai Holkar, statue.jpg",
+    "alt": {
+      "en": "Bronze statue of Maharani Ahilyabai Holkar holding a shivalinga, seated on a marble plinth inside the Kashi Vishwanath corridor, Varanasi, in daylight.",
+      "hi": "काशी विश्वनाथ कॉरिडोर में संगमरमर की चौकी पर विराजमान महारानी अहिल्याबाई होल्कर की कांस्य प्रतिमा, हाथ में शिवलिंग लिए।"
+    }
+  },
+  {
+    "key": "places/dashashwamedh-ghat#2",
+    "title": "File:The soul - stirring Ganga Arti.jpg",
+    "alt": {
+      "en": "Ganga Aarti at night on Dashashwamedh Ghat, Varanasi: priests on lit platforms under rows of glowing umbrella canopies, with a dense crowd beyond.",
+      "hi": "रात में दशाश्वमेध घाट पर गंगा आरती: जगमगाते छत्रों की कतार के नीचे मंचों पर पुजारी और पीछे श्रद्धालुओं की भीड़।"
+    }
+  },
+  {
+    "key": "places/dashashwamedh-ghat#3",
+    "title": "File:Ashwamedh Ghat In Varanasi Uttar Pradesh India.jpg",
+    "crop": [
+      0,
+      0,
+      1,
+      0.6
+    ],
+    "alt": {
+      "en": "Dusk before the evening Ganga Aarti at Dashashwamedh Ghat, Varanasi, with umbrella canopies and saffron flags above the platforms and boats on the river behind.",
+      "hi": "दशाश्वमेध घाट पर सायंकालीन गंगा आरती से पहले गोधूलि: मंचों के ऊपर छत्र और भगवा ध्वज, पीछे गंगा में नावें।"
+    }
+  },
+  {
+    "key": "places/dashashwamedh-ghat#4",
+    "title": "File:BANARAS.jpg",
+    "alt": {
+      "en": "Evening Ganga Aarti seen from the side at Dashashwamedh Ghat, Varanasi, incense smoke rising over the platforms and the crowd on the steps.",
+      "hi": "दशाश्वमेध घाट पर शाम की गंगा आरती का पार्श्व दृश्य, मंचों के ऊपर उठता धूप का धुआँ और सीढ़ियों पर भीड़।"
+    }
+  },
+  {
+    "key": "places/assi-ghat#2",
+    "title": "File:Assi Ghat-Varanasi India-Andres Larin.jpg",
+    "alt": {
+      "en": "Aerial view of Assi Ghat, Varanasi, with rows of colourful rowing boats moored along the Ganga and crowds on the sandy bank in daylight.",
+      "hi": "अस्सी घाट का हवाई दृश्य: गंगा किनारे कतार में बंधी रंग-बिरंगी नावें और रेतीले तट पर लोग।"
+    }
+  },
+  {
+    "key": "places/assi-ghat#3",
+    "title": "File:Morning Aarti at Assi Ghat, Varanasi 9.jpg",
+    "alt": {
+      "en": "Morning aarti at Assi Ghat, Varanasi: a row of priests raise tiered oil lamps on the steps under a deep blue pre-dawn sky.",
+      "hi": "अस्सी घाट पर सुबह-ए-बनारस की प्रातः आरती: गहरे नीले आकाश तले सीढ़ियों पर दीप उठाए पुजारियों की कतार।"
+    }
+  },
+  {
+    "key": "places/assi-ghat#4",
+    "title": "File:JOURNEY TO THE EAST INDIA.jpg",
+    "alt": {
+      "en": "Sunrise over the Ganga seen from Assi Ghat, Varanasi, a lone rowing boat silhouetted on the golden water.",
+      "hi": "अस्सी घाट से गंगा पर सूर्योदय, सुनहरे पानी पर अकेली नाव की छाया।"
+    }
+  },
+  {
+    "key": "places/manikarnika-ghat#2",
+    "title": "File:Tarkeshwar Mahadeva Mandir001.jpg",
+    "crop": [
+      0,
+      0,
+      1,
+      0.72
+    ],
+    "alt": {
+      "en": "Carved sandstone shikhara of Tarkeshwar Mahadev temple at Manikarnika Ghat, Varanasi, against a clear daytime sky.",
+      "hi": "मणिकर्णिका घाट पर तारकेश्वर महादेव मंदिर का नक्काशीदार शिखर, साफ दिन के आकाश में।"
+    }
+  },
+  {
+    "key": "places/namo-ghat#2",
+    "title": "File:NAMO GHAT JULY-2024.jpg",
+    "alt": {
+      "en": "Malviya Bridge arching across the Ganga seen from Namo Ghat, Varanasi, with moored tourist boats in the foreground under a blue afternoon sky.",
+      "hi": "नमो घाट से दिखता गंगा पर मालवीय पुल, अग्रभाग में बंधी पर्यटक नावें, नीला दोपहर का आकाश।"
+    }
+  },
+  {
+    "key": "places/namo-ghat#3",
+    "title": "File:Tomb of Lal Khan, Rajghat, Varanasi, Uttar Pradesh 01.jpg",
+    "alt": {
+      "en": "Lal Khan's Tomb at Rajghat beside Namo Ghat, Varanasi: a glazed-tile Mughal mausoleum with corner chhatris at the end of a hedged garden path at dusk.",
+      "hi": "नमो घाट से सटे राजघाट पर लाल खाँ का मकबरा: संध्या समय बगीचे के रास्ते के अंत में चमकीली टाइलों वाला मुगल मकबरा।"
+    }
+  },
+  {
+    "key": "places/panchganga-ghat#2",
+    "title": "File:Varanasi from shreematha (2018).jpg",
+    "alt": {
+      "en": "Evening panorama of the Varanasi riverfront from Shri Math above Panchganga Ghat, lamps lighting the steps as boats drift on the Ganga.",
+      "hi": "पंचगंगा घाट स्थित श्रीमठ से शाम का वाराणसी: जगमगाती सीढ़ियाँ और गंगा में तैरती नावें।"
+    }
+  },
+  {
+    "key": "places/panchganga-ghat#3",
+    "title": "File:Alamgir Mosque, Varanasi, Uttar Pradesh, India (2011) 58373).jpg",
+    "alt": {
+      "en": "Alamgir Mosque rising above the stepped Panchganga Ghat, Varanasi, seen from a boat on the Ganga in daylight.",
+      "hi": "गंगा में नाव से दिखता पंचगंगा घाट और उसके ऊपर खड़ी आलमगीर मस्जिद।"
+    }
+  },
+  {
+    "key": "places/panchganga-ghat#4",
+    "title": "File:Varanasi (6706153829).jpg",
+    "alt": {
+      "en": "Hazy evening at Panchganga Ghat, Varanasi: shrines and tall bamboo lamp-poles along the bank with boats moored below.",
+      "hi": "धुंधली शाम में पंचगंगा घाट: किनारे के छोटे मंदिर, आकाशदीप के बाँस के खंभे और नीचे बंधी नावें।"
+    }
+  },
+  {
+    "key": "places/sarnath#2",
+    "title": "File:Ancient Buddhist Site, Sarnath, Varanasi, Uttar Pradesh 10.jpg",
+    "alt": {
+      "en": "Excavated monastery ruins at Sarnath near Varanasi: carved stone votive stupas among red-brick foundations in soft overcast light.",
+      "hi": "सारनाथ के उत्खनित विहार अवशेष: लाल ईंट की नींवों के बीच नक्काशीदार पत्थर के मन्नती स्तूप, कोमल प्रकाश में।"
+    }
+  },
+  {
+    "key": "places/sarnath#3",
+    "title": "File:Dhamek Stupa, Sarnath, Varanasi, Uttar Pradesh 02.jpg",
+    "alt": {
+      "en": "Close-up of a carved Gupta-period niche and floral stonework on the base of Dhamek Stupa, Sarnath, in warm light.",
+      "hi": "सारनाथ के धमेख स्तूप के आधार पर गुप्तकालीन नक्काशीदार आला और पुष्प अलंकरण का निकट दृश्य।"
+    }
+  },
+  {
+    "key": "places/sarnath#4",
+    "title": "File:Dhamekh Stupa close-up, Sarnath.jpg",
+    "alt": {
+      "en": "Geometric swastika-lattice and floral carvings on the stone facing of Dhamek Stupa, Sarnath, lit by low sun.",
+      "hi": "धमेख स्तूप, सारनाथ के पत्थर पर स्वस्तिक जालीदार और पुष्प नक्काशी, ढलती धूप में।"
+    }
+  },
+  {
+    "key": "places/mulagandha-kuti-vihar#2",
+    "title": "File:Tjabeljan, Japanese Big Bell in Mulagandha Kuti Vihar, Sarnath 091.jpg",
+    "alt": {
+      "en": "The great Japanese bronze bell seen through the open brass doors of Mulagandha Kuti Vihar, Sarnath, hanging in the pillared entrance porch.",
+      "hi": "मूलगंध कुटी विहार, सारनाथ के खुले पीतल के द्वार से दिखती स्तंभयुक्त बरामदे में लटकी विशाल जापानी घंटी।"
+    }
+  },
+  {
+    "key": "places/mulagandha-kuti-vihar#3",
+    "title": "File:Bodhibaum sarnath 2022-11-20 6.jpg",
+    "alt": {
+      "en": "Monks seated before the statue of the Buddha under the Bodhi tree in the grounds of Mulagandha Kuti Vihar, Sarnath.",
+      "hi": "मूलगंध कुटी विहार, सारनाथ के प्रांगण में बोधिवृक्ष तले बुद्ध प्रतिमा के सामने बैठे भिक्षु।"
+    }
+  },
+  {
+    "key": "places/mulagandha-kuti-vihar#4",
+    "title": "File:Mulgandh Kutti Vihar Sarnath India - panoramio (4).jpg",
+    "alt": {
+      "en": "Fresco by Kosetsu Nosu inside Mulagandha Kuti Vihar, Sarnath, showing the Buddha in meditation under the Bodhi tree amid Mara's assault.",
+      "hi": "मूलगंध कुटी विहार, सारनाथ के भीतर कोसेत्सु नोसु का भित्तिचित्र: बोधिवृक्ष तले ध्यानस्थ बुद्ध और मार का आक्रमण।"
+    }
+  },
+  {
+    "key": "places/ramnagar-fort#2",
+    "title": "File:Ramnagar Fort, Ramnagar, Varanasi, Uttar Pradesh 01.jpg",
+    "alt": {
+      "en": "The pink-and-cream main gateway of Ramnagar Fort with its domed pavilions, seen from the street on a soft hazy afternoon.",
+      "hi": "रामनगर किले का गुलाबी मुख्य प्रवेश द्वार और उसके गुंबददार झरोखे, धुंधली दोपहर में सड़क से लिया गया दृश्य।"
+    }
+  },
+  {
+    "key": "places/ramnagar-fort#3",
+    "title": "File:Ram Nagar Fort 4 - inner courtyard (38569484921).jpg",
+    "alt": {
+      "en": "Carved sandstone doorway and white arched balcony inside the inner courtyard of Ramnagar Fort, hung with festival strings.",
+      "hi": "रामनगर किले के भीतरी आंगन में नक्काशीदार बलुआ-पत्थर का द्वार और सफेद मेहराबदार बालकनी, उत्सव की लड़ियों से सजी।"
+    }
+  },
+  {
+    "key": "places/ramnagar-fort#4",
+    "title": "File:Ram Nagar Fort 10 (26744384319).jpg",
+    "crop": [
+      0,
+      0,
+      1,
+      0.85
+    ],
+    "alt": {
+      "en": "A weathered carved jharokha balcony with scalloped arches on an inner wall of Ramnagar Fort in flat evening light.",
+      "hi": "रामनगर किले की भीतरी दीवार पर जीर्ण नक्काशीदार झरोखा, शाम की हल्की रोशनी में।"
+    }
+  },
+  {
+    "key": "places/bhu-new-vishwanath#2",
+    "title": "File:AWNEEP.jpg",
+    "alt": {
+      "en": "Looking straight up the white shikhara of the New Vishwanath Temple at BHU against a pale blue sky at dusk.",
+      "hi": "बीएचयू के नए विश्वनाथ मंदिर का सफेद शिखर, गोधूलि के हल्के नीले आकाश में नीचे से ऊपर की ओर देखा गया।"
+    }
+  },
+  {
+    "key": "places/bhu-new-vishwanath#3",
+    "title": "File:VISWANATH TEMPLE,BHU VARANASI - panoramio.jpg",
+    "alt": {
+      "en": "The New Vishwanath Temple at BHU framed by flowering gulmohar trees along a wet garden path after evening rain.",
+      "hi": "बारिश के बाद शाम को गुलमोहर के पेड़ों के बीच से दिखता बीएचयू का नया विश्वनाथ मंदिर।"
+    }
+  },
+  {
+    "key": "places/bhu-new-vishwanath#4",
+    "title": "File:Replica of Vishwanath mandir.jpg",
+    "alt": {
+      "en": "Silhouette of the New Vishwanath Temple at BHU against a bright hazy sun late in the day.",
+      "hi": "ढलते सूरज की धुंधली चमक के सामने बीएचयू के नए विश्वनाथ मंदिर की छाया-आकृति।"
+    }
+  },
+  {
+    "key": "places/durga-kund#2",
+    "title": "File:Durga Mandir and Kund.jpg",
+    "alt": {
+      "en": "The red Durga Mandir beside Durga Kund, with the fountain in the green tank spraying in bright daylight.",
+      "hi": "दुर्गा कुंड के किनारे लाल दुर्गा मंदिर, कुंड के बीच फव्वारा दिन की रोशनी में उड़ता हुआ।"
+    }
+  },
+  {
+    "key": "places/durga-kund#3",
+    "title": "File:NO-NB BLDSA GM2a193n.jpg",
+    "alt": {
+      "en": "Early-twentieth-century photograph of Durga Temple across the kund, with trees and two figures on the steps.",
+      "hi": "बीसवीं सदी के प्रारंभ का दुर्गा मंदिर और कुंड का पुराना चित्र, सीढ़ियों पर दो व्यक्ति।"
+    }
+  },
+  {
+    "key": "places/durga-kund#4",
+    "title": "File:Durga Temple gate.JPG",
+    "crop": [
+      0,
+      0,
+      1,
+      0.6
+    ],
+    "alt": {
+      "en": "The red pillared gateway of Durga Mandir rising above the busy Durgakund street market.",
+      "hi": "दुर्गाकुंड की भीड़भरी सड़क के ऊपर उठता दुर्गा मंदिर का लाल स्तंभयुक्त प्रवेश द्वार।"
+    }
+  },
+  {
+    "key": "places/sankat-mochan#2",
+    "title": "File:Sankat Mochan temple entrance, Varanasi - IRCTC 2017.jpg",
+    "alt": {
+      "en": "The ornate yellow entrance gate of Sankat Mochan Hanuman Temple under old trees, Varanasi, in daytime.",
+      "hi": "पुराने पेड़ों की छाँव में संकट मोचन हनुमान मंदिर का सजावटी पीला प्रवेश द्वार, वाराणसी।"
+    }
+  },
+  {
+    "key": "places/tulsi-manas#2",
+    "title": "File:Manas Mandir.jpg",
+    "alt": {
+      "en": "Tulsi Manas Mandir's white marble facade floodlit at night, with its lawns and trees in the foreground.",
+      "hi": "रात में रोशनी से जगमगाता तुलसी मानस मंदिर का सफेद संगमरमर मुखभाग, सामने बाग़ीचा।"
+    }
+  },
+  {
+    "key": "places/tulsi-manas#3",
+    "title": "File:Varanasi 25 - figurines in Tulsi Manas mandir (37463372754).jpg",
+    "alt": {
+      "en": "Moving figurine tableau of Ram's court in the pink gallery of the Ramcharitmanas exhibition at Tulsi Manas Mandir.",
+      "hi": "तुलसी मानस मंदिर की रामचरितमानस प्रदर्शनी में राम दरबार की चलती-फिरती मूर्तियों की झाँकी।"
+    }
+  },
+  {
+    "key": "places/tulsi-manas#4",
+    "title": "File:Varanasi 19 - figurines in Tulsi Manas mandir (38173693321).jpg",
+    "alt": {
+      "en": "Mirror-work pavilion with a dancer figurine from the Ramcharitmanas tableaux inside Tulsi Manas Mandir.",
+      "hi": "तुलसी मानस मंदिर के भीतर शीशे की नक्काशी वाला मंडप और रामचरितमानस झाँकी की नर्तकी मूर्ति।"
+    }
+  },
+  {
+    "key": "places/bharat-mata#2",
+    "title": "File:Varanasi, India (23217189020).jpg",
+    "alt": {
+      "en": "The carved marble relief map of undivided India inside Bharat Mata Mandir, Varanasi, with visitors around the railing.",
+      "hi": "भारत माता मंदिर, वाराणसी के भीतर अखंड भारत का संगमरमर उभरा मानचित्र, रेलिंग के पास दर्शक।"
+    }
+  },
+  {
+    "key": "places/bharat-mata#3",
+    "title": "File:Bharat Mata Mandir Varanasi India - panoramio (3).jpg",
+    "alt": {
+      "en": "Bharat Mata Mandir's two-storey stone building seen from the garden in daylight, with a palm and signboard at left.",
+      "hi": "दिन के उजाले में बाग़ से दिखता भारत माता मंदिर का दो मंज़िला पत्थर का भवन।"
+    }
+  },
+  {
+    "key": "places/bharat-mata#4",
+    "title": "File:Varanasi 256 - Bharat Mata temple (33982674090).jpg",
+    "alt": {
+      "en": "Close view of the Himalayan ridges and river valleys on the marble relief map of India in Bharat Mata Mandir.",
+      "hi": "भारत माता मंदिर के संगमरमर मानचित्र पर हिमालय की चोटियाँ और नदी घाटियाँ, समीप से।"
+    }
+  },
+  {
+    "key": "places/alamgir-mosque#2",
+    "title": "File:India DSCF7014 (32205485024).jpg",
+    "alt": {
+      "en": "Low-angle view of a sandstone corner bastion and two minarets of Alamgir Mosque, Varanasi, against a clear sky.",
+      "hi": "साफ़ आकाश के सामने आलमगीर मस्जिद, वाराणसी के बलुआ-पत्थर के बुर्ज और दो मीनारों का निचले कोण से दृश्य।"
+    }
+  },
+  {
+    "key": "places/alamgir-mosque#3",
+    "title": "File:Varanasi (6706162249).jpg",
+    "alt": {
+      "en": "The ablution tank and arched pavilion on the terrace of Alamgir Mosque, with a temple spire beyond, in hazy morning light.",
+      "hi": "धुंधली सुबह में आलमगीर मस्जिद की छत पर वज़ू का हौज़ और मेहराबदार मंडप, पीछे एक मंदिर का शिखर।"
+    }
+  },
+  {
+    "key": "places/alamgir-mosque#4",
+    "title": "File:Varanasi (6706154617).jpg",
+    "alt": {
+      "en": "Prayer mats laid out in the whitewashed hall of Alamgir Mosque, with a warmly lit doorway at the far end.",
+      "hi": "आलमगीर मस्जिद के सफेदी वाले हॉल में बिछी नमाज़ की चटाइयाँ और दूर एक गर्म रोशनी वाला द्वार।"
+    }
+  },
+  {
+    "key": "places/bhelupur-jain#2",
+    "title": "File:Bhelupur Jain temple (8).jpg",
+    "alt": {
+      "en": "Carved white-marble gateway and staircase of the Digambar Jain temple at Bhelupur, Varanasi, under a clear morning sky.",
+      "hi": "भेलूपुर, वाराणसी के दिगंबर जैन मंदिर का नक्काशीदार सफेद संगमरमर का प्रवेश द्वार और सीढ़ियाँ, साफ सुबह के आसमान के नीचे।"
+    }
+  },
+  {
+    "key": "places/bhelupur-jain#3",
+    "title": "File:Bhelupur Jain temple (1).jpg",
+    "crop": [
+      0,
+      0,
+      1,
+      0.72
+    ],
+    "alt": {
+      "en": "Shikharas of the Bhelupur Jain temple and its tall marble manastambha pillar rising above the lane in Bhelupur, Varanasi, on a sunny morning.",
+      "hi": "भेलूपुर, वाराणसी की गली के ऊपर उठते जैन मंदिर के शिखर और ऊँचा संगमरमर का मानस्तंभ, धूप भरी सुबह।"
+    }
+  },
+  {
+    "key": "places/bhelupur-jain#4",
+    "title": "File:Bhelupur Jain temple (4).jpg",
+    "alt": {
+      "en": "Marble manastambha pillar with a Jain flag in the chequered courtyard of the Bhelupur Jain temple, Varanasi, by day.",
+      "hi": "भेलूपुर जैन मंदिर, वाराणसी के चौकोर फर्श वाले आँगन में जैन ध्वज के साथ संगमरमर का मानस्तंभ, दिन के समय।"
+    }
+  },
+  {
+    "key": "places/chunar-fort#2",
+    "title": "File:Chunar Fort 3.jpg",
+    "alt": {
+      "en": "View from the ramparts of Chunar Fort over a bastion to the Ganga, its sandbanks and the long road bridge, in hazy daylight.",
+      "hi": "चुनार किले की प्राचीर से बुर्ज के पार गंगा, उसके रेतीले तट और लंबे सड़क पुल का दृश्य, धुंधली दिन की रोशनी में।"
+    }
+  },
+  {
+    "key": "places/chunar-fort#3",
+    "title": "File:Chunar Fort, Mirzapur, Uttar Pradesh 03.jpg",
+    "alt": {
+      "en": "Sunlit sandstone colonnade inside the Sonwa Mandap pavilion at Chunar Fort, with pointed arches casting long shadows in early light.",
+      "hi": "चुनार किले के सोनवा मंडप के भीतर धूप से भरा बलुआ पत्थर का स्तंभ-मार्ग, सुबह की रोशनी में नुकीली मेहराबों की लंबी छायाएँ।"
+    }
+  },
+  {
+    "key": "places/chunar-fort#4",
+    "title": "File:Chunar Fort 1.jpg",
+    "alt": {
+      "en": "Carved sandstone oriel window with a small dome projecting from the rough stone wall of Chunar Fort, Mirzapur, in daylight.",
+      "hi": "चुनार किले, मिर्ज़ापुर की खुरदरी पत्थर की दीवार से बाहर निकली नक्काशीदार बलुआ पत्थर की झरोखा खिड़की और छोटा गुंबद, दिन की रोशनी में।"
+    }
+  },
+  {
+    "key": "places/chet-singh-ghat#2",
+    "title": "File:Ghats of varanasi, Ghasi Tola, Varanasi, Uttar Pradesh, India - panoramio.jpg",
+    "alt": {
+      "en": "Red sandstone walls, arched balconies and domed chhatri of Chet Singh Fort rising above the ghat steps in Varanasi, in warm late-afternoon light.",
+      "hi": "वाराणसी में घाट की सीढ़ियों के ऊपर उठती चेत सिंह किले की लाल बलुआ पत्थर की दीवारें, मेहराबदार झरोखे और गुंबददार छतरी, ढलती दोपहर की गर्म रोशनी में।"
+    }
+  },
+  {
+    "key": "places/chet-singh-ghat#3",
+    "title": "File:Chet Singh Ghat courtyard (6923230068).jpg",
+    "alt": {
+      "en": "Wide view of the open courtyard behind Chet Singh Ghat, Varanasi, with temple shikharas and the Ganga sandbanks beyond, in soft hazy daylight.",
+      "hi": "चेत सिंह घाट, वाराणसी के पीछे खुले आँगन का विस्तृत दृश्य, दूर मंदिर के शिखर और गंगा का रेतीला तट, हल्की धुंधली दिन की रोशनी में।"
+    }
+  },
+  {
+    "key": "places/chet-singh-ghat#4",
+    "title": "File:Chet Singh Ghat 2024.jpg",
+    "crop": [
+      0,
+      0,
+      0.88,
+      0.9
+    ],
+    "alt": {
+      "en": "Front of Chet Singh Ghat, Varanasi, with its bilingual name board, arched gateway and corner chhatri seen from the river steps in daytime.",
+      "hi": "नदी की सीढ़ियों से दिखता चेत सिंह घाट, वाराणसी का अग्रभाग, द्विभाषी नाम-पट्ट, मेहराबदार द्वार और कोने की छतरी, दिन के समय।"
+    }
+  },
+  {
+    "key": "places/tulsi-ghat#2",
+    "title": "File:Varanasi 50a5 - Nag Nathaiya festival spectators (37018425203).jpg",
+    "crop": [
+      0,
+      0,
+      1,
+      0.6
+    ],
+    "alt": {
+      "en": "Spectators fill the steps of Tulsi Ghat beneath its red tower during the Nag Nathaiya festival on an October afternoon.",
+      "hi": "नाग नथैया उत्सव के दौरान अक्टूबर की दोपहर में तुलसी घाट की सीढ़ियों पर लाल मीनार के नीचे जुटे दर्शक।"
+    }
+  },
+  {
+    "key": "places/tulsi-ghat#3",
+    "title": "File:Varanasi 50 - Tulsi ghat (37139578114).jpg",
+    "alt": {
+      "en": "The stone steps and pillared colonnade of Tulsi Ghat below its whitewashed houses on a clear morning.",
+      "hi": "साफ़ सुबह में तुलसी घाट की पत्थर की सीढ़ियाँ और स्तंभों वाला बरामदा, ऊपर सफ़ेद पुते मकान।"
+    }
+  },
+  {
+    "key": "places/scindia-ghat#2",
+    "title": "File:Ratneshwar Mahadev Temple, Manikarnika Ghat, Varanasi.jpg",
+    "alt": {
+      "en": "The leaning Ratneshwar Mahadev temple at Scindia Ghat with the Scindia guest house and neighbouring shrines, seen from a boat in late afternoon.",
+      "hi": "दोपहर बाद नाव से दिखता सिंधिया घाट का झुका हुआ रत्नेश्वर महादेव मंदिर, पीछे सिंधिया गेस्ट हाउस और आसपास के देवालय।"
+    }
+  },
+  {
+    "key": "places/scindia-ghat#3",
+    "title": "File:Leaning Kashi Karvat temple Varanasi.jpg",
+    "alt": {
+      "en": "Looking down from Scindia Ghat onto the half-submerged leaning temple, with boats and the far sandbank behind it on a hazy morning.",
+      "hi": "धुँधली सुबह सिंधिया घाट से नीचे देखते हुए आधा डूबा झुका मंदिर, पीछे नावें और गंगा का दूर किनारा।"
+    }
+  },
+  {
+    "key": "places/lalita-ghat#2",
+    "title": "File:Varanasi 104 - afternoon at Lalita Ghat (34810206804).jpg",
+    "alt": {
+      "en": "Lalita Ghat in soft afternoon light: the pink tower, an octagonal stone platform and rowing boats drifting on the Ganga.",
+      "hi": "नरम दोपहरी रोशनी में ललिता घाट: गुलाबी बुर्ज, अष्टकोणीय पत्थर का चबूतरा और गंगा पर तैरती नावें।"
+    }
+  },
+  {
+    "key": "places/lalita-ghat#3",
+    "title": "File:Varanasi (38604691891).jpg",
+    "crop": [
+      0,
+      0,
+      0.62,
+      1
+    ],
+    "alt": {
+      "en": "The paved promenade and mushroom-shaped shade pavilion of Lalita Ghat with its pink tower, looking across the river on a clear afternoon.",
+      "hi": "साफ़ दोपहर में ललिता घाट का पक्का घाट-मार्ग, छतरीनुमा मंडप और गुलाबी बुर्ज, सामने गंगा का विस्तार।"
+    }
+  },
+  {
+    "key": "places/harishchandra-ghat",
+    "title": "File:Harishchandra Ghat.jpg",
+    "crop": [
+      0,
+      0.02,
+      0.74,
+      0.9
+    ],
+    "alt": {
+      "en": "The old sandstone pavilion of Harishchandra Ghat rising above flood silt, seen from the river side on a hazy October morning.",
+      "hi": "धुँधली अक्टूबर की सुबह नदी की ओर से दिखता हरिश्चंद्र घाट का पुराना बलुआ-पत्थर का मंडप, नीचे बाढ़ की गाद।"
+    }
+  },
+  {
+    "key": "places/man-mandir-ghat#2",
+    "title": "File:Varanasi (6706137395).jpg",
+    "alt": {
+      "en": "Man Mandir palace with its carved stone balconies above Man Mandir Ghat, seen from the Ganga at midday.",
+      "hi": "दोपहर में गंगा से दिखता मान मंदिर घाट के ऊपर नक्काशीदार पत्थर के झरोखों वाला मान मंदिर महल।"
+    }
+  },
+  {
+    "key": "places/man-mandir-ghat#3",
+    "title": "File:Varanasi (6706138931).jpg",
+    "alt": {
+      "en": "The northern end of Man Mandir Ghat with its white pavilion, striped steps and a large shade tree, from a boat on the river.",
+      "hi": "नाव से दिखता मान मंदिर घाट का उत्तरी छोर: सफ़ेद मंडप, धारीदार सीढ़ियाँ और एक बड़ा छायादार पेड़।"
+    }
+  },
+  {
+    "key": "places/darbhanga-ghat#2",
+    "title": "File:Varanasi (6706132227).jpg",
+    "alt": {
+      "en": "The full sandstone facade of Darbhanga Palace with its twin towers above Darbhanga Ghat, boats passing on a bright morning.",
+      "hi": "उजली सुबह दरभंगा घाट के ऊपर दो मीनारों वाले दरभंगा महल का पूरा बलुआ-पत्थर का अग्रभाग, सामने गुज़रती नावें।"
+    }
+  },
+  {
+    "key": "places/darbhanga-ghat#3",
+    "title": "File:Ganges river from Darbhanga Palace 2006 (291261818).jpg",
+    "alt": {
+      "en": "Looking south along the flooded Ganga from a balcony of Darbhanga Palace toward Assi Ghat during the monsoon.",
+      "hi": "बरसात में दरभंगा महल की छज्जे से बाढ़ भरी गंगा के साथ दक्षिण की ओर, अस्सी घाट की दिशा में दृश्य।"
+    }
   }
 ]

@@ -107,6 +107,47 @@ export function breadcrumbLd(locale: Locale, items: { name: string; path: string
   };
 }
 
+/**
+ * Walking / road time between two points for the distance cards. Lanes are not
+ * straight: walking distance is taken as 1.3× the straight line at 4.5 km/h;
+ * road distance as 1.4× at 22 km/h (city traffic). Rounded to 5 minutes.
+ */
+export function travelEstimate(straightKm: number): { mode: "walk" | "ride"; minutes: number } {
+  if (straightKm <= 2) return { mode: "walk", minutes: Math.max(5, Math.round((straightKm * 1.3) / 4.5 * 60 / 5) * 5) };
+  return { mode: "ride", minutes: Math.max(10, Math.round((straightKm * 1.4) / 22 * 60 / 5) * 5) };
+}
+
+/** The nearest other listed place and the walk to it (for "at a glance"). */
+export function nearestPlace(origin: { id: string; lat: number; lng: number }): { place: Place; minutes: number } | null {
+  let best: { place: Place; d: number } | null = null;
+  for (const p of places) {
+    if (p.id === origin.id) continue;
+    const d = km(origin, p);
+    if (!best || d < best.d) best = { place: p, d };
+  }
+  if (!best) return null;
+  return { place: best.place, minutes: Math.max(2, Math.round((best.d * 1.3) / 4.5 * 60)) };
+}
+
+/**
+ * The lead under a photo hero: the first sentence of the summary (the second
+ * too when the first is very short). Splits on Devanagari danda or full stop.
+ */
+export function leadOf(text: string): string {
+  const clean = text.replace(/\s+/g, " ").trim();
+  const ends: number[] = [];
+  const re = /[।.!?]+["”']?(?=\s|$)/g;
+  for (let m = re.exec(clean); m; m = re.exec(clean)) {
+    // Not a sentence end: "St." "Dr." and similar abbreviations
+    if (/\b(St|Dr|Mt|No|Rs|vs|Sq|Jr|Sr)$/.test(clean.slice(0, m.index))) continue;
+    ends.push(m.index + m[0].length);
+  }
+  if (!ends.length) return clean;
+  let out = clean.slice(0, ends[0]);
+  if (out.length < 70 && ends[1]) out = clean.slice(0, ends[1]);
+  return out.trim();
+}
+
 /** Meta description: first sentences of the text, up to ~155 characters. */
 export function metaDescription(text: string, max = 158): string {
   const clean = text.replace(/\s+/g, " ").trim();

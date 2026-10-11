@@ -16,12 +16,15 @@ export default function Modal({
   labelledBy,
   closeLabel,
   children,
+  size = "default",
 }: {
   open: boolean;
   onClose: () => void;
   labelledBy: string;
   closeLabel: string;
   children: ReactNode;
+  /** "wide": the photo lightbox (almost the full viewport) */
+  size?: "default" | "wide";
 }) {
   const panel = useRef<HTMLDivElement>(null);
   const returnTo = useRef<HTMLElement | null>(null);
@@ -94,7 +97,7 @@ export default function Modal({
             aria-modal="true"
             aria-labelledby={labelledBy}
             data-lenis-prevent
-            className="grain relative max-h-[92dvh] w-full max-w-3xl overflow-y-auto overscroll-contain rounded-t-kashi border border-kashi-diya/25 bg-kashi-indigo shadow-glow-lg sm:max-h-[calc(100dvh-4rem)] sm:rounded-kashi"
+            className={`grain relative max-h-[92dvh] w-full overflow-y-auto overscroll-contain rounded-t-kashi border border-kashi-diya/25 bg-kashi-indigo shadow-glow-lg sm:max-h-[calc(100dvh-4rem)] sm:rounded-kashi ${size === "wide" ? "max-w-6xl" : "max-w-3xl"}`}
             initial={reduced ? { opacity: 0 } : { opacity: 0, y: 40, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={reduced ? { opacity: 0 } : { opacity: 0, y: 24, scale: 0.98 }}

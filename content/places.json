@@ -18,6 +18,28 @@
       "Phones, bags and leather are not allowed inside; lockers are available near the corridor gates.",
       "Queues are shortest in the first hour after opening."
     ],
+    "glance": {
+      "timings": "02:30–23:00; darshan 04:00–11:00, 12:20–19:00, 20:30–21:00",
+      "entry": "Free; Sugam Darshan ₹300",
+      "duration": "1–2 h (incl. queue)",
+      "season": "Oct–Mar; Shravan (Jul–Aug) and Mahashivratri are peak",
+      "crowd": "very-busy",
+      "photography": "no",
+      "dress": "modest",
+      "verified": true,
+      "sources": [
+        {
+          "title": "Shri Kashi Vishwanath Temple Trust — Rituals (daily schedule)",
+          "url": "https://shrikashivishwanath.org/general/rituals",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Shri Kashi Vishwanath Temple Trust — FAQ (PDF): darshan timing, entry, gadgets, dress",
+          "url": "https://www.shrikashivishwanath.org/pdffile/FAQ_SHRI_KASHI_VISHWANTH_TEMPLE_2_0_pdf.pdf",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Shri Kashi Vishwanath Temple Trust",
@@ -38,7 +60,13 @@
         "tips": [
           "अंदर फ़ोन, बैग और चमड़ा ले जाना मना है; कॉरिडोर के द्वारों के पास लॉकर हैं।",
           "खुलने के पहले घंटे में कतारें सबसे छोटी होती हैं।"
-        ]
+        ],
+        "glance": {
+          "timings": "रात 2:30 से रात 11 बजे; दर्शन सुबह 4–11, दोपहर 12:20–शाम 7, रात 8:30–9",
+          "entry": "निःशुल्क; सुगम दर्शन ₹300",
+          "duration": "1–2 घंटे (कतार सहित)",
+          "season": "अक्टूबर–मार्च; सावन (जुलाई–अगस्त) और महाशिवरात्रि में सबसे अधिक भीड़"
+        }
       },
       "as": {
         "summary": "নগৰৰ হৃদয়স্থলত অৱস্থিত জ্যোতিৰ্লিংগ। বৰ্তমানৰ মন্দিৰটো অহল্যাবাই হোলকাৰে 1780 চনত নিৰ্মাণ কৰিছিল; ইয়াৰ সোণৰ পাতেৰে মোৰা চূড়াটো মহাৰাজা ৰণজিৎ সিঙে 1835 চনত দান কৰিছিল। 2021 চনৰ পৰা কৰিডৰটোৱে ললিতা ঘাটত মন্দিৰটোক পোনপটীয়াকৈ নদীলৈ মুকলি কৰি দিছে।"
@@ -93,6 +121,33 @@
       "Watching from a boat on the water gives the fullest view of the lamps.",
       "The upper platforms near Man Mandir Ghat stay calmer than the steps."
     ],
+    "glance": {
+      "timings": "Open always; Ganga Aarti at dusk (~18:00 Oct–Mar, ~19:00 Apr–Sep), 45 min",
+      "entry": "Free",
+      "duration": "1–1.5 h (with aarti)",
+      "season": "Oct–Mar; Dev Deepawali (Kartik Purnima, Nov)",
+      "crowd": "very-busy",
+      "photography": "allowed",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Incredible India (Ministry of Tourism) — Dashashwamedh Ghat",
+          "url": "https://incredibleindia.gov.in/en/uttar-pradesh/varanasi/dashashwamedh-ghat",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Wikipedia — Dashashwamedh Ghat",
+          "url": "https://en.wikipedia.org/wiki/Dashashwamedh_Ghat",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Varanasi Guru — Ganga Aarti Timing in Varanasi 2026 (month-by-month)",
+          "url": "https://www.varanasiguru.com/?p=15582",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Varanasi District — Tourist Places",
@@ -112,7 +167,13 @@
         "tips": [
           "नाव से देखने पर दीपों का सबसे पूरा दृश्य मिलता है।",
           "मान मंदिर घाट के पास के ऊपरी चबूतरे सीढ़ियों से शांत रहते हैं।"
-        ]
+        ],
+        "glance": {
+          "timings": "हमेशा खुला; गंगा आरती सूर्यास्त पर (अक्टूबर–मार्च ~शाम 6, अप्रैल–सितंबर ~7), 45 मिनट",
+          "entry": "निःशुल्क",
+          "duration": "1–1.5 घंटे (आरती सहित)",
+          "season": "अक्टूबर–मार्च; देव दीपावली (कार्तिक पूर्णिमा, नवंबर)"
+        }
       },
       "as": {
         "summary": "যি ঘাটত সমগ্ৰ নগৰ গোট খায়। ব্ৰহ্মাই ইয়াত দহটা অশ্বৰ যজ্ঞ সম্পন্ন কৰিছিল বুলি কোৱা হয়, তাৰ পৰাই ইয়াৰ নাম; ই সন্ধিয়াৰ গংগা আৰতিৰ মঞ্চ, যেতিয়া সাতজন পুৰোহিতে শংখ আৰু ঘণ্টাৰ ধ্বনিৰ সৈতে একেলগে স্তৰে স্তৰে সজোৱা প্ৰদীপ দাঙি ধৰে।"
@@ -167,10 +228,37 @@
       "Boats from Assi to Dashashwamedh at sunrise pass most of the main ghats in about an hour.",
       "The lanes behind the ghat have the city's most relaxed cafés."
     ],
+    "glance": {
+      "timings": "Open always; Subah-e-Banaras daily before sunrise (about 05:00–07:00), ~2 h",
+      "entry": "Free",
+      "duration": "1–2 h",
+      "season": "Oct–Mar",
+      "crowd": "busy",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": true,
+      "sources": [
+        {
+          "title": "Subah-e-Banaras — official site (daily, before sunrise; free)",
+          "url": "https://subahebanaras.net",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Incredible India (Ministry of Tourism) — Assi Ghat",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/assi-ghat",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Roobaroo Walks — What is Subah-e-Banaras? (timings, sequence)",
+          "url": "https://roobaroowalks.com/subah-e-banaras-morning-aarti-timings-sunrise-experience-at-assi-ghat/",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Subah-e-Banaras",
-        "url": "https://subahebanaras.in/",
+        "url": "https://subahebanaras.net/",
         "accessed": "2026-09-25"
       },
       {
@@ -186,7 +274,13 @@
         "tips": [
           "सूर्योदय पर अस्सी से दशाश्वमेध तक की नाव लगभग एक घंटे में अधिकांश प्रमुख घाटों से गुज़रती है।",
           "घाट के पीछे की गलियों में शहर के सबसे इत्मीनान वाले कैफ़े हैं।"
-        ]
+        ],
+        "glance": {
+          "timings": "हमेशा खुला; सुबह-ए-बनारस रोज़ सूर्योदय से पहले (लगभग सुबह 5–7), करीब 2 घंटे",
+          "entry": "निःशुल्क",
+          "duration": "1–2 घंटे",
+          "season": "अक्टूबर–मार्च"
+        }
       },
       "as": {
         "summary": "আটাইতকৈ দক্ষিণৰ ঘাট, য'ত এসময়ত অস্সী জুৰিটো গংগাত মিলিছিল। প্ৰতি ৰাতিপুৱা সুবহ-এ-বনাৰস আৰতি, যোগ আৰু শাস্ত্ৰীয় সংগীতে সূৰ্যক আদৰণি জনায়। তুলসীদাসে ওচৰতে বাস কৰিছিল আৰু ৰচনা কৰিছিল বুলি কোৱা হয়।"
@@ -241,6 +335,28 @@
       "Do not photograph the pyres or the mourners.",
       "Decline offers of a 'special view' for money; the families do not benefit."
     ],
+    "glance": {
+      "timings": "Open always; cremations continue day and night",
+      "entry": "Free (no fee; decline paid 'viewing' offers)",
+      "duration": "15–30 min, from a boat",
+      "season": "Oct–Mar",
+      "crowd": "busy",
+      "photography": "no",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Incredible India (Ministry of Tourism) — Manikarnika Ghat",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/manikarnika-ghat",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Ease India Trip — How to witness a cremation at Manikarnika Ghat respectfully",
+          "url": "https://www.easeindiatrip.com/blog/?p=8868",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Manikarnika Ghat",
@@ -255,7 +371,13 @@
         "tips": [
           "चिताओं या शोक-संतप्त परिवारों की तस्वीरें न लें।",
           "पैसे लेकर 'विशेष दृश्य' दिखाने के प्रस्ताव ठुकराएँ; इससे परिवारों को कोई लाभ नहीं होता।"
-        ]
+        ],
+        "glance": {
+          "timings": "हमेशा खुला; दाह-संस्कार दिन-रात चलते रहते हैं",
+          "entry": "निःशुल्क; पैसे लेकर ‘व्यू’ दिखाने के प्रस्ताव न मानें",
+          "duration": "15–30 मिनट, नाव से",
+          "season": "अक्टूबर–मार्च"
+        }
       },
       "as": {
         "summary": "মহান শ্মশান ঘাট, য'ৰ জুই কেতিয়াও নুমাই যোৱা নাই বুলি কোৱা হয়। নগৰৰ বিশ্বাস অনুসৰি, কাশীত দেহত্যাগ কৰি ইয়াত অন্তিম সংস্কাৰ হোৱা মানে পুনৰ্জন্মৰ পৰা মুক্তি। ই শোক আৰু বিশ্বাসৰ স্থান, যাক নীৰৱে আৰু দূৰৈৰ পৰা চোৱা উচিত।"
@@ -308,6 +430,28 @@
       "It is the easiest ghat for wheelchairs and prams.",
       "Boats and the cruise terminal for Sarnath-side trips leave from here."
     ],
+    "glance": {
+      "timings": "05:00–22:00 daily (as reported)",
+      "entry": "Free",
+      "duration": "1–2 h",
+      "season": "Oct–Mar; Dev Deepawali (Kartik Purnima, Nov)",
+      "crowd": "moderate",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Kashi (Varanasi Smart City) — Namo Ghat project details",
+          "url": "https://kashi.gov.in/project-details/namo-ghat",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Casual Walker — Namo Ghat complete travel guide (timings, entry)",
+          "url": "https://casualwalker.com/namo-ghat-varanasi-complete-travel-guide-namaste-sculptures-architecture-the-86th-ghat-in-the-holy-city-of-varanasi-namo-ghat-timings-boat-tours-contact-information-history-architecture-a/",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Kashi Official Web Portal — Namo Ghat",
@@ -327,7 +471,13 @@
         "tips": [
           "व्हीलचेयर और प्रैम के लिए सबसे सुगम घाट।",
           "सारनाथ-दिशा की नावें और क्रूज़ टर्मिनल यहीं से चलते हैं।"
-        ]
+        ],
+        "glance": {
+          "timings": "रोज़ सुबह 5 से रात 10 बजे (रिपोर्ट के अनुसार)",
+          "entry": "निःशुल्क",
+          "duration": "1–2 घंटे",
+          "season": "अक्टूबर–मार्च; देव दीपावली (कार्तिक पूर्णिमा, नवंबर)"
+        }
       },
       "as": {
         "summary": "পুৰণি খিড়কিয়া ঘাটক নগৰৰ উত্তৰ মূৰত খটখটি নোহোৱা বহল নদীতীৰ হিচাপে পুনৰ নিৰ্মাণ কৰা হৈছে: এখন মুকলি ৰংগমঞ্চ, এটা ভাসমান জেটী, এটা হেলিপেড আৰু যোৰ হাতৰ সেই তিনিটা ভাস্কৰ্য, যাৰ পৰা ইয়াৰ নামটো আহিছে। 2024 চনৰ নৱেম্বৰত উদ্বোধন কৰা হয়।"
@@ -383,6 +533,28 @@
       "Climb the steps to the Alamgir Mosque terrace for the widest view of the river bend.",
       "Akash-deep lamps are hoisted on tall bamboo here through the month of Kartik."
     ],
+    "glance": {
+      "timings": "Open always; busiest at dawn; Kartik evenings for the akash-deep lamps",
+      "entry": "Free",
+      "duration": "30–60 min",
+      "season": "Oct–Mar; Kartik (Oct–Nov) for the lamps",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Varanasi Guru — Panchganga Ghat: Confluence of 5 Rivers",
+          "url": "https://www.varanasiguru.com/?p=5418",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "TravelTriangle — Panchganga Ghat",
+          "url": "https://traveltriangle.com/blog/panchganga-ghat/",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Panchganga Ghat",
@@ -402,7 +574,13 @@
         "tips": [
           "नदी के मोड़ का सबसे चौड़ा दृश्य देखने के लिए आलमगीर मस्जिद की छत तक चढ़ें।",
           "कार्तिक भर यहाँ ऊँचे बाँसों पर आकाशदीप टाँगे जाते हैं।"
-        ]
+        ],
+        "glance": {
+          "timings": "हमेशा खुला; भोर में सबसे अधिक चहल-पहल; कार्तिक की शामों में आकाशदीप",
+          "entry": "निःशुल्क",
+          "duration": "30–60 मिनट",
+          "season": "अक्टूबर–मार्च; दीपों के लिए कार्तिक (अक्टूबर–नवंबर)"
+        }
       },
       "as": {
         "summary": "য'ত পাঁচখন নদী মিলিত হয় বুলি কোৱা হয়, যাৰ চাৰিখন অদৃশ্য। ইয়াত বিন্দুমাধৱ মন্দিৰ আছে, আৰু পৰম্পৰা অনুসৰি এই খটখটিতেই তাঁতী কবীৰে পুৱা হোৱাৰ আগতে সন্ত ৰামানন্দৰ পৰা মন্ত্ৰ লাভ কৰিছিল।"
@@ -458,6 +636,33 @@
       "The Archaeological Museum (closed Fridays) holds the original Lion Capital of Ashoka.",
       "Allow half a day: the stupa, Mulagandha Kuti Vihar, the Thai and Tibetan temples and the museum are all walkable."
     ],
+    "glance": {
+      "timings": "Site sunrise–sunset (~06:00–18:00); museum 10:00–17:00, closed Fri",
+      "entry": "Site ₹25 (Indian) · ₹300 (foreign); museum ₹5",
+      "duration": "2–3 h (site + museum)",
+      "season": "Oct–Mar; Buddha Purnima (Apr–May)",
+      "crowd": "busy",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Incredible India (Ministry of Tourism) — Dhamek Stupa (sunrise to sunset)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/dhamek-stupa",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Incredible India (Ministry of Tourism) — Sarnath Museum (10:00–17:00, closed Friday)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/sarnath-museum",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "UNI — Centre proposes revised list of ticketed ASI monuments; Sarnath in Category A (9 Sep 2026)",
+          "url": "https://www.uniindia.com/north-india/centre-proposes-revised-list-of-ticketed-asi-monuments-30-in-category-a-136-in-category-b/173558",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Dhamek Stupa",
@@ -483,7 +688,13 @@
         "tips": [
           "पुरातत्त्व संग्रहालय (शुक्रवार बंद) में अशोक का मूल सिंह-शीर्ष है।",
           "आधा दिन रखें: स्तूप, मूलगंध कुटी विहार, थाई और तिब्बती मंदिर और संग्रहालय सब पैदल दूरी पर हैं।"
-        ]
+        ],
+        "glance": {
+          "timings": "स्थल सूर्योदय–सूर्यास्त (~6–18 बजे); संग्रहालय 10–17 बजे, शुक्रवार बंद",
+          "entry": "स्थल ₹25 (भारतीय) · ₹300 (विदेशी); संग्रहालय ₹5",
+          "duration": "2–3 घंटे (स्थल व संग्रहालय)",
+          "season": "अक्टूबर–मार्च; बुद्ध पूर्णिमा (अप्रैल–मई)"
+        }
       },
       "as": {
         "summary": "ঘাটবোৰৰ পৰা দহ কিলোমিটাৰ দূৰত থকা মৃগদাৱ (হৰিণৰ উদ্যান), য'ত বুদ্ধই বোধিলাভৰ পিছত প্ৰথম উপদেশ দিছিল। গুপ্ত যুগৰ ইটা আৰু খোদিত শিলেৰে নিৰ্মিত 43 মিটাৰৰ ধমেক স্তূপে সেই স্থান চিহ্নিত কৰিছে; বিহাৰৰ ভগ্নাৱশেষ, অশোক স্তম্ভৰ অৱশিষ্ট অংশ আৰু সংগ্ৰহালয়ৰ সিংহশীৰ্ষই ইয়াক আগুৰি আছে। 2026 চনৰ 25 জুলাইত 'প্ৰাচীন বৌদ্ধ স্থান, সাৰনাথ' হিচাপে ইউনেস্কোৰ বিশ্ব ঐতিহ্য তালিকাত অন্তৰ্ভুক্ত কৰা হয়।"
@@ -532,12 +743,34 @@
     "lng": 83.0256,
     "coordsVerified": false,
     "summary": "The modern temple of Sarnath, built by the Maha Bodhi Society in 1931 beside the ruins of the Buddha's own hut. Its walls carry the Japanese painter Kosetsu Nosu's frescoes of the Buddha's life, and a bodhi tree grown from a cutting of the Anuradhapura tree stands outside.",
-    "bestTime": "Evening, when the relics are exposed and the chanting begins (around 18:00)",
+    "bestTime": "Evening sutta chanting (18:00 in winter, 19:00 in summer); the relics are shown on Buddha Purnima and Kartik Purnima",
     "image": "/media/places/mulagandha-kuti-vihar.jpg",
     "tips": [
       "Shoes come off at the door; the frescoes are best seen in morning light.",
       "The bell is rung at the evening service; sit at the back and listen."
     ],
+    "glance": {
+      "timings": "Daytime (~08:00–17:30, midday break); sutta chanting 18:00/19:00 by season",
+      "entry": "Free",
+      "duration": "30–45 min",
+      "season": "Oct–Mar; relics shown on Buddha Purnima (Apr–May) and Kartik Purnima (Nov)",
+      "crowd": "moderate",
+      "photography": "allowed",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "University of Saskatchewan (Osgood) — Sarnath pilgrim notes: evening Dhammacakkappavattana Sutta chanting 6 or 7 pm",
+          "url": "https://www.cs.usask.ca/~osgood/Personal/IndianBuddhistSites/Sarnath/Sarnath.html",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Airial — Mulagandha Kuti Vihar, Sarnath (hours, free entry, dress)",
+          "url": "https://airial.travel/attractions/india/varanasi/mulagandha-kuti-vihar-sarnath-srLwlq7C",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Sarnath",
@@ -553,11 +786,17 @@
     "i18n": {
       "hi": {
         "summary": "सारनाथ का आधुनिक मंदिर, महाबोधि सोसाइटी ने 1931 में बुद्ध की अपनी कुटी के अवशेषों के पास बनवाया। दीवारों पर जापानी चित्रकार कोसेत्सु नोसु के बुद्ध-जीवन के भित्तिचित्र, और बाहर अनुराधापुर के वृक्ष की कलम से उगा बोधिवृक्ष।",
-        "bestTime": "शाम, जब अवशेष दर्शन के लिए खोले जाते हैं और पाठ शुरू होता है (लगभग 18:00)",
+        "bestTime": "शाम का सुत्त-पाठ (सर्दियों में 18:00, गर्मियों में 19:00); अस्थि-अवशेष बुद्ध पूर्णिमा और कार्तिक पूर्णिमा को दिखाए जाते हैं",
         "tips": [
           "द्वार पर जूते उतरते हैं; भित्तिचित्र सुबह की रोशनी में सबसे अच्छे दिखते हैं।",
           "शाम की उपासना में घंटा बजता है; पीछे बैठकर सुनें।"
-        ]
+        ],
+        "glance": {
+          "timings": "दिन में (~8–17:30, दोपहर में अवकाश); सूत्र-पाठ मौसम अनुसार 18:00/19:00",
+          "entry": "निःशुल्क",
+          "duration": "30–45 मिनट",
+          "season": "अक्टूबर–मार्च; अस्थि-अवशेष दर्शन बुद्ध पूर्णिमा (अप्रैल–मई) व कार्तिक पूर्णिमा (नवंबर)"
+        }
       },
       "as": {
         "summary": "সাৰনাথৰ আধুনিক মন্দিৰ, যিটো মহাবোধি ছ'চাইটিয়ে 1931 চনত বুদ্ধৰ নিজৰ কুটিৰৰ ভগ্নাৱশেষৰ কাষত নিৰ্মাণ কৰিছিল। ইয়াৰ বেৰত জাপানী চিত্ৰকৰ কোছেৎছু নোছুৱে অঁকা বুদ্ধৰ জীৱনৰ ভিত্তিচিত্ৰ আছে, আৰু বাহিৰত অনুৰাধাপুৰৰ গছজোপাৰ এটা ডালৰ পৰা ৰোপণ কৰা এজোপা বোধিবৃক্ষ আছে।"
@@ -610,6 +849,33 @@
       "Reach it by the Sant Ravidas bridge or, in low water, by a boat from Assi Ghat.",
       "The museum is inside the fort; the family still lives in part of the palace."
     ],
+    "glance": {
+      "timings": "10:00–17:00 (museum); closed Dussehra and Muharram",
+      "entry": "₹50 (Indian) · ₹200 (foreign) · ₹20 children/students",
+      "duration": "1–2 h",
+      "season": "Oct–Mar; Ramlila in Oct",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "any",
+      "verified": true,
+      "sources": [
+        {
+          "title": "Ramnagar Fort Museum – Museums of India (Ministry of Culture portal)",
+          "url": "https://shop.museumsofindia.org/node/612",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Ramnagar Fort – Incredible India (Ministry of Tourism)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/ramnagar-fort",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Ramnagar Fort Museum – kashi.gov.in",
+          "url": "https://kashi.gov.in/listing-details/ramnagar-fort-museum",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Ramnagar Fort",
@@ -624,7 +890,13 @@
         "tips": [
           "संत रविदास सेतु से, या कम पानी में अस्सी घाट से नाव द्वारा पहुँचें।",
           "संग्रहालय किले के भीतर है; परिवार आज भी महल के एक हिस्से में रहता है।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 10 से शाम 5 बजे (संग्रहालय); दशहरा और मुहर्रम को बंद",
+          "entry": "₹50 (भारतीय) · ₹200 (विदेशी) · ₹20 बच्चे/छात्र",
+          "duration": "1 से 2 घंटे",
+          "season": "अक्टूबर से मार्च; रामलीला अक्टूबर में"
+        }
       },
       "as": {
         "summary": "বনাৰসৰ মহাৰাজসকলৰ বালিশিলৰ দুৰ্গ, যিটো ৰাজা বলৱন্ত সিঙে 1750 চনত তুলসী ঘাটৰ বিপৰীতে নদীৰ সিপাৰে নিৰ্মাণ কৰিছিল। ইয়াৰ সৰস্বতী ভৱন সংগ্ৰহালয়ত পুৰণি মটৰগাড়ী, পালকি, অস্ত্ৰ-শস্ত্ৰ আৰু এটা জ্যোতিৰ্বৈজ্ঞানিক ঘড়ী সংৰক্ষিত আছে; প্ৰতি শৰৎকালত মাহজোৰা ৰামনগৰ ৰামলীলা ইয়াৰ চাৰিওফালে অনুষ্ঠিত হয়।"
@@ -679,6 +951,33 @@
       "The temple has no entry restrictions and the Gita is carved on its walls.",
       "Cycle-rickshaws run the long avenues inside the campus."
     ],
+    "glance": {
+      "timings": "04:00–12:00 and 13:00–21:00",
+      "entry": "Free",
+      "duration": "45–60 min",
+      "season": "Oct–Mar",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "New Vishwanath Temple – Incredible India (Ministry of Tourism)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/new-vishwanath-temple",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Vishwanath Temple (BHU) – kashi.gov.in",
+          "url": "https://kashi.gov.in/listing-details/vishwanath-temple-bhu",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Varanasi Temples Entry Fees – EaseIndiaTrip",
+          "url": "https://www.easeindiatrip.com/blog/varanasi-monuments-foreign-visitor-entry-fees-activities/",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Banaras Hindu University",
@@ -698,7 +997,13 @@
         "tips": [
           "मंदिर में प्रवेश पर कोई रोक नहीं और दीवारों पर गीता उत्कीर्ण है।",
           "परिसर की लंबी सड़कों पर साइकिल-रिक्शा चलते हैं।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 4 से दोपहर 12 और दोपहर 1 से रात 9 बजे",
+          "entry": "निःशुल्क",
+          "duration": "45 से 60 मिनट",
+          "season": "अक्टूबर से मार्च"
+        }
       },
       "as": {
         "summary": "1916 চনত মদন মোহন মালবীয়ই প্ৰতিষ্ঠা কৰা বনাৰস হিন্দু বিশ্ববিদ্যালয় এছিয়াৰ আটাইতকৈ ডাঙৰ আৱাসিক চৌহদসমূহৰ অন্যতম। ইয়াৰ মাজভাগত বিড়লাসকলে নিৰ্মাণ কৰা নতুন বিশ্বনাথ মন্দিৰ (1966) সকলোৰে বাবে মুকলি; ভাৰত কলা ভৱনত সমগ্ৰ উত্তৰ ভাৰতৰ ক্ষুদ্ৰ চিত্ৰ, বস্ত্ৰ আৰু ভাস্কৰ্য সংৰক্ষিত আছে।"
@@ -753,6 +1058,33 @@
       "Tulsi Manas Temple is a two-minute walk; visit both together.",
       "Keep food out of sight because of the monkeys."
     ],
+    "glance": {
+      "timings": "05:00–12:00 and 16:00–21:00",
+      "entry": "Free",
+      "duration": "30–45 min",
+      "season": "Oct–Mar; Navratri",
+      "crowd": "busy",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Durga Temple – Incredible India (Ministry of Tourism)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/durga-temple",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Shri Durga Temple – kashi.gov.in",
+          "url": "https://kashi.gov.in/listing-details/shri-durga-temple",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Durga Temple Varanasi FAQs – TravelSetu",
+          "url": "https://travelsetu.com/guide/durga-temple-varanasi-tourism/durga-temple-varanasi-faqs",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Durga Mandir, Varanasi",
@@ -767,7 +1099,13 @@
         "tips": [
           "तुलसी मानस मंदिर दो मिनट की पैदल दूरी पर है; दोनों साथ देखें।",
           "बंदरों के कारण खाने की चीज़ें छिपाकर रखें।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 5 से दोपहर 12 और शाम 4 से रात 9 बजे",
+          "entry": "निःशुल्क",
+          "duration": "30 से 45 मिनट",
+          "season": "अक्टूबर से मार्च; नवरात्रि"
+        }
       },
       "as": {
         "summary": "বৰ্গাকাৰ কুণ্ডৰ কাষত থকা ৰঙা মন্দিৰ, যিটো 18শ শতিকাত নাটোৰৰ ৰাণী ভৱানীয়ে নাগৰ শৈলীত নিৰ্মাণ কৰিছিল। গেৰুৱা ৰঙৰ চূড়া, খটখটিযুক্ত কুণ্ড, আৰু সেই বান্দৰবোৰ, যাৰ বাবে ইয়াৰ পুৰণি উপনামটো হৈছিল।"
@@ -823,6 +1161,33 @@
       "The laddoo prasad is bought inside and offered, then shared.",
       "Phones are deposited at the gate."
     ],
+    "glance": {
+      "timings": "05:00–11:30 and 15:00–23:00; later on Tue/Sat",
+      "entry": "Free",
+      "duration": "30–45 min",
+      "season": "Oct–Mar; Sangeet Samaroh in Apr",
+      "crowd": "busy",
+      "photography": "no",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Shri Sankat Mochan Temple – kashi.gov.in",
+          "url": "https://kashi.gov.in/listing-details/shri-sankat-mochan-temple",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Sankat Mochan Hanuman Temple – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sankat_Mochan_Hanuman_Temple",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Sankat Mochan Hanuman Temple – ShubhPanchang",
+          "url": "https://shubhpanchang.com/temples/sankat-mochan-hanuman-temple",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Sankat Mochan Hanuman Temple",
@@ -837,7 +1202,13 @@
         "tips": [
           "लड्डू का प्रसाद भीतर खरीदकर चढ़ाया और बाँटा जाता है।",
           "फ़ोन द्वार पर जमा होते हैं।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 5 से 11:30 और दोपहर 3 से रात 11 बजे; मंगल-शनि को देर तक",
+          "entry": "निःशुल्क",
+          "duration": "30 से 45 मिनट",
+          "season": "अक्टूबर से मार्च; संगीत समारोह अप्रैल में"
+        }
       },
       "as": {
         "summary": "কবি-সন্ত তুলসীদাসে প্ৰতিষ্ঠা কৰা মন্দিৰ; তেওঁ ইয়াত হনুমানৰ দৰ্শন লাভ কৰিছিল বুলি কোৱা হয়। নামটোৰ অৰ্থ 'সংকট দূৰ কৰোঁতা'। প্ৰতি এপ্ৰিলত মন্দিৰত সংকটমোচন সংগীত সমাৰোহ অনুষ্ঠিত হয়, যেতিয়া ভাৰতৰ শ্ৰেষ্ঠ সংগীতজ্ঞসকলে গোটেই ৰাতি বিনামূলীয়াকৈ পৰিৱেশন কৰে।"
@@ -892,6 +1263,33 @@
       "Newcomers to the city traditionally pay respects here before Vishwanath.",
       "The silver-faced image is glimpsed through a small window; queues move quickly."
     ],
+    "glance": {
+      "timings": "05:00–21:30 (brief midday closure for bhog)",
+      "entry": "Free",
+      "duration": "30–45 min",
+      "season": "Oct–Mar; Bhairav Ashtami (Nov–Dec)",
+      "crowd": "busy",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Shri Kaal Bhairav Temple – kashi.gov.in",
+          "url": "https://kashi.gov.in/listing-details/shri-kaal-bhairav-temple",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Kaal Bhairav Temple – Incredible India (Ministry of Tourism)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/kaal-bhairav-temple",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Shree Kaal Bhairav Temple – ChalBanjare",
+          "url": "https://chalbanjare.com/uttar-pradesh/tourist-attraction/shree-kaal-bhairav-temple-varanasi",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Kaal Bhairav Mandir, Varanasi",
@@ -906,7 +1304,13 @@
         "tips": [
           "नगर में नए आने वाले परंपरा से विश्वनाथ से पहले यहाँ शीश नवाते हैं।",
           "चाँदी-मुख वाली प्रतिमा छोटी खिड़की से दिखती है; कतार तेज़ चलती है।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 5 से रात 9:30 बजे (दोपहर में भोग के समय थोड़ी देर बंद)",
+          "entry": "निःशुल्क",
+          "duration": "30 से 45 मिनट",
+          "season": "अक्टूबर से मार्च; भैरव अष्टमी (नवंबर-दिसंबर)"
+        }
       },
       "as": {
         "summary": "ভৈৰৱ কাশীৰ কোতোৱাল, অৰ্থাৎ নগৰৰ আৰক্ষী প্ৰধান: তেওঁৰ অনুমতি অবিহনে নগৰত একো নঘটে বুলি কোৱা হয়। বিশেশ্বৰগঞ্জৰ বৰ্তমানৰ মন্দিৰটো 17শ শতিকাৰ। তীৰ্থযাত্ৰীসকলে সুৰক্ষাৰ বাবে মন্দিৰৰ এডাল ক'লা সূতা হাতৰ মণিবন্ধত বান্ধে।"
@@ -962,6 +1366,33 @@
       "The garden is a calm place to read the verses.",
       "Open through the afternoon, unlike most temples."
     ],
+    "glance": {
+      "timings": "05:30–12:00 and 15:30–21:00",
+      "entry": "Free (small fee for the upper-floor dioramas)",
+      "duration": "30–45 min",
+      "season": "Oct–Mar; Shravan (Jul–Aug) puppet show",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Tulsi Manas Mandir – Incredible India (Ministry of Tourism)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/tulsi-manas-mandir",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Tulsi Manas Mandir – Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tulsi_Manas_Mandir",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Tulsi Manas Temple Varanasi guide – CaptureATrip",
+          "url": "https://www.captureatrip.com/blog/tulsi-manas-temple",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Tulsi Manas Mandir",
@@ -976,7 +1407,13 @@
         "tips": [
           "बगीचा दोहे पढ़ने की शांत जगह है।",
           "अधिकांश मंदिरों के विपरीत दोपहर में भी खुला रहता है।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 5:30 से दोपहर 12 और दोपहर 3:30 से रात 9 बजे",
+          "entry": "निःशुल्क (ऊपरी मंजिल की झाँकियों के लिए मामूली शुल्क)",
+          "duration": "30 से 45 मिनट",
+          "season": "अक्टूबर से मार्च; सावन (जुलाई-अगस्त) में कठपुतली प्रदर्शनी"
+        }
       },
       "as": {
         "summary": "1964 চনৰ বগা মাৰ্বলৰ মন্দিৰ, যিটো পৰম্পৰা অনুসৰি তুলসীদাসে ৰামচৰিতমানস ৰচনা কৰা স্থানত অৱস্থিত। সম্পূৰ্ণ মহাকাব্যখন ইয়াৰ বেৰত খোদিত, আৰু ওপৰ মহলাত কাহিনীটো চলমান দৃশ্যপটৰ জৰিয়তে উপস্থাপন কৰা হৈছে।"
@@ -1031,6 +1468,33 @@
       "Walk the gallery above the map to see the whole subcontinent at once.",
       "It is a ten-minute walk from Cantt station."
     ],
+    "glance": {
+      "timings": "08:00–17:30",
+      "entry": "Free",
+      "duration": "20–30 min",
+      "season": "Oct–Mar",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Bharat Mata Temple – Incredible India (Ministry of Tourism)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/bharat-mata-temple",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Bharat Mata Mandir – A Temple of No Gods – Varanasi Guru",
+          "url": "https://www.varanasiguru.com/?p=6196",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Varanasi Temples Entry Fees – EaseIndiaTrip",
+          "url": "https://www.easeindiatrip.com/blog/varanasi-monuments-foreign-visitor-entry-fees-activities/",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Bharat Mata Mandir",
@@ -1045,7 +1509,13 @@
         "tips": [
           "पूरा उपमहाद्वीप एक साथ देखने के लिए मानचित्र के ऊपर की गैलरी में चलें।",
           "कैंट स्टेशन से दस मिनट पैदल।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 8 से शाम 5:30 बजे",
+          "entry": "निःशुल्क",
+          "duration": "20 से 30 मिनट",
+          "season": "अक्टूबर से मार्च"
+        }
       },
       "as": {
         "summary": "কোনো দেৱমূৰ্তি নথকা এটা মন্দিৰ: তাৰ পৰিৱৰ্তে মাকৰানা মাৰ্বলত খোদিত অবিভক্ত ভাৰতৰ 9.5 মিটাৰ বহল এখন উত্থিত মানচিত্ৰ, য'ত প্ৰতিটো পৰ্বত আৰু নদী সঠিক অনুপাতত আছে। বাবু শিৱপ্ৰসাদ গুপ্তই নিৰ্মাণ কৰা এই মন্দিৰ 1936 চনত কাশী বিদ্যাপীঠ চৌহদত মহাত্মা গান্ধীয়ে উদ্বোধন কৰিছিল।"
@@ -1100,6 +1570,33 @@
       "Non-Muslim visitors may see the courtyard outside prayer times; dress modestly.",
       "The terrace looks down on the whole northern sweep of ghats."
     ],
+    "glance": {
+      "timings": "08:00–21:00; step out during the five daily prayers",
+      "entry": "Free",
+      "duration": "20–30 min",
+      "season": "Oct–Mar",
+      "crowd": "quiet",
+      "photography": "outside-only",
+      "dress": "covered",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Alamgir Mosque – kashi.gov.in",
+          "url": "https://kashi.gov.in/listing-details/alamgir-mosque",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Alamgir Mosque – Pelago (visitor FAQ)",
+          "url": "https://www.pelago.com/en/varanasi/alamgir-mosque-c3424",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Alamgir (Aurangzeb's) Mosque in Varanasi – Rama Arya's blog",
+          "url": "https://ramaarya.blog/2017/11/04/varanasi-alamgir-mosque",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Alamgir Mosque",
@@ -1114,7 +1611,13 @@
         "tips": [
           "गैर-मुस्लिम आगंतुक नमाज़ के समय के बाहर आँगन देख सकते हैं; शालीन वस्त्र पहनें।",
           "छत से घाटों का पूरा उत्तरी फैलाव दिखता है।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 8 से रात 9 बजे; पाँचों नमाज़ के समय बाहर रहें",
+          "entry": "निःशुल्क",
+          "duration": "20 से 30 मिनट",
+          "season": "अक्टूबर से मार्च"
+        }
       },
       "as": {
         "summary": "পঞ্চগংগা ঘাটৰ শিৰত শোভা পোৱা 17শ শতিকাৰ মছজিদ, যাক স্থানীয়ভাৱে বেনী মাধৱ কা ধৰহৰা বুলি জনা যায়। ইয়াৰ ভেটি আৰু তলৰ বেৰসমূহ পুৰণি বিন্দুমাধৱ মন্দিৰৰ অংশ; ইয়াৰ ওখ মিনাৰবোৰ এসময়ত নদীৰে উজাই অহা নাওবোৰৰ বাবে দিগন্তৰ চিন আছিল।"
@@ -1170,6 +1673,28 @@
       "Ask to see the loom and the manuscript room.",
       "Lahartara, where Kabir was found as a baby by a pond, is a separate site 5 km west."
     ],
+    "glance": {
+      "timings": "05:00–20:00",
+      "entry": "Free",
+      "duration": "45 min–1 h",
+      "season": "Oct–Mar; Kabir Jayanti (May–Jun)",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Kabir Chaura Math — Incredible India (Ministry of Tourism)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/kabir-chaura-math",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Kabir Math (Kabir Chaura) — Airial travel guide",
+          "url": "https://airial.travel/attractions/india/varanasi/kabir-math-kabir-chaura-o2xOOPqI",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Incredible India — Kabir Chaura Math",
@@ -1190,7 +1715,13 @@
         "tips": [
           "करघा और पांडुलिपि कक्ष देखने का आग्रह करें।",
           "लहरतारा, जहाँ कबीर तालाब किनारे शिशु रूप में मिले, 5 किमी पश्चिम में अलग स्थल है।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 05:00 से रात 08:00 तक",
+          "entry": "निःशुल्क",
+          "duration": "45 मिनट–1 घंटा",
+          "season": "अक्टूबर–मार्च; कबीर जयंती (मई–जून)"
+        }
       },
       "as": {
         "summary": "কবীৰ পন্থৰ পীঠস্থান, সেই মহল্লাত য'ত তাঁতী-কবি কবীৰে 15শ শতিকাত বাস কৰিছিল আৰু গীত গাইছিল। মঠটোত তেওঁৰ তাঁতশাল, তেওঁৰ পাদুকা আৰু এটা সমাধি-মন্দিৰ সংৰক্ষিত আছে, আৰু আজিও ইয়াত তেওঁৰ দোঁহাসমূহ ছপা কৰা হয়, যিবোৰ কোনো এটা ধৰ্মৰ নহয়।"
@@ -1245,6 +1776,33 @@
       "Langar (a free community meal) is served to all.",
       "The gold-domed temple is south of BHU; an auto from Lanka takes ten minutes."
     ],
+    "glance": {
+      "timings": "06:00–21:00; langar served through the day",
+      "entry": "Free",
+      "duration": "45 min–1 h",
+      "season": "Oct–Mar; Guru Ravidass Jayanti (Magh Purnima, Feb)",
+      "crowd": "moderate",
+      "photography": "allowed",
+      "dress": "covered",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Shri Guru Ravidas Janm Sthan Mandir — Kashi (kashi.gov.in)",
+          "url": "https://kashi.gov.in/listing-details/shri-guru-ravidas-janm-sthan-mandir",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Sri Guru Ravidas Janmasthal — BhaktiBharat",
+          "url": "https://www.bhaktibharat.com/mandir/guru-ravidas-janmasthal",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Birth place of Guru Ravidass — ravidassguru.com (Dera Sachkhand Ballan)",
+          "url": "https://www.ravidassguru.com/birth-place-of-guru-ravidass",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Shri Guru Ravidas Janam Asthan",
@@ -1264,7 +1822,13 @@
         "tips": [
           "लंगर (निःशुल्क सामूहिक भोजन) सबके लिए।",
           "स्वर्ण-गुंबद वाला मंदिर बीएचयू के दक्षिण में है; लंका से ऑटो में दस मिनट।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 06:00 से रात 09:00 तक; लंगर पूरे दिन",
+          "entry": "निःशुल्क",
+          "duration": "45 मिनट–1 घंटा",
+          "season": "अक्टूबर–मार्च; गुरु रविदास जयंती (माघ पूर्णिमा, फ़रवरी)"
+        }
       },
       "as": {
         "summary": "চীৰ গোবৰ্ধনপুৰত 15শ শতিকাৰ সন্ত ৰবিদাসৰ জন্মস্থানৰ মন্দিৰ, যাৰ নিৰ্মাণ 1965 চনত আৰম্ভ হৈ 1994 চনত সম্পূৰ্ণ হয়। জাতিত চৰ্মকাৰ ৰবিদাসে শিকাইছিল যে ভক্তিৰ বাবে কোনো মধ্যস্থতাকাৰীৰ প্ৰয়োজন নাই; তেওঁৰ চল্লিশটা পদ গুৰু গ্ৰন্থ চাহিবত আছে। ৰবিদাস জয়ন্তীত পাঞ্জাবৰ পৰা লাখ লাখ তীৰ্থযাত্ৰী আহে।"
@@ -1319,6 +1883,32 @@
       "Leather items are left outside; visit before noon when the temples are open.",
       "Sarnath also has a Jain temple to Shreyansanath, the 11th Tirthankara, born nearby."
     ],
+    "glance": {
+      "timings": "05:30–11:30 · 18:00–21:00 (reported; confirm)",
+      "duration": "30–45 min",
+      "season": "Oct–Mar; Parshvanath Janma Kalyanak (Dec–Jan)",
+      "crowd": "quiet",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Parshvanath Digambar Jain Temple, Bhelupur — Kashi (kashi.gov.in)",
+          "url": "https://kashi.gov.in/listing-details/parshvanath-digambar-jain-temple-bhelupur",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Shri 1008 Parshvanath Digamber Teerth Kshetra, Bhelupur — jainmandir.org directory",
+          "url": "https://www.jainmandir.org/Temple/Shri-1008-Parshvanath-Digamber-Teerth-Kshetra,-Bhelupur,-Varansi(U-P-)",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Bhelupur Tirth — jainsite.com (trust names and phone numbers)",
+          "url": "https://jainsite.com/jain-tirth/bhelupur-tirth/",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Parshvanath Jain temples, Varanasi",
@@ -1338,7 +1928,12 @@
         "tips": [
           "चमड़े की वस्तुएँ बाहर रहती हैं; दोपहर से पहले जाएँ जब मंदिर खुले हों।",
           "सारनाथ में 11वें तीर्थंकर श्रेयांसनाथ का जैन मंदिर भी है, जिनका जन्म पास ही हुआ।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 05:30–11:30 · शाम 06:00–09:00 (पुष्टि करें)",
+          "duration": "30–45 मिनट",
+          "season": "अक्टूबर–मार्च; पार्श्वनाथ जन्म कल्याणक (दिसंबर–जनवरी)"
+        }
       },
       "as": {
         "summary": "জৈনসকলে ভেলুপুৰক 23তম তীৰ্থংকৰ পাৰ্শ্বনাথৰ তিনিটা কল্যাণকৰ স্থান বুলি মানে: তেওঁৰ গৰ্ভ, জন্ম আৰু দীক্ষা, প্ৰায় 2,800 বছৰ আগতে। দিগম্বৰ আৰু শ্বেতাম্বৰ মন্দিৰ কাষে কাষে আছে, আৰু ইয়াত পোৱা জৈন মূৰ্তিসমূহ 9ম–11শ শতিকাৰ।"
@@ -1393,6 +1988,33 @@
       "Cover your head and remove shoes; langar is open to everyone.",
       "It is at Gurubagh crossing, between Rathyatra and Luxa."
     ],
+    "glance": {
+      "timings": "05:00–22:30; langar daily",
+      "entry": "Free",
+      "duration": "30–45 min",
+      "season": "Oct–Mar; Guru Nanak Gurpurab (Kartik Purnima, Nov)",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "covered",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Sri Guru Nanak Dev Ji Gurudwara (Guru Ka Bagh) — Kashi (kashi.gov.in)",
+          "url": "https://kashi.gov.in/listing-details/sri-guru-nanak-dev-ji-gurudwara",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Gurudwara Guru Ka Bagh — Airial travel guide",
+          "url": "https://airial.travel/attractions/india/varanasi/gurudwara-guru-ka-bagh-qpZX9avX",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Gurdwara Guru-Ka-Bagh, Varanasi — AllAboutSikhs",
+          "url": "https://www.allaboutsikhs.com/gurdwara-guru-ka-bagh-varanasi/",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Kashi Official Web Portal — Sri Guru Nanak Dev Ji Gurudwara (Guru Ka Bagh)",
@@ -1412,7 +2034,13 @@
         "tips": [
           "सिर ढकें और जूते उतारें; लंगर सबके लिए खुला है।",
           "यह रथयात्रा और लक्सा के बीच गुरुबाग़ चौराहे पर है।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 05:00 से रात 10:30 तक; लंगर प्रतिदिन",
+          "entry": "निःशुल्क",
+          "duration": "30–45 मिनट",
+          "season": "अक्टूबर–मार्च; गुरु नानक गुरपुरब (कार्तिक पूर्णिमा, नवंबर)"
+        }
       },
       "as": {
         "summary": "সেই বাগিচাখন চিহ্নিত কৰে, য'ত গুৰু নানকে 1507 চনত শিৱৰাত্ৰিৰ সময়ত কাশী ভ্ৰমণলৈ আহি ৰৈছিল আৰু বাহ্যিক চিহ্ন অবিহনে ভক্তিৰ বিষয়ে নগৰৰ পণ্ডিতসকলৰ সৈতে আলোচনা কৰিছিল। গুৰুবাগৰ গুৰু নানক ৰোডত থকা বগা মাৰ্বলৰ গুৰুদ্বাৰাখনৰ নিৰ্মাণ 1969 চনত তেওঁৰ 500তম জন্মজয়ন্তী উপলক্ষে আৰম্ভ কৰা হৈছিল।"
@@ -1467,6 +2095,27 @@
       "Cover your head and remove shoes; langar is open to everyone.",
       "It is a short walk from Kashi Vishwanath through the Chowk lanes."
     ],
+    "glance": {
+      "timings": "06:00–22:00",
+      "duration": "20–30 min",
+      "season": "Oct–Mar; Guru Tegh Bahadur and Guru Nanak gurpurabs (Nov–Jan)",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "covered",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Gurudwaras in Varanasi — Digit (timings listing)",
+          "url": "https://www.godigit.com/explore/spiritual-places/gurudwaras-in-varanasi",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Gurudwara Bari Sangat Sri Guru Tegh Bahadur, Varanasi — AllAboutSikhs",
+          "url": "https://www.allaboutsikhs.com/gurudwara-bari-sangat-sri-guru-tegh-bahadur-varanasi",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "SikhiWiki — Gurudwara Bari Sangat Sri Guru Tegh Bahadur (Varanasi)",
@@ -1486,7 +2135,12 @@
         "tips": [
           "सिर ढकें और जूते उतारें; लंगर सबके लिए खुला है।",
           "काशी विश्वनाथ से चौक की गलियों से थोड़ी पैदल दूरी।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 06:00 से रात 10:00 तक",
+          "duration": "20–30 मिनट",
+          "season": "अक्टूबर–मार्च; गुरु तेग़ बहादुर व गुरु नानक गुरपुरब (नवंबर–जनवरी)"
+        }
       },
       "as": {
         "summary": "বনাৰসৰ আটাইতকৈ পুৰণি শিখ সংগত, চৌকৰ ওচৰৰ নীচীবাগৰ গলিত। গুৰু তেগ বাহাদুৰে 1666 চনত ইয়াত কেইবামাহ অৱস্থান কৰিছিল আৰু যি কোঠাত তেওঁ ধ্যান কৰিছিল সেইটো তেওঁৰ তপ অস্থান হিচাপে সংৰক্ষিত; গুৰু গোবিন্দ সিঙে 1670 চনত ইয়ালৈ আহিছিল। গুৰুসকলৰ পুৰণি হুকুমনামাসমূহ ইয়াত সংৰক্ষিত আছে।"
@@ -1541,6 +2195,27 @@
       "It stands near the IG Police office, a few minutes from Cantt railway station.",
       "Visitors of all faiths are welcome outside service hours; ask the caretaker."
     ],
+    "glance": {
+      "timings": "Sunday morning service; no fixed visiting hours published",
+      "duration": "20–30 min",
+      "season": "Oct–Mar; Christmas",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Varanasi Deanery — Diocese of Lucknow, Church of North India",
+          "url": "https://dioceseoflucknowcni.org/Varanasi_Deaneries.aspx",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "St Mary's Church, Varanasi — Kiomoi directory",
+          "url": "https://www.kiomoi.com/attractions/st-mary's-church,-varanasi-in-varanasi-2731",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Free Press Journal — Varanasi's oldest church, St. Mary's",
@@ -1560,7 +2235,12 @@
         "tips": [
           "आईजी पुलिस कार्यालय के पास, कैंट रेलवे स्टेशन से कुछ मिनट।",
           "सभी धर्मों के आगंतुक प्रार्थना-समय के बाहर स्वागत हैं; केयरटेकर से पूछें।"
-        ]
+        ],
+        "glance": {
+          "timings": "रविवार सुबह प्रार्थना सभा; दर्शन का कोई निश्चित समय प्रकाशित नहीं",
+          "duration": "20–30 मिनट",
+          "season": "अक्टूबर–मार्च; क्रिसमस"
+        }
       },
       "as": {
         "summary": "বাৰাণসীৰ আটাইতকৈ পুৰণি গীৰ্জা আৰু উত্তৰ ভাৰতৰ আটাইতকৈ পুৰণি প্ৰটেষ্টাণ্ট গীৰ্জাসমূহৰ অন্যতম: 1810 চনৰ এপ্ৰিলত চেপলেইন ডেনিয়েল কৰীয়ে ভেটি স্থাপন কৰে, 1812 চনত সম্পূৰ্ণ হয়। কেণ্টনমেণ্টৰ পুৰণি গছৰ ছাঁত এটা চাপৰ টাৱাৰ, এটা চূড়া আৰু হেলনীয়া পাত লগোৱা দুৱাৰ; ৰাণী দ্বিতীয় এলিজাবেথে 1961 চনৰ ভ্ৰমণৰ সময়ত ইয়াত উপাসনা কৰিছিল।"
@@ -1613,6 +2293,33 @@
       "Taxis from Varanasi take about an hour; local trains stop at Chunar station.",
       "Chunar is also where the sandstone for Ashoka's pillars was quarried."
     ],
+    "glance": {
+      "timings": "09:00–17:00",
+      "entry": "Free",
+      "duration": "2–3 h on site; half a day with the drive",
+      "season": "Oct–Mar",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Chunar — Incredible India (Ministry of Tourism)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/chunar",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Chunar Fort Varanasi (entry fee, timings) — varanasitourism.org.in, updated 29 Oct 2025",
+          "url": "https://varanasitourism.org.in/chunar-fort-varanasi",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Chunar Fort — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Chunar_Fort",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Chunar Fort",
@@ -1627,7 +2334,13 @@
         "tips": [
           "वाराणसी से टैक्सी लगभग एक घंटा; लोकल ट्रेनें चुनार स्टेशन पर रुकती हैं।",
           "चुनार वही जगह है जहाँ से अशोक के स्तंभों का बलुआ पत्थर निकाला गया।"
-        ]
+        ],
+        "glance": {
+          "timings": "सुबह 09:00 से शाम 05:00 तक",
+          "entry": "निःशुल्क",
+          "duration": "किले में 2–3 घंटे; यात्रा सहित आधा दिन",
+          "season": "अक्टूबर–मार्च"
+        }
       },
       "as": {
         "summary": "নগৰৰ পৰা 23 কিমি দক্ষিণ-পশ্চিমে গংগাৰ এটা বাঁকত থকা বালিশিলৰ দুৰ্গ, যিটো ক্ৰমে শ্বেৰশ্বাহ সূৰী (1532), হুমায়ুন, আকবৰ আৰু ইষ্ট ইণ্ডিয়া কোম্পানীৰ অধীনত আছিল। ছোনৱা মণ্ডপ, গভীৰ কুঁৱা আৰু নদীৰ ওপৰৰ প্ৰাচীৰসমূহেই তালৈ যোৱাৰ কাৰণ।"
@@ -1682,6 +2395,28 @@
       "Ten minutes on foot north of Assi Ghat; from a boat, the round bastions are easy to pick out.",
       "The ghat was called Shivala Ghat before it took the Raja's name; the Shivala temple quarter is just behind it."
     ],
+    "glance": {
+      "timings": "Open always; fort walls best seen in daylight",
+      "entry": "Free",
+      "duration": "20–30 min",
+      "season": "Oct–Mar; Dev Deepawali (Kartik Purnima, Nov)",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Chet Singh Ghat and Fort — Airial travel guide",
+          "url": "https://airial.travel/attractions/india/varanasi/chet-singh-ghat-and-fort-pRNC0hkE",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Dev Diwali 2026: best ghats and attractions — Varanasi Guru",
+          "url": "https://www.varanasiguru.com/?p=11772",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Ghats in Varanasi",
@@ -1706,7 +2441,13 @@
         "tips": [
           "अस्सी घाट से उत्तर की ओर पैदल दस मिनट; नाव से गोल बुर्ज आसानी से पहचाने जाते हैं।",
           "राजा का नाम पाने से पहले यह शिवाला घाट कहलाता था; शिवाला मंदिर मोहल्ला ठीक पीछे है।"
-        ]
+        ],
+        "glance": {
+          "timings": "हमेशा खुला; किले की दीवारें दिन के उजाले में देखें",
+          "entry": "निःशुल्क",
+          "duration": "20–30 मिनट",
+          "season": "अक्टूबर–मार्च; देव दीपावली (कार्तिक पूर्णिमा, नवंबर)"
+        }
       }
     }
   },
@@ -1729,6 +2470,33 @@
       "Five minutes' walk north along the river from Assi Ghat.",
       "The Sankat Mochan temple, which Tulsidas is said to have founded, and the Tulsi Manas temple are a short ride inland."
     ],
+    "glance": {
+      "timings": "Open always · Hanuman temple 5:00–12:00 & 15:00–22:00; aarti 5:30 & 20:30",
+      "entry": "Free",
+      "duration": "20–30 min",
+      "season": "Oct–Mar (Nag Nathaiya in Kartik; Dhrupad Mela Feb–Mar)",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Sri Bala Hanuman Temple, Akhara Goswami Tulsidas, Tulsi Ghat — Vayusutha",
+          "url": "https://vayusutha.in/vs4/temple107.html",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Nag Nathaiya Leela, Varanasi — Incredible India (Ministry of Tourism)",
+          "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/uttar-pradesh/nag-nathaiya-leela--varanasi",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Tulsi Ghat — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tulsi_Ghat",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Tulsi Ghat",
@@ -1753,7 +2521,13 @@
         "tips": [
           "अस्सी घाट से नदी के किनारे उत्तर की ओर पाँच मिनट पैदल।",
           "संकट मोचन मंदिर, जिसकी स्थापना तुलसीदास ने की मानी जाती है, और तुलसी मानस मंदिर थोड़ी दूर भीतर हैं।"
-        ]
+        ],
+        "glance": {
+          "timings": "सदैव खुला · हनुमान मंदिर 5:00–12:00 व 15:00–22:00; आरती 5:30 व 20:30",
+          "entry": "निःशुल्क",
+          "duration": "20–30 मिनट",
+          "season": "अक्टूबर–मार्च (कार्तिक में नाग नथैया; फरवरी–मार्च में ध्रुपद मेला)"
+        }
       }
     }
   },
@@ -1775,6 +2549,33 @@
       "Directly north of Manikarnika Ghat; every Dashashwamedh–Panchganga boat ride passes it.",
       "On foot, allow fifteen minutes through the lanes from Dashashwamedh."
     ],
+    "glance": {
+      "timings": "Open always; Ratneshwar Mahadev is seen from the steps or a boat",
+      "entry": "Free",
+      "duration": "15–20 min",
+      "season": "Nov–Mar (low water shows more of the temple)",
+      "crowd": "moderate",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": true,
+      "sources": [
+        {
+          "title": "Scindia Ghat — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Scindia_Ghat",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Ghats in Varanasi — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Scindia Ghat, Varanasi — Trawell",
+          "url": "https://www.trawell.in/uttar-pradesh/varanasi/scindia-ghat",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Scindia Ghat",
@@ -1799,7 +2600,13 @@
         "tips": [
           "मणिकर्णिका घाट के ठीक उत्तर; दशाश्वमेध–पंचगंगा की हर नाव इसके सामने से गुज़रती है।",
           "पैदल दशाश्वमेध से गलियों में होकर लगभग पंद्रह मिनट।"
-        ]
+        ],
+        "glance": {
+          "timings": "सदैव खुला; रत्नेश्वर महादेव सीढ़ियों या नाव से देखा जाता है",
+          "entry": "निःशुल्क",
+          "duration": "15–20 मिनट",
+          "season": "नवंबर–मार्च (कम पानी में मंदिर अधिक दिखता है)"
+        }
       }
     }
   },
@@ -1821,6 +2628,33 @@
       "A short walk north along the river from Dashashwamedh Ghat.",
       "The Vishwanath Dham gates open from the ghat; shoes and phones follow the temple's rules from here."
     ],
+    "glance": {
+      "timings": "Open always · Nepali Mandir about 5:00–21:00",
+      "entry": "Free",
+      "duration": "20–30 min",
+      "season": "Oct–Mar",
+      "crowd": "busy",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Varanasi Pashupatinath (Nepali) Temple timings — Yatradham blog",
+          "url": "https://blog.yatradham.org/varanasi-pashupatinath-temple-timings/",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Nepali Mandir — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nepali_Mandir",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Lalita Ghat — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lalita_Ghat",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Lalita Ghat",
@@ -1845,7 +2679,13 @@
         "tips": [
           "दशाश्वमेध घाट से नदी के किनारे उत्तर की ओर थोड़ी दूर पैदल।",
           "विश्वनाथ धाम के द्वार घाट से खुलते हैं; यहीं से जूते और फ़ोन के मंदिर-नियम लागू हैं।"
-        ]
+        ],
+        "glance": {
+          "timings": "सदैव खुला · नेपाली मंदिर लगभग 5:00–21:00",
+          "entry": "निःशुल्क",
+          "duration": "20–30 मिनट",
+          "season": "अक्टूबर–मार्च"
+        }
       }
     }
   },
@@ -1867,6 +2707,33 @@
       "Please do not photograph the rites or the mourners; the river view from a passing boat is the respectful way to see it.",
       "Ten minutes' walk north from Assi Ghat, or a short ride from the Sonarpura crossing."
     ],
+    "glance": {
+      "timings": "Open always; cremations day and night — view only from a passing boat",
+      "entry": "Free",
+      "duration": "10–15 min (from the river)",
+      "season": "Oct–Mar",
+      "crowd": "moderate",
+      "photography": "no",
+      "dress": "modest",
+      "verified": true,
+      "sources": [
+        {
+          "title": "Ghats in Varanasi — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Nadir of the Styx — Outlook India",
+          "url": "https://www.outlookindia.com/society/nadir-of-the-styx-news-277358",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Harishchandra Ghat, Varanasi — Trawell",
+          "url": "https://www.trawell.in/uttar-pradesh/varanasi/harishchandra-ghat",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Ghats in Varanasi",
@@ -1891,7 +2758,13 @@
         "tips": [
           "कृपया अंतिम संस्कार या शोकाकुल परिजनों की तस्वीरें न लें; गुज़रती नाव से नदी का दृश्य ही इसे देखने का सम्मानजनक तरीक़ा है।",
           "अस्सी घाट से उत्तर की ओर पैदल दस मिनट, या सोनारपुरा चौराहे से थोड़ी दूरी।"
-        ]
+        ],
+        "glance": {
+          "timings": "सदैव खुला; दाह-संस्कार दिन-रात चलते हैं — केवल गुज़रती नाव से देखें",
+          "entry": "निःशुल्क",
+          "duration": "10–15 मिनट (नदी से)",
+          "season": "अक्टूबर–मार्च"
+        }
       }
     }
   },
@@ -1913,6 +2786,33 @@
       "Midway between Dashashwamedh and Assi; about fifteen minutes' walk south from Godowlia via Sonarpura.",
       "Khichdi is the traditional offering at Kedareshwar, recalling the legend of the linga's appearance."
     ],
+    "glance": {
+      "timings": "Open always · Gauri Kedareshwar temple busiest at dawn (~5:00–8:00)",
+      "entry": "Free",
+      "duration": "20–30 min",
+      "season": "Oct–Mar; Shravan Mondays (Jul–Aug) for the bathing crowds",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Kedareshvara Temple — Cultural Heritage of Varanasi",
+          "url": "https://culturalheritageofvaranasi.com/notable_temples/kedareshvara-temple/",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Kedar Ghat: The Mandala of Kashi — Varanasi Guru",
+          "url": "https://www.varanasiguru.com/?p=7341",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Ghats in Varanasi — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Ghats in Varanasi",
@@ -1937,7 +2837,13 @@
         "tips": [
           "दशाश्वमेध और अस्सी के बीचोबीच; गोदौलिया से सोनारपुरा होते हुए दक्षिण की ओर लगभग पंद्रह मिनट पैदल।",
           "केदारेश्वर पर खिचड़ी का पारंपरिक भोग चढ़ता है, जो लिंग के प्रकट होने की कथा की याद दिलाता है।"
-        ]
+        ],
+        "glance": {
+          "timings": "सदैव खुला · गौरी केदारेश्वर मंदिर में भोर (~5–8 बजे) सबसे अधिक भीड़",
+          "entry": "निःशुल्क",
+          "duration": "20–30 मिनट",
+          "season": "अक्टूबर–मार्च; श्रावण सोमवार (जुलाई–अगस्त) स्नान की भीड़ के लिए"
+        }
       }
     }
   },
@@ -1960,6 +2866,33 @@
       "The observatory is listed by the ASI as the Man Singh Observatory; it is rarely crowded.",
       "Look for the palace's northern balcony from the river; it gives the ghat its profile."
     ],
+    "glance": {
+      "timings": "Ghat open always · Observatory (ASI) daily, about 9:00–16:30",
+      "entry": "Ghat free · Observatory ₹25 (Indian) · ₹300 (foreign)",
+      "duration": "45 min–1 h",
+      "season": "Oct–Mar",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Visitor Information — ASI Sarnath Circle",
+          "url": "https://www.asisarnathcircle.in/visitorinformation.php",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Observatory of Man Singh (Man Mahal) — ASI tickets on District",
+          "url": "https://www.district.in/events/observatory-of-man-singh-man-mahal-buy-tickets",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Man Singh Observatory — Wanderlog (hours 9AM–4:30PM daily)",
+          "url": "https://wanderlog.com/place/details/1716081/man-singh-observatory",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Jantar Mantar, Varanasi",
@@ -1979,7 +2912,13 @@
         "tips": [
           "वेधशाला ASI की सूची में मान सिंह वेधशाला के नाम से है; यहाँ भीड़ कम ही होती है।",
           "नदी से महल का उत्तरी झरोखा देखें; वही घाट की पहचान है।"
-        ]
+        ],
+        "glance": {
+          "timings": "घाट सदैव खुला · वेधशाला (ASI) प्रतिदिन, लगभग 9:00–16:30",
+          "entry": "घाट निःशुल्क · वेधशाला ₹25 (भारतीय) · ₹300 (विदेशी)",
+          "duration": "45 मिनट–1 घंटा",
+          "season": "अक्टूबर–मार्च"
+        }
       }
     }
   },
@@ -2002,6 +2941,33 @@
       "Five minutes' walk south of Dashashwamedh past Munshi and Rana Mahal ghats; every Assi–Manikarnika boat passes it.",
       "The Darbhanga rajas were patrons of Dhrupad; the Dhrupad Mela is still held each spring at Tulsi Ghat."
     ],
+    "glance": {
+      "timings": "Open always; palace is the Brijrama Palace hotel (guests only)",
+      "entry": "Free (ghat); hotel not open to walk-in visitors",
+      "duration": "15–20 min",
+      "season": "Oct–Mar",
+      "crowd": "moderate",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": true,
+      "sources": [
+        {
+          "title": "Munshi Ghat — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Munshi_Ghat",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Darbhanga Ghat, Varanasi — Trawell",
+          "url": "https://www.trawell.in/uttar-pradesh/varanasi/darbhanga-ghat",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Varanasi's Brijrama Palace — Outlook Traveller",
+          "url": "https://www.outlooktraveller.com/stay/varanasis-brijrama-palace-where-history-meets-artistry-and-culture",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Munshi Ghat (the 1812 palace and its 1915 purchase by Darbhanga)",
@@ -2026,7 +2992,13 @@
         "tips": [
           "दशाश्वमेध से दक्षिण की ओर मुंशी और राणा महल घाट पार करते हुए पाँच मिनट पैदल; अस्सी–मणिकर्णिका की हर नाव इसके सामने से गुज़रती है।",
           "दरभंगा के राजा ध्रुपद के संरक्षक थे; ध्रुपद मेला आज भी हर वसंत तुलसी घाट पर होता है।"
-        ]
+        ],
+        "glance": {
+          "timings": "सदैव खुला; महल अब बृजरामा पैलेस होटल है (केवल अतिथियों के लिए)",
+          "entry": "निःशुल्क (घाट); होटल में बिना बुकिंग प्रवेश नहीं",
+          "duration": "15–20 मिनट",
+          "season": "अक्टूबर–मार्च"
+        }
       }
     }
   },
@@ -2048,6 +3020,33 @@
       "Pilgrims take darshan at Vishwanath first and Annapurna immediately after; the same no-phone rules apply.",
       "An 18th-century Annapurna image, taken from Varanasi in 1913 and returned by Canada's University of Regina, was installed in the Vishwanath Dham in November 2021."
     ],
+    "glance": {
+      "timings": "04:00–22:00; aartis at dawn, 12:00 (brief Bhog closure), 20:30 and 22:00",
+      "entry": "Free",
+      "duration": "20–40 min",
+      "season": "Oct–Mar; Annakut (day after Diwali) for the golden image",
+      "crowd": "very-busy",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": true,
+      "sources": [
+        {
+          "title": "Sri Annapurna Mandir Charitable Trust — official site",
+          "url": "https://kashiannapurnatemple.com/",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Maa Annapurna Temple — Incredible India (Ministry of Tourism)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/maa-annapurna-temple",
+          "accessed": "2026-10-11"
+        },
+        {
+          "title": "Devotees throng Annapurna temple on Dhanteras — The Pioneer",
+          "url": "https://www.dailypioneer.com/2023/india/devotees-throng-annapurna--temple-on-dhanteras.html",
+          "accessed": "2026-10-11"
+        }
+      ]
+    },
     "sources": [
       {
         "title": "Wikipedia — Annapurna Devi Mandir",
@@ -2072,7 +3071,13 @@
         "tips": [
           "तीर्थयात्री पहले विश्वनाथ और उसके तुरंत बाद अन्नपूर्णा के दर्शन करते हैं; फ़ोन न ले जाने के वही नियम यहाँ भी हैं।",
           "1913 में वाराणसी से ले जाई गई 18वीं सदी की अन्नपूर्णा प्रतिमा, जिसे कनाडा के रेजाइना विश्वविद्यालय ने लौटाया, नवंबर 2021 में विश्वनाथ धाम में स्थापित हुई।"
-        ]
+        ],
+        "glance": {
+          "timings": "4:00–22:00; आरती भोर, 12:00 (भोग के समय संक्षिप्त विराम), 20:30 व 22:00",
+          "entry": "निःशुल्क",
+          "duration": "20–40 मिनट",
+          "season": "अक्टूबर–मार्च; स्वर्ण प्रतिमा के लिए अन्नकूट (दीपावली के अगले दिन)"
+        }
       }
     }
   }

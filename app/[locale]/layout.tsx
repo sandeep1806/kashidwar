@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import SmoothScroll from "@/components/motion/SmoothScroll";
 import SunriseBackground from "@/components/motion/SunriseBackground";
 import { FaithGlyphSprite } from "@/components/ui/FaithGlyph";
+import { IconSprite } from "@/components/ui/Icon";
 import Static from "@/components/ui/Static";
 import RevealController from "@/components/motion/RevealController";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
@@ -118,6 +119,7 @@ export default async function LocaleLayout({
         <Analytics id={process.env.NEXT_PUBLIC_GA_ID ?? ""} />
         <Static>
           <FaithGlyphSprite />
+          <IconSprite />
         </Static>
         <a
           href="#content"

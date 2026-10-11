@@ -32,6 +32,9 @@ export default function PageShell({
   children,
   island,
   after,
+  variant = "default",
+  strip,
+  gallery,
 }: {
   locale: Locale;
   /** Locale-less path of this page, for the footer's language links */
@@ -52,26 +55,61 @@ export default function PageShell({
   island?: ReactNode;
   /** Static content after the island (related, prev/next) */
   after?: ReactNode;
+  /**
+   * "visual": a wide photo hero with the title over it, an icon fact strip
+   * and a short lead; `gallery` (an island) sits between the hero and the body.
+   */
+  variant?: "default" | "visual";
+  strip?: ReactNode;
+  gallery?: ReactNode;
 }) {
+  if (variant === "visual") {
+    return (
+      <main id="content" className="flex flex-1 flex-col">
+        <Static>
+          <article className="pt-24 sm:pt-28">
+            <div className="container-kashi">
+              <Breadcrumbs crumbs={crumbs} />
+            </div>
+            <div className="visual-hero-wrap">
+              <div className="visual-hero">
+                {photo ? (
+                  <Photo photo={photo} sizes="(min-width: 1280px) 1280px, (min-width: 640px) 100vw, 360px" priority />
+                ) : (
+                  <ArtFallback faith={faith} type={placeType} />
+                )}
+                <div className="visual-hero-shade" />
+                <header className="visual-hero-text">
+                  {chips && <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">{chips}</div>}
+                  <SectionHeading as="h1" id="page-title" locale={locale} title={title} secondary={secondary} align="left" />
+                  {subtitle && <div className="mt-4">{subtitle}</div>}
+                </header>
+              </div>
+            </div>
+            <div className="container-kashi">
+              {strip}
+              {lead && <div className="mt-6 max-w-3xl text-lg leading-relaxed text-kashi-ash/90 sm:text-xl">{lead}</div>}
+            </div>
+          </article>
+        </Static>
+        {gallery}
+        <Static>
+          <div className="container-kashi mt-12 grid gap-12 lg:mt-16 lg:grid-cols-[1.4fr_1fr]">{children}</div>
+        </Static>
+        {island}
+        {after && <Static>{after}</Static>}
+        <Static>
+          <SiteFooter locale={locale} path={path} />
+        </Static>
+      </main>
+    );
+  }
   return (
     <main id="content" className="flex flex-1 flex-col">
       <Static>
         <article className="section-kashi pb-6 pt-28 sm:pt-32">
           <div className="container-kashi">
-            <nav aria-label="Breadcrumb" className="text-sm text-kashi-ash/70">
-              <ol className="flex flex-wrap items-center gap-x-2">
-                {crumbs.map((c, i) => (
-                  <li key={c.href} className="flex items-center gap-2">
-                    {i > 0 && <span aria-hidden="true" className="text-kashi-diya/50">/</span>}
-                    {i === crumbs.length - 1 ? (
-                      <span aria-current="page" className="text-kashi-ash">{c.name}</span>
-                    ) : (
-                      <a href={c.href} className="inline-flex min-h-11 items-center underline decoration-kashi-diya/30 underline-offset-4 hover:text-kashi-white">{c.name}</a>
-                    )}
-                  </li>
-                ))}
-              </ol>
-            </nav>
+            <Breadcrumbs crumbs={crumbs} />
             <header className="mt-8 grid items-end gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center">
               <div>
                 {chips && <div className="mb-4 flex flex-wrap items-center gap-2 text-xs">{chips}</div>}
@@ -98,5 +136,24 @@ export default function PageShell({
         <SiteFooter locale={locale} path={path} />
       </Static>
     </main>
+  );
+}
+
+function Breadcrumbs({ crumbs }: { crumbs: Crumb[] }) {
+  return (
+    <nav aria-label="Breadcrumb" className="text-sm text-kashi-ash/70">
+      <ol className="flex flex-wrap items-center gap-x-2">
+        {crumbs.map((c, i) => (
+          <li key={c.href} className="flex items-center gap-2">
+            {i > 0 && <span aria-hidden="true" className="text-kashi-diya/50">/</span>}
+            {i === crumbs.length - 1 ? (
+              <span aria-current="page" className="text-kashi-ash">{c.name}</span>
+            ) : (
+              <a href={c.href} className="inline-flex min-h-11 items-center underline decoration-kashi-diya/30 underline-offset-4 hover:text-kashi-white">{c.name}</a>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
   );
 }

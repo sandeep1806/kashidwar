@@ -65,6 +65,7 @@ Every entry has English prose plus an optional `i18n` block for per-locale overr
 2. Cite the coordinate source in `sources`; set `coordsVerified: false` if you placed it by locality.
 3. Add a photo (see **Photos** below). Without one the card shows its drawn placeholder.
 4. To list it under a faith tile, add its id to that faith's `sites` in `content/faiths.json`.
+5. **At a glance** (`glance`, shown as icons on the place page): `timings`, `entry`, `duration`, `season` (free text, Hindi overrides under `i18n.hi.glance`), `crowd` ∈ `quiet | moderate | busy | very-busy`, `photography` ∈ `allowed | outside-only | no`, `dress` ∈ `any | modest | covered`, `verified` (true only when timings **and** fee come from the trust/ASI/government) and `sources`. Unverified entries show a "check before you go" note. Cremation ghats and the Vishwanath sanctum are `photography: "no"`. Re-check timings and fees on every review round.
 
 ### Add a project
 Append to `content/projects.json`: `status` ∈ `completed | under_construction | announced`, `agency`, `timeline`, `sources`, `verified` (false when no official source confirms the status) and `lastVerified` (ISO date). Re-verify statuses periodically; the section shows the newest `lastVerified` as its "last verified" date.
@@ -78,6 +79,7 @@ Photos are self-hosted; nothing is hotlinked. Each one is keyed `group/id` (`pla
 1. **Your own photo:** put it at `raw/<group>/<id>.jpg` (or .png/.webp). It overrides any Commons pick and needs no credit line.
 2. **Wikimedia Commons:** `node scripts/fetch-images.mjs [group]` collects licence-filtered candidates (CC0, CC BY, CC BY-SA, public domain) with review thumbnails in `scripts/.images/`. Check each file's title, description, categories and location on Commons, then add `{ key, title, alt: { en, hi } }` to `scripts/image-picks.json`. Unsplash and Pexels are skipped: no API keys were set when this was built, so those providers are not implemented yet.
 3. Regional alt text lives in `content/i18n/alt-<locale>.json` (`{ "group/id": "…" }`).
+3a. **Galleries:** extra photos for a page use the key `group/id#2`, `#3`, … (files are written as `id-2-<width>.<ext>`). `getGallery("places/<id>", locale)` returns the main photo followed by the extras; the place page shows them in a scroll-snap strip with a lightbox, and the image sitemap lists them.
 3b. Photos taken (or artworks made) outside Varanasi get `"elsewhere": "photo"` or `"art"` in the pick; the site then shows a localized chip ("Not taken in Varanasi" / "Artwork, not from Varanasi", texts in `content/i18n/photo-notes.json`).
 4. `node scripts/optimize-images.mjs` downloads, grades (dark and warm), resizes (cards 480/960 px ≤ 150 KB; scenes 640/960/1600 px ≤ 140 KB; hero 640 px ≤ 200 KB) and writes AVIF + WebP to `public/media/photos/`, plus `content/photos.json` (sizes, blur placeholder, alt text) and `content/credits.json` (title, author, licence, source), which feeds `/<locale>/credits`. Add `--force` to re-encode.
 

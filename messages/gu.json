@@ -358,7 +358,48 @@
     "dateNow": "હાલ ચાલુ છે",
     "dateExpected": "આગામી: {month} {year}માં અપેક્ષિત — તારીખ હજી જાહેર થઈ નથી",
     "dateLastHeld": "છેલ્લી વાર: {date}",
-    "nextUp": "સૌથી પહેલાં આવનાર"
+    "nextUp": "સૌથી પહેલાં આવનાર",
+    "glance": {
+      "title": "એક નજરે",
+      "timings": "સમય",
+      "entry": "પ્રવેશ",
+      "duration": "કેટલો સમય લાગે",
+      "crowd": "ભીડ",
+      "photography": "ફોટોગ્રાફી",
+      "dress": "પહેરવેશ",
+      "season": "શ્રેષ્ઠ મહિના",
+      "nearest": "નજીકનું સ્થળ",
+      "walkMin": "{min} મિનિટ ચાલીને",
+      "rideMin": "રિક્ષા કે ટેક્સીથી આશરે {min} મિનિટ",
+      "km": "{km} કિમી",
+      "unverified": "સમય અને ફી અધિકૃત સ્રોતથી પુષ્ટિ થયેલ નથી; જતાં પહેલાં તપાસો.",
+      "tipsHint": "જાણવા જેવું",
+      "crowdLevel": {
+        "quiet": "શાંત",
+        "moderate": "મધ્યમ",
+        "busy": "ભીડ",
+        "very-busy": "ખૂબ ભીડ"
+      },
+      "photographyLevel": {
+        "allowed": "મંજૂરી છે",
+        "outside-only": "ફક્ત બહાર",
+        "no": "મંજૂરી નથી"
+      },
+      "dressLevel": {
+        "any": "પહેરવેશનો નિયમ નથી",
+        "modest": "સાદો પહેરવેશ યોગ્ય",
+        "covered": "ઢંકાયેલો પહેરવેશ જરૂરી"
+      }
+    },
+    "readStory": "આખી વાર્તા વાંચો",
+    "gallery": {
+      "title": "ફોટા",
+      "open": "ફોટો {n} / {total} ખોલો",
+      "prev": "અગાઉનો ફોટો",
+      "next": "આગળનો ફોટો",
+      "close": "બંધ કરો",
+      "credit": "ફોટો: {author} · {license}"
+    }
   },
   "guides": {
     "title": "કાશી માર્ગદર્શિકાઓ",

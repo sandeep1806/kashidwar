@@ -71,6 +71,7 @@ river water, faint conch. Fade in over 2s; never above -18 dB. Persist choice in
 - **Faith tiles**: 7 equal tiles, each with its glyph, one-line essence, key sites in Kashi. Equal size, equal weight, alphabetical or by antiquity — never by "importance".
 - **Itinerary strips**: 1 / 2 / 3-day tabs, timeline with sunrise/sunset markers.
 - **Map**: dark Leaflet tiles (CartoDB Dark Matter), gold custom pins, cluster at low zoom, filter by faith/type.
+- **Visual detail page** (places first, 2026-10-11; festivals/projects to follow): a wide photo hero with the bilingual H1, faith chips and type chip over a bottom gradient (arch-topped inside the content width from 1024 px, full-bleed below); an icon **fact strip** (timings · entry · time needed · best time); a one-sentence lead; a **gallery strip** (scroll-snap, 4:3 frames, lightbox on tap); **glance tiles** (crowd, photography, dress, best months, nearest listed place, festivals here); tips with a lamp icon; the long prose behind a native "Read the full story" disclosure; **distance cards** (station, airport, Godowlia: icon, km, rough minutes); related places and prev/next as photo tiles. Icons are the shared 24 px line sprite (`components/ui/Icon.tsx`), gold with a soft glow, never filled.
 
 ## Voice & copy
 Short, lyrical, respectful. Present tense. Example H1:

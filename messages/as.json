@@ -358,7 +358,48 @@
     "dateNow": "এতিয়া চলি আছে",
     "dateExpected": "পৰৱৰ্তী: {month} {year}ত আশা কৰা হৈছে — তাৰিখ এতিয়াও ঘোষণা কৰা হোৱা নাই",
     "dateLastHeld": "শেষবাৰ অনুষ্ঠিত: {date}",
-    "nextUp": "সকলোতকৈ আগতে আহিছে"
+    "nextUp": "সকলোতকৈ আগতে আহিছে",
+    "glance": {
+      "title": "এক নজৰত",
+      "timings": "সময়",
+      "entry": "প্ৰৱেশ",
+      "duration": "কিমান সময় লাগে",
+      "crowd": "ভিৰ",
+      "photography": "ফটোগ্ৰাফী",
+      "dress": "সাজ-পোছাক",
+      "season": "উত্তম মাহ",
+      "nearest": "ওচৰৰ স্থান",
+      "walkMin": "{min} মিনিট খোজ",
+      "rideMin": "অটো বা টেক্সিৰে প্ৰায় {min} মিনিট",
+      "km": "{km} কিমি",
+      "unverified": "সময় আৰু মাচুল চৰকাৰী সূত্ৰৰ পৰা নিশ্চিত নহয়; যোৱাৰ আগতে পৰীক্ষা কৰক।",
+      "tipsHint": "জানি থওক",
+      "crowdLevel": {
+        "quiet": "শান্ত",
+        "moderate": "মধ্যম",
+        "busy": "ভিৰ",
+        "very-busy": "বহুত ভিৰ"
+      },
+      "photographyLevel": {
+        "allowed": "অনুমতি আছে",
+        "outside-only": "কেৱল বাহিৰত",
+        "no": "অনুমতি নাই"
+      },
+      "dressLevel": {
+        "any": "পোছাকৰ নিয়ম নাই",
+        "modest": "শালীন পোছাক উচিত",
+        "covered": "ঢকা পোছাক আৱশ্যক"
+      }
+    },
+    "readStory": "সম্পূৰ্ণ কাহিনী পঢ়ক",
+    "gallery": {
+      "title": "ফটো",
+      "open": "ফটো {n} / {total} খোলক",
+      "prev": "আগৰ ফটো",
+      "next": "পৰৱৰ্তী ফটো",
+      "close": "বন্ধ কৰক",
+      "credit": "ফটো: {author} · {license}"
+    }
   },
   "guides": {
     "title": "কাশী গাইড",

@@ -358,7 +358,48 @@
     "dateNow": "ਹੁਣ ਚੱਲ ਰਿਹਾ ਹੈ",
     "dateExpected": "ਅਗਲੀ ਵਾਰ: {month} {year} ਵਿੱਚ ਉਮੀਦ — ਤਾਰੀਖ਼ ਅਜੇ ਐਲਾਨੀ ਨਹੀਂ ਗਈ",
     "dateLastHeld": "ਪਿਛਲੀ ਵਾਰ: {date}",
-    "nextUp": "ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਆਉਣ ਵਾਲਾ"
+    "nextUp": "ਸਭ ਤੋਂ ਪਹਿਲਾਂ ਆਉਣ ਵਾਲਾ",
+    "glance": {
+      "title": "ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ",
+      "timings": "ਸਮਾਂ",
+      "entry": "ਦਾਖ਼ਲਾ",
+      "duration": "ਕਿੰਨਾ ਸਮਾਂ ਲੱਗਦਾ ਹੈ",
+      "crowd": "ਭੀੜ",
+      "photography": "ਫ਼ੋਟੋਗ੍ਰਾਫ਼ੀ",
+      "dress": "ਪਹਿਰਾਵਾ",
+      "season": "ਵਧੀਆ ਮਹੀਨੇ",
+      "nearest": "ਸਭ ਤੋਂ ਨੇੜਲੀ ਥਾਂ",
+      "walkMin": "{min} ਮਿੰਟ ਪੈਦਲ",
+      "rideMin": "ਆਟੋ ਜਾਂ ਟੈਕਸੀ ਰਾਹੀਂ ਲਗਭਗ {min} ਮਿੰਟ",
+      "km": "{km} ਕਿਮੀ",
+      "unverified": "ਸਮਾਂ ਅਤੇ ਫ਼ੀਸ ਸਰਕਾਰੀ ਸਰੋਤ ਤੋਂ ਪੁਸ਼ਟ ਨਹੀਂ; ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂਚ ਲਵੋ।",
+      "tipsHint": "ਜਾਣਨ ਯੋਗ",
+      "crowdLevel": {
+        "quiet": "ਸ਼ਾਂਤ",
+        "moderate": "ਦਰਮਿਆਨੀ",
+        "busy": "ਭੀੜ",
+        "very-busy": "ਬਹੁਤ ਭੀੜ"
+      },
+      "photographyLevel": {
+        "allowed": "ਇਜਾਜ਼ਤ ਹੈ",
+        "outside-only": "ਸਿਰਫ਼ ਬਾਹਰ",
+        "no": "ਇਜਾਜ਼ਤ ਨਹੀਂ"
+      },
+      "dressLevel": {
+        "any": "ਪਹਿਰਾਵੇ ਦਾ ਨਿਯਮ ਨਹੀਂ",
+        "modest": "ਸਾਦਾ ਪਹਿਰਾਵਾ ਠੀਕ",
+        "covered": "ਢਕਿਆ ਪਹਿਰਾਵਾ ਜ਼ਰੂਰੀ"
+      }
+    },
+    "readStory": "ਪੂਰੀ ਕਹਾਣੀ ਪੜ੍ਹੋ",
+    "gallery": {
+      "title": "ਤਸਵੀਰਾਂ",
+      "open": "ਤਸਵੀਰ {n} / {total} ਖੋਲ੍ਹੋ",
+      "prev": "ਪਿਛਲੀ ਤਸਵੀਰ",
+      "next": "ਅਗਲੀ ਤਸਵੀਰ",
+      "close": "ਬੰਦ ਕਰੋ",
+      "credit": "ਤਸਵੀਰ: {author} · {license}"
+    }
   },
   "guides": {
     "title": "ਕਾਸ਼ੀ ਗਾਈਡ",

@@ -87,6 +87,13 @@ For every project: re-verify `status` (`completed` | `under_construction` | `ann
 Set `lastVerified` to today for every project you re-checked, even if nothing changed. If a
 status cannot be confirmed from an official source, set `"verified": false`.
 
+### 1b. Place facts "at a glance" — `content/places.json` → `glance`
+Every place carries `glance` (timings, entry fee, duration, season, crowd, photography, dress,
+`verified`, `sources`). On a `places` focus re-check `timings` and `entry` against the trust /
+ASI / government page named in `glance.sources`; update English and the Hindi override in
+`i18n.hi.glance`, set `verified: true` only when both come from an official source, and add the
+page you read to `glance.sources`. Keep the strings short (they render as icon chips).
+
 ### 2. Festival dates — `content/festival-dates.json`
 For every festival in `content/festivals.json`, look for newly announced dates in the next
 12 months (from today). Use published panchangs for Varanasi (e.g. Drik Panchang with the
