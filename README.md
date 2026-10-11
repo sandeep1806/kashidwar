@@ -68,10 +68,10 @@ Every entry has English prose plus an optional `i18n` block for per-locale overr
 5. **At a glance** (`glance`, shown as icons on the place page): `timings`, `entry`, `duration`, `season` (free text, Hindi overrides under `i18n.hi.glance`), `crowd` ∈ `quiet | moderate | busy | very-busy`, `photography` ∈ `allowed | outside-only | no`, `dress` ∈ `any | modest | covered`, `verified` (true only when timings **and** fee come from the trust/ASI/government) and `sources`. Unverified entries show a "check before you go" note. Cremation ghats and the Vishwanath sanctum are `photography: "no"`. Re-check timings and fees on every review round.
 
 ### Add a project
-Append to `content/projects.json`: `status` ∈ `completed | under_construction | announced`, `agency`, `timeline`, `sources`, `verified` (false when no official source confirms the status) and `lastVerified` (ISO date). Re-verify statuses periodically; the section shows the newest `lastVerified` as its "last verified" date.
+Append to `content/projects.json`: `status` ∈ `completed | under_construction | announced`, `agency`, `timeline`, `sources`, `verified` (false when no official source confirms the status) and `lastVerified` (ISO date). Re-verify statuses periodically; the section shows the newest `lastVerified` as its "last verified" date. Optional `cost` (short, sourced in `sources`, Hindi under `i18n.hi.cost`) shows as a chip and `progress` (0–100 from the latest sourced inspection; 100 when completed) as the thin bar under the name.
 
 ### Add a festival / dish / itinerary
-Same pattern in `festivals.json` (lunar `when` rule + `months` 1–12), `food.json` (`type` ∈ `breakfast | sweet | drink | street | paan`), `itineraries.json` (stops with `time`, optional `placeId`, and `marker: "sunrise" | "sunset"`).
+Same pattern in `festivals.json` (lunar `when` rule + `months` 1–12), `food.json` (`type` ∈ `breakfast | sweet | drink | street | paan`; optional `price` "₹30–60", `priceBand`, `priceVerified` (true only from the shop's own listing) and `priceSources`), `itineraries.json` (stops with `time`, optional `placeId`, and `marker: "sunrise" | "sunset"`).
 
 ### Photos
 Photos are self-hosted; nothing is hotlinked. Each one is keyed `group/id` (`places/assi-ghat`, `festivals/chhath`, `food/lassi`, `projects/ganga-cruise`, `scenes/dawn`, `hero/hero`).

@@ -1,10 +1,11 @@
 import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
+import Icon from "@/components/ui/Icon";
 import SeeAll from "@/components/ui/SeeAll";
 import { metaDescription } from "@/lib/pages";
 import type { Food, PhotoData } from "@/lib/contentTypes";
 
-export interface FoodItem extends Pick<Food, "id" | "season" | "where" | "summary" | "vegetarian"> {
+export interface FoodItem extends Pick<Food, "id" | "season" | "where" | "summary" | "vegetarian" | "price" | "priceVerified"> {
   primaryName: string;
   secondaryName: string;
   typeLabel: string;
@@ -16,7 +17,7 @@ export interface FoodItem extends Pick<Food, "id" | "season" | "where" | "summar
  * summary and a link to its entry on the food page (season and where live
  * there), shown as a snap carousel on phones and tablets.
  */
-export default function FoodList({ items, labels, carousel }: { items: FoodItem[]; labels: { season: string; where: string; veg: string }; carousel?: { href: string; label: string; readMore: string } }) {
+export default function FoodList({ items, labels, carousel }: { items: FoodItem[]; labels: { season: string; where: string; veg: string; price: string; priceNote: string }; carousel?: { href: string; label: string; readMore: string } }) {
   // H3 under the home page's section H2; H2 on the food page, under its H1.
   const H = carousel ? "h3" : "h2";
   return (
@@ -26,8 +27,15 @@ export default function FoodList({ items, labels, carousel }: { items: FoodItem[
       {items.map((f) => (
         <article key={f.id} id={carousel ? undefined : f.id} className="group flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-5 card-lift">
           <CardPhoto photo={f.photo} className="card-photo -mx-2 -mt-2 mb-4" carousel={!!carousel} />
-          <div className="flex items-center gap-2 text-[0.7rem]">
+          <div className="flex flex-wrap items-center gap-2 text-[0.7rem]">
             <span className="rounded-full border border-kashi-diya/40 px-2 py-0.5 text-kashi-diya">{f.typeLabel}</span>
+            {f.price && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-kashi-rudraksha/50 px-2 py-0.5 text-kashi-ash/85" title={`${labels.price}${f.priceVerified === false ? ` · ${labels.priceNote}` : ""}`}>
+                <Icon name="ticket" className="h-3.5 w-3.5 text-kashi-diya/80" />
+                <span className="sr-only">{labels.price}: </span>
+                {f.price}
+              </span>
+            )}
             {f.vegetarian && (
               <span className="inline-flex items-center gap-1 text-kashi-ash/70">
                 <span aria-hidden="true" className="inline-block h-2.5 w-2.5 rounded-[2px] border border-green-500/80 p-px"><span className="block h-full w-full rounded-full bg-green-500/80" /></span>

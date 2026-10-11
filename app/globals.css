@@ -645,3 +645,7 @@ a.glance-tile:hover .glance-value { color: var(--kashi-marigold); }
 .story-details > summary:hover { color: var(--kashi-marigold); }
 .story-details > summary .icon-chevron { transition: rotate 300ms var(--ease-enter); }
 .story-details[open] > summary .icon-chevron { rotate: 90deg; }
+
+/* Project progress (home + listing cards): thin saffron bar, gold when complete */
+.progress { position: relative; height: 4px; overflow: hidden; border-radius: 999px; background: color-mix(in oklab, var(--kashi-rudraksha) 55%, transparent); }
+.progress-fill { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--kashi-saffron), var(--kashi-diya)); }

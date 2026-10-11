@@ -14,7 +14,7 @@ export default async function Itineraries({ locale }: { locale: Locale }) {
         <div className="container-kashi text-center">
         <SectionHeading id="itineraries-title" locale={locale} title={props.heading.title} secondary={props.heading.secondary} />
         <Reveal>
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{props.heading.intro}</p>
+          <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{props.heading.lead ?? props.heading.intro}</p>
           {props.englishNote && <EnglishNote text={props.englishNote} className="mt-3" />}
         </Reveal>
       </div>

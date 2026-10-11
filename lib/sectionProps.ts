@@ -10,7 +10,9 @@ import type { FoodItem } from "@/components/sections/FoodList";
 import type { ProjectItem, ProjectLabels } from "@/components/sections/ProjectsList";
 import type { ExplorerLabels, ExplorerPlace } from "@/components/sections/PlacesExplorer";
 import type { FaithTile } from "@/components/sections/FaithTiles";
-import { FAITHS, PLACE_FILTERS, type Faith, type PlaceDetail, type PlaceFilter } from "@/lib/contentTypes";
+import { FAITHS, PLACE_FILTERS, type Crowd, type Faith, type PlaceDetail, type PlaceFilter } from "@/lib/contentTypes";
+
+const CROWDS: Crowd[] = ["quiet", "moderate", "busy", "very-busy"];
 
 /**
  * Data for the sections below the fold that render client-side after
@@ -21,7 +23,10 @@ export interface HeadingProps {
   id: string;
   title: string;
   secondary: string;
+  /** Listing pages and meta descriptions */
   intro: string;
+  /** The home page: one short line under the heading */
+  lead?: string;
 }
 
 const ORDER: ProjectStatus[] = ["under_construction", "announced", "completed"];
@@ -35,7 +40,7 @@ export async function getProjectsProps(locale: Locale) {
   const latest = projects.reduce((d, p) => (p.lastVerified > d ? p.lastVerified : d), "");
   const items: ProjectItem[] = projects.map((raw) => {
     const p = localize(raw, locale);
-    return { id: p.id, href: pageUrl(locale, "projects", p.id), faith: p.faith[0] ?? "secular", status: p.status, type: p.type, agency: p.agency, timeline: p.timeline, summary: p.summary, verified: p.verified, lastVerified: p.lastVerified, sources: p.sources.map(({ title, url }) => ({ title, url })), photo: getPhoto(`projects/${p.id}`, locale), primaryName: devanagari ? p.name_hi : p.name_en, secondaryName: devanagari ? p.name_en : p.name_hi, lastVerifiedLabel: fmt.format(new Date(p.lastVerified + "T00:00:00Z")) };
+    return { id: p.id, href: pageUrl(locale, "projects", p.id), faith: p.faith[0] ?? "secular", status: p.status, type: p.type, agency: p.agency, timeline: p.timeline, summary: p.summary, verified: p.verified, lastVerified: p.lastVerified, cost: p.cost, progress: p.progress, sources: p.sources.map(({ title, url }) => ({ title, url })), photo: getPhoto(`projects/${p.id}`, locale), primaryName: devanagari ? p.name_hi : p.name_en, secondaryName: devanagari ? p.name_en : p.name_hi, lastVerifiedLabel: fmt.format(new Date(p.lastVerified + "T00:00:00Z")) };
   });
   const groups = ORDER.map((status) => ({ status, items: items.filter((p) => p.status === status) })).filter((g) => g.items.length);
   const labels: ProjectLabels = {
@@ -47,11 +52,13 @@ export async function getProjectsProps(locale: Locale) {
     sources: t("sources"),
     lastVerified: t("lastVerified"),
     unverified: t("unverified"),
+    cost: t("cost"),
+    progress: t.raw("progress"),
   };
   const common = await getTranslations({ locale, namespace: "common" });
   return {
     englishNote: proseFallsBack(locale) ? common("englishNote") : null,
-    heading: { id: "projects", title: t("title"), secondary: t("titleSecondary"), intro: t("intro") } as HeadingProps,
+    heading: { id: "projects", title: t("title"), secondary: t("titleSecondary"), intro: t("intro"), lead: t("lead") } as HeadingProps,
     legend: t("legend"),
     latestLabel: fmt.format(new Date(latest + "T00:00:00Z")),
     groups,
@@ -73,7 +80,7 @@ export async function getFestivalsProps(locale: Locale) {
     // What's coming next first (by the next verified or expected date).
     .sort((a, b) => a.date.sortKey.localeCompare(b.date.sortKey));
   return {
-    heading: { id: "festivals", title: t("title"), secondary: t("titleSecondary"), intro: t("intro") } as HeadingProps,
+    heading: { id: "festivals", title: t("title"), secondary: t("titleSecondary"), intro: t("intro"), lead: t("lead") } as HeadingProps,
     items,
     months: t.raw("months") as string[],
     labels: { when: t("when"), where: t("where"), lunarNote: t("lunarNote"), readMore: tpage("readMore"), nextUp: tpage("nextUp"), all: (await getTranslations({ locale, namespace: "places" }))("filters.all") },
@@ -86,14 +93,14 @@ export async function getFoodProps(locale: Locale) {
   const devanagari = LOCALES[locale].script === "devanagari";
   const items: FoodItem[] = foods.map((raw) => {
     const f = localize(raw, locale);
-    return { id: f.id, season: f.season, where: f.where, summary: f.summary, vegetarian: f.vegetarian, photo: getPhoto(`food/${f.id}`, locale), primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, typeLabel: t(`types.${f.type}`) };
+    return { id: f.id, season: f.season, where: f.where, summary: f.summary, vegetarian: f.vegetarian, price: f.price, priceVerified: f.priceVerified, photo: getPhoto(`food/${f.id}`, locale), primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, typeLabel: t(`types.${f.type}`) };
   });
   const common = await getTranslations({ locale, namespace: "common" });
   return {
     englishNote: proseFallsBack(locale) ? common("englishNote") : null,
-    heading: { id: "food", title: t("title"), secondary: t("titleSecondary"), intro: t("intro") } as HeadingProps,
+    heading: { id: "food", title: t("title"), secondary: t("titleSecondary"), intro: t("intro"), lead: t("lead") } as HeadingProps,
     items,
-    labels: { season: t("season"), where: t("where"), veg: t("veg") },
+    labels: { season: t("season"), where: t("where"), veg: t("veg"), price: t("price"), priceNote: t("priceNote") },
   };
 }
 export type FoodProps = Awaited<ReturnType<typeof getFoodProps>>;
@@ -105,7 +112,7 @@ export async function getItinerariesProps(locale: Locale) {
   const common = await getTranslations({ locale, namespace: "common" });
   return {
     englishNote: proseFallsBack(locale) ? common("englishNote") : null,
-    heading: { id: "itineraries", title: t("title"), secondary: t("titleSecondary"), intro: t("intro") } as HeadingProps,
+    heading: { id: "itineraries", title: t("title"), secondary: t("titleSecondary"), intro: t("intro"), lead: t("lead") } as HeadingProps,
     itineraries: list,
     tabs: list.map((it) => t("dayTab", { days: it.days })),
     dayTemplate: t.raw("day") as string,
@@ -122,7 +129,7 @@ export type ItinerariesProps = Awaited<ReturnType<typeof getItinerariesProps>>;
 export async function getPracticalProps(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "practical" });
   return {
-    heading: { id: "practical", title: t("title"), secondary: t("titleSecondary"), intro: t("intro") } as HeadingProps,
+    heading: { id: "practical", title: t("title"), secondary: t("titleSecondary"), intro: t("intro"), lead: t("lead") } as HeadingProps,
     cards: (["air", "rail", "road", "season"] as const).map((k) => ({ k, title: t(`${k}.title`), text: t(`${k}.text`) })),
     etiquetteTitle: t("etiquette.title"),
     etiquette: t.raw("etiquette.items") as string[],
@@ -154,11 +161,12 @@ const PLACE_TYPES = ["ghat", "temple", "stupa", "monastery", "mosque", "church",
 
 export async function getPlacesProps(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "places" });
+  const tpage = await getTranslations({ locale, namespace: "page" });
   const devanagari = LOCALES[locale].script === "devanagari";
   const items: ExplorerPlace[] = places.map((raw) => {
     const p = localize(raw, locale);
     return {
-      place: { id: p.id, name_en: p.name_en, faith: p.faith, type: p.type, lat: p.lat, lng: p.lng, bestTime: p.bestTime, coordsVerified: p.coordsVerified },
+      place: { id: p.id, name_en: p.name_en, faith: p.faith, type: p.type, lat: p.lat, lng: p.lng, bestTime: p.bestTime, coordsVerified: p.coordsVerified, ...(p.glance?.duration ? { duration: p.glance.duration } : {}), ...(p.glance?.crowd ? { crowd: p.glance.crowd } : {}) },
       primaryName: devanagari ? raw.name_hi : raw.name_en,
       secondaryName: devanagari ? raw.name_en : raw.name_hi,
       photo: getPhoto(`places/${raw.id}`, locale),
@@ -171,6 +179,9 @@ export async function getPlacesProps(locale: Locale) {
     types: Object.fromEntries(PLACE_TYPES.map((k) => [k, t(`types.${k}`)])),
     results: t.raw("results"),
     bestTime: t("bestTime"),
+    duration: tpage("glance.duration"),
+    crowd: tpage("glance.crowd"),
+    crowdLevel: Object.fromEntries(CROWDS.map((c) => [c, tpage(`glance.crowdLevel.${c}`)])) as Record<Crowd, string>,
     tips: t("tips"),
     sources: t("sources"),
     showOnMap: t("showOnMap"),
@@ -201,7 +212,7 @@ export async function getFaithsProps(locale: Locale) {
     siteNames: f.sites.map((id) => getPlace(id)).filter((p) => !!p).map((p) => (devanagari ? p.name_hi : p.name_en)),
   }));
   return {
-    heading: { id: "faiths", title: t("title"), secondary: t("titleSecondary"), intro: t("intro") } as HeadingProps,
+    heading: { id: "faiths", title: t("title"), secondary: t("titleSecondary"), intro: t("intro"), lead: t("lead") } as HeadingProps,
     order: t("order"),
     tiles,
     labels: { verseLabel: t("verseLabel"), seePlaces: t("seePlaces") },

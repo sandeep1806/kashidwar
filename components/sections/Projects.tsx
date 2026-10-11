@@ -12,7 +12,7 @@ export default async function Projects({ locale }: { locale: Locale }) {
       <div className="container-kashi text-center">
         <SectionHeading id="projects-title" locale={locale} title={heading.title} secondary={heading.secondary} />
         <Reveal>
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{heading.intro}</p>
+          <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{heading.lead ?? heading.intro}</p>
           <p className="mt-4 flex flex-wrap items-center justify-center gap-3 text-xs text-kashi-ash/60">
             <span className="uppercase tracking-[0.2em]">{legend}:</span>
             {order.map((s) => (

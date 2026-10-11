@@ -63,6 +63,8 @@ export type LocalizedFields = Partial<{
   season: string;
   title: string;
   theme: string;
+  cost: string;
+  price: string;
 }>;
 
 export type Crowd = "quiet" | "moderate" | "busy" | "very-busy";
@@ -139,6 +141,10 @@ export interface Project {
   verified: boolean;
   /** ISO date of the last status check */
   lastVerified: string;
+  /** Sanctioned or final cost as a short string, e.g. "₹339 crore" (sourced in `sources`) */
+  cost?: string;
+  /** Physical progress 0–100 from the latest sourced inspection; 100 when completed, 0 when announced */
+  progress?: number;
 }
 
 export interface Festival {
@@ -170,6 +176,11 @@ export interface Food {
   vegetarian: boolean;
   season: string;
   where: string[];
+  /** Typical street price per serving, e.g. "₹30–50" */
+  price?: string;
+  priceBand?: "₹" | "₹₹" | "₹₹₹";
+  priceVerified?: boolean;
+  priceSources?: Source[];
   summary: string;
   image: string;
   sources: Source[];
@@ -272,7 +283,11 @@ export interface PhotoData {
 }
 
 /** The part of a place the grid, filters and map need on page load. */
-export type PlaceLite = Pick<Place, "id" | "name_en" | "faith" | "type" | "lat" | "lng" | "bestTime" | "coordsVerified">;
+export type PlaceLite = Pick<Place, "id" | "name_en" | "faith" | "type" | "lat" | "lng" | "bestTime" | "coordsVerified"> & {
+  /** Glance chips on the card */
+  duration?: string;
+  crowd?: Crowd;
+};
 
 /** Modal prose, fetched from /<locale>/places.json when a modal opens. */
 export interface PlaceDetail {

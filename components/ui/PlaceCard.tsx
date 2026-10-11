@@ -1,5 +1,6 @@
-import type { Faith, PhotoData, PlaceLite as Place } from "@/lib/contentTypes";
+import type { Crowd, Faith, PhotoData, PlaceLite as Place } from "@/lib/contentTypes";
 import FaithGlyph from "./FaithGlyph";
+import Icon from "./Icon";
 import Photo from "./Photo";
 import ArtFallback from "./ArtFallback";
 
@@ -8,6 +9,9 @@ export interface PlaceLabels {
   types: Record<string, string>;
   bestTime: string;
   openDetails: string;
+  duration: string;
+  crowd: string;
+  crowdLevel: Record<Crowd, string>;
 }
 
 /**
@@ -79,10 +83,24 @@ export default function PlaceCard({
           </div>
         </div>
       </a>
-      <p className="mt-2 hidden items-start gap-2 px-1 text-xs text-kashi-ash/70 sm:flex">
-        <span className="shrink-0 text-kashi-diya/80">{labels.bestTime}:</span>
-        <span className="line-clamp-2">{place.bestTime}</span>
-      </p>
+      {(place.duration || place.crowd) && (
+        <ul className="mt-2 flex flex-wrap gap-x-3 gap-y-1 px-1 text-xs text-kashi-ash/75">
+          {place.duration && (
+            <li className="inline-flex items-center gap-1" title={labels.duration}>
+              <Icon name="hourglass" className="h-3.5 w-3.5 text-kashi-diya/80" />
+              <span className="sr-only">{labels.duration}: </span>
+              {place.duration}
+            </li>
+          )}
+          {place.crowd && (
+            <li className="inline-flex items-center gap-1" title={labels.crowd}>
+              <Icon name="people" className="h-3.5 w-3.5 text-kashi-diya/80" />
+              <span className="sr-only">{labels.crowd}: </span>
+              {labels.crowdLevel[place.crowd]}
+            </li>
+          )}
+        </ul>
+      )}
     </article>
   );
 }

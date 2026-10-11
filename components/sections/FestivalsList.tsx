@@ -3,6 +3,7 @@ import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 import FestivalDateLine from "@/components/ui/FestivalDateLine";
+import Icon from "@/components/ui/Icon";
 import SeeAll from "@/components/ui/SeeAll";
 import { metaDescription } from "@/lib/pages";
 import type { FestivalDateView } from "@/lib/festivalDates";
@@ -84,6 +85,7 @@ export default function FestivalsList({ items, months, labels, carousel, compact
               <span className="absolute right-4 top-4 z-[2] rounded-full bg-kashi-saffron px-3 py-1 text-xs font-medium text-kashi-night">{labels.nextUp}</span>
             )}
             <CardPhoto photo={f.photo} faith={f.glyph} className="card-photo -mx-3 -mt-3 mb-5" carousel={!!carousel} priority={compactProp && i === 0} />
+            {compact && <FestivalDateLine view={f.date} compact className="mb-3" />}
             <div className="flex items-center gap-3">
               <span className="grid h-10 w-10 place-items-center rounded-full border border-kashi-diya/40 text-kashi-diya">
                 <FaithGlyph faith={f.glyph} className="h-5 w-5" />
@@ -93,9 +95,15 @@ export default function FestivalsList({ items, months, labels, carousel, compact
                 <p className="text-sm text-kashi-ash/70">{f.secondaryName}</p>
               </div>
             </div>
-            <FestivalDateLine view={f.date} compact className="mt-3" />
+            {!compact && <FestivalDateLine view={f.date} compact className="mt-3" />}
             {compact ? (
-              <p className="mt-3 line-clamp-2 text-kashi-ash/90">{metaDescription(f.summary, 140)}</p>
+              <>
+                <p className="mt-3 line-clamp-1 text-kashi-ash/90">{metaDescription(f.summary, 110)}</p>
+                <p className="mt-2 flex items-start gap-1.5 text-xs text-kashi-ash/70">
+                  <Icon name="pin" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-kashi-diya/80" />
+                  <span className="line-clamp-1"><span className="sr-only">{labels.where}: </span>{Array.isArray(f.where) ? f.where.join(" · ") : f.where}</span>
+                </p>
+              </>
             ) : (
               <p className="mt-4 text-kashi-ash/90">{f.summary}</p>
             )}

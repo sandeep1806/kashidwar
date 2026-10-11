@@ -12,7 +12,7 @@ export default async function Faiths({ locale }: { locale: Locale }) {
       <div className="container-kashi text-center">
         <SectionHeading id="faiths-title" locale={locale} title={heading.title} secondary={heading.secondary} />
         <Reveal>
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{heading.intro}</p>
+          <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{heading.lead ?? heading.intro}</p>
           <p className="mt-3 text-xs uppercase tracking-[0.2em] text-kashi-diya/80">{order}</p>
         </Reveal>
       </div>

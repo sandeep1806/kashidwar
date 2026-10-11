@@ -81,7 +81,8 @@
         "title": "Ganga Aarti",
         "caption": "Seven tiered lamps rise together. Bells, conch, smoke, and the whole ghat catches like a single flame."
       }
-    }
+    },
+    "lead": "The city is born three times a day: dawn on the river, noon in the lanes, dusk at the aarti."
   },
   "places": {
     "title": "Places of Kashi",
@@ -142,7 +143,8 @@
     "ghatsIntro": "The riverfront steps of Kashi, from Assi in the south to Panchganga in the north: where the city bathes, prays, cremates its dead and lights its lamps. Each ghat has its own story.",
     "templesIntro": "Kashi Vishwanath and the shrines around it, the goddess temples, the Hanuman temples of Tulsidas's quarter and the newer temples of the twentieth century. Timings, legends and how to reach each one.",
     "allGhats": "All ghats",
-    "allTemples": "All temples"
+    "allTemples": "All temples",
+    "lead": "Ghats, temples, stupas, mosques, gurudwaras, churches: filter, find on the map, tap to read."
   },
   "faiths": {
     "title": "One Kashi, every faith",
@@ -187,7 +189,8 @@
         "essence": "A two-hundred-year-old church in the Cantonment, and the city's schools and hospitals.",
         "translation": "I am the light of the world."
       }
-    }
+    },
+    "lead": "Seven traditions, each with its own morning here, all sharing one river."
   },
   "projects": {
     "title": "Projects & the new Kashi",
@@ -210,7 +213,10 @@
       "tourism": "Tourism",
       "infrastructure": "Infrastructure",
       "culture": "Culture"
-    }
+    },
+    "lead": "What is being built beside the old city, every status checked against a source.",
+    "cost": "Cost",
+    "progress": "{n}% built"
   },
   "festivals": {
     "title": "A year of festivals",
@@ -232,7 +238,8 @@
       "Nov",
       "Dec"
     ],
-    "lunarNote": "Dates follow the lunar calendar and shift every year; check before you travel."
+    "lunarNote": "Dates follow the lunar calendar and shift every year; check before you travel.",
+    "lead": "The calendar runs on the moon; every month a flame is lit somewhere."
   },
   "food": {
     "title": "The taste of Banaras",
@@ -247,7 +254,10 @@
       "drink": "Drink",
       "street": "Chaat",
       "paan": "Paan"
-    }
+    },
+    "lead": "Eaten standing, from a clay cup or a leaf plate, dawn to midnight.",
+    "price": "Typical price",
+    "priceNote": "not confirmed from the shop"
   },
   "itineraries": {
     "title": "Itineraries",
@@ -257,7 +267,8 @@
     "day": "Day {n}",
     "sunrise": "Sunrise",
     "sunset": "Sunset",
-    "placesNote": "Named places are described in the Places section"
+    "placesNote": "Named places are described in the Places section",
+    "lead": "One, two or three days, from before sunrise to the evening aarti."
   },
   "practical": {
     "title": "Practical",
@@ -290,7 +301,8 @@
         "Nothing plastic goes into the Ganga; buy only clay diyas.",
         "Cover your head in a gurudwara, stay outside a mosque at prayer times, keep quiet during a church service."
       ]
-    }
+    },
+    "lead": "Getting here, when to come, and how to behave on the ghats and in temples."
   },
   "finale": {
     "title": "The Ganga Aarti",

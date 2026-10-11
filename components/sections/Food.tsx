@@ -12,7 +12,7 @@ export default async function Food({ locale }: { locale: Locale }) {
       <div className="container-kashi text-center">
         <SectionHeading id="food-title" locale={locale} title={heading.title} secondary={heading.secondary} />
         <Reveal>
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{heading.intro}</p>
+          <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{heading.lead ?? heading.intro}</p>
           {englishNote && <EnglishNote text={englishNote} className="mt-3" />}
         </Reveal>
       </div>

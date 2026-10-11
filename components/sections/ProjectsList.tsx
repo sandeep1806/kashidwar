@@ -1,10 +1,11 @@
 import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
+import Icon from "@/components/ui/Icon";
 import SeeAll from "@/components/ui/SeeAll";
 import { metaDescription } from "@/lib/pages";
 import type { Faith, PhotoData, Project, ProjectStatus } from "@/lib/contentTypes";
 
-export interface ProjectItem extends Pick<Project, "id" | "status" | "type" | "agency" | "timeline" | "summary" | "verified" | "lastVerified"> {
+export interface ProjectItem extends Pick<Project, "id" | "status" | "type" | "agency" | "timeline" | "summary" | "verified" | "lastVerified" | "cost" | "progress"> {
   sources: { title: string; url: string }[];
   primaryName: string;
   secondaryName: string;
@@ -22,6 +23,18 @@ export interface ProjectLabels {
   lastVerified: string;
   unverified: string;
   readMore: string;
+  cost: string;
+  /** "{n}% built" template */
+  progress: string;
+}
+
+/** Thin saffron progress bar: how far the work has come (sourced inspections; 100 when completed). */
+export function ProgressBar({ value, label }: { value: number; label: string }) {
+  return (
+    <div className="progress mt-3" role="img" aria-label={label} title={label}>
+      <span className="progress-fill" style={{ width: `${Math.max(0, Math.min(100, value))}%` }} />
+    </div>
+  );
 }
 
 /** Status badge per DESIGN.md: Completed = gold, Under construction = saffron pulse, Announced = ash outline. */
@@ -65,9 +78,19 @@ export default function ProjectsList({ groups, labels, carousel }: { groups: { s
                 <div className="flex flex-wrap items-center gap-2">
                   <StatusBadge status={p.status} label={labels.groups[p.status]} />
                   <span className="rounded-full bg-kashi-rudraksha/50 px-2 py-0.5 text-[0.7rem] text-kashi-ash/80">{labels.types[p.type]}</span>
+                  {p.cost && (
+                    <span className="inline-flex items-center gap-1 rounded-full border border-kashi-diya/30 px-2 py-0.5 text-[0.7rem] text-kashi-diya" title={labels.cost}>
+                      <Icon name="ticket" className="h-3.5 w-3.5" />
+                      <span className="sr-only">{labels.cost}: </span>
+                      {p.cost}
+                    </span>
+                  )}
                 </div>
                 <CardH className="mt-4 text-[1.3rem] leading-snug text-kashi-white"><a href={p.href} className="hover:text-kashi-marigold">{p.primaryName}</a></CardH>
                 <p className="text-sm text-kashi-ash/70">{p.secondaryName}</p>
+                {typeof p.progress === "number" && p.status !== "announced" && (
+                  <ProgressBar value={p.progress} label={labels.progress.replace("{n}", String(p.progress))} />
+                )}
                 {carousel ? (
                   <>
                     <p className="mt-3 line-clamp-2 text-kashi-ash/90">{metaDescription(p.summary, 140)}</p>

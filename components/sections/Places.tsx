@@ -23,7 +23,7 @@ export default async function Places({ locale }: { locale: Locale }) {
         <div className="container-kashi pb-12 text-center">
         <SectionHeading id="places-title" locale={locale} title={t("title")} secondary={t("titleSecondary")} />
         <Reveal>
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{t("intro")}</p>
+          <p className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{t("lead")}</p>
         </Reveal>
       </div>
       </Static>
