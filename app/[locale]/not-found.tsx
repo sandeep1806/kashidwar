@@ -1,12 +1,13 @@
 import { getTranslations } from "next-intl/server";
 import DiyaGlyph from "@/components/ui/DiyaGlyph";
+import DocumentTitle from "@/components/ui/DocumentTitle";
 
 export default async function NotFound() {
   const t = await getTranslations("errors");
   return (
     <main id="content" className="grain relative flex min-h-dvh flex-col items-center justify-center bg-kashi-night text-center">
-      {/* React hoists this into <head>: without it the 404 page kept the layout's home title. */}
-      <title>{`404 · ${t("notFoundTitle")} · Kashi`}</title>
+      {/* not-found.tsx cannot export metadata, so the tab title is set on the client (no second <title> element). */}
+      <DocumentTitle title={`404 · ${t("notFoundTitle")} · Kashi`} />
       <meta name="robots" content="noindex" />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 45% at 50% 62%, color-mix(in oklab, var(--kashi-diya) 12%, transparent), transparent 70%)" }} />
       <div className="container-kashi relative z-10">
