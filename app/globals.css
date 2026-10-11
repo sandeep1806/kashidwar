@@ -417,7 +417,8 @@ footer.cv-auto { contain-intrinsic-size: auto 130vh; }
 .map-dark .leaflet-tile-pane {
   filter: invert(1) hue-rotate(195deg) brightness(0.58) contrast(1.05) saturate(0.28) sepia(0.2);
 }
-.leaflet-container { background: var(--kashi-night); font-family: var(--font-body-active); }
+/* !important: leaflet.css arrives later (dynamic import) and would paint the default light grey while tiles load. */
+.leaflet-container { background: var(--kashi-night) !important; font-family: var(--font-body-active); }
 /* Attribution is a licence requirement (OSM / CARTO): small and muted, but legible */
 .leaflet-container .leaflet-control-container .leaflet-control-attribution {
   background: color-mix(in oklab, var(--kashi-night) 82%, transparent);

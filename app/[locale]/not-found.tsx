@@ -5,6 +5,9 @@ export default async function NotFound() {
   const t = await getTranslations("errors");
   return (
     <main id="content" className="grain relative flex min-h-dvh flex-col items-center justify-center bg-kashi-night text-center">
+      {/* React hoists this into <head>: without it the 404 page kept the layout's home title. */}
+      <title>{`404 · ${t("notFoundTitle")} · Kashi`}</title>
+      <meta name="robots" content="noindex" />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 45% at 50% 62%, color-mix(in oklab, var(--kashi-diya) 12%, transparent), transparent 70%)" }} />
       <div className="container-kashi relative z-10">
         <DiyaGlyph className="mx-auto h-16 w-16 drop-shadow-[0_0_18px_rgba(255,210,122,0.5)]" />
