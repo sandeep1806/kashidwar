@@ -18,6 +18,7 @@ export default function PageMap({
   focusId,
   hrefs,
   clusterTemplate,
+  tall = false,
 }: {
   title: string;
   loading: string;
@@ -25,13 +26,15 @@ export default function PageMap({
   focusId?: string;
   hrefs: Record<string, string>;
   clusterTemplate: string;
+  /** The map page: a taller frame */
+  tall?: boolean;
 }) {
   const { ref, ready } = useApproach<HTMLDivElement>("400px 0px");
   const focus = places.find((p) => p.id === focusId) ?? null;
   return (
     <section className="container-kashi mt-12">
       <h2 className="text-h3 text-kashi-white">{title}</h2>
-      <div ref={ref} role="region" aria-label={title} className="relative mt-6 h-[55vh] min-h-[340px] overflow-hidden rounded-kashi border border-kashi-rudraksha/60">
+      <div ref={ref} role="region" aria-label={title} className={`relative mt-6 overflow-hidden rounded-kashi border border-kashi-rudraksha/60 ${tall ? "h-[72vh] min-h-[420px]" : "h-[55vh] min-h-[340px]"}`}>
         {ready ? (
           <KashiMap
             places={places}

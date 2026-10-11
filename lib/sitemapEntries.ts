@@ -39,6 +39,8 @@ export function sitemapPages(): SitemapPage[] {
   // Place listings by type (ghats, temples): the photos of the places they list.
   const typed = (type: "ghat" | "temple") => places.filter((pl) => pl.type === type).flatMap((pl) => kindPhoto("places", pl.id));
   listings.push(
+    { path: "/places", priority: 0.9, changeFrequency: "monthly", photoKeys: places.flatMap((pl) => kindPhoto("places", pl.id)) },
+    { path: "/map", priority: 0.7, changeFrequency: "monthly", photoKeys: [] },
     { path: "/ghats", priority: 0.8, changeFrequency: "monthly", photoKeys: typed("ghat") },
     { path: "/temples", priority: 0.8, changeFrequency: "monthly", photoKeys: typed("temple") },
   );

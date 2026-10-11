@@ -12,6 +12,7 @@ export default async function SiteFooter({ locale, path = "" }: { locale: Locale
   const nav = await getTranslations("nav");
   const places = await getTranslations("places");
   const meta = await getTranslations("meta");
+  const mapT = await getTranslations("map");
   const fmt = new Intl.DateTimeFormat(LOCALES[locale].bcp47, { dateStyle: "long" });
   const latest = projects.reduce((d, p) => (p.lastVerified > d ? p.lastVerified : d), "");
   const year = new Date(latest + "T00:00:00Z").getUTCFullYear();
@@ -39,6 +40,8 @@ export default async function SiteFooter({ locale, path = "" }: { locale: Locale
           <ul className="mt-3 border-t border-kashi-diya/10 pt-2">
             {(
               [
+                ["/places", places("allTitle")],
+                ["/map", mapT("title")],
                 ["/ghats", places("ghatsTitle")],
                 ["/temples", places("templesTitle")],
                 ["/festivals", nav("festivals")],

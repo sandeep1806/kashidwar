@@ -85,6 +85,10 @@ Photos are self-hosted; nothing is hotlinked. Each one is keyed `group/id` (`pla
 
 Sensitivity rules for picks: no cremations or bodies at Manikarnika, nothing from inside the Kashi Vishwanath sanctum, no close-ups of identifiable people bathing, praying or at funerals, and the same care for every faith.
 
+### Listing pages, FAQ blocks and the ghats index
+- `/places` (every place grouped by type), `/ghats` (13 ghat pages + the ordered index of all 84 ghats from `content/ghats-list.json`), `/temples`, `/festivals`, `/projects`, `/food` and `/map` (every pin plus a distance table). Their `<title>`s are keyword-led strings under `meta.*Title`; the H1s stay the shorter `places.*Title`.
+- Each place listing ends with a FAQ block from `content/faqs.json` (English + Hindi; other locales show English) rendered as `<details>` plus FAQPage JSON-LD (`components/pages/ListingFaq.tsx`). Keep the answers in step with the `glance` data they quote.
+
 ### Detail pages and SEO
 - Every place, festival, project and itinerary has a page in all 13 locales: `/[locale]/places/<id>`, `/festivals/<id>`, `/projects/<id>`, `/itineraries/<n>-day`, generated statically from the JSON (`app/[locale]/*/[id]/page.tsx`, helpers in `lib/pages.ts`). Home cards and the place modal link to them; a plain click on a place card still opens the quick view.
 - "How to reach" on place/project pages is computed from the coordinates (straight-line distance to Varanasi Junction, the airport and Godowlia) plus Google Maps / OpenStreetMap links; festival pages link their venues (`placeIds` in festivals.json).

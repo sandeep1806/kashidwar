@@ -56,7 +56,7 @@ const LEGACY: Record<string, string> = {
   // food, map, static pages
   "/khana": "/en/food",
   "/khana/:slug": "/en/food",
-  "/map": "/en#places",
+  "/map": "/en/map",
   "/tips": "/en#practical",
   "/about": "/en/about",
   "/contact": "/en/about#contact",
