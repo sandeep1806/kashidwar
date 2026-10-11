@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ListingShell from "@/components/pages/ListingShell";
+import PhotoBand from "@/components/pages/PhotoBand";
 import ProjectsList, { StatusBadge } from "@/components/sections/ProjectsList";
 import EnglishNote from "@/components/ui/EnglishNote";
 import type { Locale } from "@/lib/i18n/locales";
@@ -45,8 +46,9 @@ export default async function ProjectsPage({ params }: PageProps<"/[locale]/proj
           {englishNote && <EnglishNote text={englishNote} className="mt-3" />}
         </>
       }
+      band={<PhotoBand photos={groups.flatMap((g) => g.items).filter((i) => i.photo).slice(0, 4).map((i) => i.photo)} />}
     >
-      <ProjectsList groups={groups} labels={labels} />
+      <ProjectsList groups={groups} labels={labels} compact />
     </ListingShell>
   );
 }

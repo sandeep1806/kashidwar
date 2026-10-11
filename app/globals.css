@@ -649,3 +649,10 @@ a.glance-tile:hover .glance-value { color: var(--kashi-marigold); }
 /* Project progress (home + listing cards): thin saffron bar, gold when complete */
 .progress { position: relative; height: 4px; overflow: hidden; border-radius: 999px; background: color-mix(in oklab, var(--kashi-rudraksha) 55%, transparent); }
 .progress-fill { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--kashi-saffron), var(--kashi-diya)); }
+
+/* Project milestones: a vertical line of gold dots, the pending step hollow */
+.milestones { position: relative; display: grid; gap: 0.9rem; padding-left: 1.6rem; }
+.milestones::before { content: ""; position: absolute; left: 0.42rem; top: 0.6rem; bottom: 0.6rem; width: 1px; background: color-mix(in oklab, var(--kashi-diya) 35%, transparent); }
+.milestones > li { position: relative; line-height: 1.5; }
+.milestone-dot { position: absolute; left: -1.6rem; top: 0.45rem; width: 0.85rem; height: 0.85rem; border-radius: 999px; background: var(--kashi-diya); box-shadow: 0 0 0 3px color-mix(in oklab, var(--kashi-night) 80%, transparent); }
+.milestones > li.is-pending .milestone-dot { background: transparent; border: 1.5px solid var(--kashi-saffron); }

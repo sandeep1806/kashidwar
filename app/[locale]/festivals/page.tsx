@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import HashLinks from "@/components/motion/HashLinks";
 import ListingShell from "@/components/pages/ListingShell";
+import PhotoBand from "@/components/pages/PhotoBand";
 import LazyMonthFilter from "@/components/sections/LazyMonthFilter";
 import FestivalsList from "@/components/sections/FestivalsList";
 import type { Locale } from "@/lib/i18n/locales";
@@ -34,6 +35,7 @@ export default async function FestivalsPage({ params }: PageProps<"/[locale]/fes
       title={heading.title}
       secondary={heading.secondary}
       intro={<p>{heading.intro}</p>}
+      band={<PhotoBand photos={items.filter((i) => i.photo).slice(0, 4).map((i) => i.photo)} />}
       island={
         <>
           <HashLinks />

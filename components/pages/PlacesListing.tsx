@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ListingShell from "@/components/pages/ListingShell";
+import PhotoBand from "@/components/pages/PhotoBand";
 import PlaceCard from "@/components/ui/PlaceCard";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { alternatesFor, pageUrl } from "@/lib/pages";
@@ -52,6 +53,7 @@ export default async function PlacesListing({ locale, kind }: { locale: Locale; 
       title={tp(KEY_OF[kind].title)}
       secondary={secondary}
       intro={<p>{tp(KEY_OF[kind].intro)}</p>}
+      band={<PhotoBand photos={list.filter((i) => i.photo).slice(0, 4).map((i) => i.photo)} faith="hindu" />}
     >
       <p className="sr-only">{tp("results", { count: list.length })}</p>
       <div className="mt-10 grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 xl:grid-cols-4">

@@ -216,7 +216,9 @@
     },
     "lead": "What is being built beside the old city, every status checked against a source.",
     "cost": "Cost",
-    "progress": "{n}% built"
+    "progress": "{n}% built",
+    "progressLabel": "Progress",
+    "milestones": "Milestones"
   },
   "festivals": {
     "title": "A year of festivals",
@@ -239,7 +241,8 @@
       "Dec"
     ],
     "lunarNote": "Dates follow the lunar calendar and shift every year; check before you travel.",
-    "lead": "The calendar runs on the moon; every month a flame is lit somewhere."
+    "lead": "The calendar runs on the moon; every month a flame is lit somewhere.",
+    "monthsLabel": "Months"
   },
   "food": {
     "title": "The taste of Banaras",

@@ -60,9 +60,10 @@ export function StatusBadge({ status, label }: { status: ProjectStatus; label: s
  * project's page), shown as one snap carousel per status on phones and
  * tablets with a "See all" link.
  */
-export default function ProjectsList({ groups, labels, carousel }: { groups: { status: ProjectStatus; items: ProjectItem[] }[]; labels: ProjectLabels; carousel?: { href: string; label: string } }) {
+export default function ProjectsList({ groups, labels, carousel, compact = false }: { groups: { status: ProjectStatus; items: ProjectItem[] }[]; labels: ProjectLabels; carousel?: { href: string; label: string }; /** Listing page: the short card (photo, chips, name, progress, two lines) in a grid; details live on the project pages */ compact?: boolean }) {
   // Home: status H3s and card H4s under the section H2; projects page: one level up, under its H1.
   const [GroupH, CardH] = carousel ? (["h3", "h4"] as const) : (["h2", "h3"] as const);
+  const short = !!carousel || compact;
   return (
     <>
       {groups.map((g) => (
@@ -91,7 +92,7 @@ export default function ProjectsList({ groups, labels, carousel }: { groups: { s
                 {typeof p.progress === "number" && p.status !== "announced" && (
                   <ProgressBar value={p.progress} label={labels.progress.replace("{n}", String(p.progress))} />
                 )}
-                {carousel ? (
+                {short ? (
                   <>
                     <p className="mt-3 line-clamp-2 text-kashi-ash/90">{metaDescription(p.summary, 140)}</p>
                     <a href={p.href} className="mt-auto inline-flex items-center gap-2 pt-5 text-sm text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">

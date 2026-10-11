@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Block, Facts, LinkCards, PrevNext, Sources } from "@/components/pages/Blocks";
+import { Block, LinkCards, PrevNext, Sources } from "@/components/pages/Blocks";
+import FactStrip from "@/components/pages/FactStrip";
 import GuideLinks from "@/components/pages/GuideLinks";
 import LdJson from "@/components/pages/LdJson";
 import PageMap from "@/components/pages/PageMap";
@@ -9,10 +10,11 @@ import PageShell from "@/components/pages/PageShell";
 import EnglishNote from "@/components/ui/EnglishNote";
 import FestivalDateLine from "@/components/ui/FestivalDateLine";
 import FaithGlyph from "@/components/ui/FaithGlyph";
+import Icon from "@/components/ui/Icon";
 import { festivals, localize, type Faith } from "@/lib/content";
 import { festivalDateView, festivalTiming, timingSources } from "@/lib/festivalDates";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
-import { absolute, breadcrumbLd, festivalPlaces, alternatesFor, metaDescription, neighbours, pagePath, pageUrl } from "@/lib/pages";
+import { absolute, breadcrumbLd, festivalPlaces, alternatesFor, leadOf, metaDescription, neighbours, pagePath, pageUrl } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
 import { proseFallsBack } from "@/lib/proseLocale";
 
@@ -74,6 +76,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
   const dated = timing.next; // Event JSON-LD: the next verified occurrence only, never a past one
   const dateView = festivalDateView(raw, LOCALES[loc].bcp47, t, timing);
   const venues = festivalPlaces(raw);
+  const listedVenues = raw.placeIds.length ? venues : [];
   const { prev, next } = neighbours(festivals, index);
   const home = `/${locale}`;
   const crumbs = [
@@ -84,6 +87,9 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
   const months = tf.raw("months") as string[];
   const lite = (x: (typeof venues)[number]) => ({ id: x.id, name_en: x.name_en, faith: x.faith, type: x.type, lat: x.lat, lng: x.lng, bestTime: "", coordsVerified: x.coordsVerified });
   const firstVenue = raw.placeIds.length ? venues[0] : null;
+  const where = Array.isArray(f.where) ? f.where.join(" · ") : f.where;
+  const lead = leadOf(f.summary);
+  const rest = f.summary.slice(lead.length).trim();
 
   const ld: object[] = [breadcrumbLd(loc, crumbs.map((c) => ({ name: c.name, path: c.href })))];
   if (dated) {
@@ -104,8 +110,8 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
       image: [absolute(photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`)],
       location: {
         "@type": "Place",
-        name: firstVenue ? names(loc, firstVenue).primary : f.where,
-        address: { "@type": "PostalAddress", streetAddress: f.where, addressLocality: "Varanasi", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
+        name: firstVenue ? names(loc, firstVenue).primary : where,
+        address: { "@type": "PostalAddress", streetAddress: where, addressLocality: "Varanasi", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
         ...(firstVenue ? { geo: { "@type": "GeoCoordinates", latitude: firstVenue.lat, longitude: firstVenue.lng } } : {}),
       },
     });
@@ -115,12 +121,13 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
     <>
       <LdJson data={ld} />
       <PageShell
+        variant="visual"
         locale={loc}
         path={path}
         crumbs={crumbs}
         faith={faiths[0]}
         chips={faiths.map((x) => (
-          <span key={x} className="inline-flex items-center gap-1 rounded-full border border-kashi-diya/40 px-2 py-0.5 text-kashi-diya">
+          <span key={x} className="inline-flex items-center gap-1 rounded-full border border-kashi-diya/40 bg-kashi-night/60 px-2 py-0.5 text-kashi-diya">
             <FaithGlyph faith={x} className="h-3.5 w-3.5" />
             {tp(`faiths.${x}`)}
           </span>
@@ -128,16 +135,26 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
         title={primary}
         secondary={secondary}
         subtitle={<FestivalDateLine view={dateView} />}
-        lead={<p>{f.summary}</p>}
+        strip={
+          <FactStrip
+            items={[
+              { icon: "calendar", label: tf("when"), value: f.when },
+              { icon: "leaf", label: tf("monthsLabel"), value: raw.months.map((m) => months[m - 1]).join(" · ") },
+              { icon: "pin", label: tf("where"), value: where },
+              ...(dateView.last ? [{ icon: "clock" as const, label: dateView.last.before.replace(/[:：]\s*$/, ""), value: dateView.last.date }] : []),
+            ]}
+          />
+        }
+        lead={<p>{lead}</p>}
         photo={photo}
         island={
-          venues.length && raw.placeIds.length ? (
+          listedVenues.length ? (
             <PageMap
               title={t("onMap")}
               loading={t("mapLoading")}
-              places={venues.map(lite)}
-              focusId={venues.length === 1 ? venues[0].id : undefined}
-              hrefs={Object.fromEntries(venues.map((x) => [x.id, pageUrl(loc, "places", x.id)]))}
+              places={listedVenues.map(lite)}
+              focusId={listedVenues.length === 1 ? listedVenues[0].id : undefined}
+              hrefs={Object.fromEntries(listedVenues.map((x) => [x.id, pageUrl(loc, "places", x.id)]))}
               clusterTemplate={tp.raw("cluster") as string}
             />
           ) : null
@@ -146,12 +163,16 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
           <>
             <LinkCards
               title={t("related")}
-              items={venues.map((r) => ({ href: pageUrl(loc, "places", r.id), ...(() => { const n = names(loc, r); return { name: n.primary, secondary: n.secondary }; })(), photo: getPhoto(`places/${r.id}`, loc), faith: r.faith[0] ?? "secular", type: r.type }))}
+              items={venues.map((r) => {
+                const n = names(loc, r);
+                const g = localize(r, loc).glance;
+                return { href: pageUrl(loc, "places", r.id), name: n.primary, secondary: n.secondary, photo: getPhoto(`places/${r.id}`, loc), faith: r.faith[0] ?? "secular", type: r.type, meta: g?.timings, metaIcon: "clock" as const };
+              })}
             />
             <GuideLinks locale={loc} kind="festivals" id={id} />
             <PrevNext
-              prev={{ href: pageUrl(loc, "festivals", prev.id), label: t("prev"), name: names(loc, prev).primary }}
-              next={{ href: pageUrl(loc, "festivals", next.id), label: t("next"), name: names(loc, next).primary }}
+              prev={{ href: pageUrl(loc, "festivals", prev.id), label: t("prev"), name: names(loc, prev).primary, photo: getPhoto(`festivals/${prev.id}`, loc), faith: prev.faith[0] ?? "secular" }}
+              next={{ href: pageUrl(loc, "festivals", next.id), label: t("next"), name: names(loc, next).primary, photo: getPhoto(`festivals/${next.id}`, loc), faith: next.faith[0] ?? "secular" }}
               back={{ href: `${home}/festivals`, label: t("backTo", { section: nav("festivals") }) }}
             />
           </>
@@ -159,34 +180,43 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
       >
         <div className="space-y-10">
           {proseFallsBack(loc) && !raw.i18n?.[loc] && <EnglishNote text={common("englishNote")} />}
-          <Block title={t("howToReach")}>
-            <p>{f.where}</p>
-            {venues.length > 0 && raw.placeIds.length > 0 && (
-              <ul className="mt-2 flex flex-wrap gap-x-4 text-sm">
-                {venues.map((v) => (
+          {rest && (
+            <details className="story-details">
+              <summary>
+                <Icon name="chevron" className="icon-chevron h-4 w-4" />
+                {t("readStory")}
+              </summary>
+              <p className="mt-4 leading-relaxed text-kashi-ash/90">{rest}</p>
+            </details>
+          )}
+          <Block title={tf("where")}>
+            <p className="flex items-start gap-2">
+              <Icon name="pin" className="mt-1 h-5 w-5 shrink-0 text-kashi-diya" />
+              <span>{where}</span>
+            </p>
+            {listedVenues.length > 0 && (
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {listedVenues.map((v) => (
                   <li key={v.id}>
-                    <a href={pageUrl(loc, "places", v.id)} className="inline-flex min-h-11 items-center text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">{names(loc, v).primary}</a>
+                    <a href={pageUrl(loc, "places", v.id)} className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-kashi-diya/40 px-4 text-sm text-kashi-diya transition-colors hover:border-kashi-marigold hover:text-kashi-marigold">
+                      <Icon name="chevron" className="h-3.5 w-3.5" />
+                      {names(loc, v).primary}
+                    </a>
                   </li>
                 ))}
               </ul>
             )}
-            <div className="mt-6 space-y-3 text-sm text-kashi-ash/80">
-              <p className="text-xs uppercase tracking-[0.18em] text-kashi-diya">{t("reachVaranasi")}</p>
-              <p>{practical("air.text")}</p>
-              <p>{practical("rail.text")}</p>
-            </div>
           </Block>
+          <p className="text-xs text-kashi-ash/60">{tf("lunarNote")}</p>
           <Sources label={tp("sources")} sources={[...raw.sources, ...timingSources(timing)]} />
         </div>
-        <aside>
-          <Facts
-            items={[
-              { label: dateView.featured.prefix ?? t("dateNext"), value: dateView.featured.text },
-              { label: tf("when"), value: `${f.when} · ${raw.months.map((m) => months[m - 1]).join("–")}` },
-              { label: tf("where"), value: f.where },
-            ]}
-          />
-          <p className="mt-3 text-xs text-kashi-ash/60">{tf("lunarNote")}</p>
+        <aside className="space-y-8">
+          <Block title={t("reachVaranasi")}>
+            <ul className="space-y-3 text-sm text-kashi-ash/85">
+              <li className="flex gap-3"><Icon name="plane" className="mt-0.5 h-5 w-5 shrink-0 text-kashi-diya" /><span>{practical("air.text")}</span></li>
+              <li className="flex gap-3"><Icon name="train" className="mt-0.5 h-5 w-5 shrink-0 text-kashi-diya" /><span>{practical("rail.text")}</span></li>
+            </ul>
+          </Block>
         </aside>
       </PageShell>
     </>

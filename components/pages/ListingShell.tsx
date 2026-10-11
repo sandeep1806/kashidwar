@@ -23,6 +23,7 @@ export default function ListingShell({
   intro,
   children,
   island,
+  band,
 }: {
   locale: Locale;
   /** Locale-less path of this page, for the footer's language links */
@@ -35,6 +36,8 @@ export default function ListingShell({
   intro: ReactNode;
   children: ReactNode;
   island?: ReactNode;
+  /** Photo band between the title and the intro (see PhotoBand) */
+  band?: ReactNode;
 }) {
   return (
     <main id="content" className="flex flex-1 flex-col">
@@ -58,6 +61,7 @@ export default function ListingShell({
             </nav>
             <div className="mt-8 text-center">
               <SectionHeading as="h1" id="page-title" locale={locale} title={title} secondary={secondary} />
+              {band}
               <div className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{intro}</div>
             </div>
           </div>

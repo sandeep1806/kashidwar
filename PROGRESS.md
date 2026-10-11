@@ -417,3 +417,8 @@ Owner's brief: "more visual, less reading, more detail per place". Decisions: ph
 - Project cards (home and `/projects`): sourced `cost` chip (7 projects, figures already in the summaries/sources) and a thin saffron `progress` bar (100 completed; ropeway 94 % and stadium 80 % from the dated inspections; announced projects show no bar).
 - Festival cards: the next date now sits first, under the photo; one-line summary; venue line with a pin icon.
 - Food cards: typical street price chip (`price`, `priceBand`) researched 2026-10-11 from dated 2025–26 Varanasi food guides and, for launglata, the shop's own listing (`priceVerified` true only there); sources in `priceSources`.
+
+## Visual redesign, phase 3 — festival and project pages, listings · 2026-10-11
+- Festival pages: `PageShell variant="visual"` with the date line in the hero, fact strip (lunar date, months, where, last held), one-sentence lead with the rest behind "Read the full story", venue chips, "Reaching Varanasi" as plane/train lines, venue cards showing each place's timings, photo prev/next.
+- Project pages: fact strip (status, cost, progress, last verified), the `timeline` string split on " · " into a milestone list under the progress bar, agency with a shield icon, the project as the focused pin on a map with nearby places (new; the page had coordinates but no map), distance cards.
+- Listing pages (`/ghats`, `/temples`, `/festivals`, `/projects`, `/food`): a photo band of four arch tiles under the H1 (`components/pages/PhotoBand.tsx`); `/projects` now uses the compact cards (details live on the project pages).

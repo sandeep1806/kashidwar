@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ListingShell from "@/components/pages/ListingShell";
+import PhotoBand from "@/components/pages/PhotoBand";
 import FoodList from "@/components/sections/FoodList";
 import EnglishNote from "@/components/ui/EnglishNote";
 import type { Locale } from "@/lib/i18n/locales";
@@ -38,6 +39,7 @@ export default async function FoodPage({ params }: PageProps<"/[locale]/food">) 
           {englishNote && <EnglishNote text={englishNote} className="mt-3" />}
         </>
       }
+      band={<PhotoBand photos={items.filter((i) => i.photo).slice(0, 4).map((i) => i.photo)} />}
     >
       <FoodList items={items} labels={labels} />
     </ListingShell>
