@@ -39,6 +39,20 @@ const LEGACY: Record<string, string> = {
   // festivals (ids that changed; unchanged ids fall through to the locale proxy)
   "/festivals": "/en/festivals",
   "/festivals/mahashivratri": "/en/festivals/maha-shivratri",
+  // Locale-less content URLs (old links, and Google still ranking /festivals/<id> at position ~3 in
+  // October 2026): a permanent redirect to the English page, which is the hreflang x-default,
+  // instead of the locale middleware's temporary 307 that leaves the old URL as the canonical.
+  "/festivals/:id": "/en/festivals/:id",
+  "/places/:id": "/en/places/:id",
+  "/projects": "/en/projects",
+  "/projects/:id": "/en/projects/:id",
+  "/guides": "/en/guides",
+  "/guides/:slug": "/en/guides/:slug",
+  "/itineraries/:slug": "/en/itineraries/:slug",
+  "/temples": "/en/temples",
+  "/food": "/en/food",
+  "/credits": "/en/credits",
+  "/ghats/:slug": "/en/ghats",
   // food, map, static pages
   "/khana": "/en/food",
   "/khana/:slug": "/en/food",

@@ -12,7 +12,8 @@
     "festivalDescription": "ବାରାଣସୀ (ବନାରସ)ରେ {name}, {when}। {summary}",
     "projectDescription": "{name}, ବାରାଣସୀ: {summary}",
     "itineraryDescription": "ବାରାଣସୀ (ବନାରସ) ପାଇଁ {n} ଦିନିଆ ଯୋଜନା: {summary}",
-    "festivalTitleTbc": "ବାରାଣସୀରେ {name} — କେବେ ପଡ଼େ ଏବଂ କ'ଣ ହୁଏ"
+    "festivalTitleTbc": "ବାରାଣସୀରେ {name} — କେବେ ପଡ଼େ ଏବଂ କ'ଣ ହୁଏ",
+    "placeDescriptionFacts": "{name}, ବାରାଣସୀ: {facts}। {summary}"
   },
   "hero": {
     "title": "କାଶୀ — ଇତିହାସଠାରୁ ମଧ୍ୟ ପୁରୁଣା",

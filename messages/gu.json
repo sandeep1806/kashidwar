@@ -12,7 +12,8 @@
     "festivalDescription": "વારાણસી (બનારસ)માં {name}, {when}. {summary}",
     "projectDescription": "{name}, વારાણસી: {summary}",
     "itineraryDescription": "વારાણસી (બનારસ) માટે {n} દિવસની યોજના: {summary}",
-    "festivalTitleTbc": "વારાણસીમાં {name} — ક્યારે આવે છે અને શું થાય છે"
+    "festivalTitleTbc": "વારાણસીમાં {name} — ક્યારે આવે છે અને શું થાય છે",
+    "placeDescriptionFacts": "{name}, વારાણસી: {facts}. {summary}"
   },
   "hero": {
     "title": "કાશી — ઇતિહાસથી પણ પુરાણી",
