@@ -8,6 +8,7 @@ import { FaithGlyphSprite } from "@/components/ui/FaithGlyph";
 import Static from "@/components/ui/Static";
 import RevealController from "@/components/motion/RevealController";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
+import Analytics from "@/components/ui/Analytics";
 import DeferredFonts from "@/components/ui/DeferredFonts";
 import SectionMenu from "@/components/ui/SectionMenu";
 import SiteHeader from "@/components/ui/SiteHeader";
@@ -114,6 +115,7 @@ export default async function LocaleLayout({
         <script dangerouslySetInnerHTML={{ __html: FONT_SNIPPET(fonts.deferred) }} />
         <RevealController />
         <DeferredFonts classes={fonts.deferred} fonts={fontLoadSpecsFor(locale as Locale)} sample={meta.sample} />
+        <Analytics id={process.env.NEXT_PUBLIC_GA_ID ?? ""} />
         <Static>
           <FaithGlyphSprite />
         </Static>

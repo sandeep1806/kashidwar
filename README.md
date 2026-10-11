@@ -185,11 +185,10 @@ GSC_CREDENTIALS=/path/to/service-account.json python3 scripts/gsc-report.py --da
 
 The service account's `client_email` must be added once as a user on the property (Search Console → kashidwar.com → Settings → Users and permissions → Add user, permission Full). Set `GSC_SITE` if the property is not `sc-domain:kashidwar.com`. Keep the key file outside the repository.
 
-## Cloudflare Web Analytics (cookieless, no consent banner)
-The old Astro site (branch `master`) carried a Google Analytics 4 tag (`G-G6VN84753L`); the redesign deliberately does not (owner's decision, 2026-10-11): no cookies, no consent banner, no third-party script on the load path. That GA property stopped receiving data at the 2026-09-25 cut-over and will stay empty. Traffic is read here and in Search Console (`scripts/gsc-report.py`).
-1. Cloudflare dashboard → **Analytics & Logs → Web Analytics → Add a site**.
-2. Choose **kashidwar.com** from the list (the zone is proxied, so pick **automatic setup** — Cloudflare injects the beacon at the edge; no code change or token needed).
-3. Save; data appears within minutes under Web Analytics → kashidwar.com. It sets no cookies and stores no personal data, so no banner is required.
+## Analytics
+Two sources. **Cloudflare Web Analytics** (cookieless, edge-injected beacon, no code) and **Google Analytics 4** (`G-G6VN84753L`, re-enabled 2026-10-11 by the owner). GA loads from `components/ui/Analytics.tsx` only after the window `load` event and the next idle period, so it stays off the paint path; the ID comes from `NEXT_PUBLIC_GA_ID` in `wrangler.jsonc` → `vars` (empty disables it; dev builds never load it). GA sets cookies; the site shows no consent banner (owner's decision). Search Console is read with `scripts/gsc-report.py`.
+
+Cloudflare Web Analytics setup, if it ever needs redoing: dashboard → **Analytics & Logs → Web Analytics → Add a site**, choose kashidwar.com, automatic setup.
 If you ever turn the proxy off, switch to the manual JS snippet and add its `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "…"}'>` to `app/[locale]/layout.tsx`.
 
 ## Weekly content review (AI, human-merged)

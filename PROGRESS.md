@@ -385,3 +385,6 @@ Read every zone setting, ruleset, bot setting and DNS record on kashidwar.com an
 - **Email obfuscation** off (it injected a script wherever an address appears, e.g. /about). **Browser Cache TTL** 4 h → "respect existing headers" (Next sets its own).
 - **Not possible / not done**: the Cloudflare Free Managed WAF ruleset cannot be deployed through the API on this plan ("not entitled"); check Security → WAF → Managed rules in the dashboard. Smart Tiered Cache is off (irrelevant: Workers Assets have no origin). Rocket Loader is off and must stay off. Email Routing: contact@kashidwar.com → owner's inbox, status ready.
 - kashidwar.in: redirect-only zone; has a stray TXT record `kashidwar.com.kashidwar.in` (harmless typo) and a "Leaked credential check" rate-limit rule (harmless).
+
+## Google Analytics 4 re-enabled · 2026-10-11
+- Owner reversed the morning's decision: GA4 `G-G6VN84753L` is back, as `components/ui/Analytics.tsx` — injected only after window `load` and the next idle period (timeout 4 s), production only, ID from `NEXT_PUBLIC_GA_ID` in wrangler vars. Cloudflare Web Analytics stays. No consent banner (owner's call). Expect a small PageSpeed cost from the extra ~100 KB script after load.
