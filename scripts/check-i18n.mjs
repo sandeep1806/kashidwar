@@ -10,12 +10,14 @@
  * and the guides (content/guides/i18n/<locale>.json).
  */
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
+import { inflate } from "./lib/entry-i18n.mjs";
 const ROOT = new URL("..", import.meta.url).pathname.replace(/\/$/, "");
 const OUT = process.argv[2] ?? null; // null: report only
 const J = (p) => JSON.parse(readFileSync(`${ROOT}/${p}`, "utf8"));
 const LOCALES = ["ta", "te", "kn", "ml", "bn", "or", "as", "mr", "gu", "pa", "sa"];
 const report = [];
 const places = J("content/places.json"), festivals = J("content/festivals.json"), projects = J("content/projects.json"), food = J("content/food.json"), itins = J("content/itineraries.json");
+inflate(ROOT, { places, festivals, projects, food, itineraries: itins });
 const faqs = J("content/faqs.json"), about = J("content/about.json"), photos = J("content/photos.json");
 const en = J("messages/en.json"), hi = J("messages/hi.json");
 const flat = (o, p = "") => Object.entries(o).flatMap(([k, v]) => (v && typeof v === "object" && !Array.isArray(v) ? flat(v, p + k + ".") : [[p + k, v]]));

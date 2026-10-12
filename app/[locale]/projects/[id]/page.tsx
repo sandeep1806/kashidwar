@@ -11,7 +11,7 @@ import PageShell from "@/components/pages/PageShell";
 import { ProgressBar, StatusBadge } from "@/components/sections/ProjectsList";
 import EnglishNote from "@/components/ui/EnglishNote";
 import Icon from "@/components/ui/Icon";
-import { localize, projects, type Faith } from "@/lib/content";
+import { localize, projects, type Faith, loadEntryTranslations } from "@/lib/content";
 import { displayName } from "@/lib/contentTypes";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { breadcrumbLd, hubDistances, alternatesFor, leadOf, mapLinks, metaDescription, neighbours, pagePath, pageUrl, projectPlaces, travelEstimate } from "@/lib/pages";
@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/projects
   const raw = projects.find((p) => p.id === id);
   if (!raw) return {};
   const loc = locale as Locale;
+  await loadEntryTranslations(loc);
   const p = localize(raw, loc);
   const t = await getTranslations({ locale, namespace: "meta" });
   const { primary } = names(loc, raw);
@@ -56,6 +57,7 @@ export default async function ProjectPage({ params }: PageProps<"/[locale]/proje
   if (index < 0) notFound();
   setRequestLocale(locale);
   const loc = locale as Locale;
+  await loadEntryTranslations(loc);
   const raw = projects[index];
   const p = localize(raw, loc);
   const [t, tj, tp, nav, common] = await Promise.all([

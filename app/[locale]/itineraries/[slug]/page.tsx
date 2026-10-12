@@ -10,7 +10,7 @@ import GuideLinks from "@/components/pages/GuideLinks";
 import LdJson from "@/components/pages/LdJson";
 import PageShell from "@/components/pages/PageShell";
 import EnglishNote from "@/components/ui/EnglishNote";
-import { getPlace, itineraries, localize, localizeItinerary } from "@/lib/content";
+import { getPlace, itineraries, localize, localizeItinerary, loadEntryTranslations } from "@/lib/content";
 import { displayName } from "@/lib/contentTypes";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, breadcrumbLd, itineraryLeadPlace, itinerarySlug, alternatesFor, metaDescription, neighbours, pagePath, pageUrl } from "@/lib/pages";
@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/itinerar
   const raw = itineraries.find((it) => itinerarySlug(it) === slug);
   if (!raw) return {};
   const loc = locale as Locale;
+  await loadEntryTranslations(loc);
   const it = localizeItinerary(raw, loc);
   const t = await getTranslations({ locale, namespace: "meta" });
   const path = pagePath("itineraries", slug);
@@ -49,6 +50,7 @@ export default async function ItineraryPage({ params }: PageProps<"/[locale]/iti
   if (index < 0) notFound();
   setRequestLocale(locale);
   const loc = locale as Locale;
+  await loadEntryTranslations(loc);
   const raw = itineraries[index];
   const it = localizeItinerary(raw, loc);
   const [t, ti, nav, common, practical, tp] = await Promise.all([

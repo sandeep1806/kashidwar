@@ -13,7 +13,7 @@ import EnglishNote from "@/components/ui/EnglishNote";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 import Gallery from "@/components/ui/Gallery";
 import Icon from "@/components/ui/Icon";
-import { localize, places, type Faith } from "@/lib/content";
+import { localize, places, type Faith, loadEntryTranslations } from "@/lib/content";
 import { displayName } from "@/lib/contentTypes";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, breadcrumbLd, festivalsAt, hubDistances, alternatesFor, leadOf, mapLinks, metaDescription, nearestPlace, neighbours, pagePath, pageUrl, relatedPlaces, travelEstimate } from "@/lib/pages";
@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/places/[
   const raw = places.find((p) => p.id === id);
   if (!raw) return {};
   const loc = locale as Locale;
+  await loadEntryTranslations(loc);
   const p = localize(raw, loc);
   const t = await getTranslations({ locale, namespace: "meta" });
   const tp = await getTranslations({ locale, namespace: "places" });
@@ -62,6 +63,7 @@ export default async function PlacePage({ params }: PageProps<"/[locale]/places/
   if (index < 0) notFound();
   setRequestLocale(locale);
   const loc = locale as Locale;
+  await loadEntryTranslations(loc);
   const raw = places[index];
   const p = localize(raw, loc);
   const [t, tp, nav, common] = await Promise.all([

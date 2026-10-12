@@ -11,7 +11,7 @@ import EnglishNote from "@/components/ui/EnglishNote";
 import FestivalDateLine from "@/components/ui/FestivalDateLine";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 import Icon from "@/components/ui/Icon";
-import { festivals, localize, type Faith } from "@/lib/content";
+import { festivals, localize, type Faith, hasTranslation, loadEntryTranslations } from "@/lib/content";
 import { displayName } from "@/lib/contentTypes";
 import { festivalDateView, festivalTiming, timingSources } from "@/lib/festivalDates";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/festival
   const raw = festivals.find((f) => f.id === id);
   if (!raw) return {};
   const loc = locale as Locale;
+  await loadEntryTranslations(loc);
   const f = localize(raw, loc);
   const t = await getTranslations({ locale, namespace: "meta" });
   const { primary } = names(loc, raw);
@@ -58,6 +59,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
   if (index < 0) notFound();
   setRequestLocale(locale);
   const loc = locale as Locale;
+  await loadEntryTranslations(loc);
   const raw = festivals[index];
   const f = localize(raw, loc);
   const [t, tf, tp, nav, common, practical] = await Promise.all([
@@ -179,7 +181,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
         }
       >
         <div className="space-y-10">
-          {proseFallsBack(loc) && !raw.i18n?.[loc] && <EnglishNote text={common("englishNote")} />}
+          {proseFallsBack(loc) && !hasTranslation(raw, loc) && <EnglishNote text={common("englishNote")} />}
           {rest && (
             <details className="story-details">
               <summary>

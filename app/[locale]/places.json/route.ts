@@ -1,3 +1,4 @@
+import { loadEntryTranslations } from "@/lib/content";
 import { getPlaceDetails } from "@/lib/sectionProps";
 import { routing } from "@/lib/i18n/routing";
 import type { Locale } from "@/lib/i18n/locales";
@@ -16,5 +17,6 @@ export function generateStaticParams() {
 
 export async function GET(_req: Request, { params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  await loadEntryTranslations(locale);
   return Response.json(getPlaceDetails(locale as Locale));
 }

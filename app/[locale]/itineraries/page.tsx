@@ -6,7 +6,7 @@ import PhotoBand from "@/components/pages/PhotoBand";
 import Icon from "@/components/ui/Icon";
 import Photo from "@/components/ui/Photo";
 import ArtFallback from "@/components/ui/ArtFallback";
-import { getPlace, itineraries, localizeItinerary } from "@/lib/content";
+import { getPlace, itineraries, localizeItinerary, loadEntryTranslations } from "@/lib/content";
 import { displayName } from "@/lib/contentTypes";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { alternatesFor, itineraryLeadPlace, itinerarySlug, pageUrl } from "@/lib/pages";
@@ -32,6 +32,7 @@ export default async function ItinerariesPage({ params }: PageProps<"/[locale]/i
   const { locale } = await params;
   setRequestLocale(locale);
   const loc = locale as Locale;
+  await loadEntryTranslations(loc);
   const [t, tp, tpl] = await Promise.all([
     getTranslations({ locale, namespace: "itineraries" }),
     getTranslations({ locale, namespace: "page" }),

@@ -2,7 +2,7 @@ import { getPhoto } from "@/lib/photos";
 import { festivalDateView } from "@/lib/festivalDates";
 import { itinerarySlug, pageUrl } from "@/lib/pages";
 import { getTranslations } from "next-intl/server";
-import { faithEntries, festivals, foods, getPlace, itineraries, localize, localizeItinerary, places, projects, type Itinerary, type ProjectStatus } from "@/lib/content";
+import { faithEntries, festivals, foods, getPlace, itineraries, loadEntryTranslations, localize, localizeItinerary, places, projects, type Itinerary, type ProjectStatus } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { proseFallsBack } from "@/lib/proseLocale";
 import type { FestivalItem } from "@/components/sections/FestivalsList";
@@ -33,6 +33,7 @@ const ORDER: ProjectStatus[] = ["under_construction", "announced", "completed"];
 const PROJECT_TYPES = ["transport", "heritage", "tourism", "infrastructure", "culture"];
 
 export async function getProjectsProps(locale: Locale) {
+  await loadEntryTranslations(locale);
   const t = await getTranslations({ locale, namespace: "projects" });
   const meta = LOCALES[locale];
   const fmt = new Intl.DateTimeFormat(meta.bcp47, { dateStyle: "long" });
@@ -68,6 +69,7 @@ export async function getProjectsProps(locale: Locale) {
 export type ProjectsProps = Awaited<ReturnType<typeof getProjectsProps>>;
 
 export async function getFestivalsProps(locale: Locale) {
+  await loadEntryTranslations(locale);
   const t = await getTranslations({ locale, namespace: "festivals" });
   const tpage = await getTranslations({ locale, namespace: "page" });
   const items: FestivalItem[] = festivals
@@ -87,6 +89,7 @@ export async function getFestivalsProps(locale: Locale) {
 export type FestivalsProps = Awaited<ReturnType<typeof getFestivalsProps>>;
 
 export async function getFoodProps(locale: Locale) {
+  await loadEntryTranslations(locale);
   const t = await getTranslations({ locale, namespace: "food" });
   const items: FoodItem[] = foods.map((raw) => {
     const f = localize(raw, locale);
@@ -103,6 +106,7 @@ export async function getFoodProps(locale: Locale) {
 export type FoodProps = Awaited<ReturnType<typeof getFoodProps>>;
 
 export async function getItinerariesProps(locale: Locale) {
+  await loadEntryTranslations(locale);
   const t = await getTranslations({ locale, namespace: "itineraries" });
   const list: Itinerary[] = itineraries.map((it) => localizeItinerary(it, locale));
   const common = await getTranslations({ locale, namespace: "common" });
@@ -141,7 +145,7 @@ export async function getFinaleProps(locale: Locale) {
     closingSecondary: t("closingSecondary"),
   };
 }
-/** Modal prose for every place in one locale (served by app/[locale]/places.json). */
+/** Modal prose for every place in one locale (served by app/[locale]/places.json). Load the locale's entry translations first. */
 export function getPlaceDetails(locale: Locale): Record<string, PlaceDetail> {
   return Object.fromEntries(
     places.map((raw) => {
@@ -156,6 +160,7 @@ export type FinaleProps = Awaited<ReturnType<typeof getFinaleProps>>;
 const PLACE_TYPES = ["ghat", "temple", "stupa", "monastery", "mosque", "church", "gurudwara", "math", "fort", "museum", "university", "heritage"];
 
 export async function getPlacesProps(locale: Locale) {
+  await loadEntryTranslations(locale);
   const t = await getTranslations({ locale, namespace: "places" });
   const tpage = await getTranslations({ locale, namespace: "page" });
   const items: ExplorerPlace[] = places.map((raw) => {

@@ -2,6 +2,7 @@
 // chunks that scripts/check-i18n.mjs <dir> extracts) into the project content.
 // Usage: node scripts/merge-translations.mjs <trDir> [locale ...]   (default: every locale that has out files)
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
+import { inflate, deflate } from "./lib/entry-i18n.mjs";
 const ROOT = new URL("..", import.meta.url).pathname.replace(/\/$/, "");
 const TR = process.argv[2];
 const only = process.argv.slice(3);
@@ -9,6 +10,7 @@ const J = (p) => JSON.parse(readFileSync(`${ROOT}/${p}`, "utf8"));
 const W = (p, o) => writeFileSync(`${ROOT}/${p}`, JSON.stringify(o, null, 2) + "\n");
 const files = { places: "content/places.json", festivals: "content/festivals.json", projects: "content/projects.json", food: "content/food.json", itin: "content/itineraries.json" };
 const data = Object.fromEntries(Object.entries(files).map(([k, p]) => [k, J(p)]));
+inflate(ROOT, { ...data, itineraries: data.itin });
 const faqs = J("content/faqs.json"), about = J("content/about.json");
 const byId = (k, id) => data[k].find((x) => x.id === id) ?? (() => { throw new Error(`${k}: unknown id ${id}`); })();
 const report = [];
@@ -61,6 +63,7 @@ for (const L of readdirSync(TR).filter((d) => (!only.length || only.includes(d))
   W(`messages/${L}.json`, msgs); W(altPath, alt); W(gPath, gtr);
   report.push(`${L}: ${outs.length} files, ${n} strings merged, ${missing} missing`);
 }
+deflate(ROOT, { ...data, itineraries: data.itin });
 for (const [k, p] of Object.entries(files)) W(p, data[k]);
 W("content/faqs.json", faqs); W("content/about.json", about);
 console.log(report.join("\n"));
