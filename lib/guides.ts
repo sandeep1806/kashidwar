@@ -55,6 +55,8 @@ export interface Guide {
   description_hi: string;
   lead_en: string;
   lead_hi: string;
+  /** Photo key for the hero and cards, chosen to match the guide's topic */
+  photo?: string;
   facts?: GuideFact[];
   sections: GuideSection[];
   faq: { q_en: string; a_en: string; q_hi: string; a_hi: string }[];
@@ -96,8 +98,12 @@ export function localizeGuide(g: Guide, locale: Locale) {
   };
 }
 
-/** A photo for the guide: its first related festival, place or project that has one. */
+/** The guide's own photo (`photo`), else its first related festival, place or project that has one. */
 export function guidePhoto(g: Guide, locale: Locale) {
+  if (g.photo) {
+    const own = getPhoto(g.photo, locale);
+    if (own) return own;
+  }
   for (const kind of ["festivals", "places", "projects"] as const) {
     for (const id of g.related[kind] ?? []) {
       const p = getPhoto(`${kind}/${id}`, locale);

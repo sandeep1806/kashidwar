@@ -45,6 +45,7 @@ const PROFILES = {
   festivals: { widths: [360, 720, 1280], budget: 150_000 },
   food: { widths: [360, 720, 1280], budget: 150_000 },
   projects: { widths: [360, 720, 1280], budget: 150_000 },
+  guides: { widths: [360, 720, 1280], budget: 150_000 },
   scenes: { widths: [640, 960, 1600, 2400], budget: 260_000 },
   hero: { widths: [640], budget: 200_000 },
 };

@@ -661,6 +661,36 @@
    "sa": "शुष्कफलैः केसरेण च अलङ्कृता मृत्पात्रेषु ठण्डाई"
   }
  },
+ "guides/banarasi-saree-guide": {
+  "src": "/media/photos/guides/banarasi-saree-guide",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 853,
+  "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoIAAUAA4BaJQBOgB5u9JAA/niOpqS+GQcOKwnIHHGwwmCdTGJZI0ZhnjgAAA==",
+  "alt": {
+   "en": "Banarasi sarees in red, pink and green with zari borders, folded on wooden display blocks outside a workshop in Varanasi",
+   "hi": "वाराणसी में एक कारखाने के बाहर लकड़ी के ब्लॉकों पर सजी लाल, गुलाबी और हरी ज़री बॉर्डर वाली बनारसी साड़ियाँ"
+  }
+ },
+ "guides/varanasi-boat-ride": {
+  "src": "/media/photos/guides/varanasi-boat-ride",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 853,
+  "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAUAA4BaJQBOgCPQFSjvAAD85XLquaYqv70/AYpmKxmy+qShHCmNy2AAAA==",
+  "alt": {
+   "en": "A boatman rows a wooden boat across the Ganga at Varanasi, with other boats on the river in morning light",
+   "hi": "सुबह की रोशनी में वाराणसी में गंगा पर लकड़ी की नाव खेता नाविक, पीछे नदी पर और नावें"
+  }
+ },
  "hero/hero": {
   "src": "/media/photos/hero/hero",
   "widths": [

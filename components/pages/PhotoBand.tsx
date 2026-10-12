@@ -8,13 +8,14 @@ import type { Faith, PhotoData } from "@/lib/contentTypes";
  * cards underneath name every place. Hook-free, renders inside <Static>.
  */
 export default function PhotoBand({ photos, faith = "secular" }: { photos: (PhotoData | null)[]; faith?: Faith }) {
-  const list = photos.slice(0, 4);
+  // Photos taken outside Varanasi carry a label; a small band tile cannot show it, so they are left out.
+  const list = photos.filter((p) => !p?.note).slice(0, 4);
   if (!list.some(Boolean)) return null;
   return (
     <ul className="photo-band mx-auto mt-10 grid max-w-4xl grid-cols-4 gap-2 sm:gap-4" aria-hidden="true">
       {list.map((p, i) => (
         <li key={i} className="arch relative aspect-[4/5] overflow-hidden border border-kashi-rudraksha/50 bg-kashi-indigo sm:aspect-[4/3]">
-          {p ? <Photo photo={{ ...p, note: undefined }} sizes={[["(min-width: 896px)", "208px", 4 / 3], ["(min-width: 640px)", "22vw", 4 / 3], [null, "22vw", 4 / 5]]} decorative priority={i < 2} /> : <ArtFallback faith={faith} glyphOnly />}
+          {p ? <Photo photo={p} sizes={[["(min-width: 896px)", "208px", 4 / 3], ["(min-width: 640px)", "22vw", 4 / 3], [null, "22vw", 4 / 5]]} decorative priority={i < 2} /> : <ArtFallback faith={faith} glyphOnly />}
         </li>
       ))}
     </ul>
