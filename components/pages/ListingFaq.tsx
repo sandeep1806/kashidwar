@@ -5,7 +5,7 @@ import Icon from "@/components/ui/Icon";
 import type { Locale } from "@/lib/i18n/locales";
 import { absolute } from "@/lib/pages";
 
-type FaqKey = "places" | "ghats" | "temples";
+type FaqKey = "places" | "ghats" | "temples" | "itineraries" | "home";
 interface FaqItem { q_en: string; a_en: string; q_hi: string; a_hi: string }
 const FAQS = faqs as unknown as Record<FaqKey, { sources: { title: string; url: string }[]; items: FaqItem[] }>;
 

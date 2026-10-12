@@ -48,6 +48,7 @@ const LEGACY: Record<string, string> = {
   "/projects/:id": "/en/projects/:id",
   "/guides": "/en/guides",
   "/guides/:slug": "/en/guides/:slug",
+  "/itineraries": "/en/itineraries",
   "/itineraries/:slug": "/en/itineraries/:slug",
   "/temples": "/en/temples",
   "/food": "/en/food",

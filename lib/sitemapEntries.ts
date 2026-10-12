@@ -41,6 +41,7 @@ export function sitemapPages(): SitemapPage[] {
   listings.push(
     { path: "/places", priority: 0.9, changeFrequency: "monthly", photoKeys: places.flatMap((pl) => kindPhoto("places", pl.id)) },
     { path: "/map", priority: 0.7, changeFrequency: "monthly", photoKeys: [] },
+    { path: "/itineraries", priority: 0.8, changeFrequency: "monthly", photoKeys: [] },
     { path: "/ghats", priority: 0.8, changeFrequency: "monthly", photoKeys: typed("ghat") },
     { path: "/temples", priority: 0.8, changeFrequency: "monthly", photoKeys: typed("temple") },
   );

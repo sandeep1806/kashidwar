@@ -673,3 +673,14 @@ a.glance-tile:hover .glance-value { color: var(--kashi-marigold); }
 .guide-list { display: grid; gap: 0.6rem; }
 .guide-list > li { display: flex; gap: 0.6rem; padding: 0.7rem 0.85rem; border-radius: calc(var(--radius-kashi) - 4px); line-height: 1.45; color: color-mix(in oklab, var(--kashi-ash) 92%, transparent);
   background: color-mix(in oklab, var(--kashi-night) 45%, transparent); border: 1px solid color-mix(in oklab, var(--kashi-rudraksha) 45%, transparent); }
+
+/* Itinerary day timeline (2026-10-12) */
+.day-timeline { position: relative; display: grid; gap: 1.1rem; }
+.day-timeline::before { content: ""; position: absolute; left: 2.6rem; top: 0.4rem; bottom: 0.4rem; width: 1px; background: color-mix(in oklab, var(--kashi-diya) 30%, transparent); }
+.day-stop { position: relative; display: grid; grid-template-columns: 5.2rem 1fr; gap: 0.9rem; align-items: start; }
+.day-time { position: relative; z-index: 1; display: inline-flex; align-items: center; justify-content: center; gap: 0.25rem; min-width: 4.4rem; padding: 0.2rem 0.5rem; border-radius: 999px; font-size: 0.8rem; font-variant-numeric: tabular-nums;
+  color: var(--kashi-white); background: var(--kashi-indigo); border: 1px solid color-mix(in oklab, var(--kashi-diya) 40%, transparent); }
+.day-stop.has-marker .day-time { border-color: var(--kashi-saffron); color: var(--kashi-marigold); }
+.day-stop-body { display: flex; gap: 0.9rem; min-width: 0; }
+.day-thumb { position: relative; flex: none; width: 4.5rem; height: 4.5rem; overflow: hidden; border-radius: calc(var(--radius-kashi) - 2px); border: 1px solid color-mix(in oklab, var(--kashi-rudraksha) 60%, transparent); background: var(--kashi-indigo); }
+@media (min-width: 640px) { .day-thumb { width: 6rem; height: 6rem; } }

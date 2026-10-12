@@ -2,22 +2,32 @@
   "meta": {
     "siteName": "Kashi",
     "title": "Kashi — The City of Light",
-    "description": "Kashi — ghats, temples, Sarnath and the story of every faith. One journey from night to dawn on the Ganga.",
-    "homeTitle": "Kashi (Varanasi) — Ghats, Temples, Sarnath & Travel Guide",
+    "description": "Varanasi (Kashi, Banaras) travel guide: 35 places with timings and entry, all 84 ghats, Ganga Aarti time, Kashi Vishwanath darshan, festivals, 1–3 day plans.",
+    "homeTitle": "Kashidwar: Varanasi travel guide — places to visit, ghats, Ganga Aarti",
     "placeTitle": "{name}, Varanasi: timings, history & guide",
-    "festivalTitle": "{name} {year} in Varanasi — dates and guide",
-    "projectTitle": "{name}, Varanasi — status and timeline",
-    "itineraryTitle": "{n}-day Varanasi itinerary: {title}",
+    "festivalTitle": "{name} {year} in Varanasi: date, time and guide",
+    "projectTitle": "{name}, Varanasi: status, opening date and cost",
+    "itineraryTitle": "Varanasi {n}-day itinerary: {title}, day-by-day plan",
     "placeDescription": "{name}, Varanasi (Banaras): {summary}",
     "festivalDescription": "{name} in Varanasi (Banaras), {when}. {summary}",
     "projectDescription": "{name}, Varanasi: {summary}",
     "itineraryDescription": "A {n}-day plan for Varanasi (Banaras): {summary}",
-    "festivalTitleTbc": "{name} in Varanasi — when it falls and what happens",
+    "festivalTitleTbc": "{name} in Varanasi: date, timings and what happens",
     "placeDescriptionFacts": "{name}, Varanasi: {facts}. {summary}",
     "ghatsTitle": "Ghats of Varanasi: all 84 ghats, Ganga Aarti timings & map",
     "templesTitle": "Temples in Varanasi: darshan timings, list & how to reach",
     "placesTitle": "35 places to visit in Varanasi: ghats, temples, Sarnath & more",
-    "mapTitle": "Varanasi tourist map: ghats, temples, Sarnath with distances"
+    "mapTitle": "Varanasi tourist map: ghats, temples, Sarnath with distances",
+    "festivalsListTitle": "Festivals of Varanasi 2026–27: dates, Dev Deepawali, Ramlila & more",
+    "festivalsListDesc": "Every festival of Varanasi with its next date: Dev Deepawali, Ganga Mahotsav, Ramnagar Ramlila, Mahashivratri, Masan Holi, Chhath, Buddha Purnima, Guru Nanak Jayanti and more.",
+    "projectsListTitle": "Varanasi projects 2026: ropeway, airport, stadium, corridor status",
+    "projectsListDesc": "Status of every major Varanasi project, checked against sources: ropeway opening date, airport expansion, Ganjari cricket stadium, ring road, Kashi Vishwanath corridor.",
+    "foodListTitle": "Famous food of Varanasi: street food, sweets, lassi, paan & prices",
+    "foodListDesc": "What to eat in Varanasi and what it costs: kachori-sabzi, jalebi, malaiyo, lassi, thandai, tamatar chaat, launglata and Banarasi paan, with where to find each.",
+    "guidesListTitle": "Varanasi travel guides: timings, prices, boats, darshan & routes",
+    "guidesListDesc": "Practical Varanasi guides with sources: Ganga Aarti time, Kashi Vishwanath darshan and aarti, boat ride prices, trip cost, best time to visit, how to reach, Sarnath.",
+    "itinerariesTitle": "Varanasi itinerary: 1, 2 and 3 day plans with timings & map",
+    "itinerariesDesc": "How to see Varanasi in 1, 2 or 3 days: hour-by-hour plans from the dawn boat to the evening aarti, with Sarnath, every faith's sites, timings, entry fees and a route map."
   },
   "hero": {
     "title": "Kashi — older than history itself",
@@ -281,7 +291,22 @@
     "sunrise": "Sunrise",
     "sunset": "Sunset",
     "placesNote": "Named places are described in the Places section",
-    "lead": "One, two or three days, from before sunrise to the evening aarti."
+    "lead": "One, two or three days, from before sunrise to the evening aarti.",
+    "facts": {
+      "days": "Days",
+      "places": "Places",
+      "starts": "Starts",
+      "ends": "Ends",
+      "paid": "Paid entry",
+      "allFree": "Every stop is free",
+      "around": "Getting around",
+      "aroundValue": "On foot and by boat in the old city; auto or cab beyond",
+      "route": "The route on the map",
+      "hubIntro": "Three plans, each starting before sunrise and ending at the evening aarti: one day on the river, two with Sarnath, three with the sites of every faith. Times, entry fees and a map for each.",
+      "plans": "Plans",
+      "stops": "{n} stops",
+      "faq": "Questions about planning"
+    }
   },
   "practical": {
     "title": "Practical",
@@ -450,7 +475,15 @@
     "titleSecondary": "काशीद्वार के बारे में",
     "description": "Who makes kashidwar.com, why, and how every date, timing and status on it is checked.",
     "contactTitle": "Contact",
-    "email": "Email"
+    "email": "Email",
+    "stats": {
+      "places": "Places with timings",
+      "ghats": "Ghats listed",
+      "guides": "Researched guides",
+      "festivals": "Festivals with dates",
+      "projects": "Projects tracked",
+      "languages": "Languages"
+    }
   },
   "map": {
     "title": "Varanasi tourist map",

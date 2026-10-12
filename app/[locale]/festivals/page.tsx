@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { isIndexed } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import HashLinks from "@/components/motion/HashLinks";
 import ListingShell from "@/components/pages/ListingShell";
@@ -12,7 +13,11 @@ import { getFestivalsProps } from "@/lib/sectionProps";
 export async function generateMetadata({ params }: PageProps<"/[locale]/festivals">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "festivals" });
-  return { title: t("title"), description: t("intro"), alternates: alternatesFor(locale, "/festivals") };
+  const meta = await getTranslations({ locale, namespace: "meta" });
+  // Indexed locales get the keyword-led title and description; the others keep the section title.
+  return isIndexed(locale)
+    ? { title: meta("festivalsListTitle"), description: meta("festivalsListDesc"), alternates: alternatesFor(locale, "/festivals") }
+    : { title: t("title"), description: t("intro"), alternates: alternatesFor(locale, "/festivals") };
 }
 
 /** Every festival as a compact card linking to its page (the full text lives there). */

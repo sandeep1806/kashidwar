@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { isIndexed } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ListingShell from "@/components/pages/ListingShell";
 import PhotoBand from "@/components/pages/PhotoBand";
@@ -11,7 +12,11 @@ import { getFoodProps } from "@/lib/sectionProps";
 export async function generateMetadata({ params }: PageProps<"/[locale]/food">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "food" });
-  return { title: t("title"), description: t("intro"), alternates: alternatesFor(locale, "/food") };
+  const meta = await getTranslations({ locale, namespace: "meta" });
+  // Indexed locales get the keyword-led title and description; the others keep the section title.
+  return isIndexed(locale)
+    ? { title: meta("foodListTitle"), description: meta("foodListDesc"), alternates: alternatesFor(locale, "/food") }
+    : { title: t("title"), description: t("intro"), alternates: alternatesFor(locale, "/food") };
 }
 
 /** Every dish in full; each card has an id, so home-page cards link to /food#<id>. */

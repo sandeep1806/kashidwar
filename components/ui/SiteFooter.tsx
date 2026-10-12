@@ -42,6 +42,7 @@ export default async function SiteFooter({ locale, path = "" }: { locale: Locale
               [
                 ["/places", places("allTitle")],
                 ["/map", mapT("title")],
+                ["/itineraries", nav("itineraries")],
                 ["/ghats", places("ghatsTitle")],
                 ["/temples", places("templesTitle")],
                 ["/festivals", nav("festivals")],

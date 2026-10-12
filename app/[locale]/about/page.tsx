@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LdJson from "@/components/pages/LdJson";
 import ListingShell from "@/components/pages/ListingShell";
+import FactStrip from "@/components/pages/FactStrip";
 import EnglishNote from "@/components/ui/EnglishNote";
+import Icon, { type IconName } from "@/components/ui/Icon";
+import ghatsList from "@/content/ghats-list.json";
+import { festivals, places, projects } from "@/lib/content";
+import { guides } from "@/lib/guides";
+import { locales } from "@/lib/i18n/locales";
 import about from "@/content/about.json";
 import type { Locale } from "@/lib/i18n/locales";
 import { absolute, alternatesFor } from "@/lib/pages";
@@ -29,6 +35,17 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/about">
   const lang = locale === "hi" ? "hi" : "en";
   const text: AboutText = about[lang];
   const path = "/about";
+  const nf = new Intl.NumberFormat(locale === "hi" ? "hi-IN" : "en-IN");
+  const stats = [
+    { icon: "pin" as IconName, label: t("stats.places"), value: nf.format(places.length) },
+    { icon: "boat" as IconName, label: t("stats.ghats"), value: nf.format(ghatsList.ghats.length) },
+    { icon: "tip" as IconName, label: t("stats.guides"), value: nf.format(guides.length) },
+    { icon: "calendar" as IconName, label: t("stats.festivals"), value: nf.format(festivals.length) },
+    { icon: "shield" as IconName, label: t("stats.projects"), value: nf.format(projects.length) },
+    { icon: "info" as IconName, label: t("stats.languages"), value: nf.format(locales.length) },
+  ];
+  const ICON_FOR: [RegExp, IconName][] = [[/who|team|owner/, "people"], [/mission|why/, "sunrise"], [/verif|source|check|fact/, "shield"], [/update|policy|correct/, "calendar"], [/photo|image|credit/, "photos"], [/language|translat/, "info"]];
+  const iconFor = (id: string): IconName => ICON_FOR.find(([re]) => re.test(id))?.[1] ?? "info";
   return (
     <>
       <LdJson
@@ -46,19 +63,28 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/about">
         secondary={t("titleSecondary")}
         intro={<p lang={lang}>{text.lead}</p>}
       >
-        <div className="container-kashi mx-auto mt-12 max-w-3xl space-y-12" lang={lang}>
+        <div className="container-kashi mx-auto mt-4 max-w-5xl">
+          <FactStrip className="fact-strip-3" items={stats} />
+        </div>
+        <div className="container-kashi mx-auto mt-10 max-w-3xl space-y-8" lang={lang}>
           {lang === "en" && locale !== "en" && <EnglishNote text={common("englishNote")} />}
           {text.sections.map((s) => (
-            <section key={s.id} id={s.id} className="scroll-mt-24">
-              <h2 className="text-h3 text-kashi-white">{s.heading}</h2>
+            <section key={s.id} id={s.id} className="guide-card scroll-mt-24">
+              <h2 className="flex items-start gap-3 text-h3 text-kashi-white">
+                <span className="guide-card-icon"><Icon name={iconFor(s.id)} className="h-5 w-5" /></span>
+                <span>{s.heading}</span>
+              </h2>
               <div className="mt-4 space-y-4 leading-relaxed text-kashi-ash/90">
                 {s.body.map((p) => (
                   <p key={p.slice(0, 40)}>{p}</p>
                 ))}
                 {"list" in s && s.list && (
-                  <ul className="list-disc space-y-2 pl-5">
+                  <ul className="guide-list">
                     {s.list.map((li) => (
-                      <li key={li.slice(0, 40)}>{li}</li>
+                      <li key={li.slice(0, 40)}>
+                        <Icon name="chevron" className="mt-1 h-4 w-4 shrink-0 text-kashi-diya" />
+                        <span>{li}</span>
+                      </li>
                     ))}
                   </ul>
                 )}

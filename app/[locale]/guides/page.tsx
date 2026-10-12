@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { isIndexed } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ListingShell from "@/components/pages/ListingShell";
 import CardPhoto from "@/components/ui/CardPhoto";
@@ -9,7 +10,11 @@ import { alternatesFor } from "@/lib/pages";
 export async function generateMetadata({ params }: PageProps<"/[locale]/guides">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "guides" });
-  return { title: t("title"), description: t("intro"), alternates: alternatesFor(locale, "/guides") };
+  const meta = await getTranslations({ locale, namespace: "meta" });
+  // Indexed locales get the keyword-led title and description; the others keep the section title.
+  return isIndexed(locale)
+    ? { title: meta("guidesListTitle"), description: meta("guidesListDesc"), alternates: alternatesFor(locale, "/guides") }
+    : { title: t("title"), description: t("intro"), alternates: alternatesFor(locale, "/guides") };
 }
 
 /** Every guide, newest first. */

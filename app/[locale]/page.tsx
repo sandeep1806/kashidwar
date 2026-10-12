@@ -14,6 +14,7 @@ import PlanYourVisit from "@/components/sections/PlanYourVisit";
 import Practical from "@/components/sections/Practical";
 import Projects from "@/components/sections/Projects";
 import JsonLd from "@/components/ui/JsonLd";
+import ListingFaq from "@/components/pages/ListingFaq";
 import SectionDots from "@/components/ui/SectionDots";
 import SiteFooter from "@/components/ui/SiteFooter";
 import Static from "@/components/ui/Static";
@@ -26,6 +27,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const loc = locale as Locale;
   const meta = await getTranslations("meta");
   const nav = await getTranslations("nav");
+  const faq = await getTranslations("guides");
+  const places = await getTranslations("places");
 
   // Text-only sections sit in <Static>: server-rendered, never hydrated.
   // Islands that do hydrate: hero scene, Day-in-Kashi scroller, places
@@ -54,6 +57,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <HashLinks />
       <LazyMonthFilter />
       <SectionDots label={nav("sectionsNav")} items={SECTIONS.map((s) => ({ id: s.id, label: nav(s.key) }))} />
+      <Static><div className="pb-16"><ListingFaq locale={loc} kind="home" title={faq("faq")} path={`/${locale}`} sourcesLabel={places("sources")} /></div></Static>
       <Static><SiteFooter locale={loc} /></Static>
     </main>
   );

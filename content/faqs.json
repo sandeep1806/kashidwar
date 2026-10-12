@@ -146,5 +146,101 @@
         "a_hi": "अधिकांश भोर से पहले खुलते हैं और शाम को बंद होते हैं, बीच में दोपहर का विराम: संकट मोचन सुबह 5–11:30 और दोपहर 3–रात 11, दुर्गा कुंड सुबह 5–12 और शाम 4–9, काल भैरव सुबह 5–रात 9:30, तुलसी मानस सुबह 5:30–12 और दोपहर 3:30–रात 9, अन्नपूर्णा सुबह 4–रात 10। हर मंदिर के पृष्ठ पर समय और स्रोत है।"
       }
     ]
+  },
+  "itineraries": {
+    "sources": [
+      {
+        "title": "Shri Kashi Vishwanath Temple Trust — rituals and timings",
+        "url": "https://shrikashivishwanath.org/general/rituals",
+        "accessed": "2026-10-12"
+      },
+      {
+        "title": "Subah-e-Banaras (official)",
+        "url": "https://subahebanaras.net/",
+        "accessed": "2026-10-11"
+      },
+      {
+        "title": "Archaeological Survey of India — Sarnath",
+        "url": "https://asi.nic.in/sarnath/",
+        "accessed": "2026-10-11"
+      }
+    ],
+    "items": [
+      {
+        "q_en": "How many days are enough for Varanasi?",
+        "a_en": "Two days cover the ghats at dawn and dusk, Kashi Vishwanath and the old-city lanes, and a half-day at Sarnath. One day is enough for the river, the temple and the evening aarti. A third day adds the Jain, Bhakti, Sikh, Islamic and Christian sites and a slower pace.",
+        "q_hi": "वाराणसी के लिए कितने दिन काफ़ी हैं?",
+        "a_hi": "दो दिन में भोर और शाम के घाट, काशी विश्वनाथ, पुराने शहर की गलियाँ और आधे दिन में सारनाथ हो जाते हैं। एक दिन में नदी, मंदिर और शाम की आरती हो सकती है। तीसरा दिन जैन, भक्ति, सिख, इस्लामी और ईसाई स्थल और आराम से घूमना जोड़ता है।"
+      },
+      {
+        "q_en": "How do I see Varanasi in one day?",
+        "a_en": "Start at Assi Ghat about 05:30 for Subah-e-Banaras, take a boat to Dashashwamedh, have darshan at Kashi Vishwanath around 08:00, eat kachori-sabzi in the lanes, rest through the afternoon heat, and end with the Ganga Aarti at Dashashwamedh at dusk.",
+        "q_hi": "वाराणसी एक दिन में कैसे घूमें?",
+        "a_hi": "लगभग सुबह 5:30 बजे अस्सी घाट पर सुबह-ए-बनारस से शुरू करें, नाव से दशाश्वमेध जाएँ, लगभग 8 बजे काशी विश्वनाथ के दर्शन करें, गलियों में कचौड़ी-सब्ज़ी खाएँ, दोपहर की गर्मी में आराम करें, और शाम को दशाश्वमेध पर गंगा आरती से दिन पूरा करें।"
+      },
+      {
+        "q_en": "What time should I start the day?",
+        "a_en": "Before sunrise. The morning aarti at Assi begins before dawn, the river is calmest then, and the Kashi Vishwanath queues are shorter early. Plan the hottest hours, roughly 12:00 to 16:00, for rest or indoor sites.",
+        "q_hi": "दिन कितने बजे शुरू करें?",
+        "a_hi": "सूर्योदय से पहले। अस्सी पर सुबह की आरती भोर से पहले शुरू होती है, नदी तब सबसे शांत होती है, और काशी विश्वनाथ की कतार सुबह छोटी होती है। सबसे गर्म घंटे, लगभग 12 से 4 बजे, आराम या अंदर के स्थलों के लिए रखें।"
+      },
+      {
+        "q_en": "Do I need to book anything for these plans?",
+        "a_en": "Most stops are free and need no booking. Book ahead for trains and rooms near the ghats, Sugam Darshan or the Mangala aarti at Kashi Vishwanath (official trust website only), and boats on festival evenings. Sarnath's site and museum are ticketed at the gate.",
+        "q_hi": "क्या इन प्लान के लिए कुछ बुक करना होगा?",
+        "a_hi": "अधिकतर स्थल निःशुल्क हैं और बुकिंग नहीं चाहिए। ट्रेन और घाट के पास के कमरे, काशी विश्वनाथ का सुगम दर्शन या मंगला आरती (केवल न्यास की आधिकारिक वेबसाइट से), और त्योहार की शाम की नाव पहले से बुक करें। सारनाथ के स्थल और संग्रहालय का टिकट गेट पर मिलता है।"
+      }
+    ]
+  },
+  "home": {
+    "sources": [
+      {
+        "title": "UNESCO — Ancient Buddhist Site of Sarnath inscribed on the World Heritage List",
+        "url": "https://www.unesco.org/en/articles/ancient-buddhist-site-sarnath-inscribed-unesco-world-heritage-list",
+        "accessed": "2026-10-11"
+      },
+      {
+        "title": "Wikipedia — Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Varanasi",
+        "accessed": "2026-10-12"
+      },
+      {
+        "title": "Wikipedia — Ghats in Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+        "accessed": "2026-10-11"
+      }
+    ],
+    "items": [
+      {
+        "q_en": "What is Varanasi famous for?",
+        "a_en": "Its 84 ghats on the Ganga and the evening Ganga Aarti, the Kashi Vishwanath temple (one of the twelve jyotirlingas), Manikarnika where cremations never stop, Sarnath where the Buddha first taught, Banarasi silk sarees, and its street food, from kachori-sabzi to malaiyo and paan. It is one of the oldest continuously inhabited cities in the world.",
+        "q_hi": "बनारस किस चीज़ के लिए प्रसिद्ध है?",
+        "a_hi": "गंगा के 84 घाट और शाम की गंगा आरती, काशी विश्वनाथ मंदिर (बारह ज्योतिर्लिंगों में से एक), मणिकर्णिका जहाँ दाह-संस्कार कभी नहीं रुकते, सारनाथ जहाँ बुद्ध ने पहला उपदेश दिया, बनारसी रेशमी साड़ी, और कचौड़ी-सब्ज़ी से मलइयो और पान तक का खाना। यह दुनिया के सबसे पुराने लगातार बसे शहरों में से एक है।"
+      },
+      {
+        "q_en": "Are Kashi, Banaras and Varanasi the same city?",
+        "a_en": "Yes. Kashi is the ancient name, Banaras the common one, and Varanasi the official name, from the Varuna and Assi rivers that bound the old city.",
+        "q_hi": "क्या काशी, बनारस और वाराणसी एक ही शहर हैं?",
+        "a_hi": "हाँ। काशी प्राचीन नाम है, बनारस आम बोलचाल का, और वाराणसी आधिकारिक नाम, जो पुराने शहर को घेरने वाली वरुणा और अस्सी नदियों से बना है।"
+      },
+      {
+        "q_en": "How many days do I need in Varanasi?",
+        "a_en": "Two days are enough for most visitors: the river at dawn and dusk, Kashi Vishwanath and the lanes, and a half-day at Sarnath. Add a third day for the sites of every other faith.",
+        "q_hi": "वाराणसी में कितने दिन चाहिए?",
+        "a_hi": "अधिकतर लोगों के लिए दो दिन काफ़ी हैं: भोर और शाम में नदी, काशी विश्वनाथ और गलियाँ, और आधे दिन में सारनाथ। बाकी आस्थाओं के स्थलों के लिए तीसरा दिन जोड़ें।"
+      },
+      {
+        "q_en": "When is the best time to visit Varanasi?",
+        "a_en": "October to March, when days are mild and the big river festivals fall, including Dev Deepawali on 24 November 2026. April to June is very hot, and from July to September the Ganga floods the ghats and boats stop.",
+        "q_hi": "वाराणसी घूमने का सबसे अच्छा समय कब है?",
+        "a_hi": "अक्टूबर से मार्च, जब दिन सुहाने होते हैं और नदी के बड़े त्योहार पड़ते हैं, जिनमें 24 नवंबर 2026 की देव दीपावली भी है। अप्रैल से जून बहुत गर्म होता है, और जुलाई से सितंबर गंगा घाटों पर चढ़ आती है और नावें बंद रहती हैं।"
+      },
+      {
+        "q_en": "What time is the Ganga Aarti?",
+        "a_en": "At dusk every day at Dashashwamedh Ghat: about 6 pm from November to February and about 7 pm in summer, for around 45 minutes. It is free. The morning aarti is at Assi Ghat before sunrise.",
+        "q_hi": "गंगा आरती कितने बजे होती है?",
+        "a_hi": "रोज़ सूर्यास्त पर दशाश्वमेध घाट पर: नवंबर से फ़रवरी लगभग शाम 6 बजे और गर्मियों में लगभग 7 बजे, करीब 45 मिनट। यह निःशुल्क है। सुबह की आरती अस्सी घाट पर सूर्योदय से पहले होती है।"
+      }
+    ]
   }
 }

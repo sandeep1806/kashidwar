@@ -7,6 +7,18 @@ import { SITE_URL } from "@/lib/site";
 export type Kind = "places" | "festivals" | "projects" | "itineraries";
 
 export const itinerarySlug = (it: Itinerary) => `${it.days}-day`;
+
+/**
+ * The place that best represents an itinerary: the first one it visits that
+ * the shorter plans do not (Sarnath for 2 days, a faith site for 3), so each
+ * plan gets its own photo instead of all opening on Assi Ghat.
+ */
+export function itineraryLeadPlace(it: Itinerary): string | undefined {
+  const ids = (x: Itinerary) => x.plan.flatMap((d) => d.stops.map((s) => s.placeId)).filter((v): v is string => !!v);
+  const shorter = new Set(itineraries.filter((x) => x.days < it.days).flatMap(ids));
+  const own = ids(it);
+  return own.find((id) => !shorter.has(id)) ?? own[0];
+}
 export const itineraryBySlug = (slug: string) => itineraries.find((it) => itinerarySlug(it) === slug);
 
 export const SLUGS: Record<Kind, string[]> = {
