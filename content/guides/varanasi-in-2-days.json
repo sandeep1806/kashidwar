@@ -8,6 +8,50 @@
   "description_hi": "दो दिन की वाराणसी योजना: भोर में नाव, घाट, काशी विश्वनाथ, सारनाथ और शाम की आरती, साथ में समय, आने-जाने के साधन, खाने की जगहें, ठहरने के इलाक़े और पहले से बुकिंग।",
   "lead_en": "Two days is enough to see Varanasi at its two best hours, dawn and dusk, on the river, and to add Sarnath and the university quarter in the south. This plan follows the site's own two-day itinerary, Kashi and Sarnath, and adds the timings, transport and bookings that make it work. Timings and fares are as of September 2026; check them before you travel.",
   "lead_hi": "दो दिन में वाराणसी को उसके दो सबसे सुंदर पहरों, भोर और साँझ, में गंगा किनारे देखा जा सकता है, और साथ में सारनाथ व दक्षिण का विश्वविद्यालय क्षेत्र भी। यह योजना इस साइट की अपनी दो दिन की यात्रा 'काशी और सारनाथ' पर आधारित है, और इसमें वह समय, साधन और बुकिंग जोड़ी गई है जिनसे यह आसानी से पूरी हो सके। समय और किराया सितंबर 2026 के अनुसार हैं; यात्रा से पहले एक बार जाँच लें।",
+  "facts": [
+    {
+      "icon": "sunrise",
+      "label_en": "Day 1",
+      "label_hi": "दिन 1",
+      "value_en": "Assi at dawn, boat, Vishwanath, lanes, Ganga Aarti",
+      "value_hi": "भोर में अस्सी, नाव, विश्वनाथ, गलियाँ, गंगा आरती"
+    },
+    {
+      "icon": "calendar",
+      "label_en": "Day 2",
+      "label_hi": "दिन 2",
+      "value_en": "Sarnath, BHU, Sankat Mochan, Durga Kund",
+      "value_hi": "सारनाथ, बीएचयू, संकट मोचन, दुर्गा कुंड"
+    },
+    {
+      "icon": "pin",
+      "label_en": "Stay",
+      "label_hi": "ठहरें",
+      "value_en": "Near the ghats, for early starts",
+      "value_hi": "घाटों के पास, सुबह जल्दी निकलने के लिए"
+    },
+    {
+      "icon": "walk",
+      "label_en": "Getting around",
+      "label_hi": "आना-जाना",
+      "value_en": "On foot in the old city; autos and cabs beyond",
+      "value_hi": "पुराने शहर में पैदल; बाहर ऑटो और कैब"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Book ahead",
+      "label_hi": "पहले से बुक करें",
+      "value_en": "Trains, ghat rooms, Sugam Darshan, Mangala aarti",
+      "value_hi": "ट्रेन, घाट के कमरे, सुगम दर्शन, मंगला आरती"
+    },
+    {
+      "icon": "plane",
+      "label_en": "Airport",
+      "label_hi": "हवाई अड्डा",
+      "value_en": "26 km away, 45–75 min to the ghats",
+      "value_hi": "26 किमी दूर, घाटों तक 45–75 मिनट"
+    }
+  ],
   "sections": [
     {
       "id": "where-to-stay",

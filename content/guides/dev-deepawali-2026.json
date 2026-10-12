@@ -8,6 +8,50 @@
   "description_hi": "वाराणसी में देव दीपावली 2026 मंगलवार, 24 नवंबर को है। तिथि और समय, कौन-से घाट देखें, नाव बुकिंग और सुरक्षा नियम, ट्रैफ़िक पाबंदियाँ, ठहरने की व्यवस्था और घाटों का शिष्टाचार।",
   "lead_en": "On the full moon of Kartik, fifteen days after Diwali, Varanasi lights its riverfront with lakhs of earthen lamps for Dev Deepawali, the night the gods are said to come down to bathe in the Ganga. In 2026 the festival falls on Tuesday, 24 November. This guide covers the timing, what happens on the ghats, how to watch from a boat safely, and how to plan around the crowds.",
   "lead_hi": "दिवाली के पंद्रह दिन बाद, कार्तिक पूर्णिमा की रात काशी के घाट लाखों दीयों से जगमगा उठते हैं। मान्यता है कि इस रात देवता गंगा स्नान के लिए धरती पर उतरते हैं। 2026 में देव दीपावली मंगलवार, 24 नवंबर को है। यहाँ जानिए शुभ समय, घाटों पर क्या होता है, नाव से सुरक्षित कैसे देखें और भीड़ के बीच अपनी यात्रा कैसे तय करें।",
+  "facts": [
+    {
+      "icon": "calendar",
+      "label_en": "Date",
+      "label_hi": "तिथि",
+      "value_en": "Tuesday 24 November 2026 (Kartik Purnima)",
+      "value_hi": "मंगलवार 24 नवंबर 2026 (कार्तिक पूर्णिमा)"
+    },
+    {
+      "icon": "sunrise",
+      "label_en": "Lamps lit",
+      "label_hi": "दीप जलाने का समय",
+      "value_en": "Dusk, about 5:07–7:31 pm",
+      "value_hi": "गोधूलि, लगभग शाम 5:07–7:31"
+    },
+    {
+      "icon": "pin",
+      "label_en": "Where",
+      "label_hi": "कहाँ",
+      "value_en": "All ghats, Assi to Rajghat; maha aarti at Dashashwamedh",
+      "value_hi": "सभी घाट, अस्सी से राजघाट; महाआरती दशाश्वमेध पर"
+    },
+    {
+      "icon": "boat",
+      "label_en": "Boats",
+      "label_hi": "नावें",
+      "value_en": "Book days ahead; life jacket mandatory",
+      "value_hi": "कई दिन पहले बुक करें; लाइफ़ जैकेट ज़रूरी"
+    },
+    {
+      "icon": "people",
+      "label_en": "Crowds",
+      "label_hi": "भीड़",
+      "value_en": "Peak night; Godowlia–Maidagin closed to vehicles",
+      "value_hi": "सबसे भीड़ वाली रात; गोदौलिया–मैदागिन में वाहन बंद"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Entry",
+      "label_hi": "प्रवेश",
+      "value_en": "Free on the ghats",
+      "value_hi": "घाटों पर निःशुल्क"
+    }
+  ],
   "sections": [
     {
       "id": "date-and-timing",

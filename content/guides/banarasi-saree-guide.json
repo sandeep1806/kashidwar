@@ -8,6 +8,50 @@
   "description_hi": "बनारसी साड़ी गाइड: GI टैग, कतान और अन्य प्रकार, अनुमानित कीमत, हथकरघा बनाम पावरलूम, सिल्क मार्क से असली रेशम की पहचान और वाराणसी में खरीदारी के इलाके।",
   "lead_en": "A Banarasi saree is silk woven with zari in Varanasi and nearby districts, a craft protected by a GI tag since 2009. A handloom piece takes weeks to weave, and powerloom and art-silk copies are common. This guide covers the main types, approximate prices, how to check what you are buying and where sarees are sold.",
   "lead_hi": "बनारसी साड़ी वाराणसी और आसपास के ज़िलों में ज़री के साथ बुना रेशम है, जिसे 2009 से GI टैग का संरक्षण मिला है। हथकरघा साड़ी बुनने में हफ़्ते लगते हैं, और पावरलूम व आर्ट सिल्क की नकलें आम हैं। यह गाइड मुख्य प्रकार, अनुमानित कीमत, खरीदी जा रही साड़ी की जाँच और बिक्री के इलाके बताती है।",
+  "facts": [
+    {
+      "icon": "shield",
+      "label_en": "GI tag",
+      "label_hi": "जीआई टैग",
+      "value_en": "Banaras Brocades and Sarees, GI No. 99 (2009)",
+      "value_hi": "बनारस ब्रोकेड और साड़ी, जीआई सं. 99 (2009)"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Handloom price",
+      "label_hi": "हथकरघा कीमत",
+      "value_en": "Pure katan from about ₹8,000 (approx.)",
+      "value_hi": "शुद्ध कतान लगभग ₹8,000 से (लगभग)"
+    },
+    {
+      "icon": "info",
+      "label_en": "Under ₹3,000",
+      "label_hi": "₹3,000 से कम",
+      "value_en": "Almost always powerloom or art silk",
+      "value_hi": "लगभग हमेशा पावरलूम या आर्ट सिल्क"
+    },
+    {
+      "icon": "tip",
+      "label_en": "Check",
+      "label_hi": "जाँचें",
+      "value_en": "Silk Mark · Handloom Mark · GI/QR label · reverse side",
+      "value_hi": "सिल्क मार्क · हैंडलूम मार्क · जीआई/क्यूआर लेबल · उल्टी तरफ़"
+    },
+    {
+      "icon": "pin",
+      "label_en": "Where to buy",
+      "label_hi": "कहाँ खरीदें",
+      "value_en": "Deendayal Hastkala Sankul · Chowk · Thatheri Bazaar",
+      "value_hi": "दीनदयाल हस्तकला संकुल · चौक · ठठेरी बाज़ार"
+    },
+    {
+      "icon": "hourglass",
+      "label_en": "Weaving time",
+      "label_hi": "बुनाई का समय",
+      "value_en": "Weeks for a handloom saree; months for bridal",
+      "value_hi": "हथकरघा साड़ी में हफ़्ते; दुल्हन की साड़ी में महीने"
+    }
+  ],
   "sections": [
     {
       "id": "what-makes-it-banarasi",

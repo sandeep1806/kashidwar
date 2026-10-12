@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LinkCards, type LinkCard } from "@/components/pages/Blocks";
 import LdJson from "@/components/pages/LdJson";
+import FactStrip from "@/components/pages/FactStrip";
 import PageShell from "@/components/pages/PageShell";
 import EnglishNote from "@/components/ui/EnglishNote";
+import Icon, { type IconName } from "@/components/ui/Icon";
 import { festivals, itineraries, places, projects } from "@/lib/content";
 import { guideBySlug, guidePhoto, guides, localizeGuide } from "@/lib/guides";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
@@ -37,6 +39,26 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/guides/[
     openGraph: { type: "article", title: l.title, description: l.description, url: `/${locale}${path}`, publishedTime: g.published, modifiedTime: g.updated, images: [{ url: image, alt: photo?.alt ?? l.title }] },
     twitter: { card: "summary_large_image", title: l.title, description: l.description, images: [image] },
   };
+}
+
+const ICONS = new Set<string>(["clock", "calendar", "ticket", "hourglass", "people", "camera", "camera-off", "dress", "walk", "train", "plane", "car", "pin", "sunrise", "leaf", "boat", "info", "tip", "shield", "photos"]);
+const asIcon = (name: string): IconName => (ICONS.has(name) ? (name as IconName) : "info");
+
+/** An icon for a guide section, from the words in its id. */
+function sectionIcon(id: string): IconName {
+  const rules: [RegExp, IconName][] = [
+    [/price|fare|cost|ticket|budget|save/, "ticket"],
+    [/boat|cruise|river/, "boat"],
+    [/month|date|festival|day-|calendar|special/, "calendar"],
+    [/timing|hour|aarti|night|morning|evening|sunrise|mangala|sapta|status/, "clock"],
+    [/board|where|route|ghat|station|distance|getting|connection|nearby|map|gate/, "pin"],
+    [/rule|safety|etiquette|tout|crowd|cremation|practical|gi|real|fog/, "shield"],
+    [/food|eat/, "leaf"],
+    [/stay|hotel/, "walk"],
+    [/book|on-the-day|carry/, "tip"],
+    [/winter|summer|monsoon|weather/, "sunrise"],
+  ];
+  return rules.find(([re]) => re.test(id))?.[1] ?? "info";
 }
 
 /** Related pages as link cards, in the order places, festivals, projects, itineraries. */
@@ -119,23 +141,43 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
     <>
       <LdJson data={ld} />
       <PageShell
+        variant="visual"
+        longTitle
         locale={loc}
         path={path}
         crumbs={crumbs}
         faith="secular"
+        chips={
+          <span className="inline-flex items-center gap-1 rounded-full border border-kashi-diya/40 bg-kashi-night/60 px-2 py-0.5 text-kashi-diya">
+            <Icon name="tip" className="h-3.5 w-3.5" />
+            {t("title")}
+          </span>
+        }
         title={l.title}
         secondary={l.lang === "hi" ? g.title_en : g.title_hi}
         subtitle={
-          <p className="text-sm text-kashi-ash/75">
-            {t("by", { brand: BRAND })} · <time dateTime={g.published}>{t("published", { date: date(g.published) })}</time>
-            {g.updated !== g.published && (
-              <>
-                {" "}· <time dateTime={g.updated}>{t("updated", { date: date(g.updated) })}</time>
-              </>
-            )}
+          <p className="text-sm text-kashi-ash/85">
+            {t("by", { brand: BRAND })} · <time dateTime={g.updated}>{t("updated", { date: date(g.updated) })}</time>
           </p>
         }
-        lead={<p lang={l.lang}>{l.lead}</p>}
+        strip={l.facts.length ? <FactStrip className="fact-strip-3" items={l.facts.map((f) => ({ icon: asIcon(f.icon), label: f.label, value: f.value }))} /> : undefined}
+        lead={
+          <div lang={l.lang}>
+            <p>{l.lead}</p>
+            <nav aria-label={t("contents")} className="guide-jump mt-6">
+              {l.sections.map((s) => (
+                <a key={s.id} href={`#${s.id}`} className="guide-jump-chip">
+                  <Icon name={sectionIcon(s.id)} className="h-4 w-4 shrink-0 text-kashi-diya" />
+                  <span>{s.heading}</span>
+                </a>
+              ))}
+              <a href="#faq" className="guide-jump-chip">
+                <Icon name="info" className="h-4 w-4 shrink-0 text-kashi-diya" />
+                <span>{t("faq")}</span>
+              </a>
+            </nav>
+          </div>
+        }
         photo={photo}
         after={
           <>
@@ -143,41 +185,65 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
           </>
         }
       >
-        <div className="space-y-12" lang={l.lang}>
+        <div className="space-y-8" lang={l.lang}>
           {l.lang === "en" && locale !== "en" && <EnglishNote text={common("englishNote")} />}
-          {l.sections.map((s) => (
-            <section key={s.id} id={s.id} className="scroll-mt-24">
-              <h2 className="text-h3 text-kashi-white">{s.heading}</h2>
-              {s.unconfirmed && (
-                <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-kashi-marigold/50 px-3 py-1 text-xs text-kashi-marigold">⚠ {t("unconfirmed")}</p>
-              )}
-              <div className="mt-4 space-y-4 leading-relaxed text-kashi-ash/90">
-                {s.body.map((p) => (
-                  <p key={p.slice(0, 40)}>{p}</p>
-                ))}
+          {l.sections.map((s) => {
+            const [first, ...rest] = s.body;
+            return (
+              <section key={s.id} id={s.id} className="guide-card scroll-mt-24">
+                <h2 className="flex items-start gap-3 text-h3 text-kashi-white">
+                  <span className="guide-card-icon"><Icon name={sectionIcon(s.id)} className="h-5 w-5" /></span>
+                  <span>{s.heading}</span>
+                </h2>
+                {s.unconfirmed && (
+                  <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-kashi-marigold/50 px-3 py-1 text-xs text-kashi-marigold">
+                    <Icon name="info" className="h-3.5 w-3.5" />
+                    {t("unconfirmed")}
+                  </p>
+                )}
+                {first && <p className="mt-4 leading-relaxed text-kashi-ash/90">{first}</p>}
                 {s.list.length > 0 && (
-                  <ul className="list-disc space-y-2 pl-5">
+                  <ul className={`guide-list mt-5 ${s.list.length > 4 ? "sm:grid-cols-2" : ""}`}>
                     {s.list.map((li) => (
-                      <li key={li.slice(0, 40)}>{li}</li>
+                      <li key={li.slice(0, 40)}>
+                        <Icon name="chevron" className="mt-1 h-4 w-4 shrink-0 text-kashi-diya" />
+                        <span>{li}</span>
+                      </li>
                     ))}
                   </ul>
                 )}
-              </div>
-              {s.sources.length > 0 && (
-                <p className="mt-3 text-xs text-kashi-ash/60">
-                  {t("sources")}:{" "}
-                  {s.sources.map((src, i) => (
-                    <span key={src.url + i}>
-                      {i > 0 && " · "}
-                      <a href={`#source-${src.n}`} className="underline decoration-kashi-diya/40 underline-offset-2 hover:text-kashi-diya">[{src.n}]</a>
-                    </span>
-                  ))}
-                </p>
-              )}
-            </section>
-          ))}
+                {rest.length > 0 && (
+                  <details className="story-details mt-4">
+                    <summary>
+                      <Icon name="chevron" className="icon-chevron h-4 w-4" />
+                      {tp("readMore")}
+                    </summary>
+                    <div className="mt-3 space-y-4 leading-relaxed text-kashi-ash/90">
+                      {rest.map((para) => (
+                        <p key={para.slice(0, 40)}>{para}</p>
+                      ))}
+                    </div>
+                  </details>
+                )}
+                {s.sources.length > 0 && (
+                  <p className="mt-4 text-xs text-kashi-ash/60">
+                    {t("sources")}:{" "}
+                    {s.sources.map((src, i) => (
+                      <span key={src.url + i}>
+                        {i > 0 && " · "}
+                        <a href={`#source-${src.n}`} className="underline decoration-kashi-diya/40 underline-offset-2 hover:text-kashi-diya">[{src.n}]</a>
+                      </span>
+                    ))}
+                  </p>
+                )}
+              </section>
+            );
+          })}
           <section id="faq" className="scroll-mt-24">
-            <h2 className="text-h3 text-kashi-white">{t("faq")}</h2>
+            <h2 className="flex items-center gap-3 text-h3 text-kashi-white">
+              <span className="guide-card-icon"><Icon name="info" className="h-5 w-5" /></span>
+              {t("faq")}
+            </h2>
             <div className="mt-4 divide-y divide-kashi-rudraksha/50 rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40">
               {l.faq.map((f) => (
                 <details key={f.q} className="group px-5">
@@ -192,16 +258,22 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
           </section>
         </div>
         <aside className="space-y-8 lg:sticky lg:top-24 lg:self-start">
-          <nav aria-label={t("contents")} className="rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-5">
+          <nav aria-label={t("contents")} className="hidden rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-5 lg:block">
             <p className="text-xs uppercase tracking-[0.18em] text-kashi-diya">{t("contents")}</p>
             <ol className="mt-3 space-y-1 text-sm" lang={l.lang}>
               {l.sections.map((s) => (
                 <li key={s.id}>
-                  <a href={`#${s.id}`} className="inline-flex min-h-11 items-center text-kashi-ash/85 hover:text-kashi-white">{s.heading}</a>
+                  <a href={`#${s.id}`} className="inline-flex min-h-11 items-center gap-2 text-kashi-ash/85 hover:text-kashi-white">
+                    <Icon name={sectionIcon(s.id)} className="h-4 w-4 shrink-0 text-kashi-diya/80" />
+                    {s.heading}
+                  </a>
                 </li>
               ))}
               <li>
-                <a href="#faq" className="inline-flex min-h-11 items-center text-kashi-ash/85 hover:text-kashi-white">{t("faq")}</a>
+                <a href="#faq" className="inline-flex min-h-11 items-center gap-2 text-kashi-ash/85 hover:text-kashi-white">
+                  <Icon name="info" className="h-4 w-4 shrink-0 text-kashi-diya/80" />
+                  {t("faq")}
+                </a>
               </li>
             </ol>
           </nav>

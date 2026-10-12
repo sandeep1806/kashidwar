@@ -572,6 +572,7 @@ footer.cv-auto { contain-intrinsic-size: auto 130vh; }
   background: linear-gradient(180deg, color-mix(in oklab, var(--kashi-night) 35%, transparent) 0%, transparent 30%, transparent 45%, color-mix(in oklab, var(--kashi-night) 88%, transparent) 100%); }
 .visual-hero-text { position: absolute; inset-inline: 0; bottom: 0; padding: 0 clamp(1rem, 4vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem); }
 .visual-hero-text h1 { font-size: clamp(2.2rem, 5.5vw, 4.6rem); line-height: 1.05; }
+.visual-hero-text.is-long h1 { font-size: clamp(1.75rem, 4vw, 3.4rem); line-height: 1.12; }
 .visual-hero-text h1 .bilingual-secondary, .visual-hero-text h1 .bilingual-secondary-indic { margin-top: 0.45em; }
 /* No ken-burns drift and no filters on the hero: each GPU effect in the first viewport delayed
    first paint by 0.3–0.5 s in software-rendered Chrome (Lighthouse/PSI), measured 2026-10-11. */
@@ -656,3 +657,19 @@ a.glance-tile:hover .glance-value { color: var(--kashi-marigold); }
 .milestones > li { position: relative; line-height: 1.5; }
 .milestone-dot { position: absolute; left: -1.6rem; top: 0.45rem; width: 0.85rem; height: 0.85rem; border-radius: 999px; background: var(--kashi-diya); box-shadow: 0 0 0 3px color-mix(in oklab, var(--kashi-night) 80%, transparent); }
 .milestones > li.is-pending .milestone-dot { background: transparent; border: 1.5px solid var(--kashi-saffron); }
+
+/* Guides (2026-10-12): fact strip in three columns, jump chips, section cards, list cards */
+@media (min-width: 768px) { .fact-strip.fact-strip-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.guide-jump { display: flex; gap: 0.5rem; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * clamp(1rem, 4vw, 2.5rem)); padding: 0.25rem clamp(1rem, 4vw, 2.5rem) 0.5rem; }
+.guide-jump::-webkit-scrollbar { display: none; }
+@media (min-width: 1024px) { .guide-jump { flex-wrap: wrap; overflow: visible; margin-inline: 0; padding: 0; } }
+.guide-jump-chip { flex: none; display: inline-flex; align-items: center; gap: 0.4rem; min-height: 2.75rem; max-width: 18rem; padding: 0 0.9rem; border-radius: 999px; font-size: 0.85rem; line-height: 1.2;
+  color: color-mix(in oklab, var(--kashi-ash) 90%, transparent); border: 1px solid color-mix(in oklab, var(--kashi-diya) 30%, transparent); background: color-mix(in oklab, var(--kashi-indigo) 50%, transparent); }
+.guide-jump-chip span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.guide-jump-chip:hover { border-color: var(--kashi-marigold); color: var(--kashi-white); }
+.guide-card { padding: 1.25rem; border-radius: var(--radius-kashi); border: 1px solid color-mix(in oklab, var(--kashi-rudraksha) 60%, transparent); background: color-mix(in oklab, var(--kashi-indigo) 35%, transparent); }
+@media (min-width: 640px) { .guide-card { padding: 1.5rem 1.75rem; } }
+.guide-card-icon { display: grid; place-items: center; flex: none; width: 2.25rem; height: 2.25rem; margin-top: 0.1rem; border-radius: 999px; color: var(--kashi-diya); border: 1px solid color-mix(in oklab, var(--kashi-diya) 35%, transparent); }
+.guide-list { display: grid; gap: 0.6rem; }
+.guide-list > li { display: flex; gap: 0.6rem; padding: 0.7rem 0.85rem; border-radius: calc(var(--radius-kashi) - 4px); line-height: 1.45; color: color-mix(in oklab, var(--kashi-ash) 92%, transparent);
+  background: color-mix(in oklab, var(--kashi-night) 45%, transparent); border: 1px solid color-mix(in oklab, var(--kashi-rudraksha) 45%, transparent); }

@@ -35,6 +35,15 @@ export interface GuideSection {
   sources?: number[];
 }
 
+/** One item of the icon fact strip at the top of a guide (values come from its sourced sections). */
+export interface GuideFact {
+  icon: string;
+  label_en: string;
+  label_hi: string;
+  value_en: string;
+  value_hi: string;
+}
+
 export interface Guide {
   slug: string;
   published: string;
@@ -45,6 +54,7 @@ export interface Guide {
   description_hi: string;
   lead_en: string;
   lead_hi: string;
+  facts?: GuideFact[];
   sections: GuideSection[];
   faq: { q_en: string; a_en: string; q_hi: string; a_hi: string }[];
   sources: GuideSource[];
@@ -72,6 +82,7 @@ export function localizeGuide(g: Guide, locale: Locale) {
     title: pick(g, "title"),
     description: pick(g, "description"),
     lead: pick(g, "lead"),
+    facts: (g.facts ?? []).map((f) => ({ icon: f.icon, label: l === "hi" ? f.label_hi : f.label_en, value: l === "hi" ? f.value_hi : f.value_en })),
     sections: g.sections.map((s) => ({
       id: s.id,
       heading: l === "hi" ? s.heading_hi : s.heading_en,

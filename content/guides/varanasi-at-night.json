@@ -8,6 +8,50 @@
   "description_hi": "वाराणसी में रात में क्या करें: गंगा आरती का समय, नाव और 20:30 की सीमा, काशी विश्वनाथ की रात्रि आरतियां, खाने की गलियां, देव दीपावली और सुरक्षा।",
   "lead_en": "Varanasi does not switch off at sunset. The evening begins with the Ganga Aarti at Dashashwamedh and Assi, continues with the Sapta Rishi and Shringar aartis inside Kashi Vishwanath, and ends in the chaat and chai lanes of Godowlia. This guide lists what runs after dark, when it starts, what it costs and where the limits are.",
   "lead_hi": "बनारस सूरज ढलने पर बंद नहीं होता। शाम दशाश्वमेध और अस्सी की गंगा आरती से शुरू होती है, काशी विश्वनाथ की सप्तऋषि और शृंगार आरती से आगे बढ़ती है और गोदौलिया की चाट-चाय की गलियों में खत्म होती है। यह गाइड बताती है कि अंधेरा होने के बाद क्या चलता है, कब शुरू होता है, कितना खर्च है और सीमाएं कहां हैं।",
+  "facts": [
+    {
+      "icon": "sunrise",
+      "label_en": "Ganga Aarti",
+      "label_hi": "गंगा आरती",
+      "value_en": "Dusk, ~6 pm winter · ~7 pm summer · 45 min · free",
+      "value_hi": "सूर्यास्त, सर्दी ~6 · गर्मी ~7 बजे · 45 मिनट · निःशुल्क"
+    },
+    {
+      "icon": "people",
+      "label_en": "Temple aartis",
+      "label_hi": "मंदिर आरती",
+      "value_en": "Sapta Rishi 7 pm · Shringar 9 pm · Shayan 10:30 pm",
+      "value_hi": "सप्तऋषि 7 · शृंगार 9 · शयन 10:30 बजे"
+    },
+    {
+      "icon": "boat",
+      "label_en": "Boats",
+      "label_hi": "नावें",
+      "value_en": "None after 20:30; motorboats only by day for now",
+      "value_hi": "रात 8:30 के बाद नहीं; अभी केवल दिन में मोटरबोट"
+    },
+    {
+      "icon": "leaf",
+      "label_en": "Food lanes",
+      "label_hi": "खाने की गलियाँ",
+      "value_en": "Godowlia · Kachori Gali · Lanka",
+      "value_hi": "गोदौलिया · कचौड़ी गली · लंका"
+    },
+    {
+      "icon": "clock",
+      "label_en": "Temple closes",
+      "label_hi": "मंदिर बंद",
+      "value_en": "Kashi Vishwanath at 11 pm",
+      "value_hi": "काशी विश्वनाथ रात 11 बजे"
+    },
+    {
+      "icon": "shield",
+      "label_en": "After 9 pm",
+      "label_hi": "रात 9 के बाद",
+      "value_en": "Avoid empty lanes alone; autos wait at Godowlia",
+      "value_hi": "सुनसान गलियों में अकेले न जाएँ; ऑटो गोदौलिया पर"
+    }
+  ],
   "sections": [
     {
       "id": "aarti",

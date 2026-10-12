@@ -37,11 +37,10 @@ export async function listingMetadata(locale: string, kind: ListingKind): Promis
 
 export default async function PlacesListing({ locale, kind }: { locale: Locale; kind: ListingKind }) {
   setRequestLocale(locale);
-  const [{ items, labels }, tp, t, nav, tg, common] = await Promise.all([
+  const [{ items, labels }, tp, t, tg, common] = await Promise.all([
     getPlacesProps(locale),
     getTranslations({ locale, namespace: "places" }),
     getTranslations({ locale, namespace: "page" }),
-    getTranslations({ locale, namespace: "nav" }),
     getTranslations({ locale, namespace: "guides" }),
     getTranslations({ locale, namespace: "common" }),
   ]);

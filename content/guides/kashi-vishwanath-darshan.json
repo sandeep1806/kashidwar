@@ -8,6 +8,50 @@
   "description_hi": "काशी विश्वनाथ दर्शन की पूरी जानकारी: मंदिर का समय, पाँचों आरतियाँ, सुगम दर्शन का शुल्क व बुकिंग, प्रवेश द्वार, लॉकर, मोबाइल के नियम और भीड़ से बचने के उपाय।",
   "lead_en": "The Kashi Vishwanath temple, one of the twelve jyotirlingas, draws lakhs of pilgrims on its busiest days. This guide gathers the temple trust's published timings, the Sugam Darshan process, entry gates and the rules on phones and bags, so you can plan a calm darshan. Timings and fees are as of September 2026; check the official portal before you go.",
   "lead_hi": "बारह ज्योतिर्लिंगों में से एक, काशी विश्वनाथ मंदिर में भीड़ वाले दिनों में लाखों श्रद्धालु पहुँचते हैं। इस गाइड में मंदिर न्यास द्वारा प्रकाशित समय, सुगम दर्शन की प्रक्रिया, प्रवेश द्वार और मोबाइल-बैग के नियम एक जगह दिए गए हैं, ताकि आपके दर्शन सहज हों। समय और शुल्क सितंबर 2026 के अनुसार हैं; जाने से पहले आधिकारिक पोर्टल पर जाँच लें।",
+  "facts": [
+    {
+      "icon": "clock",
+      "label_en": "Temple hours",
+      "label_hi": "मंदिर का समय",
+      "value_en": "2:30 am–11 pm",
+      "value_hi": "रात 2:30–रात 11 बजे"
+    },
+    {
+      "icon": "people",
+      "label_en": "General darshan",
+      "label_hi": "सामान्य दर्शन",
+      "value_en": "4–11 am · 12:20–7 pm · 8:30–9 pm",
+      "value_hi": "सुबह 4–11 · दोपहर 12:20–शाम 7 · रात 8:30–9"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Sugam Darshan",
+      "label_hi": "सुगम दर्शन",
+      "value_en": "₹300 per person, official portal only",
+      "value_hi": "₹300 प्रति व्यक्ति, केवल आधिकारिक पोर्टल"
+    },
+    {
+      "icon": "camera-off",
+      "label_en": "Not allowed",
+      "label_hi": "अनुमति नहीं",
+      "value_en": "Phones, smartwatches, cameras, large bags",
+      "value_hi": "फ़ोन, स्मार्टवॉच, कैमरा, बड़े बैग"
+    },
+    {
+      "icon": "pin",
+      "label_en": "From the river",
+      "label_hi": "नदी की ओर से",
+      "value_en": "Corridor from Lalita Ghat (Gate 1)",
+      "value_hi": "ललिता घाट से गलियारा (गेट 1)"
+    },
+    {
+      "icon": "calendar",
+      "label_en": "Busiest",
+      "label_hi": "सबसे भीड़",
+      "value_en": "Mondays, Shravan and Mahashivratri",
+      "value_hi": "सोमवार, सावन और महाशिवरात्रि"
+    }
+  ],
   "sections": [
     {
       "id": "timings-and-aartis",

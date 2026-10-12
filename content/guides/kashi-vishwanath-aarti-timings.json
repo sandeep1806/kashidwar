@@ -8,6 +8,50 @@
   "description_hi": "काशी विश्वनाथ की मंगला, भोग, सप्तऋषि, श्रृंगार और शयन आरती का समय, टिकट शुल्क, आधिकारिक ऑनलाइन बुकिंग, प्रवेश द्वार, साथ ले जाने के नियम और पर्वों के बदलाव।",
   "lead_en": "Five aartis frame each day at the Kashi Vishwanath temple, from the Mangala aarti before dawn to the Shayan aarti before the doors close. This guide sets out their times, which ones need a ticket, what the tickets cost and how to book them only through the temple trust. Figures are as published on 12 October 2026; the trust's own pages differ on some times, and we show both.",
   "lead_hi": "काशी विश्वनाथ मंदिर में हर दिन पाँच आरतियाँ होती हैं, भोर से पहले की मंगला आरती से लेकर कपाट बंद होने से पहले की शयन आरती तक। इस गाइड में उनका समय, किन आरतियों के लिए टिकट लगता है, उनका शुल्क और केवल मंदिर न्यास के माध्यम से बुकिंग का तरीका दिया गया है। जानकारी 12 अक्टूबर 2026 को प्रकाशित आँकड़ों के अनुसार है; न्यास के अपने पेजों में कुछ समय अलग हैं, और हमने दोनों दिए हैं।",
+  "facts": [
+    {
+      "icon": "sunrise",
+      "label_en": "Mangala aarti",
+      "label_hi": "मंगला आरती",
+      "value_en": "3–4 am · ₹500 · entry 2:30–3 am",
+      "value_hi": "सुबह 3–4 · ₹500 · प्रवेश 2:30–3 बजे"
+    },
+    {
+      "icon": "clock",
+      "label_en": "Bhog aarti",
+      "label_hi": "भोग आरती",
+      "value_en": "About 11:15 am–12:20 pm · ₹300",
+      "value_hi": "लगभग 11:15–12:20 · ₹300"
+    },
+    {
+      "icon": "people",
+      "label_en": "Sapta Rishi aarti",
+      "label_hi": "सप्तऋषि आरती",
+      "value_en": "7 pm to about 8:15 pm · ₹300",
+      "value_hi": "शाम 7 से लगभग 8:15 · ₹300"
+    },
+    {
+      "icon": "calendar",
+      "label_en": "Shringar & Shayan",
+      "label_hi": "शृंगार और शयन",
+      "value_en": "Shringar 9 pm (₹300) · Shayan 10:30 pm",
+      "value_hi": "शृंगार रात 9 (₹300) · शयन रात 10:30"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Booking",
+      "label_hi": "बुकिंग",
+      "value_en": "Only shrikashivishwanath.org or its app; up to 5 per booking",
+      "value_hi": "केवल shrikashivishwanath.org या उसका ऐप; एक बुकिंग में 5 तक"
+    },
+    {
+      "icon": "camera-off",
+      "label_en": "Carry",
+      "label_hi": "साथ में",
+      "value_en": "No phones inside; printed ticket and ID",
+      "value_hi": "अंदर फ़ोन नहीं; छपा टिकट और पहचान पत्र"
+    }
+  ],
   "sections": [
     {
       "id": "aartis-at-a-glance",

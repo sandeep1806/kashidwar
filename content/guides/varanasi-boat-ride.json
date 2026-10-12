@@ -1,438 +1,482 @@
 {
- "slug": "varanasi-boat-ride",
- "published": "2026-10-12",
- "updated": "2026-10-12",
- "title_en": "Boat ride in Varanasi: price per person, timings, routes and ghats",
- "title_hi": "बनारस में नाव की सवारी: किराया, समय, रास्ता और कहां से बैठें",
- "description_en": "Varanasi boat ride prices per person, official fares, sunrise and Ganga Aarti boats, motor vs rowing boats, routes, where to board and the 20:30 rule.",
- "description_hi": "वाराणसी नाव किराया प्रति व्यक्ति, सरकारी दरें, सूर्योदय और गंगा आरती की नाव, मोटर बोट बनाम चप्पू वाली नाव, रास्ता, कहां से बैठें और रात 20:30 का नियम।",
- "lead_en": "A boat on the Ganga is the clearest way to see Varanasi's 84 ghats, from Assi in the south to Raj Ghat and Namo Ghat in the north. This guide gives the official per-person fares, what boats charge at sunrise and at the evening aarti, where to board, and the rules on timings, life jackets and the monsoon. As of 12 October 2026, only motorboats are running, between 06:00 and 17:00.",
- "lead_hi": "गंगा में नाव से बनारस के 84 घाट सबसे साफ दिखते हैं, दक्षिण में अस्सी से उत्तर में राजघाट और नमो घाट तक। इस गाइड में प्रति व्यक्ति सरकारी किराया, सूर्योदय और शाम की आरती के समय घाट पर चल रहे भाव, नाव कहां से लें, और समय, लाइफ जैकेट व मानसून के नियम दिए गए हैं। 12 अक्टूबर 2026 की स्थिति में केवल मोटर बोट 06:00 से 17:00 के बीच चल रही हैं।",
- "sections": [
-  {
-   "id": "prices",
-   "heading_en": "Boat ride price in Varanasi: official fares and what boats charge",
-   "heading_hi": "वाराणसी में नाव का किराया: सरकारी दरें और घाट पर असली भाव",
-   "body_en": [
-    "Varanasi Municipal Corporation fixed per-person boat fares in June 2023 after talks with the boatmen's associations, and repeated the main one in January 2025: ₹345 per person for an Assi–Namo Ghat round trip. Rate boards are meant to be displayed at the major ghats; complaints go to the Kashi Integrated Command and Control Centre helpline, 1533.",
-    "In practice most rides are negotiated on the ghat. Travel-site figures below are approximate. On festival nights prices jump: on New Year's Eve 2024, Amar Ujala found ₹1,000 charged for a ₹200 ride, and no rate boards on display."
-   ],
-   "body_hi": [
-    "वाराणसी नगर निगम ने नाविक संगठनों से बातचीत के बाद जून 2023 में प्रति व्यक्ति नाव किराया तय किया और जनवरी 2025 में मुख्य दर दोहराई: अस्सी से नमो घाट तक आने-जाने का ₹345 प्रति व्यक्ति। रेट बोर्ड प्रमुख घाटों पर लगने हैं; शिकायत काशी इंटीग्रेटेड कमांड एंड कंट्रोल सेंटर की हेल्पलाइन 1533 पर करें।",
-    "व्यवहार में ज्यादातर किराया घाट पर मोलभाव से तय होता है। नीचे ट्रैवल साइटों की दरें अनुमानित हैं। त्योहारों की रात भाव बढ़ जाते हैं: नए साल की पूर्व संध्या 2024 पर अमर उजाला ने ₹200 की सवारी के ₹1,000 वसूले जाते पाए, और घाटों पर रेट बोर्ड नहीं थे।"
-   ],
-   "list_en": [
-    "Official, Assi–Namo Ghat round trip: ₹345 per person",
-    "Official, Harishchandra–Manikarnika round trip: ₹125 per person",
-    "Official, Ganga Dwar (Lalita Ghat) to Assi or Namo, round trip: ₹175 per person",
-    "Official, motorboat for aarti viewing, 2 hours: ₹175 per person",
-    "Shared seat: about ₹80–150 at sunrise, ₹200–300 at the aarti (approximate)",
-    "Private rowboat: about ₹400 an hour; agencies ₹1,800 for 1.5 hours, up to 4 (approximate)",
-    "Private motorboat, up to 10: about ₹3,500 morning, ₹4,500 evening (approximate)"
-   ],
-   "list_hi": [
-    "सरकारी, अस्सी–नमो घाट आना-जाना: ₹345 प्रति व्यक्ति",
-    "सरकारी, हरिश्चंद्र–मणिकर्णिका आना-जाना: ₹125 प्रति व्यक्ति",
-    "सरकारी, गंगा द्वार (ललिता घाट) से अस्सी या नमो, आना-जाना: ₹175 प्रति व्यक्ति",
-    "सरकारी, आरती दर्शन के लिए मोटर बोट, 2 घंटे: ₹175 प्रति व्यक्ति",
-    "साझा नाव में सीट: सुबह लगभग ₹80–150, आरती के समय ₹200–300 (अनुमानित)",
-    "निजी चप्पू वाली नाव: लगभग ₹400 प्रति घंटा; एजेंसी से 4 लोगों तक 1.5 घंटे के ₹1,800 (अनुमानित)",
-    "निजी मोटर बोट, 10 लोगों तक: सुबह लगभग ₹3,500, शाम ₹4,500 (अनुमानित)"
-   ],
-   "unconfirmed": false,
-   "sources": [
-    0,
-    1,
-    2,
-    3,
-    4,
-    5,
-    6
-   ]
-  },
-  {
-   "id": "sunrise",
-   "heading_en": "Sunrise boat ride",
-   "heading_hi": "सूर्योदय की नाव सवारी",
-   "body_en": [
-    "The sunrise ride is the classic Varanasi boat trip. The river is calm, the sun rises over the far bank and lights the ghats, and the steps fill with bathers and people at prayer. A shared seat costs about half the evening price.",
-    "Most rides leave Assi Ghat and go north to Manikarnika and back in about 1.5 hours. Agree the reporting time the evening before. At Assi, the free Subah-e-Banaras programme of chanting, aarti and music starts before dawn.",
-    "Current status: under the order of 9 October 2026, only large motorboats may run, from 06:00 to 17:00 with half their rated passengers. Rowing boats remain suspended, so for now a sunrise ride means a motorboat leaving at 06:00 or later."
-   ],
-   "body_hi": [
-    "सूर्योदय की सवारी बनारस की सबसे जानी-मानी नाव यात्रा है। नदी शांत रहती है, सूरज सामने के किनारे से उगकर घाटों को रोशन करता है, और सीढ़ियों पर स्नान और पूजा करते लोग दिखते हैं। साझा नाव की सीट शाम के लगभग आधे दाम में मिलती है।",
-    "ज्यादातर सवारी अस्सी घाट से उत्तर में मणिकर्णिका तक जाकर लगभग 1.5 घंटे में लौटती है। पहुंचने का समय एक शाम पहले तय कर लें। अस्सी पर भोर से पहले निःशुल्क सुबह-ए-बनारस कार्यक्रम में वेदपाठ, आरती और संगीत होता है।",
-    "मौजूदा स्थिति: 9 अक्टूबर 2026 के आदेश के अनुसार केवल बड़ी मोटर बोट 06:00 से 17:00 तक, निर्धारित क्षमता के आधे यात्रियों के साथ चल सकती हैं। चप्पू वाली नावों पर रोक जारी है, इसलिए अभी सूर्योदय की सवारी का मतलब 06:00 या उसके बाद चलने वाली मोटर बोट है।"
-   ],
-   "unconfirmed": false,
-   "sources": [
-    4,
-    5,
-    26,
-    8,
-    9
-   ]
-  },
-  {
-   "id": "aarti-boat",
-   "heading_en": "Ganga Aarti boat ride",
-   "heading_hi": "गंगा आरती की नाव सवारी",
-   "body_en": [
-    "In the evening, boats gather in front of Dashashwamedh and Rajendra Prasad Ghats and hold position facing the aarti platforms. One 2026 guide gives the start as about 17:45 in winter and 18:45 in summer. Shared seats cost about ₹200–300 per person, a private rowboat about ₹2,500 for up to four through an agency (approximate); the official 2023 list sets ₹175 per person for two hours on a motorboat.",
-    "Board 45 to 60 minutes early for a place near the front, and confirm that the boat stays until the aarti ends. All boats must be off the river by 20:30.",
-    "Current status: the 9 October 2026 order allows motorboats only until 17:00 and keeps rowing boats suspended, so evening aarti boats are not running until a fresh order. Watch from the ghat steps, which is free."
-   ],
-   "body_hi": [
-    "शाम को नावें दशाश्वमेध और राजेंद्र प्रसाद घाट के सामने इकट्ठा होकर आरती मंच की ओर मुंह करके रुकती हैं। 2026 की एक गाइड के अनुसार आरती सर्दियों में लगभग 17:45 और गर्मियों में 18:45 बजे शुरू होती है। साझा नाव में सीट लगभग ₹200–300 प्रति व्यक्ति और एजेंसी से निजी चप्पू वाली नाव 4 लोगों तक लगभग ₹2,500 (अनुमानित) है; 2023 की सरकारी सूची में मोटर बोट पर दो घंटे का किराया ₹175 प्रति व्यक्ति है।",
-    "आगे की जगह के लिए 45 से 60 मिनट पहले बैठें, और पक्का कर लें कि नाव आरती खत्म होने तक रुकेगी। सभी नावों को 20:30 तक नदी से हट जाना होता है।",
-    "मौजूदा स्थिति: 9 अक्टूबर 2026 के आदेश में मोटर बोट केवल 17:00 तक चल सकती हैं और चप्पू वाली नावों पर रोक है, इसलिए नया आदेश आने तक शाम की आरती वाली नावें नहीं चल रहीं। घाट की सीढ़ियों से आरती निःशुल्क देखें।"
-   ],
-   "unconfirmed": false,
-   "sources": [
-    4,
-    6,
-    1,
-    7,
-    8,
-    9
-   ]
-  },
-  {
-   "id": "route",
-   "heading_en": "Route and what you see",
-   "heading_hi": "रास्ता और रास्ते में क्या दिखता है",
-   "body_en": [
-    "Varanasi's 84 ghats line the west bank of the Ganga from Assi in the south to Adi Keshava, beyond Raj Ghat, in the north. The standard rowing-boat ride is Assi to Manikarnika and back, about 1.5 hours. Motorboats continue to Panchganga, Raj Ghat and Namo Ghat.",
-    "Going north from Assi you pass Tulsi, Chet Singh with its fort walls, Harishchandra, the southern cremation ghat, Kedar, Dashashwamedh, Rajendra Prasad, Man Mandir and Lalita Ghat, the Ganga Dwar of the Kashi Vishwanath Dham. Then come Manikarnika, Scindia with the leaning Ratneshwar Mahadev temple, and Panchganga."
-   ],
-   "body_hi": [
-    "बनारस के 84 घाट गंगा के पश्चिमी किनारे पर दक्षिण में अस्सी से उत्तर में राजघाट के आगे आदि केशव तक फैले हैं। चप्पू वाली नाव की सामान्य सवारी अस्सी से मणिकर्णिका आना-जाना है, लगभग 1.5 घंटे। मोटर बोट आगे पंचगंगा, राजघाट और नमो घाट तक जाती हैं।",
-    "अस्सी से उत्तर की ओर तुलसी घाट, किले की दीवारों वाला चेत सिंह घाट, दक्षिण का श्मशान घाट हरिश्चंद्र, केदार, दशाश्वमेध, राजेंद्र प्रसाद, मान मंदिर और श्री काशी विश्वनाथ धाम का गंगा द्वार ललिता घाट आते हैं। फिर मणिकर्णिका, झुके रत्नेश्वर महादेव मंदिर वाला सिंधिया घाट और पंचगंगा घाट आते हैं।"
-   ],
-   "unconfirmed": false,
-   "sources": [
-    20,
-    5,
-    4,
-    1,
-    2
-   ]
-  },
-  {
-   "id": "where-to-board",
-   "heading_en": "Where to board",
-   "heading_hi": "नाव कहां से लें",
-   "body_en": [
-    "Choose the ghat by the ride you want. Fares are similar along the river; what changes is the crowd and the direction you travel."
-   ],
-   "body_hi": [
-    "जिस तरह की सवारी चाहिए, उसके हिसाब से घाट चुनें। किराया पूरे तट पर लगभग एक जैसा है; फर्क भीड़ और यात्रा की दिशा का है।"
-   ],
-   "list_en": [
-    "Assi Ghat: southern end; the usual start for sunrise rides, calmer than the centre.",
-    "Dashashwamedh and Rajendra Prasad Ghats: the centre, a short walk from Godowlia; the main point for aarti boats, and the busiest for touts.",
-    "Namo Ghat: northern end, reached by road, with a jetty and the first floating CNG station. Aarti boats from here are listed at ₹500–5,000 by type (approximate).",
-    "Raj Ghat: beside Namo Ghat, near the Malviya bridge.",
-    "Ravidas Ghat: south of Assi near Lanka; Alaknanda cruise boarding and the second floating CNG station."
-   ],
-   "list_hi": [
-    "अस्सी घाट: दक्षिणी छोर; सूर्योदय सवारी का सामान्य शुरुआती घाट, बीच के घाटों से शांत।",
-    "दशाश्वमेध और राजेंद्र प्रसाद घाट: बीच का हिस्सा, गोदौलिया से कुछ ही दूरी पर; आरती वाली नावों का मुख्य स्थान, और दलालों की सबसे ज्यादा भीड़ यहीं।",
-    "नमो घाट: उत्तरी छोर, सड़क से पहुंचना आसान, जेटी और पहला तैरता सीएनजी स्टेशन। यहां से आरती की नाव प्रकार के अनुसार ₹500–5,000 बताई गई है (अनुमानित)।",
-    "राजघाट: नमो घाट के पास, मालवीय पुल के निकट।",
-    "रविदास घाट: अस्सी के दक्षिण में लंका के पास; अलकनंदा क्रूज की बोर्डिंग और दूसरा तैरता सीएनजी स्टेशन।"
-   ],
-   "unconfirmed": false,
-   "sources": [
-    20,
-    4,
-    5,
-    22,
-    16,
-    17,
-    19
-   ]
-  },
-  {
-   "id": "rules",
-   "heading_en": "Rules: the 20:30 limit, monsoon suspension and life jackets",
-   "heading_hi": "नियम: रात 20:30 की सीमा, मानसून में रोक और लाइफ जैकेट",
-   "body_en": [
-    "Night limit. Since May 2024 the Varanasi Water Police, with the boatmen's agreement, have prohibited boating after 20:30. A boat found later can be seized, its licence cancelled and an FIR filed. We found no order lifting the limit.",
-    "Monsoon. From about July to September the Ganga rises over the lower steps; at the Rajghat gauge the warning level is 70.262 m and the danger level 71.262 m. In 2026 all boats were stopped on 30 July for high wind, restarted on 14 August and halted again on 16 and 22 August; on 3 September the river was above the warning level. On 9 October the ACP Dashashwamedh allowed large motorboats from 06:00 to 17:00 at half capacity, with two trained swimmers aboard. Rowing boats stay suspended until a further order.",
-    "Life jackets. Every passenger must wear one, and a boat may carry only as many people as its licensed capacity and life jackets allow. In May 2026 police said more than 60 boats had been seized for safety violations; in June the administration began issuing jackets to registered boats by approved capacity, and boats now need a ready-to-move fitness certificate."
-   ],
-   "body_hi": [
-    "रात की सीमा। मई 2024 से वाराणसी जल पुलिस ने नाविकों की सहमति से रात 20:30 के बाद नाव चलाने पर रोक लगाई है। इसके बाद मिली नाव जब्त हो सकती है, लाइसेंस रद्द हो सकता है और एफआईआर दर्ज हो सकती है। इस सीमा को हटाने का कोई आदेश हमें नहीं मिला।",
-    "मानसून। लगभग जुलाई से सितंबर तक गंगा निचली सीढ़ियों के ऊपर चढ़ आती है; राजघाट गेज पर चेतावनी स्तर 70.262 मीटर और खतरे का स्तर 71.262 मीटर है। 2026 में 30 जुलाई को तेज हवा के कारण सभी नावें रोकी गईं, 14 अगस्त को फिर चलीं और 16 व 22 अगस्त को दोबारा रोक दी गईं; 3 सितंबर को नदी चेतावनी स्तर से ऊपर थी। 9 अक्टूबर को एसीपी दशाश्वमेध ने बड़ी मोटर बोट को 06:00 से 17:00 तक, आधी क्षमता और दो प्रशिक्षित तैराकों के साथ चलाने की अनुमति दी। चप्पू वाली नावों पर अगले आदेश तक रोक है।",
-    "लाइफ जैकेट। हर यात्री के लिए लाइफ जैकेट अनिवार्य है, और नाव में उतने ही लोग बैठ सकते हैं जितनी उसकी लाइसेंसी क्षमता और लाइफ जैकेट हों। मई 2026 में पुलिस ने बताया कि सुरक्षा नियम तोड़ने पर 60 से अधिक नावें जब्त हुईं; जून में प्रशासन ने पंजीकृत नावों को स्वीकृत क्षमता के अनुसार जैकेट देना शुरू किया, और अब नावों को रेडी टू मूव प्रमाणपत्र भी चाहिए।"
-   ],
-   "list_en": [
-    "No boating after 20:30 (Water Police, May 2024)",
-    "From 9 October 2026: motorboats only, 06:00–17:00, half capacity",
-    "Life jacket on before the boat leaves; no overloaded boats",
-    "Emergency 112; helpline 1533"
-   ],
-   "list_hi": [
-    "रात 20:30 के बाद नाव नहीं (जल पुलिस, मई 2024)",
-    "9 अक्टूबर 2026 से: केवल मोटर बोट, 06:00–17:00, आधी क्षमता",
-    "नाव चलने से पहले लाइफ जैकेट पहनें; ज्यादा भरी नाव में न बैठें",
-    "आपातकाल 112; हेल्पलाइन 1533"
-   ],
-   "unconfirmed": false,
-   "sources": [
-    7,
-    13,
-    15,
-    24,
-    25,
-    14,
-    8,
-    9,
-    10,
-    11,
-    12,
-    23,
-    2
-   ]
-  },
-  {
-   "id": "dev-deepawali-cruises",
-   "heading_en": "Dev Deepawali boats and Ganga cruises",
-   "heading_hi": "देव दीपावली की नावें और गंगा क्रूज",
-   "body_en": [
-    "Dev Deepawali falls on 24 November 2026. On 10 October Amar Ujala reported the large cruises already sold out for the night: the 60-seat Alaknanda went to a foreign group for ₹5 lakh, and the 100-seat Sam Manekshaw at ₹15,000 per passenger. Bajras, the large traditional boats, were quoted at ₹15,000 to ₹2 lakh, shared boat tours at ₹5,000 per person and whole boats up to ₹1 lakh. There is no official fare for the night.",
-    "Book weeks ahead through your hotel or a registered boatman, and get the boat type, boarding ghat, times and route in writing. The reported cruise slot that night is 17:30 to 21:30, past the usual 20:30 limit, so ask what is permitted.",
-    "On ordinary days the Alaknanda, run by Nordic Cruise Line, is listed with 09:00 and 17:30 sailings of about 1.5 hours from Ravidas Ghat, from ₹1,000 per person. This is from a February 2025 listing and not confirmed for this season; check with the operator."
-   ],
-   "body_hi": [
-    "2026 में देव दीपावली 24 नवंबर को है। अमर उजाला ने 10 अक्टूबर को बताया कि उस रात के बड़े क्रूज पहले ही बिक चुके थे: 60 सीटों वाला अलकनंदा एक विदेशी समूह ने ₹5 लाख में लिया, और 100 सीटों वाले सैम मानेकशॉ की सीटें ₹15,000 प्रति यात्री बिकीं। बड़ी पारंपरिक नाव बजड़ा का भाव ₹15,000 से ₹2 लाख, साझा नाव टूर ₹5,000 प्रति व्यक्ति और पूरी नाव ₹1 लाख तक बताया गया। इस रात के लिए कोई सरकारी किराया नहीं है।",
-    "होटल या पंजीकृत नाविक के जरिए हफ्तों पहले बुक करें, और नाव का प्रकार, बोर्डिंग घाट, समय और रास्ता लिखित में लें। उस रात क्रूज का बताया गया समय 17:30 से 21:30 है, जो सामान्य 20:30 की सीमा से आगे है, इसलिए पूछ लें कि क्या अनुमति है।",
-    "सामान्य दिनों में नॉर्डिक क्रूज लाइन का अलकनंदा रविदास घाट से 09:00 और 17:30 बजे लगभग 1.5 घंटे की सैर के लिए ₹1,000 प्रति व्यक्ति से सूचीबद्ध है। यह फरवरी 2025 की सूची से है और इस मौसम के लिए पुष्ट नहीं; संचालक से पुष्टि कर लें।"
-   ],
-   "unconfirmed": true,
-   "sources": [
-    18,
-    19,
-    7,
-    8
-   ]
-  },
-  {
-   "id": "etiquette-touts",
-   "heading_en": "Cremation ghats, etiquette and touts",
-   "heading_hi": "श्मशान घाट, शिष्टाचार और दलाल",
-   "body_en": [
-    "Manikarnika and Harishchandra are cremation ghats, where cremations continue day and night. From a boat you see them at a respectful distance. Do not photograph or film the pyres or mourners; it hurts families and leads to confrontation. Keep your voice low and do not eat or smoke as you pass. Requests for a donation for wood come from self-appointed guides and are optional.",
-    "Touts work Dashashwamedh and the lanes to it. Speak to a boatman at the water's edge and agree the price, per person or for the whole boat, the duration, the route and, in the evening, whether the boat stays through the aarti. Check the life jackets, pay at the end, and call 1533 if you are overcharged."
-   ],
-   "body_hi": [
-    "मणिकर्णिका और हरिश्चंद्र श्मशान घाट हैं, जहां दिन-रात दाह संस्कार होते हैं। नाव से इन्हें सम्मानजनक दूरी से देखा जाता है। चिताओं या शोक मना रहे लोगों की फोटो या वीडियो न लें; इससे परिवारों को ठेस पहुंचती है और विवाद होता है। आवाज धीमी रखें और गुजरते समय कुछ खाएं या धूम्रपान न करें। लकड़ी के लिए दान मांगने वाले स्वयंभू गाइड होते हैं; दान अनिवार्य नहीं है।",
-    "दशाश्वमेध और उसकी गलियों में दलाल सक्रिय रहते हैं। पानी के किनारे नाविक से सीधे बात करें और किराया, प्रति व्यक्ति या पूरी नाव, समय, रास्ता और शाम को नाव आरती तक रुकेगी या नहीं, पहले तय करें। लाइफ जैकेट देख लें, भुगतान अंत में करें, और ज्यादा वसूली हो तो 1533 पर फोन करें।"
-   ],
-   "unconfirmed": false,
-   "sources": [
-    21,
-    3,
-    2
-   ]
-  }
- ],
- "faq": [
-  {
-   "q_en": "How much is a boat ride in Varanasi per person?",
-   "a_en": "The municipal fare for a round trip between Assi and Namo Ghat is ₹345 per person. On the ghats, a shared seat costs about ₹80–150 at sunrise and ₹200–300 at the evening aarti, and a private rowboat about ₹400 an hour (approximate). Agree the price before you board.",
-   "q_hi": "वाराणसी में नाव की सवारी का किराया प्रति व्यक्ति कितना है?",
-   "a_hi": "नगर निगम का तय किराया अस्सी से नमो घाट तक आने-जाने का ₹345 प्रति व्यक्ति है। घाट पर साझा नाव की सीट सुबह लगभग ₹80–150 और शाम की आरती के समय ₹200–300, और निजी चप्पू वाली नाव लगभग ₹400 प्रति घंटा (अनुमानित) है। बैठने से पहले किराया तय कर लें।"
-  },
-  {
-   "q_en": "What is the best time for a boat ride in Varanasi?",
-   "a_en": "Sunrise, from October to March. The river is calm, the ghats are busy with morning rituals, and fares are lower than in the evening. From July to September boats are often suspended for high water.",
-   "q_hi": "बनारस में नाव की सवारी का सबसे अच्छा समय कौन सा है?",
-   "a_hi": "अक्टूबर से मार्च के बीच सूर्योदय का समय। नदी शांत रहती है, घाटों पर सुबह की पूजा चलती है, और किराया शाम से कम होता है। जुलाई से सितंबर में ऊंचे जलस्तर के कारण नावें अक्सर बंद रहती हैं।"
-  },
-  {
-   "q_en": "Can I watch the Ganga Aarti from a boat?",
-   "a_en": "Usually yes: boats moor in front of Dashashwamedh before the aarti. As of 12 October 2026, motorboats may run only until 17:00 and rowing boats are suspended, so evening aarti boats are not running until a new order is issued.",
-   "q_hi": "क्या गंगा आरती नाव से देखी जा सकती है?",
-   "a_hi": "आम तौर पर हां: आरती से पहले नावें दशाश्वमेध के सामने रुकती हैं। 12 अक्टूबर 2026 की स्थिति में मोटर बोट केवल 17:00 तक चल सकती हैं और चप्पू वाली नावों पर रोक है, इसलिए नया आदेश आने तक शाम की आरती वाली नावें नहीं चल रहीं।"
-  },
-  {
-   "q_en": "Motor boat or rowing boat: which should I take?",
-   "a_en": "A rowing boat is quieter and slower, and covers Assi to Manikarnika and back in about 1.5 hours. A motorboat covers the full Assi–Namo crescent and suits groups of up to about 10. Most motorboats in Varanasi now run on CNG.",
-   "q_hi": "मोटर बोट लें या चप्पू वाली नाव?",
-   "a_hi": "चप्पू वाली नाव शांत और धीमी है, और अस्सी से मणिकर्णिका आने-जाने में लगभग 1.5 घंटे लेती है। मोटर बोट पूरे अस्सी–नमो तट को कवर करती है और लगभग 10 लोगों तक के समूह के लिए ठीक है। वाराणसी की ज्यादातर मोटर बोट अब सीएनजी से चलती हैं।"
-  },
-  {
-   "q_en": "Can boats go out after dark?",
-   "a_en": "Only until 20:30. Since May 2024 the Water Police have prohibited boating after 20:30; a boat found on the river later can be seized and its licence cancelled.",
-   "q_hi": "क्या अंधेरा होने के बाद नाव चलती है?",
-   "a_hi": "केवल 20:30 तक। मई 2024 से जल पुलिस ने 20:30 के बाद नाव चलाने पर रोक लगाई है; इसके बाद नदी में मिली नाव जब्त हो सकती है और उसका लाइसेंस रद्द हो सकता है।"
-  },
-  {
-   "q_en": "Do boats run in the monsoon?",
-   "a_en": "Often not. The administration suspends all boats when the Ganga rises or winds are high, as it did several times between late July and September 2026. Rides restart in stages after a fresh order.",
-   "q_hi": "क्या मानसून में नावें चलती हैं?",
-   "a_hi": "अक्सर नहीं। गंगा का जलस्तर बढ़ने या तेज हवा चलने पर प्रशासन सभी नावें बंद कर देता है, जैसा 2026 में जुलाई के अंत से सितंबर के बीच कई बार हुआ। नए आदेश के बाद सवारी चरणों में फिर शुरू होती है।"
-  },
-  {
-   "q_en": "How do I book a boat for Dev Deepawali?",
-   "a_en": "Book weeks ahead through your hotel or a registered boatman. For 24 November 2026, the large cruises were sold out by 10 October, bajras were quoted at ₹15,000 to ₹2 lakh and shared boat tours at about ₹5,000 per person.",
-   "q_hi": "देव दीपावली के लिए नाव कैसे बुक करें?",
-   "a_hi": "होटल या पंजीकृत नाविक के जरिए हफ्तों पहले बुक करें। 24 नवंबर 2026 के लिए बड़े क्रूज 10 अक्टूबर तक बिक चुके थे, बजड़े का भाव ₹15,000 से ₹2 लाख और साझा नाव टूर लगभग ₹5,000 प्रति व्यक्ति बताया गया।"
-  }
- ],
- "sources": [
-  {
-   "title": "ETV Bharat: Varanasi Municipal Corporation issues rate list for boating on the Ganga (3 Jun 2023)",
-   "url": "https://www.etvbharat.com/hindi/uttar-pradesh/state/varanasi/varanasi-municipal-corporation-issued-rate-list-for-boating-in-ganga-of-banaras/up20230603160817145145334",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Amar Ujala: Fare of boats on the Ganga fixed, Assi to Namo Ghat rate list (3 Jun 2023)",
-   "url": "https://www.amarujala.com/uttar-pradesh/varanasi/varanasi-the-fare-of-the-boats-plying-in-the-ganga-is-fixed-from-assi-ghat-to-namo-ghat-this-much-money-wil-2023-06-03",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Amar Ujala: Boat fare fixed on the Ganga, ₹345 Assi to Namo Ghat round trip (14 Jan 2025)",
-   "url": "https://www.amarujala.com/uttar-pradesh/varanasi/boat-fare-fixed-in-ganga-at-varanasi-know-fare-list-2025-01-14",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Amar Ujala: New Year, boat and e-rickshaw operators overcharge visitors in Kashi (1 Jan 2025)",
-   "url": "https://www.amarujala.com/uttar-pradesh/varanasi/new-year-2025-boat-e-rickshaw-and-handcart-owners-cheated-tourists-in-kashi-2025-01-01",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "GoWithGuide: Varanasi ghat tour guide, sunrise boat, river walk and aarti costs (Aug 2026)",
-   "url": "https://gowithguide.com/blog/varanasi-ghat-tour-guide-sunrise-boat-river-walk-aarti-costs-itinerary-6238",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "KashiTaxi: Morning boat ride Varanasi price (2026)",
-   "url": "https://www.kashitaxi.in/en/morning-boat-ride-varanasi-price",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "KashiTaxi: Evening boat ride Varanasi, Ganga Aarti prices (2026)",
-   "url": "https://www.kashitaxi.in/en/evening-boat-ride-varanasi-ganga-aarti",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "DT Next (IANS): Boating on Ganga river in Varanasi prohibited after 8.30 pm (2 May 2024)",
-   "url": "https://www.dtnext.in/news/national/boating-on-ganga-river-in-varanasi-prohibited-after-830-pm-782598",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "KTV Varanasi: Ganga recedes, motorboat operations approved in Varanasi (9 Oct 2026)",
-   "url": "https://www.ktvvaranasi.com/2026/10/Ganga%20water%20level%20recedes%20approval%20granted%20for%20motorboat%20operations%20in%20Varanasi..html",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Loktej: Big motorboats allowed on the Ganga, ban on rowing boats continues, guidelines (9 Oct 2026)",
-   "url": "https://www.loktej.com/article/152913/permission-to-operate-big-motor-boats-in-ganga-ban-on",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "ETV Bharat: Despite preventive measures, drownings continue at ghats of Varanasi (31 May 2026)",
-   "url": "https://www.etvbharat.com/en/state/despite-preventive-measures-drownings-continue-at-ghats-of-varanasi-enn26053102522",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Amar Ujala: 974 life jackets given to 119 boatmen (1 Jun 2026)",
-   "url": "https://www.amarujala.com/uttar-pradesh/varanasi/974-life-jackets-given-to-119-sailors-varanasi-news-c-20-vns1021-1412734-2026-06-01",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Amar Ujala: Only boats with a ready-to-move certificate will ply on the Ganga (2 Jun 2026)",
-   "url": "https://www.amarujala.com/uttar-pradesh/varanasi/only-boats-with-a-ready-to-move-certificate-will-be-allowed-to-ply-on-the-ganga-non-standard-boats-will-be-excluded-varanasi-news-c-20-vns1056-1414535-2026-06-02",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Deccan Chronicle (PTI): Ganga water level crosses warning mark in Varanasi (3 Sep 2026)",
-   "url": "https://www.deccanchronicle.com/nation/current-affairs/up-ganga-water-level-crosses-warning-mark-in-varanasi-1984462",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "NewKerala (IANS): Boat services halted across Varanasi as Ganga swells (22 Aug 2026)",
-   "url": "https://www.newkerala.com/news/a/boat-services-halted-across-varanasi-as-ganga-swells-461.htm",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Patrika: Ganga level rises, boat services stopped in Varanasi (30 Jul 2026)",
-   "url": "https://www.patrika.com/varanasi-news/ganga-water-level-flood-alert-boat-services-stopped-20790932",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "PSU Watch: PM dedicates 500 CNG-run boats in Varanasi, floating CNG station at Namo Ghat (7 Jul 2022)",
-   "url": "https://psuwatch.com/latestnews/varanasi-pm-dedicates-500-cng-run-boats-to-the-nation",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Energetica India: Varanasi's second floating CNG station inaugurated at Ravidas Ghat (27 Nov 2023)",
-   "url": "https://www.energetica-india.net/news/union-minister-puri-inaugurates-varanasis-second-floating-cng-station",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Amar Ujala: Dev Deepawali, foreign group books Alaknanda cruise for ₹5 lakh, Sam Manekshaw ₹15 lakh (10 Oct 2026)",
-   "url": "https://www.amarujala.com/uttar-pradesh/varanasi/dev-deepawali-foreign-group-books-alaknanda-cruise-5-lakh-and-sam-manekshaw-15-lakh-relying-on-boats-2026-10-10",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Yatradham: Alaknanda cruise Varanasi, timings and fares (Feb 2025)",
-   "url": "https://blog.yatradham.org/alaknanda-cruise-varanasi/",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Wikipedia: Ghats in Varanasi",
-   "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "EaseIndiaTrip: How to witness a cremation at Manikarnika Ghat, a respectful guide (Apr 2025)",
-   "url": "https://www.easeindiatrip.com/blog/?p=8868",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Casual Walker: Namo Ghat Varanasi complete travel guide",
-   "url": "https://casualwalker.com/namo-ghat-varanasi-complete-travel-guide-namaste-sculptures-architecture-the-86th-ghat-in-the-holy-city-of-varanasi-namo-ghat-timings-boat-tours-contact-information-history-architecture-a/",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Hindustan Times (East UP): Kashi boatmen can't carry passengers beyond capacity, says DM (12 Dec 2020)",
-   "url": "https://www.pressreader.com/india/hindustan-times-east-up/20201212/281590948150816",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Live Bharat News: Ganga recedes in Kashi, boat operations resume (14 Aug 2026)",
-   "url": "https://livebharatnews.in/uttar-pradesh/varanasi/ganga-water-level-recedes-in-kashi-boat-operations-resume/cid19125940.htm",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "NewKerala (IANS): Ganga water level rises, Varanasi boat operations suspended (16 Aug 2026)",
-   "url": "https://www.newkerala.com/news/a/ganga-water-level-rises-varanasi-boat-operations-suspended-244.htm",
-   "accessed": "2026-10-12"
-  },
-  {
-   "title": "Subah-e-Banaras, Assi Ghat",
-   "url": "https://subahebanaras.in/",
-   "accessed": "2026-10-12"
-  }
- ],
- "related": {
-  "places": [
-   "dashashwamedh-ghat",
-   "assi-ghat",
-   "manikarnika-ghat",
-   "panchganga-ghat",
-   "namo-ghat"
+  "slug": "varanasi-boat-ride",
+  "published": "2026-10-12",
+  "updated": "2026-10-12",
+  "title_en": "Boat ride in Varanasi: price per person, timings, routes and ghats",
+  "title_hi": "बनारस में नाव की सवारी: किराया, समय, रास्ता और कहां से बैठें",
+  "description_en": "Varanasi boat ride prices per person, official fares, sunrise and Ganga Aarti boats, motor vs rowing boats, routes, where to board and the 20:30 rule.",
+  "description_hi": "वाराणसी नाव किराया प्रति व्यक्ति, सरकारी दरें, सूर्योदय और गंगा आरती की नाव, मोटर बोट बनाम चप्पू वाली नाव, रास्ता, कहां से बैठें और रात 20:30 का नियम।",
+  "lead_en": "A boat on the Ganga is the clearest way to see Varanasi's 84 ghats, from Assi in the south to Raj Ghat and Namo Ghat in the north. This guide gives the official per-person fares, what boats charge at sunrise and at the evening aarti, where to board, and the rules on timings, life jackets and the monsoon. As of 12 October 2026, only motorboats are running, between 06:00 and 17:00.",
+  "lead_hi": "गंगा में नाव से बनारस के 84 घाट सबसे साफ दिखते हैं, दक्षिण में अस्सी से उत्तर में राजघाट और नमो घाट तक। इस गाइड में प्रति व्यक्ति सरकारी किराया, सूर्योदय और शाम की आरती के समय घाट पर चल रहे भाव, नाव कहां से लें, और समय, लाइफ जैकेट व मानसून के नियम दिए गए हैं। 12 अक्टूबर 2026 की स्थिति में केवल मोटर बोट 06:00 से 17:00 के बीच चल रही हैं।",
+  "facts": [
+    {
+      "icon": "ticket",
+      "label_en": "Official fare",
+      "label_hi": "सरकारी किराया",
+      "value_en": "₹345 per person, Assi–Namo round trip",
+      "value_hi": "₹345 प्रति व्यक्ति, अस्सी–नमो आना-जाना"
+    },
+    {
+      "icon": "people",
+      "label_en": "Shared seat",
+      "label_hi": "साझा सीट",
+      "value_en": "₹80–150 sunrise · ₹200–300 aarti (approx.)",
+      "value_hi": "सुबह ₹80–150 · आरती ₹200–300 (लगभग)"
+    },
+    {
+      "icon": "boat",
+      "label_en": "Private boat",
+      "label_hi": "निजी नाव",
+      "value_en": "Rowboat ~₹400/hr · motorboat ₹3,500–4,500",
+      "value_hi": "चप्पू नाव ~₹400/घंटा · मोटरबोट ₹3,500–4,500"
+    },
+    {
+      "icon": "pin",
+      "label_en": "Where to board",
+      "label_hi": "कहाँ से बैठें",
+      "value_en": "Assi (sunrise) · Dashashwamedh (aarti) · Namo",
+      "value_hi": "अस्सी (सुबह) · दशाश्वमेध (आरती) · नमो"
+    },
+    {
+      "icon": "clock",
+      "label_en": "Night limit",
+      "label_hi": "रात की सीमा",
+      "value_en": "No boats after 20:30",
+      "value_hi": "रात 8:30 के बाद नाव नहीं"
+    },
+    {
+      "icon": "shield",
+      "label_en": "Right now",
+      "label_hi": "अभी",
+      "value_en": "Motorboats only, 06:00–17:00 (order of 9 Oct 2026)",
+      "value_hi": "केवल मोटरबोट, सुबह 6–शाम 5 (9 अक्टूबर 2026 का आदेश)"
+    }
   ],
-  "festivals": [
-   "dev-deepawali"
+  "sections": [
+    {
+      "id": "prices",
+      "heading_en": "Boat ride price in Varanasi: official fares and what boats charge",
+      "heading_hi": "वाराणसी में नाव का किराया: सरकारी दरें और घाट पर असली भाव",
+      "body_en": [
+        "Varanasi Municipal Corporation fixed per-person boat fares in June 2023 after talks with the boatmen's associations, and repeated the main one in January 2025: ₹345 per person for an Assi–Namo Ghat round trip. Rate boards are meant to be displayed at the major ghats; complaints go to the Kashi Integrated Command and Control Centre helpline, 1533.",
+        "In practice most rides are negotiated on the ghat. Travel-site figures below are approximate. On festival nights prices jump: on New Year's Eve 2024, Amar Ujala found ₹1,000 charged for a ₹200 ride, and no rate boards on display."
+      ],
+      "body_hi": [
+        "वाराणसी नगर निगम ने नाविक संगठनों से बातचीत के बाद जून 2023 में प्रति व्यक्ति नाव किराया तय किया और जनवरी 2025 में मुख्य दर दोहराई: अस्सी से नमो घाट तक आने-जाने का ₹345 प्रति व्यक्ति। रेट बोर्ड प्रमुख घाटों पर लगने हैं; शिकायत काशी इंटीग्रेटेड कमांड एंड कंट्रोल सेंटर की हेल्पलाइन 1533 पर करें।",
+        "व्यवहार में ज्यादातर किराया घाट पर मोलभाव से तय होता है। नीचे ट्रैवल साइटों की दरें अनुमानित हैं। त्योहारों की रात भाव बढ़ जाते हैं: नए साल की पूर्व संध्या 2024 पर अमर उजाला ने ₹200 की सवारी के ₹1,000 वसूले जाते पाए, और घाटों पर रेट बोर्ड नहीं थे।"
+      ],
+      "list_en": [
+        "Official, Assi–Namo Ghat round trip: ₹345 per person",
+        "Official, Harishchandra–Manikarnika round trip: ₹125 per person",
+        "Official, Ganga Dwar (Lalita Ghat) to Assi or Namo, round trip: ₹175 per person",
+        "Official, motorboat for aarti viewing, 2 hours: ₹175 per person",
+        "Shared seat: about ₹80–150 at sunrise, ₹200–300 at the aarti (approximate)",
+        "Private rowboat: about ₹400 an hour; agencies ₹1,800 for 1.5 hours, up to 4 (approximate)",
+        "Private motorboat, up to 10: about ₹3,500 morning, ₹4,500 evening (approximate)"
+      ],
+      "list_hi": [
+        "सरकारी, अस्सी–नमो घाट आना-जाना: ₹345 प्रति व्यक्ति",
+        "सरकारी, हरिश्चंद्र–मणिकर्णिका आना-जाना: ₹125 प्रति व्यक्ति",
+        "सरकारी, गंगा द्वार (ललिता घाट) से अस्सी या नमो, आना-जाना: ₹175 प्रति व्यक्ति",
+        "सरकारी, आरती दर्शन के लिए मोटर बोट, 2 घंटे: ₹175 प्रति व्यक्ति",
+        "साझा नाव में सीट: सुबह लगभग ₹80–150, आरती के समय ₹200–300 (अनुमानित)",
+        "निजी चप्पू वाली नाव: लगभग ₹400 प्रति घंटा; एजेंसी से 4 लोगों तक 1.5 घंटे के ₹1,800 (अनुमानित)",
+        "निजी मोटर बोट, 10 लोगों तक: सुबह लगभग ₹3,500, शाम ₹4,500 (अनुमानित)"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "sunrise",
+      "heading_en": "Sunrise boat ride",
+      "heading_hi": "सूर्योदय की नाव सवारी",
+      "body_en": [
+        "The sunrise ride is the classic Varanasi boat trip. The river is calm, the sun rises over the far bank and lights the ghats, and the steps fill with bathers and people at prayer. A shared seat costs about half the evening price.",
+        "Most rides leave Assi Ghat and go north to Manikarnika and back in about 1.5 hours. Agree the reporting time the evening before. At Assi, the free Subah-e-Banaras programme of chanting, aarti and music starts before dawn.",
+        "Current status: under the order of 9 October 2026, only large motorboats may run, from 06:00 to 17:00 with half their rated passengers. Rowing boats remain suspended, so for now a sunrise ride means a motorboat leaving at 06:00 or later."
+      ],
+      "body_hi": [
+        "सूर्योदय की सवारी बनारस की सबसे जानी-मानी नाव यात्रा है। नदी शांत रहती है, सूरज सामने के किनारे से उगकर घाटों को रोशन करता है, और सीढ़ियों पर स्नान और पूजा करते लोग दिखते हैं। साझा नाव की सीट शाम के लगभग आधे दाम में मिलती है।",
+        "ज्यादातर सवारी अस्सी घाट से उत्तर में मणिकर्णिका तक जाकर लगभग 1.5 घंटे में लौटती है। पहुंचने का समय एक शाम पहले तय कर लें। अस्सी पर भोर से पहले निःशुल्क सुबह-ए-बनारस कार्यक्रम में वेदपाठ, आरती और संगीत होता है।",
+        "मौजूदा स्थिति: 9 अक्टूबर 2026 के आदेश के अनुसार केवल बड़ी मोटर बोट 06:00 से 17:00 तक, निर्धारित क्षमता के आधे यात्रियों के साथ चल सकती हैं। चप्पू वाली नावों पर रोक जारी है, इसलिए अभी सूर्योदय की सवारी का मतलब 06:00 या उसके बाद चलने वाली मोटर बोट है।"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        4,
+        5,
+        26,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "aarti-boat",
+      "heading_en": "Ganga Aarti boat ride",
+      "heading_hi": "गंगा आरती की नाव सवारी",
+      "body_en": [
+        "In the evening, boats gather in front of Dashashwamedh and Rajendra Prasad Ghats and hold position facing the aarti platforms. One 2026 guide gives the start as about 17:45 in winter and 18:45 in summer. Shared seats cost about ₹200–300 per person, a private rowboat about ₹2,500 for up to four through an agency (approximate); the official 2023 list sets ₹175 per person for two hours on a motorboat.",
+        "Board 45 to 60 minutes early for a place near the front, and confirm that the boat stays until the aarti ends. All boats must be off the river by 20:30.",
+        "Current status: the 9 October 2026 order allows motorboats only until 17:00 and keeps rowing boats suspended, so evening aarti boats are not running until a fresh order. Watch from the ghat steps, which is free."
+      ],
+      "body_hi": [
+        "शाम को नावें दशाश्वमेध और राजेंद्र प्रसाद घाट के सामने इकट्ठा होकर आरती मंच की ओर मुंह करके रुकती हैं। 2026 की एक गाइड के अनुसार आरती सर्दियों में लगभग 17:45 और गर्मियों में 18:45 बजे शुरू होती है। साझा नाव में सीट लगभग ₹200–300 प्रति व्यक्ति और एजेंसी से निजी चप्पू वाली नाव 4 लोगों तक लगभग ₹2,500 (अनुमानित) है; 2023 की सरकारी सूची में मोटर बोट पर दो घंटे का किराया ₹175 प्रति व्यक्ति है।",
+        "आगे की जगह के लिए 45 से 60 मिनट पहले बैठें, और पक्का कर लें कि नाव आरती खत्म होने तक रुकेगी। सभी नावों को 20:30 तक नदी से हट जाना होता है।",
+        "मौजूदा स्थिति: 9 अक्टूबर 2026 के आदेश में मोटर बोट केवल 17:00 तक चल सकती हैं और चप्पू वाली नावों पर रोक है, इसलिए नया आदेश आने तक शाम की आरती वाली नावें नहीं चल रहीं। घाट की सीढ़ियों से आरती निःशुल्क देखें।"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        4,
+        6,
+        1,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "route",
+      "heading_en": "Route and what you see",
+      "heading_hi": "रास्ता और रास्ते में क्या दिखता है",
+      "body_en": [
+        "Varanasi's 84 ghats line the west bank of the Ganga from Assi in the south to Adi Keshava, beyond Raj Ghat, in the north. The standard rowing-boat ride is Assi to Manikarnika and back, about 1.5 hours. Motorboats continue to Panchganga, Raj Ghat and Namo Ghat.",
+        "Going north from Assi you pass Tulsi, Chet Singh with its fort walls, Harishchandra, the southern cremation ghat, Kedar, Dashashwamedh, Rajendra Prasad, Man Mandir and Lalita Ghat, the Ganga Dwar of the Kashi Vishwanath Dham. Then come Manikarnika, Scindia with the leaning Ratneshwar Mahadev temple, and Panchganga."
+      ],
+      "body_hi": [
+        "बनारस के 84 घाट गंगा के पश्चिमी किनारे पर दक्षिण में अस्सी से उत्तर में राजघाट के आगे आदि केशव तक फैले हैं। चप्पू वाली नाव की सामान्य सवारी अस्सी से मणिकर्णिका आना-जाना है, लगभग 1.5 घंटे। मोटर बोट आगे पंचगंगा, राजघाट और नमो घाट तक जाती हैं।",
+        "अस्सी से उत्तर की ओर तुलसी घाट, किले की दीवारों वाला चेत सिंह घाट, दक्षिण का श्मशान घाट हरिश्चंद्र, केदार, दशाश्वमेध, राजेंद्र प्रसाद, मान मंदिर और श्री काशी विश्वनाथ धाम का गंगा द्वार ललिता घाट आते हैं। फिर मणिकर्णिका, झुके रत्नेश्वर महादेव मंदिर वाला सिंधिया घाट और पंचगंगा घाट आते हैं।"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        20,
+        5,
+        4,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "where-to-board",
+      "heading_en": "Where to board",
+      "heading_hi": "नाव कहां से लें",
+      "body_en": [
+        "Choose the ghat by the ride you want. Fares are similar along the river; what changes is the crowd and the direction you travel."
+      ],
+      "body_hi": [
+        "जिस तरह की सवारी चाहिए, उसके हिसाब से घाट चुनें। किराया पूरे तट पर लगभग एक जैसा है; फर्क भीड़ और यात्रा की दिशा का है।"
+      ],
+      "list_en": [
+        "Assi Ghat: southern end; the usual start for sunrise rides, calmer than the centre.",
+        "Dashashwamedh and Rajendra Prasad Ghats: the centre, a short walk from Godowlia; the main point for aarti boats, and the busiest for touts.",
+        "Namo Ghat: northern end, reached by road, with a jetty and the first floating CNG station. Aarti boats from here are listed at ₹500–5,000 by type (approximate).",
+        "Raj Ghat: beside Namo Ghat, near the Malviya bridge.",
+        "Ravidas Ghat: south of Assi near Lanka; Alaknanda cruise boarding and the second floating CNG station."
+      ],
+      "list_hi": [
+        "अस्सी घाट: दक्षिणी छोर; सूर्योदय सवारी का सामान्य शुरुआती घाट, बीच के घाटों से शांत।",
+        "दशाश्वमेध और राजेंद्र प्रसाद घाट: बीच का हिस्सा, गोदौलिया से कुछ ही दूरी पर; आरती वाली नावों का मुख्य स्थान, और दलालों की सबसे ज्यादा भीड़ यहीं।",
+        "नमो घाट: उत्तरी छोर, सड़क से पहुंचना आसान, जेटी और पहला तैरता सीएनजी स्टेशन। यहां से आरती की नाव प्रकार के अनुसार ₹500–5,000 बताई गई है (अनुमानित)।",
+        "राजघाट: नमो घाट के पास, मालवीय पुल के निकट।",
+        "रविदास घाट: अस्सी के दक्षिण में लंका के पास; अलकनंदा क्रूज की बोर्डिंग और दूसरा तैरता सीएनजी स्टेशन।"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        20,
+        4,
+        5,
+        22,
+        16,
+        17,
+        19
+      ]
+    },
+    {
+      "id": "rules",
+      "heading_en": "Rules: the 20:30 limit, monsoon suspension and life jackets",
+      "heading_hi": "नियम: रात 20:30 की सीमा, मानसून में रोक और लाइफ जैकेट",
+      "body_en": [
+        "Night limit. Since May 2024 the Varanasi Water Police, with the boatmen's agreement, have prohibited boating after 20:30. A boat found later can be seized, its licence cancelled and an FIR filed. We found no order lifting the limit.",
+        "Monsoon. From about July to September the Ganga rises over the lower steps; at the Rajghat gauge the warning level is 70.262 m and the danger level 71.262 m. In 2026 all boats were stopped on 30 July for high wind, restarted on 14 August and halted again on 16 and 22 August; on 3 September the river was above the warning level. On 9 October the ACP Dashashwamedh allowed large motorboats from 06:00 to 17:00 at half capacity, with two trained swimmers aboard. Rowing boats stay suspended until a further order.",
+        "Life jackets. Every passenger must wear one, and a boat may carry only as many people as its licensed capacity and life jackets allow. In May 2026 police said more than 60 boats had been seized for safety violations; in June the administration began issuing jackets to registered boats by approved capacity, and boats now need a ready-to-move fitness certificate."
+      ],
+      "body_hi": [
+        "रात की सीमा। मई 2024 से वाराणसी जल पुलिस ने नाविकों की सहमति से रात 20:30 के बाद नाव चलाने पर रोक लगाई है। इसके बाद मिली नाव जब्त हो सकती है, लाइसेंस रद्द हो सकता है और एफआईआर दर्ज हो सकती है। इस सीमा को हटाने का कोई आदेश हमें नहीं मिला।",
+        "मानसून। लगभग जुलाई से सितंबर तक गंगा निचली सीढ़ियों के ऊपर चढ़ आती है; राजघाट गेज पर चेतावनी स्तर 70.262 मीटर और खतरे का स्तर 71.262 मीटर है। 2026 में 30 जुलाई को तेज हवा के कारण सभी नावें रोकी गईं, 14 अगस्त को फिर चलीं और 16 व 22 अगस्त को दोबारा रोक दी गईं; 3 सितंबर को नदी चेतावनी स्तर से ऊपर थी। 9 अक्टूबर को एसीपी दशाश्वमेध ने बड़ी मोटर बोट को 06:00 से 17:00 तक, आधी क्षमता और दो प्रशिक्षित तैराकों के साथ चलाने की अनुमति दी। चप्पू वाली नावों पर अगले आदेश तक रोक है।",
+        "लाइफ जैकेट। हर यात्री के लिए लाइफ जैकेट अनिवार्य है, और नाव में उतने ही लोग बैठ सकते हैं जितनी उसकी लाइसेंसी क्षमता और लाइफ जैकेट हों। मई 2026 में पुलिस ने बताया कि सुरक्षा नियम तोड़ने पर 60 से अधिक नावें जब्त हुईं; जून में प्रशासन ने पंजीकृत नावों को स्वीकृत क्षमता के अनुसार जैकेट देना शुरू किया, और अब नावों को रेडी टू मूव प्रमाणपत्र भी चाहिए।"
+      ],
+      "list_en": [
+        "No boating after 20:30 (Water Police, May 2024)",
+        "From 9 October 2026: motorboats only, 06:00–17:00, half capacity",
+        "Life jacket on before the boat leaves; no overloaded boats",
+        "Emergency 112; helpline 1533"
+      ],
+      "list_hi": [
+        "रात 20:30 के बाद नाव नहीं (जल पुलिस, मई 2024)",
+        "9 अक्टूबर 2026 से: केवल मोटर बोट, 06:00–17:00, आधी क्षमता",
+        "नाव चलने से पहले लाइफ जैकेट पहनें; ज्यादा भरी नाव में न बैठें",
+        "आपातकाल 112; हेल्पलाइन 1533"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        7,
+        13,
+        15,
+        24,
+        25,
+        14,
+        8,
+        9,
+        10,
+        11,
+        12,
+        23,
+        2
+      ]
+    },
+    {
+      "id": "dev-deepawali-cruises",
+      "heading_en": "Dev Deepawali boats and Ganga cruises",
+      "heading_hi": "देव दीपावली की नावें और गंगा क्रूज",
+      "body_en": [
+        "Dev Deepawali falls on 24 November 2026. On 10 October Amar Ujala reported the large cruises already sold out for the night: the 60-seat Alaknanda went to a foreign group for ₹5 lakh, and the 100-seat Sam Manekshaw at ₹15,000 per passenger. Bajras, the large traditional boats, were quoted at ₹15,000 to ₹2 lakh, shared boat tours at ₹5,000 per person and whole boats up to ₹1 lakh. There is no official fare for the night.",
+        "Book weeks ahead through your hotel or a registered boatman, and get the boat type, boarding ghat, times and route in writing. The reported cruise slot that night is 17:30 to 21:30, past the usual 20:30 limit, so ask what is permitted.",
+        "On ordinary days the Alaknanda, run by Nordic Cruise Line, is listed with 09:00 and 17:30 sailings of about 1.5 hours from Ravidas Ghat, from ₹1,000 per person. This is from a February 2025 listing and not confirmed for this season; check with the operator."
+      ],
+      "body_hi": [
+        "2026 में देव दीपावली 24 नवंबर को है। अमर उजाला ने 10 अक्टूबर को बताया कि उस रात के बड़े क्रूज पहले ही बिक चुके थे: 60 सीटों वाला अलकनंदा एक विदेशी समूह ने ₹5 लाख में लिया, और 100 सीटों वाले सैम मानेकशॉ की सीटें ₹15,000 प्रति यात्री बिकीं। बड़ी पारंपरिक नाव बजड़ा का भाव ₹15,000 से ₹2 लाख, साझा नाव टूर ₹5,000 प्रति व्यक्ति और पूरी नाव ₹1 लाख तक बताया गया। इस रात के लिए कोई सरकारी किराया नहीं है।",
+        "होटल या पंजीकृत नाविक के जरिए हफ्तों पहले बुक करें, और नाव का प्रकार, बोर्डिंग घाट, समय और रास्ता लिखित में लें। उस रात क्रूज का बताया गया समय 17:30 से 21:30 है, जो सामान्य 20:30 की सीमा से आगे है, इसलिए पूछ लें कि क्या अनुमति है।",
+        "सामान्य दिनों में नॉर्डिक क्रूज लाइन का अलकनंदा रविदास घाट से 09:00 और 17:30 बजे लगभग 1.5 घंटे की सैर के लिए ₹1,000 प्रति व्यक्ति से सूचीबद्ध है। यह फरवरी 2025 की सूची से है और इस मौसम के लिए पुष्ट नहीं; संचालक से पुष्टि कर लें।"
+      ],
+      "unconfirmed": true,
+      "sources": [
+        18,
+        19,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "etiquette-touts",
+      "heading_en": "Cremation ghats, etiquette and touts",
+      "heading_hi": "श्मशान घाट, शिष्टाचार और दलाल",
+      "body_en": [
+        "Manikarnika and Harishchandra are cremation ghats, where cremations continue day and night. From a boat you see them at a respectful distance. Do not photograph or film the pyres or mourners; it hurts families and leads to confrontation. Keep your voice low and do not eat or smoke as you pass. Requests for a donation for wood come from self-appointed guides and are optional.",
+        "Touts work Dashashwamedh and the lanes to it. Speak to a boatman at the water's edge and agree the price, per person or for the whole boat, the duration, the route and, in the evening, whether the boat stays through the aarti. Check the life jackets, pay at the end, and call 1533 if you are overcharged."
+      ],
+      "body_hi": [
+        "मणिकर्णिका और हरिश्चंद्र श्मशान घाट हैं, जहां दिन-रात दाह संस्कार होते हैं। नाव से इन्हें सम्मानजनक दूरी से देखा जाता है। चिताओं या शोक मना रहे लोगों की फोटो या वीडियो न लें; इससे परिवारों को ठेस पहुंचती है और विवाद होता है। आवाज धीमी रखें और गुजरते समय कुछ खाएं या धूम्रपान न करें। लकड़ी के लिए दान मांगने वाले स्वयंभू गाइड होते हैं; दान अनिवार्य नहीं है।",
+        "दशाश्वमेध और उसकी गलियों में दलाल सक्रिय रहते हैं। पानी के किनारे नाविक से सीधे बात करें और किराया, प्रति व्यक्ति या पूरी नाव, समय, रास्ता और शाम को नाव आरती तक रुकेगी या नहीं, पहले तय करें। लाइफ जैकेट देख लें, भुगतान अंत में करें, और ज्यादा वसूली हो तो 1533 पर फोन करें।"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        21,
+        3,
+        2
+      ]
+    }
   ],
-  "itineraries": [
-   "2-day"
-  ]
- },
- "notes": "Official fare list dates from June 2023; only the ₹345 Assi–Namo figure was repeated in Jan 2025, and ETV Bharat and Amar Ujala differ on the ₹175 route (Dashashwamedh–Assi vs Ganga Dwar/Lalita Ghat–Assi/Namo; Amar Ujala used). Market prices (GoWithGuide, KashiTaxi) and Namo jetty fares (Casual Walker) are single-site, marked approximate. Current status rests on the 9 Oct 2026 ACP order (motorboats 06:00–17:00, half capacity, rowing boats suspended): recheck before publishing, as rowing and evening aarti boats may have resumed. No order found lifting the May 2024 20:30 limit. Alaknanda boarding (Ravidas Ghat), timings and ₹1,000 fare are from a Feb 2025 listing, so that section is unconfirmed; Dev Deepawali prices are from Amar Ujala, 10 Oct 2026."
+  "faq": [
+    {
+      "q_en": "How much is a boat ride in Varanasi per person?",
+      "a_en": "The municipal fare for a round trip between Assi and Namo Ghat is ₹345 per person. On the ghats, a shared seat costs about ₹80–150 at sunrise and ₹200–300 at the evening aarti, and a private rowboat about ₹400 an hour (approximate). Agree the price before you board.",
+      "q_hi": "वाराणसी में नाव की सवारी का किराया प्रति व्यक्ति कितना है?",
+      "a_hi": "नगर निगम का तय किराया अस्सी से नमो घाट तक आने-जाने का ₹345 प्रति व्यक्ति है। घाट पर साझा नाव की सीट सुबह लगभग ₹80–150 और शाम की आरती के समय ₹200–300, और निजी चप्पू वाली नाव लगभग ₹400 प्रति घंटा (अनुमानित) है। बैठने से पहले किराया तय कर लें।"
+    },
+    {
+      "q_en": "What is the best time for a boat ride in Varanasi?",
+      "a_en": "Sunrise, from October to March. The river is calm, the ghats are busy with morning rituals, and fares are lower than in the evening. From July to September boats are often suspended for high water.",
+      "q_hi": "बनारस में नाव की सवारी का सबसे अच्छा समय कौन सा है?",
+      "a_hi": "अक्टूबर से मार्च के बीच सूर्योदय का समय। नदी शांत रहती है, घाटों पर सुबह की पूजा चलती है, और किराया शाम से कम होता है। जुलाई से सितंबर में ऊंचे जलस्तर के कारण नावें अक्सर बंद रहती हैं।"
+    },
+    {
+      "q_en": "Can I watch the Ganga Aarti from a boat?",
+      "a_en": "Usually yes: boats moor in front of Dashashwamedh before the aarti. As of 12 October 2026, motorboats may run only until 17:00 and rowing boats are suspended, so evening aarti boats are not running until a new order is issued.",
+      "q_hi": "क्या गंगा आरती नाव से देखी जा सकती है?",
+      "a_hi": "आम तौर पर हां: आरती से पहले नावें दशाश्वमेध के सामने रुकती हैं। 12 अक्टूबर 2026 की स्थिति में मोटर बोट केवल 17:00 तक चल सकती हैं और चप्पू वाली नावों पर रोक है, इसलिए नया आदेश आने तक शाम की आरती वाली नावें नहीं चल रहीं।"
+    },
+    {
+      "q_en": "Motor boat or rowing boat: which should I take?",
+      "a_en": "A rowing boat is quieter and slower, and covers Assi to Manikarnika and back in about 1.5 hours. A motorboat covers the full Assi–Namo crescent and suits groups of up to about 10. Most motorboats in Varanasi now run on CNG.",
+      "q_hi": "मोटर बोट लें या चप्पू वाली नाव?",
+      "a_hi": "चप्पू वाली नाव शांत और धीमी है, और अस्सी से मणिकर्णिका आने-जाने में लगभग 1.5 घंटे लेती है। मोटर बोट पूरे अस्सी–नमो तट को कवर करती है और लगभग 10 लोगों तक के समूह के लिए ठीक है। वाराणसी की ज्यादातर मोटर बोट अब सीएनजी से चलती हैं।"
+    },
+    {
+      "q_en": "Can boats go out after dark?",
+      "a_en": "Only until 20:30. Since May 2024 the Water Police have prohibited boating after 20:30; a boat found on the river later can be seized and its licence cancelled.",
+      "q_hi": "क्या अंधेरा होने के बाद नाव चलती है?",
+      "a_hi": "केवल 20:30 तक। मई 2024 से जल पुलिस ने 20:30 के बाद नाव चलाने पर रोक लगाई है; इसके बाद नदी में मिली नाव जब्त हो सकती है और उसका लाइसेंस रद्द हो सकता है।"
+    },
+    {
+      "q_en": "Do boats run in the monsoon?",
+      "a_en": "Often not. The administration suspends all boats when the Ganga rises or winds are high, as it did several times between late July and September 2026. Rides restart in stages after a fresh order.",
+      "q_hi": "क्या मानसून में नावें चलती हैं?",
+      "a_hi": "अक्सर नहीं। गंगा का जलस्तर बढ़ने या तेज हवा चलने पर प्रशासन सभी नावें बंद कर देता है, जैसा 2026 में जुलाई के अंत से सितंबर के बीच कई बार हुआ। नए आदेश के बाद सवारी चरणों में फिर शुरू होती है।"
+    },
+    {
+      "q_en": "How do I book a boat for Dev Deepawali?",
+      "a_en": "Book weeks ahead through your hotel or a registered boatman. For 24 November 2026, the large cruises were sold out by 10 October, bajras were quoted at ₹15,000 to ₹2 lakh and shared boat tours at about ₹5,000 per person.",
+      "q_hi": "देव दीपावली के लिए नाव कैसे बुक करें?",
+      "a_hi": "होटल या पंजीकृत नाविक के जरिए हफ्तों पहले बुक करें। 24 नवंबर 2026 के लिए बड़े क्रूज 10 अक्टूबर तक बिक चुके थे, बजड़े का भाव ₹15,000 से ₹2 लाख और साझा नाव टूर लगभग ₹5,000 प्रति व्यक्ति बताया गया।"
+    }
+  ],
+  "sources": [
+    {
+      "title": "ETV Bharat: Varanasi Municipal Corporation issues rate list for boating on the Ganga (3 Jun 2023)",
+      "url": "https://www.etvbharat.com/hindi/uttar-pradesh/state/varanasi/varanasi-municipal-corporation-issued-rate-list-for-boating-in-ganga-of-banaras/up20230603160817145145334",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Amar Ujala: Fare of boats on the Ganga fixed, Assi to Namo Ghat rate list (3 Jun 2023)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/varanasi-the-fare-of-the-boats-plying-in-the-ganga-is-fixed-from-assi-ghat-to-namo-ghat-this-much-money-wil-2023-06-03",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Amar Ujala: Boat fare fixed on the Ganga, ₹345 Assi to Namo Ghat round trip (14 Jan 2025)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/boat-fare-fixed-in-ganga-at-varanasi-know-fare-list-2025-01-14",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Amar Ujala: New Year, boat and e-rickshaw operators overcharge visitors in Kashi (1 Jan 2025)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/new-year-2025-boat-e-rickshaw-and-handcart-owners-cheated-tourists-in-kashi-2025-01-01",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "GoWithGuide: Varanasi ghat tour guide, sunrise boat, river walk and aarti costs (Aug 2026)",
+      "url": "https://gowithguide.com/blog/varanasi-ghat-tour-guide-sunrise-boat-river-walk-aarti-costs-itinerary-6238",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "KashiTaxi: Morning boat ride Varanasi price (2026)",
+      "url": "https://www.kashitaxi.in/en/morning-boat-ride-varanasi-price",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "KashiTaxi: Evening boat ride Varanasi, Ganga Aarti prices (2026)",
+      "url": "https://www.kashitaxi.in/en/evening-boat-ride-varanasi-ganga-aarti",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "DT Next (IANS): Boating on Ganga river in Varanasi prohibited after 8.30 pm (2 May 2024)",
+      "url": "https://www.dtnext.in/news/national/boating-on-ganga-river-in-varanasi-prohibited-after-830-pm-782598",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "KTV Varanasi: Ganga recedes, motorboat operations approved in Varanasi (9 Oct 2026)",
+      "url": "https://www.ktvvaranasi.com/2026/10/Ganga%20water%20level%20recedes%20approval%20granted%20for%20motorboat%20operations%20in%20Varanasi..html",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Loktej: Big motorboats allowed on the Ganga, ban on rowing boats continues, guidelines (9 Oct 2026)",
+      "url": "https://www.loktej.com/article/152913/permission-to-operate-big-motor-boats-in-ganga-ban-on",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "ETV Bharat: Despite preventive measures, drownings continue at ghats of Varanasi (31 May 2026)",
+      "url": "https://www.etvbharat.com/en/state/despite-preventive-measures-drownings-continue-at-ghats-of-varanasi-enn26053102522",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Amar Ujala: 974 life jackets given to 119 boatmen (1 Jun 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/974-life-jackets-given-to-119-sailors-varanasi-news-c-20-vns1021-1412734-2026-06-01",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Amar Ujala: Only boats with a ready-to-move certificate will ply on the Ganga (2 Jun 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/only-boats-with-a-ready-to-move-certificate-will-be-allowed-to-ply-on-the-ganga-non-standard-boats-will-be-excluded-varanasi-news-c-20-vns1056-1414535-2026-06-02",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Deccan Chronicle (PTI): Ganga water level crosses warning mark in Varanasi (3 Sep 2026)",
+      "url": "https://www.deccanchronicle.com/nation/current-affairs/up-ganga-water-level-crosses-warning-mark-in-varanasi-1984462",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "NewKerala (IANS): Boat services halted across Varanasi as Ganga swells (22 Aug 2026)",
+      "url": "https://www.newkerala.com/news/a/boat-services-halted-across-varanasi-as-ganga-swells-461.htm",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Patrika: Ganga level rises, boat services stopped in Varanasi (30 Jul 2026)",
+      "url": "https://www.patrika.com/varanasi-news/ganga-water-level-flood-alert-boat-services-stopped-20790932",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "PSU Watch: PM dedicates 500 CNG-run boats in Varanasi, floating CNG station at Namo Ghat (7 Jul 2022)",
+      "url": "https://psuwatch.com/latestnews/varanasi-pm-dedicates-500-cng-run-boats-to-the-nation",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Energetica India: Varanasi's second floating CNG station inaugurated at Ravidas Ghat (27 Nov 2023)",
+      "url": "https://www.energetica-india.net/news/union-minister-puri-inaugurates-varanasis-second-floating-cng-station",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Amar Ujala: Dev Deepawali, foreign group books Alaknanda cruise for ₹5 lakh, Sam Manekshaw ₹15 lakh (10 Oct 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/dev-deepawali-foreign-group-books-alaknanda-cruise-5-lakh-and-sam-manekshaw-15-lakh-relying-on-boats-2026-10-10",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Yatradham: Alaknanda cruise Varanasi, timings and fares (Feb 2025)",
+      "url": "https://blog.yatradham.org/alaknanda-cruise-varanasi/",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Wikipedia: Ghats in Varanasi",
+      "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "EaseIndiaTrip: How to witness a cremation at Manikarnika Ghat, a respectful guide (Apr 2025)",
+      "url": "https://www.easeindiatrip.com/blog/?p=8868",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Casual Walker: Namo Ghat Varanasi complete travel guide",
+      "url": "https://casualwalker.com/namo-ghat-varanasi-complete-travel-guide-namaste-sculptures-architecture-the-86th-ghat-in-the-holy-city-of-varanasi-namo-ghat-timings-boat-tours-contact-information-history-architecture-a/",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Hindustan Times (East UP): Kashi boatmen can't carry passengers beyond capacity, says DM (12 Dec 2020)",
+      "url": "https://www.pressreader.com/india/hindustan-times-east-up/20201212/281590948150816",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Live Bharat News: Ganga recedes in Kashi, boat operations resume (14 Aug 2026)",
+      "url": "https://livebharatnews.in/uttar-pradesh/varanasi/ganga-water-level-recedes-in-kashi-boat-operations-resume/cid19125940.htm",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "NewKerala (IANS): Ganga water level rises, Varanasi boat operations suspended (16 Aug 2026)",
+      "url": "https://www.newkerala.com/news/a/ganga-water-level-rises-varanasi-boat-operations-suspended-244.htm",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Subah-e-Banaras, Assi Ghat",
+      "url": "https://subahebanaras.in/",
+      "accessed": "2026-10-12"
+    }
+  ],
+  "related": {
+    "places": [
+      "dashashwamedh-ghat",
+      "assi-ghat",
+      "manikarnika-ghat",
+      "panchganga-ghat",
+      "namo-ghat"
+    ],
+    "festivals": [
+      "dev-deepawali"
+    ],
+    "itineraries": [
+      "2-day"
+    ]
+  },
+  "notes": "Official fare list dates from June 2023; only the ₹345 Assi–Namo figure was repeated in Jan 2025, and ETV Bharat and Amar Ujala differ on the ₹175 route (Dashashwamedh–Assi vs Ganga Dwar/Lalita Ghat–Assi/Namo; Amar Ujala used). Market prices (GoWithGuide, KashiTaxi) and Namo jetty fares (Casual Walker) are single-site, marked approximate. Current status rests on the 9 Oct 2026 ACP order (motorboats 06:00–17:00, half capacity, rowing boats suspended): recheck before publishing, as rowing and evening aarti boats may have resumed. No order found lifting the May 2024 20:30 limit. Alaknanda boarding (Ravidas Ghat), timings and ₹1,000 fare are from a Feb 2025 listing, so that section is unconfirmed; Dev Deepawali prices are from Amar Ujala, 10 Oct 2026."
 }

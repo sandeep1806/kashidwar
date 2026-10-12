@@ -8,6 +8,50 @@
   "description_hi": "वाराणसी से सारनाथ की दूरी, ऑटो, कैब, बस और ट्रेन के विकल्प, एएसआई टिकट, संग्रहालय का समय और बंदी का दिन, और आधे दिन में स्थल घूमने का रास्ता।",
   "lead_en": "Sarnath, where the Buddha gave his first teaching, lies on the north-eastern edge of Varanasi, close enough for a morning trip. Since 25 July 2026 the Ancient Buddhist Site, Sarnath is on the UNESCO World Heritage List. This guide covers how to get there, what the tickets cost, when the sites open, and how to visit with care.",
   "lead_hi": "सारनाथ, जहाँ बुद्ध ने अपना पहला उपदेश दिया, वाराणसी के उत्तर-पूर्वी छोर पर है, इतना पास कि सुबह निकलकर दोपहर तक लौटा जा सके। 25 जुलाई 2026 से 'प्राचीन बौद्ध स्थल, सारनाथ' यूनेस्को विश्व धरोहर सूची में है। इस गाइड में है कि वहाँ कैसे पहुँचें, टिकट कितने का है, स्थल कब खुलते हैं, और दर्शन के समय किन बातों का ध्यान रखें।",
+  "facts": [
+    {
+      "icon": "pin",
+      "label_en": "Distance",
+      "label_hi": "दूरी",
+      "value_en": "11–13 km from the ghats · 35–60 min",
+      "value_hi": "घाटों से 11–13 किमी · 35–60 मिनट"
+    },
+    {
+      "icon": "car",
+      "label_en": "Getting there",
+      "label_hi": "कैसे जाएँ",
+      "value_en": "Auto, e-rickshaw, app cab, bus or train",
+      "value_hi": "ऑटो, ई-रिक्शा, ऐप कैब, बस या ट्रेन"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Site ticket (ASI)",
+      "label_hi": "स्थल टिकट (एएसआई)",
+      "value_en": "₹25 Indian · ₹300 foreign",
+      "value_hi": "₹25 भारतीय · ₹300 विदेशी"
+    },
+    {
+      "icon": "info",
+      "label_en": "Museum",
+      "label_hi": "संग्रहालय",
+      "value_en": "₹5 · closed Fridays",
+      "value_hi": "₹5 · शुक्रवार बंद"
+    },
+    {
+      "icon": "hourglass",
+      "label_en": "Time needed",
+      "label_hi": "कितना समय",
+      "value_en": "3–4 hours for the core sites",
+      "value_hi": "मुख्य स्थलों के लिए 3–4 घंटे"
+    },
+    {
+      "icon": "shield",
+      "label_en": "Status",
+      "label_hi": "दर्जा",
+      "value_en": "UNESCO World Heritage since 25 July 2026",
+      "value_hi": "25 जुलाई 2026 से यूनेस्को विश्व धरोहर"
+    }
+  ],
   "sections": [
     {
       "id": "distances",

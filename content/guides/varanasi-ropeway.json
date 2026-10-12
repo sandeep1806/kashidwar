@@ -8,6 +8,50 @@
   "description_hi": "कैंट से गोदौलिया रोपवे: 3.75 किमी, पाँच स्टेशन, लगभग 16 मिनट। कौन बना रहा है, सितंबर 2026 में ट्रायल कहाँ तक पहुँचे, और किराया कितना रहने की उम्मीद है।",
   "lead_en": "Varanasi is building India's first ropeway meant for everyday public transport, not sightseeing: gondolas running above the city's most crowded road, from Cantt railway station to Godowlia near the ghats. As of 27 September 2026 it is in its final trials and has not opened to passengers. This guide sets out what is confirmed, what is only reported, and how it will fit into a visit.",
   "lead_hi": "वाराणसी में देश का पहला ऐसा रोपवे बन रहा है जो सैर-सपाटे के लिए नहीं, रोज़मर्रा के सार्वजनिक परिवहन के लिए है: शहर की सबसे भीड़ भरी सड़क के ऊपर कैंट रेलवे स्टेशन से घाटों के पास गोदौलिया तक चलते गंडोला। 27 सितंबर 2026 तक यह अंतिम ट्रायल के दौर में है और यात्रियों के लिए शुरू नहीं हुआ है। इस गाइड में बताया गया है कि क्या पक्का है, क्या अभी सिर्फ़ ख़बरों में है, और यात्रा में यह कैसे काम आएगा।",
+  "facts": [
+    {
+      "icon": "info",
+      "label_en": "Status",
+      "label_hi": "स्थिति",
+      "value_en": "Final trials; not yet open to passengers",
+      "value_hi": "अंतिम ट्रायल; यात्रियों के लिए अभी नहीं खुला"
+    },
+    {
+      "icon": "pin",
+      "label_en": "Route",
+      "label_hi": "रास्ता",
+      "value_en": "Cantt station → Godowlia, 3.75 km, 5 stations",
+      "value_hi": "कैंट स्टेशन → गोदौलिया, 3.75 किमी, 5 स्टेशन"
+    },
+    {
+      "icon": "hourglass",
+      "label_en": "Journey",
+      "label_hi": "यात्रा",
+      "value_en": "About 16 minutes end to end",
+      "value_hi": "पूरी यात्रा लगभग 16 मिनट"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Fare (expected)",
+      "label_hi": "किराया (अनुमानित)",
+      "value_en": "About ₹50 Cantt–Godowlia; not notified",
+      "value_hi": "कैंट–गोदौलिया लगभग ₹50; अधिसूचित नहीं"
+    },
+    {
+      "icon": "people",
+      "label_en": "Capacity",
+      "label_hi": "क्षमता",
+      "value_en": "148 gondolas × 10 · ~3,000 per hour each way",
+      "value_hi": "148 गोंडोला × 10 · हर दिशा ~3,000 प्रति घंटा"
+    },
+    {
+      "icon": "clock",
+      "label_en": "Hours",
+      "label_hi": "समय",
+      "value_en": "About 16 hours a day (planned)",
+      "value_hi": "दिन में लगभग 16 घंटे (प्रस्तावित)"
+    }
+  ],
   "sections": [
     {
       "id": "at-a-glance",

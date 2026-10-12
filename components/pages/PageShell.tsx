@@ -33,6 +33,7 @@ export default function PageShell({
   island,
   after,
   variant = "default",
+  longTitle = false,
   strip,
   gallery,
 }: {
@@ -60,6 +61,8 @@ export default function PageShell({
    * and a short lead; `gallery` (an island) sits between the hero and the body.
    */
   variant?: "default" | "visual";
+  /** Long titles (guides): a smaller H1 over the photo */
+  longTitle?: boolean;
   strip?: ReactNode;
   gallery?: ReactNode;
 }) {
@@ -79,7 +82,7 @@ export default function PageShell({
                   <ArtFallback faith={faith} type={placeType} />
                 )}
                 <div className="visual-hero-shade" />
-                <header className="visual-hero-text">
+                <header className={`visual-hero-text ${longTitle ? "is-long" : ""}`}>
                   {chips && <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">{chips}</div>}
                   <SectionHeading as="h1" id="page-title" locale={locale} title={title} secondary={secondary} align="left" />
                   {subtitle && <div className="mt-4">{subtitle}</div>}

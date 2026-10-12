@@ -8,6 +8,50 @@
   "description_hi": "2026 में 2 दिन की बनारस यात्रा का खर्च: नाव, ऑटो, सारनाथ और रामनगर टिकट, सुगम दर्शन, स्ट्रीट फूड, होटल और तीन नमूना बजट, प्रति व्यक्ति, स्रोतों के साथ।",
   "lead_en": "A two-day Varanasi trip runs from about ₹1,800 per person on a dorm bed and street food to about ₹12,000 in a ghat-view heritage room with private boats, before the cost of reaching the city. This guide lists each price with its source and date, then adds them up three ways.",
   "lead_hi": "दो दिन की बनारस यात्रा का खर्च डॉर्म बेड और स्ट्रीट फूड पर लगभग ₹1,800 प्रति व्यक्ति से शुरू होकर घाट-व्यू हेरिटेज कमरे और निजी नाव के साथ लगभग ₹12,000 तक जाता है; शहर तक पहुंचने का किराया अलग है। यह गाइड हर कीमत उसके स्रोत और तारीख के साथ देती है, फिर तीन तरह से जोड़ती है।",
+  "facts": [
+    {
+      "icon": "walk",
+      "label_en": "Backpacker",
+      "label_hi": "बैकपैकर",
+      "value_en": "About ₹1,800 per person, 2 days",
+      "value_hi": "लगभग ₹1,800 प्रति व्यक्ति, 2 दिन"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Mid-range",
+      "label_hi": "मध्यम",
+      "value_en": "About ₹4,500 per person, 2 days",
+      "value_hi": "लगभग ₹4,500 प्रति व्यक्ति, 2 दिन"
+    },
+    {
+      "icon": "shield",
+      "label_en": "Comfortable",
+      "label_hi": "आरामदायक",
+      "value_en": "About ₹12,000 per person, 2 days",
+      "value_hi": "लगभग ₹12,000 प्रति व्यक्ति, 2 दिन"
+    },
+    {
+      "icon": "train",
+      "label_en": "Getting there",
+      "label_hi": "पहुँचना",
+      "value_en": "Return ₹770 (sleeper) to ₹13,000 (flight)",
+      "value_hi": "आना-जाना ₹770 (स्लीपर) से ₹13,000 (उड़ान)"
+    },
+    {
+      "icon": "boat",
+      "label_en": "Boat",
+      "label_hi": "नाव",
+      "value_en": "₹345 official round trip; shared seat from ~₹80",
+      "value_hi": "सरकारी ₹345 आना-जाना; साझा सीट ~₹80 से"
+    },
+    {
+      "icon": "leaf",
+      "label_en": "Street food",
+      "label_hi": "स्ट्रीट फ़ूड",
+      "value_en": "Kachori-sabzi ₹40–60 · lassi from ₹30",
+      "value_hi": "कचौड़ी-सब्ज़ी ₹40–60 · लस्सी ₹30 से"
+    }
+  ],
   "sections": [
     {
       "id": "getting-there",

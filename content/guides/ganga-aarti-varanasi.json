@@ -8,6 +8,50 @@
   "description_hi": "वाराणसी की गंगा आरती: दशाश्वमेध की संध्या आरती का मौसम के अनुसार समय, अस्सी पर सुबह-ए-बनारस, कहाँ बैठें, नाव से दर्शन, बाढ़ में बदलाव और शिष्टाचार।",
   "lead_en": "Two ceremonies frame the day on Varanasi's riverfront: the evening Ganga Aarti at Dashashwamedh Ghat and the dawn Subah-e-Banaras at Assi Ghat. This guide covers when each happens, where to watch from, what changes in the flood season, and how to be a considerate visitor. Timings are as of September 2026 and move with sunset, so check locally.",
   "lead_hi": "वाराणसी के घाटों पर दिन की शुरुआत और अंत दो अनुष्ठानों से होते हैं: शाम को दशाश्वमेध घाट की गंगा आरती और भोर में अस्सी घाट का सुबह-ए-बनारस। इस गाइड में दोनों का समय, कहाँ से देखें, बाढ़ के दिनों में क्या बदलता है और एक संवेदनशील दर्शक कैसे बनें, सब दिया गया है। समय सितंबर 2026 के अनुसार है और सूर्यास्त के साथ बदलता है, इसलिए स्थानीय स्तर पर जाँच लें।",
+  "facts": [
+    {
+      "icon": "sunrise",
+      "label_en": "Evening aarti",
+      "label_hi": "शाम की आरती",
+      "value_en": "Dashashwamedh at dusk: ~6 pm Nov–Feb · ~7 pm summer",
+      "value_hi": "दशाश्वमेध, सूर्यास्त पर: नवंबर–फ़रवरी ~6 · गर्मी ~7 बजे"
+    },
+    {
+      "icon": "hourglass",
+      "label_en": "Duration",
+      "label_hi": "अवधि",
+      "value_en": "About 45 minutes",
+      "value_hi": "लगभग 45 मिनट"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Entry",
+      "label_hi": "प्रवेश",
+      "value_en": "Free",
+      "value_hi": "निःशुल्क"
+    },
+    {
+      "icon": "clock",
+      "label_en": "Morning aarti",
+      "label_hi": "सुबह की आरती",
+      "value_en": "Subah-e-Banaras at Assi, before dawn, ~2 h",
+      "value_hi": "अस्सी पर सुबह-ए-बनारस, भोर से पहले, ~2 घंटे"
+    },
+    {
+      "icon": "people",
+      "label_en": "Arrive",
+      "label_hi": "कब पहुँचें",
+      "value_en": "45–60 min early for a seat on the steps",
+      "value_hi": "सीढ़ियों पर जगह के लिए 45–60 मिनट पहले"
+    },
+    {
+      "icon": "boat",
+      "label_en": "From a boat",
+      "label_hi": "नाव से",
+      "value_en": "Boats hold in front of the ghat; none after 20:30",
+      "value_hi": "नावें घाट के सामने रुकती हैं; रात 8:30 के बाद नहीं"
+    }
+  ],
   "sections": [
     {
       "id": "dashashwamedh-evening-aarti",
