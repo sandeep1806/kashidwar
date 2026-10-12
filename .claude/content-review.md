@@ -31,7 +31,7 @@ guide sections); nothing voyeuristic about cremation grounds.
    A change needs at least one such source. Blogs and travel agencies never count on their own.
 4. **Hindi and English together:** whenever you change English text, change the matching Hindi
    text in the same edit (`name_hi`, `*_hi`, `i18n.hi`), in natural Hindi. Other locales
-   (`content/i18n/*.json` and each entry's `i18n.<locale>` other than `hi`) are NOT edited —
+   (`content/i18n/*.json`, including `content/i18n/entries/`) are NOT edited —
    list every affected entry under a new dated heading in `TRANSLATION_REVIEW.md` so a
    translator can update them.
 5. **Dates:** today's date is given in the prompt. Keep ISO dates (`YYYY-MM-DD`). Never move a

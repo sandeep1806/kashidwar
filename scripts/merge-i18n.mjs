@@ -1,15 +1,17 @@
-// Folds content/i18n/<locale>.json (translated summaries) into the
-// i18n.<locale> blocks of content/places.json and content/festivals.json.
+// Folds content/i18n/<locale>.json (translated summaries) into the place and festival
+// translations in content/i18n/entries/<locale>.json (see scripts/lib/entry-i18n.mjs).
 // Re-runnable: existing keys for that locale are overwritten by the file.
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
+import { inflate, deflate } from "./lib/entry-i18n.mjs";
 
 const root = join(import.meta.dirname, "..");
 const dir = join(root, "content/i18n");
-const targets = { places: "content/places.json", festivals: "content/festivals.json" };
-const data = Object.fromEntries(
-  Object.entries(targets).map(([k, f]) => [k, JSON.parse(readFileSync(join(root, f), "utf8"))]),
-);
+const all = { places: "content/places.json", festivals: "content/festivals.json", projects: "content/projects.json", food: "content/food.json", itineraries: "content/itineraries.json" };
+const content = inflate(root, Object.fromEntries(
+  Object.entries(all).map(([k, f]) => [k, JSON.parse(readFileSync(join(root, f), "utf8"))]),
+));
+const data = { places: content.places, festivals: content.festivals };
 
 for (const file of readdirSync(dir).filter((f) => /^[a-z]{2}\.json$/.test(f))) {
   const locale = file.slice(0, 2);
@@ -27,4 +29,5 @@ for (const file of readdirSync(dir).filter((f) => /^[a-z]{2}\.json$/.test(f))) {
   }
   console.log(`merged ${locale}`);
 }
-for (const [k, f] of Object.entries(targets)) writeFileSync(join(root, f), JSON.stringify(data[k], null, 2) + "\n");
+deflate(root, content);
+for (const [k, f] of Object.entries(all)) writeFileSync(join(root, f), JSON.stringify(content[k], null, 2) + "\n");

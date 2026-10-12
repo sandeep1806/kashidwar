@@ -43,7 +43,7 @@ public/media/        art/ (fallback scene SVGs), og/ (OpenGraph images), photos/
 
 Copy never lives in JSX. UI strings are in `messages/<locale>.json`; descriptive content is in `content/*.json` and is typed in `lib/content.ts`.
 
-Every entry has English prose plus an optional `i18n` block for per-locale overrides:
+Every entry has English prose plus an optional `i18n.hi` block for Hindi overrides. The 11 regional locales keep the same override shape in `content/i18n/entries/<locale>.json` (keyed by kind and id), loaded per locale so the shared files stay small in the Worker bundle; call `await loadEntryTranslations(locale)` before `localize` in new server code:
 
 ```json
 {
@@ -128,7 +128,7 @@ To index a regional locale after a native speaker has reviewed it:
 1. Add the code to `locales` and its metadata (`nativeName`, `sample`, `script`, `bcp47`) to `LOCALES` in `lib/i18n/locales.ts`.
 2. If it is a new script, add its Noto face in `lib/fonts.ts` (`preload: false`) and map it in `regionalByScript`.
 3. Create `messages/<code>.json` by copying `messages/en.json` and translating every value (keep keys). Missing keys fall back to English at runtime, but the parity check in this repo's history (`node -e` snippet in PROGRESS.md Phase 7) will tell you what is missing.
-4. Optionally add `i18n.<code>` blocks in `content/*.json` and `og-<code>.png` in `public/media/og/` (see `scratchpad` note in PROGRESS.md for the generator).
+4. Optionally add `content/i18n/entries/<code>.json` (same shape as the other locales) and `og-<code>.png` in `public/media/og/` (see `scratchpad` note in PROGRESS.md for the generator).
 5. `npm run build` prerenders the new locale; the switcher, sitemap and hreflang pick it up automatically.
 
 ## How the page loads

@@ -29,7 +29,7 @@ All non-English, non-Hindi strings were machine-generated in one pass on 2026-09
 ## Full regional translation · 2026-10-12
 Every page now has its own text in all 13 languages. The remaining English-only content (13 guides, place tips/stories/glance text, projects, food, itineraries, FAQs, About, photo alt text, 31 newer UI strings) was machine-translated on 2026-10-12, one translator agent per language working from the English with the Hindi as a meaning reference and the existing `messages/<locale>.json` and `content/i18n/<locale>.json` as glossary. About 1,486 strings (≈28,000 English words) per language. `node scripts/check-i18n.mjs` reports every locale complete; the "shown in English" note no longer appears in any locale (`lib/proseLocale.ts`).
 
-How it is stored: place/festival/project/food/itinerary text in each entry's `i18n.<locale>`; guides in `content/guides/i18n/<locale>.json` (loaded per locale on demand); FAQs as `q_<locale>`/`a_<locale>` in `content/faqs.json`; About as `about.<locale>` in `content/about.json`; alt text in `content/i18n/alt-<locale>.json`.
+How it is stored: place/festival/project/food/itinerary text in `content/i18n/entries/<locale>.json` (keyed by kind and id, loaded per locale on demand by `loadEntryTranslations` in `lib/content.ts`; Hindi stays inline as `i18n.hi`); guides in `content/guides/i18n/<locale>.json` (loaded per locale on demand); FAQs as `q_<locale>`/`a_<locale>` in `content/faqs.json`; About as `about.<locale>` in `content/about.json`; alt text in `content/i18n/alt-<locale>.json`.
 
 To translate new content later: `node scripts/check-i18n.mjs <dir>` writes the missing strings per locale as `<dir>/<locale>/<chunk>.json`; translate each into `out-<chunk>.json` with the same keys; then `node scripts/merge-translations.mjs <dir>` and rerun `node scripts/optimize-images.mjs` for alt text.
 
@@ -43,7 +43,7 @@ Still unreviewed by native speakers — the regional locales stay `noindex` (lib
 - **Times:** Marathi, Sanskrit and some others use time-of-day words with the digits ("संध्याकाळी 6", "सायं 7 वादने") where the English said am/pm.
 
 ## Priority 3 — partly translated (superseded by the section above)
-- **Translated (2026-09-25, machine, unreviewed):** place `summary` and festival `summary` / `when` / `where` for all 11 regional locales. The sources are `content/i18n/<locale>.json`, merged into `i18n.<locale>` blocks by `node scripts/merge-i18n.mjs`. Edit the per-locale file, then re-run the script.
+- **Translated (2026-09-25, machine, unreviewed):** place `summary` and festival `summary` / `when` / `where` for all 11 regional locales. The sources are `content/i18n/<locale>.json`, merged into `content/i18n/entries/<locale>.json` by `node scripts/merge-i18n.mjs`. Edit the per-locale file, then re-run the script.
 - **Still English in regional locales:** place stories, tips and timelines, projects, food, itineraries. These sections show the localized "content shown in English" note (`common.englishNote`).
 - Regional-script transliterations of place/festival/food names (e.g. காசி விஸ்வநாத் கோயில்). Add as `name_<locale>` fields if wanted; `Places.tsx` would need to prefer them.
 - Photo alt text: English and Hindi are in `scripts/image-picks.json`; the 11 regional locales are machine-translated in `content/i18n/alt-<locale>.json` (unreviewed). Re-run `node scripts/optimize-images.mjs` after editing them.
