@@ -1,0 +1,545 @@
+{
+  "slug": "how-to-reach-varanasi",
+  "published": "2026-10-12",
+  "updated": "2026-10-12",
+  "title_en": "How to reach Varanasi by train, flight and road, and on to the ghats",
+  "title_hi": "वाराणसी कैसे पहुंचे: ट्रेन, फ्लाइट और सड़क से, फिर स्टेशन से घाट तक",
+  "description_en": "Varanasi's three stations, Vande Bharat and overnight trains, flights to Babatpur, buses, and the auto ride and walk from station or airport to the ghats.",
+  "description_hi": "वाराणसी के तीन स्टेशन, वंदे भारत और रात की ट्रेनें, बाबतपुर एयरपोर्ट की उड़ानें, बसें, और स्टेशन या एयरपोर्ट से घाट और विश्वनाथ धाम तक ऑटो व पैदल रास्ता।",
+  "lead_en": "Most visitors arrive by train at Varanasi Junction (Cantt) or Banaras station, or fly into Lal Bahadur Shastri Airport at Babatpur, 26 km from the city. Whichever way you come, the last stretch is the same: a vehicle to Godowlia Chowk, then a short walk to Dashashwamedh Ghat and the Kashi Vishwanath Dham.",
+  "lead_hi": "ज़्यादातर यात्री ट्रेन से वाराणसी जंक्शन (कैंट) या बनारस स्टेशन पहुंचते हैं, या शहर से 26 किमी दूर बाबतपुर के लाल बहादुर शास्त्री हवाई अड्डे पर उतरते हैं। किसी भी रास्ते से आएं, आख़िरी हिस्सा एक जैसा है: गोदौलिया चौक तक गाड़ी, फिर दशाश्वमेध घाट और काशी विश्वनाथ धाम तक थोड़ा पैदल।",
+  "facts": [
+    {
+      "icon": "train",
+      "label_en": "Main station",
+      "label_hi": "मुख्य स्टेशन",
+      "value_en": "Varanasi Jn (BSB), about 4 km from Godowlia",
+      "value_hi": "वाराणसी जंक्शन (BSB), गोदौलिया से लगभग 4 किमी"
+    },
+    {
+      "icon": "plane",
+      "label_en": "Airport",
+      "label_hi": "हवाई अड्डा",
+      "value_en": "VNS, Babatpur · 26 km · 45–75 min to ghats",
+      "value_hi": "VNS, बाबतपुर · 26 किमी · घाट तक 45–75 मिनट"
+    },
+    {
+      "icon": "clock",
+      "label_en": "Delhi by Vande Bharat",
+      "label_hi": "दिल्ली से वंदे भारत",
+      "value_en": "About 8 hours; two Vande Bharat trains",
+      "value_hi": "लगभग 8 घंटे; दो वंदे भारत ट्रेनें"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Station to Godowlia",
+      "label_hi": "स्टेशन से गोदौलिया",
+      "value_en": "Prepaid auto about ₹100–150",
+      "value_hi": "प्रीपेड ऑटो लगभग ₹100–150"
+    },
+    {
+      "icon": "walk",
+      "label_en": "Last stretch",
+      "label_hi": "आख़िरी हिस्सा",
+      "value_en": "On foot from Godowlia, about 10 minutes",
+      "value_hi": "गोदौलिया से पैदल, लगभग 10 मिनट"
+    },
+    {
+      "icon": "info",
+      "label_en": "Ropeway",
+      "label_hi": "रोपवे",
+      "value_en": "Not open; target 24 Nov 2026, unconfirmed",
+      "value_hi": "अभी बंद; लक्ष्य 24 नवंबर 2026, अपुष्ट"
+    }
+  ],
+  "sections": [
+    {
+      "id": "by-train",
+      "heading_en": "By train: three stations, and which to choose",
+      "heading_hi": "ट्रेन से: तीन स्टेशन, कौन-सा चुनें",
+      "body_en": [
+        "Varanasi Junction (code BSB), also called Varanasi Cantt, is the main station, about 4 km from Godowlia. It handles close to 300 trains a day, including the Vande Bharat trains to Delhi. Banaras station (BSBS), the former Manduadih, is about 5 km south of the Junction and is the terminus for the Shiv Ganga and Kashi Vishwanath Expresses. Both are a similar auto ride from the ghats.",
+        "Pt. Deen Dayal Upadhyaya Junction (DDU), formerly Mughalsarai, is across the river in Chandauli district, about 16–20 km from the ghats and 45–55 minutes by car. Every train on the Delhi–Howrah main line stops there, including the Rajdhanis, so many trains from Kolkata and the east arrive at DDU rather than at Varanasi Junction. Check the station on your ticket before you book a pickup.",
+        "From Delhi there are about 99 trains a day. The two Vande Bharat pairs are the fastest, at about 8 hours with stops only at Kanpur and Prayagraj; the return trains leave Varanasi at 06:00 (22415) and 15:00 (22435). Each pair skips one day a week and sources disagree on which, so check IRCTC or NTES. The launch Chair Car fare was ₹1,760; current fares are a little higher."
+      ],
+      "body_hi": [
+        "वाराणसी जंक्शन (कोड BSB), जिसे वाराणसी कैंट भी कहते हैं, मुख्य स्टेशन है और गोदौलिया से लगभग 4 किमी दूर है। यहां रोज़ लगभग 300 ट्रेनें आती-जाती हैं, दिल्ली की वंदे भारत ट्रेनें भी। बनारस स्टेशन (BSBS), पहले का मंडुआडीह, जंक्शन से लगभग 5 किमी दक्षिण में है और शिवगंगा व काशी विश्वनाथ एक्सप्रेस का अंतिम स्टेशन है। दोनों से घाट तक ऑटो का सफ़र लगभग बराबर है।",
+        "पं. दीनदयाल उपाध्याय जंक्शन (DDU), पहले का मुगलसराय, गंगा पार चंदौली ज़िले में है, घाटों से लगभग 16–20 किमी और कार से 45–55 मिनट। दिल्ली–हावड़ा मुख्य लाइन की हर ट्रेन, राजधानी समेत, यहां रुकती है, इसलिए कोलकाता और पूर्व की कई ट्रेनें वाराणसी जंक्शन के बजाय DDU पहुंचती हैं। पिकअप बुक करने से पहले टिकट पर स्टेशन देख लें।",
+        "दिल्ली से रोज़ लगभग 99 ट्रेनें हैं। दो वंदे भारत जोड़ियां सबसे तेज़ हैं, लगभग 8 घंटे, बीच में सिर्फ़ कानपुर और प्रयागराज में रुकती हैं; वापसी की ट्रेनें वाराणसी से 06:00 (22415) और 15:00 (22435) बजे चलती हैं। हर जोड़ी हफ़्ते में एक दिन नहीं चलती और किस दिन, इस पर स्रोतों में अंतर है, इसलिए IRCTC या NTES पर देख लें। शुरुआती चेयर कार किराया ₹1,760 था; अभी का किराया थोड़ा ज़्यादा है।"
+      ],
+      "list_en": [
+        "Delhi, overnight: Shiv Ganga Express 12560, New Delhi 20:05 → Banaras 06:10, daily",
+        "Delhi, by day: Vande Bharat 22436 (06:00 → 14:00) or 22416 (15:00 → 23:05), about 8 hours",
+        "Mumbai: Mahanagari Express 22177, CSMT 00:10 → Varanasi Jn 03:35 next day, about 27.5 hours, daily",
+        "Kolkata: Vibhuti Express 12333, Howrah 19:55 → Varanasi Jn 09:40, about 14 hours; Rajdhanis reach DDU in about 8 hours",
+        "Prayagraj: about 1.5 hours by Vande Bharat (125 km by rail)",
+        "Lucknow: Varuna Express 24227/24228, about 5 hours, chair car"
+      ],
+      "list_hi": [
+        "दिल्ली, रात की ट्रेन: शिवगंगा एक्सप्रेस 12560, नई दिल्ली 20:05 → बनारस 06:10, रोज़",
+        "दिल्ली, दिन में: वंदे भारत 22436 (06:00 → 14:00) या 22416 (15:00 → 23:05), लगभग 8 घंटे",
+        "मुंबई: महानगरी एक्सप्रेस 22177, CSMT 00:10 → वाराणसी जंक्शन अगले दिन 03:35, लगभग 27.5 घंटे, रोज़",
+        "कोलकाता: विभूति एक्सप्रेस 12333, हावड़ा 19:55 → वाराणसी जंक्शन 09:40, लगभग 14 घंटे; राजधानी लगभग 8 घंटे में DDU",
+        "प्रयागराज: वंदे भारत से लगभग 1.5 घंटे (रेल से 125 किमी)",
+        "लखनऊ: वरुणा एक्सप्रेस 24227/24228, लगभग 5 घंटे, चेयर कार"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        36,
+        38
+      ]
+    },
+    {
+      "id": "by-air",
+      "heading_en": "By air: Lal Bahadur Shastri Airport (VNS)",
+      "heading_hi": "हवाई जहाज़ से: लाल बहादुर शास्त्री हवाई अड्डा (VNS)",
+      "body_en": [
+        "Varanasi's airport, code VNS, is at Babatpur, about 26 km north-west of the city on the Lucknow road. It handled about 4.3 million passengers in 2025–26. Air India, Air India Express, Akasa Air, IndiGo and SpiceJet fly to Delhi, Mumbai, Bengaluru, Hyderabad, Kolkata and other cities; a Delhi flight takes about 1 hour 25 minutes. International flights are few: Air India Express to Sharjah and Bangkok, and Buddha Air to Kathmandu. A new terminal and runway extension are under construction, with no opening date announced."
+      ],
+      "body_hi": [
+        "वाराणसी का हवाई अड्डा, कोड VNS, बाबतपुर में है, शहर से लगभग 26 किमी उत्तर-पश्चिम में लखनऊ रोड पर। 2025–26 में यहां से लगभग 43 लाख यात्री गुज़रे। एयर इंडिया, एयर इंडिया एक्सप्रेस, अकासा एयर, इंडिगो और स्पाइसजेट दिल्ली, मुंबई, बेंगलुरु, हैदराबाद, कोलकाता और दूसरे शहरों के लिए उड़ान भरती हैं; दिल्ली की उड़ान लगभग 1 घंटा 25 मिनट की है। अंतरराष्ट्रीय उड़ानें कम हैं: एयर इंडिया एक्सप्रेस से शारजाह और बैंकॉक, और बुद्धा एयर से काठमांडू। नया टर्मिनल और रनवे विस्तार बन रहा है; शुरू होने की तारीख़ घोषित नहीं हुई।"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        14,
+        15,
+        40
+      ]
+    },
+    {
+      "id": "by-road",
+      "heading_en": "By road and bus",
+      "heading_hi": "सड़क और बस से",
+      "body_en": [
+        "Varanasi sits on NH-19, the Delhi–Kolkata highway, and NH-31, which runs through Jaunpur and Babatpur towards Lucknow. Prayagraj is about 125 km away, 2.5–3 hours by car on the six-lane NH-19 stretch. Lucknow is about 285–315 km, 5.5–6.5 hours; the faster route uses the Purvanchal Expressway, which ends in Ghazipur district rather than in Varanasi. Bodh Gaya is about 250 km, 5–6 hours via Sasaram (approximate). The Ganga Expressway, opened on 29 April 2026, runs from Meerut to Prayagraj; drivers from western Uttar Pradesh can use it and continue on NH-19.",
+        "UPSRTC buses use the Cantt bus stand, just east of Varanasi Junction. Buses to Prayagraj run about every 15 minutes, take about 2 hours 45 minutes and cost ₹200–380 (approximate). AC Janrath and ordinary buses also run to Lucknow."
+      ],
+      "body_hi": [
+        "वाराणसी NH-19 (दिल्ली–कोलकाता राजमार्ग) और NH-31 पर है, जो जौनपुर और बाबतपुर होते हुए लखनऊ की ओर जाता है। प्रयागराज लगभग 125 किमी है, छह लेन वाले NH-19 से कार से 2.5–3 घंटे। लखनऊ लगभग 285–315 किमी, 5.5–6.5 घंटे; तेज़ रास्ता पूर्वांचल एक्सप्रेसवे से है, जो वाराणसी में नहीं, ग़ाज़ीपुर ज़िले में ख़त्म होता है। बोधगया सासाराम होते हुए लगभग 250 किमी, 5–6 घंटे (अनुमानित)। 29 अप्रैल 2026 को खुला गंगा एक्सप्रेसवे मेरठ से प्रयागराज तक है; पश्चिमी उत्तर प्रदेश से आने वाले इससे होकर आगे NH-19 ले सकते हैं।",
+        "UPSRTC की बसें वाराणसी जंक्शन के ठीक पूर्व में कैंट बस अड्डे से चलती हैं। प्रयागराज की बसें लगभग हर 15 मिनट पर हैं, लगभग 2 घंटे 45 मिनट लेती हैं और किराया ₹200–380 (अनुमानित) है। लखनऊ के लिए भी AC जनरथ और साधारण बसें चलती हैं।"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        13,
+        14,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "to-the-ghats",
+      "heading_en": "From the station or airport to the ghats",
+      "heading_hi": "स्टेशन या एयरपोर्ट से घाट तक",
+      "body_en": [
+        "Vehicles stop at Godowlia Chowk. The road from Godowlia to Dashashwamedh Ghat and the lanes around the Vishwanath Dham are pedestrian zones for most of the day, so ask for Godowlia, not for the ghat. Use the prepaid auto booth at Varanasi Junction rather than touts on the forecourt. App cabs (Uber, Ola, Rapido) run on main roads; agree or check every other fare before you set off.",
+        "From the airport, a prepaid taxi or app cab is the practical option. A dedicated airport e-bus was planned in 2023, but we could not confirm a current route or fare."
+      ],
+      "body_hi": [
+        "गाड़ियां गोदौलिया चौक पर रुकती हैं। गोदौलिया से दशाश्वमेध घाट की सड़क और विश्वनाथ धाम के आसपास की गलियां दिन के ज़्यादातर समय पैदल क्षेत्र हैं, इसलिए घाट नहीं, गोदौलिया बोलें। वाराणसी जंक्शन पर परिसर के दलालों के बजाय प्रीपेड ऑटो बूथ लें। ऐप कैब (उबर, ओला, रैपिडो) मुख्य सड़कों पर चलती हैं; बाक़ी हर सवारी का किराया चलने से पहले तय कर लें।",
+        "एयरपोर्ट से प्रीपेड टैक्सी या ऐप कैब ही व्यावहारिक है। 2023 में एयरपोर्ट के लिए ई-बस की योजना बनी थी, पर अभी का रूट या किराया हम पुष्ट नहीं कर सके।"
+      ],
+      "list_en": [
+        "Varanasi Jn (Cantt) → Godowlia: about 4 km, prepaid auto ₹100–150, 20–60 minutes depending on traffic",
+        "Banaras station → Godowlia: about 5–7 km, auto about ₹100–150, 25–45 minutes (approximate)",
+        "Airport → Godowlia: 25–26 km, prepaid taxi or app cab about ₹600–1,000, 45–75 minutes; auto ₹400–600 and slower",
+        "DDU → Godowlia: 16–20 km, 45–55 minutes by car; agree the fare first",
+        "Varanasi Jn → Sarnath: 9–10 km, 25–40 minutes; reserved auto about ₹150–400 one way, city bus 107E about ₹25",
+        "Airport → Sarnath: 25–30 km, auto ₹300–500, 45–75 minutes"
+      ],
+      "list_hi": [
+        "वाराणसी जंक्शन (कैंट) → गोदौलिया: लगभग 4 किमी, प्रीपेड ऑटो ₹100–150, ट्रैफ़िक के हिसाब से 20–60 मिनट",
+        "बनारस स्टेशन → गोदौलिया: लगभग 5–7 किमी, ऑटो लगभग ₹100–150, 25–45 मिनट (अनुमानित)",
+        "एयरपोर्ट → गोदौलिया: 25–26 किमी, प्रीपेड टैक्सी या ऐप कैब लगभग ₹600–1,000, 45–75 मिनट; ऑटो ₹400–600, धीमा",
+        "DDU → गोदौलिया: 16–20 किमी, कार से 45–55 मिनट; किराया पहले तय करें",
+        "वाराणसी जंक्शन → सारनाथ: 9–10 किमी, 25–40 मिनट; रिज़र्व ऑटो एक तरफ़ लगभग ₹150–400, सिटी बस 107E लगभग ₹25",
+        "एयरपोर्ट → सारनाथ: 25–30 किमी, ऑटो ₹300–500, 45–75 मिनट"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        13,
+        16,
+        17,
+        18,
+        26,
+        35,
+        37,
+        38,
+        41
+      ]
+    },
+    {
+      "id": "kashi-vishwanath",
+      "heading_en": "Reaching Kashi Vishwanath Dham",
+      "heading_hi": "काशी विश्वनाथ धाम तक कैसे पहुंचें",
+      "body_en": [
+        "From Godowlia, the city-side gates of the Dham are about 500–700 m on foot, roughly 10 minutes. For Sawan 2026 the administration listed seven entry points: Gate No. 4, Kashi Dwar Marg (4B), Nandu Feria, Silco, Dhundhiraj, Saraswati Phatak, and Bhairav Dwar on the ghat side. Which gates are open changes on festival days, so follow police directions.",
+        "You can also walk along the ghats, or come by boat, to Lalita Ghat and climb through the corridor. That side closes when the Ganga is high in the monsoon. Phones, smartwatches and cameras are not allowed inside; free lockers are at the gates, though they can close on peak days. Sugam Darshan ticket holders report first to the helpdesk near Shapuri Mall."
+      ],
+      "body_hi": [
+        "गोदौलिया से धाम के शहर की ओर वाले द्वार लगभग 500–700 मीटर पैदल हैं, लगभग 10 मिनट। सावन 2026 के लिए प्रशासन ने सात प्रवेश मार्ग बताए थे: गेट नंबर 4, काशी द्वार मार्ग (4बी), नंदू फेरिया, सिल्को, ढुंढिराज, सरस्वती फाटक, और घाट की ओर भैरव द्वार। पर्वों पर कौन-सा द्वार खुला रहेगा, यह बदलता है, इसलिए पुलिस के निर्देश मानें।",
+        "आप घाटों के किनारे पैदल या नाव से ललिता घाट आकर कॉरिडोर से ऊपर भी जा सकते हैं। बरसात में गंगा बढ़ने पर यह रास्ता बंद रहता है। मोबाइल, स्मार्टवॉच और कैमरा अंदर नहीं ले जा सकते; द्वारों पर निःशुल्क लॉकर हैं, पर भीड़ वाले दिनों में बंद भी रह सकते हैं। सुगम दर्शन टिकट वाले पहले शापुरी मॉल के पास हेल्पडेस्क पर जाएं।"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "old-city",
+      "heading_en": "Getting around the old city",
+      "heading_hi": "पुराने शहर में आना-जाना",
+      "body_en": [
+        "Inside the old city you walk. The lanes between Godowlia, Dashashwamedh and the Vishwanath Dham are too narrow for cars and most autos, and the Maidagin–Godowlia road becomes a full no-vehicle zone on big bathing days; in January 2026 only golf carts for elderly, disabled and pregnant visitors were allowed. Shared e-rickshaws run on the wider roads for ₹10–50 a seat. Autos and e-rickshaws in the central Kashi zone are meant to carry a police QR code, though an August 2026 report found many without one."
+      ],
+      "body_hi": [
+        "पुराने शहर में पैदल ही चलना होता है। गोदौलिया, दशाश्वमेध और विश्वनाथ धाम के बीच की गलियां कार और ज़्यादातर ऑटो के लिए बहुत संकरी हैं, और बड़े स्नान पर्वों पर मैदागिन–गोदौलिया मार्ग पूरी तरह नो-व्हीकल ज़ोन बन जाता है; जनवरी 2026 में केवल बुज़ुर्गों, दिव्यांगों और गर्भवती महिलाओं के लिए गोल्फ़ कार्ट की अनुमति थी। चौड़ी सड़कों पर साझा ई-रिक्शा ₹10–50 प्रति सीट लेते हैं। काशी ज़ोन के ऑटो और ई-रिक्शा पर पुलिस का QR कोड होना चाहिए, पर अगस्त 2026 की एक रिपोर्ट में कई बिना कोड के मिले।"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        13,
+        26,
+        39,
+        42
+      ]
+    },
+    {
+      "id": "ropeway",
+      "heading_en": "The Cantt–Godowlia ropeway: when it opens",
+      "heading_hi": "कैंट–गोदौलिया रोपवे: कब खुलेगा",
+      "body_en": [
+        "A 3.75 km urban ropeway from Varanasi Junction to Godowlia is in final trials. At an inspection on 28 September 2026 officials put the work above 94% complete and named 24 November 2026, the day of Dev Deepawali, as the target for passenger service, subject to readiness. No opening has been officially notified. The ride is planned at about 16 minutes, against 30–60 minutes by road. The administration has fixed fares at ₹10 a station and ₹50 for the full run, with a ₹40 smart-pass rate. Until it opens, plan on an auto."
+      ],
+      "body_hi": [
+        "वाराणसी जंक्शन से गोदौलिया तक 3.75 किमी का शहरी रोपवे अंतिम ट्रायल में है। 28 सितंबर 2026 के निरीक्षण में अधिकारियों ने काम 94% से ज़्यादा पूरा बताया और यात्री सेवा के लिए 24 नवंबर 2026, देव दीपावली का दिन, लक्ष्य रखा, तैयारी पूरी होने की शर्त पर। उद्घाटन की कोई आधिकारिक अधिसूचना नहीं आई है। सफ़र लगभग 16 मिनट का होगा, जबकि सड़क से 30–60 मिनट लगते हैं। प्रशासन ने किराया ₹10 प्रति स्टेशन और पूरे रास्ते का ₹50 तय किया है, स्मार्ट पास पर ₹40। खुलने तक ऑटो पर ही भरोसा करें।"
+      ],
+      "unconfirmed": true,
+      "sources": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "id": "night-and-early",
+      "heading_en": "Arriving at night or before dawn",
+      "heading_hi": "रात में या भोर से पहले पहुंचना",
+      "body_en": [
+        "Several popular trains arrive at awkward hours: Vande Bharat 22416 at 23:05, the Mahanagari Express at 03:35 and the Shiv Ganga Express at 06:10. Prepaid taxis at the airport run round the clock; at the stations, fewer autos wait late at night, so agree the fare before you set off. The old-city lanes are dark and quiet at these hours. If your guesthouse is inside the lanes, ask it to send someone to meet you at Godowlia; most drivers cannot find a lane address.",
+        "Carry an offline map, small notes for the fare and your hotel's phone number. In December and January, check running status on NTES before you leave, as fog delays trains and flights; on 6 January 2026, 26 flights at Babatpur were affected."
+      ],
+      "body_hi": [
+        "कई लोकप्रिय ट्रेनें असुविधाजनक समय पर पहुंचती हैं: वंदे भारत 22416 रात 23:05, महानगरी एक्सप्रेस 03:35 और शिवगंगा एक्सप्रेस 06:10 बजे। एयरपोर्ट पर प्रीपेड टैक्सी चौबीसों घंटे मिलती है; स्टेशनों पर देर रात कम ऑटो मिलते हैं, इसलिए चलने से पहले किराया तय कर लें। इस समय पुराने शहर की गलियां अंधेरी और सुनसान रहती हैं। अगर आपका गेस्टहाउस गलियों के अंदर है, तो उससे कहें कि कोई गोदौलिया पर आपको लेने आए; ज़्यादातर ड्राइवर गली का पता नहीं ढूंढ पाते।",
+        "ऑफ़लाइन नक्शा, किराए के लिए छोटे नोट और होटल का फ़ोन नंबर साथ रखें। दिसंबर और जनवरी में निकलने से पहले NTES पर ट्रेन की स्थिति देखें, क्योंकि कोहरे से ट्रेनें और उड़ानें देर होती हैं; 6 जनवरी 2026 को बाबतपुर पर 26 उड़ानें प्रभावित हुईं।"
+      ],
+      "unconfirmed": false,
+      "sources": [
+        3,
+        4,
+        6,
+        13,
+        16,
+        34
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q_en": "What is the nearest airport to Varanasi?",
+      "a_en": "Lal Bahadur Shastri International Airport (VNS) at Babatpur, about 26 km north-west of the city. Allow 45–75 minutes to Godowlia by taxi.",
+      "q_hi": "वाराणसी का सबसे नज़दीकी हवाई अड्डा कौन-सा है?",
+      "a_hi": "बाबतपुर का लाल बहादुर शास्त्री अंतरराष्ट्रीय हवाई अड्डा (VNS), शहर से लगभग 26 किमी उत्तर-पश्चिम में। टैक्सी से गोदौलिया तक 45–75 मिनट रखें।"
+    },
+    {
+      "q_en": "Which railway station is closest to the ghats?",
+      "a_en": "Varanasi Junction (Cantt) and Banaras station are both 4–7 km from Godowlia, an auto ride of about ₹100–150. DDU (Mughalsarai) is 16–20 km away across the river.",
+      "q_hi": "घाटों के सबसे पास कौन-सा रेलवे स्टेशन है?",
+      "a_hi": "वाराणसी जंक्शन (कैंट) और बनारस स्टेशन दोनों गोदौलिया से 4–7 किमी पर हैं, ऑटो से लगभग ₹100–150। DDU (मुगलसराय) गंगा पार 16–20 किमी दूर है।"
+    },
+    {
+      "q_en": "How do I get from Varanasi airport to Dashashwamedh Ghat?",
+      "a_en": "Take a prepaid taxi or app cab to Godowlia, about ₹600–1,000 and 45–75 minutes, then walk about 500 m down Dashashwamedh Road to the ghat.",
+      "q_hi": "वाराणसी एयरपोर्ट से दशाश्वमेध घाट कैसे जाएं?",
+      "a_hi": "प्रीपेड टैक्सी या ऐप कैब से गोदौलिया जाएं, लगभग ₹600–1,000 और 45–75 मिनट, फिर दशाश्वमेध रोड पर लगभग 500 मीटर पैदल चलकर घाट पहुंचें।"
+    },
+    {
+      "q_en": "How far is Banaras station from the ghats?",
+      "a_en": "About 5–7 km by road to Godowlia, 25–45 minutes by auto depending on traffic. From Godowlia the ghat is a 10-minute walk.",
+      "q_hi": "बनारस स्टेशन से घाट की दूरी कितनी है?",
+      "a_hi": "सड़क से गोदौलिया तक लगभग 5–7 किमी, ट्रैफ़िक के हिसाब से ऑटो से 25–45 मिनट। गोदौलिया से घाट 10 मिनट पैदल है।"
+    },
+    {
+      "q_en": "How do I reach Kashi Vishwanath temple from Varanasi Junction?",
+      "a_en": "Take the prepaid auto to Godowlia (₹100–150), then walk about 10 minutes to the Dham's gates. Leave your phone at the hotel or in a gate locker.",
+      "q_hi": "वाराणसी जंक्शन से काशी विश्वनाथ मंदिर कैसे पहुंचें?",
+      "a_hi": "प्रीपेड ऑटो से गोदौलिया जाएं (₹100–150), फिर लगभग 10 मिनट पैदल चलकर धाम के द्वार तक पहुंचें। मोबाइल होटल में या द्वार के लॉकर में छोड़ें।"
+    },
+    {
+      "q_en": "Which is the fastest train from Delhi to Varanasi?",
+      "a_en": "The Vande Bharat Express, about 8 hours: 22436 leaves New Delhi at 06:00 and 22416 at 15:00. Each skips one day a week, so check the running day.",
+      "q_hi": "दिल्ली से वाराणसी की सबसे तेज़ ट्रेन कौन-सी है?",
+      "a_hi": "वंदे भारत एक्सप्रेस, लगभग 8 घंटे: 22436 नई दिल्ली से 06:00 बजे और 22416 15:00 बजे चलती है। हर ट्रेन हफ़्ते में एक दिन नहीं चलती, इसलिए दिन जांच लें।"
+    },
+    {
+      "q_en": "Is Mughalsarai (DDU) in Varanasi?",
+      "a_en": "No. Pt. Deen Dayal Upadhyaya Junction is in Chandauli district, about 16–20 km from the ghats, 45–55 minutes by car. Rajdhani trains from Kolkata stop there.",
+      "q_hi": "क्या मुगलसराय (DDU) वाराणसी में है?",
+      "a_hi": "नहीं। पं. दीनदयाल उपाध्याय जंक्शन चंदौली ज़िले में है, घाटों से लगभग 16–20 किमी, कार से 45–55 मिनट। कोलकाता की राजधानी ट्रेनें वहीं रुकती हैं।"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — New Delhi–Varanasi Vande Bharat Express (22435/22436)",
+      "url": "https://en.wikipedia.org/wiki/New_Delhi_%E2%80%93_Varanasi_Vande_Bharat_Express",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "RailMitra — 22436 Vande Bharat Express schedule (New Delhi 06:00 → Varanasi Jn 14:00)",
+      "url": "https://www.railmitra.com/train-schedule/vande-bharat-exp-22436",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "etrain.info — 22415 Vande Bharat Express schedule (Varanasi Jn 06:00 → New Delhi 14:05)",
+      "url": "https://etrain.info/train/Vande-Bharat-Exp-22415/schedule",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "RailMitra — 22416 Vande Bharat Express schedule (New Delhi 15:00 → Varanasi Jn 23:05)",
+      "url": "https://www.railmitra.com/train-schedule/22416",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Wikipedia — Shiv Ganga Express (12559/12560)",
+      "url": "https://en.wikipedia.org/wiki/Shiv_Ganga_Express",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "erail.in — Trains between New Delhi and Varanasi Jn",
+      "url": "https://erail.in/trains-between-stations/new-delhi-NDLS/varanasi-jn-BSB",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "etrain.info — 22177 Mahanagari Express schedule (CSMT → Varanasi Jn)",
+      "url": "https://etrain.info/train/Mahanagari-Exp-22177/schedule",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "erail.in — Trains between Howrah and Varanasi Jn (Rajdhanis to DDU)",
+      "url": "https://erail.in/trains-between-stations/howrah-jn-HWH/varanasi-jn-BSB",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "RailMitra — 12333 Vibhuti Express schedule",
+      "url": "https://www.railmitra.com/train-schedule/12333",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "etrain.info — 24227 Varuna Express schedule (Varanasi–Lucknow–Kanpur)",
+      "url": "https://etrain.info/train/Varuna-Express-24227/schedule",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Wikipedia — Varanasi Junction railway station",
+      "url": "https://en.wikipedia.org/wiki/Varanasi_Junction_railway_station",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Wikipedia — Banaras railway station (formerly Manduadih)",
+      "url": "https://en.wikipedia.org/wiki/Banaras_railway_station",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Wikipedia — Pt. Deen Dayal Upadhyaya Junction railway station",
+      "url": "https://en.wikipedia.org/wiki/Pt._Deen_Dayal_Upadhyaya_Junction_railway_station",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Wikivoyage — Varanasi (get in, get around)",
+      "url": "https://en.wikivoyage.org/wiki/Varanasi",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Varanasi district administration — How to reach",
+      "url": "https://varanasi.nic.in/how-to-reach/",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Wikipedia — Lal Bahadur Shastri International Airport (routes, 2025–26 traffic)",
+      "url": "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_Airport",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Uncharted Lens — Varanasi airport to city: transport options and fares",
+      "url": "https://unchartedlens.com/routes/india/varanasi-airport-to-city-transport/",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "GRRRL Traveler — Things to know before traveling Varanasi (prepaid auto fares, Sep 2024)",
+      "url": "https://grrrltraveler.com/?p=51328",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Swarajya — Varanasi plans electric buses from the airport and water taxis (10 May 2023)",
+      "url": "https://swarajyamag.com/amp/story/infrastructure/varanasi-to-get-a-transit-upgrade-with-plans-to-introduce-electric-buses-and-water-taxis-between-airport-and-kashi-vishwanath-dham",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "The Quint — Six-lane Prayagraj–Varanasi NH-19 stretch inaugurated (30 Nov 2020)",
+      "url": "https://thequint.com/news/india/pm-modi-varanasi-visit-inaugurate-prayagraj-varanasi-nh-19-highway-stretch",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Wikipedia — National Highway 31 (India)",
+      "url": "https://en.wikipedia.org/wiki/National_Highway_31_(India)",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Wikipedia — Purvanchal Expressway",
+      "url": "https://en.wikipedia.org/wiki/Purvanchal_Expressway",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "News On AIR — PM inaugurates 594-km Ganga Expressway, Meerut to Prayagraj (29 Apr 2026)",
+      "url": "https://newsonair.gov.in/pm-modi-inaugurates-594-km-long-ganga-expressway-connecting-meerut-to-prayagraj/",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Savaari — Lucknow to Varanasi by road (distance and routes)",
+      "url": "https://www.savaari.com/blog/lucknow/lucknow-to-varanasi/",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Triveni Cabs — Bodh Gaya to Varanasi road distance",
+      "url": "https://www.trivenicabs.in/distance/bodhgaya-to-varanasi",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Rome2rio — Varanasi to Prayagraj by bus (UPSRTC frequency and fares)",
+      "url": "https://www.rome2rio.com/s/Varanasi/Prayagraj",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Amar Ujala — Maidagin–Godowlia declared no-vehicle zone for Magh Mela 2026 (7 Jan 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/magh-mela-2026-vip-vehicle-not-allowed-on-maidagin-godaulia-road-it-declared-no-vehicle-zone-in-varanasi-2026-01-07",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "ETV Bharat — Kashi Vishwanath Dham Sawan 2026 entry rules and gates",
+      "url": "https://www.etvbharat.com/hi/state/kashi-vishwanath-dham-sawan-2026-preparations-entry-rules-live-darshan-guidelines-ups26072504771",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "The Varanasi News — Sawan Sugam Darshan arrangements (Aug 2026)",
+      "url": "https://www.thevaranasinews.com/2026/08/sawan-sugam-darshan-tickets-available-except-mondays-kashi-vishwanath-temple-new-arrangement.html",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Amar Ujala — Kashi Vishwanath Dham free locker facility",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/kashi-vishwanath-dham-now-you-can-enter-even-with-mobile-and-bag-free-locker-facility-started",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Shri Kashi Vishwanath Temple Trust — official site",
+      "url": "https://shrikashivishwanath.org/",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Swarajya — Varanasi urban ropeway over 94% complete, operations targeted for 24 November (30 Sep 2026)",
+      "url": "https://swarajyamag.com/news-brief/varanasis-urban-ropeway-project-reaches-95-per-cent-completion-operations-expected-by-november",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "ThePrint — Varanasi ropeway fare fixed at Rs 50 for Cantonment–Godowlia route (25 Jun 2026)",
+      "url": "https://theprint.in/india/varanasi-ropeway-fare-fixed-at-rs-50-for-cantonment-godowlia-route/2969019/",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Wikipedia — Kashi ropeway",
+      "url": "https://en.wikipedia.org/wiki/Kashi_ropeway",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Amar Ujala — Fog in Varanasi: 26 flights affected at Babatpur airport (6 Jan 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/fog-in-varanasi-26-flights-affected-at-babatpur-airport-and-flight-from-mumbai-arrived-late-2026-01-06",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Wikivoyage — Sarnath (bus 107E, auto fares)",
+      "url": "https://en.wikivoyage.org/wiki/Sarnath",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Free Press Journal — Vande Bharat Delhi–Varanasi launch fares: CC ₹1,760, EC ₹3,310",
+      "url": "https://www.freepressjournal.in/india/train-18-ticket-fares-get-slashed",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Uber — Taxi service in Varanasi",
+      "url": "https://www.uber.com/in/en/r/cities/taxi/varanasi-uttar-pradesh-in/",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Varanasi Guru — Traveling to Varanasi: rail, air and road connectivity (Sep 2023)",
+      "url": "https://www.varanasiguru.com/?p=8161",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Amar Ujala — QR code system for autos fails in Kashi zone (4 Aug 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/qr-code-system-failed-varanasi-250-more-auto-rickshaws-than-permitted-plying-streets-2026-08-04",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "ixigo — New Delhi to Varanasi flights (direct flight time about 1 h 25 min)",
+      "url": "https://www.ixigo.com/cheap-flights/new-delhi-varanasi-del-vns",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Uncharted Lens — Varanasi airport to Sarnath transport and fares",
+      "url": "https://unchartedlens.com/routes/india/varanasi-airport-vns-to-sarnath-transport/",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "GoAsia — Getting around Varanasi: local transport guide (11 Jun 2026)",
+      "url": "https://goasia.cc/en/india/varanasi-to-varanasi",
+      "accessed": "2026-10-12"
+    }
+  ],
+  "related": {
+    "places": [
+      "kashi-vishwanath",
+      "dashashwamedh-ghat",
+      "sarnath"
+    ],
+    "projects": [
+      "varanasi-ropeway",
+      "airport-expansion",
+      "varanasi-cantt-station",
+      "banaras-station"
+    ],
+    "itineraries": [
+      "2-day"
+    ]
+  },
+  "notes": "Re-check after 24 Nov 2026 (ropeway opening, target from a 28 Sep inspection, not notified); Vande Bharat running days conflict across sources (22436: Wikipedia says no Thursday service, RailMitra says daily; 22415/22416: etrain lists no Tuesday) so the copy says 'check'; airport taxi ₹600–1,000 and Banaras→Godowlia figures are aggregator/blog ranges, not official; Godowlia→ghat/gate walking distances (500–700 m) are map-measured; no current airport bus route could be confirmed; Banaras code shown as BSBS (as in projects.json and Wikivoyage) though Wikipedia and some timetables print BNRS."
+}
