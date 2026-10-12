@@ -3,5 +3,5 @@
  * is fully translated. Elsewhere those fields fall back to English and the UI
  * shows a small localized "shown in English" note.
  */
-const FULL_PROSE = new Set(["hi", "en"]);
+const FULL_PROSE = new Set(["hi", "en", "ta", "te", "kn", "ml", "bn", "or", "as", "mr", "gu", "pa", "sa"]);
 export const proseFallsBack = (locale: string) => !FULL_PROSE.has(locale);

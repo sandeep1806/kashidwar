@@ -9,7 +9,7 @@ import ArtFallback from "@/components/ui/ArtFallback";
 import { getPlace, itineraries, localizeItinerary } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { alternatesFor, itineraryLeadPlace, itinerarySlug, pageUrl } from "@/lib/pages";
-import { guideBySlug, localizeGuide } from "@/lib/guides";
+import { guideBySlug, guideTranslations, localizeGuide } from "@/lib/guides";
 import { getPhoto } from "@/lib/photos";
 import { isIndexed } from "@/lib/seo";
 
@@ -36,6 +36,7 @@ export default async function ItinerariesPage({ params }: PageProps<"/[locale]/i
     getTranslations({ locale, namespace: "page" }),
     getTranslations({ locale, namespace: "places" }),
   ]);
+  const gtr = await guideTranslations(loc);
   const other = await getTranslations({ locale: LOCALES[loc].script === "devanagari" ? "en" : "hi", namespace: "itineraries" });
   const devanagari = LOCALES[loc].script === "devanagari";
   const plans = itineraries.map((raw) => {
@@ -95,8 +96,8 @@ export default async function ItinerariesPage({ params }: PageProps<"/[locale]/i
           })}
         </ul>
         <p className="mt-8 flex flex-wrap justify-center gap-3">
-          <a href={`/${locale}/guides/varanasi-in-2-days`} className="inline-flex min-h-11 items-center gap-2 rounded-full border border-kashi-diya/40 px-5 text-sm text-kashi-diya hover:border-kashi-marigold hover:text-kashi-marigold"><Icon name="tip" className="h-4 w-4" />{localizeGuide(guideBySlug("varanasi-in-2-days")!, loc).title.split(":")[0]}</a>
-          <a href={`/${locale}/guides/varanasi-trip-cost`} className="inline-flex min-h-11 items-center gap-2 rounded-full border border-kashi-diya/40 px-5 text-sm text-kashi-diya hover:border-kashi-marigold hover:text-kashi-marigold"><Icon name="ticket" className="h-4 w-4" />{localizeGuide(guideBySlug("varanasi-trip-cost")!, loc).title.split(":")[0]}</a>
+          <a href={`/${locale}/guides/varanasi-in-2-days`} className="inline-flex min-h-11 items-center gap-2 rounded-full border border-kashi-diya/40 px-5 text-sm text-kashi-diya hover:border-kashi-marigold hover:text-kashi-marigold"><Icon name="tip" className="h-4 w-4" />{localizeGuide(guideBySlug("varanasi-in-2-days")!, loc, gtr).title.split(":")[0]}</a>
+          <a href={`/${locale}/guides/varanasi-trip-cost`} className="inline-flex min-h-11 items-center gap-2 rounded-full border border-kashi-diya/40 px-5 text-sm text-kashi-diya hover:border-kashi-marigold hover:text-kashi-marigold"><Icon name="ticket" className="h-4 w-4" />{localizeGuide(guideBySlug("varanasi-trip-cost")!, loc, gtr).title.split(":")[0]}</a>
           <a href={`/${locale}/map`} className="inline-flex min-h-11 items-center gap-2 rounded-full border border-kashi-diya/40 px-5 text-sm text-kashi-diya hover:border-kashi-marigold hover:text-kashi-marigold"><Icon name="pin" className="h-4 w-4" />{tpl("mapTitle")}</a>
         </p>
       </div>

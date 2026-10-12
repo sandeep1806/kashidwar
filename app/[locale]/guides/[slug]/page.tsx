@@ -8,7 +8,7 @@ import PageShell from "@/components/pages/PageShell";
 import EnglishNote from "@/components/ui/EnglishNote";
 import Icon, { type IconName } from "@/components/ui/Icon";
 import { festivals, itineraries, places, projects } from "@/lib/content";
-import { guideBySlug, guidePhoto, guides, localizeGuide } from "@/lib/guides";
+import { guideBySlug, guidePhoto, guides, guideTranslations, localizeGuide } from "@/lib/guides";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, alternatesFor, breadcrumbLd, itinerarySlug, pageUrl } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/guides/[
   const g = guideBySlug(slug);
   if (!g) return {};
   const loc = locale as Locale;
-  const l = localizeGuide(g, loc);
+  const l = localizeGuide(g, loc, await guideTranslations(loc));
   const photo = guidePhoto(g, loc);
   const image = photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`;
   const path = `/guides/${slug}`;
@@ -99,7 +99,7 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
     getTranslations({ locale, namespace: "page" }),
     getTranslations({ locale, namespace: "common" }),
   ]);
-  const l = localizeGuide(g, loc);
+  const l = localizeGuide(g, loc, await guideTranslations(loc));
   const photo = guidePhoto(g, loc);
   const path = `/guides/${slug}`;
   const home = `/${locale}`;
@@ -121,7 +121,7 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
       image: [absolute(photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`)],
       datePublished: g.published,
       dateModified: g.updated,
-      inLanguage: l.lang === "hi" ? "hi-IN" : "en-IN",
+      inLanguage: LOCALES[l.lang as Locale]?.bcp47 ?? "en-IN",
       mainEntityOfPage: url,
       author: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: BRAND, url: SITE_URL },
       publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: BRAND, logo: { "@type": "ImageObject", url: `${SITE_URL}/icon-512.png` } },
@@ -154,7 +154,7 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
           </span>
         }
         title={l.title}
-        secondary={l.lang === "hi" ? g.title_en : g.title_hi}
+        secondary={locale === "en" ? g.title_hi : g.title_en}
         subtitle={
           <p className="text-sm text-kashi-ash/85">
             {t("by", { brand: BRAND })} · <time dateTime={g.updated}>{t("updated", { date: date(g.updated) })}</time>
@@ -186,7 +186,7 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
         }
       >
         <div className="space-y-8" lang={l.lang}>
-          {l.lang === "en" && locale !== "en" && <EnglishNote text={common("englishNote")} />}
+          {!l.translated && <EnglishNote text={common("englishNote")} />}
           {l.sections.map((s) => {
             const [first, ...rest] = s.body;
             return (

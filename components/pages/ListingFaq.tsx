@@ -6,7 +6,7 @@ import type { Locale } from "@/lib/i18n/locales";
 import { absolute } from "@/lib/pages";
 
 type FaqKey = "places" | "ghats" | "temples" | "itineraries" | "home";
-interface FaqItem { q_en: string; a_en: string; q_hi: string; a_hi: string }
+interface FaqItem { q_en: string; a_en: string; q_hi: string; a_hi: string; [k: string]: string }
 const FAQS = faqs as unknown as Record<FaqKey, { sources: { title: string; url: string }[]; items: FaqItem[] }>;
 
 /** The FAQ text exists in Hindi and English; every other locale reads the English. */
@@ -17,9 +17,11 @@ export const faqLang = (locale: Locale): "hi" | "en" => (locale === "hi" ? "hi" 
  * <details> plus FAQPage JSON-LD. Hook-free; renders inside <Static>.
  */
 export default function ListingFaq({ locale, kind, title, path, sourcesLabel }: { locale: Locale; kind: FaqKey; title: string; path: string; sourcesLabel: string }) {
-  const lang = faqLang(locale);
   const { items, sources } = FAQS[kind];
-  const qa = items.map((it) => ({ q: lang === "hi" ? it.q_hi : it.q_en, a: lang === "hi" ? it.a_hi : it.a_en }));
+  // Regional translations live beside the English and Hindi as q_<locale> / a_<locale>.
+  const own = items.every((it) => it[`q_${locale}`] && it[`a_${locale}`]);
+  const lang = own ? locale : faqLang(locale);
+  const qa = items.map((it) => ({ q: it[`q_${lang}`] ?? it.q_en, a: it[`a_${lang}`] ?? it.a_en }));
   const ld = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -27,7 +29,7 @@ export default function ListingFaq({ locale, kind, title, path, sourcesLabel }: 
     mainEntity: qa.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
   };
   return (
-    <section id="faq" className="container-kashi mt-16 scroll-mt-24" lang={lang === "hi" ? "hi" : "en"}>
+    <section id="faq" className="container-kashi mt-16 scroll-mt-24" lang={lang}>
       <LdJson data={ld} />
       <h2 className="text-h3 text-kashi-white">{title}</h2>
       <div className="mt-6 divide-y divide-kashi-diya/10 rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40">

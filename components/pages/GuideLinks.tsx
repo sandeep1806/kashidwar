@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { LinkCards } from "@/components/pages/Blocks";
-import { guidePhoto, guidesFor, localizeGuide } from "@/lib/guides";
+import { guidePhoto, guidesFor, guideTranslations, localizeGuide } from "@/lib/guides";
 import type { Locale } from "@/lib/i18n/locales";
 import type { Kind } from "@/lib/pages";
 
@@ -9,11 +9,12 @@ export default async function GuideLinks({ locale, kind, id }: { locale: Locale;
   const list = guidesFor(kind, id);
   if (!list.length) return null;
   const t = await getTranslations({ locale, namespace: "guides" });
+  const tr = await guideTranslations(locale);
   return (
     <LinkCards
       title={t("relatedGuides")}
       items={list.map((g) => {
-        const l = localizeGuide(g, locale);
+        const l = localizeGuide(g, locale, tr);
         return { href: `/${locale}/guides/${g.slug}`, name: l.title, secondary: l.lang === "hi" ? g.title_en : g.title_hi, photo: guidePhoto(g, locale), faith: "secular" as const };
       })}
     />

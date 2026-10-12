@@ -32,8 +32,10 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/about">
     getTranslations({ locale, namespace: "page" }),
     getTranslations({ locale, namespace: "common" }),
   ]);
-  const lang = locale === "hi" ? "hi" : "en";
-  const text: AboutText = about[lang];
+  // English and Hindi are written first-hand; regional locales have their own block once translated.
+  const regional = (about as unknown as Record<string, AboutText | undefined>)[locale];
+  const lang = regional ? locale : locale === "hi" ? "hi" : "en";
+  const text: AboutText = regional ?? about[locale === "hi" ? "hi" : "en"];
   const path = "/about";
   const nf = new Intl.NumberFormat(locale === "hi" ? "hi-IN" : "en-IN");
   const stats = [

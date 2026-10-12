@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
-import { guidePhoto, guides, localizeGuide } from "@/lib/guides";
+import { guidePhoto, guides, guideTranslations, localizeGuide } from "@/lib/guides";
 import type { Locale } from "@/lib/i18n/locales";
 
 /**
@@ -12,6 +12,7 @@ import type { Locale } from "@/lib/i18n/locales";
 export default async function PlanYourVisit({ locale, list = guides }: { locale: Locale; list?: typeof guides }) {
   if (!list.length) return null;
   const t = await getTranslations({ locale, namespace: "guides" });
+  const tr = await guideTranslations(locale);
   return (
     <section id="plan" aria-labelledby="plan-title" className="cv-auto py-16">
       <div className="container-kashi">
@@ -27,7 +28,7 @@ export default async function PlanYourVisit({ locale, list = guides }: { locale:
         </div>
         <StaggerCards className="carousel-sm mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {list.map((g) => {
-            const l = localizeGuide(g, locale);
+            const l = localizeGuide(g, locale, tr);
             return (
               <article key={g.slug} className="group card-lift flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-5">
                 <CardPhoto photo={guidePhoto(g, locale)} className="card-photo -mx-2 -mt-2 mb-4" carousel />

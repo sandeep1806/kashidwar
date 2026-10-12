@@ -3,7 +3,7 @@ import { isIndexed } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ListingShell from "@/components/pages/ListingShell";
 import CardPhoto from "@/components/ui/CardPhoto";
-import { guidePhoto, guides, localizeGuide } from "@/lib/guides";
+import { guidePhoto, guides, guideTranslations, localizeGuide } from "@/lib/guides";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { alternatesFor } from "@/lib/pages";
 
@@ -22,7 +22,7 @@ export default async function GuidesPage({ params }: PageProps<"/[locale]/guides
   const { locale } = await params;
   setRequestLocale(locale);
   const loc = locale as Locale;
-  const [t, tp] = await Promise.all([getTranslations({ locale, namespace: "guides" }), getTranslations({ locale, namespace: "page" })]);
+  const [t, tp, tr] = await Promise.all([getTranslations({ locale, namespace: "guides" }), getTranslations({ locale, namespace: "page" }), guideTranslations(loc)]);
   const fmt = new Intl.DateTimeFormat(LOCALES[loc].bcp47, { dateStyle: "long", timeZone: "UTC" });
   const path = "/guides";
   return (
@@ -37,7 +37,7 @@ export default async function GuidesPage({ params }: PageProps<"/[locale]/guides
     >
       <div className="container-kashi mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {guides.map((g, i) => {
-          const l = localizeGuide(g, loc);
+          const l = localizeGuide(g, loc, tr);
           return (
             <article key={g.slug} className="group card-lift flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-6">
               <CardPhoto photo={guidePhoto(g, loc)} className="-mx-3 -mt-3 mb-5" priority={i === 0} />

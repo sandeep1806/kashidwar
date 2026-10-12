@@ -73,15 +73,41 @@ export const guides: Guide[] = ([howToReach, sareeGuide, boatRide, kvAarti, atNi
 
 export const guideBySlug = (slug: string) => guides.find((g) => g.slug === slug);
 
-/** Guides are written in Hindi and English; every other locale reads the English text. */
+/** A guide translated into a regional locale (content/guides/i18n/<locale>.json, keyed by slug). */
+export interface GuideTranslation {
+  title: string;
+  description: string;
+  lead: string;
+  facts?: { label: string; value: string }[];
+  sections: { heading: string; body: string[]; list?: string[] }[];
+  faq: { q: string; a: string }[];
+}
+export type GuideTranslations = Record<string, GuideTranslation>;
+
+/**
+ * The regional translations of every guide for one locale, loaded on demand
+ * (one chunk per locale, so the other locales' text is never parsed).
+ */
+export async function guideTranslations(locale: Locale): Promise<GuideTranslations> {
+  if (locale === "en" || locale === "hi") return {};
+  try {
+    return (await import(`@/content/guides/i18n/${locale}.json`)).default as GuideTranslations;
+  } catch {
+    return {};
+  }
+}
+
+/** Guides are written in Hindi and English; other locales read their translation, else the English. */
 export const guideLang = (locale: Locale): "hi" | "en" => (locale === "hi" ? "hi" : "en");
 
-/** The guide in one language, with section sources resolved. */
-export function localizeGuide(g: Guide, locale: Locale) {
+/** The guide in one language, with section sources resolved. Pass the locale's translations for regional locales. */
+export function localizeGuide(g: Guide, locale: Locale, translations: GuideTranslations = {}) {
+  const tr = translations[g.slug];
   const l = guideLang(locale);
   const pick = (o: Guide, k: "title" | "description" | "lead") => (o as unknown as Record<string, string>)[`${k}_${l}`];
-  return {
-    lang: l,
+  const base = {
+    lang: l as string,
+    translated: l === "hi" || locale === "en",
     title: pick(g, "title"),
     description: pick(g, "description"),
     lead: pick(g, "lead"),
@@ -95,6 +121,22 @@ export function localizeGuide(g: Guide, locale: Locale) {
       sources: (s.sources ?? []).map((i) => ({ n: i + 1, ...g.sources[i] })).filter((s) => s.url),
     })),
     faq: g.faq.map((f) => ({ q: l === "hi" ? f.q_hi : f.q_en, a: l === "hi" ? f.a_hi : f.a_en })),
+  };
+  if (!tr) return base;
+  // A regional translation replaces the text field by field; anything missing stays English.
+  return {
+    ...base,
+    lang: locale as string,
+    translated: true,
+    title: tr.title || base.title,
+    description: tr.description || base.description,
+    lead: tr.lead || base.lead,
+    facts: base.facts.map((f, i) => ({ ...f, label: tr.facts?.[i]?.label || f.label, value: tr.facts?.[i]?.value || f.value })),
+    sections: base.sections.map((s, i) => {
+      const t = tr.sections?.[i];
+      return t ? { ...s, heading: t.heading || s.heading, body: t.body?.length === s.body.length ? t.body : s.body, list: t.list?.length === s.list.length ? t.list : s.list } : s;
+    }),
+    faq: base.faq.map((f, i) => ({ q: tr.faq?.[i]?.q || f.q, a: tr.faq?.[i]?.a || f.a })),
   };
 }
 
