@@ -7,6 +7,7 @@ import Icon from "@/components/ui/Icon";
 import Photo from "@/components/ui/Photo";
 import ArtFallback from "@/components/ui/ArtFallback";
 import { getPlace, itineraries, localizeItinerary } from "@/lib/content";
+import { displayName } from "@/lib/contentTypes";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { alternatesFor, itineraryLeadPlace, itinerarySlug, pageUrl } from "@/lib/pages";
 import { guideBySlug, guideTranslations, localizeGuide } from "@/lib/guides";
@@ -38,7 +39,6 @@ export default async function ItinerariesPage({ params }: PageProps<"/[locale]/i
   ]);
   const gtr = await guideTranslations(loc);
   const other = await getTranslations({ locale: LOCALES[loc].script === "devanagari" ? "en" : "hi", namespace: "itineraries" });
-  const devanagari = LOCALES[loc].script === "devanagari";
   const plans = itineraries.map((raw) => {
     const it = localizeItinerary(raw, loc);
     const stops = it.plan.flatMap((d) => d.stops);
@@ -76,7 +76,7 @@ export default async function ItinerariesPage({ params }: PageProps<"/[locale]/i
                     </span>
                   </div>
                   <div className="flex flex-1 flex-col p-5">
-                    <h3 className="font-display text-2xl leading-snug text-kashi-white">{devanagari ? raw.title_hi : raw.title_en}</h3>
+                    <h3 className="font-display text-2xl leading-snug text-kashi-white">{displayName(loc, { name_en: raw.title_en, name_hi: raw.title_hi, names: raw.titles }).primary}</h3>
                     <p className="mt-2 text-kashi-ash/85">{it.summary}</p>
                     <ul className="mt-4 grid grid-cols-2 gap-2 text-xs text-kashi-ash/80">
                       <li className="inline-flex items-center gap-1.5"><Icon name="tip" className="h-4 w-4 text-kashi-diya" />{(t.raw("facts.stops") as string).replace("{n}", String(stops.length))}</li>
@@ -86,7 +86,7 @@ export default async function ItinerariesPage({ params }: PageProps<"/[locale]/i
                     </ul>
                     <p className="mt-auto flex flex-wrap gap-1.5 pt-4">
                       {placeIds.slice(0, 5).map((id) => (
-                        <span key={id} className="rounded-full bg-kashi-rudraksha/50 px-2 py-0.5 text-[0.7rem] text-kashi-ash/85">{devanagari ? getPlace(id)?.name_hi : getPlace(id)?.name_en}</span>
+                        <span key={id} className="rounded-full bg-kashi-rudraksha/50 px-2 py-0.5 text-[0.7rem] text-kashi-ash/85">{getPlace(id) ? displayName(loc, getPlace(id)!).primary : id}</span>
                       ))}
                     </p>
                   </div>

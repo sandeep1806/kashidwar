@@ -98,6 +98,8 @@ export interface Glance extends GlanceText {
 
 export interface Place {
   id: string;
+  /** Name in a regional script, keyed by locale (Devanagari locales use name_hi) */
+  names?: Record<string, string>;
   i18n?: Record<string, LocalizedFields>;
   name_en: string;
   name_hi: string;
@@ -123,6 +125,8 @@ export type ProjectType = "transport" | "heritage" | "tourism" | "infrastructure
 
 export interface Project {
   id: string;
+  /** Name in a regional script, keyed by locale (Devanagari locales use name_hi) */
+  names?: Record<string, string>;
   i18n?: Record<string, LocalizedFields>;
   name_en: string;
   name_hi: string;
@@ -149,6 +153,8 @@ export interface Project {
 
 export interface Festival {
   id: string;
+  /** Name in a regional script, keyed by locale (Devanagari locales use name_hi) */
+  names?: Record<string, string>;
   i18n?: Record<string, LocalizedFields>;
   name_en: string;
   name_hi: string;
@@ -169,6 +175,8 @@ export type FoodType = "breakfast" | "sweet" | "drink" | "street" | "paan";
 
 export interface Food {
   id: string;
+  /** Name in a regional script, keyed by locale (Devanagari locales use name_hi) */
+  names?: Record<string, string>;
   i18n?: Record<string, LocalizedFields>;
   name_en: string;
   name_hi: string;
@@ -206,6 +214,8 @@ export interface ItineraryDay {
 
 export interface Itinerary {
   id: string;
+  /** Title in a regional script, keyed by locale */
+  titles?: Record<string, string>;
   i18n?: Record<string, { summary?: string }>;
   days: number;
   title_en: string;
@@ -282,7 +292,7 @@ export interface PhotoData {
   note?: string;
 }
 
-/** The part of a place the grid, filters and map need on page load. */
+/** The part of a place the grid, filters and map need on page load. `name_en` carries the display name in the page's locale (map labels). */
 export type PlaceLite = Pick<Place, "id" | "name_en" | "faith" | "type" | "lat" | "lng" | "bestTime" | "coordsVerified"> & {
   /** Glance chips on the card */
   duration?: string;
@@ -295,4 +305,20 @@ export interface PlaceDetail {
   story?: string;
   tips?: string[];
   sources: { title: string; url: string }[];
+}
+
+
+/** Scripts that read the Hindi name (Devanagari) — the others get their own `names[locale]`, else English. */
+const DEVANAGARI_LOCALES = new Set(["hi", "mr", "sa"]);
+
+/**
+ * The name to show for an entry in a locale: its own-script name (`names[locale]`) when there
+ * is one, the Hindi name in Devanagari locales, English otherwise. The secondary line is
+ * English for regional scripts and Devanagari locales, Hindi for English.
+ */
+export function displayName(locale: string, e: { name_en: string; name_hi: string; names?: Record<string, string> }): { primary: string; secondary: string } {
+  const own = e.names?.[locale];
+  if (own) return { primary: own, secondary: e.name_en };
+  if (DEVANAGARI_LOCALES.has(locale)) return { primary: e.name_hi, secondary: e.name_en };
+  return { primary: e.name_en, secondary: e.name_hi };
 }

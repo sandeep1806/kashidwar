@@ -4,6 +4,17 @@
     "days": 1,
     "title_en": "One dawn to one dusk",
     "title_hi": "एक भोर से एक साँझ तक",
+    "titles": {
+      "ta": "ஒரு விடியல் முதல் ஒரு அந்தி வரை",
+      "te": "ఒక వేకువ నుంచి ఒక సంధ్య వరకు",
+      "kn": "ಒಂದು ಮುಂಜಾನೆಯಿಂದ ಒಂದು ಮುಸ್ಸಂಜೆವರೆಗೆ",
+      "ml": "ഒരു പുലരി മുതൽ ഒരു സന്ധ്യ വരെ",
+      "bn": "এক ভোর থেকে এক সন্ধ্যা",
+      "or": "ଗୋଟିଏ ଭୋରରୁ ଗୋଟିଏ ସନ୍ଧ୍ୟା ପର୍ଯ୍ୟନ୍ତ",
+      "as": "এটা পুৱাৰ পৰা এটা সন্ধিয়ালৈ",
+      "gu": "એક પરોઢથી એક સાંજ સુધી",
+      "pa": "ਇੱਕ ਪਹੁ-ਫੁਟਾਲੇ ਤੋਂ ਇੱਕ ਸ਼ਾਮ ਤੱਕ"
+    },
     "summary": "The river at sunrise, the temple, the lanes, and the lamps at night.",
     "plan": [
       {
@@ -485,6 +496,17 @@
     "days": 2,
     "title_en": "Kashi and Sarnath",
     "title_hi": "काशी और सारनाथ",
+    "titles": {
+      "ta": "காசியும் சாரநாத்தும்",
+      "te": "కాశీ, సారనాథ్",
+      "kn": "ಕಾಶಿ ಮತ್ತು ಸಾರನಾಥ",
+      "ml": "കാശിയും സാരനാഥും",
+      "bn": "কাশী ও সারনাথ",
+      "or": "କାଶୀ ଓ ସାରନାଥ",
+      "as": "কাশী আৰু সাৰনাথ",
+      "gu": "કાશી અને સારનાથ",
+      "pa": "ਕਾਸ਼ੀ ਅਤੇ ਸਾਰਨਾਥ"
+    },
     "summary": "Day one on the river; day two where the Buddha first taught, and the south of the city.",
     "plan": [
       {
@@ -1180,6 +1202,17 @@
     "days": 3,
     "title_en": "Every faith of Kashi",
     "title_hi": "काशी की हर आस्था",
+    "titles": {
+      "ta": "காசியின் ஒவ்வொரு நம்பிக்கையும்",
+      "te": "కాశీలోని ప్రతి విశ్వాసం",
+      "kn": "ಕಾಶಿಯ ಪ್ರತಿ ನಂಬಿಕೆ",
+      "ml": "കാശിയിലെ ഓരോ വിശ്വാസവും",
+      "bn": "কাশীর প্রতিটি বিশ্বাস",
+      "or": "କାଶୀର ପ୍ରତ୍ୟେକ ବିଶ୍ୱାସ",
+      "as": "কাশীৰ প্ৰতিটো বিশ্বাস",
+      "gu": "કાશીની દરેક શ્રદ્ધા",
+      "pa": "ਕਾਸ਼ੀ ਦਾ ਹਰ ਧਰਮ"
+    },
     "summary": "Two days as above, then a third across the city's Buddhist, Jain, Bhakti, Sikh, Islamic and Christian sites, ending at Namo Ghat.",
     "plan": [
       {

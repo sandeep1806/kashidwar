@@ -33,6 +33,8 @@ How it is stored: place/festival/project/food/itinerary text in each entry's `i1
 
 To translate new content later: `node scripts/check-i18n.mjs <dir>` writes the missing strings per locale as `<dir>/<locale>/<chunk>.json`; translate each into `out-<chunk>.json` with the same keys; then `node scripts/merge-translations.mjs <dir>` and rerun `node scripts/optimize-images.mjs` for alt text.
 
+**Names in each script (2026-10-12):** every place, festival, project and food entry has `names.<locale>` and every itinerary `titles.<locale>` for the nine non-Devanagari locales (ta, te, kn, ml, bn, or, as, gu, pa); `displayName()` in `lib/contentTypes.ts` picks the own-script name, else Hindi for Devanagari locales, else English, with English as the secondary line. Map pins use the same name. Less certain spellings flagged by the translator: Assamese চাৱন (Sawan), and the "Bharat Milap" / "Eid al-Fitr" forms in several scripts.
+
 Still unreviewed by native speakers — the regional locales stay `noindex` (lib/seo.ts) until someone reads them. Points the translators raised:
 - **Brand:** content keeps "Kashidwar" in Latin; `messages/ta|bn|kn.json` write it in script in the About title (காஷித்வார், কাশীদ্বার, ಕಾಶಿದ್ವಾರ್). Pick one.
 - **Digits:** all new text uses ASCII digits; `messages/bn.json` (and a few other message files) still use native numerals in some strings.

@@ -12,6 +12,7 @@ import FestivalDateLine from "@/components/ui/FestivalDateLine";
 import FaithGlyph from "@/components/ui/FaithGlyph";
 import Icon from "@/components/ui/Icon";
 import { festivals, localize, type Faith } from "@/lib/content";
+import { displayName } from "@/lib/contentTypes";
 import { festivalDateView, festivalTiming, timingSources } from "@/lib/festivalDates";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, breadcrumbLd, festivalPlaces, alternatesFor, leadOf, metaDescription, neighbours, pagePath, pageUrl } from "@/lib/pages";
@@ -24,8 +25,7 @@ export function generateStaticParams() {
   return locales.flatMap((locale) => festivals.map((f) => ({ locale, id: f.id })));
 }
 
-const names = (locale: Locale, p: { name_en: string; name_hi: string }) =>
-  LOCALES[locale].script === "devanagari" ? { primary: p.name_hi, secondary: p.name_en } : { primary: p.name_en, secondary: p.name_hi };
+const names = (locale: Locale, p: { name_en: string; name_hi: string; names?: Record<string, string> }) => displayName(locale, p);
 
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/festivals/[id]">): Promise<Metadata> {
@@ -85,7 +85,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
     { name: primary, href: `/${locale}${path}` },
   ];
   const months = tf.raw("months") as string[];
-  const lite = (x: (typeof venues)[number]) => ({ id: x.id, name_en: x.name_en, faith: x.faith, type: x.type, lat: x.lat, lng: x.lng, bestTime: "", coordsVerified: x.coordsVerified });
+  const lite = (x: (typeof venues)[number]) => ({ id: x.id, name_en: displayName(loc, x).primary, faith: x.faith, type: x.type, lat: x.lat, lng: x.lng, bestTime: "", coordsVerified: x.coordsVerified });
   const firstVenue = raw.placeIds.length ? venues[0] : null;
   const where = Array.isArray(f.where) ? f.where.join(" · ") : f.where;
   const lead = leadOf(f.summary);

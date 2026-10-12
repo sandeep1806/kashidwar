@@ -11,6 +11,7 @@ import LdJson from "@/components/pages/LdJson";
 import PageShell from "@/components/pages/PageShell";
 import EnglishNote from "@/components/ui/EnglishNote";
 import { getPlace, itineraries, localize, localizeItinerary } from "@/lib/content";
+import { displayName } from "@/lib/contentTypes";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, breadcrumbLd, itineraryLeadPlace, itinerarySlug, alternatesFor, metaDescription, neighbours, pagePath, pageUrl } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
@@ -22,8 +23,7 @@ export function generateStaticParams() {
   return locales.flatMap((locale) => itineraries.map((it) => ({ locale, slug: itinerarySlug(it) })));
 }
 
-const titleOf = (locale: Locale, it: { title_en: string; title_hi: string }) =>
-  LOCALES[locale].script === "devanagari" ? { primary: it.title_hi, secondary: it.title_en } : { primary: it.title_en, secondary: it.title_hi };
+const titleOf = (locale: Locale, it: { title_en: string; title_hi: string; titles?: Record<string, string> }) => displayName(locale, { name_en: it.title_en, name_hi: it.title_hi, names: it.titles });
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/itineraries/[slug]">): Promise<Metadata> {
   const { locale, slug } = await params;
@@ -59,7 +59,6 @@ export default async function ItineraryPage({ params }: PageProps<"/[locale]/iti
     getTranslations({ locale, namespace: "practical" }),
     getTranslations({ locale, namespace: "places" }),
   ]);
-  const devanagari = LOCALES[loc].script === "devanagari";
   const { primary, secondary } = titleOf(loc, raw);
   const path = pagePath("itineraries", slug);
   const stops = raw.plan.flatMap((d) => d.stops);
@@ -93,11 +92,11 @@ export default async function ItineraryPage({ params }: PageProps<"/[locale]/iti
   ];
   const lite = (id: string) => {
     const p = getPlace(id)!;
-    return { id: p.id, name_en: p.name_en, faith: p.faith, type: p.type, lat: p.lat, lng: p.lng, bestTime: "", coordsVerified: p.coordsVerified };
+    return { id: p.id, name_en: displayName(loc, p).primary, faith: p.faith, type: p.type, lat: p.lat, lng: p.lng, bestTime: "", coordsVerified: p.coordsVerified };
   };
   function placeName(id: string) {
     const p = getPlace(id);
-    return p ? (devanagari ? p.name_hi : p.name_en) : id;
+    return p ? displayName(loc, p).primary : id;
   }
 
   const ld = [
@@ -170,7 +169,7 @@ export default async function ItineraryPage({ params }: PageProps<"/[locale]/iti
           <>
             <LinkCards
               title={t("related")}
-              items={placeIds.slice(0, 8).map((id) => ({ href: pageUrl(loc, "places", id), name: placeName(id), secondary: devanagari ? getPlace(id)!.name_en : getPlace(id)!.name_hi, photo: getPhoto(`places/${id}`, loc), faith: getPlace(id)!.faith[0] ?? "secular", type: getPlace(id)!.type }))}
+              items={placeIds.slice(0, 8).map((id) => ({ href: pageUrl(loc, "places", id), name: placeName(id), secondary: displayName(loc, getPlace(id)!).secondary, photo: getPhoto(`places/${id}`, loc), faith: getPlace(id)!.faith[0] ?? "secular", type: getPlace(id)!.type }))}
             />
             <GuideLinks locale={loc} kind="itineraries" id={slug} />
             <PrevNext

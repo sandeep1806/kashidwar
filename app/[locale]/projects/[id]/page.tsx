@@ -12,6 +12,7 @@ import { ProgressBar, StatusBadge } from "@/components/sections/ProjectsList";
 import EnglishNote from "@/components/ui/EnglishNote";
 import Icon from "@/components/ui/Icon";
 import { localize, projects, type Faith } from "@/lib/content";
+import { displayName } from "@/lib/contentTypes";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { breadcrumbLd, hubDistances, alternatesFor, leadOf, mapLinks, metaDescription, neighbours, pagePath, pageUrl, projectPlaces, travelEstimate } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
@@ -23,8 +24,7 @@ export function generateStaticParams() {
   return locales.flatMap((locale) => projects.map((p) => ({ locale, id: p.id })));
 }
 
-const names = (locale: Locale, p: { name_en: string; name_hi: string }) =>
-  LOCALES[locale].script === "devanagari" ? { primary: p.name_hi, secondary: p.name_en } : { primary: p.name_en, secondary: p.name_hi };
+const names = (locale: Locale, p: { name_en: string; name_hi: string; names?: Record<string, string> }) => displayName(locale, p);
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/projects/[id]">): Promise<Metadata> {
   const { locale, id } = await params;
@@ -90,9 +90,9 @@ export default async function ProjectPage({ params }: PageProps<"/[locale]/proje
     const est = travelEstimate(h.km);
     return { key: h.key, icon: HUB_ICON[h.key], label: t(h.key), distance: t("glance.km", { km: nf.format(h.km) }), estimate: est.mode === "walk" ? t("glance.walkMin", { min: est.minutes }) : t("glance.rideMin", { min: est.minutes }) };
   });
-  const lite = (x: (typeof nearby)[number]) => ({ id: x.id, name_en: x.name_en, faith: x.faith, type: x.type, lat: x.lat, lng: x.lng, bestTime: "", coordsVerified: x.coordsVerified });
+  const lite = (x: (typeof nearby)[number]) => ({ id: x.id, name_en: displayName(loc, x).primary, faith: x.faith, type: x.type, lat: x.lat, lng: x.lng, bestTime: "", coordsVerified: x.coordsVerified });
   // The project itself as the focused pin (a generic "heritage" silhouette: project types are not place types).
-  const self = { id: raw.id, name_en: raw.name_en, faith: raw.faith, type: "heritage" as const, lat: raw.lat, lng: raw.lng, bestTime: "", coordsVerified: true };
+  const self = { id: raw.id, name_en: displayName(loc, raw).primary, faith: raw.faith, type: "heritage" as const, lat: raw.lat, lng: raw.lng, bestTime: "", coordsVerified: true };
 
   return (
     <>

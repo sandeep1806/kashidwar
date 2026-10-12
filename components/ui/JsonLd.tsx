@@ -1,4 +1,5 @@
 import { places } from "@/lib/content";
+import { displayName } from "@/lib/contentTypes";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { BRAND, SITE_URL, organizationLd } from "@/lib/site";
 
@@ -19,7 +20,6 @@ export default function JsonLd({
   siteName: string;
   description: string;
 }) {
-  const devanagari = LOCALES[locale].script === "devanagari";
   const data = {
     "@context": "https://schema.org",
     "@type": "TouristDestination",
@@ -36,8 +36,8 @@ export default function JsonLd({
       "@type": "TouristAttraction",
       "@id": `${SITE_URL}/${locale}/places/${p.id}#place`,
       url: `${SITE_URL}/${locale}/places/${p.id}`,
-      name: devanagari ? p.name_hi : p.name_en,
-      alternateName: devanagari ? p.name_en : p.name_hi,
+      name: displayName(locale, p).primary,
+      alternateName: displayName(locale, p).secondary,
       geo: { "@type": "GeoCoordinates", latitude: p.lat, longitude: p.lng },
       isAccessibleForFree: true,
       sameAs: p.sources[0]?.url,

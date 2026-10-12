@@ -13,6 +13,7 @@ import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, alternatesFor, breadcrumbLd, itinerarySlug, pageUrl } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
 import { BRAND, SITE_URL } from "@/lib/site";
+import { displayName } from "@/lib/contentTypes";
 
 export const dynamicParams = false;
 
@@ -20,8 +21,7 @@ export function generateStaticParams() {
   return locales.flatMap((locale) => guides.map((g) => ({ locale, slug: g.slug })));
 }
 
-const devanagari = (l: Locale) => LOCALES[l].script === "devanagari";
-const nameOf = (l: Locale, x: { name_en: string; name_hi: string }) => (devanagari(l) ? { name: x.name_hi, secondary: x.name_en } : { name: x.name_en, secondary: x.name_hi });
+const nameOf = (l: Locale, x: { name_en: string; name_hi: string; names?: Record<string, string> }) => { const n = displayName(l, x); return { name: n.primary, secondary: n.secondary }; };
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/guides/[slug]">): Promise<Metadata> {
   const { locale, slug } = await params;
@@ -78,7 +78,7 @@ function relatedCards(g: NonNullable<ReturnType<typeof guideBySlug>>, loc: Local
   }
   for (const slug of g.related.itineraries ?? []) {
     const it = itineraries.find((x) => itinerarySlug(x) === slug);
-    if (it) out.push({ href: pageUrl(loc, "itineraries", slug), ...nameOf(loc, { name_en: it.title_en, name_hi: it.title_hi }), photo: null, faith: "secular" });
+    if (it) out.push({ href: pageUrl(loc, "itineraries", slug), ...nameOf(loc, { name_en: it.title_en, name_hi: it.title_hi, names: it.titles }), photo: null, faith: "secular" });
   }
   return out;
 }

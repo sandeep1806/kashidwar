@@ -10,7 +10,7 @@ import type { FoodItem } from "@/components/sections/FoodList";
 import type { ProjectItem, ProjectLabels } from "@/components/sections/ProjectsList";
 import type { ExplorerLabels, ExplorerPlace } from "@/components/sections/PlacesExplorer";
 import type { FaithTile } from "@/components/sections/FaithTiles";
-import { FAITHS, PLACE_FILTERS, type Crowd, type Faith, type PlaceDetail, type PlaceFilter } from "@/lib/contentTypes";
+import { FAITHS, PLACE_FILTERS, displayName, type Crowd, type Faith, type PlaceDetail, type PlaceFilter } from "@/lib/contentTypes";
 
 const CROWDS: Crowd[] = ["quiet", "moderate", "busy", "very-busy"];
 
@@ -35,12 +35,11 @@ const PROJECT_TYPES = ["transport", "heritage", "tourism", "infrastructure", "cu
 export async function getProjectsProps(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "projects" });
   const meta = LOCALES[locale];
-  const devanagari = meta.script === "devanagari";
   const fmt = new Intl.DateTimeFormat(meta.bcp47, { dateStyle: "long" });
   const latest = projects.reduce((d, p) => (p.lastVerified > d ? p.lastVerified : d), "");
   const items: ProjectItem[] = projects.map((raw) => {
     const p = localize(raw, locale);
-    return { id: p.id, href: pageUrl(locale, "projects", p.id), faith: p.faith[0] ?? "secular", status: p.status, type: p.type, agency: p.agency, timeline: p.timeline, summary: p.summary, verified: p.verified, lastVerified: p.lastVerified, cost: p.cost, progress: p.progress, sources: p.sources.map(({ title, url }) => ({ title, url })), photo: getPhoto(`projects/${p.id}`, locale), primaryName: devanagari ? p.name_hi : p.name_en, secondaryName: devanagari ? p.name_en : p.name_hi, lastVerifiedLabel: fmt.format(new Date(p.lastVerified + "T00:00:00Z")) };
+    return { id: p.id, href: pageUrl(locale, "projects", p.id), faith: p.faith[0] ?? "secular", status: p.status, type: p.type, agency: p.agency, timeline: p.timeline, summary: p.summary, verified: p.verified, lastVerified: p.lastVerified, cost: p.cost, progress: p.progress, sources: p.sources.map(({ title, url }) => ({ title, url })), photo: getPhoto(`projects/${p.id}`, locale), primaryName: displayName(locale, p).primary, secondaryName: displayName(locale, p).secondary, lastVerifiedLabel: fmt.format(new Date(p.lastVerified + "T00:00:00Z")) };
   });
   const groups = ORDER.map((status) => ({ status, items: items.filter((p) => p.status === status) })).filter((g) => g.items.length);
   const labels: ProjectLabels = {
@@ -71,11 +70,10 @@ export type ProjectsProps = Awaited<ReturnType<typeof getProjectsProps>>;
 export async function getFestivalsProps(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "festivals" });
   const tpage = await getTranslations({ locale, namespace: "page" });
-  const devanagari = LOCALES[locale].script === "devanagari";
   const items: FestivalItem[] = festivals
     .map((raw) => {
       const f = localize(raw, locale);
-      return { id: f.id, href: pageUrl(locale, "festivals", f.id), date: festivalDateView(raw, LOCALES[locale].bcp47, tpage), months: f.months, when: f.when, where: f.where, summary: f.summary, photo: getPhoto(`festivals/${f.id}`, locale), primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, glyph: f.faith[0] ?? "secular" };
+      return { id: f.id, href: pageUrl(locale, "festivals", f.id), date: festivalDateView(raw, LOCALES[locale].bcp47, tpage), months: f.months, when: f.when, where: f.where, summary: f.summary, photo: getPhoto(`festivals/${f.id}`, locale), primaryName: displayName(locale, f).primary, secondaryName: displayName(locale, f).secondary, glyph: f.faith[0] ?? "secular" };
     })
     // What's coming next first (by the next verified or expected date).
     .sort((a, b) => a.date.sortKey.localeCompare(b.date.sortKey));
@@ -90,10 +88,9 @@ export type FestivalsProps = Awaited<ReturnType<typeof getFestivalsProps>>;
 
 export async function getFoodProps(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "food" });
-  const devanagari = LOCALES[locale].script === "devanagari";
   const items: FoodItem[] = foods.map((raw) => {
     const f = localize(raw, locale);
-    return { id: f.id, season: f.season, where: f.where, summary: f.summary, vegetarian: f.vegetarian, price: f.price, priceVerified: f.priceVerified, photo: getPhoto(`food/${f.id}`, locale), primaryName: devanagari ? f.name_hi : f.name_en, secondaryName: devanagari ? f.name_en : f.name_hi, typeLabel: t(`types.${f.type}`) };
+    return { id: f.id, season: f.season, where: f.where, summary: f.summary, vegetarian: f.vegetarian, price: f.price, priceVerified: f.priceVerified, photo: getPhoto(`food/${f.id}`, locale), primaryName: displayName(locale, f).primary, secondaryName: displayName(locale, f).secondary, typeLabel: t(`types.${f.type}`) };
   });
   const common = await getTranslations({ locale, namespace: "common" });
   return {
@@ -107,7 +104,6 @@ export type FoodProps = Awaited<ReturnType<typeof getFoodProps>>;
 
 export async function getItinerariesProps(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "itineraries" });
-  const devanagari = LOCALES[locale].script === "devanagari";
   const list: Itinerary[] = itineraries.map((it) => localizeItinerary(it, locale));
   const common = await getTranslations({ locale, namespace: "common" });
   return {
@@ -121,7 +117,7 @@ export async function getItinerariesProps(locale: Locale) {
     placesNote: t("placesNote"),
     openPage: (await getTranslations({ locale, namespace: "page" }))("openPage"),
     pageHrefs: list.map((it) => pageUrl(locale, "itineraries", itinerarySlug(it))),
-    placeNames: Object.fromEntries(places.map((p) => [p.id, devanagari ? p.name_hi : p.name_en])),
+    placeNames: Object.fromEntries(places.map((p) => [p.id, displayName(locale, p).primary])),
   };
 }
 export type ItinerariesProps = Awaited<ReturnType<typeof getItinerariesProps>>;
@@ -162,13 +158,12 @@ const PLACE_TYPES = ["ghat", "temple", "stupa", "monastery", "mosque", "church",
 export async function getPlacesProps(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "places" });
   const tpage = await getTranslations({ locale, namespace: "page" });
-  const devanagari = LOCALES[locale].script === "devanagari";
   const items: ExplorerPlace[] = places.map((raw) => {
     const p = localize(raw, locale);
     return {
-      place: { id: p.id, name_en: p.name_en, faith: p.faith, type: p.type, lat: p.lat, lng: p.lng, bestTime: p.bestTime, coordsVerified: p.coordsVerified, ...(p.glance?.duration ? { duration: p.glance.duration } : {}), ...(p.glance?.crowd ? { crowd: p.glance.crowd } : {}) },
-      primaryName: devanagari ? raw.name_hi : raw.name_en,
-      secondaryName: devanagari ? raw.name_en : raw.name_hi,
+      place: { id: p.id, name_en: displayName(locale, raw).primary, faith: p.faith, type: p.type, lat: p.lat, lng: p.lng, bestTime: p.bestTime, coordsVerified: p.coordsVerified, ...(p.glance?.duration ? { duration: p.glance.duration } : {}), ...(p.glance?.crowd ? { crowd: p.glance.crowd } : {}) },
+      primaryName: displayName(locale, raw).primary,
+      secondaryName: displayName(locale, raw).secondary,
       photo: getPhoto(`places/${raw.id}`, locale),
     };
   });
@@ -203,13 +198,12 @@ export type PlacesProps = Awaited<ReturnType<typeof getPlacesProps>>;
 
 export async function getFaithsProps(locale: Locale) {
   const t = await getTranslations({ locale, namespace: "faiths" });
-  const devanagari = LOCALES[locale].script === "devanagari";
   const tiles: FaithTile[] = faithEntries.map((f) => ({
     ...f,
     name: t(`tiles.${f.id}.name`),
     essence: t(`tiles.${f.id}.essence`),
     translation: t(`tiles.${f.id}.translation`),
-    siteNames: f.sites.map((id) => getPlace(id)).filter((p) => !!p).map((p) => (devanagari ? p.name_hi : p.name_en)),
+    siteNames: f.sites.map((id) => getPlace(id)).filter((p) => !!p).map((p) => displayName(locale, p).primary),
   }));
   return {
     heading: { id: "faiths", title: t("title"), secondary: t("titleSecondary"), intro: t("intro"), lead: t("lead") } as HeadingProps,

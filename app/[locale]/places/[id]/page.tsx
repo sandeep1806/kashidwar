@@ -14,6 +14,7 @@ import FaithGlyph from "@/components/ui/FaithGlyph";
 import Gallery from "@/components/ui/Gallery";
 import Icon from "@/components/ui/Icon";
 import { localize, places, type Faith } from "@/lib/content";
+import { displayName } from "@/lib/contentTypes";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, breadcrumbLd, festivalsAt, hubDistances, alternatesFor, leadOf, mapLinks, metaDescription, nearestPlace, neighbours, pagePath, pageUrl, relatedPlaces, travelEstimate } from "@/lib/pages";
 import { getGallery, getGalleryCredits, getPhoto } from "@/lib/photos";
@@ -25,8 +26,7 @@ export function generateStaticParams() {
   return locales.flatMap((locale) => places.map((p) => ({ locale, id: p.id })));
 }
 
-const names = (locale: Locale, p: { name_en: string; name_hi: string }) =>
-  LOCALES[locale].script === "devanagari" ? { primary: p.name_hi, secondary: p.name_en } : { primary: p.name_en, secondary: p.name_hi };
+const names = (locale: Locale, p: { name_en: string; name_hi: string; names?: Record<string, string> }) => displayName(locale, p);
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/places/[id]">): Promise<Metadata> {
   const { locale, id } = await params;
@@ -94,7 +94,7 @@ export default async function PlacePage({ params }: PageProps<"/[locale]/places/
     parent,
     { name: primary, href: `/${locale}${path}` },
   ];
-  const lite = (x: typeof raw) => ({ id: x.id, name_en: x.name_en, faith: x.faith, type: x.type, lat: x.lat, lng: x.lng, bestTime: "", coordsVerified: x.coordsVerified });
+  const lite = (x: typeof raw) => ({ id: x.id, name_en: displayName(loc, x).primary, faith: x.faith, type: x.type, lat: x.lat, lng: x.lng, bestTime: "", coordsVerified: x.coordsVerified });
 
   // The lead is the first sentence; the whole summary (and story) sit behind "Read the full story".
   const lead = leadOf(p.summary);
