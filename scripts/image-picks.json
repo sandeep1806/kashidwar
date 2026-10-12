@@ -1103,5 +1103,83 @@
       "en": "Looking south along the flooded Ganga from a balcony of Darbhanga Palace toward Assi Ghat during the monsoon.",
       "hi": "बरसात में दरभंगा महल की छज्जे से बाढ़ भरी गंगा के साथ दक्षिण की ओर, अस्सी घाट की दिशा में दृश्य।"
     }
+  },
+  {
+    "key": "places/vishalakshi-temple",
+    "title": "File:காசி விசாலாட்சி கோயில் கல்வெட்டு.jpg",
+    "crop": [
+      0,
+      0,
+      1,
+      0.44
+    ],
+    "alt": {
+      "en": "Painted gateway of the Vishalakshi temple with lion figures, beside the wall plaque and the Tamil inscription of the Nagarathar community",
+      "hi": "सिंह-आकृतियों वाला विशालाक्षी मंदिर का रंगीन प्रवेश द्वार, पास में दीवार की पट्टिका और नगरत्तार समुदाय का तमिल शिलालेख"
+    }
+  },
+  {
+    "key": "places/nepali-mandir",
+    "title": "File:Temple népalais sur les bords du Gange. (6334606914).jpg",
+    "alt": {
+      "en": "The two-tiered pagoda of the Nepali Mandir with its gilded finial, between carved brick buildings and a tree",
+      "hi": "सुनहरे कलश वाला नेपाली मंदिर का दो तल वाला पगोडा, नक़्क़ाशीदार ईंट के भवनों और एक पेड़ के बीच"
+    }
+  },
+  {
+    "key": "places/nepali-mandir#2",
+    "title": "File:Nepali Temple at Varanasi.jpg",
+    "alt": {
+      "en": "Red walls, carved wooden windows and angled roof struts on the front of the Nepali Mandir",
+      "hi": "नेपाली मंदिर के अग्रभाग पर लाल दीवारें, नक़्क़ाशीदार लकड़ी की खिड़कियाँ और छत के तिरछे टेक"
+    }
+  },
+  {
+    "key": "places/nepali-mandir#3",
+    "title": "File:Nepali Temple, Varanasi (8716407449).jpg",
+    "alt": {
+      "en": "Carved wooden torana with rows of deities above a doorway of the Nepali Mandir",
+      "hi": "नेपाली मंदिर के एक द्वार के ऊपर देव-आकृतियों की पंक्तियों वाला नक़्क़ाशीदार काष्ठ तोरण"
+    }
+  },
+  {
+    "key": "places/nepali-mandir#4",
+    "title": "File:Varanasi 103b - wood carving (35611614496).jpg",
+    "alt": {
+      "en": "Weathered wood carving of a peacock among leafy branches on the Nepali Mandir",
+      "hi": "नेपाली मंदिर पर पत्तेदार डालियों के बीच मोर की पुरानी काष्ठ नक़्क़ाशी"
+    }
+  },
+  {
+    "key": "places/ganga-mahal-ghat",
+    "title": "File:Ganga Mahal front view from Ghat.jpg",
+    "alt": {
+      "en": "The sandstone Ganga Mahal palace rising above the steps just north of Assi Ghat, with arched balconies on its upper floors",
+      "hi": "अस्सी घाट के ठीक उत्तर में सीढ़ियों के ऊपर उठता बलुआ पत्थर का गंगा महल, ऊपरी मंज़िलों पर मेहराबदार छज्जे"
+    }
+  },
+  {
+    "key": "places/ganga-mahal-ghat#2",
+    "title": "File:Ganga Mahal Ghat in Varanasi.jpg",
+    "alt": {
+      "en": "Front of the Ganga Mahal palace with its balconies and the ghat's name board above the steps",
+      "hi": "छज्जों वाला गंगा महल का अग्रभाग और सीढ़ियों के ऊपर घाट का नाम-पट्ट"
+    }
+  },
+  {
+    "key": "places/ganga-mahal-ghat#3",
+    "title": "File:Ghats in Varanasi 028.jpg",
+    "alt": {
+      "en": "Ganga Mahal Ghat seen from a boat in the monsoon, with the river high against the steps",
+      "hi": "वर्षा ऋतु में नाव से दिखता गंगा महल घाट, सीढ़ियों तक चढ़ा हुआ नदी का पानी"
+    }
+  },
+  {
+    "key": "places/ganga-mahal-ghat#4",
+    "title": "File:Ganga Mahal detail terrace.jpg",
+    "alt": {
+      "en": "Arched rooftop pavilion and pierced-stone balcony railings on the Ganga Mahal palace",
+      "hi": "गंगा महल की छत पर मेहराबदार मंडप और जालीदार पत्थर की छज्जा-रेलिंग"
+    }
   }
 ]

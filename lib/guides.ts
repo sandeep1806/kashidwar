@@ -1,6 +1,9 @@
 // Server-side only: imports every guide. Guides are researched articles in
 // English and Hindi (content/guides/<slug>.json); other locales show English.
 import bestTime from "@/content/guides/best-time-to-visit-varanasi.json";
+import sareeGuide from "@/content/guides/banarasi-saree-guide.json";
+import boatRide from "@/content/guides/varanasi-boat-ride.json";
+import kvAarti from "@/content/guides/kashi-vishwanath-aarti-timings.json";
 import tripCost from "@/content/guides/varanasi-trip-cost.json";
 import atNight from "@/content/guides/varanasi-at-night.json";
 import devDeepawali from "@/content/guides/dev-deepawali-2026.json";
@@ -50,7 +53,7 @@ export interface Guide {
 }
 
 /** Newest first (ties keep this order). Add a guide by importing its JSON here. */
-export const guides: Guide[] = ([atNight, tripCost, bestTime, devDeepawali, vishwanathDarshan, gangaAarti, ropeway, toSarnath, twoDays] as Guide[])
+export const guides: Guide[] = ([sareeGuide, boatRide, kvAarti, atNight, tripCost, bestTime, devDeepawali, vishwanathDarshan, gangaAarti, ropeway, toSarnath, twoDays] as Guide[])
   .map((g, i) => ({ g, i }))
   .sort((a, b) => b.g.published.localeCompare(a.g.published) || a.i - b.i)
   .map(({ g }) => g);

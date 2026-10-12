@@ -2621,7 +2621,7 @@
     "lat": 25.3096,
     "lng": 83.0128,
     "coordsVerified": true,
-    "summary": "Nepal's gift to the riverfront. King Rana Bahadur Shah, living in exile here around 1800, began a copy of Kathmandu's Pashupatinath above the steps; his son finished it, and the carved-wood Nepali Mandir still stands between Dashashwamedh and Manikarnika. The ghat is named for Lalita Devi, whose shrine here is one of the city's shakti sites, and it is now the river entrance to the Kashi Vishwanath Dham corridor.",
+    "summary": "Nepal's gift to the riverfront. King Rana Bahadur Shah, living in exile here around 1800, began a copy of Kathmandu's Pashupatinath above the steps; it was completed decades later, and the carved-wood Nepali Mandir still stands between Dashashwamedh and Manikarnika. The ghat is named for Lalita Devi, whose shrine here is one of the city's shakti sites, and it is now the river entrance to the Kashi Vishwanath Dham corridor.",
     "bestTime": "Early morning, for the temple woodwork in soft light and before the corridor crowds",
     "image": "/media/places/lalita-ghat.jpg",
     "tips": [
@@ -2629,7 +2629,7 @@
       "The Vishwanath Dham gates open from the ghat; shoes and phones follow the temple's rules from here."
     ],
     "glance": {
-      "timings": "Open always · Nepali Mandir about 5:00–21:00",
+      "timings": "Open always · Nepali Mandir about 04:00–21:00",
       "entry": "Free",
       "duration": "20–30 min",
       "season": "Oct–Mar",
@@ -2674,14 +2674,14 @@
     ],
     "i18n": {
       "hi": {
-        "summary": "नदी-तट को नेपाल का उपहार। 1800 के आसपास यहाँ निर्वासन में रह रहे राजा रण बहादुर शाह ने सीढ़ियों के ऊपर काठमांडू के पशुपतिनाथ की प्रतिकृति शुरू की; उनके पुत्र ने उसे पूरा किया, और नक़्क़ाशीदार लकड़ी का नेपाली मंदिर आज भी दशाश्वमेध और मणिकर्णिका के बीच खड़ा है। घाट का नाम ललिता देवी पर है, जिनका यहाँ का मंदिर नगर के शक्ति स्थलों में गिना जाता है; अब यह काशी विश्वनाथ धाम गलियारे का नदी की ओर का प्रवेश द्वार भी है।",
+        "summary": "नदी-तट को नेपाल का उपहार। 1800 के आसपास यहाँ निर्वासन में रह रहे राजा रण बहादुर शाह ने सीढ़ियों के ऊपर काठमांडू के पशुपतिनाथ की प्रतिकृति शुरू की; दशकों बाद यह पूरा हुआ, और नक़्क़ाशीदार लकड़ी का नेपाली मंदिर आज भी दशाश्वमेध और मणिकर्णिका के बीच खड़ा है। घाट का नाम ललिता देवी पर है, जिनका यहाँ का मंदिर नगर के शक्ति स्थलों में गिना जाता है; अब यह काशी विश्वनाथ धाम गलियारे का नदी की ओर का प्रवेश द्वार भी है।",
         "bestTime": "सुबह जल्दी — मंदिर की काष्ठकला कोमल रोशनी में, और गलियारे की भीड़ से पहले",
         "tips": [
           "दशाश्वमेध घाट से नदी के किनारे उत्तर की ओर थोड़ी दूर पैदल।",
           "विश्वनाथ धाम के द्वार घाट से खुलते हैं; यहीं से जूते और फ़ोन के मंदिर-नियम लागू हैं।"
         ],
         "glance": {
-          "timings": "सदैव खुला · नेपाली मंदिर लगभग 5:00–21:00",
+          "timings": "सदैव खुला · नेपाली मंदिर लगभग सुबह 4 से रात 9 बजे",
           "entry": "निःशुल्क",
           "duration": "20–30 मिनट",
           "season": "अक्टूबर–मार्च"
@@ -3077,6 +3077,243 @@
           "entry": "निःशुल्क",
           "duration": "20–40 मिनट",
           "season": "अक्टूबर–मार्च; स्वर्ण प्रतिमा के लिए अन्नकूट (दीपावली के अगले दिन)"
+        }
+      }
+    }
+  },
+  {
+    "id": "vishalakshi-temple",
+    "name_en": "Vishalakshi Temple",
+    "name_hi": "विशालाक्षी मंदिर",
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.31,
+    "lng": 83.012,
+    "coordsVerified": true,
+    "summary": "In a lane above Mir Ghat, Parvati is worshipped as Vishalakshi, \"she of the wide eyes\", at one of the Shakti Peethas, where tradition says Sati's earring fell; Kaal Bhairav is her guardian Bhairava. The present temple was built in 1893 by the Nattukottai Nagarathars of Chettinad, and their Tamil inscription is still on its wall. Tamil pilgrims honour her alongside Kamakshi of Kanchi and Meenakshi of Madurai.",
+    "bestTime": "Early morning or evening darshan; the two Navratris and Kajali Teej (Bhadrapada, Aug–Sep) are the temple's great days",
+    "image": "/media/places/vishalakshi-temple.jpg",
+    "tips": [
+      "A few minutes' walk from the Kashi Vishwanath Dham towards Mir Ghat; pilgrims often pair it with Vishwanath and Annapurna.",
+      "The doors close in the middle of the day (about 12:00–16:00), so plan a morning or evening visit."
+    ],
+    "glance": {
+      "timings": "05:30–12:00 and 16:00–21:00",
+      "entry": "Free",
+      "duration": "15–30 min",
+      "season": "Oct–Mar; Navratri (Mar–Apr, Sep–Oct) and Kajali Teej (Aug–Sep)",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Vishalakshi Temple — Incredible India (Ministry of Tourism)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/vishalakshi-temple",
+          "accessed": "2026-10-12"
+        },
+        {
+          "title": "Vishalakshi Temple — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vishalakshi_Temple",
+          "accessed": "2026-10-12"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Wikipedia — Vishalakshi Temple",
+        "url": "https://en.wikipedia.org/wiki/Vishalakshi_Temple",
+        "accessed": "2026-10-12"
+      },
+      {
+        "title": "Vishalakshi Temple — Incredible India (Ministry of Tourism)",
+        "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/vishalakshi-temple",
+        "accessed": "2026-10-12"
+      },
+      {
+        "title": "Wikimedia Commons — Nagarathar inscription at the Kashi Vishalakshi temple (1893 construction, 1908 consecration)",
+        "url": "https://commons.wikimedia.org/wiki/File:%E0%AE%95%E0%AE%BE%E0%AE%9A%E0%AE%BF_%E0%AE%B5%E0%AE%BF%E0%AE%9A%E0%AE%BE%E0%AE%B2%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9A%E0%AE%BF_%E0%AE%95%E0%AF%8B%E0%AE%AF%E0%AE%BF%E0%AE%B2%E0%AF%8D_%E0%AE%95%E0%AE%B2%E0%AF%8D%E0%AE%B5%E0%AF%86%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%81.jpg",
+        "accessed": "2026-10-12"
+      },
+      {
+        "title": "OpenStreetMap — Maa Kashi Vishalakshi Temple, node 7107002877 (coordinates)",
+        "url": "https://www.openstreetmap.org/node/7107002877",
+        "accessed": "2026-10-12"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "मीर घाट के ऊपर की एक गली में पार्वती की पूजा विशालाक्षी — \"विशाल नेत्रों वाली\" — के रूप में होती है। यह शक्तिपीठों में से एक है, जहाँ परंपरा के अनुसार सती का कुंडल गिरा था; काल भैरव यहाँ देवी के रक्षक भैरव हैं। वर्तमान मंदिर 1893 में चेट्टिनाड के नाट्टुकोट्टई नगरत्तार समुदाय ने बनवाया, और उनका तमिल शिलालेख आज भी इसकी दीवार पर है। तमिल तीर्थयात्री उन्हें कांची की कामाक्षी और मदुरै की मीनाक्षी के साथ पूजते हैं।",
+        "bestTime": "सुबह जल्दी या संध्या के दर्शन; दोनों नवरात्र और कजली तीज (भाद्रपद, अगस्त–सितंबर) मंदिर के बड़े दिन हैं",
+        "tips": [
+          "काशी विश्वनाथ धाम से मीर घाट की ओर कुछ मिनट पैदल; तीर्थयात्री प्रायः इसे विश्वनाथ और अन्नपूर्णा के दर्शन के साथ जोड़ते हैं।",
+          "दोपहर में (लगभग 12:00–16:00) कपाट बंद रहते हैं, इसलिए सुबह या शाम का समय चुनें।"
+        ],
+        "glance": {
+          "timings": "5:30–12:00 और 16:00–21:00",
+          "entry": "निःशुल्क",
+          "duration": "15–30 मिनट",
+          "season": "अक्टूबर–मार्च; नवरात्र (मार्च–अप्रैल, सितंबर–अक्टूबर) और कजली तीज (अगस्त–सितंबर)"
+        }
+      }
+    }
+  },
+  {
+    "id": "nepali-mandir",
+    "name_en": "Nepali Mandir (Samrajeshwar Pashupatinath)",
+    "name_hi": "नेपाली मंदिर (सम्राजेश्वर पशुपतिनाथ)",
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.31,
+    "lng": 83.0131,
+    "coordsVerified": true,
+    "summary": "Shri Samrajeshwar Pashupatinath Mahadev is a two-tiered pagoda in the Kathmandu manner: red brick walls, sloping roofs on angled wooden struts, and carved door frames and toranas worked in wood brought from Nepal. Some struts carry erotic figures, which earned it the name \"Mini Khajuraho\"; locally it is the Kathwala Mandir, the wooden temple. Shiva is worshipped here as Pashupatinath, and Nepal's Department of Archaeology looks after the building.",
+    "bestTime": "Late morning, when daylight reaches the carving under the eaves; Mahashivratri for the temple's main festival",
+    "image": "/media/places/nepali-mandir.jpg",
+    "tips": [
+      "The best carving is high up, on the roof struts and over the doors; a zoom lens or binoculars help.",
+      "It stands a few steps above Lalita Ghat, beside the river gate of the Kashi Vishwanath Dham, so it fits into the same walk."
+    ],
+    "glance": {
+      "timings": "About 04:00–21:00 (sources differ)",
+      "entry": "Free",
+      "duration": "20–30 min",
+      "season": "Oct–Mar; Mahashivratri (Feb–Mar)",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Varanasi Pashupatinath (Nepali) Temple timings — Yatradham blog",
+          "url": "https://blog.yatradham.org/varanasi-pashupatinath-temple-timings/",
+          "accessed": "2026-10-12"
+        },
+        {
+          "title": "Nepali Mandir — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Nepali_Mandir",
+          "accessed": "2026-10-12"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Wikipedia — Nepali Mandir",
+        "url": "https://en.wikipedia.org/wiki/Nepali_Mandir",
+        "accessed": "2026-10-12"
+      },
+      {
+        "title": "Pashupatinath Temple: A Piece of Nepal in Varanasi — LiveHistory India",
+        "url": "https://livehistoryindia.com/story/monuments/pashupatinath-temple",
+        "accessed": "2026-10-12"
+      },
+      {
+        "title": "Nepal's archaeological properties in India — Onlinekhabar",
+        "url": "https://english.onlinekhabar.com/nepal-archaeological-properties-in-india.html",
+        "accessed": "2026-10-12"
+      },
+      {
+        "title": "OpenStreetMap — Nepali Mandir, way 1257500889 (coordinates)",
+        "url": "https://www.openstreetmap.org/way/1257500889",
+        "accessed": "2026-10-12"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "श्री सम्राजेश्वर पशुपतिनाथ महादेव काठमांडू शैली का दो तल वाला पगोडा है: लाल ईंट की दीवारें, लकड़ी के तिरछे टेकों पर टिकी ढलवाँ छतें, और नेपाल से लाई गई लकड़ी में उकेरे गए द्वार-चौखट व तोरण। कुछ टेकों पर कामुक आकृतियाँ हैं, जिनके कारण इसे \"मिनी खजुराहो\" कहा जाता है; स्थानीय लोग इसे काठवाला मंदिर कहते हैं। यहाँ शिव की पूजा पशुपतिनाथ के रूप में होती है, और भवन की देखरेख नेपाल का पुरातत्व विभाग करता है।",
+        "bestTime": "दिन चढ़े, जब छज्जों के नीचे की नक़्क़ाशी तक रोशनी पहुँचती है; महाशिवरात्रि मंदिर का मुख्य पर्व है",
+        "tips": [
+          "सबसे सुंदर नक़्क़ाशी ऊपर, छत के टेकों और दरवाज़ों के ऊपर है; ज़ूम लेंस या दूरबीन काम आती है।",
+          "यह ललिता घाट से कुछ सीढ़ियाँ ऊपर, काशी विश्वनाथ धाम के नदी-द्वार के पास है, इसलिए एक ही सैर में आ जाता है।"
+        ],
+        "glance": {
+          "timings": "लगभग सुबह 4 से रात 9 बजे (स्रोतों में अंतर)",
+          "entry": "निःशुल्क",
+          "duration": "20–30 मिनट",
+          "season": "अक्टूबर–मार्च; महाशिवरात्रि (फ़रवरी–मार्च)"
+        }
+      }
+    }
+  },
+  {
+    "id": "ganga-mahal-ghat",
+    "name_en": "Ganga Mahal Ghat",
+    "name_hi": "गंगा महल घाट",
+    "faith": [
+      "hindu"
+    ],
+    "type": "ghat",
+    "lat": 25.2897,
+    "lng": 83.0063,
+    "coordsVerified": true,
+    "summary": "The first ghat north of Assi, set apart from it by a flight of steps, is named after the palace the Narayan rulers of Benares built above it around 1830, a sandstone mix of Rajput and local styles with tiers of arched balconies. This is the southern Ganga Mahal Ghat, quieter than Assi; a second ghat of that name lies far north, near Panchganga.",
+    "bestTime": "Sunrise, straight after Subah-e-Banaras at Assi; Dev Deepawali (Kartik Purnima) for the lamps on the steps",
+    "image": "/media/places/ganga-mahal-ghat.jpg",
+    "tips": [
+      "A two-minute walk north up the steps from Assi Ghat, on the way to Tulsi Ghat.",
+      "The palace is privately owned and not open to visitors; see its façade from the steps or from a boat."
+    ],
+    "glance": {
+      "timings": "Open always",
+      "entry": "Free",
+      "duration": "10–20 min",
+      "season": "Oct–Mar; Dev Deepawali (Nov)",
+      "crowd": "moderate",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Ganga Mahal Ghat — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ganga_Mahal_Ghat",
+          "accessed": "2026-10-12"
+        },
+        {
+          "title": "The Varanasi Heritage Dossier — Ganga Mahala and Rivan Ghat (Wikiversity)",
+          "url": "https://en.wikiversity.org/wiki/The_Varanasi_Heritage_Dossier/Ganga_Mahala_and_Rivan_Ghat",
+          "accessed": "2026-10-12"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Wikipedia — Ganga Mahal Ghat",
+        "url": "https://en.wikipedia.org/wiki/Ganga_Mahal_Ghat",
+        "accessed": "2026-10-12"
+      },
+      {
+        "title": "The Varanasi Heritage Dossier — Ganga Mahala and Rivan Ghat (Wikiversity)",
+        "url": "https://en.wikiversity.org/wiki/The_Varanasi_Heritage_Dossier/Ganga_Mahala_and_Rivan_Ghat",
+        "accessed": "2026-10-12"
+      },
+      {
+        "title": "Wikipedia — Ghats in Varanasi (Ganga Mahal Ghat I and II)",
+        "url": "https://en.wikipedia.org/wiki/Ghats_in_Varanasi",
+        "accessed": "2026-10-12"
+      },
+      {
+        "title": "OpenStreetMap — Ganga Mahal Ghat, node 11461546407 (coordinates)",
+        "url": "https://www.openstreetmap.org/node/11461546407",
+        "accessed": "2026-10-12"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "अस्सी के ठीक उत्तर का पहला घाट, जो उससे केवल पत्थर की सीढ़ियों की एक पंक्ति से अलग है, उस महल के नाम पर है जिसे बनारस के नारायण वंश के शासकों ने लगभग 1830 में इसके ऊपर बनवाया — राजपूत और स्थानीय शैली के मेल वाला बलुआ पत्थर का भवन, जिसमें मेहराबदार छज्जों की कतारें हैं। यह दक्षिण वाला गंगा महल घाट है, जो अस्सी से शांत रहता है; इसी नाम का दूसरा घाट बहुत उत्तर में, पंचगंगा के पास है।",
+        "bestTime": "सूर्योदय, अस्सी पर सुबह-ए-बनारस के ठीक बाद; दीपों के लिए देव दीपावली (कार्तिक पूर्णिमा)",
+        "tips": [
+          "अस्सी घाट से सीढ़ियों के रास्ते उत्तर की ओर दो मिनट पैदल, तुलसी घाट जाते हुए रास्ते में।",
+          "महल निजी स्वामित्व में है और दर्शकों के लिए खुला नहीं; इसका अग्रभाग सीढ़ियों से या नाव से देखें।"
+        ],
+        "glance": {
+          "timings": "सदैव खुला",
+          "entry": "निःशुल्क",
+          "duration": "10–20 मिनट",
+          "season": "अक्टूबर–मार्च; देव दीपावली (नवंबर)"
         }
       }
     }

@@ -1381,6 +1381,66 @@
    "hi": "दुर्गाकुंड की भीड़भरी सड़क के ऊपर उठता दुर्गा मंदिर का लाल स्तंभयुक्त प्रवेश द्वार।"
   }
  },
+ "places/ganga-mahal-ghat": {
+  "src": "/media/photos/places/ganga-mahal-ghat",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 853,
+  "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoIAAUAA4BaJagCdADzesxgAPsC4P/1IbLNviqc3cdsnajxkQqm7xaTBm4TmzyWCM20AAAA",
+  "alt": {
+   "en": "The sandstone Ganga Mahal palace rising above the steps just north of Assi Ghat, with arched balconies on its upper floors",
+   "hi": "अस्सी घाट के ठीक उत्तर में सीढ़ियों के ऊपर उठता बलुआ पत्थर का गंगा महल, ऊपरी मंज़िलों पर मेहराबदार छज्जे"
+  }
+ },
+ "places/ganga-mahal-ghat#2": {
+  "src": "/media/photos/places/ganga-mahal-ghat-2",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 960,
+  "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAYAA4BaJQBOgCPQQDPZkAAA4n5mfr7vcD8+KUyL1YwIaXxRMejTIm7AwAAA",
+  "alt": {
+   "en": "Front of the Ganga Mahal palace with its balconies and the ghat's name board above the steps",
+   "hi": "छज्जों वाला गंगा महल का अग्रभाग और सीढ़ियों के ऊपर घाट का नाम-पट्ट"
+  }
+ },
+ "places/ganga-mahal-ghat#3": {
+  "src": "/media/photos/places/ganga-mahal-ghat-3",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 857,
+  "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAUAA4BaJZgCdAEfaUIPgAD8j/jBAacA102nMPo/joy9GealRzchyJrnD4HQAAA=",
+  "alt": {
+   "en": "Ganga Mahal Ghat seen from a boat in the monsoon, with the river high against the steps",
+   "hi": "वर्षा ऋतु में नाव से दिखता गंगा महल घाट, सीढ़ियों तक चढ़ा हुआ नदी का पानी"
+  }
+ },
+ "places/ganga-mahal-ghat#4": {
+  "src": "/media/photos/places/ganga-mahal-ghat-4",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 853,
+  "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAUAA4BaJZgCdAEWToJBEAD+H+vxyRkP76f/jGgI7xohvIrHGG9w2ii988AA",
+  "alt": {
+   "en": "Arched rooftop pavilion and pierced-stone balcony railings on the Ganga Mahal palace",
+   "hi": "गंगा महल की छत पर मेहराबदार मंडप और जालीदार पत्थर की छज्जा-रेलिंग"
+  }
+ },
  "places/gurudwara-bari-sangat": {
   "src": "/media/photos/places/gurudwara-bari-sangat",
   "widths": [
@@ -1792,6 +1852,65 @@
   "alt": {
    "en": "Lal Khan's Tomb at Rajghat beside Namo Ghat, Varanasi: a glazed-tile Mughal mausoleum with corner chhatris at the end of a hedged garden path at dusk.",
    "hi": "नमो घाट से सटे राजघाट पर लाल खाँ का मकबरा: संध्या समय बगीचे के रास्ते के अंत में चमकीली टाइलों वाला मुगल मकबरा।"
+  }
+ },
+ "places/nepali-mandir": {
+  "src": "/media/photos/places/nepali-mandir",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 851,
+  "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoIAAUAA4BaJQBOgCPQS3Kx2AD+5osacNJk/Aimfgm8QlgELRNK0fAeJk1FOdymiHVlQAAA",
+  "alt": {
+   "en": "The two-tiered pagoda of the Nepali Mandir with its gilded finial, between carved brick buildings and a tree",
+   "hi": "सुनहरे कलश वाला नेपाली मंदिर का दो तल वाला पगोडा, नक़्क़ाशीदार ईंट के भवनों और एक पेड़ के बीच"
+  }
+ },
+ "places/nepali-mandir#2": {
+  "src": "/media/photos/places/nepali-mandir-2",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 1088,
+  "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoIAAcAA4BaJZACdAD0pc69bgAA/kr4+XSBtiTZeIOc3afBHRgpcHZloM0hkHuYT0O1Daip9PfHDdinQwD9ihgpzq0AAA==",
+  "alt": {
+   "en": "Red walls, carved wooden windows and angled roof struts on the front of the Nepali Mandir",
+   "hi": "नेपाली मंदिर के अग्रभाग पर लाल दीवारें, नक़्क़ाशीदार लकड़ी की खिड़कियाँ और छत के तिरछे टेक"
+  }
+ },
+ "places/nepali-mandir#3": {
+  "src": "/media/photos/places/nepali-mandir-3",
+  "widths": [
+   360,
+   720
+  ],
+  "width": 720,
+  "height": 477,
+  "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAUAA4BaJYwCdADx+HEAAP5y70EhpAANCHUped4PizVtAAA=",
+  "alt": {
+   "en": "Carved wooden torana with rows of deities above a doorway of the Nepali Mandir",
+   "hi": "नेपाली मंदिर के एक द्वार के ऊपर देव-आकृतियों की पंक्तियों वाला नक़्क़ाशीदार काष्ठ तोरण"
+  }
+ },
+ "places/nepali-mandir#4": {
+  "src": "/media/photos/places/nepali-mandir-4",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 1707,
+  "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAsAA4BaJQBOgBsX8mAA/hbLvuJWNeldm78S4+KNpEOlQQAAAA==",
+  "alt": {
+   "en": "Weathered wood carving of a peacock among leafy branches on the Nepali Mandir",
+   "hi": "नेपाली मंदिर पर पत्तेदार डालियों के बीच मोर की पुरानी काष्ठ नक़्क़ाशी"
   }
  },
  "places/panchganga-ghat": {
@@ -2271,6 +2390,27 @@
   "alt": {
    "en": "Mirror-work pavilion with a dancer figurine from the Ramcharitmanas tableaux inside Tulsi Manas Mandir.",
    "hi": "तुलसी मानस मंदिर के भीतर शीशे की नक्काशी वाला मंडप और रामचरितमानस झाँकी की नर्तकी मूर्ति।"
+  }
+ },
+ "places/vishalakshi-temple": {
+  "src": "/media/photos/places/vishalakshi-temple",
+  "widths": [
+   360,
+   720,
+   1280
+  ],
+  "width": 1280,
+  "height": 751,
+  "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAUAA4BaJbACdAEWUNQXhYAA/DYuMx6y34CbD6fMo0Of60ke1S6CLWPKODLbYIAAAA==",
+  "crop": [
+   0,
+   0,
+   1,
+   0.44
+  ],
+  "alt": {
+   "en": "Painted gateway of the Vishalakshi temple with lion figures, beside the wall plaque and the Tamil inscription of the Nagarathar community",
+   "hi": "सिंह-आकृतियों वाला विशालाक्षी मंदिर का रंगीन प्रवेश द्वार, पास में दीवार की पट्टिका और नगरत्तार समुदाय का तमिल शिलालेख"
   }
  },
  "projects/airport-expansion": {
