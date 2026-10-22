@@ -8,5 +8,15 @@
     "costUsd": 1.93,
     "result": "error_max_turns",
     "run": "https://github.com/sandeep1806/kashidwar/actions/runs/37658876822"
+  },
+  {
+    "date": "2026-10-12",
+    "kind": "Weekly",
+    "focus": "festivals",
+    "model": "claude-sonnet-5",
+    "turns": 27,
+    "costUsd": 0.82,
+    "result": "success",
+    "run": "https://github.com/sandeep1806/kashidwar/actions/runs/38196291431"
   }
 ]
