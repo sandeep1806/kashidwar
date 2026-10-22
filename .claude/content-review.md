@@ -73,6 +73,10 @@ either). Partial work is fine and still becomes a pull request, so:
 
 ## Working method
 
+Keep every working file (URL lists, status dumps, notes) in `.review-tmp/` — it is git-ignored.
+Never create files anywhere else in the repository except the allowed content files and
+`.content-review-pr.md`.
+
 Complete the checks for your focus, within the budget. Work entry by entry (a TodoWrite
 list helps). For link checks, loop over the URLs with `curl` in small batches. Use `python3`
 for reading or rewriting JSON when that is simpler than editing by hand, and `python3 -m

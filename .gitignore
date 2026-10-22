@@ -52,3 +52,4 @@ scripts/.images/
 scripts/heading-font/subset-check.ttf
 scripts/heading-font/node_modules
 .content-review-pr.md
+.review-tmp/

@@ -76,7 +76,7 @@ jobs:
             --model ${{ inputs.model }}
             --max-turns ${{ inputs.max_turns }}
             --max-budget-usd ${{ inputs.max_budget_usd }}
-            --allowedTools "Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(python3:*),Bash(jq:*),Bash(npm run build),Bash(npm run lint),Bash(node scripts/check-seo.mjs),Bash(git diff:*),Bash(git status:*)"
+            --allowedTools "Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(awk:*),Bash(xargs:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(python3:*),Bash(jq:*),Bash(npm run build),Bash(npm run lint),Bash(node scripts/check-seo.mjs),Bash(git diff:*),Bash(git status:*)"
             --disallowedTools "Bash(git push:*),Bash(git commit:*),Bash(gh:*)"
 
       # The action hides the transcript (it can contain fetched pages); report only the run's
@@ -106,6 +106,11 @@ jobs:
 
       - name: Only content files may change
         run: |
+          # New scratch files the agent left outside the allowed paths are removed (with a
+          # warning) rather than failing the run; edits to existing files still fail it.
+          git ls-files --others --exclude-standard | grep -vE '^(content/[^/]+\.json|content/guides/[^/]+\.json|TRANSLATION_REVIEW\.md|\.content-review-pr\.md)$' | while read -r f; do
+            echo "::warning::Removed scratch file left by the review: $f"; rm -f -- "$f"
+          done
           git add -A
           git reset -q -- .content-review-pr.md 2>/dev/null || true
           changed=$(git diff --cached --name-only)
