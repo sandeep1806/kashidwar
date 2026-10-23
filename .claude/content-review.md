@@ -127,9 +127,11 @@ made directly in the JSON following the existing entries' shape; larger ones (a 
 page, a new guide) are proposals in the summary only.
 
 ### 5. Links and photos
-- Check every URL in `sources` across `content/*.json` and `content/guides/*.json`
-  (`curl -sIL --max-time 20 -o /dev/null -w "%{http_code}" <url>`; retry with GET if HEAD fails).
-  A dead link (4xx other than 403/429, or no response twice) is replaced with a working
+- Run `node scripts/check-links.mjs` first (one command, about 2 minutes): it checks every
+  source URL in `content/*.json` and `content/guides/*.json` and lists the broken ones with the
+  files they are in. Do not write your own link-checking loops. Re-check each reported link
+  once yourself (`curl -sIL --max-time 20 -o /dev/null -w "%{http_code}" <url>`, one URL per
+  command) before acting, since "no response" can be temporary. A dead link (4xx other than 403/429, or no response twice) is replaced with a working
   source for the same fact, or removed if the fact has another source; report it either way.
 - For places, festivals and projects without a photo (no key in `content/photos.json`), search
   Wikimedia Commons (English, Hindi and alternate spellings; categories; geosearch) for a

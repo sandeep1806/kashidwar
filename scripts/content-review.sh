@@ -61,17 +61,25 @@ current, stop and finalise when about 80% of the turns are used). Edit only the 
 allows, keep the pull-request body in .content-review-pr.md, and do not commit, push or open
 a pull request yourself."
 
-ALLOWED="Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(awk:*),Bash(xargs:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(mkdir:*),Bash(python3:*),Bash(jq:*),Bash(git diff:*),Bash(git status:*)"
+ALLOWED="Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(awk:*),Bash(xargs:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(mkdir:*),Bash(python3:*),Bash(jq:*),Bash(git diff:*),Bash(git status:*),Bash(node scripts/check-links.mjs:*)"
 DENIED="Bash(git push:*),Bash(git commit:*),Bash(git checkout:*),Bash(git reset:*),Bash(gh:*),Bash(npm:*),Bash(npx:*),Bash(rm:*)"
 
-# Project settings only (not your personal ~/.claude rules or hooks), no MCP servers,
-# no saved session: the review sees the repository and the web, nothing else.
+# Project settings only (not your personal ~/.claude rules or hooks), no MCP servers:
+# the review sees the repository and the web, nothing else.
+COMMON=(--setting-sources project --strict-mcp-config --allowedTools "$ALLOWED" --disallowedTools "$DENIED" --output-format json)
 set +e
-claude -p "$PROMPT" \
-  --model "$MODEL" --max-turns "$TURNS" --max-budget-usd "$BUDGET" \
-  --setting-sources project --strict-mcp-config --no-session-persistence \
-  --allowedTools "$ALLOWED" --disallowedTools "$DENIED" \
-  --output-format json > "$OUT" 2>>"$LOG"
+claude -p "$PROMPT" --model "$MODEL" --max-turns "$TURNS" --max-budget-usd "$BUDGET" "${COMMON[@]}" > "$OUT" 2>>"$LOG"
+# Out of turns (or budget) without a summary: resume the same session for a few turns
+# with one job — write the summary of what was checked — so partial work still becomes a PR.
+SID=$(jq -r '.session_id // ""' "$OUT" 2>/dev/null)
+if [ ! -s .content-review-pr.md ] && [ -n "$SID" ]; then
+  echo "No summary yet; resuming the session to write it." | tee -a "$LOG"
+  FIN="$STATE/${TODAY}-${FOCUS}-finalise.json"
+  claude -p "Your review budget is used up. Stop checking now. Validate any JSON file you edited with python3 -m json.tool, then write .content-review-pr.md exactly in the format the brief's Output section gives: what you checked, every change (old → new, source, confidence), what needs a human look, and under Run notes what was NOT reached this time. Do nothing else." \
+    --resume "$SID" --model "$MODEL" --max-turns 6 --max-budget-usd 0.5 "${COMMON[@]}" > "$FIN" 2>>"$LOG"
+  # Report the combined numbers.
+  jq -s '.[0] as $a | .[1] as $b | $a + {num_turns: (($a.num_turns // 0) + ($b.num_turns // 0)), total_cost_usd: (($a.total_cost_usd // 0) + ($b.total_cost_usd // 0)), finalised: true}' "$OUT" "$FIN" > "$OUT.tmp" 2>/dev/null && mv "$OUT.tmp" "$OUT"
+fi
 set -e
 
 RESULT_TYPE=$(jq -r '.subtype // ""' "$OUT" 2>/dev/null || true)
@@ -106,7 +114,7 @@ BODY="$STATE/${TODAY}-${FOCUS}-pr.md"
 if [ -s .content-review-pr.md ]; then cp .content-review-pr.md "$BODY"; rm -f .content-review-pr.md
 else printf '## %s content review %s\n\n(The agent wrote no summary.)\n' "$KIND" "$TODAY" > "$BODY"; fi
 case "$RESULT_TYPE" in
-  error_max_turns) STOP="stopped at the turn cap (${TURNS}); partial review";;
+  error_max_turns) STOP="stopped at the turn cap (${TURNS}); partial review$( [ "$(jq -r '.finalised // false' "$OUT")" = true ] && echo ', summary written in a short follow-up')";;
   error_max_budget*) STOP="stopped at the budget cap (\$${BUDGET}); partial review";;
   success) [ "$IS_ERROR" = true ] && STOP="ended with an error: ${FINAL:0:200}" || STOP="completed";;
   *) STOP="ended: ${RESULT_TYPE:-unknown}";;
