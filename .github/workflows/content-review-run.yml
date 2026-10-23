@@ -57,7 +57,7 @@ jobs:
         # Hitting the turn or budget cap ends the agent early; its partial work (and the
         # summary it keeps up to date) still becomes a pull request.
         continue-on-error: true
-        uses: anthropics/claude-code-action@756cc22e19660d20e8cc9496b4f242475a7f7790 # v1.0.235
+        uses: anthropics/claude-code-action@ae68417a745a5df4b2124873632bd73a2255e6f6 # v1.0.259
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           # The workflow token (scoped to the two permissions above) instead of the Claude

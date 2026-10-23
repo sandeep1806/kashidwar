@@ -199,7 +199,7 @@ If you ever turn the proxy off, switch to the manual JS snippet and add its `<sc
 
 ## Weekly content review (AI, human-merged)
 Anthropic's [Claude Code GitHub Action](https://github.com/anthropics/claude-code-action)
-(pinned to v1.0.235 by commit SHA) re-checks the site's facts and opens **one pull request**
+(pinned to v1.0.259 by commit SHA) re-checks the site's facts and opens **one pull request**
 per run ("Weekly content review YYYY-MM-DD" / "Monthly content review YYYY-MM-DD"). Nothing is
 merged automatically. Both schedules call the same reusable workflow,
 `.github/workflows/content-review-run.yml`.
