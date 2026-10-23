@@ -8,7 +8,7 @@ import PageShell from "@/components/pages/PageShell";
 import EnglishNote from "@/components/ui/EnglishNote";
 import Icon, { type IconName } from "@/components/ui/Icon";
 import { festivals, itineraries, places, projects } from "@/lib/content";
-import { guideBySlug, guidePhoto, guides, guideTranslations, localizeGuide } from "@/lib/guides";
+import { eventStatus, guideBySlug, guidePhoto, guides, guideTranslations, localizeGuide } from "@/lib/guides";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, alternatesFor, breadcrumbLd, itinerarySlug, pageUrl } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
@@ -111,7 +111,7 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
   const fmt = new Intl.DateTimeFormat(LOCALES[loc].bcp47, { dateStyle: "long", timeZone: "UTC" });
   const date = (d: string) => fmt.format(new Date(d + "T00:00:00Z"));
   const url = absolute(`${home}${path}`);
-  const ld = [
+  const ld: object[] = [
     {
       "@context": "https://schema.org",
       "@type": "Article",
@@ -137,6 +137,43 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
   ];
   const related = relatedCards(g, loc);
 
+  // A guide about a dated event: status banner, and Event JSON-LD until it is over.
+  const ev = g.event;
+  const status = ev ? eventStatus(ev) : null;
+  let eventLine = "";
+  if (ev && status) {
+    const bcp = LOCALES[loc].bcp47;
+    const dayMonth = new Intl.DateTimeFormat(bcp, { day: "numeric", month: "long", timeZone: "UTC" });
+    const days = ev.days?.length ? ev.days : ev.startDate === ev.endDate ? [ev.startDate] : [ev.startDate, ev.endDate];
+    const parts = days.map((d, i) => (i === days.length - 1 ? date(d) : dayMonth.format(new Date(d + "T00:00:00Z"))));
+    const dates = new Intl.ListFormat(bcp, { type: ev.days?.length ? "conjunction" : "unit", style: "long" }).format(parts);
+    eventLine = t(status === "upcoming" ? "eventUpcoming" : status === "on" ? "eventOn" : "eventPast", { dates: ev.days?.length ? dates : parts.join(" – ") });
+    if (status !== "past") {
+      const eventName = locale === "hi" ? ev.name_hi : ev.name_en;
+      ld.unshift({
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "@id": `${url}#event`,
+        name: eventName,
+        description: l.description,
+        url,
+        inLanguage: LOCALES[loc].bcp47,
+        startDate: ev.startDate,
+        endDate: ev.endDate,
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        isAccessibleForFree: !!ev.free,
+        image: [absolute(photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`)],
+        location: {
+          "@type": "Place",
+          name: locale === "hi" ? ev.location_hi : ev.location_en,
+          address: { "@type": "PostalAddress", streetAddress: ev.location_en, addressLocality: "Varanasi", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
+          geo: { "@type": "GeoCoordinates", latitude: ev.lat, longitude: ev.lng },
+        },
+      });
+    }
+  }
+
   return (
     <>
       <LdJson data={ld} />
@@ -156,9 +193,19 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
         title={l.title}
         secondary={locale === "en" ? g.title_hi : g.title_en}
         subtitle={
-          <p className="text-sm text-kashi-ash/85">
-            {t("by", { brand: BRAND })} · <time dateTime={g.updated}>{t("updated", { date: date(g.updated) })}</time>
-          </p>
+          <>
+            {eventLine && (
+              <p
+                className={`mb-3 inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm ${status === "past" ? "border-kashi-ash/30 text-kashi-ash/85" : "border-kashi-saffron/60 bg-kashi-saffron/10 text-kashi-white"}`}
+              >
+                <Icon name="calendar" className="h-4 w-4 shrink-0 text-kashi-diya" />
+                <span>{eventLine}</span>
+              </p>
+            )}
+            <p className="text-sm text-kashi-ash/85">
+              {t("by", { brand: BRAND })} · <time dateTime={g.updated}>{t("updated", { date: date(g.updated) })}</time>
+            </p>
+          </>
         }
         strip={l.facts.length ? <FactStrip className="fact-strip-3" items={l.facts.map((f) => ({ icon: asIcon(f.icon), label: f.label, value: f.value }))} /> : undefined}
         lead={

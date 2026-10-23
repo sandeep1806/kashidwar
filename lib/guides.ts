@@ -1,18 +1,7 @@
 // Server-side only: imports every guide. Guides are researched articles in
 // English and Hindi (content/guides/<slug>.json); other locales show English.
-import bestTime from "@/content/guides/best-time-to-visit-varanasi.json";
-import howToReach from "@/content/guides/how-to-reach-varanasi.json";
-import sareeGuide from "@/content/guides/banarasi-saree-guide.json";
-import boatRide from "@/content/guides/varanasi-boat-ride.json";
-import kvAarti from "@/content/guides/kashi-vishwanath-aarti-timings.json";
-import tripCost from "@/content/guides/varanasi-trip-cost.json";
-import atNight from "@/content/guides/varanasi-at-night.json";
-import devDeepawali from "@/content/guides/dev-deepawali-2026.json";
-import gangaAarti from "@/content/guides/ganga-aarti-varanasi.json";
-import vishwanathDarshan from "@/content/guides/kashi-vishwanath-darshan.json";
-import twoDays from "@/content/guides/varanasi-in-2-days.json";
-import ropeway from "@/content/guides/varanasi-ropeway.json";
-import toSarnath from "@/content/guides/varanasi-to-sarnath.json";
+import { BUILD_DATE } from "@/lib/festivalDates";
+import { guideFiles } from "@/lib/guides.generated";
 import type { Locale } from "@/lib/i18n/locales";
 import type { Kind } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
@@ -57,6 +46,8 @@ export interface Guide {
   lead_hi: string;
   /** Photo key for the hero and cards, chosen to match the guide's topic */
   photo?: string;
+  /** Set when the guide is about a dated event */
+  event?: GuideEvent;
   facts?: GuideFact[];
   sections: GuideSection[];
   faq: { q_en: string; a_en: string; q_hi: string; a_hi: string }[];
@@ -65,11 +56,35 @@ export interface Guide {
   notes?: string;
 }
 
-/** Newest first (ties keep this order). Add a guide by importing its JSON here. */
-export const guides: Guide[] = ([howToReach, sareeGuide, boatRide, kvAarti, atNight, tripCost, bestTime, devDeepawali, vishwanathDarshan, gangaAarti, ropeway, toSarnath, twoDays] as Guide[])
-  .map((g, i) => ({ g, i }))
-  .sort((a, b) => b.g.published.localeCompare(a.g.published) || a.i - b.i)
-  .map(({ g }) => g);
+/**
+ * Every guide in content/guides/*.json (imported by the generated lib/guides.generated.ts,
+ * so adding a guide needs no code change), newest first; ties by slug.
+ */
+export const guides: Guide[] = (guideFiles as Guide[]).slice().sort((a, b) => b.published.localeCompare(a.published) || a.slug.localeCompare(b.slug));
+
+/** A dated event a guide is about (an air show, a festival night): drives the status banner and Event JSON-LD. */
+export interface GuideEvent {
+  name_en: string;
+  name_hi: string;
+  startDate: string;
+  endDate: string;
+  /** Show days when they are not every day between start and end */
+  days?: string[];
+  location_en: string;
+  location_hi: string;
+  lat: number;
+  lng: number;
+  free?: boolean;
+}
+
+export type EventStatus = "upcoming" | "on" | "past";
+
+/** Upcoming, on now (between start and end) or past, relative to the build date (the site rebuilds weekly). */
+export function eventStatus(e: Pick<GuideEvent, "startDate" | "endDate">, today: string = BUILD_DATE): EventStatus {
+  if (today < e.startDate) return "upcoming";
+  if (today > e.endDate) return "past";
+  return "on";
+}
 
 export const guideBySlug = (slug: string) => guides.find((g) => g.slug === slug);
 

@@ -10,7 +10,8 @@
 #
 # Rotation by the week of the month (IST): week 1 = full monthly review (Opus, 150 turns)
 # · week 2 festivals + dates · week 3 guides' volatile facts · week 4 developments + broken
-# links + photos · 5th Monday projects (Sonnet, 40 turns). No dollar cap by default; set
+# links + photos · 5th Monday projects (Sonnet, 80 turns). Every run also writes guides for
+# upcoming major events and turns finished events into history (brief, checks 4b and 4c). No dollar cap by default; set
 # REVIEW_MAX_BUDGET=<usd> for one. Override with REVIEW_MODEL / REVIEW_MAX_TURNS.
 #
 # The agent's brief is .claude/content-review.md. It works in a throwaway git worktree
@@ -34,7 +35,7 @@ if [ "$FOCUS" = auto ]; then
 fi
 case "$FOCUS" in
   full) KIND=Monthly; MODEL=${REVIEW_MODEL:-claude-opus-5-5}; TURNS=${REVIEW_MAX_TURNS:-150};;
-  projects|festivals|guides|developments) KIND=Weekly; MODEL=${REVIEW_MODEL:-claude-sonnet-5}; TURNS=${REVIEW_MAX_TURNS:-40};;
+  projects|festivals|guides|developments) KIND=Weekly; MODEL=${REVIEW_MODEL:-claude-sonnet-5}; TURNS=${REVIEW_MAX_TURNS:-80};;
   *) echo "Unknown focus '$FOCUS' (use auto, full, projects, festivals, guides or developments)"; exit 2;;
 esac
 BUDGET=${REVIEW_MAX_BUDGET:-}
@@ -96,7 +97,7 @@ echo "Result: ${RESULT_TYPE:-unknown} (error: ${IS_ERROR:-?}) · turns ${TURNS_U
 if [ -n "$FINAL" ]; then printf '%s\n' "$FINAL" | sed 's/^/> /' | tee -a "$LOG"; fi
 
 # Only content files may change: stray new files are removed, edits elsewhere abort.
-ALLOWED_PATHS='^(content/[^/]+\.json|content/guides/[^/]+\.json|TRANSLATION_REVIEW\.md|\.content-review-pr\.md)$'
+ALLOWED_PATHS='^(content/[^/]+\.json|content/guides/[^/]+\.json|content/guides/i18n/[^/]+\.json|TRANSLATION_REVIEW\.md|\.content-review-pr\.md)$'
 git ls-files --others --exclude-standard | { grep -vE "$ALLOWED_PATHS" || true; } | while read -r f; do
   echo "Removed scratch file left by the review: $f" | tee -a "$LOG"; rm -f -- "$f"
 done

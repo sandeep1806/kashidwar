@@ -193,8 +193,11 @@ for (const file of files) {
     }
   }
   for (const d of lastHeld) if (build && d >= build) bad(file, `"last held" ${d} is not in the past`);
+  const isGuide = /\/guides\//.test(relative(dir, file));
   for (const e of events) {
-    if (!featured.some((f) => f.iso === e.startDate)) bad(file, `Event ${e.startDate} is not the featured date`);
+    // Festival pages: the Event is the featured occurrence. Guides about an event: the Event
+    // is the guide's own event, shown in its banner, and must not have ended.
+    if (!isGuide && !featured.some((f) => f.iso === e.startDate)) bad(file, `Event ${e.startDate} is not the featured date`);
     if (build && (e.endDate ?? e.startDate) < build) bad(file, `Event ${e.startDate} is in the past`);
     if (lastHeld.includes(e.startDate)) bad(file, `Event marks up a past occurrence ${e.startDate}`);
     if (!String(e.name).includes(e.startDate.slice(0, 4))) bad(file, `Event name "${e.name}" does not carry its year`);

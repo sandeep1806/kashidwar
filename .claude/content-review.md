@@ -16,7 +16,8 @@ guide sections); nothing voyeuristic about cremation grounds.
 
 1. **Files you may edit — nothing else:**
    - `content/*.json` (top level: projects, festivals, festival-dates, places, food, itineraries, faiths)
-   - `content/guides/*.json`
+   - `content/guides/*.json` (including new guides — they are picked up automatically, no code needed)
+   - `content/guides/i18n/*.json` (regional translations of guides, keyed by guide slug)
    - `TRANSLATION_REVIEW.md`
    Never touch code, `package*.json`, config, scripts, `messages/`, `content/i18n/`, photos,
    workflows, `.claude/`, or secrets, and not `content/review-log.json` (the script writes it). The script rejects the run if any other path changes.
@@ -29,10 +30,13 @@ guide sections); nothing voyeuristic about cremation grounds.
    Express, Times of India, Hindustan Times, Amar Ujala, Dainik Jagran, Aaj Tak, ETV Bharat, DD).
    A change needs at least one such source. Blogs and travel agencies never count on their own.
 4. **Hindi and English together:** whenever you change English text, change the matching Hindi
-   text in the same edit (`name_hi`, `*_hi`, `i18n.hi`), in natural Hindi. Other locales
-   (`content/i18n/*.json`, including `content/i18n/entries/`) are NOT edited —
-   list every affected entry under a new dated heading in `TRANSLATION_REVIEW.md` so a
-   translator can update them.
+   text in the same edit (`name_hi`, `*_hi`, `i18n.hi`), in natural Hindi. **Guides are
+   published in all 13 languages:** a new guide, or a changed guide section, also gets its
+   translation in every `content/guides/i18n/<locale>.json` (as, bn, gu, kn, ml, mr, or, pa,
+   sa, ta, te), with exactly the same number of facts, sections, body paragraphs, list items
+   and FAQs as the English, numbers and dates unchanged, natural text for native readers.
+   Other regional content (`content/i18n/*.json`, including `content/i18n/entries/`) is NOT
+   edited — list every affected entry under a new dated heading in `TRANSLATION_REVIEW.md`.
 5. **Dates:** today's date is given in the prompt. Keep ISO dates (`YYYY-MM-DD`). Never move a
    `lastVerified` date forward unless you actually re-checked that entry this run.
 6. **When unsure, do not change it** — mention it in the summary as "needs a human look".
@@ -48,8 +52,11 @@ under "What to check"):
 | `projects` | 1 | weekly, week 1 of the month (and a 5th Monday) |
 | `festivals` | 2, plus the festival pages' own facts in `content/festivals.json` | weekly, week 2 |
 | `guides` | 3 | weekly, week 3 |
-| `developments` | 4 and 5 | weekly, week 4 |
-| `full` | 1–5 | monthly, first Monday |
+| `developments` | 4, 4b, 4c and 5 | weekly, week 4 |
+| `full` | 1–5 (with 4b and 4c) | monthly, first Monday |
+
+**Every run, whatever its focus, also does 4b and 4c first** (upcoming major events and finished
+events): a big event is a traffic opportunity that cannot wait for its week in the rotation.
 
 Update a "last verified" date (`lastVerified` on projects, `updated` on guides, a festival
 date's verification fields) **only for entries you actually re-checked in this run**.
@@ -119,10 +126,42 @@ Keep each section's `sources` indexes correct when you add or remove a source.
 
 ### 4. New developments
 Look for significant news from Varanasi since the last review: places newly opened to the
-public, major events, new or re-scoped government projects. Propose an addition only with at
-least one official or major-news source. Small additions (a new project, a new source) may be
-made directly in the JSON following the existing entries' shape; larger ones (a new place
-page, a new guide) are proposals in the summary only.
+public, new or re-scoped government projects. Propose an addition only with at least one
+official or major-news source. Small additions (a new project, a new source) may be made
+directly in the JSON following the existing entries' shape; a new place page is a proposal in
+the summary only.
+
+### 4b. Upcoming major events — write a guide for each (every run)
+Search, in English and Hindi, for big events in or around Varanasi in the next six weeks that
+many people will search for: air shows and military displays, VIP and PM visits with public
+programmes, large cultural festivals and concerts (Ganga Mahotsav, Dev Deepawali programmes,
+Kashi Tamil Sangamam, Ramnagar Ramlila), sports events, big religious gatherings, major
+openings (the ropeway, a stadium). Useful queries: "Varanasi <month> <year> event", "वाराणसी
+<महीना> कार्यक्रम", "Namo Ghat event", "Varanasi traffic advisory", "Varanasi air show".
+
+For each event confirmed by at least one official source or two major news outlets, and not
+already covered by a guide (check `content/guides/`):
+- Write `content/guides/<event-slug>-<year>.json` in the same shape as
+  `content/guides/varanasi-air-show-2026.json` (the model to copy), including the `event` object
+  (`name_en/hi` including the year, `startDate`, `endDate`, optional `days`, `location_en/hi`, `lat`, `lng` from
+  `content/places.json`, `free`). The site shows "Upcoming / On now / Took place" and Event
+  structured data from it automatically.
+- SEO: the title starts with the phrase people search ("Varanasi Air Show 2026: …"), ≤ 60
+  characters; the description ≤ 158 characters names dates, place and the main questions.
+- Answer what visitors need: dates and timings (mark unannounced times as not confirmed),
+  where and how to watch or attend, **passes and tickets — who issues them, whether they are
+  free, and a clear warning about fake or paid "passes" and unofficial booking sites**, traffic
+  and parking, rules (drones, boats, items), safety, and 6–8 FAQs in the words people search.
+- Sources: official notices first, then major news; never cite unofficial look-alike event
+  sites as official. English + Hindi in the file, and all 11 regional translations (rule 4).
+- Put the event at the top of the summary table.
+
+### 4c. Finished events — turn them into history (every run)
+For every guide whose `event.endDate` is before today and that has no `what-happened` section:
+add a first section `what-happened` ("What happened at …" / "… में क्या हुआ") with a short,
+sourced account (attendance, highlights, records, anything that went wrong), change the lead's
+tense to the past, keep the practical sections that still help (for the next edition), update
+`updated`, and translate the new section into all regional files. Do not delete event pages.
 
 ### 5. Links and photos
 - Run `node scripts/check-links.mjs` first (one command, about 2 minutes): it checks every

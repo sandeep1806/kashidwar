@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "node scripts/heading-font/check.mjs && next build",
+    "dev": "node scripts/gen-guides-index.mjs && next dev",
+    "build": "node scripts/gen-guides-index.mjs && node scripts/heading-font/check.mjs && next build",
     "start": "next start",
     "lint": "eslint",
     "cf:build": "node scripts/cf-build.mjs",

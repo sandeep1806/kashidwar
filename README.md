@@ -214,13 +214,19 @@ FORCE=1 scripts/content-review.sh      # run even if today's review already exis
 | When (IST week of the month) | Focus | Model | Caps |
 |---|---|---|---|
 | week 1 (first Monday) | full: projects, festivals, guides, developments, links, photos | `claude-opus-5-5` | 150 turns |
-| week 2 | festivals + dates | `claude-sonnet-5` | 40 turns |
-| week 3 | guides' volatile facts (darshan/aarti timings, Sugam fee, ropeway and Sarnath fares and hours) | `claude-sonnet-5` | 40 turns |
-| week 4 | new developments + broken links + photo candidates | `claude-sonnet-5` | 40 turns |
-| 5th Monday | projects | `claude-sonnet-5` | 40 turns |
+| week 2 | festivals + dates | `claude-sonnet-5` | 80 turns |
+| week 3 | guides' volatile facts (darshan/aarti timings, Sugam fee, ropeway and Sarnath fares and hours) | `claude-sonnet-5` | 80 turns |
+| week 4 | new developments + broken links + photo candidates | `claude-sonnet-5` | 80 turns |
+| 5th Monday | projects | `claude-sonnet-5` | 80 turns |
 
 No dollar cap by default; set `REVIEW_MAX_BUDGET=<usd>` for one. Override the model or turn
 limit with `REVIEW_MODEL`, `REVIEW_MAX_TURNS`.
+
+**Every run** also looks for big upcoming events in the next six weeks (air shows, VIP visits,
+large festivals, sports, openings) and writes a full guide for each — dates, where to watch,
+passes and fake-pass warnings, traffic, FAQ — in all 13 languages, and turns finished events
+into a sourced "what happened" record. Guides with an `event` show "Upcoming / On now / Took
+place" automatically and carry Event structured data until they end.
 
 **Schedule.** A scheduled task in the Claude desktop app runs `scripts/content-review.sh` every
 Monday morning (it catches up if the machine was off). Change or pause it in the app's scheduled

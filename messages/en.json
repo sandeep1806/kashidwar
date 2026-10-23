@@ -468,7 +468,11 @@
     "related": "Related pages",
     "unconfirmed": "Not officially confirmed — check before you travel",
     "read": "Read the guide",
-    "relatedGuides": "Guides"
+    "relatedGuides": "Guides",
+    "eventUpcoming": "Upcoming: {dates}",
+    "eventOn": "On now: {dates}",
+    "eventPast": "This event took place on {dates}. This page is kept as a record of what happened.",
+    "eventFree": "Free entry"
   },
   "about": {
     "title": "About Kashidwar",
