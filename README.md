@@ -212,13 +212,14 @@ DRY_RUN=1 scripts/content-review.sh    # review + diff, no branch, push or PR
 
 | When (IST week of the month) | Focus | Model | Caps |
 |---|---|---|---|
-| week 1 (first Monday) | full: projects, festivals, guides, developments, links, photos | `claude-opus-5-5` | 150 turns, $15 |
-| week 2 | festivals + dates | `claude-sonnet-5` | 40 turns, $3 |
-| week 3 | guides' volatile facts (darshan/aarti timings, Sugam fee, ropeway and Sarnath fares and hours) | `claude-sonnet-5` | 40 turns, $3 |
-| week 4 | new developments + broken links + photo candidates | `claude-sonnet-5` | 40 turns, $3 |
-| 5th Monday | projects | `claude-sonnet-5` | 40 turns, $3 |
+| week 1 (first Monday) | full: projects, festivals, guides, developments, links, photos | `claude-opus-5-5` | 150 turns |
+| week 2 | festivals + dates | `claude-sonnet-5` | 40 turns |
+| week 3 | guides' volatile facts (darshan/aarti timings, Sugam fee, ropeway and Sarnath fares and hours) | `claude-sonnet-5` | 40 turns |
+| week 4 | new developments + broken links + photo candidates | `claude-sonnet-5` | 40 turns |
+| 5th Monday | projects | `claude-sonnet-5` | 40 turns |
 
-Override with `REVIEW_MODEL`, `REVIEW_MAX_TURNS`, `REVIEW_MAX_BUDGET`.
+No dollar cap by default; set `REVIEW_MAX_BUDGET=<usd>` for one. Override the model or turn
+limit with `REVIEW_MODEL`, `REVIEW_MAX_TURNS`.
 
 **Schedule.** A scheduled task in the Claude desktop app runs `scripts/content-review.sh` every
 Monday morning (it catches up if the machine was off). Change or pause it in the app's scheduled

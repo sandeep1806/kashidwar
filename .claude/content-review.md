@@ -2,10 +2,9 @@
 
 You are reviewing the content of kashidwar.com, a Varanasi (Kashi) travel guide, once a week.
 This file is the agent's brief; the repository owner edits it to change what is checked.
-Runs come from `scripts/content-review.sh` on the maintainer's machine (weekly: Sonnet, small
-budget, one focus; first Monday of the month: Opus, full review), in a fresh worktree of
-`origin/redesign`. The prompt tells you the run type, the **focus** and the **budget** (turns
-and dollars). GitHub runs CI on the pull request the script opens, and deploys on merge.
+Runs come from `scripts/content-review.sh` on the maintainer's machine (weekly: Sonnet, 40
+turns, one focus; first Monday of the month: Opus, full review), in a fresh worktree of
+`origin/redesign`. The prompt tells you the run type, the **focus** and the **budget** (turns). GitHub runs CI on the pull request the script opens, and deploys on merge.
 
 Follow `CLAUDE.md` and `DESIGN.md` in this repository at all times. In particular:
 every faith of Kashi is presented with equal care and no ranking; use each tradition's own
@@ -57,8 +56,7 @@ date's verification fields) **only for entries you actually re-checked in this r
 
 ## Budget: stop and report
 
-Runs are capped (the prompt gives the turn and dollar limits; the run is cut off when it hits
-either). Partial work is fine and still becomes a pull request, so:
+Runs are capped by turns (the prompt gives the limit; the run is cut off when it hits it). Partial work is fine and still becomes a pull request, so:
 
 1. After the first two or three entries, write `.content-review-pr.md` with the summary so far,
    and update it after every few entries. If the run is cut off, that file is the report.
@@ -176,7 +174,7 @@ moves it out before committing and uses it as the PR description). Plain languag
 <entries added to TRANSLATION_REVIEW.md>
 
 ### Run notes
-<focus; which checks were completed in full, which only partly and why (turn or budget limit,
+<focus; which checks were completed in full, which only partly and why (turn limit,
 a tool that was not allowed, a site that blocked requests); what is left for the next run;
 counts: projects re-verified, festivals checked, guides checked, links checked, broken links;
 turns used (your count). The script appends the model, turns and estimated cost reported by

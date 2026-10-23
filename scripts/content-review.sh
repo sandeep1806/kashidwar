@@ -7,10 +7,10 @@
 #   scripts/content-review.sh full           # the deep review (Opus)
 #   DRY_RUN=1 scripts/content-review.sh ...  # review and show the diff, but no branch, push or PR
 #
-# Rotation by the week of the month (IST): week 1 = full monthly review (Opus, 150 turns,
-# $15) · week 2 festivals + dates · week 3 guides' volatile facts · week 4 developments +
-# broken links + photos · 5th Monday projects (Sonnet, 40 turns, $3). Override with
-# REVIEW_MODEL / REVIEW_MAX_TURNS / REVIEW_MAX_BUDGET.
+# Rotation by the week of the month (IST): week 1 = full monthly review (Opus, 150 turns)
+# · week 2 festivals + dates · week 3 guides' volatile facts · week 4 developments + broken
+# links + photos · 5th Monday projects (Sonnet, 40 turns). No dollar cap by default; set
+# REVIEW_MAX_BUDGET=<usd> for one. Override with REVIEW_MODEL / REVIEW_MAX_TURNS.
 #
 # The agent's brief is .claude/content-review.md. It works in a throwaway git worktree
 # of origin/redesign (your checkout is never touched), may edit only content files, and
@@ -32,10 +32,13 @@ if [ "$FOCUS" = auto ]; then
   case "$WEEK" in 1) FOCUS=full;; 2) FOCUS=festivals;; 3) FOCUS=guides;; 4) FOCUS=developments;; *) FOCUS=projects;; esac
 fi
 case "$FOCUS" in
-  full) KIND=Monthly; MODEL=${REVIEW_MODEL:-claude-opus-5-5}; TURNS=${REVIEW_MAX_TURNS:-150}; BUDGET=${REVIEW_MAX_BUDGET:-15};;
-  projects|festivals|guides|developments) KIND=Weekly; MODEL=${REVIEW_MODEL:-claude-sonnet-5}; TURNS=${REVIEW_MAX_TURNS:-40}; BUDGET=${REVIEW_MAX_BUDGET:-3};;
+  full) KIND=Monthly; MODEL=${REVIEW_MODEL:-claude-opus-5-5}; TURNS=${REVIEW_MAX_TURNS:-150};;
+  projects|festivals|guides|developments) KIND=Weekly; MODEL=${REVIEW_MODEL:-claude-sonnet-5}; TURNS=${REVIEW_MAX_TURNS:-40};;
   *) echo "Unknown focus '$FOCUS' (use auto, full, projects, festivals, guides or developments)"; exit 2;;
 esac
+BUDGET=${REVIEW_MAX_BUDGET:-}
+BUDGET_ARGS=(); [ -n "$BUDGET" ] && BUDGET_ARGS=(--max-budget-usd "$BUDGET")
+CAPS="${TURNS} turns$( [ -n "$BUDGET" ] && printf ', $%s cap' "$BUDGET" || true)"
 
 # One review per day: a scheduled catch-up run after a manual one does nothing.
 if [ -z "${DRY_RUN:-}" ] && git -C "$REPO" ls-remote --exit-code --heads origin "content-review/${TODAY}-*" >/dev/null 2>&1; then
@@ -44,7 +47,7 @@ fi
 
 LOG="$STATE/${TODAY}-${FOCUS}.log"
 OUT="$STATE/${TODAY}-${FOCUS}.json"
-echo "${KIND} content review ${TODAY} · focus ${FOCUS} · ${MODEL} · ${TURNS} turns · \$${BUDGET} cap" | tee "$LOG"
+echo "${KIND} content review ${TODAY} · focus ${FOCUS} · ${MODEL} · ${CAPS}" | tee "$LOG"
 
 WT=$(mktemp -d "${TMPDIR:-/tmp}/kashidwar-review.XXXXXX")
 cleanup() { git -C "$REPO" worktree remove --force "$WT" >/dev/null 2>&1 || rm -rf "$WT"; }
@@ -54,7 +57,7 @@ git -C "$REPO" worktree add -q --detach "$WT" origin/redesign
 cd "$WT"
 
 PROMPT="Today is ${TODAY} (Asia/Kolkata). Run type: ${KIND}. Focus for this run: ${FOCUS}.
-Budget: at most ${TURNS} turns and about \$${BUDGET}.
+Budget: at most ${TURNS} turns.
 Read .claude/content-review.md and carry out the review it describes for this focus only,
 following CLAUDE.md and DESIGN.md, and its budget rules (write the summary early, keep it
 current, stop and finalise when about 80% of the turns are used). Edit only the files it
@@ -68,7 +71,7 @@ DENIED="Bash(git push:*),Bash(git commit:*),Bash(git checkout:*),Bash(git reset:
 # the review sees the repository and the web, nothing else.
 COMMON=(--setting-sources project --strict-mcp-config --allowedTools "$ALLOWED" --disallowedTools "$DENIED" --output-format json)
 set +e
-claude -p "$PROMPT" --model "$MODEL" --max-turns "$TURNS" --max-budget-usd "$BUDGET" "${COMMON[@]}" > "$OUT" 2>>"$LOG"
+claude -p "$PROMPT" --model "$MODEL" --max-turns "$TURNS" "${BUDGET_ARGS[@]}" "${COMMON[@]}" > "$OUT" 2>>"$LOG"
 # Out of turns (or budget) without a summary: resume the same session for a few turns
 # with one job — write the summary of what was checked — so partial work still becomes a PR.
 SID=$(jq -r '.session_id // ""' "$OUT" 2>/dev/null)
@@ -117,14 +120,14 @@ else printf '## %s content review %s\n\n(The agent wrote no summary.)\n' "$KIND"
 case "$RESULT_TYPE" in
   error_max_turns) STOP="stopped at the turn cap (${TURNS}); partial review"
     if [ "$(jq -r '.finalised // false' "$OUT" 2>/dev/null)" = true ]; then STOP="$STOP, summary finalised in a short follow-up"; fi;;
-  error_max_budget*) STOP="stopped at the budget cap (\$${BUDGET}); partial review";;
+  error_max_budget*) STOP="stopped at the dollar cap (\$${BUDGET}); partial review";;
   success) if [ "$IS_ERROR" = true ]; then STOP="ended with an error: ${FINAL:0:200}"; else STOP="completed"; fi;;
   *) STOP="ended: ${RESULT_TYPE:-unknown}";;
 esac
 {
   echo; echo "### Run cost (reported by Claude Code)"
   echo "- ${KIND} review, focus **${FOCUS}**, model \`${MODEL}\`: ${STOP}."
-  echo "- Turns used: ${TURNS_USED:-?} of ${TURNS}. Estimated cost: \$${COST:-?} (cap \$${BUDGET})."
+  echo "- Turns used: ${TURNS_USED:-?} of ${TURNS}. Estimated cost: \$${COST:-?}$( [ -n "$BUDGET" ] && printf ' (cap $%s)' "$BUDGET" || true)."
   echo "- Run on the maintainer's machine (scripts/content-review.sh). CI runs on this pull request; no auto-merge."
 } >> "$BODY"
 
