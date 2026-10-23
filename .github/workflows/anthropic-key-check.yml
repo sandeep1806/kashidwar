@@ -66,6 +66,9 @@ jobs:
             claude -p "Reply with the single word: ok" --model "$MODEL" --max-turns 1 --output-format json $extra \
               | jq '{is_error, subtype, result: (.result | tostring | .[0:300]), total_cost_usd}' | tee -a "$GITHUB_STEP_SUMMARY" || true
           done
+          echo "--- claude -p identified as the GitHub Action (CLAUDE_CODE_ACTION=1)"
+          CLAUDE_CODE_ACTION=1 claude -p "Reply with the single word: ok" --model "$MODEL" --max-turns 1 --output-format json \
+            | jq '{is_error, subtype, result: (.result | tostring | .[0:300]), total_cost_usd}' | tee -a "$GITHUB_STEP_SUMMARY" || true
 
   # The Claude Code GitHub Action itself, with a trivial prompt: plain, then with the
   # review's own claude_args. Shows whether a failure is the action or our settings.
