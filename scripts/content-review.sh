@@ -72,10 +72,11 @@ claude -p "$PROMPT" --model "$MODEL" --max-turns "$TURNS" --max-budget-usd "$BUD
 # Out of turns (or budget) without a summary: resume the same session for a few turns
 # with one job — write the summary of what was checked — so partial work still becomes a PR.
 SID=$(jq -r '.session_id // ""' "$OUT" 2>/dev/null)
-if [ ! -s .content-review-pr.md ] && [ -n "$SID" ]; then
-  echo "No summary yet; resuming the session to write it." | tee -a "$LOG"
+SUB=$(jq -r '.subtype // ""' "$OUT" 2>/dev/null)
+if [ -n "$SID" ] && { [ ! -s .content-review-pr.md ] || [[ "$SUB" == error_max_* ]]; }; then
+  echo "Run ended at its cap (${SUB:-no result}); resuming the session to finalise the summary." | tee -a "$LOG"
   FIN="$STATE/${TODAY}-${FOCUS}-finalise.json"
-  claude -p "Your review budget is used up. Stop checking now. Validate any JSON file you edited with python3 -m json.tool, then write .content-review-pr.md exactly in the format the brief's Output section gives: what you checked, every change (old → new, source, confidence), what needs a human look, and under Run notes what was NOT reached this time. Do nothing else." \
+  claude -p "Your review budget is used up. Stop checking now. Validate any JSON file you edited with python3 -m json.tool, then rewrite .content-review-pr.md as a FINAL report (no 'in progress' placeholders) exactly in the format the brief's Output section gives: what you checked, every change (old → new, source, confidence), what needs a human look, and under Run notes what was NOT reached this time. Do nothing else." \
     --resume "$SID" --model "$MODEL" --max-turns 6 --max-budget-usd 0.5 "${COMMON[@]}" > "$FIN" 2>>"$LOG"
   # Report the combined numbers.
   jq -s '.[0] as $a | .[1] as $b | $a + {num_turns: (($a.num_turns // 0) + ($b.num_turns // 0)), total_cost_usd: (($a.total_cost_usd // 0) + ($b.total_cost_usd // 0)), finalised: true}' "$OUT" "$FIN" > "$OUT.tmp" 2>/dev/null && mv "$OUT.tmp" "$OUT"
@@ -88,7 +89,7 @@ TURNS_USED=$(jq -r '.num_turns // ""' "$OUT" 2>/dev/null || true)
 COST=$(jq -r '.total_cost_usd // "" | if . == "" then "" else (. * 100 | round / 100 | tostring) end' "$OUT" 2>/dev/null || true)
 FINAL=$(jq -r '.result // ""' "$OUT" 2>/dev/null | head -c 2000 || true)
 echo "Result: ${RESULT_TYPE:-unknown} (error: ${IS_ERROR:-?}) · turns ${TURNS_USED:-?} · cost \$${COST:-?}" | tee -a "$LOG"
-[ -n "$FINAL" ] && printf '%s\n' "$FINAL" | sed 's/^/> /' | tee -a "$LOG"
+if [ -n "$FINAL" ]; then printf '%s\n' "$FINAL" | sed 's/^/> /' | tee -a "$LOG"; fi
 
 # Only content files may change: stray new files are removed, edits elsewhere abort.
 ALLOWED_PATHS='^(content/[^/]+\.json|content/guides/[^/]+\.json|TRANSLATION_REVIEW\.md|\.content-review-pr\.md)$'
@@ -114,9 +115,10 @@ BODY="$STATE/${TODAY}-${FOCUS}-pr.md"
 if [ -s .content-review-pr.md ]; then cp .content-review-pr.md "$BODY"; rm -f .content-review-pr.md
 else printf '## %s content review %s\n\n(The agent wrote no summary.)\n' "$KIND" "$TODAY" > "$BODY"; fi
 case "$RESULT_TYPE" in
-  error_max_turns) STOP="stopped at the turn cap (${TURNS}); partial review$( [ "$(jq -r '.finalised // false' "$OUT")" = true ] && echo ', summary written in a short follow-up')";;
+  error_max_turns) STOP="stopped at the turn cap (${TURNS}); partial review"
+    if [ "$(jq -r '.finalised // false' "$OUT" 2>/dev/null)" = true ]; then STOP="$STOP, summary finalised in a short follow-up"; fi;;
   error_max_budget*) STOP="stopped at the budget cap (\$${BUDGET}); partial review";;
-  success) [ "$IS_ERROR" = true ] && STOP="ended with an error: ${FINAL:0:200}" || STOP="completed";;
+  success) if [ "$IS_ERROR" = true ]; then STOP="ended with an error: ${FINAL:0:200}"; else STOP="completed"; fi;;
   *) STOP="ended: ${RESULT_TYPE:-unknown}";;
 esac
 {
