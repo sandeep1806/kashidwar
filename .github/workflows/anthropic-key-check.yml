@@ -27,9 +27,22 @@ jobs:
           MAX_TOKENS: ${{ inputs.max_tokens }}
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::error::ANTHROPIC_API_KEY is not set"; exit 1; fi
+          # A fingerprint (not reversible) to compare with the review runs' key.
+          echo "Key fingerprint: sha256 $(printf %s "$ANTHROPIC_API_KEY" | sha256sum | cut -c1-12), length ${#ANTHROPIC_API_KEY}, prefix ${ANTHROPIC_API_KEY:0:10}…" | tee -a "$GITHUB_STEP_SUMMARY"
           body=$(jq -n --arg m "$MODEL" --argjson t "${MAX_TOKENS:-5}" '{model:$m,max_tokens:$t,messages:[{role:"user",content:"Say hi in one word."}]}')
           res=$(curl -s https://api.anthropic.com/v1/messages \
             -H "x-api-key: $ANTHROPIC_API_KEY" -H "anthropic-version: 2023-06-01" \
             -H "content-type: application/json" -d "$body")
           echo "$res" | jq '{type, model, error_type: .error.type, error: .error.message, usage}' | tee -a "$GITHUB_STEP_SUMMARY"
           [ "$(echo "$res" | jq -r .type)" = "message" ]
+
+      - name: Claude Code CLI with the same key
+        if: always()
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODEL: ${{ inputs.model }}
+        run: |
+          npm install -g @anthropic-ai/claude-code@latest > /dev/null 2>&1
+          claude --version
+          claude -p "Reply with the single word: ok" --model "$MODEL" --max-turns 1 --output-format json \
+            | jq '{is_error, subtype, result: (.result | tostring | .[0:300]), total_cost_usd, num_turns}' | tee -a "$GITHUB_STEP_SUMMARY"

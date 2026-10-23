@@ -88,7 +88,10 @@ jobs:
           EXEC: ${{ steps.claude.outputs.execution_file }}
           MODEL: ${{ inputs.model }}
           OUTCOME: ${{ steps.claude.outcome }}
+          KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
+          # A fingerprint (not reversible) to confirm which key this run used.
+          echo "Key fingerprint: sha256 $(printf %s "$KEY" | sha256sum | cut -c1-12), length ${#KEY}, prefix ${KEY:0:10}…" | tee -a "$GITHUB_STEP_SUMMARY"
           turns=""; cost=""; subtype=""
           if [ -f "$EXEC" ]; then
             res=$(jq -c '[.. | objects | select(.type? == "result")][-1] // {}' "$EXEC")
