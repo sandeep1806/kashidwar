@@ -6,6 +6,7 @@
 #   scripts/content-review.sh guides         # one focus: projects | festivals | guides | developments
 #   scripts/content-review.sh full           # the deep review (Opus)
 #   DRY_RUN=1 scripts/content-review.sh ...  # review and show the diff, but no branch, push or PR
+#   FORCE=1 scripts/content-review.sh ...    # run even if today's review already exists
 #
 # Rotation by the week of the month (IST): week 1 = full monthly review (Opus, 150 turns)
 # · week 2 festivals + dates · week 3 guides' volatile facts · week 4 developments + broken
@@ -40,9 +41,9 @@ BUDGET=${REVIEW_MAX_BUDGET:-}
 BUDGET_ARGS=(); [ -n "$BUDGET" ] && BUDGET_ARGS=(--max-budget-usd "$BUDGET")
 CAPS="${TURNS} turns$( [ -n "$BUDGET" ] && printf ', $%s cap' "$BUDGET" || true)"
 
-# One review per day: a scheduled catch-up run after a manual one does nothing.
-if [ -z "${DRY_RUN:-}" ] && git -C "$REPO" ls-remote --exit-code --heads origin "content-review/${TODAY}-*" >/dev/null 2>&1; then
-  echo "A content review for ${TODAY} already exists on GitHub; nothing to do."; exit 0
+# One review per day: a scheduled catch-up run after a manual one does nothing (FORCE=1 overrides).
+if [ -z "${DRY_RUN:-}" ] && [ -z "${FORCE:-}" ] && git -C "$REPO" ls-remote --exit-code --heads origin "content-review/${TODAY}-*" >/dev/null 2>&1; then
+  echo "A content review for ${TODAY} already exists on GitHub; nothing to do (FORCE=1 runs another)."; exit 0
 fi
 
 LOG="$STATE/${TODAY}-${FOCUS}.log"
@@ -154,6 +155,8 @@ if [ -n "${DRY_RUN:-}" ]; then
 fi
 
 BRANCH="content-review/${TODAY}-${FOCUS}"
+# A forced second run the same day gets its own branch.
+if git -C "$REPO" ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then BRANCH="${BRANCH}-$(TZ=Asia/Kolkata date +%H%M)"; fi
 git switch -q -c "$BRANCH"
 git commit -q -m "${KIND} content review ${TODAY} (${FOCUS})"
 git push -q origin "$BRANCH"

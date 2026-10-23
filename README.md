@@ -208,6 +208,7 @@ scripts/content-review.sh              # this week's rotation
 scripts/content-review.sh guides       # one focus: projects | festivals | guides | developments
 scripts/content-review.sh full         # deep review (Opus)
 DRY_RUN=1 scripts/content-review.sh    # review + diff, no branch, push or PR
+FORCE=1 scripts/content-review.sh      # run even if today's review already exists
 ```
 
 | When (IST week of the month) | Focus | Model | Caps |
