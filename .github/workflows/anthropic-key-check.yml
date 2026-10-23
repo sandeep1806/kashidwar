@@ -36,6 +36,21 @@ jobs:
           echo "$res" | jq '{type, model, error_type: .error.type, error: .error.message, usage}' | tee -a "$GITHUB_STEP_SUMMARY"
           [ "$(echo "$res" | jq -r .type)" = "message" ]
 
+      - name: Raw API call with the web-search and web-fetch tools declared
+        if: always()
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODEL: ${{ inputs.model }}
+        run: |
+          for tool in web_search_20250305:web_search web_fetch_20250910:web_fetch; do
+            t=${tool%%:*}; n=${tool##*:}
+            body=$(jq -n --arg m "$MODEL" --arg t "$t" --arg n "$n" '{model:$m,max_tokens:20,tools:[{type:$t,name:$n,max_uses:1}],messages:[{role:"user",content:"Reply with the single word: ok. Do not use any tools."}]}')
+            echo "--- with tool $t"
+            curl -s https://api.anthropic.com/v1/messages -H "x-api-key: $ANTHROPIC_API_KEY" -H "anthropic-version: 2023-06-01" \
+              -H "anthropic-beta: web-fetch-2025-09-10" -H "content-type: application/json" -d "$body" \
+              | jq '{type, error_type: .error.type, error: .error.message}' | tee -a "$GITHUB_STEP_SUMMARY"
+          done
+
       - name: Claude Code CLI with the same key
         if: always()
         env:
@@ -44,7 +59,7 @@ jobs:
         run: |
           npm install -g @anthropic-ai/claude-code@latest > /dev/null 2>&1
           claude --version
-          for extra in "" "--max-budget-usd 3"; do
+          for extra in "" "--max-budget-usd 3" "--allowedTools WebSearch,WebFetch"; do
             echo "--- claude -p with: ${extra:-no extra flags}"
             # shellcheck disable=SC2086
             claude -p "Reply with the single word: ok" --model "$MODEL" --max-turns 1 --output-format json $extra \
