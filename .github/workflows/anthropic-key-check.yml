@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write
 
 jobs:
   check:
@@ -65,3 +66,32 @@ jobs:
             claude -p "Reply with the single word: ok" --model "$MODEL" --max-turns 1 --output-format json $extra \
               | jq '{is_error, subtype, result: (.result | tostring | .[0:300]), total_cost_usd}' | tee -a "$GITHUB_STEP_SUMMARY" || true
           done
+
+  # The Claude Code GitHub Action itself, with a trivial prompt: plain, then with the
+  # review's own claude_args. Shows whether a failure is the action or our settings.
+  action:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pull-requests: write
+    strategy:
+      fail-fast: false
+      matrix:
+        variant: [plain, review-args]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - id: claude
+        continue-on-error: true
+        uses: anthropics/claude-code-action@ae68417a745a5df4b2124873632bd73a2255e6f6 # v1.0.259
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: "Reply with the single word: ok"
+          claude_args: ${{ matrix.variant == 'plain' && format('--model {0} --max-turns 1', inputs.model) || format('--model {0} --max-turns 3 --max-budget-usd 3 --allowedTools "Read,Glob,Grep,Edit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*)"', inputs.model) }}
+      - if: always()
+        env:
+          EXEC: ${{ steps.claude.outputs.execution_file }}
+        run: |
+          echo "variant ${{ matrix.variant }}: outcome ${{ steps.claude.outcome }}"
+          [ -f "$EXEC" ] && jq -c '[.. | objects | select(.type? == "result")][-1] | {is_error, subtype, result: (.result|tostring|.[0:200]), total_cost_usd, num_turns}' "$EXEC" || echo "no execution file"
