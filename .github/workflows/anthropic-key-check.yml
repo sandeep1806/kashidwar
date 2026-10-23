@@ -44,5 +44,9 @@ jobs:
         run: |
           npm install -g @anthropic-ai/claude-code@latest > /dev/null 2>&1
           claude --version
-          claude -p "Reply with the single word: ok" --model "$MODEL" --max-turns 1 --output-format json \
-            | jq '{is_error, subtype, result: (.result | tostring | .[0:300]), total_cost_usd, num_turns}' | tee -a "$GITHUB_STEP_SUMMARY"
+          for extra in "" "--max-budget-usd 3"; do
+            echo "--- claude -p with: ${extra:-no extra flags}"
+            # shellcheck disable=SC2086
+            claude -p "Reply with the single word: ok" --model "$MODEL" --max-turns 1 --output-format json $extra \
+              | jq '{is_error, subtype, result: (.result | tostring | .[0:300]), total_cost_usd}' | tee -a "$GITHUB_STEP_SUMMARY" || true
+          done
