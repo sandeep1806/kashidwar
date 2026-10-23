@@ -197,54 +197,46 @@ Two sources. **Cloudflare Web Analytics** (cookieless, edge-injected beacon, no 
 Cloudflare Web Analytics setup, if it ever needs redoing: dashboard → **Analytics & Logs → Web Analytics → Add a site**, choose kashidwar.com, automatic setup.
 If you ever turn the proxy off, switch to the manual JS snippet and add its `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "…"}'>` to `app/[locale]/layout.tsx`.
 
-## Weekly content review (AI, human-merged)
-Anthropic's [Claude Code GitHub Action](https://github.com/anthropics/claude-code-action)
-(pinned to v1.0.259 by commit SHA) re-checks the site's facts and opens **one pull request**
-per run ("Weekly content review YYYY-MM-DD" / "Monthly content review YYYY-MM-DD"). Nothing is
-merged automatically. Both schedules call the same reusable workflow,
-`.github/workflows/content-review-run.yml`.
+## Content review (AI, on the maintainer's machine)
+Site facts are re-checked by the local Claude Code CLI on the maintainer's machine; GitHub only
+runs CI on the resulting pull request and deploys when it is merged. No Anthropic key is stored
+on GitHub (the GitHub-hosted review was removed on 2026-10-23: the Claude Code GitHub Action's
+usage was not covered by the account's promotional credits, while the CLI's is).
 
-| Workflow | When (IST) | Model | Caps | What it checks |
-|---|---|---|---|---|
-| `weekly-content-review.yml` | Mondays 05:00, except the first Monday | `claude-sonnet-5` | 60 turns, $4 | week 1 projects · week 2 festivals + dates · week 3 guides' volatile facts · week 4 new developments + broken links + photos · 5th Monday projects |
-| `monthly-content-review.yml` | first Monday 05:00 | `claude-opus-5-5` | 150 turns, $15 | everything |
+```bash
+scripts/content-review.sh              # this week's rotation
+scripts/content-review.sh guides       # one focus: projects | festivals | guides | developments
+scripts/content-review.sh full         # deep review (Opus)
+DRY_RUN=1 scripts/content-review.sh    # review + diff, no branch, push or PR
+```
 
-Caps are hard limits (`--max-turns`, `--max-budget-usd`). The agent keeps its PR summary up to
-date as it works and stops at ~80% of its turns, so a capped run still opens a PR with what it
-checked and what is left. The workflow appends the model, turns used and the cost reported by
-Claude Code to the PR's run notes, and records one line per run in `content/review-log.json`.
-"Last verified" dates move only for entries checked in that run. Change models, caps or the
-rotation in the `with:` block of each workflow and the "Focus" table in the brief.
+| When (IST week of the month) | Focus | Model | Caps |
+|---|---|---|---|
+| week 1 (first Monday) | full: projects, festivals, guides, developments, links, photos | `claude-opus-5-5` | 150 turns, $15 |
+| week 2 | festivals + dates | `claude-sonnet-5` | 40 turns, $3 |
+| week 3 | guides' volatile facts (darshan/aarti timings, Sugam fee, ropeway and Sarnath fares and hours) | `claude-sonnet-5` | 40 turns, $3 |
+| week 4 | new developments + broken links + photo candidates | `claude-sonnet-5` | 40 turns, $3 |
+| 5th Monday | projects | `claude-sonnet-5` | 40 turns, $3 |
 
-**What it checks** — defined in [`.claude/content-review.md`](.claude/content-review.md), a plain
-Markdown brief you can edit (add or remove checks, change source rules, change the PR format):
-project statuses/timelines/sources; newly announced festival dates for the next 12 months;
-volatile guide facts (darshan and aarti timings, Sugam fee, ropeway and Sarnath fares and hours);
-significant new developments (only with an official or major-news source); broken source links;
-Commons photo candidates for places without a photo. It follows CLAUDE.md and DESIGN.md,
-writes original summaries (never copied text), updates English and Hindi together and lists
-other locales in TRANSLATION_REVIEW.md. If nothing changed it only moves "last verified" dates.
+Override with `REVIEW_MODEL`, `REVIEW_MAX_TURNS`, `REVIEW_MAX_BUDGET`.
 
-**Guardrails**
-- The agent only edits files and writes the PR description; the workflow itself commits,
-  pushes and opens the PR. A workflow step fails the run if anything outside
-  `content/*.json`, `content/guides/*.json` or `TRANSLATION_REVIEW.md` changed, or if a JSON
-  file is invalid.
-- The review job's token has only `contents: write` and `pull-requests: write`. The agent's
-  tools are limited to reading/editing files, web search/fetch, `curl` (link checks), and the
-  build/lint/SEO commands; `git push`, `git commit` and `gh` are denied to it.
-- CI (`.github/workflows/ci.yml`: build incl. heading-font gate, lint, `check-seo`) runs on the
-  PR branch. PRs opened with the workflow token do not trigger `pull_request` workflows, so the
-  review workflow starts CI on the branch explicitly; its result shows on the PR's commit.
-  Optional: Settings → Branches → protect `redesign` and require the "CI / check" status.
+**Schedule.** A scheduled task in the Claude desktop app runs `scripts/content-review.sh` every
+Monday morning (it catches up if the machine was off). Change or pause it in the app's scheduled
+tasks. The script does nothing if a review branch for that day already exists, and only one
+review runs at a time.
 
-**Run it manually:** Actions → Weekly content review → Run workflow (pick a focus, or `auto`
-for this week's rotation), or `gh workflow run weekly-content-review.yml --ref redesign -f
-focus=guides`; the deep review: `gh workflow run monthly-content-review.yml --ref redesign`.
-Then `gh run watch`. Each run's step summary lists any denied tool calls and the cost.
+**What it does.** Creates a throwaway git worktree of `origin/redesign` (your own checkout is not
+touched), runs `claude -p` with the brief [`.claude/content-review.md`](.claude/content-review.md)
+— edit that file to change what is checked — using project settings only, no MCP servers and a
+tool allow-list (no git commit/push, `gh`, `npm` or `rm` for the agent). Then the script removes
+stray scratch files, aborts if anything outside `content/*.json`, `content/guides/*.json` or
+`TRANSLATION_REVIEW.md` changed or a JSON file is invalid, appends the run (model, turns, cost)
+to `content/review-log.json`, commits to `content-review/<date>-<focus>`, pushes, and opens one
+pull request "Weekly|Monthly content review <date>" whose body is the agent's summary table plus
+the run's cost. Logs and the raw Claude output are kept in `~/.local/state/kashidwar-review/`.
 
-**Change the schedule:** the `cron` lines (UTC; `30 23 * * 0` = Monday 05:00 IST; the plan
-jobs pick the week of the month in IST).
+**On GitHub:** CI (`.github/workflows/ci.yml`: build with the heading-font gate, lint,
+`check-seo`) runs on the pull request; review and merge it by hand; merging deploys.
 
 ## Deploy from GitHub
 Workers Builds is not connected to this repository, so `.github/workflows/deploy.yml` deploys:
@@ -259,6 +251,5 @@ credentials (`wrangler whoami`, `wrangler deployments list`) and deploys nothing
 or `gh secret set NAME`):
 | Secret | Value |
 |---|---|
-| `ANTHROPIC_API_KEY` | An Anthropic API key (console.anthropic.com → API keys). Used only by the weekly review. |
 | `CLOUDFLARE_API_TOKEN` | Cloudflare → My Profile → API Tokens → Create token → template **Edit Cloudflare Workers** (account: yours; zone: kashidwar.com). |
 | `CLOUDFLARE_ACCOUNT_ID` | The account ID shown by `npx wrangler whoami` (or the dashboard's Workers overview). |

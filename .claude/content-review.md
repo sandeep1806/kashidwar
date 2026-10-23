@@ -2,10 +2,10 @@
 
 You are reviewing the content of kashidwar.com, a Varanasi (Kashi) travel guide, once a week.
 This file is the agent's brief; the repository owner edits it to change what is checked.
-Runs come from `.github/workflows/weekly-content-review.yml` (Sonnet, small budget, one
-focus per week) and `.github/workflows/monthly-content-review.yml` (Opus, full review), both
-through `content-review-run.yml`. The prompt tells you the run type, the **focus** and the
-**budget** (turns and dollars).
+Runs come from `scripts/content-review.sh` on the maintainer's machine (weekly: Sonnet, small
+budget, one focus; first Monday of the month: Opus, full review), in a fresh worktree of
+`origin/redesign`. The prompt tells you the run type, the **focus** and the **budget** (turns
+and dollars). GitHub runs CI on the pull request the script opens, and deploys on merge.
 
 Follow `CLAUDE.md` and `DESIGN.md` in this repository at all times. In particular:
 every faith of Kashi is presented with equal care and no ranking; use each tradition's own
@@ -20,7 +20,7 @@ guide sections); nothing voyeuristic about cremation grounds.
    - `content/guides/*.json`
    - `TRANSLATION_REVIEW.md`
    Never touch code, `package*.json`, config, scripts, `messages/`, `content/i18n/`, photos,
-   workflows, `.claude/`, or secrets, and not `content/review-log.json` (the workflow writes it). The workflow rejects the run if any other path changes.
+   workflows, `.claude/`, or secrets, and not `content/review-log.json` (the script writes it). The script rejects the run if any other path changes.
 2. **Never copy text from news articles or other sites.** Read the source, then write an
    original, short summary in the site's voice (present tense, factual, no superlatives).
    Quoting official figures (dates, fares, timings, lengths) is fine.
@@ -68,8 +68,8 @@ either). Partial work is fine and still becomes a pull request, so:
 3. Prefer finishing fewer entries properly over touching many superficially. Start with the
    entries most likely to have changed (under-construction or announced projects, the next
    festivals, fares and timings).
-4. Skip `npm run build` on weekly runs unless you changed dates or structure (CI builds the PR
-   anyway); always validate JSON with `python3 -m json.tool`.
+4. `npm` is not available in the review's worktree (no `node_modules`); CI builds, lints and
+   SEO-checks the pull request. Always validate JSON with `python3 -m json.tool`.
 
 ## Working method
 
@@ -139,16 +139,14 @@ page, a new guide) are proposals in the summary only.
 
 ## Before you finish
 
-Validate every JSON file you touched. On monthly runs (and weekly runs that changed dates or
-structure) also run `npm run build`, `npm run lint` and `node scripts/check-seo.mjs` if the
-budget allows — CI runs them on the pull request regardless. Fix any failure your edits
-caused (for example invalid JSON or a date the SEO check rejects). If the build's heading-font
-check fails because of new Hindi text, prefer existing spellings; otherwise report that the
-heading-font subset must be rebuilt (a maintainer task).
+Validate every JSON file you touched with `python3 -m json.tool`. CI runs `npm run build`,
+`npm run lint` and `node scripts/check-seo.mjs` on the pull request. New Hindi heading text
+can fail the build's heading-font check: prefer existing spellings, and mention any new Hindi
+heading under "Needs a human look" so the maintainer can rebuild the font subset if needed.
 
 ## Output
 
-Write the pull-request body to `.content-review-pr.md` in the repository root (the workflow
+Write the pull-request body to `.content-review-pr.md` in the repository root (the script
 moves it out before committing and uses it as the PR description). Plain language, in English:
 
 ```
@@ -179,7 +177,7 @@ moves it out before committing and uses it as the PR description). Plain languag
 <focus; which checks were completed in full, which only partly and why (turn or budget limit,
 a tool that was not allowed, a site that blocked requests); what is left for the next run;
 counts: projects re-verified, festivals checked, guides checked, links checked, broken links;
-turns used (your count). The workflow appends the model, turns and estimated cost reported by
+turns used (your count). The script appends the model, turns and estimated cost reported by
 Claude Code below this section.>
 ```
 
@@ -187,4 +185,4 @@ Confidence is **High** (official source), **Medium** (one major-news source) or 
 (conflicting reports — in that case the change should normally not be made; list it under
 "Needs a human look" instead). If nothing changed, say so and list what was re-verified.
 
-Do not commit, push, create branches or open pull requests yourself — the workflow does that.
+Do not commit, push, create branches or open pull requests yourself — the script does that.
