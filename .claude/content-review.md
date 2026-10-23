@@ -144,7 +144,8 @@ already covered by a guide (check `content/guides/`):
 - Write `content/guides/<event-slug>-<year>.json` in the same shape as
   `content/guides/varanasi-air-show-2026.json` (the model to copy), including the `event` object
   (`name_en/hi` including the year, `startDate`, `endDate`, optional `days`, `location_en/hi`, `lat`, `lng` from
-  `content/places.json`, `free`). The site shows "Upcoming / On now / Took place" and Event
+  `content/places.json`, `free`, `organizer` {name, url of the organiser's official site} and
+  `performers` [names] when known — Google's event results use them). The site shows "Upcoming / On now / Took place" and Event
   structured data from it automatically.
 - SEO: the title starts with the phrase people search ("Varanasi Air Show 2026: …"), ≤ 60
   characters; the description ≤ 158 characters names dates, place and the main questions.

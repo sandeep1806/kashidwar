@@ -163,6 +163,10 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
         eventStatus: "https://schema.org/EventScheduled",
         eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
         isAccessibleForFree: !!ev.free,
+        ...(ev.organizer ? { organizer: { "@type": "Organization", name: ev.organizer.name, url: ev.organizer.url } } : {}),
+        ...(ev.performers?.length ? { performer: ev.performers.map((name) => ({ "@type": "PerformingGroup", name })) } : {}),
+        // A free event: one zero-price offer (watching costs nothing; no tickets are sold).
+        ...(ev.free ? { offers: { "@type": "Offer", price: 0, priceCurrency: "INR", availability: "https://schema.org/InStock", url, validFrom: g.published } } : {}),
         image: [absolute(photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`)],
         location: {
           "@type": "Place",

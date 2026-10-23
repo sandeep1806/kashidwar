@@ -75,6 +75,10 @@ export interface GuideEvent {
   lat: number;
   lng: number;
   free?: boolean;
+  /** Who runs it (Event JSON-LD `organizer`) */
+  organizer?: { name: string; url: string };
+  /** Display teams, artists (Event JSON-LD `performer`) */
+  performers?: string[];
 }
 
 export type EventStatus = "upcoming" | "on" | "past";

@@ -17,7 +17,15 @@
     "location_hi": "नमो घाट, वाराणसी",
     "lat": 25.3265,
     "lng": 83.0385,
-    "free": true
+    "free": true,
+    "organizer": {
+      "name": "Indian Air Force",
+      "url": "https://indianairforce.nic.in/"
+    },
+    "performers": [
+      "Suryakiran Aerobatic Team",
+      "Sarang Helicopter Display Team"
+    ]
   },
   "title_en": "Varanasi Air Show 2026: Dates, Passes and Where to Watch",
   "title_hi": "वाराणसी एयर शो 2026: तारीख, पास और कहां से देखें",
