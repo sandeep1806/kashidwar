@@ -147,8 +147,17 @@ already covered by a guide (check `content/guides/`):
   `content/places.json`, `free`, `organizer` {name, url of the organiser's official site} and
   `performers` [names] when known — Google's event results use them). The site shows "Upcoming / On now / Took place" and Event
   structured data from it automatically.
-- SEO: the title starts with the phrase people search ("Varanasi Air Show 2026: …"), ≤ 60
-  characters; the description ≤ 158 characters names dates, place and the main questions.
+- Keyword research first: see what people actually type with Google's autocomplete, in
+  English and Hindi, for the event's main phrases (one URL per command), e.g.
+  `curl -s -G https://suggestqueries.google.com/complete/search --data-urlencode client=firefox --data-urlencode hl=hi --data-urlencode gl=in --data-urlencode "q=varanasi air show"`
+  (also "<name> time", "<name> pass", "<venue> <name>", and the Hindi phrase). Build the title,
+  section headings and FAQ questions from the most frequent wordings (typically: time, date,
+  ticket price, pass / "pass kaise milega", live, venue name). Note the queries used in `notes`.
+- SEO: the title starts with the phrase people search and covers the top intents ("Varanasi Air
+  Show 2026: Time, Ticket Price, Pass & Live"), ≤ 60 characters; the description ≤ 158
+  characters names dates, place and the main answers (e.g. the time, "free").
+- During and after each show day, update the facts with what actually happened (real start
+  and end times, changes to the schedule) — "time" searches peak on the day.
 - Answer what visitors need: dates and timings (mark unannounced times as not confirmed),
   where and how to watch or attend, **passes and tickets — who issues them, whether they are
   free, and a clear warning about fake or paid "passes" and unofficial booking sites**, traffic
