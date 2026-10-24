@@ -1,7 +1,7 @@
 {
   "slug": "varanasi-air-show-2026",
   "published": "2026-10-23",
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "photo": "places/namo-ghat",
   "event": {
     "name_en": "Wings Over Ganges 2026 — Indian Air Force air show",
@@ -29,24 +29,24 @@
   },
   "title_en": "Varanasi Air Show 2026: Time, Ticket Price, Pass & Live",
   "title_hi": "वाराणसी एयर शो 2026: समय, टिकट कीमत, पास और लाइव",
-  "description_en": "Varanasi Air Show 2026 at Namo Ghat (Wings Over Ganga), 24–25 Oct: time 12–2 pm, ticket price (free), VIP pass, where to watch and live.",
-  "description_hi": "नमो घाट वाराणसी एयर शो 2026 (विंग्स ओवर गंगा), 24–25 अक्टूबर: समय दोपहर 12–2 बजे, टिकट की कीमत (मुफ्त), वीआईपी पास, कहां से देखें और लाइव।",
-  "lead_en": "Varanasi Air Show 2026 — the Indian Air Force's 'Wings Over Ganga' (Wings Over Ganges) for its 94th anniversary — flies about 100 aircraft over the Ganga at Namo Ghat, Varanasi's first air show. The first show ran on 22 October from 12 noon to 2 pm; there is no show on 23 October, and the remaining shows are on 24 and 25 October, with the Prime Minister expected on the 25th. Watching is free from the ghats and the far bank — there is no ticket price — but Namo Ghat itself is closed to the public and its VIP passes are for invited guests only. Here are the time, passes, where to watch, live updates, and the traffic and drone rules.",
-  "lead_hi": "वाराणसी एयर शो 2026 — भारतीय वायुसेना की 94वीं वर्षगांठ पर 'विंग्स ओवर गंगा' — नमो घाट पर गंगा के ऊपर करीब 100 विमानों के साथ हो रहा है; यह वाराणसी का पहला एयर शो है। पहला शो 22 अक्टूबर को दोपहर 12 से 2 बजे तक हुआ; 23 अक्टूबर को कोई शो नहीं है, और बाकी शो 24 और 25 अक्टूबर को हैं, 25 को प्रधानमंत्री के आने की संभावना है। घाटों और उस पार से देखना मुफ्त है — कोई टिकट कीमत नहीं — लेकिन नमो घाट आम लोगों के लिए बंद है और वहां के वीआईपी पास केवल आमंत्रित अतिथियों के लिए हैं। यहां समय, पास, कहां से देखें, लाइव जानकारी, ट्रैफिक और ड्रोन नियम दिए गए हैं।",
+  "description_en": "Varanasi Air Show 2026 at Namo Ghat (Wings Over Ganga): final show Sun 25 Oct, about 11:40 am–2 pm. Ticket price free, no pass price (VIP pass not sold), where to watch, live.",
+  "description_hi": "नमो घाट वाराणसी एयर शो 2026 (विंग्स ओवर गंगा): आखिरी शो रविवार 25 अक्टूबर, करीब 11:40 से दोपहर 2 बजे। टिकट कीमत मुफ्त, पास की कोई कीमत नहीं (वीआईपी पास बिकते नहीं), कहां से देखें, लाइव।",
+  "lead_en": "Varanasi Air Show 2026 — the Indian Air Force's 'Wings Over Ganga' (Wings Over Ganges) for its 94th anniversary — flies about 100 aircraft over the Ganga at Namo Ghat, Varanasi's first air show. Shows took place on 22 and 24 October; the final show is on Sunday 25 October, from about 11:40 am to 2 pm, with Prime Minister Narendra Modi as chief guest. Watching is free from the ghats and the far bank — there is no ticket price and no pass price — but Namo Ghat itself is closed to the public and its VIP passes are for invited guests only. Here are the time, passes, where to watch, live updates, and the traffic, airport and drone rules for the 25th.",
+  "lead_hi": "वाराणसी एयर शो 2026 — भारतीय वायुसेना की 94वीं वर्षगांठ पर 'विंग्स ओवर गंगा' — नमो घाट पर गंगा के ऊपर करीब 100 विमानों के साथ हो रहा है; यह वाराणसी का पहला एयर शो है। 22 और 24 अक्टूबर के शो हो चुके हैं; आखिरी शो रविवार 25 अक्टूबर को करीब 11:40 से दोपहर 2 बजे तक है, जिसके मुख्य अतिथि प्रधानमंत्री नरेंद्र मोदी हैं। घाटों और उस पार से देखना मुफ्त है — न टिकट की कीमत, न पास की — लेकिन नमो घाट आम लोगों के लिए बंद है और वहां के वीआईपी पास केवल आमंत्रित अतिथियों के लिए हैं। यहां 25 अक्टूबर का समय, पास, कहां से देखें, लाइव जानकारी, और ट्रैफिक, एयरपोर्ट व ड्रोन नियम दिए गए हैं।",
   "facts": [
     {
       "icon": "calendar",
       "label_en": "Show days",
       "label_hi": "शो के दिन",
-      "value_en": "24 & 25 Oct 2026 (22 Oct done; no show 23 Oct)",
-      "value_hi": "24 व 25 अक्टूबर 2026 (22 को हो चुका; 23 को शो नहीं)"
+      "value_en": "Final show Sun 25 Oct 2026 (22 & 24 Oct done)",
+      "value_hi": "आखिरी शो रविवार 25 अक्टूबर 2026 (22 व 24 को हो चुका)"
     },
     {
       "icon": "clock",
       "label_en": "Time",
       "label_hi": "समय",
-      "value_en": "12 noon–2 pm (as on 22 Oct)",
-      "value_hi": "दोपहर 12–2 बजे (22 अक्टूबर की तरह)"
+      "value_en": "About 11:40 am–2 pm · be in place by 11 am",
+      "value_hi": "करीब 11:40 से दोपहर 2 बजे · 11 बजे तक पहुंचें"
     },
     {
       "icon": "ticket",
@@ -59,8 +59,8 @@
       "icon": "people",
       "label_en": "Namo Ghat pass",
       "label_hi": "नमो घाट पास",
-      "value_en": "VIP pass for invited guests only · not sold",
-      "value_hi": "वीआईपी पास केवल आमंत्रित अतिथियों के लिए · बिक्री नहीं"
+      "value_en": "VIP pass for invited guests only · no pass price, not sold",
+      "value_hi": "वीआईपी पास केवल आमंत्रित अतिथियों के लिए · कोई कीमत नहीं, बिक्री नहीं"
     },
     {
       "icon": "pin",
@@ -80,19 +80,22 @@
   "sections": [
     {
       "id": "dates-timings",
-      "heading_en": "Varanasi air show date and time: 12 noon to 2 pm",
-      "heading_hi": "वाराणसी एयर शो की तारीख और समय: दोपहर 12 से 2 बजे",
+      "heading_en": "Varanasi air show date and time: final show on 25 October",
+      "heading_hi": "वाराणसी एयर शो की तारीख और समय: आखिरी शो 25 अक्टूबर को",
       "body_en": [
-        "The air show is staged on three days: Thursday 22 October, Saturday 24 October and Sunday 25 October 2026. There is no show on Friday 23 October, the day of the Uttar Pradesh Legislative Council (MLC) elections. A full dress rehearsal took place on 21 October between 11 am and 2 pm. The 25th is the concluding day, when Prime Minister Narendra Modi, Defence Minister Rajnath Singh, Governor Anandiben Patel and Chief Minister Yogi Adityanath are scheduled to attend, so crowds and security are heaviest then.",
-        "The first show, on 22 October, began at 12 noon and ended at 2 pm. The same window is expected on the 24th and 25th, though no official timetable has been published for those days: be in place well before noon and follow police announcements on the day."
+        "The air show is staged on three days: Thursday 22 October, Saturday 24 October and Sunday 25 October 2026. There was no show on Friday 23 October, the day of the Uttar Pradesh Legislative Council (MLC) elections. The first two shows have taken place: on 24 October Rafale, Su-30 MKI, Tejas and Mirage 2000 fighters, a Chinook and the Suryakiran team flew over Namo Ghat. Sunday 25 October is the concluding day, with Prime Minister Narendra Modi as chief guest alongside Defence Minister Rajnath Singh, Governor Anandiben Patel and Chief Minister Yogi Adityanath, so crowds and security are heaviest then.",
+        "The first show, on 22 October, ran from 12 noon to 2 pm. For the 25th, Amar Ujala reports the display starting at 11:40 am; the Prime Minister lands at the Police Lines helipad at 12:45 pm and goes to Namo Ghat by road. Plan for roughly 11:40 am to 2 pm: be in place by 11 am, since roads close for the convoy, and follow police announcements on the day."
       ],
       "body_hi": [
-        "एयर शो तीन दिन है: गुरुवार 22 अक्टूबर, शनिवार 24 अक्टूबर और रविवार 25 अक्टूबर 2026। शुक्रवार 23 अक्टूबर को शो नहीं है, क्योंकि उस दिन उत्तर प्रदेश विधान परिषद (एमएलसी) का चुनाव है। फुल ड्रेस रिहर्सल 21 अक्टूबर को सुबह 11 से दोपहर 2 बजे के बीच हुई। 25 अक्टूबर समापन का दिन है, जब प्रधानमंत्री नरेंद्र मोदी, रक्षा मंत्री राजनाथ सिंह, राज्यपाल आनंदीबेन पटेल और मुख्यमंत्री योगी आदित्यनाथ के शामिल होने का कार्यक्रम है, इसलिए उस दिन भीड़ और सुरक्षा सबसे ज़्यादा रहेगी।",
-        "22 अक्टूबर को पहला शो दोपहर 12 बजे शुरू होकर 2 बजे खत्म हुआ। 24 और 25 अक्टूबर को भी यही समय रहने की उम्मीद है, हालांकि इन दिनों का आधिकारिक समय जारी नहीं हुआ है: दोपहर से काफी पहले अपनी जगह पर पहुंच जाएं और उस दिन पुलिस की घोषणाओं का पालन करें।"
+        "एयर शो तीन दिन है: गुरुवार 22 अक्टूबर, शनिवार 24 अक्टूबर और रविवार 25 अक्टूबर 2026। शुक्रवार 23 अक्टूबर को शो नहीं हुआ, क्योंकि उस दिन उत्तर प्रदेश विधान परिषद (एमएलसी) का चुनाव था। पहले दो शो हो चुके हैं: 24 अक्टूबर को राफेल, सुखोई-30 एमकेआई, तेजस और मिराज 2000 लड़ाकू विमानों, चिनूक और सूर्यकिरण टीम ने नमो घाट के ऊपर करतब दिखाए। रविवार 25 अक्टूबर समापन का दिन है, जिसके मुख्य अतिथि प्रधानमंत्री नरेंद्र मोदी हैं; रक्षा मंत्री राजनाथ सिंह, राज्यपाल आनंदीबेन पटेल और मुख्यमंत्री योगी आदित्यनाथ भी शामिल होंगे, इसलिए उस दिन भीड़ और सुरक्षा सबसे ज़्यादा रहेगी।",
+        "22 अक्टूबर को पहला शो दोपहर 12 से 2 बजे तक चला। 25 अक्टूबर के लिए अमर उजाला के अनुसार प्रदर्शन सुबह 11:40 बजे से शुरू होगा; प्रधानमंत्री दोपहर 12:45 बजे पुलिस लाइन हेलिपैड पहुंचेंगे और सड़क मार्ग से नमो घाट जाएंगे। करीब 11:40 से दोपहर 2 बजे तक का कार्यक्रम मानकर चलें: काफिले के लिए सड़कें बंद होंगी, इसलिए 11 बजे तक अपनी जगह पहुंच जाएं और उस दिन पुलिस की घोषणाओं का पालन करें।"
       ],
       "unconfirmed": false,
       "sources": [
+        10,
+        9,
         8,
+        12,
         0,
         1,
         7
@@ -122,11 +125,11 @@
       "heading_hi": "टिकट की कीमत और वीआईपी पास: नमो घाट एयर शो पास कैसे मिलेगा",
       "body_en": [
         "There is no ticket and no ticket price for the Varanasi air show. Watching from the ghats and the riverbanks is free and open to everyone.",
-        "Namo Ghat itself is closed to the general public on show and rehearsal days for security. The district administration has built a VIP gallery there for invited guests only — about 5,600 guests from across the country, who arrive by a separate route. These VIP passes are invitations issued by the organisers: they cannot be bought or applied for, so there is no way to 'get' a Namo Ghat pass as a member of the public."
+        "Namo Ghat itself is closed to the general public on show and rehearsal days for security. The district administration has built a VIP gallery there for invited guests only — about 5,600 guests from across the country, who arrive by a separate route. These VIP passes are invitations issued by the organisers: they cannot be bought or applied for, so there is no way to 'get' a Namo Ghat pass as a member of the public. Pass holders are asked to reach Namo Ghat by 9:30 am and stay in the zone printed on their pass."
       ],
       "body_hi": [
         "वाराणसी एयर शो का कोई टिकट नहीं है और न ही कोई टिकट कीमत। घाटों और गंगा किनारे से शो देखना मुफ्त है और सबके लिए खुला है।",
-        "सुरक्षा कारणों से शो और रिहर्सल के दिनों में नमो घाट पर आम लोगों का प्रवेश पूरी तरह बंद है। जिला प्रशासन ने वहां केवल आमंत्रित अतिथियों के लिए वीआईपी दीर्घा बनाई है — देशभर से आए करीब 5,600 मेहमान, जिनके आने-जाने का रास्ता अलग रखा गया है। ये वीआईपी पास आयोजकों के भेजे निमंत्रण हैं: इन्हें न खरीदा जा सकता है, न इनके लिए आवेदन होता है, इसलिए आम जनता के लिए नमो घाट पास 'मिलने' का कोई तरीका नहीं है।"
+        "सुरक्षा कारणों से शो और रिहर्सल के दिनों में नमो घाट पर आम लोगों का प्रवेश पूरी तरह बंद है। जिला प्रशासन ने वहां केवल आमंत्रित अतिथियों के लिए वीआईपी दीर्घा बनाई है — देशभर से आए करीब 5,600 मेहमान, जिनके आने-जाने का रास्ता अलग रखा गया है। ये वीआईपी पास आयोजकों के भेजे निमंत्रण हैं: इन्हें न खरीदा जा सकता है, न इनके लिए आवेदन होता है, इसलिए आम जनता के लिए नमो घाट पास 'मिलने' का कोई तरीका नहीं है। पास धारकों को सुबह 9:30 बजे तक नमो घाट पहुंचने और अपने पास पर छपे ज़ोन में ही रहने को कहा गया है।"
       ],
       "list_en": [
         "Do not pay anyone for an 'air show pass', 'Namo Ghat entry' or 'VIP seat': no official ticket sale has been announced.",
@@ -142,7 +145,8 @@
         7,
         1,
         4,
-        6
+        6,
+        11
       ]
     },
     {
@@ -170,11 +174,11 @@
       "heading_en": "Varanasi air show live: is there an official stream?",
       "heading_hi": "वाराणसी एयर शो लाइव: क्या आधिकारिक प्रसारण है?",
       "body_en": [
-        "As of 23 October, no official live broadcast of the air show has been announced by Doordarshan, the Indian Air Force or the Uttar Pradesh government. News agencies such as PTI and news channels carried videos of the first show after it ended.",
+        "As of 24 October, no official live broadcast of the air show has been announced by Doordarshan, the Indian Air Force or the Uttar Pradesh government. News agencies such as PTI and news channels carried videos of the shows after they ended.",
         "Be careful with websites that look official and promise a 'live stream' or 'passes': at least one widely shared event site states in its own footer that it is not an Indian Air Force or Government of India site. For anything official, rely on the Indian Air Force's verified social media accounts, Doordarshan and the Varanasi district administration."
       ],
       "body_hi": [
-        "23 अक्टूबर तक दूरदर्शन, भारतीय वायुसेना या उत्तर प्रदेश सरकार ने एयर शो के किसी आधिकारिक लाइव प्रसारण की घोषणा नहीं की है। पहले शो के बाद पीटीआई जैसी समाचार एजेंसियों और न्यूज़ चैनलों ने उसके वीडियो दिखाए।",
+        "24 अक्टूबर तक दूरदर्शन, भारतीय वायुसेना या उत्तर प्रदेश सरकार ने एयर शो के किसी आधिकारिक लाइव प्रसारण की घोषणा नहीं की है। शो खत्म होने के बाद पीटीआई जैसी समाचार एजेंसियों और न्यूज़ चैनलों ने उसके वीडियो दिखाए।",
         "ऐसी वेबसाइटों से सावधान रहें जो आधिकारिक जैसी दिखती हैं और 'लाइव स्ट्रीम' या 'पास' का वादा करती हैं: खूब शेयर की जा रही एक इवेंट साइट अपने ही फुटर में लिखती है कि वह भारतीय वायुसेना या भारत सरकार की साइट नहीं है। आधिकारिक जानकारी के लिए भारतीय वायुसेना के सत्यापित सोशल मीडिया अकाउंट, दूरदर्शन और वाराणसी जिला प्रशासन पर ही भरोसा करें।"
       ],
       "unconfirmed": false,
@@ -189,15 +193,16 @@
       "heading_hi": "रूट डायवर्जन और वहां कैसे पहुंचें",
       "body_en": [
         "On show days, trucks, state and private buses and tempo travellers from outside the city are routed via the Ring Road and NH-19; heavy vehicles from Mirzapur go via Aurai and Bhadohi. Ambulances and essential services keep running. Passengers leaving buses continue by auto, e-rickshaw or city bus: special routes run from Sandaha to BHU, Jagatpur Degree College to Cantt bus station and Harhua to Cantt railway station, with air-show autos and e-rickshaws from Sandaha and Ashapur.",
-        "Expect long walks: pedestrian routes lead towards Namo Ghat from Maidagin, Lahurabir, Padav, Assi and Ravidas Ghat, and from Padav via Sujabad and the Rajghat bridge. Boats on the Ganga near Namo Ghat are stopped on show days, so do not plan to watch from a boat there."
+        "Expect long walks: pedestrian routes lead towards Namo Ghat from Maidagin, Lahurabir, Padav, Assi and Ravidas Ghat, and from Padav via Sujabad and the Rajghat bridge. If you are going to the Domri bank, cross the Rajghat bridge before 10 am; after that, use the Samne Ghat–Ramnagar–Padav road. Traffic police have set up 10 parking areas around Namo Ghat, and the road from the Police Lines to Namo Ghat is stopped while the Prime Minister's convoy passes. Regular flights at Varanasi airport are suspended from 11 am to 3 pm on 24 and 25 October, so check your flight's new time with the airline. Boats on the Ganga near Namo Ghat are stopped on show days, so do not plan to watch from a boat there."
       ],
       "body_hi": [
         "शो के दिनों में बाहर से आने वाले ट्रक, रोडवेज़ और निजी बसें तथा टेम्पो ट्रैवलर रिंग रोड और एनएच-19 से भेजे जा रहे हैं; मिर्ज़ापुर से आने वाले भारी वाहन औराई और भदोही होकर जाएंगे। एंबुलेंस और ज़रूरी सेवाएं चलती रहेंगी। बस से उतरने के बाद यात्री ऑटो, ई-रिक्शा या सिटी बस से आगे जा सकते हैं: संदहा से बीएचयू, जगतपुर डिग्री कॉलेज से कैंट बस स्टेशन और हरहुआ से कैंट रेलवे स्टेशन के लिए विशेष रूट हैं, और संदहा व आशापुर से एयर शो ऑटो व ई-रिक्शा चलेंगे।",
-        "पैदल काफी चलना पड़ेगा: मैदागिन, लहुराबीर, पड़ाव, अस्सी और रविदास घाट से, और पड़ाव से सुजाबाद व राजघाट पुल होकर नमो घाट की ओर पैदल रास्ते तय हैं। शो के दिनों में नमो घाट के पास गंगा में नावें बंद रहेंगी, इसलिए वहां नाव से देखने की योजना न बनाएं।"
+        "पैदल काफी चलना पड़ेगा: मैदागिन, लहुराबीर, पड़ाव, अस्सी और रविदास घाट से, और पड़ाव से सुजाबाद व राजघाट पुल होकर नमो घाट की ओर पैदल रास्ते तय हैं। डोमरी की ओर जाना हो तो सुबह 10 बजे से पहले राजघाट पुल पार कर लें; उसके बाद सामने घाट–रामनगर–पड़ाव मार्ग लें। ट्रैफिक पुलिस ने नमो घाट के आसपास 10 पार्किंग स्थल बनाए हैं, और प्रधानमंत्री का काफिला गुज़रते समय पुलिस लाइन से नमो घाट तक का रास्ता रोका जाएगा। 24 और 25 अक्टूबर को वाराणसी एयरपोर्ट पर सुबह 11 से दोपहर 3 बजे तक नियमित उड़ानें बंद हैं, इसलिए अपनी उड़ान का नया समय एयरलाइन से पता कर लें। शो के दिनों में नमो घाट के पास गंगा में नावें बंद रहेंगी, इसलिए वहां नाव से देखने की योजना न बनाएं।"
       ],
       "sources": [
         0,
-        1
+        1,
+        11
       ]
     },
     {
@@ -221,15 +226,15 @@
   "faq": [
     {
       "q_en": "What is the Varanasi air show time?",
-      "a_en": "12 noon to 2 pm: the first show on 22 October ran in that window, and the same is expected on 24 and 25 October. Arrive before noon.",
+      "a_en": "The final show on Sunday 25 October runs from about 11:40 am to 2 pm (the 22 October show ran 12 noon–2 pm). Be in place by 11 am, before roads close for the Prime Minister's convoy.",
       "q_hi": "वाराणसी एयर शो का समय क्या है?",
-      "a_hi": "दोपहर 12 से 2 बजे: 22 अक्टूबर का पहला शो इसी समय हुआ, और 24 व 25 अक्टूबर को भी यही उम्मीद है। दोपहर से पहले पहुंचें।"
+      "a_hi": "आखिरी शो रविवार 25 अक्टूबर को करीब 11:40 से दोपहर 2 बजे तक है (22 अक्टूबर का शो दोपहर 12 से 2 बजे तक चला)। प्रधानमंत्री के काफिले के लिए सड़कें बंद होने से पहले, 11 बजे तक अपनी जगह पहुंच जाएं।"
     },
     {
       "q_en": "When is the Varanasi air show 2026? Is there a show on 23 October?",
-      "a_en": "On 22, 24 and 25 October 2026 at Namo Ghat. There is no show on 23 October (MLC election day). The 25th is the main day, with the Prime Minister expected.",
+      "a_en": "On 22, 24 and 25 October 2026 at Namo Ghat. The 22nd and 24th have taken place; the final show is Sunday 25 October, with the Prime Minister as chief guest. There was no show on 23 October (MLC election day).",
       "q_hi": "वाराणसी एयर शो 2026 कब है? क्या 23 अक्टूबर को शो है?",
-      "a_hi": "22, 24 और 25 अक्टूबर 2026 को नमो घाट पर। 23 अक्टूबर (एमएलसी चुनाव) को शो नहीं है। 25 अक्टूबर मुख्य दिन है, जब प्रधानमंत्री के आने की संभावना है।"
+      "a_hi": "22, 24 और 25 अक्टूबर 2026 को नमो घाट पर। 22 और 24 के शो हो चुके हैं; आखिरी शो रविवार 25 अक्टूबर को है, जिसके मुख्य अतिथि प्रधानमंत्री हैं। 23 अक्टूबर को शो नहीं हुआ (एमएलसी चुनाव का दिन)।"
     },
     {
       "q_en": "What is the Varanasi air show ticket price?",
@@ -238,10 +243,10 @@
       "a_hi": "कोई टिकट कीमत नहीं है: घाटों और किनारों से एयर शो मुफ्त में देखा जा सकता है, और कोई टिकट नहीं बेचा जाता।"
     },
     {
-      "q_en": "How to get a Varanasi air show pass (Namo Ghat VIP pass)?",
-      "a_en": "You cannot buy or apply for one: Namo Ghat passes are invitations for about 5,600 guests. Don't pay anyone selling an 'air show pass'; report it on 112.",
-      "q_hi": "वाराणसी एयर शो पास (नमो घाट वीआईपी पास) कैसे मिलेगा?",
-      "a_hi": "इसे खरीदा या इसके लिए आवेदन नहीं किया जा सकता: नमो घाट के पास करीब 5,600 मेहमानों के निमंत्रण हैं। 'एयर शो पास' बेचने वाले को पैसे न दें; 112 पर सूचना दें।"
+      "q_en": "How to get a Varanasi air show pass (Namo Ghat VIP pass), and what is the pass price?",
+      "a_en": "There is no pass price and no way to apply: Namo Ghat passes are invitations for about 5,600 guests and are not sold. Don't pay anyone selling an 'air show pass'; report it on 112.",
+      "q_hi": "वाराणसी एयर शो पास (नमो घाट वीआईपी पास) कैसे मिलेगा, और पास की कीमत क्या है?",
+      "a_hi": "पास की कोई कीमत नहीं और आवेदन का कोई तरीका नहीं: नमो घाट के पास करीब 5,600 अतिथियों के लिए निमंत्रण हैं और बिकते नहीं। 'एयर शो पास' बेचने वाले किसी को पैसे न दें; 112 पर शिकायत करें।"
     },
     {
       "q_en": "Can I enter Namo Ghat during the air show?",
@@ -257,9 +262,9 @@
     },
     {
       "q_en": "Where can I watch the Varanasi air show live?",
-      "a_en": "No official live broadcast has been announced as of 23 October. Follow the Indian Air Force's verified accounts and Doordarshan; avoid unofficial 'live' sites.",
+      "a_en": "No official live broadcast has been announced as of 24 October. Follow the Indian Air Force's verified accounts and Doordarshan; avoid unofficial 'live' sites.",
       "q_hi": "वाराणसी एयर शो लाइव कहां देखें?",
-      "a_hi": "23 अक्टूबर तक किसी आधिकारिक लाइव प्रसारण की घोषणा नहीं हुई है। भारतीय वायुसेना के सत्यापित अकाउंट और दूरदर्शन देखें; अनौपचारिक 'लाइव' साइटों से बचें।"
+      "a_hi": "24 अक्टूबर तक किसी आधिकारिक लाइव प्रसारण की घोषणा नहीं हुई है। भारतीय वायुसेना के सत्यापित अकाउंट और दूरदर्शन देखें; अनौपचारिक 'लाइव' साइटों से बचें।"
     },
     {
       "q_en": "Which aircraft are in the Varanasi air show?",
@@ -319,6 +324,26 @@
       "title": "ETV Bharat — IAF's 'Wings Over Ganges' air show kicks off in Varanasi; Tejas, Rafale draw crowds (22 Oct 2026)",
       "url": "https://www.etvbharat.com/en/bharat/iaf-wings-over-ganges-air-show-kicks-off-in-varanasi-tejas-rafale-draw-crowds-enn26102204855",
       "accessed": "2026-10-23"
+    },
+    {
+      "title": "IBC24 / Bhasha (Hindi) — Rafale and other fighter jets perform spectacular aerial feats at Namo Ghat (24 Oct 2026)",
+      "url": "https://www.ibc24.in/uttar-pradesh/rafale-and-other-fighter-jets-perform-spectacular-aerial-feats-at-namo-ghat-in-varanasi-3806095.html",
+      "accessed": "2026-10-24"
+    },
+    {
+      "title": "Amar Ujala (Hindi) — PM Modi, Rajnath Singh and CM Yogi to attend the air show on 25 October (24 Oct 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/varanasi-pm-modi-defence-minister-rajnath-and-cm-yogi-to-attend-air-show-on-oct-25-2026-10-24",
+      "accessed": "2026-10-24"
+    },
+    {
+      "title": "Lalluram (Hindi) — Varanasi air show: PM Modi visit and traffic advisory (24 Oct 2026)",
+      "url": "https://lalluram.com/varanasi-air-show-pm-modi-traffic-advisory/",
+      "accessed": "2026-10-24"
+    },
+    {
+      "title": "ThePrint / PTI — IAF to hold 'Wings Over Ganges' aerial display in Varanasi, Modi to attend on Oct 25 (20 Oct 2026)",
+      "url": "https://theprint.in/india/iaf-to-hold-wings-over-ganges-aerial-display-in-varanasi-modi-to-attend-on-oct-25/3077058/",
+      "accessed": "2026-10-24"
     }
   ],
   "related": {
@@ -334,5 +359,5 @@
       "dev-deepawali"
     ]
   },
-  "notes": "Researched 23 Oct 2026 from news reports; no official IAF/district notice found online. Day 1 (22 Oct) ran 12:00–14:00 (ETV Bharat); same window expected 24/25 Oct but not officially announced. No show on 23 Oct (MLC elections, ETV Bharat). Keywords chosen from Google autocomplete on 23 Oct: time, date, ticket price, pass (kaise milega, VIP), live, Namo Ghat. Dates 22/24/25 consistent across ETV Bharat, Panchjanya, Amar Ujala, Amrit Vichar; a few sites list 23 Oct or 24–26 Oct (not used). iafad2026.in is an unofficial site (its own footer says so) — not cited, and its 'live stream' page not recommended. After 25 Oct: set event.status via the weekly review, add a 'what happened' section (turnout, highlights) with sources, and keep the page as history."
+  "notes": "Researched 23 Oct 2026 from news reports; no official IAF/district notice found online. Day 1 (22 Oct) ran 12:00–14:00 (ETV Bharat); same window expected 24/25 Oct but not officially announced. No show on 23 Oct (MLC elections, ETV Bharat). Keywords chosen from Google autocomplete on 23 Oct: time, date, ticket price, pass (kaise milega, VIP), live, Namo Ghat. Dates 22/24/25 consistent across ETV Bharat, Panchjanya, Amar Ujala, Amrit Vichar; a few sites list 23 Oct or 24–26 Oct (not used). iafad2026.in is an unofficial site (its own footer says so) — not cited, and its 'live stream' page not recommended. After 25 Oct: set event.status via the weekly review, add a 'what happened' section (turnout, highlights) with sources, and keep the page as history. 24 Oct update: shows on 22 and 24 Oct took place (IBC24/Bhasha). Final show 25 Oct: display from 11:40 am (Amar Ujala 24 Oct; earlier days ran ~12–2 pm), PM at Police Lines helipad 12:45 pm; Rajghat bridge to Domri before 10 am, 10 parking areas, airport flights suspended 11 am–3 pm on 24/25 Oct, pass holders by 9:30 am (Lalluram 24 Oct). GSC 23–24 Oct: top queries 'varanasi air show ticket price' (122 clicks) and many 'pass' variants, so 'pass price' wording added."
 }
