@@ -37,6 +37,9 @@
     // "off" serves photos as-is through next/image's custom loader.
     "NEXT_PUBLIC_IMAGE_OPTIMIZATION": "off",
     // Google Analytics 4 measurement ID (public). Loaded after window load + idle, see components/ui/Analytics.tsx.
-    "NEXT_PUBLIC_GA_ID": "G-G6VN84753L"
+    "NEXT_PUBLIC_GA_ID": "G-G6VN84753L",
+    // Google AdSense publisher ID (public). Turns on the account meta tag, Auto ads script,
+    // /ads.txt and the privacy policy's advertising section; never on or/as/sa (lib/ads.ts).
+    "NEXT_PUBLIC_ADSENSE_CLIENT": "ca-pub-2342455906841145"
   }
 }
