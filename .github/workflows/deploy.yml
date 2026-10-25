@@ -26,6 +26,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    # Every run that can deploy (push to redesign, the Monday rebuild, manual runs) waits
+    # for the owner's approval: Settings → Environments → production (required reviewer,
+    # redesign only). Pending approvals expire after 30 days.
+    environment: production
     steps:
       - name: Cloudflare secrets present?
         id: secrets
