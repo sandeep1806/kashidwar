@@ -1,0 +1,129 @@
+{
+  "updated": "2026-10-25",
+  "en": {
+    "lead": "What kashidwar.com collects when you visit, which outside services see your request, and the choices you have. The site has no accounts, sign-ups, comments or forms.",
+    "sections": [
+      {
+        "id": "summary",
+        "heading": "In short",
+        "body": [
+          "You can read every page without giving your name, email or any other personal detail. We do not sell or share visitor data.",
+          "We measure visits with Google Analytics and Cloudflare Web Analytics so that we know which pages help people, and the site keeps a few small preferences in your browser so that it remembers your language and sound choice."
+        ]
+      },
+      {
+        "id": "analytics",
+        "heading": "Analytics: Google Analytics and Cloudflare",
+        "body": [
+          "Google Analytics 4 (property G-G6VN84753L) loads after the page has finished loading. It sets first-party cookies (_ga and _ga_G6VN84753L) and records the pages you view, roughly where you are (city or region), your device and browser type, and the site that referred you. Google processes this data under its own policies; Google Analytics 4 does not log or store IP addresses. Google explains how it uses data from sites that use its services at policies.google.com/technologies/partner-sites, and you can block Google Analytics on every site with the browser add-on at tools.google.com/dlpage/gaoptout.",
+          "Cloudflare Web Analytics counts page views without cookies and without identifying you. Cloudflare also hosts and protects the site, so like any web host it receives your IP address and browser details with each request, for delivery and security; see cloudflare.com/privacypolicy."
+        ]
+      },
+      {
+        "id": "storage",
+        "heading": "Cookies and browser storage",
+        "body": ["Besides the Google Analytics cookies above, the site stores only these, and none of them identifies you:"],
+        "list": [
+          "NEXT_LOCALE (cookie): the language you chose, so the site opens in it next time.",
+          "kashi:sound (local storage): whether you turned the ambient sound on. Sound is always off until you switch it on.",
+          "kashi:fonts (session storage): that the page fonts have already loaded in this tab, so the next page does not wait for them. It is cleared when you close the tab."
+        ]
+      },
+      {
+        "id": "third-parties",
+        "heading": "Maps, photos and links to other sites",
+        "body": [
+          "When you open a map, your browser loads map tiles from OpenStreetMap's tile servers, which receive your IP address as part of that request (osmfoundation.org/wiki/Privacy_Policy). Photos and fonts are served from kashidwar.com itself.",
+          "Many pages link to official sources, temple trusts, government sites and news reports. Those sites have their own privacy policies, which apply once you follow a link."
+        ]
+      },
+      {
+        "id": "advertising",
+        "ads": true,
+        "heading": "Advertising",
+        "body": [
+          "This site shows ads served by Google AdSense. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website and other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visits to this site and/or other sites on the Internet. Ad serving may also involve web beacons and the collection of IP addresses by these third parties.",
+          "You can opt out of personalised advertising in Google's Ads Settings (adssettings.google.com), and opt out of some third-party vendors' use of cookies for personalised advertising at www.aboutads.info. Visitors in the European Economic Area, the United Kingdom and Switzerland are asked for consent before personalised ads are shown."
+        ]
+      },
+      {
+        "id": "contact-data",
+        "heading": "If you email us",
+        "body": [
+          "If you write to the address below, we use your email address and message only to reply and to correct the site, and we do not add you to any list."
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "Changes to this policy",
+        "body": [
+          "When the site starts or stops using a service that affects your data, this page is updated first, with a new date at the top."
+        ]
+      }
+    ],
+    "contact": "Questions about this policy, or a request about data we hold from your email: write to"
+  },
+  "hi": {
+    "lead": "kashidwar.com पर आने पर क्या जानकारी ली जाती है, कौन-सी बाहरी सेवाएं आपका अनुरोध देखती हैं, और आपके पास क्या विकल्प हैं। इस साइट पर कोई अकाउंट, साइन-अप, टिप्पणी या फ़ॉर्म नहीं है।",
+    "sections": [
+      {
+        "id": "summary",
+        "heading": "संक्षेप में",
+        "body": [
+          "आप अपना नाम, ईमेल या कोई भी निजी जानकारी दिए बिना हर पेज पढ़ सकते हैं। हम आगंतुकों का डेटा न बेचते हैं, न किसी को देते हैं।",
+          "कौन-से पेज लोगों के काम आते हैं, यह जानने के लिए हम Google Analytics और Cloudflare Web Analytics से विज़िट गिनते हैं, और साइट आपके ब्राउज़र में कुछ छोटी पसंदें रखती है ताकि आपकी भाषा और आवाज़ का चुनाव याद रहे।"
+        ]
+      },
+      {
+        "id": "analytics",
+        "heading": "एनालिटिक्स: Google Analytics और Cloudflare",
+        "body": [
+          "Google Analytics 4 (प्रॉपर्टी G-G6VN84753L) पेज पूरा लोड होने के बाद चलता है। यह फ़र्स्ट-पार्टी कुकी (_ga और _ga_G6VN84753L) लगाता है और दर्ज करता है कि आपने कौन-से पेज देखे, आप मोटे तौर पर कहां हैं (शहर या क्षेत्र), आपका डिवाइस और ब्राउज़र, और आप किस साइट से आए। Google यह डेटा अपनी नीतियों के तहत प्रोसेस करता है; Google Analytics 4 आईपी पते दर्ज या संग्रहीत नहीं करता। Google अपनी सेवाएं इस्तेमाल करने वाली साइटों के डेटा का उपयोग कैसे करता है, यह policies.google.com/technologies/partner-sites पर बताया गया है, और tools.google.com/dlpage/gaoptout के ब्राउज़र ऐड-ऑन से आप हर साइट पर Google Analytics रोक सकते हैं।",
+          "Cloudflare Web Analytics बिना कुकी और बिना आपकी पहचान किए पेज व्यू गिनता है। Cloudflare साइट को होस्ट और सुरक्षित भी करता है, इसलिए किसी भी वेब होस्ट की तरह हर अनुरोध के साथ उसे आपका आईपी पता और ब्राउज़र की जानकारी मिलती है, जो पेज पहुंचाने और सुरक्षा के लिए है; देखें cloudflare.com/privacypolicy।"
+        ]
+      },
+      {
+        "id": "storage",
+        "heading": "कुकी और ब्राउज़र स्टोरेज",
+        "body": ["ऊपर बताई Google Analytics कुकी के अलावा साइट केवल ये चीज़ें रखती है, और इनमें से कोई भी आपकी पहचान नहीं करती:"],
+        "list": [
+          "NEXT_LOCALE (कुकी): आपकी चुनी हुई भाषा, ताकि अगली बार साइट उसी में खुले।",
+          "kashi:sound (लोकल स्टोरेज): आपने परिवेश ध्वनि चालू की थी या नहीं। जब तक आप चालू न करें, आवाज़ हमेशा बंद रहती है।",
+          "kashi:fonts (सेशन स्टोरेज): इस टैब में पेज के फ़ॉन्ट लोड हो चुके हैं, ताकि अगला पेज उनका इंतज़ार न करे। टैब बंद करने पर यह मिट जाता है।"
+        ]
+      },
+      {
+        "id": "third-parties",
+        "heading": "नक्शे, तस्वीरें और दूसरी साइटों के लिंक",
+        "body": [
+          "जब आप नक्शा खोलते हैं, तो आपका ब्राउज़र OpenStreetMap के टाइल सर्वर से नक्शे के टुकड़े लोड करता है, जिन्हें उस अनुरोध के साथ आपका आईपी पता मिलता है (osmfoundation.org/wiki/Privacy_Policy)। तस्वीरें और फ़ॉन्ट खुद kashidwar.com से आते हैं।",
+          "कई पेज आधिकारिक स्रोतों, मंदिर ट्रस्टों, सरकारी साइटों और समाचारों से जुड़ते हैं। लिंक खोलने के बाद उन साइटों की अपनी गोपनीयता नीति लागू होती है।"
+        ]
+      },
+      {
+        "id": "advertising",
+        "ads": true,
+        "heading": "विज्ञापन",
+        "body": [
+          "यह साइट Google AdSense के विज्ञापन दिखाती है। Google समेत तृतीय-पक्ष विक्रेता इस वेबसाइट और दूसरी वेबसाइटों पर आपकी पिछली विज़िट के आधार पर विज्ञापन दिखाने के लिए कुकी का उपयोग करते हैं। Google की विज्ञापन कुकी उसे और उसके साझेदारों को इस साइट और/या इंटरनेट की दूसरी साइटों पर आपकी विज़िट के आधार पर विज्ञापन दिखाने देती हैं। विज्ञापन दिखाने में ये तृतीय पक्ष वेब बीकन का उपयोग और आईपी पते भी एकत्र कर सकते हैं।",
+          "आप Google की विज्ञापन सेटिंग (adssettings.google.com) में निजीकृत विज्ञापन बंद कर सकते हैं, और www.aboutads.info पर कुछ तृतीय-पक्ष विक्रेताओं की निजीकृत विज्ञापन कुकी से बाहर निकल सकते हैं। यूरोपीय आर्थिक क्षेत्र, ब्रिटेन और स्विट्ज़रलैंड के आगंतुकों से निजीकृत विज्ञापन दिखाने से पहले सहमति ली जाती है।"
+        ]
+      },
+      {
+        "id": "contact-data",
+        "heading": "अगर आप हमें ईमेल करें",
+        "body": [
+          "अगर आप नीचे दिए पते पर लिखते हैं, तो आपका ईमेल पता और संदेश केवल जवाब देने और साइट सुधारने के लिए उपयोग होता है, और आपको किसी सूची में नहीं जोड़ा जाता।"
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "इस नीति में बदलाव",
+        "body": [
+          "जब साइट आपके डेटा को प्रभावित करने वाली कोई सेवा शुरू या बंद करती है, तो पहले यह पेज नई तारीख के साथ अपडेट किया जाता है।"
+        ]
+      }
+    ],
+    "contact": "इस नीति के बारे में सवाल, या आपके ईमेल से हमारे पास मौजूद डेटा के बारे में अनुरोध के लिए लिखें:"
+  }
+}

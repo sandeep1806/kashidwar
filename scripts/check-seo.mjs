@@ -128,7 +128,8 @@ function checkLd(file, o) {
       break;
     }
     case "AboutPage":
-      if (!absUrl(o.url) || !o.name) bad(file, "AboutPage: needs name and absolute url");
+    case "WebPage":
+      if (!absUrl(o.url) || !o.name) bad(file, `${o["@type"]}: needs name and absolute url`);
       break;
     case "WebSite":
       if (!o.name || !absUrl(o.url)) bad(file, "WebSite: needs name and absolute url");

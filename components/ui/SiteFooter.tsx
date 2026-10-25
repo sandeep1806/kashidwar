@@ -83,6 +83,9 @@ export default async function SiteFooter({ locale, path = "" }: { locale: Locale
               <a href={`/${locale}/about#contact`} className="inline-flex min-h-11 items-center text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">{t("contact")}</a>
             </li>
             <li>
+              <a href={`/${locale}/privacy`} className="inline-flex min-h-11 items-center text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">{t("privacy")}</a>
+            </li>
+            <li>
               <a href={`/${locale}/credits`} className="text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">{t("creditsLink")}</a>
             </li>
             <li className="pt-2">{t("verified", { date: fmt.format(new Date(latest + "T00:00:00Z")) })}</li>

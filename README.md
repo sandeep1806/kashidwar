@@ -189,7 +189,9 @@ pip install google-api-python-client google-auth requests
 GSC_CREDENTIALS=/path/to/service-account.json python3 scripts/gsc-report.py --days 28 --inspect 10
 ```
 
-The service account's `client_email` must be added once as a user on the property (Search Console → kashidwar.com → Settings → Users and permissions → Add user, permission Full). Set `GSC_SITE` if the property is not `sc-domain:kashidwar.com`. Keep the key file outside the repository.
+The service account's `client_email` must be added once as a user on the property (Search Console → kashidwar.com → Settings → Users and permissions → Add user, permission Full). It uses `sc-domain:kashidwar.com` when the account can see it, else the URL-prefix property `https://kashidwar.com/` (the one shared today); `GSC_SITE` overrides both. Keep the key file outside the repository.
+
+It also lists **CTR opportunities**: query→page pairs at positions 3–20 whose CTR is under half of what that position usually gets, the first candidates for a clearer title or description. `--rows 25` lengthens the lists; `--page air-show` limits everything to matching URLs. The audit and baseline of 25 Oct 2026 are in `docs/SEO-AUDIT-2026-10.md`.
 
 ## Analytics
 Two sources. **Cloudflare Web Analytics** (cookieless, edge-injected beacon, no code) and **Google Analytics 4** (`G-G6VN84753L`, re-enabled 2026-10-11 by the owner). GA loads from `components/ui/Analytics.tsx` only after the window `load` event and the next idle period, so it stays off the paint path; the ID comes from `NEXT_PUBLIC_GA_ID` in `wrangler.jsonc` → `vars` (empty disables it; dev builds never load it). GA sets cookies; the site shows no consent banner (owner's decision). Search Console is read with `scripts/gsc-report.py`.

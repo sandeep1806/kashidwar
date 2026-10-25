@@ -35,7 +35,7 @@ const DETAIL = [
   ...content("festivals").map((x) => `/festivals/${x.id}`),
   ...content("projects").map((x) => `/projects/${x.id}`),
   ...content("itineraries").map((x) => `/itineraries/${x.days}-day`),
-  "/festivals", "/projects", "/food", "/about", "/guides",
+  "/festivals", "/projects", "/food", "/about", "/privacy", "/guides",
   ...readdirSync(new URL("../../content/guides/", import.meta.url)).filter((f) => f.endsWith(".json")).map((f) => `/guides/${f.slice(0, -5)}`),
 ];
 for (const loc of LOCALES) {

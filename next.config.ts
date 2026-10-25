@@ -61,7 +61,7 @@ const LEGACY: Record<string, string> = {
   "/tips": "/en#practical",
   "/about": "/en/about",
   "/contact": "/en/about#contact",
-  "/privacy": "/en/about",
+  "/privacy": "/en/privacy",
 };
 
 const nextConfig: NextConfig = {

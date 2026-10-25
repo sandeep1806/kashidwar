@@ -2,7 +2,7 @@
 """Google Search Console report for kashidwar.com (read-only).
 
 Usage:
-  GSC_CREDENTIALS=/path/to/service-account.json python3 scripts/gsc-report.py [--days 28] [--inspect N]
+  GSC_CREDENTIALS=/path/to/service-account.json python3 scripts/gsc-report.py [--days 28] [--inspect N] [--rows 15] [--page air-show]
 
 Needs: pip install google-api-python-client google-auth requests
 The service account (client_email in the key file) must be added as a user on the
@@ -12,6 +12,10 @@ Reports: sitemaps known to Google and their status, search performance for the l
 --days days (totals, by country, by page, by query, hi vs en), and URL Inspection
 (index status, canonical, last crawl) for the home pages and the first --inspect
 sitemap URLs. URL Inspection is limited to 2,000 calls a day per property.
+Also lists CTR opportunities: query+page pairs with impressions but a CTR below what
+their position suggests (positions 3-20), the usual candidates for a better title/description.
+GSC_SITE defaults to the domain property and falls back to https://kashidwar.com/ when the
+service account can only see the URL-prefix property.
 """
 import argparse, os, sys, json
 from datetime import date, timedelta
@@ -33,10 +37,13 @@ def query(svc, body):
     return svc.searchanalytics().query(siteUrl=SITE, body=body).execute().get("rows", [])
 
 def main():
+    global SITE
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=28)
     ap.add_argument("--inspect", type=int, default=10, help="sitemap URLs to inspect (0 to skip)")
     ap.add_argument("--json", help="also write the raw results to this file")
+    ap.add_argument("--rows", type=int, default=15, help="rows in the top pages/queries lists")
+    ap.add_argument("--page", help="only pages whose URL contains this text (e.g. air-show)")
     a = ap.parse_args()
     svc, email = service()
     from googleapiclient.errors import HttpError
@@ -47,6 +54,8 @@ def main():
         sites = {s["siteUrl"]: s["permissionLevel"] for s in svc.sites().list().execute().get("siteEntry", [])}
     except HttpError as e:
         sys.exit(f"Search Console API error: {e}")
+    if SITE not in sites and "GSC_SITE" not in os.environ and f"{ORIGIN}/" in sites:
+        SITE = f"{ORIGIN}/"
     if SITE not in sites:
         print(f"The service account {email} cannot see {SITE}.")
         print("Properties it can see:", ", ".join(sites) or "none")
@@ -73,6 +82,8 @@ def main():
     end = date.today() - timedelta(days=2)   # GSC data lags ~2 days
     start = end - timedelta(days=a.days)
     rng = {"startDate": start.isoformat(), "endDate": end.isoformat()}
+    if a.page:
+        rng["dimensionFilterGroups"] = [{"filters": [{"dimension": "page", "operator": "contains", "expression": a.page}]}]
     tot = query(svc, {**rng})
     print(f"\n== Performance {start} → {end} ==")
     if tot:
@@ -91,8 +102,19 @@ def main():
                 print(f"    {r['clicks']:5.0f} clicks {r['impressions']:7.0f} impr  pos {r['position']:5.1f}  {fmt(r['keys'][0])}")
         return rows
     top("country", 8, "countries")
-    pages = top("page", 15, "pages", lambda k: k.replace(ORIGIN, ""))
-    top("query", 15, "queries")
+    pages = top("page", a.rows, "pages", lambda k: k.replace(ORIGIN, ""))
+    top("query", a.rows, "queries")
+
+    # CTR opportunities: page-1/2 positions whose CTR is under half the rough curve for that position
+    expected = lambda pos: 0.30 if pos < 2 else 0.15 if pos < 3 else 0.10 if pos < 5 else 0.05 if pos < 8 else 0.03 if pos < 11 else 0.01
+    rows = query(svc, {**rng, "dimensions": ["query", "page"], "rowLimit": 2000})
+    opp = sorted((r for r in rows if r["impressions"] >= 30 and 3 <= r["position"] <= 20 and r["ctr"] < expected(r["position"]) / 2),
+                 key=lambda r: -r["impressions"])[:a.rows]
+    out["ctr_opportunities"] = opp
+    if opp:
+        print("\n  CTR opportunities (impressions, low CTR for the position):")
+        for r in opp:
+            print(f"    {r['impressions']:6.0f} impr {r['clicks']:4.0f} clicks  CTR {r['ctr']*100:4.1f}%  pos {r['position']:5.1f}  {r['keys'][0]}  → {r['keys'][1].replace(ORIGIN, '')}")
 
     if pages:
         by_locale = {}

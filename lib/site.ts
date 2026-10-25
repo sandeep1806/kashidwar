@@ -18,6 +18,12 @@ export const CONTACT_EMAIL = "contact@kashidwar.com";
  */
 export const SOCIAL_PROFILES: string[] = [];
 
+/**
+ * Google AdSense publisher ID ("ca-pub-…"), from NEXT_PUBLIC_ADSENSE_CLIENT in wrangler.jsonc `vars`.
+ * Empty: no ads, and the privacy policy leaves out its advertising section (content/privacy.json, `ads: true`).
+ */
+export const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "";
+
 /** schema.org Organization for kashidwar.com (referenced as publisher by the WebSite and Articles). */
 export const organizationLd = () => ({
   "@context": "https://schema.org",

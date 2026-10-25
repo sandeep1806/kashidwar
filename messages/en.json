@@ -367,7 +367,8 @@
     "rights": "Text and design © {year} Kashidwar. Photographs remain their authors' under the licences listed on the credits page.",
     "about": "About",
     "contact": "Contact",
-    "guides": "Guides"
+    "guides": "Guides",
+    "privacy": "Privacy policy"
   },
   "credits": {
     "title": "Credits",
@@ -494,5 +495,11 @@
     "intro": "All 35 ghats, temples, Sarnath, forts and places of every faith on one map, with the distance of each from Godowlia crossing and Varanasi Junction. Tap a pin to open the place.",
     "distances": "Distances from Godowlia and the station",
     "type": "Type"
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "titleSecondary": "गोपनीयता नीति",
+    "description": "What kashidwar.com collects: Google Analytics, cookies, browser storage and map tiles. No accounts or forms, and no visitor data is sold.",
+    "updated": "Updated {date}"
   }
 }

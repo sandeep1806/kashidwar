@@ -1,4 +1,5 @@
 import photos from "@/content/photos.json";
+import privacy from "@/content/privacy.json";
 import { guidePhoto, guides } from "@/lib/guides";
 import { places } from "@/lib/content";
 import { SLUGS, type Kind } from "@/lib/pages";
@@ -60,6 +61,7 @@ export function sitemapPages(): SitemapPage[] {
     ...items,
     { path: "/about", priority: 0.4, changeFrequency: "monthly", photoKeys: [] },
     { path: "/credits", priority: 0.3, changeFrequency: "monthly", photoKeys: [] },
+    { path: "/privacy", priority: 0.2, changeFrequency: "monthly", photoKeys: [], lastModified: privacy.updated },
   ];
 }
 
