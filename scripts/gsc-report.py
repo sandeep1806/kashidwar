@@ -44,6 +44,7 @@ def main():
     ap.add_argument("--json", help="also write the raw results to this file")
     ap.add_argument("--rows", type=int, default=15, help="rows in the top pages/queries lists")
     ap.add_argument("--page", help="only pages whose URL contains this text (e.g. air-show)")
+    ap.add_argument("--url", action="append", help="inspect only these paths (repeatable, e.g. --url / --url /hi): Google's chosen canonical vs ours")
     a = ap.parse_args()
     svc, email = service()
     from googleapiclient.errors import HttpError
@@ -129,20 +130,23 @@ def main():
             print(f"    /{loc:<6} {d['pages']:4d} pages  {d['clicks']:5.0f} clicks {d['impressions']:7.0f} impr")
 
     # URL inspection
-    if a.inspect:
-        urls = [f"{ORIGIN}/hi", f"{ORIGIN}/en"]
-        try:
-            import requests
-            from xml.etree import ElementTree as ET
-            ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-            root = ET.fromstring(requests.get(f"{ORIGIN}/sitemap.xml", timeout=20).content)
-            for loc in root.findall(".//s:loc", ns):
-                if loc.text not in urls:
-                    urls.append(loc.text)
-                if len(urls) >= 2 + a.inspect:
-                    break
-        except Exception as e:
-            print(f"\n(sitemap fetch failed: {e})")
+    if a.url or a.inspect:
+        if a.url:
+            urls = [f"{ORIGIN}{u if u.startswith('/') else '/' + u}" for u in a.url]
+        else:
+            urls = [f"{ORIGIN}/hi", f"{ORIGIN}/en"]
+            try:
+                import requests
+                from xml.etree import ElementTree as ET
+                ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+                root = ET.fromstring(requests.get(f"{ORIGIN}/sitemap.xml", timeout=20).content)
+                for loc in root.findall(".//s:loc", ns):
+                    if loc.text not in urls:
+                        urls.append(loc.text)
+                    if len(urls) >= 2 + a.inspect:
+                        break
+            except Exception as e:
+                print(f"\n(sitemap fetch failed: {e})")
         print(f"\n== URL inspection ({len(urls)} URLs) ==")
         insp = []
         for u in urls:

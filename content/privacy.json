@@ -7,7 +7,7 @@
         "id": "summary",
         "heading": "In short",
         "body": [
-          "You can read every page without giving your name, email or any other personal detail. We do not sell or share visitor data.",
+          "You can read every page without giving your name, email or any other personal detail. We do not sell visitor data; the services named below receive only what is described here.",
           "We measure visits with Google Analytics and Cloudflare Web Analytics so that we know which pages help people, and the site keeps a few small preferences in your browser so that it remembers your language and sound choice."
         ]
       },
@@ -15,16 +15,18 @@
         "id": "analytics",
         "heading": "Analytics: Google Analytics and Cloudflare",
         "body": [
-          "Google Analytics 4 (property G-G6VN84753L) loads after the page has finished loading. It sets first-party cookies (_ga and _ga_G6VN84753L) and records the pages you view, roughly where you are (city or region), your device and browser type, and the site that referred you. Google processes this data under its own policies; Google Analytics 4 does not log or store IP addresses. Google explains how it uses data from sites that use its services at policies.google.com/technologies/partner-sites, and you can block Google Analytics on every site with the browser add-on at tools.google.com/dlpage/gaoptout.",
-          "Cloudflare Web Analytics counts page views without cookies and without identifying you. Cloudflare also hosts and protects the site, so like any web host it receives your IP address and browser details with each request, for delivery and security; see cloudflare.com/privacypolicy."
+          "Google Analytics 4 (measurement ID G-G6VN84753L) loads after the page has finished loading. It sets two first-party cookies, each kept for up to two years: _ga, which tells visits from different browsers apart, and _ga_G6VN84753L, which keeps the state of a visit. It records the pages you view, your approximate location (city or region), your device and browser type, and the site that referred you. According to Google, Google Analytics 4 does not log or store IP addresses. Google explains how it uses data from sites that use its services at policies.google.com/technologies/partner-sites, and you can block Google Analytics on every site with the browser add-on at tools.google.com/dlpage/gaoptout.",
+          "Cloudflare Web Analytics measures page views and loading times with a small script from static.cloudflareinsights.com; according to Cloudflare it does not use cookies or local storage and does not fingerprint visitors. Cloudflare also hosts and protects the site, so like any web host it receives your IP address and browser details with each request, for delivery and security; see cloudflare.com/privacypolicy."
         ]
       },
       {
         "id": "storage",
         "heading": "Cookies and browser storage",
-        "body": ["Besides the Google Analytics cookies above, the site stores only these, and none of them identifies you:"],
+        "body": [
+          "Besides the Google Analytics cookies above, the site stores only these, and none of them identifies you:"
+        ],
         "list": [
-          "NEXT_LOCALE (cookie): the language you chose, so the site opens in it next time.",
+          "NEXT_LOCALE (cookie): the language of the pages you last visited, so the site opens in it next time.",
           "kashi:sound (local storage): whether you turned the ambient sound on. Sound is always off until you switch it on.",
           "kashi:fonts (session storage): that the page fonts have already loaded in this tab, so the next page does not wait for them. It is cleared when you close the tab."
         ]
@@ -42,8 +44,8 @@
         "ads": true,
         "heading": "Advertising",
         "body": [
-          "This site shows ads served by Google AdSense. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website and other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visits to this site and/or other sites on the Internet. Ad serving may also involve web beacons and the collection of IP addresses by these third parties.",
-          "You can opt out of personalised advertising in Google's Ads Settings (adssettings.google.com), and opt out of some third-party vendors' use of cookies for personalised advertising at www.aboutads.info. Visitors in the European Economic Area, the United Kingdom and Switzerland are asked for consent before personalised ads are shown."
+          "This site shows ads served by Google AdSense. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and/or other sites on the Internet. Ad serving may also involve web beacons and the collection of IP addresses by these third parties.",
+          "You may opt out of personalised advertising by visiting Google's Ads Settings (www.google.com/settings/ads). You can also opt out of some third-party vendors' use of cookies for personalised advertising by visiting www.aboutads.info/choices."
         ]
       },
       {
@@ -70,7 +72,7 @@
         "id": "summary",
         "heading": "संक्षेप में",
         "body": [
-          "आप अपना नाम, ईमेल या कोई भी निजी जानकारी दिए बिना हर पेज पढ़ सकते हैं। हम आगंतुकों का डेटा न बेचते हैं, न किसी को देते हैं।",
+          "आप अपना नाम, ईमेल या कोई भी निजी जानकारी दिए बिना हर पेज पढ़ सकते हैं। हम आगंतुकों का डेटा नहीं बेचते; नीचे बताई सेवाओं को केवल वही जानकारी मिलती है जो यहां लिखी है।",
           "कौन-से पेज लोगों के काम आते हैं, यह जानने के लिए हम Google Analytics और Cloudflare Web Analytics से विज़िट गिनते हैं, और साइट आपके ब्राउज़र में कुछ छोटी पसंदें रखती है ताकि आपकी भाषा और आवाज़ का चुनाव याद रहे।"
         ]
       },
@@ -78,16 +80,18 @@
         "id": "analytics",
         "heading": "एनालिटिक्स: Google Analytics और Cloudflare",
         "body": [
-          "Google Analytics 4 (प्रॉपर्टी G-G6VN84753L) पेज पूरा लोड होने के बाद चलता है। यह फ़र्स्ट-पार्टी कुकी (_ga और _ga_G6VN84753L) लगाता है और दर्ज करता है कि आपने कौन-से पेज देखे, आप मोटे तौर पर कहां हैं (शहर या क्षेत्र), आपका डिवाइस और ब्राउज़र, और आप किस साइट से आए। Google यह डेटा अपनी नीतियों के तहत प्रोसेस करता है; Google Analytics 4 आईपी पते दर्ज या संग्रहीत नहीं करता। Google अपनी सेवाएं इस्तेमाल करने वाली साइटों के डेटा का उपयोग कैसे करता है, यह policies.google.com/technologies/partner-sites पर बताया गया है, और tools.google.com/dlpage/gaoptout के ब्राउज़र ऐड-ऑन से आप हर साइट पर Google Analytics रोक सकते हैं।",
-          "Cloudflare Web Analytics बिना कुकी और बिना आपकी पहचान किए पेज व्यू गिनता है। Cloudflare साइट को होस्ट और सुरक्षित भी करता है, इसलिए किसी भी वेब होस्ट की तरह हर अनुरोध के साथ उसे आपका आईपी पता और ब्राउज़र की जानकारी मिलती है, जो पेज पहुंचाने और सुरक्षा के लिए है; देखें cloudflare.com/privacypolicy।"
+          "Google Analytics 4 (मेज़रमेंट आईडी G-G6VN84753L) पेज पूरा लोड होने के बाद चलता है। यह दो फ़र्स्ट-पार्टी कुकी लगाता है, जो दो साल तक रहती हैं: _ga, जो अलग-अलग ब्राउज़र की विज़िट में फ़र्क करती है, और _ga_G6VN84753L, जो एक विज़िट की स्थिति याद रखती है। यह दर्ज करता है कि आपने कौन-से पेज देखे, आप मोटे तौर पर कहां हैं (शहर या क्षेत्र), आपका डिवाइस और ब्राउज़र, और आप किस साइट से आए। Google के अनुसार Google Analytics 4 आईपी पते दर्ज या संग्रहीत नहीं करता। Google अपनी सेवाएं इस्तेमाल करने वाली साइटों के डेटा का उपयोग कैसे करता है, यह policies.google.com/technologies/partner-sites पर बताया गया है, और tools.google.com/dlpage/gaoptout के ब्राउज़र ऐड-ऑन से आप हर साइट पर Google Analytics रोक सकते हैं।",
+          "Cloudflare Web Analytics static.cloudflareinsights.com की एक छोटी स्क्रिप्ट से पेज व्यू और लोड होने का समय मापता है; Cloudflare के अनुसार यह कुकी या लोकल स्टोरेज का उपयोग नहीं करता और आगंतुकों की फ़िंगरप्रिंटिंग नहीं करता। Cloudflare साइट को होस्ट और सुरक्षित भी करता है, इसलिए किसी भी वेब होस्ट की तरह हर अनुरोध के साथ उसे आपका आईपी पता और ब्राउज़र की जानकारी मिलती है, जो पेज पहुंचाने और सुरक्षा के लिए है; देखें cloudflare.com/privacypolicy।"
         ]
       },
       {
         "id": "storage",
         "heading": "कुकी और ब्राउज़र स्टोरेज",
-        "body": ["ऊपर बताई Google Analytics कुकी के अलावा साइट केवल ये चीज़ें रखती है, और इनमें से कोई भी आपकी पहचान नहीं करती:"],
+        "body": [
+          "ऊपर बताई Google Analytics कुकी के अलावा साइट केवल ये चीज़ें रखती है, और इनमें से कोई भी आपकी पहचान नहीं करती:"
+        ],
         "list": [
-          "NEXT_LOCALE (कुकी): आपकी चुनी हुई भाषा, ताकि अगली बार साइट उसी में खुले।",
+          "NEXT_LOCALE (कुकी): आपने आखिरी बार जिस भाषा के पेज देखे, ताकि अगली बार साइट उसी में खुले।",
           "kashi:sound (लोकल स्टोरेज): आपने परिवेश ध्वनि चालू की थी या नहीं। जब तक आप चालू न करें, आवाज़ हमेशा बंद रहती है।",
           "kashi:fonts (सेशन स्टोरेज): इस टैब में पेज के फ़ॉन्ट लोड हो चुके हैं, ताकि अगला पेज उनका इंतज़ार न करे। टैब बंद करने पर यह मिट जाता है।"
         ]
@@ -105,8 +109,8 @@
         "ads": true,
         "heading": "विज्ञापन",
         "body": [
-          "यह साइट Google AdSense के विज्ञापन दिखाती है। Google समेत तृतीय-पक्ष विक्रेता इस वेबसाइट और दूसरी वेबसाइटों पर आपकी पिछली विज़िट के आधार पर विज्ञापन दिखाने के लिए कुकी का उपयोग करते हैं। Google की विज्ञापन कुकी उसे और उसके साझेदारों को इस साइट और/या इंटरनेट की दूसरी साइटों पर आपकी विज़िट के आधार पर विज्ञापन दिखाने देती हैं। विज्ञापन दिखाने में ये तृतीय पक्ष वेब बीकन का उपयोग और आईपी पते भी एकत्र कर सकते हैं।",
-          "आप Google की विज्ञापन सेटिंग (adssettings.google.com) में निजीकृत विज्ञापन बंद कर सकते हैं, और www.aboutads.info पर कुछ तृतीय-पक्ष विक्रेताओं की निजीकृत विज्ञापन कुकी से बाहर निकल सकते हैं। यूरोपीय आर्थिक क्षेत्र, ब्रिटेन और स्विट्ज़रलैंड के आगंतुकों से निजीकृत विज्ञापन दिखाने से पहले सहमति ली जाती है।"
+          "यह साइट Google AdSense के विज्ञापन दिखाती है। Google समेत तृतीय-पक्ष विक्रेता इस वेबसाइट या दूसरी वेबसाइटों पर आपकी पिछली विज़िट के आधार पर विज्ञापन दिखाने के लिए कुकी का उपयोग करते हैं। Google की विज्ञापन कुकी उसे और उसके साझेदारों को इस साइट और/या इंटरनेट की दूसरी साइटों पर आपकी विज़िट के आधार पर विज्ञापन दिखाने देती हैं। विज्ञापन दिखाने में ये तृतीय पक्ष वेब बीकन का उपयोग और आईपी पते भी एकत्र कर सकते हैं।",
+          "आप Google की विज्ञापन सेटिंग (www.google.com/settings/ads) पर जाकर निजीकृत विज्ञापन बंद कर सकते हैं। www.aboutads.info/choices पर जाकर आप कुछ तृतीय-पक्ष विक्रेताओं की निजीकृत विज्ञापन कुकी से भी बाहर निकल सकते हैं।"
         ]
       },
       {

@@ -10,6 +10,7 @@ import Static from "@/components/ui/Static";
 import RevealController from "@/components/motion/RevealController";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import Analytics from "@/components/ui/Analytics";
+import AdSense from "@/components/ui/AdSense";
 import DeferredFonts from "@/components/ui/DeferredFonts";
 import SectionMenu from "@/components/ui/SectionMenu";
 import SiteHeader from "@/components/ui/SiteHeader";
@@ -22,7 +23,8 @@ import { routing } from "@/lib/i18n/routing";
 import { alternatesFor } from "@/lib/pages";
 import { isIndexed } from "@/lib/seo";
 import { BUILD_DATE } from "@/lib/festivalDates";
-import { SITE_URL } from "@/lib/site";
+import { ADSENSE_CLIENT, SITE_URL } from "@/lib/site";
+import { adsForLocale } from "@/lib/ads";
 import "../globals.css";
 
 /**
@@ -77,7 +79,8 @@ export async function generateMetadata({
     robots: isIndexed(locale) ? { index: true, follow: true, "max-image-preview": "large" } : { index: false, follow: true },
     manifest: "/manifest.webmanifest",
     // The date festival "next occurrence" logic ran against (scripts/check-seo.mjs reads it).
-    other: { "build-date": BUILD_DATE },
+    // AdSense site ownership (meta-tag method), only where ad code is allowed (lib/ads.ts).
+    other: { "build-date": BUILD_DATE, ...(adsForLocale(locale) ? { "google-adsense-account": ADSENSE_CLIENT } : {}) },
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "48x48" },
@@ -117,6 +120,7 @@ export default async function LocaleLayout({
         <RevealController />
         <DeferredFonts classes={fonts.deferred} fonts={fontLoadSpecsFor(locale as Locale)} sample={meta.sample} />
         <Analytics id={process.env.NEXT_PUBLIC_GA_ID ?? ""} />
+        {adsForLocale(locale) && <AdSense client={ADSENSE_CLIENT} locale={locale} />}
         <Static>
           <FaithGlyphSprite />
           <IconSprite />

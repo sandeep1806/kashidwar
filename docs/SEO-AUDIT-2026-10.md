@@ -166,3 +166,72 @@ Risk is low. Rollback: `git revert <commit>`. If the home canonical gets worse a
 - Compare CTR and clicks against the baseline in section 5.
 
 Correlation note: event traffic is seasonal. Compare like-for-like windows (for example, 28 days before and after a title change, excluding event spikes) before crediting a change.
+
+## 8. Pre-deployment verification (25 Oct 2026, local production build; nothing pushed)
+
+**Changes since batch 1 (second local commit)**
+- **About page:** the mission no longer says "without the noise of advertising". All 13 locales now read: "The content always comes first: any ads on the site are kept clearly apart from it and never decide what is written."
+- **Privacy policy:** checked against official sources.
+  - GA4 cookie names and their 2-year lifetimes are from [Google](https://support.google.com/analytics/answer/11397207).
+  - "GA4 does not log or store IP addresses" is attributed to [Google](https://support.google.com/analytics/answer/2763052).
+  - Cloudflare Web Analytics is cookieless with no fingerprinting, per [Cloudflare](https://www.cloudflare.com/web-analytics/).
+  - `NEXT_LOCALE` is described as set on every visit, which is accurate.
+  - "We do not sell or share" is now "we do not sell" plus a list of who receives what.
+  - The advertising text follows the [required AdSense disclosures](https://support.google.com/adsense/answer/1348695).
+  - The EEA-consent sentence was removed because no CMP exists. Add it back only after a certified CMP is live.
+- **Ad loading:**
+  - `lib/ads.ts` (`AD_LOCALES` excludes `or`, `as`, `sa`; `NO_AD_PATHS`: map, credits, privacy).
+  - `components/ui/AdSense.tsx`: idle-loaded Auto ads script.
+  - `<meta name="google-adsense-account">`, Google's [ownership method](https://support.google.com/adsense/answer/12169212).
+  - `app/ads.txt/route.ts`.
+  
+  All of this is inert while `NEXT_PUBLIC_ADSENSE_CLIENT` is empty: no script, no meta tag, and `/ads.txt` returns 404.
+- `scripts/gsc-report.py --url`: inspects named URLs (Google canonical vs ours).
+- **Dev Deepawali English title:** "(Dev Diwali)" restored, because "dev diwali varanasi 2026" is the guide's top query.
+
+**Verified**
+- **Build:** build, `tsc --noEmit`, ESLint (0 problems), `check-seo` (1,274 pages pass) and `check-i18n` (11/11 locales complete).
+- **All 13 locales:** home, Sarnath guide, privacy and about return 200 with the correct `<html lang>`, and the new mission text is present.
+- **Sitemap and redirects:** 196 URLs, including `/hi/privacy` and `/en/privacy`. `/privacy` returns 308 to `/en/privacy`, and the footer Privacy link is present.
+- **Ad gate, tested with a dummy ID** (`ca-pub-0000000000000000`, local build only):
+  - The meta tag is present on the 10 supported locales and absent on `or`, `as` and `sa`.
+  - In headless Chrome the script loads on `/en`, `/hi` and `/ta` pages, and does **not** load on `/en/map`, `/en/privacy`, `/or/…`, `/as` or `/sa/…` (0 requests to googlesyndication).
+  - `/ads.txt` serves `google.com, pub-…, DIRECT, f08c47fec0942fa0`.
+  - Locales are separate root layouts, so a language switch is a full page load and the script cannot carry over.
+- **Canonical and hreflang** (local):
+  - No `Link` header.
+  - `/hi` and `/en` are self-canonical with hreflang hi-IN/en-IN and x-default → `/en`.
+  - Regional pages are noindex with no hreflang.
+  - `/` returns 307 by cookie or Accept-Language (default `/hi`).
+- **The 69 unprefixed URLs with impressions (90 days):**
+  - `/` is the 307 language router.
+  - All 68 others end in 200 on the matching `/en/…` page with a self-canonical: 37 in one hop, 31 in two (trailing slash, then the legacy rule).
+
+**Search-intent check of the retitled pages (Search Console, 90 days)**
+- **Sarnath guide:** queries are distance-led ("kashi to sarnath distance", "sarnath distance from varanasi", "banaras se sarnath kitna dur hai"), and the new titles lead with distance.
+  - `/places/sarnath` (timings, history) and `/projects/sarnath-redevelopment` cover other intents, so no conflict.
+- **Ganga aarti guide:** Dashashwamedh time queries rank around position 11, and the description now opens with that time.
+  - "assi ghat aarti timings (evening/morning)" ranks at positions 41–55, and the guide has no Assi *evening* aarti time. That is a content gap, not a title problem; verify before adding.
+  - Overlap: `/ghats` titles also say "Ganga Aarti timings" (/hi/ghats: 227 impressions, position 9.6). Recommend dropping that phrase from the ghats hub title.
+- **Dev Deepawali guide:** queries are "dev diwali varanasi 2026", "banaras dev deepawali 2026 date" and "… kab hai 2026". The titles cover date, "kab hai" and "Dev Diwali".
+  - Google already prefers the guide (1,147 impressions) over `/hi/festivals/dev-deepawali` (52). Both carry "2026 कब है", so watch for the festival page displacing the guide. If it does, make the festival page evergreen.
+
+**Measuring the home canonical after deployment**
+- Baseline (25 Oct): `/` is "Submitted and indexed"; `/hi` is "Duplicate, Google chose different canonical", with Google canonical `/`; `/en` is indexed.
+- Weekly: `scripts/gsc-report.py --days 7 --rows 10 --url / --url /hi --url /en`, and record the Google canonical for `/hi`. Also compare page impressions for `/` vs `/hi`.
+- **Success:** `/hi` shows "Submitted and indexed" with Google canonical `/hi`.
+- **Decision point, 4 weeks after deployment:** if Google still picks `/`, choose between:
+  - (a) setting the home page x-default to `/`, Google's pattern for a language-router home page; or
+  - (b) making `/` a 308 to `/hi` and dropping Accept-Language detection on the root.
+  
+  This is an owner decision, because (b) changes what English browsers see first.
+
+**Remaining blockers before AdSense review**
+1. Deployment authorisation (both commits are local).
+2. An AdSense account and publisher ID. Then set `NEXT_PUBLIC_ADSENSE_CLIENT` in `wrangler.jsonc` vars and redeploy. That turns on the meta tag, the script, ads.txt and the privacy advertising section together.
+3. Confirm `contact@kashidwar.com` delivers.
+
+**Not blockers, still open**
+- A Google-certified CMP for EEA/UK/CH. It is optional, but without it visitors there get limited or non-personalised ads only.
+- AdSense Auto ads placement settings: exclude the map in the AdSense UI as well, belt and braces, since client-side navigation from an allowed page to `/map` keeps an already-loaded script.
+- Uncertainty: idle-loading the official script, rather than putting it in `<head>`, is a common pattern, but Google's policy says not to alter the code. The tag itself is unmodified and only its insertion is delayed. If AdSense flags verification, the meta tag still proves ownership.
