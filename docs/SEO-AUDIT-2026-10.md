@@ -235,3 +235,26 @@ Correlation note: event traffic is seasonal. Compare like-for-like windows (for 
 - A Google-certified CMP for EEA/UK/CH. It is optional, but without it visitors there get limited or non-personalised ads only.
 - AdSense Auto ads placement settings: exclude the map in the AdSense UI as well, belt and braces, since client-side navigation from an allowed page to `/map` keeps an already-loaded script.
 - Uncertainty: idle-loading the official script, rather than putting it in `<head>`, is a common pattern, but Google's policy says not to alter the code. The tag itself is unmodified and only its insertion is delayed. If AdSense flags verification, the meta tag still proves ownership.
+
+## 9. Batch 2, prepared and committed locally (not deployed): Dev Deepawali boats
+
+The guide `content/guides/dev-deepawali-2026.json` and its 11 regional translations were updated. Every price is labelled with its source type and date:
+
+| Claim | Status | Source |
+|---|---|---|
+| Official Dev Deepawali boat fare 2026 | **Not announced** (checked 25 Oct). The guide says so | No DM, Nagar Nigam, VDA or police notice found |
+| Municipal fare on ordinary days: ₹345 per person, Assi–Namo return | Official, via news (Jan 2025); "not a festival rate" | Amar Ujala, 14 Jan 2025 |
+| Cruises: Alaknanda booked whole for ₹5 lakh; Sam Manekshaw ₹15,000 per passenger; both full; about 5:30–9:30 pm | News-reported 2026 | Patrika, 10 Oct 2026 |
+| Event companies about ₹5,000 per person or ₹1 lakh per boat; bajras ₹15,000–₹2 lakh | News-reported 2026 | Patrika, 10 Oct 2026 |
+| 2024 shared seats ₹200–500; whole boats ₹10,000–50,000 | News-reported 2024 | ETV Bharat, Nov 2024 |
+| UPSTDC "Dev Deepawali – Divya Kashi Anubhav" package: 4 days / 3 nights, from ₹15,999 (twin share, GST extra), includes a special Dev Deepawali boat ride | Package existence reported by two outlets; price from one. Not yet on upstdc.co.in on 25 Oct | Business Standard, 22 Oct 2026 (UNI, 21 Oct, confirms the package) |
+| Post-flood rules from 9 Oct 2026: large motorboats only, hand-rowed boats banned, half capacity, two swimmer-boatmen, life jackets | News report of an administration order. The Dev Deepawali order may differ | Amar Ujala, 8 Oct 2026 (filed in the paper's Ghazipur section; the rules are Varanasi's) |
+| Police boat rules: no unregistered boats, no fares above the fixed rate, no selfies or standing on a moving boat; BNS section 282 | News report | ETV Bharat, 20 Feb 2026 |
+
+Also in this batch:
+- An `event` object (24 Nov 2026, ghats Assi–Rajghat, free), which adds the "Upcoming" banner and Event JSON-LD.
+- Boat heading "Dev Deepawali boat booking and prices: what is known for 2026".
+- Updated price FAQ, and a new FAQ on how to book and the official package.
+- Heading font re-subset: 789 lines, 0 shaping diffs.
+
+**Recheck around 15–20 Nov** for the 2026 Dev Deepawali boat order (routes, timings, caps), any official fare, and whether the UPSTDC package appears on upstdc.co.in.
