@@ -3,6 +3,7 @@ import ghatsList from "@/content/ghats-list.json";
 import LdJson from "@/components/pages/LdJson";
 import Icon from "@/components/ui/Icon";
 import type { Locale } from "@/lib/i18n/locales";
+import { placeCount } from "@/lib/content";
 import { absolute } from "@/lib/pages";
 
 type FaqKey = "places" | "ghats" | "temples" | "itineraries" | "home";
@@ -21,7 +22,9 @@ export default function ListingFaq({ locale, kind, title, path, sourcesLabel }: 
   // Regional translations live beside the English and Hindi as q_<locale> / a_<locale>.
   const own = items.every((it) => it[`q_${locale}`] && it[`a_${locale}`]);
   const lang = own ? locale : faqLang(locale);
-  const qa = items.map((it) => ({ q: it[`q_${lang}`] ?? it.q_en, a: it[`a_${lang}`] ?? it.a_en }));
+  // "{count}" in an answer is the current number of places, in that text's own digits.
+  const fill = (text: string) => text.replaceAll("{count}", placeCount(lang));
+  const qa = items.map((it) => ({ q: fill(it[`q_${lang}`] ?? it.q_en), a: fill(it[`a_${lang}`] ?? it.a_en) }));
   const ld = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

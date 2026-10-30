@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import ListingShell from "@/components/pages/ListingShell";
 import PageMap from "@/components/pages/PageMap";
 import Icon from "@/components/ui/Icon";
+import { placeCount } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { HUBS, alternatesFor, km, pageUrl } from "@/lib/pages";
 import { getPlacesProps } from "@/lib/sectionProps";
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/map">): 
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "map" });
   const meta = await getTranslations({ locale, namespace: "meta" });
-  return { title: meta("mapTitle"), description: t("intro"), alternates: alternatesFor(locale, "/map") };
+  return { title: meta("mapTitle"), description: t("intro", { count: placeCount(locale) }), alternates: alternatesFor(locale, "/map") };
 }
 
 export default async function MapPage({ params }: PageProps<"/[locale]/map">) {
@@ -44,7 +45,7 @@ export default async function MapPage({ params }: PageProps<"/[locale]/map">) {
       crumbs={[{ name: tpage("home"), href: `/${locale}` }, { name: tp("allTitle"), href: `/${locale}/places` }, { name: t("title"), href: `/${locale}/map` }]}
       title={t("title")}
       secondary={other("title")}
-      intro={<p>{t("intro")}</p>}
+      intro={<p>{t("intro", { count: placeCount(locale) })}</p>}
       island={
         <PageMap
           tall

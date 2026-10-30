@@ -432,6 +432,24 @@
     "source": "https://commons.wikimedia.org/wiki/File:Replica_of_Vishwanath_mandir.jpg"
   },
   {
+    "key": "places/chaukhandi-stupa",
+    "file": "/media/photos/places/chaukhandi-stupa-1280.webp",
+    "title": "Chaukhandi Stupa, Saranath",
+    "author": "MaximusPrasad",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Chaukhandi_Stupa,_Saranath.jpg"
+  },
+  {
+    "key": "places/chaukhandi-stupa#2",
+    "file": "/media/photos/places/chaukhandi-stupa-2-1280.webp",
+    "title": "Chaukhandi Stupa on a hill, Sarnath",
+    "author": "Christopher Walker",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chaukhandi_Stupa_on_a_hill,_Sarnath.jpg"
+  },
+  {
     "key": "places/chet-singh-ghat",
     "file": "/media/photos/places/chet-singh-ghat-1280.webp",
     "title": "Chet Singh Ghat, Varanasi, India - October 2014",
@@ -765,6 +783,15 @@
     "source": "https://commons.wikimedia.org/wiki/File:Tarkeshwar_Mahadeva_Mandir001.jpg"
   },
   {
+    "key": "places/markandey-mahadev",
+    "file": "/media/photos/places/markandey-mahadev-360.webp",
+    "title": "Markandey Mahadev Temple",
+    "author": "Abj10",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Markandey_Mahadev_Temple.JPG"
+  },
+  {
     "key": "places/mulagandha-kuti-vihar",
     "file": "/media/photos/places/mulagandha-kuti-vihar-1280.webp",
     "title": "Mulgandh Kutti Vihar Sarnath India - panoramio",
@@ -936,6 +963,15 @@
     "source": "https://commons.wikimedia.org/wiki/File:Ram_Nagar_Fort_10_(26744384319).jpg"
   },
   {
+    "key": "places/ravidas-ghat",
+    "file": "/media/photos/places/ravidas-ghat-720.webp",
+    "title": "RavidasiVaranasi",
+    "author": "McKinseies",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:RavidasiVaranasi.JPG"
+  },
+  {
     "key": "places/ravidas-janmasthan",
     "file": "/media/photos/places/ravidas-janmasthan-1280.webp",
     "title": "Guru Ravidas Temple, Seer Goverdhanpur, Varanasi",
@@ -970,6 +1006,33 @@
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:Dhamekh_Stupa_Sarnath_India_-_panoramio.jpg"
+  },
+  {
+    "key": "places/sarnath-museum",
+    "file": "/media/photos/places/sarnath-museum-1280.webp",
+    "title": "Art and Archeological Museum at Sarnath",
+    "author": "Nandanupadhyay",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Art_and_Archeological_Museum_at_Sarnath.JPG"
+  },
+  {
+    "key": "places/sarnath-museum#2",
+    "file": "/media/photos/places/sarnath-museum-2-1280.webp",
+    "title": "Löwenkapitell im Sarnath Museum 1991",
+    "author": "Chrisi1964",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:L%C3%B6wenkapitell_im_Sarnath_Museum_1991.jpg"
+  },
+  {
+    "key": "places/sarnath-museum#3",
+    "file": "/media/photos/places/sarnath-museum-3-720.webp",
+    "title": "Buddha in Sarnath Museum (Dhammajak Mutra)",
+    "author": "พระมหาเทวประภาส วชิรญาณเมธี (ผู้ถ่าย-ปล่อยสัญญาอนุญาตภาพให้นำไปใช้ได้เพื่อการศึกษาโดยอยู่ภา่ยใต้ cc-by-sa-3.0) ผู้สร้างสรรค์ผลงาน/ส่งข้อมูลเก็บในคลังข้อมูลเสรีวิกิมีเดียคอมมอนส์ - เทวประภาส มากคล้าย",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg"
   },
   {
     "key": "places/sarnath#2",
@@ -1035,6 +1098,33 @@
     "source": "https://commons.wikimedia.org/wiki/File:496a_Benares,_India_1971_(51310319630).jpg"
   },
   {
+    "key": "places/swarved-mahamandir",
+    "file": "/media/photos/places/swarved-mahamandir-1280.webp",
+    "title": "Swarved Mahamandir",
+    "author": "Aliva Sahoo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Swarved_Mahamandir.jpg"
+  },
+  {
+    "key": "places/swarved-mahamandir#2",
+    "file": "/media/photos/places/swarved-mahamandir-2-1280.webp",
+    "title": "Swarved Mahamandir Dham (29304)",
+    "author": "Aliva Sahoo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Swarved_Mahamandir_Dham_(29304).jpg"
+  },
+  {
+    "key": "places/swarved-mahamandir#3",
+    "file": "/media/photos/places/swarved-mahamandir-3-1280.webp",
+    "title": "Swarved Mahamandir Dham",
+    "author": "Aliva Sahoo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Swarved_Mahamandir_Dham.jpg"
+  },
+  {
     "key": "places/tulsi-ghat",
     "file": "/media/photos/places/tulsi-ghat-1280.webp",
     "title": "Tulsi Ghat",
@@ -1096,6 +1186,15 @@
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Varanasi_19_-_figurines_in_Tulsi_Manas_mandir_(38173693321).jpg"
+  },
+  {
+    "key": "places/vindhyachal",
+    "file": "/media/photos/places/vindhyachal-1280.webp",
+    "title": "River Ganges in Vindhya chal",
+    "author": "Janendra",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:River_Ganges_in_Vindhya_chal.jpg"
   },
   {
     "key": "places/vishalakshi-temple",

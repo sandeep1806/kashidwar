@@ -24,6 +24,7 @@ import { alternatesFor } from "@/lib/pages";
 import { isIndexed } from "@/lib/seo";
 import { BUILD_DATE } from "@/lib/festivalDates";
 import { ADSENSE_CLIENT, SITE_URL } from "@/lib/site";
+import { placeCount } from "@/lib/content";
 import { adsForLocale } from "@/lib/ads";
 import "../globals.css";
 
@@ -60,20 +61,20 @@ export async function generateMetadata({
       default: t("homeTitle"),
       template: `%s · ${t("siteName")}`,
     },
-    description: t("description"),
+    description: t("description", { count: placeCount(locale) }),
     applicationName: t("siteName"),
     alternates: alternatesFor(locale, ""),
     openGraph: {
       type: "website",
       siteName: t("siteName"),
       title: t("homeTitle"),
-      description: t("description"),
+      description: t("description", { count: placeCount(locale) }),
       url: `/${locale}`,
       locale: bcp47.replace("-", "_"),
       alternateLocale: routing.locales.filter((l) => l !== locale).map((l) => LOCALES[l].bcp47.replace("-", "_")),
       images: [{ url: `/media/og/og-${locale}.png`, width: 1200, height: 630, alt: t("title") }],
     },
-    twitter: { card: "summary_large_image", title: t("homeTitle"), description: t("description"), images: [`/media/og/og-${locale}.png`] },
+    twitter: { card: "summary_large_image", title: t("homeTitle"), description: t("description", { count: placeCount(locale) }), images: [`/media/og/og-${locale}.png`] },
     // Regional locales: noindex until reviewed (lib/seo.ts → INDEXED_LOCALES).
     // Indexed pages allow large image previews in search and Discover.
     robots: isIndexed(locale) ? { index: true, follow: true, "max-image-preview": "large" } : { index: false, follow: true },
