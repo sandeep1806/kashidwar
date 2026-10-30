@@ -324,6 +324,33 @@
     "source": "https://commons.wikimedia.org/wiki/File:JOURNEY_TO_THE_EAST_INDIA.jpg"
   },
   {
+    "key": "places/bharat-kala-bhavan",
+    "file": "/media/photos/places/bharat-kala-bhavan-1280.webp",
+    "title": "Bharat Kala Bhavan Museum, Banaras Hindu University, Varanasi",
+    "author": "Jeff Hart from Bloomington, IN, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bharat_Kala_Bhavan_Museum,_Banaras_Hindu_University,_Varanasi.jpg"
+  },
+  {
+    "key": "places/bharat-kala-bhavan#2",
+    "file": "/media/photos/places/bharat-kala-bhavan-2-720.webp",
+    "title": "Krishna Govardhana. Bharat Kala Bhavan, ni03-24",
+    "author": "G41rn8",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Krishna_Govardhana._Bharat_Kala_Bhavan,_ni03-24.jpg"
+  },
+  {
+    "key": "places/bharat-kala-bhavan#3",
+    "file": "/media/photos/places/bharat-kala-bhavan-3-1280.webp",
+    "title": "Avalokiteshvara, Tibetan painting of 17th-18th century at Bharat Kala Bhavan, Acc. No. 5704",
+    "author": "Ismoon ( talk ) 19:52, 25 February 2012 (UTC)",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Avalokiteshvara,_Tibetan_painting_of_17th-18th_century_at_Bharat_Kala_Bhavan,_Acc._No._5704.jpg"
+  },
+  {
     "key": "places/bharat-mata",
     "file": "/media/photos/places/bharat-mata-1280.webp",
     "title": "Bharat Mata Mandir Varanasi India - panoramio",
@@ -684,6 +711,33 @@
     "source": "https://commons.wikimedia.org/wiki/File:Harishchandra_Ghat.jpg"
   },
   {
+    "key": "places/kardameshwar-mahadev",
+    "file": "/media/photos/places/kardameshwar-mahadev-1280.webp",
+    "title": "Kardmeshwar Mahadeva Mandir",
+    "author": "Semra kikić",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kardmeshwar_Mahadeva_Mandir.jpg"
+  },
+  {
+    "key": "places/kardameshwar-mahadev#2",
+    "file": "/media/photos/places/kardameshwar-mahadev-2-1280.webp",
+    "title": "Other deities",
+    "author": "Poorvaa27",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Other_deities.jpg"
+  },
+  {
+    "key": "places/kardameshwar-mahadev#3",
+    "file": "/media/photos/places/kardameshwar-mahadev-3-1280.webp",
+    "title": "Kardam Kund",
+    "author": "Poorvaa27",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kardam_Kund.jpg"
+  },
+  {
     "key": "places/kashi-vishwanath",
     "file": "/media/photos/places/kashi-vishwanath-1280.webp",
     "title": "Kashi vishwanath temple varanasi",
@@ -711,6 +765,24 @@
     "source": "https://commons.wikimedia.org/wiki/File:Kedar_Ghat_2011_August.jpg"
   },
   {
+    "key": "places/keenaram-sthal",
+    "file": "/media/photos/places/keenaram-sthal-1280.webp",
+    "title": "InOutPeaceProject, Entrance to Baba Keenaram Ashram in Varanasi",
+    "author": "InOutPeaceProject",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:InOutPeaceProject,_Entrance_to_Baba_Keenaram_Ashram_in_Varanasi.jpg"
+  },
+  {
+    "key": "places/lahartara-kabir",
+    "file": "/media/photos/places/lahartara-kabir-1280.webp",
+    "title": "Lahartara Pond (64464)",
+    "author": "Sonalyadav1234",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lahartara_Pond_(64464).jpg"
+  },
+  {
     "key": "places/lalita-ghat",
     "file": "/media/photos/places/lalita-ghat-1280.webp",
     "title": "Benares, the Nepalese Temple",
@@ -736,6 +808,15 @@
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Varanasi_(38604691891).jpg"
+  },
+  {
+    "key": "places/lolark-kund",
+    "file": "/media/photos/places/lolark-kund-1280.webp",
+    "title": "Lokark Kund",
+    "author": "Nikhil399792",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lokark_Kund.jpg"
   },
   {
     "key": "places/man-mandir-ghat",
@@ -999,6 +1080,15 @@
     "source": "https://commons.wikimedia.org/wiki/File:Sankat_Mochan_temple_entrance,_Varanasi_-_IRCTC_2017.jpg"
   },
   {
+    "key": "places/sankata-devi",
+    "file": "/media/photos/places/sankata-devi-1280.webp",
+    "title": "Sankatha Ghat",
+    "author": "Prashant Kharote",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sankatha_Ghat.jpg"
+  },
+  {
     "key": "places/sarnath",
     "file": "/media/photos/places/sarnath-1280.webp",
     "title": "Dhamekh Stupa Sarnath India - panoramio",
@@ -1087,6 +1177,24 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Leaning_Kashi_Karvat_temple_Varanasi.jpg"
+  },
+  {
+    "key": "places/shreyansnath-jain",
+    "file": "/media/photos/places/shreyansnath-jain-720.webp",
+    "title": "Sridigamber Jain Temple, Singhpuri, Sarnath, Varanasi",
+    "author": "Yusuke Kawasaki",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sridigamber_Jain_Temple,_Singhpuri,_Sarnath,_Varanasi.jpg"
+  },
+  {
+    "key": "places/shreyansnath-jain#2",
+    "file": "/media/photos/places/shreyansnath-jain-2-1280.webp",
+    "title": "Entrance to the Digambar Jain Temple dedicated to Shreyansanath, the eleventh Jain Tirthankar, Sarnath",
+    "author": "Ken Wieland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Entrance_to_the_Digambar_Jain_Temple_dedicated_to_Shreyansanath,_the_eleventh_Jain_Tirthankar,_Sarnath.jpg"
   },
   {
     "key": "places/st-marys-church",

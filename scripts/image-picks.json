@@ -1285,5 +1285,101 @@
       "en": "Memorial pavilion of Sri Guru Ravidas Park beside Ravidas Ghat at dusk, Varanasi",
       "hi": "वाराणसी में संध्या के समय रविदास घाट के पास श्री गुरु रविदास पार्क का स्मारक मंडप"
     }
+  },
+  {
+    "key": "places/sankata-devi",
+    "title": "File:Sankatha Ghat.jpg",
+    "alt": {
+      "en": "Sankatha Ghat and the neighbouring ghats seen from the Ganga, Varanasi",
+      "hi": "गंगा से दिखते संकठा घाट और आसपास के घाट, वाराणसी"
+    }
+  },
+  {
+    "key": "places/lolark-kund",
+    "title": "File:Lokark Kund.jpg",
+    "alt": {
+      "en": "Steep stone steps leading down into Lolark Kund between high walls, Bhadaini, Varanasi",
+      "hi": "भदैनी, वाराणसी में ऊंची दीवारों के बीच लोलार्क कुंड में उतरती खड़ी पत्थर की सीढ़ियां"
+    }
+  },
+  {
+    "key": "places/kardameshwar-mahadev",
+    "title": "File:Kardmeshwar Mahadeva Mandir.jpg",
+    "alt": {
+      "en": "Carved sandstone Nagara spire of Kardameshwar Mahadev Temple, Kandwa, Varanasi",
+      "hi": "कंदवा, वाराणसी में कर्दमेश्वर महादेव मंदिर का नक्काशीदार बलुआ पत्थर का नागर शिखर"
+    }
+  },
+  {
+    "key": "places/kardameshwar-mahadev#2",
+    "title": "File:Other deities.jpg",
+    "alt": {
+      "en": "Carved deities on the sandstone wall of Kardameshwar Mahadev Temple, Kandwa",
+      "hi": "कंदवा में कर्दमेश्वर महादेव मंदिर की बलुआ पत्थर की दीवार पर उकेरे गए देवता"
+    }
+  },
+  {
+    "key": "places/kardameshwar-mahadev#3",
+    "title": "File:Kardam Kund.jpg",
+    "alt": {
+      "en": "The Kardam Kund tank beside Kardameshwar Mahadev Temple, Kandwa, Varanasi",
+      "hi": "कंदवा, वाराणसी में कर्दमेश्वर महादेव मंदिर के पास कर्दम कुंड"
+    }
+  },
+  {
+    "key": "places/keenaram-sthal",
+    "title": "File:InOutPeaceProject, Entrance to Baba Keenaram Ashram in Varanasi.jpg",
+    "alt": {
+      "en": "Entrance gate of Baba Keenaram Sthal seen from the road, Ravindrapuri, Varanasi",
+      "hi": "रवींद्रपुरी, वाराणसी में सड़क से दिखता बाबा कीनाराम स्थल का प्रवेश द्वार"
+    }
+  },
+  {
+    "key": "places/lahartara-kabir",
+    "title": "File:Lahartara Pond (64464).jpg",
+    "alt": {
+      "en": "Lahartara pond with its stone embankment, where tradition holds the infant Kabir was found, Varanasi",
+      "hi": "वाराणसी में पत्थर के तटबंध वाला लहरतारा तालाब, जहां परंपरा के अनुसार शिशु कबीर मिले थे"
+    }
+  },
+  {
+    "key": "places/shreyansnath-jain",
+    "title": "File:Sridigamber Jain Temple, Singhpuri, Sarnath, Varanasi.jpg",
+    "alt": {
+      "en": "Digambar Jain temple of Shreyansnath with its golden spire, Singhpuri, Sarnath",
+      "hi": "सिंहपुरी, सारनाथ में स्वर्ण शिखर वाला श्रेयांसनाथ का दिगंबर जैन मंदिर"
+    }
+  },
+  {
+    "key": "places/shreyansnath-jain#2",
+    "title": "File:Entrance to the Digambar Jain Temple dedicated to Shreyansanath, the eleventh Jain Tirthankar, Sarnath.jpg",
+    "alt": {
+      "en": "Painted entrance gate of the Digambar Jain temple of Shreyansnath, Sarnath",
+      "hi": "सारनाथ में श्रेयांसनाथ के दिगंबर जैन मंदिर का चित्रित प्रवेश द्वार"
+    }
+  },
+  {
+    "key": "places/bharat-kala-bhavan",
+    "title": "File:Bharat Kala Bhavan Museum, Banaras Hindu University, Varanasi.jpg",
+    "alt": {
+      "en": "Facade of Bharat Kala Bhavan museum with its pool, Banaras Hindu University, Varanasi",
+      "hi": "काशी हिन्दू विश्वविद्यालय, वाराणसी में जलकुंड के साथ भारत कला भवन संग्रहालय का अग्रभाग"
+    }
+  },
+  {
+    "key": "places/bharat-kala-bhavan#2",
+    "title": "File:Krishna Govardhana. Bharat Kala Bhavan, ni03-24.jpg",
+    "alt": {
+      "en": "Gupta-period sculpture of Krishna lifting Govardhan, Bharat Kala Bhavan",
+      "hi": "भारत कला भवन में गोवर्धन उठाए कृष्ण की गुप्तकालीन मूर्ति"
+    }
+  },
+  {
+    "key": "places/bharat-kala-bhavan#3",
+    "title": "File:Avalokiteshvara, Tibetan painting of 17th-18th century at Bharat Kala Bhavan, Acc. No. 5704.jpg",
+    "alt": {
+      "en": "Tibetan painting of Avalokiteshvara, 17th–18th century, in the Bharat Kala Bhavan collection",
+      "hi": "भारत कला भवन संग्रह में 17वीं–18वीं सदी की अवलोकितेश्वर की तिब्बती चित्रकृति"
+    }
   }
 ]
