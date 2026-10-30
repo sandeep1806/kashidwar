@@ -3602,5 +3602,822 @@
         }
       }
     }
+  },
+  {
+    "id": "sankata-devi",
+    "name_en": "Sankata Devi Temple",
+    "name_hi": "संकठा देवी मंदिर",
+    "names": {
+      "ta": "சங்கடா தேவி கோயில்",
+      "te": "సంకటా దేవి ఆలయం",
+      "kn": "ಸಂಕಟಾ ದೇವಿ ದೇವಾಲಯ",
+      "ml": "സങ്കടാ ദേവി ക്ഷേത്രം",
+      "bn": "সংকটা দেবী মন্দির",
+      "or": "ସଙ୍କଟା ଦେବୀ ମନ୍ଦିର",
+      "as": "সংকটা দেৱী মন্দিৰ",
+      "gu": "સંકટા દેવી મંદિર",
+      "pa": "ਸੰਕਟਾ ਦੇਵੀ ਮੰਦਰ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.3126,
+    "lng": 83.0152,
+    "coordsVerified": true,
+    "summary": "In the lanes above Sankatha Ghat, the goddess who removes sankat, trouble and danger. The temple was built in the 18th century by the ruler of Baroda, at the same time as the ghat below. A large courtyard holds an old pipal tree with small shrines caught in its roots; in the sanctum the silver-faced goddess stands about 1.5 metres tall, flanked by Hanuman and Bhairav.",
+    "story": "Local tradition holds that the Pandavas worshipped her during their exile in the forest. Devotees come to her in uncertain times, for protection on journeys, in illness or before exams, and unusually for a goddess temple they may touch her feet.",
+    "bestTime": "Early morning; Fridays and Navratri are busiest",
+    "image": "/media/places/sankata-devi.jpg",
+    "tips": [
+      "Sankatha Ghat is just north of Scindia Ghat: see the leaning Ratneshwar temple, then climb the lanes to the Devi.",
+      "The approach is through Sankat Gali off Chowk; the lanes are narrow, so come on foot from Chowk or up from the ghat.",
+      "Friday is the goddess's day here and draws the most devotees; come on another day for an unhurried visit."
+    ],
+    "glance": {
+      "timings": "05:00–22:30",
+      "entry": "No ticket reported",
+      "duration": "20–30 min",
+      "season": "Oct–Mar; Navratri (Mar–Apr, Sep–Oct)",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Sankatha Devi Temple – kashi.gov.in (timings, address CK 7/159 Sankat Gali, Chowk)",
+          "url": "https://kashi.gov.in/listing-details/sankatha-devi-temple",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Wikipedia — Sankata Devi Mandir",
+          "url": "https://en.wikipedia.org/wiki/Sankata_Devi_Mandir",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Sankatha Devi Temple – kashi.gov.in (Varanasi Smart City; history, coordinates)",
+        "url": "https://kashi.gov.in/listing-details/sankatha-devi-temple",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Sankata Devi Mandir (coordinates, Baroda, 18th century)",
+        "url": "https://en.wikipedia.org/wiki/Sankata_Devi_Mandir",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikimedia Commons — Category: Sankata Devi Temple, Varanasi",
+        "url": "https://commons.wikimedia.org/wiki/Category:Sankata_Devi_Temple,_Varanasi",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "संकठा घाट के ऊपर की गलियों में वह देवी जो संकट हरती हैं। मंदिर 18वीं सदी में बड़ौदा के राजा ने नीचे के घाट के साथ ही बनवाया। बड़े आँगन में एक पुराना पीपल है जिसकी जड़ों में छोटे-छोटे देवस्थान समाए हैं; गर्भगृह में लगभग 1.5 मीटर ऊँची चाँदी-मुख वाली देवी हैं, दोनों ओर हनुमान और भैरव।",
+        "story": "स्थानीय परंपरा कहती है कि पांडवों ने वनवास में यहाँ देवी की पूजा की थी। भक्त कठिन समय में उनके पास आते हैं, यात्रा, बीमारी या परीक्षा से पहले रक्षा माँगने, और देवी-मंदिरों में असामान्य रूप से यहाँ उनके चरण छू सकते हैं।",
+        "bestTime": "सुबह जल्दी; शुक्रवार और नवरात्र में सबसे भीड़",
+        "tips": [
+          "संकठा घाट सिंधिया घाट के ठीक उत्तर में है: झुका हुआ रत्नेश्वर मंदिर देखें, फिर गलियों से ऊपर देवी तक जाएँ।",
+          "रास्ता चौक की संकट गली से है; गलियाँ सँकरी हैं, इसलिए चौक से या घाट से पैदल आएँ।",
+          "शुक्रवार देवी का दिन है और सबसे अधिक भक्त आते हैं; इत्मीनान से दर्शन के लिए कोई और दिन चुनें।"
+        ],
+        "glance": {
+          "timings": "सुबह 5 से रात 10:30 बजे",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "20 से 30 मिनट",
+          "season": "अक्टूबर से मार्च; नवरात्र (मार्च-अप्रैल, सितंबर-अक्टूबर)"
+        }
+      }
+    }
+  },
+  {
+    "id": "tilbhandeshwar-mahadev",
+    "name_en": "Tilbhandeshwar Mahadev Temple",
+    "name_hi": "तिलभांडेश्वर महादेव मंदिर",
+    "names": {
+      "ta": "திலபாண்டேஸ்வர் மகாதேவ் கோயில்",
+      "te": "తిలభాండేశ్వర్ మహాదేవ్ ఆలయం",
+      "kn": "ತಿಲಭಾಂಡೇಶ್ವರ ಮಹಾದೇವ ದೇವಾಲಯ",
+      "ml": "തിലഭാണ്ഡേശ്വർ മഹാദേവ ക്ഷേത്രം",
+      "bn": "তিলভাণ্ডেশ্বর মহাদেব মন্দির",
+      "or": "ତିଳଭାଣ୍ଡେଶ୍ୱର ମହାଦେବ ମନ୍ଦିର",
+      "as": "তিলভাণ্ডেশ্বৰ মহাদেৱ মন্দিৰ",
+      "gu": "તિલભાંડેશ્વર મહાદેવ મંદિર",
+      "pa": "ਤਿਲਭਾਂਡੇਸ਼ਵਰ ਮਹਾਦੇਵ ਮੰਦਰ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.3003,
+    "lng": 83.0031,
+    "coordsVerified": false,
+    "summary": "A Shiva temple at Pandey Haveli in the Bhelupur–Bengali Tola quarter, beside Bengali Tola Inter College. Its large linga, about 3.5 feet high, is held to be swayambhu, self-manifested, and the temple building is believed to date from the 18th century. Devotees come every day, and in Sawan the queues for jalabhishek stretch into the lane.",
+    "story": "Devotees believe the linga grows by the size of one til, a sesame seed, every year; that belief gives the temple its name. Tradition also holds that Mata Sharda stayed here for some days.",
+    "bestTime": "Early morning; Mondays, Sawan (Jul–Aug) and Mahashivratri are busiest",
+    "image": "/media/places/tilbhandeshwar-mahadev.jpg",
+    "tips": [
+      "It is inland from the river through the Bengali Tola lanes; ask for Pandey Haveli or Bengali Tola Inter College.",
+      "In Sawan devotees queue from early morning for jalabhishek and rudrabhishek; expect long lines, especially on Mondays."
+    ],
+    "glance": {
+      "timings": "04:30–21:00",
+      "entry": "No ticket reported",
+      "duration": "20–30 min",
+      "season": "Oct–Mar; Sawan (Jul–Aug), Mahashivratri (Feb–Mar)",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Shri Tilbhandeshwar Mahadev Mandir – kashi.gov.in (timings 04:30–21:00)",
+          "url": "https://kashi.gov.in/listing-details/shri-tilbhandeshwar-mahadev-mandir",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Patrika — Tilbhandeshwar Mahadev, Kashi: Sawan darshan and timings (3 Aug 2026)",
+          "url": "https://www.patrika.com/lifestyle-news/tilbhandeshwar-mahadev-mandir-kashi-sawan-20801820",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Shri Tilbhandeshwar Mahadev Mandir – kashi.gov.in (Varanasi Smart City; location, coordinates)",
+        "url": "https://kashi.gov.in/listing-details/shri-tilbhandeshwar-mahadev-mandir",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Shri Tilbhandeshwar Mahadev Mandir",
+        "url": "https://en.wikipedia.org/wiki/Shri_Tilbhandeshwar_Mahadev_Mandir",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Patrika — Tilbhandeshwar Mahadev, Kashi: Sawan darshan (3 Aug 2026)",
+        "url": "https://www.patrika.com/lifestyle-news/tilbhandeshwar-mahadev-mandir-kashi-sawan-20801820",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "भेलूपुर–बंगाली टोला क्षेत्र में पांडेय हवेली पर, बंगाली टोला इंटर कॉलेज के पास शिव का मंदिर। लगभग साढ़े तीन फुट ऊँचा विशाल शिवलिंग स्वयंभू माना जाता है, और मंदिर का भवन 18वीं सदी का माना जाता है। रोज़ भक्त आते हैं, और सावन में जलाभिषेक की कतार गली तक पहुँच जाती है।",
+        "story": "भक्तों की मान्यता है कि यह शिवलिंग हर साल एक तिल के बराबर बढ़ता है; इसी से मंदिर का नाम पड़ा। परंपरा यह भी कहती है कि माता शारदा यहाँ कुछ दिन रही थीं।",
+        "bestTime": "सुबह जल्दी; सोमवार, सावन (जुलाई-अगस्त) और महाशिवरात्रि पर सबसे भीड़",
+        "tips": [
+          "यह बंगाली टोला की गलियों से होकर नदी से भीतर की ओर है; पांडेय हवेली या बंगाली टोला इंटर कॉलेज पूछें।",
+          "सावन में भक्त सुबह से जलाभिषेक और रुद्राभिषेक के लिए कतार लगाते हैं; लंबी कतार की उम्मीद रखें, ख़ासकर सोमवार को।"
+        ],
+        "glance": {
+          "timings": "सुबह 4:30 से रात 9 बजे",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "20 से 30 मिनट",
+          "season": "अक्टूबर से मार्च; सावन (जुलाई-अगस्त), महाशिवरात्रि (फ़रवरी-मार्च)"
+        }
+      }
+    }
+  },
+  {
+    "id": "batuk-bhairav",
+    "name_en": "Batuk Bhairav Temple",
+    "name_hi": "बटुक भैरव मंदिर",
+    "names": {
+      "ta": "வடுக பைரவர் கோயில்",
+      "te": "బటుక భైరవ ఆలయం",
+      "kn": "ಬಟುಕ ಭೈರವ ದೇವಾಲಯ",
+      "ml": "ബടുക ഭൈരവ ക്ഷേത്രം",
+      "bn": "বটুক ভৈরব মন্দির",
+      "or": "ବଟୁକ ଭୈରବ ମନ୍ଦିର",
+      "as": "বটুক ভৈৰৱ মন্দিৰ",
+      "gu": "બટુક ભૈરવ મંદિર",
+      "pa": "ਬਟੁਕ ਭੈਰਵ ਮੰਦਰ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.3033,
+    "lng": 82.993,
+    "coordsVerified": false,
+    "summary": "In Kamachha, off the Rathyatra–Kamachha road, a small temple to Bhairav in his child form, Batuk. Kaal Bhairav in Visheshwarganj guards the city as its kotwal; here the same fierce aspect of Shiva is worshipped as a boy, tender and formidable at once. A lamp is kept burning without break, and dogs, Bhairav's vahana, wait around the shrine.",
+    "story": "Local lore says Bhairav took the form of a child to slay a demon who could be killed only by a child, and so became a protector of Kashi. Devotees believe the oil of the ever-burning lamp heals wounds and bites, and the deity's birthday is kept with a 56-dish bhog and the feeding of 1,008 children.",
+    "bestTime": "Evening for the aarti; Sundays and Ashtami are busiest",
+    "image": "/media/places/batuk-bhairav.jpg",
+    "tips": [
+      "Pair it with Kaal Bhairav for darshan of both forms, but they are in different parts of the city: take an e-rickshaw between Visheshwarganj and Kamachha.",
+      "Many devotees feed the temple dogs milk or biscuits as an offering to Bhairav's vahana.",
+      "Krodhan (Adi) Bhairav, one of the eight Bhairavs of Kashi, is in the same Kamachha neighbourhood beside the Kamakhya temple."
+    ],
+    "glance": {
+      "timings": "05:00–22:30 (some listings show a midday closure)",
+      "entry": "No ticket reported",
+      "duration": "20–30 min",
+      "season": "Oct–Mar; Bhairav Ashtami (Nov–Dec)",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Batuk Bhairav Temple – kashi.gov.in (timings 05:00–22:30)",
+          "url": "https://kashi.gov.in/listing-details/batuk-bhairav-temple",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Shri Batuk Bhairav Temple – Yatradham (timings with midday break)",
+          "url": "https://temple.yatradham.org/temple/shri-batuk-bhairav-temple",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Batuk Bhairav Temple – kashi.gov.in (Varanasi Smart City; lore, akhand deep, address, coordinates)",
+        "url": "https://kashi.gov.in/listing-details/batuk-bhairav-temple",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Shri Kaal Bhairav Temple – kashi.gov.in (Kaal Bhairav as kotwal)",
+        "url": "https://kashi.gov.in/listing-details/shri-kaal-bhairav-temple",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Inditales — Ashta Bhairava Yatra in Kashi (Batuk Bhairav and Krodhan Bhairav, Kamachha)",
+        "url": "https://inditales.com/ashta-bhairava-yatra-in-kashi-varanasi/",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "कमच्छा में, रथयात्रा–कमच्छा मार्ग के पास, भैरव के बाल रूप बटुक का छोटा मंदिर। विशेश्वरगंज के काल भैरव नगर के कोतवाल के रूप में रक्षा करते हैं; यहाँ शिव का वही उग्र रूप बालक के रूप में पूजा जाता है, कोमल भी और प्रचंड भी। यहाँ अखंड दीप जलता रहता है, और भैरव के वाहन श्वान मंदिर के आसपास रहते हैं।",
+        "story": "स्थानीय कथा है कि भैरव ने बालक का रूप लेकर उस असुर का वध किया जिसे केवल बालक ही मार सकता था, और इस तरह काशी के रक्षक बने। भक्त मानते हैं कि अखंड दीप का तेल घाव और काटने पर लाभ देता है; देवता का जन्मोत्सव छप्पन भोग और 1,008 बालकों को भोजन कराकर मनाया जाता है।",
+        "bestTime": "आरती के लिए शाम; रविवार और अष्टमी को सबसे भीड़",
+        "tips": [
+          "काल भैरव के साथ दोनों रूपों के दर्शन करें, पर दोनों नगर के अलग हिस्सों में हैं: विशेश्वरगंज और कमच्छा के बीच ई-रिक्शा लें।",
+          "कई भक्त भैरव के वाहन मानकर मंदिर के श्वानों को दूध या बिस्कुट खिलाते हैं।",
+          "काशी के अष्ट भैरवों में से क्रोधन (आदि) भैरव इसी कमच्छा मोहल्ले में कामाख्या मंदिर के पास हैं।"
+        ],
+        "glance": {
+          "timings": "सुबह 5 से रात 10:30 बजे (कुछ सूचियों में दोपहर में बंद)",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "20 से 30 मिनट",
+          "season": "अक्टूबर से मार्च; भैरव अष्टमी (नवंबर-दिसंबर)"
+        }
+      }
+    }
+  },
+  {
+    "id": "lolark-kund",
+    "name_en": "Lolark Kund",
+    "name_hi": "लोलार्क कुंड",
+    "names": {
+      "ta": "லோலார்க் குண்ட்",
+      "te": "లోలార్క్ కుండ్",
+      "kn": "ಲೋಲಾರ್ಕ್ ಕುಂಡ್",
+      "ml": "ലോലാർക്ക് കുണ്ഡ്",
+      "bn": "লোলার্ক কুণ্ড",
+      "or": "ଲୋଲାର୍କ କୁଣ୍ଡ",
+      "as": "লোলাৰ্ক কুণ্ড",
+      "gu": "લોલાર્ક કુંડ",
+      "pa": "ਲੋਲਾਰਕ ਕੁੰਡ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "heritage",
+    "lat": 25.291,
+    "lng": 83.0058,
+    "coordsVerified": true,
+    "summary": "A deep stepwell tank in Bhadaini, a short climb from Tulsi Ghat, sacred to Lolarka, the 'trembling sun', one of the twelve Adityas of Kashi. Steps run down about 15 metres on three sides; the fourth is an arched well-shaft facing east towards the Ganga. The Lolarkeshwar shrine stands beside it. Quiet most days, it fills once a year for Lolark Shashthi, when lakhs of devotees come to bathe.",
+    "story": "The Kashi Khanda (chapter 46) tells of the Sun settling in Kashi as Lolarka and praises worship here on Sundays. On Lolark Shashthi, the sixth day of the bright half of Bhadrapada, couples bathe at dawn praying for a child, leaving behind a fruit or vegetable they then give up eating.",
+    "bestTime": "A Sunday morning, the day of Surya; Lolark Shashthi (Bhadrapada shukla shashthi, Aug–Sep) for the bathing fair, but expect lakhs of people",
+    "image": "/media/places/lolark-kund.jpg",
+    "tips": [
+      "Walk up from Tulsi Ghat, or come by lane from Assi; it pairs well with Tulsi Ghat and Assi.",
+      "On Lolark Shashthi police barricade about 2 km around the Tulsi gate with separate entry and exit; the queue can take many hours. Unless you are bathing, see the fair from outside.",
+      "Do not photograph people bathing; the ritual is a private prayer for a child."
+    ],
+    "glance": {
+      "timings": "Open to worshippers through the day; no official hours published",
+      "entry": "No ticket reported",
+      "duration": "20–30 min",
+      "season": "Oct–Mar; Lolark Shashthi (Aug–Sep)",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Varanasi Temples — Lolark Aditya (open for worship almost round the clock; Lolark Chhath)",
+          "url": "https://varanasitemples.in/aditya-temples/lolark-aditya/",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "ANI via LatestLY — Devotees flock to Lolark Kund; 4–5 lakh bathe, 1,000+ police deployed (29 Aug 2025)",
+          "url": "https://www.latestly.com/agency-news/india-news-up-devotees-flock-to-lolark-kund-for-holy-dip-thousand-police-personnel-deployed-for-security-7083319.html",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "OpenStreetMap — Lolark Kund (node 9867137618)",
+        "url": "https://www.openstreetmap.org/node/9867137618",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Lolark Sasthi",
+        "url": "https://en.wikipedia.org/wiki/Lolark_Sasthi",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Varanasi Temples — Lolark Kund (Kashi Khanda, chapter 46)",
+        "url": "https://varanasitemples.in/?p=726",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "ANI via LatestLY — Devotees flock to Lolark Kund for holy dip (29 Aug 2025)",
+        "url": "https://www.latestly.com/agency-news/india-news-up-devotees-flock-to-lolark-kund-for-holy-dip-thousand-police-personnel-deployed-for-security-7083319.html",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "भदैनी में तुलसी घाट से थोड़ी चढ़ाई पर गहरा सीढ़ीदार कुंड, जो काशी के बारह आदित्यों में से एक, 'काँपते सूर्य' लोलार्क को समर्पित है। तीन ओर से सीढ़ियाँ लगभग 15 मीटर नीचे उतरती हैं; चौथी ओर गंगा की ओर पूर्वमुखी मेहराबदार कुएँ जैसी दीवार है। बगल में लोलार्केश्वर का मंदिर है। आम दिनों में शांत यह कुंड साल में एक बार लोलार्क षष्ठी पर भरता है, जब लाखों श्रद्धालु स्नान करने आते हैं।",
+        "story": "काशी खंड (अध्याय 46) में सूर्य के लोलार्क रूप में काशी में बसने की कथा है और यहाँ रविवार की उपासना की महिमा बताई गई है। भाद्रपद शुक्ल षष्ठी, लोलार्क षष्ठी पर दंपती संतान की कामना से भोर में स्नान करते हैं और एक फल या सब्ज़ी कुंड में छोड़कर उसे खाना त्याग देते हैं।",
+        "bestTime": "रविवार की सुबह, जो सूर्य का दिन है; स्नान मेले के लिए लोलार्क षष्ठी (भाद्रपद शुक्ल षष्ठी, अगस्त–सितंबर), पर लाखों की भीड़ रहती है",
+        "tips": [
+          "तुलसी घाट से ऊपर चढ़कर या अस्सी की गली से आएँ; तुलसी घाट और अस्सी के साथ देखें।",
+          "लोलार्क षष्ठी पर पुलिस तुलसी द्वार के लगभग 2 किमी दायरे में बैरिकेड लगाती है और आने-जाने के रास्ते अलग होते हैं; कतार में कई घंटे लग सकते हैं। स्नान न करना हो तो मेला बाहर से देखें।",
+          "स्नान करते लोगों की तस्वीर न लें; यह संतान के लिए निजी प्रार्थना है।"
+        ],
+        "glance": {
+          "timings": "दिन भर दर्शन के लिए खुला; कोई आधिकारिक समय प्रकाशित नहीं",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "20 से 30 मिनट",
+          "season": "अक्टूबर से मार्च; लोलार्क षष्ठी (अगस्त–सितंबर)"
+        }
+      }
+    }
+  },
+  {
+    "id": "kardameshwar-mahadev",
+    "name_en": "Kardameshwar Mahadev Temple",
+    "name_hi": "कर्दमेश्वर महादेव मंदिर",
+    "names": {
+      "ta": "கர்தமேஸ்வரர் மகாதேவர் கோயில்",
+      "te": "కర్దమేశ్వర మహాదేవ ఆలయం",
+      "kn": "ಕರ್ದಮೇಶ್ವರ ಮಹಾದೇವ ದೇವಾಲಯ",
+      "ml": "കർദമേശ്വര മഹാദേവ ക്ഷേത്രം",
+      "bn": "কর্দমেশ্বর মহাদেব মন্দির",
+      "or": "କର୍ଦ୍ଦମେଶ୍ୱର ମହାଦେବ ମନ୍ଦିର",
+      "as": "কৰ্দমেশ্বৰ মহাদেৱ মন্দিৰ",
+      "gu": "કર્દમેશ્વર મહાદેવ મંદિર",
+      "pa": "ਕਰਦਮੇਸ਼ਵਰ ਮਹਾਦੇਵ ਮੰਦਰ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.2683,
+    "lng": 82.9583,
+    "coordsVerified": true,
+    "summary": "A sandstone Shiva temple in Kandwa village on the city's southern edge, often described as the oldest standing temple in Varanasi. Scholars date its curved Nagara tower to the 10th–12th centuries, though it has been taken down and rebuilt, so only parts are original. It stands on the bank of the Kardam Kund, a large tank built by Rani Bhavani of Natore around 1751–57, and is a state-protected monument.",
+    "story": "Tradition holds that the sage Kardama, a son of Brahma, installed the linga here. Kandwa is the first night halt of the Panchkroshi Yatra, the pilgrims' circuit around sacred Kashi.",
+    "bestTime": "Early morning or the evening aarti; join the Panchkroshi pilgrims if you are here during the yatra",
+    "image": "/media/places/kardameshwar-mahadev.jpg",
+    "tips": [
+      "About 14 km from Varanasi Junction; pair it with BHU, about 3 km to the east.",
+      "Walk round the outside walls: Nataraja, Ardhanarishvara, Uma-Maheshvara and Vishnu are carved on the tower, and Ganga and Yamuna flank the sanctum door.",
+      "The temple closes at midday (about 12:00–16:00)."
+    ],
+    "glance": {
+      "timings": "05:30–12:00 and 16:00–21:00 (varies by season and festival)",
+      "entry": "No ticket reported",
+      "duration": "30–45 min",
+      "season": "Oct–Mar",
+      "crowd": "quiet",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Incredible India (Ministry of Tourism) — Kardameshwar Mahadev Temple (05:30–12:00, 16:00–21:00)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/kardameshwar-mahadev-temple",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Incredible India (Ministry of Tourism) — Kardameshwar Mahadev Temple",
+        "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/kardameshwar-mahadev-temple",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Cultural Heritage of Varanasi (Rana P.B. Singh & Pravin S. Rana, Indian Institute of Heritage) — Kardameshvara Temple",
+        "url": "https://culturalheritageofvaranasi.com/notable_temples/kardameshvara-temple/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — List of State Protected Monuments in Uttar Pradesh (S-UP-140, Kardmeshwar Mahadeva Mandir; from the ASI list)",
+        "url": "https://en.wikipedia.org/wiki/List_of_State_Protected_Monuments_in_Uttar_Pradesh",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "OpenStreetMap — Kardmeshwar Temple (node 7997453201)",
+        "url": "https://www.openstreetmap.org/node/7997453201",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "नगर के दक्षिणी छोर पर कंदवा गाँव में बलुआ पत्थर का शिव मंदिर, जिसे अक्सर वाराणसी का सबसे पुराना खड़ा मंदिर कहा जाता है। विद्वान इसके घुमावदार नागर शिखर को 10वीं–12वीं सदी का मानते हैं, हालाँकि इसे खोलकर फिर से जोड़ा गया है, इसलिए कुछ ही हिस्से मूल हैं। यह कर्दम कुंड के किनारे है, जिसे नाटोर की रानी भवानी ने लगभग 1751–57 में बनवाया था। यह राज्य-संरक्षित स्मारक है।",
+        "story": "मान्यता है कि ब्रह्मा के पुत्र कर्दम ऋषि ने यहाँ शिवलिंग स्थापित किया। कंदवा पंचक्रोशी यात्रा का पहला रात्रि-पड़ाव है, जो पवित्र काशी की परिक्रमा है।",
+        "bestTime": "भोर या शाम की आरती; यात्रा के दिनों में हों तो पंचक्रोशी यात्रियों के साथ आएँ",
+        "tips": [
+          "वाराणसी जंक्शन से लगभग 14 किमी; लगभग 3 किमी पूर्व में स्थित बीएचयू के साथ देखें।",
+          "बाहरी दीवारों की परिक्रमा करें: शिखर पर नटराज, अर्धनारीश्वर, उमा-महेश्वर और विष्णु उकेरे हैं, और गर्भगृह के द्वार पर गंगा-यमुना हैं।",
+          "दोपहर में मंदिर बंद रहता है (लगभग 12 से 4 बजे)।"
+        ],
+        "glance": {
+          "timings": "सुबह 5:30 से दोपहर 12 बजे और शाम 4 से रात 9 बजे (मौसम और पर्व के अनुसार बदलता है)",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "30 से 45 मिनट",
+          "season": "अक्टूबर से मार्च"
+        }
+      }
+    }
+  },
+  {
+    "id": "keenaram-sthal",
+    "name_en": "Baba Keenaram Sthal — Kreem Kund",
+    "name_hi": "बाबा कीनाराम स्थल — क्रीं कुंड",
+    "names": {
+      "ta": "பாபா கீனாராம் ஸ்தல் — க்ரீம் குண்ட்",
+      "te": "బాబా కీనారామ్ స్థల్ — క్రీం కుండ్",
+      "kn": "ಬಾಬಾ ಕೀನಾರಾಮ್ ಸ್ಥಲ್ — ಕ್ರೀಂ ಕುಂಡ್",
+      "ml": "ബാബാ കീനാറാം സ്ഥൽ — ക്രീം കുണ്ഡ്",
+      "bn": "বাবা কীনারাম স্থল — ক্রীং কুণ্ড",
+      "or": "ବାବା କୀନାରାମ ସ୍ଥଳ — କ୍ରୀଂ କୁଣ୍ଡ",
+      "as": "বাবা কীনাৰাম স্থল — ক্ৰীং কুণ্ড",
+      "gu": "બાબા કીનારામ સ્થળ — ક્રીં કુંડ",
+      "pa": "ਬਾਬਾ ਕੀਨਾਰਾਮ ਸਥਲ — ਕ੍ਰੀਂ ਕੁੰਡ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "math",
+    "lat": 25.2961,
+    "lng": 83.0026,
+    "coordsVerified": true,
+    "summary": "The ashram at Ravindrapuri, near Shivala, that the Aghor tradition regards as its headquarters. Baba Keenaram, its first peethadheeshwar (1620–1771 in the sthal's own record), rekindled the dhuni here and blessed the Kreem Kund, the sacred tank beside it. His samadhi is here, and the eleventh peethadheeshwar, Baba Siddharth Gautam Ram, has led the seat since 1978.",
+    "story": "In the sthal's own words, Aghor is a simple, natural state of consciousness, and Kreem Kund is where the Kailashi and Girnari lineages meet, joining Shaiva, Vaishnava and Shakta paths. Ash from the dhuni is the only prasad. Baba Keenaram's Viveksar is held as the core text of Aghor.",
+    "bestTime": "Morning darshan; Baba Keenaram's janmotsav on Aghor Chaturdashi and his chhathi on Lolark Shashthi (both in Bhadrapada, Aug–Sep) draw large crowds",
+    "image": "/media/places/keenaram-sthal.jpg",
+    "tips": [
+      "This is a living ashram, not a spectacle: come for darshan of the dhuni and samadhis, keep quiet and follow the sevaks' directions.",
+      "About 1 km north of Assi Ghat; combine it with Lolark Kund, the other focus of Lolark Shashthi, a short walk south.",
+      "On the janmotsav and Lolark Shashthi a fair with hundreds of stalls fills the road outside and darshan is by queue."
+    ],
+    "glance": {
+      "timings": "No official hours published; check with the ashram",
+      "entry": "No ticket reported",
+      "duration": "30–45 min",
+      "season": "Oct–Mar; janmotsav and Lolark Shashthi (Aug–Sep)",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Aghoracharya Baba Kinaram Aghor Shodh evam Seva Sansthan — About Kring Kund (official)",
+          "url": "https://aghorpeeth.org/about-kring-kund.html",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Aghorpeeth.org — 'Lolark Chhath', sixth-day ceremony of the Aghoracharya (17 Sep 2026)",
+          "url": "https://aghorpeeth.org/news-details.html&id=32",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Wikipedia — Baba Keenaram Sthal (coordinates)",
+        "url": "https://en.wikipedia.org/wiki/Baba_Keenaram_Sthal",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Aghorpeeth.org (official) — About Kring Kund",
+        "url": "https://aghorpeeth.org/about-kring-kund.html",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Aghorpeeth.org (official) — Peethadheeshwars of Kring Kund",
+        "url": "https://aghorpeeth.org/about-abbots.html",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Aghorpeeth.org (official) — Aghoracharya Baba Kinaram Ji",
+        "url": "https://aghorpeeth.org/baba-kinaram-ji.html",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "शिवाला के पास रवीन्द्रपुरी का वह आश्रम, जिसे अघोर परंपरा अपना मुख्य पीठ मानती है। इसके पहले पीठाधीश्वर बाबा कीनाराम (स्थल के अपने अभिलेख में 1620–1771) ने यहाँ धूनी फिर से जगाई और पास के पवित्र क्रीं कुंड को आशीर्वाद दिया। उनकी समाधि यहीं है, और 1978 से ग्यारहवें पीठाधीश्वर बाबा सिद्धार्थ गौतम राम गद्दी पर हैं।",
+        "story": "स्थल के अपने शब्दों में अघोर चेतना की सहज, स्वाभाविक अवस्था है, और क्रीं कुंड वह स्थान है जहाँ कैलाशी और गिरनारी परंपराएँ मिलती हैं, जो शैव, वैष्णव और शाक्त धाराओं को जोड़ता है। धूनी की भभूत ही एकमात्र प्रसाद है। बाबा कीनाराम का 'विवेकसार' अघोर का मूल ग्रंथ माना जाता है।",
+        "bestTime": "सुबह के दर्शन; अघोर चतुर्दशी पर बाबा कीनाराम का जन्मोत्सव और लोलार्क षष्ठी पर उनकी छठी (दोनों भाद्रपद में, अगस्त–सितंबर) पर भारी भीड़ होती है",
+        "tips": [
+          "यह जीवित आश्रम है, तमाशा नहीं: धूनी और समाधियों के दर्शन के लिए आएँ, शांत रहें और सेवकों के निर्देश मानें।",
+          "अस्सी घाट से लगभग 1 किमी उत्तर; लोलार्क कुंड के साथ देखें, जो लोलार्क षष्ठी का दूसरा केंद्र है और थोड़ी दूरी पर दक्षिण में है।",
+          "जन्मोत्सव और लोलार्क षष्ठी पर बाहर सड़क पर सैकड़ों दुकानों का मेला लगता है और दर्शन कतार से होते हैं।"
+        ],
+        "glance": {
+          "timings": "कोई आधिकारिक समय प्रकाशित नहीं; आश्रम से पूछ लें",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "30 से 45 मिनट",
+          "season": "अक्टूबर से मार्च; जन्मोत्सव और लोलार्क षष्ठी (अगस्त–सितंबर)"
+        }
+      }
+    }
+  },
+  {
+    "id": "lahartara-kabir",
+    "name_en": "Lahartara — Sant Kabir Prakatya Sthal",
+    "name_hi": "लहरतारा — संत कबीर प्राकट्य स्थल",
+    "names": {
+      "ta": "லஹர்தாரா — சந்த் கபீர் பிராகட்ய ஸ்தல்",
+      "te": "లహర్‌తారా — సంత్ కబీర్ ప్రాకట్య స్థల్",
+      "kn": "ಲಹರ್‌ತಾರಾ — ಸಂತ ಕಬೀರ್ ಪ್ರಾಕಟ್ಯ ಸ್ಥಳ",
+      "ml": "ലഹർതാരാ — സന്ത് കബീർ പ്രാകട്യ സ്ഥൽ",
+      "bn": "লহরতারা — সন্ত কবীর প্রাকট্য স্থল",
+      "or": "ଲହରତାରା — ସନ୍ତ କବୀର ପ୍ରାକଟ୍ୟ ସ୍ଥଳ",
+      "as": "লহৰতাৰা — সন্ত কবীৰ প্ৰাকট্য স্থল",
+      "gu": "લહરતારા — સંત કબીર પ્રાકટ્ય સ્થળ",
+      "pa": "ਲਹਿਰਤਾਰਾ — ਸੰਤ ਕਬੀਰ ਪ੍ਰਗਟ ਅਸਥਾਨ"
+    },
+    "faith": [
+      "bhakti"
+    ],
+    "type": "math",
+    "lat": 25.3144,
+    "lng": 82.969,
+    "coordsVerified": true,
+    "summary": "The pond at Lahartara, about 2.5 km from Varanasi Cantt station, where by tradition the weaver couple Neeru and Neema found the infant Kabir on a lotus. Kabir Panthis call it his prakatya sthal, the place where he appeared rather than was born. About 8 of the pond's original 17 acres belong to the Sadguru Kabir Prakatya Dham, which keeps a temple and satsang hall by the water and has been building a larger memorial; part of the rest is protected by the UP archaeology directorate.",
+    "story": "Kabir Panthis hold that Kabir was not born of a mother but appeared on a lotus in the pond, and that Neeru and Neema, coming to bathe, carried him home to the weavers' quarter that is now Kabir Chaura.",
+    "bestTime": "Morning; Kabir Jayanti (Jyeshtha Purnima, May–June), when the panth marks his prakat diwas here and at Kabir Chaura",
+    "image": "/media/places/lahartara-kabir.jpg",
+    "tips": [
+      "This is where Kabir was found; where he lived, worked and is remembered with his loom is Kabir Chaura Math, about 4 km east. Seeing both tells the whole story.",
+      "Parts of the pond outside the Dham's land are neglected; the temple side is the place to visit.",
+      "Leave footwear at the temple entrance and keep voices low during satsang."
+    ],
+    "glance": {
+      "timings": "Not published; open in daytime (reported) — confirm locally",
+      "duration": "30–45 min",
+      "season": "Oct–Mar; Kabir Jayanti (May–Jun)",
+      "crowd": "quiet",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Wikipedia — Lahartara Pond (2.5 km from Varanasi Cantt; 8 acres with Sadguru Kabir Prakatya Dham)",
+          "url": "https://en.wikipedia.org/wiki/Lahartara_Pond",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Sadguru Kabir Prakatya Dham, Lahartara — the Dham's blog (memorial under construction, 2017–18)",
+          "url": "https://kabirlahartaradham.blogspot.com",
+          "accessed": "2026-10-30"
+        }
+      ],
+      "entry": "No ticket reported"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia — Lahartara Pond",
+        "url": "https://en.wikipedia.org/wiki/Lahartara_Pond",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "OpenStreetMap — Lahartara Talab (way 26940931, 25.3144, 82.9690)",
+        "url": "https://www.openstreetmap.org/way/26940931",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Deccan Chronicle — Kabir Saheb Prakat (appearance) Diwas",
+        "url": "https://deccanchronicle.com/in-focus/240621/kabir-saheb-prakat-appearance-diwas.html",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "IndiTales — Finding Kabir: the poet and saint in Kashi",
+        "url": "https://inditales.com/kabir-in-kashi/",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "वाराणसी कैंट स्टेशन से लगभग 2.5 किमी दूर लहरतारा का तालाब, जहाँ परंपरा के अनुसार जुलाहा दंपती नीरू और नीमा को शिशु कबीर कमल पर मिले। कबीर पंथी इसे उनका प्राकट्य स्थल कहते हैं, यानी जहाँ वे प्रकट हुए, जन्मे नहीं। तालाब के मूल 17 एकड़ में से लगभग 8 एकड़ सद्गुरु कबीर प्राकट्य धाम के पास है, जो पानी के किनारे मंदिर और सत्संग भवन रखता है और एक बड़ा स्मारक बना रहा है; शेष का एक भाग उत्तर प्रदेश पुरातत्त्व निदेशालय के संरक्षण में है।",
+        "story": "कबीर पंथ मानता है कि कबीर किसी माँ से जन्मे नहीं, तालाब में कमल पर प्रकट हुए, और स्नान को आए नीरू-नीमा उन्हें जुलाहों की उस बस्ती में ले गए जो आज कबीर चौरा है।",
+        "bestTime": "सुबह; कबीर जयंती (ज्येष्ठ पूर्णिमा, मई–जून), जब पंथ यहाँ और कबीर चौरा में प्राकट्य दिवस मनाता है",
+        "tips": [
+          "यहाँ कबीर मिले थे; जहाँ वे रहे, करघा चलाया और जहाँ उनकी स्मृति है, वह कबीर चौरा मठ लगभग 4 किमी पूर्व में है। दोनों देखने से पूरी कहानी मिलती है।",
+          "धाम की भूमि के बाहर तालाब के कुछ भाग उपेक्षित हैं; मंदिर वाला किनारा ही देखने योग्य है।",
+          "मंदिर के द्वार पर जूते उतारें और सत्संग के समय धीमे बोलें।"
+        ],
+        "glance": {
+          "timings": "समय प्रकाशित नहीं; दिन में खुला (बताया गया) — स्थानीय रूप से पुष्टि करें",
+          "duration": "30 से 45 मिनट",
+          "season": "अक्टूबर से मार्च; कबीर जयंती (मई–जून)",
+          "entry": "कोई टिकट नहीं बताया गया"
+        }
+      }
+    }
+  },
+  {
+    "id": "shreyansnath-jain",
+    "name_en": "Shreyansnath Jain Temple, Sarnath (Singhpuri)",
+    "name_hi": "श्रेयांसनाथ जैन मंदिर, सारनाथ (सिंहपुरी)",
+    "names": {
+      "ta": "ஸ்ரேயாம்சநாதர் ஜைனக் கோயில், சாரநாத் (சிம்மபுரி)",
+      "te": "శ్రేయాంసనాథ జైన ఆలయం, సారనాథ్ (సింహపురి)",
+      "kn": "ಶ್ರೇಯಾಂಸನಾಥ ಜೈನ ಬಸದಿ, ಸಾರನಾಥ (ಸಿಂಹಪುರಿ)",
+      "ml": "ശ്രേയാംസനാഥ ജൈന ക്ഷേത്രം, സാരനാഥ് (സിംഹപുരി)",
+      "bn": "শ্রেয়াংসনাথ জৈন মন্দির, সারনাথ (সিংহপুরী)",
+      "or": "ଶ୍ରେୟାଂସନାଥ ଜୈନ ମନ୍ଦିର, ସାରନାଥ (ସିଂହପୁରୀ)",
+      "as": "শ্ৰেয়াংসনাথ জৈন মন্দিৰ, সাৰনাথ (সিংহপুৰী)",
+      "gu": "શ્રેયાંસનાથ જૈન મંદિર, સારનાથ (સિંહપુરી)",
+      "pa": "ਸ਼੍ਰੇਯਾਂਸਨਾਥ ਜੈਨ ਮੰਦਰ, ਸਾਰਨਾਥ (ਸਿੰਘਪੁਰੀ)"
+    },
+    "faith": [
+      "jain"
+    ],
+    "type": "temple",
+    "lat": 25.3806,
+    "lng": 83.0239,
+    "coordsVerified": true,
+    "summary": "Jains revere Simhapuri, today's Singhpuri by Sarnath, as the birthplace of Shreyansnath, the 11th Tirthankara, and hold that four of his five kalyanakas took place here: conception, birth, renunciation and omniscience. The Digambar temple, built in 1824, stands about 70 metres southwest of the Dhamek Stupa; its black image of Shreyansnath is seated in padmasana and its walls are painted with the life of Mahavira. A Shwetambar temple stands at Hiravanpur, about 1.5 km away.",
+    "bestTime": "Morning, together with the Dhamek Stupa before the tour buses arrive",
+    "image": "/media/places/shreyansnath-jain.jpg",
+    "tips": [
+      "It is a short walk from the Dhamek Stupa; visit both in one trip.",
+      "Leather items stay outside and footwear comes off at the gate.",
+      "Digambar and Shwetambar dharmashalas near the temples take pilgrims."
+    ],
+    "glance": {
+      "timings": "Not published by the trust; open from morning to evening (reported) — confirm locally",
+      "duration": "20–30 min",
+      "season": "Oct–Mar",
+      "crowd": "quiet",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Tirth Darshan Guide (jainqq.org) — Sinhapuri: images, temples, dharmashalas, Digambar Jain Samaj Kashi",
+          "url": "https://jainqq.org/pagetext/Tirth_Darshan_Guide/006523/30",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Sri Digamber Jain Temple, Sarnath — Airial travel guide (morning to evening, no fee)",
+          "url": "https://airial.travel/attractions/india/varanasi/digambar-jain-temple-sarnath-t2WbEffM",
+          "accessed": "2026-10-30"
+        }
+      ],
+      "entry": "No ticket reported"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia — Sarnath Jain Tirth",
+        "url": "https://en.wikipedia.org/wiki/Sarnath_Jain_Tirth",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Tirth Darshan Guide (jainqq.org) — Sinhapuri Teerth",
+        "url": "https://jainqq.org/pagetext/Tirth_Darshan_Guide/006523/29",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "OpenStreetMap — Digambar Jain Mandir, Sarnath (way 103168871)",
+        "url": "https://www.openstreetmap.org/way/103168871",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "जैन सारनाथ के पास आज की सिंहपुरी को 11वें तीर्थंकर श्रेयांसनाथ की जन्मभूमि मानते हैं, और यहाँ उनके पाँच में से चार कल्याणक मानते हैं: गर्भ, जन्म, दीक्षा और केवलज्ञान। 1824 में बना दिगंबर मंदिर धमेख स्तूप से लगभग 70 मीटर दक्षिण-पश्चिम में है; इसमें श्रेयांसनाथ की श्याम वर्ण पद्मासन प्रतिमा है और दीवारों पर महावीर के जीवन के चित्र हैं। श्वेतांबर मंदिर लगभग 1.5 किमी दूर हीरावनपुर में है।",
+        "bestTime": "सुबह, टूर बसों से पहले, धमेख स्तूप के साथ",
+        "tips": [
+          "धमेख स्तूप से कुछ क़दम की दूरी है; दोनों एक साथ देखें।",
+          "चमड़े की वस्तुएँ बाहर रहती हैं और जूते द्वार पर उतारे जाते हैं।",
+          "मंदिरों के पास दिगंबर और श्वेतांबर धर्मशालाएँ तीर्थयात्रियों को ठहराती हैं।"
+        ],
+        "glance": {
+          "timings": "ट्रस्ट ने समय प्रकाशित नहीं किया; सुबह से शाम तक खुला (बताया गया) — स्थानीय रूप से पुष्टि करें",
+          "duration": "20 से 30 मिनट",
+          "season": "अक्टूबर से मार्च",
+          "entry": "कोई टिकट नहीं बताया गया"
+        }
+      }
+    }
+  },
+  {
+    "id": "bharat-kala-bhavan",
+    "name_en": "Bharat Kala Bhavan, BHU",
+    "name_hi": "भारत कला भवन, काशी हिन्दू विश्वविद्यालय",
+    "names": {
+      "ta": "பாரத் கலா பவன், பி.எச்.யு.",
+      "te": "భారత్ కళా భవన్, బీహెచ్‌యూ",
+      "kn": "ಭಾರತ ಕಲಾ ಭವನ, ಬಿಎಚ್‌ಯು",
+      "ml": "ഭാരത് കലാ ഭവൻ, ബി.എച്ച്.യു.",
+      "bn": "ভারত কলা ভবন, বিএইচইউ",
+      "or": "ଭାରତ କଳା ଭବନ, ବିଏଚୟୁ",
+      "as": "ভাৰত কলা ভৱন, বি এইচ ইউ",
+      "gu": "ભારત કલા ભવન, બીએચયુ",
+      "pa": "ਭਾਰਤ ਕਲਾ ਭਵਨ, ਬੀ.ਐੱਚ.ਯੂ."
+    },
+    "faith": [
+      "secular"
+    ],
+    "type": "museum",
+    "lat": 25.2715,
+    "lng": 82.996,
+    "coordsVerified": true,
+    "summary": "The art and archaeology museum of Banaras Hindu University, begun on 1 January 1920 as the Bharat Kala Parishad and part of BHU since 1950. Its holdings of more than one lakh objects are best known for miniature paintings and sculpture, shown with Banarasi textiles, coins and terracottas across fourteen galleries. The present building was inaugurated by Jawaharlal Nehru in 1962.",
+    "story": "The collection grew out of the lifelong work of Rai Krishnadasa, a Hindi writer and pioneering art historian of Banaras. It moved to the Kashi Nagari Pracharini Sabha in 1929, where it took the name Bharat Kala Bhavan.",
+    "bestTime": "Weekday mornings after opening; closed on Sundays and national holidays",
+    "image": "/media/places/bharat-kala-bhavan.jpg",
+    "tips": [
+      "In May and June the museum keeps summer hours, 07:30–13:00, so go early.",
+      "BHU students and staff enter free; students from elsewhere pay ₹10 with a valid ID card.",
+      "Look for the Nicholas Roerich paintings of the Himalaya and the Gupta-period Krishna lifting Govardhan; the Alice Boner Gallery was listed as under renovation on the museum's page."
+    ],
+    "glance": {
+      "timings": "10:30–16:30 Mon–Sat; May–June 07:30–13:00; closed Sun and national holidays",
+      "entry": "₹20 (Indian) · ₹250 (foreign) · ₹10 (students with ID) · free for BHU students and staff",
+      "duration": "1–2 h",
+      "season": "Year-round (indoors); Oct–Mar for the campus",
+      "crowd": "quiet",
+      "photography": "outside-only",
+      "dress": "any",
+      "verified": true,
+      "sources": [
+        {
+          "title": "Bharat Kala Bhawan — Home (Banaras Hindu University): timings and ticket charges",
+          "url": "https://www.bhu.ac.in/Site/Page/1_3318_5950_Bharat-Kala-Bhawan-Home",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Incredible India (Ministry of Tourism) — Bharat Kala Bhavan",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/bharat-kala-bhavan",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Bharat Kala Bhawan — About the Museum (Banaras Hindu University)",
+        "url": "https://www.bhu.ac.in/Site/Page/1_3318_6401_Bharat-Kala-Bhawan-About-the-Museum",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Bharat Kala Bhawan — Nicholas Roerich Gallery (Banaras Hindu University)",
+        "url": "https://www.bhu.ac.in/Site/Page/1_3318_5955_6261_Bharat-Kala-Bhawan-Nicholas-Roerich-Gallery",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Bharat Kala Bhavan (coordinates)",
+        "url": "https://en.wikipedia.org/wiki/Bharat_Kala_Bhavan",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "OpenStreetMap — Bharat Kala Bhavan (way 322459733)",
+        "url": "https://www.openstreetmap.org/way/322459733",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "काशी हिन्दू विश्वविद्यालय का कला एवं पुरातत्त्व संग्रहालय, जो 1 जनवरी 1920 को भारत कला परिषद के रूप में शुरू हुआ और 1950 से विश्वविद्यालय का अंग है। एक लाख से अधिक वस्तुओं का यह संग्रह विशेष रूप से लघुचित्रों और मूर्तियों के लिए प्रसिद्ध है; चौदह वीथिकाओं में बनारसी वस्त्र, सिक्के और मृण्मूर्तियाँ भी हैं। वर्तमान भवन का उद्घाटन 1962 में जवाहरलाल नेहरू ने किया।",
+        "story": "यह संग्रह बनारस के हिंदी लेखक और अग्रणी कला-इतिहासकार राय कृष्णदास के जीवन भर के परिश्रम से बना। 1929 में यह काशी नागरी प्रचारिणी सभा में गया और वहीं इसका नाम भारत कला भवन पड़ा।",
+        "bestTime": "कार्यदिवसों में खुलने के बाद सुबह; रविवार और राष्ट्रीय अवकाश पर बंद",
+        "tips": [
+          "मई और जून में संग्रहालय गर्मी के समय, सुबह 7:30 से दोपहर 1 बजे तक खुलता है, इसलिए जल्दी जाएँ।",
+          "बीएचयू के छात्र और कर्मचारी निःशुल्क; बाहर के छात्र वैध पहचान-पत्र दिखाकर ₹10 देते हैं।",
+          "हिमालय पर निकोलस रोरिक के चित्र और गुप्तकालीन गोवर्धनधारी कृष्ण अवश्य देखें; संग्रहालय के पेज पर ऐलिस बोनर वीथिका नवीनीकरण के लिए बंद बताई गई है।"
+        ],
+        "glance": {
+          "timings": "सोमवार से शनिवार सुबह 10:30 से शाम 4:30; मई-जून में सुबह 7:30 से दोपहर 1 बजे; रविवार और राष्ट्रीय अवकाश पर बंद",
+          "entry": "₹20 (भारतीय) · ₹250 (विदेशी) · ₹10 (पहचान-पत्र सहित छात्र) · बीएचयू छात्र व कर्मचारी निःशुल्क",
+          "duration": "1 से 2 घंटे",
+          "season": "साल भर (भवन के भीतर); परिसर घूमने के लिए अक्टूबर से मार्च"
+        }
+      }
+    }
   }
 ]
