@@ -18,6 +18,7 @@ import ListingFaq from "@/components/pages/ListingFaq";
 import SectionDots from "@/components/ui/SectionDots";
 import SiteFooter from "@/components/ui/SiteFooter";
 import Static from "@/components/ui/Static";
+import { placeCount } from "@/lib/content";
 import { SECTIONS } from "@/lib/sections";
 import type { Locale } from "@/lib/i18n/locales";
 
@@ -35,7 +36,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   // explorer and map, itinerary tabs, aarti lamps, header menus, sound toggle.
   return (
     <main id="content" className="flex flex-1 flex-col">
-      <Static><JsonLd locale={loc} name={meta("title")} description={meta("description")} siteName={meta("siteName")} /></Static>
+      <Static><JsonLd locale={loc} name={meta("title")} description={meta("description", { count: placeCount(loc) })} siteName={meta("siteName")} /></Static>
       <Hero locale={loc} />
       <RippleWipe />
       <DayInKashi locale={loc} />

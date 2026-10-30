@@ -5,6 +5,7 @@ import ListingShell from "@/components/pages/ListingShell";
 import PhotoBand from "@/components/pages/PhotoBand";
 import EnglishNote from "@/components/ui/EnglishNote";
 import PlaceCard from "@/components/ui/PlaceCard";
+import { placeCount } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { alternatesFor, pageUrl } from "@/lib/pages";
 import { getPlacesProps } from "@/lib/sectionProps";
@@ -32,7 +33,7 @@ const GROUPS: PlaceType[][] = [["ghat"], ["temple"], ["stupa", "monastery"], ["f
 export async function listingMetadata(locale: string, kind: ListingKind): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "places" });
   const meta = await getTranslations({ locale, namespace: "meta" });
-  return { title: meta(KEY_OF[kind].meta), description: t(KEY_OF[kind].intro), alternates: alternatesFor(locale, `/${kind}`) };
+  return { title: meta(KEY_OF[kind].meta, { count: placeCount(locale) }), description: t(KEY_OF[kind].intro, { count: placeCount(locale) }), alternates: alternatesFor(locale, `/${kind}`) };
 }
 
 export default async function PlacesListing({ locale, kind }: { locale: Locale; kind: ListingKind }) {
@@ -67,7 +68,7 @@ export default async function PlacesListing({ locale, kind }: { locale: Locale; 
       ]}
       title={tp(KEY_OF[kind].title)}
       secondary={secondary}
-      intro={<p>{tp(KEY_OF[kind].intro)}</p>}
+      intro={<p>{tp(KEY_OF[kind].intro, { count: placeCount(locale) })}</p>}
       band={<PhotoBand photos={list.filter((i) => i.photo).slice(0, 4).map((i) => i.photo)} faith="hindu" />}
     >
       <div className="container-kashi">

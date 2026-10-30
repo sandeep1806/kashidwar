@@ -2,7 +2,7 @@
   "meta": {
     "siteName": "Kashi",
     "title": "Kashi — The City of Light",
-    "description": "Varanasi (Kashi, Banaras) travel guide: 35 places with timings and entry, all 84 ghats, Ganga Aarti time, Kashi Vishwanath darshan, festivals, 1–3 day plans.",
+    "description": "Varanasi (Kashi, Banaras) travel guide: {count} places with timings and entry, all 84 ghats, Ganga Aarti time, Kashi Vishwanath darshan, festivals, 1–3 day plans.",
     "homeTitle": "Kashidwar: Varanasi travel guide — places to visit, ghats, Ganga Aarti",
     "placeTitle": "{name}, Varanasi: timings, history & guide",
     "festivalTitle": "{name} {year} in Varanasi: date, time and guide",
@@ -16,7 +16,7 @@
     "placeDescriptionFacts": "{name}, Varanasi: {facts}. {summary}",
     "ghatsTitle": "Ghats of Varanasi: all 84 ghats, Ganga Aarti timings & map",
     "templesTitle": "Temples in Varanasi: darshan timings, list & how to reach",
-    "placesTitle": "35 places to visit in Varanasi: ghats, temples, Sarnath & more",
+    "placesTitle": "{count} places to visit in Varanasi: ghats, temples, Sarnath & more",
     "mapTitle": "Varanasi tourist map: ghats, temples, Sarnath with distances",
     "festivalsListTitle": "Festivals of Varanasi 2026–27: dates, Dev Deepawali, Ramlila & more",
     "festivalsListDesc": "Every festival of Varanasi with its next date: Dev Deepawali, Ganga Mahotsav, Ramnagar Ramlila, Mahashivratri, Masan Holi, Chhath, Buddha Purnima, Guru Nanak Jayanti and more.",
@@ -161,10 +161,10 @@
     "allTemples": "All temples",
     "lead": "Ghats, temples, stupas, mosques, gurudwaras, churches: filter, find on the map, tap to read.",
     "allTitle": "Places to visit in Varanasi",
-    "allIntro": "All 35 places on this site in one list: the ghats, Kashi Vishwanath and the temples, Sarnath, the forts, and the mosque, gurudwaras, Jain temples, Kabir Math and church, each with timings, entry and how to reach.",
+    "allIntro": "All {count} places on this site in one list: the ghats, Kashi Vishwanath and the temples, Sarnath, the forts, and the mosque, gurudwaras, Jain temples, Kabir Math and church, each with timings, entry and how to reach.",
     "allPlaces": "All places",
     "ghatsListTitle": "All 84 ghats of Varanasi, south to north",
-    "ghatsListNote": "The traditional 84 ghats from Assi to Adi Keshav, plus Namo Ghat (2024). Linked names have their own page. Order after"
+    "ghatsListNote": "The traditional 84 ghats from Assi to Adi Keshav, plus Namo Ghat (2024) and Sant Ravidas Ghat (2009, south of Assi). Linked names have their own page. Order after"
   },
   "faiths": {
     "title": "One Kashi, every faith",
@@ -492,7 +492,7 @@
   },
   "map": {
     "title": "Varanasi tourist map",
-    "intro": "All 35 ghats, temples, Sarnath, forts and places of every faith on one map, with the distance of each from Godowlia crossing and Varanasi Junction. Tap a pin to open the place.",
+    "intro": "All {count} ghats, temples, Sarnath, forts and places of every faith on one map, with the distance of each from Godowlia crossing and Varanasi Junction. Tap a pin to open the place.",
     "distances": "Distances from Godowlia and the station",
     "type": "Type"
   },

@@ -516,7 +516,7 @@
       "Allow half a day: the stupa, Mulagandha Kuti Vihar, the Thai and Tibetan temples and the museum are all walkable."
     ],
     "glance": {
-      "timings": "Site sunrise–sunset (~06:00–18:00); museum 10:00–17:00, closed Fri",
+      "timings": "Site sunrise–sunset (~06:00–18:00); museum 09:00 or 10:00–17:00 (sources differ), closed Fri",
       "entry": "Site ₹25 (Indian) · ₹300 (foreign); museum ₹5",
       "duration": "2–3 h (site + museum)",
       "season": "Oct–Mar; Buddha Purnima (Apr–May)",
@@ -569,7 +569,7 @@
           "आधा दिन रखें: स्तूप, मूलगंध कुटी विहार, थाई और तिब्बती मंदिर और संग्रहालय सब पैदल दूरी पर हैं।"
         ],
         "glance": {
-          "timings": "स्थल सूर्योदय–सूर्यास्त (~6–18 बजे); संग्रहालय 10–17 बजे, शुक्रवार बंद",
+          "timings": "स्थल सूर्योदय–सूर्यास्त (~6–18 बजे); संग्रहालय 9 या 10 से 17 बजे (स्रोतों में अंतर), शुक्रवार बंद",
           "entry": "स्थल ₹25 (भारतीय) · ₹300 (विदेशी); संग्रहालय ₹5",
           "duration": "2–3 घंटे (स्थल व संग्रहालय)",
           "season": "अक्टूबर–मार्च; बुद्ध पूर्णिमा (अप्रैल–मई)"
@@ -2940,6 +2940,665 @@
           "entry": "निःशुल्क",
           "duration": "10–20 मिनट",
           "season": "अक्टूबर–मार्च; देव दीपावली (नवंबर)"
+        }
+      }
+    }
+  },
+  {
+    "id": "swarved-mahamandir",
+    "name_en": "Swarved Mahamandir",
+    "name_hi": "स्वर्वेद महामंदिर",
+    "names": {
+      "ta": "ஸ்வர்வேத் மகாமந்திர்",
+      "te": "స్వర్వేద్ మహామందిర్",
+      "kn": "ಸ್ವರ್ವೇದ ಮಹಾಮಂದಿರ",
+      "ml": "സ്വർവേദ് മഹാമന്ദിർ",
+      "bn": "স্বর্বেদ মহামন্দির",
+      "or": "ସ୍ୱର୍ବେଦ ମହାମନ୍ଦିର",
+      "as": "স্বৰ্বেদ মহামন্দিৰ",
+      "gu": "સ્વર્વેદ મહામંદિર",
+      "pa": "ਸਵਰਵੇਦ ਮਹਾਮੰਦਰ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.404,
+    "lng": 83.0691,
+    "coordsVerified": true,
+    "summary": "A seven-storey meditation temple of the Vihangam Yoga tradition at Umraha, about 12 km from the city centre, opened by the Prime Minister on 18 December 2023. It covers more than 3 lakh square feet and seats about 20,000 people for meditation. Verses of the Swarved are carved into its white marble walls, framed in carved pink sandstone beneath lotus domes.",
+    "story": "The Swarved is the spiritual treatise of Sadguru Sadafal Deo Ji Maharaj (1888–1954), founder of Vihangam Yoga, recording his realisations of the union of the soul with the Supreme Soul. The trust describes the Mahamandir as that text made into a building, open to seekers of every background.",
+    "bestTime": "Winter mornings or the evening aarti and meditation (18:00–20:00); the annual Vihangam Yoga celebration in mid-December is the busiest time",
+    "image": "/media/places/swarved-mahamandir.jpg",
+    "tips": [
+      "It is outside the city at Umraha, on the Chaubepur side: go by taxi or auto, and it pairs well with a visit to Sarnath.",
+      "Join the evening session of Swarved recitation, meditation and aarti, held daily from 18:00 to 20:00."
+    ],
+    "glance": {
+      "timings": "Daily 08:00–21:00 (summer), 08:00–20:00 (winter); darshan & meditation 04:00–06:00 and 18:00–20:00",
+      "entry": "Free (no fee for darshan, meditation or aarti)",
+      "duration": "1–2 h",
+      "season": "Oct–Mar; annual celebration (mid-Dec)",
+      "crowd": "busy",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": true,
+      "sources": [
+        {
+          "title": "Swarved Mahamandir Dham (trust) — darshan timings; no fee for meditation, aarti and darshan",
+          "url": "https://swarvedmahamandir.org/",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "PIB — PM inaugurates Swarved Mahamandir in Varanasi, Uttar Pradesh (18 Dec 2023)",
+        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1987631",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Swarved Mahamandir (Vihangam Yoga Sansthan) — 20,000 seats, 3 lakh sq ft, seven floors",
+        "url": "https://www.swarved-mahamandir.org/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Business Today — PM inaugurates meditation centre spread across 3 lakh sq ft (18 Dec 2023)",
+        "url": "https://www.businesstoday.in/latest/trends/story/swarved-mahamandir-pm-modi-inaugurates-meditation-centre-spread-across-3-lakh-sq-ft-all-you-need-to-know-409857-2023-12-18",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Swarved Mahamandir (coordinates)",
+        "url": "https://en.wikipedia.org/wiki/Swarved_Mahamandir",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "उमरहाँ में, शहर के केंद्र से लगभग 12 किलोमीटर दूर, विहंगम योग परंपरा का सात मंज़िला ध्यान मंदिर, जिसका लोकार्पण प्रधानमंत्री ने 18 दिसंबर 2023 को किया। यह 3 लाख वर्ग फ़ुट से अधिक में फैला है और इसमें लगभग 20,000 लोग एक साथ ध्यान कर सकते हैं। सफ़ेद संगमरमर की दीवारों पर स्वर्वेद के दोहे उकेरे गए हैं, चारों ओर गुलाबी बलुआ पत्थर की नक़्क़ाशी और ऊपर कमल-आकार के गुंबद।",
+        "story": "स्वर्वेद विहंगम योग के प्रणेता सद्गुरु सदाफलदेव जी महाराज (1888–1954) का आध्यात्मिक ग्रंथ है, जिसमें जीवात्मा और परमात्मा के मिलन की उनकी अनुभूतियाँ दर्ज हैं। ट्रस्ट महामंदिर को इसी ग्रंथ का साकार रूप बताता है, जो हर पृष्ठभूमि के साधकों के लिए खुला है।",
+        "bestTime": "सर्दियों की सुबह या शाम की आरती और ध्यान (18–20 बजे); दिसंबर के मध्य में विहंगम योग का वार्षिकोत्सव सबसे भीड़ वाला समय है",
+        "tips": [
+          "यह शहर से बाहर उमरहा में, चौबेपुर की ओर है: टैक्सी या ऑटो से जाएं; सारनाथ के साथ यहां आना आसान रहता है।",
+          "शाम 6 से 8 बजे तक रोज़ होने वाले स्वर्वेद पाठ, ध्यान और आरती में शामिल हों।"
+        ],
+        "glance": {
+          "timings": "रोज़ सुबह 8 से रात 9 बजे (गर्मी), सुबह 8 से रात 8 बजे (सर्दी); दर्शन व ध्यान सुबह 4–6 और शाम 6–8 बजे",
+          "entry": "निःशुल्क (दर्शन, ध्यान और आरती का कोई शुल्क नहीं)",
+          "duration": "1 से 2 घंटे",
+          "season": "अक्टूबर से मार्च; वार्षिकोत्सव (दिसंबर के मध्य)"
+        }
+      }
+    }
+  },
+  {
+    "id": "sarnath-museum",
+    "name_en": "Sarnath Archaeological Museum",
+    "name_hi": "सारनाथ पुरातत्व संग्रहालय",
+    "names": {
+      "ta": "சாரநாத் தொல்லியல் அருங்காட்சியகம்",
+      "te": "సారనాథ్ పురావస్తు మ్యూజియం",
+      "kn": "ಸಾರನಾಥ ಪುರಾತತ್ವ ವಸ್ತುಸಂಗ್ರಹಾಲಯ",
+      "ml": "സാരനാഥ് പുരാവസ്തു മ്യൂസിയം",
+      "bn": "সারনাথ প্রত্নতাত্ত্বিক সংগ্রহশালা",
+      "or": "ସାରନାଥ ପ୍ରତ୍ନତାତ୍ତ୍ୱିକ ସଂଗ୍ରହାଳୟ",
+      "as": "সাৰনাথ পুৰাতাত্ত্বিক সংগ্ৰহালয়",
+      "gu": "સારનાથ પુરાતત્ત્વ સંગ્રહાલય",
+      "pa": "ਸਾਰਨਾਥ ਪੁਰਾਤੱਤਵ ਅਜਾਇਬਘਰ"
+    },
+    "faith": [
+      "buddhist"
+    ],
+    "type": "museum",
+    "lat": 25.3795,
+    "lng": 83.0235,
+    "coordsVerified": true,
+    "summary": "The Archaeological Survey of India's oldest site museum, built beside the excavated deer park and completed in 1910. Its central hall holds the polished sandstone Lion Capital of Ashoka, about 250 BCE, which F. O. Oertel's excavation brought to light in 1904–05 and which India took as its national emblem. Nearby sits the 5th-century Gupta Buddha in dharmachakra pravartana mudra, with the wheel and the first disciples carved on the pedestal; in all, five galleries span the 3rd century BCE to the 12th century CE.",
+    "story": "The seated Buddha shows the hands turning the wheel of the Dhamma, the gesture of the first sermon given in this deer park. Sculptors of the Sarnath school carved it from fine-grained Chunar sandstone, and its calm, downcast face became a model for Buddha images across Asia.",
+    "bestTime": "Weekday mornings soon after opening, before the tour groups; any day except Friday",
+    "image": "/media/places/sarnath-museum.jpg",
+    "tips": [
+      "The museum is shut on Fridays while the excavated site stays open, so plan Sarnath for another day if you want to see the capital.",
+      "Bags and phones are often sent to the cloakroom at the gate; do not count on photographing the galleries.",
+      "See the museum before the ruins: the capital and the sculptures make the bare foundations outside much easier to read."
+    ],
+    "glance": {
+      "timings": "09:00–17:00, closed Fri (some government listings say 10:00 opening)",
+      "entry": "₹5 (ASI museum ticket)",
+      "duration": "45 min–1 h",
+      "season": "Oct–Mar; Buddha Purnima (Apr–May)",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "ASI Sarnath Circle — Visitor information (museum 09:00–17:00, museum ticket ₹5)",
+          "url": "http://www.asisarnathcircle.org/visiter-information.html",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Incredible India (Ministry of Tourism) — Sarnath Museum (10:00–17:00, closed Friday; oldest ASI site museum)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/sarnath-museum",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Scroll.in — ASI bans selfie sticks at 46 site museums; personal photography stays free (6 Jul 2017)",
+          "url": "https://scroll.in/latest/842856/scroll_in",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Wikipedia — Sarnath Museum (1904 decision, completed 1910, coordinates)",
+        "url": "https://en.wikipedia.org/wiki/Sarnath_Museum",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Lion Capital of Ashoka (excavated by F. O. Oertel, 1904–05)",
+        "url": "https://en.wikipedia.org/wiki/Lion_Capital_of_Ashoka",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Buddha Preaching his First Sermon (Sarnath)",
+        "url": "https://en.wikipedia.org/wiki/Buddha_Preaching_his_First_Sermon_(Sarnath)",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "OpenStreetMap — Sarnath Archaeological Museum (way 103178213)",
+        "url": "https://www.openstreetmap.org/way/103178213",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "भारतीय पुरातत्व सर्वेक्षण का सबसे पुराना स्थल-संग्रहालय, उत्खनित मृगदाव के पास बना और 1910 में पूरा हुआ। इसके मुख्य कक्ष में अशोक का चमकदार बलुआ-पत्थर का सिंह-शीर्ष (लगभग 250 ई.पू.) है, जिसे 1904–05 में एफ़. ओ. ऑर्टेल के उत्खनन ने खोजा और जिसे भारत ने अपना राष्ट्रीय प्रतीक बनाया। पास ही 5वीं सदी की गुप्तकालीन धर्मचक्र प्रवर्तन मुद्रा वाली बुद्ध प्रतिमा है, जिसकी पीठिका पर चक्र और पहले शिष्य उकेरे गए हैं; पाँचों दीर्घाएँ तीसरी सदी ई.पू. से 12वीं सदी ई. तक फैली हैं।",
+        "story": "बैठे बुद्ध के हाथ धम्म-चक्र घुमाने की मुद्रा में हैं, उसी पहले उपदेश की मुद्रा जो इसी मृगदाव में दिया गया। सारनाथ शैली के शिल्पियों ने इसे महीन चुनार बलुआ पत्थर से गढ़ा, और इसका शांत, झुकी दृष्टि वाला मुख पूरे एशिया में बुद्ध प्रतिमाओं का आदर्श बना।",
+        "bestTime": "सप्ताह के दिनों में खुलते ही सुबह, टूर समूहों से पहले; शुक्रवार छोड़कर कोई भी दिन",
+        "tips": [
+          "शुक्रवार को संग्रहालय बंद रहता है जबकि उत्खनित स्थल खुला रहता है; सिंह-शीर्ष देखना हो तो सारनाथ किसी और दिन रखें।",
+          "बैग और फ़ोन अक्सर गेट के क्लोकरूम में जमा कराए जाते हैं; दीर्घाओं में फ़ोटो की उम्मीद न रखें।",
+          "खंडहरों से पहले संग्रहालय देखें: सिंह-शीर्ष और मूर्तियाँ देखकर बाहर की नींवें समझना कहीं आसान हो जाता है।"
+        ],
+        "glance": {
+          "timings": "सुबह 9 से शाम 5 बजे, शुक्रवार बंद (कुछ सरकारी सूचियों में खुलने का समय 10 बजे)",
+          "entry": "₹5 (एएसआई संग्रहालय टिकट)",
+          "duration": "45 मिनट से 1 घंटा",
+          "season": "अक्टूबर से मार्च; बुद्ध पूर्णिमा (अप्रैल-मई)"
+        }
+      }
+    }
+  },
+  {
+    "id": "chaukhandi-stupa",
+    "name_en": "Chaukhandi Stupa, Sarnath",
+    "name_hi": "चौखंडी स्तूप, सारनाथ",
+    "names": {
+      "ta": "சௌகண்டி ஸ்தூபி, சாரநாத்",
+      "te": "చౌఖండీ స్తూపం, సారనాథ్",
+      "kn": "ಚೌಖಂಡಿ ಸ್ತೂಪ, ಸಾರನಾಥ",
+      "ml": "ചൗഖണ്ഡി സ്തൂപം, സാരനാഥ്",
+      "bn": "চৌখণ্ডী স্তূপ, সারনাথ",
+      "or": "ଚୌଖଣ୍ଡୀ ସ୍ତୂପ, ସାରନାଥ",
+      "as": "চৌখণ্ডী স্তূপ, সাৰনাথ",
+      "gu": "ચૌખંડી સ્તૂપ, સારનાથ",
+      "pa": "ਚੌਖੰਡੀ ਸਤੂਪ, ਸਾਰਨਾਥ"
+    },
+    "faith": [
+      "buddhist"
+    ],
+    "type": "stupa",
+    "lat": 25.3741,
+    "lng": 83.0237,
+    "coordsVerified": true,
+    "summary": "A Gupta-age brick stupa of the 4th–5th century, rising in three terraces on the road into Sarnath, under a kilometre south of the Dhamek Stupa. The ASI identifies it as the spot where the Buddha, after his enlightenment, first met the five monks who had been his companions; the Chinese pilgrim Xuanzang described it in the 7th century. On the summit stands an octagonal Mughal tower: an inscription over its north door records that Govardhan, son of Raja Todar Mal, built it in 1588, in Akbar's reign, to mark Emperor Humayun's visit. Excavated in 1835 and 1904–05, it was declared a protected area of national importance in 2019.",
+    "story": "Seeing their former companion approach, the five ascetics agreed not to rise for him, yet as he came near they stood to receive him. From here they walked together to the deer park, where he gave them his first teaching.",
+    "bestTime": "Early morning or late afternoon, when the low sun warms the brick; stop here on the way in to Sarnath",
+    "image": "/media/places/chaukhandi-stupa.jpg",
+    "tips": [
+      "It is the first monument on the road from Varanasi, so begin your Sarnath visit here and walk on to the main site and the museum.",
+      "Keep to the paths: the brick terraces are fragile and climbing them is not allowed.",
+      "Look for the inscribed tablet over the tower's north doorway, the record of Humayun's visit."
+    ],
+    "glance": {
+      "timings": "Sunrise–sunset (ASI hours; about 06:00–18:00)",
+      "entry": "ASI ticket: about ₹25 cash / ₹20 online (Indian, SAARC, BIMSTEC) · ₹300 / ₹250 (foreign)",
+      "duration": "30–45 min",
+      "season": "Oct–Mar; Buddha Purnima (Apr–May)",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "ASI Sarnath Circle — Visitor information (monument ticket rates)",
+          "url": "http://www.asisarnathcircle.org/visiter-information.html",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "UNI — Centre proposes revised list of ticketed ASI monuments; Sarnath site and Chaukhandi Stupa in Category A (9 Sep 2026)",
+          "url": "https://www.uniindia.com/north-india/centre-proposes-revised-list-of-ticketed-asi-monuments-30-in-category-a-136-in-category-b/173558",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Trawell — Chaukhandi Stupa, Sarnath (timings, ticket)",
+          "url": "https://trawell.in/uttar-pradesh/sarnath/chaukhandi-stupa",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "ASI site signboard at Chaukhandi Stupa (photo on Wikimedia Commons): Gupta date, first meeting with the five monks, 1835 and 1904–05 excavations, Govardhan's tower of 1588",
+        "url": "https://commons.wikimedia.org/wiki/File:Description_(Hindi)_on_Stone_for_Chaukhandi_Stupa,_Sarnath.jpg",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Chaukhandi Stupa (coordinates; national importance, June 2019)",
+        "url": "https://en.wikipedia.org/wiki/Chaukhandi_Stupa",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "GKToday — ASI declares Chaukhandi Stupa as Monument of National Importance (10 Jun 2019)",
+        "url": "https://www.gktoday.in/asi-declares-chaukhandi-stupa-monument-national-importance/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Indian Antiquary, Vol. 37 (Oct 1908), p. 278 — Persian inscription of 1588 in Akbar's tower on the Chaukhandi mound",
+        "url": "https://jainqq.org/explore/032529/296",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "चौथी–पाँचवीं सदी का गुप्तकालीन ईंटों का स्तूप, सारनाथ जाने वाली सड़क पर तीन सोपानों में उठता हुआ, धमेख स्तूप से एक किलोमीटर से कम दक्षिण में। भारतीय पुरातत्व सर्वेक्षण के अनुसार यह वह स्थान है जहाँ बोधि-प्राप्ति के बाद बुद्ध की भेंट सबसे पहले पंचवर्गीय भिक्षुओं से हुई; 7वीं सदी में चीनी यात्री ह्वेनसांग ने इसका वर्णन किया। शिखर पर मुग़लकालीन अष्टकोणीय बुर्ज है: उत्तरी द्वार पर जड़े शिलालेख के अनुसार राजा टोडरमल के पुत्र गोवर्धन ने इसे अकबर के शासनकाल में 1588 में हुमायूँ के आगमन की स्मृति में बनवाया। 1835 और 1904–05 में उत्खनित, 2019 में इसे राष्ट्रीय महत्त्व का संरक्षित क्षेत्र घोषित किया गया।",
+        "story": "अपने पूर्व साथी को आते देख पाँचों तपस्वियों ने तय किया कि उनके लिए उठेंगे नहीं, पर उनके पास आते ही वे स्वागत में खड़े हो गए। यहीं से वे साथ मृगदाव गए, जहाँ बुद्ध ने उन्हें पहला उपदेश दिया।",
+        "bestTime": "सुबह जल्दी या ढलती दोपहर, जब नीची धूप ईंटों को सुनहरा कर देती है; सारनाथ जाते हुए पहले यहाँ रुकें",
+        "tips": [
+          "वाराणसी से आने वाली सड़क पर यह पहला स्मारक है, इसलिए सारनाथ यात्रा यहीं से शुरू करें और फिर मुख्य स्थल व संग्रहालय तक जाएँ।",
+          "रास्तों पर ही चलें: ईंटों के सोपान नाज़ुक हैं और उन पर चढ़ना मना है।",
+          "बुर्ज के उत्तरी द्वार के ऊपर लगा शिलालेख देखें, जो हुमायूँ के आगमन का अभिलेख है।"
+        ],
+        "glance": {
+          "timings": "सूर्योदय से सूर्यास्त (एएसआई समय; लगभग सुबह 6 से शाम 6 बजे)",
+          "entry": "एएसआई टिकट: लगभग ₹25 नकद / ₹20 ऑनलाइन (भारतीय, सार्क, बिम्सटेक) · ₹300 / ₹250 (विदेशी)",
+          "duration": "30 से 45 मिनट",
+          "season": "अक्टूबर से मार्च; बुद्ध पूर्णिमा (अप्रैल-मई)"
+        }
+      }
+    }
+  },
+  {
+    "id": "mahamrityunjay-mandir",
+    "name_en": "Mahamrityunjay Mahadev Temple",
+    "name_hi": "महामृत्युंजय महादेव मंदिर",
+    "names": {
+      "ta": "மகாமிருத்யுஞ்சய மகாதேவ் கோயில்",
+      "te": "మహామృత్యుంజయ మహాదేవ్ ఆలయం",
+      "kn": "ಮಹಾಮೃತ್ಯುಂಜಯ ಮಹಾದೇವ ದೇವಾಲಯ",
+      "ml": "മഹാമൃത്യുഞ്ജയ മഹാദേവ ക്ഷേത്രം",
+      "bn": "মহামৃত্যুঞ্জয় মহাদেব মন্দির",
+      "or": "ମହାମୃତ୍ୟୁଞ୍ଜୟ ମହାଦେବ ମନ୍ଦିର",
+      "as": "মহামৃত্যুঞ্জয় মহাদেৱ মন্দিৰ",
+      "gu": "મહામૃત્યુંજય મહાદેવ મંદિર",
+      "pa": "ਮਹਾਮ੍ਰਿਤਿਊਂਜੈ ਮਹਾਦੇਵ ਮੰਦਰ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.3222,
+    "lng": 83.0149,
+    "coordsVerified": false,
+    "summary": "A Shiva temple in Daranagar, on the lane between Daranagar and Kaal Bhairav, where Shiva is worshipped as Mrityunjay, the one who conquers death. The present building dates from the 18th century; the smaller shrines inside are held to be far older. Beside the linga is an old well whose water, the district administration notes, is said to be a mixture of several underground streams and good against disease.",
+    "story": "Tradition holds that Dhanvantari, physician of the gods, poured his medicines into the well, so devotees sprinkle or carry home its water. Recitation of the Mahamrityunjaya mantra goes on through the day, and a sava lakh (125,000) japa here is believed to remove the fear of untimely death.",
+    "bestTime": "Early morning after the 05:30 aarti; Mondays, Sawan (Jul–Aug) and Mahashivratri are busiest",
+    "image": "/media/places/mahamrityunjay-mandir.jpg",
+    "tips": [
+      "Combine it with Kaal Bhairav: both stand in the same old-city lanes north of Maidagin and are easiest reached on foot or by e-rickshaw.",
+      "Bring a small bottle if you wish to take water from the well; ask the priests where it is drawn today.",
+      "Mondays draw devotees who come for a vow of 40 consecutive Mondays; come early to avoid the queue."
+    ],
+    "glance": {
+      "timings": "About 04:00–12:00 and 17:00–24:00; aarti ~05:30, 18:30, 23:30 (listings differ)",
+      "entry": "No ticket reported",
+      "duration": "30–45 min",
+      "season": "Oct–Mar; Sawan (Jul–Aug), Mahashivratri (Feb–Mar)",
+      "crowd": "busy",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Sri Mandir — Mrityunjay Mahadev Temple (timings, aarti, Dhanvantari well)",
+          "url": "https://www.srimandir.com/temples/mrityunjayamahadev-temple?lang=en",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Aaj Tak — Mrityunjay Mahadev, Maidagin: aarti three times a day, Monday worship (2014)",
+          "url": "https://www.aajtak.in/religion/story/varanasi-miracle-stories-are-written-in-mahamrityunjay-temple-211641-2014-06-04",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Varanasi district (varanasi.nic.in) — Temples of importance: Mritunjay Mahadev Temple",
+          "url": "https://varanasi.nic.in/temples-of-importance/",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Varanasi district administration — Temples of importance (Mritunjay Mahadev Temple)",
+        "url": "https://varanasi.nic.in/temples-of-importance/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Mrityunjay Mahadev Mandir",
+        "url": "https://en.wikipedia.org/wiki/Mrityunjay_Mahadev_Mandir",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Sri Mandir — Mrityunjay Mahadev Temple (map coordinates 25.3222, 83.0149)",
+        "url": "https://www.srimandir.com/temples/mrityunjayamahadev-temple?lang=en",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "दारानगर में, दारानगर से काल भैरव जाने वाले मार्ग पर स्थित शिव मंदिर, जहाँ शिव मृत्युंजय, यानी मृत्यु पर विजय पाने वाले रूप में पूजे जाते हैं। वर्तमान भवन 18वीं सदी का है; भीतर के छोटे देवालय कहीं अधिक प्राचीन माने जाते हैं। शिवलिंग के पास एक पुराना कूप है, जिसके जल के बारे में ज़िला प्रशासन लिखता है कि वह कई भूमिगत धाराओं का मिश्रण है और रोगों में लाभकारी माना जाता है।",
+        "story": "परंपरा है कि देवताओं के वैद्य धन्वंतरि ने अपनी औषधियाँ इसी कूप में डाली थीं, इसलिए भक्त इसका जल अपने ऊपर छिड़कते या घर ले जाते हैं। दिन भर महामृत्युंजय मंत्र का पाठ चलता है, और माना जाता है कि यहाँ सवा लाख जप से अकाल मृत्यु का भय दूर होता है।",
+        "bestTime": "सुबह 5:30 की आरती के बाद; सोमवार, सावन (जुलाई–अगस्त) और महाशिवरात्रि पर सबसे भीड़",
+        "tips": [
+          "काल भैरव के साथ दर्शन करें: दोनों मैदागिन के उत्तर की पुरानी गलियों में हैं, पैदल या ई-रिक्शा से सबसे आसान।",
+          "कूप का जल ले जाना हो तो छोटी बोतल रखें; पुजारियों से पूछ लें कि आजकल जल कहाँ से मिलता है।",
+          "सोमवार को 40 सोमवार का संकल्प लेने वाले भक्त आते हैं; कतार से बचने के लिए जल्दी पहुँचें।"
+        ],
+        "glance": {
+          "timings": "लगभग सुबह 4 से दोपहर 12 बजे और शाम 5 से रात 12 बजे; आरती लगभग 5:30, 6:30 और 11:30 बजे (स्रोतों में अंतर)",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "30 से 45 मिनट",
+          "season": "अक्टूबर से मार्च; सावन (जुलाई-अगस्त), महाशिवरात्रि (फ़रवरी-मार्च)"
+        }
+      }
+    }
+  },
+  {
+    "id": "markandey-mahadev",
+    "name_en": "Markandey Mahadev Temple, Kaithi",
+    "name_hi": "मार्कण्डेय महादेव मंदिर, कैथी",
+    "names": {
+      "ta": "மார்க்கண்டேய மகாதேவ் கோயில், கைதி",
+      "te": "మార్కండేయ మహాదేవ్ ఆలయం, కైథీ",
+      "kn": "ಮಾರ್ಕಂಡೇಯ ಮಹಾದೇವ ದೇವಾಲಯ, ಕೈಥಿ",
+      "ml": "മാർക്കണ്ഡേയ മഹാദേവ ക്ഷേത്രം, കൈഥി",
+      "bn": "মার্কণ্ডেয় মহাদেব মন্দির, কৈথী",
+      "or": "ମାର୍କଣ୍ଡେୟ ମହାଦେବ ମନ୍ଦିର, କୈଥୀ",
+      "as": "মাৰ্কণ্ডেয় মহাদেৱ মন্দিৰ, কৈথী",
+      "gu": "માર્કંડેય મહાદેવ મંદિર, કૈથી",
+      "pa": "ਮਾਰਕੰਡੇਯ ਮਹਾਦੇਵ ਮੰਦਰ, ਕੈਥੀ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.5026,
+    "lng": 83.1589,
+    "coordsVerified": false,
+    "summary": "A Shiva temple at Kaithi village, where the Gomti meets the Ganga, about 28–30 km from Varanasi on the Ghazipur road. It is held to enshrine the linga the boy sage Markandeya embraced when Yama came for him. Mondays draw thousands, and the month-long Sawan fair and Mahashivratri bring devotees from across Purvanchal for jalabhishek.",
+    "story": "Rishi Mrikandu and Marudvati, granted a son by Shiva, chose a wise son with a short life over a long-lived ordinary one. When Yama came for Markandeya at sixteen, the boy clung to the linga, and Shiva emerged as Kalantaka, the ender of time, and struck death back to protect his devotee.",
+    "bestTime": "Early morning, with a stop at the Ganga–Gomti sangam first; Sawan (Jul–Aug) Mondays and Mahashivratri are the most crowded",
+    "image": "/media/places/markandey-mahadev.jpg",
+    "tips": [
+      "Allow half a day: hire a car or taxi from Varanasi along the Varanasi–Ghazipur highway; the nearest station is Aunrihar Junction, about 8 km away.",
+      "Couples come here praying for children, especially on Trayodashi; Rudrabhishek and Mahamrityunjaya japa can be arranged with the temple priests.",
+      "In Sawan and on Mahashivratri, queues stretch for hours; set out before dawn and carry water."
+    ],
+    "glance": {
+      "timings": "05:00–22:30",
+      "entry": "No ticket reported",
+      "duration": "Half day from Varanasi (1 h at the temple)",
+      "season": "Oct–Mar; Sawan (Jul–Aug), Mahashivratri (Feb–Mar)",
+      "crowd": "busy",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Kashi Official Web Portal (kashi.gov.in) — Markandey Mahadev Temple (timings 05:00–22:30)",
+          "url": "https://kashi.gov.in/listing-details/markandey-mahadev-temple",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Markandey Mahadev Kaithi — temple information site (28 km by road, 8 km from Aunrihar, 04:00–23:00)",
+          "url": "https://markandeymahadevkaithi.com/",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Kashi Official Web Portal (kashi.gov.in) — Markandey Mahadev Temple",
+        "url": "https://kashi.gov.in/listing-details/markandey-mahadev-temple",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Markandey Mahadev Kaithi — contact page with map (25.5026, 83.1589)",
+        "url": "https://www.markandeymahadevkaithi.com/contact.html",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Patrika — Markandeya Mahadev temple, Sawan mela and the legend (11 Jul 2025)",
+        "url": "https://www.patrika.com/temples/markandeya-mahadev-temple-varanasi-darshan-sawan-mela-importance-yamraj-was-defeated-here-19766526",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Amar Ujala — Markandey Mahadev, Kaithi: 30 km from Varanasi, Sawan crowds (5 Aug 2025)",
+        "url": "https://www.amarujala.com/video/uttar-pradesh/varanasi/video-markandey-mahadev-temple-kaithi-in-kashi-special-story-2025-08-05",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "कैथी गाँव में, जहाँ गोमती गंगा से मिलती है, वाराणसी से गाजीपुर मार्ग पर लगभग 28–30 किलोमीटर दूर शिव मंदिर। माना जाता है कि यहाँ वही शिवलिंग है जिससे बालक ऋषि मार्कण्डेय यम के आने पर लिपट गए थे। हर सोमवार हज़ारों भक्त आते हैं, और महीने भर के सावन मेले व महाशिवरात्रि पर पूरे पूर्वांचल से लोग जलाभिषेक को पहुँचते हैं।",
+        "story": "ऋषि मृकण्डु और मरुद्वती को शिव ने पुत्र का वर दिया, तो उन्होंने दीर्घायु साधारण पुत्र के बजाय अल्पायु पर ज्ञानी पुत्र चुना। सोलह वर्ष की आयु में यम मार्कण्डेय को लेने आए तो बालक शिवलिंग से लिपट गया, और शिव कालान्तक रूप में प्रकट होकर अपने भक्त की रक्षा के लिए यम को परास्त किया।",
+        "bestTime": "सुबह जल्दी, पहले गंगा–गोमती संगम पर; सावन (जुलाई–अगस्त) के सोमवार और महाशिवरात्रि पर सबसे भीड़",
+        "tips": [
+          "आधा दिन रखें: वाराणसी से वाराणसी–गाजीपुर राजमार्ग पर कार या टैक्सी लें; निकटतम स्टेशन औंड़िहार जंक्शन लगभग 8 किलोमीटर है।",
+          "संतान की कामना से दंपती यहाँ आते हैं, विशेषकर त्रयोदशी को; रुद्राभिषेक और महामृत्युंजय जप मंदिर के पुजारियों से करवाए जा सकते हैं।",
+          "सावन और महाशिवरात्रि पर कतार घंटों लंबी होती है; भोर से पहले निकलें और पानी साथ रखें।"
+        ],
+        "glance": {
+          "timings": "सुबह 5 से रात 10:30 बजे",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "वाराणसी से आधा दिन (मंदिर में 1 घंटा)",
+          "season": "अक्टूबर से मार्च; सावन (जुलाई-अगस्त), महाशिवरात्रि (फ़रवरी-मार्च)"
+        }
+      }
+    }
+  },
+  {
+    "id": "vindhyachal",
+    "name_en": "Maa Vindhyavasini Temple, Vindhyachal (day trip)",
+    "name_hi": "माँ विंध्यवासिनी मंदिर, विंध्याचल",
+    "names": {
+      "ta": "மா விந்தியவாசினி கோயில், விந்தியாசல் (ஒரு நாள் பயணம்)",
+      "te": "మా వింధ్యవాసిని ఆలయం, వింధ్యాచల్ (ఒక రోజు యాత్ర)",
+      "kn": "ಮಾ ವಿಂಧ್ಯವಾಸಿನಿ ದೇವಾಲಯ, ವಿಂಧ್ಯಾಚಲ (ಒಂದು ದಿನದ ಪ್ರವಾಸ)",
+      "ml": "മാ വിന്ധ്യവാസിനി ക്ഷേത്രം, വിന്ധ്യാചൽ (ഒരു ദിവസത്തെ യാത്ര)",
+      "bn": "মা বিন্ধ্যবাসিনী মন্দির, বিন্ধ্যাচল (একদিনের সফর)",
+      "or": "ମା ବିନ୍ଧ୍ୟବାସିନୀ ମନ୍ଦିର, ବିନ୍ଧ୍ୟାଚଳ (ଦିନକିଆ ଭ୍ରମଣ)",
+      "as": "মা বিন্ধ্যবাসিনী মন্দিৰ, বিন্ধ্যাচল (এদিনৰ ভ্ৰমণ)",
+      "gu": "મા વિંધ્યવાસિની મંદિર, વિંધ્યાચલ (એક દિવસની સફર)",
+      "pa": "ਮਾਂ ਵਿੰਧਿਆਵਾਸਿਨੀ ਮੰਦਰ, ਵਿੰਧਿਆਚਲ (ਇੱਕ ਦਿਨ ਦੀ ਯਾਤਰਾ)"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.1644,
+    "lng": 82.5043,
+    "coordsVerified": false,
+    "summary": "The seat of the Devi as Vindhyavasini, 'she who dwells in the Vindhyas', on the Ganga bank at Vindhyachal in Mirzapur district, about 63 km by road from Varanasi. Pilgrims complete the trikon parikrama, a triangle of three shrines: Vindhyavasini, the Kalikhoh cave temple of Maha Kali and the hilltop Ashtabhuja temple of Maha Saraswati. Both Navratris draw enormous crowds. The Vindhya Corridor, a widened parikrama path around the temple whose foundation stone was laid in August 2021, is still being completed.",
+    "story": "In the Durga Saptashati the Devi foretells that she will be born to Yashoda and then dwell on the Vindhya hills. Here she is worshipped as Lakshmi, with Kali and Saraswati in the two shrines of the triangle.",
+    "bestTime": "Early morning on a weekday outside Navratri; allow a full day including the drive",
+    "image": "/media/places/vindhyachal.jpg",
+    "tips": [
+      "Vindhyachal station (BDL) is about 1 km from the temple, but many trains do not stop there; Mirzapur station (MZP), about 9 km away, has more trains. A taxi from Varanasi takes 1.5–2 hours.",
+      "Darshan pauses during each of the four daily aartis; check the day's schedule at the temple before joining the queue.",
+      "During Chaitra and Sharad Navratri expect very long queues and road diversions; start before dawn or choose another week."
+    ],
+    "glance": {
+      "timings": "About 05:00–24:00, closed during the four aartis (as reported; longer hours in Navratri)",
+      "entry": "No ticket reported",
+      "duration": "1–2 h at the temple; 3–4 h with the trikon parikrama; a full day with the drive",
+      "season": "Oct–Mar; Chaitra Navratri (Mar–Apr) and Sharad Navratri (Sep–Oct)",
+      "crowd": "very-busy",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Yatradham — Maa Vindhyavasini Devi temple timings, Mirzapur (31 Mar 2022)",
+          "url": "https://blog.yatradham.org/maa-vindhyavasini-devi-temple-timing-mirzapur/",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Temples in India Info — Vindhyachal Maa Vindhyavasini temple timings",
+          "url": "https://templesinindiainfo.com/?p=121810",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Mirzapur district (NIC) — Vindhyachal Dham (distance, how to reach)",
+          "url": "https://mirzapur.nic.in/tourist-place/vindhyachal-dham/",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Mirzapur district (NIC) — Vindhyachal Dham (about 63 km from Varanasi; Vindhyachal station BDL about 1 km)",
+        "url": "https://mirzapur.nic.in/tourist-place/vindhyachal-dham/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Maa Vindhyavasini Dhaam, Vindhyachal",
+        "url": "https://en.wikipedia.org/wiki/Maa_Vindhyavasini_Dhaam,_Vindhyachal",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "OpenStreetMap — Vindhyachal (locality node 4656104541)",
+        "url": "https://www.openstreetmap.org/node/4656104541",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Deccan Herald — Amit Shah to lay foundation stone of Vindhya corridor on 1 August (2021)",
+        "url": "https://www.deccanherald.com/india/amit-shah-to-lay-foundation-stone-of-vindhya-corridor-in-up-on-august-1-1013504.html",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "मिर्ज़ापुर ज़िले के विंध्याचल में गंगा तट पर देवी का धाम, जहाँ वे विंध्यवासिनी, यानी 'विंध्य पर्वत में बसने वाली' के रूप में पूजी जाती हैं; वाराणसी से सड़क मार्ग से लगभग 63 किमी। श्रद्धालु त्रिकोण परिक्रमा करते हैं: विंध्यवासिनी, महाकाली का कालीखोह गुफा मंदिर और पहाड़ी पर महासरस्वती का अष्टभुजा मंदिर। दोनों नवरात्रों में भारी भीड़ रहती है। मंदिर के चारों ओर चौड़ा परिक्रमा पथ बनाने वाला विंध्य कॉरिडोर, जिसका शिलान्यास अगस्त 2021 में हुआ, अभी पूरा हो रहा है।",
+        "story": "दुर्गा सप्तशती में देवी कहती हैं कि वे यशोदा के गर्भ से जन्म लेकर विंध्य पर्वत पर निवास करेंगी। यहाँ वे लक्ष्मी रूप में पूजी जाती हैं, और त्रिकोण के दो अन्य मंदिरों में काली और सरस्वती।",
+        "bestTime": "नवरात्र के अलावा किसी सप्ताह के दिन, सुबह जल्दी; यात्रा सहित पूरा दिन रखें",
+        "tips": [
+          "विंध्याचल स्टेशन (BDL) मंदिर से लगभग 1 किमी है, पर कई ट्रेनें वहाँ नहीं रुकतीं; लगभग 9 किमी दूर मिर्ज़ापुर स्टेशन (MZP) पर ज़्यादा ट्रेनें हैं। वाराणसी से टैक्सी में 1.5–2 घंटे।",
+          "चारों आरतियों के समय दर्शन रुकते हैं; कतार में लगने से पहले मंदिर पर उस दिन का समय पूछ लें।",
+          "चैत्र और शारदीय नवरात्र में लंबी कतारें और रास्तों में बदलाव रहते हैं; भोर से पहले निकलें या कोई और सप्ताह चुनें।"
+        ],
+        "glance": {
+          "timings": "लगभग सुबह 5 से रात 12 बजे तक, चारों आरतियों के समय बंद (बताए अनुसार; नवरात्र में अधिक समय)",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "मंदिर में 1–2 घंटे; त्रिकोण परिक्रमा सहित 3–4 घंटे; यात्रा सहित पूरा दिन",
+          "season": "अक्टूबर–मार्च; चैत्र नवरात्र (मार्च–अप्रैल) और शारदीय नवरात्र (सितंबर–अक्टूबर)"
+        }
+      }
+    }
+  },
+  {
+    "id": "ravidas-ghat",
+    "name_en": "Sant Ravidas Ghat",
+    "name_hi": "संत रविदास घाट",
+    "names": {
+      "ta": "சந்த் ரவிதாஸ் காட்",
+      "te": "సంత్ రవిదాస్ ఘాట్",
+      "kn": "ಸಂತ ರವಿದಾಸ್ ಘಾಟ್",
+      "ml": "സന്ത് രവിദാസ് ഘാട്ട്",
+      "bn": "সন্ত রবিদাস ঘাট",
+      "or": "ସନ୍ଥ ରବିଦାସ ଘାଟ",
+      "as": "সন্ত ৰবিদাস ঘাট",
+      "gu": "સંત રવિદાસ ઘાટ",
+      "pa": "ਸੰਤ ਰਵਿਦਾਸ ਘਾਟ"
+    },
+    "faith": [
+      "bhakti"
+    ],
+    "type": "ghat",
+    "lat": 25.2836,
+    "lng": 83.0091,
+    "coordsVerified": true,
+    "summary": "A broad modern ghat at Nagwa, about half a kilometre south of Assi near Lanka, named for the 15th-century saint Ravidas. Announced in February 2008 and opened in 2009, it adjoins the large Sant Ravidas memorial park. Today it is the boarding point for the Alaknanda cruise and has the city's second floating CNG station for boats. It is not the saint's birthplace temple, which is about 3 km inland at Seer Govardhanpur.",
+    "bestTime": "Morning or late afternoon, timed to a cruise departure; Dev Deepawali evening",
+    "image": "/media/places/ravidas-ghat.jpg",
+    "tips": [
+      "Cruise departures and fares change by season; confirm the boarding time with the operator and arrive early.",
+      "An auto from Lanka or Assi takes a few minutes; it is also an easy walk along the river from Assi.",
+      "Pair it with Shri Guru Ravidas Janmasthan at Seer Govardhanpur, a short auto ride south of BHU."
+    ],
+    "glance": {
+      "timings": "Open riverfront; no posted hours (cruises at the operator's times)",
+      "entry": "Free (cruises ticketed)",
+      "duration": "30 min–1 h; about 1.5 h with a cruise",
+      "season": "Oct–Mar; Dev Deepawali (Kartik Purnima, Nov)",
+      "crowd": "moderate",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Energetica India — Varanasi's second floating CNG station inaugurated at Ravidas Ghat (27 Nov 2023)",
+          "url": "https://www.energetica-india.net/news/union-minister-puri-inaugurates-varanasis-second-floating-cng-station",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Yatradham — Alaknanda Cruise Varanasi (pick-up point Ravidas Ghat, near Lanka)",
+          "url": "https://blog.yatradham.org/alaknanda-cruise-varanasi/",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Wikipedia — Sant Ravidas Ghat (coordinates; announced Feb 2008, inaugurated 2009)",
+        "url": "https://en.wikipedia.org/wiki/Sant_Ravidas_Ghat",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "OpenStreetMap — Ravidas Ghat (node 1550241774)",
+        "url": "https://www.openstreetmap.org/node/1550241774",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Energetica India — Union Minister Puri inaugurates Varanasi's second floating CNG station at Ravidas Ghat (27 Nov 2023)",
+        "url": "https://www.energetica-india.net/news/union-minister-puri-inaugurates-varanasis-second-floating-cng-station",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "नगवा में, अस्सी से लगभग आधा किलोमीटर दक्षिण और लंका के पास, 15वीं सदी के संत रविदास के नाम पर बना चौड़ा आधुनिक घाट। फ़रवरी 2008 में घोषित और 2009 में लोकार्पित, यह विशाल संत रविदास स्मारक पार्क से लगा है। आज यह अलकनंदा क्रूज़ का बोर्डिंग घाट है और यहाँ नावों के लिए शहर का दूसरा तैरता सीएनजी स्टेशन है। यह संत का जन्मस्थान मंदिर नहीं है, जो लगभग 3 किमी अंदर सीर गोवर्धनपुर में है।",
+        "bestTime": "सुबह या ढलती दोपहर, क्रूज़ के समय के अनुसार; देव दीपावली की शाम",
+        "tips": [
+          "क्रूज़ का समय और किराया मौसम के साथ बदलता है; संचालक से बोर्डिंग का समय पक्का करें और जल्दी पहुँचें।",
+          "लंका या अस्सी से ऑटो में कुछ मिनट; अस्सी से नदी किनारे पैदल भी आसानी से पहुँचा जा सकता है।",
+          "इसके साथ सीर गोवर्धनपुर में श्री गुरु रविदास जन्मस्थान भी देखें, जो बीएचयू के दक्षिण में ऑटो से थोड़ी दूरी पर है।"
+        ],
+        "glance": {
+          "timings": "खुला नदी तट; कोई तय समय नहीं (क्रूज़ संचालक के समय पर)",
+          "entry": "निःशुल्क (क्रूज़ के लिए टिकट)",
+          "duration": "30 मिनट–1 घंटा; क्रूज़ सहित लगभग 1.5 घंटे",
+          "season": "अक्टूबर–मार्च; देव दीपावली (कार्तिक पूर्णिमा, नवंबर)"
         }
       }
     }

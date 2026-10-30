@@ -1197,5 +1197,93 @@
       "en": "Banarasi sarees in red, pink and green with zari borders, folded on wooden display blocks outside a workshop in Varanasi",
       "hi": "वाराणसी में एक कारखाने के बाहर लकड़ी के ब्लॉकों पर सजी लाल, गुलाबी और हरी ज़री बॉर्डर वाली बनारसी साड़ियाँ"
     }
+  },
+  {
+    "key": "places/swarved-mahamandir",
+    "title": "File:Swarved Mahamandir.jpg",
+    "alt": {
+      "en": "Seven-storey pink sandstone facade of Swarved Mahamandir under a clear sky, with red-carpeted steps leading to the entrance, Umraha, Varanasi",
+      "hi": "उमरहा, वाराणसी में स्वर्वेद महामंदिर का सात मंज़िला गुलाबी बलुआ पत्थर का अग्रभाग और प्रवेश की ओर जाती लाल कालीन वाली सीढ़ियां"
+    }
+  },
+  {
+    "key": "places/swarved-mahamandir#2",
+    "title": "File:Swarved Mahamandir Dham (29304).jpg",
+    "alt": {
+      "en": "Carved stone lotus fountain in front of Swarved Mahamandir, Varanasi",
+      "hi": "वाराणसी में स्वर्वेद महामंदिर के सामने पत्थर का नक्काशीदार कमल फव्वारा"
+    }
+  },
+  {
+    "key": "places/swarved-mahamandir#3",
+    "title": "File:Swarved Mahamandir Dham.jpg",
+    "alt": {
+      "en": "Intricately carved circular dome ceiling inside Swarved Mahamandir, Varanasi",
+      "hi": "वाराणसी में स्वर्वेद महामंदिर के भीतर बारीक नक्काशी वाली गोल गुंबद की छत"
+    }
+  },
+  {
+    "key": "places/sarnath-museum",
+    "title": "File:Art and Archeological Museum at Sarnath.JPG",
+    "alt": {
+      "en": "Sandstone building of the Sarnath Archaeological Museum behind its lawns, Sarnath",
+      "hi": "सारनाथ में लॉन के पीछे सारनाथ पुरातत्व संग्रहालय का बलुआ पत्थर का भवन"
+    }
+  },
+  {
+    "key": "places/sarnath-museum#2",
+    "title": "File:Löwenkapitell im Sarnath Museum 1991.jpg",
+    "alt": {
+      "en": "The Lion Capital of Ashoka, four lions above the Dharma wheel, displayed in the Sarnath Museum",
+      "hi": "सारनाथ संग्रहालय में प्रदर्शित अशोक का सिंह शीर्ष, धर्मचक्र के ऊपर चार सिंह"
+    }
+  },
+  {
+    "key": "places/sarnath-museum#3",
+    "title": "File:Buddha in Sarnath Museum (Dhammajak Mutra).jpg",
+    "alt": {
+      "en": "Gupta-period seated Buddha in the gesture of turning the wheel of Dhamma, Sarnath Museum",
+      "hi": "सारनाथ संग्रहालय में धर्मचक्र प्रवर्तन मुद्रा में बैठे गुप्तकालीन बुद्ध"
+    }
+  },
+  {
+    "key": "places/chaukhandi-stupa",
+    "title": "File:Chaukhandi Stupa, Saranath.jpg",
+    "alt": {
+      "en": "Brick terraces of Chaukhandi Stupa crowned by its octagonal Mughal tower, Sarnath",
+      "hi": "सारनाथ में चौखंडी स्तूप की ईंटों की सीढ़ीदार वेदियां और ऊपर अष्टकोणीय मुगल मीनार"
+    }
+  },
+  {
+    "key": "places/chaukhandi-stupa#2",
+    "title": "File:Chaukhandi Stupa on a hill, Sarnath.jpg",
+    "alt": {
+      "en": "The octagonal tower atop Chaukhandi Stupa against a blue sky, Sarnath",
+      "hi": "सारनाथ में नीले आकाश के सामने चौखंडी स्तूप के शिखर पर अष्टकोणीय मीनार"
+    }
+  },
+  {
+    "key": "places/markandey-mahadev",
+    "title": "File:Markandey Mahadev Temple.JPG",
+    "alt": {
+      "en": "Entrance gate of Markandey Mahadev Temple with its name in Hindi, Kaithi, Varanasi",
+      "hi": "कैथी, वाराणसी में हिंदी में नाम लिखा मार्कण्डेय महादेव मंदिर का प्रवेश द्वार"
+    }
+  },
+  {
+    "key": "places/vindhyachal",
+    "title": "File:River Ganges in Vindhya chal.jpg",
+    "alt": {
+      "en": "The Ganga and its sandbanks seen from the bank at Vindhyachal, Mirzapur",
+      "hi": "विंध्याचल, मिर्ज़ापुर में तट से दिखती गंगा और उसके रेतीले किनारे"
+    }
+  },
+  {
+    "key": "places/ravidas-ghat",
+    "title": "File:RavidasiVaranasi.JPG",
+    "alt": {
+      "en": "Memorial pavilion of Sri Guru Ravidas Park beside Ravidas Ghat at dusk, Varanasi",
+      "hi": "वाराणसी में संध्या के समय रविदास घाट के पास श्री गुरु रविदास पार्क का स्मारक मंडप"
+    }
   }
 ]

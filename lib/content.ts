@@ -19,6 +19,12 @@ export const festivals = festivalsJson as Festival[];
 export const foods = foodJson as Food[];
 export const itineraries = itinerariesJson as Itinerary[];
 
+/** Locales whose copy writes numbers in their own digits; the rest use Latin digits, as their texts do. */
+const NATIVE_DIGITS: Record<string, string> = { bn: "beng", as: "beng" };
+
+/** The number of places, formatted for the `{count}` in the site description, /places and /map texts. */
+export const placeCount = (locale: string) => new Intl.NumberFormat(`${locale}-u-nu-${NATIVE_DIGITS[locale] ?? "latn"}`).format(places.length);
+
 /**
  * Regional translations (every locale except en and hi) live one file per locale in
  * content/i18n/entries/<locale>.json, keyed by kind and id. They are loaded on demand so
