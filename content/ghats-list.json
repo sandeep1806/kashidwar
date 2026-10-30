@@ -89,7 +89,8 @@
     },
     {
       "en": "Hanuman Ghat",
-      "hi": "हनुमान घाट"
+      "hi": "हनुमान घाट",
+      "id": "hanuman-ghat"
     },
     {
       "en": "Old Hanuman Ghat",
@@ -354,7 +355,8 @@
     },
     {
       "en": "Raj Ghat (Bhainsasur)",
-      "hi": "राजघाट (भैंसासुर)"
+      "hi": "राजघाट (भैंसासुर)",
+      "id": "raj-ghat"
     },
     {
       "en": "Adi Keshav Ghat",

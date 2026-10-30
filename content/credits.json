@@ -81,6 +81,15 @@
     "source": "https://commons.wikimedia.org/wiki/File:%E0%AE%95%E0%AE%BE%E0%AE%9A%E0%AE%BF_%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AF%8D_%E0%AE%9A%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AE%AE%E0%AF%8D_%E0%AE%AA%E0%AE%AF%E0%AE%A3%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%B1%E0%AF%8D%E0%AE%95%E0%AE%BE%E0%AE%A9_%E0%AE%A4%E0%AF%8A%E0%AE%9F%E0%AE%B0%E0%AF%81%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AF%81_%E0%AE%AA%E0%AF%86%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%BF.jpg"
   },
   {
+    "key": "festivals/lolark-shashthi",
+    "file": "/media/photos/festivals/lolark-shashthi-1280.webp",
+    "title": "Lokark Kund",
+    "author": "Nikhil399792",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lokark_Kund.jpg"
+  },
+  {
     "key": "festivals/maha-shivratri",
     "file": "/media/photos/festivals/maha-shivratri-1280.webp",
     "title": "Shri Kashi Vishwanath Temple 3",
@@ -702,6 +711,24 @@
     "source": "https://commons.wikimedia.org/wiki/File:Nishan_Sahib_in_blue,_at_Baba_Phoola_Singh_di_Burj_in_Amritsar.jpg"
   },
   {
+    "key": "places/hanuman-ghat",
+    "file": "/media/photos/places/hanuman-ghat-720.webp",
+    "title": "Hanuman Ghat of Naga sadhus.",
+    "author": "Rudolph.A.furtado",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Hanuman_Ghat_of_Naga_sadhus..JPG"
+  },
+  {
+    "key": "places/hanuman-ghat#2",
+    "file": "/media/photos/places/hanuman-ghat-2-1280.webp",
+    "title": "Hanuman Ghat (52713)",
+    "author": "Aliva Sahoo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hanuman_Ghat_(52713).jpg"
+  },
+  {
     "key": "places/harishchandra-ghat",
     "file": "/media/photos/places/harishchandra-ghat-1280.webp",
     "title": "Harishchandra Ghat",
@@ -709,6 +736,33 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Harishchandra_Ghat.jpg"
+  },
+  {
+    "key": "places/jantar-mantar-varanasi",
+    "file": "/media/photos/places/jantar-mantar-varanasi-1280.webp",
+    "title": "Observatory of Man Singh",
+    "author": "Nandanupadhyay",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Observatory_of_Man_Singh.jpg"
+  },
+  {
+    "key": "places/jantar-mantar-varanasi#2",
+    "file": "/media/photos/places/jantar-mantar-varanasi-2-1280.webp",
+    "title": "Samrat Yantram at Observatory of Man Singh",
+    "author": "Nandanupadhyay",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Samrat_Yantram_at_Observatory_of_Man_Singh.jpg"
+  },
+  {
+    "key": "places/jantar-mantar-varanasi#3",
+    "file": "/media/photos/places/jantar-mantar-varanasi-3-1280.webp",
+    "title": "Digansa Yantra at Observatory of Man Singh",
+    "author": "Nandanupadhyay",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Digansa_Yantra_at_Observatory_of_Man_Singh.jpg"
   },
   {
     "key": "places/kardameshwar-mahadev",
@@ -1008,6 +1062,24 @@
     "source": "https://commons.wikimedia.org/wiki/File:Varanasi_(6706153829).jpg"
   },
   {
+    "key": "places/raj-ghat",
+    "file": "/media/photos/places/raj-ghat-1280.webp",
+    "title": "Excavated ruins of ancient Kashi, Rajghat, Varanasi, Uttar Pradesh",
+    "author": "Paramanu Sarkar",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Excavated_ruins_of_ancient_Kashi,_Rajghat,_Varanasi,_Uttar_Pradesh.jpg"
+  },
+  {
+    "key": "places/raj-ghat#2",
+    "file": "/media/photos/places/raj-ghat-2-1280.webp",
+    "title": "Rajghat Varanasi 4",
+    "author": "Rangan Datta Wiki",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rajghat_Varanasi_4.jpg"
+  },
+  {
     "key": "places/ramnagar-fort",
     "file": "/media/photos/places/ramnagar-fort-1280.webp",
     "title": "Ramnagar Fort, Ramnagar, Varanasi, Uttar Pradesh 03",
@@ -1042,6 +1114,24 @@
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Ram_Nagar_Fort_10_(26744384319).jpg"
+  },
+  {
+    "key": "places/ratneshwar-mahadev",
+    "file": "/media/photos/places/ratneshwar-mahadev-1280.webp",
+    "title": "Ratneshwar Mahadev Temple, 2019",
+    "author": "Redeemer",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ratneshwar_Mahadev_Temple,_2019.jpg"
+  },
+  {
+    "key": "places/ratneshwar-mahadev#2",
+    "file": "/media/photos/places/ratneshwar-mahadev-2-1280.webp",
+    "title": "Leaning temple on the ghats (6025370905)",
+    "author": "Ryan from Toronto, Canada",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Leaning_temple_on_the_ghats_(6025370905).jpg"
   },
   {
     "key": "places/ravidas-ghat",
@@ -1096,6 +1186,60 @@
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:Dhamekh_Stupa_Sarnath_India_-_panoramio.jpg"
+  },
+  {
+    "key": "places/sarnath-deer-park",
+    "file": "/media/photos/places/sarnath-deer-park-1280.webp",
+    "title": "Ktoya, Sarnath Deer Park, India 72",
+    "author": "Ktoya",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ktoya,_Sarnath_Deer_Park,_India_72.jpg"
+  },
+  {
+    "key": "places/sarnath-deer-park#2",
+    "file": "/media/photos/places/sarnath-deer-park-2-1280.webp",
+    "title": "VasenkaPhotography, Moat and Bamboo Grove in Sarnath Deer Park",
+    "author": "VasenkaPhotography",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:VasenkaPhotography,_Moat_and_Bamboo_Grove_in_Sarnath_Deer_Park.jpg"
+  },
+  {
+    "key": "places/sarnath-monasteries",
+    "file": "/media/photos/places/sarnath-monasteries-1280.webp",
+    "title": "Giant Buddha Statue, Sarnath Thai Temple 1",
+    "author": "Rangan Datta Wiki",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Giant_Buddha_Statue,_Sarnath_Thai_Temple_1.jpg"
+  },
+  {
+    "key": "places/sarnath-monasteries#2",
+    "file": "/media/photos/places/sarnath-monasteries-2-1280.webp",
+    "title": "Thai Temple & Monastery, Saranath",
+    "author": "MaximusPrasad",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Thai_Temple_%26_Monastery,_Saranath.jpg"
+  },
+  {
+    "key": "places/sarnath-monasteries#3",
+    "file": "/media/photos/places/sarnath-monasteries-3-1280.webp",
+    "title": "Dhanasekarany, Japanese Buddhist Temple, Sarnath 63",
+    "author": "Dhanasekarany",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dhanasekarany,_Japanese_Buddhist_Temple,_Sarnath_63.jpg"
+  },
+  {
+    "key": "places/sarnath-monasteries#4",
+    "file": "/media/photos/places/sarnath-monasteries-4-1280.webp",
+    "title": "Chinese Buddhist Temple, Sarnath 01",
+    "author": "Davide Mauro",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chinese_Buddhist_Temple,_Sarnath_01.jpg"
   },
   {
     "key": "places/sarnath-museum",
@@ -1195,6 +1339,24 @@
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Entrance_to_the_Digambar_Jain_Temple_dedicated_to_Shreyansanath,_the_eleventh_Jain_Tirthankar,_Sarnath.jpg"
+  },
+  {
+    "key": "places/sita-samahit-sthal",
+    "file": "/media/photos/places/sita-samahit-sthal-1280.webp",
+    "title": "Hanuman statue at sitamarhi",
+    "author": "Saisumanth Javvaji",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hanuman_statue_at_sitamarhi.jpg"
+  },
+  {
+    "key": "places/sita-samahit-sthal#2",
+    "file": "/media/photos/places/sita-samahit-sthal-2-1280.webp",
+    "title": "Sita mata staue at sitamarhi",
+    "author": "Saisumanth Javvaji",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sita_mata_staue_at_sitamarhi.jpg"
   },
   {
     "key": "places/st-marys-church",

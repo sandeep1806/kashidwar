@@ -626,5 +626,35 @@
         }
       ]
     }
+  },
+  "lolark-shashthi": {
+    "2026": {
+      "startDate": "2026-09-17",
+      "endDate": "2026-09-17",
+      "verified": true,
+      "note": "Bhadrapada Shukla Shashthi. Drik Panchang (Varanasi) shows Shashthi from 8:59 AM on Wed 16 Sep until 10:47 AM on Thu 17 Sep 2026, so it is the sunrise tithi on the 17th, the day of the dawn bath. Amar Ujala (12 Sep 2026) also gives 17 Sep, with Shashthi until 10:26 AM by the local panchang; bathing queues formed from the night of the 16th.",
+      "sources": [
+        {
+          "title": "Drik Panchang: Varanasi day panchang, 17 Sep 2026",
+          "url": "https://www.drikpanchang.com/panchang/day-panchang.html?geoname-id=1253405&date=17/09/2026"
+        },
+        {
+          "title": "Amar Ujala: Lolark Chhath on 17 September (12 Sep 2026)",
+          "url": "https://www.amarujala.com/uttar-pradesh/varanasi/lolark-chhath-on-september-17-seven-great-celestial-alignments-forming-after-seven-years-in-varanasi-2026-09-12"
+        }
+      ]
+    },
+    "2027": {
+      "startDate": "2027-09-06",
+      "endDate": "2027-09-06",
+      "verified": true,
+      "note": "Drik Panchang day panchang (Varanasi): Mon 6 Sep 2027 is Bhadrapada Shukla Shashthi at sunrise (until 10:57 AM); Shashthi begins at 11:17 AM on Sun 5 Sep. Drik Panchang has no named Lolark Shashthi entry, so the date comes from the tithi. Local press and police announcements are still to come; expect queues from the night of 5 Sep.",
+      "sources": [
+        {
+          "title": "Drik Panchang — Panchang for 6 September 2027, Varanasi",
+          "url": "https://www.drikpanchang.com/panchang/day-panchang.html?date=06/09/2027&geoname-id=1253405"
+        }
+      ]
+    }
   }
 }
