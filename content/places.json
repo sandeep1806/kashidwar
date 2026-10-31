@@ -2430,7 +2430,7 @@
     "lat": 25.3077,
     "lng": 83.0107,
     "coordsVerified": true,
-    "summary": "Raja Man Singh of Amber, Akbar's general, built the palace above this ghat around 1600; its carved stone balcony is among the oldest work on the riverfront. In 1737 his descendant Sawai Jai Singh II of Jaipur added an observatory on the roof, one of his five Jantar Mantars, and its masonry instruments for reading the sun and stars are still in place, two minutes south of Dashashwamedh.",
+    "summary": "Raja Man Singh of Amber, Akbar's general, built the palace above this ghat around 1600; its carved stone balcony is among the oldest work on the riverfront. In 1737 his descendant Sawai Jai Singh II of Jaipur added an observatory on the roof, one of his five Jantar Mantars, and its masonry instruments for reading the sun and stars are still in place, a short walk north of Dashashwamedh.",
     "bestTime": "Morning, when the observatory is open (Archaeological Survey of India ticket, daylight hours)",
     "image": "/media/places/man-mandir-ghat.jpg",
     "tips": [
@@ -2438,7 +2438,7 @@
       "Look for the palace's northern balcony from the river; it gives the ghat its profile."
     ],
     "glance": {
-      "timings": "Ghat open always · Observatory (ASI) daily, about 9:00–16:30",
+      "timings": "Ghat open always · Observatory (ASI) sunrise–21:00 (UP Tourism; some guides say 09:00–16:30)",
       "entry": "Ghat free · Observatory ₹25 (Indian) · ₹300 (foreign)",
       "duration": "45 min–1 h",
       "season": "Oct–Mar",
@@ -2478,14 +2478,14 @@
     ],
     "i18n": {
       "hi": {
-        "summary": "अकबर के सेनापति, आमेर के राजा मान सिंह ने 1600 के आसपास इस घाट के ऊपर महल बनवाया; इसका नक़्क़ाशीदार पत्थर का झरोखा नदी-तट की सबसे पुरानी कारीगरी में गिना जाता है। 1737 में उनके वंशज जयपुर के सवाई जय सिंह द्वितीय ने छत पर एक वेधशाला जोड़ी — उनके पाँच जंतर-मंतरों में से एक — और सूर्य व तारों को पढ़ने के इसके पत्थर के यंत्र आज भी अपनी जगह हैं, दशाश्वमेध से दक्षिण की ओर दो मिनट पर।",
+        "summary": "अकबर के सेनापति, आमेर के राजा मान सिंह ने 1600 के आसपास इस घाट के ऊपर महल बनवाया; इसका नक़्क़ाशीदार पत्थर का झरोखा नदी-तट की सबसे पुरानी कारीगरी में गिना जाता है। 1737 में उनके वंशज जयपुर के सवाई जय सिंह द्वितीय ने छत पर एक वेधशाला जोड़ी — उनके पाँच जंतर-मंतरों में से एक — और सूर्य व तारों को पढ़ने के इसके पत्थर के यंत्र आज भी अपनी जगह हैं, दशाश्वमेध से थोड़ा उत्तर की ओर।",
         "bestTime": "सुबह, जब वेधशाला खुली हो (भारतीय पुरातत्व सर्वेक्षण का टिकट, दिन के उजाले में)",
         "tips": [
           "वेधशाला ASI की सूची में मान सिंह वेधशाला के नाम से है; यहाँ भीड़ कम ही होती है।",
           "नदी से महल का उत्तरी झरोखा देखें; वही घाट की पहचान है।"
         ],
         "glance": {
-          "timings": "घाट सदैव खुला · वेधशाला (ASI) प्रतिदिन, लगभग 9:00–16:30",
+          "timings": "घाट सदैव खुला · वेधशाला (ASI) सूर्योदय से रात 9 बजे तक (यूपी पर्यटन; कुछ गाइड 9:00–16:30 बताते हैं)",
           "entry": "घाट निःशुल्क · वेधशाला ₹25 (भारतीय) · ₹300 (विदेशी)",
           "duration": "45 मिनट–1 घंटा",
           "season": "अक्टूबर–मार्च"
@@ -4416,6 +4416,860 @@
           "entry": "₹20 (भारतीय) · ₹250 (विदेशी) · ₹10 (पहचान-पत्र सहित छात्र) · बीएचयू छात्र व कर्मचारी निःशुल्क",
           "duration": "1 से 2 घंटे",
           "season": "साल भर (भवन के भीतर); परिसर घूमने के लिए अक्टूबर से मार्च"
+        }
+      }
+    }
+  },
+  {
+    "id": "sita-samahit-sthal",
+    "name_en": "Sita Samahit Sthal, Sitamarhi (day trip)",
+    "name_hi": "सीता समाहित स्थल, सीतामढ़ी",
+    "names": {
+      "ta": "சீதா சமாஹித் ஸ்தல், சீதாமடி (ஒரு நாள் பயணம்)",
+      "te": "సీతా సమాహిత్ స్థల్, సీతామఢీ (ఒక రోజు యాత్ర)",
+      "kn": "ಸೀತಾ ಸಮಾಹಿತ್ ಸ್ಥಳ, ಸೀತಾಮಢಿ (ಒಂದು ದಿನದ ಪ್ರವಾಸ)",
+      "ml": "സീതാ സമാഹിത് സ്ഥൽ, സീതാമഢി (ഒരു ദിവസത്തെ യാത്ര)",
+      "bn": "সীতা সমাহিত স্থল, সীতামঢ়ী (একদিনের সফর)",
+      "or": "ସୀତା ସମାହିତ ସ୍ଥଳ, ସୀତାମଢ଼ୀ (ଦିନକିଆ ଭ୍ରମଣ)",
+      "as": "সীতা সমাহিত স্থল, সীতামঢ়ী (এদিনৰ ভ্ৰমণ)",
+      "gu": "સીતા સમાહિત સ્થળ, સીતામઢી (એક દિવસની સફર)",
+      "pa": "ਸੀਤਾ ਸਮਾਹਿਤ ਸਥਲ, ਸੀਤਾਮੜ੍ਹੀ (ਇੱਕ ਦਿਨ ਦੀ ਯਾਤਰਾ)"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.273,
+    "lng": 82.2577,
+    "coordsVerified": false,
+    "summary": "A temple on the bank of the Ganga at Sitamarhi in Bhadohi district, about 85 km west of Varanasi towards Prayagraj, built where tradition says Sita returned to the earth. The present complex was completed in 1990. Its landmark is a towering Hanuman statue, 110 feet high by the district administration's count.",
+    "story": "Sita is said to have lived here in the hermitage of the sage Valmiki, where her sons Luv and Kush captured Rama's ashvamedha horse and held off his warriors. When Rama himself came, Sita asked her mother, the earth, to take her back, and the earth received her.",
+    "bestTime": "Winter mornings; allow a full day including the drive. Ram Navami (Mar–Apr) is the main festival",
+    "image": "/media/places/sita-samahit-sthal.jpg",
+    "tips": [
+      "By road from Varanasi, take the Prayagraj highway (the old GT Road) and turn left after Gopiganj; the temple is about 12 km off the highway towards the Ganga.",
+      "The district lists Bhadohi (about 40 km) and Mirzapur (about 44 km) as the nearest railway stations, so most visitors come by car.",
+      "Vindhyachal is about 45 km away; the two can be combined in one long day."
+    ],
+    "glance": {
+      "timings": "No official hours published; confirm locally",
+      "entry": "No ticket reported",
+      "duration": "1–2 h on site; a full day with the drive",
+      "season": "Oct–Mar; Ram Navami (Mar–Apr)",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Bhadohi district (NIC) — Sita Samahit Sthal (110 ft Hanuman statue; 11 km from Jangiganj; airports, stations, directions)",
+          "url": "https://bhadohi.nic.in/tourist-place/sita-samahit-sthal/",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Bhadohi district (NIC) — Places of interest (Sitamarhi about 85 km from Varanasi, 40 km from Prayagraj, 45 km from Vindhyachal)",
+          "url": "https://bhadohi.nic.in/places-of-interest/",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Bhadohi district (NIC) — Sita Samahit Sthal (110 ft Hanuman statue; 11 km from Jangiganj; airports, stations, directions)",
+        "url": "https://bhadohi.nic.in/tourist-place/sita-samahit-sthal/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Bhadohi district (NIC) — Places of interest (Sitamarhi about 85 km from Varanasi, 40 km from Prayagraj, 45 km from Vindhyachal)",
+        "url": "https://bhadohi.nic.in/places-of-interest/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Sita Samahit Sthal (legend; completed 1990)",
+        "url": "https://en.wikipedia.org/wiki/Sita_Samahit_Sthal",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Hindi Wikipedia — सीता समाहित स्थल (coordinates 25.2730 N, 82.2577 E)",
+        "url": "https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A5%80%E0%A4%A4%E0%A4%BE_%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4_%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%B2",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "भदोही ज़िले के सीतामढ़ी में गंगा तट पर स्थित मंदिर, वाराणसी से प्रयागराज की ओर लगभग 85 किमी पश्चिम, उस स्थान पर बना जहाँ परंपरा के अनुसार सीता धरती में समा गईं। वर्तमान परिसर 1990 में पूरा हुआ। इसकी पहचान हनुमान जी की विशाल प्रतिमा है, जो ज़िला प्रशासन के अनुसार 110 फ़ुट ऊँची है।",
+        "story": "कहा जाता है कि सीता यहाँ महर्षि वाल्मीकि के आश्रम में रहीं, जहाँ उनके पुत्र लव और कुश ने राम के अश्वमेध का घोड़ा पकड़ा और उनके योद्धाओं को रोके रखा। जब स्वयं राम आए, तो सीता ने अपनी माता धरती से उन्हें वापस ले लेने की प्रार्थना की, और धरती ने उन्हें अपनी गोद में ले लिया।",
+        "bestTime": "सर्दियों की सुबहें; यात्रा सहित पूरा दिन रखें। मुख्य पर्व रामनवमी (मार्च–अप्रैल)",
+        "tips": [
+          "वाराणसी से सड़क मार्ग से प्रयागराज हाईवे (पुराना जीटी रोड) लें और गोपीगंज के बाद बाएँ मुड़ें; मंदिर हाईवे से गंगा की ओर लगभग 12 किमी है।",
+          "ज़िले के अनुसार निकटतम रेलवे स्टेशन भदोही (लगभग 40 किमी) और मिर्ज़ापुर (लगभग 44 किमी) हैं, इसलिए ज़्यादातर लोग कार से आते हैं।",
+          "विंध्याचल लगभग 45 किमी दूर है; दोनों एक लंबे दिन में देखे जा सकते हैं।"
+        ],
+        "glance": {
+          "timings": "कोई आधिकारिक समय प्रकाशित नहीं; स्थानीय रूप से पुष्टि करें",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "मंदिर में 1–2 घंटे; यात्रा सहित पूरा दिन",
+          "season": "अक्टूबर–मार्च; रामनवमी (मार्च–अप्रैल)"
+        }
+      }
+    }
+  },
+  {
+    "id": "pishach-mochan",
+    "name_en": "Pishach Mochan Kund",
+    "name_hi": "पिशाचमोचन कुंड",
+    "names": {
+      "ta": "பிசாச மோசன் குண்ட்",
+      "te": "పిశాచ మోచన్ కుండ్",
+      "kn": "ಪಿಶಾಚ ಮೋಚನ ಕುಂಡ",
+      "ml": "പിശാച മോചൻ കുണ്ഡ്",
+      "bn": "পিশাচমোচন কুণ্ড",
+      "or": "ପିଶାଚମୋଚନ କୁଣ୍ଡ",
+      "as": "পিশাচমোচন কুণ্ড",
+      "gu": "પિશાચમોચન કુંડ",
+      "pa": "ਪਿਸ਼ਾਚ ਮੋਚਨ ਕੁੰਡ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "heritage",
+    "lat": 25.3218,
+    "lng": 82.9955,
+    "coordsVerified": false,
+    "summary": "A large sacred tank in the Pishach Mochan locality, just west of Chetganj and Lahurabir, known in the Kashi Khand as Vimal Tirtha. Families come here to offer pind daan and tripindi shraddha so that their ancestors, above all those who died untimely deaths, may find peace. The shrines of Kapardishwar Mahadev and Kapardi Vinayak stand on its bank. In Pitru Paksha (September–October) the steps fill: on one day in 2025 more than 40,000 people performed shraddha here.",
+    "story": "The Kashi Khand tells of a brahmin who had become a pishacha, a restless spirit, through his past deeds. A sage told him to bathe in Vimal Tirtha and worship Kapardishwar; he was released, and the tank has been called Pishach Mochan, 'release of the pishacha', ever since.",
+    "bestTime": "Early morning on an ordinary day; during Pitru Paksha (Sep–Oct) come only if you are performing the rites",
+    "image": "/media/places/pishach-mochan.jpg",
+    "tips": [
+      "Reach it by auto or cycle-rickshaw from Chetganj, Maldahiya or Sigra.",
+      "If you are performing a shraddha, agree the rites, materials and dakshina with a priest beforehand, and be wary of touts.",
+      "These are rites of mourning: do not photograph families at their pind daan."
+    ],
+    "glance": {
+      "timings": "Open to worshippers through the day; no official hours published",
+      "entry": "No ticket reported",
+      "duration": "20–30 min to visit; a shraddha takes longer",
+      "season": "Oct–Mar; Pitru Paksha (Sep–Oct) for the rites",
+      "crowd": "moderate",
+      "photography": "allowed",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Varanasi Temples — Kapardeeshwar, C-21/40 Pishachmochan (Vimal Kund; open for worship practically all day)",
+          "url": "https://varanasitemples.in/shiva-temples/kapardeeshwar/",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Amar Ujala — Pitru Paksha: over 40,000 from 10 states perform shraddha at Pishachmochan in a day (13 Sep 2025)",
+          "url": "https://www.amarujala.com/uttar-pradesh/varanasi/pitru-paksha-40-thousand-people-from-10-states-performed-tarpan-for-ancestors-shraddha-karma-in-kashi-2025-09-12",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Varanasi Temples — Vimal Teerth (Pishachmochan Talab), Kashi Khand ch. 54",
+        "url": "https://varanasitemples.in/importance-of-river-ganga/vimal-teerth-pisachmochan-talab/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Varanasi Guru — Pishach Mochan: tirth of forbidden ones (near Lahurabir; tripindi shraddha; Kapardishwar)",
+        "url": "https://www.varanasiguru.com/?p=7928",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Amar Ujala — Pitru Paksha: over 40,000 from 10 states perform shraddha at Pishachmochan in a day (13 Sep 2025)",
+        "url": "https://www.amarujala.com/uttar-pradesh/varanasi/pitru-paksha-40-thousand-people-from-10-states-performed-tarpan-for-ancestors-shraddha-karma-in-kashi-2025-09-12",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "OpenStreetMap — tank (way 26752635) beside the Pishach Mochan locality node 4181113152 (coordinates)",
+        "url": "https://www.openstreetmap.org/way/26752635",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "चेतगंज और लहुराबीर के ठीक पश्चिम में पिशाचमोचन मोहल्ले का बड़ा पवित्र कुंड, जिसे काशी खंड में विमल तीर्थ कहा गया है। परिवार यहाँ पिंडदान और त्रिपिंडी श्राद्ध करने आते हैं, ताकि पितरों को, ख़ासकर अकाल मृत्यु पाने वालों को, शांति मिले। कुंड के तट पर कपर्दीश्वर महादेव और कपर्दी विनायक के मंदिर हैं। पितृपक्ष (सितंबर–अक्टूबर) में सीढ़ियाँ भर जाती हैं: 2025 में एक ही दिन 40,000 से अधिक लोगों ने यहाँ श्राद्ध किया।",
+        "story": "काशी खंड में एक ब्राह्मण की कथा है जो अपने पूर्व कर्मों से पिशाच बन गया था। एक ऋषि ने उसे विमल तीर्थ में स्नान कर कपर्दीश्वर की पूजा करने को कहा; वह मुक्त हुआ, और तब से यह कुंड पिशाचमोचन, यानी 'पिशाच की मुक्ति', कहलाता है।",
+        "bestTime": "किसी सामान्य दिन सुबह जल्दी; पितृपक्ष (सितंबर–अक्टूबर) में तभी आएँ जब आप स्वयं कर्मकांड कर रहे हों",
+        "tips": [
+          "चेतगंज, मालदहिया या सिगरा से ऑटो या साइकिल-रिक्शा से पहुँचें।",
+          "श्राद्ध करना हो तो विधि, सामग्री और दक्षिणा पुरोहित से पहले तय कर लें, और दलालों से सावधान रहें।",
+          "ये शोक के कर्मकांड हैं: पिंडदान करते परिवारों की तस्वीर न लें।"
+        ],
+        "glance": {
+          "timings": "दिन भर पूजा के लिए खुला; कोई आधिकारिक समय प्रकाशित नहीं",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "देखने के लिए 20–30 मिनट; श्राद्ध में अधिक समय लगता है",
+          "season": "अक्टूबर–मार्च; कर्मकांड के लिए पितृपक्ष (सितंबर–अक्टूबर)"
+        }
+      }
+    }
+  },
+  {
+    "id": "ratneshwar-mahadev",
+    "name_en": "Ratneshwar Mahadev — the Leaning Temple",
+    "name_hi": "रत्नेश्वर महादेव — झुका हुआ मंदिर",
+    "names": {
+      "ta": "ரத்னேஷ்வர் மகாதேவ் — சாய்ந்த கோயில்",
+      "te": "రత్నేశ్వర్ మహాదేవ్ — వాలిన ఆలయం",
+      "kn": "ರತ್ನೇಶ್ವರ ಮಹಾದೇವ — ವಾಲಿದ ದೇವಾಲಯ",
+      "ml": "രത്നേശ്വർ മഹാദേവ് — ചരിഞ്ഞ ക്ഷേത്രം",
+      "bn": "রত্নেশ্বর মহাদেব — হেলানো মন্দির",
+      "or": "ରତ୍ନେଶ୍ୱର ମହାଦେବ — ଢଳିଥିବା ମନ୍ଦିର",
+      "as": "ৰত্নেশ্বৰ মহাদেৱ — হালি থকা মন্দিৰ",
+      "gu": "રત્નેશ્વર મહાદેવ — નમેલું મંદિર",
+      "pa": "ਰਤਨੇਸ਼ਵਰ ਮਹਾਦੇਵ — ਝੁਕਿਆ ਮੰਦਰ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "temple",
+    "lat": 25.3119,
+    "lng": 83.016,
+    "coordsVerified": true,
+    "summary": "A carved sandstone Shiva temple at the water's edge between Manikarnika and Scindia ghats, leaning by about nine degrees, more than the Leaning Tower of Pisa. It stands so low that the Ganga covers its sanctum for most of the year and in the monsoon rises up the shikhara, so worship here is rare. City revenue records date it to 1825–1830; photographs from the 1860s show it still upright.",
+    "story": "Who built it is disputed. Priests tell of a servant of Raja Man Singh who raised it for his mother, Ratna Bai, and boasted that he had repaid his debt to her; since a mother's debt can never be repaid, the temple tilted, and it is also called Matri-rin Mahadev. Another telling makes Ratna Bai a maid of Ahilyabai Holkar who named the temple after herself, while others credit Queen Baija Bai of Gwalior or the Amethi royal family.",
+    "bestTime": "From a boat at dawn; in the dry months before the monsoon, when low water shows more of the temple",
+    "image": "/media/places/ratneshwar-mahadev.jpg",
+    "tips": [
+      "Best seen from the river: every Dashashwamedh–Panchganga boat ride passes it, or look down from the steps of Scindia Ghat.",
+      "It stands beside Manikarnika, the cremation ghat. Photograph the temple, but keep pyres and mourners out of the frame.",
+      "Some guides call it 'Kashi Karvat', but that name belongs to a different temple in the old city."
+    ],
+    "glance": {
+      "timings": "No regular darshan; the sanctum is under water most of the year. Seen from the ghat steps or a boat",
+      "entry": "No ticket reported",
+      "duration": "10–15 min (from a boat or the steps)",
+      "season": "Nov–Jun (low water shows more of the temple)",
+      "crowd": "moderate",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Wikipedia — Ratneshwar Mahadev temple (coordinates; nine-degree lean; builder accounts; revenue records 1825–1830)",
+          "url": "https://en.wikipedia.org/wiki/Ratneshwar_Mahadev_temple",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Varanasi Guru — Ratneshwar Mahadev, the leaning temple of Kashi",
+          "url": "https://www.varanasiguru.com/?p=4610",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Wikipedia — Ratneshwar Mahadev temple (coordinates; nine-degree lean; builder accounts; revenue records 1825–1830)",
+        "url": "https://en.wikipedia.org/wiki/Ratneshwar_Mahadev_temple",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Live History India — The 'Leaning Temple of Varanasi' (12 Jul 2021)",
+        "url": "https://livehistoryindia.com/story/monuments/leaning-temple-varanasi",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Varanasi Guru — Ratneshwar Mahadev, the leaning temple of Kashi",
+        "url": "https://www.varanasiguru.com/?p=4610",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "The Logical Indian — Fact check: Ratneshwar temple leans more than the Tower of Pisa",
+        "url": "https://thelogicalindian.com/fact-check/ratneshwar-temple-leaning-tower-pisa-varanasi-lean-22847",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "मणिकर्णिका और सिंधिया घाट के बीच पानी के किनारे नक़्क़ाशीदार बलुआ पत्थर का शिव मंदिर, जो लगभग नौ डिग्री झुका है, यानी पीसा की झुकी मीनार से भी अधिक। यह इतना नीचे है कि साल के अधिकांश समय गंगा इसके गर्भगृह को ढके रहती है और बरसात में पानी शिखर तक चढ़ आता है, इसलिए यहाँ पूजा कम ही होती है। नगर के राजस्व अभिलेख इसे 1825–1830 का बताते हैं; 1860 के दशक की तस्वीरों में यह सीधा खड़ा दिखता है।",
+        "story": "इसे किसने बनवाया, इस पर मतभेद है। पुजारी बताते हैं कि राजा मान सिंह के एक सेवक ने इसे अपनी माँ रत्ना बाई के लिए बनवाया और दावा किया कि उसने माँ का ऋण चुका दिया; माँ का ऋण कभी नहीं चुकता, इसलिए मंदिर झुक गया, और इसे मातृ-ऋण महादेव भी कहते हैं। एक अन्य कथा में रत्ना बाई अहिल्याबाई होल्कर की दासी थीं जिन्होंने मंदिर का नाम अपने नाम पर रखा, जबकि कुछ लोग इसका श्रेय ग्वालियर की रानी बैजा बाई या अमेठी राजपरिवार को देते हैं।",
+        "bestTime": "नाव से भोर में; बरसात से पहले के सूखे महीनों में, जब कम पानी में मंदिर का अधिक हिस्सा दिखता है",
+        "tips": [
+          "नदी से सबसे अच्छा दिखता है: दशाश्वमेध–पंचगंगा की हर नाव इसके सामने से गुज़रती है, या सिंधिया घाट की सीढ़ियों से देखें।",
+          "यह श्मशान घाट मणिकर्णिका के पास है। मंदिर की तस्वीर लें, पर चिताएँ और शोक मनाते लोग फ़्रेम में न आएँ।",
+          "कुछ गाइड इसे 'काशी करवट' कहते हैं, पर यह नाम पुराने शहर के एक अलग मंदिर का है।"
+        ],
+        "glance": {
+          "timings": "नियमित दर्शन नहीं; गर्भगृह साल के अधिकांश समय पानी में रहता है। घाट की सीढ़ियों या नाव से देखा जाता है",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "10–15 मिनट (नाव या सीढ़ियों से)",
+          "season": "नवंबर–जून (कम पानी में मंदिर अधिक दिखता है)"
+        }
+      }
+    }
+  },
+  {
+    "id": "sarnath-monasteries",
+    "name_en": "International Buddhist Temples of Sarnath",
+    "name_hi": "सारनाथ के अंतरराष्ट्रीय बौद्ध मंदिर",
+    "names": {
+      "ta": "சாரநாத் சர்வதேச பௌத்த கோயில்கள்",
+      "te": "సారనాథ్ అంతర్జాతీయ బౌద్ధ ఆలయాలు",
+      "kn": "ಸಾರನಾಥದ ಅಂತರರಾಷ್ಟ್ರೀಯ ಬೌದ್ಧ ದೇವಾಲಯಗಳು",
+      "ml": "സാരനാഥിലെ അന്താരാഷ്ട്ര ബുദ്ധക്ഷേത്രങ്ങൾ",
+      "bn": "সারনাথের আন্তর্জাতিক বৌদ্ধ মন্দির",
+      "or": "ସାରନାଥର ଆନ୍ତର୍ଜାତିକ ବୌଦ୍ଧ ମନ୍ଦିର",
+      "as": "সাৰনাথৰ আন্তঃৰাষ্ট্ৰীয় বৌদ্ধ মন্দিৰ",
+      "gu": "સારનાથનાં આંતરરાષ્ટ્રીય બૌદ્ધ મંદિરો",
+      "pa": "ਸਾਰਨਾਥ ਦੇ ਅੰਤਰਰਾਸ਼ਟਰੀ ਬੋਧੀ ਮੰਦਰ"
+    },
+    "faith": [
+      "buddhist"
+    ],
+    "type": "monastery",
+    "lat": 25.3783,
+    "lng": 83.0217,
+    "coordsVerified": true,
+    "summary": "Around the ruins, Buddhist communities from across Asia keep their own temples, each built in its home tradition; UP Tourism lists more than a dozen, from Thai, Tibetan, Japanese and Chinese to Myanmar, Vietnamese and Sri Lankan. In the grounds of the Thai temple (Wat Thai) stands a Buddha 80 feet (about 24 m) tall, built of 815 stone blocks over 14 years and unveiled in March 2011. The Tibetan temple keeps a Shakyamuni image and rows of prayer wheels; the Japanese temple, Nichigatsuzan Horinji, has its name carved at the gate; the Chinese temple, which guides date to 1939, is built in Chinese style.",
+    "story": "The standing Buddha's form recalls the great Buddhas of Bamiyan in Afghanistan, destroyed in 2001. The former Thai prime minister Surayud Chulanont unveiled it in the presence of Thai monks, a gift of Thai Buddhists to the place of the first teaching.",
+    "bestTime": "Morning, together with the Dhamek Stupa and the museum; Buddha Purnima (April–May), when the monasteries hold their celebrations",
+    "image": "/media/places/sarnath-monasteries.jpg",
+    "tips": [
+      "These are working monasteries: take shoes off where asked, keep your voice low and ask before photographing monks or shrine rooms.",
+      "A little north of the main site, the Vajra Vidya Institute, a Karma Kagyu monastery founded by Khenchen Thrangu Rinpoche and inaugurated by the Dalai Lama in December 1999, is also worth the walk.",
+      "All are walkable from the Dhamek Stupa, but no temple publishes official hours; visit in daylight and check at each gate."
+    ],
+    "glance": {
+      "timings": "Each temple keeps its own daytime hours; no official timings published (guides give the Japanese temple 06:00–18:00)",
+      "entry": "No ticket reported",
+      "duration": "1–2 h for several temples",
+      "season": "Oct–Mar; Buddha Purnima (Apr–May)",
+      "crowd": "moderate",
+      "photography": "outside-only",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "UP Tourism (Government of Uttar Pradesh) — Varanasi–Sarnath: list of Buddhist temples and monasteries in Sarnath",
+          "url": "https://uptourism.gov.in/en/page/varanasi-sarnath",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Trawell — Japanese Temple, Sarnath (Nichigai Suzan Horinji; 6 AM–6 PM, free)",
+          "url": "https://www.trawell.in/uttar-pradesh/sarnath/japanese-temple",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "DNA India — India's tallest Buddha statue inaugurated in Sarnath (17 Mar 2011): 80 ft, 815 stones, 14 years, unveiled by Surayud Chulanont",
+        "url": "https://www.dnaindia.com/india/report-india-s-tallest-buddha-statue-inaugurated-in-sarnath-1521116",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Sarnath (Thai temple's 24.3 m standing Buddha, begun 1997, unveiled 2011; Vajra Vidya Institute)",
+        "url": "https://en.wikipedia.org/wiki/Sarnath",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Karmapa Office — Vajra Vidya Institute, Sarnath (inaugurated by the Dalai Lama, December 1999)",
+        "url": "https://kagyuoffice.org/gyalwang-karmapas-anthem-for-the-vajra-vidya-institute/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "OpenStreetMap — Thai Temple & Monastery, Sarnath (way 103197199)",
+        "url": "https://www.openstreetmap.org/way/103197199",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "खंडहरों के चारों ओर पूरे एशिया के बौद्ध समुदायों के अपने-अपने मंदिर हैं, हर एक अपनी परंपरा की शैली में बना; यूपी पर्यटन की सूची में थाई, तिब्बती, जापानी और चीनी से लेकर म्यांमार, वियतनामी और श्रीलंकाई तक एक दर्जन से अधिक नाम हैं। थाई मंदिर (वाट थाई) के परिसर में 80 फ़ुट (लगभग 24 मीटर) ऊँची बुद्ध प्रतिमा खड़ी है, जो 815 पत्थर-खंडों से 14 वर्षों में बनी और मार्च 2011 में अनावृत हुई। तिब्बती मंदिर में शाक्यमुनि की प्रतिमा और प्रार्थना-चक्रों की कतारें हैं; जापानी मंदिर निचिगात्सुज़ान होरिन्जी का नाम द्वार पर उकेरा है; चीनी मंदिर, जिसे गाइड 1939 का बताते हैं, चीनी शैली में बना है।",
+        "story": "खड़ी बुद्ध प्रतिमा का रूप अफ़ग़ानिस्तान के बामियान बुद्धों की याद दिलाता है, जो 2001 में नष्ट कर दिए गए। थाईलैंड के पूर्व प्रधानमंत्री सुरयुद चुलानोन्त ने थाई भिक्षुओं की उपस्थिति में इसका अनावरण किया — प्रथम उपदेश की भूमि को थाई बौद्धों की भेंट।",
+        "bestTime": "सुबह, धमेख स्तूप और संग्रहालय के साथ; बुद्ध पूर्णिमा (अप्रैल-मई), जब विहारों में उत्सव होते हैं",
+        "tips": [
+          "ये जीवित विहार हैं: जहाँ कहा जाए जूते उतारें, धीमे बोलें और भिक्षुओं या पूजा-कक्ष की फ़ोटो से पहले पूछ लें।",
+          "मुख्य स्थल से थोड़ा उत्तर में वज्र विद्या संस्थान भी देखने लायक़ है — खेनचेन थ्रांगु रिनपोछे द्वारा स्थापित कर्म काग्यू विहार, जिसका उद्घाटन दलाई लामा ने दिसंबर 1999 में किया।",
+          "सब धमेख स्तूप से पैदल दूरी पर हैं, पर कोई मंदिर आधिकारिक समय प्रकाशित नहीं करता; दिन के उजाले में जाएँ और हर द्वार पर पूछ लें।"
+        ],
+        "glance": {
+          "timings": "हर मंदिर का अपना दिन का समय; आधिकारिक समय प्रकाशित नहीं (गाइडों में जापानी मंदिर सुबह 6 से शाम 6 बजे)",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "कई मंदिरों के लिए 1 से 2 घंटे",
+          "season": "अक्टूबर से मार्च; बुद्ध पूर्णिमा (अप्रैल-मई)"
+        }
+      }
+    }
+  },
+  {
+    "id": "sarnath-deer-park",
+    "name_en": "Sarnath Deer Park",
+    "name_hi": "सारनाथ हिरण पार्क",
+    "names": {
+      "ta": "சாரநாத் மான் பூங்கா",
+      "te": "సారనాథ్ జింకల పార్కు",
+      "kn": "ಸಾರನಾಥ ಜಿಂಕೆ ಉದ್ಯಾನ",
+      "ml": "സാരനാഥ് മാൻ പാർക്ക്",
+      "bn": "সারনাথ হরিণ উদ্যান",
+      "or": "ସାରନାଥ ହରିଣ ଉଦ୍ୟାନ",
+      "as": "সাৰনাথ হৰিণ উদ্যান",
+      "gu": "સારનાથ હરણ ઉદ્યાન",
+      "pa": "ਸਾਰਨਾਥ ਹਿਰਨ ਪਾਰਕ"
+    },
+    "faith": [
+      "buddhist"
+    ],
+    "type": "heritage",
+    "lat": 25.3826,
+    "lng": 83.0236,
+    "coordsVerified": true,
+    "summary": "A fenced deer enclosure and mini zoo beside the excavated site, keeping alive the old name of Sarnath as the deer park where the Buddha first taught. It was set up in 1956, is run by the Forest Department's Social Forestry Division in Varanasi, and is recognised by the Central Zoo Authority as a mini zoo. Spotted deer and blackbuck graze behind a moat, with aviaries and enclosures for crocodiles and gharials nearby.",
+    "story": "The Pali texts call this place Isipatana and Migadaya, the deer park, where the Buddha set the wheel of the Dhamma turning. Its name recalls a story of a deer who offered his own life to save a doe from a king's hunt; the moved king made the forest a sanctuary for deer.",
+    "bestTime": "Morning, soon after opening, when the deer are most active and the day is cool; any day except Friday",
+    "image": "/media/places/sarnath-deer-park.jpg",
+    "tips": [
+      "Closed on Fridays, the same day as the Sarnath Museum; a 2024 guide says the zoo opens on Fridays in July and August.",
+      "Tickets are sold for cash at the counter, according to the same guide; carry small notes.",
+      "The deer can be seen across the moat from the archaeological site, even when the zoo is shut."
+    ],
+    "glance": {
+      "timings": "09:00–17:00, closed Fri (Central Zoo Authority listing); a 2024 guide gives earlier last entry by season",
+      "entry": "About ₹20 adult · ₹10 child (Indian); ₹50 Asian · ₹100 other foreign visitors (2024 guide; the older CZA listing shows ₹10 / ₹5)",
+      "duration": "30–45 min",
+      "season": "Oct–Mar",
+      "crowd": "moderate",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Central Zoo Authority — Sarnath Deer Park, mini zoo (Social Forestry Division, Varanasi; 09:00–17:00, closed Friday; ₹10 adult, ₹5 child)",
+          "url": "https://cza.nic.in/uploads/documents/zoos/information/english/261.pdf",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Visit Sarnath — Deer Park timing and tickets (published 1 Nov 2024, updated 14 Dec 2024)",
+          "url": "https://visitsarnath.in/deer-park-timing-tickets/",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Central Zoo Authority — Sarnath Deer Park information sheet",
+        "url": "https://cza.nic.in/uploads/documents/zoos/information/english/261.pdf",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Sarnath Deer Park (mini zoo, established 1956, CZA member since 1999)",
+        "url": "https://en.wikipedia.org/wiki/Sarnath_Deer_Park",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Visit Sarnath — Deer Park animals (deer, gharial, crocodiles, emu, birds) and tickets",
+        "url": "https://visitsarnath.in/deer-park-timing-tickets/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "OpenStreetMap — Deer Park, Sarnath (way 103172567, tourism=zoo)",
+        "url": "https://www.openstreetmap.org/way/103172567",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "उत्खनित स्थल के पास बाड़ से घिरा हिरण उद्यान और मिनी चिड़ियाघर, जो सारनाथ के उस पुराने नाम को जीवित रखता है — मृगदाव, जहाँ बुद्ध ने पहला उपदेश दिया। 1956 में स्थापित यह पार्क वन विभाग के सामाजिक वानिकी प्रभाग, वाराणसी द्वारा चलाया जाता है और केंद्रीय चिड़ियाघर प्राधिकरण से मिनी ज़ू के रूप में मान्यता प्राप्त है। खाई के पार चीतल और काले हिरण चरते हैं, पास ही पक्षियों के बाड़े और मगरमच्छ व घड़ियाल के बाड़े हैं।",
+        "story": "पालि ग्रंथ इस स्थान को इसिपतन और मिगदाय, यानी मृगदाव कहते हैं, जहाँ बुद्ध ने धम्मचक्र प्रवर्तन किया। यह नाम उस कथा की याद दिलाता है जिसमें एक हिरण ने एक हिरणी को राजा के शिकार से बचाने के लिए अपना जीवन अर्पित किया, और द्रवित राजा ने यह वन हिरणों का अभयारण्य बना दिया।",
+        "bestTime": "सुबह खुलते ही, जब हिरण सबसे सक्रिय होते हैं और मौसम ठंडा रहता है; शुक्रवार छोड़कर कोई भी दिन",
+        "tips": [
+          "शुक्रवार को बंद, उसी दिन जब सारनाथ संग्रहालय बंद रहता है; 2024 की एक गाइड के अनुसार जुलाई और अगस्त में शुक्रवार को भी खुला रहता है।",
+          "उसी गाइड के अनुसार टिकट काउंटर पर नकद मिलते हैं; छुट्टे पैसे रखें।",
+          "चिड़ियाघर बंद हो तब भी पुरातात्विक स्थल से खाई के पार हिरण दिख जाते हैं।"
+        ],
+        "glance": {
+          "timings": "सुबह 9 से शाम 5 बजे, शुक्रवार बंद (केंद्रीय चिड़ियाघर प्राधिकरण की सूची); 2024 की एक गाइड में मौसम अनुसार अंतिम प्रवेश पहले",
+          "entry": "लगभग ₹20 वयस्क · ₹10 बच्चे (भारतीय); ₹50 एशियाई · ₹100 अन्य विदेशी (2024 गाइड; पुरानी CZA सूची में ₹10 / ₹5)",
+          "duration": "30 से 45 मिनट",
+          "season": "अक्टूबर से मार्च"
+        }
+      }
+    }
+  },
+  {
+    "id": "jantar-mantar-varanasi",
+    "name_en": "Jantar Mantar",
+    "name_hi": "जंतर मंतर",
+    "names": {
+      "ta": "ஜந்தர் மந்தர்",
+      "te": "జంతర్ మంతర్",
+      "kn": "ಜಂತರ್ ಮಂತರ್",
+      "ml": "ജന്തർ മന്തർ",
+      "bn": "যন্তর মন্তর",
+      "or": "ଯନ୍ତର ମନ୍ତର",
+      "as": "যন্তৰ মন্তৰ",
+      "gu": "જંતર મંતર",
+      "pa": "ਜੰਤਰ ਮੰਤਰ"
+    },
+    "faith": [
+      "secular"
+    ],
+    "type": "heritage",
+    "lat": 25.308,
+    "lng": 83.0109,
+    "coordsVerified": true,
+    "summary": "On the terrace of Man Mahal, the palace Raja Man Singh of Amber built above Man Mandir Ghat around 1600, Sawai Jai Singh II of Jaipur laid out a stone observatory around 1737, one of five he built with Delhi, Jaipur, Ujjain and Mathura. The ASI board on site names six masonry instruments: the Samrat and Laghu Samrat Yantras for time and the hour angle, the Dakshinottara Bhitti for a star's height on the meridian, the Chakra Yantra for declination, the Digamsha Yantra for azimuth and the Nadivalaya, which tells which hemisphere of the sky a body is in. They still stand, though the Astronomical Society of India describes them as in a state of disrepair. Protected by the ASI since 1920, the palace also houses the Virtual Experiential Museum, opened in 2019, on the same ticket.",
+    "story": "When Sir Robert Barker visited in 1772 he found the instruments in good condition, though 'the index is wanting'. An engraving by Archibald Campbell of about 1777 records the same stone dials on the palace roof.",
+    "bestTime": "A sunny morning, when shadows fall sharply on the dials; pair it with the ghats at sunrise",
+    "image": "/media/places/jantar-mantar-varanasi.jpg",
+    "tips": [
+      "One ASI ticket covers the observatory and the Virtual Experiential Museum inside Man Mahal; paying by card or online is ₹5 cheaper for Indians and ₹50 cheaper for foreigners.",
+      "Read the ASI board first: it explains what each of the six instruments measured.",
+      "Children under 15 enter free."
+    ],
+    "glance": {
+      "timings": "Sunrise–21:00 (UP Tourism; ASI ticket listing 06:00–21:00); some guides say 09:00–16:30",
+      "entry": "₹25 cash / ₹20 online (Indian, SAARC, BIMSTEC) · ₹300 / ₹250 (foreign); under 15 free",
+      "duration": "45 min–1 h (with the museum)",
+      "season": "Oct–Mar",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "any",
+      "verified": false,
+      "sources": [
+        {
+          "title": "UP Tourism (Government of Uttar Pradesh) — Man Mahal: VEM with monument ₹25 Indian/SAARC/BIMSTEC, ₹300 foreign, sunrise to 9 PM, under 15 free",
+          "url": "https://uptourism.gov.in/en/page/varanasi-sarnath",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "ASI Sarnath Circle — Visitor information (₹25 cash / ₹20 online; ₹300 / ₹250 foreign)",
+          "url": "https://www.asisarnathcircle.in/visitorinformation.php",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Observatory of Man Singh (Man Mahal) — ASI tickets on District (open 06:00–21:00 daily)",
+          "url": "https://www.district.in/events/observatory-of-man-singh-man-mahal-buy-tickets",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "ASI site board 'Man-Mahal and Stone Observatory' (photo on Wikimedia Commons): Man Singh's palace c. 1600, Jai Singh II's observatory, six instruments",
+        "url": "https://commons.wikimedia.org/wiki/File:Information_board_in_English_at_Observatory_of_Man_Singh.jpg",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikipedia — Jantar Mantar, Varanasi (1737; Barker's account of 1772; coordinates)",
+        "url": "https://en.wikipedia.org/wiki/Jantar_Mantar,_Varanasi",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Astronomical Society of India — Observing at the Jantar Mantar (Delhi and Varanasi instruments in disrepair)",
+        "url": "https://astron-soc.in/outreach/activities/archaeo-astronomy-projects/observing-at-the-jantar-mantar/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "ASI Sarnath Circle — Centrally protected monuments: 'The observatory of Man Sinha', Varanasi (1920); OpenStreetMap way 1268422242",
+        "url": "https://www.asisarnathcircle.in/monuments.php",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "मान मंदिर घाट के ऊपर, आमेर के राजा मान सिंह द्वारा लगभग 1600 में बनवाए मान महल की छत पर जयपुर के सवाई जय सिंह द्वितीय ने लगभग 1737 में पत्थर की वेधशाला बनवाई — दिल्ली, जयपुर, उज्जैन और मथुरा के साथ उनकी पाँच वेधशालाओं में से एक। स्थल पर लगे एएसआई बोर्ड में छह चिनाई-यंत्र गिनाए गए हैं: समय और होरा-कोण के लिए सम्राट और लघु सम्राट यंत्र, याम्योत्तर पर ऊँचाई के लिए दक्षिणोत्तर भित्ति, क्रांति के लिए चक्र यंत्र, दिगंश के लिए दिगंश यंत्र और नाड़ीवलय, जो बताता है कि पिंड आकाश के किस गोलार्ध में है। यंत्र आज भी खड़े हैं, हालाँकि एस्ट्रोनॉमिकल सोसाइटी ऑफ़ इंडिया इन्हें जर्जर अवस्था में बताती है। 1920 से एएसआई द्वारा संरक्षित इस महल में 2019 में खुला वर्चुअल एक्सपीरिएंशियल म्यूज़ियम भी है, उसी टिकट पर।",
+        "story": "1772 में सर रॉबर्ट बार्कर यहाँ आए तो उन्होंने यंत्रों को अच्छी हालत में पाया, बस सूचक (इंडेक्स) ग़ायब था। लगभग 1777 की आर्चिबाल्ड कैंपबेल की एक नक़्क़ाशी में महल की छत पर वही पत्थर के यंत्र दर्ज हैं।",
+        "bestTime": "धूप वाली सुबह, जब यंत्रों पर छाया साफ़ पड़ती है; सूर्योदय के समय घाटों के साथ जोड़ें",
+        "tips": [
+          "एक ही एएसआई टिकट में वेधशाला और मान महल के अंदर वर्चुअल एक्सपीरिएंशियल म्यूज़ियम दोनों शामिल हैं; कार्ड या ऑनलाइन भुगतान पर भारतीयों के लिए ₹5 और विदेशियों के लिए ₹50 कम।",
+          "पहले एएसआई का बोर्ड पढ़ें: उसमें छहों यंत्रों का उपयोग समझाया गया है।",
+          "15 वर्ष से कम उम्र के बच्चों का प्रवेश निःशुल्क है।"
+        ],
+        "glance": {
+          "timings": "सूर्योदय से रात 9 बजे (यूपी पर्यटन; एएसआई टिकट सूची में सुबह 6 से रात 9 बजे); कुछ गाइडों में 9 से 4:30 बजे",
+          "entry": "₹25 नकद / ₹20 ऑनलाइन (भारतीय, सार्क, बिम्सटेक) · ₹300 / ₹250 (विदेशी); 15 वर्ष से कम निःशुल्क",
+          "duration": "45 मिनट से 1 घंटा (संग्रहालय सहित)",
+          "season": "अक्टूबर से मार्च"
+        }
+      }
+    }
+  },
+  {
+    "id": "raj-ghat",
+    "name_en": "Raj Ghat",
+    "name_hi": "राजघाट",
+    "names": {
+      "ta": "ராஜ் காட்",
+      "te": "రాజ్ ఘాట్",
+      "kn": "ರಾಜ್ ಘಾಟ್",
+      "ml": "രാജ് ഘാട്ട്",
+      "bn": "রাজ ঘাট",
+      "or": "ରାଜ ଘାଟ",
+      "as": "ৰাজ ঘাট",
+      "gu": "રાજ ઘાટ",
+      "pa": "ਰਾਜ ਘਾਟ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "ghat",
+    "lat": 25.3234,
+    "lng": 83.031,
+    "coordsVerified": true,
+    "summary": "The northern ghat at the foot of the Malviya (Dufferin) Bridge, near where the Varuna meets the Ganga. The high bank above it is ancient Kashi: the Archaeological Survey of India's board at the excavated remains dates the settlement from the 8th century BCE to the 18th century CE, and a Gupta-era seal found here names the city administration of Varanasi. In 2020 the Prime Minister opened Dev Deepawali here by lighting the first diya.",
+    "story": "Railway workers building Kashi station turned up antiquities here, and the ASI cut its first trial trench in 1940; Banaras Hindu University later excavated the site on a large scale. In medieval times a Gahadavala fort stood on the bank, and the steps below served as the city's ferry crossing.",
+    "bestTime": "Dev Deepawali (Kartik Purnima, Oct–Nov) and the Ganga Mahotsav held here in the days before it; early morning for the excavated site",
+    "image": "/media/places/raj-ghat.jpg",
+    "tips": [
+      "The excavated remains of ancient Kashi lie inside the walled compound of the Tomb of Lal Khan (1773) on the bank above the ghat; one ASI ticket is reported to cover both.",
+      "Unlike most ghats, Raj Ghat can be reached by car or bike, and Kashi railway station is beside it.",
+      "On Dev Deepawali the lamps run along the whole riverfront from Raj Ghat to Assi; book a boat early."
+    ],
+    "glance": {
+      "timings": "Ghat open at all hours; Lal Khan's Tomb and excavations about 06:00–18:00 or 19:00 (sources differ)",
+      "entry": "Ghat: no ticket reported; Lal Khan's Tomb and excavations: ASI ticket, reported ₹20–25 (QR payment)",
+      "duration": "About 1 h (ghat and excavations)",
+      "season": "Oct–Mar; Dev Deepawali (Oct–Nov)",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Incredible India (Ministry of Tourism) — Rajghat (open round the clock)",
+          "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/rajghat",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "The Telegraph — Tomb of Lal Khan and Raj Ghat (timing, ₹20 ticket, single ticket for tomb and ruins)",
+          "url": "https://www.telegraphindia.com/my-kolkata/places/tomb-of-lal-khan-and-raj-ghat-are-two-historical-places-that-should-be-on-your-list-of-things-to-see-in-varanasi/cid/1939379",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "District by Zomato — Lal Khan's Tomb (06:00–18:00)",
+          "url": "https://www.district.in/venue/tomb-of-lal-khan",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "OpenStreetMap — Raj Ghat (node 1538127119)",
+        "url": "https://www.openstreetmap.org/node/1538127119",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Incredible India (Ministry of Tourism) — Rajghat",
+        "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/rajghat",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikimedia Commons — ASI board 'Excavated Remains, Rajghat' (photo by Rangan Datta, 2023)",
+        "url": "https://commons.wikimedia.org/wiki/File:Rajghat_Varanasi_6.jpg",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "ETV Bharat — PM lights customary first diya at Raj Ghat to open Dev Deepawali (30 Nov 2020)",
+        "url": "https://etvbharat.com/english/state/uttar-pradesh/pm-modi-attends-dev-deepawali-mahotsav-in-varanasi/na20201130214813187",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "मालवीय (डफ़रिन) पुल के नीचे उत्तर का घाट, वरुणा और गंगा के संगम के पास। ऊपर का ऊँचा तट स्वयं प्राचीन काशी है: भारतीय पुरातत्त्व सर्वेक्षण का शिलापट उत्खनित अवशेषों को ईसा पूर्व 8वीं सदी से 18वीं सदी ईस्वी तक का बताता है, और यहाँ मिली गुप्तकालीन मुहर पर वाराणसी के नगर-प्रशासन का नाम है। 2020 में प्रधानमंत्री ने यहीं पहला दीया जलाकर देव दीपावली की शुरुआत की थी।",
+        "story": "काशी स्टेशन बनाते समय मज़दूरों को यहाँ प्राचीन वस्तुएँ मिलीं, और 1940 में पुरातत्त्व सर्वेक्षण ने पहली परीक्षण खाई खोदी; बाद में काशी हिंदू विश्वविद्यालय ने बड़े पैमाने पर उत्खनन किया। मध्यकाल में तट पर गहड़वालों का किला था और नीचे की सीढ़ियाँ नगर का घाट-पार उतार थीं।",
+        "bestTime": "देव दीपावली (कार्तिक पूर्णिमा, अक्टूबर–नवंबर) और उससे पहले यहीं होने वाला गंगा महोत्सव; उत्खनन स्थल के लिए सुबह जल्दी",
+        "tips": [
+          "प्राचीन काशी के उत्खनित अवशेष घाट के ऊपर लाल ख़ाँ के मक़बरे (1773) के अहाते में हैं; बताया जाता है कि पुरातत्त्व सर्वेक्षण का एक ही टिकट दोनों के लिए है।",
+          "ज़्यादातर घाटों के विपरीत राजघाट तक कार या बाइक से पहुँचा जा सकता है, और काशी रेलवे स्टेशन बगल में है।",
+          "देव दीपावली पर दीये राजघाट से अस्सी तक पूरे तट पर जलते हैं; नाव पहले से बुक करें।"
+        ],
+        "glance": {
+          "timings": "घाट हर समय खुला; लाल ख़ाँ का मक़बरा और उत्खनन स्थल लगभग सुबह 6 से शाम 6 या 7 बजे (स्रोतों में अंतर)",
+          "entry": "घाट: कोई टिकट नहीं बताया गया; मक़बरा व उत्खनन स्थल: पुरातत्त्व सर्वेक्षण टिकट, बताया गया ₹20–25 (क्यूआर भुगतान)",
+          "duration": "लगभग 1 घंटा (घाट और उत्खनन स्थल)",
+          "season": "अक्टूबर से मार्च; देव दीपावली (अक्टूबर–नवंबर)"
+        }
+      }
+    }
+  },
+  {
+    "id": "hanuman-ghat",
+    "name_en": "Hanuman Ghat",
+    "name_hi": "हनुमान घाट",
+    "names": {
+      "ta": "ஹனுமான் காட்",
+      "te": "హనుమాన్ ఘాట్",
+      "kn": "ಹನುಮಾನ್ ಘಾಟ್",
+      "ml": "ഹനുമാൻ ഘാട്ട്",
+      "bn": "হনুমান ঘাট",
+      "or": "ହନୁମାନ ଘାଟ",
+      "as": "হনুমান ঘাট",
+      "gu": "હનુમાન ઘાટ",
+      "pa": "ਹਨੂਮਾਨ ਘਾਟ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "type": "ghat",
+    "lat": 25.2972,
+    "lng": 83.0074,
+    "coordsVerified": true,
+    "summary": "A ghat between Shivala and Harishchandra, once called Rameshwaram Ghat, and the heart of Kashi's South Indian quarter. The lanes behind it hold the Kanchi math and Kanchi Kamakoti temple, the Kerala, Sankara and Sringeri maths, and Tamil families who have lived here for generations; the poet Subramania Bharati's family home stands on the ghat. At the top of the steps the Panchayati Juna Akhara of Dashnami sadhus keeps the Bade Hanuman shrine and the Rameshvara linga.",
+    "story": "The Rameshvara linga, counted among Kashi's twelve jyotirlingas, stands for the great shrine at Rameswaram in Tamil Nadu and gave the ghat its old name. By oral tradition Tulsidas founded the Hanuman shrine in the early 17th century, from which the ghat takes its present name; Ruru Bhairav, one of the eight Bhairavs of Kashi, has his shrine in the lanes here.",
+    "bestTime": "Early morning, when the steps are quiet; Kashi Tamil Sangamam (usually Nov–Dec), when delegations from Tamil Nadu bathe here",
+    "image": "/media/places/hanuman-ghat.jpg",
+    "tips": [
+      "Subramania Bharati's family home is a private house where his descendants still live; be respectful if you look for it.",
+      "Juna Akhara is a working akhara of Naga sadhus: ask before photographing anyone.",
+      "Harishchandra cremation ghat is just to the north; please do not photograph the rites."
+    ],
+    "glance": {
+      "timings": "Ghat open at all hours; Ruru Bhairav shrine 05:00–10:00 and 17:00–21:30",
+      "entry": "No ticket reported",
+      "duration": "30–60 min",
+      "season": "Oct–Mar; Kashi Tamil Sangamam (usually Nov–Dec)",
+      "crowd": "quiet",
+      "photography": "allowed",
+      "dress": "modest",
+      "verified": false,
+      "sources": [
+        {
+          "title": "UP Tourism, Pawan Path — Shri Ruru Bhairav, B.4/16 Hanuman Ghat (05:00–10:00, 17:00–21:30)",
+          "url": "http://pawanpath.up.gov.in/shri-ruru-bhairav/",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "PIB — Kashi Tamil Sangamam delegation at Hanuman Ghat, Bharati's residence and Kanchi Math (Dec 2023)",
+          "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1989582",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "OpenStreetMap — Hanuman Ghat (node 293222739)",
+        "url": "https://www.openstreetmap.org/node/293222739",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "PIB — Second batch of Kashi Tamil Sangamam at Hanuman Ghat, earlier Rameswaram Ghat; South Indian maths (Nov 2022)",
+        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1878234",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "PIB — Fifth group visits Hanuman Ghat, Subramania Bharati's residence and Kanchi Math (Dec 2023)",
+        "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1990500",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Wikiversity — The Varanasi Heritage Dossier: Hanuman Ghat and Rameshvara Temple",
+        "url": "https://en.wikiversity.org/wiki/The_Varanasi_Heritage_Dossier/Hanuman_Ghat_and_Rameshvara_Temple",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "शिवाला और हरिश्चंद्र के बीच का घाट, जो पहले रामेश्वरम घाट कहलाता था, और काशी के दक्षिण भारतीय मोहल्ले का केंद्र। पीछे की गलियों में कांची मठ और कांची कामकोटि मंदिर, केरल, शंकर और शृंगेरी मठ हैं, और पीढ़ियों से बसे तमिल परिवार; कवि सुब्रह्मण्य भारती का पारिवारिक घर इसी घाट पर है। सीढ़ियों के ऊपर दशनामी साधुओं का पंचायती जूना अखाड़ा बड़े हनुमान मंदिर और रामेश्वर लिंग की देखरेख करता है।",
+        "story": "काशी के बारह ज्योतिर्लिंगों में गिना जाने वाला रामेश्वर लिंग तमिलनाडु के रामेश्वरम धाम का प्रतीक है, और उसी से घाट का पुराना नाम पड़ा। मौखिक परंपरा के अनुसार 17वीं सदी के आरंभ में तुलसीदास ने यहाँ हनुमान मंदिर की स्थापना की, जिससे घाट का वर्तमान नाम पड़ा; काशी के आठ भैरवों में से एक, रुरु भैरव का मंदिर यहीं की गलियों में है।",
+        "bestTime": "सुबह जल्दी, जब सीढ़ियाँ शांत हों; काशी तमिल संगमम (प्रायः नवंबर–दिसंबर), जब तमिलनाडु से आए दल यहाँ स्नान करते हैं",
+        "tips": [
+          "सुब्रह्मण्य भारती का पारिवारिक घर निजी मकान है, जहाँ उनके वंशज आज भी रहते हैं; खोजें तो सम्मान से।",
+          "जूना अखाड़ा नागा साधुओं का जीवंत अखाड़ा है: किसी की फ़ोटो लेने से पहले पूछें।",
+          "हरिश्चंद्र श्मशान घाट ठीक उत्तर में है; कृपया अंत्येष्टि की फ़ोटो न लें।"
+        ],
+        "glance": {
+          "timings": "घाट हर समय खुला; रुरु भैरव मंदिर सुबह 5 से 10 और शाम 5 से रात 9:30 बजे",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "30 से 60 मिनट",
+          "season": "अक्टूबर से मार्च; काशी तमिल संगमम (प्रायः नवंबर–दिसंबर)"
+        }
+      }
+    }
+  },
+  {
+    "id": "dargah-fatman",
+    "name_en": "Dargah-e-Fatman",
+    "name_hi": "दरगाह-ए-फातमान",
+    "names": {
+      "ta": "தர்கா-ஏ-ஃபாத்மான்",
+      "te": "దర్గా-ఎ-ఫాత్మాన్",
+      "kn": "ದರ್ಗಾ-ಎ-ಫಾತ್ಮಾನ್",
+      "ml": "ദർഗ-എ-ഫാത്മാൻ",
+      "bn": "দরগাহ-এ-ফাতমান",
+      "or": "ଦରଗାହ-ଏ-ଫାତମାନ",
+      "as": "দৰগাহ-এ-ফাতমান",
+      "gu": "દરગાહ-એ-ફાતમાન",
+      "pa": "ਦਰਗਾਹ-ਏ-ਫ਼ਾਤਮਾਨ"
+    },
+    "faith": [
+      "islamic"
+    ],
+    "type": "mosque",
+    "lat": 25.315,
+    "lng": 82.997,
+    "coordsVerified": false,
+    "summary": "A Shia shrine and burial ground in the Lallapura–Sigra area of the city. The Persian poet and scholar Shaikh Muhammad Ali Hazin, who came to India from Iran and died in Banaras in 1766, is buried here. So is the shehnai maestro Ustad Bismillah Khan, laid to rest with state honours in August 2006 under a neem tree, at the spot where he played mourning tunes every Muharram.",
+    "story": "Year after year in the month of Muharram, Bismillah Khan sat here playing nauha, the laments for the martyrs of Karbala, on his shehnai. When he died, his shehnai was buried with him.",
+    "bestTime": "Morning, outside prayer times; Bismillah Khan's birth and death anniversaries (21 March, 21 August)",
+    "image": "/media/places/dargah-fatman.jpg",
+    "tips": [
+      "This is a working shrine and graveyard: dress modestly, cover your head, and ask before photographing graves or people.",
+      "During Muharram the dargah is a place of mourning; come with quiet respect or visit at another time."
+    ],
+    "glance": {
+      "timings": "No official hours published",
+      "entry": "No ticket reported",
+      "duration": "20–30 min",
+      "season": "Oct–Mar",
+      "crowd": "quiet",
+      "photography": "outside-only",
+      "dress": "covered",
+      "verified": false,
+      "sources": [
+        {
+          "title": "Business Standard (PTI) — Family still waiting for Bismillah Khan's mausoleum (26 Aug 2013)",
+          "url": "https://www.business-standard.com/article/pti-stories/family-still-waiting-for-bismillah-khan-s-mausoleum-113082600706_1.html",
+          "accessed": "2026-10-30"
+        },
+        {
+          "title": "Amar Ujala — Homage at Ustad Bismillah Khan's tomb, Sigra Fatman (22 Mar 2026)",
+          "url": "https://www.amarujala.com/video/uttar-pradesh/varanasi/video-homage-paid-at-ustad-bismillah-khans-tomb-in-varanasi-2026-03-22",
+          "accessed": "2026-10-30"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "The Tribune — Ustad Bismillah Khan is no more: buried at Fatmain graveyard (22 Aug 2006)",
+        "url": "https://www.tribuneindia.com/2006/20060822/main2.htm",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "WikiShia — Hazin Lahiji (died 15 Oct 1766 in Varanasi, buried in Fatiman)",
+        "url": "https://en.wikishia.net/view/Hazin_Lahiji",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Business Standard (PTI) — grave in the Dargah Fatman area, Nallapura locality (26 Aug 2013)",
+        "url": "https://www.business-standard.com/article/pti-stories/family-still-waiting-for-bismillah-khan-s-mausoleum-113082600706_1.html",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "OpenStreetMap — Lalla pura locality (node 4181113147), pin placed by locality",
+        "url": "https://www.openstreetmap.org/node/4181113147",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "नगर के लल्लापुरा–सिगरा इलाक़े में शिया दरगाह और क़ब्रिस्तान। ईरान से भारत आए फ़ारसी कवि और विद्वान शेख़ मुहम्मद अली हज़ीं, जिनका 1766 में बनारस में देहांत हुआ, यहीं दफ़न हैं। शहनाई उस्ताद बिस्मिल्लाह ख़ाँ को भी अगस्त 2006 में राजकीय सम्मान के साथ यहीं नीम के पेड़ के नीचे उसी जगह सुपुर्द-ए-ख़ाक किया गया, जहाँ वे हर मुहर्रम में मातमी धुनें बजाते थे।",
+        "story": "हर साल मुहर्रम के महीने में बिस्मिल्लाह ख़ाँ यहाँ बैठकर शहनाई पर नौहा, कर्बला के शहीदों का मातम, बजाते थे। उनके इंतक़ाल पर उनकी शहनाई भी उनके साथ दफ़नाई गई।",
+        "bestTime": "सुबह, नमाज़ के समय से अलग; बिस्मिल्लाह ख़ाँ की जयंती और पुण्यतिथि (21 मार्च, 21 अगस्त)",
+        "tips": [
+          "यह जीवंत दरगाह और क़ब्रिस्तान है: शालीन कपड़े पहनें, सिर ढकें, और क़ब्रों या लोगों की फ़ोटो लेने से पहले पूछें।",
+          "मुहर्रम में दरगाह मातम की जगह होती है; ख़ामोशी और अदब से आएँ, या किसी और समय जाएँ।"
+        ],
+        "glance": {
+          "timings": "कोई आधिकारिक समय प्रकाशित नहीं",
+          "entry": "कोई टिकट नहीं बताया गया",
+          "duration": "20 से 30 मिनट",
+          "season": "अक्टूबर से मार्च"
         }
       }
     }

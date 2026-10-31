@@ -912,5 +912,65 @@
         "where": "नमो घाट, बीएचयू और नगर के अन्य स्थल"
       }
     }
+  },
+  {
+    "id": "lolark-shashthi",
+    "name_en": "Lolark Shashthi (Lolark Chhath)",
+    "name_hi": "लोलार्क षष्ठी (लोलार्क छठ)",
+    "names": {
+      "ta": "லோலார்க் ஷஷ்டி",
+      "te": "లోలార్క్ షష్ఠి",
+      "kn": "ಲೋಲಾರ್ಕ್ ಷಷ್ಠಿ",
+      "ml": "ലോലാർക്ക് ഷഷ്ഠി",
+      "bn": "লোলার্ক ষষ্ঠী",
+      "or": "ଲୋଲାର୍କ ଷଷ୍ଠୀ",
+      "as": "লোলাৰ্ক ষষ্ঠী",
+      "gu": "લોલાર્ક ષષ્ઠી",
+      "pa": "ਲੋਲਾਰਕ ਸ਼ਸ਼ਠੀ"
+    },
+    "faith": [
+      "hindu"
+    ],
+    "when": "Bhadrapada Shukla Shashthi",
+    "months": [
+      8,
+      9
+    ],
+    "where": "Lolark Kund, Bhadaini",
+    "placeIds": [
+      "lolark-kund",
+      "tulsi-ghat"
+    ],
+    "summary": "Once a year the quiet stepwell of Lolarka, the Sun of Kashi, fills with lakhs of bathers. Couples praying for a child bathe at dawn, leave a fruit or vegetable in the water and give up eating it. Queues start the night before; police barricade about 2 km around the Tulsi gate, with separate entry and exit, and NDRF teams stand by in the kund.",
+    "image": "/media/festivals/lolark-shashthi.jpg",
+    "sources": [
+      {
+        "title": "Wikipedia: Lolark Sasthi",
+        "url": "https://en.wikipedia.org/wiki/Lolark_Sasthi",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "ANI: Devotees flock to Lolark Kund for holy dip; 4–5 lakh bathe, barricading within 2 km of the Tulsi gate, NDRF and Jal Police (29 Aug 2025)",
+        "url": "https://aninews.in/news/national/general-news/up-devotees-flock-to-lolark-kund-for-holy-dip-thousand-police-personnel-deployed-for-security20250829103444/",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Amar Ujala: Lolark Chhath on 17 September; couples offer and give up a fruit (12 Sep 2026)",
+        "url": "https://www.amarujala.com/uttar-pradesh/varanasi/lolark-chhath-on-september-17-seven-great-celestial-alignments-forming-after-seven-years-in-varanasi-2026-09-12",
+        "accessed": "2026-10-30"
+      },
+      {
+        "title": "Varanasi Temples: Lolark Aditya",
+        "url": "https://varanasitemples.in/aditya-temples/lolark-aditya/",
+        "accessed": "2026-10-30"
+      }
+    ],
+    "i18n": {
+      "hi": {
+        "summary": "साल में एक बार काशी के सूर्य लोलार्क का शांत सीढ़ीदार कुंड लाखों स्नानार्थियों से भर जाता है। संतान की कामना से दंपती भोर में स्नान करते हैं, एक फल या सब्ज़ी कुंड में छोड़ते हैं और फिर उसे खाना त्याग देते हैं। कतारें पिछली रात से लगती हैं; पुलिस तुलसी द्वार के लगभग 2 किमी दायरे में बैरिकेड लगाती है, आने-जाने के रास्ते अलग रहते हैं और कुंड में एनडीआरएफ़ की टीमें तैनात रहती हैं।",
+        "when": "भाद्रपद शुक्ल षष्ठी",
+        "where": "लोलार्क कुंड, भदैनी"
+      }
+    }
   }
 ]
