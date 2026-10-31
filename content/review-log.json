@@ -8,5 +8,15 @@
     "costUsd": 1.93,
     "result": "error_max_turns",
     "run": "https://github.com/sandeep1806/kashidwar/actions/runs/37658876822"
+  },
+  {
+    "date": "2026-10-23",
+    "kind": "Weekly",
+    "focus": "developments",
+    "model": "claude-sonnet-5",
+    "turns": 45,
+    "costUsd": 2.79,
+    "result": "error_max_turns",
+    "run": "local (scripts/content-review.sh)"
   }
 ]
