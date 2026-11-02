@@ -127,8 +127,13 @@
     "agency": "National Highways Logistics Management Ltd (NHLML) · built by Vishwa Samudra Engineering",
     "timeline": "Foundation 24 March 2023 · Trial runs from 2025 · >94% complete (inspection 28 September 2026) · operations targeted for 24 November 2026 (not confirmed)",
     "verified": true,
-    "lastVerified": "2026-10-07",
+    "lastVerified": "2026-11-02",
     "sources": [
+      {
+        "title": "ETV Bharat (Hindi) — Nodal officer and DM inspect ropeway: 94.35% complete, inauguration expected in November (29 Sep 2026)",
+        "url": "https://www.etvbharat.com/hi/state/nodal-officer-and-dm-varanasi-inspected-ropeway-construction-work-progress-ups26092900325",
+        "accessed": "2026-11-02"
+      },
       {
         "title": "Swarajya — Varanasi's urban ropeway reaches over 94% completion; UP Planning Secretary and DM inspect, operations targeted for 24 November (30 Sep 2026)",
         "url": "https://swarajyamag.com/amp/story/news-brief/varanasis-urban-ropeway-project-reaches-95-per-cent-completion-operations-expected-by-november",
@@ -294,7 +299,7 @@
     "agency": "Indian Railways (North Eastern / Northern Railway) · Amrit Bharat Station Scheme",
     "timeline": "Listed for redevelopment 2018 · Amrit Bharat scheme scope · completion date unconfirmed",
     "verified": false,
-    "lastVerified": "2026-10-07",
+    "lastVerified": "2026-11-02",
     "sources": [
       {
         "title": "Wikipedia — Varanasi Junction railway station",
@@ -392,7 +397,7 @@
     "agency": "National Highways Authority of India (NHAI)",
     "timeline": "Phase 1 opened 2018 · Phase 2 substantially open December 2025 · second Ganga-bridge carriageway pending",
     "verified": true,
-    "lastVerified": "2026-10-07",
+    "lastVerified": "2026-11-02",
     "sources": [
       {
         "title": "Kashi Official Web Portal — Ring Road Phase 2",
@@ -439,7 +444,7 @@
     "agency": "Airports Authority of India (AAI)",
     "timeline": "Cabinet approval June 2024 · Under construction · Opening date not announced",
     "verified": true,
-    "lastVerified": "2026-10-07",
+    "lastVerified": "2026-11-02",
     "sources": [
       {
         "title": "PIB — Cabinet approves development of Lal Bahadur Shastri International Airport, Varanasi",
@@ -531,15 +536,20 @@
     "type": "culture",
     "lat": 25.2677,
     "lng": 82.9913,
-    "summary": "An annual festival of Tamil–Kashi ties: delegations from Tamil Nadu, exhibitions, music, food and academic exchange between IIT Madras and BHU. The fourth edition ran 2–15 December 2025 on the theme 'Learn Tamil'.",
+    "summary": "An annual festival of Tamil–Kashi ties: delegations from Tamil Nadu, exhibitions, music, food and academic exchange between IIT Madras and BHU. The fifth edition runs 28 November – 12 December 2026 on the Thirukkural, after the fourth in December 2025 on the theme 'Learn Tamil'.",
     "bestTime": "Early December, Namo Ghat and BHU venues",
     "image": "/media/projects/kashi-tamil-sangamam.jpg",
     "status": "completed",
     "agency": "Ministry of Education, Government of India · IIT Madras · Banaras Hindu University",
-    "timeline": "First edition November 2022 · Fourth edition 2–15 December 2025 · next edition expected December 2026",
+    "timeline": "First edition November 2022 · Fourth edition 2–15 December 2025 · Fifth edition 28 November – 12 December 2026 (registration until 13 November)",
     "verified": true,
-    "lastVerified": "2026-09-25",
+    "lastVerified": "2026-11-02",
     "sources": [
+      {
+        "title": "PIB — Kashi Tamil Sangamam 5.0 from 28 Nov to 12 Dec 2026 (22 Oct 2026)",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2326535",
+        "accessed": "2026-11-02"
+      },
       {
         "title": "PIB — Kashi Tamil Sangamam 4.0",
         "url": "https://www.pib.gov.in/PressNoteDetails.aspx?NoteId=156270&ModuleId=3&reg=3&lang=1",
@@ -554,9 +564,9 @@
     "progress": 100,
     "i18n": {
       "hi": {
-        "summary": "तमिल–काशी संबंधों का वार्षिक उत्सव: तमिलनाडु से प्रतिनिधिमंडल, प्रदर्शनियाँ, संगीत, भोजन और आईआईटी मद्रास व बीएचयू के बीच शैक्षणिक आदान-प्रदान। चौथा संस्करण 2–15 दिसंबर 2025 को 'तमिल सीखें' विषय पर हुआ।",
+        "summary": "तमिल–काशी संबंधों का वार्षिक उत्सव: तमिलनाडु से प्रतिनिधिमंडल, प्रदर्शनियाँ, संगीत, भोजन और आईआईटी मद्रास व बीएचयू के बीच शैक्षणिक आदान-प्रदान। पांचवां संस्करण 28 नवंबर – 12 दिसंबर 2026 को तिरुक्कुरल विषय पर है; चौथा दिसंबर 2025 में 'तमिल सीखें' विषय पर हुआ था।",
         "agency": "शिक्षा मंत्रालय, भारत सरकार · आईआईटी मद्रास · काशी हिन्दू विश्वविद्यालय",
-        "timeline": "पहला संस्करण नवंबर 2022 · चौथा संस्करण 2–15 दिसंबर 2025 · अगला दिसंबर 2026 अपेक्षित"
+        "timeline": "पहला संस्करण नवंबर 2022 · चौथा संस्करण 2–15 दिसंबर 2025 · पांचवां संस्करण 28 नवंबर – 12 दिसंबर 2026 (रजिस्ट्रेशन 13 नवंबर तक)"
       }
     }
   },
@@ -579,15 +589,20 @@
     "type": "infrastructure",
     "lat": 25.2286,
     "lng": 82.8531,
-    "summary": "A 30,000-seat stadium at Ganjari, Rajatalab, designed around Shiva motifs: trishul-shaped floodlights, a damru-shaped canopy, crescent forms. Foundation laid 23 September 2023 at about ₹450 crore. At the District Magistrate's inspection on 16 August 2026 the pavilions and media centre were complete and external works over 80% done, with all construction targeted for 15 October 2026; the opening is expected late in 2026.",
+    "summary": "A 30,000-seat stadium at Ganjari, Rajatalab, designed around Shiva motifs: trishul-shaped floodlights, a damru-shaped canopy, crescent forms. Foundation laid 23 September 2023 at about ₹450 crore. At the District Magistrate's inspection on 16 August 2026 the pavilions and media centre were complete and external works over 80% done. In September 2026 Amar Ujala reported construction in its final stage and an inauguration planned for the third week of October; that did not take place, and no new opening date had been announced as of 2 November 2026.",
     "bestTime": "—",
     "image": "/media/projects/cricket-stadium.jpg",
     "status": "under_construction",
     "agency": "Board of Control for Cricket in India (BCCI) with Uttar Pradesh Cricket Association; land from Government of Uttar Pradesh",
-    "timeline": "Foundation 23 September 2023 · pavilions complete, external works >80% (16 August 2026) · construction targeted for 15 October 2026 · opening expected late 2026",
+    "timeline": "Foundation 23 September 2023 · pavilions complete, external works >80% (16 August 2026) · final stage, October inauguration planned (September 2026) but not held · opening date not announced (2 November 2026)",
     "verified": true,
-    "lastVerified": "2026-10-07",
+    "lastVerified": "2026-11-02",
     "sources": [
+      {
+        "title": "Amar Ujala — PM to inaugurate Ganjari stadium in October, first Ranji match likely in November (20 Sep 2026)",
+        "url": "https://www.amarujala.com/uttar-pradesh/varanasi/varanasi-pm-modi-to-inaugurate-ganjari-stadium-in-october-first-ranji-match-likely-in-november-here-highlights-2026-09-20",
+        "accessed": "2026-11-02"
+      },
       {
         "title": "The Tribune (ANI) — Varanasi DM inspects under-construction International Cricket Stadium in Ganjari, directs speeding up works (16 Aug 2026)",
         "url": "https://www.tribuneindia.com/news/ganjari-international-cricket-stadium/varanasi-dm-inspects-under-construction-international-cricket-stadium-in-ganjari-directs-speeding-up-works",
@@ -608,9 +623,9 @@
     "cost": "about ₹450 crore",
     "i18n": {
       "hi": {
-        "summary": "राजातालाब के गंजारी में 30,000 सीटों का स्टेडियम, शिव-प्रतीकों पर डिज़ाइन: त्रिशूल आकार की फ़्लडलाइटें, डमरू आकार की छतरी, अर्धचंद्र रूप। शिलान्यास 23 सितंबर 2023, लगभग ₹450 करोड़। 16 अगस्त 2026 के ज़िलाधिकारी निरीक्षण में पवेलियन और मीडिया सेंटर पूर्ण, बाहरी कार्य 80% से अधिक; पूरा निर्माण 15 अक्टूबर 2026 तक लक्षित, उद्घाटन 2026 के अंत में अपेक्षित।",
+        "summary": "राजातालाब के गंजारी में 30,000 सीटों का स्टेडियम, शिव-प्रतीकों पर डिज़ाइन: त्रिशूल आकार की फ़्लडलाइटें, डमरू आकार की छतरी, अर्धचंद्र रूप। शिलान्यास 23 सितंबर 2023, लगभग ₹450 करोड़। 16 अगस्त 2026 के ज़िलाधिकारी निरीक्षण में पवेलियन और मीडिया सेंटर पूर्ण, बाहरी कार्य 80% से अधिक। सितंबर 2026 में अमर उजाला ने निर्माण को अंतिम चरण में और उद्घाटन अक्टूबर के तीसरे सप्ताह में प्रस्तावित बताया; वह उद्घाटन नहीं हुआ, और 2 नवंबर 2026 तक कोई नई तारीख घोषित नहीं हुई थी।",
         "agency": "भारतीय क्रिकेट कंट्रोल बोर्ड (BCCI) उत्तर प्रदेश क्रिकेट संघ के साथ; भूमि उत्तर प्रदेश सरकार से",
-        "timeline": "शिलान्यास 23 सितंबर 2023 · पवेलियन पूर्ण, बाहरी कार्य 80% से अधिक (16 अगस्त 2026) · निर्माण 15 अक्टूबर 2026 तक लक्षित · उद्घाटन 2026 के अंत में अपेक्षित",
+        "timeline": "शिलान्यास 23 सितंबर 2023 · पवेलियन पूरे, बाहरी काम 80% से अधिक (16 अगस्त 2026) · अंतिम चरण, अक्टूबर में उद्घाटन प्रस्तावित (सितंबर 2026) पर नहीं हुआ · उद्घाटन तिथि घोषित नहीं (2 नवंबर 2026)",
         "cost": "लगभग ₹450 करोड़"
       }
     }
@@ -696,7 +711,7 @@
     "agency": "National Highways Authority of India (NHAI) · Ministry of Road Transport and Highways",
     "timeline": "Cabinet approval July 2026 · Construction yet to start",
     "verified": true,
-    "lastVerified": "2026-10-07",
+    "lastVerified": "2026-11-02",
     "sources": [
       {
         "title": "Business Standard — Cabinet approves ₹25,445 crore road corridor projects for Varanasi",

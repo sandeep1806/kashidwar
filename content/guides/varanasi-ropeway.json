@@ -1,7 +1,7 @@
 {
   "slug": "varanasi-ropeway",
   "published": "2026-09-27",
-  "updated": "2026-09-27",
+  "updated": "2026-11-02",
   "photo": "projects/varanasi-ropeway",
   "title_en": "Varanasi ropeway: route, stations, status and fares",
   "title_hi": "वाराणसी रोपवे: रूट, स्टेशन, मौजूदा स्थिति और किराया",
@@ -35,8 +35,8 @@
       "icon": "ticket",
       "label_en": "Fare (expected)",
       "label_hi": "किराया (अनुमानित)",
-      "value_en": "About ₹50 Cantt–Godowlia; not notified",
-      "value_hi": "कैंट–गोदौलिया लगभग ₹50; अधिसूचित नहीं"
+      "value_en": "₹50 Cantt–Godowlia, ₹10 shortest (reported; not published)",
+      "value_hi": "कैंट–गोदौलिया ₹50, सबसे कम ₹10 (खबरों के अनुसार; प्रकाशित नहीं)"
     },
     {
       "icon": "people",
@@ -148,16 +148,17 @@
       "heading_hi": "सितंबर 2026 में मौजूदा स्थिति",
       "body_en": [
         "Trial runs began in 2025 on the priority section from Cantt to Rathyatra. In late August 2026 Amar Ujala and Patrika reported that flooring and steelwork were still under way at Godowlia station, and that the full load trial of all 148 gondolas, which must be repeated at least four times, had been pushed to after Raksha Bandhan because of the monsoon and Sawan crowds. A late-September opening was mentioned at the time.",
-        "The most recent report found, from Times Now Hindi on 25 September 2026, says the first three stations are complete, the last two are nearly finished, and trial runs and load testing are continuing. It gives the expected inauguration as November 2026, around Dev Deepawali (24 November 2026). No official opening date had been notified as of 27 September 2026, and the target has moved several times since the original August 2025 goal.",
+        "On 28 September 2026 the district's nodal officer and the District Magistrate rode a gondola from Cantt to Godowlia. ETV Bharat reported the work 94.35% complete, with finishing work due at Cantt by 30 September and at Godowlia by 31 October, and the inauguration expected in November 2026; earlier reports pointed to around Dev Deepawali (24 November). No official opening date had been notified as of 2 November 2026, and the target has moved several times since the original August 2025 goal.",
         "For travellers, the practical point is simple: do not build a plan around the ropeway until the operator announces a start date and timetable. When it opens, expect queues in the first weeks, and possible restrictions on large luggage, which have not yet been announced."
       ],
       "body_hi": [
         "कैंट से रथयात्रा तक के प्राथमिक खंड पर ट्रायल 2025 में शुरू हुए। अगस्त 2026 के आख़िर में अमर उजाला और पत्रिका ने बताया कि गोदौलिया स्टेशन पर फ़र्श और स्टील का काम अभी चल रहा है, और सभी 148 गंडोला का पूरा लोड ट्रायल, जिसे कम से कम चार बार दोहराना होता है, बरसात और सावन की भीड़ के कारण रक्षाबंधन के बाद तक टल गया है। तब सितंबर के आख़िरी हफ़्ते में शुरुआत की बात कही गई थी।",
-        "सबसे ताज़ा ख़बर, 25 सितंबर 2026 को टाइम्स नाउ हिंदी की, कहती है कि पहले तीन स्टेशन तैयार हैं, आख़िरी दो लगभग पूरे हैं, और ट्रायल व लोड टेस्टिंग जारी है। इसमें उद्घाटन नवंबर 2026 में देव दीपावली (24 नवंबर 2026) के आसपास होने की उम्मीद बताई गई है। 27 सितंबर 2026 तक उद्घाटन की कोई आधिकारिक तारीख़ घोषित नहीं हुई थी, और अगस्त 2025 के मूल लक्ष्य के बाद से यह तारीख़ कई बार आगे खिसकी है।",
+        "28 सितंबर 2026 को जिले के नोडल अधिकारी और जिलाधिकारी ने कैंट से गोदौलिया तक गोंडोला में सफर किया। ईटीवी भारत के अनुसार काम 94.35% पूरा हो चुका है; कैंट स्टेशन का फिनिशिंग कार्य 30 सितंबर तक और गोदौलिया का 31 अक्टूबर तक पूरा होना था, और उद्घाटन नवंबर 2026 में अपेक्षित है; पहले की खबरों में देव दीपावली (24 नवंबर) के आसपास की बात कही गई थी। 2 नवंबर 2026 तक कोई आधिकारिक उद्घाटन तिथि अधिसूचित नहीं हुई थी, और मूल अगस्त 2025 के लक्ष्य के बाद से यह तारीख कई बार बदल चुकी है।",
         "यात्रियों के लिए सीधी बात यह है: जब तक संचालक शुरुआत की तारीख़ और समय-सारिणी घोषित न करे, अपनी योजना रोपवे के भरोसे न बनाएँ। शुरू होने के बाद पहले कुछ हफ़्तों में लाइन लग सकती है, और बड़े सामान पर पाबंदी भी हो सकती है, जिसके नियम अभी घोषित नहीं हुए हैं।"
       ],
       "unconfirmed": true,
       "sources": [
+        7,
         0,
         1,
         2,
@@ -170,25 +171,26 @@
       "heading_en": "Expected fares (not yet notified)",
       "heading_hi": "संभावित किराया (अभी तय नहीं)",
       "body_en": [
-        "No fare has been officially notified. The figures below are estimates published in the press in September 2026 and may change before opening. Authorities have said only that fares will be kept affordable for daily commuters as well as visitors."
+        "Amar Ujala reported on 23 June 2026 that the Uttar Pradesh government had notified the ropeway fares, from ₹10 to ₹50, and ETV Bharat gave the same full-route fare and pass discount after the inspection of 28 September 2026. The notification itself has not been published online, and an earlier report gave different intermediate fares (about ₹30 to Kashi Vidyapith and ₹40 to Rathyatra), so treat these figures as not officially confirmed until the operator publishes its fare table."
       ],
       "list_en": [
-        "Cantt to Kashi Vidyapith: about ₹30 (reported estimate)",
-        "Cantt to Rathyatra: about ₹40 (reported estimate)",
-        "Cantt to Godowlia: about ₹50 (reported estimate)"
+        "Cantt to Godowlia (full route): ₹50; ₹40 with the Kashi Smart Pass (20% off)",
+        "Shortest hop, e.g. Vidyapith to Rathyatra: ₹10; ₹8 with the pass",
+        "Fares rise 5% every 1 April; cloakroom at Cantt free for 2 hours, then ₹50 an hour (up to 15 kg)"
       ],
       "body_hi": [
-        "किराया अभी आधिकारिक रूप से तय नहीं हुआ है। नीचे दिए आँकड़े सितंबर 2026 में अख़बारों में छपे अनुमान हैं और शुरुआत से पहले बदल सकते हैं। अधिकारियों ने अभी बस इतना कहा है कि किराया ऐसा रखा जाएगा कि रोज़ आने-जाने वाले और पर्यटक, दोनों इसका इस्तेमाल कर सकें।"
+        "अमर उजाला ने 23 जून 2026 को बताया कि उत्तर प्रदेश शासन ने रोपवे के किराये की अधिसूचना जारी कर दी है, जो ₹10 से ₹50 तक है, और 28 सितंबर 2026 के निरीक्षण के बाद ईटीवी भारत ने भी पूरे रास्ते का यही किराया और पास की छूट बताई। अधिसूचना खुद ऑनलाइन प्रकाशित नहीं हुई है, और एक पुरानी खबर में बीच के स्टेशनों के किराये अलग बताए गए थे (काशी विद्यापीठ तक लगभग ₹30 और रथयात्रा तक ₹40), इसलिए जब तक संचालक किराया सूची जारी न करे, इन आंकड़ों को आधिकारिक रूप से पुष्ट न मानें।"
       ],
       "list_hi": [
-        "कैंट से काशी विद्यापीठ: लगभग ₹30 (अनुमान, ख़बरों के अनुसार)",
-        "कैंट से रथयात्रा: लगभग ₹40 (अनुमान, ख़बरों के अनुसार)",
-        "कैंट से गोदौलिया: लगभग ₹50 (अनुमान, ख़बरों के अनुसार)"
+        "कैंट से गोदौलिया (पूरा रास्ता): ₹50; काशी स्मार्ट पास से ₹40 (20% छूट)",
+        "सबसे छोटा सफर, जैसे विद्यापीठ से रथयात्रा: ₹10; पास से ₹8",
+        "हर साल 1 अप्रैल से किराये में 5% बढ़ोतरी; कैंट पर क्लॉक रूम 2 घंटे मुफ्त, फिर ₹50 प्रति घंटा (15 किलो तक)"
       ],
       "unconfirmed": true,
       "sources": [
-        1,
-        0
+        6,
+        7,
+        1
       ]
     },
     {
@@ -305,6 +307,16 @@
       "title": "Urban Transport News — Trial run commences for first urban ropeway in Varanasi",
       "url": "https://urbantransportnews.com/news/trial-run-commences-for-first-urban-ropeway-in-varanasi",
       "accessed": "2026-09-27"
+    },
+    {
+      "title": "Amar Ujala — Ropeway fares fixed by the UP government: minimum ₹10, maximum ₹50 (23 Jun 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/varanasi-ropeway-fare-finalized-minimum-10-maximum-50-from-up-government-2026-06-23",
+      "accessed": "2026-11-02"
+    },
+    {
+      "title": "ETV Bharat (Hindi) — Nodal officer and DM inspect ropeway: 94.35% complete, inauguration expected in November (29 Sep 2026)",
+      "url": "https://www.etvbharat.com/hi/state/nodal-officer-and-dm-varanasi-inspected-ropeway-construction-work-progress-ups26092900325",
+      "accessed": "2026-11-02"
     }
   ],
   "related": {

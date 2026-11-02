@@ -1,7 +1,7 @@
 {
   "slug": "ganga-aarti-varanasi",
   "published": "2026-09-27",
-  "updated": "2026-10-11",
+  "updated": "2026-11-02",
   "photo": "places/dashashwamedh-ghat#2",
   "title_en": "Ganga Aarti in Varanasi: Dashashwamedh Ghat aarti time, Assi, where to sit",
   "title_hi": "वाराणसी में गंगा आरती: दशाश्वमेध घाट आरती का समय, अस्सी, कहाँ बैठें",
@@ -132,18 +132,19 @@
       "heading_en": "Monsoon and flood season changes",
       "heading_hi": "बरसात और बाढ़ के दिनों में बदलाव",
       "body_en": [
-        "From roughly July to September the Ganga rises over the lower steps. As the water climbs, the Ganga Seva Nidhi moves the aarti to higher ground; in August 2026 it shifted venues five times and finally held the aarti on the roof of its office at Dashashwamedh, still with seven archakas, returning to the usual platforms once the water receded.",
+        "From roughly July to September the Ganga rises over the lower steps. As the water climbs, the Ganga Seva Nidhi moves the aarti to higher ground; in August 2026 it shifted venues five times and finally held the aarti on the roof of its office at Dashashwamedh, still with seven archakas, returning to the usual platforms once the water receded. In 2026 the rooftop aarti began on 17 August, and the aarti returned to its usual platform on 20 October, after 64 days.",
         "In high water the district administration suspends all boat operations; on 22 August 2026 every boat on the Ganga in Varanasi was halted. So in the monsoon, expect a smaller, rooftop aarti with limited space and no boat viewing, and check the local news before you go."
       ],
       "body_hi": [
-        "मोटे तौर पर जुलाई से सितंबर तक गंगा निचली सीढ़ियों को डुबो देती है। जलस्तर बढ़ने के साथ गंगा सेवा निधि आरती को ऊँची जगह पर ले जाती है; अगस्त 2026 में आरती का स्थान पाँच बार बदला गया और आख़िर में दशाश्वमेध पर निधि के कार्यालय की छत पर सात अर्चकों ने आरती की। पानी उतरने पर आरती फिर अपने स्थान पर लौट आती है।",
+        "मोटे तौर पर जुलाई से सितंबर तक गंगा निचली सीढ़ियों को डुबो देती है। जलस्तर बढ़ने के साथ गंगा सेवा निधि आरती को ऊँची जगह पर ले जाती है; अगस्त 2026 में आरती का स्थान पाँच बार बदला गया और आख़िर में दशाश्वमेध पर निधि के कार्यालय की छत पर सात अर्चकों ने आरती की। पानी उतरने पर आरती फिर अपने स्थान पर लौट आती है। 2026 में छत पर आरती 17 अगस्त से शुरू हुई, और 64 दिन बाद 20 अक्टूबर को आरती अपने सामान्य स्थान पर लौट आई।",
         "जलस्तर ऊँचा होने पर ज़िला प्रशासन सभी नावों का संचालन रोक देता है; 22 अगस्त 2026 को वाराणसी में गंगा पर सारी नावें बंद कर दी गई थीं। इसलिए बरसात में छोटी, छत पर होने वाली आरती, कम जगह और नाव से देखने की सुविधा न होने के लिए तैयार रहें, और जाने से पहले स्थानीय ख़बरें देख लें।"
       ],
       "unconfirmed": false,
       "sources": [
         2,
         3,
-        4
+        4,
+        12
       ]
     },
     {
@@ -304,6 +305,11 @@
       "title": "Varanasi District — Tourist Places",
       "url": "https://varanasi.nic.in/tourist-places/",
       "accessed": "2026-09-27"
+    },
+    {
+      "title": "Aaj Tak — Ganga Aarti returns to Dashashwamedh Ghat after 64 days (21 Oct 2026)",
+      "url": "https://www.aajtak.in/uttar-pradesh/story/varanasi-after-64-days-world-famous-ganga-aarti-resumes-at-dashashwamedh-ghat-video-lcly-strc-2675826-2026-10-21",
+      "accessed": "2026-11-02"
     }
   ],
   "related": {

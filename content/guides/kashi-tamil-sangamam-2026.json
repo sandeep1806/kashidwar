@@ -1,0 +1,240 @@
+{
+  "slug": "kashi-tamil-sangamam-2026",
+  "published": "2026-11-02",
+  "updated": "2026-11-02",
+  "photo": "projects/kashi-tamil-sangamam",
+  "event": {
+    "name_en": "Kashi Tamil Sangamam 2026 (KTS 5.0)",
+    "name_hi": "काशी तमिल संगमम 2026 (केटीएस 5.0)",
+    "startDate": "2026-11-28",
+    "endDate": "2026-12-12",
+    "location_en": "Varanasi, with visits to Prayagraj and Ayodhya",
+    "location_hi": "वाराणसी, साथ में प्रयागराज और अयोध्या की यात्रा",
+    "lat": 25.262,
+    "lng": 82.9895,
+    "organizer": {
+      "name": "Ministry of Education, Government of India",
+      "url": "https://www.education.gov.in/"
+    }
+  },
+  "title_en": "Kashi Tamil Sangamam 2026: Dates, Registration & Venue",
+  "title_hi": "काशी तमिल संगमम 2026: तारीख, रजिस्ट्रेशन और स्थल",
+  "description_en": "Kashi Tamil Sangamam 5.0 runs 28 Nov–12 Dec 2026 in Varanasi, Prayagraj and Ayodhya. Register at kashitamil.iitm.ac.in by 13 Nov. Theme: Thirukkural.",
+  "description_hi": "काशी तमिल संगमम 5.0: 28 नवंबर से 12 दिसंबर 2026 तक वाराणसी, प्रयागराज और अयोध्या में। रजिस्ट्रेशन kashitamil.iitm.ac.in पर 13 नवंबर तक। विषय: तिरुक्कुरल।",
+  "lead_en": "Kashi Tamil Sangamam 2026 — the fifth edition, KTS 5.0 — runs from 28 November to 12 December 2026, bringing about 1,400 people from Tamil Nadu to Varanasi, Prayagraj and Ayodhya. The Ministry of Education programme celebrates the old ties of learning and pilgrimage between Tamil Nadu and Kashi; this year's theme is the Thirukkural, the classical Tamil text on ethics. Registration is open only on the official IIT Madras portal until 13 November 2026. Here are the dates, who can register, the theme, the venue news and the Tamil places of Kashi worth seeing.",
+  "lead_hi": "काशी तमिल संगमम 2026 — पांचवां संस्करण, केटीएस 5.0 — 28 नवंबर से 12 दिसंबर 2026 तक चलेगा, जिसमें तमिलनाडु के करीब 1,400 लोग वाराणसी, प्रयागराज और अयोध्या आएंगे। शिक्षा मंत्रालय का यह कार्यक्रम तमिलनाडु और काशी के बीच विद्या और तीर्थ के पुराने रिश्तों का उत्सव है; इस साल का विषय तिरुक्कुरल है, नैतिकता पर तमिल का शास्त्रीय ग्रंथ। रजिस्ट्रेशन केवल आईआईटी मद्रास के आधिकारिक पोर्टल पर 13 नवंबर 2026 तक खुला है। यहां तारीखें, कौन रजिस्टर कर सकता है, विषय, स्थल की जानकारी और काशी की देखने लायक तमिल जगहें दी गई हैं।",
+  "facts": [
+    {
+      "icon": "calendar",
+      "label_en": "Dates",
+      "label_hi": "तारीख",
+      "value_en": "28 Nov – 12 Dec 2026",
+      "value_hi": "28 नवंबर – 12 दिसंबर 2026"
+    },
+    {
+      "icon": "hourglass",
+      "label_en": "Registration closes",
+      "label_hi": "रजिस्ट्रेशन की आखिरी तारीख",
+      "value_en": "13 Nov 2026",
+      "value_hi": "13 नवंबर 2026"
+    },
+    {
+      "icon": "info",
+      "label_en": "Theme",
+      "label_hi": "विषय",
+      "value_en": "Thirukkural Payilvom – Thirukkural Abhyas Karen",
+      "value_hi": "तिरुक्कुरल पयिलवोम – तिरुक्कुरल अभ्यास करें"
+    },
+    {
+      "icon": "people",
+      "label_en": "Delegates",
+      "label_hi": "प्रतिनिधि",
+      "value_en": "About 1,400 from Tamil Nadu · 7 groups of ~200",
+      "value_hi": "तमिलनाडु से करीब 1,400 · लगभग 200 के 7 समूह"
+    },
+    {
+      "icon": "pin",
+      "label_en": "Where",
+      "label_hi": "कहां",
+      "value_en": "Varanasi · Prayagraj · Ayodhya · venues to be announced",
+      "value_hi": "वाराणसी · प्रयागराज · अयोध्या · स्थल घोषित होने बाकी"
+    },
+    {
+      "icon": "shield",
+      "label_en": "Official portal",
+      "label_hi": "आधिकारिक पोर्टल",
+      "value_en": "kashitamil.iitm.ac.in only",
+      "value_hi": "केवल kashitamil.iitm.ac.in"
+    }
+  ],
+  "sections": [
+    {
+      "id": "dates-registration",
+      "heading_en": "Kashi Tamil Sangamam 2026 dates and registration last date",
+      "heading_hi": "काशी तमिल संगमम 2026 की तारीख और रजिस्ट्रेशन की आखिरी तारीख",
+      "body_en": [
+        "The fifth edition, Kashi Tamil Sangamam 5.0, runs from 28 November to 12 December 2026, with the inauguration on 28 November and the valedictory programme on 12 December. Registration opened on 22 October 2026 on the official portal, kashitamil.iitm.ac.in, hosted by IIT Madras, and closes on 13 November 2026."
+      ],
+      "body_hi": [
+        "पांचवां संस्करण, काशी तमिल संगमम 5.0, 28 नवंबर से 12 दिसंबर 2026 तक चलेगा; उद्घाटन 28 नवंबर को और समापन कार्यक्रम 12 दिसंबर को है। रजिस्ट्रेशन 22 अक्टूबर 2026 को आईआईटी मद्रास के आधिकारिक पोर्टल kashitamil.iitm.ac.in पर शुरू हुआ और 13 नवंबर 2026 को बंद होगा।"
+      ],
+      "sources": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "what-is-it",
+      "heading_en": "What is Kashi Tamil Sangamam 5.0? The Thirukkural theme",
+      "heading_hi": "काशी तमिल संगमम 5.0 क्या है? तिरुक्कुरल विषय",
+      "body_en": [
+        "Kashi Tamil Sangamam is a Ministry of Education programme, first held in 2022, that celebrates the old bonds of learning and pilgrimage between Tamil Nadu and Kashi in the spirit of Ek Bharat Shreshtha Bharat. It is organised with IIT Madras, Banaras Hindu University (BHU), the Central Institute of Classical Tamil (CICT) in Chennai, the Uttar Pradesh government and several central ministries, among them Culture, Railways and Tourism.",
+        "The 2026 theme is 'Thirukkural Payilvom – Thirukkural Abhyas Karen' (Let us study the Thirukkural), the classical Tamil text on ethics. Besides the delegations, Thirukkural experts from Tamil Nadu visit schools and colleges in Varanasi, the National Book Trust holds reading and storytelling sessions in Varanasi schools, and a students' programme runs in about 1,000 higher-education institutions across India."
+      ],
+      "body_hi": [
+        "काशी तमिल संगमम शिक्षा मंत्रालय का कार्यक्रम है, जो पहली बार 2022 में हुआ; यह 'एक भारत श्रेष्ठ भारत' की भावना से तमिलनाडु और काशी के बीच विद्या और तीर्थ के पुराने रिश्तों का उत्सव है। इसका आयोजन आईआईटी मद्रास, काशी हिन्दू विश्वविद्यालय (बीएचयू), चेन्नई के केंद्रीय शास्त्रीय तमिल संस्थान (सीआईसीटी), उत्तर प्रदेश सरकार और संस्कृति, रेल व पर्यटन समेत कई केंद्रीय मंत्रालयों के साथ मिलकर होता है।",
+        "2026 का विषय है 'तिरुक्कुरल पयिलवोम – तिरुक्कुरल अभ्यास करें', यानी नैतिकता पर तमिल के शास्त्रीय ग्रंथ तिरुक्कुरल का अध्ययन। प्रतिनिधिमंडलों के अलावा तमिलनाडु के तिरुक्कुरल विशेषज्ञ वाराणसी के स्कूलों और कॉलेजों में जाएंगे, नेशनल बुक ट्रस्ट वाराणसी के स्कूलों में पढ़ने और कहानी सुनाने के सत्र करेगा, और देशभर के करीब 1,000 उच्च शिक्षा संस्थानों में विद्यार्थियों का कार्यक्रम चलेगा।"
+      ],
+      "sources": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "who-can-register",
+      "heading_en": "Who can register, and how the trip works",
+      "heading_hi": "कौन रजिस्टर कर सकता है, और यात्रा कैसे होती है",
+      "body_en": [
+        "Applications are open to people from Tamil Nadu in seven categories: students; teachers; writers and media professionals; agriculture and allied sectors; professionals and artisans; women; and spiritual leaders. About 1,400 participants travel in seven groups of around 200. Each group's journey lasts eight days — four days of travel and four days of visits and programmes in Varanasi, Prayagraj and Ayodhya, with cultural, academic and spiritual sessions."
+      ],
+      "body_hi": [
+        "तमिलनाडु के लोग सात श्रेणियों में आवेदन कर सकते हैं: विद्यार्थी; शिक्षक; लेखक और मीडिया पेशेवर; कृषि और संबद्ध क्षेत्र; पेशेवर और कारीगर; महिलाएं; और आध्यात्मिक गुरु। करीब 1,400 प्रतिभागी लगभग 200-200 के सात समूहों में यात्रा करेंगे। हर समूह की यात्रा आठ दिन की होगी — चार दिन सफर और चार दिन वाराणसी, प्रयागराज और अयोध्या में भ्रमण व कार्यक्रम, जिनमें सांस्कृतिक, शैक्षणिक और आध्यात्मिक सत्र होंगे।"
+      ],
+      "list_en": [
+        "Register only on the official portal, kashitamil.iitm.ac.in, named in the Ministry of Education's announcement.",
+        "Job, exam and 'registration' websites that copy the form or ask for a fee are not official: do not pay or upload documents through them.",
+        "Check group dates and travel details only on the official portal or with the organisers."
+      ],
+      "list_hi": [
+        "रजिस्ट्रेशन केवल आधिकारिक पोर्टल kashitamil.iitm.ac.in पर करें, जिसका नाम शिक्षा मंत्रालय की घोषणा में है।",
+        "नौकरी, परीक्षा और 'रजिस्ट्रेशन' वाली जो वेबसाइटें फॉर्म की नकल करती हैं या शुल्क मांगती हैं, वे आधिकारिक नहीं हैं: उनके ज़रिए न पैसे दें, न दस्तावेज़ अपलोड करें।",
+        "समूह की तारीख और यात्रा की जानकारी केवल आधिकारिक पोर्टल या आयोजकों से ही जांचें।"
+      ],
+      "sources": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "venue-timings",
+      "heading_en": "Kashi Tamil Sangamam 2026 venue and timings in Varanasi",
+      "heading_hi": "वाराणसी में काशी तमिल संगमम 2026 का स्थल और समय",
+      "body_en": [
+        "As of 2 November 2026 the venues and times of the inauguration (28 November) and the valedictory programme (12 December) have not been announced; Banaras Hindu University, the coordinating institute in Varanasi, says they will be. The first edition in 2022 was held at BHU and the second, in 2023, at Namo Ghat. This page will be updated once the organisers publish the venue and programme."
+      ],
+      "body_hi": [
+        "2 नवंबर 2026 तक उद्घाटन (28 नवंबर) और समापन कार्यक्रम (12 दिसंबर) के स्थल और समय घोषित नहीं हुए हैं; वाराणसी में समन्वय करने वाले काशी हिन्दू विश्वविद्यालय के अनुसार इनकी घोषणा की जाएगी। 2022 का पहला संस्करण बीएचयू में और 2023 का दूसरा संस्करण नमो घाट पर हुआ था। आयोजकों के स्थल और कार्यक्रम जारी करते ही यह पेज अपडेट किया जाएगा।"
+      ],
+      "unconfirmed": true,
+      "sources": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "tamil-places-in-kashi",
+      "heading_en": "Tamil places to see in Kashi",
+      "heading_hi": "काशी में देखने लायक तमिल जगहें",
+      "body_en": [
+        "Delegations usually take a holy dip at Hanuman Ghat, once called Rameswaram Ghat, and visit the family home of the poet Subramania Bharati on the ghat. The lanes behind it hold South Indian maths — the Kanchi, Kerala, Sankara and Sringeri maths — and Tamil families who have lived here for generations. A short walk south, Kedar Ghat and the Gauri Kedareshwar temple are the most South Indian corner of Kashi. Visitors in Varanasi during the Sangamam can see these places on their own; please keep to temple customs and do not photograph people bathing."
+      ],
+      "body_hi": [
+        "प्रतिनिधिमंडल आम तौर पर हनुमान घाट पर, जिसे पहले रामेश्वरम घाट कहा जाता था, गंगा स्नान करते हैं और घाट पर कवि सुब्रह्मण्य भारती के पारिवारिक घर जाते हैं। इसके पीछे की गलियों में दक्षिण भारतीय मठ हैं — कांची, केरल, शंकर और शृंगेरी मठ — और पीढ़ियों से बसे तमिल परिवार। थोड़ा दक्षिण में केदार घाट और गौरी केदारेश्वर मंदिर काशी का सबसे दक्षिण-भारतीय कोना है। संगमम के दौरान वाराणसी आने वाले लोग इन जगहों को खुद देख सकते हैं; मंदिरों की परंपराओं का ध्यान रखें और स्नान करते लोगों की फोटो न लें।"
+      ],
+      "sources": [
+        4
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q_en": "When is Kashi Tamil Sangamam 2026?",
+      "a_en": "Kashi Tamil Sangamam 5.0 runs from 28 November to 12 December 2026. The inauguration is on 28 November and the valedictory programme on 12 December.",
+      "q_hi": "काशी तमिल संगमम 2026 कब है?",
+      "a_hi": "काशी तमिल संगमम 5.0 28 नवंबर से 12 दिसंबर 2026 तक है। उद्घाटन 28 नवंबर को और समापन कार्यक्रम 12 दिसंबर को है।"
+    },
+    {
+      "q_en": "What is the last date for Kashi Tamil Sangamam 5.0 registration?",
+      "a_en": "13 November 2026. Registration opened on 22 October 2026.",
+      "q_hi": "काशी तमिल संगमम 5.0 रजिस्ट्रेशन की आखिरी तारीख क्या है?",
+      "a_hi": "13 नवंबर 2026। रजिस्ट्रेशन 22 अक्टूबर 2026 को शुरू हुआ था।"
+    },
+    {
+      "q_en": "How do I register for Kashi Tamil Sangamam 2026 online?",
+      "a_en": "Only on the official portal, kashitamil.iitm.ac.in, hosted by IIT Madras. Choose one of the seven categories (students, teachers, writers and media, agriculture, professionals and artisans, women, spiritual leaders). Other sites offering 'registration' are not official.",
+      "q_hi": "काशी तमिल संगमम 2026 का ऑनलाइन रजिस्ट्रेशन कैसे करें?",
+      "a_hi": "केवल आईआईटी मद्रास के आधिकारिक पोर्टल kashitamil.iitm.ac.in पर। सात श्रेणियों (विद्यार्थी, शिक्षक, लेखक व मीडिया, कृषि, पेशेवर व कारीगर, महिलाएं, आध्यात्मिक गुरु) में से एक चुनें। 'रजिस्ट्रेशन' देने वाली दूसरी साइटें आधिकारिक नहीं हैं।"
+    },
+    {
+      "q_en": "What is the theme of Kashi Tamil Sangamam 5.0?",
+      "a_en": "'Thirukkural Payilvom – Thirukkural Abhyas Karen' — studying the Thirukkural, the classical Tamil text on ethics.",
+      "q_hi": "काशी तमिल संगमम 5.0 का विषय क्या है?",
+      "a_hi": "'तिरुक्कुरल पयिलवोम – तिरुक्कुरल अभ्यास करें' — नैतिकता पर तमिल के शास्त्रीय ग्रंथ तिरुक्कुरल का अध्ययन।"
+    },
+    {
+      "q_en": "What is the Kashi Tamil Sangamam 2026 venue?",
+      "a_en": "The programme covers Varanasi, Prayagraj and Ayodhya. The venues and times of the inauguration and valedictory programme in Varanasi have not been announced yet (as of 2 November 2026).",
+      "q_hi": "काशी तमिल संगमम 2026 का स्थल कहां है?",
+      "a_hi": "कार्यक्रम वाराणसी, प्रयागराज और अयोध्या में है। वाराणसी में उद्घाटन और समापन कार्यक्रम के स्थल और समय अभी (2 नवंबर 2026 तक) घोषित नहीं हुए हैं।"
+    },
+    {
+      "q_en": "How many people take part, and who can apply?",
+      "a_en": "About 1,400 participants from Tamil Nadu, in seven groups of around 200, each on an eight-day journey. Applicants must be from Tamil Nadu and apply in one of the seven categories.",
+      "q_hi": "कितने लोग भाग लेते हैं, और कौन आवेदन कर सकता है?",
+      "a_hi": "तमिलनाडु के करीब 1,400 प्रतिभागी, लगभग 200-200 के सात समूहों में, हर समूह आठ दिन की यात्रा पर। आवेदक तमिलनाडु के हों और सात में से किसी एक श्रेणी में आवेदन करें।"
+    }
+  ],
+  "sources": [
+    {
+      "title": "PIB (Ministry of Education) — Kashi Tamil Sangamam 5.0 from 28 Nov to 12 Dec 2026; registration portal launched (22 Oct 2026)",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2326535",
+      "accessed": "2026-11-02"
+    },
+    {
+      "title": "Banaras Hindu University — Kashi Tamil Sangamam 5.0 tentative schedule",
+      "url": "https://kashitamil.bhu.edu.in/schedule.html",
+      "accessed": "2026-11-02"
+    },
+    {
+      "title": "Banaras Hindu University — Kashi Tamil Sangamam 5.0 (past editions)",
+      "url": "https://kashitamil.bhu.edu.in/",
+      "accessed": "2026-11-02"
+    },
+    {
+      "title": "PIB — Kashi Tamil Sangamam 4.0: reconnecting knowledge traditions (1 Dec 2025)",
+      "url": "https://www.pib.gov.in/PressNoteDetails.aspx?NoteId=156270&ModuleId=3&reg=3&lang=1",
+      "accessed": "2026-11-02"
+    },
+    {
+      "title": "PIB — Tamil delegation visits Hanuman Ghat and Subramania Bharati's residence (23 Nov 2022)",
+      "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1878234",
+      "accessed": "2026-11-02"
+    }
+  ],
+  "related": {
+    "places": [
+      "hanuman-ghat",
+      "kedar-ghat",
+      "bhu-new-vishwanath",
+      "namo-ghat"
+    ],
+    "projects": [
+      "kashi-tamil-sangamam"
+    ],
+    "festivals": [
+      "kashi-tamil-sangamam-festival"
+    ]
+  },
+  "notes": "Written 2 Nov 2026 from the PIB release of 22 Oct 2026 and BHU's KTS 5.0 site. Keywords from Google autocomplete on 2 Nov (hl=en and hl=hi): 'kashi tamil sangamam 5.0', '… 2026 registration (online, last date)', '… 2026 dates', '… 2026 venue (timings)', '… theme', 'काशी तमिल संगमम 2026', '… क्या है', '… स्थल'. Venues and times of the inauguration and valedictory not announced as of 2 Nov (BHU schedule says 'will be announced') — update when published, along with any Kashi Tamil Sangamam special trains. Unofficial 'registration' pages (job/exam sites) exist; only kashitamil.iitm.ac.in cited. 'free' not set: public access to the programmes is not announced."
+}
