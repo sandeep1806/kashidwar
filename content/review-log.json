@@ -8,5 +8,15 @@
     "costUsd": 1.93,
     "result": "error_max_turns",
     "run": "https://github.com/sandeep1806/kashidwar/actions/runs/37658876822"
+  },
+  {
+    "date": "2026-11-02",
+    "kind": "Monthly",
+    "focus": "full",
+    "model": "claude-opus-5-5",
+    "turns": 122,
+    "costUsd": 10.14,
+    "result": "success",
+    "run": "local (scripts/content-review.sh)"
   }
 ]

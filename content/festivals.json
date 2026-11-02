@@ -882,8 +882,9 @@
     "faith": [
       "secular"
     ],
-    "when": "An annual edition, usually in December or February; the 2026 edition has not been announced",
+    "when": "An annual edition, usually in December or February; the fifth edition runs 28 November – 12 December 2026",
     "months": [
+      11,
       12
     ],
     "where": "Namo Ghat, BHU and venues across the city",
@@ -891,9 +892,14 @@
       "namo-ghat",
       "bhu-new-vishwanath"
     ],
-    "summary": "Two weeks of Tamil–Kashi exchange: delegations of students, artisans and pilgrims from Tamil Nadu, Carnatic music and bharatanatyam on the ghats, exhibitions of Tamil crafts and food. The fourth edition ran from 2 to 15 December 2025.",
+    "summary": "Two weeks of Tamil–Kashi exchange: delegations of students, artisans and pilgrims from Tamil Nadu, Carnatic music and bharatanatyam on the ghats, exhibitions of Tamil crafts and food. The fifth edition, on the Thirukkural, runs from 28 November to 12 December 2026.",
     "image": "/media/festivals/kashi-tamil-sangamam.jpg",
     "sources": [
+      {
+        "title": "PIB — Kashi Tamil Sangamam 5.0 from 28 Nov to 12 Dec 2026 (22 Oct 2026)",
+        "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2326535",
+        "accessed": "2026-11-02"
+      },
       {
         "title": "PIB — Kashi Tamil Sangamam 4.0",
         "url": "https://www.pib.gov.in/PressNoteDetails.aspx?NoteId=156270&ModuleId=3&reg=3&lang=1",
@@ -901,14 +907,14 @@
       },
       {
         "title": "IIT Madras — Kashi Tamil Sangamam",
-        "url": "https://www.kashitamil.iitm.ac.in/",
-        "accessed": "2026-09-25"
+        "url": "https://kashitamil.iitm.ac.in/",
+        "accessed": "2026-11-02"
       }
     ],
     "i18n": {
       "hi": {
-        "summary": "तमिल–काशी संवाद के दो सप्ताह: तमिलनाडु से छात्रों, शिल्पकारों और तीर्थयात्रियों के दल, घाटों पर कर्नाटक संगीत और भरतनाट्यम, तमिल शिल्प और भोजन की प्रदर्शनियाँ। चौथा संस्करण 2 से 15 दिसंबर 2025 तक हुआ।",
-        "when": "वार्षिक संस्करण, प्रायः दिसंबर या फ़रवरी में; 2026 का संस्करण अभी घोषित नहीं",
+        "summary": "तमिल–काशी संवाद के दो सप्ताह: तमिलनाडु से छात्रों, शिल्पकारों और तीर्थयात्रियों के दल, घाटों पर कर्नाटक संगीत और भरतनाट्यम, तमिल शिल्प और भोजन की प्रदर्शनियाँ। तिरुक्कुरल विषय पर पाँचवाँ संस्करण 28 नवंबर से 12 दिसंबर 2026 तक है।",
+        "when": "वार्षिक संस्करण, प्रायः दिसंबर या फ़रवरी में; पाँचवाँ संस्करण 28 नवंबर – 12 दिसंबर 2026",
         "where": "नमो घाट, बीएचयू और नगर के अन्य स्थल"
       }
     }
