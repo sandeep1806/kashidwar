@@ -51,23 +51,6 @@
     }
   },
   {
-    "id": "islamic",
-    "order": 4,
-    "filter": "islamic",
-    "sites": [
-      "alamgir-mosque",
-      "panchganga-ghat",
-      "dargah-fatman"
-    ],
-    "verse": {
-      "original": "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-      "transliteration": "Bismillāhir-raḥmānir-raḥīm",
-      "lang": "ar",
-      "dir": "rtl",
-      "attribution": "Qur'ān, opening of every sūrah"
-    }
-  },
-  {
     "id": "bhakti",
     "order": 5,
     "filter": "bhakti",

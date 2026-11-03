@@ -28,7 +28,7 @@ const KEY_OF: Record<ListingKind, { title: string; intro: string; meta: string }
   places: { title: "allTitle", intro: "allIntro", meta: "placesTitle" },
 };
 /** Groups on /places, in this order (type labels come from places.types). */
-const GROUPS: PlaceType[][] = [["ghat"], ["temple"], ["stupa", "monastery"], ["fort", "university", "heritage", "museum"], ["mosque", "gurudwara", "church", "math"]];
+const GROUPS: PlaceType[][] = [["ghat"], ["temple"], ["stupa", "monastery"], ["fort", "university", "heritage", "museum"], ["gurudwara", "church", "math"]];
 
 export async function listingMetadata(locale: string, kind: ListingKind): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "places" });

@@ -8,7 +8,6 @@ export type Faith =
   | "buddhist"
   | "jain"
   | "sikh"
-  | "islamic"
   | "christian"
   | "bhakti"
   | "secular";
@@ -18,7 +17,6 @@ export const FAITHS: Faith[] = [
   "bhakti",
   "christian",
   "hindu",
-  "islamic",
   "jain",
   "sikh",
 ];
@@ -28,7 +26,6 @@ export type PlaceType =
   | "temple"
   | "stupa"
   | "monastery"
-  | "mosque"
   | "church"
   | "gurudwara"
   | "math"
@@ -259,7 +256,6 @@ export const PLACE_FILTERS = [
   "buddhist",
   "jain",
   "sikh",
-  "islamic",
   "christian",
   "bhakti",
   "heritage",

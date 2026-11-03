@@ -64,9 +64,17 @@ const LEGACY: Record<string, string> = {
   "/privacy": "/en/privacy",
 };
 
+/** Entries removed from the site (November 2026): their pages go to the section index in the same locale. */
+const REMOVED: Record<string, string> = {
+  "/:locale/places/alamgir-mosque": "/:locale/places",
+  "/:locale/places/dargah-fatman": "/:locale/places",
+  "/:locale/festivals/eid-al-fitr": "/:locale/festivals",
+  "/:locale/festivals/muharram": "/:locale/festivals",
+};
+
 const nextConfig: NextConfig = {
   async redirects() {
-    return Object.entries(LEGACY).map(([source, destination]) => ({ source, destination, permanent: true }));
+    return Object.entries({ ...LEGACY, ...REMOVED }).map(([source, destination]) => ({ source, destination, permanent: true }));
   },
   experimental: {
     // app/global-not-found.tsx: 404 for URLs outside every [locale] route

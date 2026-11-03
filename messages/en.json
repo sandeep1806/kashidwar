@@ -102,7 +102,7 @@
   "places": {
     "title": "Places of Kashi",
     "titleSecondary": "काशी के स्थान",
-    "intro": "Ghats, temples, stupas, mosques, gurudwaras, churches and the maths of the saints, all in one city. Filter them, find them on the map, and read each one's story.",
+    "intro": "Ghats, temples, stupas, gurudwaras, churches and the maths of the saints, all in one city. Filter them, find them on the map, and read each one's story.",
     "filters": {
       "all": "All",
       "hindu": "Hindu",
@@ -111,7 +111,6 @@
       "buddhist": "Buddhist",
       "jain": "Jain",
       "sikh": "Sikh",
-      "islamic": "Islamic",
       "christian": "Christian",
       "bhakti": "Bhakti saints",
       "heritage": "Heritage"
@@ -121,7 +120,6 @@
       "buddhist": "Buddhist",
       "jain": "Jain",
       "sikh": "Sikh",
-      "islamic": "Islamic",
       "christian": "Christian",
       "bhakti": "Bhakti",
       "secular": "Shared heritage"
@@ -131,7 +129,6 @@
       "temple": "Temple",
       "stupa": "Stupa",
       "monastery": "Vihar",
-      "mosque": "Mosque",
       "church": "Church",
       "gurudwara": "Gurudwara",
       "math": "Math",
@@ -159,9 +156,9 @@
     "templesIntro": "Kashi Vishwanath and the shrines around it, the goddess temples, the Hanuman temples of Tulsidas's quarter and the newer temples of the twentieth century. Timings, legends and how to reach each one.",
     "allGhats": "All ghats",
     "allTemples": "All temples",
-    "lead": "Ghats, temples, stupas, mosques, gurudwaras, churches: filter, find on the map, tap to read.",
+    "lead": "Ghats, temples, stupas, gurudwaras, churches: filter, find on the map, tap to read.",
     "allTitle": "Places to visit in Varanasi",
-    "allIntro": "All {count} places on this site in one list: the ghats, Kashi Vishwanath and the temples, Sarnath, the forts, and the mosque, gurudwaras, Jain temples, Kabir Math and church, each with timings, entry and how to reach.",
+    "allIntro": "All {count} places on this site in one list: the ghats, Kashi Vishwanath and the temples, Sarnath, the forts, and the gurudwaras, Jain temples, Kabir Math and church, each with timings, entry and how to reach.",
     "allPlaces": "All places",
     "ghatsListTitle": "All 84 ghats of Varanasi, south to north",
     "ghatsListNote": "The traditional 84 ghats from Assi to Adi Keshav, plus Namo Ghat (2024) and Sant Ravidas Ghat (2009, south of Assi). Linked names have their own page. Order after"
@@ -189,11 +186,6 @@
         "essence": "Sarnath, where the Buddha first taught.",
         "translation": "May all beings be happy."
       },
-      "islamic": {
-        "name": "Islamic",
-        "essence": "The weavers' lanes, a shared Ganga-Jamuni culture, minarets above the river.",
-        "translation": "In the name of God, the Most Gracious, the Most Merciful."
-      },
       "bhakti": {
         "name": "Bhakti saints",
         "essence": "Kabir, Ravidas, Tulsidas: voices larger than temple or mosque.",
@@ -210,7 +202,7 @@
         "translation": "I am the light of the world."
       }
     },
-    "lead": "Seven traditions, each with its own morning here, all sharing one river."
+    "lead": "Six traditions, each with its own morning here, all sharing one river."
   },
   "projects": {
     "title": "Projects & the new Kashi",

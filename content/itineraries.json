@@ -300,7 +300,7 @@
       "gu": "કાશીની દરેક શ્રદ્ધા",
       "pa": "ਕਾਸ਼ੀ ਦਾ ਹਰ ਧਰਮ"
     },
-    "summary": "Two days as above, then a third across the city's Buddhist, Jain, Bhakti, Sikh, Islamic and Christian sites, ending at Namo Ghat.",
+    "summary": "Two days as above, then a third across the city's Buddhist, Jain, Bhakti, Sikh and Christian sites, ending at Namo Ghat.",
     "plan": [
       {
         "day": 1,
@@ -465,13 +465,13 @@
           },
           {
             "time": "15:00",
-            "placeId": "alamgir-mosque",
-            "title": "Alamgir Mosque and Panchganga Ghat",
-            "note": "The mosque above the ghat where five rivers are said to meet.",
+            "placeId": "panchganga-ghat",
+            "title": "Panchganga Ghat",
+            "note": "The ghat where five rivers are said to meet.",
             "i18n": {
               "hi": {
-                "title": "आलमगीर मस्जिद और पंचगंगा घाट",
-                "note": "उस घाट के ऊपर मस्जिद जहाँ कहते हैं पाँच नदियाँ मिलती हैं।"
+                "title": "पंचगंगा घाट",
+                "note": "वह घाट जहाँ कहते हैं पाँच नदियाँ मिलती हैं।"
               }
             }
           },
@@ -510,7 +510,7 @@
     ],
     "i18n": {
       "hi": {
-        "summary": "ऊपर के दो दिन, फिर तीसरा दिन शहर के बौद्ध, जैन, भक्ति, सिख, इस्लामी और ईसाई स्थलों में, नमो घाट पर समाप्त।"
+        "summary": "ऊपर के दो दिन, फिर तीसरा दिन शहर के बौद्ध, जैन, भक्ति, सिख और ईसाई स्थलों में, नमो घाट पर समाप्त।"
       }
     }
   }

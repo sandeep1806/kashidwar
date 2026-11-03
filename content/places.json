@@ -440,7 +440,6 @@
     "bestTime": "Early morning, when the steps are quiet; Kartik month evenings for the lamp-towers",
     "image": "/media/places/panchganga-ghat.jpg",
     "tips": [
-      "Climb the steps to the Alamgir Mosque terrace for the widest view of the river bend.",
       "Akash-deep lamps are hoisted on tall bamboo here through the month of Kartik."
     ],
     "glance": {
@@ -482,7 +481,6 @@
         "summary": "जहाँ कहते हैं पाँच नदियाँ मिलती हैं, उनमें चार अदृश्य। यहाँ बिंदु माधव मंदिर है, और परंपरा के अनुसार इन्हीं सीढ़ियों पर भोर से पहले जुलाहे कबीर को संत रामानंद से मंत्र मिला था।",
         "bestTime": "सुबह जल्दी, जब सीढ़ियाँ शांत हों; कार्तिक मास की शामें आकाशदीप के लिए",
         "tips": [
-          "नदी के मोड़ का सबसे चौड़ा दृश्य देखने के लिए आलमगीर मस्जिद की छत तक चढ़ें।",
           "कार्तिक भर यहाँ ऊँचे बाँसों पर आकाशदीप टाँगे जाते हैं।"
         ],
         "glance": {
@@ -1250,86 +1248,6 @@
         ],
         "glance": {
           "timings": "सुबह 8 से शाम 5:30 बजे",
-          "entry": "निःशुल्क",
-          "duration": "20 से 30 मिनट",
-          "season": "अक्टूबर से मार्च"
-        }
-      }
-    }
-  },
-  {
-    "id": "alamgir-mosque",
-    "name_en": "Alamgir Mosque",
-    "name_hi": "आलमगीर मस्जिद (बेनी माधव का धरहरा)",
-    "names": {
-      "ta": "ஆலம்கீர் மசூதி",
-      "te": "ఆలంగీర్ మసీదు",
-      "kn": "ಆಲಮ್‌ಗೀರ್ ಮಸೀದಿ",
-      "ml": "ആലംഗീർ മസ്ജിദ്",
-      "bn": "আলমগীর মসজিদ",
-      "or": "ଆଲମଗୀର ମସଜିଦ",
-      "as": "আলমগীৰ মছজিদ",
-      "gu": "આલમગીર મસ્જિદ",
-      "pa": "ਆਲਮਗੀਰ ਮਸਜਿਦ"
-    },
-    "faith": [
-      "islamic"
-    ],
-    "type": "mosque",
-    "lat": 25.3153,
-    "lng": 83.0178,
-    "coordsVerified": true,
-    "summary": "The 17th-century mosque that crowns Panchganga Ghat, known locally as Beni Madhav ka Dharahara. Its plinth and lower walls belong to the older Bindu Madhav temple; its high minarets once marked the skyline for boats coming up the river.",
-    "bestTime": "Late afternoon from the river, when the light is on the façade",
-    "image": "/media/places/alamgir-mosque.jpg",
-    "tips": [
-      "Non-Muslim visitors may see the courtyard outside prayer times; dress modestly.",
-      "The terrace looks down on the whole northern sweep of ghats."
-    ],
-    "glance": {
-      "timings": "08:00–21:00; step out during the five daily prayers",
-      "entry": "Free",
-      "duration": "20–30 min",
-      "season": "Oct–Mar",
-      "crowd": "quiet",
-      "photography": "outside-only",
-      "dress": "covered",
-      "verified": false,
-      "sources": [
-        {
-          "title": "Alamgir Mosque – kashi.gov.in",
-          "url": "https://kashi.gov.in/listing-details/alamgir-mosque",
-          "accessed": "2026-10-11"
-        },
-        {
-          "title": "Alamgir Mosque – Pelago (visitor FAQ)",
-          "url": "https://www.pelago.com/en/varanasi/alamgir-mosque-c3424",
-          "accessed": "2026-10-11"
-        },
-        {
-          "title": "Alamgir (Aurangzeb's) Mosque in Varanasi – Rama Arya's blog",
-          "url": "https://ramaarya.blog/2017/11/04/varanasi-alamgir-mosque",
-          "accessed": "2026-10-11"
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "Wikipedia — Alamgir Mosque",
-        "url": "https://en.wikipedia.org/wiki/Alamgir_Mosque",
-        "accessed": "2026-09-25"
-      }
-    ],
-    "i18n": {
-      "hi": {
-        "summary": "पंचगंगा घाट के शीर्ष पर 17वीं सदी की मस्जिद, जिसे स्थानीय लोग बेनी माधव का धरहरा कहते हैं। इसका चबूतरा और निचली दीवारें पुराने बिंदु माधव मंदिर की हैं; इसकी ऊँची मीनारें कभी नदी से आती नावों के लिए क्षितिज का निशान थीं।",
-        "bestTime": "दोपहर बाद नदी से, जब अग्रभाग पर रोशनी हो",
-        "tips": [
-          "गैर-मुस्लिम आगंतुक नमाज़ के समय के बाहर आँगन देख सकते हैं; शालीन वस्त्र पहनें।",
-          "छत से घाटों का पूरा उत्तरी फैलाव दिखता है।"
-        ],
-        "glance": {
-          "timings": "सुबह 8 से रात 9 बजे; पाँचों नमाज़ के समय बाहर रहें",
           "entry": "निःशुल्क",
           "duration": "20 से 30 मिनट",
           "season": "अक्टूबर से मार्च"
@@ -5308,98 +5226,6 @@
           "entry": "कोई टिकट नहीं बताया गया",
           "duration": "30 से 60 मिनट",
           "season": "अक्टूबर से मार्च; काशी तमिल संगमम (प्रायः नवंबर–दिसंबर)"
-        }
-      }
-    }
-  },
-  {
-    "id": "dargah-fatman",
-    "name_en": "Dargah-e-Fatman",
-    "name_hi": "दरगाह-ए-फातमान",
-    "names": {
-      "ta": "தர்கா-ஏ-ஃபாத்மான்",
-      "te": "దర్గా-ఎ-ఫాత్మాన్",
-      "kn": "ದರ್ಗಾ-ಎ-ಫಾತ್ಮಾನ್",
-      "ml": "ദർഗ-എ-ഫാത്മാൻ",
-      "bn": "দরগাহ-এ-ফাতমান",
-      "or": "ଦରଗାହ-ଏ-ଫାତମାନ",
-      "as": "দৰগাহ-এ-ফাতমান",
-      "gu": "દરગાહ-એ-ફાતમાન",
-      "pa": "ਦਰਗਾਹ-ਏ-ਫ਼ਾਤਮਾਨ"
-    },
-    "faith": [
-      "islamic"
-    ],
-    "type": "mosque",
-    "lat": 25.315,
-    "lng": 82.997,
-    "coordsVerified": false,
-    "summary": "A Shia shrine and burial ground in the Lallapura–Sigra area of the city. The Persian poet and scholar Shaikh Muhammad Ali Hazin, who came to India from Iran and died in Banaras in 1766, is buried here. So is the shehnai maestro Ustad Bismillah Khan, laid to rest with state honours in August 2006 under a neem tree, at the spot where he played mourning tunes every Muharram.",
-    "story": "Year after year in the month of Muharram, Bismillah Khan sat here playing nauha, the laments for the martyrs of Karbala, on his shehnai. When he died, his shehnai was buried with him.",
-    "bestTime": "Morning, outside prayer times; Bismillah Khan's birth and death anniversaries (21 March, 21 August)",
-    "image": "/media/places/dargah-fatman.jpg",
-    "tips": [
-      "This is a working shrine and graveyard: dress modestly, cover your head, and ask before photographing graves or people.",
-      "During Muharram the dargah is a place of mourning; come with quiet respect or visit at another time."
-    ],
-    "glance": {
-      "timings": "No official hours published",
-      "entry": "No ticket reported",
-      "duration": "20–30 min",
-      "season": "Oct–Mar",
-      "crowd": "quiet",
-      "photography": "outside-only",
-      "dress": "covered",
-      "verified": false,
-      "sources": [
-        {
-          "title": "Business Standard (PTI) — Family still waiting for Bismillah Khan's mausoleum (26 Aug 2013)",
-          "url": "https://www.business-standard.com/article/pti-stories/family-still-waiting-for-bismillah-khan-s-mausoleum-113082600706_1.html",
-          "accessed": "2026-10-30"
-        },
-        {
-          "title": "Amar Ujala — Homage at Ustad Bismillah Khan's tomb, Sigra Fatman (22 Mar 2026)",
-          "url": "https://www.amarujala.com/video/uttar-pradesh/varanasi/video-homage-paid-at-ustad-bismillah-khans-tomb-in-varanasi-2026-03-22",
-          "accessed": "2026-10-30"
-        }
-      ]
-    },
-    "sources": [
-      {
-        "title": "The Tribune — Ustad Bismillah Khan is no more: buried at Fatmain graveyard (22 Aug 2006)",
-        "url": "https://www.tribuneindia.com/2006/20060822/main2.htm",
-        "accessed": "2026-10-30"
-      },
-      {
-        "title": "WikiShia — Hazin Lahiji (died 15 Oct 1766 in Varanasi, buried in Fatiman)",
-        "url": "https://en.wikishia.net/view/Hazin_Lahiji",
-        "accessed": "2026-10-30"
-      },
-      {
-        "title": "Business Standard (PTI) — grave in the Dargah Fatman area, Nallapura locality (26 Aug 2013)",
-        "url": "https://www.business-standard.com/article/pti-stories/family-still-waiting-for-bismillah-khan-s-mausoleum-113082600706_1.html",
-        "accessed": "2026-10-30"
-      },
-      {
-        "title": "OpenStreetMap — Lalla pura locality (node 4181113147), pin placed by locality",
-        "url": "https://www.openstreetmap.org/node/4181113147",
-        "accessed": "2026-10-30"
-      }
-    ],
-    "i18n": {
-      "hi": {
-        "summary": "नगर के लल्लापुरा–सिगरा इलाक़े में शिया दरगाह और क़ब्रिस्तान। ईरान से भारत आए फ़ारसी कवि और विद्वान शेख़ मुहम्मद अली हज़ीं, जिनका 1766 में बनारस में देहांत हुआ, यहीं दफ़न हैं। शहनाई उस्ताद बिस्मिल्लाह ख़ाँ को भी अगस्त 2006 में राजकीय सम्मान के साथ यहीं नीम के पेड़ के नीचे उसी जगह सुपुर्द-ए-ख़ाक किया गया, जहाँ वे हर मुहर्रम में मातमी धुनें बजाते थे।",
-        "story": "हर साल मुहर्रम के महीने में बिस्मिल्लाह ख़ाँ यहाँ बैठकर शहनाई पर नौहा, कर्बला के शहीदों का मातम, बजाते थे। उनके इंतक़ाल पर उनकी शहनाई भी उनके साथ दफ़नाई गई।",
-        "bestTime": "सुबह, नमाज़ के समय से अलग; बिस्मिल्लाह ख़ाँ की जयंती और पुण्यतिथि (21 मार्च, 21 अगस्त)",
-        "tips": [
-          "यह जीवंत दरगाह और क़ब्रिस्तान है: शालीन कपड़े पहनें, सिर ढकें, और क़ब्रों या लोगों की फ़ोटो लेने से पहले पूछें।",
-          "मुहर्रम में दरगाह मातम की जगह होती है; ख़ामोशी और अदब से आएँ, या किसी और समय जाएँ।"
-        ],
-        "glance": {
-          "timings": "कोई आधिकारिक समय प्रकाशित नहीं",
-          "entry": "कोई टिकट नहीं बताया गया",
-          "duration": "20 से 30 मिनट",
-          "season": "अक्टूबर से मार्च"
         }
       }
     }

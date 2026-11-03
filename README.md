@@ -61,7 +61,7 @@ Every entry has English prose plus an optional `i18n.hi` block for Hindi overrid
 `localize(entry, locale)` applies the override and falls back to English field by field, so partial translations are fine.
 
 ### Add a place
-1. Append to `content/places.json` with the schema above. `type` is one of `ghat | temple | stupa | monastery | mosque | church | gurudwara | math | fort | museum | university | heritage`; `faith` uses `hindu | buddhist | jain | sikh | islamic | christian | bhakti | secular`.
+1. Append to `content/places.json` with the schema above. `type` is one of `ghat | temple | stupa | monastery | church | gurudwara | math | fort | museum | university | heritage`; `faith` uses `hindu | buddhist | jain | sikh | christian | bhakti | secular`.
 2. Cite the coordinate source in `sources`; set `coordsVerified: false` if you placed it by locality.
 3. Add a photo (see **Photos** below). Without one the card shows its drawn placeholder.
 4. To list it under a faith tile, add its id to that faith's `sites` in `content/faiths.json`.

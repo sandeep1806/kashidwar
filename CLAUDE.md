@@ -8,7 +8,7 @@ Read DESIGN.md before writing any UI. Do not deviate from the design system with
 
 ## Project goals
 1. Showcase famous places (ghats, temples, Sarnath, heritage) with an interactive map.
-2. Present every faith of Kashi equally — Hindu, Buddhist, Jain, Sikh, Muslim, Christian, Bhakti saints.
+2. Present the faiths of Kashi equally — Hindu, Buddhist, Jain, Sikh, Christian, Bhakti saints. (Islamic listings were removed at the owner's request, Nov 2026; do not re-add them without asking.)
 3. Explain government / upcoming projects with verified status (Completed / Under construction / Announced).
 4. Work beautifully in 12 Indian languages + English (north, south, east, west).
 5. Stunning scroll-driven animation, yet Lighthouse ≥ 90 on mobile.
