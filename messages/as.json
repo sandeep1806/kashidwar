@@ -447,8 +447,8 @@
       "bookBoth": "অনলাইনত বা কাউণ্টাৰত",
       "bookOnline": "অনলাইনত বুক কৰক",
       "bookingVia": {
-        "asi": "ASIৰ চৰকাৰী ই-টিকট ছাইট · অনলাইনত বা কাৰ্ডেৰে ₹5 কম (বিদেশীৰ বাবে ₹50 কম)",
-        "asiMuseum": "ASIৰ চৰকাৰী ই-টিকট ছাইট · Sarnath Excavated Remains → Monument with Museum বাছনি কৰক",
+        "asi": "ASIৰ চৰকাৰী ই-টিকট ছাইট · City → Sarnath · অনলাইনত বা কাৰ্ডেৰে ₹5 কম (বিদেশীৰ বাবে ₹50 কম)",
+        "asiMuseum": "ASIৰ চৰকাৰী ই-টিকট ছাইট · City → Sarnath → Sarnath Excavated Remains → Monument with Museum বাছনি কৰক",
         "temple": "মন্দিৰ ট্ৰাষ্টৰ চৰকাৰী ছাইট (সুগম দৰ্শন, আৰতি)"
       }
     },

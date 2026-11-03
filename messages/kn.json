@@ -447,8 +447,8 @@
       "bookBoth": "ಆನ್‌ಲೈನ್ ಅಥವಾ ಕೌಂಟರ್‌ನಲ್ಲಿ",
       "bookOnline": "ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಬುಕ್ ಮಾಡಿ",
       "bookingVia": {
-        "asi": "ASI ಅಧಿಕೃತ ಇ-ಟಿಕೆಟ್ ತಾಣ · ಆನ್‌ಲೈನ್ ಅಥವಾ ಕಾರ್ಡ್ ಮೂಲಕ ₹5 ಕಡಿಮೆ (ವಿದೇಶಿಯರಿಗೆ ₹50 ಕಡಿಮೆ)",
-        "asiMuseum": "ASI ಅಧಿಕೃತ ಇ-ಟಿಕೆಟ್ ತಾಣ · Sarnath Excavated Remains → Monument with Museum ಆಯ್ಕೆಮಾಡಿ",
+        "asi": "ASI ಅಧಿಕೃತ ಇ-ಟಿಕೆಟ್ ತಾಣ · City → Sarnath · ಆನ್‌ಲೈನ್ ಅಥವಾ ಕಾರ್ಡ್ ಮೂಲಕ ₹5 ಕಡಿಮೆ (ವಿದೇಶಿಯರಿಗೆ ₹50 ಕಡಿಮೆ)",
+        "asiMuseum": "ASI ಅಧಿಕೃತ ಇ-ಟಿಕೆಟ್ ತಾಣ · City → Sarnath → Sarnath Excavated Remains → Monument with Museum ಆಯ್ಕೆಮಾಡಿ",
         "temple": "ದೇವಾಲಯ ಟ್ರಸ್ಟ್‌ನ ಅಧಿಕೃತ ತಾಣ (ಸುಗಮ ದರ್ಶನ, ಆರತಿ)"
       }
     },

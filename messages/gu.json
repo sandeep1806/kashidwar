@@ -447,8 +447,8 @@
       "bookBoth": "ઑનલાઇન અથવા કાઉન્ટર પર",
       "bookOnline": "ઑનલાઇન બુક કરો",
       "bookingVia": {
-        "asi": "ASIની અધિકૃત ઇ-ટિકિટ સાઇટ · ઑનલાઇન અથવા કાર્ડથી ₹5 ઓછા (વિદેશીઓ માટે ₹50 ઓછા)",
-        "asiMuseum": "ASIની અધિકૃત ઇ-ટિકિટ સાઇટ · Sarnath Excavated Remains → Monument with Museum પસંદ કરો",
+        "asi": "ASIની અધિકૃત ઇ-ટિકિટ સાઇટ · City → Sarnath · ઑનલાઇન અથવા કાર્ડથી ₹5 ઓછા (વિદેશીઓ માટે ₹50 ઓછા)",
+        "asiMuseum": "ASIની અધિકૃત ઇ-ટિકિટ સાઇટ · City → Sarnath → Sarnath Excavated Remains → Monument with Museum પસંદ કરો",
         "temple": "મંદિર ટ્રસ્ટની અધિકૃત સાઇટ (સુગમ દર્શન, આરતી)"
       }
     },
