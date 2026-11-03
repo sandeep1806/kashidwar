@@ -206,20 +206,23 @@ on GitHub (the GitHub-hosted review was removed on 2026-10-23: the Claude Code G
 usage was not covered by the account's promotional credits, while the CLI's is).
 
 ```bash
-scripts/content-review.sh              # this week's rotation
-scripts/content-review.sh guides       # one focus: projects | festivals | guides | developments
+scripts/content-review.sh              # today's rotation
+scripts/content-review.sh guides       # one focus: projects | festivals | guides | developments | places
+scripts/content-review.sh places 2     # places, quarter 2 of the A–Z list (1–4)
 scripts/content-review.sh full         # deep review (Opus)
 DRY_RUN=1 scripts/content-review.sh    # review + diff, no branch, push or PR
-FORCE=1 scripts/content-review.sh      # run even if today's review already exists
+FORCE=1 scripts/content-review.sh      # run even if today's review already ran
 ```
 
-| When (IST week of the month) | Focus | Model | Caps |
+| When (IST weekday) | Focus | Model | Caps |
 |---|---|---|---|
-| week 1 (first Monday) | full: projects, festivals, guides, developments, links, photos | `claude-opus-5-5` | 150 turns |
-| week 2 | festivals + dates | `claude-sonnet-5` | 80 turns |
-| week 3 | guides' volatile facts (darshan/aarti timings, Sugam fee, ropeway and Sarnath fares and hours) | `claude-sonnet-5` | 80 turns |
-| week 4 | new developments + broken links + photo candidates | `claude-sonnet-5` | 80 turns |
-| 5th Monday | projects | `claude-sonnet-5` | 80 turns |
+| first Monday of the month | full: projects, festivals, guides, developments, links, photos | `claude-opus-5-5` | 150 turns |
+| other Mondays | festivals + dates | `claude-sonnet-5` | 80 turns |
+| Tuesday–Friday | places, one quarter of the A–Z list a day (all places weekly): timings, fees, online/counter tickets (`glance.booking`), closures and rule changes, source links | `claude-sonnet-5` | 80 turns |
+| Saturday | guides' volatile facts (darshan/aarti timings, Sugam fee, ropeway and Sarnath fares and hours) | `claude-sonnet-5` | 80 turns |
+| Sunday | new developments + projects + broken links + photo candidates | `claude-sonnet-5` | 80 turns |
+
+A run that changes no content opens no pull request; its report stays in `~/.local/state/kashidwar-review/`.
 
 No dollar cap by default; set `REVIEW_MAX_BUDGET=<usd>` for one. Override the model or turn
 limit with `REVIEW_MODEL`, `REVIEW_MAX_TURNS`.
@@ -231,8 +234,8 @@ into a sourced "what happened" record. Guides with an `event` show "Upcoming / O
 place" automatically and carry Event structured data until they end.
 
 **Schedule.** A scheduled task in the Claude desktop app runs `scripts/content-review.sh` every
-Monday morning (it catches up if the machine was off). Change or pause it in the app's scheduled
-tasks. The script does nothing if a review branch for that day already exists, and only one
+morning at 05:00 (it catches up if the machine was off). Change or pause it in the app's scheduled
+tasks. The script does nothing if a review branch for that day already exists (or that day's run found no changes), and only one
 review runs at a time.
 
 **What it does.** Creates a throwaway git worktree of `origin/redesign` (your own checkout is not
@@ -242,7 +245,7 @@ tool allow-list (no git commit/push, `gh`, `npm` or `rm` for the agent). Then th
 stray scratch files, aborts if anything outside `content/*.json`, `content/guides/*.json` or
 `TRANSLATION_REVIEW.md` changed or a JSON file is invalid, appends the run (model, turns, cost)
 to `content/review-log.json`, commits to `content-review/<date>-<focus>`, pushes, and opens one
-pull request "Weekly|Monthly content review <date>" whose body is the agent's summary table plus
+pull request "Daily|Monthly content review <date>" whose body is the agent's summary table plus
 the run's cost. Logs and the raw Claude output are kept in `~/.local/state/kashidwar-review/`.
 
 **On GitHub:** CI (`.github/workflows/ci.yml`: build with the heading-font gate, lint,

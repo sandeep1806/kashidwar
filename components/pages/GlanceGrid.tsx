@@ -8,6 +8,8 @@ export interface GlanceTile {
   /** Small line under the value (e.g. "15 min walk") */
   note?: ReactNode;
   href?: string;
+  /** href leaves the site: opens in a new tab */
+  external?: boolean;
 }
 
 /**
@@ -34,7 +36,7 @@ export default function GlanceGrid({ title, items, footnote }: { title: string; 
           );
           return (
             <li key={it.label}>
-              {it.href ? <a href={it.href} className="glance-tile card-lift">{body}</a> : <div className="glance-tile">{body}</div>}
+              {it.href ? <a href={it.href} className="glance-tile card-lift" {...(it.external ? { target: "_blank", rel: "noopener" } : {})}>{body}</a> : <div className="glance-tile">{body}</div>}
             </li>
           );
         })}

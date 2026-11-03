@@ -38,6 +38,10 @@
       "photography": "no",
       "dress": "modest",
       "verified": true,
+      "booking": {
+        "url": "https://shrikashivishwanath.org/frontend/home/poojaList",
+        "via": "temple"
+      },
       "sources": [
         {
           "title": "Shri Kashi Vishwanath Temple Trust — Rituals (daily schedule)",
@@ -48,6 +52,11 @@
           "title": "Shri Kashi Vishwanath Temple Trust — FAQ (PDF): darshan timing, entry, gadgets, dress",
           "url": "https://www.shrikashivishwanath.org/pdffile/FAQ_SHRI_KASHI_VISHWANTH_TEMPLE_2_0_pdf.pdf",
           "accessed": "2026-10-11"
+        },
+        {
+          "title": "Shri Kashi Vishwanath Temple Trust — ticket booking (Sugam Darshan, aarti)",
+          "url": "https://shrikashivishwanath.org/frontend/home/poojaList",
+          "accessed": "2026-11-03"
         }
       ]
     },
@@ -517,13 +526,18 @@
     ],
     "glance": {
       "timings": "Site sunrise–sunset (~06:00–18:00); museum 09:00 or 10:00–17:00 (sources differ), closed Fri",
-      "entry": "Site ₹25 (Indian) · ₹300 (foreign); museum ₹5",
+      "entry": "Site ₹25 cash / ₹20 online (Indian, SAARC, BIMSTEC) · ₹300 / ₹250 (foreign); museum ₹5",
       "duration": "2–3 h (site + museum)",
       "season": "Oct–Mar; Buddha Purnima (Apr–May)",
       "crowd": "busy",
       "photography": "allowed",
       "dress": "any",
       "verified": false,
+      "booking": {
+        "url": "https://asi.payumoney.com/",
+        "counter": true,
+        "via": "asi"
+      },
       "sources": [
         {
           "title": "Incredible India (Ministry of Tourism) — Dhamek Stupa (sunrise to sunset)",
@@ -539,6 +553,21 @@
           "title": "UNI — Centre proposes revised list of ticketed ASI monuments; Sarnath in Category A (9 Sep 2026)",
           "url": "https://www.uniindia.com/north-india/centre-proposes-revised-list-of-ticketed-asi-monuments-30-in-category-a-136-in-category-b/173558",
           "accessed": "2026-10-11"
+        },
+        {
+          "title": "ASI Sarnath Circle — Visitor information (₹25 cash / ₹20 card or online; ₹300 / ₹250 foreign; museum ₹5)",
+          "url": "http://www.asisarnathcircle.org/visiter-information.html",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "All India Radio — ASI online tickets on ONDC; ₹5 (Indian) / ₹50 (foreign) online discount continues (7 Jan 2026)",
+          "url": "https://www.newsonair.gov.in/online-ticket-booking-launched-for-over-170-archaeological-monuments",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
+          "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
         }
       ]
     },
@@ -570,7 +599,7 @@
         ],
         "glance": {
           "timings": "स्थल सूर्योदय–सूर्यास्त (~6–18 बजे); संग्रहालय 9 या 10 से 17 बजे (स्रोतों में अंतर), शुक्रवार बंद",
-          "entry": "स्थल ₹25 (भारतीय) · ₹300 (विदेशी); संग्रहालय ₹5",
+          "entry": "स्थल ₹25 नकद / ₹20 ऑनलाइन (भारतीय, सार्क, बिम्सटेक) · ₹300 / ₹250 (विदेशी); संग्रहालय ₹5",
           "duration": "2–3 घंटे (स्थल व संग्रहालय)",
           "season": "अक्टूबर–मार्च; बुद्ध पूर्णिमा (अप्रैल–मई)"
         }
@@ -2424,13 +2453,18 @@
     ],
     "glance": {
       "timings": "Ghat open always · Observatory (ASI) sunrise–21:00 (UP Tourism; some guides say 09:00–16:30)",
-      "entry": "Ghat free · Observatory ₹25 (Indian) · ₹300 (foreign)",
+      "entry": "Ghat free · Observatory ₹25 cash / ₹20 online (Indian) · ₹300 / ₹250 (foreign)",
       "duration": "45 min–1 h",
       "season": "Oct–Mar",
       "crowd": "quiet",
       "photography": "allowed",
       "dress": "any",
       "verified": false,
+      "booking": {
+        "url": "https://asi.payumoney.com/",
+        "counter": true,
+        "via": "asi"
+      },
       "sources": [
         {
           "title": "Visitor Information — ASI Sarnath Circle",
@@ -2446,6 +2480,21 @@
           "title": "Man Singh Observatory — Wanderlog (hours 9AM–4:30PM daily)",
           "url": "https://wanderlog.com/place/details/1716081/man-singh-observatory",
           "accessed": "2026-10-11"
+        },
+        {
+          "title": "ASI Sarnath Circle — Visitor information (₹25 cash / ₹20 card or online; ₹300 / ₹250 foreign; museum ₹5)",
+          "url": "http://www.asisarnathcircle.org/visiter-information.html",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "All India Radio — ASI online tickets on ONDC; ₹5 (Indian) / ₹50 (foreign) online discount continues (7 Jan 2026)",
+          "url": "https://www.newsonair.gov.in/online-ticket-booking-launched-for-over-170-archaeological-monuments",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
+          "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
         }
       ]
     },
@@ -2471,7 +2520,7 @@
         ],
         "glance": {
           "timings": "घाट सदैव खुला · वेधशाला (ASI) सूर्योदय से रात 9 बजे तक (यूपी पर्यटन; कुछ गाइड 9:00–16:30 बताते हैं)",
-          "entry": "घाट निःशुल्क · वेधशाला ₹25 (भारतीय) · ₹300 (विदेशी)",
+          "entry": "घाट निःशुल्क · वेधशाला ₹25 नकद / ₹20 ऑनलाइन (भारतीय) · ₹300 / ₹250 (विदेशी)",
           "duration": "45 मिनट–1 घंटा",
           "season": "अक्टूबर–मार्च"
         }
@@ -3051,11 +3100,16 @@
       "photography": "outside-only",
       "dress": "any",
       "verified": false,
+      "booking": {
+        "url": "https://asi.payumoney.com/",
+        "counter": true,
+        "via": "asiMuseum"
+      },
       "sources": [
         {
           "title": "ASI Sarnath Circle — Visitor information (museum 09:00–17:00, museum ticket ₹5)",
           "url": "http://www.asisarnathcircle.org/visiter-information.html",
-          "accessed": "2026-10-30"
+          "accessed": "2026-11-03"
         },
         {
           "title": "Incredible India (Ministry of Tourism) — Sarnath Museum (10:00–17:00, closed Friday; oldest ASI site museum)",
@@ -3066,6 +3120,16 @@
           "title": "Scroll.in — ASI bans selfie sticks at 46 site museums; personal photography stays free (6 Jul 2017)",
           "url": "https://scroll.in/latest/842856/scroll_in",
           "accessed": "2026-10-30"
+        },
+        {
+          "title": "All India Radio — ASI online tickets on ONDC; ₹5 (Indian) / ₹50 (foreign) online discount continues (7 Jan 2026)",
+          "url": "https://www.newsonair.gov.in/online-ticket-booking-launched-for-over-170-archaeological-monuments",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
+          "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
         }
       ]
     },
@@ -3143,18 +3207,23 @@
     ],
     "glance": {
       "timings": "Sunrise–sunset (ASI hours; about 06:00–18:00)",
-      "entry": "ASI ticket: about ₹25 cash / ₹20 online (Indian, SAARC, BIMSTEC) · ₹300 / ₹250 (foreign)",
+      "entry": "ASI ticket: ₹25 cash / ₹20 online (Indian, SAARC, BIMSTEC) · ₹300 / ₹250 (foreign)",
       "duration": "30–45 min",
       "season": "Oct–Mar; Buddha Purnima (Apr–May)",
       "crowd": "quiet",
       "photography": "allowed",
       "dress": "any",
       "verified": false,
+      "booking": {
+        "url": "https://asi.payumoney.com/",
+        "counter": true,
+        "via": "asi"
+      },
       "sources": [
         {
           "title": "ASI Sarnath Circle — Visitor information (monument ticket rates)",
           "url": "http://www.asisarnathcircle.org/visiter-information.html",
-          "accessed": "2026-10-30"
+          "accessed": "2026-11-03"
         },
         {
           "title": "UNI — Centre proposes revised list of ticketed ASI monuments; Sarnath site and Chaukhandi Stupa in Category A (9 Sep 2026)",
@@ -3165,6 +3234,16 @@
           "title": "Trawell — Chaukhandi Stupa, Sarnath (timings, ticket)",
           "url": "https://trawell.in/uttar-pradesh/sarnath/chaukhandi-stupa",
           "accessed": "2026-10-30"
+        },
+        {
+          "title": "All India Radio — ASI online tickets on ONDC; ₹5 (Indian) / ₹50 (foreign) online discount continues (7 Jan 2026)",
+          "url": "https://www.newsonair.gov.in/online-ticket-booking-launched-for-over-170-archaeological-monuments",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
+          "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
         }
       ]
     },
@@ -3202,7 +3281,7 @@
         ],
         "glance": {
           "timings": "सूर्योदय से सूर्यास्त (एएसआई समय; लगभग सुबह 6 से शाम 6 बजे)",
-          "entry": "एएसआई टिकट: लगभग ₹25 नकद / ₹20 ऑनलाइन (भारतीय, सार्क, बिम्सटेक) · ₹300 / ₹250 (विदेशी)",
+          "entry": "एएसआई टिकट: ₹25 नकद / ₹20 ऑनलाइन (भारतीय, सार्क, बिम्सटेक) · ₹300 / ₹250 (विदेशी)",
           "duration": "30 से 45 मिनट",
           "season": "अक्टूबर से मार्च; बुद्ध पूर्णिमा (अप्रैल-मई)"
         }
@@ -4905,6 +4984,11 @@
       "photography": "allowed",
       "dress": "any",
       "verified": false,
+      "booking": {
+        "url": "https://asi.payumoney.com/",
+        "counter": true,
+        "via": "asi"
+      },
       "sources": [
         {
           "title": "UP Tourism (Government of Uttar Pradesh) — Man Mahal: VEM with monument ₹25 Indian/SAARC/BIMSTEC, ₹300 foreign, sunrise to 9 PM, under 15 free",
@@ -4920,6 +5004,21 @@
           "title": "Observatory of Man Singh (Man Mahal) — ASI tickets on District (open 06:00–21:00 daily)",
           "url": "https://www.district.in/events/observatory-of-man-singh-man-mahal-buy-tickets",
           "accessed": "2026-10-30"
+        },
+        {
+          "title": "ASI Sarnath Circle — Visitor information (₹25 cash / ₹20 card or online; ₹300 / ₹250 foreign; museum ₹5)",
+          "url": "http://www.asisarnathcircle.org/visiter-information.html",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "All India Radio — ASI online tickets on ONDC; ₹5 (Indian) / ₹50 (foreign) online discount continues (7 Jan 2026)",
+          "url": "https://www.newsonair.gov.in/online-ticket-booking-launched-for-over-170-archaeological-monuments",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
+          "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
         }
       ]
     },
@@ -5004,6 +5103,11 @@
       "photography": "allowed",
       "dress": "modest",
       "verified": false,
+      "booking": {
+        "url": "https://asi.payumoney.com/",
+        "counter": true,
+        "via": "asi"
+      },
       "sources": [
         {
           "title": "Incredible India (Ministry of Tourism) — Rajghat (open round the clock)",
@@ -5019,6 +5123,21 @@
           "title": "District by Zomato — Lal Khan's Tomb (06:00–18:00)",
           "url": "https://www.district.in/venue/tomb-of-lal-khan",
           "accessed": "2026-10-30"
+        },
+        {
+          "title": "ASI Sarnath Circle — Visitor information (₹25 cash / ₹20 card or online; ₹300 / ₹250 foreign; museum ₹5)",
+          "url": "http://www.asisarnathcircle.org/visiter-information.html",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "All India Radio — ASI online tickets on ONDC; ₹5 (Indian) / ₹50 (foreign) online discount continues (7 Jan 2026)",
+          "url": "https://www.newsonair.gov.in/online-ticket-booking-launched-for-over-170-archaeological-monuments",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
+          "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
         }
       ]
     },

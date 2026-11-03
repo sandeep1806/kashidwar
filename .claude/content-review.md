@@ -1,8 +1,8 @@
-# Weekly content review — instructions for the review agent
+# Daily content review — instructions for the review agent
 
-You are reviewing the content of kashidwar.com, a Varanasi (Kashi) travel guide, once a week.
+You are reviewing the content of kashidwar.com, a Varanasi (Kashi) travel guide; one focus a day.
 This file is the agent's brief; the repository owner edits it to change what is checked.
-Runs come from `scripts/content-review.sh` on the maintainer's machine (weekly: Sonnet, 40
+Runs come from `scripts/content-review.sh` on the maintainer's machine (daily: Sonnet, 80
 turns, one focus; first Monday of the month: Opus, full review), in a fresh worktree of
 `origin/redesign`. The prompt tells you the run type, the **focus** and the **budget** (turns). GitHub runs CI on the pull request the script opens, and deploys on merge.
 
@@ -49,10 +49,11 @@ under "What to check"):
 
 | Focus | Checks | When |
 |---|---|---|
-| `projects` | 1 | weekly, week 1 of the month (and a 5th Monday) |
-| `festivals` | 2, plus the festival pages' own facts in `content/festivals.json` | weekly, week 2 |
-| `guides` | 3 | weekly, week 3 |
-| `developments` | 4, 4b, 4c and 5 | weekly, week 4 |
+| `places` | 1b for the places listed in the prompt (one quarter of the A–Z list) | Tuesday–Friday |
+| `festivals` | 2, plus the festival pages' own facts in `content/festivals.json` | Monday (not the first) |
+| `guides` | 3 | Saturday |
+| `developments` | 1, 4, 4b, 4c and 5 | Sunday |
+| `projects` | 1 | on demand |
 | `full` | 1–5 (with 4b and 4c) | monthly, first Monday |
 
 **Every run, whatever its focus, also does 4b and 4c first** (upcoming major events and finished
@@ -98,10 +99,25 @@ status cannot be confirmed from an official source, set `"verified": false`.
 
 ### 1b. Place facts "at a glance" — `content/places.json` → `glance`
 Every place carries `glance` (timings, entry fee, duration, season, crowd, photography, dress,
-`verified`, `sources`). On a `places` focus re-check `timings` and `entry` against the trust /
-ASI / government page named in `glance.sources`; update English and the Hindi override in
-`i18n.hi.glance`, set `verified: true` only when both come from an official source, and add the
-page you read to `glance.sources`. Keep the strings short (they render as icon chips).
+`verified`, `sources`, `booking`). On a `places` focus, for **every place listed in the prompt**:
+- re-check `timings` and `entry` against the trust / ASI / government page named in
+  `glance.sources`; update English and the Hindi override in `i18n.hi.glance`, set
+  `verified: true` only when both come from an official source, and add the page you read to
+  `glance.sources`. Keep the strings short (they render as icon chips).
+- **Tickets:** where a fee is charged, find out whether tickets can be bought online and/or at
+  the counter, and the price of each (ASI monuments: ₹5 less online or by card for Indians,
+  ₹50 for foreigners — see the ASI Sarnath Circle visitor page). Record an official online
+  booking page in `glance.booking` = `{ "url", "counter": true when the gate also sells tickets,
+  "via": "asi" | "asiMuseum" | "temple" }` — only the owner's own site (ASI e-ticket portal
+  asi.payumoney.com, the temple trust's site), never a reseller. The tile's label and note text
+  come from `messages/` (fixed per `via`); if a place needs a booking kind that none of these
+  notes fits, list it under "Needs a human look" instead of adding it.
+- look for news since the last check: closures, renovation, new timings or rules, a new fee,
+  reopened areas; update `summary`/`tips` (English + Hindi) when a reliable source confirms it.
+- check that every URL in the place's `sources` and `glance.sources` still answers (dead
+  links: replace or remove, as in check 5).
+Changed English/Hindi place text that also has regional overrides in
+`content/i18n/entries/<locale>.json` is listed in `TRANSLATION_REVIEW.md` (rule 4).
 
 ### 2. Festival dates — `content/festival-dates.json`
 For every festival in `content/festivals.json`, look for newly announced dates in the next
@@ -199,7 +215,7 @@ Write the pull-request body to `.content-review-pr.md` in the repository root (t
 moves it out before committing and uses it as the PR description). Plain language, in English:
 
 ```
-## <Weekly|Monthly> content review <date> — focus: <focus>
+## <Daily|Monthly> content review <date> — focus: <focus>
 
 <two or three sentences: what was checked and the headline changes>
 
