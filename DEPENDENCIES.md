@@ -7,7 +7,7 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 
 | Package | Version | Peer range checked | Notes |
 |---|---|---|---|
-| next | 16.3.6 | react ^19 | App Router, Turbopack default. Middleware is now `proxy.ts`. |
+| next | 16.4.4 | react ^19 | App Router, Turbopack default. Middleware is now `proxy.ts`. |
 | react / react-dom | 19.3.0 | — | Bumped from scaffolded 19.2.8 (minor; allowed by every peer below). |
 | gsap | 3.15.0 | none | SplitText / ScrollTrigger ship free in 3.13+ via `gsap/all`. |
 | lenis | 1.3.26 | react >=17 | `dev` tag is 2.0.0-dev.5 → skipped (prerelease). |
@@ -25,7 +25,7 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 |---|---|---|
 | typescript | 5.9.3 | 7.0.2 is latest but typescript-eslint peers `<6.1.0`; kept 5.9. |
 | eslint | 9.39.5 | Tried 10.11.0: `eslint-config-next`'s bundled `eslint-plugin-react` crashes (`getFilename is not a function`). Reverted to 9. |
-| eslint-config-next | 16.3.6 | |
+| eslint-config-next | 16.4.4 | |
 | tailwindcss / @tailwindcss/postcss | 4.3.3 | Tailwind **v4** → CSS-first `@theme` in `app/globals.css`, no `tailwind.config.js`. |
 | @types/leaflet | 1.9.22 | |
 | @types/three | 0.186.0 | Matches three 0.186. Not in CLAUDE.md's list; added because `three` ships no types. |
@@ -50,8 +50,8 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 ## Phase 9.2 · 2026-09-25 — Cloudflare Workers
 | Package | Version | Peer range checked | Notes |
 |---|---|---|---|
-| @opennextjs/cloudflare | 1.20.6 | next `>=15.5.24<16 \|\| >=16.3.3` ✓ (16.3.6), wrangler ^4.125 | OpenNext adapter; `opennextjs-cloudflare build/preview/deploy` |
-| wrangler (dev) | 4.140.0 | — | local Workers runtime for `npm run preview`, deploys |
+| @opennextjs/cloudflare | 1.20.15 | next `>=15.5.28<16 \|\| >=16.4.1` ✓ (16.4.4), wrangler ^4.148 | OpenNext adapter; `opennextjs-cloudflare build/preview/deploy` |
+| wrangler (dev) | 4.156.2 | — | local Workers runtime for `npm run preview`, deploys |
 - `npm audit`: 0 vulnerabilities after install.
 
 ## Deliberately not installed
@@ -64,3 +64,9 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 - `wrangler` 4.140.0 → **4.146.0** (dev; Dependabot PR #13), pulling `undici` ≥ 7.29.1 and clearing the ten undici advisories GitHub had open against the lockfile. `npm run build`, `npm run lint` and the deploy passed on the bumped version.
 - `sharp` 0.35.4 → **0.35.5** (dev; GHSA-wq5f-xc86-pv6w, librsvg) and `source-map-js` 1.2.1 → **1.2.2** (transitive via postcss; event-loop DoS). `overrides.sharp = "^0.35.5"` in package.json forces miniflare's nested copy onto the patched release too.
 - Still reported by `npm audit`, deliberately left: `braces` (dev-only, via eslint-config-next → fast-glob; the only "fix" downgrades eslint-config-next to 14.x). `npm run build`, `npm run lint` and the deploy pass.
+
+## 2026-11-03 — Security alerts
+- `next` and `eslint-config-next` 16.3.6 → **16.4.4** (GitHub's 4 critical, 4 high and 6 lower Next.js advisories; first patched 16.4.1).
+- `@opennextjs/cloudflare` 1.20.6 → **1.20.15** (its peer range now needs next ≥ 16.4.1 and wrangler ^4.148; pulls `express` 5.3 / `body-parser` 2.4.0) and `wrangler` 4.146.0 → **4.156.2** (pulls `undici` 7.30.1, clearing the 8 undici advisories).
+- `npm update` within ranges: next-intl 4.14.9, react/react-dom 19.3.1, drei 10.7.9, fiber 9.8.2, tailwind 4.3.4, lenis 1.3.27, motion 13.5.1.
+- Still reported by `npm audit`, deliberately left: `minimatch` / `glob` (build- and lint-time only, via eslint plugins and OpenNext's bundler; the only offered fixes are breaking downgrades). Build, lint, tsc, check-seo, check-i18n, the OpenNext Worker build and a local `wrangler dev` smoke test pass.
