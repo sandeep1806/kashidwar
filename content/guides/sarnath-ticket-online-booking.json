@@ -1,0 +1,312 @@
+{
+  "slug": "sarnath-ticket-online-booking",
+  "published": "2026-11-03",
+  "updated": "2026-11-03",
+  "photo": "places/sarnath",
+  "title_en": "Sarnath ticket online booking 2026: ₹20 online, ₹25 at counter, steps",
+  "title_hi": "सारनाथ टिकट ऑनलाइन बुकिंग 2026: ऑनलाइन ₹20, काउंटर पर ₹25, पूरा तरीका",
+  "description_en": "Sarnath ticket price 2026: ₹20 online or ₹25 cash (Indian), ₹250 / ₹300 for foreigners, museum ₹5. Step-by-step booking on the official ASI site: pick Circle → Sarnath.",
+  "description_hi": "सारनाथ टिकट 2026: भारतीयों के लिए ऑनलाइन ₹20 या नकद ₹25, विदेशियों के लिए ₹250 / ₹300, संग्रहालय ₹5। एएसआई की आधिकारिक साइट पर बुकिंग का पूरा तरीका: Circle में Sarnath चुनें।",
+  "lead_en": "You can buy tickets for Sarnath, its museum, Chaukhandi Stupa, the Man Singh observatory and Lal Khan's Tomb on the Archaeological Survey of India's own website, and paying online is ₹5 cheaper than cash at the gate (₹50 for foreign visitors). The site has no \"Varanasi\" option, which confuses many visitors: all of these are listed under the Sarnath circle. We went through the booking ourselves on 3 November 2026; these are the steps and prices it showed.",
+  "lead_hi": "सारनाथ, उसके संग्रहालय, चौखंडी स्तूप, मान सिंह की वेधशाला और लाल ख़ान के मक़बरे का टिकट भारतीय पुरातत्व सर्वेक्षण (एएसआई) की अपनी वेबसाइट पर मिलता है, और ऑनलाइन भुगतान गेट पर नकद से ₹5 सस्ता पड़ता है (विदेशियों के लिए ₹50)। साइट पर \"Varanasi\" नाम का कोई विकल्प नहीं है, इसलिए बहुत लोग उलझ जाते हैं: ये सभी स्मारक Sarnath सर्कल में हैं। हमने 3 नवंबर 2026 को ख़ुद बुकिंग करके देखी; नीचे वही तरीका और वही दाम हैं जो साइट ने दिखाए।",
+  "cta": {
+    "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
+    "label_en": "Book on the official ASI site",
+    "label_hi": "एएसआई की आधिकारिक साइट पर बुक करें"
+  },
+  "facts": [
+    {
+      "icon": "ticket",
+      "label_en": "Official booking site",
+      "label_hi": "आधिकारिक बुकिंग साइट",
+      "value_en": "asi.paygov.org.in · Circle → Sarnath",
+      "value_hi": "asi.paygov.org.in · Circle में Sarnath"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Indian, SAARC, BIMSTEC",
+      "label_hi": "भारतीय, सार्क, बिम्सटेक",
+      "value_en": "₹20 online or card · ₹25 cash",
+      "value_hi": "ऑनलाइन या कार्ड से ₹20 · नकद ₹25"
+    },
+    {
+      "icon": "people",
+      "label_en": "Foreign visitors",
+      "label_hi": "विदेशी पर्यटक",
+      "value_en": "₹250 online or card · ₹300 cash",
+      "value_hi": "ऑनलाइन या कार्ड से ₹250 · नकद ₹300"
+    },
+    {
+      "icon": "info",
+      "label_en": "Sarnath museum",
+      "label_hi": "सारनाथ संग्रहालय",
+      "value_en": "₹5 · 09:00–17:00 · closed Fridays",
+      "value_hi": "₹5 · सुबह 9 से शाम 5 · शुक्रवार बंद"
+    },
+    {
+      "icon": "people",
+      "label_en": "Children",
+      "label_hi": "बच्चे",
+      "value_en": "Under 15 free",
+      "value_hi": "15 वर्ष से कम निःशुल्क"
+    },
+    {
+      "icon": "shield",
+      "label_en": "Beware",
+      "label_hi": "सावधान",
+      "value_en": "Fake look-alike ticket sites exist",
+      "value_hi": "मिलती-जुलती नक़ली टिकट साइटें हैं"
+    }
+  ],
+  "sections": [
+    {
+      "id": "official-site",
+      "heading_en": "Where to book Sarnath tickets online",
+      "heading_hi": "सारनाथ का टिकट ऑनलाइन कहाँ बुक करें",
+      "body_en": [
+        "The official booking site is asi.paygov.org.in (Archaeological Survey of India, run with NSDL's PayGov and Canara Bank). ASI's main website, asi.nic.in, links to it under Online Ticket Booking, and the Agra district website lists the same address. ASI also still links its older e-ticket site, asi.payumoney.com (it opens eticket.webfront.in/asi), where Sarnath is listed under City.",
+        "On both sites the first screen shows Agra. Scroll the list down to Sarnath: there is no Varanasi option, and every ticketed ASI monument in and around Varanasi sits in the Sarnath circle. ASI tickets are also sold through apps on the government's ONDC network."
+      ],
+      "body_hi": [
+        "आधिकारिक बुकिंग साइट asi.paygov.org.in है (भारतीय पुरातत्व सर्वेक्षण, एनएसडीएल के PayGov और केनरा बैंक के साथ)। एएसआई की मुख्य वेबसाइट asi.nic.in पर Online Ticket Booking के नीचे यही लिंक है, और आगरा ज़िले की वेबसाइट भी यही पता देती है। एएसआई अपनी पुरानी ई-टिकट साइट asi.payumoney.com (यह eticket.webfront.in/asi खोलती है) का लिंक भी देता है, जहाँ City में Sarnath मिलता है।",
+        "दोनों साइटों पर पहली स्क्रीन पर Agra दिखता है। सूची नीचे खिसकाकर Sarnath चुनें: Varanasi का कोई विकल्प नहीं है, और वाराणसी व आसपास के सभी टिकट वाले एएसआई स्मारक Sarnath सर्कल में हैं। एएसआई के टिकट सरकार के ONDC नेटवर्क से जुड़े ऐप पर भी मिलते हैं।"
+      ],
+      "unconfirmed": false,
+      "sources": [0, 1, 3, 5]
+    },
+    {
+      "id": "book-steps",
+      "heading_en": "How to book, step by step",
+      "heading_hi": "बुकिंग कैसे करें: एक-एक क़दम",
+      "body_en": [
+        "These are the screens of asi.paygov.org.in as we saw them on 3 November 2026. The site is in English; the words in quotes are its button and menu labels."
+      ],
+      "list_en": [
+        "Open asi.paygov.org.in/asi-webapp/#/ticketbooking (or asi.nic.in → Online Ticket Booking).",
+        "Under \"CIRCLE\", scroll down and choose \"Sarnath\".",
+        "Under \"MONUMENTS\", tick what you will visit: \"Excavated Remains, Sarnath\" is the main site (Dhamek Stupa, Ashoka pillar, monastery ruins); \"Archaeological Site Museum, Sarnath\" is the museum. When we tried, one booking took two monuments; make a second booking for more.",
+        "Click \"CONTINUE\", then pick the \"Visit Date\" and \"Visit Time\" (Forenoon or Afternoon) for each monument. Slots that have already passed today are greyed out; the page shows how many tickets are left.",
+        "Click \"PROCEED\". Choose your origin (\"INDIAN\", \"FOREIGNER\", \"SAARC\" or \"BIMSTEC\") and the number of adults (15 and over) and children (under 15).",
+        "Enter age, email and mobile number. Check the summary: an Indian adult for the site and the museum comes to ₹20 + ₹5 = ₹25.",
+        "Tick that you agree to the Do's & Don'ts, click \"PROCEED TO PAY\" and pay online.",
+        "Keep the e-ticket on your phone for the gate. If you lose it, \"Regenerate Ticket\" on the same site brings it back."
+      ],
+      "body_hi": [
+        "ये asi.paygov.org.in की वही स्क्रीन हैं जो हमें 3 नवंबर 2026 को दिखीं। साइट अंग्रेज़ी में है; उद्धरण चिह्नों में लिखे शब्द उसके बटन और मेन्यू के नाम हैं।"
+      ],
+      "list_hi": [
+        "asi.paygov.org.in/asi-webapp/#/ticketbooking खोलें (या asi.nic.in → Online Ticket Booking)।",
+        "\"CIRCLE\" में सूची नीचे खिसकाकर \"Sarnath\" चुनें।",
+        "\"MONUMENTS\" में जो देखना है उस पर टिक करें: \"Excavated Remains, Sarnath\" मुख्य स्थल है (धमेख स्तूप, अशोक स्तंभ, विहारों के खंडहर); \"Archaeological Site Museum, Sarnath\" संग्रहालय है। हमारे प्रयास में एक बुकिंग में दो स्मारक जुड़े; ज़्यादा के लिए दूसरी बुकिंग करें।",
+        "\"CONTINUE\" दबाएँ, फिर हर स्मारक के लिए \"Visit Date\" और \"Visit Time\" (Forenoon या Afternoon) चुनें। आज के बीत चुके स्लॉट धुंधले दिखते हैं; पेज बताता है कितने टिकट बचे हैं।",
+        "\"PROCEED\" दबाएँ। अपना वर्ग चुनें (\"INDIAN\", \"FOREIGNER\", \"SAARC\" या \"BIMSTEC\") और वयस्कों (15 वर्ष और ऊपर) व बच्चों (15 से कम) की संख्या।",
+        "उम्र, ईमेल और मोबाइल नंबर भरें। सारांश जाँचें: एक भारतीय वयस्क का स्थल और संग्रहालय मिलाकर ₹20 + ₹5 = ₹25 बनता है।",
+        "Do's & Don'ts से सहमति पर टिक करें, \"PROCEED TO PAY\" दबाएँ और ऑनलाइन भुगतान करें।",
+        "गेट के लिए ई-टिकट फ़ोन में रखें। खो जाए तो उसी साइट पर \"Regenerate Ticket\" से दोबारा निकालें।"
+      ],
+      "unconfirmed": false,
+      "sources": [0]
+    },
+    {
+      "id": "ticket-price",
+      "heading_en": "Sarnath ticket price 2026: online vs counter",
+      "heading_hi": "सारनाथ टिकट का दाम 2026: ऑनलाइन बनाम काउंटर",
+      "body_en": [
+        "ASI charges less when you pay online or by card: ₹5 less for Indian, SAARC and BIMSTEC visitors and ₹50 less for other foreigners. The online prices below are the ones the booking site showed on 3 November 2026; the cash prices are from the ASI Sarnath Circle's visitor page."
+      ],
+      "list_en": [
+        "Excavated Remains, Sarnath (Dhamek Stupa area): ₹20 online / ₹25 cash for Indian, SAARC and BIMSTEC visitors; ₹250 online / ₹300 cash for other foreigners",
+        "Archaeological Site Museum, Sarnath: ₹5 for everyone",
+        "Chaukhandi Stupa: ₹20 online / ₹25 cash; foreigners ₹250 / ₹300",
+        "Observatory of Man Singh (Jantar Mantar, Man Mandir Ghat): ₹20 online / ₹25 cash; foreigners ₹250 / ₹300",
+        "Lal Khan's Tomb (Raj Ghat): ₹20 online / ₹25 cash; foreigners ₹250 / ₹300",
+        "Children under 15: free"
+      ],
+      "body_hi": [
+        "ऑनलाइन या कार्ड से भुगतान पर एएसआई कम पैसे लेता है: भारतीय, सार्क और बिम्सटेक पर्यटकों के लिए ₹5 कम और अन्य विदेशियों के लिए ₹50 कम। नीचे के ऑनलाइन दाम वही हैं जो बुकिंग साइट ने 3 नवंबर 2026 को दिखाए; नकद दाम एएसआई सारनाथ सर्कल के पर्यटक पेज से हैं।"
+      ],
+      "list_hi": [
+        "उत्खनित अवशेष, सारनाथ (धमेख स्तूप क्षेत्र): भारतीय, सार्क और बिम्सटेक पर्यटकों के लिए ऑनलाइन ₹20 / नकद ₹25; अन्य विदेशियों के लिए ऑनलाइन ₹250 / नकद ₹300",
+        "पुरातात्विक स्थल संग्रहालय, सारनाथ: सभी के लिए ₹5",
+        "चौखंडी स्तूप: ऑनलाइन ₹20 / नकद ₹25; विदेशी ₹250 / ₹300",
+        "मान सिंह की वेधशाला (जंतर मंतर, मान मंदिर घाट): ऑनलाइन ₹20 / नकद ₹25; विदेशी ₹250 / ₹300",
+        "लाल ख़ान का मक़बरा (राजघाट): ऑनलाइन ₹20 / नकद ₹25; विदेशी ₹250 / ₹300",
+        "15 वर्ष से कम के बच्चे: निःशुल्क"
+      ],
+      "unconfirmed": false,
+      "sources": [0, 2, 4, 6]
+    },
+    {
+      "id": "counter",
+      "heading_en": "Buying at the gate (offline)",
+      "heading_hi": "गेट पर टिकट (ऑफ़लाइन)",
+      "body_en": [
+        "You do not have to book ahead: each site has an ASI ticket window at the gate. Cash costs the full ₹25 (₹300 for foreigners). Paying by card at the window, or booking on your phone with the QR code on the posters by the gate, gets the lower ₹20 price.",
+        "The museum ticket is separate from the site ticket and is bought for the museum building across the road from the excavated site."
+      ],
+      "body_hi": [
+        "पहले से बुकिंग ज़रूरी नहीं: हर स्थल के गेट पर एएसआई की टिकट खिड़की है। नकद में पूरा ₹25 लगता है (विदेशियों के लिए ₹300)। खिड़की पर कार्ड से भुगतान, या गेट के पास लगे पोस्टर का QR कोड स्कैन करके फ़ोन से बुकिंग करने पर कम दाम ₹20 लगता है।",
+        "संग्रहालय का टिकट स्थल के टिकट से अलग है; यह उत्खनित स्थल के सामने सड़क पार संग्रहालय भवन के लिए लिया जाता है।"
+      ],
+      "unconfirmed": false,
+      "sources": [2, 4]
+    },
+    {
+      "id": "timings",
+      "heading_en": "Timings and closed days",
+      "heading_hi": "समय और बंद रहने के दिन",
+      "body_en": [
+        "Check the day before you book, because a ticket is for one date and slot."
+      ],
+      "list_en": [
+        "Excavated Remains, Sarnath and Chaukhandi Stupa: sunrise to sunset, every day",
+        "Sarnath museum: 09:00–17:00 (the booking site's own notice), closed on Fridays",
+        "Observatory of Man Singh: sunrise to 21:00 according to UP Tourism",
+        "Lal Khan's Tomb: about 06:00–18:00"
+      ],
+      "body_hi": [
+        "बुकिंग से पहले दिन जाँच लें, क्योंकि टिकट एक तारीख़ और एक स्लॉट के लिए होता है।"
+      ],
+      "list_hi": [
+        "उत्खनित अवशेष, सारनाथ और चौखंडी स्तूप: सूर्योदय से सूर्यास्त, हर दिन",
+        "सारनाथ संग्रहालय: सुबह 9 से शाम 5 (बुकिंग साइट की अपनी सूचना), शुक्रवार बंद",
+        "मान सिंह की वेधशाला: यूपी पर्यटन के अनुसार सूर्योदय से रात 9 बजे तक",
+        "लाल ख़ान का मक़बरा: लगभग सुबह 6 से शाम 6"
+      ],
+      "unconfirmed": false,
+      "sources": [0, 6, 7, 8]
+    },
+    {
+      "id": "fake-sites",
+      "heading_en": "Avoid fake ticket sites",
+      "heading_hi": "नक़ली टिकट साइटों से बचें",
+      "body_en": [
+        "Copies of the ASI booking site have appeared. In October 2025 ASI's technical cell investigated a clone at pilotasi.paygov.org.in that offered cut-price Taj Mahal tickets, and the official booking page itself carries a warning about a fraudulent Taj Mahal tickets website. Open the booking site from asi.nic.in or from the button on this page, check that the address is exactly asi.paygov.org.in, and do not pay anyone who offers a cheaper ASI ticket."
+      ],
+      "body_hi": [
+        "एएसआई बुकिंग साइट की नक़लें सामने आई हैं। अक्टूबर 2025 में एएसआई की तकनीकी शाखा ने pilotasi.paygov.org.in नाम की नक़ली साइट की जाँच की, जो ताजमहल के सस्ते टिकट दे रही थी, और आधिकारिक बुकिंग पेज पर भी एक नक़ली ताजमहल टिकट वेबसाइट की चेतावनी है। बुकिंग साइट asi.nic.in से या इस पेज के बटन से खोलें, पता ठीक asi.paygov.org.in है यह जाँचें, और सस्ता एएसआई टिकट देने वाले किसी को पैसे न दें।"
+      ],
+      "unconfirmed": false,
+      "sources": [0, 1, 9]
+    },
+    {
+      "id": "other-tickets",
+      "heading_en": "Other Varanasi tickets",
+      "heading_hi": "वाराणसी के दूसरे टिकट",
+      "body_en": [
+        "The Sarnath circle on the ASI site also lists Jaunpur Fort and Lord Cornwallis Tomb (Ghazipur), both outside Varanasi. Kashi Vishwanath's Sugam Darshan and aarti tickets are sold on the temple trust's own site, not the ASI one (see our Kashi Vishwanath darshan guide). We found no official online booking for Ramnagar Fort or Bharat Kala Bhavan; buy those at the gate."
+      ],
+      "body_hi": [
+        "एएसआई साइट के Sarnath सर्कल में जौनपुर क़िला और लॉर्ड कॉर्नवालिस का मक़बरा (ग़ाज़ीपुर) भी हैं, दोनों वाराणसी से बाहर। काशी विश्वनाथ के सुगम दर्शन और आरती के टिकट मंदिर न्यास की अपनी साइट पर मिलते हैं, एएसआई साइट पर नहीं (हमारी काशी विश्वनाथ दर्शन गाइड देखें)। रामनगर क़िले और भारत कला भवन की कोई आधिकारिक ऑनलाइन बुकिंग हमें नहीं मिली; इनका टिकट गेट पर लें।"
+      ],
+      "unconfirmed": false,
+      "sources": [0, 10]
+    }
+  ],
+  "faq": [
+    {
+      "q_en": "Can I book Sarnath tickets online?",
+      "a_en": "Yes, on ASI's official site asi.paygov.org.in: choose Circle → Sarnath, tick \"Excavated Remains, Sarnath\" (and the museum if you want), pick a date and slot, enter your details and pay.",
+      "q_hi": "क्या सारनाथ का टिकट ऑनलाइन बुक हो सकता है?",
+      "a_hi": "हाँ, एएसआई की आधिकारिक साइट asi.paygov.org.in पर: Circle में Sarnath चुनें, \"Excavated Remains, Sarnath\" (और चाहें तो संग्रहालय) पर टिक करें, तारीख़ और स्लॉट चुनें, जानकारी भरें और भुगतान करें।"
+    },
+    {
+      "q_en": "What is the Sarnath ticket price?",
+      "a_en": "For Indian, SAARC and BIMSTEC visitors ₹20 online or by card and ₹25 in cash; for other foreigners ₹250 online and ₹300 in cash. The museum is ₹5 extra, and children under 15 are free.",
+      "q_hi": "सारनाथ का टिकट कितने का है?",
+      "a_hi": "भारतीय, सार्क और बिम्सटेक पर्यटकों के लिए ऑनलाइन या कार्ड से ₹20 और नकद ₹25; अन्य विदेशियों के लिए ऑनलाइन ₹250 और नकद ₹300। संग्रहालय का ₹5 अलग, और 15 वर्ष से कम के बच्चे निःशुल्क।"
+    },
+    {
+      "q_en": "How much is the Sarnath museum ticket?",
+      "a_en": "₹5 for everyone. Book it online with the site ticket by also ticking \"Archaeological Site Museum, Sarnath\", or buy it at the museum. The museum is closed on Fridays.",
+      "q_hi": "सारनाथ संग्रहालय का टिकट कितने का है?",
+      "a_hi": "सभी के लिए ₹5। ऑनलाइन बुकिंग में \"Archaeological Site Museum, Sarnath\" पर भी टिक करें, या संग्रहालय पर लें। संग्रहालय शुक्रवार को बंद रहता है।"
+    },
+    {
+      "q_en": "What is the Sarnath entry fee for foreigners?",
+      "a_en": "₹250 if paid online or by card and ₹300 in cash, plus ₹5 for the museum. Visitors from SAARC and BIMSTEC countries pay the Indian price.",
+      "q_hi": "विदेशियों के लिए सारनाथ का प्रवेश शुल्क कितना है?",
+      "a_hi": "ऑनलाइन या कार्ड से ₹250 और नकद ₹300, साथ में संग्रहालय का ₹5। सार्क और बिम्सटेक देशों के पर्यटक भारतीय दाम देते हैं।"
+    },
+    {
+      "q_en": "Why can't I find Varanasi on the ASI ticket site?",
+      "a_en": "The site lists monuments by ASI circle, not by city. Varanasi's monuments, including the Man Singh observatory and Lal Khan's Tomb, are under Sarnath.",
+      "q_hi": "एएसआई टिकट साइट पर वाराणसी क्यों नहीं मिलता?",
+      "a_hi": "साइट स्मारकों को शहर नहीं, एएसआई सर्कल के हिसाब से दिखाती है। वाराणसी के स्मारक, मान सिंह की वेधशाला और लाल ख़ान का मक़बरा भी, Sarnath में हैं।"
+    },
+    {
+      "q_en": "Is there a ticket counter at Sarnath?",
+      "a_en": "Yes. You can buy at the gate in cash for ₹25, or pay by card or through the QR code on the posters there for ₹20.",
+      "q_hi": "क्या सारनाथ में टिकट काउंटर है?",
+      "a_hi": "हाँ। गेट पर नकद ₹25 में टिकट लें, या वहाँ कार्ड से या पोस्टर के QR कोड से भुगतान करके ₹20 में।"
+    },
+    {
+      "q_en": "Which is the official ASI ticket booking website?",
+      "a_en": "asi.paygov.org.in, linked from ASI's own website asi.nic.in. ASI also links its older e-ticket site asi.payumoney.com. Avoid look-alike addresses such as pilotasi.paygov.org.in.",
+      "q_hi": "एएसआई टिकट बुकिंग की आधिकारिक वेबसाइट कौन-सी है?",
+      "a_hi": "asi.paygov.org.in, जिसका लिंक एएसआई की अपनी वेबसाइट asi.nic.in पर है। एएसआई अपनी पुरानी ई-टिकट साइट asi.payumoney.com का लिंक भी देता है। pilotasi.paygov.org.in जैसे मिलते-जुलते पतों से बचें।"
+    }
+  ],
+  "sources": [
+    {
+      "title": "ASI online ticket booking (asi.paygov.org.in): Sarnath circle, monuments, slots and fares as shown on 3 Nov 2026",
+      "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "Archaeological Survey of India — official website (Online Ticket Booking links)",
+      "url": "https://asi.nic.in/",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "ASI Sarnath Circle — Visitor information (₹25 cash / ₹20 card or online; ₹300 / ₹250 foreign)",
+      "url": "http://www.asisarnathcircle.org/visiter-information.html",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "District Agra (Government of UP) — Online Ticket Booking of Monuments",
+      "url": "https://agra.nic.in/service/online-ticket-booking-of-monuments/",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "All India Radio — ASI online tickets on ONDC; ₹5 (Indian) / ₹50 (foreign) online discount continues (7 Jan 2026)",
+      "url": "https://www.newsonair.gov.in/online-ticket-booking-launched-for-over-170-archaeological-monuments",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "ASI older e-ticket site (asi.payumoney.com → eticket.webfront.in/asi): City → Sarnath",
+      "url": "https://asi.payumoney.com/",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "UP Tourism (Government of Uttar Pradesh) — Varanasi and Sarnath: Man Mahal sunrise to 9 PM, under 15 free",
+      "url": "https://uptourism.gov.in/en/page/varanasi-sarnath",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "Incredible India (Ministry of Tourism) — Sarnath Museum (closed Friday)",
+      "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/sarnath-museum",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "District by Zomato — Lal Khan's Tomb (06:00–18:00)",
+      "url": "https://www.district.in/venue/tomb-of-lal-khan",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "The Daily Jagran — Cloned ASI website offering discounted Taj Mahal tickets triggers probe (22 Oct 2025)",
+      "url": "https://www.thedailyjagran.com/uttar-pradesh/cloned-asi-website-offering-discounted-taj-mahal-tickets-triggers-probe-tourists-warned-against-fraudulent-portal-10275148",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "Shri Kashi Vishwanath Temple Trust — Sugam Darshan and aarti booking",
+      "url": "https://shrikashivishwanath.org/frontend/home/poojaList",
+      "accessed": "2026-11-03"
+    }
+  ],
+  "related": {
+    "places": ["sarnath", "sarnath-museum", "chaukhandi-stupa", "jantar-mantar-varanasi", "raj-ghat"],
+    "itineraries": ["1-day"]
+  },
+  "notes": "Steps, monument names, slots (Forenoon/Afternoon) and online fares read on asi.paygov.org.in on 3 Nov 2026 by going through the booking up to the details page (no booking made): Excavated Remains ₹20 Indian/SAARC/BIMSTEC, ₹250 foreign; Site Museum ₹5 for both; Chaukhandi, Cornwallis, Man Singh observatory, Lal Khan ₹20 / ₹250. Selecting all seven monuments left two ticked, hence 'one booking took two monuments'. Payment methods not checked (stopped before payment). QR posters at the Sarnath gate reported by the site owner after a visit (Nov 2026); card price from the ASI circle page. Under-15 free from UP Tourism; the booking form defines child as under 15."
+}

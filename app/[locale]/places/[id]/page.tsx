@@ -114,7 +114,7 @@ export default async function PlacePage({ params }: PageProps<"/[locale]/places/
   });
 
   const tiles = ([
-    g.booking ? { icon: "ticket", label: t("glance.tickets"), value: t(g.booking.counter ? "glance.bookBoth" : "glance.bookOnline"), note: t(`glance.bookingVia.${g.booking.via}`), href: g.booking.url, external: true } : null,
+    g.booking ? { icon: "ticket", label: t("glance.tickets"), value: t(g.booking.counter ? "glance.bookBoth" : "glance.bookOnline"), note: t(`glance.bookingVia.${g.booking.via}`), ...(g.booking.guide ? { href: `${home}/guides/${g.booking.guide}` } : { href: g.booking.url, external: true }) } : null,
     g.crowd ? { icon: "people", label: t("glance.crowd"), value: t(`glance.crowdLevel.${g.crowd}`) } : null,
     g.photography ? { icon: g.photography === "no" ? "camera-off" : "camera", label: t("glance.photography"), value: t(`glance.photographyLevel.${g.photography}`) } : null,
     g.dress ? { icon: "dress", label: t("glance.dress"), value: t(`glance.dressLevel.${g.dress}`) } : null,

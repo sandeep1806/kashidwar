@@ -215,6 +215,18 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
         lead={
           <div lang={l.lang}>
             <p>{l.lead}</p>
+            {l.cta && (
+              <a
+                href={l.cta.url}
+                target="_blank"
+                rel="noopener"
+                className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-full border border-kashi-saffron/60 bg-kashi-saffron/15 px-4 py-2 text-kashi-white hover:bg-kashi-saffron/25 focus-visible:outline-2 focus-visible:outline-kashi-diya"
+              >
+                <Icon name="ticket" className="h-4 w-4 shrink-0 text-kashi-diya" />
+                <span>{l.cta.label}</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            )}
             <nav aria-label={t("contents")} className="guide-jump mt-6">
               {l.sections.map((s) => (
                 <a key={s.id} href={`#${s.id}`} className="guide-jump-chip">

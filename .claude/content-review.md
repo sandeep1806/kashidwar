@@ -108,10 +108,18 @@ Every place carries `glance` (timings, entry fee, duration, season, crowd, photo
   the counter, and the price of each (ASI monuments: ₹5 less online or by card for Indians,
   ₹50 for foreigners — see the ASI Sarnath Circle visitor page). Record an official online
   booking page in `glance.booking` = `{ "url", "counter": true when the gate also sells tickets,
-  "via": "asi" | "asiMuseum" | "temple" }` — only the owner's own site (ASI e-ticket portal
-  asi.payumoney.com, the temple trust's site), never a reseller. The tile's label and note text
-  come from `messages/` (fixed per `via`); if a place needs a booking kind that none of these
-  notes fits, list it under "Needs a human look" instead of adding it.
+  "via": "asi" | "asiMuseum" | "temple", "guide"? }` — only the owner's own site (ASI booking
+  asi.paygov.org.in/asi-webapp/#/ticketbooking, linked from asi.nic.in; the older
+  asi.payumoney.com; the temple trust's site), never a reseller. ASI places carry
+  `"guide": "sarnath-ticket-online-booking"`, so the tile opens that guide's verified steps. The
+  tile's label and note text come from `messages/` (fixed per `via`); if a place needs a booking
+  kind that none of these notes fits, list it under "Needs a human look" instead of adding it.
+- **ASI booking guide** (`content/guides/sarnath-ticket-online-booking.json`, on the places
+  focus that includes `sarnath`, and on `full`): open the booking site, Circle → Sarnath, and
+  check the monument list, slot names and online fares against the guide's steps and price
+  list (go only as far as the visitor-details summary; never enter details or pay). Check that
+  asi.nic.in still links the same booking address. Update English, Hindi and the 11 regional
+  translations together when anything changed.
 - look for news since the last check: closures, renovation, new timings or rules, a new fee,
   reopened areas; update `summary`/`tips` (English + Hindi) when a reliable source confirms it.
 - check that every URL in the place's `sources` and `glance.sources` still answers (dead

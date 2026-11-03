@@ -94,8 +94,11 @@ export interface Glance extends GlanceText {
   dress?: Dress;
   verified?: boolean;
   sources?: Source[];
-  /** Official online ticket page; `counter: true` when the gate also sells tickets; `via` picks the note shown with it */
-  booking?: { url: string; counter?: boolean; via: "asi" | "asiMuseum" | "temple" };
+  /**
+   * Official online ticket page; `counter: true` when the gate also sells tickets; `via` picks the note shown with it.
+   * `guide` (a guide slug with the booking steps) makes the tile link there instead of straight to `url`.
+   */
+  booking?: { url: string; counter?: boolean; via: "asi" | "asiMuseum" | "temple"; guide?: string };
 }
 
 export interface Place {
