@@ -41,6 +41,9 @@ guide sections); nothing voyeuristic about cremation grounds.
    `lastVerified` date forward unless you actually re-checked that entry this run.
 6. **When unsure, do not change it** — mention it in the summary as "needs a human look".
 7. Keep JSON formatting as it is (the files use 2-space or 1-space indentation; match the file).
+8. **No Islamic listings:** the owner removed them in November 2026 (mosques, dargahs, Eid,
+   Muharram, an "Islamic" faith). Never add or propose such entries; neutral factual mentions
+   inside other entries (Gyanvapi beside Kashi Vishwanath, Lal Khan's Tomb at Raj Ghat) stay.
 
 ## Focus: what each run checks
 

@@ -55,10 +55,6 @@
   "en": "The marble relief map of undivided India inside Bharat Mata Mandir",
   "hi": "भारत माता मंदिर के भीतर अविभाजित भारत का संगमरमर का उभरा मानचित्र"
  },
- "places/alamgir-mosque": {
-  "en": "Domes and minarets of the Alamgir Mosque above Panchganga Ghat",
-  "hi": "पंचगंगा घाट के ऊपर आलमगीर मस्जिद के गुंबद और मीनारें"
- },
  "places/ravidas-janmasthan": {
   "en": "White façade of the Guru Ravidas temple at Seer Goverdhanpur",
   "hi": "सीर गोवर्धनपुर में गुरु रविदास मंदिर का श्वेत अग्रभाग"
@@ -95,10 +91,6 @@
   "en": "Early 19th-century mural of Parshvanath, the 23rd Tirthankara, from a Jain temple in Multan",
   "hi": "मुल्तान के एक जैन मंदिर का 19वीं सदी के आरंभ का तेईसवें तीर्थंकर पार्श्वनाथ का भित्तिचित्र"
  },
- "festivals/muharram": {
-  "en": "A tazia carried in a Muharram procession in Delhi",
-  "hi": "दिल्ली में मुहर्रम के जुलूस में ले जाया जाता ताज़िया"
- },
  "festivals/rangbhari-masaan-holi": {
   "en": "A palanquin in clouds of pink gulal on Rangbhari Ekadashi in Varanasi",
   "hi": "वाराणसी में रंगभरी एकादशी पर गुलाबी गुलाल के बादलों में पालकी"
@@ -130,10 +122,6 @@
  "festivals/ravidas-jayanti": {
   "en": "The gold-plated doorway of the Guru Ravidas temple at Seer Goverdhanpur",
   "hi": "सीर गोवर्धनपुर के गुरु रविदास मंदिर का स्वर्ण-मंडित द्वार"
- },
- "festivals/eid-al-fitr": {
-  "en": "The Alamgir Mosque, Varanasi, against the sky",
-  "hi": "आकाश की पृष्ठभूमि में वाराणसी की आलमगीर मस्जिद"
  },
  "festivals/shravan": {
   "en": "Pilgrims outside the gateway of the Kashi Vishwanath temple",

@@ -157,7 +157,7 @@ export function getPlaceDetails(locale: Locale): Record<string, PlaceDetail> {
 
 export type FinaleProps = Awaited<ReturnType<typeof getFinaleProps>>;
 
-const PLACE_TYPES = ["ghat", "temple", "stupa", "monastery", "mosque", "church", "gurudwara", "math", "fort", "museum", "university", "heritage"];
+const PLACE_TYPES = ["ghat", "temple", "stupa", "monastery", "church", "gurudwara", "math", "fort", "museum", "university", "heritage"];
 
 export async function getPlacesProps(locale: Locale) {
   await loadEntryTranslations(locale);

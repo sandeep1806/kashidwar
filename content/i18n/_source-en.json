@@ -60,10 +60,6 @@
       "name_en": "Bharat Mata Mandir",
       "summary": "A temple with no deity: instead a relief map of undivided India carved in Makrana marble, 9.5 metres across, with every mountain and river to scale. Built by Babu Shiv Prasad Gupta and opened by Mahatma Gandhi in 1936 on the Kashi Vidyapith campus."
     },
-    "alamgir-mosque": {
-      "name_en": "Alamgir Mosque",
-      "summary": "The 17th-century mosque that crowns Panchganga Ghat, known locally as Beni Madhav ka Dharahara. Its plinth and lower walls belong to the older Bindu Madhav temple; its high minarets once marked the skyline for boats coming up the river."
-    },
     "kabir-math": {
       "name_en": "Kabir Chaura Math",
       "summary": "The seat of the Kabir Panth, in the neighbourhood where the weaver-poet Kabir lived and sang in the 15th century. The math keeps his loom, his sandals and a samadhi shrine, and still prints his couplets that belong to no single religion."
@@ -183,18 +179,6 @@
       "summary": "The birth of Parshvanath, the 23rd Tirthankara, in Kashi itself. Jain pilgrims gather at Bhelupur, the place Jains hold as his birthplace, for abhishek of the Tirthankara's image, processions and the day-long fast many keep on Posh Dashami.",
       "when": "Paush Krishna Dashami (Posh Dashami)",
       "where": "Bhelupur Jain temples"
-    },
-    "eid-al-fitr": {
-      "name_en": "Eid al-Fitr",
-      "summary": "The end of the Ramadan fast. Thousands gather for morning prayers at Lat Sarai Eidgah and the city's mosques, and then the lanes of Madanpura, Dalmandi and Nai Sadak fill with sewaiyan, new clothes and visits between neighbours of every faith.",
-      "when": "1 Shawwal, at the end of Ramadan (moves about 11 days earlier each year)",
-      "where": "Lat Sarai Eidgah and the city's mosques"
-    },
-    "muharram": {
-      "name_en": "Muharram",
-      "summary": "Ten days of mourning for Imam Husain, martyred at Karbala. Tazias of paper, mica and bamboo, some of the most intricate in north India made in Shivala, are carried through the lanes on Ashura to the city's karbalas, and craftsmen and mourners from Hindu families have long been part of the procession.",
-      "when": "The first ten days of Muharram, ending on Ashura (moves about 11 days earlier each year)",
-      "where": "Shivala, Doshipura and the city's imambaras"
     },
     "christmas": {
       "name_en": "Christmas",

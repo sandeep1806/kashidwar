@@ -409,7 +409,6 @@ footer.cv-auto { contain-intrinsic-size: auto 130vh; }
 .place-art-buddhist { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-marigold) 18%, transparent), transparent 70%), linear-gradient(180deg, #1c2a3a, var(--kashi-night)); }
 .place-art-jain { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-white) 10%, transparent), transparent 70%), linear-gradient(180deg, #2b2340, var(--kashi-night)); }
 .place-art-sikh { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-saffron) 18%, transparent), transparent 70%), linear-gradient(180deg, #23283f, var(--kashi-night)); }
-.place-art-islamic { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, #4fb08a 14%, transparent), transparent 70%), linear-gradient(180deg, #1c2a30, var(--kashi-night)); }
 .place-art-christian { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-diya) 12%, transparent), transparent 70%), linear-gradient(180deg, #2a2438, var(--kashi-night)); }
 .place-art-secular { background-image: radial-gradient(ellipse at 50% 30%, color-mix(in oklab, var(--kashi-ganga) 40%, transparent), transparent 70%), linear-gradient(180deg, var(--kashi-ganga), var(--kashi-night)); }
 

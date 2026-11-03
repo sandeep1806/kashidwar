@@ -36,15 +36,6 @@
     "source": "https://commons.wikimedia.org/wiki/File:Dev_Deepavali_at_Varanasi_DSC04305_12.jpg"
   },
   {
-    "key": "festivals/eid-al-fitr",
-    "file": "/media/photos/festivals/eid-al-fitr-1280.webp",
-    "title": "Alamgir Mosque, Varanasi, Uttar Pradesh, India (2011) 57777)",
-    "author": "Aleksandr Zykov from Russia",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Alamgir_Mosque,_Varanasi,_Uttar_Pradesh,_India_(2011)_57777).jpg"
-  },
-  {
     "key": "festivals/ganga-dussehra",
     "file": "/media/photos/festivals/ganga-dussehra-1280.webp",
     "title": "Ganga ghat.1",
@@ -97,15 +88,6 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Shri_Kashi_Vishwanath_Temple_3.jpg"
-  },
-  {
-    "key": "festivals/muharram",
-    "file": "/media/photos/festivals/muharram-720.webp",
-    "title": "Muharram Delhi",
-    "author": "Ramesh Lalwani",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Muharram_Delhi.jpg"
   },
   {
     "key": "festivals/nag-nathaiya",
@@ -259,42 +241,6 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "source": "https://commons.wikimedia.org/wiki/File:Boats_at_sunrise_Ganges_River_Varanasi_Uttar_Pradesh_Schwiki.jpg"
-  },
-  {
-    "key": "places/alamgir-mosque",
-    "file": "/media/photos/places/alamgir-mosque-1280.webp",
-    "title": "Alamgir Mosque, Varanasi, Uttar Pradesh, India (2011) 62793)",
-    "author": "Aleksandr Zykov from Russia",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Alamgir_Mosque,_Varanasi,_Uttar_Pradesh,_India_(2011)_62793).jpg"
-  },
-  {
-    "key": "places/alamgir-mosque#2",
-    "file": "/media/photos/places/alamgir-mosque-2-1280.webp",
-    "title": "India DSCF7014 (32205485024)",
-    "author": "Eddy Milfort from Sydney, Australia",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:India_DSCF7014_(32205485024).jpg"
-  },
-  {
-    "key": "places/alamgir-mosque#3",
-    "file": "/media/photos/places/alamgir-mosque-3-1280.webp",
-    "title": "Varanasi (6706162249)",
-    "author": "Aleksandr Zykov from Russia",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Varanasi_(6706162249).jpg"
-  },
-  {
-    "key": "places/alamgir-mosque#4",
-    "file": "/media/photos/places/alamgir-mosque-4-1280.webp",
-    "title": "Varanasi (6706154617)",
-    "author": "Aleksandr Zykov from Russia",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Varanasi_(6706154617).jpg"
   },
   {
     "key": "places/assi-ghat",
@@ -1042,15 +988,6 @@
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Varanasi_from_shreematha_(2018).jpg"
-  },
-  {
-    "key": "places/panchganga-ghat#3",
-    "file": "/media/photos/places/panchganga-ghat-3-1280.webp",
-    "title": "Alamgir Mosque, Varanasi, Uttar Pradesh, India (2011) 58373)",
-    "author": "Aleksandr Zykov from Russia",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Alamgir_Mosque,_Varanasi,_Uttar_Pradesh,_India_(2011)_58373).jpg"
   },
   {
     "key": "places/panchganga-ghat#4",

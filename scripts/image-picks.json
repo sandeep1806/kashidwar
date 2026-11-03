@@ -118,14 +118,6 @@
     }
   },
   {
-    "key": "places/alamgir-mosque",
-    "title": "File:Alamgir Mosque, Varanasi, Uttar Pradesh, India (2011) 62793).jpg",
-    "alt": {
-      "en": "Domes and minarets of the Alamgir Mosque above Panchganga Ghat",
-      "hi": "पंचगंगा घाट के ऊपर आलमगीर मस्जिद के गुंबद और मीनारें"
-    }
-  },
-  {
     "key": "places/ravidas-janmasthan",
     "title": "File:Guru Ravidas Temple, Seer Goverdhanpur, Varanasi.jpg",
     "alt": {
@@ -201,15 +193,6 @@
     "elsewhere": "art"
   },
   {
-    "key": "festivals/muharram",
-    "title": "File:Muharram Delhi.jpg",
-    "alt": {
-      "en": "A tazia carried in a Muharram procession in Delhi",
-      "hi": "दिल्ली में मुहर्रम के जुलूस में ले जाया जाता ताज़िया"
-    },
-    "elsewhere": "photo"
-  },
-  {
     "key": "festivals/rangbhari-masaan-holi",
     "title": "File:Rangbhari ekadashi at Varanasi.jpg",
     "alt": {
@@ -280,14 +263,6 @@
     "alt": {
       "en": "The gold-plated doorway of the Guru Ravidas temple at Seer Goverdhanpur",
       "hi": "सीर गोवर्धनपुर के गुरु रविदास मंदिर का स्वर्ण-मंडित द्वार"
-    }
-  },
-  {
-    "key": "festivals/eid-al-fitr",
-    "title": "File:Alamgir Mosque, Varanasi, Uttar Pradesh, India (2011) 57777).jpg",
-    "alt": {
-      "en": "The Alamgir Mosque, Varanasi, against the sky",
-      "hi": "आकाश की पृष्ठभूमि में वाराणसी की आलमगीर मस्जिद"
     }
   },
   {
@@ -687,14 +662,6 @@
     }
   },
   {
-    "key": "places/panchganga-ghat#3",
-    "title": "File:Alamgir Mosque, Varanasi, Uttar Pradesh, India (2011) 58373).jpg",
-    "alt": {
-      "en": "Alamgir Mosque rising above the stepped Panchganga Ghat, Varanasi, seen from a boat on the Ganga in daylight.",
-      "hi": "गंगा में नाव से दिखता पंचगंगा घाट और उसके ऊपर खड़ी आलमगीर मस्जिद।"
-    }
-  },
-  {
     "key": "places/panchganga-ghat#4",
     "title": "File:Varanasi (6706153829).jpg",
     "alt": {
@@ -888,30 +855,6 @@
     "alt": {
       "en": "Close view of the Himalayan ridges and river valleys on the marble relief map of India in Bharat Mata Mandir.",
       "hi": "भारत माता मंदिर के संगमरमर मानचित्र पर हिमालय की चोटियाँ और नदी घाटियाँ, समीप से।"
-    }
-  },
-  {
-    "key": "places/alamgir-mosque#2",
-    "title": "File:India DSCF7014 (32205485024).jpg",
-    "alt": {
-      "en": "Low-angle view of a sandstone corner bastion and two minarets of Alamgir Mosque, Varanasi, against a clear sky.",
-      "hi": "साफ़ आकाश के सामने आलमगीर मस्जिद, वाराणसी के बलुआ-पत्थर के बुर्ज और दो मीनारों का निचले कोण से दृश्य।"
-    }
-  },
-  {
-    "key": "places/alamgir-mosque#3",
-    "title": "File:Varanasi (6706162249).jpg",
-    "alt": {
-      "en": "The ablution tank and arched pavilion on the terrace of Alamgir Mosque, with a temple spire beyond, in hazy morning light.",
-      "hi": "धुंधली सुबह में आलमगीर मस्जिद की छत पर वज़ू का हौज़ और मेहराबदार मंडप, पीछे एक मंदिर का शिखर।"
-    }
-  },
-  {
-    "key": "places/alamgir-mosque#4",
-    "title": "File:Varanasi (6706154617).jpg",
-    "alt": {
-      "en": "Prayer mats laid out in the whitewashed hall of Alamgir Mosque, with a warmly lit doorway at the far end.",
-      "hi": "आलमगीर मस्जिद के सफेदी वाले हॉल में बिछी नमाज़ की चटाइयाँ और दूर एक गर्म रोशनी वाला द्वार।"
     }
   },
   {

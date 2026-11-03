@@ -37,13 +37,6 @@ const PATHS: Record<Faith, React.ReactNode> = {
       <path d="M5 6c-1.5 3-1.5 9 0 12M19 6c1.5 3 1.5 9 0 12" />
     </>
   ),
-  // crescent + star
-  islamic: (
-    <>
-      <path d="M15 3.5a8.5 8.5 0 1 0 0 17 7 7 0 1 1 0-17z" />
-      <path d="M17.5 9l.9 1.9 2.1.3-1.5 1.5.4 2.1-1.9-1-1.9 1 .4-2.1-1.5-1.5 2.1-.3z" />
-    </>
-  ),
   // cross
   christian: (
     <>
