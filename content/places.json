@@ -1051,17 +1051,17 @@
       "crowd": "busy",
       "photography": "outside-only",
       "dress": "modest",
-      "verified": false,
+      "verified": true,
       "sources": [
         {
           "title": "Shri Kaal Bhairav Temple – kashi.gov.in",
           "url": "https://kashi.gov.in/listing-details/shri-kaal-bhairav-temple",
-          "accessed": "2026-10-11"
+          "accessed": "2026-11-04"
         },
         {
           "title": "Kaal Bhairav Temple – Incredible India (Ministry of Tourism)",
           "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/kaal-bhairav-temple",
-          "accessed": "2026-10-11"
+          "accessed": "2026-11-04"
         },
         {
           "title": "Shree Kaal Bhairav Temple – ChalBanjare",
@@ -1293,12 +1293,12 @@
       "crowd": "quiet",
       "photography": "allowed",
       "dress": "modest",
-      "verified": false,
+      "verified": true,
       "sources": [
         {
           "title": "Kabir Chaura Math — Incredible India (Ministry of Tourism)",
           "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/kabir-chaura-math",
-          "accessed": "2026-10-11"
+          "accessed": "2026-11-04"
         },
         {
           "title": "Kabir Math (Kabir Chaura) — Airial travel guide",
@@ -1537,12 +1537,12 @@
       "crowd": "quiet",
       "photography": "allowed",
       "dress": "covered",
-      "verified": false,
+      "verified": true,
       "sources": [
         {
           "title": "Sri Guru Nanak Dev Ji Gurudwara (Guru Ka Bagh) — Kashi (kashi.gov.in)",
           "url": "https://kashi.gov.in/listing-details/sri-guru-nanak-dev-ji-gurudwara",
-          "accessed": "2026-10-11"
+          "accessed": "2026-11-04"
         },
         {
           "title": "Gurudwara Guru Ka Bagh — Airial travel guide",
@@ -3916,9 +3916,9 @@
           "accessed": "2026-10-30"
         },
         {
-          "title": "ANI via LatestLY — Devotees flock to Lolark Kund; 4–5 lakh bathe, 1,000+ police deployed (29 Aug 2025)",
-          "url": "https://www.latestly.com/agency-news/india-news-up-devotees-flock-to-lolark-kund-for-holy-dip-thousand-police-personnel-deployed-for-security-7083319.html",
-          "accessed": "2026-10-30"
+          "title": "ANI via News Nation — Devotees flock to Lolark Kund; 4–5 lakh bathe, 1,000+ police deployed (29 Aug 2025)",
+          "url": "https://english.newsnationtv.com/national/general-news/up-devotees-flock-to-lolark-kund-for-holy-dip-thousand-police-personnel-deployed-for-security20250829103444",
+          "accessed": "2026-11-04"
         }
       ]
     },
@@ -3939,9 +3939,9 @@
         "accessed": "2026-10-30"
       },
       {
-        "title": "ANI via LatestLY — Devotees flock to Lolark Kund for holy dip (29 Aug 2025)",
-        "url": "https://www.latestly.com/agency-news/india-news-up-devotees-flock-to-lolark-kund-for-holy-dip-thousand-police-personnel-deployed-for-security-7083319.html",
-        "accessed": "2026-10-30"
+        "title": "ANI via News Nation — Devotees flock to Lolark Kund for holy dip (29 Aug 2025)",
+        "url": "https://english.newsnationtv.com/national/general-news/up-devotees-flock-to-lolark-kund-for-holy-dip-thousand-police-personnel-deployed-for-security20250829103444",
+        "accessed": "2026-11-04"
       }
     ],
     "i18n": {
@@ -4002,12 +4002,12 @@
       "crowd": "quiet",
       "photography": "outside-only",
       "dress": "modest",
-      "verified": false,
+      "verified": true,
       "sources": [
         {
           "title": "Incredible India (Ministry of Tourism) — Kardameshwar Mahadev Temple (05:30–12:00, 16:00–21:00)",
           "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/kardameshwar-mahadev-temple",
-          "accessed": "2026-10-30"
+          "accessed": "2026-11-04"
         }
       ]
     },
