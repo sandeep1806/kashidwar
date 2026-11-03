@@ -26,10 +26,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    # Every run that can deploy (push to redesign, the Monday rebuild, manual runs) waits
-    # for the owner's approval: Settings → Environments → production (required reviewer,
-    # redesign only). Pending approvals expire after 30 days.
-    environment: production
+    # Pushes to redesign and manual runs wait for the owner's approval: Settings →
+    # Environments → production (required reviewer, redesign only). The Monday rebuild
+    # redeploys code already approved on redesign, so it uses production-scheduled
+    # (no reviewer, redesign only) and never sits waiting.
+    environment: ${{ github.event_name == 'schedule' && 'production-scheduled' || 'production' }}
     steps:
       - name: Cloudflare secrets present?
         id: secrets

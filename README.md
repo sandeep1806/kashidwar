@@ -255,7 +255,10 @@ the run's cost. Logs and the raw Claude output are kept in `~/.local/state/kashi
 Workers Builds is not connected to this repository, so `.github/workflows/deploy.yml` deploys:
 on every push to `redesign` (including merged content-review PRs), every Monday 06:00 IST
 (a rebuild so "next festival" dates roll forward — this replaces the Workers Builds deploy hook
-described above), and on demand (Actions → Deploy → Run workflow). Until its secrets exist it
+described above), and on demand (Actions → Deploy → Run workflow). Pushes and manual runs wait
+for the owner's approval in the `production` environment; the Monday rebuild uses
+`production-scheduled` (no reviewer, `redesign` only) because it redeploys code that was already
+approved, so it never sits waiting. Until its secrets exist it
 logs a warning and skips. A manual run with **check_only** ticked only verifies the Cloudflare
 credentials (`wrangler whoami`, `wrangler deployments list`) and deploys nothing:
 `gh workflow run deploy.yml --ref redesign -f check_only=true`.
