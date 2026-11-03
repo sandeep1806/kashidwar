@@ -49,6 +49,8 @@ export interface Guide {
   /** Set when the guide is about a dated event */
   event?: GuideEvent;
   facts?: GuideFact[];
+  /** Official page the guide sends readers to (a booking site), shown as a button under the lead */
+  cta?: { url: string; label_en: string; label_hi: string };
   sections: GuideSection[];
   faq: { q_en: string; a_en: string; q_hi: string; a_hi: string }[];
   sources: GuideSource[];
@@ -98,6 +100,7 @@ export interface GuideTranslation {
   description: string;
   lead: string;
   facts?: { label: string; value: string }[];
+  cta?: string;
   sections: { heading: string; body: string[]; list?: string[] }[];
   faq: { q: string; a: string }[];
 }
@@ -131,6 +134,7 @@ export function localizeGuide(g: Guide, locale: Locale, translations: GuideTrans
     description: pick(g, "description"),
     lead: pick(g, "lead"),
     facts: (g.facts ?? []).map((f) => ({ icon: f.icon, label: l === "hi" ? f.label_hi : f.label_en, value: l === "hi" ? f.value_hi : f.value_en })),
+    cta: g.cta ? { url: g.cta.url, label: l === "hi" ? g.cta.label_hi : g.cta.label_en } : null,
     sections: g.sections.map((s) => ({
       id: s.id,
       heading: l === "hi" ? s.heading_hi : s.heading_en,
@@ -151,6 +155,7 @@ export function localizeGuide(g: Guide, locale: Locale, translations: GuideTrans
     description: tr.description || base.description,
     lead: tr.lead || base.lead,
     facts: base.facts.map((f, i) => ({ ...f, label: tr.facts?.[i]?.label || f.label, value: tr.facts?.[i]?.value || f.value })),
+    cta: base.cta && { ...base.cta, label: tr.cta || base.cta.label },
     sections: base.sections.map((s, i) => {
       const t = tr.sections?.[i];
       return t ? { ...s, heading: t.heading || s.heading, body: t.body?.length === s.body.length ? t.body : s.body, list: t.list?.length === s.list.length ? t.list : s.list } : s;

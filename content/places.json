@@ -534,9 +534,10 @@
       "dress": "any",
       "verified": false,
       "booking": {
-        "url": "https://asi.payumoney.com/",
+        "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
         "counter": true,
-        "via": "asi"
+        "via": "asi",
+        "guide": "sarnath-ticket-online-booking"
       },
       "sources": [
         {
@@ -567,6 +568,11 @@
         {
           "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
           "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI online ticket booking (asi.paygov.org.in), Sarnath circle: ₹20 online (Indian, SAARC, BIMSTEC), ₹250 (foreign), site museum ₹5",
+          "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
           "accessed": "2026-11-03"
         }
       ]
@@ -2461,9 +2467,10 @@
       "dress": "any",
       "verified": false,
       "booking": {
-        "url": "https://asi.payumoney.com/",
+        "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
         "counter": true,
-        "via": "asi"
+        "via": "asi",
+        "guide": "sarnath-ticket-online-booking"
       },
       "sources": [
         {
@@ -2494,6 +2501,11 @@
         {
           "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
           "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI online ticket booking (asi.paygov.org.in), Sarnath circle: ₹20 online (Indian, SAARC, BIMSTEC), ₹250 (foreign), site museum ₹5",
+          "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
           "accessed": "2026-11-03"
         }
       ]
@@ -3101,9 +3113,10 @@
       "dress": "any",
       "verified": false,
       "booking": {
-        "url": "https://asi.payumoney.com/",
+        "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
         "counter": true,
-        "via": "asiMuseum"
+        "via": "asiMuseum",
+        "guide": "sarnath-ticket-online-booking"
       },
       "sources": [
         {
@@ -3129,6 +3142,11 @@
         {
           "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
           "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI online ticket booking (asi.paygov.org.in), Sarnath circle: ₹20 online (Indian, SAARC, BIMSTEC), ₹250 (foreign), site museum ₹5",
+          "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
           "accessed": "2026-11-03"
         }
       ]
@@ -3215,9 +3233,10 @@
       "dress": "any",
       "verified": false,
       "booking": {
-        "url": "https://asi.payumoney.com/",
+        "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
         "counter": true,
-        "via": "asi"
+        "via": "asi",
+        "guide": "sarnath-ticket-online-booking"
       },
       "sources": [
         {
@@ -3243,6 +3262,11 @@
         {
           "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
           "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI online ticket booking (asi.paygov.org.in), Sarnath circle: ₹20 online (Indian, SAARC, BIMSTEC), ₹250 (foreign), site museum ₹5",
+          "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
           "accessed": "2026-11-03"
         }
       ]
@@ -4985,9 +5009,10 @@
       "dress": "any",
       "verified": false,
       "booking": {
-        "url": "https://asi.payumoney.com/",
+        "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
         "counter": true,
-        "via": "asi"
+        "via": "asi",
+        "guide": "sarnath-ticket-online-booking"
       },
       "sources": [
         {
@@ -5018,6 +5043,11 @@
         {
           "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
           "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI online ticket booking (asi.paygov.org.in), Sarnath circle: ₹20 online (Indian, SAARC, BIMSTEC), ₹250 (foreign), site museum ₹5",
+          "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
           "accessed": "2026-11-03"
         }
       ]
@@ -5096,7 +5126,7 @@
     ],
     "glance": {
       "timings": "Ghat open at all hours; Lal Khan's Tomb and excavations about 06:00–18:00 or 19:00 (sources differ)",
-      "entry": "Ghat: no ticket reported; Lal Khan's Tomb and excavations: ASI ticket, reported ₹20–25 (QR payment)",
+      "entry": "Ghat free · Lal Khan's Tomb (ASI): ₹25 cash / ₹20 online (Indian, SAARC, BIMSTEC) · ₹300 / ₹250 (foreign)",
       "duration": "About 1 h (ghat and excavations)",
       "season": "Oct–Mar; Dev Deepawali (Oct–Nov)",
       "crowd": "quiet",
@@ -5104,9 +5134,10 @@
       "dress": "modest",
       "verified": false,
       "booking": {
-        "url": "https://asi.payumoney.com/",
+        "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
         "counter": true,
-        "via": "asi"
+        "via": "asi",
+        "guide": "sarnath-ticket-online-booking"
       },
       "sources": [
         {
@@ -5137,6 +5168,11 @@
         {
           "title": "ASI official e-ticket portal (Sarnath: Excavated Remains, Chaukhandi Stupa, Observatory of Man Singh, Tomb of Lal Khan)",
           "url": "https://asi.payumoney.com/",
+          "accessed": "2026-11-03"
+        },
+        {
+          "title": "ASI online ticket booking (asi.paygov.org.in), Sarnath circle: ₹20 online (Indian, SAARC, BIMSTEC), ₹250 (foreign), site museum ₹5",
+          "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
           "accessed": "2026-11-03"
         }
       ]
@@ -5175,7 +5211,7 @@
         ],
         "glance": {
           "timings": "घाट हर समय खुला; लाल ख़ाँ का मक़बरा और उत्खनन स्थल लगभग सुबह 6 से शाम 6 या 7 बजे (स्रोतों में अंतर)",
-          "entry": "घाट: कोई टिकट नहीं बताया गया; मक़बरा व उत्खनन स्थल: पुरातत्त्व सर्वेक्षण टिकट, बताया गया ₹20–25 (क्यूआर भुगतान)",
+          "entry": "घाट निःशुल्क · लाल ख़ाँ का मक़बरा (एएसआई): नकद ₹25 / ऑनलाइन ₹20 (भारतीय, सार्क, बिम्सटेक) · ₹300 / ₹250 (विदेशी)",
           "duration": "लगभग 1 घंटा (घाट और उत्खनन स्थल)",
           "season": "अक्टूबर से मार्च; देव दीपावली (अक्टूबर–नवंबर)"
         }

@@ -1,11 +1,11 @@
 {
   "slug": "varanasi-to-sarnath",
   "published": "2026-09-27",
-  "updated": "2026-09-27",
+  "updated": "2026-11-03",
   "photo": "places/sarnath",
   "title_en": "Varanasi to Sarnath distance (11–13 km): how to reach, auto & cab fare",
   "title_hi": "वाराणसी से सारनाथ की दूरी 11–13 किमी: कैसे जाएं, ऑटो-बस किराया और टिकट",
-  "description_en": "Varanasi to Sarnath is 11–13 km (35–60 min) from the ghats; reserved auto from Cantt about ₹150. Auto, cab, bus and train options, ASI ticket ₹25, museum closed Fridays.",
+  "description_en": "Varanasi to Sarnath is 11–13 km (35–60 min) from the ghats; reserved auto from Cantt about ₹150. Auto, cab, bus and train options, ASI ticket ₹20 online / ₹25 cash, museum closed Fridays.",
   "description_hi": "वाराणसी से सारनाथ की दूरी घाटों से 11–13 किमी (35–60 मिनट); कैंट से रिज़र्व ऑटो करीब ₹150। ऑटो, कैब, बस, ट्रेन, एएसआई टिकट ₹25, संग्रहालय शुक्रवार बंद।",
   "lead_en": "Sarnath, where the Buddha gave his first teaching, lies on the north-eastern edge of Varanasi, close enough for a morning trip. Since 25 July 2026 the Ancient Buddhist Site, Sarnath is on the UNESCO World Heritage List. This guide covers how to get there, what the tickets cost, when the sites open, and how to visit with care.",
   "lead_hi": "सारनाथ, जहाँ बुद्ध ने अपना पहला उपदेश दिया, वाराणसी के उत्तर-पूर्वी छोर पर है, इतना पास कि सुबह निकलकर दोपहर तक लौटा जा सके। 25 जुलाई 2026 से 'प्राचीन बौद्ध स्थल, सारनाथ' यूनेस्को विश्व धरोहर सूची में है। इस गाइड में है कि वहाँ कैसे पहुँचें, टिकट कितने का है, स्थल कब खुलते हैं, और दर्शन के समय किन बातों का ध्यान रखें।",
@@ -28,8 +28,8 @@
       "icon": "ticket",
       "label_en": "Site ticket (ASI)",
       "label_hi": "स्थल टिकट (एएसआई)",
-      "value_en": "₹25 Indian · ₹300 foreign",
-      "value_hi": "₹25 भारतीय · ₹300 विदेशी"
+      "value_en": "₹20 online / ₹25 cash (Indian) · ₹250 / ₹300 (foreign)",
+      "value_hi": "भारतीय ऑनलाइन ₹20 / नकद ₹25 · विदेशी ₹250 / ₹300"
     },
     {
       "icon": "info",
@@ -118,7 +118,7 @@
         "The Archaeological Survey of India (ASI) manages the excavated site around the Dhamek Stupa and the Sarnath Museum. The two have separate tickets. Temples run by Buddhist communities, including Mulagandha Kuti Vihar, do not charge entry. Fees and hours are as of September 2026."
       ],
       "list_en": [
-        "Excavated site (Dhamek Stupa, Dharmarajika Stupa remains, monastery ruins, Ashokan pillar): ₹25 for Indian citizens and visitors from SAARC and BIMSTEC countries; ₹300 for other foreign visitors; free for children up to 15. Open from sunrise to sunset.",
+        "Excavated site (Dhamek Stupa, Dharmarajika Stupa remains, monastery ruins, Ashokan pillar): ₹25 in cash or ₹20 online or by card for Indian citizens and visitors from SAARC and BIMSTEC countries; ₹300 in cash or ₹250 online for other foreign visitors; free for children up to 15. Open from sunrise to sunset. Book on ASI's site asi.paygov.org.in under Circle → Sarnath (see our Sarnath ticket booking guide).",
         "Sarnath Museum: ₹5 per person, children under 15 free. The ASI museum's own site gives 09:00 to 17:00; the Kashi portal gives 10:00 to 17:00. Closed on Fridays. It holds the Lion Capital of Ashoka, India's national emblem.",
         "Mulagandha Kuti Vihar: no entry ticket. Opening hours are not officially published; the evening chanting, when the relics are shown, is around 18:00."
       ],
@@ -126,7 +126,7 @@
         "धमेख स्तूप के आसपास का उत्खनित स्थल और सारनाथ संग्रहालय भारतीय पुरातत्व सर्वेक्षण (एएसआई) के अधीन हैं। दोनों के टिकट अलग हैं। बौद्ध समुदायों के मंदिरों में, मूलगंध कुटी विहार समेत, प्रवेश शुल्क नहीं लगता। शुल्क और समय सितंबर 2026 के अनुसार हैं।"
       ],
       "list_hi": [
-        "उत्खनित स्थल (धमेख स्तूप, धर्मराजिका स्तूप के अवशेष, विहारों के खंडहर, अशोक स्तंभ): भारतीय नागरिकों और सार्क व बिम्सटेक देशों के पर्यटकों के लिए ₹25; अन्य विदेशी पर्यटकों के लिए ₹300; 15 वर्ष तक के बच्चों के लिए निःशुल्क। सूर्योदय से सूर्यास्त तक खुला।",
+        "उत्खनित स्थल (धमेख स्तूप, धर्मराजिका स्तूप के अवशेष, विहारों के खंडहर, अशोक स्तंभ): भारतीय नागरिकों और सार्क व बिम्सटेक देशों के पर्यटकों के लिए नकद ₹25 या ऑनलाइन/कार्ड से ₹20; अन्य विदेशी पर्यटकों के लिए नकद ₹300 या ऑनलाइन ₹250; 15 वर्ष तक के बच्चों के लिए निःशुल्क। सूर्योदय से सूर्यास्त तक खुला। बुकिंग एएसआई की साइट asi.paygov.org.in पर Circle में Sarnath चुनकर (हमारी सारनाथ टिकट बुकिंग गाइड देखें)।",
         "सारनाथ संग्रहालय: प्रति व्यक्ति ₹5, 15 वर्ष से कम उम्र के बच्चों के लिए निःशुल्क। संग्रहालय की अपनी वेबसाइट पर समय सुबह 9 से शाम 5 बजे और काशी पोर्टल पर सुबह 10 से शाम 5 बजे दिया है। शुक्रवार को बंद। यहीं अशोक का सिंह-शीर्ष है, जो भारत का राष्ट्रीय प्रतीक है।",
         "मूलगंध कुटी विहार: कोई टिकट नहीं। खुलने का समय आधिकारिक रूप से प्रकाशित नहीं है; शाम का पाठ, जब अस्थि-अवशेषों के दर्शन कराए जाते हैं, लगभग 6 बजे होता है।"
       ],
@@ -257,9 +257,9 @@
     },
     {
       "q_en": "What is the entry fee at Sarnath?",
-      "a_en": "The ASI excavated site is ₹25 for Indians and SAARC/BIMSTEC visitors and ₹300 for other foreigners; the museum is ₹5. Children under 15 enter free.",
+      "a_en": "The ASI excavated site is ₹25 in cash or ₹20 online for Indians and SAARC/BIMSTEC visitors, and ₹300 in cash or ₹250 online for other foreigners; the museum is ₹5. Children under 15 enter free.",
       "q_hi": "सारनाथ में प्रवेश शुल्क कितना है?",
-      "a_hi": "एएसआई के उत्खनित स्थल पर भारतीयों और सार्क/बिम्सटेक पर्यटकों के लिए ₹25 और अन्य विदेशियों के लिए ₹300; संग्रहालय ₹5। 15 वर्ष से कम के बच्चे निःशुल्क।"
+      "a_hi": "एएसआई के उत्खनित स्थल पर भारतीयों और सार्क/बिम्सटेक पर्यटकों के लिए नकद ₹25 या ऑनलाइन ₹20, और अन्य विदेशियों के लिए नकद ₹300 या ऑनलाइन ₹250; संग्रहालय ₹5। 15 वर्ष से कम के बच्चे निःशुल्क।"
     },
     {
       "q_en": "On which day is Sarnath Museum closed?",
