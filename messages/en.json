@@ -447,8 +447,8 @@
       "bookBoth": "Online or at the counter",
       "bookOnline": "Book online",
       "bookingVia": {
-        "asi": "Official ASI e-ticket site · ₹5 less online or by card (₹50 less for foreigners)",
-        "asiMuseum": "Official ASI e-ticket site · choose Sarnath Excavated Remains → Monument with Museum",
+        "asi": "Official ASI e-ticket site · pick City → Sarnath (Varanasi monuments are listed there) · ₹5 less online or by card (₹50 less for foreigners)",
+        "asiMuseum": "Official ASI e-ticket site · choose City → Sarnath → Sarnath Excavated Remains → Monument with Museum",
         "temple": "Official temple trust site (Sugam Darshan, aarti)"
       }
     },
