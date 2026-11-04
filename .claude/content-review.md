@@ -159,6 +159,11 @@ Re-check, and update if changed (both languages; bump the guide's `updated` date
   A walk-in price stays `"unconfirmed": true` until the lounge or AAI publishes one. Never
   claim a particular card (including Scapia) works there unless its own lounge list says so.
   When the new terminal opens, update the flights section, the facts and `airport-expansion`.
+- Currency exchange (`currency-exchange-in-varanasi.json`): RBI limits (FAQ "Miscellaneous
+  forex facilities", Money Changing Master Direction) whenever the RBI updates them; the
+  Thomas Cook Nadesar outlet and Unimoni branch still open; the airport counter stays
+  `"unconfirmed": true` until AAI or the operator lists one; UPI One World availability for
+  tourists. Name no card brand in the body (the house ad sits after `going-abroad`).
 - Sarnath: ASI ticket fees, Sarnath Museum hours and closed day, transport fares.
 - Dev Deepawali: this year's date, official programme (lamp counts, laser/firework shows),
   boat rules and traffic advisories once announced.
