@@ -39,13 +39,15 @@ const PATHS: Record<IconName, ReactNode> = {
   shield: <><path d="M12 3.5l7 3v5.5c0 4.5-3 7.5-7 8.5-4-1-7-4-7-8.5V6.5z" /><path d="M9 12l2 2 4-4" /></>,
 };
 
+const STROKE = { fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round", strokeLinejoin: "round" } as const;
+
 /** Rendered once in the layout. */
 export function IconSprite() {
   return (
     <svg width="0" height="0" className="absolute" aria-hidden="true" focusable="false">
       <defs>
         {(Object.keys(PATHS) as IconName[]).map((n) => (
-          <symbol key={n} id={`icon-${n}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <symbol key={n} id={`icon-${n}`} viewBox="0 0 24 24" {...STROKE}>
             {PATHS[n]}
           </symbol>
         ))}
@@ -54,10 +56,11 @@ export function IconSprite() {
   );
 }
 
-export default function Icon({ name, className = "h-5 w-5" }: { name: IconName; className?: string }) {
+/** `inline` draws the paths in place, for markup that can appear on a page without the sprite (the 404 page). */
+export default function Icon({ name, className = "h-5 w-5", inline = false }: { name: IconName; className?: string; inline?: boolean }) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden="true" focusable="false">
-      <use href={`#icon-${name}`} />
+      {inline ? <g {...STROKE}>{PATHS[name]}</g> : <use href={`#icon-${name}`} />}
     </svg>
   );
 }

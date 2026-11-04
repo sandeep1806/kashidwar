@@ -501,5 +501,23 @@
     "titleSecondary": "गोपनीयता नीति",
     "description": "What kashidwar.com collects: Google Analytics, cookies, browser storage and map tiles. No accounts or forms, and no visitor data is sold.",
     "updated": "Updated {date}"
+  },
+  "promo": {
+    "headline": "Lounge, a free meal or a spa before you fly, 0% forex abroad, and ₹1,000 off your first flight",
+    "support": "Scapia is a lifetime-free travel credit card: no joining or annual fee, unlimited domestic lounge access on monthly spends, airport dining, spa or shopping credits on every domestic trip, and up to 20% back as coins on travel booked in the app.",
+    "short": "₹1,000 off your first flight + airport lounges on a lifetime-free card",
+    "frustrated": "{situation} Fly instead with ₹1,000 off, and wait in the lounge, not on the platform",
+    "cta": "Get ₹1,000 off",
+    "close": "Not now",
+    "sponsored": "Sponsored",
+    "perks": [
+      "Lifetime free",
+      "0% forex markup",
+      "Unlimited domestic lounges*",
+      "Free airport meal, spa or shopping*",
+      "Up to 20% back on travel*"
+    ],
+    "barPerks": "Lifetime free · 0% forex · Lounges*",
+    "footnote": "*Lounge and airport privileges need a monthly spend; rewards vary by card. Full terms on Scapia's site."
   }
 }
