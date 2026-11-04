@@ -1,0 +1,339 @@
+{
+  "slug": "flights-to-varanasi",
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "photo": "projects/airport-expansion",
+  "title_en": "Flights to Varanasi: direct routes and flight time from each city",
+  "title_hi": "वाराणसी की फ़्लाइट: किन शहरों से सीधी उड़ान और कितना समय लगता है",
+  "description_en": "Direct flights to Varanasi (VNS): Delhi 1h 20m (11 a day), Mumbai 2h, Bengaluru 2h 25m, Hyderabad 1h 45m, Kolkata, Chennai, Pune, Sharjah. Airlines, flight times, booking tips.",
+  "description_hi": "वाराणसी (VNS) की सीधी उड़ानें: दिल्ली 1 घंटा 20 मिनट (रोज़ 11), मुंबई 2 घंटे, बेंगलुरु 2 घंटे 25 मिनट, हैदराबाद 1 घंटा 45 मिनट, कोलकाता, चेन्नई, पुणे, शारजाह। एयरलाइंस, समय और बुकिंग टिप्स।",
+  "lead_en": "Varanasi's Lal Bahadur Shastri Airport (VNS) has nonstop flights from about a dozen Indian cities and three foreign ones. Delhi is the busiest route, with about eleven nonstop flights a day; from most of south and west India there are one to six. This is the route list as scheduled for early November 2026, with flight times, the airlines that fly each route and when fares climb.",
+  "lead_hi": "वाराणसी के लाल बहादुर शास्त्री एयरपोर्ट (VNS) के लिए लगभग एक दर्जन भारतीय शहरों और तीन विदेशी शहरों से सीधी उड़ानें हैं। दिल्ली सबसे व्यस्त रूट है, रोज़ लगभग ग्यारह सीधी उड़ानें; दक्षिण और पश्चिम भारत के ज़्यादातर शहरों से एक से छह। यह नवंबर 2026 की शुरुआत के शेड्यूल के अनुसार रूट सूची है: उड़ान का समय, हर रूट पर कौन सी एयरलाइंस, और किराया कब बढ़ता है।",
+  "facts": [
+    {
+      "icon": "plane",
+      "label_en": "Delhi → Varanasi",
+      "label_hi": "दिल्ली → वाराणसी",
+      "value_en": "1h 20m · about 11 nonstop a day",
+      "value_hi": "1 घंटा 20 मिनट · रोज़ लगभग 11 सीधी"
+    },
+    {
+      "icon": "plane",
+      "label_en": "Mumbai → Varanasi",
+      "label_hi": "मुंबई → वाराणसी",
+      "value_en": "1h 55m–2h 25m · about 6 a day",
+      "value_hi": "1 घंटा 55 मिनट–2 घंटे 25 मिनट · रोज़ लगभग 6"
+    },
+    {
+      "icon": "plane",
+      "label_en": "Bengaluru → Varanasi",
+      "label_hi": "बेंगलुरु → वाराणसी",
+      "value_en": "2h 25m–2h 45m · about 6 a day",
+      "value_hi": "2 घंटे 25 मिनट–2 घंटे 45 मिनट · रोज़ लगभग 6"
+    },
+    {
+      "icon": "plane",
+      "label_en": "Hyderabad → Varanasi",
+      "label_hi": "हैदराबाद → वाराणसी",
+      "value_en": "1h 45m–1h 50m · 3 a day",
+      "value_hi": "1 घंटा 45–50 मिनट · रोज़ 3"
+    },
+    {
+      "icon": "pin",
+      "label_en": "Airport",
+      "label_hi": "एयरपोर्ट",
+      "value_en": "VNS, Babatpur · 25–26 km to Godowlia",
+      "value_hi": "VNS, बाबतपुर · गोदौलिया तक 25–26 किमी"
+    },
+    {
+      "icon": "calendar",
+      "label_en": "Fares climb",
+      "label_hi": "किराया बढ़ता है",
+      "value_en": "Dev Deepawali, New Year, Maha Shivratri",
+      "value_hi": "देव दीपावली, नया साल, महाशिवरात्रि"
+    }
+  ],
+  "sections": [
+    {
+      "id": "direct-flights",
+      "heading_en": "Direct flights to Varanasi from Indian cities",
+      "heading_hi": "भारतीय शहरों से वाराणसी की सीधी उड़ानें",
+      "body_en": [
+        "Nonstop flight times and daily frequencies below are from the schedule for 5 November 2026; airlines change timetables each season, so check the day you fly. IndiGo flies the most routes; Air India, Air India Express, Akasa Air and SpiceJet fly the big ones."
+      ],
+      "list_en": [
+        "Delhi: 1h 20m · about 11 nonstop a day · IndiGo, Air India, Air India Express (SpiceJet also listed)",
+        "Hindon (Ghaziabad, for east Delhi and Noida): 1h 15m · 1 a day · IndiGo",
+        "Mumbai: 1h 55m–2h 25m · about 6 a day · IndiGo, Akasa Air, Air India Express; Navi Mumbai also has IndiGo and Akasa Air flights",
+        "Bengaluru: 2h 25m–2h 45m · about 6 a day · IndiGo, Air India Express, Akasa Air",
+        "Hyderabad: 1h 45m–1h 50m · 3 a day · IndiGo",
+        "Kolkata: 1h 20m · 2 a day · IndiGo",
+        "Chennai: 2h 20m · 1 a day · IndiGo",
+        "Pune: 2h 5m · 1 a day · IndiGo",
+        "Vijayawada: 1h 55m · 1 a day · IndiGo",
+        "Kochi: no nonstop; IndiGo's daily Kochi flight continues to Varanasi through Chennai on the same plane, about 4h 25m"
+      ],
+      "body_hi": [
+        "नीचे दिए सीधी उड़ान के समय और रोज़ की संख्या 5 नवंबर 2026 के शेड्यूल से हैं; एयरलाइंस हर सीज़न में समय-सारणी बदलती हैं, इसलिए यात्रा के दिन ज़रूर देखें। सबसे ज़्यादा रूट इंडिगो उड़ाती है; बड़े रूट पर एयर इंडिया, एयर इंडिया एक्सप्रेस, अकासा एयर और स्पाइसजेट भी हैं।"
+      ],
+      "list_hi": [
+        "दिल्ली: 1 घंटा 20 मिनट · रोज़ लगभग 11 सीधी · इंडिगो, एयर इंडिया, एयर इंडिया एक्सप्रेस (स्पाइसजेट भी सूचीबद्ध)",
+        "हिंडन (गाज़ियाबाद, पूर्वी दिल्ली और नोएडा के लिए): 1 घंटा 15 मिनट · रोज़ 1 · इंडिगो",
+        "मुंबई: 1 घंटा 55 मिनट–2 घंटे 25 मिनट · रोज़ लगभग 6 · इंडिगो, अकासा एयर, एयर इंडिया एक्सप्रेस; नवी मुंबई से भी इंडिगो और अकासा एयर की उड़ानें",
+        "बेंगलुरु: 2 घंटे 25 मिनट–2 घंटे 45 मिनट · रोज़ लगभग 6 · इंडिगो, एयर इंडिया एक्सप्रेस, अकासा एयर",
+        "हैदराबाद: 1 घंटा 45–50 मिनट · रोज़ 3 · इंडिगो",
+        "कोलकाता: 1 घंटा 20 मिनट · रोज़ 2 · इंडिगो",
+        "चेन्नई: 2 घंटे 20 मिनट · रोज़ 1 · इंडिगो",
+        "पुणे: 2 घंटे 5 मिनट · रोज़ 1 · इंडिगो",
+        "विजयवाड़ा: 1 घंटा 55 मिनट · रोज़ 1 · इंडिगो",
+        "कोच्चि: सीधी नहीं; इंडिगो की रोज़ की कोच्चि उड़ान उसी विमान से चेन्नई होकर वाराणसी आती है, लगभग 4 घंटे 25 मिनट"
+      ],
+      "sources": [
+        1,
+        10,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        0
+      ]
+    },
+    {
+      "id": "no-direct",
+      "heading_en": "Cities without a daily direct flight",
+      "heading_hi": "जिन शहरों से रोज़ सीधी उड़ान नहीं है",
+      "body_en": [
+        "Ahmedabad and Bhubaneswar appear in airline route lists for Varanasi, but no nonstop flight was scheduled on the day we checked, so expect a connection (usually through Delhi, Mumbai or Bengaluru) and 4–7 hours in all, or check the airline for the days it flies. From Jaipur, Lucknow, Patna, Goa and most other cities, connect through Delhi, Mumbai, Bengaluru or Kolkata."
+      ],
+      "body_hi": [
+        "अहमदाबाद और भुवनेश्वर वाराणसी की एयरलाइन रूट सूचियों में हैं, पर जिस दिन हमने देखा उस दिन कोई सीधी उड़ान नहीं थी, इसलिए कनेक्शन (आमतौर पर दिल्ली, मुंबई या बेंगलुरु होकर) और कुल 4–7 घंटे मानकर चलें, या एयरलाइन से उड़ान के दिन देखें। जयपुर, लखनऊ, पटना, गोवा और ज़्यादातर दूसरे शहरों से दिल्ली, मुंबई, बेंगलुरु या कोलकाता होकर आएँ।"
+      ],
+      "sources": [
+        12,
+        13,
+        0
+      ]
+    },
+    {
+      "id": "international-flights",
+      "heading_en": "International flights to Varanasi",
+      "heading_hi": "वाराणसी की अंतरराष्ट्रीय उड़ानें",
+      "body_en": [
+        "Varanasi has three foreign nonstop routes, and only Sharjah is daily. Everyone else flies in through Delhi, Mumbai or another Indian hub and changes to a domestic flight."
+      ],
+      "list_en": [
+        "Sharjah: Air India Express, about 4h 40m · listed daily (IX249 leaves Varanasi at 18:15)",
+        "Bangkok (Suvarnabhumi): Air India Express, weekly on Sundays since 1 February 2026 · Varanasi 12:35 → Bangkok 18:05 local time",
+        "Kathmandu: Buddha Air, about an hour · three times a week (Monday, Wednesday, Friday), not sold on most Indian booking sites"
+      ],
+      "body_hi": [
+        "वाराणसी से तीन विदेशी सीधी उड़ानें हैं, और सिर्फ़ शारजाह की रोज़ है। बाकी सब यात्री दिल्ली, मुंबई या किसी दूसरे भारतीय हब होकर आते हैं और घरेलू उड़ान बदलते हैं।"
+      ],
+      "list_hi": [
+        "शारजाह: एयर इंडिया एक्सप्रेस, लगभग 4 घंटे 40 मिनट · रोज़ सूचीबद्ध (IX249 वाराणसी से 18:15 पर)",
+        "बैंकॉक (सुवर्णभूमि): एयर इंडिया एक्सप्रेस, 1 फ़रवरी 2026 से हर रविवार · वाराणसी 12:35 → बैंकॉक 18:05 स्थानीय समय",
+        "काठमांडू: बुद्धा एयर, लगभग एक घंटा · हफ़्ते में तीन बार (सोमवार, बुधवार, शुक्रवार), ज़्यादातर भारतीय बुकिंग साइटों पर नहीं मिलती"
+      ],
+      "sources": [
+        11,
+        14,
+        15,
+        16,
+        0
+      ]
+    },
+    {
+      "id": "booking-tips",
+      "promo": true,
+      "heading_en": "When fares are cheapest, and when to book early",
+      "heading_hi": "किराया कब सस्ता होता है, और कब पहले बुक करें",
+      "body_en": [
+        "Fares to Varanasi follow the festival calendar more than the season. Book well ahead for Dev Deepawali (24 November 2026), the New Year week, Maha Shivratri and Holi, when flights from Delhi and Mumbai fill and prices climb. Weekday flights outside these weeks are usually the cheapest, and Delhi, with the most flights a day, gives the widest choice of times and fares.",
+        "In December and January, fog in the mornings delays flights at Babatpur: on 6 January 2026, 26 flights were affected. In those months, pick a midday or afternoon arrival if you can, leave time for connections, and check your flight's status before leaving for the airport."
+      ],
+      "list_en": [
+        "Book early: Dev Deepawali (24 Nov 2026), New Year week, Maha Shivratri, Holi",
+        "Cheapest: weekdays outside festival weeks; Delhi has the most choice",
+        "Fog season (Dec–Jan): prefer midday arrivals and long connections"
+      ],
+      "body_hi": [
+        "वाराणसी का किराया मौसम से ज़्यादा त्योहारों के हिसाब से चलता है। देव दीपावली (24 नवंबर 2026), नए साल का हफ़्ता, महाशिवरात्रि और होली के लिए काफ़ी पहले बुक करें, जब दिल्ली और मुंबई की उड़ानें भर जाती हैं और दाम बढ़ते हैं। इन हफ़्तों के बाहर सप्ताह के दिनों की उड़ानें आमतौर पर सबसे सस्ती होती हैं, और दिल्ली से, जहाँ रोज़ सबसे ज़्यादा उड़ानें हैं, समय और किराए के सबसे ज़्यादा विकल्प मिलते हैं।",
+        "दिसंबर और जनवरी में सुबह का कोहरा बाबतपुर में उड़ानें लेट करता है: 6 जनवरी 2026 को 26 उड़ानें प्रभावित हुईं। इन महीनों में हो सके तो दोपहर में पहुँचने वाली उड़ान चुनें, कनेक्शन के बीच समय रखें, और एयरपोर्ट निकलने से पहले उड़ान की स्थिति देखें।"
+      ],
+      "list_hi": [
+        "पहले बुक करें: देव दीपावली (24 नवंबर 2026), नए साल का हफ़्ता, महाशिवरात्रि, होली",
+        "सबसे सस्ता: त्योहारी हफ़्तों के बाहर सप्ताह के दिन; दिल्ली से सबसे ज़्यादा विकल्प",
+        "कोहरे का मौसम (दिसंबर–जनवरी): दोपहर में पहुँचने वाली उड़ान और लंबे कनेक्शन"
+      ],
+      "sources": [
+        17
+      ]
+    },
+    {
+      "id": "after-landing",
+      "heading_en": "After you land",
+      "heading_hi": "उतरने के बाद",
+      "body_en": [
+        "Varanasi airport is at Babatpur, 25–26 km from Godowlia, the nearest point to Dashashwamedh Ghat by car. A prepaid taxi or app cab costs about ₹600–1,000 and takes 45–75 minutes. Our Varanasi airport guide covers the lounge, which cards get free entry, food and the transfer in detail."
+      ],
+      "body_hi": [
+        "वाराणसी एयरपोर्ट बाबतपुर में है, गोदौलिया से 25–26 किमी, जो कार से दशाश्वमेध घाट का सबसे नज़दीकी बिंदु है। प्रीपेड टैक्सी या ऐप कैब लगभग ₹600–1,000 लेती है और 45–75 मिनट लगते हैं। हमारी वाराणसी एयरपोर्ट गाइड में लाउंज, किन कार्ड से मुफ़्त प्रवेश, खाना और शहर तक पहुँचने का पूरा ब्योरा है।"
+      ],
+      "sources": [
+        0
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q_en": "How long is the flight from Delhi to Varanasi?",
+      "a_en": "About 1 hour 20 minutes nonstop. There are about 11 nonstop flights a day, on IndiGo, Air India and Air India Express, plus a daily IndiGo flight from Hindon (Ghaziabad).",
+      "q_hi": "दिल्ली से वाराणसी की फ़्लाइट में कितना समय लगता है?",
+      "a_hi": "सीधी उड़ान में लगभग 1 घंटा 20 मिनट। रोज़ लगभग 11 सीधी उड़ानें हैं, इंडिगो, एयर इंडिया और एयर इंडिया एक्सप्रेस की, साथ में हिंडन (गाज़ियाबाद) से इंडिगो की रोज़ की उड़ान।"
+    },
+    {
+      "q_en": "Is there a direct flight from Bangalore to Varanasi?",
+      "a_en": "Yes, about six a day on IndiGo, Air India Express and Akasa Air, taking 2 hours 25 to 45 minutes.",
+      "q_hi": "क्या बेंगलुरु से वाराणसी की सीधी फ़्लाइट है?",
+      "a_hi": "हाँ, रोज़ लगभग छह, इंडिगो, एयर इंडिया एक्सप्रेस और अकासा एयर की, 2 घंटे 25 से 45 मिनट में।"
+    },
+    {
+      "q_en": "How long is the flight from Mumbai to Varanasi?",
+      "a_en": "About 2 hours nonstop (1h 55m to 2h 25m), with about six flights a day on IndiGo, Akasa Air and Air India Express. Navi Mumbai also has flights.",
+      "q_hi": "मुंबई से वाराणसी की फ़्लाइट में कितना समय लगता है?",
+      "a_hi": "सीधी उड़ान में लगभग 2 घंटे (1 घंटा 55 मिनट से 2 घंटे 25 मिनट), रोज़ लगभग छह उड़ानें, इंडिगो, अकासा एयर और एयर इंडिया एक्सप्रेस की। नवी मुंबई से भी उड़ानें हैं।"
+    },
+    {
+      "q_en": "Which cities have direct flights to Varanasi?",
+      "a_en": "Delhi, Hindon (Ghaziabad), Mumbai, Navi Mumbai, Bengaluru, Hyderabad, Kolkata, Chennai, Pune and Vijayawada, plus Sharjah, Bangkok (weekly) and Kathmandu (three a week). Kochi has a same-plane flight through Chennai.",
+      "q_hi": "किन शहरों से वाराणसी की सीधी फ़्लाइट है?",
+      "a_hi": "दिल्ली, हिंडन (गाज़ियाबाद), मुंबई, नवी मुंबई, बेंगलुरु, हैदराबाद, कोलकाता, चेन्नई, पुणे और विजयवाड़ा, साथ में शारजाह, बैंकॉक (हफ़्ते में एक) और काठमांडू (हफ़्ते में तीन)। कोच्चि से चेन्नई होकर उसी विमान की उड़ान है।"
+    },
+    {
+      "q_en": "Does Varanasi have international flights?",
+      "a_en": "A few: Air India Express to Sharjah (daily) and Bangkok (Sundays), and Buddha Air to Kathmandu (Monday, Wednesday, Friday).",
+      "q_hi": "क्या वाराणसी से अंतरराष्ट्रीय उड़ानें हैं?",
+      "a_hi": "कुछ: एयर इंडिया एक्सप्रेस से शारजाह (रोज़) और बैंकॉक (रविवार), और बुद्धा एयर से काठमांडू (सोमवार, बुधवार, शुक्रवार)।"
+    },
+    {
+      "q_en": "What is the airport code for Varanasi?",
+      "a_en": "VNS, for Lal Bahadur Shastri International Airport at Babatpur, about 26 km north-west of the city.",
+      "q_hi": "वाराणसी एयरपोर्ट का कोड क्या है?",
+      "a_hi": "VNS, बाबतपुर के लाल बहादुर शास्त्री अंतरराष्ट्रीय हवाई अड्डे के लिए, शहर से लगभग 26 किमी उत्तर-पश्चिम।"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wikipedia — Lal Bahadur Shastri International Airport: airlines and destinations, 2025–26 traffic",
+      "url": "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_International_Airport",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Delhi to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/delhi-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Mumbai to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/mumbai-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Bengaluru to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/bangalore-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Hyderabad to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/hyderabad-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Kolkata to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/kolkata-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Chennai to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/chennai-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Pune to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/pune-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Vijayawada to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/vijayawada-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Kochi to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/kochi-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Hindon (Ghaziabad) to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/ghaziabad-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Varanasi to Sharjah flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/varanasi-sharjah-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Ahmedabad to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/ahmedabad-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ixigo — Bhubaneswar to Varanasi flights: nonstop flights and duration (schedule for 5 Nov 2026)",
+      "url": "https://www.ixigo.com/bhubaneswar-varanasi-flights",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Aeroroutes — Air India Express adds Varanasi–Bangkok from 1 Feb 2026 (weekly)",
+      "url": "https://www.aeroroutes.com/eng/251230-ix1q26vnsbkk",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "NewKerala — Air India Express launches weekly non-stop Varanasi–Bangkok flights (Sundays, 12:35–18:05)",
+      "url": "https://www.newkerala.com/news/a/air-india-express-launch-weekly-non-stop-varanasi-bangkok-flights-710.htm",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Airportia — Buddha Air U4 162 Varanasi–Kathmandu: days of operation",
+      "url": "https://www.airportia.com/flights/u4162/varanasi/kathmandu/",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Amar Ujala — Fog in Varanasi: 26 flights affected at Babatpur airport (6 Jan 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/fog-in-varanasi-26-flights-affected-at-babatpur-airport-and-flight-from-mumbai-arrived-late-2026-01-06",
+      "accessed": "2026-11-04"
+    }
+  ],
+  "related": {
+    "projects": [
+      "airport-expansion"
+    ],
+    "places": [
+      "dashashwamedh-ghat",
+      "kashi-vishwanath",
+      "sarnath"
+    ],
+    "festivals": [
+      "dev-deepawali",
+      "maha-shivratri"
+    ],
+    "itineraries": [
+      "2-day"
+    ]
+  },
+  "notes": "Targets 'flight to varanasi from <city>' (delhi, bangalore, mumbai, hyderabad, chennai, vijayawada, pune, kolkata, kochi), '<city> to varanasi flight time/duration', 'varanasi international flights', 'varanasi flight code', 'cheapest flight to varanasi'. Durations and daily counts are from ixigo's schedule for 5 Nov 2026; re-check each season (summer schedule from late March, winter from late October). No fares: they change daily. House-ad card after booking-tips."
+}

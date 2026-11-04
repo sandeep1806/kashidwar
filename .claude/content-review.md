@@ -164,6 +164,10 @@ Re-check, and update if changed (both languages; bump the guide's `updated` date
   Thomas Cook Nadesar outlet and Unimoni branch still open; the airport counter stays
   `"unconfirmed": true` until AAI or the operator lists one; UPI One World availability for
   tourists. Name no card brand in the body (the house ad sits after `going-abroad`).
+- Flights (`flights-to-varanasi.json`): new or dropped routes from Varanasi (airline
+  announcements, news) on every run; nonstop durations and daily counts at each schedule
+  change (summer from late March, winter from late October) and whenever a route is added.
+  Never print fares (they change daily). Update the airport guide's flights section the same run.
 - Sarnath: ASI ticket fees, Sarnath Museum hours and closed day, transport fares.
 - Dev Deepawali: this year's date, official programme (lamp counts, laser/firework shows),
   boat rules and traffic advisories once announced.
