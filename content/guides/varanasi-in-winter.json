@@ -1,0 +1,423 @@
+{
+  "slug": "varanasi-in-winter",
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "photo": "places/assi-ghat",
+  "title_en": "Varanasi in winter: December–February weather, fog, packing, events",
+  "title_hi": "सर्दी में वाराणसी: दिसंबर–फरवरी का मौसम, कोहरा, पैकिंग और त्योहार",
+  "description_en": "Varanasi in winter: December 24/10 °C, January 22/9 °C, February 27/12 °C, fog on about 22 days a month in Dec–Jan. Flights, trains, what to pack, what's on.",
+  "description_hi": "सर्दी में वाराणसी: दिसंबर 24/10 °C, जनवरी 22/9 °C, फरवरी 27/12 °C; दिसंबर–जनवरी में महीने के लगभग 22 दिन कोहरा। उड़ान, ट्रेन, क्या पैक करें और कौन से त्योहार।",
+  "lead_en": "Winter is Varanasi's main season. Days are mild and dry, the river is low and calm, and the ghats are walkable from dawn to the 6 pm aarti. The cost is cold, foggy mornings: at the airport weather station fog is recorded on about 22 days in both December and January, and it regularly delays flights and trains. Here are the official averages, what fog means for your plans, sunrise times for boat rides, what to pack and the 2026-27 events.",
+  "lead_hi": "सर्दी वाराणसी का मुख्य मौसम है। दिन हल्के और सूखे, नदी नीची और शांत, और घाट भोर से शाम 6 बजे की आरती तक घूमने लायक। कीमत है ठंडी, कोहरे वाली सुबहें: हवाई अड्डे के मौसम केंद्र पर दिसंबर और जनवरी दोनों में लगभग 22 दिन कोहरा दर्ज होता है, और यह अक्सर उड़ानें और ट्रेनें लेट करता है। यहां आधिकारिक औसत, कोहरे का आपकी योजना पर असर, नाव के लिए सूर्योदय का समय, क्या पैक करें और 2026-27 के आयोजन हैं।",
+  "facts": [
+    {
+      "icon": "calendar",
+      "label_en": "December",
+      "label_hi": "दिसंबर",
+      "value_en": "24 / 10 °C · 2.7 mm rain · fog ~22 days",
+      "value_hi": "24 / 10 °C · 2.7 मिमी बारिश · ~22 दिन कोहरा"
+    },
+    {
+      "icon": "calendar",
+      "label_en": "January",
+      "label_hi": "जनवरी",
+      "value_en": "22 / 9 °C · coldest month · fog ~22 days",
+      "value_hi": "22 / 9 °C · सबसे ठंडा महीना · ~22 दिन कोहरा"
+    },
+    {
+      "icon": "leaf",
+      "label_en": "February",
+      "label_hi": "फरवरी",
+      "value_en": "27 / 12 °C · fog ~11 days",
+      "value_hi": "27 / 12 °C · ~11 दिन कोहरा"
+    },
+    {
+      "icon": "sunrise",
+      "label_en": "Sunrise",
+      "label_hi": "सूर्योदय",
+      "value_en": "6:25–6:45 am Dec–Jan · ~6:25 am by late Feb",
+      "value_hi": "दिसंबर–जनवरी सुबह 6:25–6:45 · फरवरी अंत ~6:25"
+    },
+    {
+      "icon": "clock",
+      "label_en": "Evening aarti",
+      "label_hi": "शाम की आरती",
+      "value_en": "Dashashwamedh, 6 pm in winter",
+      "value_hi": "दशाश्वमेध, सर्दी में शाम 6 बजे"
+    },
+    {
+      "icon": "plane",
+      "label_en": "Fog",
+      "label_hi": "कोहरा",
+      "value_en": "Morning flights and trains run hours late, mid-Dec to Jan",
+      "value_hi": "मध्य दिसंबर–जनवरी में सुबह की उड़ानें-ट्रेनें घंटों लेट"
+    }
+  ],
+  "sections": [
+    {
+      "id": "weather-by-month",
+      "heading_en": "Varanasi weather in December, January and February",
+      "heading_hi": "दिसंबर, जनवरी और फरवरी में वाराणसी का मौसम",
+      "body_en": [
+        "These are the India Meteorological Department's 1991-2020 normals for the Varanasi airport station at Babatpur: average daily maximum and minimum, monthly rain, and the average number of days on which fog is recorded. Winter is almost rainless, and January is the coldest month.",
+        "Averages hide cold snaps. The record lows for 1901-2012 are 2.2 °C in December, 1.0 °C in January and 1.7 °C in February, so some nights fall well below the averages."
+      ],
+      "body_hi": [
+        "ये भारत मौसम विज्ञान विभाग के बाबतपुर स्थित वाराणसी हवाई अड्डा केंद्र के 1991-2020 के सामान्य मान हैं: औसत दैनिक अधिकतम और न्यूनतम तापमान, महीने की बारिश, और कोहरा दर्ज होने वाले औसत दिन। सर्दी लगभग बिना बारिश की होती है और जनवरी सबसे ठंडा महीना है।",
+        "औसत में शीतलहर छिप जाती है। 1901-2012 के रिकॉर्ड न्यूनतम दिसंबर में 2.2 °C, जनवरी में 1.0 °C और फरवरी में 1.7 °C हैं, यानी कुछ रातें औसत से काफी नीचे जाती हैं।"
+      ],
+      "list_en": [
+        "November (for comparison): 29.7 / 14.8 °C, 4.8 mm rain, fog on 11 days.",
+        "December: 24.4 / 10.2 °C, 2.7 mm rain, fog on 22 days. Cool, dry, fog building after mid-month.",
+        "January: 22.2 / 8.9 °C, 14.2 mm rain on about 1.4 days, fog on 22 days. Coldest and foggiest stretch.",
+        "February: 26.9 / 12.2 °C, 19.3 mm rain, fog on 11 days. Warmer afternoons, clearer mornings.",
+        "March (for comparison): 33.3 / 16.5 °C, fog on 2 days. Winter is over."
+      ],
+      "list_hi": [
+        "नवंबर (तुलना के लिए): 29.7 / 14.8 °C, 4.8 मिमी बारिश, 11 दिन कोहरा।",
+        "दिसंबर: 24.4 / 10.2 °C, 2.7 मिमी बारिश, 22 दिन कोहरा। ठंडा, सूखा, मध्य दिसंबर के बाद कोहरा बढ़ता है।",
+        "जनवरी: 22.2 / 8.9 °C, लगभग 1.4 दिनों में 14.2 मिमी बारिश, 22 दिन कोहरा। सबसे ठंडा और सबसे ज्यादा कोहरे वाला समय।",
+        "फरवरी: 26.9 / 12.2 °C, 19.3 मिमी बारिश, 11 दिन कोहरा। दोपहर गर्म, सुबहें ज्यादा साफ।",
+        "मार्च (तुलना के लिए): 33.3 / 16.5 °C, 2 दिन कोहरा। सर्दी खत्म।"
+      ],
+      "sources": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "fog-flights-trains",
+      "heading_en": "Fog: what it does to flights and trains",
+      "heading_hi": "कोहरा: उड़ानों और ट्रेनों पर असर",
+      "body_en": [
+        "Varanasi lies in the Indo-Gangetic plain, which an IMD study found has fog (visibility under 1 km) on 7-10 days in December and more than 8 days in January on average, counting the morning observation alone. On 3 January 2026 visibility in Varanasi fell to about 50 metres.",
+        "Flights feel it first. Lal Bahadur Shastri airport is not among the six Indian airports equipped for CAT-III low-visibility landings named in December 2025. On 19 December 2025 an Air India Mumbai-Varanasi flight was diverted to Bhubaneswar because runway visibility at Varanasi was below limits; on 6 January 2026 fog affected 26 flights at Babatpur, the worst arriving 4 hours 43 minutes late.",
+        "Trains run late across the route. On 22 December 2025 more than 50 Northern Railway trains were delayed by up to six hours, the New Delhi-Varanasi Vande Bharat by about five. From mid-December to late January, book flights after late morning, keep a spare day before onward connections and check running status before leaving for the station."
+      ],
+      "body_hi": [
+        "वाराणसी सिंधु-गंगा मैदान में है, जहां मौसम विभाग के एक अध्ययन के अनुसार केवल सुबह के अवलोकन में औसतन दिसंबर में 7-10 दिन और जनवरी में 8 से ज्यादा दिन कोहरा (1 किमी से कम दृश्यता) रहता है। 3 जनवरी 2026 को वाराणसी में दृश्यता लगभग 50 मीटर रह गई।",
+        "सबसे पहले उड़ानें प्रभावित होती हैं। दिसंबर 2025 में CAT-III (कम दृश्यता में लैंडिंग) सुविधा वाले जिन छह हवाई अड्डों के नाम बताए गए, उनमें लाल बहादुर शास्त्री हवाई अड्डा नहीं है। 19 दिसंबर 2025 को एयर इंडिया की मुंबई-वाराणसी उड़ान रनवे दृश्यता सीमा से नीचे होने के कारण भुवनेश्वर भेजी गई; 6 जनवरी 2026 को बाबतपुर पर कोहरे से 26 उड़ानें प्रभावित हुईं, सबसे ज्यादा 4 घंटे 43 मिनट देर।",
+        "ट्रेनें भी पूरे रास्ते लेट चलती हैं। 22 दिसंबर 2025 को उत्तर रेलवे की 50 से ज्यादा ट्रेनें छह घंटे तक लेट थीं, नई दिल्ली-वाराणसी वंदे भारत लगभग पांच घंटे। मध्य दिसंबर से जनवरी के अंत तक देर सुबह के बाद की उड़ान लें, आगे की यात्रा से पहले एक दिन खाली रखें और स्टेशन निकलने से पहले रनिंग स्टेटस देखें।"
+      ],
+      "sources": [
+        2,
+        6,
+        9,
+        4,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "how-cold",
+      "heading_en": "How cold it gets: cold waves and dawn on the river",
+      "heading_hi": "कितनी ठंड: शीतलहर और भोर में नदी",
+      "body_en": [
+        "Cold waves arrive most winters around the turn of the year. On 21 December 2025 the IMD recorded a minimum of 9 °C as devotees bathed at Dashashwamedh Ghat; on 2 January 2026 Uttar Pradesh closed all schools up to Class 12 until 5 January, with Varanasi among the cities under cold-wave conditions.",
+        "Dawn is the coldest hour, and that is when the boats go out. Expect the air on the water to be close to the night's minimum, around 9-10 °C on an average December or January morning, and to feel colder with river breeze and damp fog (an estimate; no official measurement of the river's winter water temperature at Varanasi was found). On most days the fog thins by mid-morning, and afternoons in the low 20s feel warm in the sun."
+      ],
+      "body_hi": [
+        "ज्यादातर सर्दियों में साल बदलने के आसपास शीतलहर आती है। 21 दिसंबर 2025 को मौसम विभाग ने न्यूनतम 9 °C दर्ज किया, जब श्रद्धालु दशाश्वमेध घाट पर स्नान कर रहे थे; 2 जनवरी 2026 को उत्तर प्रदेश ने कक्षा 12 तक के सभी स्कूल 5 जनवरी तक बंद किए, और वाराणसी शीतलहर वाले शहरों में था।",
+        "भोर सबसे ठंडा समय है, और नावें तभी निकलती हैं। पानी पर हवा रात के न्यूनतम के करीब मानें, औसत दिसंबर-जनवरी की सुबह लगभग 9-10 °C, और नदी की हवा व नम कोहरे से और ठंडी लगती है (यह अनुमान है; वाराणसी में सर्दियों में गंगा के पानी का कोई आधिकारिक तापमान नहीं मिला)। ज्यादातर दिनों कोहरा दोपहर से पहले छंट जाता है, और 20 °C के आसपास की दोपहर धूप में गर्म लगती है।"
+      ],
+      "sources": [
+        7,
+        8,
+        0
+      ]
+    },
+    {
+      "id": "ghats-in-winter",
+      "heading_en": "The ghats in winter: sunrise boats, aarti and gulls",
+      "heading_hi": "सर्दी में घाट: सूर्योदय की नाव, आरती और पक्षी",
+      "body_en": [
+        "Sunrise is late in winter, so a dawn boat does not mean a 5 am alarm. Sunrise is about 6:25 am at the start of December and 6:36 am by mid-month, stays near 6:43-6:45 am from late December to the end of January, and returns to about 6:25 am by late February. Board 20-30 minutes before; on foggy days the sun may appear only as a pale disc.",
+        "The Ganga Seva Nidhi and Gangotri Seva Samiti move the Dashashwamedh evening aarti to 6 pm for winter and the morning aarti to 5:30 am. Sunset falls between about 5:10 and 6:00 pm, so the aarti begins after dark.",
+        "From the start of winter, flocks of gulls gather around the boats, and boatmen feed them in the mornings. Locals call them Siberian birds; boatmen say they stay two to three months. Many are likely brown-headed gulls, which breed on the high plateaus of Central Asia and winter on the subcontinent's coasts and large rivers and lakes."
+      ],
+      "body_hi": [
+        "सर्दियों में सूर्योदय देर से होता है, इसलिए भोर की नाव के लिए 5 बजे उठना जरूरी नहीं। दिसंबर की शुरुआत में सूर्योदय लगभग 6:25 बजे और मध्य दिसंबर तक 6:36 बजे, दिसंबर के अंत से जनवरी के अंत तक लगभग 6:43-6:45 बजे, और फरवरी के अंत तक फिर लगभग 6:25 बजे। 20-30 मिनट पहले नाव में बैठें; कोहरे वाले दिन सूरज बस एक धुंधली थाली-सा दिखता है।",
+        "गंगा सेवा निधि और गंगोत्री सेवा समिति सर्दियों में दशाश्वमेध की शाम की आरती 6 बजे और सुबह की आरती 5:30 बजे कर देती हैं। सूर्यास्त लगभग 5:10 से 6:00 बजे के बीच होता है, इसलिए आरती अंधेरा होने के बाद शुरू होती है।",
+        "सर्दी शुरू होते ही नावों के आसपास पक्षियों के झुंड जुटते हैं और नाविक सुबह उन्हें दाना खिलाते हैं। स्थानीय लोग इन्हें साइबेरियन पक्षी कहते हैं; नाविकों के अनुसार ये दो-तीन महीने रुकते हैं। इनमें बहुत से संभवत: भूरे सिर वाले गल (ब्राउन-हेडेड गल) हैं, जो मध्य एशिया के ऊंचे पठारों पर प्रजनन करते हैं और सर्दी भारतीय उपमहाद्वीप के तटों, बड़ी नदियों और झीलों पर बिताते हैं।"
+      ],
+      "sources": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "whats-on",
+      "heading_en": "What's on in Varanasi, December 2026 to February 2027",
+      "heading_hi": "दिसंबर 2026 से फरवरी 2027 तक वाराणसी में क्या है",
+      "body_en": [
+        "Winter has fewer giant river festivals than November, but several faiths mark major days, and the Christmas-New Year week is the busiest time of the season at Kashi Vishwanath. In 2025 the temple stopped VIP and protocol entry from 24 December and suspended sparsh (touch) darshan until 3 January 2026; on New Year's Day queues stretched 2-3 km. Lunar dates can shift by a day, so confirm nearer the time."
+      ],
+      "body_hi": [
+        "सर्दी में नवंबर जैसे बड़े नदी-उत्सव कम हैं, पर कई आस्थाओं के प्रमुख दिन पड़ते हैं, और क्रिसमस से नए साल का हफ्ता काशी विश्वनाथ में मौसम का सबसे व्यस्त समय है। 2025 में मंदिर ने 24 दिसंबर से वीआईपी और प्रोटोकॉल प्रवेश रोका और 3 जनवरी 2026 तक स्पर्श दर्शन स्थगित रखा; नए साल के दिन कतारें 2-3 किमी लंबी थीं। चंद्र तिथियां एक दिन खिसक सकती हैं, इसलिए पास आकर पुष्टि करें।"
+      ],
+      "list_en": [
+        "Kashi Tamil Sangamam 5.0: 28 November to 12 December 2026, across Varanasi, Prayagraj and Ayodhya.",
+        "Christmas: Friday 25 December 2026. Carols and lights at St Mary's Church in the Cantonment, and Bhojpuri carols at the Mahmoorganj church, a tradition since 1986.",
+        "New Year: 31 December to 1 January, the season's biggest temple crowds; expect restricted darshan.",
+        "Parshvanath Janma Kalyanak (Paush Krishna Dashami): Saturday 2 January 2027, at Bhelupur, which Jains hold as the birthplace of the 23rd Tirthankara.",
+        "Makar Sankranti: Friday 15 January 2027 (the Sun enters Capricorn at 9:14 pm on 14 January, so the bathing day is the 15th). Dawn Ganga snan, khichdi offered at Kashi Vishwanath, and kites; in 2026 a kite-flying contest was held on the sandbank across the river.",
+        "Guru Ravidas Jayanti (Magh Purnima): Saturday 20 February 2027, the 650th birth anniversary, centred on his birthplace temple at Seer Govardhanpur.",
+        "Just after winter: Maha Shivratri on Saturday 6 March 2027."
+      ],
+      "list_hi": [
+        "काशी तमिल संगमम 5.0: 28 नवंबर से 12 दिसंबर 2026, वाराणसी, प्रयागराज और अयोध्या में।",
+        "क्रिसमस: शुक्रवार 25 दिसंबर 2026। छावनी के सेंट मैरी चर्च में कैरोल और रोशनी, और महमूरगंज चर्च में भोजपुरी कैरोल, 1986 से चली परंपरा।",
+        "नया साल: 31 दिसंबर से 1 जनवरी, मौसम की सबसे बड़ी मंदिर भीड़; दर्शन पर पाबंदियों की उम्मीद रखें।",
+        "पार्श्वनाथ जन्म कल्याणक (पौष कृष्ण दशमी): शनिवार 2 जनवरी 2027, भेलूपुर में, जिसे जैन 23वें तीर्थंकर का जन्मस्थान मानते हैं।",
+        "मकर संक्रांति: शुक्रवार 15 जनवरी 2027 (सूर्य 14 जनवरी रात 9:14 बजे मकर में प्रवेश करते हैं, इसलिए स्नान 15 को)। भोर का गंगा स्नान, काशी विश्वनाथ को खिचड़ी का भोग, और पतंगें; 2026 में गंगा पार रेती पर पतंगबाजी प्रतियोगिता हुई।",
+        "गुरु रविदास जयंती (माघ पूर्णिमा): शनिवार 20 फरवरी 2027, 650वीं जयंती, सीर गोवर्धनपुर के जन्मस्थान मंदिर में मुख्य आयोजन।",
+        "सर्दी के ठीक बाद: महाशिवरात्रि शनिवार 6 मार्च 2027।"
+      ],
+      "sources": [
+        15,
+        16,
+        25,
+        22,
+        23,
+        20,
+        21,
+        17,
+        18,
+        19,
+        24,
+        26
+      ]
+    },
+    {
+      "id": "what-to-pack",
+      "heading_en": "What to pack for Varanasi in winter",
+      "heading_hi": "सर्दी में वाराणसी के लिए क्या पैक करें",
+      "body_en": [
+        "Pack for a 12-15 °C swing between a foggy dawn and a sunny afternoon. Layers work better than one heavy coat, because you will be climbing ghat steps by midday."
+      ],
+      "body_hi": [
+        "धुंधली भोर और धूप वाली दोपहर के बीच 12-15 °C के अंतर के हिसाब से पैक करें। एक भारी कोट से बेहतर परतें हैं, क्योंकि दोपहर तक आप घाट की सीढ़ियां चढ़ रहे होंगे।"
+      ],
+      "list_en": [
+        "A warm jacket or fleece, plus a thermal layer for dawn boat rides in late December and January.",
+        "A shawl or scarf and a woollen cap; the wind on the open river is the coldest part of the day.",
+        "Socks and easy slip-on shoes: you remove footwear at temples, and the stone steps are cold in the morning.",
+        "A light cotton layer for February afternoons, which reach the high 20s.",
+        "A torch or phone light for fog and dark lanes before sunrise, and a small towel if you plan a holy dip.",
+        "Medicines for coughs and colds; winter mornings are cold and damp."
+      ],
+      "list_hi": [
+        "गर्म जैकेट या फ्लीस, और दिसंबर अंत व जनवरी में भोर की नाव के लिए थर्मल।",
+        "शॉल या मफलर और ऊनी टोपी; खुली नदी की हवा दिन का सबसे ठंडा हिस्सा है।",
+        "मोज़े और आसानी से उतरने वाले जूते: मंदिरों में जूते उतारने होते हैं और सुबह पत्थर की सीढ़ियां ठंडी रहती हैं।",
+        "फरवरी की दोपहर के लिए हल्का सूती कपड़ा, जब तापमान 25 °C से ऊपर जाता है।",
+        "कोहरे और सूर्योदय से पहले की अंधेरी गलियों के लिए टॉर्च या फोन की लाइट, और स्नान की योजना हो तो छोटा तौलिया।",
+        "खांसी-जुकाम की दवा; सर्दी की सुबहें ठंडी और नम रहती हैं।"
+      ],
+      "sources": [
+        0
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q_en": "What is the temperature in Varanasi in December?",
+      "a_en": "IMD's 1991-2020 normals give an average high of 24.4 °C and low of 10.2 °C, with almost no rain (2.7 mm). Fog is recorded on about 22 days, mostly in the second half of the month.",
+      "q_hi": "दिसंबर में वाराणसी का तापमान कितना रहता है?",
+      "a_hi": "मौसम विभाग के 1991-2020 के सामान्य मानों के अनुसार औसत अधिकतम 24.4 °C और न्यूनतम 10.2 °C, बारिश लगभग नहीं (2.7 मिमी)। लगभग 22 दिन कोहरा दर्ज होता है, ज्यादातर महीने के दूसरे हिस्से में।"
+    },
+    {
+      "q_en": "How cold is Varanasi in January?",
+      "a_en": "January is the coldest month: average high 22.2 °C, low 8.9 °C, and cold waves can push nights much lower (the record is 1.0 °C). Bring a warm jacket, cap and thermal layer for dawn on the river.",
+      "q_hi": "जनवरी में वाराणसी में कितनी ठंड होती है?",
+      "a_hi": "जनवरी सबसे ठंडा महीना है: औसत अधिकतम 22.2 °C, न्यूनतम 8.9 °C, और शीतलहर में रातें इससे बहुत नीचे जा सकती हैं (रिकॉर्ड 1.0 °C)। भोर में नदी के लिए गर्म जैकेट, टोपी और थर्मल रखें।"
+    },
+    {
+      "q_en": "Is winter a good time to visit Varanasi?",
+      "a_en": "Yes, for most travellers: dry, mild days, a calm river and the evening aarti at 6 pm. Plan around fog from mid-December to late January, and avoid the Christmas-New Year week if you want an easy temple visit.",
+      "q_hi": "क्या सर्दी वाराणसी घूमने का अच्छा समय है?",
+      "a_hi": "ज्यादातर यात्रियों के लिए हां: सूखे, हल्के दिन, शांत नदी और शाम 6 बजे की आरती। मध्य दिसंबर से जनवरी के अंत तक कोहरे के हिसाब से योजना बनाएं, और आराम से दर्शन चाहें तो क्रिसमस-नए साल का हफ्ता टालें।"
+    },
+    {
+      "q_en": "Do flights to Varanasi get cancelled because of fog?",
+      "a_en": "Delays and diversions are common; Varanasi is not one of India's CAT-III airports. On 6 January 2026 fog affected 26 flights, and on 19 December 2025 a Mumbai flight was diverted to Bhubaneswar. Prefer flights after late morning.",
+      "q_hi": "क्या कोहरे से वाराणसी की उड़ानें रद्द होती हैं?",
+      "a_hi": "देरी और डायवर्जन आम हैं; वाराणसी देश के CAT-III हवाई अड्डों में नहीं है। 6 जनवरी 2026 को कोहरे से 26 उड़ानें प्रभावित हुईं और 19 दिसंबर 2025 को मुंबई की एक उड़ान भुवनेश्वर भेजी गई। देर सुबह के बाद की उड़ान चुनें।"
+    },
+    {
+      "q_en": "What time is the sunrise boat ride in winter?",
+      "a_en": "Sunrise is about 6:25-6:45 am from December to January and back near 6:25 am by late February. Board 20-30 minutes before sunrise and dress warmly; on foggy mornings the view opens up later.",
+      "q_hi": "सर्दी में सूर्योदय की नाव कितने बजे होती है?",
+      "a_hi": "दिसंबर से जनवरी तक सूर्योदय लगभग 6:25-6:45 बजे और फरवरी के अंत तक फिर लगभग 6:25 बजे। सूर्योदय से 20-30 मिनट पहले नाव में बैठें और गर्म कपड़े पहनें; कोहरे वाली सुबह नजारा देर से खुलता है।"
+    },
+    {
+      "q_en": "What festivals are in Varanasi in December and January?",
+      "a_en": "Christmas (25 December), the New Year rush at Kashi Vishwanath, Parshvanath Janma Kalyanak at Bhelupur (2 January 2027) and Makar Sankranti with Ganga snan and kites (15 January 2027). Kashi Tamil Sangamam runs until 12 December 2026.",
+      "q_hi": "दिसंबर और जनवरी में वाराणसी में कौन से त्योहार होते हैं?",
+      "a_hi": "क्रिसमस (25 दिसंबर), काशी विश्वनाथ में नए साल की भीड़, भेलूपुर में पार्श्वनाथ जन्म कल्याणक (2 जनवरी 2027) और गंगा स्नान व पतंगों वाली मकर संक्रांति (15 जनवरी 2027)। काशी तमिल संगमम 12 दिसंबर 2026 तक चलता है।"
+    },
+    {
+      "q_en": "Do the Siberian birds come to Varanasi in winter?",
+      "a_en": "Yes. Flocks of gulls, locally called Siberian birds, gather around boats on the Ganga from the onset of winter and stay two to three months. Boatmen feed them in the mornings, so a sunrise ride is the best time to see them.",
+      "q_hi": "क्या सर्दी में वाराणसी में साइबेरियन पक्षी आते हैं?",
+      "a_hi": "हां। स्थानीय भाषा में साइबेरियन पक्षी कहलाने वाले गलों के झुंड सर्दी शुरू होते ही गंगा पर नावों के आसपास जुटते हैं और दो-तीन महीने रुकते हैं। नाविक सुबह इन्हें दाना खिलाते हैं, इसलिए सूर्योदय की नाव इन्हें देखने का सबसे अच्छा समय है।"
+    }
+  ],
+  "sources": [
+    {
+      "title": "India Meteorological Department (Met Centre Lucknow) - Varanasi Airport climatological table 1991-2020 (temperature, rain, days with fog)",
+      "url": "https://mausam.imd.gov.in/lucknow/mcdata/Varanasi%20AP.pdf",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Varanasi - Wikipedia (climate table: record lows 1901-2012, from IMD)",
+      "url": "https://en.wikipedia.org/wiki/Varanasi",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "MAUSAM (IMD) - Sawaisarje et al., Study of winter fog over Indian subcontinent: climatological perspectives (2014)",
+      "url": "https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/view/858",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Amar Ujala - Fog in Varanasi: 26 flights affected at Babatpur airport (6 Jan 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/fog-in-varanasi-26-flights-affected-at-babatpur-airport-and-flight-from-mumbai-arrived-late-2026-01-06",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Free Press Journal - Air India Mumbai-Varanasi flight diverted to Bhubaneswar as dense fog disrupts operations (19 Dec 2025)",
+      "url": "https://www.freepressjournal.in/mumbai/air-india-mumbaivaranasi-flight-makes-emergency-landing-in-bhubaneswar-as-dense-fog-disrupts-air-operations",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "The Week - Dense fog disrupts over 50 trains; New Delhi-Varanasi Vande Bharat about five hours late (22 Dec 2025)",
+      "url": "https://www.theweek.in/news/india/2025/12/22/dense-fog-in-delhi-disrupts-over-50-trains-stranded-passengers-endure-cold-weather.html",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Republic World - Dense fog and cold wave grip Uttar Pradesh; visibility about 50 m in Varanasi (3 Jan 2026)",
+      "url": "https://www.republicworld.com/india/dense-fog-biting-cold-wave-grip-uttar-pradesh-barabanki-and-hardoi-shiver-at-6c",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "New Kerala (ANI) - Devotees brave biting cold for Ganga dip in Varanasi, minimum 9 °C (21 Dec 2025)",
+      "url": "https://www.newkerala.com/news/o/ganga-rituals-continue-varanasi-despite-dropping-temperatures-dense-fog-874",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "New Kerala - UP shuts schools up to Class 12 till 5 January amid severe cold wave (2 Jan 2026)",
+      "url": "https://www.newkerala.com/news/a/up-cm-yogi-orders-closure-schools-all-classes-104.htm",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Business Today - Why even CAT-III compliant flights get hit by fog: six CAT-III airports in India (18 Dec 2025)",
+      "url": "https://www.businesstoday.in/india/story/explained-why-even-cat-iii-compliant-flights-get-hit-by-low-visibility-during-fog-507230-2025-12-18",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Positional Astronomy Centre, Kolkata (IMD) - Sunrise and sunset table for Varanasi, Dec 2025 to 2026",
+      "url": "https://packolkata.gov.in/download/smrs/Varanasi.pdf",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "SunriseSunset.io - Varanasi sunrise and sunset times (November 2026)",
+      "url": "https://sunrisesunset.io/in/uttar-pradesh/varanasi/",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Amar Ujala - Aarti timings change with the season in Kashi (7 Nov 2025)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/varanasi-temple-and-ganga-aarti-timings-changed-due-to-winter-season-2025-11-07",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ETV Bharat - Arrival of migratory birds adds charm to Ganga's ghats in Varanasi (19 Nov 2024)",
+      "url": "https://www.etvbharat.com/en/!videos/arrival-of-migratory-birds-adds-charm-to-gangas-ghats-in-varanasi-enn24111904423",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Brown-headed gull - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Brown-headed_gull",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Free Press Journal - Kashi Vishwanath suspends sparsh and protocol darshan till 3 January amid New Year rush (26 Dec 2025)",
+      "url": "https://www.freepressjournal.in/india/kashi-vishwanath-temple-suspends-sparsh-and-protocol-darshan-till-january-3-amid-new-year-devotee-rush",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "India TV - Devotees throng Kashi, Ayodhya to mark New Year 2026 (1 Jan 2026)",
+      "url": "https://www.indiatvnews.com/news/india/devotees-throng-kashi-ayodhya-and-other-religious-sites-to-mark-the-beginning-of-new-year-2026-2026-01-01-1024029",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Drik Panchang - Makar Sankranti 2027 date and punya kaal",
+      "url": "https://www.drikpanchang.com/sankranti/makar-sankranti-date-time.html?year=2027",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ThePrint (PTI) - Devotees throng ghats of Ganga and Saryu in Varanasi and Ayodhya on Makar Sankranti (15 Jan 2026)",
+      "url": "https://theprint.in/india/devotees-throng-ghats-of-ganga-and-sarya-in-varanasi-and-ayodhya-on-makar-sankranti/2828278",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Amar Ujala (video) - Mayor and municipal commissioner fly kites at contest on the Ganga sandbank, Varanasi (12 Jan 2026)",
+      "url": "https://www.amarujala.com/video/uttar-pradesh/varanasi/video-mayor-and-municipal-commissioner-flew-kites-and-great-time-engaging-in-kite-fighting-in-varanasi-2026-01-12",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Drik Panchang - Panchang for 2 January 2027, Varanasi (Paush Krishna Dashami)",
+      "url": "https://www.drikpanchang.com/panchang/day-panchang.html?date=02/01/2027&geoname-id=1253405",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Parshvanath Jain temples, Varanasi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Parshvanath_Jain_temples,_Varanasi",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Free Press Journal - Varanasi's oldest church, St Mary's, Cantonment (Dec 2024)",
+      "url": "https://www.freepressjournal.in/lifestyle/christmas-2024-did-you-know-varanasis-oldest-church-is-st-marys-church-where-queen-elizabeth-prayed",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "India TV - Bhojpuri carols mark Christmas at Mahmoorganj church, Varanasi (26 Dec 2024)",
+      "url": "https://indiatvnews.com/uttar-pradesh/watch-bhojpuri-carols-mark-christmas-celebrations-at-this-varanasi-church-2024-12-26-967934",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Drik Panchang - Guru Ravidas Jayanti 2027, Varanasi",
+      "url": "https://www.drikpanchang.com/hindu-saints/ravidas/guru-ravidas-jayanti.html?year=2027&geoname-id=1253405",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "PIB (Ministry of Education) - Kashi Tamil Sangamam 5.0 from 28 Nov to 12 Dec 2026 (22 Oct 2026)",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2326535",
+      "accessed": "2026-11-02"
+    },
+    {
+      "title": "Drik Panchang - Maha Shivaratri 2027 date",
+      "url": "https://www.drikpanchang.com/festivals/maha-shivaratri/maha-shivaratri-date-time.html?year=2027",
+      "accessed": "2026-11-04"
+    }
+  ],
+  "related": {
+    "places": [
+      "dashashwamedh-ghat",
+      "assi-ghat",
+      "kashi-vishwanath"
+    ],
+    "festivals": [
+      "christmas",
+      "parshvanath-janma-kalyanak",
+      "ravidas-jayanti",
+      "maha-shivratri"
+    ],
+    "itineraries": [
+      "2-day"
+    ]
+  },
+  "notes": "Deep winter page; best-time-to-visit-varanasi stays the year-round overview. The Guide type's `related` only accepts places/festivals/projects/itineraries, so it cannot link to the best-time guide; add an in-page link to /guides/best-time-to-visit-varanasi (and back from that guide's 'winter' and 'fog' sections) if the guide template supports it, plus ganga-aarti-varanasi and varanasi-boat-ride. CLIMATE: now cited directly from IMD Met Centre Lucknow's Varanasi AP station sheet (1991-2020; image-only PDF, read from a render). Its values differ slightly from the Wikipedia table the best-time guide uses (Jan min 8.9 vs 9.0, Dec max 24.4 vs 24.1, rain 14.2 vs 16.3 mm); consider aligning that guide. 'Mean days with fog' is IMD's station count (any observation); the MAUSAM regional 7-10 days (Dec) / >8 days (Jan) figure counts the 0300 UTC observation only, which is why it is lower; both are stated with their basis. Record lows (2.2/1.0/1.7 °C, 1901-2012) are from Wikipedia's IMD-derived table, not read from IMD directly. SUNRISE: PAC Kolkata table covers 15 Dec 2025 onward (2025-26 season); 2026-27 times differ by about a minute. Early-December 6:25 am is from sunrisesunset.io's 30 Nov 2026 value (6:24) - estimate. timeanddate returned 403. CAT-III: no official AAI/DGCA statement on Varanasi's ILS category found; the page says only that Varanasi is not among the six CAT-III airports named by Business Today (18 Dec 2025). Older sources (Parliament answer, undated; SP's AirBuz 2019) say Varanasi had CAT-I and no CAT-II/III, not cited because dated. Varanasi schools 7-9 Jan 2026 closure appeared only in a search summary, not read, so only the statewide 2 Jan 2026 order is used. RIVER WATER TEMPERATURE: no measured winter value found (BHU study Mishra et al. 2009 gives 23.8-25.3 °C as a site range across the year, not winter); the dawn air figure is marked as an estimate. BIRDS: species is not confirmed for Varanasi by a primary source; ETV Bharat quotes boatmen ('Siberian birds', 2-3 months; one says Australia). A Hindustan Times piece (via repost, undated) says black-headed gulls from Central Asia; a 2010 birding blog says brown-headed gulls. Text hedges with 'likely brown-headed gulls'. MAKAR SANKRANTI: 2027 date per Drik Panchang (New Delhi coordinates); some listings give 14 Jan. In 2026 PTI reported Varanasi dips on 15 Jan. The 12 Jan 2026 kite contest is from an Amar Ujala video page (text only; it does not name Sankranti). DATES FROM SITE DATA: Kashi Tamil Sangamam 5.0 (PIB returned 403 to me; date taken from content/festival-dates.json, re-checked 2 Nov 2026). Parshvanath 2 Jan 2027, Ravidas 20 Feb 2027 and Shivratri 6 Mar 2027 re-read on Drik Panchang today. Jain temple panchangs can differ by a day for Posh Dashami. Christmas fair outside St Mary's (mentioned on the site's festival page) was not confirmed by any source I read, so omitted. Packing list is editorial advice derived from the IMD temperature range, not a sourced claim. Not included: Dhrupad Mela 2027 (dates not announced; it ends on Shivratri in March)."
+}

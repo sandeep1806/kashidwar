@@ -142,10 +142,17 @@ and source fields. Never invent a date: an unannounced festival stays as it is.
 Re-check, and update if changed (both languages; bump the guide's `updated` date):
 - Kashi Vishwanath: darshan/opening hours, aarti timings, Sugam Darshan fee and rules
   (official: shrikashivishwanath.org booking list), locker and phone rules.
-- Ganga Aarti: evening start times by season at Dashashwamedh and the morning Subah-e-Banaras
-  at Assi; monsoon relocations if the river is high.
+- Ganga Aarti: evening start times by season at Dashashwamedh, and the morning Subah-e-Banaras
+  and evening aarti at Assi (section `assi-ghat-aarti-time`, approximate until an organiser or
+  news report gives times); monsoon relocations if the river is high.
 - Varanasi ropeway: status, opening date, fares (fares stay `"unconfirmed": true` until an
   official fare notification exists).
+  **Opening day is a top search moment** ("varanasi ropeway kab chalu hoga", "start date",
+  "ticket price", "timing"): search for it on every run in November–December 2026, and the day
+  passenger service starts (official or two major outlets), update `varanasi-ropeway.json` in
+  the same run: title/description to "now open" with the start date, hours, fares and how to
+  buy tickets, the status section and FAQ, `content/projects.json` status → `completed`, and
+  the regional `title`/`description`/`faq` in `content/guides/i18n/*.json`.
 - Sarnath: ASI ticket fees, Sarnath Museum hours and closed day, transport fares.
 - Dev Deepawali: this year's date, official programme (lamp counts, laser/firework shows),
   boat rules and traffic advisories once announced.

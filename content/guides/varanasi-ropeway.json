@@ -94,8 +94,8 @@
     },
     {
       "id": "stations",
-      "heading_en": "The five stations",
-      "heading_hi": "पाँचों स्टेशन",
+      "heading_en": "Ropeway route and the five stations",
+      "heading_hi": "रोपवे का रूट और पाँचों स्टेशन",
       "body_en": [
         "The line runs roughly south-east from the railway station towards the river. Station names below follow recent Hindi press reports and project descriptions; signage may differ slightly when the line opens."
       ],
@@ -121,7 +121,12 @@
         0,
         1,
         3
-      ]
+      ],
+      "route": {
+        "pass": [
+          3
+        ]
+      }
     },
     {
       "id": "who-builds-it",
@@ -144,8 +149,8 @@
     },
     {
       "id": "status-2026",
-      "heading_en": "Where things stand in September 2026",
-      "heading_hi": "सितंबर 2026 में मौजूदा स्थिति",
+      "heading_en": "Opening date and status (November 2026)",
+      "heading_hi": "कब शुरू होगा: मौजूदा स्थिति (नवंबर 2026)",
       "body_en": [
         "Trial runs began in 2025 on the priority section from Cantt to Rathyatra. In late August 2026 Amar Ujala and Patrika reported that flooring and steelwork were still under way at Godowlia station, and that the full load trial of all 148 gondolas, which must be repeated at least four times, had been pushed to after Raksha Bandhan because of the monsoon and Sawan crowds. A late-September opening was mentioned at the time.",
         "On 28 September 2026 the district's nodal officer and the District Magistrate rode a gondola from Cantt to Godowlia. ETV Bharat reported the work 94.35% complete, with finishing work due at Cantt by 30 September and at Godowlia by 31 October, and the inauguration expected in November 2026; earlier reports pointed to around Dev Deepawali (24 November). No official opening date had been notified as of 2 November 2026, and the target has moved several times since the original August 2025 goal.",
