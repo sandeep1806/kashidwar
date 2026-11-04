@@ -1,0 +1,337 @@
+{
+  "slug": "currency-exchange-in-varanasi",
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "photo": "places/dashashwamedh-ghat#3",
+  "title_en": "Currency exchange in Varanasi: where to change money, ATMs, rules",
+  "title_hi": "वाराणसी में मनी एक्सचेंज: विदेशी मुद्रा कहाँ बदलें, एटीएम और नियम",
+  "description_en": "Money exchange in Varanasi: authorised changers like Thomas Cook (Nadesar), ATMs and cards, UPI for foreigners, RBI rules on cash and reconverting rupees, and forex for trips abroad.",
+  "description_hi": "वाराणसी में मनी एक्सचेंज: थॉमस कुक (नदेसर) जैसे अधिकृत मनी चेंजर, एटीएम और कार्ड, विदेशियों के लिए यूपीआई, नकद और रुपये वापस बदलने के आरबीआई नियम, और विदेश यात्रा के लिए फ़ॉरेक्स।",
+  "lead_en": "Changing money in Varanasi is easy if you use the right counter. Only banks and RBI-authorised money changers may exchange foreign currency, and they give you a receipt that you need to change unspent rupees back when you leave. ATMs are everywhere in the city, but the ghats and the old lanes run on cash and UPI. Here is where to exchange, what the RBI rules say, and how to buy forex if you are flying abroad from Varanasi.",
+  "lead_hi": "वाराणसी में पैसे बदलना आसान है, अगर सही काउंटर चुनें। विदेशी मुद्रा सिर्फ़ बैंक और आरबीआई से अधिकृत मनी चेंजर बदल सकते हैं, और वे रसीद देते हैं, जो जाते समय बचे रुपये वापस बदलने के लिए ज़रूरी है। शहर में एटीएम हर जगह हैं, पर घाट और पुरानी गलियाँ नकद और यूपीआई पर चलती हैं। यहाँ जानिए कहाँ बदलें, आरबीआई के नियम क्या कहते हैं, और वाराणसी से विदेश जा रहे हों तो फ़ॉरेक्स कैसे लें।",
+  "facts": [
+    {
+      "icon": "shield",
+      "label_en": "Who may exchange",
+      "label_hi": "कौन बदल सकता है",
+      "value_en": "Banks and RBI-authorised money changers only",
+      "value_hi": "सिर्फ़ बैंक और आरबीआई से अधिकृत मनी चेंजर"
+    },
+    {
+      "icon": "pin",
+      "label_en": "In the city",
+      "label_hi": "शहर में",
+      "value_en": "Thomas Cook, Nadesar (Cantonment) · Unimoni",
+      "value_hi": "थॉमस कुक, नदेसर (कैंटोनमेंट) · यूनीमनी"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Keep",
+      "label_hi": "संभालकर रखें",
+      "value_en": "Encashment certificate or ATM slips, to change rupees back",
+      "value_hi": "एनकैशमेंट सर्टिफ़िकेट या एटीएम पर्ची, रुपये वापस बदलने के लिए"
+    },
+    {
+      "icon": "info",
+      "label_en": "Declare on arrival",
+      "label_hi": "आगमन पर घोषणा",
+      "value_en": "Cash over US$5,000, or over US$10,000 in all",
+      "value_hi": "US$5,000 से ज़्यादा नकद, या कुल US$10,000 से ज़्यादा"
+    },
+    {
+      "icon": "walk",
+      "label_en": "Ghats and lanes",
+      "label_hi": "घाट और गलियाँ",
+      "value_en": "Cash and UPI; cards mostly in hotels and big shops",
+      "value_hi": "नकद और यूपीआई; कार्ड ज़्यादातर होटलों और बड़ी दुकानों में"
+    },
+    {
+      "icon": "plane",
+      "label_en": "Flying abroad",
+      "label_hi": "विदेश जा रहे हैं",
+      "value_en": "Foreign cash up to US$3,000 per trip; the rest on a card",
+      "value_hi": "प्रति यात्रा US$3,000 तक विदेशी नकद; बाकी कार्ड पर"
+    }
+  ],
+  "sections": [
+    {
+      "id": "where-to-exchange",
+      "heading_en": "Where to exchange money in Varanasi",
+      "heading_hi": "वाराणसी में पैसे कहाँ बदलें",
+      "body_en": [
+        "Under India's foreign exchange law, only authorised persons may buy or sell foreign currency: banks that are authorised dealers, AD Category II firms and full-fledged money changers licensed by the RBI. They issue a receipt, called an encashment certificate, when you ask for one. Ask for it every time, because it is what lets you change unspent rupees back before you leave.",
+        "Hotel desks and shops around Godowlia and Assi often offer to change dollars or euros. Some are agents of licensed firms and some are not; ask to see the RBI licence and get a receipt, or walk to an authorised counter instead."
+      ],
+      "list_en": [
+        "Thomas Cook Forex, Nadesar: opened December 2025 at S20/52/4A/1, Nepali Kothi, near Surya Hotel, Cantonment, Varanasi 221002 · +91 99569 90301 · FX.Varanasi@thomascook.in. Exchanges 26 currencies and sells prepaid travel cards.",
+        "Unimoni (an AD Category II firm): has a Varanasi branch; find it with Unimoni's branch locator or on 1800 102 0555. Foreign nationals need their passport to sell currency.",
+        "Banks: large branches of the main banks deal in foreign exchange; call the branch first, as not every branch handles foreign cash.",
+        "Always: count the rupees at the counter, check the rate on the receipt, and keep the receipt."
+      ],
+      "body_hi": [
+        "भारत के विदेशी मुद्रा कानून के तहत सिर्फ़ अधिकृत संस्थाएँ विदेशी मुद्रा खरीद या बेच सकती हैं: अधिकृत डीलर बैंक, एडी कैटेगरी II कंपनियाँ और आरबीआई से लाइसेंस वाले फ़ुल-फ़्लेज्ड मनी चेंजर। माँगने पर वे एक रसीद देते हैं, जिसे एनकैशमेंट सर्टिफ़िकेट कहते हैं। हर बार यह माँगें, क्योंकि जाने से पहले बचे रुपये वापस बदलने के लिए यही चाहिए।",
+        "गोदौलिया और अस्सी के आसपास होटल डेस्क और दुकानें अक्सर डॉलर या यूरो बदलने की पेशकश करती हैं। कुछ लाइसेंस वाली कंपनियों के एजेंट हैं, कुछ नहीं; आरबीआई लाइसेंस दिखाने को कहें और रसीद लें, या किसी अधिकृत काउंटर पर जाएँ।"
+      ],
+      "list_hi": [
+        "थॉमस कुक फ़ॉरेक्स, नदेसर: दिसंबर 2025 में खुला, S20/52/4A/1, नेपाली कोठी, सूर्या होटल के पास, कैंटोनमेंट, वाराणसी 221002 · +91 99569 90301 · FX.Varanasi@thomascook.in। 26 मुद्राएँ बदलता है और प्रीपेड ट्रैवल कार्ड बेचता है।",
+        "यूनीमनी (एडी कैटेगरी II कंपनी): वाराणसी में शाखा है; यूनीमनी के ब्रांच लोकेटर या 1800 102 0555 पर पता करें। विदेशी नागरिकों को मुद्रा बेचने के लिए पासपोर्ट चाहिए।",
+        "बैंक: बड़े बैंकों की बड़ी शाखाएँ विदेशी मुद्रा का काम करती हैं; पहले शाखा में फ़ोन कर लें, क्योंकि हर शाखा विदेशी नकद नहीं लेती।",
+        "हमेशा: काउंटर पर ही रुपये गिनें, रसीद पर दर देखें और रसीद संभालकर रखें।"
+      ],
+      "sources": [
+        0,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "airport",
+      "unconfirmed": true,
+      "heading_en": "Money exchange at Varanasi airport",
+      "heading_hi": "वाराणसी एयरपोर्ट पर मनी एक्सचेंज",
+      "body_en": [
+        "Exchange counters at Varanasi airport have been reported, but the Airports Authority of India's current list of conveniences there shows only two convenience stores, and we could not confirm a working forex counter or its hours. Do not count on changing money on arrival: bring enough rupees or a card that works in Indian ATMs for the taxi into town (₹600–1,000 to Godowlia), and exchange in the city."
+      ],
+      "body_hi": [
+        "वाराणसी एयरपोर्ट पर मनी एक्सचेंज काउंटर होने की खबरें रही हैं, पर भारतीय विमानपत्तन प्राधिकरण की मौजूदा सुविधाओं की सूची में वहाँ सिर्फ़ दो सुविधा स्टोर हैं, और हम किसी चालू फ़ॉरेक्स काउंटर या उसके समय की पुष्टि नहीं कर सके। आगमन पर पैसे बदलने के भरोसे न रहें: शहर तक टैक्सी (गोदौलिया तक ₹600–1,000) के लिए पर्याप्त रुपये या भारतीय एटीएम में चलने वाला कार्ड साथ रखें, और शहर में ही पैसे बदलें।"
+      ],
+      "sources": [
+        8
+      ]
+    },
+    {
+      "id": "atms-and-cards",
+      "heading_en": "ATMs, cards and UPI in Varanasi",
+      "heading_hi": "वाराणसी में एटीएम, कार्ड और यूपीआई",
+      "body_en": [
+        "ATMs of SBI, HDFC, ICICI, PNB, Bank of Baroda and other banks are easy to find on the main roads: Cantonment, Sigra, Lanka, Godowlia and near the stations. Foreign Visa and Mastercard cards usually work. Many machines give at most ₹10,000 per withdrawal, and Indian banks often add a fee of about ₹200–250 on top of your own bank's charges. When the machine offers to charge you in your home currency, choose rupees: the conversion it offers is usually worse.",
+        "Hotels, larger restaurants and shops in Godowlia, Sigra and Lanka take cards. On the ghats, for boats, tea, flowers and street food, you pay in cash or by UPI (a QR code scanned with a phone). Carry ₹10, ₹20 and ₹50 notes: small sellers often cannot change ₹500."
+      ],
+      "list_en": [
+        "ATM withdrawals: often ₹10,000 per transaction, some machines more; fees vary by bank (approximate)",
+        "Pick rupees, not your home currency, when the ATM or card machine asks",
+        "Boats, tea, flowers, rickshaws: cash or UPI",
+        "Keep ATM slips if you are a foreign tourist: they let you change up to ₹50,000 back on departure"
+      ],
+      "body_hi": [
+        "एसबीआई, एचडीएफ़सी, आईसीआईसीआई, पीएनबी, बैंक ऑफ़ बड़ौदा और दूसरे बैंकों के एटीएम मुख्य सड़कों पर आसानी से मिलते हैं: कैंटोनमेंट, सिगरा, लंका, गोदौलिया और स्टेशनों के पास। विदेशी वीज़ा और मास्टरकार्ड आमतौर पर चलते हैं। कई मशीनें एक बार में अधिकतम ₹10,000 देती हैं, और भारतीय बैंक अक्सर आपके अपने बैंक के शुल्क के ऊपर लगभग ₹200–250 जोड़ते हैं। जब मशीन आपकी अपनी मुद्रा में चार्ज करने की पेशकश करे, तो रुपये चुनें: उसकी दी हुई दर आमतौर पर ख़राब होती है।",
+        "होटल, बड़े रेस्तरां और गोदौलिया, सिगरा और लंका की दुकानें कार्ड लेती हैं। घाटों पर नाव, चाय, फूल और स्ट्रीट फ़ूड के लिए नकद या यूपीआई (फ़ोन से स्कैन होने वाला क्यूआर कोड) से भुगतान होता है। ₹10, ₹20 और ₹50 के नोट रखें: छोटे विक्रेता अक्सर ₹500 का छुट्टा नहीं दे पाते।"
+      ],
+      "list_hi": [
+        "एटीएम निकासी: अक्सर एक बार में ₹10,000, कुछ मशीनों में ज़्यादा; शुल्क बैंक के हिसाब से (अनुमानित)",
+        "एटीएम या कार्ड मशीन पूछे तो अपनी मुद्रा नहीं, रुपये चुनें",
+        "नाव, चाय, फूल, रिक्शा: नकद या यूपीआई",
+        "विदेशी पर्यटक एटीएम पर्चियाँ रखें: जाते समय इनसे ₹50,000 तक वापस बदलवा सकते हैं"
+      ],
+      "sources": [
+        9,
+        10,
+        1
+      ]
+    },
+    {
+      "id": "upi-for-foreigners",
+      "heading_en": "UPI for foreign visitors",
+      "heading_hi": "विदेशी पर्यटकों के लिए यूपीआई",
+      "body_en": [
+        "UPI is how most of Varanasi pays, and foreign visitors can now use it without an Indian bank account through UPI One World, a prepaid UPI wallet from NPCI. You open it with your passport and a valid visa through an authorised issuer, load it with your international card, and pay by scanning any UPI QR code. NPCI lists no transaction or onboarding fee, and unused balance can go back to your card under the exchange rules. Issuers include Pine Labs, Transcorp and Tri O Tech; it was offered at Delhi airport in February 2026, but we found no counter in Varanasi, so set it up through an issuer's app before you arrive."
+      ],
+      "body_hi": [
+        "वाराणसी में ज़्यादातर भुगतान यूपीआई से होता है, और विदेशी पर्यटक अब बिना भारतीय बैंक खाते के एनपीसीआई के प्रीपेड यूपीआई वॉलेट, यूपीआई वन वर्ल्ड, से इसका उपयोग कर सकते हैं। इसे पासपोर्ट और वैध वीज़ा के साथ किसी अधिकृत जारीकर्ता से खोलते हैं, अपने अंतरराष्ट्रीय कार्ड से पैसे डालते हैं, और कोई भी यूपीआई क्यूआर कोड स्कैन करके भुगतान करते हैं। एनपीसीआई कोई लेनदेन या ऑनबोर्डिंग शुल्क नहीं बताता, और बचा पैसा विनिमय नियमों के तहत कार्ड पर वापस जा सकता है। जारीकर्ताओं में पाइन लैब्स, ट्रांसकॉर्प और ट्राई ओ टेक हैं; फ़रवरी 2026 में यह दिल्ली एयरपोर्ट पर मिला था, पर वाराणसी में हमें कोई काउंटर नहीं मिला, इसलिए आने से पहले किसी जारीकर्ता के ऐप से इसे सेट कर लें।"
+      ],
+      "sources": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "rules",
+      "heading_en": "RBI rules for foreign visitors: declaring cash and changing rupees back",
+      "heading_hi": "विदेशी पर्यटकों के लिए आरबीआई नियम: नकद की घोषणा और रुपये वापस बदलना",
+      "body_en": [
+        "There is no limit on the foreign currency you can bring into India, but you must declare it to customs on arrival, on the Currency Declaration Form, if your foreign cash is over US$5,000 or your cash and travellers' cheques together are over US$10,000. Keep the form if you do not spend it all.",
+        "When you leave, an authorised money changer can turn unspent rupees back into foreign currency if you show the encashment certificate from your exchange. Without one, it may change up to ₹10,000 at its discretion if you leave within seven days. Foreign tourists (not NRIs) can also change back up to ₹50,000 against original ATM slips, with a passport, visa and a ticket for departure within seven days."
+      ],
+      "list_en": [
+        "Foreign cash over US$5,000, or over US$10,000 including travellers' cheques: declare on arrival",
+        "Indian rupee notes: visitors may bring in up to ₹25,000, entering through an airport",
+        "Changing back: encashment certificate, or up to ₹10,000 without one (leaving within 7 days), or up to ₹50,000 against ATM slips (foreign tourists)"
+      ],
+      "body_hi": [
+        "भारत में लाई जाने वाली विदेशी मुद्रा पर कोई सीमा नहीं है, पर अगर विदेशी नकद US$5,000 से ज़्यादा हो या नकद और ट्रैवलर्स चेक मिलाकर US$10,000 से ज़्यादा हों, तो आगमन पर कस्टम में करेंसी डिक्लेरेशन फ़ॉर्म पर घोषणा करनी होती है। अगर सारा पैसा ख़र्च न हो, तो फ़ॉर्म संभालकर रखें।",
+        "जाते समय, अधिकृत मनी चेंजर बचे रुपये विदेशी मुद्रा में वापस बदल सकता है, अगर आप विनिमय का एनकैशमेंट सर्टिफ़िकेट दिखाएँ। इसके बिना, सात दिन के भीतर जाने पर वह अपने विवेक से ₹10,000 तक बदल सकता है। विदेशी पर्यटक (एनआरआई नहीं) पासपोर्ट, वीज़ा और सात दिन के भीतर प्रस्थान के टिकट के साथ मूल एटीएम पर्चियों पर ₹50,000 तक भी वापस बदलवा सकते हैं।"
+      ],
+      "list_hi": [
+        "US$5,000 से ज़्यादा विदेशी नकद, या ट्रैवलर्स चेक मिलाकर US$10,000 से ज़्यादा: आगमन पर घोषणा करें",
+        "भारतीय रुपये के नोट: पर्यटक हवाई अड्डे से आते समय ₹25,000 तक ला सकते हैं",
+        "वापस बदलना: एनकैशमेंट सर्टिफ़िकेट, या उसके बिना ₹10,000 तक (7 दिन में प्रस्थान), या एटीएम पर्चियों पर ₹50,000 तक (विदेशी पर्यटक)"
+      ],
+      "sources": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "from-nepal",
+      "heading_en": "Coming from Nepal",
+      "heading_hi": "नेपाल से आ रहे हैं",
+      "body_en": [
+        "Many visitors reach Varanasi by road from Nepal. Since the RBI's November 2025 change, a traveller (not a citizen of Pakistan or Bangladesh) coming from Nepal or Bhutan may carry Indian notes of ₹100 and below freely, and higher notes such as ₹200 and ₹500 up to ₹25,000 in total."
+      ],
+      "body_hi": [
+        "कई यात्री नेपाल से सड़क के रास्ते वाराणसी आते हैं। आरबीआई के नवंबर 2025 के बदलाव के बाद, नेपाल या भूटान से आने वाला यात्री (पाकिस्तान या बांग्लादेश का नागरिक नहीं) ₹100 और उससे छोटे भारतीय नोट बिना सीमा के, और ₹200 और ₹500 जैसे बड़े नोट कुल ₹25,000 तक ला सकता है।"
+      ],
+      "sources": [
+        0
+      ]
+    },
+    {
+      "id": "going-abroad",
+      "promo": true,
+      "heading_en": "Flying abroad from Varanasi: buying foreign currency",
+      "heading_hi": "वाराणसी से विदेश जा रहे हैं: विदेशी मुद्रा कैसे लें",
+      "body_en": [
+        "Varanasi has direct flights to Bangkok, Sharjah and Kathmandu, and many students and families fly abroad from here. Buy foreign currency only from an authorised person: a bank, an AD Category II firm or a licensed money changer such as the Nadesar outlet above. You can take up to US$3,000 per trip in foreign notes and coins for most countries; carry the rest on a prepaid forex card or a credit or debit card.",
+        "You can pay in cash for forex worth less than ₹50,000; above that, pay by card, cheque or bank transfer. When you are back, surrender unspent foreign notes within 180 days, though you may keep up to US$2,000 for future trips. Card spending abroad usually carries a foreign exchange markup of a few percent; some cards charge no markup, which can cost less than buying cash."
+      ],
+      "list_en": [
+        "Foreign cash: up to US$3,000 per trip (most countries)",
+        "Paying for forex in cash: below ₹50,000",
+        "Back home: surrender unspent notes within 180 days; you may keep up to US$2,000",
+        "Compare: cash rate vs a prepaid forex card vs a card with no forex markup"
+      ],
+      "body_hi": [
+        "वाराणसी से बैंकॉक, शारजाह और काठमांडू की सीधी उड़ानें हैं, और यहाँ से कई छात्र और परिवार विदेश जाते हैं। विदेशी मुद्रा सिर्फ़ अधिकृत संस्था से लें: बैंक, एडी कैटेगरी II कंपनी या ऊपर बताए नदेसर आउटलेट जैसा लाइसेंस वाला मनी चेंजर। ज़्यादातर देशों के लिए प्रति यात्रा US$3,000 तक विदेशी नोट और सिक्के ले जा सकते हैं; बाकी प्रीपेड फ़ॉरेक्स कार्ड या क्रेडिट या डेबिट कार्ड पर रखें।",
+        "₹50,000 से कम के फ़ॉरेक्स का भुगतान नकद में कर सकते हैं; उससे ज़्यादा पर कार्ड, चेक या बैंक ट्रांसफ़र से भुगतान करें। लौटने पर बचे विदेशी नोट 180 दिन के भीतर जमा करें, हालाँकि अगली यात्राओं के लिए US$2,000 तक रख सकते हैं। विदेश में कार्ड से ख़र्च पर आमतौर पर कुछ प्रतिशत फ़ॉरेक्स मार्कअप लगता है; कुछ कार्ड कोई मार्कअप नहीं लेते, जो नकद ख़रीदने से सस्ता पड़ सकता है।"
+      ],
+      "list_hi": [
+        "विदेशी नकद: प्रति यात्रा US$3,000 तक (ज़्यादातर देश)",
+        "फ़ॉरेक्स का नकद भुगतान: ₹50,000 से कम",
+        "लौटने पर: बचे नोट 180 दिन में जमा करें; US$2,000 तक रख सकते हैं",
+        "तुलना करें: नकद दर बनाम प्रीपेड फ़ॉरेक्स कार्ड बनाम बिना फ़ॉरेक्स मार्कअप वाला कार्ड"
+      ],
+      "sources": [
+        0,
+        3,
+        11
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q_en": "Where can I exchange money in Varanasi?",
+      "a_en": "At banks and RBI-authorised money changers. Thomas Cook opened a forex outlet in Nadesar (Nepali Kothi, near Surya Hotel, Cantonment) in December 2025, and Unimoni has a Varanasi branch. Ask for an encashment certificate with every exchange.",
+      "q_hi": "वाराणसी में पैसे कहाँ बदल सकते हैं?",
+      "a_hi": "बैंकों और आरबीआई से अधिकृत मनी चेंजरों पर। थॉमस कुक ने दिसंबर 2025 में नदेसर (नेपाली कोठी, सूर्या होटल के पास, कैंटोनमेंट) में फ़ॉरेक्स आउटलेट खोला, और यूनीमनी की वाराणसी में शाखा है। हर विनिमय पर एनकैशमेंट सर्टिफ़िकेट माँगें।"
+    },
+    {
+      "q_en": "Is there money exchange at Varanasi airport?",
+      "a_en": "Counters have been reported, but the airport authority's current list shows none and we could not confirm one. Arrive with some rupees or a card that works in ATMs, and exchange in the city.",
+      "q_hi": "क्या वाराणसी एयरपोर्ट पर मनी एक्सचेंज है?",
+      "a_hi": "काउंटर होने की खबरें रही हैं, पर विमानपत्तन प्राधिकरण की मौजूदा सूची में कोई नहीं है और हम पुष्टि नहीं कर सके। कुछ रुपये या एटीएम में चलने वाला कार्ड लेकर आएँ, और शहर में पैसे बदलें।"
+    },
+    {
+      "q_en": "Do foreign cards work in Varanasi ATMs?",
+      "a_en": "Usually yes: Visa and Mastercard work in most bank ATMs on the main roads. Expect a cap of about ₹10,000 per withdrawal and a fee, and choose to be charged in rupees.",
+      "q_hi": "क्या वाराणसी के एटीएम में विदेशी कार्ड चलते हैं?",
+      "a_hi": "आमतौर पर हाँ: वीज़ा और मास्टरकार्ड मुख्य सड़कों के ज़्यादातर बैंक एटीएम में चलते हैं। एक बार में लगभग ₹10,000 की सीमा और शुल्क की उम्मीद रखें, और रुपये में चार्ज होना चुनें।"
+    },
+    {
+      "q_en": "Can foreigners use UPI in Varanasi?",
+      "a_en": "Yes, through UPI One World, NPCI's prepaid UPI wallet for foreign nationals, opened with a passport and visa and loaded with an international card. Set it up through an issuer's app before arriving.",
+      "q_hi": "क्या विदेशी वाराणसी में यूपीआई का उपयोग कर सकते हैं?",
+      "a_hi": "हाँ, यूपीआई वन वर्ल्ड से, जो विदेशी नागरिकों के लिए एनपीसीआई का प्रीपेड यूपीआई वॉलेट है, पासपोर्ट और वीज़ा से खुलता है और अंतरराष्ट्रीय कार्ड से भरा जाता है। आने से पहले किसी जारीकर्ता के ऐप से सेट कर लें।"
+    },
+    {
+      "q_en": "How much foreign currency can I bring into India without declaring it?",
+      "a_en": "Up to US$5,000 in foreign cash, and up to US$10,000 in cash and travellers' cheques together. Above either, declare it to customs on arrival on the Currency Declaration Form.",
+      "q_hi": "बिना घोषणा के भारत में कितनी विदेशी मुद्रा ला सकते हैं?",
+      "a_hi": "US$5,000 तक विदेशी नकद, और नकद और ट्रैवलर्स चेक मिलाकर US$10,000 तक। इनमें से किसी से ज़्यादा हो तो आगमन पर कस्टम में करेंसी डिक्लेरेशन फ़ॉर्म पर घोषणा करें।"
+    },
+    {
+      "q_en": "How much foreign cash can I carry when travelling abroad from India?",
+      "a_en": "Up to US$3,000 per trip in foreign notes and coins for most countries; the rest on a forex card, travellers' cheques or a bank draft.",
+      "q_hi": "भारत से विदेश जाते समय कितना विदेशी नकद ले जा सकते हैं?",
+      "a_hi": "ज़्यादातर देशों के लिए प्रति यात्रा US$3,000 तक विदेशी नोट और सिक्के; बाकी फ़ॉरेक्स कार्ड, ट्रैवलर्स चेक या बैंक ड्राफ़्ट में।"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Reserve Bank of India — FAQ: Miscellaneous forex facilities (updated 28 Nov 2025): who may sell forex, USD 3,000 cash per visit, ₹25,000 rupee limit, CDF thresholds, ₹50,000 cash rule, 180-day surrender",
+      "url": "https://www.rbi.org.in/commonman/Upload/English/FAQs/PDFs/FOREX19122025.pdf",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Reserve Bank of India — Master Direction: Money Changing Activities (encashment certificate, reconversion of unspent rupees, ₹10,000 and ₹50,000 against ATM slips)",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10206",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Reserve Bank of India — Currency Declaration Form (CDF) and instructions for passengers",
+      "url": "https://rbidocs.rbi.org.in/rdocs/Forms/PDFs/form-cdf.pdf",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Thomas Cook (India) — press release to NSE, 5 Dec 2025: first Varanasi forex outlet, Nadesar (address, phone, services)",
+      "url": "https://nsearchives.nseindia.com/corporate/THOMASCOOK_05122025120857_SEINTIMATIONPRESSRELEASE.pdf",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Unimoni India — Foreign currency exchange in Varanasi (AD Category II; documents needed)",
+      "url": "https://unimoni.in/varanasi/foreign-currency-exchange.php",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "NPCI — UPI One World: UPI wallet for foreign nationals and NRIs (issuers, how it works, fees)",
+      "url": "https://www.npci.org.in/product/upi-global-acceptance/upi-one-world",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "NPCI — UPI One World brand guidelines (eligibility: passport and valid visa)",
+      "url": "https://www.npci.org.in/uploads/UPI_ONE_WORLD_Brand_Guidelines_dd698f933c.pdf",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "NPCI — press release: UPI One World wallet for international delegates at the India AI Impact Summit (Feb 2026)",
+      "url": "https://www.npci.org.in/uploads/NPCI_Extends_UPI_One_World_Wallet_Service_to_International_Delegates_at_the_India_AI_Impact_Summit_2026_f1b7e11410.pdf",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Airports Authority of India — Varanasi airport: Conveniences",
+      "url": "https://www.aai.aero/en/airports/passenger-info/varanasi/Conveniences",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Travel India Smart — Using ATMs and bank cards in India: withdrawal caps and fees",
+      "url": "https://www.travelindiasmart.com/trip-planning/atms-and-cards-india",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "ICICI Bank — ATM locator, Varanasi",
+      "url": "https://www.icici.bank.in/atm/uttar-pradesh/varanasi/varanasi/c5226",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Wikipedia — Lal Bahadur Shastri International Airport (international routes)",
+      "url": "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_Airport",
+      "accessed": "2026-11-04"
+    }
+  ],
+  "related": {
+    "places": [
+      "dashashwamedh-ghat",
+      "assi-ghat",
+      "sarnath"
+    ],
+    "projects": [
+      "airport-expansion"
+    ],
+    "itineraries": [
+      "2-day"
+    ]
+  },
+  "notes": "Targets 'money exchange in varanasi' (+ airport, near me, office, rates), 'currency/foreign exchange in varanasi', 'dollar exchange in varanasi', 'thomas cook forex varanasi', 'atm in varanasi', 'upi for foreigners'. RBI rules from the RBI FAQ (28 Nov 2025) and the Money Changing Master Direction. Airport forex counter unconfirmed (AAI lists none). The house-ad card sits after going-abroad (promo: true); the body names no card brand."
+}
