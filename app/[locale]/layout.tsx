@@ -11,6 +11,7 @@ import RevealController from "@/components/motion/RevealController";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import Analytics from "@/components/ui/Analytics";
 import AdSense from "@/components/ui/AdSense";
+import Promo from "@/components/ui/Promo";
 import DeferredFonts from "@/components/ui/DeferredFonts";
 import SectionMenu from "@/components/ui/SectionMenu";
 import SiteHeader from "@/components/ui/SiteHeader";
@@ -26,6 +27,7 @@ import { BUILD_DATE } from "@/lib/festivalDates";
 import { ADSENSE_CLIENT, SITE_URL } from "@/lib/site";
 import { placeCount } from "@/lib/content";
 import { adsForLocale } from "@/lib/ads";
+import { promoEnabled, type PromoCopy } from "@/lib/promo";
 import "../globals.css";
 
 /**
@@ -107,6 +109,22 @@ export default async function LocaleLayout({
   const sectionItems = SECTIONS.map((s) => ({ id: s.id, label: nav(s.key) }));
   // Display faces apply at once; body faces are attached after first paint (see DeferredFonts).
   const fonts = fontClassesFor(locale as Locale);
+  // House ad until AdSense is approved (components/ui/Promo.tsx); regional locales fall back to the English copy.
+  const promo = await getTranslations("promo");
+  const promoCopy: PromoCopy | null = promoEnabled(process.env.NEXT_PUBLIC_PROMO)
+    ? {
+        headline: promo("headline"),
+        support: promo("support"),
+        short: promo("short"),
+        frustrated: promo.raw("frustrated") as string,
+        cta: promo("cta"),
+        close: promo("close"),
+        sponsored: promo("sponsored"),
+        perks: promo.raw("perks") as string[],
+        barPerks: promo("barPerks"),
+        footnote: promo("footnote"),
+      }
+    : null;
 
   return (
     <html
@@ -147,6 +165,7 @@ export default async function LocaleLayout({
           <SoundToggle labels={{ on: t("soundOn"), off: t("soundOff") }} />
           <IncenseCursor />
           {children}
+          {promoCopy && <Promo copy={promoCopy} />}
         </SmoothScroll>
       </body>
     </html>

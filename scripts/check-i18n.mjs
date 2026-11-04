@@ -49,7 +49,8 @@ for (const L of LOCALES) {
   const msgL = (() => { try { return J(`messages/${L}.json`); } catch { return {}; } })();
   const haveUi = new Set(flat(msgL).map((x) => x[0]));
   const hiFlat = Object.fromEntries(flat(hi));
-  for (const [k, v] of flat(en)) if (!haveUi.has(k) && typeof v === "string") add("other", `ui|${k}`, v, hiFlat[k]);
+  // promo.*: the house ad (components/ui/Promo.tsx) shows its English copy in regional locales by the owner's choice (4 Nov 2026).
+  for (const [k, v] of flat(en)) if (!haveUi.has(k) && !k.startsWith("promo.") && typeof v === "string") add("other", `ui|${k}`, v, hiFlat[k]);
   for (const [kind, block] of Object.entries(faqs)) if (kind !== "_note") block.items.forEach((it, i) => { if (!it[`q_${L}`]) add("faqs", `faqs|${kind}|${i}|q`, it.q_en, it.q_hi); if (!it[`a_${L}`]) add("faqs", `faqs|${kind}|${i}|a`, it.a_en, it.a_hi); });
   if (!about[L]) {
     add("faqs", "about|lead", about.en.lead, about.hi.lead);

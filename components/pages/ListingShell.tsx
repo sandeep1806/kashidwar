@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import LdJson from "@/components/pages/LdJson";
 import type { Crumb } from "@/components/pages/PageShell";
 import SectionHeading from "@/components/ui/SectionHeading";
+import PromoSlot from "@/components/ui/PromoSlot";
 import SiteFooter from "@/components/ui/SiteFooter";
 import Static from "@/components/ui/Static";
 import type { Locale } from "@/lib/i18n/locales";
@@ -63,6 +64,7 @@ export default function ListingShell({
               <SectionHeading as="h1" id="page-title" locale={locale} title={title} secondary={secondary} />
               {band}
               <div className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{intro}</div>
+              <PromoSlot className="mx-auto max-w-2xl text-left" />
             </div>
           </div>
           {children}

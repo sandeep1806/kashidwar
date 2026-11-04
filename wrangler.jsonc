@@ -40,6 +40,8 @@
     "NEXT_PUBLIC_GA_ID": "G-G6VN84753L",
     // Google AdSense publisher ID (public). Turns on the account meta tag, Auto ads script,
     // /ads.txt and the privacy policy's advertising section; never on or/as/sa (lib/ads.ts).
-    "NEXT_PUBLIC_ADSENSE_CLIENT": "ca-pub-2342455906841145"
+    "NEXT_PUBLIC_ADSENSE_CLIENT": "ca-pub-2342455906841145",
+    // "off" removes the Scapia house ad (components/ui/Promo.tsx) everywhere, for the day real ads take its slots.
+    "NEXT_PUBLIC_PROMO": "on"
   }
 }

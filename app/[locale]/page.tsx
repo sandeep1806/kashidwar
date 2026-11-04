@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Hero from "@/components/hero/Hero";
+import PromoSlot from "@/components/ui/PromoSlot";
 import HashLinks from "@/components/motion/HashLinks";
 import RippleWipe from "@/components/motion/RippleWipe";
 import AartiFinale from "@/components/sections/AartiFinale";
@@ -38,6 +39,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     <main id="content" className="flex flex-1 flex-col">
       <Static><JsonLd locale={loc} name={meta("title")} description={meta("description", { count: placeCount(loc) })} siteName={meta("siteName")} /></Static>
       <Hero locale={loc} />
+      {/* Below the first viewport, so the card arriving after mount moves nothing on screen */}
+      <PromoSlot className="container-kashi" />
       <RippleWipe />
       <DayInKashi locale={loc} />
       <RippleWipe />

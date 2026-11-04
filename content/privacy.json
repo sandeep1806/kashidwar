@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-11-04",
   "en": {
     "lead": "What kashidwar.com collects when you visit, which outside services see your request, and the choices you have. The site has no accounts, sign-ups, comments or forms.",
     "sections": [
@@ -28,7 +28,8 @@
         "list": [
           "NEXT_LOCALE (cookie): the language of the pages you last visited, so the site opens in it next time.",
           "kashi:sound (local storage): whether you turned the ambient sound on. Sound is always off until you switch it on.",
-          "kashi:fonts (session storage): that the page fonts have already loaded in this tab, so the next page does not wait for them. It is cleared when you close the tab."
+          "kashi:fonts (session storage): that the page fonts have already loaded in this tab, so the next page does not wait for them. It is cleared when you close the tab.",
+          "promoDismissedAt (local storage): when you closed the travel-card offer, so it stays hidden for 30 days."
         ]
       },
       {
@@ -36,7 +37,8 @@
         "heading": "Maps, photos and links to other sites",
         "body": [
           "When you open a map, your browser loads map tiles from OpenStreetMap's tile servers, which receive your IP address as part of that request (osmfoundation.org/wiki/Privacy_Policy). Photos and fonts are served from kashidwar.com itself.",
-          "Many pages link to official sources, temple trusts, government sites and news reports. Those sites have their own privacy policies, which apply once you follow a link."
+          "Many pages link to official sources, temple trusts, government sites and news reports. Those sites have their own privacy policies, which apply once you follow a link.",
+          "Some pages carry referral links to third-party products, such as a travel credit card; the site may receive a reward when you sign up through them. They are not endorsements."
         ]
       },
       {
@@ -93,7 +95,8 @@
         "list": [
           "NEXT_LOCALE (कुकी): आपने आखिरी बार जिस भाषा के पेज देखे, ताकि अगली बार साइट उसी में खुले।",
           "kashi:sound (लोकल स्टोरेज): आपने परिवेश ध्वनि चालू की थी या नहीं। जब तक आप चालू न करें, आवाज़ हमेशा बंद रहती है।",
-          "kashi:fonts (सेशन स्टोरेज): इस टैब में पेज के फ़ॉन्ट लोड हो चुके हैं, ताकि अगला पेज उनका इंतज़ार न करे। टैब बंद करने पर यह मिट जाता है।"
+          "kashi:fonts (सेशन स्टोरेज): इस टैब में पेज के फ़ॉन्ट लोड हो चुके हैं, ताकि अगला पेज उनका इंतज़ार न करे। टैब बंद करने पर यह मिट जाता है।",
+          "promoDismissedAt (लोकल स्टोरेज): आपने ट्रैवल-कार्ड ऑफ़र कब बंद किया, ताकि वह 30 दिन तक छिपा रहे।"
         ]
       },
       {
@@ -101,7 +104,8 @@
         "heading": "नक्शे, तस्वीरें और दूसरी साइटों के लिंक",
         "body": [
           "जब आप नक्शा खोलते हैं, तो आपका ब्राउज़र OpenStreetMap के टाइल सर्वर से नक्शे के टुकड़े लोड करता है, जिन्हें उस अनुरोध के साथ आपका आईपी पता मिलता है (osmfoundation.org/wiki/Privacy_Policy)। तस्वीरें और फ़ॉन्ट खुद kashidwar.com से आते हैं।",
-          "कई पेज आधिकारिक स्रोतों, मंदिर ट्रस्टों, सरकारी साइटों और समाचारों से जुड़ते हैं। लिंक खोलने के बाद उन साइटों की अपनी गोपनीयता नीति लागू होती है।"
+          "कई पेज आधिकारिक स्रोतों, मंदिर ट्रस्टों, सरकारी साइटों और समाचारों से जुड़ते हैं। लिंक खोलने के बाद उन साइटों की अपनी गोपनीयता नीति लागू होती है।",
+          "कुछ पेजों पर तीसरे पक्ष के उत्पादों, जैसे एक ट्रैवल क्रेडिट कार्ड, के रेफ़रल लिंक हैं; उनके ज़रिए साइन अप करने पर साइट को इनाम मिल सकता है। ये किसी तरह की सिफ़ारिश नहीं हैं।"
         ]
       },
       {

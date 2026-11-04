@@ -3,6 +3,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import SiteFooter from "@/components/ui/SiteFooter";
 import Static from "@/components/ui/Static";
 import Photo from "@/components/ui/Photo";
+import PromoSlot from "@/components/ui/PromoSlot";
 import ArtFallback from "@/components/ui/ArtFallback";
 import type { Faith, PhotoData, PlaceType } from "@/lib/contentTypes";
 import type { Locale } from "@/lib/i18n/locales";
@@ -92,6 +93,7 @@ export default function PageShell({
             <div className="container-kashi">
               {strip}
               {lead && <div className="mt-6 max-w-3xl text-lg leading-relaxed text-kashi-ash/90 sm:text-xl">{lead}</div>}
+              <PromoSlot className="max-w-3xl" />
             </div>
           </article>
         </Static>
@@ -129,6 +131,7 @@ export default function PageShell({
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-kashi-night/70 to-transparent" />
               </div>
             </header>
+            <PromoSlot className="max-w-3xl" />
             <div className="mt-14 grid gap-12 lg:grid-cols-[1.4fr_1fr]">{children}</div>
           </div>
         </article>
