@@ -153,6 +153,12 @@ Re-check, and update if changed (both languages; bump the guide's `updated` date
   the same run: title/description to "now open" with the start date, hours, fares and how to
   buy tickets, the status section and FAQ, `content/projects.json` status → `completed`, and
   the regional `title`/`description`/`faq` in `content/guides/i18n/*.json`.
+- Varanasi airport (`varanasi-airport.json`): the lounge's name, hours and location (Priority
+  Pass listing, AAI Eat & Dine page) and whether Varanasi is still on the bank lounge lists
+  cited there (SBI Card, IndusInd, DBS, RuPay); replace a list with its newer quarterly copy.
+  A walk-in price stays `"unconfirmed": true` until the lounge or AAI publishes one. Never
+  claim a particular card (including Scapia) works there unless its own lounge list says so.
+  When the new terminal opens, update the flights section, the facts and `airport-expansion`.
 - Sarnath: ASI ticket fees, Sarnath Museum hours and closed day, transport fares.
 - Dev Deepawali: this year's date, official programme (lamp counts, laser/firework shows),
   boat rules and traffic advisories once announced.

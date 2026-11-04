@@ -1,0 +1,370 @@
+{
+  "slug": "varanasi-airport",
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "photo": "projects/airport-expansion",
+  "title_en": "Varanasi airport lounge: cards accepted, timings, food, taxi fares",
+  "title_hi": "वाराणसी एयरपोर्ट लाउंज: कौन से कार्ड चलते हैं, समय, खाना, टैक्सी किराया",
+  "description_en": "Varanasi (Babatpur) airport has one lounge, Take Off Bar and Lounge, 5 am–9 pm near Gate 2. Which credit cards get free entry, food outlets, taxi to the ghats ₹600–1,000.",
+  "description_hi": "वाराणसी (बाबतपुर) एयरपोर्ट पर एक ही लाउंज है, टेक ऑफ़ बार एंड लाउंज, सुबह 5 से रात 9 बजे, गेट 2 के पास। किन क्रेडिट कार्ड से मुफ़्त प्रवेश, खाने की दुकानें, घाट तक टैक्सी ₹600–1,000।",
+  "lead_en": "Lal Bahadur Shastri International Airport (VNS) at Babatpur is small: one terminal, one lounge and a handful of food counters. The lounge, Take Off Bar and Lounge, sits past security in domestic departures and works like a restaurant: many Indian credit cards get a free buffet visit there, and the rest of the menu is paid. Here is what to expect, which cards are on the current lounge lists, and how to get from the airport to the ghats.",
+  "lead_hi": "बाबतपुर का लाल बहादुर शास्त्री अंतरराष्ट्रीय हवाई अड्डा (VNS) छोटा है: एक टर्मिनल, एक लाउंज और खाने के कुछ काउंटर। लाउंज, टेक ऑफ़ बार एंड लाउंज, सुरक्षा जाँच के बाद घरेलू प्रस्थान में है और रेस्तरां की तरह चलता है: कई भारतीय क्रेडिट कार्ड पर वहाँ एक बार मुफ़्त बुफ़े मिलता है, बाकी मेन्यू का भुगतान करना होता है। यहाँ जानिए क्या मिलता है, मौजूदा लाउंज सूचियों में कौन से कार्ड हैं, और एयरपोर्ट से घाट तक कैसे पहुँचें।",
+  "facts": [
+    {
+      "icon": "clock",
+      "label_en": "Lounge hours",
+      "label_hi": "लाउंज का समय",
+      "value_en": "05:00–21:00 daily",
+      "value_hi": "रोज़ सुबह 5:00–रात 9:00"
+    },
+    {
+      "icon": "pin",
+      "label_en": "Where",
+      "label_hi": "कहाँ",
+      "value_en": "Past security, domestic departures, near Gate 2",
+      "value_hi": "सुरक्षा जाँच के बाद, घरेलू प्रस्थान, गेट 2 के पास"
+    },
+    {
+      "icon": "ticket",
+      "label_en": "Free entry",
+      "label_hi": "मुफ़्त प्रवेश",
+      "value_en": "Eligible cards: one buffet visit, à la carte extra",
+      "value_hi": "पात्र कार्ड: एक बुफ़े विज़िट, बाकी अलग से"
+    },
+    {
+      "icon": "car",
+      "label_en": "To Godowlia (ghats)",
+      "label_hi": "गोदौलिया (घाट) तक",
+      "value_en": "25–26 km · taxi ₹600–1,000 · 45–75 min",
+      "value_hi": "25–26 किमी · टैक्सी ₹600–1,000 · 45–75 मिनट"
+    },
+    {
+      "icon": "plane",
+      "label_en": "Code",
+      "label_hi": "कोड",
+      "value_en": "VNS · Babatpur, 26 km north-west of the city",
+      "value_hi": "VNS · बाबतपुर, शहर से 26 किमी उत्तर-पश्चिम"
+    },
+    {
+      "icon": "info",
+      "label_en": "New terminal",
+      "label_hi": "नया टर्मिनल",
+      "value_en": "Under construction; no opening date",
+      "value_hi": "निर्माणाधीन; खुलने की तारीख घोषित नहीं"
+    }
+  ],
+  "sections": [
+    {
+      "id": "lounge",
+      "heading_en": "Varanasi airport lounge: Take Off Bar and Lounge",
+      "heading_hi": "वाराणसी एयरपोर्ट लाउंज: टेक ऑफ़ बार एंड लाउंज",
+      "body_en": [
+        "There is one lounge at Varanasi airport. Priority Pass and the banks' lounge lists call it Take Off Bar and Lounge; the Airports Authority of India lists it as the Executive Lounge on the ground floor of the security hold area, run by Hotel Pradeep of Varanasi. It is airside in domestic departures near Gate 2, so you reach it only after security, and it is open from 05:00 to 21:00 every day.",
+        "It is a restaurant-style lounge rather than a quiet business lounge: air conditioning, Wi-Fi, TV screens and flight information, with food served at the tables. A card visit covers one buffet spread within 24 hours; à la carte dishes and soft drinks are charged separately, and seats are first come, first served when it is full."
+      ],
+      "list_en": [
+        "Open: 05:00–21:00 daily (Priority Pass listing)",
+        "Where: airside, domestic departures, ground floor of the security hold area, near Gate 2",
+        "You need: an eligible card and a same-day boarding pass",
+        "Included: one buffet visit per 24 hours; à la carte and soft drinks extra",
+        "International departures: no separate lounge is listed"
+      ],
+      "body_hi": [
+        "वाराणसी एयरपोर्ट पर एक ही लाउंज है। प्रायोरिटी पास और बैंकों की लाउंज सूचियाँ इसे टेक ऑफ़ बार एंड लाउंज कहती हैं; भारतीय विमानपत्तन प्राधिकरण (AAI) इसे सुरक्षा होल्ड एरिया के भूतल पर एग्ज़ीक्यूटिव लाउंज के नाम से दिखाता है, जिसे वाराणसी का होटल प्रदीप चलाता है। यह घरेलू प्रस्थान में गेट 2 के पास है, यानी सुरक्षा जाँच के बाद ही पहुँच सकते हैं, और रोज़ सुबह 5:00 से रात 9:00 तक खुला रहता है।",
+        "यह शांत बिज़नेस लाउंज नहीं, रेस्तरां जैसा लाउंज है: एसी, वाई-फ़ाई, टीवी और उड़ानों की जानकारी, खाना टेबल पर परोसा जाता है। कार्ड विज़िट में 24 घंटे में एक बार बुफ़े शामिल है; अलग से मँगाए व्यंजन और सॉफ़्ट ड्रिंक का पैसा लगता है, और भीड़ होने पर सीट पहले आओ, पहले पाओ के आधार पर मिलती है।"
+      ],
+      "list_hi": [
+        "समय: रोज़ सुबह 5:00–रात 9:00 (प्रायोरिटी पास सूची)",
+        "कहाँ: सुरक्षा जाँच के बाद, घरेलू प्रस्थान, सुरक्षा होल्ड एरिया का भूतल, गेट 2 के पास",
+        "ज़रूरी: पात्र कार्ड और उसी दिन का बोर्डिंग पास",
+        "शामिल: 24 घंटे में एक बुफ़े विज़िट; अलग व्यंजन और सॉफ़्ट ड्रिंक का भुगतान अलग",
+        "अंतरराष्ट्रीय प्रस्थान: अलग लाउंज सूचीबद्ध नहीं"
+      ],
+      "sources": [
+        0,
+        1,
+        6
+      ]
+    },
+    {
+      "id": "lounge-cards",
+      "promo": true,
+      "heading_en": "Which credit cards work at the Varanasi airport lounge",
+      "heading_hi": "वाराणसी एयरपोर्ट लाउंज में कौन से क्रेडिट कार्ड चलते हैं",
+      "body_en": [
+        "Take Off Bar is on the current domestic lounge lists we checked: SBI Card's Tata Neu list dated 10 April 2026, IndusInd Bank's lounge programme and DBS Bank's Spark card terms. It is also on Priority Pass, and on the RuPay credit card lounge programme list (the copy we found is from 2024). Lists change every quarter, so open your own card's lounge list or app and look for Varanasi before you fly.",
+        "Most Indian cards now attach conditions: a minimum spend in the previous month or quarter, a set number of visits, or a benefit you choose in the bank's app before you swipe. RuPay lounges take a small authorisation (₹2 in the programme terms) on the card at the counter. If your card is declined at the desk, you can still order and pay like any restaurant guest."
+      ],
+      "list_en": [
+        "On the April 2026 SBI Tata Neu list: Varanasi, Take Off Bar, main terminal, departure",
+        "On IndusInd Bank's lounge programme: Varanasi VNS01, Take Off Bar and Lounge, domestic departure",
+        "On Priority Pass: VNS1D, Take Off Bar and Lounge",
+        "Check before you go: spend condition, visits left, and whether the app needs a benefit chosen first"
+      ],
+      "body_hi": [
+        "टेक ऑफ़ बार उन मौजूदा घरेलू लाउंज सूचियों में है जो हमने देखीं: एसबीआई कार्ड की 10 अप्रैल 2026 की टाटा न्यू सूची, इंडसइंड बैंक का लाउंज कार्यक्रम और डीबीएस बैंक के स्पार्क कार्ड की शर्तें। यह प्रायोरिटी पास पर भी है, और रुपे क्रेडिट कार्ड लाउंज कार्यक्रम की सूची में भी (हमें मिली प्रति 2024 की है)। सूचियाँ हर तिमाही बदलती हैं, इसलिए उड़ान से पहले अपने कार्ड की लाउंज सूची या ऐप में वाराणसी ज़रूर देखें।",
+        "ज़्यादातर भारतीय कार्ड अब शर्तें जोड़ते हैं: पिछले महीने या तिमाही में न्यूनतम खर्च, तय संख्या में विज़िट, या स्वाइप से पहले बैंक के ऐप में चुना गया लाभ। रुपे लाउंज काउंटर पर कार्ड पर छोटा ऑथराइज़ेशन (कार्यक्रम की शर्तों में ₹2) लेते हैं। अगर डेस्क पर कार्ड नहीं चलता, तब भी आप आम रेस्तरां ग्राहक की तरह ऑर्डर करके भुगतान कर सकते हैं।"
+      ],
+      "list_hi": [
+        "अप्रैल 2026 की एसबीआई टाटा न्यू सूची में: वाराणसी, टेक ऑफ़ बार, मुख्य टर्मिनल, प्रस्थान",
+        "इंडसइंड बैंक के लाउंज कार्यक्रम में: वाराणसी VNS01, टेक ऑफ़ बार एंड लाउंज, घरेलू प्रस्थान",
+        "प्रायोरिटी पास पर: VNS1D, टेक ऑफ़ बार एंड लाउंज",
+        "जाने से पहले देखें: खर्च की शर्त, बची हुई विज़िट, और क्या ऐप में पहले लाभ चुनना है"
+      ],
+      "sources": [
+        2,
+        3,
+        4,
+        0,
+        5,
+        14
+      ]
+    },
+    {
+      "id": "lounge-price",
+      "unconfirmed": true,
+      "heading_en": "Lounge price without a card",
+      "heading_hi": "बिना कार्ड के लाउंज का खर्च",
+      "body_en": [
+        "We found no walk-in price published by the airport or the lounge. Online pass resellers sell a 3-hour pass for about US$9 (roughly ₹750), and since the lounge works as a restaurant you can also simply order and pay. Ask at the counter for the day's buffet price before you sit down."
+      ],
+      "body_hi": [
+        "एयरपोर्ट या लाउंज ने बिना कार्ड वाला (वॉक-इन) दाम कहीं प्रकाशित नहीं किया है। ऑनलाइन पास बेचने वाली साइटें 3 घंटे का पास लगभग 9 अमेरिकी डॉलर (करीब ₹750) में बेचती हैं, और लाउंज रेस्तरां की तरह चलता है, इसलिए आप सीधे ऑर्डर करके भुगतान भी कर सकते हैं। बैठने से पहले काउंटर पर उस दिन के बुफ़े का दाम पूछ लें।"
+      ],
+      "sources": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "food",
+      "heading_en": "Food at Varanasi airport",
+      "heading_hi": "वाराणसी एयरपोर्ट पर खाना",
+      "body_en": [
+        "Besides the lounge, the Airports Authority of India lists about ten food counters, most of them snack bars. Prices are airport prices, so if you have time, eat in the city first. After security there are more choices than in the check-in hall."
+      ],
+      "list_en": [
+        "Outside the terminal: two snack bars, one of them Banaraswala Snacks Bar",
+        "Check-in area: a sweet shop and a convenience store",
+        "Past security, ground floor: a food and beverage outlet with a beer bar, a branded food outlet and branded fast food",
+        "Past security, first floor: a snack bar and branded fast food",
+        "International security hold: a snack bar",
+        "Arrival hall: a snack bar and a convenience store"
+      ],
+      "body_hi": [
+        "लाउंज के अलावा भारतीय विमानपत्तन प्राधिकरण लगभग दस खाने के काउंटर दिखाता है, ज़्यादातर स्नैक बार। दाम एयरपोर्ट वाले हैं, इसलिए समय हो तो शहर में ही खा लें। सुरक्षा जाँच के बाद चेक-इन हॉल से ज़्यादा विकल्प हैं।"
+      ],
+      "list_hi": [
+        "टर्मिनल के बाहर: दो स्नैक बार, एक बनारसवाला स्नैक्स बार",
+        "चेक-इन एरिया: एक मिठाई की दुकान और एक सुविधा स्टोर",
+        "सुरक्षा के बाद, भूतल: बीयर बार वाला खान-पान आउटलेट, एक ब्रांडेड फ़ूड आउटलेट और ब्रांडेड फ़ास्ट फ़ूड",
+        "सुरक्षा के बाद, पहली मंज़िल: एक स्नैक बार और ब्रांडेड फ़ास्ट फ़ूड",
+        "अंतरराष्ट्रीय सुरक्षा होल्ड: एक स्नैक बार",
+        "आगमन हॉल: एक स्नैक बार और एक सुविधा स्टोर"
+      ],
+      "sources": [
+        1,
+        7
+      ]
+    },
+    {
+      "id": "getting-to-the-ghats",
+      "heading_en": "Varanasi airport to the ghats, Cantt station and Sarnath",
+      "heading_hi": "वाराणसी एयरपोर्ट से घाट, कैंट स्टेशन और सारनाथ",
+      "body_en": [
+        "The airport is at Babatpur, about 26 km north-west of the city on the Lucknow road. A prepaid taxi counter works at the airport round the clock, and app cabs pick up too; fix the fare before you set off. Cars stop at Godowlia Chowk, because the road to Dashashwamedh Ghat is a pedestrian zone for most of the day, so ask for Godowlia, not for the ghat."
+      ],
+      "list_en": [
+        "Airport → Godowlia (for Dashashwamedh and the Vishwanath Dham): 25–26 km, prepaid taxi or app cab about ₹600–1,000, 45–75 minutes; auto ₹400–600 and slower",
+        "Airport → Varanasi Junction (Cantt): about 22 km, 40–60 minutes by taxi",
+        "Airport → Sarnath: 25–30 km, auto ₹300–500, 45–75 minutes",
+        "Godowlia → Dashashwamedh Ghat: about 500 m on foot"
+      ],
+      "body_hi": [
+        "एयरपोर्ट बाबतपुर में है, शहर से लगभग 26 किमी उत्तर-पश्चिम, लखनऊ रोड पर। एयरपोर्ट पर प्रीपेड टैक्सी काउंटर चौबीसों घंटे चलता है, और ऐप कैब भी मिलती हैं; चलने से पहले किराया तय कर लें। गाड़ियाँ गोदौलिया चौक पर रुकती हैं, क्योंकि दशाश्वमेध घाट की सड़क दिन के ज़्यादातर समय पैदल क्षेत्र है, इसलिए घाट नहीं, गोदौलिया बोलें।"
+      ],
+      "list_hi": [
+        "एयरपोर्ट → गोदौलिया (दशाश्वमेध और विश्वनाथ धाम के लिए): 25–26 किमी, प्रीपेड टैक्सी या ऐप कैब लगभग ₹600–1,000, 45–75 मिनट; ऑटो ₹400–600 और धीमा",
+        "एयरपोर्ट → वाराणसी जंक्शन (कैंट): लगभग 22 किमी, टैक्सी से 40–60 मिनट",
+        "एयरपोर्ट → सारनाथ: 25–30 किमी, ऑटो ₹300–500, 45–75 मिनट",
+        "गोदौलिया → दशाश्वमेध घाट: लगभग 500 मीटर पैदल"
+      ],
+      "sources": [
+        12,
+        13
+      ]
+    },
+    {
+      "id": "flights",
+      "heading_en": "Flights and the new terminal",
+      "heading_hi": "उड़ानें और नया टर्मिनल",
+      "body_en": [
+        "About 4.3 million passengers used the airport in 2025–26. Air India, Air India Express, Akasa Air, IndiGo and SpiceJet fly to Delhi, Mumbai, Bengaluru, Hyderabad, Kolkata and other cities; Delhi is about 1 hour 25 minutes away. International flights are few: Air India Express to Sharjah and Bangkok, and Buddha Air to Kathmandu.",
+        "A new terminal of about 75,600 sq m, with 72 check-in counters and eight aerobridges, is under construction. On 24 June 2026 the civil aviation minister asked for it to be finished within six months, but no opening date has been announced. In December and January, fog delays flights: on 6 January 2026, 26 flights at Babatpur were affected, so check your flight status before leaving for the airport."
+      ],
+      "body_hi": [
+        "2025–26 में लगभग 43 लाख यात्रियों ने इस एयरपोर्ट का उपयोग किया। एयर इंडिया, एयर इंडिया एक्सप्रेस, अकासा एयर, इंडिगो और स्पाइसजेट दिल्ली, मुंबई, बेंगलुरु, हैदराबाद, कोलकाता और दूसरे शहरों के लिए उड़ान भरती हैं; दिल्ली लगभग 1 घंटा 25 मिनट की उड़ान है। अंतरराष्ट्रीय उड़ानें कम हैं: एयर इंडिया एक्सप्रेस से शारजाह और बैंकॉक, और बुद्धा एयर से काठमांडू।",
+        "लगभग 75,600 वर्ग मीटर का नया टर्मिनल, 72 चेक-इन काउंटर और आठ एयरोब्रिज के साथ, बन रहा है। 24 जून 2026 को नागरिक उड्डयन मंत्री ने इसे छह महीने में पूरा करने को कहा, पर खुलने की तारीख घोषित नहीं हुई है। दिसंबर और जनवरी में कोहरा उड़ानें लेट करता है: 6 जनवरी 2026 को बाबतपुर में 26 उड़ानें प्रभावित हुईं, इसलिए एयरपोर्ट निकलने से पहले उड़ान की स्थिति देख लें।"
+      ],
+      "sources": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "practical",
+      "heading_en": "Practical tips",
+      "heading_hi": "काम की बातें",
+      "body_en": [
+        "Leave the city two to two and a half hours before a domestic flight: the drive alone can take more than an hour at peak times or during festivals. Carry some cash and use UPI: the airport authority's list of conveniences shows only two convenience stores, not ATMs or exchange counters, so withdraw or change money in the city if you need it."
+      ],
+      "list_en": [
+        "Airport contact (AAI): apdvns@aai.aero · +91-542-2622155",
+        "Lounge: one buffet visit per card per 24 hours; keep your boarding pass ready",
+        "Festivals (Dev Deepawali, New Year, Maha Shivratri): allow extra time for the road to Babatpur"
+      ],
+      "body_hi": [
+        "घरेलू उड़ान से दो से ढाई घंटे पहले शहर से निकलें: भीड़ के समय या त्योहारों में सिर्फ़ सड़क में एक घंटे से ज़्यादा लग सकता है। कुछ नकद रखें और यूपीआई का उपयोग करें: विमानपत्तन प्राधिकरण की सुविधाओं की सूची में सिर्फ़ दो सुविधा स्टोर हैं, एटीएम या मुद्रा विनिमय काउंटर नहीं, इसलिए ज़रूरत हो तो शहर में ही पैसे निकालें या बदलें।"
+      ],
+      "list_hi": [
+        "एयरपोर्ट संपर्क (AAI): apdvns@aai.aero · +91-542-2622155",
+        "लाउंज: हर कार्ड पर 24 घंटे में एक बुफ़े विज़िट; बोर्डिंग पास तैयार रखें",
+        "त्योहारों (देव दीपावली, नया साल, महाशिवरात्रि) पर बाबतपुर की सड़क के लिए अतिरिक्त समय रखें"
+      ],
+      "sources": [
+        7,
+        8
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q_en": "Is there a lounge at Varanasi airport?",
+      "a_en": "Yes, one: Take Off Bar and Lounge (listed by the airport authority as the Executive Lounge), past security in domestic departures near Gate 2, open 05:00–21:00 daily.",
+      "q_hi": "क्या वाराणसी एयरपोर्ट पर लाउंज है?",
+      "a_hi": "हाँ, एक: टेक ऑफ़ बार एंड लाउंज (विमानपत्तन प्राधिकरण की सूची में एग्ज़ीक्यूटिव लाउंज), सुरक्षा जाँच के बाद घरेलू प्रस्थान में गेट 2 के पास, रोज़ सुबह 5:00–रात 9:00।"
+    },
+    {
+      "q_en": "Which cards are accepted at the Varanasi airport lounge?",
+      "a_en": "It is on SBI Card's Tata Neu domestic lounge list (April 2026), IndusInd Bank's lounge programme, DBS Bank's Spark card list, Priority Pass and the RuPay lounge programme. Conditions such as a minimum monthly or quarterly spend vary by card, so check your card's own list before you fly.",
+      "q_hi": "वाराणसी एयरपोर्ट लाउंज में कौन से कार्ड चलते हैं?",
+      "a_hi": "यह एसबीआई कार्ड की टाटा न्यू घरेलू लाउंज सूची (अप्रैल 2026), इंडसइंड बैंक के लाउंज कार्यक्रम, डीबीएस बैंक के स्पार्क कार्ड की सूची, प्रायोरिटी पास और रुपे लाउंज कार्यक्रम में है। न्यूनतम मासिक या तिमाही खर्च जैसी शर्तें हर कार्ड में अलग हैं, इसलिए उड़ान से पहले अपने कार्ड की सूची देखें।"
+    },
+    {
+      "q_en": "Is the Varanasi airport lounge free?",
+      "a_en": "Free for an eligible card: one buffet visit per 24 hours, with à la carte food and soft drinks charged extra. Without a card you pay; resellers sell a 3-hour pass for about US$9, but no official walk-in price is published.",
+      "q_hi": "क्या वाराणसी एयरपोर्ट लाउंज मुफ़्त है?",
+      "a_hi": "पात्र कार्ड पर मुफ़्त: 24 घंटे में एक बुफ़े विज़िट, अलग व्यंजन और सॉफ़्ट ड्रिंक का भुगतान अलग। बिना कार्ड के भुगतान करना होता है; पास बेचने वाली साइटें 3 घंटे का पास लगभग 9 अमेरिकी डॉलर में बेचती हैं, पर कोई आधिकारिक वॉक-इन दाम प्रकाशित नहीं है।"
+    },
+    {
+      "q_en": "What is the name of Varanasi airport?",
+      "a_en": "Lal Bahadur Shastri International Airport, code VNS, at Babatpur, about 26 km north-west of the city. Locally it is often called Babatpur airport.",
+      "q_hi": "वाराणसी एयरपोर्ट का नाम क्या है?",
+      "a_hi": "लाल बहादुर शास्त्री अंतरराष्ट्रीय हवाई अड्डा, कोड VNS, बाबतपुर में, शहर से लगभग 26 किमी उत्तर-पश्चिम। स्थानीय लोग इसे अक्सर बाबतपुर एयरपोर्ट कहते हैं।"
+    },
+    {
+      "q_en": "What food is available at Varanasi airport?",
+      "a_en": "About ten counters, mostly snack bars, plus a sweet shop in the check-in area and, past security, branded fast food, a food outlet with a beer bar and the lounge's buffet.",
+      "q_hi": "वाराणसी एयरपोर्ट पर क्या खाना मिलता है?",
+      "a_hi": "लगभग दस काउंटर, ज़्यादातर स्नैक बार, चेक-इन एरिया में मिठाई की दुकान, और सुरक्षा के बाद ब्रांडेड फ़ास्ट फ़ूड, बीयर बार वाला फ़ूड आउटलेट और लाउंज का बुफ़े।"
+    },
+    {
+      "q_en": "How far is Varanasi airport from Dashashwamedh Ghat?",
+      "a_en": "About 25–26 km to Godowlia Chowk, where cars stop, then about 500 m on foot. A prepaid taxi or app cab costs about ₹600–1,000 and takes 45–75 minutes.",
+      "q_hi": "वाराणसी एयरपोर्ट से दशाश्वमेध घाट कितनी दूर है?",
+      "a_hi": "गोदौलिया चौक तक लगभग 25–26 किमी, जहाँ गाड़ियाँ रुकती हैं, फिर लगभग 500 मीटर पैदल। प्रीपेड टैक्सी या ऐप कैब लगभग ₹600–1,000 लेती है और 45–75 मिनट लगते हैं।"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Priority Pass — Take Off Bar and Lounge, Lal Bahadur Shastri (VNS): location, hours, conditions",
+      "url": "https://www.prioritypass.com/en-GB/lounges/india/lal-bahadur-shastri/vns1d-take-off-bar-and-lounge",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Airports Authority of India — Varanasi airport: Eat & Dine (outlets and Executive Lounge by location)",
+      "url": "https://www.aai.aero/en/airports/passenger-info/varanasi/Eat-&-Dine",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "SBI Card — Tata Neu SBI Cards domestic lounge list (10 April 2026), Varanasi: Take Off Bar",
+      "url": "https://www.sbicard.com/sbi-card-en/assets/docs/pdf/Tata-Neu-SBICards-Domestic-Lounge-List-10-April26.pdf",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "IndusInd Bank — Airport Lounge Access Program (participating lounges), Varanasi VNS01",
+      "url": "https://www.indusind.bank.in/content/dam/indusind-corporate/Other/Airport-Lounge-Access-Program.pdf",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "DBS Bank India — Spark credit card airport lounge access T&C (participating lounges)",
+      "url": "https://www.dbs.bank.in/in/credit-cards/spark/airport-lounge-access-tnc.html",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "BOBCARD — RuPay Credit Card airport lounge program (2024 list; ₹2 authorisation rule)",
+      "url": "https://media.bobcard.co.in/media/fh4djlre/rupay_credit_card_airport_lounge_program.pdf",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "LoungePair — Take off Bar and Lounge, Varanasi: 3-hour pass price and hours",
+      "url": "https://www.loungepair.com/at/VNS/bahadur-shastri-international-airport-take-off-bar-domestic-terminal-departure/",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Airports Authority of India — Varanasi airport: Conveniences",
+      "url": "https://www.aai.aero/en/airports/passenger-info/varanasi/Conveniences",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Airports Authority of India — Lal Bahadur Shastri International Airport, Varanasi (contact)",
+      "url": "https://www.aai.aero/en/airports/varanasi",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Wikipedia — Lal Bahadur Shastri International Airport (routes, 2025–26 traffic)",
+      "url": "https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri_Airport",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Aviation & Defence Universe — Minister Naidu reviews new Varanasi terminal under construction (26 June 2026)",
+      "url": "https://www.aviation-defence-universe.com/minister-naidu-reviews-new-varanasi-terminal-under-construction/",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Amar Ujala — Fog in Varanasi: 26 flights affected at Babatpur airport (6 Jan 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/fog-in-varanasi-26-flights-affected-at-babatpur-airport-and-flight-from-mumbai-arrived-late-2026-01-06",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Varanasi district (NIC) — How to reach: prepaid taxi at LBS airport Babatpur",
+      "url": "https://varanasi.nic.in/how-to-reach/",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Uncharted Lens — Varanasi airport to city: transport options and fares",
+      "url": "https://unchartedlens.com/routes/india/varanasi-airport-to-city-transport/",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Live from a Lounge — How Scapia's airport privileges work (3 Feb 2026): spend-gated, chosen per departure in the app",
+      "url": "https://livefromalounge.com/scapia-airport-privileges-guide/",
+      "accessed": "2026-11-04"
+    }
+  ],
+  "related": {
+    "projects": [
+      "airport-expansion"
+    ],
+    "places": [
+      "dashashwamedh-ghat",
+      "kashi-vishwanath",
+      "sarnath"
+    ],
+    "itineraries": [
+      "2-day"
+    ]
+  },
+  "notes": "Targets 'varanasi airport lounge' (+ access / which cards accepted / price / credit card / free access), 'varanasi airport food court', 'varanasi airport name/distance'. how-to-reach-varanasi stays the arrival overview; this page is the airport itself. The house-ad card sits after the lounge-cards section (promo: true). Lounge lists change quarterly: re-check sources 2–5 in the content review. Scapia's own lounge coverage at VNS is unconfirmed, so the body never claims it."
+}
