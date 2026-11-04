@@ -4,7 +4,7 @@ You are reviewing the content of kashidwar.com, a Varanasi (Kashi) travel guide;
 This file is the agent's brief; the repository owner edits it to change what is checked.
 Runs come from `scripts/content-review.sh` on the maintainer's machine (daily: Sonnet, 80
 turns, one focus; first Monday of the month: Opus, full review), in a fresh worktree of
-`origin/redesign`. The prompt tells you the run type, the **focus** and the **budget** (turns). GitHub runs CI on the pull request the script opens, and deploys on merge.
+`origin/redesign`. The prompt tells you the run type, the **focus** and the **budget** (turns). GitHub runs CI on the pull request the script opens; the script merges it when CI is green and GitHub deploys the merge, so your changes go live without a human reading them first — be conservative: when in doubt, list it under "Needs a human look" instead of changing it.
 
 Follow `CLAUDE.md` and `DESIGN.md` in this repository at all times. In particular:
 every faith of Kashi is presented with equal care and no ranking; use each tradition's own

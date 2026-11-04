@@ -1,4 +1,4 @@
-# Deploy to Cloudflare Workers (OpenNext) when redesign changes — e.g. when a weekly
+# Deploy to Cloudflare Workers (OpenNext) when redesign changes — e.g. when a daily
 # content-review PR is merged — and rebuild weekly so festival dates roll forward.
 # Secrets: CLOUDFLARE_API_TOKEN (Workers edit), CLOUDFLARE_ACCOUNT_ID.
 name: Deploy
@@ -26,11 +26,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    # Pushes to redesign and manual runs wait for the owner's approval: Settings →
+    # Code pushes to redesign and manual runs wait for the owner's approval: Settings →
     # Environments → production (required reviewer, redesign only). The Monday rebuild
-    # redeploys code already approved on redesign, so it uses production-scheduled
-    # (no reviewer, redesign only) and never sits waiting.
-    environment: ${{ github.event_name == 'schedule' && 'production-scheduled' || 'production' }}
+    # and merges of the daily content review (scripts/content-review.sh merges its own
+    # pull request once CI is green; the merge commit names the content-review/… branch)
+    # use production-scheduled (no reviewer, redesign only) and never sit waiting.
+    environment: ${{ (github.event_name == 'schedule' || contains(github.event.head_commit.message, 'content-review/') || contains(github.event.head_commit.message, 'content review')) && 'production-scheduled' || 'production' }}
     steps:
       - name: Cloudflare secrets present?
         id: secrets
