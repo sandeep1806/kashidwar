@@ -29,9 +29,11 @@ jobs:
     # Code pushes to redesign and manual runs wait for the owner's approval: Settings →
     # Environments → production (required reviewer, redesign only). The Monday rebuild
     # and merges of the daily content review (scripts/content-review.sh merges its own
-    # pull request once CI is green; the merge commit names the content-review/… branch)
-    # use production-scheduled (no reviewer, redesign only) and never sit waiting.
-    environment: ${{ (github.event_name == 'schedule' || contains(github.event.head_commit.message, 'content-review/') || contains(github.event.head_commit.message, 'content review')) && 'production-scheduled' || 'production' }}
+    # pull request once CI is green) use production-scheduled (no reviewer, redesign only)
+    # and never sit waiting. Only a merge commit of a content-review/… branch counts:
+    # contains() ignores case, so matching "content review" in any message let code
+    # merges skip approval (PR #36).
+    environment: ${{ (github.event_name == 'schedule' || (startsWith(github.event.head_commit.message, 'Merge pull request #') && contains(github.event.head_commit.message, ' from sandeep1806/content-review/'))) && 'production-scheduled' || 'production' }}
     steps:
       - name: Cloudflare secrets present?
         id: secrets
