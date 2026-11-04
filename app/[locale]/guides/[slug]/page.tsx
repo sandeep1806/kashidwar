@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -6,6 +7,7 @@ import LdJson from "@/components/pages/LdJson";
 import FactStrip from "@/components/pages/FactStrip";
 import PageShell from "@/components/pages/PageShell";
 import EnglishNote from "@/components/ui/EnglishNote";
+import PromoSlot from "@/components/ui/PromoSlot";
 import Icon, { type IconName } from "@/components/ui/Icon";
 import { festivals, itineraries, places, projects } from "@/lib/content";
 import { eventStatus, guideBySlug, guidePhoto, guides, guideTranslations, localizeGuide } from "@/lib/guides";
@@ -57,6 +59,7 @@ function sectionIcon(id: string): IconName {
     [/stay|hotel/, "walk"],
     [/book|on-the-day|carry/, "tip"],
     [/winter|summer|monsoon|weather/, "sunrise"],
+    [/lounge|flight|airport/, "plane"],
   ];
   return rules.find(([re]) => re.test(id))?.[1] ?? "info";
 }
@@ -253,63 +256,66 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
           {l.sections.map((s) => {
             const [first, ...rest] = s.body;
             return (
-              <section key={s.id} id={s.id} className="guide-card scroll-mt-24">
-                <h2 className="flex items-start gap-3 text-h3 text-kashi-white">
-                  <span className="guide-card-icon"><Icon name={sectionIcon(s.id)} className="h-5 w-5" /></span>
-                  <span>{s.heading}</span>
-                </h2>
-                {s.unconfirmed && (
-                  <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-kashi-marigold/50 px-3 py-1 text-xs text-kashi-marigold">
-                    <Icon name="info" className="h-3.5 w-3.5" />
-                    {t("unconfirmed")}
-                  </p>
-                )}
-                {first && <p className="mt-4 leading-relaxed text-kashi-ash/90">{first}</p>}
-                {s.route && s.list.length > 0 && (
-                  <ol className="milestones mt-5">
-                    {s.list.map((li, i) => (
-                      <li key={li.slice(0, 40)} className={s.route?.pass?.includes(i) ? "is-pending" : ""}>
-                        <span className="milestone-dot" aria-hidden="true" />
-                        <span>{li}</span>
-                      </li>
-                    ))}
-                  </ol>
-                )}
-                {!s.route && s.list.length > 0 && (
-                  <ul className={`guide-list mt-5 ${s.list.length > 4 ? "sm:grid-cols-2" : ""}`}>
-                    {s.list.map((li) => (
-                      <li key={li.slice(0, 40)}>
-                        <Icon name="chevron" className="mt-1 h-4 w-4 shrink-0 text-kashi-diya" />
-                        <span>{li}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                {rest.length > 0 && (
-                  <details className="story-details mt-4">
-                    <summary>
-                      <Icon name="chevron" className="icon-chevron h-4 w-4" />
-                      {tp("readMore")}
-                    </summary>
-                    <div className="mt-3 space-y-4 leading-relaxed text-kashi-ash/90">
-                      {rest.map((para) => (
-                        <p key={para.slice(0, 40)}>{para}</p>
+              <Fragment key={s.id}>
+                <section id={s.id} className="guide-card scroll-mt-24">
+                  <h2 className="flex items-start gap-3 text-h3 text-kashi-white">
+                    <span className="guide-card-icon"><Icon name={sectionIcon(s.id)} className="h-5 w-5" /></span>
+                    <span>{s.heading}</span>
+                  </h2>
+                  {s.unconfirmed && (
+                    <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-kashi-marigold/50 px-3 py-1 text-xs text-kashi-marigold">
+                      <Icon name="info" className="h-3.5 w-3.5" />
+                      {t("unconfirmed")}
+                    </p>
+                  )}
+                  {first && <p className="mt-4 leading-relaxed text-kashi-ash/90">{first}</p>}
+                  {s.route && s.list.length > 0 && (
+                    <ol className="milestones mt-5">
+                      {s.list.map((li, i) => (
+                        <li key={li.slice(0, 40)} className={s.route?.pass?.includes(i) ? "is-pending" : ""}>
+                          <span className="milestone-dot" aria-hidden="true" />
+                          <span>{li}</span>
+                        </li>
                       ))}
-                    </div>
-                  </details>
-                )}
-                {s.sources.length > 0 && (
-                  <p className="mt-4 text-xs text-kashi-ash/60">
-                    {t("sources")}:{" "}
-                    {s.sources.map((src, i) => (
-                      <span key={src.url + i}>
-                        {i > 0 && " · "}
-                        <a href={`#source-${src.n}`} className="underline decoration-kashi-diya/40 underline-offset-2 hover:text-kashi-diya">[{src.n}]</a>
-                      </span>
-                    ))}
-                  </p>
-                )}
-              </section>
+                    </ol>
+                  )}
+                  {!s.route && s.list.length > 0 && (
+                    <ul className={`guide-list mt-5 ${s.list.length > 4 ? "sm:grid-cols-2" : ""}`}>
+                      {s.list.map((li) => (
+                        <li key={li.slice(0, 40)}>
+                          <Icon name="chevron" className="mt-1 h-4 w-4 shrink-0 text-kashi-diya" />
+                          <span>{li}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {rest.length > 0 && (
+                    <details className="story-details mt-4">
+                      <summary>
+                        <Icon name="chevron" className="icon-chevron h-4 w-4" />
+                        {tp("readMore")}
+                      </summary>
+                      <div className="mt-3 space-y-4 leading-relaxed text-kashi-ash/90">
+                        {rest.map((para) => (
+                          <p key={para.slice(0, 40)}>{para}</p>
+                        ))}
+                      </div>
+                    </details>
+                  )}
+                  {s.sources.length > 0 && (
+                    <p className="mt-4 text-xs text-kashi-ash/60">
+                      {t("sources")}:{" "}
+                      {s.sources.map((src, i) => (
+                        <span key={src.url + i}>
+                          {i > 0 && " · "}
+                          <a href={`#source-${src.n}`} className="underline decoration-kashi-diya/40 underline-offset-2 hover:text-kashi-diya">[{src.n}]</a>
+                        </span>
+                      ))}
+                    </p>
+                  )}
+                </section>
+                {s.promo && <PromoSlot primary />}
+              </Fragment>
             );
           })}
           <section id="faq" className="scroll-mt-24">
