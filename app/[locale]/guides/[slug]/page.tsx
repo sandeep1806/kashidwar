@@ -265,7 +265,17 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
                   </p>
                 )}
                 {first && <p className="mt-4 leading-relaxed text-kashi-ash/90">{first}</p>}
-                {s.list.length > 0 && (
+                {s.route && s.list.length > 0 && (
+                  <ol className="milestones mt-5">
+                    {s.list.map((li, i) => (
+                      <li key={li.slice(0, 40)} className={s.route?.pass?.includes(i) ? "is-pending" : ""}>
+                        <span className="milestone-dot" aria-hidden="true" />
+                        <span>{li}</span>
+                      </li>
+                    ))}
+                  </ol>
+                )}
+                {!s.route && s.list.length > 0 && (
                   <ul className={`guide-list mt-5 ${s.list.length > 4 ? "sm:grid-cols-2" : ""}`}>
                     {s.list.map((li) => (
                       <li key={li.slice(0, 40)}>

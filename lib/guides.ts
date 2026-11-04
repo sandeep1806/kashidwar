@@ -23,6 +23,8 @@ export interface GuideSection {
   unconfirmed?: boolean;
   /** Indexes into the guide's sources */
   sources?: number[];
+  /** Draw the list as a route line of stops (a ropeway, a walk); `pass` marks stops where you cannot board (hollow dot) */
+  route?: { pass?: number[] };
 }
 
 /** One item of the icon fact strip at the top of a guide (values come from its sourced sections). */
@@ -141,6 +143,7 @@ export function localizeGuide(g: Guide, locale: Locale, translations: GuideTrans
       body: l === "hi" ? s.body_hi : s.body_en,
       list: (l === "hi" ? s.list_hi : s.list_en) ?? [],
       unconfirmed: !!s.unconfirmed,
+      route: s.route ?? null,
       sources: (s.sources ?? []).map((i) => ({ n: i + 1, ...g.sources[i] })).filter((s) => s.url),
     })),
     faq: g.faq.map((f) => ({ q: l === "hi" ? f.q_hi : f.q_en, a: l === "hi" ? f.a_hi : f.a_en })),

@@ -1,12 +1,12 @@
 {
   "slug": "ganga-aarti-varanasi",
   "published": "2026-09-27",
-  "updated": "2026-11-02",
+  "updated": "2026-11-04",
   "photo": "places/dashashwamedh-ghat#2",
-  "title_en": "Ganga Aarti in Varanasi: Dashashwamedh Ghat aarti time, Assi, where to sit",
-  "title_hi": "वाराणसी में गंगा आरती: दशाश्वमेध घाट आरती का समय, अस्सी, कहाँ बैठें",
-  "description_en": "Dashashwamedh Ghat aarti time: about 6 pm Nov–Feb and 7 pm in summer, 45 minutes, free entry. Subah-e-Banaras at Assi, where to sit, boat viewing and flood changes.",
-  "description_hi": "दशाश्वमेध घाट आरती का समय: नवंबर–फ़रवरी में करीब शाम 6 बजे, गर्मियों में 7 बजे, 45 मिनट, प्रवेश मुफ्त। अस्सी पर सुबह-ए-बनारस, कहाँ बैठें, नाव से दर्शन और बाढ़ में बदलाव।",
+  "title_en": "Dashashwamedh & Assi Ghat aarti time: Ganga Aarti in Varanasi",
+  "title_hi": "दशाश्वमेध और अस्सी घाट आरती का समय: वाराणसी की गंगा आरती",
+  "description_en": "Dashashwamedh Ghat aarti time: about 6 pm Nov–Feb, 7 pm in summer, 45 min, free. Assi Ghat aarti morning (Subah-e-Banaras ~5:30 am) and evening, where to sit, boats.",
+  "description_hi": "दशाश्वमेध घाट आरती का समय: नवंबर–फ़रवरी शाम करीब 6 बजे, गर्मियों में 7 बजे, 45 मिनट, मुफ्त। अस्सी घाट आरती सुबह (सुबह-ए-बनारस ~5:30) और शाम, कहाँ बैठें, नाव।",
   "lead_en": "Two ceremonies frame the day on Varanasi's riverfront: the evening Ganga Aarti at Dashashwamedh Ghat and the dawn Subah-e-Banaras at Assi Ghat. This guide covers when each happens, where to watch from, what changes in the flood season, and how to be a considerate visitor. Timings are as of September 2026 and move with sunset, so check locally.",
   "lead_hi": "वाराणसी के घाटों पर दिन की शुरुआत और अंत दो अनुष्ठानों से होते हैं: शाम को दशाश्वमेध घाट की गंगा आरती और भोर में अस्सी घाट का सुबह-ए-बनारस। इस गाइड में दोनों का समय, कहाँ से देखें, बाढ़ के दिनों में क्या बदलता है और एक संवेदनशील दर्शक कैसे बनें, सब दिया गया है। समय सितंबर 2026 के अनुसार है और सूर्यास्त के साथ बदलता है, इसलिए स्थानीय स्तर पर जाँच लें।",
   "facts": [
@@ -166,6 +166,27 @@
       ]
     },
     {
+      "id": "assi-ghat-aarti-time",
+      "heading_en": "Assi Ghat aarti time: morning and evening",
+      "heading_hi": "अस्सी घाट आरती का समय: सुबह और शाम",
+      "body_en": [
+        "Assi Ghat has two aartis a day, both free. The morning one is part of Subah-e-Banaras and the evening one follows sunset, like Dashashwamedh's but smaller and quieter, with more local families than tour groups. Neither organiser publishes a timetable online, so the times below are approximate and move with sunrise and sunset; confirm on the ghat the day before."
+      ],
+      "body_hi": [
+        "अस्सी घाट पर रोज़ दो आरतियाँ होती हैं, दोनों मुफ्त। सुबह की आरती सुबह-ए-बनारस का हिस्सा है और शाम की आरती सूर्यास्त के बाद होती है, दशाश्वमेध जैसी पर छोटी और शांत, जिसमें पर्यटक समूहों से ज़्यादा स्थानीय परिवार आते हैं। आयोजक ऑनलाइन कोई समय-सारिणी नहीं छापते, इसलिए नीचे दिए समय अनुमानित हैं और सूर्योदय-सूर्यास्त के साथ बदलते हैं; एक दिन पहले घाट पर पूछ लें।"
+      ],
+      "list_en": [
+        "Morning (Subah-e-Banaras): starts before sunrise, roughly 5:30 am in winter and 5 am in summer according to travel guides, and runs about two hours with aarti, yagya, music and yoga.",
+        "Evening: after sunset, around 6–6:30 pm in winter and about 7 pm in summer (travel-guide figures, not an official timetable). About 30 minutes' arrival ahead is usually enough, except on festival evenings and New Year.",
+        "Assi to Dashashwamedh: about 2 km apart in a straight line, roughly 2.5 km and 30–40 minutes on foot along the ghats, or a short boat or e-rickshaw ride, so you can see Assi in the morning and Dashashwamedh the same evening."
+      ],
+      "list_hi": [
+        "सुबह (सुबह-ए-बनारस): सूर्योदय से पहले, ट्रैवल गाइडों के अनुसार सर्दियों में करीब 5:30 और गर्मियों में 5 बजे शुरू, लगभग दो घंटे: आरती, यज्ञ, संगीत और योग।",
+        "शाम: सूर्यास्त के बाद, सर्दियों में करीब 6–6:30 और गर्मियों में लगभग 7 बजे (ट्रैवल गाइडों के आंकड़े, आधिकारिक समय-सारिणी नहीं)। आम तौर पर 30 मिनट पहले पहुँचना काफ़ी है, पर्व की शामों और नए साल पर नहीं।",
+        "अस्सी से दशाश्वमेध: सीधी दूरी लगभग 2 किमी, घाटों के किनारे पैदल करीब 2.5 किमी और 30–40 मिनट, या नाव या ई-रिक्शा से थोड़ी देर; सुबह अस्सी और उसी शाम दशाश्वमेध देखा जा सकता है।"
+      ]
+    },
+    {
       "id": "special-days",
       "heading_en": "Dev Deepawali and Ganga Dussehra",
       "heading_hi": "देव दीपावली और गंगा दशहरा",
@@ -225,6 +246,18 @@
       "a_en": "They differ: Dashashwamedh is the large evening aarti; Subah-e-Banaras at Assi is a quieter dawn programme with aarti, music and yoga. Many visitors attend both.",
       "q_hi": "दशाश्वमेध या अस्सी, कौन-सी आरती देखें?",
       "a_hi": "दोनों अलग हैं: दशाश्वमेध की शाम की आरती बड़ी और भव्य है, अस्सी पर सुबह-ए-बनारस भोर का शांत कार्यक्रम है जिसमें आरती, संगीत और योग होता है। बहुत से लोग दोनों देखते हैं।"
+    },
+    {
+      "q_en": "What is the Assi Ghat aarti time?",
+      "a_en": "Morning: Subah-e-Banaras begins before sunrise, roughly 5:30 am in winter and 5 am in summer. Evening: after sunset, around 6–6:30 pm in winter and about 7 pm in summer. These are approximate (no official timetable is published), so check on the ghat.",
+      "q_hi": "अस्सी घाट आरती का समय क्या है?",
+      "a_hi": "सुबह: सुबह-ए-बनारस सूर्योदय से पहले, सर्दियों में करीब 5:30 और गर्मियों में 5 बजे। शाम: सूर्यास्त के बाद, सर्दियों में करीब 6–6:30 और गर्मियों में लगभग 7 बजे। ये अनुमानित समय हैं (कोई आधिकारिक समय-सारिणी नहीं छपती), घाट पर पुष्टि करें।"
+    },
+    {
+      "q_en": "How far is Assi Ghat from Dashashwamedh Ghat?",
+      "a_en": "About 2 km in a straight line, roughly 2.5 km and 30–40 minutes on foot along the ghats. A boat or e-rickshaw is quicker.",
+      "q_hi": "अस्सी घाट से दशाश्वमेध घाट कितनी दूर है?",
+      "a_hi": "सीधी दूरी लगभग 2 किमी; घाटों के किनारे पैदल करीब 2.5 किमी और 30–40 मिनट। नाव या ई-रिक्शा से जल्दी पहुँचते हैं।"
     },
     {
       "q_en": "Does the aarti happen during floods?",
@@ -310,6 +343,16 @@
       "title": "Aaj Tak — Ganga Aarti returns to Dashashwamedh Ghat after 64 days (21 Oct 2026)",
       "url": "https://www.aajtak.in/uttar-pradesh/story/varanasi-after-64-days-world-famous-ganga-aarti-resumes-at-dashashwamedh-ghat-video-lcly-strc-2675826-2026-10-21",
       "accessed": "2026-11-02"
+    },
+    {
+      "title": "Amar Ujala — नववर्ष 2026 के पहले दिन अस्सी घाट पर गंगा आरती में श्रद्धालुओं की भीड़ (1 Jan 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/large-number-of-devotees-participated-in-the-ganga-aarti-at-assi-ghat-on-the-first-day-of-the-new-year-2026-2026-01-01",
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Varanasi Guru — Ganga Aarti timing Varanasi 2026 (travel guide; Assi morning/evening times)",
+      "url": "https://www.varanasiguru.com/ganga-aarti-timing-varanasi/",
+      "accessed": "2026-11-04"
     }
   ],
   "related": {
@@ -327,5 +370,5 @@
       "2-day"
     ]
   },
-  "notes": "Organisers: Amar Ujala (Nov 2025) names Ganga Seva Nidhi and Gangotri Seva Samiti as the Dashashwamedh aarti organisers; I could not verify a 'Shri Ganga Sewa Samiti' at the adjacent ghat from a reliable source (gangasewa.com did not resolve), so it is not named. The Ganga Seva Nidhi website pages returned 404. Summer start time (~7 pm) rests on Wikipedia and many blogs, not a dated news report or organiser notice, hence 'timings' is marked unconfirmed; the 6 pm winter time is from Amar Ujala Nov 2025. The 'seven archakas' figure is from Aaj Tak Aug 2026. Special-days section marked unconfirmed because the Ganga Dussehra 'more elaborate aarti' claim relies on Wikipedia/site festival data, and boat price surges/road closures on Dev Deepawali are general reporting without a single cited 2026 notice. Dev Deepawali 2026 date (24 Nov) taken from the site's content/festival-dates.json (verified). Subah-e-Banaras details from Wikipedia (Assi Ghat); subahebanaras.in returned an empty page when fetched. No boat prices given (unverifiable). Where-to-watch advice (arrive 45-60 min early, Man Mandir side calmer) is practical guidance consistent with the site's existing place entry, not an official fact."
+  "notes": "Organisers: Amar Ujala (Nov 2025) names Ganga Seva Nidhi and Gangotri Seva Samiti as the Dashashwamedh aarti organisers; I could not verify a 'Shri Ganga Sewa Samiti' at the adjacent ghat from a reliable source (gangasewa.com did not resolve), so it is not named. The Ganga Seva Nidhi website pages returned 404. Summer start time (~7 pm) rests on Wikipedia and many blogs, not a dated news report or organiser notice, hence 'timings' is marked unconfirmed; the 6 pm winter time is from Amar Ujala Nov 2025. The 'seven archakas' figure is from Aaj Tak Aug 2026. Special-days section marked unconfirmed because the Ganga Dussehra 'more elaborate aarti' claim relies on Wikipedia/site festival data, and boat price surges/road closures on Dev Deepawali are general reporting without a single cited 2026 notice. Dev Deepawali 2026 date (24 Nov) taken from the site's content/festival-dates.json (verified). Subah-e-Banaras details from Wikipedia (Assi Ghat); subahebanaras.in returned an empty page when fetched. No boat prices given (unverifiable). Where-to-watch advice (arrive 45-60 min early, Man Mandir side calmer) is practical guidance consistent with the site's existing place entry, not an official fact. 4 Nov 2026 (SEO): GSC 5 Oct–2 Nov: /en page pos ~42 vs /hi ~11; its impressions are mostly 'assi ghat aarti time / timings morning / evening' (pos 40–50) and 'assi ghat to dashashwamedh distance' (pos 75–94), which the page did not answer. Added section assi-ghat-aarti-time and two FAQs. Assi evening aarti existence: Amar Ujala 1 Jan 2026 (ANI); Assi times from travel guides only (Varanasi Guru and others agree within 30 min) and labelled approximate; Amar Ujala 7 Nov 2025 covers Dashashwamedh only. Distance: 2.1 km straight line from the verified coordinates in places.json; 2.5 km/30–40 min walk is an estimate."
 }
