@@ -33,7 +33,7 @@ jobs:
     # and never sit waiting. Only a merge commit of a content-review/… branch counts:
     # contains() ignores case, so matching "content review" in any message let code
     # merges skip approval (PR #36).
-    environment: ${{ (github.event_name == 'schedule' || (startsWith(github.event.head_commit.message, 'Merge pull request #') && contains(github.event.head_commit.message, ' from sandeep1806/content-review/'))) && 'production-scheduled' || 'production' }}
+    environment: ${{ (github.event_name == 'schedule' || (startsWith(github.event.head_commit.message, 'Merge pull request ') && contains(github.event.head_commit.message, ' from sandeep1806/content-review/'))) && 'production-scheduled' || 'production' }}
     steps:
       - name: Cloudflare secrets present?
         id: secrets
