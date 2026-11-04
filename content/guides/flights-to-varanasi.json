@@ -333,6 +333,11 @@
     ],
     "itineraries": [
       "2-day"
+    ],
+    "guides": [
+      "varanasi-airport",
+      "how-to-reach-varanasi",
+      "currency-exchange-in-varanasi"
     ]
   },
   "notes": "Targets 'flight to varanasi from <city>' (delhi, bangalore, mumbai, hyderabad, chennai, vijayawada, pune, kolkata, kochi), '<city> to varanasi flight time/duration', 'varanasi international flights', 'varanasi flight code', 'cheapest flight to varanasi'. Durations and daily counts are from ixigo's schedule for 5 Nov 2026; re-check each season (summer schedule from late March, winter from late October). No fares: they change daily. House-ad card after booking-tips."

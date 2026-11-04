@@ -86,6 +86,17 @@ function relatedCards(g: NonNullable<ReturnType<typeof guideBySlug>>, loc: Local
   return out;
 }
 
+/** Linked guides (`related.guides`) as link cards, in the listed order; unknown slugs are skipped. */
+async function guideCards(g: NonNullable<ReturnType<typeof guideBySlug>>, loc: Locale): Promise<LinkCard[]> {
+  const list = (g.related.guides ?? []).map((slug) => guideBySlug(slug)).filter((x) => !!x);
+  if (!list.length) return [];
+  const tr = await guideTranslations(loc);
+  return list.map((o) => {
+    const l = localizeGuide(o, loc, tr);
+    return { href: `/${loc}/guides/${o.slug}`, name: l.title, secondary: l.lang === "hi" ? o.title_en : o.title_hi, photo: guidePhoto(o, loc), faith: "secular" as const };
+  });
+}
+
 /**
  * A guide: breadcrumb, bilingual H1 with byline and dates, lead, sections
  * (each with its cited sources and an "unconfirmed" flag where needed), FAQ,
@@ -139,6 +150,7 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
     breadcrumbLd(loc, crumbs.map((c) => ({ name: c.name, path: c.href }))),
   ];
   const related = relatedCards(g, loc);
+  const linkedGuides = await guideCards(g, loc);
 
   // A guide about a dated event: status banner, and Event JSON-LD until it is over.
   const ev = g.event;
@@ -247,6 +259,7 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
         photo={photo}
         after={
           <>
+            {linkedGuides.length > 0 && <LinkCards title={t("relatedGuides")} items={linkedGuides} />}
             {related.length > 0 && <LinkCards title={t("related")} items={related} />}
           </>
         }

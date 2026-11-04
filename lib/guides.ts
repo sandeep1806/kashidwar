@@ -58,7 +58,8 @@ export interface Guide {
   sections: GuideSection[];
   faq: { q_en: string; a_en: string; q_hi: string; a_hi: string }[];
   sources: GuideSource[];
-  related: Partial<Record<Kind, string[]>>;
+  /** `guides`: other guide slugs, shown as their own "Guides" cards (one-way; list the link on both guides for a pair) */
+  related: Partial<Record<Kind, string[]>> & { guides?: string[] };
   notes?: string;
 }
 
