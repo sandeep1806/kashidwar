@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 # AI content review, run on the maintainer's machine with the local Claude Code CLI.
-# GitHub only checks (CI on the pull request) and deploys (on merge).
+# GitHub checks the pull request (CI); the script merges it when CI passes, and GitHub
+# deploys the merge without waiting for approval (deploy.yml recognises content-review
+# merges). NO_MERGE=1 leaves the pull request open for a hand review instead.
 #
 #   scripts/content-review.sh                # today's rotation (see below)
 #   scripts/content-review.sh guides         # one focus: projects | festivals | guides | developments | places
 #   scripts/content-review.sh places 2       # places, quarter 2 of the A–Z list (1–4)
 #   scripts/content-review.sh full           # the deep review (Opus)
 #   DRY_RUN=1 scripts/content-review.sh ...  # review and show the diff, but no branch, push or PR
+#   NO_MERGE=1 scripts/content-review.sh ... # open the pull request but leave it for a hand merge
 #   FORCE=1 scripts/content-review.sh ...    # run even if today's review already exists
 #
 # Daily rotation by the weekday (IST): Monday = full monthly review on the first Monday
@@ -16,13 +19,15 @@
 # projects + broken links + photos (Sonnet, 80 turns). Every run also writes guides for
 # upcoming major events and turns finished events into history (brief, checks 4b and 4c).
 # A run that changes no content opens no pull request; its report stays in the log folder.
+# A run that changes content opens one pull request, waits for CI and merges it (the
+# merge deploys the site); a CI failure leaves the pull request open and the run fails.
 # No dollar cap by default; set REVIEW_MAX_BUDGET=<usd> for one. Override with
 # REVIEW_MODEL / REVIEW_MAX_TURNS.
 #
 # The agent's brief is .claude/content-review.md. It works in a throwaway git worktree
 # of origin/redesign (your checkout is never touched), may edit only content files, and
-# the script — not the agent — commits, pushes and opens ONE pull request. See README →
-# "Content review".
+# the script — not the agent — commits, pushes, opens ONE pull request and merges it once
+# CI is green. See README → "Content review".
 set -euo pipefail
 
 REPO=$(cd "$(dirname "$0")/.." && pwd)
@@ -59,7 +64,7 @@ CAPS="${TURNS} turns$( [ -n "$BUDGET" ] && printf ', $%s cap' "$BUDGET" || true)
 
 # One review per day: a scheduled catch-up run after a manual one does nothing (FORCE=1 overrides).
 if [ -z "${DRY_RUN:-}" ] && [ -z "${FORCE:-}" ] && [ -e "$STATE/${TODAY}.done" ]; then
-  echo "Today's content review (${TODAY}) already ran and found no changes; nothing to do (FORCE=1 runs another)."; exit 0
+  echo "Today's content review (${TODAY}) already ran; nothing to do (FORCE=1 runs another)."; exit 0
 fi
 if [ -z "${DRY_RUN:-}" ] && [ -z "${FORCE:-}" ] && git -C "$REPO" ls-remote --exit-code --heads origin "content-review/${TODAY}-*" >/dev/null 2>&1; then
   echo "A content review for ${TODAY} already exists on GitHub; nothing to do (FORCE=1 runs another)."; exit 0
@@ -71,7 +76,12 @@ OUT="$STATE/${TODAY}-${TAG}.json"
 echo "${KIND} content review ${TODAY} · focus ${TAG} · ${MODEL} · ${CAPS}" | tee "$LOG"
 
 WT=$(mktemp -d "${TMPDIR:-/tmp}/kashidwar-review.XXXXXX")
-cleanup() { git -C "$REPO" worktree remove --force "$WT" >/dev/null 2>&1 || rm -rf "$WT"; }
+BRANCH=""
+cleanup() {
+  git -C "$REPO" worktree remove --force "$WT" >/dev/null 2>&1 || rm -rf "$WT"
+  # The review branch was created inside the worktree; drop the local copy once it is gone.
+  [ -n "$BRANCH" ] && git -C "$REPO" branch -D "$BRANCH" >/dev/null 2>&1 || true
+}
 trap cleanup EXIT
 git -C "$REPO" fetch -q origin redesign
 git -C "$REPO" worktree add -q --detach "$WT" origin/redesign
@@ -160,7 +170,11 @@ esac
   echo; echo "### Run cost (reported by Claude Code)"
   echo "- ${KIND} review, focus **${TAG}**, model \`${MODEL}\`: ${STOP}."
   echo "- Turns used: ${TURNS_USED:-?} of ${TURNS}. Estimated cost: \$${COST:-?}$( [ -n "$BUDGET" ] && printf ' (cap $%s)' "$BUDGET" || true)."
-  echo "- Run on the maintainer's machine (scripts/content-review.sh). CI runs on this pull request; no auto-merge."
+  if [ -n "${NO_MERGE:-}" ]; then
+    echo "- Run on the maintainer's machine (scripts/content-review.sh). CI runs on this pull request; NO_MERGE was set, so it waits for a hand merge."
+  else
+    echo "- Run on the maintainer's machine (scripts/content-review.sh). CI runs on this pull request; the script merges it when CI passes and GitHub deploys the merge."
+  fi
 } >> "$BODY"
 
 # One line per run in the review history.
@@ -200,3 +214,26 @@ git commit -q -m "${KIND} content review ${TODAY} (${TAG})"
 git push -q origin "$BRANCH"
 URL=$(cd "$REPO" && gh pr create --base redesign --head "$BRANCH" --title "${KIND} content review ${TODAY}" --body-file "$BODY")
 echo "Opened ${URL}" | tee -a "$LOG"
+cd "$REPO"
+if [ -n "${NO_MERGE:-}" ]; then
+  echo "NO_MERGE is set: the pull request waits for a hand merge." | tee -a "$LOG"; exit 0
+fi
+
+# Wait for CI (build, lint, SEO checks) on the pull request, then merge it. The merge is
+# a push to redesign, which deploy.yml deploys without approval because the merge commit
+# names the content-review branch. A red or stuck CI leaves the pull request open.
+echo "Waiting for CI on ${URL} …" | tee -a "$LOG"
+for _ in $(seq 1 30); do   # up to 5 minutes for GitHub to register the check run
+  rc=0; gh pr checks "$URL" >/dev/null 2>&1 || rc=$?   # 0 = all passed, 8 = still running, else none yet
+  if [ "$rc" -eq 0 ] || [ "$rc" -eq 8 ]; then break; fi
+  sleep 10
+done
+if ! timeout 45m gh pr checks "$URL" --watch --fail-fast >>"$LOG" 2>&1; then
+  echo "CI FAILED (or timed out) on ${URL}; left open for a hand review. See $LOG" | tee -a "$LOG"; exit 1
+fi
+gh pr merge "$URL" --merge >>"$LOG" 2>&1 || {
+  echo "MERGE FAILED for ${URL}; left open for a hand review. See $LOG" | tee -a "$LOG"; exit 1
+}
+git push -q origin --delete "$BRANCH" >>"$LOG" 2>&1 || true
+touch "$STATE/${TODAY}.done"
+echo "Merged ${URL} into redesign; GitHub is deploying it (Actions → Deploy)." | tee -a "$LOG"

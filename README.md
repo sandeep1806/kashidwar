@@ -200,8 +200,9 @@ Cloudflare Web Analytics setup, if it ever needs redoing: dashboard → **Analyt
 If you ever turn the proxy off, switch to the manual JS snippet and add its `<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "…"}'>` to `app/[locale]/layout.tsx`.
 
 ## Content review (AI, on the maintainer's machine)
-Site facts are re-checked by the local Claude Code CLI on the maintainer's machine; GitHub only
-runs CI on the resulting pull request and deploys when it is merged. No Anthropic key is stored
+Site facts are re-checked by the local Claude Code CLI on the maintainer's machine; GitHub
+runs CI on the resulting pull request, the script merges it when CI is green, and GitHub deploys
+the merge without waiting for approval (only content files can change). No Anthropic key is stored
 on GitHub (the GitHub-hosted review was removed on 2026-10-23: the Claude Code GitHub Action's
 usage was not covered by the account's promotional credits, while the CLI's is).
 
@@ -211,6 +212,7 @@ scripts/content-review.sh guides       # one focus: projects | festivals | guide
 scripts/content-review.sh places 2     # places, quarter 2 of the A–Z list (1–4)
 scripts/content-review.sh full         # deep review (Opus)
 DRY_RUN=1 scripts/content-review.sh    # review + diff, no branch, push or PR
+NO_MERGE=1 scripts/content-review.sh   # open the PR but leave it for a hand merge
 FORCE=1 scripts/content-review.sh      # run even if today's review already ran
 ```
 
@@ -223,6 +225,9 @@ FORCE=1 scripts/content-review.sh      # run even if today's review already ran
 | Sunday | new developments + projects + broken links + photo candidates | `claude-sonnet-5` | 80 turns |
 
 A run that changes no content opens no pull request; its report stays in `~/.local/state/kashidwar-review/`.
+A run that changes content opens one pull request, waits for CI (build, lint, SEO checks) and
+merges it; the merge deploys the site (no approval step for content-review merges, see
+`deploy.yml`). If CI fails, the pull request stays open and the run reports the failure.
 
 No dollar cap by default; set `REVIEW_MAX_BUDGET=<usd>` for one. Override the model or turn
 limit with `REVIEW_MODEL`, `REVIEW_MAX_TURNS`.
@@ -235,8 +240,8 @@ place" automatically and carry Event structured data until they end.
 
 **Schedule.** A scheduled task in the Claude desktop app runs `scripts/content-review.sh` every
 morning at 05:00 (it catches up if the machine was off). Change or pause it in the app's scheduled
-tasks. The script does nothing if a review branch for that day already exists (or that day's run found no changes), and only one
-review runs at a time.
+tasks. The script does nothing if that day's review already ran (merged, or found no changes) or its
+branch still exists on GitHub, and only one review runs at a time.
 
 **What it does.** Creates a throwaway git worktree of `origin/redesign` (your own checkout is not
 touched), runs `claude -p` with the brief [`.claude/content-review.md`](.claude/content-review.md)
