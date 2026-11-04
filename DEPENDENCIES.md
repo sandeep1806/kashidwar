@@ -71,3 +71,8 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 - `npm update` within ranges: next-intl 4.14.9, react/react-dom 19.3.1, drei 10.7.9, fiber 9.8.2, tailwind 4.3.4, lenis 1.3.27, motion 13.5.1.
 - Still reported by `npm audit`, deliberately left: `minimatch` / `glob` (build- and lint-time only, via eslint plugins and OpenNext's bundler; the only offered fixes are breaking downgrades). Build, lint, tsc, check-seo, check-i18n, the OpenNext Worker build and a local `wrangler dev` smoke test pass.
 - Follow-up: `overrides["@node-minify/core"].glob = "^10.5.0"` lifts OpenNext's bundler copy of `glob` off 10.3.3 (GHSA high, `glob` ≥ 10.2 < 10.5). The remaining moderate `glob`/`minimatch` reports are lint-time (eslint plugins on minimatch 3) and wait on upstream releases.
+
+## 2026-11-04 — Dependabot alerts dismissed
+- #69 `glob` (moderate, AbortSignal bypass; fixed in 14.0.2) and #70 `minimatch` (moderate, globparts DoS; fixed in 11.0.1) dismissed on GitHub as *tolerable risk*, leaving no open alerts.
+- Why: both are build/lint-time only. `glob` 10.5 comes from `@opennextjs/aws` → `@node-minify/core` (the build minifier); `minimatch` 3/9/10 from `eslint`, `typescript-eslint` and `@node-minify/core`. Neither is in the deployed Worker, and the inputs are the repo's own files and config. The patched releases are new majors that eslint 9 and node-minify 9 do not support, so an override would break the build or lint.
+- Re-check when `@opennextjs/cloudflare`, `eslint` or `typescript-eslint` move to `glob` ≥ 14.0.2 / `minimatch` ≥ 11.0.1 (`npm ls glob minimatch`); then drop the `@node-minify/core` glob override and reopen the alerts if they are still flagged.
