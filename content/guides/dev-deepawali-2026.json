@@ -1,12 +1,12 @@
 {
   "slug": "dev-deepawali-2026",
   "published": "2026-09-27",
-  "updated": "2026-10-25",
+  "updated": "2026-11-04",
   "photo": "festivals/dev-deepawali",
   "title_en": "Dev Deepawali (Dev Diwali) 2026 Varanasi: date 24 Nov, time, boat booking",
-  "title_hi": "देव दीपावली 2026 कब है: 24 नवंबर, वाराणसी में समय, घाट और नाव बुकिंग",
-  "description_en": "Dev Deepawali (Dev Diwali) 2026 falls on Tuesday 24 November in Varanasi. Date and timing, ghats, boat booking and reported 2026 prices, boat rules, traffic curbs, stays and etiquette.",
-  "description_hi": "वाराणसी में देव दीपावली 2026 मंगलवार, 24 नवंबर को है। तिथि और समय, घाट, नाव बुकिंग और 2026 के बताए गए दाम, नाव के नियम, ट्रैफ़िक पाबंदियाँ, ठहरना और शिष्टाचार।",
+  "title_hi": "देव दीपावली (देव दिवाली) 2026 कब है: 24 नवंबर, वाराणसी में समय, घाट, नाव बुकिंग",
+  "description_en": "Dev Deepawali (Dev Diwali) 2026 is on Tuesday 24 November in Varanasi; lamps 5:08–7:47 pm. Reported 2026 boat prices from ₹5,000 a seat, cruises sold out, UP Tourism package from ₹15,999. Ghats, rules, traffic.",
+  "description_hi": "वाराणसी में देव दीपावली (देव दिवाली) 2026 मंगलवार, 24 नवंबर को है; दीपदान 5:08–7:47 शाम। 2026 में नाव ₹5,000 प्रति व्यक्ति से (रिपोर्ट), क्रूज़ फ़ुल, UP टूरिज़्म पैकेज ₹15,999 से। घाट, नियम, ट्रैफ़िक।",
   "lead_en": "On the full moon of Kartik, fifteen days after Diwali, Varanasi lights its riverfront with lakhs of earthen lamps for Dev Deepawali, the night the gods are said to come down to bathe in the Ganga. In 2026 the festival falls on Tuesday, 24 November. This guide covers the timing, what happens on the ghats, how to watch from a boat safely, and how to plan around the crowds.",
   "lead_hi": "दिवाली के पंद्रह दिन बाद, कार्तिक पूर्णिमा की रात काशी के घाट लाखों दीयों से जगमगा उठते हैं। मान्यता है कि इस रात देवता गंगा स्नान के लिए धरती पर उतरते हैं। 2026 में देव दीपावली मंगलवार, 24 नवंबर को है। यहाँ जानिए शुभ समय, घाटों पर क्या होता है, नाव से सुरक्षित कैसे देखें और भीड़ के बीच अपनी यात्रा कैसे तय करें।",
   "facts": [
@@ -377,12 +377,17 @@
     {
       "title": "Patrika — Dev Deepawali 2026: Alaknanda and Sam Manekshaw cruises fully booked; bajra and boat bookings (10 Oct 2026)",
       "url": "https://www.patrika.com/varanasi-news/dev-deepawali-2026-kashi-cruise-booking-alaknanda-sam-manekshaw-20972460",
-      "accessed": "2026-10-25"
+      "accessed": "2026-11-04"
+    },
+    {
+      "title": "Amar Ujala — देव दीपावली: विदेशी ग्रुप ने 5 लाख में बुक किया अलकनंदा क्रूज, 15 लाख में सैम मानिकशॉ; अब नाव-बजड़ों का सहारा (10 Oct 2026)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/dev-deepawali-foreign-group-books-alaknanda-cruise-5-lakh-and-sam-manekshaw-15-lakh-relying-on-boats-2026-10-10",
+      "accessed": "2026-11-04"
     },
     {
       "title": "Business Standard Hindi — UPSTDC 'Dev Deepawali – Divya Kashi Anubhav' package from ₹15,999 (22 Oct 2026)",
       "url": "https://hindi.business-standard.com/india-news/varanasi-dev-deepawali-tour-package-price-15999-uttar-pradesh-tourism-id-562013/",
-      "accessed": "2026-10-25"
+      "accessed": "2026-11-04"
     },
     {
       "title": "Amar Ujala — Ganga: large motorboats allowed, hand-rowed boats still banned, two swimmer-boatmen on each (8 Oct 2026)",
@@ -411,7 +416,7 @@
       "2-day"
     ]
   },
-  "notes": "Date re-checked 2026-09-27 against Drik Panchang (Varanasi) and the UP 2026 holiday list and matches content/festival-dates.json (24 Nov 2026; Purnima 11:42 PM 23 Nov to 8:23 PM 24 Nov; pradosh 5:08-7:47 PM). No observance/calendar split this year. Ganga Mahotsav 2026 dates (20-23 Nov, Rajghat) come only from local reports of the Aug 2026 divisional commissioner meeting (Desi Khabar). The ANI report of the same meeting (403 to direct fetch; content seen via search snippet/LatestLY mirror) does not state dates. Kept as proposed/unconfirmed; content/festival-dates.json already has verified:false. No officially notified Dev Deepawali boat fare was found. The Nagar Nigam ₹345 Assi-Namo round-trip fare (Jan 2025) is a normal-day fare, and festival prices come from ETV Bharat's 2024 report, so the boats section is flagged unconfirmed. Boat safety rules and river security figures are from Live VNS (local outlet) for 2024. A 2020 Hindustan Times DM order on capacity and life jackets exists but is paywalled (pressreader 403), so it is not cited. Lamp counts differ between sources (AIR 2024: 11 lakh on 84 ghats, 17 lakh+ citywide; Panchjanya 2025: 11 lakh planned; Patrika 2025: ~25 lakh both banks; ETV 2024: 20-25 lakh), so the guide gives the AIR and government figures with a caveat. The origin story conflicts (Wikipedia: Dashashwamedh 1991, Babu Maharaj; blogs: Panchganga mid-1980s; one Hindi blog says 1915), so it is omitted. The Hazara Deepstambh at Panchganga comes from Webdunia only; it is a secondary source, so check it before promoting it heavily. The 2025 traffic plan comes from Amar Ujala (5 Nov 2025). Specific hour windows seen in secondary summaries (e.g. Godowlia-Pandey Haveli 2-8 PM) could not be confirmed and are omitted. The 2026 laser/fireworks programme is not yet announced, and the text says so. Helplines 112 and 1533 come from Amar Ujala (Jan 2025) and ETV Bharat (2024). The body is about 1,300 English words. 25 Oct 2026 boat update: no official Dev Deepawali fare for 2026 found (DM/Nagar Nigam/VDA/police); prices shown are news-reported 2026 bookings (Patrika 10 Oct), 2024 ETV, and the Jan 2025 municipal ₹345 Assi–Namo fare. UPSTDC package price from Business Standard 22 Oct (not yet on upstdc.co.in on 25 Oct). Post-flood rules from Amar Ujala 8 Oct (Varanasi, despite the ghazipur URL section). Re-check for the 2026 Dev Deepawali boat order around 15–20 Nov.",
+  "notes": "Date re-checked 2026-09-27 against Drik Panchang (Varanasi) and the UP 2026 holiday list and matches content/festival-dates.json (24 Nov 2026; Purnima 11:42 PM 23 Nov to 8:23 PM 24 Nov; pradosh 5:08-7:47 PM). No observance/calendar split this year. Ganga Mahotsav 2026 dates (20-23 Nov, Rajghat) come only from local reports of the Aug 2026 divisional commissioner meeting (Desi Khabar). The ANI report of the same meeting (403 to direct fetch; content seen via search snippet/LatestLY mirror) does not state dates. Kept as proposed/unconfirmed; content/festival-dates.json already has verified:false. No officially notified Dev Deepawali boat fare was found. The Nagar Nigam ₹345 Assi-Namo round-trip fare (Jan 2025) is a normal-day fare, and festival prices come from ETV Bharat's 2024 report, so the boats section is flagged unconfirmed. Boat safety rules and river security figures are from Live VNS (local outlet) for 2024. A 2020 Hindustan Times DM order on capacity and life jackets exists but is paywalled (pressreader 403), so it is not cited. Lamp counts differ between sources (AIR 2024: 11 lakh on 84 ghats, 17 lakh+ citywide; Panchjanya 2025: 11 lakh planned; Patrika 2025: ~25 lakh both banks; ETV 2024: 20-25 lakh), so the guide gives the AIR and government figures with a caveat. The origin story conflicts (Wikipedia: Dashashwamedh 1991, Babu Maharaj; blogs: Panchganga mid-1980s; one Hindi blog says 1915), so it is omitted. The Hazara Deepstambh at Panchganga comes from Webdunia only; it is a secondary source, so check it before promoting it heavily. The 2025 traffic plan comes from Amar Ujala (5 Nov 2025). Specific hour windows seen in secondary summaries (e.g. Godowlia-Pandey Haveli 2-8 PM) could not be confirmed and are omitted. The 2026 laser/fireworks programme is not yet announced, and the text says so. Helplines 112 and 1533 come from Amar Ujala (Jan 2025) and ETV Bharat (2024). The body is about 1,300 English words. 25 Oct 2026 boat update: no official Dev Deepawali fare for 2026 found (DM/Nagar Nigam/VDA/police); prices shown are news-reported 2026 bookings (Patrika 10 Oct), 2024 ETV, and the Jan 2025 municipal ₹345 Assi–Namo fare. UPSTDC package price from Business Standard 22 Oct (not yet on upstdc.co.in on 25 Oct). Post-flood rules from Amar Ujala 8 Oct (Varanasi, despite the ghazipur URL section). Re-check for the 2026 Dev Deepawali boat order around 15–20 Nov. 4 Nov 2026 re-check: Patrika 10 Oct and Business Standard 22 Oct figures unchanged; Amar Ujala 10 Oct reports the same cruise/bajra/event-company prices (added as second source). Still no official 2026 Dev Deepawali boat fare or new municipal rate card; the UPSTDC package is still not on upstdc.co.in (UNI 21 Oct confirms the package, no price). Operator sites list shared boats at ₹2,999–3,500; not used (commercial). GSC (5 Oct–2 Nov): 1,559 impressions, 3 clicks, mostly 'dev diwali 2026 kab hai' date queries at positions 1–3 answered in the SERP, so the titles now carry 'देव दिवाली' and the descriptions lead with reported prices to earn the click.",
   "event": {
     "name_en": "Dev Deepawali 2026 — Varanasi",
     "name_hi": "देव दीपावली 2026 — वाराणसी",
