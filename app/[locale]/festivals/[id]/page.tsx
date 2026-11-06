@@ -16,6 +16,7 @@ import { displayName } from "@/lib/contentTypes";
 import { festivalDateView, festivalTiming, timingSources } from "@/lib/festivalDates";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, breadcrumbLd, festivalPlaces, alternatesFor, leadOf, metaDescription, neighbours, pagePath, pageUrl } from "@/lib/pages";
+import { getDetails } from "@/lib/details";
 import { getPhoto } from "@/lib/photos";
 import { proseFallsBack } from "@/lib/proseLocale";
 
@@ -62,6 +63,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
   await loadEntryTranslations(loc);
   const raw = festivals[index];
   const f = localize(raw, loc);
+  const { details } = await getDetails(loc, "festivals", id);
   const [t, tf, tp, nav, common, practical] = await Promise.all([
     getTranslations({ locale, namespace: "page" }),
     getTranslations({ locale, namespace: "festivals" }),
@@ -182,7 +184,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
       >
         <div className="space-y-10">
           {proseFallsBack(loc) && !hasTranslation(raw, loc) && <EnglishNote text={common("englishNote")} />}
-          <EntryDetails details={f.details} tips={f.tips} tipsTitle={t("tips")} />
+          <EntryDetails details={details} tips={f.tips} tipsTitle={t("tips")} />
           {rest && (
             <details className="story-details">
               <summary>

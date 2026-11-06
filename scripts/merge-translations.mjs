@@ -25,6 +25,8 @@ for (const L of readdirSync(TR).filter((d) => (!only.length || only.includes(d))
   let aboutTouched = false;
   const editorialL = editorial[L] ?? JSON.parse(JSON.stringify(editorial.en));
   let editorialTouched = false;
+  const detPath = `content/details/${L}.json`; const details = existsSync(`${ROOT}/${detPath}`) ? J(detPath) : {};
+  let detailsTouched = false;
   for (const f of outs) {
     const src = JSON.parse(readFileSync(`${TR}/${L}/${f.slice(4)}`, "utf8"));
     const out = JSON.parse(readFileSync(`${TR}/${L}/${f}`, "utf8"));
@@ -42,7 +44,7 @@ for (const L of readdirSync(TR).filter((d) => (!only.length || only.includes(d))
       if (kind === "places" || kind === "festivals" || kind === "projects" || kind === "food") {
         const e = byId(kind, parts[1]); e.i18n ??= {}; const t = (e.i18n[L] ??= {});
         if (parts[2] === "tips" || parts[2] === "where") { (t[parts[2]] ??= []); t[parts[2]][Number(parts[3])] = val; }
-        else if (parts[2] === "details") { const d = (t.details ??= []); (d[Number(parts[3])] ??= {})[parts[4]] = val; }
+        else if (parts[2] === "details") { const d = ((details[kind] ??= {})[parts[1]] ??= []); (d[Number(parts[3])] ??= {})[parts[4]] = val; detailsTouched = true; }
         else if (parts[2] === "glance") { (t.glance ??= {})[parts[3]] = val; }
         else t[parts[2]] = val;
       } else if (kind === "itin") {
@@ -69,6 +71,7 @@ for (const L of readdirSync(TR).filter((d) => (!only.length || only.includes(d))
   if (aboutTouched) about[L] = aboutL;
   if (editorialTouched) editorial[L] = editorialL;
   W(`messages/${L}.json`, msgs); W(altPath, alt); W(gPath, gtr);
+  if (detailsTouched) writeFileSync(`${ROOT}/${detPath}`, JSON.stringify(details, null, 1) + "\n");
   report.push(`${L}: ${outs.length} files, ${n} strings merged, ${missing} missing`);
 }
 deflate(ROOT, { ...data, itineraries: data.itin });

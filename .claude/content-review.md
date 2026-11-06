@@ -16,6 +16,7 @@ guide sections); nothing voyeuristic about cremation grounds.
 
 1. **Files you may edit — nothing else:**
    - `content/*.json` (top level: projects, festivals, festival-dates, places, food, itineraries, faiths)
+   - `content/details/en.json` and `content/details/hi.json` (visitor sections on festival, project and place pages)
    - `content/guides/*.json` (including new guides — they are picked up automatically, no code needed)
    - `content/guides/i18n/*.json` (regional translations of guides, keyed by guide slug)
    - `TRANSLATION_REVIEW.md`
@@ -169,7 +170,7 @@ Re-check, and update if changed (both languages; bump the guide's `updated` date
   change (summer from late March, winter from late October) and whenever a route is added.
   Never print fares (they change daily). Update the airport guide's flights section the same run.
 - Sarnath: ASI ticket fees, Sarnath Museum hours and closed day, transport fares.
-- Detail sections (`details`, `tips` on festivals, projects and places, added 6 Nov 2026): treat them like the summary. A changed fact in a section is changed in English and `i18n.hi` together, with its source added to the entry's `sources`; list the entry under a dated heading in `TRANSLATION_REVIEW.md` for the regional locales.
+- Detail sections (visitor sections in `content/details/en.json` and `content/details/hi.json`, keyed by kind and id; tips stay on the entry): treat them like the summary. A changed fact is changed in English and Hindi together, with its source added to the entry's `sources`; list the entry under a dated heading in `TRANSLATION_REVIEW.md` for the regional locales (`content/details/<locale>.json` is not edited).
 - Dev Deepawali: this year's date, official programme (lamp counts, laser/firework shows),
   boat rules and traffic advisories once announced.
 Keep each section's `sources` indexes correct when you add or remove a source.
