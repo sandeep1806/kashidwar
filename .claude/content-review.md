@@ -217,9 +217,28 @@ already covered by a guide (check `content/guides/`):
   sites as official. English + Hindi in the file, and all 11 regional translations (rule 4).
 - Put the event at the top of the summary table.
 
+- **Lead time:** big dated festivals that people search months ahead (Maha Shivratri, Masan Holi
+  and Holi, Ravidas Jayanti, Dev Deepawali, Sawan) need their guide **8–10 weeks** before the date,
+  not six, so it is indexed before searches peak. Openings with a ticket or first-match moment
+  (the Ganjari cricket stadium, the ropeway) get a guide as soon as the opening is reported, and
+  the ticket section is filled the day sales are announced: ticket and pass searches drove the
+  air show's 1,100 clicks a day.
+
+### 4d. Keyword sweep for events already covered (every run)
+For every guide with an `event` block, and every festival in `content/festival-dates.json`, whose
+date is in the next 8 weeks: run the autocomplete check above in English and Hindi for "<event>
+<year>", "<event> kab hai", "date", "time", "ticket / pass / booking", "cruise / boat booking",
+"live", "route", "parking", and the Hindi name. For each wording people really type that the page
+does not answer, add the phrase to the title or description if it is a top intent, or add an FAQ
+(`q` in the searcher's words, sourced answer) or a section. **Append** new sections and FAQs at the
+end: guide translations are matched by position, so inserting in the middle misaligns every
+regional file; translate what you appended into all 11 regional files (rule 4). Never answer with
+an unconfirmed fact: say it has not been announced yet and when it usually is. List the phrases
+added under "Re-verified, no change" or in the summary.
+
 ### 4c. Finished events — turn them into history (every run)
 For every guide whose `event.endDate` is before today and that has no `what-happened` section:
-add a first section `what-happened` ("What happened at …" / "… में क्या हुआ") with a short,
+append a section `what-happened` at the end ("What happened at …" / "… में क्या हुआ"; at the end because translations are matched by position, see 4d) with a short,
 sourced account (attendance, highlights, records, anything that went wrong), change the lead's
 tense to the past, keep the practical sections that still help (for the next edition), update
 `updated`, and translate the new section into all regional files. Do not delete event pages.
