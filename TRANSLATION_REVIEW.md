@@ -35,7 +35,7 @@ To translate new content later: `node scripts/check-i18n.mjs <dir>` writes the m
 
 **Names in each script (2026-10-12):** every place, festival, project and food entry has `names.<locale>` and every itinerary `titles.<locale>` for the nine non-Devanagari locales (ta, te, kn, ml, bn, or, as, gu, pa); `displayName()` in `lib/contentTypes.ts` picks the own-script name, else Hindi for Devanagari locales, else English, with English as the secondary line. Map pins use the same name. Less certain spellings flagged by the translator: Assamese চাৱন (Sawan), and the "Bharat Milap" / "Eid al-Fitr" forms in several scripts.
 
-Still unreviewed by native speakers — the regional locales stay `noindex` (lib/seo.ts) until someone reads them. Points the translators raised:
+Still unreviewed by native speakers. The regional locales were `noindex` until 6 Nov 2026, when the owner asked for all 13 to be indexed (lib/seo.ts); a native-speaker read is still worth doing, starting with the pages that get search traffic. Points the translators raised:
 - **Brand:** content keeps "Kashidwar" in Latin; `messages/ta|bn|kn.json` write it in script in the About title (காஷித்வார், কাশীদ্বার, ಕಾಶಿದ್ವಾರ್). Pick one.
 - **Digits:** all new text uses ASCII digits; `messages/bn.json` (and a few other message files) still use native numerals in some strings.
 - **Spellings chosen where the old files disagreed:** ml ഘാട്ട് for ghat (ഘട്ടം means "phase"); as অসী, বনাৰস; or ଅସି; kn ಕ್ಯಾಂಟ್, ಬಸದಿ for Jain temples; ta படித்துறை for ghat in general, "<name> காட்" for a named ghat.

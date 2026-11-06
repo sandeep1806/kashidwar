@@ -111,7 +111,7 @@ Each year, add the next year's dates (with sources) to `content/festival-dates.j
 The previous kashidwar.com (Astro, kept as the tag `legacy-astro-site`) used `/ghats/<slug>/`, `/mandir/<slug>/`, `/khana/`, `/map/`, `/tips/`, `/contact/`, `/privacy/`. `next.config.ts` (`LEGACY`) redirects each permanently (308) to its `/en` page, or to the places explorer with a filter (`/en#places/ghats`) when no page exists. Add a line there if Search Console shows another old URL with impressions (`scripts/gsc-report.py`).
 
 ### Indexing a locale
-Only the locales in `INDEXED_LOCALES` (`lib/seo.ts`, currently `["hi", "en"]`) are indexable. Pages in the other 11 locales carry `<meta name="robots" content="noindex, follow">`, have no hreflang links, and are left out of `sitemap.xml` and `sitemap-images.xml`; hreflang is exchanged only between indexed locales, with x-default → `/en`.
+Only the locales in `INDEXED_LOCALES` (`lib/seo.ts`; all 13 since 6 Nov 2026, hi and en only before) are indexable. Pages in a locale left out carry `<meta name="robots" content="noindex, follow">`, have no hreflang links, and are left out of `sitemap.xml` and `sitemap-images.xml`; hreflang is exchanged only between indexed locales, with x-default → `/en`.
 
 To index a regional locale after a native speaker has reviewed it:
 1. Work through its rows in TRANSLATION_REVIEW.md (UI strings in `messages/<locale>.json`, prose in `content/i18n/<locale>.json` + `node scripts/merge-i18n.mjs`, alt text in `content/i18n/alt-<locale>.json` + `node scripts/optimize-images.mjs`).
