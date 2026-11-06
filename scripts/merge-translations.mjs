@@ -11,7 +11,7 @@ const W = (p, o) => writeFileSync(`${ROOT}/${p}`, JSON.stringify(o, null, 2) + "
 const files = { places: "content/places.json", festivals: "content/festivals.json", projects: "content/projects.json", food: "content/food.json", itin: "content/itineraries.json" };
 const data = Object.fromEntries(Object.entries(files).map(([k, p]) => [k, J(p)]));
 inflate(ROOT, { ...data, itineraries: data.itin });
-const faqs = J("content/faqs.json"), about = J("content/about.json");
+const faqs = J("content/faqs.json"), about = J("content/about.json"), editorial = J("content/editorial.json");
 const byId = (k, id) => data[k].find((x) => x.id === id) ?? (() => { throw new Error(`${k}: unknown id ${id}`); })();
 const report = [];
 for (const L of readdirSync(TR).filter((d) => (!only.length || only.includes(d)) && existsSync(`${TR}/${d}`))) {
@@ -23,6 +23,8 @@ for (const L of readdirSync(TR).filter((d) => (!only.length || only.includes(d))
   const gPath = `content/guides/i18n/${L}.json`; const gtr = existsSync(`${ROOT}/${gPath}`) ? J(gPath) : {};
   const aboutL = about[L] ?? JSON.parse(JSON.stringify(about.en));
   let aboutTouched = false;
+  const editorialL = editorial[L] ?? JSON.parse(JSON.stringify(editorial.en));
+  let editorialTouched = false;
   for (const f of outs) {
     const src = JSON.parse(readFileSync(`${TR}/${L}/${f.slice(4)}`, "utf8"));
     const out = JSON.parse(readFileSync(`${TR}/${L}/${f}`, "utf8"));
@@ -40,6 +42,7 @@ for (const L of readdirSync(TR).filter((d) => (!only.length || only.includes(d))
       if (kind === "places" || kind === "festivals" || kind === "projects" || kind === "food") {
         const e = byId(kind, parts[1]); e.i18n ??= {}; const t = (e.i18n[L] ??= {});
         if (parts[2] === "tips" || parts[2] === "where") { (t[parts[2]] ??= []); t[parts[2]][Number(parts[3])] = val; }
+        else if (parts[2] === "details") { const d = (t.details ??= []); (d[Number(parts[3])] ??= {})[parts[4]] = val; }
         else if (parts[2] === "glance") { (t.glance ??= {})[parts[3]] = val; }
         else t[parts[2]] = val;
       } else if (kind === "itin") {
@@ -55,15 +58,20 @@ for (const L of readdirSync(TR).filter((d) => (!only.length || only.includes(d))
         if (parts[1] === "lead") aboutL.lead = val;
         else if (parts[1] === "contact") aboutL.contact[Number(parts[2])] = val;
         else { const s = aboutL.sections[Number(parts[2])]; if (parts[3] === "heading") s.heading = val; else s[parts[3]][Number(parts[4])] = val; }
+      } else if (kind === "editorial") {
+        editorialTouched = true;
+        if (parts[1] === "lead" || parts[1] === "recentTitle" || parts[1] === "recentNote") editorialL[parts[1]] = val;
+        else { const s = editorialL.sections[Number(parts[2])]; if (parts[3] === "heading") s.heading = val; else s[parts[3]][Number(parts[4])] = val; }
       } else if (kind === "alt") { alt[parts.slice(1).join("|")] = val; }
       else throw new Error("unknown key " + key);
     }
   }
   if (aboutTouched) about[L] = aboutL;
+  if (editorialTouched) editorial[L] = editorialL;
   W(`messages/${L}.json`, msgs); W(altPath, alt); W(gPath, gtr);
   report.push(`${L}: ${outs.length} files, ${n} strings merged, ${missing} missing`);
 }
 deflate(ROOT, { ...data, itineraries: data.itin });
 for (const [k, p] of Object.entries(files)) W(p, data[k]);
-W("content/faqs.json", faqs); W("content/about.json", about);
+W("content/faqs.json", faqs); W("content/about.json", about); W("content/editorial.json", editorial);
 console.log(report.join("\n"));

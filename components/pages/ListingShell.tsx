@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import LdJson from "@/components/pages/LdJson";
 import type { Crumb } from "@/components/pages/PageShell";
 import SectionHeading from "@/components/ui/SectionHeading";
-import PromoSlot from "@/components/ui/PromoSlot";
+import PromoSlot, { NoPromo } from "@/components/ui/PromoSlot";
 import SiteFooter from "@/components/ui/SiteFooter";
 import Static from "@/components/ui/Static";
 import type { Locale } from "@/lib/i18n/locales";
@@ -25,6 +25,7 @@ export default function ListingShell({
   children,
   island,
   band,
+  promo = true,
 }: {
   locale: Locale;
   /** Locale-less path of this page, for the footer's language links */
@@ -39,6 +40,8 @@ export default function ListingShell({
   island?: ReactNode;
   /** Photo band between the title and the intro (see PhotoBand) */
   band?: ReactNode;
+  /** false on policy pages (about, editorial policy, privacy, credits): no house-ad card there */
+  promo?: boolean;
 }) {
   return (
     <main id="content" className="flex flex-1 flex-col">
@@ -64,7 +67,7 @@ export default function ListingShell({
               <SectionHeading as="h1" id="page-title" locale={locale} title={title} secondary={secondary} />
               {band}
               <div className="mx-auto mt-8 max-w-2xl text-lg text-kashi-ash/90">{intro}</div>
-              <PromoSlot className="mx-auto max-w-2xl text-left" />
+              {promo ? <PromoSlot className="mx-auto max-w-2xl text-left" /> : <NoPromo />}
             </div>
           </div>
           {children}

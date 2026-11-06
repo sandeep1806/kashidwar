@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Block, LinkCards, PrevNext, Sources } from "@/components/pages/Blocks";
+import { Block, EntryDetails, LinkCards, PrevNext, Sources } from "@/components/pages/Blocks";
 import FactStrip from "@/components/pages/FactStrip";
 import GuideLinks from "@/components/pages/GuideLinks";
 import LdJson from "@/components/pages/LdJson";
@@ -182,6 +182,7 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
       >
         <div className="space-y-10">
           {proseFallsBack(loc) && !hasTranslation(raw, loc) && <EnglishNote text={common("englishNote")} />}
+          <EntryDetails details={f.details} tips={f.tips} tipsTitle={t("tips")} />
           {rest && (
             <details className="story-details">
               <summary>

@@ -57,6 +57,7 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/about">
         ]}
       />
       <ListingShell
+        promo={false}
         locale={loc}
         path={path}
         sectionId="about"

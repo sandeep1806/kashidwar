@@ -87,18 +87,22 @@
   },
   "bharat-milap": {
     "2026": {
-      "startDate": "2026-10-21",
-      "endDate": "2026-10-21",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-22",
       "verified": true,
-      "note": "The day after Vijayadashami (20 Oct 2026 per DoPT/UP lists). Drik Panchang (Varanasi) lists 'Kashi Bharat Milap' on Wed 21 Oct 2026 (Dashami until 2:11 PM, then Ekadashi). Nati Imli Bharat Milap is held at sunset.",
+      "note": "Held on Thu 22 Oct 2026, on Papankusha Ekadashi, two days after Vijayadashami (20 Oct); Drik Panchang had listed 21 Oct. Amar Ujala and ETV Bharat reported the lila at Nati Imli on 22 Oct, and Varanasi schools were closed on 22–23 Oct for it.",
       "sources": [
         {
-          "title": "Drik Panchang: Varanasi day panchang, 21 Oct 2026",
-          "url": "https://www.drikpanchang.com/panchang/day-panchang.html?geoname-id=1253405&date=21/10/2026"
+          "title": "Amar Ujala — World-famous Bharat Milap concludes in Varanasi (22 Oct 2026)",
+          "url": "https://www.amarujala.com/uttar-pradesh/varanasi/world-famous-483-years-old-bharat-milap-event-has-concluded-in-varanasi-2026-10-22"
         },
         {
-          "title": "Drik Panchang: Vijayadashami 2026",
-          "url": "https://www.drikpanchang.com/festivals/vijayadashami/vijayadashami-date-time.html"
+          "title": "ETV Bharat — Bharat Milap at Nati Imli (22 Oct 2026)",
+          "url": "https://www.etvbharat.com/hi/state/bharat-milap-at-nati-imli-in-varanasi-leaves-devotees-emotional-ups26102206936"
+        },
+        {
+          "title": "Amar Ujala — Varanasi schools closed 22–23 October for Bharat Milap and MLC elections (21 Oct 2026)",
+          "url": "https://www.amarujala.com/uttar-pradesh/varanasi/varanasi-schools-up-to-intermediate-level-closed-on-october-22-23-due-to-bharat-milap-and-mlc-elections-2026-10-21"
         }
       ]
     },
@@ -106,7 +110,7 @@
       "startDate": "2027-10-10",
       "endDate": "2027-10-10",
       "verified": true,
-      "note": "Drik Panchang (Varanasi): Kashi Bharat Milap Sun 10 Oct 2027, the day after Vijayadashami (Sat 9 Oct). The drikpanchang search snippet (New Delhi default) showed 9 Oct; the Varanasi-location page says 10 Oct.",
+      "note": "Drik Panchang (Varanasi): Kashi Bharat Milap Sun 10 Oct 2027, the day after Vijayadashami (Sat 9 Oct). The drikpanchang search snippet (New Delhi default) showed 9 Oct; the Varanasi-location page says 10 Oct. Re-check against the Papankusha Ekadashi rule nearer the date: in 2026 the lila followed Ekadashi, not the day after Vijayadashami.",
       "sources": [
         {
           "title": "Drik Panchang — 2027 Kashi Bharat Milap date and time for Varanasi",

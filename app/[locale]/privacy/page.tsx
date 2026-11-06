@@ -39,6 +39,7 @@ export default async function PrivacyPage({ params }: PageProps<"/[locale]/priva
         ]}
       />
       <ListingShell
+        promo={false}
         locale={locale as Locale}
         path={path}
         sectionId="privacy"

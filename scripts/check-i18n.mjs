@@ -6,7 +6,7 @@
  *                                            ({ key: { en, hi? } }) for translators; merge the
  *                                            translated out-<chunk>.json files back with the merge script
  *                                            described in TRANSLATION_REVIEW.md.
- * Covers places, festivals, projects, food, itineraries, FAQs, About, UI strings, photo alt text
+ * Covers places, festivals, projects, food, itineraries, FAQs, About, the editorial policy, UI strings, photo alt text
  * and the guides (content/guides/i18n/<locale>.json).
  */
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
@@ -18,7 +18,7 @@ const LOCALES = ["ta", "te", "kn", "ml", "bn", "or", "as", "mr", "gu", "pa", "sa
 const report = [];
 const places = J("content/places.json"), festivals = J("content/festivals.json"), projects = J("content/projects.json"), food = J("content/food.json"), itins = J("content/itineraries.json");
 inflate(ROOT, { places, festivals, projects, food, itineraries: itins });
-const faqs = J("content/faqs.json"), about = J("content/about.json"), photos = J("content/photos.json");
+const faqs = J("content/faqs.json"), about = J("content/about.json"), editorial = J("content/editorial.json"), photos = J("content/photos.json");
 const en = J("messages/en.json"), hi = J("messages/hi.json");
 const flat = (o, p = "") => Object.entries(o).flatMap(([k, v]) => (v && typeof v === "object" && !Array.isArray(v) ? flat(v, p + k + ".") : [[p + k, v]]));
 const guides = readdirSync(`${ROOT}/content/guides`).filter((f) => f.endsWith(".json")).map((f) => J(`content/guides/${f}`));
@@ -29,11 +29,17 @@ for (const L of LOCALES) {
   for (const p of places) {
     const have = p.i18n?.[L] ?? {}, h = p.i18n?.hi ?? {};
     for (const f of ["summary", "bestTime", "story"]) if (!have[f]) add("places", `places|${p.id}|${f}`, p[f], h[f]);
-    if (!have.tips) (p.tips ?? []).forEach((t, i) => add("places", `places|${p.id}|tips|${i}`, t, h.tips?.[i]));
+    if ((have.tips ?? []).length !== (p.tips ?? []).length) (p.tips ?? []).forEach((t, i) => add("places", `places|${p.id}|tips|${i}`, t, h.tips?.[i]));
     for (const f of ["timings", "entry", "duration", "season"]) if (!have.glance?.[f]) add("places", `places|${p.id}|glance|${f}`, p.glance?.[f], h.glance?.[f]);
   }
   for (const f of festivals) { const have = f.i18n?.[L] ?? {}, h = f.i18n?.hi ?? {}; for (const k of ["summary", "when", "where"]) if (!have[k]) add("other", `festivals|${f.id}|${k}`, f[k], h[k]); }
   for (const p of projects) { const have = p.i18n?.[L] ?? {}, h = p.i18n?.hi ?? {}; for (const k of ["summary", "timeline", "agency", "cost"]) if (!have[k]) add("other", `projects|${p.id}|${k}`, p[k], h[k]); }
+  // Visitor sections (and festival/project tips) on detail pages: translated as whole arrays (same length as English).
+  for (const [kind, list] of [["places", places], ["festivals", festivals], ["projects", projects]]) for (const e of list) {
+    const have = e.i18n?.[L] ?? {}, h = e.i18n?.hi ?? {};
+    if ((e.details ?? []).length && (have.details ?? []).length !== e.details.length) e.details.forEach((d, i) => { add("other", `${kind}|${e.id}|details|${i}|heading`, d.heading, h.details?.[i]?.heading); add("other", `${kind}|${e.id}|details|${i}|body`, d.body, h.details?.[i]?.body); });
+    if (kind !== "places" && (e.tips ?? []).length && (have.tips ?? []).length !== e.tips.length) e.tips.forEach((t, i) => add("other", `${kind}|${e.id}|tips|${i}`, t, h.tips?.[i]));
+  }
   for (const d of food) {
     const have = d.i18n?.[L] ?? {}, h = d.i18n?.hi ?? {};
     for (const k of ["summary", "season", "price"]) if (!have[k]) add("other", `food|${d.id}|${k}`, d[k], h[k]);
@@ -55,6 +61,11 @@ for (const L of LOCALES) {
     add("faqs", "about|lead", about.en.lead, about.hi.lead);
     about.en.sections.forEach((s, i) => { const hs = about.hi.sections[i]; add("faqs", `about|sections|${i}|heading`, s.heading, hs?.heading); s.body.forEach((b, j) => add("faqs", `about|sections|${i}|body|${j}`, b, hs?.body?.[j])); (s.list ?? []).forEach((b, j) => add("faqs", `about|sections|${i}|list|${j}`, b, hs?.list?.[j])); });
     about.en.contact.forEach((c, i) => add("faqs", `about|contact|${i}`, c, about.hi.contact[i]));
+  }
+  if (!editorial[L]) {
+    add("faqs", "editorial|lead", editorial.en.lead, editorial.hi.lead);
+    editorial.en.sections.forEach((sec, i) => { const hs = editorial.hi.sections[i]; add("faqs", `editorial|sections|${i}|heading`, sec.heading, hs?.heading); sec.body.forEach((b, j) => add("faqs", `editorial|sections|${i}|body|${j}`, b, hs?.body?.[j])); (sec.list ?? []).forEach((b, j) => add("faqs", `editorial|sections|${i}|list|${j}`, b, hs?.list?.[j])); });
+    for (const k of ["recentTitle", "recentNote"]) add("faqs", `editorial|${k}`, editorial.en[k], editorial.hi[k]);
   }
   const altL = (() => { try { return J(`content/i18n/alt-${L}.json`); } catch { return {}; } })();
   for (const [k, p] of Object.entries(photos)) if (!altL[k] && !p.alt?.[L]) add("alt", `alt|${k}`, p.alt?.en, p.alt?.hi);

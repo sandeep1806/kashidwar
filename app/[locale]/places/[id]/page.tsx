@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Block, LinkCards, PrevNext, Sources } from "@/components/pages/Blocks";
+import { Block, EntryDetails, LinkCards, PrevNext, Sources } from "@/components/pages/Blocks";
 import DistanceCards, { type DistanceItem } from "@/components/pages/DistanceCards";
 import FactStrip from "@/components/pages/FactStrip";
 import GlanceGrid, { type GlanceTile } from "@/components/pages/GlanceGrid";
@@ -228,6 +228,7 @@ export default async function PlacePage({ params }: PageProps<"/[locale]/places/
             items={tiles}
             footnote={g.verified === false ? t("glance.unverified") : undefined}
           />
+          <EntryDetails details={p.details} tipsTitle={t("glance.tipsHint")} />
           {p.tips?.length ? (
             <Block title={t("glance.tipsHint")}>
               <ul className="space-y-3">
