@@ -10,7 +10,8 @@ import { getPlace, itineraries, localizeItinerary, loadEntryTranslations } from 
 import { displayName } from "@/lib/contentTypes";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { alternatesFor, itineraryLeadPlace, itinerarySlug, pageUrl } from "@/lib/pages";
-import { guideBySlug, guideTranslations, localizeGuide } from "@/lib/guides";
+import { guideBySlug, localizeGuide } from "@/lib/guides";
+import { guideTranslations } from "@/lib/guideTranslations";
 import { getPhoto } from "@/lib/photos";
 import { isIndexed } from "@/lib/seo";
 

@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { LinkCards } from "@/components/pages/Blocks";
-import { guidePhoto, guidesFor, guideTranslations, localizeGuide } from "@/lib/guides";
+import { guidePhoto, guidesFor, localizeGuide } from "@/lib/guides";
+import { guideTranslations } from "@/lib/guideTranslations";
 import type { Locale } from "@/lib/i18n/locales";
 import type { Kind } from "@/lib/pages";
 

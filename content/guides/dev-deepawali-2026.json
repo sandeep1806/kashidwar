@@ -1,10 +1,10 @@
 {
   "slug": "dev-deepawali-2026",
   "published": "2026-09-27",
-  "updated": "2026-11-04",
+  "updated": "2026-11-07",
   "photo": "festivals/dev-deepawali",
-  "title_en": "Dev Deepawali (Dev Diwali) 2026 Varanasi: date 24 Nov, time, boat booking",
-  "title_hi": "देव दीपावली (देव दिवाली) 2026 कब है: 24 नवंबर, वाराणसी में समय, घाट, नाव बुकिंग",
+  "title_en": "Dev Deepawali (Dev Diwali) 2026 Varanasi: 24 Nov, boat & cruise booking",
+  "title_hi": "देव दीपावली (देव दिवाली) 2026 कब है: 24 नवंबर, वाराणसी में नाव और क्रूज़ बुकिंग",
   "description_en": "Dev Deepawali (Dev Diwali) 2026 is on Tuesday 24 November in Varanasi; lamps 5:08–7:47 pm. Reported 2026 boat prices from ₹5,000 a seat, cruises sold out, UP Tourism package from ₹15,999. Ghats, rules, traffic.",
   "description_hi": "वाराणसी में देव दीपावली (देव दिवाली) 2026 मंगलवार, 24 नवंबर को है; दीपदान 5:08–7:47 शाम। 2026 में नाव ₹5,000 प्रति व्यक्ति से (रिपोर्ट), क्रूज़ फ़ुल, UP टूरिज़्म पैकेज ₹15,999 से। घाट, नियम, ट्रैफ़िक।",
   "lead_en": "On the full moon of Kartik, fifteen days after Diwali, Varanasi lights its riverfront with lakhs of earthen lamps for Dev Deepawali, the night the gods are said to come down to bathe in the Ganga. In 2026 the festival falls on Tuesday, 24 November. This guide covers the timing, what happens on the ghats, how to watch from a boat safely, and how to plan around the crowds.",
@@ -241,6 +241,34 @@
         15,
         1
       ]
+    },
+    {
+      "id": "cruise-booking",
+      "heading_en": "Dev Deepawali 2026 cruise booking: which cruises are full",
+      "heading_hi": "देव दीपावली 2026 क्रूज़ बुकिंग: कौन से क्रूज़ भर चुके हैं",
+      "body_en": [
+        "By 10 October 2026, Amar Ujala reported that no cruise on the Ganga had seats left for Dev Deepawali night. Cruises run for at most four hours that evening, from about 5:30 to 9:30 pm. If you still want to watch from the river, ask your hotel or a registered boatman about a shared seat or a whole boat, and agree the boat type, boarding ghat and times in writing before paying."
+      ],
+      "body_hi": [
+        "अमर उजाला के अनुसार 10 अक्टूबर 2026 तक गंगा के किसी भी क्रूज़ में देव दीपावली की रात के लिए सीट खाली नहीं थी। उस शाम क्रूज़ ज़्यादा से ज़्यादा चार घंटे, लगभग शाम 5:30 से रात 9:30 बजे तक चलते हैं। अगर फिर भी नदी से देखना हो, तो अपने होटल या पंजीकृत नाविक से साझा सीट या पूरी नाव के बारे में पूछें, और भुगतान से पहले नाव का प्रकार, चढ़ने का घाट और समय लिखित में तय करें।"
+      ],
+      "list_en": [
+        "Alaknanda (60 seats): booked whole by a foreign group for ₹5 lakh",
+        "Sam Manekshaw (100 seats): sold at ₹15,000 per passenger, full",
+        "Vivekananda (100 seats): reserved for VVIPs",
+        "Bhagirathi (80 seats): reserved for the tourism minister's guests",
+        "Gangotri (200 seats, 48 overnight rooms): full, including the rooms"
+      ],
+      "list_hi": [
+        "अलकनंदा (60 सीटें): एक विदेशी समूह ने ₹5 लाख में पूरा बुक किया",
+        "सैम मानेकशॉ (100 सीटें): ₹15,000 प्रति यात्री पर बिका, भरा हुआ",
+        "विवेकानंद (100 सीटें): वीवीआईपी के लिए आरक्षित",
+        "भागीरथी (80 सीटें): पर्यटन मंत्री के मेहमानों के लिए आरक्षित",
+        "गंगोत्री (200 सीटें, रात रुकने के 48 कमरे): कमरों सहित भरा हुआ"
+      ],
+      "sources": [
+        17
+      ]
     }
   ],
   "faq": [
@@ -291,6 +319,12 @@
       "a_en": "UP Tourism (UPSTDC) has a 4-day 'Dev Deepawali – Divya Kashi Anubhav' package with a special boat ride, reported at ₹15,999 per person on twin sharing (GST extra). Otherwise book weeks ahead through your hotel or a registered boatman, board only a registered motorboat, and wear a life jacket.",
       "q_hi": "देव दीपावली 2026 के लिए नाव कैसे बुक करें? क्या कोई आधिकारिक पैकेज है?",
       "a_hi": "यूपी पर्यटन (यूपीएसटीडीसी) का विशेष नाव सैर वाला 4 दिन का 'देव दीपावली – दिव्य काशी अनुभव' पैकेज है, जिसकी कीमत ख़बरों के अनुसार ट्विन शेयरिंग पर ₹15,999 प्रति व्यक्ति से है (जीएसटी अलग)। वरना हफ़्तों पहले होटल या पंजीकृत नाविक से बुक करें, केवल पंजीकृत मोटरबोट में बैठें और लाइफ जैकेट पहनें।"
+    },
+    {
+      "q_en": "Can I still book a cruise for Dev Deepawali 2026?",
+      "a_en": "Probably not: by 10 October 2026 every Ganga cruise (Alaknanda, Sam Manekshaw, Gangotri, and the Vivekananda and Bhagirathi kept for VVIPs) was reported full for the night. Shared seats on boats and whole boats were still being sold through hotels and boatmen.",
+      "q_hi": "क्या देव दीपावली 2026 के लिए अब भी क्रूज़ बुक हो सकता है?",
+      "a_hi": "शायद नहीं: 10 अक्टूबर 2026 तक गंगा के सभी क्रूज़ (अलकनंदा, सैम मानेकशॉ, गंगोत्री, और वीवीआईपी के लिए रखे विवेकानंद व भागीरथी) उस रात के लिए भरे बताए गए। नावों में साझा सीटें और पूरी नावें होटलों और नाविकों के ज़रिए अब भी बिक रही थीं।"
     }
   ],
   "sources": [
