@@ -1,7 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import StaggerCards from "@/components/motion/StaggerCards";
 import CardPhoto from "@/components/ui/CardPhoto";
-import { guidePhoto, guides, guideTranslations, localizeGuide } from "@/lib/guides";
+import { guidePhoto, guides, localizeGuide } from "@/lib/guides";
+import { guideTranslations } from "@/lib/guideTranslations";
 import type { Locale } from "@/lib/i18n/locales";
 
 /**

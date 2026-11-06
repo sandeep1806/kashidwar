@@ -111,18 +111,7 @@ export interface GuideTranslation {
 }
 export type GuideTranslations = Record<string, GuideTranslation>;
 
-/**
- * The regional translations of every guide for one locale, loaded on demand
- * (one chunk per locale, so the other locales' text is never parsed).
- */
-export async function guideTranslations(locale: Locale): Promise<GuideTranslations> {
-  if (locale === "en" || locale === "hi") return {};
-  try {
-    return (await import(`@/content/guides/i18n/${locale}.json`)).default as GuideTranslations;
-  } catch {
-    return {};
-  }
-}
+/** Loading a locale's guide translations lives in lib/guideTranslations.ts, kept out of this module on purpose. */
 
 /** Guides are written in Hindi and English; other locales read their translation, else the English. */
 export const guideLang = (locale: Locale): "hi" | "en" => (locale === "hi" ? "hi" : "en");

@@ -3,7 +3,8 @@ import { isIndexed } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ListingShell from "@/components/pages/ListingShell";
 import CardPhoto from "@/components/ui/CardPhoto";
-import { guidePhoto, guides, guideTranslations, localizeGuide } from "@/lib/guides";
+import { guidePhoto, guides, localizeGuide } from "@/lib/guides";
+import { guideTranslations } from "@/lib/guideTranslations";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { alternatesFor } from "@/lib/pages";
 
