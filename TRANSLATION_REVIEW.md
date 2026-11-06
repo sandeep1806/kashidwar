@@ -118,3 +118,12 @@ Fonts load per script via `lib/fonts.ts`. Language names in the switcher and foo
 - `content/guides/i18n/<locale>.json` → `varanasi-ropeway`: the second paragraph of "status", the whole "fares" section (body and three list items) and the fare fact were re-translated in one pass (UP government fares as reported, ₹10–₹50, Kashi Smart Pass 20% off).
 - `content/guides/i18n/<locale>.json` → `ganga-aarti-varanasi`, section "monsoon-and-floods", first paragraph: one sentence appended in each locale (rooftop aarti from 17 August 2026, back on its platform on 20 October after 64 days).
 - `content/guides/i18n/<locale>.json` → the new guide `kashi-tamil-sangamam-2026` (all 11 locales), and in `varanasi-air-show-2026` the new first section `what-happened` plus the past-tense description, lead, two facts and two FAQ answers: written in one pass without a native reviewer. Check the transliteration of the theme "Thirukkural Payilvom – Thirukkural Abhyas Karen" in each script, and the Sanskrit words used for "portal", "website" and "register".
+
+## Thin-page expansion and editorial policy · 2026-11-06
+
+New visitor sections (`details`) and tips for 18 festivals, 14 projects and 18 places, the new "How we make content" page (`content/editorial.json`), and corrected summaries (Maha Shivratri, Ramnagar Ramlila, Christmas, Bharat Milap, Ganga cruise, ring road, Sarnath, Ganjari, Ravidas Janmasthan, Chunar, Sankat Mochan hours) were machine-translated into all 11 regional locales and are unreviewed. Points the translators raised:
+- **Secondary titles:** `editorial.titleSecondary` stays Hindi in every regional locale, like `about` and `privacy`.
+- **Acronyms:** new text keeps UNESCO, NHAI, BCCI etc. in Latin script; older entries spell some in script (யுனெஸ்கோ, ಯುನೆಸ್ಕೋ, यूनेस्को, ਯੂਨੈਸਕੋ). Pick one per locale.
+- **Christian terms** (Midnight Mass, crib) and **new name spellings** (Dedhsi Pul, Lalkuti, Thatheri, Sonwa Mandap, Tavernier, Bisheshwarganj) need a native read in every locale.
+- **Spelling splits inside a locale:** ml ഘാട്ട്/ഘട്ട്, as অসী/অস্সী, bn বনারস/বানারস.
+

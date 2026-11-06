@@ -62,7 +62,14 @@ export type LocalizedFields = Partial<{
   theme: string;
   cost: string;
   price: string;
+  details: ContentSection[];
 }>;
+
+/** A headed paragraph of visitor-facing prose on a festival or project page (shown open, not behind "Read the full story"). */
+export interface ContentSection {
+  heading: string;
+  body: string;
+}
 
 export type Crowd = "quiet" | "moderate" | "busy" | "very-busy";
 export type Photography = "allowed" | "outside-only" | "no";
@@ -116,6 +123,8 @@ export interface Place {
   /** false when lat/lng were placed from a locality description, not a cited coordinate */
   coordsVerified?: boolean;
   story?: string;
+  /** History, what to see, rituals, how to reach: shown open on the place page, each sourced in `sources` */
+  details?: ContentSection[];
   tips?: string[];
   glance?: Glance;
   /** Optional verse shown in original script + transliteration + translation */
@@ -151,6 +160,9 @@ export interface Project {
   cost?: string;
   /** Physical progress 0–100 from the latest sourced inspection; 100 when completed, 0 when announced */
   progress?: number;
+  /** What it is, what it changes for visitors, history: each section sourced in `sources` */
+  details?: ContentSection[];
+  tips?: string[];
 }
 
 export interface Festival {
@@ -169,6 +181,9 @@ export interface Festival {
   /** Listed places named in `where` (links on the festival page) */
   placeIds: string[];
   summary: string;
+  /** What happens, where to watch, how to plan: each section sourced in `sources` */
+  details?: ContentSection[];
+  tips?: string[];
   image: string;
   sources: Source[];
 }

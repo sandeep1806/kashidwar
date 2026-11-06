@@ -31,9 +31,11 @@ export default function Promo({ copy }: { copy: PromoCopy }) {
 
   useEffect(() => {
     // Re-run per route: the layout persists across client navigations, the slot does not.
+    // Policy pages (about, editorial policy, privacy, credits) carry no ad: no card, no bar.
+    const off = !!document.querySelector("[data-promo-off]");
     const slot = document.querySelector<HTMLElement>('[data-promo-slot="primary"]') ?? document.querySelector<HTMLElement>("[data-promo-slot]");
     // eslint-disable-next-line react-hooks/set-state-in-effect -- reading browser-only state after mount is the point
-    setTarget({ slot, situation: slot?.dataset.promoSituation ?? null });
+    setTarget(off ? null : { slot, situation: slot?.dataset.promoSituation ?? null });
     setDismissed(readDismissed());
   }, [pathname]);
 

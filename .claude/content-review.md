@@ -169,6 +169,7 @@ Re-check, and update if changed (both languages; bump the guide's `updated` date
   change (summer from late March, winter from late October) and whenever a route is added.
   Never print fares (they change daily). Update the airport guide's flights section the same run.
 - Sarnath: ASI ticket fees, Sarnath Museum hours and closed day, transport fares.
+- Detail sections (`details`, `tips` on festivals, projects and places, added 6 Nov 2026): treat them like the summary. A changed fact in a section is changed in English and `i18n.hi` together, with its source added to the entry's `sources`; list the entry under a dated heading in `TRANSLATION_REVIEW.md` for the regional locales.
 - Dev Deepawali: this year's date, official programme (lamp counts, laser/firework shows),
   boat rules and traffic advisories once announced.
 Keep each section's `sources` indexes correct when you add or remove a source.

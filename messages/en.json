@@ -360,7 +360,8 @@
     "about": "About",
     "contact": "Contact",
     "guides": "Guides",
-    "privacy": "Privacy policy"
+    "privacy": "Privacy policy",
+    "editorial": "How we make content"
   },
   "credits": {
     "title": "Credits",
@@ -452,7 +453,8 @@
       "next": "Next photo",
       "close": "Close",
       "credit": "Photo: {author} · {license}"
-    }
+    },
+    "tips": "Good to know"
   },
   "guides": {
     "title": "Guides to Kashi",
@@ -519,5 +521,10 @@
     ],
     "barPerks": "Lifetime free · 0% forex · Lounges*",
     "footnote": "*Lounge and airport privileges need a monthly spend; rewards vary by card. Full terms on Scapia's site."
+  },
+  "editorial": {
+    "title": "How we make content",
+    "titleSecondary": "हम कंटेंट कैसे बनाते हैं",
+    "description": "Where kashidwar.com's facts come from, how each one is checked, how the site is reviewed every day, how AI tools are used, and how to send a correction."
   }
 }

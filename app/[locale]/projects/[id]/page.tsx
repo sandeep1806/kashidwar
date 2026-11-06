@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Block, LinkCards, PrevNext, Sources } from "@/components/pages/Blocks";
+import { Block, EntryDetails, LinkCards, PrevNext, Sources } from "@/components/pages/Blocks";
 import DistanceCards, { type DistanceItem } from "@/components/pages/DistanceCards";
 import FactStrip from "@/components/pages/FactStrip";
 import GuideLinks from "@/components/pages/GuideLinks";
@@ -173,6 +173,7 @@ export default async function ProjectPage({ params }: PageProps<"/[locale]/proje
             </ol>
             {!raw.verified && <p className="mt-4 flex items-start gap-2 text-sm text-kashi-marigold"><Icon name="info" className="mt-0.5 h-4 w-4 shrink-0" />{tj("unverified")}</p>}
           </Block>
+          <EntryDetails details={p.details} tips={p.tips} tipsTitle={t("tips")} />
           {rest && (
             <details className="story-details">
               <summary>

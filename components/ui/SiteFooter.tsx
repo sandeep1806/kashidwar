@@ -80,6 +80,9 @@ export default async function SiteFooter({ locale, path = "" }: { locale: Locale
               <a href={`/${locale}/about`} className="inline-flex min-h-11 items-center text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">{t("about")}</a>
             </li>
             <li>
+              <a href={`/${locale}/editorial-policy`} className="inline-flex min-h-11 items-center text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">{t("editorial")}</a>
+            </li>
+            <li>
               <a href={`/${locale}/about#contact`} className="inline-flex min-h-11 items-center text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">{t("contact")}</a>
             </li>
             <li>

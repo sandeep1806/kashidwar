@@ -4,6 +4,7 @@ import credits from "@/content/credits.json";
 import { alternatesFor } from "@/lib/pages";
 import { photoAlt } from "@/lib/photos";
 import Static from "@/components/ui/Static";
+import { NoPromo } from "@/components/ui/PromoSlot";
 
 export interface Credit {
   key: string;
@@ -29,6 +30,7 @@ export default async function CreditsPage({ params }: PageProps<"/[locale]/credi
   const list = credits as Credit[];
   return (
     <main id="content" className="container-kashi min-h-dvh pb-24 pt-32">
+      <NoPromo />
       <Static>
       <h1 className="text-h2 text-glow">{t("title")}</h1>
       <p className="mt-6 max-w-2xl text-lg text-kashi-ash/90">{t("intro")}</p>

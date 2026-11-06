@@ -2,7 +2,32 @@ import type { ReactNode } from "react";
 import ArtFallback from "@/components/ui/ArtFallback";
 import Photo from "@/components/ui/Photo";
 import Icon, { type IconName } from "@/components/ui/Icon";
-import type { Faith, PhotoData, PlaceType } from "@/lib/contentTypes";
+import type { ContentSection, Faith, PhotoData, PlaceType } from "@/lib/contentTypes";
+
+/** A festival's or project's visitor sections (h2 + paragraph each), then its tips; shown open. */
+export function EntryDetails({ details, tips, tipsTitle }: { details?: ContentSection[]; tips?: string[]; tipsTitle: string }) {
+  return (
+    <>
+      {details?.map((d) => (
+        <Block key={d.heading} title={d.heading}>
+          <p className="leading-relaxed">{d.body}</p>
+        </Block>
+      ))}
+      {tips?.length ? (
+        <Block title={tipsTitle}>
+          <ul className="space-y-3">
+            {tips.map((tip) => (
+              <li key={tip} className="flex gap-3">
+                <Icon name="tip" className="mt-0.5 h-5 w-5 shrink-0 text-kashi-diya" />
+                <span>{tip}</span>
+              </li>
+            ))}
+          </ul>
+        </Block>
+      ) : null}
+    </>
+  );
+}
 
 /** A titled block in the page body (h2 + content). */
 export function Block({ title, children, className = "" }: { title: string; children: ReactNode; className?: string }) {
