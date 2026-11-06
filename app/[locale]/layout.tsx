@@ -77,7 +77,7 @@ export async function generateMetadata({
       images: [{ url: `/media/og/og-${locale}.png`, width: 1200, height: 630, alt: t("title") }],
     },
     twitter: { card: "summary_large_image", title: t("homeTitle"), description: t("description", { count: placeCount(locale) }), images: [`/media/og/og-${locale}.png`] },
-    // Regional locales: noindex until reviewed (lib/seo.ts → INDEXED_LOCALES).
+    // Locales outside lib/seo.ts → INDEXED_LOCALES get noindex (all 13 are indexed since 6 Nov 2026).
     // Indexed pages allow large image previews in search and Discover.
     robots: isIndexed(locale) ? { index: true, follow: true, "max-image-preview": "large" } : { index: false, follow: true },
     manifest: "/manifest.webmanifest",
