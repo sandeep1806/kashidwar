@@ -17,6 +17,7 @@ import { localize, places, type Faith, loadEntryTranslations } from "@/lib/conte
 import { displayName } from "@/lib/contentTypes";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, breadcrumbLd, festivalsAt, hubDistances, alternatesFor, leadOf, mapLinks, metaDescription, nearestPlace, neighbours, pagePath, pageUrl, relatedPlaces, travelEstimate } from "@/lib/pages";
+import { getDetails } from "@/lib/details";
 import { getGallery, getGalleryCredits, getPhoto } from "@/lib/photos";
 import { proseFallsBack } from "@/lib/proseLocale";
 
@@ -66,6 +67,7 @@ export default async function PlacePage({ params }: PageProps<"/[locale]/places/
   await loadEntryTranslations(loc);
   const raw = places[index];
   const p = localize(raw, loc);
+  const { details } = await getDetails(loc, "places", id);
   const [t, tp, nav, common] = await Promise.all([
     getTranslations({ locale, namespace: "page" }),
     getTranslations({ locale, namespace: "places" }),
@@ -228,7 +230,7 @@ export default async function PlacePage({ params }: PageProps<"/[locale]/places/
             items={tiles}
             footnote={g.verified === false ? t("glance.unverified") : undefined}
           />
-          <EntryDetails details={p.details} tipsTitle={t("glance.tipsHint")} />
+          <EntryDetails details={details} tipsTitle={t("glance.tipsHint")} />
           {p.tips?.length ? (
             <Block title={t("glance.tipsHint")}>
               <ul className="space-y-3">

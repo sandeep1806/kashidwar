@@ -15,6 +15,7 @@ import { localize, projects, type Faith, loadEntryTranslations } from "@/lib/con
 import { displayName } from "@/lib/contentTypes";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { breadcrumbLd, hubDistances, alternatesFor, leadOf, mapLinks, metaDescription, neighbours, pagePath, pageUrl, projectPlaces, travelEstimate } from "@/lib/pages";
+import { getDetails } from "@/lib/details";
 import { getPhoto } from "@/lib/photos";
 import { proseFallsBack } from "@/lib/proseLocale";
 
@@ -60,6 +61,7 @@ export default async function ProjectPage({ params }: PageProps<"/[locale]/proje
   await loadEntryTranslations(loc);
   const raw = projects[index];
   const p = localize(raw, loc);
+  const { details } = await getDetails(loc, "projects", id);
   const [t, tj, tp, nav, common] = await Promise.all([
     getTranslations({ locale, namespace: "page" }),
     getTranslations({ locale, namespace: "projects" }),
@@ -173,7 +175,7 @@ export default async function ProjectPage({ params }: PageProps<"/[locale]/proje
             </ol>
             {!raw.verified && <p className="mt-4 flex items-start gap-2 text-sm text-kashi-marigold"><Icon name="info" className="mt-0.5 h-4 w-4 shrink-0" />{tj("unverified")}</p>}
           </Block>
-          <EntryDetails details={p.details} tips={p.tips} tipsTitle={t("tips")} />
+          <EntryDetails details={details} tips={p.tips} tipsTitle={t("tips")} />
           {rest && (
             <details className="story-details">
               <summary>

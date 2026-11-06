@@ -137,7 +137,7 @@ echo "Result: ${RESULT_TYPE:-unknown} (error: ${IS_ERROR:-?}) · turns ${TURNS_U
 if [ -n "$FINAL" ]; then printf '%s\n' "$FINAL" | sed 's/^/> /' | tee -a "$LOG"; fi
 
 # Only content files may change: stray new files are removed, edits elsewhere abort.
-ALLOWED_PATHS='^(content/[^/]+\.json|content/guides/[^/]+\.json|content/guides/i18n/[^/]+\.json|TRANSLATION_REVIEW\.md|\.content-review-pr\.md)$'
+ALLOWED_PATHS='^(content/[^/]+\.json|content/details/(en|hi)\.json|content/guides/[^/]+\.json|content/guides/i18n/[^/]+\.json|TRANSLATION_REVIEW\.md|\.content-review-pr\.md)$'
 git ls-files --others --exclude-standard | { grep -vE "$ALLOWED_PATHS" || true; } | while read -r f; do
   echo "Removed scratch file left by the review: $f" | tee -a "$LOG"; rm -f -- "$f"
 done
