@@ -24,6 +24,9 @@
     "binding": "IMAGES"
   },
   "observability": { "enabled": true },
+  // Source maps are not uploaded: with 13 locales of content they passed Cloudflare's 60 MiB
+  // source-map limit (6 Nov 2026) and blocked deploys. Logs show bundled stack frames instead.
+  "upload_source_maps": false,
   // Weekly rebuild (Mondays 00:30 UTC = 06:00 IST) so festival pages roll over
   // to the next occurrence: worker.js calls the DEPLOY_HOOK_URL secret.
   "triggers": { "crons": ["30 0 * * 1"] },
