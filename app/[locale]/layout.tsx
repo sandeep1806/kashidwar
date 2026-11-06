@@ -109,7 +109,7 @@ export default async function LocaleLayout({
   const sectionItems = SECTIONS.map((s) => ({ id: s.id, label: nav(s.key) }));
   // Display faces apply at once; body faces are attached after first paint (see DeferredFonts).
   const fonts = fontClassesFor(locale as Locale);
-  // House ad until AdSense is approved (components/ui/Promo.tsx); regional locales fall back to the English copy.
+  // House ad until AdSense is approved (components/ui/Promo.tsx); copy in every locale's messages.
   const promo = await getTranslations("promo");
   const promoCopy: PromoCopy | null = promoEnabled(process.env.NEXT_PUBLIC_PROMO)
     ? {
