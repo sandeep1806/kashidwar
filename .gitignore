@@ -54,3 +54,7 @@ scripts/heading-font/node_modules
 .content-review-pr.md
 .review-tmp/
 lib/guides.generated.ts
+
+# Owner photo originals (scripts/optimize-images.mjs reads raw/<group>/<id>.jpg; only the encoded
+# AVIF/WebP in public/media are committed, without EXIF/GPS metadata)
+/raw/

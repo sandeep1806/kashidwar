@@ -5,6 +5,8 @@ import Static from "@/components/ui/Static";
 import Photo from "@/components/ui/Photo";
 import PromoSlot from "@/components/ui/PromoSlot";
 import ArtFallback from "@/components/ui/ArtFallback";
+import FaithGlyph from "@/components/ui/FaithGlyph";
+import PlaceArt from "@/components/ui/PlaceArt";
 import type { Faith, PhotoData, PlaceType } from "@/lib/contentTypes";
 import type { Locale } from "@/lib/i18n/locales";
 
@@ -68,6 +70,13 @@ export default function PageShell({
   gallery?: ReactNode;
 }) {
   if (variant === "visual") {
+    const heading = (
+      <>
+        {chips && <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">{chips}</div>}
+        <SectionHeading as="h1" id="page-title" locale={locale} title={title} secondary={secondary} align="left" />
+        {subtitle && <div className="mt-4">{subtitle}</div>}
+      </>
+    );
     return (
       <main id="content" className="flex flex-1 flex-col">
         <Static>
@@ -76,19 +85,24 @@ export default function PageShell({
               <Breadcrumbs crumbs={crumbs} />
             </div>
             <div className="visual-hero-wrap">
-              <div className="visual-hero">
-                {photo ? (
+              {photo ? (
+                <div className="visual-hero">
                   <Photo photo={photo} sizes="(min-width: 1280px) 1280px, (min-width: 640px) 100vw, 360px" priority />
-                ) : (
-                  <ArtFallback faith={faith} type={placeType} />
-                )}
-                <div className="visual-hero-shade" />
-                <header className={`visual-hero-text ${longTitle ? "is-long" : ""}`}>
-                  {chips && <div className="mb-3 flex flex-wrap items-center gap-2 text-xs">{chips}</div>}
-                  <SectionHeading as="h1" id="page-title" locale={locale} title={title} secondary={secondary} align="left" />
-                  {subtitle && <div className="mt-4">{subtitle}</div>}
-                </header>
-              </div>
+                  <div className="visual-hero-shade" />
+                  <header className={`visual-hero-text ${longTitle ? "is-long" : ""}`}>{heading}</header>
+                </div>
+              ) : (
+                // No photo yet: a compact title band instead of a tall empty frame, so the facts
+                // and text start at once. The full photo hero returns as soon as a photo is added.
+                <div className={`visual-hero is-compact place-art place-art-${faith}`}>
+                  <header className={`visual-hero-text is-compact ${longTitle ? "is-long" : ""}`}>
+                    <span className="compact-hero-art" aria-hidden="true">
+                      {placeType ? <PlaceArt type={placeType} className="h-full w-full" /> : <FaithGlyph faith={faith} className="h-full w-full" />}
+                    </span>
+                    <div className="min-w-0">{heading}</div>
+                  </header>
+                </div>
+              )}
             </div>
             <div className="container-kashi">
               {strip}

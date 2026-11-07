@@ -154,6 +154,15 @@ Re-check, and update if changed (both languages; bump the guide's `updated` date
   the same run: title/description to "now open" with the start date, hours, fares and how to
   buy tickets, the status section and FAQ, `content/projects.json` status → `completed`, and
   the regional `title`/`description`/`faq` in `content/guides/i18n/*.json`.
+  **Use the playbook:** the "now open" text is pre-written in all 13 locales in
+  `content/playbooks/varanasi-ropeway-open.json`. Check its sentences against the opening news
+  (edit English and Hindi there first if anything differs, and list that under "Translations
+  flagged"), then run `node scripts/apply-ropeway-open.mjs --date YYYY-MM-DD --hours "HH:MM–HH:MM"
+  --source-url … --source-title "…" [--fare-min ₹N --fare-full ₹N [--fares-official]]` (try
+  `--dry-run` first). It updates the guide in every locale, appends two FAQs and marks the
+  project completed. Do by hand what it prints: the `fares` section once the operator publishes
+  a fare table, and the project's summary, timeline and bestTime. Wait for the hours and the
+  date from a source; never guess them.
 - Varanasi airport (`varanasi-airport.json`): the lounge's name, hours and location (Priority
   Pass listing, AAI Eat & Dine page) and whether Varanasi is still on the bank lounge lists
   cited there (SBI Card, IndusInd, DBS, RuPay); replace a list with its newer quarterly copy.
