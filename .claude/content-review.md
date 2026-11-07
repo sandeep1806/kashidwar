@@ -173,6 +173,14 @@ Re-check, and update if changed (both languages; bump the guide's `updated` date
 - Detail sections (visitor sections in `content/details/en.json` and `content/details/hi.json`, keyed by kind and id; tips stay on the entry): treat them like the summary. A changed fact is changed in English and Hindi together, with its source added to the entry's `sources`; list the entry under a dated heading in `TRANSLATION_REVIEW.md` for the regional locales (`content/details/<locale>.json` is not edited).
 - Dev Deepawali: this year's date, official programme (lamp counts, laser/firework shows),
   boat rules and traffic advisories once announced.
+- New Year (`new-year-in-varanasi-2027.json`): from 15 December 2026 on every run, search District
+  and BookMyShow ("new year party varanasi", "NYE varanasi") and local news for 31 December
+  parties: replace the 2025 example in the `parties-events` section, the "Parties" fact and FAQ 8
+  with this year's venues and ticket prices once listed (a listing or press release is enough for
+  a price, labelled as such; never invent one). From about 20 December, add the temple trust's
+  New Year darshan notice (VIP/sparsh/Sugam suspension, booking halt) and the police traffic and
+  boat orders to `temple-rules`, `traffic` and the facts the same run they are reported. These
+  are top search days ("new year party in varanasi", "is kashi vishwanath open on 1 january").
 Keep each section's `sources` indexes correct when you add or remove a source.
 
 ### 4. New developments

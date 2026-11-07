@@ -1,14 +1,14 @@
 {
   "slug": "new-year-in-varanasi-2027",
   "published": "2026-11-04",
-  "updated": "2026-11-04",
+  "updated": "2026-11-07",
   "photo": "projects/kashi-vishwanath-corridor",
-  "title_en": "New Year in Varanasi 2027: Kashi Vishwanath crowd, rules, ghats",
-  "title_hi": "बनारस में न्यू ईयर 2027: नए साल पर काशी विश्वनाथ भीड़, नियम, घाट",
-  "description_en": "Expect lakhs at Kashi Vishwanath on 1 Jan 2027: last year VIP and sparsh darshan were paused from 24 Dec and cars barred. Crowds, rules, boats, fog, events.",
-  "description_hi": "नए साल 2027 पर काशी विश्वनाथ में लाखों की भीड़ तय: पिछली बार 24 दिसंबर से वीआईपी व स्पर्श दर्शन बंद, गाड़ियों पर रोक। भीड़, नियम, नाव, कोहरा, न्यू ईयर कार्यक्रम।",
-  "lead_en": "New Year has become one of the busiest times of the year in Varanasi. In the week before 1 January 2026 more than 20 lakh people had darshan at Kashi Vishwanath, special darshan was suspended and cars were kept out of the old city. This guide covers what happened around the last two New Years, the temple and traffic rules to expect for 31 December 2026 and 1 January 2027, the ghats and boats at night, the cold and fog, and what is and is not known about parties and events.",
-  "lead_hi": "नया साल अब वाराणसी के सबसे व्यस्त समय में से एक है। 1 जनवरी 2026 से पहले के एक हफ़्ते में काशी विश्वनाथ में 20 लाख से अधिक लोगों ने दर्शन किए, विशेष दर्शन बंद रहे और पुराने शहर में गाड़ियाँ रोकी गईं। यहाँ जानिए पिछले दो नए सालों में क्या हुआ, 31 दिसंबर 2026 और 1 जनवरी 2027 को मंदिर और ट्रैफ़िक के कैसे नियम हो सकते हैं, रात में घाट और नाव, ठंड और कोहरा, और न्यू ईयर पार्टी व कार्यक्रमों के बारे में क्या पता है और क्या नहीं।",
+  "title_en": "New Year in Varanasi 2027: party, celebration & Kashi Vishwanath crowd",
+  "title_hi": "बनारस में न्यू ईयर 2027: 31 दिसंबर पार्टी, जश्न और काशी विश्वनाथ भीड़",
+  "description_en": "31 Dec 2026–1 Jan 2027: New Year party venues & ticket prices, best places to celebrate, is Kashi Vishwanath open on 1 January, crowd rules, boats, fog.",
+  "description_hi": "31 दिसंबर 2026–1 जनवरी 2027: वाराणसी में न्यू ईयर पार्टी कहाँ और टिकट कितने का, जश्न की सबसे अच्छी जगहें, 1 जनवरी को काशी विश्वनाथ खुला है या नहीं, भीड़, नियम, नाव, कोहरा।",
+  "lead_en": "New Year is now one of the busiest times of the year in Varanasi. In the week before 1 January 2026 more than 20 lakh people had darshan at Kashi Vishwanath, special darshan was suspended and cars were kept out of the old city. This guide covers the New Year celebration in Varanasi for 31 December 2026 and 1 January 2027: where people celebrate, what New Year parties have cost and where, whether Kashi Vishwanath is open on 1 January and which temple and traffic rules to expect, and the boats, cold and fog.",
+  "lead_hi": "नया साल अब वाराणसी के सबसे व्यस्त समय में से एक है। 1 जनवरी 2026 से पहले के एक हफ़्ते में काशी विश्वनाथ में 20 लाख से अधिक लोगों ने दर्शन किए, विशेष दर्शन बंद रहे और पुराने शहर में गाड़ियाँ रोकी गईं। यहाँ जानिए 31 दिसंबर 2026 और 1 जनवरी 2027 को बनारस में नए साल का जश्न: लोग कहाँ जश्न मनाते हैं, न्यू ईयर पार्टी कहाँ और कितने की रही है, 1 जनवरी को काशी विश्वनाथ खुला है या नहीं और मंदिर व ट्रैफ़िक के कैसे नियम हो सकते हैं, साथ में नाव, ठंड और कोहरा।",
   "facts": [
     {
       "icon": "calendar",
@@ -51,6 +51,20 @@
       "label_hi": "कोहरा",
       "value_en": "Trains and flights run hours late; keep a buffer day",
       "value_hi": "ट्रेनें और उड़ानें घंटों लेट; एक दिन अतिरिक्त रखें"
+    },
+    {
+      "icon": "clock",
+      "label_en": "Temple on 1 Jan",
+      "label_hi": "1 जनवरी को मंदिर",
+      "value_en": "Open; general darshan after the 3 am Mangala aarti",
+      "value_hi": "खुला; सुबह 3 बजे मंगला आरती के बाद आम दर्शन"
+    },
+    {
+      "icon": "info",
+      "label_en": "Parties",
+      "label_hi": "पार्टी",
+      "value_en": "Private and ticketed; one on 31 Dec 2025 cost ₹1,899",
+      "value_hi": "निजी, टिकट वाली; 31 दिसंबर 2025 को एक का टिकट ₹1,899"
     }
   ],
   "sections": [
@@ -79,14 +93,16 @@
     },
     {
       "id": "temple-rules",
-      "heading_en": "Kashi Vishwanath darshan rules around New Year",
-      "heading_hi": "नए साल पर काशी विश्वनाथ में दर्शन के नियम",
+      "heading_en": "Is Kashi Vishwanath open on 1 January? New Year darshan rules",
+      "heading_hi": "क्या 1 जनवरी को काशी विश्वनाथ खुला है? नए साल पर दर्शन के नियम",
       "body_en": [
+        "Yes, the temple is open on 1 January; it does not close for New Year. On 1 January 2026 the doors opened to general devotees after the Mangala aarti, the first aarti of the day, and there were heavy crowds at Ganga Dwar and the other gates from early morning. On ordinary days the temple trust gives its hours as about 3 am to 11 pm (its rituals page says it opens at 2:30 am), and general darshan pauses while each aarti is on. What changes at New Year is the kind of darshan you can get.",
         "In 2025-26 the temple administration suspended VIP, protocol and sparsh (touch) darshan from 24 December. Everyone joined the same queue for jhanki darshan, a view of the jyotirlinga from outside the sanctum, through zig-zag barricades. Reports differ on the end date: the Free Press Journal said 3 January 2026 and ABP said 2 January. The CEO said the suspension would be reviewed after that. On 1 January Amar Ujala reported special and touch darshan still barred and heavy crowds at Ganga Dwar and the other gates.",
         "In 2024-25 the restrictions came later and were narrower. Touch darshan was stopped on 31 December and 1 January. The temple took no new bookings from 31 December to 2 January, according to Amar Ujala; Millennium Post said 4 January. Sugam Darshan, abhishek and most aarti tickets were already sold out online into January.",
         "What this means for 2026-27: Sugam Darshan or aarti tickets bought in advance may not run, and touch darshan is unlikely. Expect a single general queue. The temple trust usually announces its New Year arrangements in the last week of December, so check shrikashivishwanath.org and local news before you travel."
       ],
       "body_hi": [
+        "हाँ, 1 जनवरी को मंदिर खुला रहता है; नए साल पर यह बंद नहीं होता। 1 जनवरी 2026 को दिन की पहली आरती, मंगला आरती के बाद आम भक्तों के लिए द्वार खुले और सुबह से ही गंगा द्वार समेत सभी प्रवेश द्वारों पर भारी भीड़ रही। सामान्य दिनों में मंदिर न्यास के अनुसार मंदिर लगभग सुबह 3 बजे से रात 11 बजे तक खुला रहता है (न्यास के अनुष्ठान पेज पर खुलने का समय 2:30 बजे है), और हर आरती के दौरान आम दर्शन रुकता है। नए साल पर बदलता यह है कि आपको किस तरह का दर्शन मिलेगा।",
         "2025-26 में मंदिर प्रशासन ने 24 दिसंबर से वीआईपी, प्रोटोकॉल और स्पर्श दर्शन रोक दिए थे। सभी श्रद्धालु एक ही कतार से झांकी दर्शन कर रहे थे, यानी गर्भगृह के बाहर से ज्योतिर्लिंग के दर्शन, ज़िग-ज़ैग बैरिकेडिंग के बीच से। रोक कब तक रहेगी, इस पर ख़बरें अलग हैं: फ़्री प्रेस जर्नल ने 3 जनवरी 2026 और एबीपी ने 2 जनवरी बताया। सीईओ ने कहा था कि इसके बाद समीक्षा होगी। 1 जनवरी को अमर उजाला ने बताया कि विशेष और स्पर्श दर्शन बंद थे और गंगा द्वार समेत सभी गेटों पर भारी भीड़ थी।",
         "2024-25 में पाबंदियाँ देर से और कम थीं। स्पर्श दर्शन 31 दिसंबर और 1 जनवरी को बंद रहे। अमर उजाला के अनुसार 31 दिसंबर से 2 जनवरी तक कोई नई बुकिंग नहीं हुई; मिलेनियम पोस्ट ने यह तारीख़ 4 जनवरी बताई। सुगम दर्शन, अभिषेक और ज़्यादातर आरतियों के ऑनलाइन टिकट जनवरी तक पहले ही भर चुके थे।",
         "2026-27 के लिए इसका मतलब: पहले से ख़रीदा सुगम दर्शन या आरती का टिकट शायद न चले, और स्पर्श दर्शन की संभावना कम है। एक ही सामान्य कतार मानकर चलें। मंदिर न्यास आमतौर पर दिसंबर के आख़िरी हफ़्ते में नए साल की व्यवस्था बताता है, इसलिए जाने से पहले shrikashivishwanath.org और स्थानीय ख़बरें देखें।"
@@ -99,7 +115,9 @@
         5,
         9,
         10,
-        11
+        11,
+        23,
+        24
       ]
     },
     {
@@ -167,23 +185,68 @@
       ]
     },
     {
-      "id": "parties-events",
-      "heading_en": "New Year parties, events and hotels",
-      "heading_hi": "न्यू ईयर पार्टी, कार्यक्रम और होटल",
+      "id": "where-to-celebrate",
+      "heading_en": "Best places to celebrate New Year in Varanasi",
+      "heading_hi": "वाराणसी में नया साल मनाने की सबसे अच्छी जगहें",
       "body_en": [
-        "Varanasi has no official New Year's Eve event, and no city-run countdown or fireworks show was reported in the years checked. For most visitors the celebration is the evening aarti, a walk along the ghats and darshan the next morning. Hotels, restaurants and cruise operators do sell New Year's Eve dinners and packages, but these are commercial and change every year. We found no news report of 2026-27 events or their prices, so we list none here. Confirm anything you book directly with the venue.",
-        "Book your room early. On 31 December 2024 ETV Bharat reported all hotels full and rooms that usually cost about ₹1,000 a night going for ₹4,000–5,000. These are reported figures, not an official rate. As early as New Year 2023, OYO's founder said Varanasi was overtaking Goa in New Year's Eve bookings.",
-        "Kashi is a pilgrimage city first. In 2019 the municipal corporation's executive committee approved a proposal to ban liquor and non-vegetarian food within 250 metres of temples and heritage sites, but we could not confirm it is in force. Whatever the rule, drinking on the ghats or near temples is unwelcome, and police check vehicles and crowds closely on these nights."
+        "For most visitors, the New Year celebration in Varanasi happens at the river and the temples, not at a party. These places drew the biggest New Year crowds in recent years, so go early to all of them:",
+        "If you would rather avoid the crush, spend 31 December and 1 January on the quieter ghats away from Dashashwamedh and keep your temple visits for later in the week. The sections above cover the crowds, the temple rules and the boats in detail."
       ],
       "body_hi": [
-        "वाराणसी में नए साल की पूर्व संध्या पर कोई सरकारी कार्यक्रम नहीं होता, और जिन वर्षों की हमने जाँच की उनमें शहर की ओर से किसी काउंटडाउन या आतिशबाज़ी की ख़बर नहीं मिली। ज़्यादातर लोगों के लिए जश्न का मतलब है शाम की आरती, घाटों पर टहलना और अगली सुबह दर्शन। होटल, रेस्टोरेंट और क्रूज़ संचालक न्यू ईयर डिनर और पैकेज बेचते हैं, पर ये व्यावसायिक हैं और हर साल बदलते हैं। 2026-27 के किसी कार्यक्रम या उसकी कीमत की कोई ख़बर हमें नहीं मिली, इसलिए हम यहाँ कोई सूची नहीं दे रहे। जो भी बुक करें, सीधे आयोजक से पुष्टि करें।",
+        "ज़्यादातर लोगों के लिए बनारस में नए साल का जश्न पार्टी में नहीं, गंगा किनारे और मंदिरों में होता है। पिछले कुछ सालों में नए साल पर सबसे ज़्यादा भीड़ इन्हीं जगहों पर रही, इसलिए हर जगह जल्दी पहुँचें:",
+        "अगर भीड़ से बचना चाहते हैं तो 31 दिसंबर और 1 जनवरी दशाश्वमेध से दूर के शांत घाटों पर बिताएँ और मंदिर दर्शन हफ़्ते में बाद के लिए रखें। भीड़, मंदिर के नियम और नाव के बारे में ऊपर के हिस्सों में विस्तार से लिखा है।"
+      ],
+      "list_en": [
+        "Dashashwamedh Ghat: the evening Ganga Aarti, at about 6 pm in winter. On 1 January 2025 it drew thousands of devotees and tourists.",
+        "Assi Ghat: the dawn aarti on 1 January, which drew a large crowd in 2026.",
+        "Kashi Vishwanath: the year's first darshan. On New Year's Day the queue starts before dawn.",
+        "Namo Ghat: crowded on New Year's Day; in 2026 police shut the Rajghat bridge to cars for two hours in the evening.",
+        "Kaal Bhairav and Sankat Mochan: long queues through the New Year week.",
+        "A boat on the Ganga: go in daylight or at aarti time; boats stop at 8:30 pm."
+      ],
+      "list_hi": [
+        "दशाश्वमेध घाट: शाम की गंगा आरती, सर्दियों में लगभग 6 बजे। 1 जनवरी 2025 को इसमें हज़ारों श्रद्धालु और पर्यटक पहुँचे।",
+        "अस्सी घाट: 1 जनवरी की सुबह की आरती, जिसमें 2026 में भारी भीड़ रही।",
+        "काशी विश्वनाथ: साल का पहला दर्शन। नए साल के दिन कतार भोर से पहले लग जाती है।",
+        "नमो घाट: नए साल के दिन भारी भीड़; 2026 में पुलिस ने शाम को दो घंटे राजघाट पुल पर चारपहिया वाहन रोके।",
+        "काल भैरव और संकट मोचन: नए साल के पूरे हफ़्ते लंबी कतारें।",
+        "गंगा में नाव: दिन में या आरती के समय जाएँ; रात 8:30 बजे के बाद नाव नहीं चलती।"
+      ],
+      "sources": [
+        25,
+        16,
+        19,
+        5,
+        10,
+        8,
+        9,
+        3,
+        15
+      ]
+    },
+    {
+      "id": "parties-events",
+      "heading_en": "New Year party in Varanasi: venues, tickets and prices",
+      "heading_hi": "वाराणसी में न्यू ईयर पार्टी: जगह, टिकट और कीमत",
+      "body_en": [
+        "Varanasi has no official, city-run New Year's Eve event, and no city countdown or fireworks show was reported in the years we checked. New Year parties in Varanasi are private, ticketed events at hotels, bars and lawns, and they are publicised only in December.",
+        "The longest-running is Prohibition Week, a series of DJ nights held in the last week of December since 2018. Its eighth edition, in 2025, ran until 31 December, and the organiser's press release said tickets were on District (Zomato) and BookMyShow. An event listing for its New Year's Eve party gave the venue as Hotel Varuna in Sigra, 8 pm to 12:30 am, with tickets at ₹1,899. These are last year's details. No party, venue or price for 31 December 2026 had been announced by 7 November 2026, so check District and BookMyShow from mid-December and confirm with the venue before you pay.",
+        "Book your room early. On 31 December 2024 ETV Bharat reported all hotels full and rooms that usually cost about ₹1,000 a night going for ₹4,000–5,000. These are reported figures, not an official rate. As early as New Year 2023, OYO's founder said Varanasi was overtaking Goa in New Year's Eve bookings.",
+        "A venue that serves alcohol needs an excise licence, or a temporary one for a one-off party; at New Year 2023 Varanasi's excise department checked hotels and restaurants holding temporary licences. Kashi is a pilgrimage city first. In 2019 the municipal corporation's executive committee approved a proposal to ban liquor and non-vegetarian food within 250 metres of temples and heritage sites, but we could not confirm it is in force. Whatever the rule, drinking on the ghats or near temples is unwelcome, and police check vehicles and crowds closely on these nights."
+      ],
+      "body_hi": [
+        "वाराणसी में नए साल की पूर्व संध्या पर कोई सरकारी या शहर का आयोजन नहीं होता, और जिन सालों की हमने जाँच की उनमें शहर की ओर से किसी काउंटडाउन या आतिशबाज़ी शो की ख़बर नहीं मिली। बनारस में न्यू ईयर पार्टियाँ होटलों, बार और लॉन में होने वाले निजी, टिकट वाले कार्यक्रम हैं, और इनका प्रचार दिसंबर में ही होता है।",
+        "सबसे पुराना आयोजन प्रोहिबिशन वीक है, जो 2018 से दिसंबर के आख़िरी हफ़्ते में होने वाली डीजे नाइट्स की शृंखला है। 2025 में इसका आठवाँ संस्करण 31 दिसंबर तक चला, और आयोजक की प्रेस विज्ञप्ति के अनुसार टिकट डिस्ट्रिक्ट (ज़ोमैटो) और बुकमायशो पर थे। एक इवेंट लिस्टिंग के अनुसार इसकी 31 दिसंबर की पार्टी सिगरा के होटल वरुणा में रात 8 बजे से 12:30 बजे तक थी और टिकट ₹1,899 का था। ये पिछले साल की जानकारी है। 7 नवंबर 2026 तक 31 दिसंबर 2026 की किसी पार्टी, जगह या कीमत की घोषणा नहीं हुई थी, इसलिए दिसंबर के बीच से डिस्ट्रिक्ट और बुकमायशो देखें और पैसे देने से पहले आयोजन स्थल से पुष्टि करें।",
         "कमरा जल्दी बुक करें। 31 दिसंबर 2024 को ईटीवी भारत ने बताया कि सभी होटल भरे थे और आमतौर पर लगभग ₹1,000 प्रति रात वाले कमरे ₹4,000–5,000 में मिल रहे थे। ये ख़बरों में आए आँकड़े हैं, कोई आधिकारिक दर नहीं। 2023 के नए साल पर ही ओयो के संस्थापक ने कहा था कि नए साल की बुकिंग में वाराणसी गोवा से आगे निकल रहा है।",
-        "काशी सबसे पहले एक तीर्थ नगरी है। 2019 में नगर निगम की कार्यकारिणी ने मंदिरों और धरोहर स्थलों के 250 मीटर के दायरे में शराब और मांसाहार पर रोक का प्रस्ताव पास किया था, पर हम पुष्टि नहीं कर सके कि यह लागू है। नियम जो भी हो, घाटों पर या मंदिरों के पास शराब पीना ठीक नहीं माना जाता, और इन रातों में पुलिस वाहनों और भीड़ पर कड़ी नज़र रखती है।"
+        "शराब परोसने वाली जगह के पास आबकारी लाइसेंस होना चाहिए, या एक बार की पार्टी के लिए अस्थाई लाइसेंस; 2023 के नए साल पर वाराणसी के आबकारी विभाग ने अस्थाई लाइसेंस वाले होटलों और रेस्टोरेंट में जाँच की थी। काशी सबसे पहले एक तीर्थ नगरी है। 2019 में नगर निगम की कार्यकारिणी ने मंदिरों और धरोहर स्थलों के 250 मीटर के दायरे में शराब और मांसाहार पर रोक का प्रस्ताव पास किया था, पर हम पुष्टि नहीं कर सके कि यह लागू है। नियम जो भी हो, घाटों पर या मंदिरों के पास शराब पीना ठीक नहीं माना जाता, और इन रातों में पुलिस वाहनों और भीड़ पर कड़ी नज़र रखती है।"
       ],
       "unconfirmed": true,
       "sources": [
+        26,
+        27,
         12,
         22,
+        28,
         21
       ]
     },
@@ -269,9 +332,9 @@
     },
     {
       "q_en": "Are there New Year parties or events in Varanasi?",
-      "a_en": "There is no official city event. Hotels, restaurants and cruise operators sell New Year's Eve dinners and packages, but they change every year and we found no reported 2026-27 listings. Most visitors spend the evening at the Ganga Aarti and the ghats.",
+      "a_en": "There is no official city event, but private ticketed parties are held at hotels and bars. The best-known, Prohibition Week, ran up to 31 December in 2025; listings for 2026-27 were not out by 7 November 2026. Most visitors spend the evening at the Ganga Aarti and the ghats.",
       "q_hi": "क्या वाराणसी में न्यू ईयर पार्टी या कार्यक्रम होते हैं?",
-      "a_hi": "शहर का कोई सरकारी कार्यक्रम नहीं होता। होटल, रेस्टोरेंट और क्रूज़ संचालक न्यू ईयर डिनर और पैकेज बेचते हैं, पर ये हर साल बदलते हैं और 2026-27 की कोई सूची हमें ख़बरों में नहीं मिली। ज़्यादातर लोग शाम गंगा आरती और घाटों पर बिताते हैं।"
+      "a_hi": "शहर का कोई सरकारी आयोजन नहीं होता, पर होटलों और बार में निजी, टिकट वाली पार्टियाँ होती हैं। सबसे जानी-मानी, प्रोहिबिशन वीक, 2025 में 31 दिसंबर तक चली; 7 नवंबर 2026 तक 2026-27 की सूची नहीं आई थी। ज़्यादातर लोग शाम गंगा आरती और घाटों पर बिताते हैं।"
     },
     {
       "q_en": "Can I take a boat on the Ganga on New Year's Eve?",
@@ -290,6 +353,42 @@
       "a_en": "Cold and often foggy: average lows of about 9–10 °C and highs of 22–24 °C (IMD normals). Dense fog delays trains and flights in late December and early January, so keep a buffer day.",
       "q_hi": "नए साल पर वाराणसी का मौसम कैसा रहता है?",
       "a_hi": "ठंडा और अक्सर कोहरे वाला: औसत न्यूनतम लगभग 9–10 °C और अधिकतम 22–24 °C (आईएमडी सामान्य)। दिसंबर के आख़िर और जनवरी की शुरुआत में घना कोहरा ट्रेनें और उड़ानें लेट करता है, इसलिए एक दिन अतिरिक्त रखें।"
+    },
+    {
+      "q_en": "Is Kashi Vishwanath temple open on 1 January?",
+      "a_en": "Yes. The temple stays open on New Year's Day. On 1 January 2026 general darshan began after the Mangala aarti, and queues formed at Ganga Dwar and the other gates from early morning. Normal hours are about 3 am to 11 pm, but expect special and touch darshan to be suspended around New Year.",
+      "q_hi": "क्या 1 जनवरी को काशी विश्वनाथ मंदिर खुला रहता है?",
+      "a_hi": "हाँ। नए साल के दिन मंदिर खुला रहता है। 1 जनवरी 2026 को मंगला आरती के बाद आम दर्शन शुरू हुए और सुबह से ही गंगा द्वार और बाकी गेटों पर कतारें लग गईं। सामान्य समय लगभग सुबह 3 बजे से रात 11 बजे तक है, पर नए साल के आसपास विशेष और स्पर्श दर्शन बंद रहने की उम्मीद रखें।"
+    },
+    {
+      "q_en": "Where are New Year parties held in Varanasi, and what do tickets cost?",
+      "a_en": "At hotels, bars and lawns, as private ticketed events. For 31 December 2025, the Prohibition Week party at Hotel Varuna in Sigra sold tickets at ₹1,899 (8 pm to 12:30 am) through District and BookMyShow. Last year's party was publicised in the last week of December; nothing for 31 December 2026 was out by 7 November 2026.",
+      "q_hi": "वाराणसी में न्यू ईयर पार्टी कहाँ होती है और टिकट कितने का होता है?",
+      "a_hi": "होटलों, बार और लॉन में, निजी टिकट वाले कार्यक्रमों के रूप में। 31 दिसंबर 2025 को सिगरा के होटल वरुणा में प्रोहिबिशन वीक पार्टी का टिकट ₹1,899 था (रात 8 बजे से 12:30 बजे तक), जो डिस्ट्रिक्ट और बुकमायशो पर बिका। पिछले साल की पार्टी का प्रचार दिसंबर के आख़िरी हफ़्ते में हुआ था; 7 नवंबर 2026 तक 31 दिसंबर 2026 की कोई घोषणा नहीं हुई थी।"
+    },
+    {
+      "q_en": "Is there a New Year party in Varanasi for couples?",
+      "a_en": "The ticketed hotel and bar parties are the main option; check the pass types on District or BookMyShow once listings open in December. For a quieter evening, the Ganga Aarti at about 6 pm and a boat ride before the 8:30 pm cut-off are open to everyone.",
+      "q_hi": "क्या वाराणसी में कपल्स के लिए न्यू ईयर पार्टी होती है?",
+      "a_hi": "मुख्य विकल्प होटलों और बार की टिकट वाली पार्टियाँ हैं; दिसंबर में सूची आने पर डिस्ट्रिक्ट या बुकमायशो पर पास के प्रकार देखें। शांत शाम के लिए लगभग 6 बजे की गंगा आरती और रात 8:30 बजे से पहले नाव की सैर सबके लिए खुली है।"
+    },
+    {
+      "q_en": "What are the best places to celebrate New Year in Varanasi?",
+      "a_en": "The evening Ganga Aarti at Dashashwamedh Ghat, the dawn aarti at Assi Ghat on 1 January, the year's first darshan at Kashi Vishwanath, and Namo Ghat. All of them are very crowded on 31 December and 1 January, so go early.",
+      "q_hi": "वाराणसी में नया साल मनाने की सबसे अच्छी जगहें कौन सी हैं?",
+      "a_hi": "दशाश्वमेध घाट की शाम की गंगा आरती, 1 जनवरी को अस्सी घाट की सुबह की आरती, काशी विश्वनाथ में साल का पहला दर्शन, और नमो घाट। 31 दिसंबर और 1 जनवरी को इन सभी जगहों पर भारी भीड़ होती है, इसलिए जल्दी पहुँचें।"
+    },
+    {
+      "q_en": "What to do on 31st night in Varanasi?",
+      "a_en": "Watch the evening Ganga Aarti at Dashashwamedh (about 6 pm in winter), take a boat before the 8:30 pm cut-off and eat in the old city. Then either go to a ticketed party or turn in early: on 1 January the queue for Kashi Vishwanath starts before dawn.",
+      "q_hi": "31 दिसंबर की रात वाराणसी में क्या करें?",
+      "a_hi": "दशाश्वमेध पर शाम की गंगा आरती देखें (सर्दियों में लगभग 6 बजे), रात 8:30 बजे से पहले नाव की सैर करें और पुराने शहर में खाना खाएँ। फिर या तो किसी टिकट वाली पार्टी में जाएँ या जल्दी सो जाएँ: 1 जनवरी को काशी विश्वनाथ की कतार भोर से पहले लग जाती है।"
+    },
+    {
+      "q_en": "What day is New Year 2027?",
+      "a_en": "1 January 2027 is a Friday, and New Year's Eve, 31 December 2026, is a Thursday. With the weekend of 2 and 3 January right after, expect the Varanasi rush to carry on past New Year's Day.",
+      "q_hi": "नया साल 2027 किस दिन है?",
+      "a_hi": "1 जनवरी 2027 को शुक्रवार है, और 31 दिसंबर 2026 को गुरुवार। ठीक बाद 2 और 3 जनवरी का वीकेंड है, इसलिए वाराणसी में भीड़ नए साल के दिन के बाद भी जारी रहने की उम्मीद रखें।"
     }
   ],
   "sources": [
@@ -407,6 +506,36 @@
       "title": "Business Today: OYO's Ritesh Agarwal says Varanasi is overtaking Goa in New Year's Eve bookings (1 Jan 2023)",
       "url": "https://www.businesstoday.in/amp/latest/corporate/story/varanasi-overtaking-goa-oyos-ritesh-agarwal-gives-a-sneak-peek-into-biz-on-new-years-eve-358477-2023-01-01",
       "accessed": "2026-11-04"
+    },
+    {
+      "title": "Shri Kashi Vishwanath Temple Trust: Mandir rituals (daily schedule)",
+      "url": "https://shrikashivishwanath.org/general/rituals",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "Shri Kashi Vishwanath Temple Trust: FAQ (PDF)",
+      "url": "https://shrikashivishwanath.org/pdffile/FAQ_SHRI_KASHI_VISHWANTH_TEMPLE_2_0_pdf.pdf",
+      "accessed": "2026-10-12"
+    },
+    {
+      "title": "ANI: Ganga Aarti draws thousands to Dashashwamedh Ghat on New Year's Day (1 Jan 2025)",
+      "url": "https://www.aninews.in/news/national/general-news/ganga-aarti-attracts-thousands-of-devotees-to-banks-of-dashashwamedh-ghat-varanasi-on-new-year20250101235646/",
+      "accessed": "2026-11-07"
+    },
+    {
+      "title": "Lokmat Times (ANI/VMPL advertorial press release): Prohibition Week returns to Varanasi for its 8th edition (26 Dec 2025)",
+      "url": "https://www.lokmattimes.com/business/with-music-and-new-year-energy-prohibition-week-returns-to-take-over-varanasi",
+      "accessed": "2026-11-07"
+    },
+    {
+      "title": "HappeningNext event listing: New Year Celebration at Hotel Varuna, Sigra, 31 Dec 2025",
+      "url": "https://happeningnext.com/event/new-year-celebration-eid1u7v8b2p653",
+      "accessed": "2026-11-07"
+    },
+    {
+      "title": "Amar Ujala: New Year liquor sales and checks on temporary-licence hotels in Varanasi (2 Jan 2023)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/record-breaking-wine-consumed-in-varanasi-to-celebrate-new-year-2023",
+      "accessed": "2026-11-07"
     }
   ],
   "related": {
@@ -425,7 +554,15 @@
     ],
     "itineraries": [
       "2-day"
+    ],
+    "guides": [
+      "kashi-vishwanath-darshan",
+      "kashi-vishwanath-aarti-timings",
+      "varanasi-in-winter",
+      "varanasi-at-night",
+      "varanasi-boat-ride",
+      "ganga-aarti-varanasi"
     ]
   },
-  "notes": "Researched 2026-11-04. No 2026-27 New Year announcements exist yet (temple trust, police commissionerate, district administration); the guide is built on the 2025-26 and 2024-25 New Years, labelled by year. RE-CHECK: the temple trust's New Year notice (VIP/protocol/sparsh/Sugam suspension and booking halt) came around 24 Dec in 2025 and around 29-31 Dec in 2024, so re-check shrikashivishwanath.org and Amar Ujala/Jagran Varanasi from about 15 Dec 2026 and again 24-30 Dec; police traffic/diversion orders come 30-31 Dec. Update the temple-rules and traffic sections and the 'Special darshan'/'Traffic' facts then. shrikashivishwanath.org returned 403 to direct fetch on 4 Nov 2026, so no official trust notice is cited; all temple rules come from news reports quoting CEO Vishwa Bhushan Mishra or SDM Shambhu Sharan. VERIFIED IN NEWS (read): 2025-26 suspension of VIP/protocol/sparsh from 24 Dec (Pioneer 29 Dec 2025, ANI/Republic 31 Dec 2025); end date conflicts: FPJ 26 Dec 2025 says till 3 Jan 2026, ABP (Dailyhunt mirror, undated, ~late Dec 2025) says 24 Dec-2 Jan; both shown. Whether Sugam Darshan was also suspended in 2025-26 is NOT stated in any article read (FPJ explicitly does not mention it), so the text says advance tickets 'may not run' rather than claiming a suspension. 2024-25: Amar Ujala 29 Dec 2024 says no bookings 31 Dec-2 Jan and Sugam/abhishek already booked to 4 Jan; Millennium Post 31 Dec 2024 says bookings halted 31 Dec-4 Jan; both shown. Footfall: Aaj Tak 31 Dec 2025 (CEO: 11 lakh+ in 3 days, 20 lakh+ in a week, 3 lakh+ SOP); Amar Ujala 1 Jan 2026 quotes the CEO's '20 lakh+' without saying it is cumulative; treated as the weekly figure. NO final count for 1 Jan 2026 itself was found (searched English and Hindi); a '30,75,769 devotees 24 Dec-1 Jan' figure surfaced only in a search summary, source not found, so it is NOT used. 1 Jan 2025: PTI (ThePrint) gives both 8 lakh (temple administration) and 6 lakh (CEO) by 8 pm, so the text says 6 to 8 lakh. 2022 (5 lakh+, Deccan Herald/PTI) seen only via search snippet; 2023 (6 lakh, ETV Bharat) read. ~4 lakh daily arrivals: Aaj Tak 30 Dec 2025 (reported). Traffic: two-wheelers-only quote from Police Commissioner Mohit Agarwal (Zee/ANI 30 Dec 2025); no-vehicle zone incl. e-rickshaws and jams (Aaj Tak 30 Dec 2025); Maidagin-Godowlia closure (PTI 1 Jan 2025); 36 barriers, 5 sectors/45 duty points (Amar Ujala 29 Dec 2024); Rajghat bridge 4-6 pm closure 1 Jan 2026 (Amar Ujala 2 Jan 2026). The separate Rajghat bridge no-vehicle zone from 24 Dec 2025 was for repairs, not New Year, so it is omitted. Boats: 8:30 pm ban from DT Next/IANS May 2024 (same source as the boat-ride and at-night guides); overloading advisory Zee 30 Dec 2025. A Hindustan Times East UP item 'No boats to cross the Ganga after 4pm' for 31 Dec/1 Jan (Dec 2024) was seen only as a Magzter headline/snippet (403), so it is NOT cited; worth confirming if a readable copy appears. Overcharging figures (Amar Ujala 1 Jan 2025) are reported, not official. Winter aarti 6 pm/5:30 am from Amar Ujala 7 Nov 2025 (Dashashwamedh); Assi 1 Jan crowd from Amar Ujala/ANI 1 Jan 2026 and ETV 31 Dec 2024 (Ganga Seva Samiti convener). Hotels: ETV Bharat 31 Dec 2024 (all hotels full, ₹1,000 -> ₹4,000-5,000) is REPORTED, not official; no 2025-26 Varanasi hotel occupancy/price report was found. OYO 'overtaking Goa' is a 2023 company statement (Business Today); that article's claim that the corridor opened Dec 2022 is wrong (Dec 2021) and is not used. Parties/events: no news-reported New Year's Eve cruise package, hotel gala or price for Varanasi was found for 2024-25, 2025-26 or 2026-27; operator sites (Alaknanda ₹900-5,000, Jalsa from ₹700) and a Taj Ganges tour-package NYE dinner (USD 200, Pandaw) are commercial and NOT used. A Covid-era Dec 2021 order capping New Year parties at 10 pm appeared in search (jaideshnews) and is not current; not used. Alcohol: only the 2019 VMC executive-committee proposal (250 m, Tribune/IANS) and a 2017 CM directive (1 km around Kashi Vishwanath, seen in snippets only) were found; neither confirmed in force, so the section is flagged unconfirmed and gives etiquette, not a legal rule. Weather: IMD 1991-2020 normals via Wikipedia climate table (Dec 24.1/10.1 °C, Jan 21.9/9.0 °C); 2025-26 cold wave/fog from Aaj Tak 30 Dec 2025; trains from IANS 28 Dec 2025 (north India, not Varanasi-specific; Varanasi named only in airline advisories); flights from Amar Ujala 6 Jan 2026. Emergency number 112 is the national/UP ERSS number (also used in the Dev Deepawali guide). No event JSON-LD block: New Year is not an organised event with an organiser, and an Event schema would imply one; add it only if the owner wants event status/countdown on the card. Magh Mela overlapped the 2025-26 New Year rush (police and railway cited it); 2027 Magh Mela dates not checked. Body (sections incl. checklist) is about 1,280 English words."
+  "notes": "Researched 2026-11-04. No 2026-27 New Year announcements exist yet (temple trust, police commissionerate, district administration); the guide is built on the 2025-26 and 2024-25 New Years, labelled by year. RE-CHECK: the temple trust's New Year notice (VIP/protocol/sparsh/Sugam suspension and booking halt) came around 24 Dec in 2025 and around 29-31 Dec in 2024, so re-check shrikashivishwanath.org and Amar Ujala/Jagran Varanasi from about 15 Dec 2026 and again 24-30 Dec; police traffic/diversion orders come 30-31 Dec. Update the temple-rules and traffic sections and the 'Special darshan'/'Traffic' facts then. shrikashivishwanath.org returned 403 to direct fetch on 4 Nov 2026, so no official trust notice is cited; all temple rules come from news reports quoting CEO Vishwa Bhushan Mishra or SDM Shambhu Sharan. VERIFIED IN NEWS (read): 2025-26 suspension of VIP/protocol/sparsh from 24 Dec (Pioneer 29 Dec 2025, ANI/Republic 31 Dec 2025); end date conflicts: FPJ 26 Dec 2025 says till 3 Jan 2026, ABP (Dailyhunt mirror, undated, ~late Dec 2025) says 24 Dec-2 Jan; both shown. Whether Sugam Darshan was also suspended in 2025-26 is NOT stated in any article read (FPJ explicitly does not mention it), so the text says advance tickets 'may not run' rather than claiming a suspension. 2024-25: Amar Ujala 29 Dec 2024 says no bookings 31 Dec-2 Jan and Sugam/abhishek already booked to 4 Jan; Millennium Post 31 Dec 2024 says bookings halted 31 Dec-4 Jan; both shown. Footfall: Aaj Tak 31 Dec 2025 (CEO: 11 lakh+ in 3 days, 20 lakh+ in a week, 3 lakh+ SOP); Amar Ujala 1 Jan 2026 quotes the CEO's '20 lakh+' without saying it is cumulative; treated as the weekly figure. NO final count for 1 Jan 2026 itself was found (searched English and Hindi); a '30,75,769 devotees 24 Dec-1 Jan' figure surfaced only in a search summary, source not found, so it is NOT used. 1 Jan 2025: PTI (ThePrint) gives both 8 lakh (temple administration) and 6 lakh (CEO) by 8 pm, so the text says 6 to 8 lakh. 2022 (5 lakh+, Deccan Herald/PTI) seen only via search snippet; 2023 (6 lakh, ETV Bharat) read. ~4 lakh daily arrivals: Aaj Tak 30 Dec 2025 (reported). Traffic: two-wheelers-only quote from Police Commissioner Mohit Agarwal (Zee/ANI 30 Dec 2025); no-vehicle zone incl. e-rickshaws and jams (Aaj Tak 30 Dec 2025); Maidagin-Godowlia closure (PTI 1 Jan 2025); 36 barriers, 5 sectors/45 duty points (Amar Ujala 29 Dec 2024); Rajghat bridge 4-6 pm closure 1 Jan 2026 (Amar Ujala 2 Jan 2026). The separate Rajghat bridge no-vehicle zone from 24 Dec 2025 was for repairs, not New Year, so it is omitted. Boats: 8:30 pm ban from DT Next/IANS May 2024 (same source as the boat-ride and at-night guides); overloading advisory Zee 30 Dec 2025. A Hindustan Times East UP item 'No boats to cross the Ganga after 4pm' for 31 Dec/1 Jan (Dec 2024) was seen only as a Magzter headline/snippet (403), so it is NOT cited; worth confirming if a readable copy appears. Overcharging figures (Amar Ujala 1 Jan 2025) are reported, not official. Winter aarti 6 pm/5:30 am from Amar Ujala 7 Nov 2025 (Dashashwamedh); Assi 1 Jan crowd from Amar Ujala/ANI 1 Jan 2026 and ETV 31 Dec 2024 (Ganga Seva Samiti convener). Hotels: ETV Bharat 31 Dec 2024 (all hotels full, ₹1,000 -> ₹4,000-5,000) is REPORTED, not official; no 2025-26 Varanasi hotel occupancy/price report was found. OYO 'overtaking Goa' is a 2023 company statement (Business Today); that article's claim that the corridor opened Dec 2022 is wrong (Dec 2021) and is not used. Parties/events: no news-reported New Year's Eve cruise package, hotel gala or price for Varanasi was found for 2024-25, 2025-26 or 2026-27; operator sites (Alaknanda ₹900-5,000, Jalsa from ₹700) and a Taj Ganges tour-package NYE dinner (USD 200, Pandaw) are commercial and NOT used. A Covid-era Dec 2021 order capping New Year parties at 10 pm appeared in search (jaideshnews) and is not current; not used. Alcohol: only the 2019 VMC executive-committee proposal (250 m, Tribune/IANS) and a 2017 CM directive (1 km around Kashi Vishwanath, seen in snippets only) were found; neither confirmed in force, so the section is flagged unconfirmed and gives etiquette, not a legal rule. Weather: IMD 1991-2020 normals via Wikipedia climate table (Dec 24.1/10.1 °C, Jan 21.9/9.0 °C); 2025-26 cold wave/fog from Aaj Tak 30 Dec 2025; trains from IANS 28 Dec 2025 (north India, not Varanasi-specific; Varanasi named only in airline advisories); flights from Amar Ujala 6 Jan 2026. Emergency number 112 is the national/UP ERSS number (also used in the Dev Deepawali guide). No event JSON-LD block: New Year is not an organised event with an organiser, and an Event schema would imply one; add it only if the owner wants event status/countdown on the card. Magh Mela overlapped the 2025-26 New Year rush (police and railway cited it); 2027 Magh Mela dates not checked. Body (sections incl. checklist) is about 1,280 English words. UPDATE 2026-11-07 (keyword push: autocomplete en/hi shows 'new year party in varanasi' + '2026 venue', 'with price', 'for couples', 'venue ticket price', 'new year celebration/events/program in varanasi', 'best place to celebrate new year in varanasi', '31st night/31 december in varanasi', 'kashi vishwanath new year', 'is kashi vishwanath open'; GSC had 0 New Year impressions in the 14 days to 6 Nov). Added: 'where-to-celebrate' section (inserted after ghats; regional translations spliced at the same index), parties section rewritten with the only sourced party data found: Prohibition Week, 8th edition 2025 (ANI/VMPL ADVERTORIAL press release via Lokmat Times 26 Dec 2025: 'city's biggest and original New Year festival' is the organiser's claim, not used as fact; tickets on District/BookMyShow; no venue named) and a HappeningNext listing (31 Dec 2025, Hotel Varuna, 22 Gulab Bagh, Sigra, 8 pm-12:30 am, INR 1899; aggregator, labelled 'an event listing'). A 2020 ANI piece (Lokmat Times 26 Dec 2020) put earlier editions at 'The 3rd Floor Bar Stock Exchange' (organiser Anshuman Singh), not used. Excise: Amar Ujala 2 Jan 2023 (~Rs 1.5 crore liquor sales 31 Dec-1 Jan; checking drive at temporary-licence hotels/restaurants); one-day/temporary licence fees for Varanasi NOT found. Temple open on 1 Jan: Amar Ujala 1 Jan 2026 (source 5: doors opened after Mangala aarti); hours from the trust rituals page/FAQ as in the aarti-timings guide (2:30 or 3 am to 11 pm). Dashashwamedh New Year's Day aarti crowd: ANI 1 Jan 2025 (read). An Amar Ujala video headline (1 Jan 2026, '5100 diyas at Dashashwamedh') was seen only in search, not used. Hindustan Times East UP 28 Dec 2024 'No boats to cross the Ganga after 4pm: Varanasi police' (31 Dec/1 Jan) still only via Magzter (403), not cited; re-check for 2026-27. No Sarnath/BHU New Year crowd report found. RE-CHECK from 15 Dec 2026: District/BookMyShow Varanasi NYE listings (venue, price) and replace the 2025 example in the parties section, facts 'Parties' value and FAQ 8."
 }
