@@ -1,7 +1,7 @@
 {
   "slug": "varanasi-ropeway",
   "published": "2026-09-27",
-  "updated": "2026-11-02",
+  "updated": "2026-11-07",
   "photo": "projects/varanasi-ropeway",
   "title_en": "Varanasi ropeway route: 5 stations, opening date, fare ₹10–50",
   "title_hi": "वाराणसी रोपवे रूट: 5 स्टेशन, कब शुरू होगा, किराया ₹10–50",
@@ -241,15 +241,15 @@
   "faq": [
     {
       "q_en": "Is the Varanasi ropeway open?",
-      "a_en": "Not yet. As of 27 September 2026 it is in final trials. The latest reports expect an inauguration in November 2026, around Dev Deepawali, but no official date has been notified.",
+      "a_en": "Not yet. As of early November 2026 no opening date had been announced; reports expect an inauguration in November 2026, around Dev Deepawali.",
       "q_hi": "क्या वाराणसी रोपवे शुरू हो गया है?",
-      "a_hi": "अभी नहीं। 27 सितंबर 2026 तक यह अंतिम ट्रायल में है। ताज़ा ख़बरों में नवंबर 2026 में देव दीपावली के आसपास उद्घाटन की उम्मीद है, पर कोई आधिकारिक तारीख़ घोषित नहीं हुई है।"
+      "a_hi": "अभी नहीं। नवंबर 2026 की शुरुआत तक उद्घाटन की कोई तारीख़ घोषित नहीं हुई थी; ख़बरों में नवंबर 2026 में देव दीपावली के आसपास उद्घाटन की उम्मीद है।"
     },
     {
       "q_en": "What is the ropeway fare?",
-      "a_en": "Not officially fixed. Press estimates from September 2026 are about ₹30 to Kashi Vidyapith, ₹40 to Rathyatra and ₹50 to Godowlia from Cantt.",
+      "a_en": "Not officially published yet. Amar Ujala (June 2026) and ETV Bharat (September 2026) reported ₹10 for the shortest hop and ₹50 from Cantt to Godowlia (₹40 with the Kashi Smart Pass); an earlier report gave about ₹30 to Kashi Vidyapith and ₹40 to Rathyatra.",
       "q_hi": "रोपवे का किराया कितना है?",
-      "a_hi": "आधिकारिक रूप से तय नहीं। सितंबर 2026 की ख़बरों में कैंट से काशी विद्यापीठ लगभग ₹30, रथयात्रा ₹40 और गोदौलिया ₹50 का अनुमान है।"
+      "a_hi": "अभी आधिकारिक रूप से प्रकाशित नहीं। अमर उजाला (जून 2026) और ईटीवी भारत (सितंबर 2026) के अनुसार सबसे छोटे सफ़र का किराया ₹10 और कैंट से गोदौलिया का ₹50 है (काशी स्मार्ट पास से ₹40); एक पुरानी ख़बर में काशी विद्यापीठ तक लगभग ₹30 और रथयात्रा तक ₹40 बताया गया था।"
     },
     {
       "q_en": "How long does the ride take?",
