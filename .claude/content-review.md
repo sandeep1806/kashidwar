@@ -169,6 +169,13 @@ Re-check, and update if changed (both languages; bump the guide's `updated` date
   A walk-in price stays `"unconfirmed": true` until the lounge or AAI publishes one. Never
   claim a particular card (including Scapia) works there unless its own lounge list says so.
   When the new terminal opens, update the flights section, the facts and `airport-expansion`.
+  The lounge review (`lounge-review` section, the "Card visit" and "Verdict" facts) rests on the
+  owner's own 2026 visit and on other cardholders' reviews (thread URLs in the guide's `notes`).
+  Never name or link that forum on the page (owner's request), and never write other people's
+  details as our own experience. Once a month, read the thread's newest posts and the Priority
+  Pass conditions; keep the verdict unless reviews show a real change (a new operator, a real
+  buffet, free tea again) and then flag it under "Needs a human look". Never put "buffet" back
+  on the Priority Pass listing's word alone.
 - Currency exchange (`currency-exchange-in-varanasi.json`): RBI limits (FAQ "Miscellaneous
   forex facilities", Money Changing Master Direction) whenever the RBI updates them; the
   Thomas Cook Nadesar outlet and Unimoni branch still open; the airport counter stays
