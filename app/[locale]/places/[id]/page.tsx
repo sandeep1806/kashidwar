@@ -16,7 +16,7 @@ import Icon from "@/components/ui/Icon";
 import { localize, places, type Faith, loadEntryTranslations } from "@/lib/content";
 import { displayName } from "@/lib/contentTypes";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
-import { absolute, breadcrumbLd, festivalsAt, hubDistances, alternatesFor, leadOf, mapLinks, metaDescription, nearestPlace, neighbours, pagePath, pageUrl, relatedPlaces, travelEstimate } from "@/lib/pages";
+import { absolute, breadcrumbLd, festivalsAt, hubDistances, alternatesFor, leadOf, mapLinks, metaDescription, nearestPlace, neighbours, ogImage, pagePath, pageUrl, relatedPlaces, travelEstimate } from "@/lib/pages";
 import { getDetails } from "@/lib/details";
 import { getGallery, getGalleryCredits, getPhoto } from "@/lib/photos";
 import { proseFallsBack } from "@/lib/proseLocale";
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/places/[
     title,
     description,
     alternates: alternatesFor(locale, path),
-    openGraph: { type: "article", title, description, url: `/${locale}${path}`, images: [{ url: image, alt: photo?.alt ?? title }] },
+    openGraph: { type: "article", title, description, url: `/${locale}${path}`, images: [ogImage(photo, locale, title)] },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };
 }

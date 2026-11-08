@@ -4,6 +4,13 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://kashidwar.
 /** The publisher's name in structured data, the footer and the About page. */
 export const BRAND = "Kashidwar";
 
+/** Who writes and edits the guides: the guide byline (linked to /about#who) and Article.author in JSON-LD. */
+export const AUTHOR_NAME = "Sandeep";
+
+/** RSS feed of the guides: Hindi pages point to the Hindi feed, every other locale to the English one (app/feed*.xml). */
+export const feedFor = (locale: string) =>
+  locale === "hi" ? { url: "/feed-hi.xml", title: "काशीद्वार गाइड" } : { url: "/feed.xml", title: `${BRAND} guides` };
+
 /**
  * Contact address shown on the About page (and in Organization JSON-LD).
  * PLACEHOLDER: replace with the real address before relying on it. With
