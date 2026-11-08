@@ -106,7 +106,7 @@ current, stop and finalise when about 80% of the turns are used). Edit only the 
 allows, keep the pull-request body in .content-review-pr.md, and do not commit, push or open
 a pull request yourself."
 
-ALLOWED="Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(awk:*),Bash(xargs:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(mkdir:*),Bash(python3:*),Bash(jq:*),Bash(git diff:*),Bash(git status:*),Bash(node scripts/check-links.mjs:*)"
+ALLOWED="Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(awk:*),Bash(xargs:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(mkdir:*),Bash(python3:*),Bash(jq:*),Bash(git diff:*),Bash(git status:*),Bash(node scripts/check-links.mjs:*),Bash(node scripts/apply-ropeway-open.mjs:*)"
 DENIED="Bash(git push:*),Bash(git commit:*),Bash(git checkout:*),Bash(git reset:*),Bash(gh:*),Bash(npm:*),Bash(npx:*),Bash(rm:*)"
 
 # Project settings only (not your personal ~/.claude rules or hooks), no MCP servers:
@@ -137,7 +137,7 @@ echo "Result: ${RESULT_TYPE:-unknown} (error: ${IS_ERROR:-?}) · turns ${TURNS_U
 if [ -n "$FINAL" ]; then printf '%s\n' "$FINAL" | sed 's/^/> /' | tee -a "$LOG"; fi
 
 # Only content files may change: stray new files are removed, edits elsewhere abort.
-ALLOWED_PATHS='^(content/[^/]+\.json|content/details/(en|hi)\.json|content/guides/[^/]+\.json|content/guides/i18n/[^/]+\.json|TRANSLATION_REVIEW\.md|\.content-review-pr\.md)$'
+ALLOWED_PATHS='^(content/[^/]+\.json|content/details/(en|hi)\.json|content/guides/[^/]+\.json|content/guides/i18n/[^/]+\.json|content/playbooks/[^/]+\.json|TRANSLATION_REVIEW\.md|\.content-review-pr\.md)$'
 git ls-files --others --exclude-standard | { grep -vE "$ALLOWED_PATHS" || true; } | while read -r f; do
   echo "Removed scratch file left by the review: $f" | tee -a "$LOG"; rm -f -- "$f"
 done
