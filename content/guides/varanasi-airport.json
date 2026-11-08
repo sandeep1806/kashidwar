@@ -1,14 +1,14 @@
 {
   "slug": "varanasi-airport",
   "published": "2026-11-04",
-  "updated": "2026-11-04",
+  "updated": "2026-11-08",
   "photo": "projects/airport-expansion",
-  "title_en": "Varanasi airport lounge: cards accepted, timings, food, taxi fares",
-  "title_hi": "वाराणसी एयरपोर्ट लाउंज: कौन से कार्ड चलते हैं, समय, खाना, टैक्सी किराया",
-  "description_en": "Varanasi (Babatpur) airport has one lounge, Take Off Bar and Lounge, 5 am–9 pm near Gate 2. Which credit cards get free entry, food outlets, taxi to the ghats ₹600–1,000.",
-  "description_hi": "वाराणसी (बाबतपुर) एयरपोर्ट पर एक ही लाउंज है, टेक ऑफ़ बार एंड लाउंज, सुबह 5 से रात 9 बजे, गेट 2 के पास। किन क्रेडिट कार्ड से मुफ़्त प्रवेश, खाने की दुकानें, घाट तक टैक्सी ₹600–1,000।",
-  "lead_en": "Lal Bahadur Shastri International Airport (VNS) at Babatpur is small: one terminal, one lounge and a handful of food counters. The lounge, Take Off Bar and Lounge, sits past security in domestic departures and works like a restaurant: many Indian credit cards get a free buffet visit there, and the rest of the menu is paid. Here is what to expect, which cards are on the current lounge lists, and how to get from the airport to the ghats.",
-  "lead_hi": "बाबतपुर का लाल बहादुर शास्त्री अंतरराष्ट्रीय हवाई अड्डा (VNS) छोटा है: एक टर्मिनल, एक लाउंज और खाने के कुछ काउंटर। लाउंज, टेक ऑफ़ बार एंड लाउंज, सुरक्षा जाँच के बाद घरेलू प्रस्थान में है और रेस्तरां की तरह चलता है: कई भारतीय क्रेडिट कार्ड पर वहाँ एक बार मुफ़्त बुफ़े मिलता है, बाकी मेन्यू का भुगतान करना होता है। यहाँ जानिए क्या मिलता है, मौजूदा लाउंज सूचियों में कौन से कार्ड हैं, और एयरपोर्ट से घाट तक कैसे पहुँचें।",
+  "title_en": "Varanasi airport lounge review: menu, cards accepted, is it worth it",
+  "title_hi": "वाराणसी एयरपोर्ट लाउंज रिव्यू: मेन्यू, कौन से कार्ड चलते हैं, क्या यह फ़ायदेमंद है",
+  "description_en": "Honest review of Take Off Bar, Varanasi airport's only lounge: a card swipe gets one item from a small set menu, not a buffet. Cards, timings, food, taxi fares.",
+  "description_hi": "वाराणसी एयरपोर्ट के इकलौते लाउंज टेक ऑफ़ बार का सच्चा रिव्यू: कार्ड स्वाइप पर छोटे सेट मेन्यू से एक आइटम मिलता है, बुफ़े नहीं। कार्ड, समय, खाना, टैक्सी किराया।",
+  "lead_en": "Lal Bahadur Shastri International Airport (VNS) at Babatpur is small: one terminal, one lounge and a handful of food counters. The lounge, Take Off Bar and Lounge, is past security in domestic departures, and it is more café than lounge: a card swipe gets you one item from a short set menu, not a buffet, as we found on our own visit. Here is an honest review, which cards are on the current lists, what else there is to eat, and how to get from the airport to the ghats.",
+  "lead_hi": "बाबतपुर का लाल बहादुर शास्त्री अंतरराष्ट्रीय हवाई अड्डा (VNS) छोटा है: एक टर्मिनल, एक लाउंज और खाने के कुछ काउंटर। लाउंज, टेक ऑफ़ बार एंड लाउंज, सुरक्षा जाँच के बाद घरेलू प्रस्थान में है, और यह लाउंज कम, कैफ़े ज़्यादा है: कार्ड स्वाइप पर छोटे सेट मेन्यू से एक आइटम मिलता है, बुफ़े नहीं, जैसा हमने ख़ुद जाकर देखा। यहाँ पढ़िए सच्चा रिव्यू, मौजूदा सूचियों में कौन से कार्ड हैं, और क्या खाने को मिलता है, और एयरपोर्ट से घाट तक कैसे पहुँचें।",
   "facts": [
     {
       "icon": "clock",
@@ -26,10 +26,10 @@
     },
     {
       "icon": "ticket",
-      "label_en": "Free entry",
-      "label_hi": "मुफ़्त प्रवेश",
-      "value_en": "Eligible cards: one buffet visit, à la carte extra",
-      "value_hi": "पात्र कार्ड: एक बुफ़े विज़िट, बाकी अलग से"
+      "label_en": "Card visit",
+      "label_hi": "कार्ड विज़िट",
+      "value_en": "One item from a small set menu",
+      "value_hi": "छोटे सेट मेन्यू से एक आइटम"
     },
     {
       "icon": "car",
@@ -51,6 +51,13 @@
       "label_hi": "नया टर्मिनल",
       "value_en": "Under construction; no opening date",
       "value_hi": "निर्माणाधीन; खुलने की तारीख घोषित नहीं"
+    },
+    {
+      "icon": "tip",
+      "label_en": "Verdict",
+      "label_hi": "हमारी राय",
+      "value_en": "More café than lounge; eat in the city first",
+      "value_hi": "लाउंज कम, कैफ़े ज़्यादा; शहर में खाकर निकलें"
     }
   ],
   "sections": [
@@ -60,24 +67,24 @@
       "heading_hi": "वाराणसी एयरपोर्ट लाउंज: टेक ऑफ़ बार एंड लाउंज",
       "body_en": [
         "There is one lounge at Varanasi airport. Priority Pass and the banks' lounge lists call it Take Off Bar and Lounge; the Airports Authority of India lists it as the Executive Lounge on the ground floor of the security hold area, run by Hotel Pradeep of Varanasi. It is airside in domestic departures near Gate 2, so you reach it only after security, and it is open from 05:00 to 21:00 every day.",
-        "It is a restaurant-style lounge rather than a quiet business lounge: air conditioning, Wi-Fi, TV screens and flight information, with food served at the tables. A card visit covers one buffet spread within 24 hours; à la carte dishes and soft drinks are charged separately, and seats are first come, first served when it is full."
+        "It works like a small café rather than a lounge: air conditioning, Wi-Fi, TV screens and flight information, a few tables, and, according to cardholders' reviews, no washroom inside. Priority Pass's listing says a card visit covers \"the buffet spread\" once in 24 hours, with à la carte dishes and soft drinks charged extra. Our own visit in 2026 and other cardholders' reviews from 2023 to 2026 found no buffet: only one item or one set plate from a short fixed menu per swipe."
       ],
       "list_en": [
         "Open: 05:00–21:00 daily (Priority Pass listing)",
         "Where: airside, domestic departures, ground floor of the security hold area, near Gate 2",
         "You need: an eligible card and a same-day boarding pass",
-        "Included: one buffet visit per 24 hours; à la carte and soft drinks extra",
+        "Included: one item or set plate from a fixed menu per swipe (Priority Pass says \"buffet\"); tea, coffee and à la carte paid",
         "International departures: no separate lounge is listed"
       ],
       "body_hi": [
         "वाराणसी एयरपोर्ट पर एक ही लाउंज है। प्रायोरिटी पास और बैंकों की लाउंज सूचियाँ इसे टेक ऑफ़ बार एंड लाउंज कहती हैं; भारतीय विमानपत्तन प्राधिकरण (AAI) इसे सुरक्षा होल्ड एरिया के भूतल पर एग्ज़ीक्यूटिव लाउंज के नाम से दिखाता है, जिसे वाराणसी का होटल प्रदीप चलाता है। यह घरेलू प्रस्थान में गेट 2 के पास है, यानी सुरक्षा जाँच के बाद ही पहुँच सकते हैं, और रोज़ सुबह 5:00 से रात 9:00 तक खुला रहता है।",
-        "यह शांत बिज़नेस लाउंज नहीं, रेस्तरां जैसा लाउंज है: एसी, वाई-फ़ाई, टीवी और उड़ानों की जानकारी, खाना टेबल पर परोसा जाता है। कार्ड विज़िट में 24 घंटे में एक बार बुफ़े शामिल है; अलग से मँगाए व्यंजन और सॉफ़्ट ड्रिंक का पैसा लगता है, और भीड़ होने पर सीट पहले आओ, पहले पाओ के आधार पर मिलती है।"
+        "यह लाउंज कम, छोटा कैफ़े ज़्यादा है: एसी, वाई-फ़ाई, टीवी और उड़ानों की जानकारी, कुछ टेबल, और कार्डधारकों के रिव्यू के अनुसार अंदर शौचालय नहीं। प्रायोरिटी पास की सूची के अनुसार कार्ड विज़िट में 24 घंटे में एक बार \"बुफ़े\" शामिल है, अलग व्यंजन और सॉफ़्ट ड्रिंक का पैसा अलग। लेकिन 2026 में हमारी अपनी विज़िट और 2023 से 2026 तक दूसरे कार्डधारकों के रिव्यू में बुफ़े नहीं मिला: हर स्वाइप पर छोटे तय मेन्यू से सिर्फ़ एक आइटम या एक सेट प्लेट।"
       ],
       "list_hi": [
         "समय: रोज़ सुबह 5:00–रात 9:00 (प्रायोरिटी पास सूची)",
         "कहाँ: सुरक्षा जाँच के बाद, घरेलू प्रस्थान, सुरक्षा होल्ड एरिया का भूतल, गेट 2 के पास",
         "ज़रूरी: पात्र कार्ड और उसी दिन का बोर्डिंग पास",
-        "शामिल: 24 घंटे में एक बुफ़े विज़िट; अलग व्यंजन और सॉफ़्ट ड्रिंक का भुगतान अलग",
+        "शामिल: हर स्वाइप पर तय मेन्यू से एक आइटम या सेट प्लेट (प्रायोरिटी पास \"बुफ़े\" लिखता है); चाय, कॉफ़ी और अलग व्यंजन का भुगतान",
         "अंतरराष्ट्रीय प्रस्थान: अलग लाउंज सूचीबद्ध नहीं"
       ],
       "sources": [
@@ -87,13 +94,29 @@
       ]
     },
     {
+      "id": "lounge-review",
+      "heading_en": "Is the Varanasi airport lounge worth it? Our verdict",
+      "heading_hi": "क्या वाराणसी एयरपोर्ट लाउंज जाना फ़ायदेमंद है? हमारा अनुभव",
+      "body_en": [
+        "We used a card visit here in 2026 and found it a poor trade: one item from a small set menu, everything else paid. Other cardholders' reviews online from 2023 to 2026 describe the same: one item or one set plate per swipe, no buffet, tea and coffee charged since early 2025, and no washroom inside.",
+        "Our verdict: for most travellers a card visit here is a poor trade. If your card allows only a few lounge visits a quarter, save them for a bigger airport on your trip, eat in the city before you leave for Babatpur, and use Take Off Bar only if your visits are unlimited or your flight is badly delayed. Before you hand over the card, ask exactly what the swipe includes."
+      ],
+      "body_hi": [
+        "हमने 2026 में यहाँ एक कार्ड विज़िट ख़र्च की और यह घाटे का सौदा लगा: छोटे सेट मेन्यू से एक आइटम, बाकी सब का पैसा। 2023 से 2026 तक दूसरे कार्डधारकों के ऑनलाइन रिव्यू भी यही कहते हैं: हर स्वाइप पर एक आइटम या एक सेट प्लेट, बुफ़े नहीं, 2025 की शुरुआत से चाय-कॉफ़ी का पैसा, और अंदर शौचालय नहीं।",
+        "हमारी राय: ज़्यादातर यात्रियों के लिए यहाँ कार्ड विज़िट ख़र्च करना घाटे का सौदा है। अगर आपके कार्ड पर तिमाही में गिनी-चुनी लाउंज विज़िट हैं, तो उन्हें यात्रा के किसी बड़े एयरपोर्ट के लिए बचाएँ, बाबतपुर निकलने से पहले शहर में खा लें, और टेक ऑफ़ बार तभी जाएँ जब विज़िट असीमित हों या उड़ान बहुत लेट हो। कार्ड देने से पहले साफ़ पूछ लें कि स्वाइप में क्या-क्या मिलेगा।"
+      ],
+      "sources": [
+        0
+      ]
+    },
+    {
       "id": "lounge-cards",
       "promo": true,
       "heading_en": "Which credit cards work at the Varanasi airport lounge",
       "heading_hi": "वाराणसी एयरपोर्ट लाउंज में कौन से क्रेडिट कार्ड चलते हैं",
       "body_en": [
         "Take Off Bar is on the current domestic lounge lists we checked: SBI Card's Tata Neu list dated 10 April 2026, IndusInd Bank's lounge programme and DBS Bank's Spark card terms. It is also on Priority Pass, and on the RuPay credit card lounge programme list (the copy we found is from 2024). Lists change every quarter, so open your own card's lounge list or app and look for Varanasi before you fly.",
-        "Most Indian cards now attach conditions: a minimum spend in the previous month or quarter, a set number of visits, or a benefit you choose in the bank's app before you swipe. RuPay lounges take a small authorisation (₹2 in the programme terms) on the card at the counter. If your card is declined at the desk, you can still order and pay like any restaurant guest."
+        "Most Indian cards now attach conditions: a minimum spend in the previous month or quarter, a set number of visits, or a benefit you choose in the bank's app before you swipe. RuPay lounges take a small authorisation (₹2 in the programme terms) on the card at the counter. If your card is declined at the desk, you can still order and pay like any restaurant guest. Being on a list is no guarantee: cardholders have reported cards turned away at the desk, and each person needs their own swipe or a paid guest visit."
       ],
       "list_en": [
         "On the April 2026 SBI Tata Neu list: Varanasi, Take Off Bar, main terminal, departure",
@@ -103,7 +126,7 @@
       ],
       "body_hi": [
         "टेक ऑफ़ बार उन मौजूदा घरेलू लाउंज सूचियों में है जो हमने देखीं: एसबीआई कार्ड की 10 अप्रैल 2026 की टाटा न्यू सूची, इंडसइंड बैंक का लाउंज कार्यक्रम और डीबीएस बैंक के स्पार्क कार्ड की शर्तें। यह प्रायोरिटी पास पर भी है, और रुपे क्रेडिट कार्ड लाउंज कार्यक्रम की सूची में भी (हमें मिली प्रति 2024 की है)। सूचियाँ हर तिमाही बदलती हैं, इसलिए उड़ान से पहले अपने कार्ड की लाउंज सूची या ऐप में वाराणसी ज़रूर देखें।",
-        "ज़्यादातर भारतीय कार्ड अब शर्तें जोड़ते हैं: पिछले महीने या तिमाही में न्यूनतम खर्च, तय संख्या में विज़िट, या स्वाइप से पहले बैंक के ऐप में चुना गया लाभ। रुपे लाउंज काउंटर पर कार्ड पर छोटा ऑथराइज़ेशन (कार्यक्रम की शर्तों में ₹2) लेते हैं। अगर डेस्क पर कार्ड नहीं चलता, तब भी आप आम रेस्तरां ग्राहक की तरह ऑर्डर करके भुगतान कर सकते हैं।"
+        "ज़्यादातर भारतीय कार्ड अब शर्तें जोड़ते हैं: पिछले महीने या तिमाही में न्यूनतम खर्च, तय संख्या में विज़िट, या स्वाइप से पहले बैंक के ऐप में चुना गया लाभ। रुपे लाउंज काउंटर पर कार्ड पर छोटा ऑथराइज़ेशन (कार्यक्रम की शर्तों में ₹2) लेते हैं। अगर डेस्क पर कार्ड नहीं चलता, तब भी आप आम रेस्तरां ग्राहक की तरह ऑर्डर करके भुगतान कर सकते हैं। सूची में होना पक्की गारंटी नहीं: कार्डधारकों ने डेस्क पर कार्ड लौटाए जाने की बात लिखी है, और हर व्यक्ति के लिए अपना स्वाइप या भुगतान वाली गेस्ट विज़िट चाहिए।"
       ],
       "list_hi": [
         "अप्रैल 2026 की एसबीआई टाटा न्यू सूची में: वाराणसी, टेक ऑफ़ बार, मुख्य टर्मिनल, प्रस्थान",
@@ -126,14 +149,14 @@
       "heading_en": "Lounge price without a card",
       "heading_hi": "बिना कार्ड के लाउंज का खर्च",
       "body_en": [
-        "We found no walk-in price published by the airport or the lounge. Online pass resellers sell a 3-hour pass for about US$9 (roughly ₹750), and since the lounge works as a restaurant you can also simply order and pay. Ask at the counter for the day's buffet price before you sit down."
+        "We found no walk-in price published by the airport or the lounge. Online pass resellers sell a 3-hour pass for about US$9 (roughly ₹750), and since the lounge works as a restaurant you can also simply order and pay. Prices have not always been displayed, so ask the price of each item before you order."
       ],
       "body_hi": [
-        "एयरपोर्ट या लाउंज ने बिना कार्ड वाला (वॉक-इन) दाम कहीं प्रकाशित नहीं किया है। ऑनलाइन पास बेचने वाली साइटें 3 घंटे का पास लगभग 9 अमेरिकी डॉलर (करीब ₹750) में बेचती हैं, और लाउंज रेस्तरां की तरह चलता है, इसलिए आप सीधे ऑर्डर करके भुगतान भी कर सकते हैं। बैठने से पहले काउंटर पर उस दिन के बुफ़े का दाम पूछ लें।"
+        "एयरपोर्ट या लाउंज ने बिना कार्ड वाला (वॉक-इन) दाम कहीं प्रकाशित नहीं किया है। ऑनलाइन पास बेचने वाली साइटें 3 घंटे का पास लगभग 9 अमेरिकी डॉलर (करीब ₹750) में बेचती हैं, और लाउंज रेस्तरां की तरह चलता है, इसलिए आप सीधे ऑर्डर करके भुगतान भी कर सकते हैं। दाम हमेशा लिखे नहीं होते, इसलिए ऑर्डर से पहले हर आइटम का दाम पूछ लें।"
       ],
       "sources": [
-        6,
-        0
+        0,
+        6
       ]
     },
     {
@@ -221,7 +244,7 @@
       ],
       "list_en": [
         "Airport contact (AAI): apdvns@aai.aero · +91-542-2622155",
-        "Lounge: one buffet visit per card per 24 hours; keep your boarding pass ready",
+        "Lounge: one item from a set menu per card swipe; ask what it includes first and keep your boarding pass ready",
         "Festivals (Dev Deepawali, New Year, Maha Shivratri): allow extra time for the road to Babatpur"
       ],
       "body_hi": [
@@ -229,7 +252,7 @@
       ],
       "list_hi": [
         "एयरपोर्ट संपर्क (AAI): apdvns@aai.aero · +91-542-2622155",
-        "लाउंज: हर कार्ड पर 24 घंटे में एक बुफ़े विज़िट; बोर्डिंग पास तैयार रखें",
+        "लाउंज: हर कार्ड स्वाइप पर सेट मेन्यू से एक आइटम; पहले पूछ लें कि क्या मिलेगा और बोर्डिंग पास तैयार रखें",
         "त्योहारों (देव दीपावली, नया साल, महाशिवरात्रि) पर बाबतपुर की सड़क के लिए अतिरिक्त समय रखें"
       ],
       "sources": [
@@ -253,9 +276,9 @@
     },
     {
       "q_en": "Is the Varanasi airport lounge free?",
-      "a_en": "Free for an eligible card: one buffet visit per 24 hours, with à la carte food and soft drinks charged extra. Without a card you pay; resellers sell a 3-hour pass for about US$9, but no official walk-in price is published.",
+      "a_en": "An eligible card gets you in free, but a swipe gets only one item from a short fixed menu (Priority Pass's listing says \"the buffet spread\"); everything else is paid. Without a card you pay; resellers sell a 3-hour pass for about US$9, but no official walk-in price is published.",
       "q_hi": "क्या वाराणसी एयरपोर्ट लाउंज मुफ़्त है?",
-      "a_hi": "पात्र कार्ड पर मुफ़्त: 24 घंटे में एक बुफ़े विज़िट, अलग व्यंजन और सॉफ़्ट ड्रिंक का भुगतान अलग। बिना कार्ड के भुगतान करना होता है; पास बेचने वाली साइटें 3 घंटे का पास लगभग 9 अमेरिकी डॉलर में बेचती हैं, पर कोई आधिकारिक वॉक-इन दाम प्रकाशित नहीं है।"
+      "a_hi": "पात्र कार्ड पर प्रवेश मुफ़्त है, पर एक स्वाइप पर छोटे तय मेन्यू से सिर्फ़ एक आइटम मिलता है (प्रायोरिटी पास की सूची \"बुफ़े\" लिखती है); बाकी सब का भुगतान। बिना कार्ड के भुगतान करना होता है; पास बेचने वाली साइटें 3 घंटे का पास लगभग 9 अमेरिकी डॉलर में बेचती हैं, पर कोई आधिकारिक वॉक-इन दाम प्रकाशित नहीं है।"
     },
     {
       "q_en": "What is the name of Varanasi airport?",
@@ -265,15 +288,33 @@
     },
     {
       "q_en": "What food is available at Varanasi airport?",
-      "a_en": "About ten counters, mostly snack bars, plus a sweet shop in the check-in area and, past security, branded fast food, a food outlet with a beer bar and the lounge's buffet.",
+      "a_en": "About ten counters, mostly snack bars, plus a sweet shop in the check-in area and, past security, branded fast food, a food outlet with a beer bar and the lounge's short set menu.",
       "q_hi": "वाराणसी एयरपोर्ट पर क्या खाना मिलता है?",
-      "a_hi": "लगभग दस काउंटर, ज़्यादातर स्नैक बार, चेक-इन एरिया में मिठाई की दुकान, और सुरक्षा के बाद ब्रांडेड फ़ास्ट फ़ूड, बीयर बार वाला फ़ूड आउटलेट और लाउंज का बुफ़े।"
+      "a_hi": "लगभग दस काउंटर, ज़्यादातर स्नैक बार, चेक-इन एरिया में मिठाई की दुकान, और सुरक्षा के बाद ब्रांडेड फ़ास्ट फ़ूड, बीयर बार वाला फ़ूड आउटलेट और लाउंज का छोटा सेट मेन्यू।"
     },
     {
       "q_en": "How far is Varanasi airport from Dashashwamedh Ghat?",
       "a_en": "About 25–26 km to Godowlia Chowk, where cars stop, then about 500 m on foot. A prepaid taxi or app cab costs about ₹600–1,000 and takes 45–75 minutes.",
       "q_hi": "वाराणसी एयरपोर्ट से दशाश्वमेध घाट कितनी दूर है?",
       "a_hi": "गोदौलिया चौक तक लगभग 25–26 किमी, जहाँ गाड़ियाँ रुकती हैं, फिर लगभग 500 मीटर पैदल। प्रीपेड टैक्सी या ऐप कैब लगभग ₹600–1,000 लेती है और 45–75 मिनट लगते हैं।"
+    },
+    {
+      "q_en": "Is the Varanasi airport lounge worth it?",
+      "a_en": "For most travellers, no. We used a card visit here in 2026 and got one item from a small set menu, with everything else paid; other cardholders' reviews from 2023 to 2026 also mention paid tea or coffee and no washroom inside. Save a limited lounge visit for a bigger airport and eat in the city before you leave.",
+      "q_hi": "क्या वाराणसी एयरपोर्ट लाउंज जाना फ़ायदेमंद है?",
+      "a_hi": "ज़्यादातर यात्रियों के लिए नहीं। हमने 2026 में यहाँ एक कार्ड विज़िट ख़र्च की और छोटे सेट मेन्यू से एक आइटम मिला, बाकी सब का पैसा; 2023 से 2026 तक दूसरे कार्डधारकों के रिव्यू में भी चाय-कॉफ़ी का पैसा और अंदर शौचालय न होने की बात है। गिनी-चुनी लाउंज विज़िट किसी बड़े एयरपोर्ट के लिए बचाएँ और निकलने से पहले शहर में खा लें।"
+    },
+    {
+      "q_en": "What food do you get in the Varanasi airport lounge?",
+      "a_en": "A short fixed menu, with one item or one set plate per card swipe. Other cardholders' reviews have mentioned slice cake, aloo bonda, idli-sambar and a veg sandwich, and tea and coffee have been charged since early 2025. Ask what the swipe includes before you hand over the card.",
+      "q_hi": "वाराणसी एयरपोर्ट लाउंज में खाने में क्या मिलता है?",
+      "a_hi": "छोटा तय मेन्यू, हर कार्ड स्वाइप पर एक आइटम या एक सेट प्लेट। दूसरे कार्डधारकों के रिव्यू में स्लाइस केक, आलू बोंडा, इडली-सांभर और वेज सैंडविच का ज़िक्र है, और 2025 की शुरुआत से चाय-कॉफ़ी का पैसा लगता है। कार्ड देने से पहले पूछ लें कि स्वाइप में क्या मिलेगा।"
+    },
+    {
+      "q_en": "Can I take a guest into the Varanasi airport lounge?",
+      "a_en": "Each person needs their own eligible card swipe or a paid guest visit. Priority Pass charges a guest as an extra visit, and one cardholder's review from 2023 says a companion was not allowed to sit inside.",
+      "q_hi": "क्या वाराणसी एयरपोर्ट लाउंज में साथ किसी को ले जा सकते हैं?",
+      "a_hi": "हर व्यक्ति के लिए अपना पात्र कार्ड स्वाइप या भुगतान वाली गेस्ट विज़िट चाहिए। प्रायोरिटी पास गेस्ट को एक अतिरिक्त विज़िट गिनता है, और 2023 के एक कार्डधारक के रिव्यू के अनुसार साथ आए व्यक्ति को अंदर बैठने नहीं दिया गया।"
     }
   ],
   "sources": [
@@ -371,5 +412,5 @@
       "how-to-reach-varanasi"
     ]
   },
-  "notes": "Targets 'varanasi airport lounge' (+ access / which cards accepted / price / credit card / free access), 'varanasi airport food court', 'varanasi airport name/distance'. how-to-reach-varanasi stays the arrival overview; this page is the airport itself. The house-ad card sits after the lounge-cards section (promo: true). Lounge lists change quarterly: re-check sources 2–5 in the content review. Scapia's own lounge coverage at VNS is unconfirmed, so the body never claims it."
+  "notes": "Targets 'varanasi airport lounge' (+ access / which cards accepted / price / credit card / free access), 'varanasi airport food court', 'varanasi airport name/distance'. how-to-reach-varanasi stays the arrival overview; this page is the airport itself. The house-ad card sits after the lounge-cards section (promo: true). Lounge lists change quarterly: re-check sources 2–5 in the content review. Scapia's own lounge coverage at VNS is unconfirmed, so the body never claims it. UPDATE 2026-11-08 (honest review, owner request): Priority Pass's listing (source 0) says a visit covers 'the buffet spread', but every dated cardholder report in the TechnoFino thread (owner pasted both pages, 8 Nov 2026; posts Jun 2023, Oct/Nov/Dec 2023, Jun 2024, Feb 2025, 31 Aug 2026) describes a small café with a fixed menu and one item per swipe; tea/coffee paid since Feb 2025; no washroom inside (Aug 2026); only one positive report (Dec 2023). The guide shows both and gives the verdict from the reports; no first-hand claim (owner chose forum reports only). Do not restore 'buffet' on the listing's word alone. A Jun 2024 post says a Scapia card worked here (sandwich + one drink); the body still names no card brand for Scapia (house ad unchanged, owner's decision). Google Maps rating not checked (not fetchable). New section 'lounge-review' inserted at index 1; regional translations spliced at the same index. REVISED 2026-11-08 at the owner's request: the forum is NOT named or linked anywhere on the page (sources removed); the page states the owner's own 2026 visit as first-hand ('We used a card visit here in 2026 and found it a poor trade: one item from a small set menu, everything else paid', wording confirmed by the owner, who gave no further details) and summarises other cardholders' reviews unnamed. Do not add other people's specifics as our own experience. Reviews used (internal, for re-checks only): https://technofino.in/community/threads/take-off-bar-and-lounge-varanasi-airport-lounge-review-more-of-a-cafe.13286/ ; https://technofino.in/community/threads/take-off-bar-and-lounge-varanasi-airport-lounge-review-more-of-a-cafe.13286/page-2."
 }
