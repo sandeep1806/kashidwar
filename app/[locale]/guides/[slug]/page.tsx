@@ -13,9 +13,9 @@ import { festivals, itineraries, places, projects } from "@/lib/content";
 import { eventStatus, guideBySlug, guidePhoto, guides, localizeGuide } from "@/lib/guides";
 import { guideTranslations } from "@/lib/guideTranslations";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
-import { absolute, alternatesFor, breadcrumbLd, itinerarySlug, pageUrl } from "@/lib/pages";
+import { absolute, alternatesFor, breadcrumbLd, itinerarySlug, ogImage, pageUrl } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
-import { BRAND, SITE_URL } from "@/lib/site";
+import { AUTHOR_NAME, BRAND, SITE_URL } from "@/lib/site";
 import { displayName } from "@/lib/contentTypes";
 
 export const dynamicParams = false;
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/guides/[
     title: l.title,
     description: l.description,
     alternates: alternatesFor(locale, path),
-    openGraph: { type: "article", title: l.title, description: l.description, url: `/${locale}${path}`, publishedTime: g.published, modifiedTime: g.updated, images: [{ url: image, alt: photo?.alt ?? l.title }] },
+    openGraph: { type: "article", title: l.title, description: l.description, url: `/${locale}${path}`, publishedTime: g.published, modifiedTime: g.updated, images: [ogImage(photo, locale, l.title)] },
     twitter: { card: "summary_large_image", title: l.title, description: l.description, images: [image] },
   };
 }
@@ -138,7 +138,7 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
       dateModified: g.updated,
       inLanguage: LOCALES[l.lang as Locale]?.bcp47 ?? "en-IN",
       mainEntityOfPage: url,
-      author: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: BRAND, url: SITE_URL },
+      author: { "@type": "Person", name: AUTHOR_NAME, url: absolute(`${home}/about#who`), worksFor: { "@id": `${SITE_URL}/#organization` } },
       publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: BRAND, logo: { "@type": "ImageObject", url: `${SITE_URL}/icon-512.png` } },
       citation: g.sources.map((s) => s.url),
     },
@@ -223,7 +223,10 @@ export default async function GuidePage({ params }: PageProps<"/[locale]/guides/
               </p>
             )}
             <p className="text-sm text-kashi-ash/85">
-              {t("by", { brand: BRAND })} · <time dateTime={g.updated}>{t("updated", { date: date(g.updated) })}</time>
+              <a href={`${home}/about#who`} rel="author" className="underline decoration-kashi-diya/30 underline-offset-4 hover:text-kashi-white">
+                {t("by", { brand: t("author") })}
+              </a>{" "}
+              · <time dateTime={g.updated}>{t("updated", { date: date(g.updated) })}</time>
             </p>
           </>
         }

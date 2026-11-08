@@ -1,8 +1,8 @@
 // Server-side helpers for the per-item pages (/[locale]/places/<id>, …).
-import { festivals, itineraries, places, projects, type Festival, type Itinerary, type Place, type Project } from "@/lib/content";
+import { festivals, itineraries, places, projects, type Festival, type Itinerary, type PhotoData, type Place, type Project } from "@/lib/content";
 import { LOCALES, type Locale } from "@/lib/i18n/locales";
 import { DEFAULT_INDEXED_LOCALE, INDEXED_LOCALES, isIndexed } from "@/lib/seo";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, feedFor } from "@/lib/site";
 
 export type Kind = "places" | "festivals" | "projects" | "itineraries";
 
@@ -52,7 +52,19 @@ export function languageAlternates(path: string): Record<string, string> {
  * on indexed locales (noindexed pages are not part of the hreflang set).
  */
 export function alternatesFor(locale: string, path: string) {
-  return { canonical: `/${locale}${path}`, ...(isIndexed(locale) ? { languages: languageAlternates(path) } : {}) };
+  const feed = feedFor(locale);
+  return {
+    canonical: `/${locale}${path}`,
+    ...(isIndexed(locale) ? { languages: languageAlternates(path) } : {}),
+    types: { "application/rss+xml": [{ url: feed.url, title: feed.title }] },
+  };
+}
+
+/** Open Graph image with its pixel size (the largest self-hosted width), else the 1200×630 locale card. */
+export function ogImage(photo: PhotoData | null, locale: string, alt: string) {
+  return photo
+    ? { url: `${photo.src}-${photo.widths.at(-1)}.webp`, width: photo.width, height: photo.height, alt: photo.alt || alt }
+    : { url: `/media/og/og-${locale}.png`, width: 1200, height: 630, alt };
 }
 
 /** Great-circle distance in km. */
