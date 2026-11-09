@@ -127,3 +127,7 @@ New visitor sections (`details`) and tips for 18 festivals, 14 projects and 18 p
 - **Christian terms** (Midnight Mass, crib) and **new name spellings** (Dedhsi Pul, Lalkuti, Thatheri, Sonwa Mandap, Tavernier, Bisheshwarganj) need a native read in every locale.
 - **Spelling splits inside a locale:** ml ഘാട്ട്/ഘട്ട്, as অসী/অস্সী, bn বনারস/বানারস.
 
+## Added 2026-11-10 (daily content review — places, quarter 1)
+- `content/i18n/entries/<locale>.json` (all 11 regional locales) → `places.chaukhandi-stupa.summary`: English and Hindi now add a sentence on Sarnath's July 2026 UNESCO World Heritage inscription (the Ancient Buddhist Site of Sarnath, India's 45th property, covering this stupa and the nearby archaeological remains); the regional summaries do not yet mention it. Not edited by this review (regional entries are outside its scope).
+- `content/i18n/entries/<locale>.json` (all 11 regional locales) → `places.batuk-bhairav.glance.timings`: English and Hindi now read "05:00–22:30, open through the day" (confirmed against kashi.gov.in, no midday break); the regional text still hedges with "some listings show a midday closure". Not edited by this review.
+
