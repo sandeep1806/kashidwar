@@ -58,5 +58,15 @@
     "costUsd": 9.07,
     "result": "success",
     "run": "local (scripts/content-review.sh)"
+  },
+  {
+    "date": "2026-11-09",
+    "kind": "Daily",
+    "focus": "festivals",
+    "model": "claude-sonnet-5",
+    "turns": 73,
+    "costUsd": 4.37,
+    "result": "success",
+    "run": "local (scripts/content-review.sh)"
   }
 ]
