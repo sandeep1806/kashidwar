@@ -3665,7 +3665,7 @@
     "lat": 25.3741,
     "lng": 83.0237,
     "coordsVerified": true,
-    "summary": "A Gupta-age brick stupa of the 4th–5th century, rising in three terraces on the road into Sarnath, under a kilometre south of the Dhamek Stupa. The ASI identifies it as the spot where the Buddha, after his enlightenment, first met the five monks who had been his companions; the Chinese pilgrim Xuanzang described it in the 7th century. On the summit stands an octagonal Mughal tower: an inscription over its north door records that Govardhan, son of Raja Todar Mal, built it in 1588, in Akbar's reign, to mark Emperor Humayun's visit. Excavated in 1835 and 1904–05, it was declared a protected area of national importance in 2019.",
+    "summary": "A Gupta-age brick stupa of the 4th–5th century, rising in three terraces on the road into Sarnath, under a kilometre south of the Dhamek Stupa. The ASI identifies it as the spot where the Buddha, after his enlightenment, first met the five monks who had been his companions; the Chinese pilgrim Xuanzang described it in the 7th century. On the summit stands an octagonal Mughal tower: an inscription over its north door records that Govardhan, son of Raja Todar Mal, built it in 1588, in Akbar's reign, to mark Emperor Humayun's visit. Excavated in 1835 and 1904–05, it was declared a protected area of national importance in 2019. In July 2026 UNESCO inscribed the Ancient Buddhist Site of Sarnath — this stupa together with the archaeological remains nearby — as India's 45th World Heritage property.",
     "story": "Seeing their former companion approach, the five ascetics agreed not to rise for him, yet as he came near they stood to receive him. From here they walked together to the deer park, where he gave them his first teaching.",
     "bestTime": "Early morning or late afternoon, when the low sun warms the brick; stop here on the way in to Sarnath",
     "image": "/media/places/chaukhandi-stupa.jpg",
@@ -3724,6 +3724,11 @@
     },
     "sources": [
       {
+        "title": "UNESCO World Heritage Centre — Ancient Buddhist Site of Sarnath (list/927; inscribed 48th session, 2026, criteria iii and vi)",
+        "url": "https://whc.unesco.org/en/list/927",
+        "accessed": "2026-11-10"
+      },
+      {
         "title": "ASI site signboard at Chaukhandi Stupa (photo on Wikimedia Commons): Gupta date, first meeting with the five monks, 1835 and 1904–05 excavations, Govardhan's tower of 1588",
         "url": "https://commons.wikimedia.org/wiki/File:Description_(Hindi)_on_Stone_for_Chaukhandi_Stupa,_Sarnath.jpg",
         "accessed": "2026-10-30"
@@ -3746,7 +3751,7 @@
     ],
     "i18n": {
       "hi": {
-        "summary": "चौथी–पाँचवीं सदी का गुप्तकालीन ईंटों का स्तूप, सारनाथ जाने वाली सड़क पर तीन सोपानों में उठता हुआ, धमेख स्तूप से एक किलोमीटर से कम दक्षिण में। भारतीय पुरातत्व सर्वेक्षण के अनुसार यह वह स्थान है जहाँ बोधि-प्राप्ति के बाद बुद्ध की भेंट सबसे पहले पंचवर्गीय भिक्षुओं से हुई; 7वीं सदी में चीनी यात्री ह्वेनसांग ने इसका वर्णन किया। शिखर पर मुग़लकालीन अष्टकोणीय बुर्ज है: उत्तरी द्वार पर जड़े शिलालेख के अनुसार राजा टोडरमल के पुत्र गोवर्धन ने इसे अकबर के शासनकाल में 1588 में हुमायूँ के आगमन की स्मृति में बनवाया। 1835 और 1904–05 में उत्खनित, 2019 में इसे राष्ट्रीय महत्त्व का संरक्षित क्षेत्र घोषित किया गया।",
+        "summary": "चौथी–पाँचवीं सदी का गुप्तकालीन ईंटों का स्तूप, सारनाथ जाने वाली सड़क पर तीन सोपानों में उठता हुआ, धमेख स्तूप से एक किलोमीटर से कम दक्षिण में। भारतीय पुरातत्व सर्वेक्षण के अनुसार यह वह स्थान है जहाँ बोधि-प्राप्ति के बाद बुद्ध की भेंट सबसे पहले पंचवर्गीय भिक्षुओं से हुई; 7वीं सदी में चीनी यात्री ह्वेनसांग ने इसका वर्णन किया। शिखर पर मुग़लकालीन अष्टकोणीय बुर्ज है: उत्तरी द्वार पर जड़े शिलालेख के अनुसार राजा टोडरमल के पुत्र गोवर्धन ने इसे अकबर के शासनकाल में 1588 में हुमायूँ के आगमन की स्मृति में बनवाया। 1835 और 1904–05 में उत्खनित, 2019 में इसे राष्ट्रीय महत्त्व का संरक्षित क्षेत्र घोषित किया गया। जुलाई 2026 में यूनेस्को ने सारनाथ के प्राचीन बौद्ध स्थल को — इस स्तूप और निकटवर्ती पुरातात्विक अवशेषों सहित — भारत की 45वीं विश्व धरोहर संपत्ति के रूप में सूचीबद्ध किया।",
         "story": "अपने पूर्व साथी को आते देख पाँचों तपस्वियों ने तय किया कि उनके लिए उठेंगे नहीं, पर उनके पास आते ही वे स्वागत में खड़े हो गए। यहीं से वे साथ मृगदाव गए, जहाँ बुद्ध ने उन्हें पहला उपदेश दिया।",
         "bestTime": "सुबह जल्दी या ढलती दोपहर, जब नीची धूप ईंटों को सुनहरा कर देती है; सारनाथ जाते हुए पहले यहाँ रुकें",
         "tips": [
@@ -4345,22 +4350,22 @@
       "Krodhan (Adi) Bhairav, one of the eight Bhairavs of Kashi, is in the same Kamachha neighbourhood beside the Kamakhya temple."
     ],
     "glance": {
-      "timings": "05:00–22:30 (some listings show a midday closure)",
+      "timings": "05:00–22:30, open through the day",
       "entry": "No ticket reported",
       "duration": "20–30 min",
       "season": "Oct–Mar; Bhairav Ashtami (Nov–Dec)",
       "crowd": "moderate",
       "photography": "outside-only",
       "dress": "modest",
-      "verified": false,
+      "verified": true,
       "sources": [
         {
-          "title": "Batuk Bhairav Temple – kashi.gov.in (timings 05:00–22:30)",
+          "title": "Batuk Bhairav Temple – kashi.gov.in (official: \"05:00 से - रात्रि 10:30 तक\", open daily)",
           "url": "https://kashi.gov.in/listing-details/batuk-bhairav-temple",
-          "accessed": "2026-10-30"
+          "accessed": "2026-11-10"
         },
         {
-          "title": "Shri Batuk Bhairav Temple – Yatradham (timings with midday break)",
+          "title": "Shri Batuk Bhairav Temple – Yatradham (third-party listing, shows a midday break)",
           "url": "https://temple.yatradham.org/temple/shri-batuk-bhairav-temple",
           "accessed": "2026-10-30"
         }
@@ -4394,7 +4399,7 @@
           "काशी के अष्ट भैरवों में से क्रोधन (आदि) भैरव इसी कमच्छा मोहल्ले में कामाख्या मंदिर के पास हैं।"
         ],
         "glance": {
-          "timings": "सुबह 5 से रात 10:30 बजे (कुछ सूचियों में दोपहर में बंद)",
+          "timings": "सुबह 5 से रात 10:30 बजे, पूरे दिन खुला",
           "entry": "कोई टिकट नहीं बताया गया",
           "duration": "20 से 30 मिनट",
           "season": "अक्टूबर से मार्च; भैरव अष्टमी (नवंबर-दिसंबर)"
