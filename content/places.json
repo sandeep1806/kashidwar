@@ -46,7 +46,7 @@
         {
           "title": "Shri Kashi Vishwanath Temple Trust — Rituals (daily schedule)",
           "url": "https://shrikashivishwanath.org/general/rituals",
-          "accessed": "2026-10-11"
+          "accessed": "2026-11-11"
         },
         {
           "title": "Shri Kashi Vishwanath Temple Trust — FAQ (PDF): darshan timing, entry, gadgets, dress",
@@ -54,9 +54,9 @@
           "accessed": "2026-10-11"
         },
         {
-          "title": "Shri Kashi Vishwanath Temple Trust — ticket booking (Sugam Darshan, aarti)",
+          "title": "Shri Kashi Vishwanath Temple Trust — ticket booking (Sugam Darshan, aarti): Sugam Darshan ₹300 confirmed",
           "url": "https://shrikashivishwanath.org/frontend/home/poojaList",
-          "accessed": "2026-11-03"
+          "accessed": "2026-11-11"
         }
       ]
     },
@@ -5453,7 +5453,7 @@
       "crowd": "quiet",
       "photography": "allowed",
       "dress": "any",
-      "verified": false,
+      "verified": true,
       "booking": {
         "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
         "counter": true,
@@ -5464,12 +5464,12 @@
         {
           "title": "UP Tourism (Government of Uttar Pradesh) — Man Mahal: VEM with monument ₹25 Indian/SAARC/BIMSTEC, ₹300 foreign, sunrise to 9 PM, under 15 free",
           "url": "https://uptourism.gov.in/en/page/varanasi-sarnath",
-          "accessed": "2026-10-30"
+          "accessed": "2026-11-11"
         },
         {
           "title": "ASI Sarnath Circle — Visitor information (₹25 cash / ₹20 online; ₹300 / ₹250 foreign)",
           "url": "https://www.asisarnathcircle.in/visitorinformation.php",
-          "accessed": "2026-10-30"
+          "accessed": "2026-11-11"
         },
         {
           "title": "Observatory of Man Singh (Man Mahal) — ASI tickets on District (open 06:00–21:00 daily)",
