@@ -543,7 +543,8 @@
     ],
     "guides": [
       "flights-to-varanasi",
-      "varanasi-airport"
+      "varanasi-airport",
+      "lounges-in-varanasi"
     ]
   },
   "notes": "Re-check after 24 Nov 2026 (ropeway opening, target from a 28 Sep inspection, not notified); Vande Bharat running days conflict across sources (22436: Wikipedia says no Thursday service, RailMitra says daily; 22415/22416: etrain lists no Tuesday) so the copy says 'check'; airport taxi ₹600–1,000 and Banaras→Godowlia figures are aggregator/blog ranges, not official; Godowlia→ghat/gate walking distances (500–700 m) are map-measured; no current airport bus route could be confirmed; Banaras code shown as BSBS (as in projects.json and Wikivoyage) though Wikipedia and some timetables print BNRS."
