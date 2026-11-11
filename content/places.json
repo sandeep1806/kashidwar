@@ -3545,7 +3545,7 @@
     "lat": 25.3795,
     "lng": 83.0235,
     "coordsVerified": true,
-    "summary": "The Archaeological Survey of India's oldest site museum, built beside the excavated deer park and completed in 1910. Its central hall holds the polished sandstone Lion Capital of Ashoka, about 250 BCE, which F. O. Oertel's excavation brought to light in 1904–05 and which India took as its national emblem. Nearby sits the 5th-century Gupta Buddha in dharmachakra pravartana mudra, with the wheel and the first disciples carved on the pedestal; in all, five galleries span the 3rd century BCE to the 12th century CE.",
+    "summary": "The Archaeological Survey of India's oldest site museum, built beside the excavated deer park and completed in 1910. Its central hall holds the polished sandstone Lion Capital of Ashoka, about 250 BCE, which F. O. Oertel's excavation brought to light in 1904–05 and which India took as its national emblem. Nearby sits the 5th-century Gupta Buddha in dharmachakra pravartana mudra, with the wheel and the first disciples carved on the pedestal; in all, five galleries span the 3rd century BCE to the 12th century CE. The excavated site next door was inscribed on the UNESCO World Heritage List on 25 July 2026 as the Ancient Buddhist Site, Sarnath.",
     "story": "The seated Buddha shows the hands turning the wheel of the Dhamma, the gesture of the first sermon given in this deer park. Sculptors of the Sarnath school carved it from fine-grained Chunar sandstone, and its calm, downcast face became a model for Buddha images across Asia.",
     "bestTime": "Weekday mornings soon after opening, before the tour groups; any day except Friday",
     "image": "/media/places/sarnath-museum.jpg",
@@ -3622,11 +3622,16 @@
         "title": "OpenStreetMap — Sarnath Archaeological Museum (way 103178213)",
         "url": "https://www.openstreetmap.org/way/103178213",
         "accessed": "2026-10-30"
+      },
+      {
+        "title": "UNESCO — Ancient Buddhist Site of Sarnath inscribed on the World Heritage List (adjacent excavated site)",
+        "url": "https://www.unesco.org/en/articles/ancient-buddhist-site-sarnath-inscribed-unesco-world-heritage-list",
+        "accessed": "2026-11-11"
       }
     ],
     "i18n": {
       "hi": {
-        "summary": "भारतीय पुरातत्व सर्वेक्षण का सबसे पुराना स्थल-संग्रहालय, उत्खनित मृगदाव के पास बना और 1910 में पूरा हुआ। इसके मुख्य कक्ष में अशोक का चमकदार बलुआ-पत्थर का सिंह-शीर्ष (लगभग 250 ई.पू.) है, जिसे 1904–05 में एफ़. ओ. ऑर्टेल के उत्खनन ने खोजा और जिसे भारत ने अपना राष्ट्रीय प्रतीक बनाया। पास ही 5वीं सदी की गुप्तकालीन धर्मचक्र प्रवर्तन मुद्रा वाली बुद्ध प्रतिमा है, जिसकी पीठिका पर चक्र और पहले शिष्य उकेरे गए हैं; पाँचों दीर्घाएँ तीसरी सदी ई.पू. से 12वीं सदी ई. तक फैली हैं।",
+        "summary": "भारतीय पुरातत्व सर्वेक्षण का सबसे पुराना स्थल-संग्रहालय, उत्खनित मृगदाव के पास बना और 1910 में पूरा हुआ। इसके मुख्य कक्ष में अशोक का चमकदार बलुआ-पत्थर का सिंह-शीर्ष (लगभग 250 ई.पू.) है, जिसे 1904–05 में एफ़. ओ. ऑर्टेल के उत्खनन ने खोजा और जिसे भारत ने अपना राष्ट्रीय प्रतीक बनाया। पास ही 5वीं सदी की गुप्तकालीन धर्मचक्र प्रवर्तन मुद्रा वाली बुद्ध प्रतिमा है, जिसकी पीठिका पर चक्र और पहले शिष्य उकेरे गए हैं; पाँचों दीर्घाएँ तीसरी सदी ई.पू. से 12वीं सदी ई. तक फैली हैं। पास का उत्खनित स्थल 25 जुलाई 2026 को 'सारनाथ का प्राचीन बौद्ध स्थल' नाम से यूनेस्को विश्व धरोहर सूची में शामिल हुआ।",
         "story": "बैठे बुद्ध के हाथ धम्म-चक्र घुमाने की मुद्रा में हैं, उसी पहले उपदेश की मुद्रा जो इसी मृगदाव में दिया गया। सारनाथ शैली के शिल्पियों ने इसे महीन चुनार बलुआ पत्थर से गढ़ा, और इसका शांत, झुकी दृष्टि वाला मुख पूरे एशिया में बुद्ध प्रतिमाओं का आदर्श बना।",
         "bestTime": "सप्ताह के दिनों में खुलते ही सुबह, टूर समूहों से पहले; शुक्रवार छोड़कर कोई भी दिन",
         "tips": [
