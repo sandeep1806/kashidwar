@@ -1,7 +1,7 @@
 {
   "slug": "flights-to-varanasi",
   "published": "2026-11-04",
-  "updated": "2026-11-04",
+  "updated": "2026-11-14",
   "photo": "projects/airport-expansion",
   "title_en": "Flights to Varanasi: direct routes and flight time from each city",
   "title_hi": "वाराणसी की फ़्लाइट: किन शहरों से सीधी उड़ान और कितना समय लगता है",
@@ -123,27 +123,32 @@
       "heading_en": "International flights to Varanasi",
       "heading_hi": "वाराणसी की अंतरराष्ट्रीय उड़ानें",
       "body_en": [
-        "Varanasi has three foreign nonstop routes, and only Sharjah is daily. Everyone else flies in through Delhi, Mumbai or another Indian hub and changes to a domestic flight."
+        "Varanasi has three foreign nonstop routes, and only Sharjah is daily. Everyone else flies in through Delhi, Mumbai or another Indian hub and changes to a domestic flight.",
+        "Since 25 June 2026, Air India also runs an 'Easy Connect' through-check-in service from Varanasi: flight AI1111 to Delhi lets passengers check bags and clear immigration at Varanasi, then connect to 17 international destinations (including London, Frankfurt and Singapore) without re-checking in at Delhi. Indian nationals must complete DigiYatra enrolment. It is not a nonstop international flight, but it removes a layover formality for travellers heading onward from Varanasi."
       ],
       "list_en": [
         "Sharjah: Air India Express, about 4h 40m · listed daily (IX249 leaves Varanasi at 18:15)",
         "Bangkok (Suvarnabhumi): Air India Express, weekly on Sundays since 1 February 2026 · Varanasi 12:35 → Bangkok 18:05 local time",
-        "Kathmandu: Buddha Air, about an hour · three times a week (Monday, Wednesday, Friday), not sold on most Indian booking sites"
+        "Kathmandu: Buddha Air, about an hour · three times a week (Monday, Wednesday, Friday), not sold on most Indian booking sites",
+        "Easy Connect (through check-in via Delhi): Air India AI1111, daily, to 17 international destinations including London and Singapore, since 25 June 2026"
       ],
       "body_hi": [
-        "वाराणसी से तीन विदेशी सीधी उड़ानें हैं, और सिर्फ़ शारजाह की रोज़ है। बाकी सब यात्री दिल्ली, मुंबई या किसी दूसरे भारतीय हब होकर आते हैं और घरेलू उड़ान बदलते हैं।"
+        "वाराणसी से तीन विदेशी सीधी उड़ानें हैं, और सिर्फ़ शारजाह की रोज़ है। बाकी सब यात्री दिल्ली, मुंबई या किसी दूसरे भारतीय हब होकर आते हैं और घरेलू उड़ान बदलते हैं।",
+        "25 जून 2026 से एयर इंडिया वाराणसी से 'ईज़ी कनेक्ट' सेवा भी चला रही है: फ़्लाइट AI1111 से दिल्ली जाने वाले यात्री वाराणसी में ही बैगेज चेक-इन और इमिग्रेशन पूरा कर सकते हैं, और दिल्ली में दोबारा चेक-इन किए बिना लंदन, फ्रैंकफर्ट और सिंगापुर समेत 17 अंतरराष्ट्रीय गंतव्यों के लिए आगे जा सकते हैं। भारतीय यात्रियों के लिए डिजीयात्रा पंजीकरण ज़रूरी है। यह सीधी अंतरराष्ट्रीय उड़ान नहीं है, पर वाराणसी से आगे जाने वालों के लिए एक औपचारिकता कम कर देती है।"
       ],
       "list_hi": [
         "शारजाह: एयर इंडिया एक्सप्रेस, लगभग 4 घंटे 40 मिनट · रोज़ सूचीबद्ध (IX249 वाराणसी से 18:15 पर)",
         "बैंकॉक (सुवर्णभूमि): एयर इंडिया एक्सप्रेस, 1 फ़रवरी 2026 से हर रविवार · वाराणसी 12:35 → बैंकॉक 18:05 स्थानीय समय",
-        "काठमांडू: बुद्धा एयर, लगभग एक घंटा · हफ़्ते में तीन बार (सोमवार, बुधवार, शुक्रवार), ज़्यादातर भारतीय बुकिंग साइटों पर नहीं मिलती"
+        "काठमांडू: बुद्धा एयर, लगभग एक घंटा · हफ़्ते में तीन बार (सोमवार, बुधवार, शुक्रवार), ज़्यादातर भारतीय बुकिंग साइटों पर नहीं मिलती",
+        "ईज़ी कनेक्ट (दिल्ली होकर थ्रू चेक-इन): एयर इंडिया AI1111, रोज़, 17 अंतरराष्ट्रीय गंतव्यों के लिए जिनमें लंदन और सिंगापुर शामिल हैं, 25 जून 2026 से"
       ],
       "sources": [
         11,
         14,
         15,
         16,
-        0
+        0,
+        18
       ]
     },
     {
@@ -316,6 +321,11 @@
       "title": "Amar Ujala — Fog in Varanasi: 26 flights affected at Babatpur airport (6 Jan 2026)",
       "url": "https://www.amarujala.com/uttar-pradesh/varanasi/fog-in-varanasi-26-flights-affected-at-babatpur-airport-and-flight-from-mumbai-arrived-late-2026-01-06",
       "accessed": "2026-11-04"
+    },
+    {
+      "title": "Air India — Press release: Air India launches Easy Connect flights (25 Jun 2026)",
+      "url": "https://www.airindia.com/in/en/newsroom/press-release/air-india-launches-easy-connect-flights-bringing-the-world-closer-to-every-indian.html",
+      "accessed": "2026-11-14"
     }
   ],
   "related": {
