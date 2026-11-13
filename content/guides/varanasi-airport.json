@@ -222,17 +222,18 @@
       "heading_en": "Flights and the new terminal",
       "heading_hi": "उड़ानें और नया टर्मिनल",
       "body_en": [
-        "About 4.3 million passengers used the airport in 2025–26. Air India, Air India Express, Akasa Air, IndiGo and SpiceJet fly to Delhi, Mumbai, Bengaluru, Hyderabad, Kolkata and other cities; Delhi is about 1 hour 25 minutes away. International flights are few: Air India Express to Sharjah and Bangkok, and Buddha Air to Kathmandu.",
+        "About 4.3 million passengers used the airport in 2025–26. Air India, Air India Express, Akasa Air, IndiGo and SpiceJet fly to Delhi, Mumbai, Bengaluru, Hyderabad, Kolkata and other cities; Delhi is about 1 hour 25 minutes away. International flights are few: Air India Express to Sharjah and Bangkok, and Buddha Air to Kathmandu. Since 25 June 2026, Air India's 'Easy Connect' flight AI1111 lets passengers check in and clear immigration at Varanasi and connect onward to 17 international cities via Delhi without a separate check-in there.",
         "A new terminal of about 75,600 sq m, with 72 check-in counters and eight aerobridges, is under construction. On 24 June 2026 the civil aviation minister asked for it to be finished within six months, but no opening date has been announced. In December and January, fog delays flights: on 6 January 2026, 26 flights at Babatpur were affected, so check your flight status before leaving for the airport."
       ],
       "body_hi": [
-        "2025–26 में लगभग 43 लाख यात्रियों ने इस एयरपोर्ट का उपयोग किया। एयर इंडिया, एयर इंडिया एक्सप्रेस, अकासा एयर, इंडिगो और स्पाइसजेट दिल्ली, मुंबई, बेंगलुरु, हैदराबाद, कोलकाता और दूसरे शहरों के लिए उड़ान भरती हैं; दिल्ली लगभग 1 घंटा 25 मिनट की उड़ान है। अंतरराष्ट्रीय उड़ानें कम हैं: एयर इंडिया एक्सप्रेस से शारजाह और बैंकॉक, और बुद्धा एयर से काठमांडू।",
+        "2025–26 में लगभग 43 लाख यात्रियों ने इस एयरपोर्ट का उपयोग किया। एयर इंडिया, एयर इंडिया एक्सप्रेस, अकासा एयर, इंडिगो और स्पाइसजेट दिल्ली, मुंबई, बेंगलुरु, हैदराबाद, कोलकाता और दूसरे शहरों के लिए उड़ान भरती हैं; दिल्ली लगभग 1 घंटा 25 मिनट की उड़ान है। अंतरराष्ट्रीय उड़ानें कम हैं: एयर इंडिया एक्सप्रेस से शारजाह और बैंकॉक, और बुद्धा एयर से काठमांडू। 25 जून 2026 से एयर इंडिया की 'ईज़ी कनेक्ट' फ़्लाइट AI1111 से यात्री वाराणसी में ही चेक-इन और इमिग्रेशन पूरा कर दिल्ली होते हुए बिना दोबारा चेक-इन किए 17 अंतरराष्ट्रीय शहरों के लिए आगे जा सकते हैं।",
         "लगभग 75,600 वर्ग मीटर का नया टर्मिनल, 72 चेक-इन काउंटर और आठ एयरोब्रिज के साथ, बन रहा है। 24 जून 2026 को नागरिक उड्डयन मंत्री ने इसे छह महीने में पूरा करने को कहा, पर खुलने की तारीख घोषित नहीं हुई है। दिसंबर और जनवरी में कोहरा उड़ानें लेट करता है: 6 जनवरी 2026 को बाबतपुर में 26 उड़ानें प्रभावित हुईं, इसलिए एयरपोर्ट निकलने से पहले उड़ान की स्थिति देख लें।"
       ],
       "sources": [
         9,
         10,
-        11
+        11,
+        15
       ]
     },
     {
@@ -392,6 +393,11 @@
       "title": "Live from a Lounge — How Scapia's airport privileges work (3 Feb 2026): spend-gated, chosen per departure in the app",
       "url": "https://livefromalounge.com/scapia-airport-privileges-guide/",
       "accessed": "2026-11-04"
+    },
+    {
+      "title": "Air India — Press release: Air India launches Easy Connect flights (25 Jun 2026)",
+      "url": "https://www.airindia.com/in/en/newsroom/press-release/air-india-launches-easy-connect-flights-bringing-the-world-closer-to-every-indian.html",
+      "accessed": "2026-11-14"
     }
   ],
   "related": {

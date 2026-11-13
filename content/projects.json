@@ -231,14 +231,14 @@
     "type": "transport",
     "lat": 25.3282,
     "lng": 82.9866,
-    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple, in about 16 minutes. Foundation laid 24 March 2023; trial runs on the Cantt–Rathyatra stretch began in 2025. An official inspection on 28 September 2026 put physical work above 94%; the administration aims to start public operations on 24 November 2026, subject to readiness and not yet officially confirmed.",
+    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple, in about 16 minutes. Foundation laid 24 March 2023; trial runs on the Cantt–Rathyatra stretch began in 2025. An official inspection on 28 September 2026 put physical work above 94%, and Aaj Tak reported it at about 96% with a second phase of trials under way on 3 November 2026. Reports are split between a public launch around Dev Deepawali (24 November 2026) and a December 2026 start; no official date has been notified.",
     "bestTime": "Not yet open to the public",
     "image": "/media/projects/varanasi-ropeway.jpg",
     "status": "under_construction",
     "agency": "National Highways Logistics Management Ltd (NHLML) · built by Vishwa Samudra Engineering",
-    "timeline": "Foundation 24 March 2023 · Trial runs from 2025 · >94% complete (inspection 28 September 2026) · operations targeted for 24 November 2026 (not confirmed)",
+    "timeline": "Foundation 24 March 2023 · Trial runs from 2025 · ~96% complete, second trial phase under way (3 November 2026) · public launch expected between Dev Deepawali (24 November 2026) and December 2026 (not confirmed)",
     "verified": true,
-    "lastVerified": "2026-11-08",
+    "lastVerified": "2026-11-14",
     "sources": [
       {
         "title": "ETV Bharat (Hindi) — Nodal officer and DM inspect ropeway: 94.35% complete, inauguration expected in November (29 Sep 2026)",
@@ -302,14 +302,24 @@
         "title": "Wikivoyage — Varanasi: get in (station to riverfront auto fare, 2023)",
         "url": "https://en.wikivoyage.org/wiki/Varanasi",
         "accessed": "2026-11-06"
+      },
+      {
+        "title": "Aaj Tak — Kashi ropeway 96% complete, trial begun, passenger service likely from December 2026 (3 Nov 2026)",
+        "url": "https://www.aajtak.in/uttar-pradesh/story/kashi-ropeway-varanasi-96-percent-work-complete-december-start-lcln-strc-2687650-2026-11-03",
+        "accessed": "2026-11-14"
+      },
+      {
+        "title": "New Kerala — Second phase of trial runs under way for Kashi urban ropeway (28 Oct 2026)",
+        "url": "https://www.newkerala.com/news/a/uttar-pradesh-second-phase-trial-runs-underway-kashi-urban-528.htm",
+        "accessed": "2026-11-14"
       }
     ],
-    "progress": 94,
+    "progress": 96,
     "i18n": {
       "hi": {
-        "summary": "भारत का पहला शहरी सार्वजनिक-परिवहन रोपवे: वाराणसी कैंट स्टेशन से विश्वनाथ मंदिर के पास गोदौलिया तक 3.75 किमी और पाँच स्टेशन, लगभग 16 मिनट में। शिलान्यास 24 मार्च 2023; कैंट–रथयात्रा खंड पर ट्रायल 2025 में शुरू हुए। 28 सितंबर 2026 के आधिकारिक निरीक्षण में भौतिक कार्य 94% से अधिक पूरा; प्रशासन का लक्ष्य 24 नवंबर 2026 से सार्वजनिक संचालन शुरू करना है, जो तैयारी पर निर्भर है और अभी आधिकारिक रूप से पुष्ट नहीं है।",
+        "summary": "भारत का पहला शहरी सार्वजनिक-परिवहन रोपवे: वाराणसी कैंट स्टेशन से विश्वनाथ मंदिर के पास गोदौलिया तक 3.75 किमी और पाँच स्टेशन, लगभग 16 मिनट में। शिलान्यास 24 मार्च 2023; कैंट–रथयात्रा खंड पर ट्रायल 2025 में शुरू हुए। 28 सितंबर 2026 के आधिकारिक निरीक्षण में भौतिक कार्य 94% से अधिक पूरा था, और आज तक के अनुसार 3 नवंबर 2026 को यह लगभग 96% पूरा था और ट्रायल का दूसरा चरण चल रहा था। ख़बरों में कभी देव दीपावली (24 नवंबर 2026) के आसपास तो कभी दिसंबर 2026 में सार्वजनिक संचालन शुरू होने की बात कही जा रही है; अभी कोई आधिकारिक तारीख़ अधिसूचित नहीं हुई है।",
         "agency": "नेशनल हाईवेज़ लॉजिस्टिक्स मैनेजमेंट लिमिटेड (NHLML) · निर्माण विश्व समुद्र इंजीनियरिंग",
-        "timeline": "शिलान्यास 24 मार्च 2023 · ट्रायल 2025 से · 94% से अधिक पूर्ण (निरीक्षण 28 सितंबर 2026) · संचालन का लक्ष्य 24 नवंबर 2026 (अपुष्ट)",
+        "timeline": "शिलान्यास 24 मार्च 2023 · ट्रायल 2025 से · लगभग 96% पूर्ण, ट्रायल का दूसरा चरण जारी (3 नवंबर 2026) · सार्वजनिक संचालन देव दीपावली (24 नवंबर 2026) और दिसंबर 2026 के बीच अपेक्षित (अपुष्ट)",
         "tips": [
           "जब तक संचालक शुरू होने की तारीख़ और समय सारणी घोषित न करे, अपनी योजना रोपवे पर आधारित न करें।",
           "रोपवे शुरू होने तक वाराणसी जंक्शन से नदी तट की ओर ऑटो लें (2023 की एक सूची में लगभग ₹100) और पुराने शहर की गलियों में आख़िरी हिस्सा पैदल चलने के लिए तैयार रहें।",
