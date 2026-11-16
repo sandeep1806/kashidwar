@@ -238,13 +238,13 @@
     "months": [
       11
     ],
-    "where": "Rajghat and Namo Ghat (2025, and proposed for 2026); Assi Ghat in 2024",
+    "where": "Namo Ghat (2026); Rajghat and Namo Ghat in 2025; Assi Ghat in 2024",
     "placeIds": [
       "raj-ghat",
       "namo-ghat",
       "assi-ghat"
     ],
-    "summary": "Uttar Pradesh Tourism's riverside festival of classical music, dance and folk art, held on the evenings just before Dev Deepawali, with a crafts bazaar, a country-boat race and food stalls. In 2025 it ran on 1–4 November at Rajghat and Namo Ghat; 2026 is proposed for 20–23 November, not yet officially notified.",
+    "summary": "Uttar Pradesh Tourism's riverside festival of classical music, dance and folk art, held on the evenings just before Dev Deepawali, with a crafts bazaar, a country-boat race and food stalls. In 2025 it ran on 1–4 November at Rajghat and Namo Ghat. The state government confirmed 2026 dates of 20–23 November at Namo Ghat, with a cultural programme each evening and the stage given mainly to local artists.",
     "image": "/media/festivals/ganga-mahotsav.jpg",
     "sources": [
       {
@@ -261,6 +261,11 @@
         "title": "Amar Ujala — Dev Deepawali 2024: Ganga Mahotsav at Assi for the first time",
         "url": "https://www.amarujala.com/uttar-pradesh/varanasi/dev-deepawali-16-lakh-diyas-lit-on-ghat-ganga-mahotsav-first-time-on-assi-american-artists-will-perform-2024-11-10",
         "accessed": "2026-11-04"
+      },
+      {
+        "title": "Amar Ujala — Dev Deepawali 2026: Kashi's ghats to be lit with 1.1 million lamps; Ganga Mahotsav 20–23 Nov at Namo Ghat (12 Nov 2026)",
+        "url": "https://www.amarujala.com/uttar-pradesh/varanasi/dev-deepawali-2026-ghats-of-kashi-will-be-illuminated-by-1-1-million-earthen-lamps-in-varanasi-2026-11-12",
+        "accessed": "2026-11-16"
       },
       {
         "title": "Desi Khabar — Ganga Mahotsav 2026 proposed 20–23 November (preparatory meeting, 18 Aug 2026)",
@@ -305,11 +310,11 @@
     ],
     "i18n": {
       "hi": {
-        "summary": "उत्तर प्रदेश पर्यटन का नदी किनारे शास्त्रीय संगीत, नृत्य और लोक कला का उत्सव, देव दीपावली से ठीक पहले की शामों में, शिल्प बाज़ार, देसी नाव दौड़ और खाने के स्टॉल के साथ। 2025 में यह 1–4 नवंबर को राजघाट और नमो घाट पर हुआ; 2026 के लिए 20–23 नवंबर प्रस्तावित है, आधिकारिक घोषणा अभी बाकी।",
+        "summary": "उत्तर प्रदेश पर्यटन का नदी किनारे शास्त्रीय संगीत, नृत्य और लोक कला का उत्सव, देव दीपावली से ठीक पहले की शामों में, शिल्प बाज़ार, देसी नाव दौड़ और खाने के स्टॉल के साथ। 2025 में यह 1–4 नवंबर को राजघाट और नमो घाट पर हुआ। राज्य सरकार ने 2026 के लिए 20–23 नवंबर की तारीख़ें नमो घाट पर पक्की कर दी हैं, हर शाम सांस्कृतिक कार्यक्रम के साथ, जिसमें मंच मुख्यतः स्थानीय कलाकारों को मिलेगा।",
         "when": "देव दीपावली (कार्तिक पूर्णिमा) से पहले की तीन या चार शामें",
-        "where": "राजघाट और नमो घाट (2025, और 2026 के लिए प्रस्तावित); 2024 में अस्सी घाट",
+        "where": "नमो घाट (2026); 2025 में राजघाट और नमो घाट; 2024 में अस्सी घाट",
         "tips": [
-          "जब तक उत्तर प्रदेश पर्यटन आधिकारिक कार्यक्रम जारी न करे, 20–23 नवंबर 2026 को प्रस्तावित तारीख ही मानें।",
+          "2026 में गंगा महोत्सव 20–23 नवंबर को नमो घाट पर है, और उसके बाद 24 नवंबर को देव दीपावली है।",
           "मंच के पास जगह के लिए कार्यक्रम शुरू होने से पहले पहुँचें; 2025 में शामें 4 बजे शुरू होती थीं।",
           "जब तक आयोजक पास की घोषणा न करें, 'गंगा महोत्सव पास' के नाम पर किसी को पैसे न दें।",
           "कमरे जल्दी बुक करें, क्योंकि उत्सव की शामें सीधे 24 नवंबर की देव दीपावली तक जाती हैं।",
@@ -318,7 +323,7 @@
       }
     },
     "tips": [
-      "Treat 20–23 November 2026 as proposed until UP Tourism publishes the official schedule.",
+      "Ganga Mahotsav 2026 is confirmed for 20–23 November at Namo Ghat, followed by Dev Deepawali on 24 November.",
       "Arrive before the programme starts for a place near the stage; in 2025 the evenings began at 4 pm.",
       "Do not pay anyone for 'Ganga Mahotsav passes' unless the organisers announce that passes exist.",
       "Book rooms early, as the festival nights lead straight into Dev Deepawali on 24 November.",

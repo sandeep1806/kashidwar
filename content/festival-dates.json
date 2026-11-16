@@ -63,9 +63,13 @@
     "2026": {
       "startDate": "2026-11-20",
       "endDate": "2026-11-23",
-      "verified": false,
-      "note": "No official 2026 dates yet. A preparatory meeting in Aug 2026 discussed 20–23 Nov (Rajghat, with Dev Deepawali on 24 Nov), reported only by local outlets; UP Tourism had not announced dates as of 25 Sep 2026. Re-check uptourism.gov.in nearer the date.",
+      "verified": true,
+      "note": "Confirmed 20–23 Nov at Namo Ghat (venue moved from the Aug 2026 proposal of Rajghat). Amar Ujala (12 Nov 2026) reports the dates and venue from Chief Minister Yogi Adityanath's 11 Nov 2026 review meeting on Ganga Mahotsav and Dev Deepawali preparations, with a cultural programme each evening and local artists prioritised for the stage. Dev Deepawali follows on 24 Nov.",
       "sources": [
+        {
+          "title": "Amar Ujala — Dev Deepawali 2026: Kashi's ghats to be lit with 1.1 million lamps; Ganga Mahotsav 20–23 Nov at Namo Ghat (12 Nov 2026)",
+          "url": "https://www.amarujala.com/uttar-pradesh/varanasi/dev-deepawali-2026-ghats-of-kashi-will-be-illuminated-by-1-1-million-earthen-lamps-in-varanasi-2026-11-12"
+        },
         {
           "title": "Uttar Pradesh Tourism",
           "url": "https://uptourism.gov.in/"
