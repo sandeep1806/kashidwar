@@ -138,5 +138,15 @@
     "costUsd": 1.69,
     "result": "success",
     "run": "local (scripts/content-review.sh)"
+  },
+  {
+    "date": "2026-11-20",
+    "kind": "Daily",
+    "focus": "places-4",
+    "model": "claude-sonnet-5",
+    "turns": 87,
+    "costUsd": 7.66,
+    "result": "error_max_turns",
+    "run": "local (scripts/content-review.sh)"
   }
 ]

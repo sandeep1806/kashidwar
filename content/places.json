@@ -731,14 +731,14 @@
       "Allow half a day: the stupa, Mulagandha Kuti Vihar, the Thai and Tibetan temples and the museum are all walkable."
     ],
     "glance": {
-      "timings": "Site sunrise–sunset (~06:00–18:00); museum 09:00 or 10:00–17:00 (sources differ), closed Fri",
+      "timings": "Site sunrise–sunset (~06:00–18:00); museum 09:00–17:00 (ASI), closed Fri",
       "entry": "Site ₹25 cash / ₹20 online (Indian, SAARC, BIMSTEC) · ₹300 / ₹250 (foreign); museum ₹5",
       "duration": "2–3 h (site + museum)",
       "season": "Oct–Mar; Buddha Purnima (Apr–May)",
       "crowd": "busy",
       "photography": "allowed",
       "dress": "any",
-      "verified": false,
+      "verified": true,
       "booking": {
         "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
         "counter": true,
@@ -764,7 +764,7 @@
         {
           "title": "ASI Sarnath Circle — Visitor information (₹25 cash / ₹20 card or online; ₹300 / ₹250 foreign; museum ₹5)",
           "url": "http://www.asisarnathcircle.org/visiter-information.html",
-          "accessed": "2026-11-03"
+          "accessed": "2026-11-20"
         },
         {
           "title": "The Week (PTI) — ASI monuments online ticket booking on ONDC; ₹5 (Indian) / ₹50 (foreign) online discount continues (6 Jan 2026)",
@@ -810,7 +810,7 @@
           "आधा दिन रखें: स्तूप, मूलगंध कुटी विहार, थाई और तिब्बती मंदिर और संग्रहालय सब पैदल दूरी पर हैं।"
         ],
         "glance": {
-          "timings": "स्थल सूर्योदय–सूर्यास्त (~6–18 बजे); संग्रहालय 9 या 10 से 17 बजे (स्रोतों में अंतर), शुक्रवार बंद",
+          "timings": "स्थल सूर्योदय–सूर्यास्त (~6–18 बजे); संग्रहालय सुबह 9 से शाम 5 बजे (एएसआई), शुक्रवार बंद",
           "entry": "स्थल ₹25 नकद / ₹20 ऑनलाइन (भारतीय, सार्क, बिम्सटेक) · ₹300 / ₹250 (विदेशी); संग्रहालय ₹5",
           "duration": "2–3 घंटे (स्थल व संग्रहालय)",
           "season": "अक्टूबर–मार्च; बुद्ध पूर्णिमा (अप्रैल–मई)"
@@ -1781,12 +1781,12 @@
       "crowd": "moderate",
       "photography": "allowed",
       "dress": "covered",
-      "verified": false,
+      "verified": true,
       "sources": [
         {
           "title": "Shri Guru Ravidas Janm Sthan Mandir — Kashi (kashi.gov.in)",
           "url": "https://kashi.gov.in/listing-details/shri-guru-ravidas-janm-sthan-mandir",
-          "accessed": "2026-10-11"
+          "accessed": "2026-11-20"
         },
         {
           "title": "Sri Guru Ravidas Janmasthal — BhaktiBharat",
@@ -2202,7 +2202,7 @@
         {
           "title": "Varanasi Deanery — Diocese of Lucknow, Church of North India",
           "url": "https://dioceseoflucknowcni.org/Varanasi_Deaneries.aspx",
-          "accessed": "2026-10-11"
+          "accessed": "2026-11-20"
         },
         {
           "title": "St Mary's Church, Varanasi — Kiomoi directory",
@@ -3468,7 +3468,8 @@
     "image": "/media/places/swarved-mahamandir.jpg",
     "tips": [
       "It is outside the city at Umraha, on the Chaubepur side: go by taxi or auto, and it pairs well with a visit to Sarnath.",
-      "Join the evening session of Swarved recitation, meditation and aarti, held daily from 18:00 to 20:00."
+      "Join the evening session of Swarved recitation, meditation and aarti, held daily from 18:00 to 20:00.",
+      "The trust is building a 135-foot statue of Sadguru Sadafaldeo Ji Maharaj nearby; expect ongoing construction around the complex."
     ],
     "glance": {
       "timings": "Daily 08:00–21:00 (summer), 08:00–20:00 (winter); darshan & meditation 04:00–06:00 and 18:00–20:00",
@@ -3483,7 +3484,7 @@
         {
           "title": "Swarved Mahamandir Dham (trust) — darshan timings; no fee for meditation, aarti and darshan",
           "url": "https://swarvedmahamandir.org/",
-          "accessed": "2026-10-30"
+          "accessed": "2026-11-20"
         }
       ]
     },
@@ -3492,6 +3493,11 @@
         "title": "PIB — PM inaugurates Swarved Mahamandir in Varanasi, Uttar Pradesh (18 Dec 2023)",
         "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=1987631",
         "accessed": "2026-10-30"
+      },
+      {
+        "title": "Swarved Mahamandir Dham (trust) — 135-foot statue of Sadguru Sadafaldeo Ji Maharaj under construction nearby",
+        "url": "https://swarvedmahamandir.org/",
+        "accessed": "2026-11-20"
       },
       {
         "title": "Swarved Mahamandir (Vihangam Yoga Sansthan) — 20,000 seats, 3 lakh sq ft, seven floors",
@@ -3516,7 +3522,8 @@
         "bestTime": "सर्दियों की सुबह या शाम की आरती और ध्यान (18–20 बजे); दिसंबर के मध्य में विहंगम योग का वार्षिकोत्सव सबसे भीड़ वाला समय है",
         "tips": [
           "यह शहर से बाहर उमरहा में, चौबेपुर की ओर है: टैक्सी या ऑटो से जाएं; सारनाथ के साथ यहां आना आसान रहता है।",
-          "शाम 6 से 8 बजे तक रोज़ होने वाले स्वर्वेद पाठ, ध्यान और आरती में शामिल हों।"
+          "शाम 6 से 8 बजे तक रोज़ होने वाले स्वर्वेद पाठ, ध्यान और आरती में शामिल हों।",
+          "ट्रस्ट परिसर के पास सद्गुरु सदाफलदेव जी महाराज की 135 फुट ऊंची प्रतिमा बना रहा है; आसपास निर्माण कार्य चल रहा हो सकता है।"
         ],
         "glance": {
           "timings": "रोज़ सुबह 8 से रात 9 बजे (गर्मी), सुबह 8 से रात 8 बजे (सर्दी); दर्शन व ध्यान सुबह 4–6 और शाम 6–8 बजे",
@@ -3559,14 +3566,14 @@
       "See the museum before the ruins: the capital and the sculptures make the bare foundations outside much easier to read."
     ],
     "glance": {
-      "timings": "09:00–17:00, closed Fri (some government listings say 10:00 opening)",
+      "timings": "09:00–17:00, closed Fri",
       "entry": "₹5 (ASI museum ticket)",
       "duration": "45 min–1 h",
       "season": "Oct–Mar; Buddha Purnima (Apr–May)",
       "crowd": "moderate",
       "photography": "outside-only",
       "dress": "any",
-      "verified": false,
+      "verified": true,
       "booking": {
         "url": "https://asi.paygov.org.in/asi-webapp/#/ticketbooking",
         "counter": true,
@@ -3577,7 +3584,7 @@
         {
           "title": "ASI Sarnath Circle — Visitor information (museum 09:00–17:00, museum ticket ₹5)",
           "url": "http://www.asisarnathcircle.org/visiter-information.html",
-          "accessed": "2026-11-03"
+          "accessed": "2026-11-20"
         },
         {
           "title": "Incredible India (Ministry of Tourism) — Sarnath Museum (10:00–17:00, closed Friday; oldest ASI site museum)",
@@ -3644,7 +3651,7 @@
           "खंडहरों से पहले संग्रहालय देखें: सिंह-शीर्ष और मूर्तियाँ देखकर बाहर की नींवें समझना कहीं आसान हो जाता है।"
         ],
         "glance": {
-          "timings": "सुबह 9 से शाम 5 बजे, शुक्रवार बंद (कुछ सरकारी सूचियों में खुलने का समय 10 बजे)",
+          "timings": "सुबह 9 से शाम 5 बजे, शुक्रवार बंद",
           "entry": "₹5 (एएसआई संग्रहालय टिकट)",
           "duration": "45 मिनट से 1 घंटा",
           "season": "अक्टूबर से मार्च; बुद्ध पूर्णिमा (अप्रैल-मई)"
@@ -4278,12 +4285,12 @@
       "crowd": "moderate",
       "photography": "outside-only",
       "dress": "modest",
-      "verified": false,
+      "verified": true,
       "sources": [
         {
           "title": "Shri Tilbhandeshwar Mahadev Mandir – kashi.gov.in (timings 04:30–21:00)",
           "url": "https://kashi.gov.in/listing-details/shri-tilbhandeshwar-mahadev-mandir",
-          "accessed": "2026-10-30"
+          "accessed": "2026-11-20"
         },
         {
           "title": "Patrika — Tilbhandeshwar Mahadev, Kashi: Sawan darshan and timings (3 Aug 2026)",
@@ -5007,7 +5014,7 @@
         {
           "title": "Bhadohi district (NIC) — Sita Samahit Sthal (110 ft Hanuman statue; 11 km from Jangiganj; airports, stations, directions)",
           "url": "https://bhadohi.nic.in/tourist-place/sita-samahit-sthal/",
-          "accessed": "2026-10-30"
+          "accessed": "2026-11-20"
         },
         {
           "title": "Bhadohi district (NIC) — Places of interest (Sitamarhi about 85 km from Varanasi, 40 km from Prayagraj, 45 km from Vindhyachal)",
@@ -5020,7 +5027,7 @@
       {
         "title": "Bhadohi district (NIC) — Sita Samahit Sthal (110 ft Hanuman statue; 11 km from Jangiganj; airports, stations, directions)",
         "url": "https://bhadohi.nic.in/tourist-place/sita-samahit-sthal/",
-        "accessed": "2026-10-30"
+        "accessed": "2026-11-20"
       },
       {
         "title": "Bhadohi district (NIC) — Places of interest (Sitamarhi about 85 km from Varanasi, 40 km from Prayagraj, 45 km from Vindhyachal)",
@@ -5390,7 +5397,7 @@
         {
           "title": "Visit Sarnath — Deer Park timing and tickets (published 1 Nov 2024, updated 14 Dec 2024)",
           "url": "https://visitsarnath.in/deer-park-timing-tickets/",
-          "accessed": "2026-10-30"
+          "accessed": "2026-11-20"
         }
       ]
     },
