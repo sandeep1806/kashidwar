@@ -231,14 +231,14 @@
     "type": "transport",
     "lat": 25.3282,
     "lng": 82.9866,
-    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple, in about 16 minutes. Foundation laid 24 March 2023; trial runs on the Cantt–Rathyatra stretch began in 2025. An official inspection on 28 September 2026 put physical work above 94%, and Aaj Tak reported it at about 96% with a second phase of trials under way on 3 November 2026. Reports are split between a public launch around Dev Deepawali (24 November 2026) and a December 2026 start; no official date has been notified.",
+    "summary": "India's first urban public-transport ropeway: 3.75 km and five stations from Varanasi Cantt railway station to Godowlia, near the Vishwanath temple, in about 16 minutes. Foundation laid 24 March 2023; trial runs on the Cantt–Rathyatra stretch began in 2025. An official inspection on 28 September 2026 put physical work above 94%, and Aaj Tak reported it at about 96% with a second phase of trials under way on 3 November 2026. On 18 November 2026 the newly appointed Divisional Commissioner said ongoing city projects, including the ropeway, would be completed within a month or two; two days later he inspected the Godowlia and Girja Ghar stations and asked for the remaining finishing and artwork work to be completed soon. Reports are split between a public launch around Dev Deepawali (24 November 2026) and a December 2026 start; no official date has been notified.",
     "bestTime": "Not yet open to the public",
     "image": "/media/projects/varanasi-ropeway.jpg",
     "status": "under_construction",
     "agency": "National Highways Logistics Management Ltd (NHLML) · built by Vishwa Samudra Engineering",
-    "timeline": "Foundation 24 March 2023 · Trial runs from 2025 · ~96% complete, second trial phase under way (3 November 2026) · public launch expected between Dev Deepawali (24 November 2026) and December 2026 (not confirmed)",
+    "timeline": "Foundation 24 March 2023 · Trial runs from 2025 · ~96% complete (3 November 2026) · commissioner's statement that completion is expected within a month or two (18 November 2026) · finishing and artwork work at stations still being chased (20 November 2026) · no official public-launch date notified",
     "verified": true,
-    "lastVerified": "2026-11-14",
+    "lastVerified": "2026-11-22",
     "sources": [
       {
         "title": "ETV Bharat (Hindi) — Nodal officer and DM inspect ropeway: 94.35% complete, inauguration expected in November (29 Sep 2026)",
@@ -312,14 +312,24 @@
         "title": "New Kerala — Second phase of trial runs under way for Kashi urban ropeway (28 Oct 2026)",
         "url": "https://www.newkerala.com/news/a/uttar-pradesh-second-phase-trial-runs-underway-kashi-urban-528.htm",
         "accessed": "2026-11-14"
+      },
+      {
+        "title": "UNI — Kashi's pending development projects will be completed in a month or two: Divisional Commissioner (18 Nov 2026)",
+        "url": "https://www.uniindia.com/north-india/infra-kashi-projects/250034",
+        "accessed": "2026-11-22"
+      },
+      {
+        "title": "Amar Ujala — Divisional Commissioner inspects the ropeway, instructs officials to expedite finishing work and artwork at the stations (20 Nov 2026)",
+        "url": "https://www.amarujala.com/uttar-pradesh/varanasi/divisional-commissioner-inspects-the-ropeway-issues-instructions-to-expedite-finishing-work-and-artwork-at-the-stations-varanasi-news-c-20-noi1138-1621714-2026-11-20",
+        "accessed": "2026-11-22"
       }
     ],
     "progress": 96,
     "i18n": {
       "hi": {
-        "summary": "भारत का पहला शहरी सार्वजनिक-परिवहन रोपवे: वाराणसी कैंट स्टेशन से विश्वनाथ मंदिर के पास गोदौलिया तक 3.75 किमी और पाँच स्टेशन, लगभग 16 मिनट में। शिलान्यास 24 मार्च 2023; कैंट–रथयात्रा खंड पर ट्रायल 2025 में शुरू हुए। 28 सितंबर 2026 के आधिकारिक निरीक्षण में भौतिक कार्य 94% से अधिक पूरा था, और आज तक के अनुसार 3 नवंबर 2026 को यह लगभग 96% पूरा था और ट्रायल का दूसरा चरण चल रहा था। ख़बरों में कभी देव दीपावली (24 नवंबर 2026) के आसपास तो कभी दिसंबर 2026 में सार्वजनिक संचालन शुरू होने की बात कही जा रही है; अभी कोई आधिकारिक तारीख़ अधिसूचित नहीं हुई है।",
+        "summary": "भारत का पहला शहरी सार्वजनिक-परिवहन रोपवे: वाराणसी कैंट स्टेशन से विश्वनाथ मंदिर के पास गोदौलिया तक 3.75 किमी और पाँच स्टेशन, लगभग 16 मिनट में। शिलान्यास 24 मार्च 2023; कैंट–रथयात्रा खंड पर ट्रायल 2025 में शुरू हुए। 28 सितंबर 2026 के आधिकारिक निरीक्षण में भौतिक कार्य 94% से अधिक पूरा था, और आज तक के अनुसार 3 नवंबर 2026 को यह लगभग 96% पूरा था। 18 नवंबर 2026 को नवनियुक्त मंडलायुक्त ने कहा कि रोपवे सहित शहर की जारी परियोजनाएँ एक-दो महीने में पूरी हो जाएँगी; दो दिन बाद उन्होंने गोदौलिया और गिरजाघर स्टेशनों का निरीक्षण कर स्टेशनों के बचे फिनिशिंग और आर्टवर्क कार्य जल्द पूरा कराने के निर्देश दिए। ख़बरों में कभी देव दीपावली (24 नवंबर 2026) के आसपास तो कभी दिसंबर 2026 में सार्वजनिक संचालन शुरू होने की बात कही जा रही है; अभी कोई आधिकारिक तारीख़ अधिसूचित नहीं हुई है।",
         "agency": "नेशनल हाईवेज़ लॉजिस्टिक्स मैनेजमेंट लिमिटेड (NHLML) · निर्माण विश्व समुद्र इंजीनियरिंग",
-        "timeline": "शिलान्यास 24 मार्च 2023 · ट्रायल 2025 से · लगभग 96% पूर्ण, ट्रायल का दूसरा चरण जारी (3 नवंबर 2026) · सार्वजनिक संचालन देव दीपावली (24 नवंबर 2026) और दिसंबर 2026 के बीच अपेक्षित (अपुष्ट)",
+        "timeline": "शिलान्यास 24 मार्च 2023 · ट्रायल 2025 से · लगभग 96% पूर्ण (3 नवंबर 2026) · मंडलायुक्त का बयान, पूर्णता एक-दो महीने में अपेक्षित (18 नवंबर 2026) · स्टेशनों पर फिनिशिंग व आर्टवर्क कार्य जारी (20 नवंबर 2026) · सार्वजनिक संचालन की कोई आधिकारिक तारीख़ अधिसूचित नहीं",
         "tips": [
           "जब तक संचालक शुरू होने की तारीख़ और समय सारणी घोषित न करे, अपनी योजना रोपवे पर आधारित न करें।",
           "रोपवे शुरू होने तक वाराणसी जंक्शन से नदी तट की ओर ऑटो लें (2023 की एक सूची में लगभग ₹100) और पुराने शहर की गलियों में आख़िरी हिस्सा पैदल चलने के लिए तैयार रहें।",
@@ -546,7 +556,7 @@
     "agency": "Indian Railways (North Eastern / Northern Railway) · Amrit Bharat Station Scheme",
     "timeline": "Listed for redevelopment 2018 · Amrit Bharat scheme scope · completion date unconfirmed",
     "verified": false,
-    "lastVerified": "2026-11-08",
+    "lastVerified": "2026-11-22",
     "sources": [
       {
         "title": "Wikipedia — Varanasi Junction railway station",
@@ -714,9 +724,9 @@
     "image": "/media/projects/ring-road.jpg",
     "status": "under_construction",
     "agency": "National Highways Authority of India (NHAI)",
-    "timeline": "Phase 1 (Harhua–Sandaha) opened 2018 · Rajatalab–Harhua opened October 2021 · one Ganga-bridge carriageway open since 1 June 2025 · heavy vehicles barred from the bridge (April 2026)",
+    "timeline": "Phase 1 (Harhua–Sandaha) opened 2018 · Rajatalab–Harhua opened October 2021 · one Ganga-bridge carriageway open since 1 June 2025 · heavy vehicles barred from the bridge (April 2026) · commissioner's statement that remaining work is expected within a month or two (18 November 2026)",
     "verified": true,
-    "lastVerified": "2026-11-08",
+    "lastVerified": "2026-11-22",
     "sources": [
       {
         "title": "Kashi Official Web Portal — Ring Road Phase 2",
@@ -757,13 +767,18 @@
         "title": "PIB — Cabinet approves Ganga elevated corridor between NH-19 and Varanasi Ring Road (NH-135B) (15 Jul 2026)",
         "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284783",
         "accessed": "2026-11-06"
+      },
+      {
+        "title": "UNI — Kashi's pending development projects will be completed in a month or two: Divisional Commissioner (18 Nov 2026)",
+        "url": "https://www.uniindia.com/north-india/infra-kashi-projects/250034",
+        "accessed": "2026-11-22"
       }
     ],
     "i18n": {
       "hi": {
         "summary": "हिस्सों में बनी 61 किमी की परिक्रमा सड़क। हरहुआ–संदहा (चरण 1) 2018 में और राजातालाब–हरहुआ अक्टूबर 2021 में खुला। संदहा–रेवसा हिस्से पर गंगा के नए पुल का एक कैरिजवे 1 जून 2025 को खुला; अप्रैल 2026 में पुल पर भारी वाहनों का प्रवेश बंद किया गया। यह सड़क लखनऊ, प्रयागराज, आज़मगढ़ और ग़ाज़ीपुर का यातायात शहर से बाहर रखती है।",
         "agency": "भारतीय राष्ट्रीय राजमार्ग प्राधिकरण (NHAI)",
-        "timeline": "चरण 1 (हरहुआ–संदहा) 2018 में खुला · राजातालाब–हरहुआ अक्टूबर 2021 में खुला · गंगा पुल का एक कैरिजवे 1 जून 2025 से खुला · पुल पर भारी वाहन प्रतिबंधित (अप्रैल 2026)",
+        "timeline": "चरण 1 (हरहुआ–संदहा) 2018 में खुला · राजातालाब–हरहुआ अक्टूबर 2021 में खुला · गंगा पुल का एक कैरिजवे 1 जून 2025 से खुला · पुल पर भारी वाहन प्रतिबंधित (अप्रैल 2026) · मंडलायुक्त का बयान, बचा काम एक-दो महीने में पूरा होने की उम्मीद (18 नवंबर 2026)",
         "tips": [
           "अप्रैल 2026 से रिंग रोड के गंगा पुल पर भारी वाहनों पर रोक है, इसलिए बस या ट्रक से इस रास्ते की योजना बनाने से पहले जानकारी ले लें।",
           "संदहा–रेवसा खंड पर पुल के काम के लिए रात में बंदी लगाई जाती रही है; रात 8 बजे के बाद इस रास्ते से जाने से पहले स्थानीय यातायात सूचना देख लें।",
@@ -803,9 +818,9 @@
     "image": "/media/projects/airport.jpg",
     "status": "under_construction",
     "agency": "Airports Authority of India (AAI)",
-    "timeline": "Cabinet approval June 2024 · Under construction · Opening date not announced",
+    "timeline": "Cabinet approval June 2024 · Under construction · commissioner's statement that completion is expected within a month or two (18 November 2026) · opening date not officially announced",
     "verified": true,
-    "lastVerified": "2026-11-08",
+    "lastVerified": "2026-11-22",
     "sources": [
       {
         "title": "PIB — Cabinet approves development of Lal Bahadur Shastri International Airport, Varanasi",
@@ -868,7 +883,7 @@
       "hi": {
         "summary": "जून 2024 में केंद्रीय मंत्रिमंडल द्वारा स्वीकृत ₹2,869.65 करोड़ का विस्तार: सालाना 60 लाख यात्रियों के लिए 75,000 वर्ग मीटर का नया टर्मिनल, रनवे के नीचे सड़क सुरंग सहित रनवे विस्तार, समानांतर टैक्सीवे और एप्रन। निर्माण जारी है; उद्घाटन की कोई आधिकारिक तिथि घोषित नहीं हुई।",
         "agency": "भारतीय विमानपत्तन प्राधिकरण (AAI)",
-        "timeline": "मंत्रिमंडल स्वीकृति जून 2024 · निर्माणाधीन · उद्घाटन तिथि घोषित नहीं",
+        "timeline": "मंत्रिमंडल स्वीकृति जून 2024 · निर्माणाधीन · मंडलायुक्त का बयान, पूर्णता एक-दो महीने में अपेक्षित (18 नवंबर 2026) · उद्घाटन तिथि आधिकारिक रूप से घोषित नहीं",
         "cost": "₹2,869.65 करोड़",
         "tips": [
           "घरेलू उड़ान से दो से ढाई घंटे पहले शहर से निकलें; व्यस्त समय में सिर्फ़ सड़क में एक घंटे से ज़्यादा लग सकता है।",
@@ -1088,14 +1103,14 @@
     "type": "infrastructure",
     "lat": 25.2286,
     "lng": 82.8531,
-    "summary": "A 30,000-seat stadium at Ganjari, Rajatalab, designed around Shiva motifs: trishul-shaped floodlights, a damru-shaped canopy, crescent forms. Foundation laid 23 September 2023 at about ₹450 crore. At the District Magistrate's inspection on 16 August 2026 the pavilions and media centre were complete and external works over 80% done. On 3 November 2026 Amar Ujala reported the stadium about 98% complete, with matches to begin only after a BCCI inspection; no official opening date had been announced.",
+    "summary": "A 30,000-seat stadium at Ganjari, Rajatalab, designed around Shiva motifs: trishul-shaped floodlights, a damru-shaped canopy, crescent forms. Foundation laid 23 September 2023 at about ₹450 crore. At the District Magistrate's inspection on 16 August 2026 the pavilions and media centre were complete and external works over 80% done. On 3 November 2026 Amar Ujala reported the stadium about 98% complete, with matches to begin only after a BCCI inspection. ICC Chairman Jay Shah and BCCI Vice President Rajiv Shukla carried out that inspection on 18 November 2026, reviewing the pitches, pavilion, VIP and spectators' galleries and construction quality; no new completion figure or opening date was given. Media reports of a 2 December 2026 inauguration by the Prime Minister are not officially confirmed.",
     "bestTime": "—",
     "image": "/media/projects/cricket-stadium.jpg",
     "status": "under_construction",
     "agency": "Board of Control for Cricket in India (BCCI) with Uttar Pradesh Cricket Association; land from Government of Uttar Pradesh",
-    "timeline": "Foundation 23 September 2023 · pavilions complete, external works >80% (16 August 2026) · about 98% complete, BCCI inspection awaited (3 November 2026) · opening date not announced",
+    "timeline": "Foundation 23 September 2023 · pavilions complete, external works >80% (16 August 2026) · about 98% complete, BCCI inspection awaited (3 November 2026) · ICC Chairman and BCCI VP inspection carried out (18 November 2026) · opening date not officially announced",
     "verified": true,
-    "lastVerified": "2026-11-08",
+    "lastVerified": "2026-11-22",
     "sources": [
       {
         "title": "Amar Ujala — PM to inaugurate Ganjari stadium in October, first Ranji match likely in November (20 Sep 2026)",
@@ -1141,15 +1156,20 @@
         "title": "Amar Ujala — गंजारी स्टेडियम: BCCI inspection awaited, matches only after BCCI approval, progress report to PMO (3 Nov 2026)",
         "url": "https://www.amarujala.com/uttar-pradesh/varanasi/varanasi-ganjari-stadium-inauguration-preparation-icc-jay-shah-and-bcci-rajeev-shukla-to-conduct-an-inspection-2026-11-03",
         "accessed": "2026-11-06"
+      },
+      {
+        "title": "UNI — ICC Chairman Jay Shah, BCCI VP Rajiv Shukla inspect Ganjari Stadium construction (18 Nov 2026)",
+        "url": "https://www.uniindia.com/north-india/admin-varanasi-jay-shah-stadium/249895",
+        "accessed": "2026-11-22"
       }
     ],
     "progress": 98,
     "cost": "about ₹450 crore",
     "i18n": {
       "hi": {
-        "summary": "राजातालाब के गंजारी में 30,000 सीटों का स्टेडियम, शिव-प्रतीकों पर डिज़ाइन: त्रिशूल आकार की फ़्लडलाइटें, डमरू आकार की छतरी, अर्धचंद्र रूप। शिलान्यास 23 सितंबर 2023, लगभग ₹450 करोड़। 16 अगस्त 2026 के ज़िलाधिकारी निरीक्षण में पवेलियन और मीडिया सेंटर पूर्ण, बाहरी कार्य 80% से अधिक। 3 नवंबर 2026 को अमर उजाला ने स्टेडियम लगभग 98% पूरा बताया, और मैच बीसीसीआई के निरीक्षण के बाद ही होंगे; कोई आधिकारिक उद्घाटन तिथि घोषित नहीं हुई थी।",
+        "summary": "राजातालाब के गंजारी में 30,000 सीटों का स्टेडियम, शिव-प्रतीकों पर डिज़ाइन: त्रिशूल आकार की फ़्लडलाइटें, डमरू आकार की छतरी, अर्धचंद्र रूप। शिलान्यास 23 सितंबर 2023, लगभग ₹450 करोड़। 16 अगस्त 2026 के ज़िलाधिकारी निरीक्षण में पवेलियन और मीडिया सेंटर पूर्ण, बाहरी कार्य 80% से अधिक। 3 नवंबर 2026 को अमर उजाला ने स्टेडियम लगभग 98% पूरा बताया, और मैच बीसीसीआई के निरीक्षण के बाद ही होंगे। आईसीसी अध्यक्ष जय शाह और बीसीसीआई उपाध्यक्ष राजीव शुक्ल ने 18 नवंबर 2026 को यह निरीक्षण किया, पिच, पवेलियन, वीआईपी व दर्शक गैलरी और निर्माण गुणवत्ता देखी; कोई नया प्रतिशत या उद्घाटन तिथि नहीं बताई गई। प्रधानमंत्री द्वारा 2 दिसंबर 2026 को उद्घाटन की ख़बरें अभी आधिकारिक रूप से पुष्ट नहीं हैं।",
         "agency": "भारतीय क्रिकेट कंट्रोल बोर्ड (BCCI) उत्तर प्रदेश क्रिकेट संघ के साथ; भूमि उत्तर प्रदेश सरकार से",
-        "timeline": "शिलान्यास 23 सितंबर 2023 · पवेलियन पूरे, बाहरी काम 80% से अधिक (16 अगस्त 2026) · लगभग 98% पूरा, बीसीसीआई निरीक्षण बाकी (3 नवंबर 2026) · उद्घाटन तिथि घोषित नहीं",
+        "timeline": "शिलान्यास 23 सितंबर 2023 · पवेलियन पूरे, बाहरी काम 80% से अधिक (16 अगस्त 2026) · लगभग 98% पूरा, बीसीसीआई निरीक्षण बाकी (3 नवंबर 2026) · आईसीसी अध्यक्ष व बीसीसीआई उपाध्यक्ष का निरीक्षण (18 नवंबर 2026) · उद्घाटन तिथि आधिकारिक रूप से घोषित नहीं",
         "cost": "लगभग ₹450 करोड़",
         "tips": [
           "उद्घाटन की तारीख घोषित नहीं हुई है, इसलिए स्टेडियम के हिसाब से यात्रा की योजना बनाने से पहले जानकारी ले लें।",
@@ -1192,7 +1212,7 @@
     "agency": "Varanasi Development Authority (heritage corridors) · KIPRF and Varanasi Smart City (parks) · funded by BPCL CSR",
     "timeline": "MoUs signed September 2026 · 36-month implementation period · work yet to start",
     "verified": true,
-    "lastVerified": "2026-11-08",
+    "lastVerified": "2026-11-22",
     "sources": [
       {
         "title": "Amar Ujala — बदल रही काशी की तस्वीर: सारनाथ-मैदागिन में बनेंगे फूड स्ट्रीट हब, संवरेंगे 119 पार्क (8 Sep 2026)",
@@ -1279,7 +1299,7 @@
     "agency": "National Highways Authority of India (NHAI) · Ministry of Road Transport and Highways",
     "timeline": "Cabinet approval July 2026 · Construction yet to start",
     "verified": true,
-    "lastVerified": "2026-11-08",
+    "lastVerified": "2026-11-22",
     "sources": [
       {
         "title": "Business Standard — Cabinet approves ₹25,445 crore road corridor projects for Varanasi",
@@ -1299,16 +1319,6 @@
       {
         "title": "PIB — Cabinet approves 6-lane greenfield elevated corridor and foot over bridge between NH-19 and Varanasi Ring Road, ₹14,447.64 crore (15 Jul 2026)",
         "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284783",
-        "accessed": "2026-11-06"
-      },
-      {
-        "title": "Gazette of India — MoRTH S.O. 3202(E): competent authority for land acquisition, Varuna corridor km 0–19.42, Pindra tehsil (18 Jun 2026)",
-        "url": "https://egazette.gov.in/WriteReadData/2026/273606.pdf",
-        "accessed": "2026-11-06"
-      },
-      {
-        "title": "Gazette of India — MoRTH S.O. 3795(E): competent authority for land acquisition, Varuna corridor km 0–19.42, Sadar tehsil (10 Jul 2026)",
-        "url": "https://egazette.gov.in/WriteReadData/2026/274398.pdf",
         "accessed": "2026-11-06"
       }
     ],
