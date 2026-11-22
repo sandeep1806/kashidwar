@@ -13,7 +13,7 @@ import FaithGlyph from "@/components/ui/FaithGlyph";
 import Icon from "@/components/ui/Icon";
 import { festivals, localize, type Faith, hasTranslation, loadEntryTranslations } from "@/lib/content";
 import { displayName } from "@/lib/contentTypes";
-import { festivalDateView, festivalTiming, timingSources } from "@/lib/festivalDates";
+import { festivalDateView, festivalTiming, formatDayMonth, timingSources } from "@/lib/festivalDates";
 import { LOCALES, locales, type Locale } from "@/lib/i18n/locales";
 import { absolute, breadcrumbLd, festivalPlaces, alternatesFor, leadOf, metaDescription, neighbours, ogImage, pagePath, pageUrl } from "@/lib/pages";
 import { getDetails } from "@/lib/details";
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/festival
   const path = pagePath("festivals", id);
   // Titles name a year only for a verified upcoming (or current) occurrence.
   const next = festivalTiming(raw).next;
-  const title = next ? t("festivalTitle", { name: primary, year: String(next.year) }) : t("festivalTitleTbc", { name: primary });
+  const title = next ? t("festivalTitle", { name: primary, year: String(next.year), date: formatDayMonth(LOCALES[loc].bcp47, next.startDate, next.endDate) }) : t("festivalTitleTbc", { name: primary });
   const description = metaDescription(t("festivalDescription", { name: primary, when: f.when, summary: f.summary }));
   const photo = getPhoto(`festivals/${id}`, loc);
   const image = photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`;

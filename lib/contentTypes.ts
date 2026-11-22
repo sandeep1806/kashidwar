@@ -48,6 +48,8 @@ export interface Source {
  */
 export type LocalizedFields = Partial<{
   summary: string;
+  seoTitle: string;
+  seoDescription: string;
   /** Free-text "at a glance" values (timings, entry, duration, season) */
   glance: GlanceText;
   bestTime: string;
@@ -126,6 +128,9 @@ export interface Place {
   glance?: Glance;
   /** Optional verse shown in original script + transliteration + translation */
   verse?: { original: string; transliteration: string; translation: string; attribution: string };
+  /** Search title/description written for the queries this place gets (else the meta.placeTitle template); localized like summary */
+  seoTitle?: string;
+  seoDescription?: string;
 }
 
 export type ProjectStatus = "completed" | "under_construction" | "announced";

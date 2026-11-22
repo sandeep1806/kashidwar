@@ -29,7 +29,7 @@ for (const L of LOCALES) {
   const add = (c, key, enV, hiV) => { if (enV !== undefined && enV !== null && String(enV).trim()) chunks[c][key] = hiV ? { en: enV, hi: hiV } : { en: enV }; };
   for (const p of places) {
     const have = p.i18n?.[L] ?? {}, h = p.i18n?.hi ?? {};
-    for (const f of ["summary", "bestTime", "story"]) if (!have[f]) add("places", `places|${p.id}|${f}`, p[f], h[f]);
+    for (const f of ["summary", "bestTime", "story", "seoTitle", "seoDescription"]) if (!have[f]) add("places", `places|${p.id}|${f}`, p[f], h[f]);
     if ((have.tips ?? []).length !== (p.tips ?? []).length) (p.tips ?? []).forEach((t, i) => add("places", `places|${p.id}|tips|${i}`, t, h.tips?.[i]));
     for (const f of ["timings", "entry", "duration", "season"]) if (!have.glance?.[f]) add("places", `places|${p.id}|glance|${f}`, p.glance?.[f], h.glance?.[f]);
   }

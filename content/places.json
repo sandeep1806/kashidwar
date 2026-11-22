@@ -567,6 +567,16 @@
         "title": "Amar Ujala — Traffic closed for two hours on Rajghat bridge on New Year's Day (2 Jan 2026)",
         "url": "https://www.amarujala.com/uttar-pradesh/varanasi/traffic-remained-closed-for-two-hours-on-rajghat-bridge-varanasi-news-c-20-vns1056-1240466-2026-01-02",
         "accessed": "2026-11-06"
+      },
+      {
+        "title": "Amar Ujala (video): Ganga Aarti held for the first time at Namo Ghat (18 Sep 2025)",
+        "url": "https://www.amarujala.com/video/uttar-pradesh/varanasi/video-ganga-aarti-held-for-first-time-at-namo-ghat-on-pm-modi-birthday-2025-09-18",
+        "accessed": "2026-11-22"
+      },
+      {
+        "title": "Amar Ujala (video): Crowds at the Ganga Aarti at Namo Ghat (16 Jan 2026)",
+        "url": "https://www.amarujala.com/video/uttar-pradesh/varanasi/video-crowds-of-devotees-at-ganga-aarti-ceremony-at-namo-ghat-varanasi-2026-01-16",
+        "accessed": "2026-11-22"
       }
     ],
     "i18n": {
@@ -586,9 +596,13 @@
           "entry": "निःशुल्क",
           "duration": "1–2 घंटे",
           "season": "अक्टूबर–मार्च; देव दीपावली (कार्तिक पूर्णिमा, नवंबर)"
-        }
+        },
+        "seoTitle": "नमो घाट वाराणसी: समय, आरती, लोकेशन, दूरी और देखने लायक जगहें",
+        "seoDescription": "नमो घाट, वाराणसी: लगभग सुबह 5:00–रात 10:00 खुला, प्रवेश मुफ़्त, सीढ़ी-रहित घाट और हाथ जोड़े नमस्ते की प्रतिमाएँ, नाव, और 2025 से यहाँ गंगा आरती। अस्सी घाट से लगभग 5.3 किमी।"
       }
-    }
+    },
+    "seoTitle": "Namo Ghat Varanasi: timings, aarti, location, distance & things to see",
+    "seoDescription": "Namo Ghat, Varanasi: open about 05:00–22:00, free entry, a step-free riverfront with the folded-hands sculptures, boats, and a Ganga Aarti held here since 2025. About 5.3 km from Assi Ghat."
   },
   {
     "id": "panchganga-ghat",

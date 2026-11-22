@@ -1,12 +1,12 @@
 {
   "slug": "dev-deepawali-2026",
   "published": "2026-09-27",
-  "updated": "2026-11-16",
+  "updated": "2026-11-22",
   "photo": "festivals/dev-deepawali",
-  "title_en": "Dev Deepawali (Dev Diwali) 2026 Varanasi: 24 Nov, boat & cruise booking",
-  "title_hi": "देव दीपावली (देव दिवाली) 2026 कब है: 24 नवंबर, वाराणसी में नाव और क्रूज़ बुकिंग",
-  "description_en": "Dev Deepawali (Dev Diwali) 2026 is on Tuesday 24 November in Varanasi; lamps 5:08–7:47 pm. Reported 2026 boat prices from ₹5,000 a seat, cruises sold out, UP Tourism package from ₹15,999. Ghats, rules, traffic.",
-  "description_hi": "वाराणसी में देव दीपावली (देव दिवाली) 2026 मंगलवार, 24 नवंबर को है; दीपदान 5:08–7:47 शाम। 2026 में नाव ₹5,000 प्रति व्यक्ति से (रिपोर्ट), क्रूज़ फ़ुल, UP टूरिज़्म पैकेज ₹15,999 से। घाट, नियम, ट्रैफ़िक।",
+  "title_en": "Dev Deepawali (Dev Diwali) 2026 Varanasi: 24 Nov, aarti time, drone show, boats",
+  "title_hi": "देव दीपावली (देव दिवाली) 2026 कब है: 24 नवंबर, आरती का समय, ड्रोन शो, नाव",
+  "description_en": "Dev Deepawali (Dev Diwali) 2026 in Varanasi is on Tuesday 24 November: maha aarti at Dashashwamedh from 5 pm, 11 lakh+ lamps, laser show at Chet Singh Ghat, first drone show, green fireworks. Boats, parking, live.",
+  "description_hi": "वाराणसी में देव दीपावली (देव दिवाली) 2026 मंगलवार, 24 नवंबर को: दशाश्वमेध पर शाम 5 बजे से महाआरती, 11 लाख से अधिक दीये, चेत सिंह घाट पर लेज़र शो, पहली बार ड्रोन शो, ग्रीन आतिशबाज़ी। नाव, पार्किंग, लाइव।",
   "lead_en": "On the full moon of Kartik, fifteen days after Diwali, Varanasi lights its riverfront with lakhs of earthen lamps for Dev Deepawali, the night the gods are said to come down to bathe in the Ganga. In 2026 the festival falls on Tuesday, 24 November. This guide covers the timing, what happens on the ghats, how to watch from a boat safely, and how to plan around the crowds.",
   "lead_hi": "दिवाली के पंद्रह दिन बाद, कार्तिक पूर्णिमा की रात काशी के घाट लाखों दीयों से जगमगा उठते हैं। मान्यता है कि इस रात देवता गंगा स्नान के लिए धरती पर उतरते हैं। 2026 में देव दीपावली मंगलवार, 24 नवंबर को है। यहाँ जानिए शुभ समय, घाटों पर क्या होता है, नाव से सुरक्षित कैसे देखें और भीड़ के बीच अपनी यात्रा कैसे तय करें।",
   "facts": [
@@ -51,6 +51,13 @@
       "label_hi": "प्रवेश",
       "value_en": "Free on the ghats",
       "value_hi": "घाटों पर निःशुल्क"
+    },
+    {
+      "icon": "info",
+      "label_en": "Shows",
+      "label_hi": "शो",
+      "value_en": "Laser at Chet Singh Ghat · drone show · green fireworks",
+      "value_hi": "चेत सिंह घाट पर लेज़र · ड्रोन शो · ग्रीन आतिशबाज़ी"
     }
   ],
   "sections": [
@@ -78,14 +85,14 @@
       "heading_en": "What happens on the night",
       "heading_hi": "उस रात क्या-क्या होता है",
       "body_en": [
-        "At dusk, residents, ghat committees and volunteers light earthen lamps along the steps from the southern ghats up to Rajghat, and on the far bank as well. Official and press figures vary from year to year: in 2024 All India Radio reported about 11 lakh lamps across 84 ghats and more than 17 lakh across the city, and for 2025 the state government planned 11 lakh lamps on the ghats while press estimates for both banks ran higher.",
-        "At Dashashwamedh Ghat, the Ganga Seva Nidhi performs the Dev Deepawali maha aarti. In 2025 it ran from about 5:15 PM to 7:50 PM, with 21 priests and 42 young women. Before the aarti, an Amar Jawan Jyoti replica is lit on the ghat. Personnel from the armed forces, police and NCC lay wreaths in memory of soldiers who died on duty, and the Bhagirath Shaurya Samman is presented. The aarti is also streamed live on the Nidhi's YouTube channel.",
-        "In recent years UP Tourism has also put on a laser and projection show on the facade of Chet Singh Ghat about Kashi's history and saints. In 2024 it ran at 5:30, 7:00, 8:00 and 8:45 PM, and in 2025 there were three 25-minute shows. There is also a green fireworks display on the sands facing the Kashi Vishwanath Dham ghat, which ran for about 10 minutes in 2025. The 2026 programme has not yet been announced."
+        "At dusk, residents, ghat committees and volunteers light earthen lamps along the steps from the southern ghats up to Rajghat, and on the far bank as well. Official and press figures vary from year to year: in 2024 All India Radio reported about 11 lakh lamps across 84 ghats and more than 17 lakh across the city, and for 2025 the state government planned 11 lakh lamps on the ghats while press estimates for both banks ran higher. For 2026 the administration plans more than 11 lakh lamps on the ghats, the far bank and the city's ponds, including lamps made by women's self-help groups.",
+        "At Dashashwamedh Ghat, the Ganga Seva Nidhi performs the Dev Deepawali maha aarti. In 2025 it ran from about 5:15 PM to 7:50 PM, with 21 priests and 42 young women. Before the aarti, an Amar Jawan Jyoti replica is lit on the ghat. Personnel from the armed forces, police and NCC lay wreaths in memory of soldiers who died on duty, and the Bhagirath Shaurya Samman is presented. The aarti is also streamed live on the Nidhi's YouTube channel. For 2026, the Nidhi's president Sushant Mishra told Aaj Tak that the main programme at Dashashwamedh begins at 5 pm on 24 November, with 51,000 lamps, 21 quintals of flowers and 21 priests led by Acharya Randhir.",
+        "In recent years UP Tourism has also put on a laser and projection show on the facade of Chet Singh Ghat about Kashi's history and saints. In 2024 it ran at 5:30, 7:00, 8:00 and 8:45 PM, and in 2025 there were three 25-minute shows. There is also a green fireworks display on the sands facing the Kashi Vishwanath Dham ghat, which ran for about 10 minutes in 2025. For 2026, the plan reported on 21 November is a projection and laser show at Chet Singh Ghat after the maha aarti, a drone show facing Dashashwamedh and Assi Ghats (which ETV Bharat calls Kashi's first 3D drone show) and green fireworks facing the Kashi Vishwanath Dham. Show times had not been announced by 22 November."
       ],
       "body_hi": [
-        "शाम ढलते ही स्थानीय लोग, घाट समितियाँ और स्वयंसेवक दक्षिणी घाटों से राजघाट तक सीढ़ियों पर दीये सजाते हैं, और गंगा के उस पार रेती पर भी दीप जलते हैं। दीयों की संख्या हर साल अलग-अलग बताई जाती है। 2024 में आकाशवाणी के अनुसार 84 घाटों पर करीब 11 लाख और पूरे शहर में 17 लाख से अधिक दीये जले। 2025 में राज्य सरकार ने घाटों पर 11 लाख दीयों की योजना बनाई थी, जबकि अख़बारों ने दोनों तटों को मिलाकर इससे ज़्यादा का अनुमान लगाया।",
-        "दशाश्वमेध घाट पर गंगा सेवा निधि देव दीपावली की महाआरती करती है। 2025 में यह शाम करीब 5:15 से 7:50 बजे तक चली, जिसमें 21 अर्चक और 42 कन्याएँ शामिल थीं। आरती से पहले घाट पर अमर जवान ज्योति की प्रतिकृति प्रज्वलित की जाती है। सेना, पुलिस और एनसीसी के जवान शहीदों को श्रद्धांजलि देकर पुष्पचक्र अर्पित करते हैं और भगीरथ शौर्य सम्मान दिया जाता है। निधि के यूट्यूब चैनल पर आरती का सीधा प्रसारण भी होता है।",
-        "पिछले कुछ वर्षों से उत्तर प्रदेश पर्यटन विभाग चेत सिंह घाट की दीवारों पर काशी के इतिहास और संतों पर लेज़र व प्रोजेक्शन शो भी करता रहा है। 2024 में यह शाम 5:30, 7:00, 8:00 और 8:45 बजे हुआ था, और 2025 में 25-25 मिनट के तीन शो हुए। काशी विश्वनाथ धाम घाट के सामने रेती पर ग्रीन आतिशबाज़ी भी होती है, जो 2025 में करीब 10 मिनट चली। 2026 का कार्यक्रम अभी घोषित नहीं हुआ है।"
+        "शाम ढलते ही स्थानीय लोग, घाट समितियाँ और स्वयंसेवक दक्षिणी घाटों से राजघाट तक सीढ़ियों पर दीये सजाते हैं, और गंगा के उस पार रेती पर भी दीप जलते हैं। दीयों की संख्या हर साल अलग-अलग बताई जाती है। 2024 में आकाशवाणी के अनुसार 84 घाटों पर करीब 11 लाख और पूरे शहर में 17 लाख से अधिक दीये जले। 2025 में राज्य सरकार ने घाटों पर 11 लाख दीयों की योजना बनाई थी, जबकि अख़बारों ने दोनों तटों को मिलाकर इससे ज़्यादा का अनुमान लगाया। 2026 के लिए प्रशासन ने घाटों, गंगा पार और शहर के कुंडों-तालाबों पर 11 लाख से अधिक दीयों की योजना बनाई है, जिनमें स्वयं सहायता समूहों की महिलाओं के बनाए दीये भी हैं।",
+        "दशाश्वमेध घाट पर गंगा सेवा निधि देव दीपावली की महाआरती करती है। 2025 में यह शाम करीब 5:15 से 7:50 बजे तक चली, जिसमें 21 अर्चक और 42 कन्याएँ शामिल थीं। आरती से पहले घाट पर अमर जवान ज्योति की प्रतिकृति प्रज्वलित की जाती है। सेना, पुलिस और एनसीसी के जवान शहीदों को श्रद्धांजलि देकर पुष्पचक्र अर्पित करते हैं और भगीरथ शौर्य सम्मान दिया जाता है। निधि के यूट्यूब चैनल पर आरती का सीधा प्रसारण भी होता है। 2026 के लिए निधि के अध्यक्ष सुशांत मिश्रा ने आजतक को बताया कि दशाश्वमेध पर मुख्य आयोजन 24 नवंबर को शाम 5 बजे से होगा, जिसमें 51 हज़ार दीये, 21 कुंतल फूल-मालाएँ और आचार्य रणधीर के नेतृत्व में 21 अर्चक होंगे।",
+        "पिछले कुछ वर्षों से उत्तर प्रदेश पर्यटन विभाग चेत सिंह घाट की दीवारों पर काशी के इतिहास और संतों पर लेज़र व प्रोजेक्शन शो भी करता रहा है। 2024 में यह शाम 5:30, 7:00, 8:00 और 8:45 बजे हुआ था, और 2025 में 25-25 मिनट के तीन शो हुए। काशी विश्वनाथ धाम घाट के सामने रेती पर ग्रीन आतिशबाज़ी भी होती है, जो 2025 में करीब 10 मिनट चली। 2026 के लिए 21 नवंबर को बताए गए कार्यक्रम के अनुसार महाआरती के बाद चेत सिंह घाट पर प्रोजेक्शन और लेज़र शो, दशाश्वमेध और अस्सी घाट के सामने ड्रोन शो (ईटीवी भारत के अनुसार काशी का पहला 3D ड्रोन शो) और काशी विश्वनाथ धाम के सामने ग्रीन आतिशबाज़ी होगी। 22 नवंबर तक शो का समय घोषित नहीं हुआ था।"
       ],
       "unconfirmed": false,
       "sources": [
@@ -93,7 +100,9 @@
         5,
         6,
         7,
-        9
+        9,
+        23,
+        24
       ]
     },
     {
@@ -145,7 +154,7 @@
         "अब तक बताया गया एकमात्र आधिकारिक पैकेज यूपी पर्यटन (यूपीएसटीडीसी) का 'देव दीपावली – दिव्य काशी अनुभव' है: 4 दिन 3 रात, होटल, आने-जाने का वाहन, सुबह की नाव सैर और देव दीपावली की विशेष नाव सैर, ट्विन शेयरिंग पर ₹15,999 प्रति व्यक्ति से (डीलक्स ₹21,999, प्रीमियम ₹31,999; जीएसटी अलग), ख़बर के अनुसार यूपीएसटीडीसी की वेबसाइट पर बुकिंग; 25 अक्टूबर को जांचने पर यह upstdc.co.in पर अभी सूचीबद्ध नहीं था। वरना कुछ हफ़्ते पहले होटल के ज़रिए या घाट पर किसी पंजीकृत नाविक से बुक करें, और पैसे देने से पहले नाव का प्रकार, साझा या निजी, कौन-सा घाट, कब से कब तक और रूट लिखित में तय कर लें।"
       ],
       "list_en": [
-        "2026 rules not announced yet: since 9 October 2026, after the floods, only large motorboats may run, hand-rowed boats are still banned, boats may carry only half their rated passengers and need two swimmer-boatmen. The Dev Deepawali order may differ; in 2024 only motorboats were allowed on the night.",
+        "2026 rules (reported 19–21 November): life jackets for everyone on board, no minors rowing, and no diesel boats or boats from outside the district; boats follow the two-way lanes from Namo Ghat towards Assi Ghat and back along the sand bank. Since 9 October, after the floods, only large motorboats may run, boats may carry only half their rated passengers and need two swimmer-boatmen.",
         "Life jackets: no one may board without one (2024 order and 2026 rules). Put yours on before the boat leaves.",
         "Capacity: boats may carry only as many passengers as their municipal licence allows, and the capacity must be written on the boat. Do not board an overloaded boat.",
         "Registered boats and fixed fares: Varanasi police rules (February 2026) bar unregistered boats, charging above the fixed fare, and standing or taking selfies on a moving boat; boat operators who break them face action under section 282 of the Bharatiya Nyaya Sanhita.",
@@ -153,7 +162,7 @@
         "Security on the river in 2024: the river was divided into nine sectors, with 444 personnel on 68 motorboats, NDRF water ambulances and a diving team."
       ],
       "list_hi": [
-        "2026 के नियम अभी घोषित नहीं: बाढ़ के बाद 9 अक्टूबर 2026 से केवल बड़ी मोटरबोट चल सकती हैं, हाथ से खेने वाली नावें अब भी बंद हैं, नावें अपनी तय क्षमता की आधी सवारियां ही बैठा सकती हैं और हर नाव पर दो तैराक नाविक ज़रूरी हैं। देव दीपावली का आदेश अलग हो सकता है; 2024 में उस रात केवल मोटरबोट की अनुमति थी।",
+        "2026 के नियम (19–21 नवंबर की ख़बरें): नाव पर सबके लिए लाइफ़ जैकेट, नाबालिगों के नाव चलाने पर रोक, और डीज़ल वाली नावों व ज़िले के बाहर की नावों पर रोक; नावें नमो घाट से अस्सी घाट की ओर टू-वे लेन में जाएँगी और रेतीले तट की ओर से लौटेंगी। 9 अक्टूबर से, बाढ़ के बाद, सिर्फ़ बड़ी मोटरबोट चल सकती हैं, नावें अपनी तय क्षमता के आधे यात्री ही ले सकती हैं और उनमें दो तैराक नाविक ज़रूरी हैं।",
         "लाइफ जैकेट: बिना लाइफ जैकेट कोई नाव पर नहीं बैठेगा (2024 का आदेश और 2026 के नियम)। नाव चलने से पहले ही जैकेट पहन लें।",
         "क्षमता: नगर निगम के लाइसेंस में जितनी सवारियाँ तय हैं, उससे ज़्यादा नहीं बैठाई जा सकतीं, और क्षमता नाव पर लिखी होनी चाहिए। भरी हुई नाव में न चढ़ें।",
         "पंजीकृत नाव और तय किराया: वाराणसी पुलिस के नियम (फ़रवरी 2026) बिना पंजीकरण की नाव, तय किराए से ज़्यादा वसूली, और चलती नाव पर खड़े होने या सेल्फ़ी लेने पर रोक लगाते हैं; नियम तोड़ने वाले नाव संचालकों पर भारतीय न्याय संहिता की धारा 282 के तहत कार्रवाई होती है।",
@@ -169,7 +178,9 @@
         13,
         9,
         10,
-        11
+        11,
+        23,
+        25
       ]
     },
     {
@@ -177,12 +188,12 @@
       "heading_en": "Crowds, traffic and safety",
       "heading_hi": "भीड़, ट्रैफ़िक और सुरक्षा",
       "body_en": [
-        "In 2025, Varanasi traffic police made the Godowlia–Maidagin stretch a no-vehicle zone and closed about a dozen routes to vehicles, including Sujabad towards Rajghat bridge. They set up 22 parking areas, such as Maidagin Town Hall and Beniabagh, and kept goods vehicles out of the city from 5 AM. E-rickshaws and autos ran on six fixed routes each. For 2026, Amar Ujala reported (12 November) that the ghat area is split into 10 zones, 21 sectors and 36 sub-sectors, each with its own in-charge; 27 watch towers, Quick Response Teams, anti-Romeo squads at 21 major ghats, private divers and drone cameras will monitor the crowds, and heavy vehicles from neighbouring districts will be turned away at 7 outer diversion points. Check the Varanasi Police announcements a day or two before for the exact parking and route plan.",
+        "In 2025, Varanasi traffic police made the Godowlia–Maidagin stretch a no-vehicle zone and closed about a dozen routes to vehicles, including Sujabad towards Rajghat bridge. They set up 22 parking areas, such as Maidagin Town Hall and Beniabagh, and kept goods vehicles out of the city from 5 AM. E-rickshaws and autos ran on six fixed routes each. For 2026, Amar Ujala reported (12 November) that the ghat area is split into 10 zones, 21 sectors and 36 sub-sectors, each with its own in-charge; 27 watch towers, Quick Response Teams, anti-Romeo squads at 21 major ghats, private divers and drone cameras will monitor the crowds, and heavy vehicles from neighbouring districts will be turned away at 7 outer diversion points. Aaj Tak (21 November) adds 31 parking sites, 11 lost-and-found centres, tourist police on e-scooters, limits on autos and e-rickshaws on the crowded roads, and a green corridor to 14 hospitals. Check the Varanasi Police announcements a day or two before for the exact parking and route plan.",
         "For the first time, boats will run on a two-way lane system using a floating jetty between Namo Ghat and Assi Ghat: boats go from Namo Ghat towards Assi Ghat and return along the sandy bank side (Amar Ujala, 12 November 2026).",
         "The lanes and steps down to the ghats get very crowded, and the last stretch is on foot. Reach your spot by mid-afternoon, and agree with your group on a meeting point, such as a named ghat or temple, in case you get separated."
       ],
       "body_hi": [
-        "2025 में वाराणसी ट्रैफ़िक पुलिस ने गोदौलिया–मैदागिन मार्ग को नो व्हीकल ज़ोन घोषित किया था और सुजाबाद से राजघाट पुल की ओर समेत करीब दर्जन भर रास्तों पर वाहन बंद रखे थे। मैदागिन टाउन हॉल और बेनियाबाग जैसी 22 पार्किंग बनाई गईं और सुबह 5 बजे से मालवाहक वाहनों का शहर में प्रवेश रोका गया। ई-रिक्शा और ऑटो छह-छह तय रूटों पर चले। 2026 के लिए अमर उजाला (12 नवंबर) के अनुसार घाट क्षेत्र को 10 ज़ोन, 21 सेक्टर और 36 उप-सेक्टर में बाँटा गया है, हर एक का अपना प्रभारी है; भीड़ पर नज़र रखने के लिए 27 वॉच टावर, त्वरित प्रतिक्रिया दल, 21 प्रमुख घाटों पर एंटी-रोमियो दस्ते, निजी गोताखोर और ड्रोन कैमरे तैनात रहेंगे, और पड़ोसी ज़िलों से आने वाले भारी वाहनों को 7 बाहरी डायवर्जन प्वाइंट पर रोका जाएगा। सही पार्किंग और रूट योजना के लिए एक-दो दिन पहले वाराणसी पुलिस की सूचना ज़रूर देख लें।",
+        "2025 में वाराणसी ट्रैफ़िक पुलिस ने गोदौलिया–मैदागिन मार्ग को नो व्हीकल ज़ोन घोषित किया था और सुजाबाद से राजघाट पुल की ओर समेत करीब दर्जन भर रास्तों पर वाहन बंद रखे थे। मैदागिन टाउन हॉल और बेनियाबाग जैसी 22 पार्किंग बनाई गईं और सुबह 5 बजे से मालवाहक वाहनों का शहर में प्रवेश रोका गया। ई-रिक्शा और ऑटो छह-छह तय रूटों पर चले। 2026 के लिए अमर उजाला (12 नवंबर) के अनुसार घाट क्षेत्र को 10 ज़ोन, 21 सेक्टर और 36 उप-सेक्टर में बाँटा गया है, हर एक का अपना प्रभारी है; भीड़ पर नज़र रखने के लिए 27 वॉच टावर, त्वरित प्रतिक्रिया दल, 21 प्रमुख घाटों पर एंटी-रोमियो दस्ते, निजी गोताखोर और ड्रोन कैमरे तैनात रहेंगे, और पड़ोसी ज़िलों से आने वाले भारी वाहनों को 7 बाहरी डायवर्जन प्वाइंट पर रोका जाएगा। आजतक (21 नवंबर) के अनुसार 31 जगह पार्किंग, 11 खोया-पाया केंद्र, ई-स्कूटर पर पर्यटक पुलिस, भीड़ वाले रास्तों पर ऑटो और ई-रिक्शा पर पाबंदी, और 14 अस्पतालों तक ग्रीन कॉरिडोर की व्यवस्था भी है। सही पार्किंग और रूट योजना के लिए एक-दो दिन पहले वाराणसी पुलिस की सूचना ज़रूर देख लें।",
         "पहली बार नावों के लिए टू-वे लेन व्यवस्था लागू होगी, जिसमें नमो घाट और अस्सी घाट के बीच एक फ़्लोटिंग जेटी का उपयोग होगा: नावें नमो घाट से अस्सी घाट की ओर जाएँगी और रेतीले तट की ओर से लौटेंगी (अमर उजाला, 12 नवंबर 2026)।",
         "घाटों तक जाने वाली गलियों और सीढ़ियों पर भारी भीड़ रहती है, और आख़िरी हिस्सा पैदल ही तय करना पड़ता है। दोपहर बाद तक अपनी जगह पहुँच जाएँ और साथ के लोगों के साथ पहले से कोई मिलने की जगह तय कर लें, जैसे कोई ख़ास घाट या मंदिर, ताकि बिछड़ने पर एक-दूसरे को ढूँढ़ सकें।"
       ],
@@ -203,7 +214,8 @@
         12,
         9,
         13,
-        20
+        20,
+        23
       ]
     },
     {
@@ -222,7 +234,8 @@
       "sources": [
         9,
         12
-      ]
+      ],
+      "promo": true
     },
     {
       "id": "etiquette-and-related",
@@ -329,6 +342,30 @@
       "a_en": "Probably not: by 10 October 2026 every Ganga cruise (Alaknanda, Sam Manekshaw, Gangotri, and the Vivekananda and Bhagirathi kept for VVIPs) was reported full for the night. Shared seats on boats and whole boats were still being sold through hotels and boatmen.",
       "q_hi": "क्या देव दीपावली 2026 के लिए अब भी क्रूज़ बुक हो सकता है?",
       "a_hi": "शायद नहीं: 10 अक्टूबर 2026 तक गंगा के सभी क्रूज़ (अलकनंदा, सैम मानेकशॉ, गंगोत्री, और वीवीआईपी के लिए रखे विवेकानंद व भागीरथी) उस रात के लिए भरे बताए गए। नावों में साझा सीटें और पूरी नावें होटलों और नाविकों के ज़रिए अब भी बिक रही थीं।"
+    },
+    {
+      "q_en": "What time is the Dev Deepawali 2026 maha aarti at Dashashwamedh Ghat?",
+      "a_en": "The main programme at Dashashwamedh begins at 5 pm on 24 November 2026, according to the Ganga Seva Nidhi; in 2025 the maha aarti ran from about 5:15 to 7:50 pm. Reach the ghat by mid-afternoon.",
+      "q_hi": "देव दीपावली 2026 पर दशाश्वमेध घाट की महाआरती कितने बजे है?",
+      "a_hi": "गंगा सेवा निधि के अनुसार दशाश्वमेध पर मुख्य आयोजन 24 नवंबर 2026 को शाम 5 बजे से शुरू होगा; 2025 में महाआरती लगभग शाम 5:15 से 7:50 बजे तक चली थी। दोपहर बाद तक घाट पहुँच जाएँ।"
+    },
+    {
+      "q_en": "Is there a laser show or drone show at Dev Deepawali 2026?",
+      "a_en": "Yes. After the maha aarti there will be a projection and laser show at Chet Singh Ghat, a drone show facing Dashashwamedh and Assi Ghats, and green fireworks facing the Kashi Vishwanath Dham. Exact show times had not been announced by 22 November.",
+      "q_hi": "क्या देव दीपावली 2026 पर लेज़र शो या ड्रोन शो होगा?",
+      "a_hi": "हाँ। महाआरती के बाद चेत सिंह घाट पर प्रोजेक्शन और लेज़र शो, दशाश्वमेध और अस्सी घाट के सामने ड्रोन शो, और काशी विश्वनाथ धाम के सामने ग्रीन आतिशबाज़ी होगी। 22 नवंबर तक शो का सटीक समय घोषित नहीं हुआ था।"
+    },
+    {
+      "q_en": "Where can I park for Dev Deepawali 2026 in Varanasi?",
+      "a_en": "Police have planned 31 parking sites, and heavy vehicles from other districts are diverted at 7 outer points. The ghat area is closed to vehicles, so park at the nearest site and walk; check the Varanasi Police route plan a day before.",
+      "q_hi": "देव दीपावली 2026 पर वाराणसी में गाड़ी कहाँ पार्क करें?",
+      "a_hi": "पुलिस ने 31 पार्किंग स्थल तय किए हैं, और दूसरे ज़िलों से आने वाले भारी वाहनों को 7 बाहरी बिंदुओं पर मोड़ा जाएगा। घाट क्षेत्र में गाड़ियाँ बंद रहती हैं, इसलिए नज़दीकी पार्किंग में गाड़ी खड़ी करके पैदल जाएँ; एक दिन पहले वाराणसी पुलिस का रूट प्लान देख लें।"
+    },
+    {
+      "q_en": "Can I watch Dev Deepawali 2026 live?",
+      "a_en": "The Ganga Seva Nidhi streams the Dashashwamedh maha aarti live on its YouTube channel, as it has in past years.",
+      "q_hi": "क्या देव दीपावली 2026 लाइव देख सकते हैं?",
+      "a_hi": "गंगा सेवा निधि पिछले वर्षों की तरह दशाश्वमेध की महाआरती का सीधा प्रसारण अपने यूट्यूब चैनल पर करती है।"
     }
   ],
   "sources": [
@@ -446,6 +483,21 @@
       "title": "Amar Ujala — Dev Deepawali 2026: Kashi's ghats to be lit with 1.1 million lamps; two-way boat lanes, 27 watch towers, Ganga Mahotsav 20–23 Nov at Namo Ghat (12 Nov 2026)",
       "url": "https://www.amarujala.com/uttar-pradesh/varanasi/dev-deepawali-2026-ghats-of-kashi-will-be-illuminated-by-1-1-million-earthen-lamps-in-varanasi-2026-11-12",
       "accessed": "2026-11-16"
+    },
+    {
+      "title": "Aaj Tak — Ganga aarti, laser show and green fireworks: how Kashi will be decorated this Dev Deepawali (21 Nov 2026)",
+      "url": "https://www.aajtak.in/uttar-pradesh/story/kashi-dev-deepawali-drone-show-laser-security-arrangements-ganga-aarti-ntc-dhrj-rpti-2702480-2026-11-21",
+      "accessed": "2026-11-22"
+    },
+    {
+      "title": "ETV Bharat — Dev Deepawali 2026: Kashi's first 3D drone show (21 Nov 2026)",
+      "url": "https://www.etvbharat.com/hi/state/dev-deepawali-2026-for-first-time-in-history-of-kashi-3d-drone-show-will-be-featured-eternal-saga-of-shiva-and-ganga-will-be-brought-to-life-ups26112100947",
+      "accessed": "2026-11-22"
+    },
+    {
+      "title": "Patrika — Two-way boat traffic system on the Ganga for Dev Deepawali; life jackets for all (19 Nov 2026)",
+      "url": "https://www.patrika.com/varanasi-news/dev-deepawali-varanasi-2026-ganga-river-traffic-system-boat-safety-route-diversion-21065285",
+      "accessed": "2026-11-22"
     }
   ],
   "related": {
@@ -464,7 +516,7 @@
       "2-day"
     ]
   },
-  "notes": "Date re-checked 2026-09-27 against Drik Panchang (Varanasi) and the UP 2026 holiday list and matches content/festival-dates.json (24 Nov 2026; Purnima 11:42 PM 23 Nov to 8:23 PM 24 Nov; pradosh 5:08-7:47 PM). No observance/calendar split this year. Ganga Mahotsav 2026 dates (20-23 Nov, Rajghat) come only from local reports of the Aug 2026 divisional commissioner meeting (Desi Khabar). The ANI report of the same meeting (403 to direct fetch; content seen via search snippet/LatestLY mirror) does not state dates. Kept as proposed/unconfirmed; content/festival-dates.json already has verified:false. No officially notified Dev Deepawali boat fare was found. The Nagar Nigam ₹345 Assi-Namo round-trip fare (Jan 2025) is a normal-day fare, and festival prices come from ETV Bharat's 2024 report, so the boats section is flagged unconfirmed. Boat safety rules and river security figures are from Live VNS (local outlet) for 2024. A 2020 Hindustan Times DM order on capacity and life jackets exists but is paywalled (pressreader 403), so it is not cited. Lamp counts differ between sources (AIR 2024: 11 lakh on 84 ghats, 17 lakh+ citywide; Panchjanya 2025: 11 lakh planned; Patrika 2025: ~25 lakh both banks; ETV 2024: 20-25 lakh), so the guide gives the AIR and government figures with a caveat. The origin story conflicts (Wikipedia: Dashashwamedh 1991, Babu Maharaj; blogs: Panchganga mid-1980s; one Hindi blog says 1915), so it is omitted. The Hazara Deepstambh at Panchganga comes from Webdunia only; it is a secondary source, so check it before promoting it heavily. The 2025 traffic plan comes from Amar Ujala (5 Nov 2025). Specific hour windows seen in secondary summaries (e.g. Godowlia-Pandey Haveli 2-8 PM) could not be confirmed and are omitted. The 2026 laser/fireworks programme is not yet announced, and the text says so. Helplines 112 and 1533 come from Amar Ujala (Jan 2025) and ETV Bharat (2024). The body is about 1,300 English words. 25 Oct 2026 boat update: no official Dev Deepawali fare for 2026 found (DM/Nagar Nigam/VDA/police); prices shown are news-reported 2026 bookings (Patrika 10 Oct), 2024 ETV, and the Jan 2025 municipal ₹345 Assi–Namo fare. UPSTDC package price from Business Standard 22 Oct (not yet on upstdc.co.in on 25 Oct). Post-flood rules from Amar Ujala 8 Oct (Varanasi, despite the ghazipur URL section). Re-check for the 2026 Dev Deepawali boat order around 15–20 Nov. 4 Nov 2026 re-check: Patrika 10 Oct and Business Standard 22 Oct figures unchanged; Amar Ujala 10 Oct reports the same cruise/bajra/event-company prices (added as second source). Still no official 2026 Dev Deepawali boat fare or new municipal rate card; the UPSTDC package is still not on upstdc.co.in (UNI 21 Oct confirms the package, no price). Operator sites list shared boats at ₹2,999–3,500; not used (commercial). GSC (5 Oct–2 Nov): 1,559 impressions, 3 clicks, mostly 'dev diwali 2026 kab hai' date queries at positions 1–3 answered in the SERP, so the titles now carry 'देव दिवाली' and the descriptions lead with reported prices to earn the click. Event JSON-LD organizer = UP Tourism: the state made Dev Deepawali a provincial fair (प्रांतीय मेला, Prabhat Khabar) and its tourism department runs the laser/projection shows (Amar Ujala 25 Oct 2025); lamps are lit by ghat committees and residents. Performer = Ganga Seva Nidhi (Dashashwamedh maha aarti). Added 4 Nov to clear GSC's optional organizer/performer warnings. UPDATED 16 Nov 2026 (daily content review, festivals focus): Amar Ujala (12 Nov 2026) reports CM Yogi Adityanath's 11 Nov review meeting — 1.1 million lamps, the two-way boat-lane system (first time, floating jetty Namo Ghat–Assi Ghat), 10 zones/21 sectors/36 sub-sectors, 27 watch towers, anti-Romeo squads and 7 outer diversion points, plus confirmation that Ganga Mahotsav is fixed at Namo Ghat for 20–23 Nov. Added to crowds-and-safety and etiquette-and-related sections and the Ganga Mahotsav FAQ; lamp count, laser/drone-show venues and fireworks claim already matched so the what-happens section needed no change. Still no official 2026 boat fare or UPSTDC package price confirmed this run (not re-checked; see 25 Oct/4 Nov notes above). The 11 regional guide translations were not updated this run — flagged under Translations flagged in the PR.",
+  "notes": "Date re-checked 2026-09-27 against Drik Panchang (Varanasi) and the UP 2026 holiday list and matches content/festival-dates.json (24 Nov 2026; Purnima 11:42 PM 23 Nov to 8:23 PM 24 Nov; pradosh 5:08-7:47 PM). No observance/calendar split this year. Ganga Mahotsav 2026 dates (20-23 Nov, Rajghat) come only from local reports of the Aug 2026 divisional commissioner meeting (Desi Khabar). The ANI report of the same meeting (403 to direct fetch; content seen via search snippet/LatestLY mirror) does not state dates. Kept as proposed/unconfirmed; content/festival-dates.json already has verified:false. No officially notified Dev Deepawali boat fare was found. The Nagar Nigam ₹345 Assi-Namo round-trip fare (Jan 2025) is a normal-day fare, and festival prices come from ETV Bharat's 2024 report, so the boats section is flagged unconfirmed. Boat safety rules and river security figures are from Live VNS (local outlet) for 2024. A 2020 Hindustan Times DM order on capacity and life jackets exists but is paywalled (pressreader 403), so it is not cited. Lamp counts differ between sources (AIR 2024: 11 lakh on 84 ghats, 17 lakh+ citywide; Panchjanya 2025: 11 lakh planned; Patrika 2025: ~25 lakh both banks; ETV 2024: 20-25 lakh), so the guide gives the AIR and government figures with a caveat. The origin story conflicts (Wikipedia: Dashashwamedh 1991, Babu Maharaj; blogs: Panchganga mid-1980s; one Hindi blog says 1915), so it is omitted. The Hazara Deepstambh at Panchganga comes from Webdunia only; it is a secondary source, so check it before promoting it heavily. The 2025 traffic plan comes from Amar Ujala (5 Nov 2025). Specific hour windows seen in secondary summaries (e.g. Godowlia-Pandey Haveli 2-8 PM) could not be confirmed and are omitted. The 2026 laser/fireworks programme is not yet announced, and the text says so. Helplines 112 and 1533 come from Amar Ujala (Jan 2025) and ETV Bharat (2024). The body is about 1,300 English words. 25 Oct 2026 boat update: no official Dev Deepawali fare for 2026 found (DM/Nagar Nigam/VDA/police); prices shown are news-reported 2026 bookings (Patrika 10 Oct), 2024 ETV, and the Jan 2025 municipal ₹345 Assi–Namo fare. UPSTDC package price from Business Standard 22 Oct (not yet on upstdc.co.in on 25 Oct). Post-flood rules from Amar Ujala 8 Oct (Varanasi, despite the ghazipur URL section). Re-check for the 2026 Dev Deepawali boat order around 15–20 Nov. 4 Nov 2026 re-check: Patrika 10 Oct and Business Standard 22 Oct figures unchanged; Amar Ujala 10 Oct reports the same cruise/bajra/event-company prices (added as second source). Still no official 2026 Dev Deepawali boat fare or new municipal rate card; the UPSTDC package is still not on upstdc.co.in (UNI 21 Oct confirms the package, no price). Operator sites list shared boats at ₹2,999–3,500; not used (commercial). GSC (5 Oct–2 Nov): 1,559 impressions, 3 clicks, mostly 'dev diwali 2026 kab hai' date queries at positions 1–3 answered in the SERP, so the titles now carry 'देव दिवाली' and the descriptions lead with reported prices to earn the click. Event JSON-LD organizer = UP Tourism: the state made Dev Deepawali a provincial fair (प्रांतीय मेला, Prabhat Khabar) and its tourism department runs the laser/projection shows (Amar Ujala 25 Oct 2025); lamps are lit by ghat committees and residents. Performer = Ganga Seva Nidhi (Dashashwamedh maha aarti). Added 4 Nov to clear GSC's optional organizer/performer warnings. UPDATED 16 Nov 2026 (daily content review, festivals focus): Amar Ujala (12 Nov 2026) reports CM Yogi Adityanath's 11 Nov review meeting — 1.1 million lamps, the two-way boat-lane system (first time, floating jetty Namo Ghat–Assi Ghat), 10 zones/21 sectors/36 sub-sectors, 27 watch towers, anti-Romeo squads and 7 outer diversion points, plus confirmation that Ganga Mahotsav is fixed at Namo Ghat for 20–23 Nov. Added to crowds-and-safety and etiquette-and-related sections and the Ganga Mahotsav FAQ; lamp count, laser/drone-show venues and fireworks claim already matched so the what-happens section needed no change. Still no official 2026 boat fare or UPSTDC package price confirmed this run (not re-checked; see 25 Oct/4 Nov notes above). The 11 regional guide translations were not updated this run — flagged under Translations flagged in the PR. UPDATE 2026-11-22 (eve refresh): 2026 programme from Aaj Tak 21 Nov 2026 (main Dashashwamedh programme from 5 pm per Ganga Seva Nidhi president Sushant Mishra; 51,000 lamps, 21 quintals of flowers, 21 archakas led by Acharya Randhir; projection/laser at Chet Singh Ghat after the aarti; drone show facing Dashashwamedh and Assi; green fireworks facing the Dham; 11 lakh+ lamps incl. ponds and SHG-made lamps; 31 parking sites, 11 lost-and-found centres, e-scooter tourist police, auto/e-rickshaw limits, green corridor to 14 hospitals; diesel boats and outside-district boats banned) and ETV Bharat 21 Nov ('first 3D drone show'; its headline mentions Rajghat to Namo Ghat, the body says ghats/opposite bank; we use Aaj Tak's 'facing Dashashwamedh and Assi'). Patrika 19 Nov: 100% life jackets, minors barred from rowing, NDRF 9 teams. Laser/drone show times NOT announced as of 22 Nov. stay-and-getting-around now carries the house-ad slot (promo).",
   "event": {
     "name_en": "Dev Deepawali 2026 — Varanasi",
     "name_hi": "देव दीपावली 2026 — वाराणसी",
