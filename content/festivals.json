@@ -27,7 +27,7 @@
       "dashashwamedh-ghat",
       "namo-ghat"
     ],
-    "summary": "The night the gods are said to descend to bathe in the Ganga. More than a million earthen lamps line every step of every ghat, and the river carries thousands more. The Ganga Mahotsav concludes the same evening.",
+    "summary": "The night the gods are said to descend to bathe in the Ganga. More than a million earthen lamps line every step of every ghat, and the river carries thousands more. The Ganga Mahotsav runs on the ghats in the evenings just before it.",
     "image": "/media/festivals/dev-deepawali.jpg",
     "sources": [
       {
@@ -94,11 +94,26 @@
         "title": "Amar Ujala — Dev Deepawali 2025 traffic plan: no-vehicle zone, closed routes, parking (5 Nov 2025)",
         "url": "https://www.amarujala.com/uttar-pradesh/varanasi/dev-deepawali-2025-traffic-diversion-in-varanasi-vehicles-of-vvips-ministers-and-judges-parking-at-maidagin-2025-11-05",
         "accessed": "2026-11-06"
+      },
+      {
+        "title": "Navbharat Live — Dev Deepawali 2026: 2,100-drone show between Rajghat and Namo Ghat, laser show and fireworks (18 Nov 2026)",
+        "url": "https://navbharatlive.com/religion/dev-deepawali-2026-varanasi-2100-drone-show-sns03",
+        "accessed": "2026-11-23"
+      },
+      {
+        "title": "Indian Masterminds — Dev Deepawali 2026: over 4,500 police personnel, 25+ IPS officers deployed for security (19 Nov 2026)",
+        "url": "https://indianmasterminds.com/news/dev-deepawali-varanasi-security-4500-police-personnel-deployment-251558/",
+        "accessed": "2026-11-23"
+      },
+      {
+        "title": "Indian Masterminds — Varanasi's Ganga 'river expressway': 7.5 km two-way boat lane for Dev Deepawali 2026 (19 Nov 2026)",
+        "url": "https://indianmasterminds.com/news/varanasi-ganga-river-expressway-dev-deepawali-boat-traffic-251727/",
+        "accessed": "2026-11-23"
       }
     ],
     "i18n": {
       "hi": {
-        "summary": "वह रात जब कहते हैं देवता गंगा में स्नान करने उतरते हैं। हर घाट की हर सीढ़ी पर दस लाख से अधिक मिट्टी के दीये, और नदी पर बहते हज़ारों और। गंगा महोत्सव उसी शाम समाप्त होता है।",
+        "summary": "वह रात जब कहते हैं देवता गंगा में स्नान करने उतरते हैं। हर घाट की हर सीढ़ी पर दस लाख से अधिक मिट्टी के दीये, और नदी पर बहते हज़ारों और। गंगा महोत्सव इससे ठीक पहले की शामों में घाटों पर चलता है।",
         "when": "कार्तिक पूर्णिमा, दिवाली के पंद्रह दिन बाद",
         "where": "सभी घाट, अस्सी से राजघाट तक",
         "tips": [
