@@ -1,7 +1,7 @@
 {
   "slug": "kashi-tamil-sangamam-2026",
   "published": "2026-11-02",
-  "updated": "2026-11-07",
+  "updated": "2026-11-22",
   "photo": "projects/kashi-tamil-sangamam",
   "event": {
     "name_en": "Kashi Tamil Sangamam 2026 (KTS 5.0)",
@@ -17,12 +17,12 @@
       "url": "https://www.education.gov.in/"
     }
   },
-  "title_en": "Kashi Tamil Sangamam 5.0 registration: last date 13 Nov 2026, apply online",
-  "title_hi": "काशी तमिल संगमम 5.0 रजिस्ट्रेशन: आखिरी तारीख 13 नवंबर 2026, ऑनलाइन आवेदन",
-  "description_en": "Kashi Tamil Sangamam 5.0 (Kasi Tamil Sangam 2026) runs 28 Nov–12 Dec in Varanasi, Prayagraj and Ayodhya. Apply online from Tamil Nadu at kashitamil.iitm.ac.in by 13 Nov; about 1,400 places.",
-  "description_hi": "काशी तमिल संगमम 5.0 (2026): 28 नवंबर से 12 दिसंबर तक वाराणसी, प्रयागराज और अयोध्या में। तमिलनाडु से ऑनलाइन आवेदन kashitamil.iitm.ac.in पर 13 नवंबर तक; लगभग 1,400 स्थान।",
-  "lead_en": "Kashi Tamil Sangamam 2026 — the fifth edition, KTS 5.0, also written Kasi Tamil Sangam — runs from 28 November to 12 December 2026, bringing about 1,400 people from Tamil Nadu to Varanasi, Prayagraj and Ayodhya. The Ministry of Education programme celebrates the old ties of learning and pilgrimage between Tamil Nadu and Kashi; this year's theme is the Thirukkural, the classical Tamil text on ethics. Registration is open only on the official IIT Madras portal until 13 November 2026. Here are the dates, who can register, the theme, the venue news and the Tamil places of Kashi worth seeing.",
-  "lead_hi": "काशी तमिल संगमम 2026 — पांचवां संस्करण, केटीएस 5.0 — 28 नवंबर से 12 दिसंबर 2026 तक चलेगा, जिसमें तमिलनाडु के करीब 1,400 लोग वाराणसी, प्रयागराज और अयोध्या आएंगे। शिक्षा मंत्रालय का यह कार्यक्रम तमिलनाडु और काशी के बीच विद्या और तीर्थ के पुराने रिश्तों का उत्सव है; इस साल का विषय तिरुक्कुरल है, नैतिकता पर तमिल का शास्त्रीय ग्रंथ। रजिस्ट्रेशन केवल आईआईटी मद्रास के आधिकारिक पोर्टल पर 13 नवंबर 2026 तक खुला है। यहां तारीखें, कौन रजिस्टर कर सकता है, विषय, स्थल की जानकारी और काशी की देखने लायक तमिल जगहें दी गई हैं।",
+  "title_en": "Kashi Tamil Sangamam 2026 (KTS 5.0): dates, venue, train schedule",
+  "title_hi": "काशी तमिल संगमम 2026 (केटीएस 5.0): तारीख, स्थल, ट्रेन का समय",
+  "description_en": "Kashi Tamil Sangamam 5.0 runs 28 Nov–12 Dec 2026 in Varanasi. Special trains from Kanniyakumari, Chennai and Coimbatore reach Banaras station: full schedule, venue news, theme, college programme.",
+  "description_hi": "काशी तमिल संगमम 5.0 28 नवंबर–12 दिसंबर 2026 तक वाराणसी में। कन्याकुमारी, चेन्नई और कोयंबटूर से विशेष ट्रेनें बनारस स्टेशन पहुँचेंगी: पूरा समय, स्थल की जानकारी, विषय, कॉलेज कार्यक्रम।",
+  "lead_en": "Kashi Tamil Sangamam 2026 — the fifth edition, KTS 5.0, also written Kasi Tamil Sangam — runs from 28 November to 12 December 2026, bringing about 1,400 people from Tamil Nadu to Varanasi, Prayagraj and Ayodhya. The Ministry of Education programme celebrates the old ties of learning and pilgrimage between Tamil Nadu and Kashi; this year's theme is the Thirukkural, the classical Tamil text on ethics. Registration closed on 13 November. Here are the dates, the special train schedule from Tamil Nadu, the venue news, the college programme and the Tamil places of Kashi worth seeing.",
+  "lead_hi": "काशी तमिल संगमम 2026 — पांचवां संस्करण, केटीएस 5.0 — 28 नवंबर से 12 दिसंबर 2026 तक चलेगा, जिसमें तमिलनाडु के करीब 1,400 लोग वाराणसी, प्रयागराज और अयोध्या आएंगे। शिक्षा मंत्रालय का यह कार्यक्रम तमिलनाडु और काशी के बीच विद्या और तीर्थ के पुराने रिश्तों का उत्सव है; इस साल का विषय तिरुक्कुरल है, नैतिकता पर तमिल का शास्त्रीय ग्रंथ। रजिस्ट्रेशन 13 नवंबर को बंद हो गया। यहां तारीखें, तमिलनाडु से विशेष ट्रेनों का समय, स्थल की जानकारी, कॉलेज कार्यक्रम और काशी की देखने लायक तमिल जगहें दी गई हैं।",
   "facts": [
     {
       "icon": "calendar",
@@ -33,10 +33,10 @@
     },
     {
       "icon": "hourglass",
-      "label_en": "Registration closes",
-      "label_hi": "रजिस्ट्रेशन की आखिरी तारीख",
-      "value_en": "13 Nov 2026",
-      "value_hi": "13 नवंबर 2026"
+      "label_en": "Registration",
+      "label_hi": "रजिस्ट्रेशन",
+      "value_en": "Closed on 13 Nov 2026",
+      "value_hi": "13 नवंबर 2026 को बंद"
     },
     {
       "icon": "info",
@@ -65,23 +65,63 @@
       "label_hi": "आधिकारिक पोर्टल",
       "value_en": "kashitamil.iitm.ac.in only",
       "value_hi": "केवल kashitamil.iitm.ac.in"
+    },
+    {
+      "icon": "train",
+      "label_en": "Special trains",
+      "label_hi": "विशेष ट्रेनें",
+      "value_en": "7 from Kanniyakumari, Chennai, Coimbatore to Banaras (BSBS)",
+      "value_hi": "कन्याकुमारी, चेन्नई, कोयंबटूर से बनारस (BSBS) तक 7"
     }
   ],
   "sections": [
     {
       "id": "dates-registration",
-      "heading_en": "Kashi Tamil Sangamam 2026 dates and registration last date",
-      "heading_hi": "काशी तमिल संगमम 2026 की तारीख और रजिस्ट्रेशन की आखिरी तारीख",
+      "heading_en": "Kashi Tamil Sangamam 2026 dates (registration closed)",
+      "heading_hi": "काशी तमिल संगमम 2026 की तारीखें (रजिस्ट्रेशन बंद)",
       "body_en": [
-        "The fifth edition, Kashi Tamil Sangamam 5.0, runs from 28 November to 12 December 2026, with the inauguration on 28 November and the valedictory programme on 12 December. Registration opened on 22 October 2026 on the official portal, kashitamil.iitm.ac.in, hosted by IIT Madras, and closes on 13 November 2026."
+        "The fifth edition, Kashi Tamil Sangamam 5.0, runs from 28 November to 12 December 2026, with the inauguration on 28 November and the valedictory programme on 12 December. Registration opened on 22 October 2026 on the official portal, kashitamil.iitm.ac.in, hosted by IIT Madras, and closed on 13 November 2026."
       ],
       "body_hi": [
-        "पांचवां संस्करण, काशी तमिल संगमम 5.0, 28 नवंबर से 12 दिसंबर 2026 तक चलेगा; उद्घाटन 28 नवंबर को और समापन कार्यक्रम 12 दिसंबर को है। रजिस्ट्रेशन 22 अक्टूबर 2026 को आईआईटी मद्रास के आधिकारिक पोर्टल kashitamil.iitm.ac.in पर शुरू हुआ और 13 नवंबर 2026 को बंद होगा।"
+        "पांचवां संस्करण, काशी तमिल संगमम 5.0, 28 नवंबर से 12 दिसंबर 2026 तक चलेगा; उद्घाटन 28 नवंबर को और समापन कार्यक्रम 12 दिसंबर को है। रजिस्ट्रेशन 22 अक्टूबर 2026 को आईआईटी मद्रास के आधिकारिक पोर्टल kashitamil.iitm.ac.in पर शुरू हुआ और 13 नवंबर 2026 को बंद हो गया।"
       ],
       "sources": [
         0,
         1
       ]
+    },
+    {
+      "id": "trains",
+      "heading_en": "Kashi Tamil Sangamam 2026 train schedule",
+      "heading_hi": "काशी तमिल संगमम 2026 ट्रेन का समय",
+      "body_en": [
+        "Delegates travel on special trains arranged for the programme. Banaras Hindu University's KTS 5.0 page lists seven onward trains from Kanniyakumari (CAPE), Chennai (MAS) and Coimbatore (CBE), each arriving at Banaras station (BSBS) at 23:15, and seven return trains leaving Banaras at 23:00. Train numbers are not given there; registered delegates get their travel details from the organisers.",
+        "Onward and return trains, as listed on 22 November 2026:"
+      ],
+      "body_hi": [
+        "प्रतिनिधि इस कार्यक्रम के लिए चलाई गई विशेष ट्रेनों से आते-जाते हैं। काशी हिन्दू विश्वविद्यालय के केटीएस 5.0 पेज पर कन्याकुमारी (CAPE), चेन्नई (MAS) और कोयंबटूर (CBE) से सात जाने वाली ट्रेनें दी गई हैं, जो सभी रात 23:15 पर बनारस स्टेशन (BSBS) पहुँचती हैं, और सात वापसी ट्रेनें, जो रात 23:00 पर बनारस से चलती हैं। वहाँ ट्रेन नंबर नहीं दिए गए हैं; रजिस्टर्ड प्रतिनिधियों को यात्रा की जानकारी आयोजकों से मिलती है।",
+        "जाने और लौटने वाली ट्रेनें, 22 नवंबर 2026 की सूची के अनुसार:"
+      ],
+      "list_en": [
+        "Kanniyakumari → Banaras: leave 25 Nov and 3 Dec at 11:45, arrive 27 Nov and 5 Dec at 23:15",
+        "Chennai → Banaras: leave 28 Nov, 2 Dec and 8 Dec at 04:15, arrive 29 Nov, 3 Dec and 9 Dec at 23:15",
+        "Coimbatore → Banaras: leave 29 Nov and 5 Dec at 18:00, arrive 1 Dec and 7 Dec at 23:15",
+        "Banaras → Kanniyakumari: leave 1 Dec and 9 Dec at 23:00, arrive 4 Dec and 12 Dec at 11:30",
+        "Banaras → Chennai: leave 3 Dec, 7 Dec and 13 Dec at 23:00, arrive 5 Dec, 9 Dec and 15 Dec at 23:30",
+        "Banaras → Coimbatore: leave 5 Dec and 11 Dec at 23:00, arrive 8 Dec and 14 Dec at 08:30"
+      ],
+      "list_hi": [
+        "कन्याकुमारी → बनारस: 25 नवंबर और 3 दिसंबर को 11:45 पर रवाना, 27 नवंबर और 5 दिसंबर को 23:15 पर पहुँच",
+        "चेन्नई → बनारस: 28 नवंबर, 2 दिसंबर और 8 दिसंबर को 04:15 पर रवाना, 29 नवंबर, 3 दिसंबर और 9 दिसंबर को 23:15 पर पहुँच",
+        "कोयंबटूर → बनारस: 29 नवंबर और 5 दिसंबर को 18:00 पर रवाना, 1 दिसंबर और 7 दिसंबर को 23:15 पर पहुँच",
+        "बनारस → कन्याकुमारी: 1 दिसंबर और 9 दिसंबर को 23:00 पर रवाना, 4 दिसंबर और 12 दिसंबर को 11:30 पर पहुँच",
+        "बनारस → चेन्नई: 3 दिसंबर, 7 दिसंबर और 13 दिसंबर को 23:00 पर रवाना, 5 दिसंबर, 9 दिसंबर और 15 दिसंबर को 23:30 पर पहुँच",
+        "बनारस → कोयंबटूर: 5 दिसंबर और 11 दिसंबर को 23:00 पर रवाना, 8 दिसंबर और 14 दिसंबर को 08:30 पर पहुँच"
+      ],
+      "sources": [
+        1
+      ],
+      "promo": true
     },
     {
       "id": "what-is-it",
@@ -131,15 +171,17 @@
       "heading_en": "Kashi Tamil Sangamam 2026 venue and timings in Varanasi",
       "heading_hi": "वाराणसी में काशी तमिल संगमम 2026 का स्थल और समय",
       "body_en": [
-        "As of 2 November 2026 the venues and times of the inauguration (28 November) and the valedictory programme (12 December) have not been announced; Banaras Hindu University, the coordinating institute in Varanasi, says they will be. The first edition in 2022 was held at BHU and the second, in 2023, at Namo Ghat. This page will be updated once the organisers publish the venue and programme."
+        "As of 22 November 2026 the venue and time of the inauguration (28 November) and the valedictory programme (12 December) have not been announced; BHU's schedule lists both functions, which colleges in the CICT student programme join online. The first edition in 2022 was held at BHU, the second, in 2023, at Namo Ghat, the third was inaugurated at Namo Ghat in February 2025, and the fourth's opening in December 2025 included an exhibition at Namo Ghat. This page will be updated once the organisers publish the venue and programme."
       ],
       "body_hi": [
-        "2 नवंबर 2026 तक उद्घाटन (28 नवंबर) और समापन कार्यक्रम (12 दिसंबर) के स्थल और समय घोषित नहीं हुए हैं; वाराणसी में समन्वय करने वाले काशी हिन्दू विश्वविद्यालय के अनुसार इनकी घोषणा की जाएगी। 2022 का पहला संस्करण बीएचयू में और 2023 का दूसरा संस्करण नमो घाट पर हुआ था। आयोजकों के स्थल और कार्यक्रम जारी करते ही यह पेज अपडेट किया जाएगा।"
+        "22 नवंबर 2026 तक उद्घाटन (28 नवंबर) और समापन कार्यक्रम (12 दिसंबर) का स्थल और समय घोषित नहीं हुआ है; बीएचयू की समय-सारणी में दोनों कार्यक्रम दर्ज हैं, जिनसे सीआईसीटी छात्र कार्यक्रम वाले कॉलेज ऑनलाइन जुड़ेंगे। 2022 का पहला संस्करण बीएचयू में और 2023 का दूसरा संस्करण नमो घाट पर हुआ था, तीसरे संस्करण का उद्घाटन फ़रवरी 2025 में नमो घाट पर हुआ, और दिसंबर 2025 में चौथे के उद्घाटन के साथ नमो घाट पर एक प्रदर्शनी भी लगी। आयोजकों के स्थल और कार्यक्रम जारी करते ही यह पेज अपडेट किया जाएगा।"
       ],
       "unconfirmed": true,
       "sources": [
         1,
-        2
+        2,
+        6,
+        7
       ]
     },
     {
@@ -155,6 +197,22 @@
       "sources": [
         4
       ]
+    },
+    {
+      "id": "college-programme",
+      "heading_en": "KTS 5.0 for colleges: the CICT student programme",
+      "heading_hi": "कॉलेजों के लिए केटीएस 5.0: सीआईसीटी छात्र कार्यक्रम",
+      "body_en": [
+        "Alongside the delegations, KTS 5.0 has a programme for colleges run through the Central Institute of Classical Tamil (CICT) portal, kts.cict.in. Institutions registered by 18 November, interested students were assessed by 23 November, and each selected institution nominates one student by 24 November. The colleges join the inauguration and valedictory online.",
+        "The nominated students then do a month of research and academic work on the theme from 15 December 2026 to 14 January 2027, write an article or research note and give a one-hour presentation. After their reports are verified they receive a stipend of ₹10,000 by direct benefit transfer. Dates are as revised by CICT; check kts.cict.in for changes."
+      ],
+      "body_hi": [
+        "प्रतिनिधिमंडलों के साथ-साथ केटीएस 5.0 में कॉलेजों के लिए भी एक कार्यक्रम है, जो केंद्रीय शास्त्रीय तमिल संस्थान (सीआईसीटी) के पोर्टल kts.cict.in से चलता है। संस्थानों का रजिस्ट्रेशन 18 नवंबर तक हुआ, इच्छुक छात्रों का आकलन 23 नवंबर तक, और हर चुना गया संस्थान 24 नवंबर तक एक छात्र को नामित करेगा। ये कॉलेज उद्घाटन और समापन कार्यक्रम से ऑनलाइन जुड़ेंगे।",
+        "नामित छात्र फिर 15 दिसंबर 2026 से 14 जनवरी 2027 तक विषय पर एक महीने का शोध और अकादमिक काम करेंगे, एक लेख या शोध नोट लिखेंगे और एक घंटे की प्रस्तुति देंगे। रिपोर्ट के सत्यापन के बाद उन्हें डीबीटी से ₹10,000 का वजीफ़ा मिलेगा। तारीखें सीआईसीटी के संशोधित कार्यक्रम के अनुसार हैं; बदलाव के लिए kts.cict.in देखें।"
+      ],
+      "sources": [
+        1
+      ]
     }
   ],
   "faq": [
@@ -166,15 +224,15 @@
     },
     {
       "q_en": "What is the last date for Kashi Tamil Sangamam 5.0 registration?",
-      "a_en": "13 November 2026. Registration opened on 22 October 2026.",
+      "a_en": "It was 13 November 2026, and registration has closed. It had opened on 22 October 2026.",
       "q_hi": "काशी तमिल संगमम 5.0 रजिस्ट्रेशन की आखिरी तारीख क्या है?",
-      "a_hi": "13 नवंबर 2026। रजिस्ट्रेशन 22 अक्टूबर 2026 को शुरू हुआ था।"
+      "a_hi": "आखिरी तारीख 13 नवंबर 2026 थी, और रजिस्ट्रेशन बंद हो चुका है। यह 22 अक्टूबर 2026 को शुरू हुआ था।"
     },
     {
       "q_en": "How do I register online for Kashi Tamil Sangamam 5.0 (Kasi Tamil Sangam 2026)?",
-      "a_en": "Only on the official portal, kashitamil.iitm.ac.in, hosted by IIT Madras; registration is open to people from Tamil Nadu until 13 November 2026. Choose one of the seven categories (students, teachers, writers and media, agriculture, professionals and artisans, women, spiritual leaders). Other sites offering 'registration' are not official.",
+      "a_en": "Registration for KTS 5.0 delegates closed on 13 November 2026; it was open only on the official portal, kashitamil.iitm.ac.in, hosted by IIT Madras, for people from Tamil Nadu in seven categories. Other sites offering 'registration' are not official.",
       "q_hi": "काशी तमिल संगमम 5.0 (2026) का ऑनलाइन रजिस्ट्रेशन कैसे करें?",
-      "a_hi": "केवल आईआईटी मद्रास के आधिकारिक पोर्टल kashitamil.iitm.ac.in पर; तमिलनाडु के लोगों के लिए रजिस्ट्रेशन 13 नवंबर 2026 तक खुला है। सात श्रेणियों (विद्यार्थी, शिक्षक, लेखक व मीडिया, कृषि, पेशेवर व कारीगर, महिलाएं, आध्यात्मिक गुरु) में से एक चुनें। 'रजिस्ट्रेशन' देने वाली दूसरी साइटें आधिकारिक नहीं हैं।"
+      "a_hi": "केटीएस 5.0 प्रतिनिधियों का रजिस्ट्रेशन 13 नवंबर 2026 को बंद हो गया; यह केवल आईआईटी मद्रास के आधिकारिक पोर्टल kashitamil.iitm.ac.in पर, तमिलनाडु के लोगों के लिए सात श्रेणियों में खुला था। 'रजिस्ट्रेशन' देने वाली दूसरी साइटें आधिकारिक नहीं हैं।"
     },
     {
       "q_en": "What is the theme of Kashi Tamil Sangamam 5.0?",
@@ -184,15 +242,39 @@
     },
     {
       "q_en": "What is the Kashi Tamil Sangamam 2026 venue?",
-      "a_en": "The programme covers Varanasi, Prayagraj and Ayodhya. The venues and times of the inauguration and valedictory programme in Varanasi have not been announced yet (as of 2 November 2026).",
+      "a_en": "The programme covers Varanasi, Prayagraj and Ayodhya. The venue and time of the inauguration and valedictory in Varanasi had not been announced by 22 November 2026; the second and third editions were held or inaugurated at Namo Ghat.",
       "q_hi": "काशी तमिल संगमम 2026 का स्थल कहां है?",
-      "a_hi": "कार्यक्रम वाराणसी, प्रयागराज और अयोध्या में है। वाराणसी में उद्घाटन और समापन कार्यक्रम के स्थल और समय अभी (2 नवंबर 2026 तक) घोषित नहीं हुए हैं।"
+      "a_hi": "कार्यक्रम वाराणसी, प्रयागराज और अयोध्या में है। वाराणसी में उद्घाटन और समापन का स्थल और समय 22 नवंबर 2026 तक घोषित नहीं हुआ था; दूसरा और तीसरा संस्करण नमो घाट पर हुआ या वहीं उद्घाटित हुआ था।"
     },
     {
       "q_en": "How many people take part, and who can apply?",
       "a_en": "About 1,400 participants from Tamil Nadu, in seven groups of around 200, each on an eight-day journey. Applicants must be from Tamil Nadu and apply in one of the seven categories.",
       "q_hi": "कितने लोग भाग लेते हैं, और कौन आवेदन कर सकता है?",
       "a_hi": "तमिलनाडु के करीब 1,400 प्रतिभागी, लगभग 200-200 के सात समूहों में, हर समूह आठ दिन की यात्रा पर। आवेदक तमिलनाडु के हों और सात में से किसी एक श्रेणी में आवेदन करें।"
+    },
+    {
+      "q_en": "What is the Kashi Tamil Sangamam 2026 train schedule?",
+      "a_en": "Seven special trains leave Kanniyakumari (25 Nov, 3 Dec), Chennai (28 Nov, 2 Dec, 8 Dec) and Coimbatore (29 Nov, 5 Dec), all arriving at Banaras station at 23:15. Return trains leave Banaras at 23:00 between 1 and 13 December. The full list is above.",
+      "q_hi": "काशी तमिल संगमम 2026 की ट्रेनों का समय क्या है?",
+      "a_hi": "सात विशेष ट्रेनें कन्याकुमारी (25 नवंबर, 3 दिसंबर), चेन्नई (28 नवंबर, 2 दिसंबर, 8 दिसंबर) और कोयंबटूर (29 नवंबर, 5 दिसंबर) से चलकर रात 23:15 पर बनारस स्टेशन पहुँचती हैं। वापसी ट्रेनें 1 से 13 दिसंबर के बीच रात 23:00 पर बनारस से चलती हैं। पूरी सूची ऊपर है।"
+    },
+    {
+      "q_en": "At which Varanasi station do the Kashi Tamil Sangamam trains arrive?",
+      "a_en": "Banaras station (code BSBS), the former Manduadih station, not Varanasi Junction (Cantt).",
+      "q_hi": "काशी तमिल संगमम की ट्रेनें वाराणसी के किस स्टेशन पर पहुँचती हैं?",
+      "a_hi": "बनारस स्टेशन (कोड BSBS), पहले का मंडुआडीह स्टेशन, वाराणसी जंक्शन (कैंट) नहीं।"
+    },
+    {
+      "q_en": "When is the Kashi Tamil Sangamam 2026 closing ceremony?",
+      "a_en": "The valedictory programme is on 12 December 2026; its venue and time had not been announced by 22 November.",
+      "q_hi": "काशी तमिल संगमम 2026 का समापन समारोह कब है?",
+      "a_hi": "समापन कार्यक्रम 12 दिसंबर 2026 को है; 22 नवंबर तक इसका स्थल और समय घोषित नहीं हुआ था।"
+    },
+    {
+      "q_en": "What is the KTS 5.0 college programme and stipend?",
+      "a_en": "Colleges registered on the CICT portal (kts.cict.in) nominate one student each, who does a month of research on the Thirukkural theme from 15 December 2026 to 14 January 2027 and receives a ₹10,000 stipend after verification.",
+      "q_hi": "केटीएस 5.0 का कॉलेज कार्यक्रम और वजीफ़ा क्या है?",
+      "a_hi": "सीआईसीटी पोर्टल (kts.cict.in) पर रजिस्टर्ड कॉलेज एक-एक छात्र नामित करते हैं, जो 15 दिसंबर 2026 से 14 जनवरी 2027 तक तिरुक्कुरल विषय पर एक महीने का शोध करता है और सत्यापन के बाद ₹10,000 का वजीफ़ा पाता है।"
     }
   ],
   "sources": [
@@ -202,9 +284,9 @@
       "accessed": "2026-11-02"
     },
     {
-      "title": "Banaras Hindu University — Kashi Tamil Sangamam 5.0 tentative schedule",
+      "title": "Banaras Hindu University — Kashi Tamil Sangamam 5.0 schedule: revised CICT timeline and train plan",
       "url": "https://kashitamil.bhu.edu.in/schedule.html",
-      "accessed": "2026-11-02"
+      "accessed": "2026-11-22"
     },
     {
       "title": "Banaras Hindu University — Kashi Tamil Sangamam 5.0 (past editions)",
@@ -225,6 +307,16 @@
       "title": "All India Radio News — Registration opens for fifth edition of Kashi Tamil Sangamam (24 Oct 2026): open 22 Oct–13 Nov, about 1,400 participants",
       "url": "https://newsonair.gov.in/registration-opens-for-fifth-edition-of-kashi-tamil-sangamam/",
       "accessed": "2026-11-07"
+    },
+    {
+      "title": "All India Radio News — 3rd edition of Kashi Tamil Sangamam inaugurated at Varanasi's Namo Ghat (15 Feb 2025)",
+      "url": "https://www.newsonair.gov.in/3rd-edition-of-kashi-tamil-sangamam-inaugurated-at-varanasis-namo-ghat",
+      "accessed": "2026-11-22"
+    },
+    {
+      "title": "All India Radio News — Kashi Tamil Sangamam 4.0 inaugurated in Varanasi (2 Dec 2025)",
+      "url": "https://www.newsonair.gov.in/kashi-tamil-sangamam-4-0-inaugurated-in-varanasi",
+      "accessed": "2026-11-22"
     }
   ],
   "related": {
@@ -241,5 +333,5 @@
       "kashi-tamil-sangamam-festival"
     ]
   },
-  "notes": "Written 2 Nov 2026 from the PIB release of 22 Oct 2026 and BHU's KTS 5.0 site. Keywords from Google autocomplete on 2 Nov (hl=en and hl=hi): 'kashi tamil sangamam 5.0', '… 2026 registration (online, last date)', '… 2026 dates', '… 2026 venue (timings)', '… theme', 'काशी तमिल संगमम 2026', '… क्या है', '… स्थल'. Venues and times of the inauguration and valedictory not announced as of 2 Nov (BHU schedule says 'will be announced') — update when published, along with any Kashi Tamil Sangamam special trains. Unofficial 'registration' pages (job/exam sites) exist; only kashitamil.iitm.ac.in cited. 'free' not set: public access to the programmes is not announced."
+  "notes": "Written 2 Nov 2026 from the PIB release of 22 Oct 2026 and BHU's KTS 5.0 site. Keywords from Google autocomplete on 2 Nov (hl=en and hl=hi): 'kashi tamil sangamam 5.0', '… 2026 registration (online, last date)', '… 2026 dates', '… 2026 venue (timings)', '… theme', 'काशी तमिल संगमम 2026', '… क्या है', '… स्थल'. Venues and times of the inauguration and valedictory not announced as of 2 Nov (BHU schedule says 'will be announced') — update when published, along with any Kashi Tamil Sangamam special trains. Unofficial 'registration' pages (job/exam sites) exist; only kashitamil.iitm.ac.in cited. 'free' not set: public access to the programmes is not announced. UPDATE 2026-11-22: registration closed (13 Nov); BHU schedule page (source 1, read 22 Nov) now gives the revised CICT timeline (institution registration by 18 Nov, assessment 23 Nov, nomination 24 Nov, inaugural 28 Nov and valedictory 12 Dec with virtual joining for colleges, research 15 Dec–14 Jan, ₹10,000 stipend via DBT) and the train plan (7 onward: CAPE 25 Nov & 3 Dec 11:45; MAS 28 Nov, 2 Dec, 8 Dec 04:15; CBE 29 Nov & 5 Dec 18:00; all arrive BSBS 23:15; 7 return from BSBS 23:00: to CAPE 1 & 9 Dec arr 11:30 on 4 & 12 Dec; to MAS 3, 7, 13 Dec arr 23:30 on 5, 9, 15 Dec; to CBE 5 & 11 Dec arr 08:30 on 8 & 14 Dec). No train numbers published. Venue for 2026 still not announced (search 22 Nov; a Drishti/aggregator claim of Namo Ghat was not confirmed by a primary source). Keywords from autocomplete: 'kashi tamil sangamam 2026 dates / venue / timings', 'kasi tamil sangamam express / train / train timings / route', Tamil 'காசி தமிழ் சங்கமம் ரயில்', 'நிறைவு விழா'. The trains section carries the house-ad slot (promo)."
 }

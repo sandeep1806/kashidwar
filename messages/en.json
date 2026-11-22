@@ -5,7 +5,7 @@
     "description": "Varanasi (Kashi, Banaras) travel guide: {count} places with timings and entry, all 84 ghats, Ganga Aarti time, Kashi Vishwanath darshan, festivals, 1–3 day plans.",
     "homeTitle": "Kashidwar: Varanasi travel guide — places to visit, ghats, Ganga Aarti",
     "placeTitle": "{name}, Varanasi: timings, history & guide",
-    "festivalTitle": "{name} {year} in Varanasi: date, time and guide",
+    "festivalTitle": "{name} {year} in Varanasi: {date}, time & guide",
     "projectTitle": "{name}, Varanasi: status, opening date and cost",
     "itineraryTitle": "Varanasi {n}-day itinerary: {title}, day-by-day plan",
     "placeDescription": "{name}, Varanasi (Banaras): {summary}",

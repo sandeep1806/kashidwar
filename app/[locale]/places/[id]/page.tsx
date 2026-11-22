@@ -40,11 +40,11 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/places/[
   const tp = await getTranslations({ locale, namespace: "places" });
   const { primary } = names(loc, raw);
   const path = pagePath("places", id);
-  const title = t("placeTitle", { name: primary, type: tp(`types.${raw.type}`) });
+  const title = p.seoTitle || t("placeTitle", { name: primary, type: tp(`types.${raw.type}`) });
   // Searches for a place are mostly "<name> timings" / "aarti time": lead the description with the glance facts when known.
   const g = p.glance ?? {};
   const facts = [g.timings, g.entry].filter(Boolean).join(" · ");
-  const description = metaDescription(facts ? t("placeDescriptionFacts", { name: primary, facts, summary: p.summary }) : t("placeDescription", { name: primary, summary: p.summary }));
+  const description = metaDescription(p.seoDescription || (facts ? t("placeDescriptionFacts", { name: primary, facts, summary: p.summary }) : t("placeDescription", { name: primary, summary: p.summary })));
   const photo = getPhoto(`places/${id}`, loc);
   const image = photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`;
   return {

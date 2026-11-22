@@ -267,6 +267,16 @@ sourced account (attendance, highlights, records, anything that went wrong), cha
 tense to the past, keep the practical sections that still help (for the next edition), update
 `updated`, and translate the new section into all regional files. Do not delete event pages.
 
+**Next year's guide straight after a big annual festival.** When a festival that people search a
+year ahead has just ended (Dev Deepawali, Maha Shivratri, Masan Holi, Ganga Dussehra), write next
+year's guide in the same run as the `what-happened` section, using the verified date in
+`content/festival-dates.json` (Dev Deepawali 2027: 13 November 2027) and the structure of this
+year's guide: date and timing, what happens, ghats, boats, crowds, stay, FAQs written from
+autocomplete ("<festival> <next year> date / kab hai / varanasi / boat booking"). Mark anything
+not yet announced for next year as `"unconfirmed": true`, link the two guides both ways
+(`related.guides`), and translate it into all regional files. A guide that is a year old by the
+festival ranks far better than one written a few weeks before.
+
 ### 5. Links and photos
 - Run `node scripts/check-links.mjs` first (one command, about 2 minutes): it checks every
   source URL in `content/*.json` and `content/guides/*.json` and lists the broken ones with the

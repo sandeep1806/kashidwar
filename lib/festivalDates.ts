@@ -74,6 +74,14 @@ export function formatFestivalRange(bcp47: string, start: string, end: string | 
   return fmt.formatRange(s, new Date(end + "T00:00:00Z"));
 }
 
+/** Localized "18 March" or "18–19 March" (no year), for titles that already name the year. */
+export function formatDayMonth(bcp47: string, start: string, end: string | null): string {
+  const fmt = new Intl.DateTimeFormat(bcp47, { day: "numeric", month: "long", timeZone: "UTC" });
+  const s = new Date(start + "T00:00:00Z");
+  if (!end || end === start) return fmt.format(s);
+  return fmt.formatRange(s, new Date(end + "T00:00:00Z"));
+}
+
 /** Localized month name. */
 export function formatMonth(bcp47: string, month: number): string {
   return new Intl.DateTimeFormat(bcp47, { month: "long", timeZone: "UTC" }).format(new Date(Date.UTC(2026, month - 1, 15)));
