@@ -7,7 +7,7 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 
 | Package | Version | Peer range checked | Notes |
 |---|---|---|---|
-| next | 16.4.4 | react ^19 | App Router, Turbopack default. Middleware is now `proxy.ts`. |
+| next | 16.4.6 | react ^19 | App Router, Turbopack default. Middleware is now `proxy.ts`. 16.4.4 → 16.4.6 on 2026-11-23 (security patch, see below). |
 | react / react-dom | 19.3.0 | — | Bumped from scaffolded 19.2.8 (minor; allowed by every peer below). |
 | gsap | 3.15.0 | none | SplitText / ScrollTrigger ship free in 3.13+ via `gsap/all`. |
 | lenis | 1.3.26 | react >=17 | `dev` tag is 2.0.0-dev.5 → skipped (prerelease). |
@@ -25,7 +25,7 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 |---|---|---|
 | typescript | 5.9.3 | 7.0.2 is latest but typescript-eslint peers `<6.1.0`; kept 5.9. |
 | eslint | 9.39.5 | Tried 10.11.0: `eslint-config-next`'s bundled `eslint-plugin-react` crashes (`getFilename is not a function`). Reverted to 9. |
-| eslint-config-next | 16.4.4 | |
+| eslint-config-next | 16.4.6 | Kept in step with `next`. |
 | tailwindcss / @tailwindcss/postcss | 4.3.3 | Tailwind **v4** → CSS-first `@theme` in `app/globals.css`, no `tailwind.config.js`. |
 | @types/leaflet | 1.9.22 | |
 | @types/three | 0.186.0 | Matches three 0.186. Not in CLAUDE.md's list; added because `three` ships no types. |
@@ -76,3 +76,9 @@ Runtime: Node v22.20.0 · npm 11.20.0. Re-run `npm outdated` + `npm audit` at th
 - #69 `glob` (moderate, AbortSignal bypass; fixed in 14.0.2) and #70 `minimatch` (moderate, globparts DoS; fixed in 11.0.1) dismissed on GitHub as *tolerable risk*, leaving no open alerts.
 - Why: both are build/lint-time only. `glob` 10.5 comes from `@opennextjs/aws` → `@node-minify/core` (the build minifier); `minimatch` 3/9/10 from `eslint`, `typescript-eslint` and `@node-minify/core`. Neither is in the deployed Worker, and the inputs are the repo's own files and config. The patched releases are new majors that eslint 9 and node-minify 9 do not support, so an override would break the build or lint.
 - Re-check when `@opennextjs/cloudflare`, `eslint` or `typescript-eslint` move to `glob` ≥ 14.0.2 / `minimatch` ≥ 11.0.1 (`npm ls glob minimatch`); then drop the `@node-minify/core` glob override and reopen the alerts if they are still flagged.
+
+## Security patch · 2026-11-23
+- `next` and `eslint-config-next` 16.4.4 → **16.4.6** (`latest` dist-tag; stable, not a prerelease). The local build had stopped with Next's "known security vulnerability" notice, and `npm audit` listed 6 moderate Next.js advisories (`use cache` / `unstable_cache` cache leaks, image optimizer SVG bypass, Edge HttpOnly cookie header, response injection when forwarding fetched responses); all are cleared on 16.4.6.
+- Peers checked: next 16.4.6 needs react ^18.2 || ^19 (installed 19.3.1); `@opennextjs/cloudflare` 1.20.15 accepts next >=16.4.1; `next-intl` 4.14.9 accepts next ^16.
+- Still reported by `npm audit --omit=dev`: 5 moderate findings in build-time tooling (`glob` / `minimatch` via `@opennextjs/aws` → `@node-minify/core`). npm's only "fix" is downgrading `@opennextjs/cloudflare` to 0.3.0, a breaking change, so they are left until OpenNext updates those dependencies.
+- `npm outdated` (not changed in this patch): @opennextjs/cloudflare 1.20.18, next-intl 4.15.3, tailwindcss / @tailwindcss/postcss 4.3.5, gsap 3.15.1, wrangler 4.166.0 (minor/patch); typescript 7, eslint 10, motion 14, three 0.187 and @types/node 26 stay held for the reasons above.
