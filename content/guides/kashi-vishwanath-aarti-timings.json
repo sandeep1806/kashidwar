@@ -1,7 +1,7 @@
 {
   "slug": "kashi-vishwanath-aarti-timings",
   "published": "2026-10-12",
-  "updated": "2026-11-14",
+  "updated": "2026-11-24",
   "photo": "places/kashi-vishwanath",
   "title_en": "Kashi Vishwanath aarti timings: Mangala, Sapta Rishi, tickets, booking",
   "title_hi": "काशी विश्वनाथ आरती का समय: मंगला, सप्तऋषि, शयन आरती, टिकट और बुकिंग",
@@ -301,6 +301,12 @@
       "a_en": "No. Phones, smartwatches, earphones and other gadgets, even pens, are not allowed. Use the free lockers at Mandir Chowk, the YSKs or the helpdesk.",
       "q_hi": "क्या आरती में मोबाइल ले जा सकते हैं?",
       "a_hi": "नहीं। मोबाइल, स्मार्टवॉच, ईयरफ़ोन और अन्य उपकरण, पेन तक, वर्जित हैं। मंदिर चौक, YSK या हेल्पडेस्क के निःशुल्क लॉकर का उपयोग करें।"
+    },
+    {
+      "q_en": "Is there a bhasma aarti at Kashi Vishwanath?",
+      "a_en": "No. Kashi Vishwanath's daily aartis are the Mangala (Mangla) aarti at 3 am, the midday Bhog aarti, the Sapta Rishi aarti, the night Shringar-Bhog aarti and the Shayan aarti. The famous bhasma aarti, with ash, is held at the Mahakaleshwar jyotirlinga in Ujjain, starting at 4 am.",
+      "q_hi": "क्या काशी विश्वनाथ में भस्म आरती होती है?",
+      "a_hi": "नहीं। काशी विश्वनाथ की रोज़ की आरतियाँ हैं: सुबह 3 बजे मंगला आरती, दोपहर की भोग आरती, सप्तऋषि आरती, रात की श्रृंगार-भोग आरती और शयन आरती। प्रसिद्ध भस्म आरती उज्जैन के महाकालेश्वर ज्योतिर्लिंग में होती है, जो सुबह 4 बजे शुरू होती है।"
     }
   ],
   "sources": [
@@ -398,6 +404,16 @@
       "title": "ETV Bharat — Visits to Kashi Vishwanath temple get costlier in Sawan (13 Jul 2022)",
       "url": "https://etvbharat.com/english/bharat/up-visits-to-kashi-vishwanath-temple-get-costlier/na20220713175552582582374",
       "accessed": "2026-10-12"
+    },
+    {
+      "title": "MP Tourism — Bhasm aarti at Mahakaleshwar, Ujjain (begins daily at 4 am)",
+      "url": "https://www.mptourism.com/bhasm-aarti-at-mahakaleshwar-and-ujjain.html",
+      "accessed": "2026-11-24"
+    },
+    {
+      "title": "Shri Kashi Vishwanath Temple Trust — Daily schedule",
+      "url": "https://shrikashivishwanath.org/general/daily_schedule",
+      "accessed": "2026-11-24"
     }
   ],
   "related": {
@@ -417,5 +433,5 @@
       "new-year-in-varanasi-2027"
     ]
   },
-  "notes": "Trust pages disagree: rituals page (open 2:30 am, Bhog 11:30-12:00, Sapta Rishi to 8:30, Shringar 9 pm, darshan from 12 noon, five aartis) vs FAQ PDF and booking pages (open 3 am, Bhog 11:15-12:20, Sapta Rishi to 8:15, Shringar 9-10:15, darshan from 12:20, FAQ lists only four aartis); the FAQ PDF now loads (the darshan guide said 404) and also places the helpdesk 'near Gate 4' where the Sugam page says 'near Shapuri Mall', and says Gate 1 is the ghat-side gate while the Mangala page names Gate 1 'Dhundi Raj Ganesh'; the 100/day Mangala quota is from The Varanasi News and the booking calendar's Tatkal column, not a stated rule; Sawan 2026 had four Mondays (3 Aug first, per Amar Ujala), so the darshan guide's '10, 17 and 24 August' list of Sugam suspensions is correct but not all Mondays; consider updating the darshan guide's bhog/darshan times and 'no dress code' line from the FAQ."
+  "notes": "Trust pages disagree: rituals page (open 2:30 am, Bhog 11:30-12:00, Sapta Rishi to 8:30, Shringar 9 pm, darshan from 12 noon, five aartis) vs FAQ PDF and booking pages (open 3 am, Bhog 11:15-12:20, Sapta Rishi to 8:15, Shringar 9-10:15, darshan from 12:20, FAQ lists only four aartis); the FAQ PDF now loads (the darshan guide said 404) and also places the helpdesk 'near Gate 4' where the Sugam page says 'near Shapuri Mall', and says Gate 1 is the ghat-side gate while the Mangala page names Gate 1 'Dhundi Raj Ganesh'; the 100/day Mangala quota is from The Varanasi News and the booking calendar's Tatkal column, not a stated rule; Sawan 2026 had four Mondays (3 Aug first, per Amar Ujala), so the darshan guide's '10, 17 and 24 August' list of Sugam suspensions is correct but not all Mondays; consider updating the darshan guide's bhog/darshan times and 'no dress code' line from the FAQ. UPDATE 2026-11-24 (keyword.io / autocomplete gap check): Added bhasma-aarti FAQ: not at Kashi Vishwanath (trust daily schedule); Mahakaleshwar Ujjain 4 am (MP Tourism)."
 }

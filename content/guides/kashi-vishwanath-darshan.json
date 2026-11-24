@@ -1,7 +1,7 @@
 {
   "slug": "kashi-vishwanath-darshan",
   "published": "2026-09-27",
-  "updated": "2026-11-14",
+  "updated": "2026-11-24",
   "photo": "festivals/shravan",
   "title_en": "Kashi Vishwanath Darshan: Timings, Sugam Darshan, Rules",
   "title_hi": "काशी विश्वनाथ दर्शन: समय, सुगम दर्शन और नियम",
@@ -250,6 +250,42 @@
       "a_en": "The trust does not publish one for general darshan. Modest clothing is advisable.",
       "q_hi": "क्या कोई ड्रेस कोड है?",
       "a_hi": "सामान्य दर्शन के लिए न्यास ने कोई ड्रेस कोड प्रकाशित नहीं किया है। सादे, शालीन कपड़े पहनना उचित है।"
+    },
+    {
+      "q_en": "Is there VIP darshan at Kashi Vishwanath, and what is the VIP ticket price?",
+      "a_en": "There is no ticket called VIP darshan. The paid fast lane is Sugam Darshan at ₹300 a person (6 am to 6 pm), where a temple Shastri takes you past the queue; it is not available during aartis or on peak days. Protocol darshan for dignitaries is requested by email to the trust and also costs ₹300 a visitor, and it is suspended at busy times such as New Year and Sawan.",
+      "q_hi": "क्या काशी विश्वनाथ में वीआईपी दर्शन होता है, और वीआईपी टिकट कितने का है?",
+      "a_hi": "वीआईपी दर्शन नाम का कोई टिकट नहीं है। तेज़ दर्शन के लिए सुगम दर्शन है, ₹300 प्रति व्यक्ति (सुबह 6 से शाम 6 बजे), जिसमें मंदिर के शास्त्री आपको कतार के बिना दर्शन कराते हैं; आरती के समय और भीड़ वाले ख़ास दिनों में यह नहीं मिलता। विशिष्ट लोगों के लिए प्रोटोकॉल दर्शन न्यास को ईमेल से माँगा जाता है और इसका भी ₹300 प्रति व्यक्ति लगता है; नए साल और सावन जैसे भीड़ वाले समय में यह बंद रहता है।"
+    },
+    {
+      "q_en": "How long is the queue at Kashi Vishwanath?",
+      "a_en": "The temple publishes no waiting time. On ordinary mornings the general queue moves fastest early, after the Mangala aarti; on Sawan Mondays the queue has stretched about 3 km outside the temple (first Sawan Monday 2026), and in New Year week more than 20 lakh people had darshan in 2025-26.",
+      "q_hi": "काशी विश्वनाथ में दर्शन की कतार में कितना समय लगता है?",
+      "a_hi": "मंदिर इंतज़ार का कोई समय प्रकाशित नहीं करता। आम दिनों में सुबह मंगला आरती के बाद आम कतार सबसे तेज़ चलती है; सावन के सोमवार को कतार मंदिर के बाहर करीब 3 किलोमीटर तक लंबी रही है (2026 का पहला सावन सोमवार), और 2025-26 में नए साल के हफ़्ते में 20 लाख से अधिक लोगों ने दर्शन किए।"
+    },
+    {
+      "q_en": "Can I watch Kashi Vishwanath live darshan online?",
+      "a_en": "Yes. The temple trust streams live darshan on its website (shrikashivishwanath.org, under Live darshan) through its YouTube channel, Shree Kashi Vishwanath Mandir Trust.",
+      "q_hi": "क्या काशी विश्वनाथ के लाइव दर्शन ऑनलाइन देख सकते हैं?",
+      "a_hi": "हाँ। मंदिर न्यास अपनी वेबसाइट (shrikashivishwanath.org पर लाइव दर्शन) पर अपने यूट्यूब चैनल, श्री काशी विश्वनाथ मंदिर ट्रस्ट, के ज़रिए सीधा दर्शन दिखाता है।"
+    },
+    {
+      "q_en": "How far is Kashi Vishwanath temple from Varanasi Junction, the airport and Assi Ghat?",
+      "a_en": "In a straight line the temple is about 2.9 km from Varanasi Junction (Cantt), 3.2 km from Banaras station, about 22 km from the airport, 2.5 km from Assi Ghat, 0.5 km from Dashashwamedh Ghat and 5.8 km from the BHU Vishwanath temple. Roads add a little, and the last stretch from Godowlia is on foot.",
+      "q_hi": "काशी विश्वनाथ मंदिर वाराणसी जंक्शन, एयरपोर्ट और अस्सी घाट से कितनी दूर है?",
+      "a_hi": "सीधी दूरी में मंदिर वाराणसी जंक्शन (कैंट) से लगभग 2.9 किमी, बनारस स्टेशन से 3.2 किमी, एयरपोर्ट से करीब 22 किमी, अस्सी घाट से 2.5 किमी, दशाश्वमेध घाट से 0.5 किमी और बीएचयू विश्वनाथ मंदिर से 5.8 किमी है। सड़क से दूरी थोड़ी ज़्यादा होती है, और गोदौलिया से आख़िरी हिस्सा पैदल है।"
+    },
+    {
+      "q_en": "Is there parking near Kashi Vishwanath temple?",
+      "a_en": "Not at the temple: the lanes around it are pedestrian. The nearest public parking is the Godowlia multi-level parking, which has room for 370 two-wheelers and was reported to be always full in October 2025. Park further out and take an e-rickshaw or walk.",
+      "q_hi": "क्या काशी विश्वनाथ मंदिर के पास पार्किंग है?",
+      "a_hi": "मंदिर पर नहीं: आसपास की गलियाँ पैदल हैं। सबसे पास की सार्वजनिक पार्किंग गोदौलिया मल्टी-लेवल पार्किंग है, जिसमें 370 दोपहिया की जगह है और अक्टूबर 2025 में इसे हमेशा भरा बताया गया। दूर गाड़ी खड़ी करके ई-रिक्शा लें या पैदल जाएँ।"
+    },
+    {
+      "q_en": "How much does Rudrabhishek cost at Kashi Vishwanath?",
+      "a_en": "The trust's rates are ₹450 with 1 Shastri, ₹1,380 with 5, ₹2,600 with 11 and ₹5,500 for Laghu Rudra, between 4 am and 6 pm. Book on shrikashivishwanath.org or the trust's app.",
+      "q_hi": "काशी विश्वनाथ में रुद्राभिषेक कितने का है?",
+      "a_hi": "न्यास की दरें: 1 शास्त्री ₹450, 5 शास्त्री ₹1,380, 11 शास्त्री ₹2,600 और लघु रुद्र ₹5,500, सुबह 4 से शाम 6 बजे के बीच। बुकिंग shrikashivishwanath.org या न्यास के ऐप पर।"
     }
   ],
   "sources": [
@@ -322,6 +358,31 @@
       "title": "Wikipedia — Kaal Bhairav Mandir, Varanasi",
       "url": "https://en.wikipedia.org/wiki/Kaal_Bhairav_Mandir,_Varanasi",
       "accessed": "2026-09-27"
+    },
+    {
+      "title": "Shri Kashi Vishwanath Temple Trust — Daily schedule (aarti, Sugam Darshan, Rudrabhishek prices)",
+      "url": "https://shrikashivishwanath.org/general/daily_schedule",
+      "accessed": "2026-11-24"
+    },
+    {
+      "title": "IANS (Telangana Today) — VIP darshan norms get stricter at Kashi Vishwanath Dham (7 Jan 2024)",
+      "url": "https://telanganatoday.com/vip-darshan-norms-get-stricter-at-kashi-vishwanath-dham",
+      "accessed": "2026-11-24"
+    },
+    {
+      "title": "Patrika — First Sawan Monday 2026: about 3 km queue at Kashi Vishwanath (3 Aug 2026)",
+      "url": "https://www.patrika.com/varanasi-news/shree-kashi-vishwanath-temple-sawan-first-monday-huge-rush-of-devotees-20800261",
+      "accessed": "2026-11-24"
+    },
+    {
+      "title": "Shri Kashi Vishwanath Temple Trust — Live darshan",
+      "url": "https://shrikashivishwanath.org/online/live_darshan",
+      "accessed": "2026-11-24"
+    },
+    {
+      "title": "Amar Ujala — Godowlia multi-level parking always full; new parking proposed at Chitra cinema site (1 Oct 2025)",
+      "url": "https://www.amarujala.com/uttar-pradesh/varanasi/three-story-parking-lot-built-in-place-of-chitra-cinema-hall-closed-for-30-years-proposal-rupees-submitted-2025-10-01",
+      "accessed": "2026-11-24"
     }
   ],
   "related": {
@@ -345,5 +406,5 @@
       "new-year-in-varanasi-2027"
     ]
   },
-  "notes": "Bhog Aarti time conflicts on the official site: the rituals page says 11:30 am–12:00 pm, the booking page says 11:15 am–12:20 pm; both shown. The trust's FAQ PDF link on the homepage returned 404, so rules come from news reports of administration guidelines (ETV Bharat Jul 2026, The Week Jul 2025, Amar Ujala 2022). Leather-item restriction, sparsh darshan schedule/fee/dress code and a general dress code were NOT found in any official notice: left out or flagged (sections rules-and-lockers and sparsh-darshan marked unconfirmed). The 100-tickets-a-day Mangala Aarti cap and 5.3 lakh first-Sawan-Monday figure come from a local outlet (The Varanasi News); the Mangala cap is omitted from the text. Annapurna temple and Gyanvapi location statements are general knowledge supported by Wikipedia's Kashi Vishwanath article; no distances given. Gyanvapi mentioned neutrally with no reference to litigation. News On AIR sparsh-darshan source is from Jul 2024 (Sawan Monday practice), not 2026-specific. Sugam Darshan 'max 5 persons per booking' appears only on blogs and is omitted."
+  "notes": "Bhog Aarti time conflicts on the official site: the rituals page says 11:30 am–12:00 pm, the booking page says 11:15 am–12:20 pm; both shown. The trust's FAQ PDF link on the homepage returned 404, so rules come from news reports of administration guidelines (ETV Bharat Jul 2026, The Week Jul 2025, Amar Ujala 2022). Leather-item restriction, sparsh darshan schedule/fee/dress code and a general dress code were NOT found in any official notice: left out or flagged (sections rules-and-lockers and sparsh-darshan marked unconfirmed). The 100-tickets-a-day Mangala Aarti cap and 5.3 lakh first-Sawan-Monday figure come from a local outlet (The Varanasi News); the Mangala cap is omitted from the text. Annapurna temple and Gyanvapi location statements are general knowledge supported by Wikipedia's Kashi Vishwanath article; no distances given. Gyanvapi mentioned neutrally with no reference to litigation. News On AIR sparsh-darshan source is from Jul 2024 (Sawan Monday practice), not 2026-specific. Sugam Darshan 'max 5 persons per booking' appears only on blogs and is omitted. UPDATE 2026-11-24 (keyword.io / autocomplete gap check): Added FAQs for VIP darshan (no such ticket; Sugam ₹300; protocol ₹300, suspended at peaks), queue (no official figure; ~3 km on first Sawan Monday 2026), live darshan (trust site/YouTube), distances (straight-line from site coordinates), parking (Godowlia MLP 370 two-wheelers, always full, Amar Ujala Oct 2025), Rudrabhishek prices (trust daily schedule)."
 }
