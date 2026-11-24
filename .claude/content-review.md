@@ -276,6 +276,11 @@ autocomplete ("<festival> <next year> date / kab hai / varanasi / boat booking")
 not yet announced for next year as `"unconfirmed": true`, link the two guides both ways
 (`related.guides`), and translate it into all regional files. A guide that is a year old by the
 festival ranks far better than one written a few weeks before.
+Cover the whole keyword family, not just the date: why it is celebrated (the story), how it
+differs from related festivals, muhurat / timing, best ghat or place to watch, how many days,
+live / show timings, boat booking and packages, crowd and parking (for Dev Deepawali the
+24 Nov 2026 guide's FAQs are the checklist). Skip wishes, quotes, status, rangoli and image
+queries: greeting content is not what this site is for.
 
 ### 5. Links and photos
 - Run `node scripts/check-links.mjs` first (one command, about 2 minutes): it checks every
