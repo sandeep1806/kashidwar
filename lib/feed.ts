@@ -1,6 +1,6 @@
 // RSS 2.0 feed of the guides (app/feed.xml, app/feed-hi.xml): lets readers follow the site in
 // Chrome and feed readers. Newest change first, each item with its large photo (media:content).
-import { guidePhoto, guides, localizeGuide } from "@/lib/guides";
+import { articlePath, guidePhoto, guides, localizeGuide, posts } from "@/lib/guides";
 import { AUTHOR_NAME, BRAND, SITE_URL, feedFor } from "@/lib/site";
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -8,10 +8,10 @@ const rfc822 = (d: string) => new Date(`${d}T00:00:00Z`).toUTCString();
 
 export function guidesFeed(locale: "en" | "hi"): Response {
   const feed = feedFor(locale);
-  const list = guides.slice().sort((a, b) => b.updated.localeCompare(a.updated) || b.published.localeCompare(a.published));
+  const list = [...guides, ...posts].sort((a, b) => b.updated.localeCompare(a.updated) || b.published.localeCompare(a.published));
   const items = list.map((g) => {
     const l = localizeGuide(g, locale);
-    const url = `${SITE_URL}/${locale}/guides/${g.slug}`;
+    const url = `${SITE_URL}/${locale}${articlePath(g.slug)}`;
     const photo = guidePhoto(g, locale);
     const image = photo
       ? `\n      <media:content url="${esc(`${SITE_URL}${photo.src}-${photo.widths.at(-1)}.webp`)}" medium="image" type="image/webp" width="${photo.width}" height="${photo.height}" />`

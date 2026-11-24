@@ -675,6 +675,12 @@ a.glance-tile:hover .glance-value { color: var(--kashi-marigold); }
   color: color-mix(in oklab, var(--kashi-ash) 90%, transparent); border: 1px solid color-mix(in oklab, var(--kashi-diya) 30%, transparent); background: color-mix(in oklab, var(--kashi-indigo) 50%, transparent); }
 .guide-jump-chip span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .guide-jump-chip:hover { border-color: var(--kashi-marigold); color: var(--kashi-white); }
+/* Blog "Kashi A to Z" letter strip: a link per letter with a post, dimmed letters without one. */
+.blog-letters { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.blog-letter { display: inline-flex; align-items: center; justify-content: center; min-width: 2.75rem; min-height: 2.75rem; border-radius: 0.6rem; border: 1px solid color-mix(in oklab, var(--kashi-diya) 45%, transparent); font-family: var(--font-display, serif); font-size: 1.05rem; color: var(--kashi-diya); }
+.blog-letter:hover, .blog-letter[aria-current="page"] { border-color: var(--kashi-marigold); background: color-mix(in oklab, var(--kashi-saffron) 18%, transparent); color: var(--kashi-white); }
+.blog-letter:focus-visible { outline: 2px solid var(--kashi-diya); outline-offset: 2px; }
+.blog-letter.is-empty { border-color: color-mix(in oklab, var(--kashi-ash) 14%, transparent); color: color-mix(in oklab, var(--kashi-ash) 35%, transparent); }
 .guide-card { padding: 1.25rem; border-radius: var(--radius-kashi); border: 1px solid color-mix(in oklab, var(--kashi-rudraksha) 60%, transparent); background: color-mix(in oklab, var(--kashi-indigo) 35%, transparent); }
 @media (min-width: 640px) { .guide-card { padding: 1.5rem 1.75rem; } }
 .guide-card-icon { display: grid; place-items: center; flex: none; width: 2.25rem; height: 2.25rem; margin-top: 0.1rem; border-radius: 999px; color: var(--kashi-diya); border: 1px solid color-mix(in oklab, var(--kashi-diya) 35%, transparent); }

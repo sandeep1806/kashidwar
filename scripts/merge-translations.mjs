@@ -33,7 +33,8 @@ for (const L of readdirSync(TR).filter((d) => (!only.length || only.includes(d))
     for (const k of Object.keys(src)) if (!out[k] || !String(out[k]).trim()) { missing++; }
     if (f.startsWith("out-guide-")) {
       const slug = f.slice("out-guide-".length, -5);
-      const g = J(`content/guides/${slug}.json`);
+      // A guide (content/guides) or a blog post (content/blog): both translate into content/guides/i18n.
+      const g = J(existsSync(`${ROOT}/content/guides/${slug}.json`) ? `content/guides/${slug}.json` : `content/blog/${slug}.json`);
       const t = { title: out.title, description: out.description, lead: out.lead, facts: (g.facts ?? []).map((_, i) => ({ label: out[`facts|${i}|label`], value: out[`facts|${i}|value`] })), sections: g.sections.map((s, i) => ({ heading: out[`sections|${i}|heading`], body: s.body_en.map((_, j) => out[`sections|${i}|body|${j}`]), ...(s.list_en?.length ? { list: s.list_en.map((_, j) => out[`sections|${i}|list|${j}`]) } : {}) })), faq: g.faq.map((_, i) => ({ q: out[`faq|${i}|q`], a: out[`faq|${i}|a`] })) };
       gtr[slug] = t; n += Object.keys(out).length; continue;
     }

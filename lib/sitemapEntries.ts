@@ -1,7 +1,7 @@
 import photos from "@/content/photos.json";
 import editorial from "@/content/editorial.json";
 import privacy from "@/content/privacy.json";
-import { guidePhoto, guides } from "@/lib/guides";
+import { guidePhoto, guides, posts } from "@/lib/guides";
 import { places } from "@/lib/content";
 import { SLUGS, type Kind } from "@/lib/pages";
 
@@ -54,6 +54,8 @@ export function sitemapPages(): SitemapPage[] {
   const guidePages: SitemapPage[] = [
     { path: "/guides", priority: 0.8, changeFrequency: "weekly", photoKeys: [] },
     ...guides.map((g) => ({ path: `/guides/${g.slug}`, priority: 0.8, changeFrequency: "weekly" as const, photoKeys: photoKey(g), lastModified: g.updated })),
+    { path: "/blog", priority: 0.7, changeFrequency: "weekly", photoKeys: [], lastModified: posts[0]?.published },
+    ...posts.map((g) => ({ path: `/blog/${g.slug}`, priority: 0.7, changeFrequency: "monthly" as const, photoKeys: photoKey(g), lastModified: g.updated })),
   ];
   return [
     home,

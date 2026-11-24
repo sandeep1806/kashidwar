@@ -1,0 +1,410 @@
+import { Fragment } from "react";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { LinkCards, type LinkCard } from "@/components/pages/Blocks";
+import LdJson from "@/components/pages/LdJson";
+import FactStrip from "@/components/pages/FactStrip";
+import PageShell from "@/components/pages/PageShell";
+import EnglishNote from "@/components/ui/EnglishNote";
+import PromoSlot from "@/components/ui/PromoSlot";
+import Icon, { type IconName } from "@/components/ui/Icon";
+import { festivals, itineraries, places, projects } from "@/lib/content";
+import { articleBySlug, articlePath, eventStatus, guidePhoto, localizeGuide, posts, type Guide } from "@/lib/guides";
+import { guideTranslations } from "@/lib/guideTranslations";
+import { LOCALES, type Locale } from "@/lib/i18n/locales";
+import { absolute, alternatesFor, breadcrumbLd, itinerarySlug, ogImage, pageUrl } from "@/lib/pages";
+import { getPhoto } from "@/lib/photos";
+import { AUTHOR_NAME, BRAND, SITE_URL } from "@/lib/site";
+import { displayName } from "@/lib/contentTypes";
+
+const nameOf = (l: Locale, x: { name_en: string; name_hi: string; names?: Record<string, string> }) => { const n = displayName(l, x); return { name: n.primary, secondary: n.secondary }; };
+
+export type ArticleKind = "guides" | "blog";
+
+/** Metadata of a guide or a blog post page. */
+export async function articleMetadata(g: Guide, locale: string, kind: ArticleKind): Promise<Metadata> {
+  const loc = locale as Locale;
+  const l = localizeGuide(g, loc, await guideTranslations(loc));
+  const photo = guidePhoto(g, loc);
+  const image = photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`;
+  const path = `/${kind}/${g.slug}`;
+  return {
+    title: l.title,
+    description: l.description,
+    alternates: alternatesFor(locale, path),
+    openGraph: { type: "article", title: l.title, description: l.description, url: `/${locale}${path}`, publishedTime: g.published, modifiedTime: g.updated, images: [ogImage(photo, locale, l.title)] },
+    twitter: { card: "summary_large_image", title: l.title, description: l.description, images: [image] },
+  };
+}
+
+const ICONS = new Set<string>(["clock", "calendar", "ticket", "hourglass", "people", "camera", "camera-off", "dress", "walk", "train", "plane", "car", "pin", "sunrise", "leaf", "boat", "info", "tip", "shield", "photos"]);
+const asIcon = (name: string): IconName => (ICONS.has(name) ? (name as IconName) : "info");
+
+/** An icon for a guide section, from the words in its id. */
+function sectionIcon(id: string): IconName {
+  const rules: [RegExp, IconName][] = [
+    [/price|fare|cost|ticket|budget|save/, "ticket"],
+    [/boat|cruise|river/, "boat"],
+    [/month|date|festival|day-|calendar|special/, "calendar"],
+    [/timing|hour|aarti|night|morning|evening|sunrise|mangala|sapta|status/, "clock"],
+    [/board|where|route|ghat|station|distance|getting|connection|nearby|map|gate/, "pin"],
+    [/rule|safety|etiquette|tout|crowd|cremation|practical|gi|real|fog/, "shield"],
+    [/food|eat/, "leaf"],
+    [/stay|hotel/, "walk"],
+    [/book|on-the-day|carry/, "tip"],
+    [/winter|summer|monsoon|weather/, "sunrise"],
+    [/lounge|flight|airport/, "plane"],
+  ];
+  return rules.find(([re]) => re.test(id))?.[1] ?? "info";
+}
+
+/** Related pages as link cards, in the order places, festivals, projects, itineraries. */
+function relatedCards(g: Guide, loc: Locale): LinkCard[] {
+  const out: LinkCard[] = [];
+  for (const id of g.related.places ?? []) {
+    const p = places.find((x) => x.id === id);
+    if (p) out.push({ href: pageUrl(loc, "places", id), ...nameOf(loc, p), photo: getPhoto(`places/${id}`, loc), faith: p.faith[0] ?? "secular", type: p.type });
+  }
+  for (const id of g.related.festivals ?? []) {
+    const f = festivals.find((x) => x.id === id);
+    if (f) out.push({ href: pageUrl(loc, "festivals", id), ...nameOf(loc, f), photo: getPhoto(`festivals/${id}`, loc), faith: f.faith[0] ?? "secular" });
+  }
+  for (const id of g.related.projects ?? []) {
+    const p = projects.find((x) => x.id === id);
+    if (p) out.push({ href: pageUrl(loc, "projects", id), ...nameOf(loc, p), photo: getPhoto(`projects/${id}`, loc), faith: "secular" });
+  }
+  for (const slug of g.related.itineraries ?? []) {
+    const it = itineraries.find((x) => itinerarySlug(x) === slug);
+    if (it) out.push({ href: pageUrl(loc, "itineraries", slug), ...nameOf(loc, { name_en: it.title_en, name_hi: it.title_hi, names: it.titles }), photo: null, faith: "secular" });
+  }
+  return out;
+}
+
+/** Linked guides (`related.guides`) as link cards, in the listed order; unknown slugs are skipped. */
+async function guideCards(g: Guide, loc: Locale): Promise<LinkCard[]> {
+  const list = (g.related.guides ?? []).map((slug) => articleBySlug(slug)).filter((x) => !!x);
+  if (!list.length) return [];
+  const tr = await guideTranslations(loc);
+  return list.map((o) => {
+    const l = localizeGuide(o, loc, tr);
+    return { href: `/${loc}${articlePath(o.slug)}`, name: l.title, secondary: l.lang === "hi" ? o.title_en : o.title_hi, photo: guidePhoto(o, loc), faith: "secular" as const };
+  });
+}
+
+/** "Kashi A to Z" letters of the blog: a link for each letter that has a post, else a dimmed letter. */
+export function BlogLetters({ locale, label, current }: { locale: string; label: string; current?: string }) {
+  const byLetter = new Map<string, string>();
+  for (const p of posts.slice().reverse()) if (p.letter) byLetter.set(p.letter.toUpperCase(), p.slug);
+  return (
+    <nav aria-label={label} className="blog-letters">
+      {"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((c) => {
+        const slug = byLetter.get(c);
+        if (!slug) return <span key={c} className="blog-letter is-empty" aria-hidden="true">{c}</span>;
+        return (
+          <a key={c} href={`/${locale}/blog/${slug}`} className="blog-letter" aria-current={c === current ? "page" : undefined}>
+            {c}
+          </a>
+        );
+      })}
+    </nav>
+  );
+}
+
+/**
+ * A guide or a blog post: breadcrumb, bilingual H1 with byline and dates, lead, sections
+ * (each with its cited sources and an "unconfirmed" flag where needed), FAQ,
+ * all sources, and related pages. Article (BlogPosting for posts) + FAQPage + BreadcrumbList JSON-LD.
+ */
+export default async function ArticlePage({ g, locale, kind }: { g: Guide; locale: string; kind: ArticleKind }) {
+  const loc = locale as Locale;
+  const slug = g.slug;
+  const [t, tp, common, tb] = await Promise.all([
+    getTranslations({ locale, namespace: "guides" }),
+    getTranslations({ locale, namespace: "page" }),
+    getTranslations({ locale, namespace: "common" }),
+    getTranslations({ locale, namespace: "blog" }),
+  ]);
+  const isPost = kind === "blog";
+  const sectionTitle = isPost ? tb("title") : t("title");
+  const l = localizeGuide(g, loc, await guideTranslations(loc));
+  const photo = guidePhoto(g, loc);
+  const path = `/${kind}/${slug}`;
+  const home = `/${locale}`;
+  const crumbs = [
+    { name: tp("home"), href: home },
+    { name: sectionTitle, href: `${home}/${kind}` },
+    { name: l.title, href: `${home}${path}` },
+  ];
+  const fmt = new Intl.DateTimeFormat(LOCALES[loc].bcp47, { dateStyle: "long", timeZone: "UTC" });
+  const date = (d: string) => fmt.format(new Date(d + "T00:00:00Z"));
+  const url = absolute(`${home}${path}`);
+  const ld: object[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": isPost ? "BlogPosting" : "Article",
+      "@id": `${url}#article`,
+      headline: l.title.slice(0, 110),
+      description: l.description,
+      image: [absolute(photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`)],
+      datePublished: g.published,
+      dateModified: g.updated,
+      inLanguage: LOCALES[l.lang as Locale]?.bcp47 ?? "en-IN",
+      mainEntityOfPage: url,
+      author: { "@type": "Person", name: AUTHOR_NAME, url: absolute(`${home}/about#who`), worksFor: { "@id": `${SITE_URL}/#organization` } },
+      publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: BRAND, logo: { "@type": "ImageObject", url: `${SITE_URL}/icon-512.png` } },
+      citation: g.sources.map((s) => s.url),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": `${url}#faq`,
+      mainEntity: l.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+    },
+    breadcrumbLd(loc, crumbs.map((c) => ({ name: c.name, path: c.href }))),
+  ];
+  const related = relatedCards(g, loc);
+  const linkedGuides = await guideCards(g, loc);
+
+  // A guide about a dated event: status banner, and Event JSON-LD until it is over.
+  const ev = g.event;
+  const status = ev ? eventStatus(ev) : null;
+  let eventLine = "";
+  if (ev && status) {
+    const bcp = LOCALES[loc].bcp47;
+    const dayMonth = new Intl.DateTimeFormat(bcp, { day: "numeric", month: "long", timeZone: "UTC" });
+    const days = ev.days?.length ? ev.days : ev.startDate === ev.endDate ? [ev.startDate] : [ev.startDate, ev.endDate];
+    const parts = days.map((d, i) => (i === days.length - 1 ? date(d) : dayMonth.format(new Date(d + "T00:00:00Z"))));
+    const dates = new Intl.ListFormat(bcp, { type: ev.days?.length ? "conjunction" : "unit", style: "long" }).format(parts);
+    eventLine = t(status === "upcoming" ? "eventUpcoming" : status === "on" ? "eventOn" : "eventPast", { dates: ev.days?.length ? dates : parts.join(" – ") });
+    if (status !== "past") {
+      const eventName = locale === "hi" ? ev.name_hi : ev.name_en;
+      ld.unshift({
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "@id": `${url}#event`,
+        name: eventName,
+        description: l.description,
+        url,
+        inLanguage: LOCALES[loc].bcp47,
+        startDate: ev.startDate,
+        endDate: ev.endDate,
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        isAccessibleForFree: !!ev.free,
+        ...(ev.organizer ? { organizer: { "@type": "Organization", name: ev.organizer.name, url: ev.organizer.url } } : {}),
+        ...(ev.performers?.length ? { performer: ev.performers.map((name) => ({ "@type": "PerformingGroup", name })) } : {}),
+        // A free event: one zero-price offer (watching costs nothing; no tickets are sold).
+        ...(ev.free ? { offers: { "@type": "Offer", price: 0, priceCurrency: "INR", availability: "https://schema.org/InStock", url, validFrom: g.published } } : {}),
+        image: [absolute(photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`)],
+        location: {
+          "@type": "Place",
+          name: locale === "hi" ? ev.location_hi : ev.location_en,
+          address: { "@type": "PostalAddress", streetAddress: ev.location_en, addressLocality: "Varanasi", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
+          geo: { "@type": "GeoCoordinates", latitude: ev.lat, longitude: ev.lng },
+        },
+      });
+    }
+  }
+
+  return (
+    <>
+      <LdJson data={ld} />
+      <PageShell
+        variant="visual"
+        longTitle
+        locale={loc}
+        path={path}
+        crumbs={crumbs}
+        faith="secular"
+        chips={
+          <span className="inline-flex items-center gap-1 rounded-full border border-kashi-diya/40 bg-kashi-night/60 px-2 py-0.5 text-kashi-diya">
+            <Icon name="tip" className="h-3.5 w-3.5" />
+            {sectionTitle}
+          </span>
+        }
+        title={l.title}
+        secondary={locale === "en" ? g.title_hi : g.title_en}
+        subtitle={
+          <>
+            {eventLine && (
+              <p
+                className={`mb-3 inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm ${status === "past" ? "border-kashi-ash/30 text-kashi-ash/85" : "border-kashi-saffron/60 bg-kashi-saffron/10 text-kashi-white"}`}
+              >
+                <Icon name="calendar" className="h-4 w-4 shrink-0 text-kashi-diya" />
+                <span>{eventLine}</span>
+              </p>
+            )}
+            <p className="text-sm text-kashi-ash/85">
+              <a href={`${home}/about#who`} rel="author" className="underline decoration-kashi-diya/30 underline-offset-4 hover:text-kashi-white">
+                {t("by", { brand: t("author") })}
+              </a>{" "}
+              · <time dateTime={g.updated}>{t("updated", { date: date(g.updated) })}</time>
+            </p>
+          </>
+        }
+        strip={l.facts.length ? <FactStrip className="fact-strip-3" items={l.facts.map((f) => ({ icon: asIcon(f.icon), label: f.label, value: f.value }))} /> : undefined}
+        lead={
+          <div lang={l.lang}>
+            <p>{l.lead}</p>
+            {l.cta && (
+              <a
+                href={l.cta.url}
+                target="_blank"
+                rel="noopener"
+                className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-full border border-kashi-saffron/60 bg-kashi-saffron/15 px-4 py-2 text-kashi-white hover:bg-kashi-saffron/25 focus-visible:outline-2 focus-visible:outline-kashi-diya"
+              >
+                <Icon name="ticket" className="h-4 w-4 shrink-0 text-kashi-diya" />
+                <span>{l.cta.label}</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            )}
+            <nav aria-label={t("contents")} className="guide-jump mt-6">
+              {l.sections.map((s) => (
+                <a key={s.id} href={`#${s.id}`} className="guide-jump-chip">
+                  <Icon name={sectionIcon(s.id)} className="h-4 w-4 shrink-0 text-kashi-diya" />
+                  <span>{s.heading}</span>
+                </a>
+              ))}
+              <a href="#faq" className="guide-jump-chip">
+                <Icon name="info" className="h-4 w-4 shrink-0 text-kashi-diya" />
+                <span>{t("faq")}</span>
+              </a>
+            </nav>
+          </div>
+        }
+        photo={photo}
+        after={
+          <>
+            {isPost && (
+              <section className="container-kashi mt-16" aria-labelledby="blog-series">
+                <h2 id="blog-series" className="text-xs uppercase tracking-[0.18em] text-kashi-diya">{tb("series")}</h2>
+                <div className="mt-4"><BlogLetters locale={locale} label={tb("series")} current={g.letter?.toUpperCase()} /></div>
+                <p className="mt-4"><a href={`${home}/blog`} className="text-sm text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">{tb("all")} →</a></p>
+              </section>
+            )}
+            {linkedGuides.length > 0 && <LinkCards title={t("relatedGuides")} items={linkedGuides} />}
+            {related.length > 0 && <LinkCards title={isPost ? tb("visit") : t("related")} items={related} />}
+          </>
+        }
+      >
+        <div className="space-y-8" lang={l.lang}>
+          {!l.translated && <EnglishNote text={common("englishNote")} />}
+          {l.sections.map((s) => {
+            const [first, ...rest] = s.body;
+            return (
+              <Fragment key={s.id}>
+                <section id={s.id} className="guide-card scroll-mt-24">
+                  <h2 className="flex items-start gap-3 text-h3 text-kashi-white">
+                    <span className="guide-card-icon"><Icon name={sectionIcon(s.id)} className="h-5 w-5" /></span>
+                    <span>{s.heading}</span>
+                  </h2>
+                  {s.unconfirmed && (
+                    <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-kashi-marigold/50 px-3 py-1 text-xs text-kashi-marigold">
+                      <Icon name="info" className="h-3.5 w-3.5" />
+                      {t("unconfirmed")}
+                    </p>
+                  )}
+                  {first && <p className="mt-4 leading-relaxed text-kashi-ash/90">{first}</p>}
+                  {s.route && s.list.length > 0 && (
+                    <ol className="milestones mt-5">
+                      {s.list.map((li, i) => (
+                        <li key={li.slice(0, 40)} className={s.route?.pass?.includes(i) ? "is-pending" : ""}>
+                          <span className="milestone-dot" aria-hidden="true" />
+                          <span>{li}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  )}
+                  {!s.route && s.list.length > 0 && (
+                    <ul className={`guide-list mt-5 ${s.list.length > 4 ? "sm:grid-cols-2" : ""}`}>
+                      {s.list.map((li) => (
+                        <li key={li.slice(0, 40)}>
+                          <Icon name="chevron" className="mt-1 h-4 w-4 shrink-0 text-kashi-diya" />
+                          <span>{li}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {rest.length > 0 && (
+                    <details className="story-details mt-4">
+                      <summary>
+                        <Icon name="chevron" className="icon-chevron h-4 w-4" />
+                        {tp("readMore")}
+                      </summary>
+                      <div className="mt-3 space-y-4 leading-relaxed text-kashi-ash/90">
+                        {rest.map((para) => (
+                          <p key={para.slice(0, 40)}>{para}</p>
+                        ))}
+                      </div>
+                    </details>
+                  )}
+                  {s.sources.length > 0 && (
+                    <p className="mt-4 text-xs text-kashi-ash/60">
+                      {t("sources")}:{" "}
+                      {s.sources.map((src, i) => (
+                        <span key={src.url + i}>
+                          {i > 0 && " · "}
+                          <a href={`#source-${src.n}`} className="underline decoration-kashi-diya/40 underline-offset-2 hover:text-kashi-diya">[{src.n}]</a>
+                        </span>
+                      ))}
+                    </p>
+                  )}
+                </section>
+                {s.promo && <PromoSlot primary />}
+              </Fragment>
+            );
+          })}
+          <section id="faq" className="scroll-mt-24">
+            <h2 className="flex items-center gap-3 text-h3 text-kashi-white">
+              <span className="guide-card-icon"><Icon name="info" className="h-5 w-5" /></span>
+              {t("faq")}
+            </h2>
+            <div className="mt-4 divide-y divide-kashi-rudraksha/50 rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40">
+              {l.faq.map((f) => (
+                <details key={f.q} className="group px-5">
+                  <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-3 text-kashi-white">
+                    {f.q}
+                    <span aria-hidden="true" className="text-kashi-diya transition-transform group-open:rotate-45">+</span>
+                  </summary>
+                  <p className="pb-4 text-kashi-ash/90">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        </div>
+        <aside className="space-y-8 lg:sticky lg:top-24 lg:self-start">
+          <nav aria-label={t("contents")} className="hidden rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-5 lg:block">
+            <p className="text-xs uppercase tracking-[0.18em] text-kashi-diya">{t("contents")}</p>
+            <ol className="mt-3 space-y-1 text-sm" lang={l.lang}>
+              {l.sections.map((s) => (
+                <li key={s.id}>
+                  <a href={`#${s.id}`} className="inline-flex min-h-11 items-center gap-2 text-kashi-ash/85 hover:text-kashi-white">
+                    <Icon name={sectionIcon(s.id)} className="h-4 w-4 shrink-0 text-kashi-diya/80" />
+                    {s.heading}
+                  </a>
+                </li>
+              ))}
+              <li>
+                <a href="#faq" className="inline-flex min-h-11 items-center gap-2 text-kashi-ash/85 hover:text-kashi-white">
+                  <Icon name="info" className="h-4 w-4 shrink-0 text-kashi-diya/80" />
+                  {t("faq")}
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <section aria-labelledby="sources-title">
+            <h2 id="sources-title" className="text-xs uppercase tracking-[0.18em] text-kashi-diya">{t("sources")}</h2>
+            <ol className="mt-3 space-y-2 text-xs text-kashi-ash/70">
+              {g.sources.map((s, i) => (
+                <li key={s.url} id={`source-${i + 1}`} className="scroll-mt-24">
+                  [{i + 1}]{" "}
+                  <a href={s.url} target="_blank" rel="noopener noreferrer" className="underline decoration-kashi-diya/40 underline-offset-2 hover:text-kashi-diya">{s.title}</a>
+                </li>
+              ))}
+            </ol>
+          </section>
+        </aside>
+      </PageShell>
+    </>
+  );
+}

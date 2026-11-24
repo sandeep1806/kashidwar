@@ -1,7 +1,7 @@
 // Server-side only: imports every guide. Guides are researched articles in
 // English and Hindi (content/guides/<slug>.json); other locales show English.
 import { BUILD_DATE } from "@/lib/festivalDates";
-import { guideFiles } from "@/lib/guides.generated";
+import { guideFiles, postFiles } from "@/lib/guides.generated";
 import type { Locale } from "@/lib/i18n/locales";
 import type { Kind } from "@/lib/pages";
 import { getPhoto } from "@/lib/photos";
@@ -61,13 +61,30 @@ export interface Guide {
   /** `guides`: other guide slugs, shown as their own "Guides" cards (one-way; list the link on both guides for a pair) */
   related: Partial<Record<Kind, string[]>> & { guides?: string[] };
   notes?: string;
+  /** Blog posts only: the "Kashi A to Z" letter the post is filed under */
+  letter?: string;
+  /** Blog posts only: the place or festival whose history the post tells (gets a "Full history" link) */
+  topic?: { kind: "places" | "festivals"; id: string };
 }
 
 /**
  * Every guide in content/guides/*.json (imported by the generated lib/guides.generated.ts,
  * so adding a guide needs no code change), newest first; ties by slug.
  */
-export const guides: Guide[] = (guideFiles as Guide[]).slice().sort((a, b) => b.published.localeCompare(a.published) || a.slug.localeCompare(b.slug));
+const newestFirst = (a: Guide, b: Guide) => b.published.localeCompare(a.published) || a.slug.localeCompare(b.slug);
+export const guides: Guide[] = (guideFiles as Guide[]).slice().sort(newestFirst);
+
+/**
+ * Blog posts ("Kashi A to Z": the history of the ghats, temples and festivals), in
+ * content/blog/*.json. Same shape and translations as a guide; served at /blog/<slug>.
+ */
+export const posts: Guide[] = (postFiles as Guide[]).slice().sort(newestFirst);
+const postSlugs = new Set(posts.map((p) => p.slug));
+export const postBySlug = (slug: string) => posts.find((p) => p.slug === slug);
+/** Site path of a guide or a blog post (without the locale). */
+export const articlePath = (slug: string) => (postSlugs.has(slug) ? `/blog/${slug}` : `/guides/${slug}`);
+/** Blog posts that tell the history of this place or festival. */
+export const postsFor = (kind: Kind, id: string) => posts.filter((p) => p.topic?.kind === kind && p.topic.id === id);
 
 /** A dated event a guide is about (an air show, a festival night): drives the status banner and Event JSON-LD. */
 export interface GuideEvent {
@@ -98,6 +115,8 @@ export function eventStatus(e: Pick<GuideEvent, "startDate" | "endDate">, today:
 }
 
 export const guideBySlug = (slug: string) => guides.find((g) => g.slug === slug);
+/** A guide or a blog post. */
+export const articleBySlug = (slug: string) => guideBySlug(slug) ?? postBySlug(slug);
 
 /** A guide translated into a regional locale (content/guides/i18n/<locale>.json, keyed by slug). */
 export interface GuideTranslation {

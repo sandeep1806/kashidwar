@@ -1,0 +1,403 @@
+{
+  "_note": "Queue for the weekly blog run (scripts/content-review.sh blog; brief: .claude/content-review.md section 6). The run takes the first 'todo' entry whose notBefore has passed, writes content/blog/<slug>.json in 13 languages, and marks it done. Festival stories carry notBefore so they publish 3-5 weeks ahead. Letters index the 'Kashi A to Z' strip and may repeat.",
+  "entries": [
+    {
+      "letter": "M",
+      "title": "Manikarnika Ghat history and story",
+      "topic": {
+        "kind": "places",
+        "id": "manikarnika-ghat"
+      },
+      "queries": [
+        "manikarnika ghat history",
+        "manikarnika ghat story",
+        "manikarnika ghat history in hindi",
+        "मणिकर्णिका घाट का इतिहास"
+      ],
+      "faith": "hindu",
+      "status": "done",
+      "slug": "manikarnika-ghat-history",
+      "published": "2026-11-24"
+    },
+    {
+      "letter": "D",
+      "title": "Dashashwamedh Ghat history and story",
+      "topic": {
+        "kind": "places",
+        "id": "dashashwamedh-ghat"
+      },
+      "queries": [
+        "dashashwamedh ghat history",
+        "dashashwamedh ghat story",
+        "dashashwamedh ghat name history",
+        "दशाश्वमेध घाट का इतिहास"
+      ],
+      "faith": "hindu",
+      "status": "todo"
+    },
+    {
+      "letter": "E",
+      "title": "Eighty-four ghats of Varanasi: name list, map and history",
+      "queries": [
+        "84 ghats of varanasi",
+        "84 ghats of varanasi name list",
+        "varanasi ghats history",
+        "वाराणसी के 84 घाट"
+      ],
+      "faith": "all",
+      "status": "todo"
+    },
+    {
+      "letter": "K",
+      "title": "Kashi Vishwanath temple history",
+      "topic": {
+        "kind": "places",
+        "id": "kashi-vishwanath"
+      },
+      "queries": [
+        "kashi vishwanath history",
+        "kashi vishwanath temple history in hindi",
+        "kashi vishwanath kisne banwaya",
+        "काशी विश्वनाथ मंदिर का इतिहास"
+      ],
+      "faith": "hindu",
+      "status": "todo"
+    },
+    {
+      "letter": "S",
+      "title": "St Mary's Church Varanasi: history",
+      "topic": {
+        "kind": "places",
+        "id": "st-marys-church"
+      },
+      "queries": [
+        "st marys church varanasi",
+        "oldest church in varanasi",
+        "christmas in varanasi church"
+      ],
+      "faith": "christian",
+      "status": "todo"
+    },
+    {
+      "letter": "B",
+      "title": "Why Varanasi is called Kashi and Banaras: history of the names",
+      "queries": [
+        "why varanasi is called kashi",
+        "varanasi ka itihas",
+        "history of varanasi",
+        "kashi ki kahani"
+      ],
+      "faith": "all",
+      "status": "todo"
+    },
+    {
+      "letter": "H",
+      "title": "Harishchandra Ghat history and story",
+      "topic": {
+        "kind": "places",
+        "id": "harishchandra-ghat"
+      },
+      "queries": [
+        "harishchandra ghat history",
+        "harishchandra ghat story",
+        "raja harishchandra story kashi"
+      ],
+      "faith": "hindu",
+      "status": "todo"
+    },
+    {
+      "letter": "J",
+      "title": "Jain Kashi: Bhelupur, birthplace of Parshvanath",
+      "topic": {
+        "kind": "places",
+        "id": "bhelupur-jain"
+      },
+      "queries": [
+        "parshvanath birthplace varanasi",
+        "bhelupur jain temple history",
+        "jain temple varanasi"
+      ],
+      "faith": "jain",
+      "status": "todo"
+    },
+    {
+      "letter": "A",
+      "title": "Assi Ghat history and story",
+      "topic": {
+        "kind": "places",
+        "id": "assi-ghat"
+      },
+      "queries": [
+        "assi ghat history",
+        "assi ghat story",
+        "assi ghat name history",
+        "अस्सी घाट का इतिहास"
+      ],
+      "faith": "hindu",
+      "status": "todo"
+    },
+    {
+      "letter": "R",
+      "title": "Guru Ravidas and Seer Govardhanpur: history",
+      "topic": {
+        "kind": "places",
+        "id": "ravidas-janmasthan"
+      },
+      "queries": [
+        "ravidas janmasthan varanasi history",
+        "seer govardhanpur history",
+        "guru ravidas varanasi"
+      ],
+      "faith": "ravidassia",
+      "notBefore": "2027-01-14",
+      "status": "todo"
+    },
+    {
+      "letter": "S",
+      "title": "Shiva and Kashi: the story of the city that rests on Shiva's trident",
+      "topic": {
+        "kind": "festivals",
+        "id": "maha-shivratri"
+      },
+      "queries": [
+        "kashi shiva trishul story",
+        "why kashi is called city of shiva",
+        "kashi ki kahani",
+        "maha shivratri varanasi story"
+      ],
+      "faith": "hindu",
+      "notBefore": "2027-01-28",
+      "status": "todo"
+    },
+    {
+      "letter": "G",
+      "title": "Sikh Kashi: Gurudwara Guru Ka Bagh and Guru Nanak's visit",
+      "topic": {
+        "kind": "places",
+        "id": "gurudwara-guru-ka-bagh"
+      },
+      "queries": [
+        "guru ka bagh gurudwara varanasi history",
+        "guru nanak varanasi visit",
+        "gurudwara in varanasi"
+      ],
+      "faith": "sikh",
+      "status": "todo"
+    },
+    {
+      "letter": "M",
+      "title": "Masan Holi story: the ash Holi of Manikarnika",
+      "topic": {
+        "kind": "festivals",
+        "id": "rangbhari-masaan-holi"
+      },
+      "queries": [
+        "masan holi story",
+        "masan holi kyu manate hai",
+        "masane ki holi history"
+      ],
+      "faith": "hindu",
+      "notBefore": "2027-02-11",
+      "status": "todo"
+    },
+    {
+      "letter": "P",
+      "title": "Panchganga Ghat history",
+      "topic": {
+        "kind": "places",
+        "id": "panchganga-ghat"
+      },
+      "queries": [
+        "panchganga ghat history",
+        "panchganga ghat varanasi",
+        "five rivers panchganga ghat"
+      ],
+      "faith": "hindu",
+      "status": "todo"
+    },
+    {
+      "letter": "T",
+      "title": "Tulsi Ghat and Tulsidas: history",
+      "topic": {
+        "kind": "places",
+        "id": "tulsi-ghat"
+      },
+      "queries": [
+        "tulsi ghat history",
+        "tulsidas varanasi",
+        "ramcharitmanas written where"
+      ],
+      "faith": "hindu",
+      "status": "todo"
+    },
+    {
+      "letter": "C",
+      "title": "Chet Singh Ghat history (and the facts behind the 'horror story')",
+      "topic": {
+        "kind": "places",
+        "id": "chet-singh-ghat"
+      },
+      "queries": [
+        "chet singh ghat history",
+        "chet singh ghat story",
+        "chet singh ghat horror story"
+      ],
+      "faith": "hindu",
+      "status": "todo"
+    },
+    {
+      "letter": "S",
+      "title": "Sarnath history: where the Buddha first taught",
+      "topic": {
+        "kind": "places",
+        "id": "sarnath"
+      },
+      "queries": [
+        "sarnath history",
+        "sarnath history in hindi",
+        "dhamek stupa history"
+      ],
+      "faith": "buddhist",
+      "notBefore": "2027-04-08",
+      "status": "todo"
+    },
+    {
+      "letter": "G",
+      "title": "Ganga Aarti history: how the Dashashwamedh aarti began",
+      "topic": {
+        "kind": "places",
+        "id": "dashashwamedh-ghat"
+      },
+      "queries": [
+        "ganga aarti history",
+        "ganga aarti kab shuru hui",
+        "dashashwamedh ghat aarti history"
+      ],
+      "faith": "hindu",
+      "status": "todo"
+    },
+    {
+      "letter": "K",
+      "title": "Kabir and Lahartara: history",
+      "topic": {
+        "kind": "places",
+        "id": "lahartara-kabir"
+      },
+      "queries": [
+        "kabir lahartara history",
+        "kabir birthplace varanasi",
+        "kabir math varanasi"
+      ],
+      "faith": "bhakti",
+      "notBefore": "2027-05-13",
+      "status": "todo"
+    },
+    {
+      "letter": "K",
+      "title": "Kedar Ghat history",
+      "topic": {
+        "kind": "places",
+        "id": "kedar-ghat"
+      },
+      "queries": [
+        "kedar ghat history",
+        "kedar ghat varanasi",
+        "kedareshwar temple kashi"
+      ],
+      "faith": "hindu",
+      "status": "todo"
+    },
+    {
+      "letter": "L",
+      "title": "Lalita Ghat and the Nepali Mandir: history",
+      "topic": {
+        "kind": "places",
+        "id": "nepali-mandir"
+      },
+      "queries": [
+        "nepali mandir varanasi history",
+        "lalita ghat history",
+        "kathwala mandir varanasi"
+      ],
+      "faith": "hindu",
+      "status": "todo"
+    },
+    {
+      "letter": "J",
+      "title": "Jantar Mantar at Man Mandir: history",
+      "topic": {
+        "kind": "places",
+        "id": "jantar-mantar-varanasi"
+      },
+      "queries": [
+        "jantar mantar varanasi history",
+        "man mandir ghat observatory",
+        "sawai jai singh varanasi"
+      ],
+      "faith": "all",
+      "status": "todo"
+    },
+    {
+      "letter": "R",
+      "title": "Ramnagar Ramlila history",
+      "topic": {
+        "kind": "festivals",
+        "id": "ramnagar-ramlila"
+      },
+      "queries": [
+        "ramnagar ramlila history",
+        "ramnagar ramlila story",
+        "oldest ramlila"
+      ],
+      "faith": "hindu",
+      "notBefore": "2027-08-12",
+      "status": "todo"
+    },
+    {
+      "letter": "B",
+      "title": "Bharat Milap of Nati Imli: history",
+      "topic": {
+        "kind": "festivals",
+        "id": "bharat-milap"
+      },
+      "queries": [
+        "nati imli bharat milap history",
+        "bharat milap varanasi"
+      ],
+      "faith": "hindu",
+      "notBefore": "2027-09-02",
+      "status": "todo"
+    },
+    {
+      "letter": "N",
+      "title": "Nag Nathaiya at Tulsi Ghat: history",
+      "topic": {
+        "kind": "festivals",
+        "id": "nag-nathaiya"
+      },
+      "queries": [
+        "nag nathaiya history",
+        "nag nathaiya tulsi ghat"
+      ],
+      "faith": "hindu",
+      "notBefore": "2027-09-30",
+      "status": "todo"
+    },
+    {
+      "letter": "D",
+      "title": "Dev Deepawali story: why the gods light lamps in Kashi",
+      "topic": {
+        "kind": "festivals",
+        "id": "dev-deepawali"
+      },
+      "queries": [
+        "dev deepawali story",
+        "dev deepawali kyu manaya jata hai",
+        "tripurasura story"
+      ],
+      "faith": "hindu",
+      "notBefore": "2027-10-07",
+      "status": "todo"
+    }
+  ]
+}
