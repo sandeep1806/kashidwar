@@ -5319,7 +5319,7 @@
     "lat": 25.3783,
     "lng": 83.0217,
     "coordsVerified": true,
-    "summary": "Around the ruins, Buddhist communities from across Asia keep their own temples, each built in its home tradition; UP Tourism lists more than a dozen, from Thai, Tibetan, Japanese and Chinese to Myanmar, Vietnamese and Sri Lankan. In the grounds of the Thai temple (Wat Thai) stands a Buddha 80 feet (about 24 m) tall, built of 815 stone blocks over 14 years and unveiled in March 2011. The Tibetan temple keeps a Shakyamuni image and rows of prayer wheels; the Japanese temple, Nichigatsuzan Horinji, has its name carved at the gate; the Chinese temple, which guides date to 1939, is built in Chinese style.",
+    "summary": "Around the ruins, Buddhist communities from across Asia keep their own temples, each built in its home tradition; UP Tourism lists more than a dozen, from Thai, Tibetan, Japanese and Chinese to Myanmar, Vietnamese and Sri Lankan. In the grounds of the Thai temple (Wat Thai) stands a Buddha 80 feet (about 24 m) tall, built of 815 stone blocks over 14 years and unveiled in March 2011. The Tibetan temple keeps a Shakyamuni image and rows of prayer wheels; the Japanese temple, Nichigatsuzan Horinji, has its name carved at the gate; the Chinese temple, which guides date to 1939, is built in Chinese style. In July 2026 UNESCO inscribed the adjoining Ancient Buddhist Site of Sarnath — the excavated remains and the Chaukhandi Stupa — as India's 45th World Heritage Site; these international temples stand just outside that protected core.",
     "story": "The standing Buddha's form recalls the great Buddhas of Bamiyan in Afghanistan, destroyed in 2001. The former Thai prime minister Surayud Chulanont unveiled it in the presence of Thai monks, a gift of Thai Buddhists to the place of the first teaching.",
     "bestTime": "Morning, together with the Dhamek Stupa and the museum; Buddha Purnima (April–May), when the monasteries hold their celebrations",
     "image": "/media/places/sarnath-monasteries.jpg",
@@ -5352,6 +5352,16 @@
     },
     "sources": [
       {
+        "title": "News on Air (Government of India) — Ancient Buddhist Site of Sarnath inscribed on UNESCO World Heritage List, India's 45th (25 Jul 2026)",
+        "url": "https://newsonair.gov.in/ancient-buddhist-site-of-sarnath-inscribed-on-unesco-world-heritage-list/",
+        "accessed": "2026-11-25"
+      },
+      {
+        "title": "UNESCO World Heritage Committee — Decision 48 COM 8B.17, Ancient Buddhist Site of Sarnath (India)",
+        "url": "https://whc.unesco.org/en/decisions/9171",
+        "accessed": "2026-11-25"
+      },
+      {
         "title": "DNA India — India's tallest Buddha statue inaugurated in Sarnath (17 Mar 2011): 80 ft, 815 stones, 14 years, unveiled by Surayud Chulanont",
         "url": "https://www.dnaindia.com/india/report-india-s-tallest-buddha-statue-inaugurated-in-sarnath-1521116",
         "accessed": "2026-10-30"
@@ -5374,7 +5384,7 @@
     ],
     "i18n": {
       "hi": {
-        "summary": "खंडहरों के चारों ओर पूरे एशिया के बौद्ध समुदायों के अपने-अपने मंदिर हैं, हर एक अपनी परंपरा की शैली में बना; यूपी पर्यटन की सूची में थाई, तिब्बती, जापानी और चीनी से लेकर म्यांमार, वियतनामी और श्रीलंकाई तक एक दर्जन से अधिक नाम हैं। थाई मंदिर (वाट थाई) के परिसर में 80 फ़ुट (लगभग 24 मीटर) ऊँची बुद्ध प्रतिमा खड़ी है, जो 815 पत्थर-खंडों से 14 वर्षों में बनी और मार्च 2011 में अनावृत हुई। तिब्बती मंदिर में शाक्यमुनि की प्रतिमा और प्रार्थना-चक्रों की कतारें हैं; जापानी मंदिर निचिगात्सुज़ान होरिन्जी का नाम द्वार पर उकेरा है; चीनी मंदिर, जिसे गाइड 1939 का बताते हैं, चीनी शैली में बना है।",
+        "summary": "खंडहरों के चारों ओर पूरे एशिया के बौद्ध समुदायों के अपने-अपने मंदिर हैं, हर एक अपनी परंपरा की शैली में बना; यूपी पर्यटन की सूची में थाई, तिब्बती, जापानी और चीनी से लेकर म्यांमार, वियतनामी और श्रीलंकाई तक एक दर्जन से अधिक नाम हैं। थाई मंदिर (वाट थाई) के परिसर में 80 फ़ुट (लगभग 24 मीटर) ऊँची बुद्ध प्रतिमा खड़ी है, जो 815 पत्थर-खंडों से 14 वर्षों में बनी और मार्च 2011 में अनावृत हुई। तिब्बती मंदिर में शाक्यमुनि की प्रतिमा और प्रार्थना-चक्रों की कतारें हैं; जापानी मंदिर निचिगात्सुज़ान होरिन्जी का नाम द्वार पर उकेरा है; चीनी मंदिर, जिसे गाइड 1939 का बताते हैं, चीनी शैली में बना है। जुलाई 2026 में यूनेस्को ने निकटवर्ती सारनाथ के प्राचीन बौद्ध स्थल — उत्खनित अवशेष और चौखंडी स्तूप — को भारत की 45वीं विश्व धरोहर स्थल घोषित किया; ये अंतरराष्ट्रीय मंदिर उस संरक्षित केंद्र के ठीक बाहर खड़े हैं।",
         "story": "खड़ी बुद्ध प्रतिमा का रूप अफ़ग़ानिस्तान के बामियान बुद्धों की याद दिलाता है, जो 2001 में नष्ट कर दिए गए। थाईलैंड के पूर्व प्रधानमंत्री सुरयुद चुलानोन्त ने थाई भिक्षुओं की उपस्थिति में इसका अनावरण किया — प्रथम उपदेश की भूमि को थाई बौद्धों की भेंट।",
         "bestTime": "सुबह, धमेख स्तूप और संग्रहालय के साथ; बुद्ध पूर्णिमा (अप्रैल-मई), जब विहारों में उत्सव होते हैं",
         "tips": [
