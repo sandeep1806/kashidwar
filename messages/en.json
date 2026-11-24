@@ -27,7 +27,9 @@
     "guidesListTitle": "Varanasi travel guides: timings, prices, boats, darshan & routes",
     "guidesListDesc": "Practical Varanasi guides with sources: Ganga Aarti time, Kashi Vishwanath darshan and aarti, boat ride prices, trip cost, best time to visit, how to reach, Sarnath.",
     "itinerariesTitle": "Varanasi itinerary: 1, 2 and 3 day plans with timings & map",
-    "itinerariesDesc": "How to see Varanasi in 1, 2 or 3 days: hour-by-hour plans from the dawn boat to the evening aarti, with Sarnath, every faith's sites, timings, entry fees and a route map."
+    "itinerariesDesc": "How to see Varanasi in 1, 2 or 3 days: hour-by-hour plans from the dawn boat to the evening aarti, with Sarnath, every faith's sites, timings, entry fees and a route map.",
+    "blogListTitle": "Varanasi history blog: ghats, temples and festivals, A to Z",
+    "blogListDesc": "The history and stories of Varanasi's ghats, temples and festivals, told with sources: Manikarnika, Dashashwamedh, Kashi Vishwanath and more. A new post every week."
   },
   "hero": {
     "title": "Kashi — older than history itself",
@@ -47,7 +49,9 @@
     "aarti": "Aarti",
     "menu": "Sections",
     "top": "Back to top",
-    "sectionsNav": "Page sections"
+    "sectionsNav": "Page sections",
+    "guides": "Guides",
+    "blog": "Blog"
   },
   "common": {
     "skip": "Skip",
@@ -361,7 +365,8 @@
     "contact": "Contact",
     "guides": "Guides",
     "privacy": "Privacy policy",
-    "editorial": "How we make content"
+    "editorial": "How we make content",
+    "blog": "Blog: Kashi A to Z"
   },
   "credits": {
     "title": "Credits",
@@ -527,5 +532,15 @@
     "title": "How we make content",
     "titleSecondary": "हम कंटेंट कैसे बनाते हैं",
     "description": "Where kashidwar.com's facts come from, how each one is checked, how the site is reviewed every day, how AI tools are used, and how to send a correction."
+  },
+  "blog": {
+    "title": "Kashi A to Z: history blog",
+    "titleSecondary": "काशी ए टू ज़ेड: इतिहास ब्लॉग",
+    "intro": "The history and stories of Kashi's ghats, temples and festivals, a new post every week, each checked against the sources it cites.",
+    "read": "Read the story",
+    "series": "Kashi A to Z",
+    "all": "All posts",
+    "visit": "Plan your visit",
+    "history": "History and story"
   }
 }

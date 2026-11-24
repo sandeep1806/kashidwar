@@ -8,6 +8,7 @@
 #   scripts/content-review.sh guides         # one focus: projects | festivals | guides | developments | places
 #   scripts/content-review.sh places 2       # places, quarter 2 of the A–Z list (1–4)
 #   scripts/content-review.sh full           # the deep review (Opus)
+#   scripts/content-review.sh blog           # the weekly blog post, "Kashi A to Z" (Opus; own schedule)
 #   DRY_RUN=1 scripts/content-review.sh ...  # review and show the diff, but no branch, push or PR
 #   NO_MERGE=1 scripts/content-review.sh ... # open the pull request but leave it for a hand merge
 #   FORCE=1 scripts/content-review.sh ...    # run even if today's review already exists
@@ -28,6 +29,11 @@
 # of origin/redesign (your checkout is never touched), may edit only content files, and
 # the script — not the agent — commits, pushes, opens ONE pull request and merges it once
 # CI is green. See README → "Content review".
+#
+# The weekly blog run (focus `blog`, scheduled separately, e.g. Thursday afternoon) writes the
+# next post from content/blog/calendar.json in all 13 languages. It has its own once-a-day
+# marker, so it runs on a day the daily review also ran; it goes live the same way (branch
+# content-review/<date>-blog). Schedule it away from the daily run: both share one lock.
 set -euo pipefail
 
 REPO=$(cd "$(dirname "$0")/.." && pwd)
@@ -50,9 +56,10 @@ if [ "$FOCUS" = auto ]; then
   esac
 fi
 case "$FOCUS" in
+  blog) KIND=Weekly; MODEL=${REVIEW_MODEL:-claude-opus-5-5}; TURNS=${REVIEW_MAX_TURNS:-120};;
   full) KIND=Monthly; MODEL=${REVIEW_MODEL:-claude-opus-5-5}; TURNS=${REVIEW_MAX_TURNS:-150};;
   projects|festivals|guides|developments|places) KIND=Daily; MODEL=${REVIEW_MODEL:-claude-sonnet-5}; TURNS=${REVIEW_MAX_TURNS:-80};;
-  *) echo "Unknown focus '$FOCUS' (use auto, full, projects, festivals, guides, developments or places)"; exit 2;;
+  *) echo "Unknown focus '$FOCUS' (use auto, full, blog, projects, festivals, guides, developments or places)"; exit 2;;
 esac
 if [ "$FOCUS" = places ]; then
   SLICE=${SLICE:-1}
@@ -62,12 +69,15 @@ BUDGET=${REVIEW_MAX_BUDGET:-}
 BUDGET_ARGS=(); [ -n "$BUDGET" ] && BUDGET_ARGS=(--max-budget-usd "$BUDGET")
 CAPS="${TURNS} turns$( [ -n "$BUDGET" ] && printf ', $%s cap' "$BUDGET" || true)"
 
-# One review per day: a scheduled catch-up run after a manual one does nothing (FORCE=1 overrides).
-if [ -z "${DRY_RUN:-}" ] && [ -z "${FORCE:-}" ] && [ -e "$STATE/${TODAY}.done" ]; then
-  echo "Today's content review (${TODAY}) already ran; nothing to do (FORCE=1 runs another)."; exit 0
+# One review per day (and one blog post): a scheduled catch-up run after a manual one does
+# nothing (FORCE=1 overrides). The blog run keeps its own marker and branch name.
+if [ "$FOCUS" = blog ]; then DONE="$STATE/${TODAY}-blog.done"; BRANCH_RE="^content-review/${TODAY}-blog"
+else DONE="$STATE/${TODAY}.done"; BRANCH_RE="^content-review/${TODAY}-[^b]"; fi
+if [ -z "${DRY_RUN:-}" ] && [ -z "${FORCE:-}" ] && [ -e "$DONE" ]; then
+  echo "Today's ${FOCUS} run (${TODAY}) already ran; nothing to do (FORCE=1 runs another)."; exit 0
 fi
-if [ -z "${DRY_RUN:-}" ] && [ -z "${FORCE:-}" ] && git -C "$REPO" ls-remote --exit-code --heads origin "content-review/${TODAY}-*" >/dev/null 2>&1; then
-  echo "A content review for ${TODAY} already exists on GitHub; nothing to do (FORCE=1 runs another)."; exit 0
+if [ -z "${DRY_RUN:-}" ] && [ -z "${FORCE:-}" ] && git -C "$REPO" ls-remote --heads origin "content-review/${TODAY}-*" 2>/dev/null | awk '{sub("refs/heads/","",$2); print $2}' | grep -qE "$BRANCH_RE"; then
+  echo "A ${FOCUS} run for ${TODAY} already exists on GitHub; nothing to do (FORCE=1 runs another)."; exit 0
 fi
 
 TAG="${FOCUS}${SLICE:+-$SLICE}"
@@ -137,7 +147,7 @@ echo "Result: ${RESULT_TYPE:-unknown} (error: ${IS_ERROR:-?}) · turns ${TURNS_U
 if [ -n "$FINAL" ]; then printf '%s\n' "$FINAL" | sed 's/^/> /' | tee -a "$LOG"; fi
 
 # Only content files may change: stray new files are removed, edits elsewhere abort.
-ALLOWED_PATHS='^(content/[^/]+\.json|content/details/(en|hi)\.json|content/guides/[^/]+\.json|content/guides/i18n/[^/]+\.json|content/playbooks/[^/]+\.json|TRANSLATION_REVIEW\.md|\.content-review-pr\.md)$'
+ALLOWED_PATHS='^(content/[^/]+\.json|content/details/(en|hi)\.json|content/guides/[^/]+\.json|content/guides/i18n/[^/]+\.json|content/blog/[^/]+\.json|content/playbooks/[^/]+\.json|TRANSLATION_REVIEW\.md|\.content-review-pr\.md)$'
 git ls-files --others --exclude-standard | { grep -vE "$ALLOWED_PATHS" || true; } | while read -r f; do
   echo "Removed scratch file left by the review: $f" | tee -a "$LOG"; rm -f -- "$f"
 done
@@ -198,7 +208,7 @@ git reset -q -- .content-review-pr.md 2>/dev/null || true
 # Nothing but the review log changed: no pull request (a daily run usually finds nothing).
 if [ -z "$(git diff --cached --name-only | grep -v '^content/review-log\.json$' || true)" ]; then
   echo "No content changes; no pull request. Report: $BODY" | tee -a "$LOG"
-  [ -z "${DRY_RUN:-}" ] && touch "$STATE/${TODAY}.done"
+  [ -z "${DRY_RUN:-}" ] && touch "$DONE"
   exit 0
 fi
 
@@ -212,7 +222,8 @@ if git -C "$REPO" ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1
 git switch -q -c "$BRANCH"
 git commit -q -m "${KIND} content review ${TODAY} (${TAG})"
 git push -q origin "$BRANCH"
-URL=$(cd "$REPO" && gh pr create --base redesign --head "$BRANCH" --title "${KIND} content review ${TODAY}" --body-file "$BODY")
+TITLE="${KIND} content review ${TODAY}"; [ "$FOCUS" = blog ] && TITLE="Blog post ${TODAY} (Kashi A to Z)"
+URL=$(cd "$REPO" && gh pr create --base redesign --head "$BRANCH" --title "$TITLE" --body-file "$BODY")
 echo "Opened ${URL}" | tee -a "$LOG"
 cd "$REPO"
 if [ -n "${NO_MERGE:-}" ]; then
@@ -235,5 +246,5 @@ gh pr merge "$URL" --merge >>"$LOG" 2>&1 || {
   echo "MERGE FAILED for ${URL}; left open for a hand review. See $LOG" | tee -a "$LOG"; exit 1
 }
 git push -q origin --delete "$BRANCH" >>"$LOG" 2>&1 || true
-touch "$STATE/${TODAY}.done"
+touch "$DONE"
 echo "Merged ${URL} into redesign; GitHub is deploying it (Actions → Deploy)." | tee -a "$LOG"

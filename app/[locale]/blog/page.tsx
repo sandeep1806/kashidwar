@@ -1,0 +1,71 @@
+import type { Metadata } from "next";
+import { isIndexed } from "@/lib/seo";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import ListingShell from "@/components/pages/ListingShell";
+import { BlogLetters } from "@/components/pages/ArticlePage";
+import CardPhoto from "@/components/ui/CardPhoto";
+import { guidePhoto, localizeGuide, posts } from "@/lib/guides";
+import { guideTranslations } from "@/lib/guideTranslations";
+import { LOCALES, type Locale } from "@/lib/i18n/locales";
+import { alternatesFor } from "@/lib/pages";
+
+export async function generateMetadata({ params }: PageProps<"/[locale]/blog">): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "blog" });
+  const meta = await getTranslations({ locale, namespace: "meta" });
+  return isIndexed(locale)
+    ? { title: meta("blogListTitle"), description: meta("blogListDesc"), alternates: alternatesFor(locale, "/blog") }
+    : { title: t("title"), description: t("intro"), alternates: alternatesFor(locale, "/blog") };
+}
+
+/** The blog, "Kashi A to Z": the history of Kashi's ghats, temples and festivals, newest first. */
+export default async function BlogPage({ params }: PageProps<"/[locale]/blog">) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const loc = locale as Locale;
+  const [t, tg, tp, tr] = await Promise.all([
+    getTranslations({ locale, namespace: "blog" }),
+    getTranslations({ locale, namespace: "guides" }),
+    getTranslations({ locale, namespace: "page" }),
+    guideTranslations(loc),
+  ]);
+  const fmt = new Intl.DateTimeFormat(LOCALES[loc].bcp47, { dateStyle: "long", timeZone: "UTC" });
+  const path = "/blog";
+  return (
+    <ListingShell
+      locale={loc}
+      path={path}
+      sectionId="blog"
+      crumbs={[{ name: tp("home"), href: `/${locale}` }, { name: t("title"), href: `/${locale}${path}` }]}
+      title={t("title")}
+      secondary={t("titleSecondary")}
+      intro={<p>{t("intro")}</p>}
+    >
+      <div className="container-kashi mt-10">
+        <BlogLetters locale={locale} label={t("series")} />
+      </div>
+      <div className="container-kashi mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {posts.map((g, i) => {
+          const l = localizeGuide(g, loc, tr);
+          return (
+            <article key={g.slug} className="group card-lift flex flex-col rounded-kashi border border-kashi-rudraksha/60 bg-kashi-indigo/40 p-6">
+              <CardPhoto photo={guidePhoto(g, loc)} className="-mx-3 -mt-3 mb-5" priority={i === 0} />
+              {g.letter && <p className="font-display text-2xl leading-none text-kashi-diya" aria-hidden="true">{g.letter.toUpperCase()}</p>}
+              <h2 className="mt-2 text-[1.3rem] leading-snug text-kashi-white" lang={l.lang}>
+                <a href={`/${locale}/blog/${g.slug}`} className="hover:text-kashi-marigold">{l.title}</a>
+              </h2>
+              <p className="mt-3 text-kashi-ash/90" lang={l.lang}>{l.description}</p>
+              <p className="mt-3 text-xs text-kashi-ash/60">
+                <time dateTime={g.published}>{tg("published", { date: fmt.format(new Date(g.published + "T00:00:00Z")) })}</time>
+              </p>
+              <a href={`/${locale}/blog/${g.slug}`} className="mt-auto inline-flex items-center gap-2 pt-5 text-sm text-kashi-diya underline decoration-kashi-diya/40 underline-offset-4 hover:text-kashi-marigold">
+                {t("read")}
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          );
+        })}
+      </div>
+    </ListingShell>
+  );
+}

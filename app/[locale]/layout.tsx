@@ -106,7 +106,12 @@ export default async function LocaleLayout({
   const t = await getTranslations("common");
   const siteName = (await getTranslations("meta"))("siteName");
   const nav = await getTranslations("nav");
-  const sectionItems = SECTIONS.map((s) => ({ id: s.id, label: nav(s.key) }));
+  const sectionItems: { id: string; label: string; href?: string }[] = [
+    ...SECTIONS.map((s) => ({ id: s.id, label: nav(s.key) })),
+    // Page links after the home-page sections: the guides and the history blog.
+    { id: "guides", label: nav("guides"), href: `/${locale}/guides` },
+    { id: "blog", label: nav("blog"), href: `/${locale}/blog` },
+  ];
   // Display faces apply at once; body faces are attached after first paint (see DeferredFonts).
   const fonts = fontClassesFor(locale as Locale);
   // House ad until AdSense is approved (components/ui/Promo.tsx); copy in every locale's messages.

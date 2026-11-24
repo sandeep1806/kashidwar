@@ -111,7 +111,8 @@ function checkLd(file, o) {
       if (!o.name || !absUrl(o.url) || !absUrl(o.logo?.url ?? o.logo)) bad(file, "Organization: needs name, absolute url and logo");
       if (o.sameAs && (!Array.isArray(o.sameAs) || o.sameAs.some((u) => !absUrl(u)))) bad(file, "Organization: sameAs must be absolute URLs");
       break;
-    case "Article": {
+    case "Article":
+    case "BlogPosting": {
       if (!o.headline || o.headline.length > 110) bad(file, "Article: headline missing or over 110 characters");
       if (![o.image].flat().every((u) => absUrl(u?.url ?? u))) bad(file, "Article: image must be absolute URL(s)");
       for (const k of ["datePublished", "dateModified"]) if (!/^\d{4}-\d{2}-\d{2}/.test(o[k] ?? "")) bad(file, `Article: ${k} missing or not ISO 8601`);
@@ -194,7 +195,7 @@ for (const file of files) {
     }
   }
   for (const d of lastHeld) if (build && d >= build) bad(file, `"last held" ${d} is not in the past`);
-  const isGuide = /\/guides\//.test(relative(dir, file));
+  const isGuide = /\/(guides|blog)\//.test(relative(dir, file));
   for (const e of events) {
     // Festival pages: the Event is the featured occurrence. Guides about an event: the Event
     // is the guide's own event, shown in its banner, and must not have ended.

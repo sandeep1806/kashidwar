@@ -9,7 +9,7 @@
  * Covers places, festivals, projects, food, itineraries, FAQs, About, the editorial policy, UI strings, photo alt text
  * and the guides (content/guides/i18n/<locale>.json).
  */
-import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from "node:fs";
 import { inflate } from "./lib/entry-i18n.mjs";
 const ROOT = new URL("..", import.meta.url).pathname.replace(/\/$/, "");
 const OUT = process.argv[2] ?? null; // null: report only
@@ -22,7 +22,9 @@ const faqs = J("content/faqs.json"), about = J("content/about.json"), editorial 
 const en = J("messages/en.json"), hi = J("messages/hi.json");
 const detEn = J("content/details/en.json"), detHi = J("content/details/hi.json");
 const flat = (o, p = "") => Object.entries(o).flatMap(([k, v]) => (v && typeof v === "object" && !Array.isArray(v) ? flat(v, p + k + ".") : [[p + k, v]]));
-const guides = readdirSync(`${ROOT}/content/guides`).filter((f) => f.endsWith(".json")).map((f) => J(`content/guides/${f}`));
+// Guides and blog posts (content/blog) share the translation file content/guides/i18n/<locale>.json.
+const articles = (dir) => (existsSync(`${ROOT}/${dir}`) ? readdirSync(`${ROOT}/${dir}`).filter((f) => f.endsWith(".json") && f !== "calendar.json").map((f) => J(`${dir}/${f}`)) : []);
+const guides = [...articles("content/guides"), ...articles("content/blog")];
 for (const L of LOCALES) {
   const dir = OUT ? `${OUT}/${L}` : null; if (dir) mkdirSync(dir, { recursive: true });
   const chunks = { places: {}, other: {}, faqs: {}, alt: {} };

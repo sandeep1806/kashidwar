@@ -18,7 +18,8 @@ guide sections); nothing voyeuristic about cremation grounds.
    - `content/*.json` (top level: projects, festivals, festival-dates, places, food, itineraries, faiths)
    - `content/details/en.json` and `content/details/hi.json` (visitor sections on festival, project and place pages)
    - `content/guides/*.json` (including new guides — they are picked up automatically, no code needed)
-   - `content/guides/i18n/*.json` (regional translations of guides, keyed by guide slug)
+   - `content/guides/i18n/*.json` (regional translations of guides **and blog posts**, keyed by slug)
+   - `content/blog/*.json` (blog posts and `content/blog/calendar.json`; `blog` focus only)
    - `TRANSLATION_REVIEW.md`
    Never touch code, `package*.json`, config, scripts, `messages/`, `content/i18n/`, photos,
    workflows, `.claude/`, or secrets, and not `content/review-log.json` (the script writes it). The script rejects the run if any other path changes.
@@ -59,8 +60,9 @@ under "What to check"):
 | `developments` | 1, 4, 4b, 4c and 5 | Sunday |
 | `projects` | 1 | on demand |
 | `full` | 1–5 (with 4b and 4c) | monthly, first Monday |
+| `blog` | 6 only (**not** 4b/4c): write the week's blog post | weekly, own schedule |
 
-**Every run, whatever its focus, also does 4b and 4c first** (upcoming major events and finished
+**Every run except `blog`, whatever its focus, also does 4b and 4c first** (upcoming major events and finished
 events): a big event is a traffic opportunity that cannot wait for its week in the rotation.
 
 Update a "last verified" date (`lastVerified` on projects, `updated` on guides, a festival
@@ -294,6 +296,47 @@ queries: greeting content is not what this site is for.
   freely licensed photo (CC0, CC BY, CC BY-SA or public domain; not NC/ND) that really shows
   the subject. Do not add photos yourself — list candidates (file title, licence, why it is the
   right subject) in the summary for the maintainer.
+
+### 6. Blog post — "Kashi A to Z" (`blog` focus, weekly)
+One post a week on the history and stories of Kashi: ghats, temples, festivals and the city.
+Posts live at `/blog/<slug>`, are fully automatic (no human reads them before they go live),
+and so must be at least as careful as a guide. Budget: aim to finish in ~90 turns.
+
+1. **Pick the topic:** the first entry in `content/blog/calendar.json` with `"status": "todo"`
+   whose `notBefore` (if any) is on or before today. Festival stories carry a `notBefore` so
+   they go out 3–5 weeks before the festival; skip entries that are not due yet.
+2. **Keyword research first** (one autocomplete URL per command, hl=en and hl=hi, gl=in) for the
+   calendar entry's `queries` and "<topic> history", "… story", "… history in hindi", "… kisne
+   banwaya", "… name meaning". Title: the phrase people search first, ≤ 60 characters
+   ("Manikarnika Ghat History & Story: Legends, Fire, Rituals"); description ≤ 158 characters.
+   Headings and 6–10 FAQs use the searched wordings. Record the queries in `notes`.
+3. **Research ≥ 3 reliable sources** (rule 3), plus scholarly ones where history is concerned:
+   published histories of Banaras (cite them; never copy), archive.org scans of old records,
+   the Kashi Khanda / Puranas for tradition. Never copy wording; never use blogs alone.
+4. **Write tradition and history separately and say which is which:** "According to the Kashi
+   Khanda…", "Tradition holds…" for legend; "Records show…", "In 1791…" for history, each with
+   its source. Where sources disagree, say so. Verses: original script + transliteration +
+   translation, only when the exact text is verified from a reliable source.
+5. **Shape:** copy `content/blog/manikarnika-ghat-history.json` (the model). 5–8 sections of
+   1–3 paragraphs (1,200–1,800 words in English), `facts` (4–6), FAQ 6–10, `sources` with
+   `accessed` dates and per-section `sources` indexes, `photo` an existing key from
+   `content/photos.json` (never a new image; never a photo of a cremation), `letter`, `topic`
+   (`{"kind": "places"|"festivals", "id": …}` when the post is about one page), `related`
+   (that page and 1–3 neighbours, `guides` where a guide helps the visitor), `published` and
+   `updated` = today. Put `"promo": true` on the one practical "visiting today" section.
+6. **Respect:** every faith with equal care and its own terms; no ranking; nothing voyeuristic
+   about cremation, death or the Aghor tradition; no sensational "horror story" framing (answer
+   such searches with facts); no claims about miracles as fact.
+7. **13 languages:** English and Hindi in the post file, then all 11 regional translations in
+   `content/guides/i18n/<locale>.json` under the post's slug, with exactly the same counts
+   (rule 4). Validate every JSON file you touched with `python3 -m json.tool`.
+8. **Mark the calendar entry** `"status": "done"`, `"slug"` and `"published"`. If the sources are
+   too thin for a careful post, set `"status": "skipped"` with a `"reason"`, take the next entry,
+   and say so in the summary. When fewer than 6 `todo` entries remain, append new ones (same
+   fields) from autocomplete research on Kashi's ghats, temples and festivals, keeping the
+   faiths balanced over time.
+9. Summary (`.content-review-pr.md`): the post's title and URL `/en/blog/<slug>`, the queries
+   targeted, sources used, anything uncertain left out.
 
 ## Before you finish
 
