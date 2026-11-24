@@ -1,7 +1,7 @@
 {
   "slug": "varanasi-airport",
   "published": "2026-11-04",
-  "updated": "2026-11-08",
+  "updated": "2026-11-24",
   "photo": "projects/airport-expansion",
   "title_en": "Varanasi airport lounge review: menu, cards accepted, is it worth it",
   "title_hi": "वाराणसी एयरपोर्ट लाउंज रिव्यू: मेन्यू, कौन से कार्ड चलते हैं, क्या यह फ़ायदेमंद है",
@@ -316,6 +316,18 @@
       "a_en": "Each person needs their own eligible card swipe or a paid guest visit. Priority Pass charges a guest as an extra visit, and one cardholder's review from 2023 says a companion was not allowed to sit inside.",
       "q_hi": "क्या वाराणसी एयरपोर्ट लाउंज में साथ किसी को ले जा सकते हैं?",
       "a_hi": "हर व्यक्ति के लिए अपना पात्र कार्ड स्वाइप या भुगतान वाली गेस्ट विज़िट चाहिए। प्रायोरिटी पास गेस्ट को एक अतिरिक्त विज़िट गिनता है, और 2023 के एक कार्डधारक के रिव्यू के अनुसार साथ आए व्यक्ति को अंदर बैठने नहीं दिया गया।"
+    },
+    {
+      "q_en": "What is the Varanasi airport contact or helpline number?",
+      "a_en": "The Airports Authority of India lists the Airport Director's office at 0542-2622155 (apdvns@aai.aero) and the Terminal Manager at 0542-2623060. For flight status, call your airline; no separate AAI helpline is published for Varanasi.",
+      "q_hi": "वाराणसी एयरपोर्ट का संपर्क या हेल्पलाइन नंबर क्या है?",
+      "a_hi": "भारतीय विमानपत्तन प्राधिकरण के अनुसार एयरपोर्ट निदेशक कार्यालय 0542-2622155 (apdvns@aai.aero) और टर्मिनल मैनेजर 0542-2623060 है। उड़ान की स्थिति के लिए अपनी एयरलाइन से संपर्क करें; वाराणसी के लिए अलग से कोई एएआई हेल्पलाइन प्रकाशित नहीं है।"
+    },
+    {
+      "q_en": "How far is Varanasi airport from the city and Sarnath, and is there a prepaid taxi?",
+      "a_en": "The district administration gives the airport as 22 km from Varanasi and 30 km from Sarnath, and says a prepaid taxi service runs at the airport. To the ghats at Godowlia it is about 25 km by road.",
+      "q_hi": "वाराणसी एयरपोर्ट शहर और सारनाथ से कितनी दूर है, और क्या प्रीपेड टैक्सी मिलती है?",
+      "a_hi": "ज़िला प्रशासन के अनुसार एयरपोर्ट वाराणसी से 22 किमी और सारनाथ से 30 किमी दूर है, और वहाँ प्रीपेड टैक्सी सेवा है। गोदौलिया के घाटों तक सड़क से करीब 25 किमी है।"
     }
   ],
   "sources": [
@@ -398,6 +410,11 @@
       "title": "Deccan Herald — Air India launches Easy Connect flights, brings global connectivity closer to smaller cities",
       "url": "https://www.deccanherald.com/india/air-india-launches-easy-connect-flights-brings-global-connectivity-closer-to-smaller-cities-4033007",
       "accessed": "2026-11-22"
+    },
+    {
+      "title": "Airports Authority of India — Varanasi airport contact (Airport Director, Terminal Manager)",
+      "url": "https://www.aai.aero/en/airports/contact-us/varanasi",
+      "accessed": "2026-11-24"
     }
   ],
   "related": {
@@ -419,5 +436,5 @@
       "lounges-in-varanasi"
     ]
   },
-  "notes": "Targets 'varanasi airport lounge' (+ access / which cards accepted / price / credit card / free access), 'varanasi airport food court', 'varanasi airport name/distance'. how-to-reach-varanasi stays the arrival overview; this page is the airport itself. The house-ad card sits after the lounge-cards section (promo: true). Lounge lists change quarterly: re-check sources 2–5 in the content review. Scapia's own lounge coverage at VNS is unconfirmed, so the body never claims it. UPDATE 2026-11-08 (honest review, owner request): Priority Pass's listing (source 0) says a visit covers 'the buffet spread', but every dated cardholder report in the TechnoFino thread (owner pasted both pages, 8 Nov 2026; posts Jun 2023, Oct/Nov/Dec 2023, Jun 2024, Feb 2025, 31 Aug 2026) describes a small café with a fixed menu and one item per swipe; tea/coffee paid since Feb 2025; no washroom inside (Aug 2026); only one positive report (Dec 2023). The guide shows both and gives the verdict from the reports; no first-hand claim (owner chose forum reports only). Do not restore 'buffet' on the listing's word alone. A Jun 2024 post says a Scapia card worked here (sandwich + one drink); the body still names no card brand for Scapia (house ad unchanged, owner's decision). Google Maps rating not checked (not fetchable). New section 'lounge-review' inserted at index 1; regional translations spliced at the same index. REVISED 2026-11-08 at the owner's request: the forum is NOT named or linked anywhere on the page (sources removed); the page states the owner's own 2026 visit as first-hand ('We used a card visit here in 2026 and found it a poor trade: one item from a small set menu, everything else paid', wording confirmed by the owner, who gave no further details) and summarises other cardholders' reviews unnamed. Do not add other people's specifics as our own experience. Reviews used (internal, for re-checks only): https://technofino.in/community/threads/take-off-bar-and-lounge-varanasi-airport-lounge-review-more-of-a-cafe.13286/ ; https://technofino.in/community/threads/take-off-bar-and-lounge-varanasi-airport-lounge-review-more-of-a-cafe.13286/page-2."
+  "notes": "Targets 'varanasi airport lounge' (+ access / which cards accepted / price / credit card / free access), 'varanasi airport food court', 'varanasi airport name/distance'. how-to-reach-varanasi stays the arrival overview; this page is the airport itself. The house-ad card sits after the lounge-cards section (promo: true). Lounge lists change quarterly: re-check sources 2–5 in the content review. Scapia's own lounge coverage at VNS is unconfirmed, so the body never claims it. UPDATE 2026-11-08 (honest review, owner request): Priority Pass's listing (source 0) says a visit covers 'the buffet spread', but every dated cardholder report in the TechnoFino thread (owner pasted both pages, 8 Nov 2026; posts Jun 2023, Oct/Nov/Dec 2023, Jun 2024, Feb 2025, 31 Aug 2026) describes a small café with a fixed menu and one item per swipe; tea/coffee paid since Feb 2025; no washroom inside (Aug 2026); only one positive report (Dec 2023). The guide shows both and gives the verdict from the reports; no first-hand claim (owner chose forum reports only). Do not restore 'buffet' on the listing's word alone. A Jun 2024 post says a Scapia card worked here (sandwich + one drink); the body still names no card brand for Scapia (house ad unchanged, owner's decision). Google Maps rating not checked (not fetchable). New section 'lounge-review' inserted at index 1; regional translations spliced at the same index. REVISED 2026-11-08 at the owner's request: the forum is NOT named or linked anywhere on the page (sources removed); the page states the owner's own 2026 visit as first-hand ('We used a card visit here in 2026 and found it a poor trade: one item from a small set menu, everything else paid', wording confirmed by the owner, who gave no further details) and summarises other cardholders' reviews unnamed. Do not add other people's specifics as our own experience. Reviews used (internal, for re-checks only): https://technofino.in/community/threads/take-off-bar-and-lounge-varanasi-airport-lounge-review-more-of-a-cafe.13286/ ; https://technofino.in/community/threads/take-off-bar-and-lounge-varanasi-airport-lounge-review-more-of-a-cafe.13286/page-2. UPDATE 2026-11-24 (keyword.io / autocomplete gap check): Added contact FAQ (AAI contact page: Airport Director 0542-2622155, apdvns@aai.aero; Terminal Manager 0542-2623060; staff mobile numbers deliberately omitted) and distance/prepaid taxi FAQ (varanasi.nic.in). Vehicle parking charges not published officially: not stated."
 }

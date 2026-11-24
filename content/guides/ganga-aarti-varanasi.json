@@ -1,7 +1,7 @@
 {
   "slug": "ganga-aarti-varanasi",
   "published": "2026-09-27",
-  "updated": "2026-11-04",
+  "updated": "2026-11-24",
   "photo": "places/dashashwamedh-ghat#2",
   "title_en": "Dashashwamedh & Assi Ghat aarti time: Ganga Aarti in Varanasi",
   "title_hi": "दशाश्वमेध और अस्सी घाट आरती का समय: वाराणसी की गंगा आरती",
@@ -276,6 +276,18 @@
       "a_en": "Yes. The district administration requires life jackets for all passengers and boatmen.",
       "q_hi": "क्या आरती वाली नाव में लाइफ़ जैकेट ज़रूरी है?",
       "a_hi": "हाँ, ज़िला प्रशासन ने सभी यात्रियों और नाविकों के लिए लाइफ़ जैकेट अनिवार्य की है।"
+    },
+    {
+      "q_en": "Can I book a seat or VIP place for the Ganga Aarti at Dashashwamedh?",
+      "a_en": "There is no official seat booking. The Ganga Seva Nidhi's website books rituals, such as a Sankalp pujan (₹1,100) or sponsoring an aarti (₹51,000), not seats. Places on the steps are free and first come, first served, so arrive early or watch from a boat; paid rooftop or 'VIP' seats are sold only by private sellers.",
+      "q_hi": "क्या दशाश्वमेध गंगा आरती के लिए सीट या वीआईपी जगह बुक हो सकती है?",
+      "a_hi": "सीट की कोई आधिकारिक बुकिंग नहीं है। गंगा सेवा निधि की वेबसाइट पर अनुष्ठान बुक होते हैं, जैसे संकल्प पूजन (₹1,100) या आरती का प्रायोजन (₹51,000), सीटें नहीं। सीढ़ियों पर जगह मुफ़्त है और पहले आओ-पहले पाओ, इसलिए जल्दी पहुँचें या नाव से देखें; छत की या 'वीआईपी' सीटें सिर्फ़ निजी लोग बेचते हैं।"
+    },
+    {
+      "q_en": "Can I watch the Dashashwamedh Ganga Aarti live online?",
+      "a_en": "We found no official live stream from the Ganga Seva Nidhi: the 'watch live' link on its website opens a third-party YouTube video. For Kashi Vishwanath, the temple trust does stream live darshan on its own website.",
+      "q_hi": "क्या दशाश्वमेध की गंगा आरती ऑनलाइन लाइव देख सकते हैं?",
+      "a_hi": "हमें गंगा सेवा निधि का कोई आधिकारिक लाइव प्रसारण नहीं मिला: उसकी वेबसाइट का 'लाइव देखें' लिंक किसी दूसरे के यूट्यूब वीडियो पर ले जाता है। काशी विश्वनाथ के लिए मंदिर न्यास अपनी वेबसाइट पर लाइव दर्शन दिखाता है।"
     }
   ],
   "sources": [
@@ -353,6 +365,11 @@
       "title": "Varanasi Guru — Ganga Aarti timing Varanasi 2026 (travel guide; Assi morning/evening times)",
       "url": "https://www.varanasiguru.com/ganga-aarti-timing-varanasi/",
       "accessed": "2026-11-04"
+    },
+    {
+      "title": "Ganga Seva Nidhi — Official site and bookings (Sankalp pujan, sponsoring an aarti)",
+      "url": "https://gangasevanidhi.in/about/booking/1",
+      "accessed": "2026-11-24"
     }
   ],
   "related": {
@@ -370,5 +387,5 @@
       "2-day"
     ]
   },
-  "notes": "Organisers: Amar Ujala (Nov 2025) names Ganga Seva Nidhi and Gangotri Seva Samiti as the Dashashwamedh aarti organisers; I could not verify a 'Shri Ganga Sewa Samiti' at the adjacent ghat from a reliable source (gangasewa.com did not resolve), so it is not named. The Ganga Seva Nidhi website pages returned 404. Summer start time (~7 pm) rests on Wikipedia and many blogs, not a dated news report or organiser notice, hence 'timings' is marked unconfirmed; the 6 pm winter time is from Amar Ujala Nov 2025. The 'seven archakas' figure is from Aaj Tak Aug 2026. Special-days section marked unconfirmed because the Ganga Dussehra 'more elaborate aarti' claim relies on Wikipedia/site festival data, and boat price surges/road closures on Dev Deepawali are general reporting without a single cited 2026 notice. Dev Deepawali 2026 date (24 Nov) taken from the site's content/festival-dates.json (verified). Subah-e-Banaras details from Wikipedia (Assi Ghat); subahebanaras.in returned an empty page when fetched. No boat prices given (unverifiable). Where-to-watch advice (arrive 45-60 min early, Man Mandir side calmer) is practical guidance consistent with the site's existing place entry, not an official fact. 4 Nov 2026 (SEO): GSC 5 Oct–2 Nov: /en page pos ~42 vs /hi ~11; its impressions are mostly 'assi ghat aarti time / timings morning / evening' (pos 40–50) and 'assi ghat to dashashwamedh distance' (pos 75–94), which the page did not answer. Added section assi-ghat-aarti-time and two FAQs. Assi evening aarti existence: Amar Ujala 1 Jan 2026 (ANI); Assi times from travel guides only (Varanasi Guru and others agree within 30 min) and labelled approximate; Amar Ujala 7 Nov 2025 covers Dashashwamedh only. Distance: 2.1 km straight line from the verified coordinates in places.json; 2.5 km/30–40 min walk is an estimate."
+  "notes": "Organisers: Amar Ujala (Nov 2025) names Ganga Seva Nidhi and Gangotri Seva Samiti as the Dashashwamedh aarti organisers; I could not verify a 'Shri Ganga Sewa Samiti' at the adjacent ghat from a reliable source (gangasewa.com did not resolve), so it is not named. The Ganga Seva Nidhi website pages returned 404. Summer start time (~7 pm) rests on Wikipedia and many blogs, not a dated news report or organiser notice, hence 'timings' is marked unconfirmed; the 6 pm winter time is from Amar Ujala Nov 2025. The 'seven archakas' figure is from Aaj Tak Aug 2026. Special-days section marked unconfirmed because the Ganga Dussehra 'more elaborate aarti' claim relies on Wikipedia/site festival data, and boat price surges/road closures on Dev Deepawali are general reporting without a single cited 2026 notice. Dev Deepawali 2026 date (24 Nov) taken from the site's content/festival-dates.json (verified). Subah-e-Banaras details from Wikipedia (Assi Ghat); subahebanaras.in returned an empty page when fetched. No boat prices given (unverifiable). Where-to-watch advice (arrive 45-60 min early, Man Mandir side calmer) is practical guidance consistent with the site's existing place entry, not an official fact. 4 Nov 2026 (SEO): GSC 5 Oct–2 Nov: /en page pos ~42 vs /hi ~11; its impressions are mostly 'assi ghat aarti time / timings morning / evening' (pos 40–50) and 'assi ghat to dashashwamedh distance' (pos 75–94), which the page did not answer. Added section assi-ghat-aarti-time and two FAQs. Assi evening aarti existence: Amar Ujala 1 Jan 2026 (ANI); Assi times from travel guides only (Varanasi Guru and others agree within 30 min) and labelled approximate; Amar Ujala 7 Nov 2025 covers Dashashwamedh only. Distance: 2.1 km straight line from the verified coordinates in places.json; 2.5 km/30–40 min walk is an estimate. UPDATE 2026-11-24 (keyword.io / autocomplete gap check): Added FAQs: no official seat/VIP booking (Nidhi books rituals: Sankalp ₹1,100, aarti sponsorship ₹51,000); no official live stream found (site links a third-party YouTube video)."
 }

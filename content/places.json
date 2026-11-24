@@ -335,9 +335,11 @@
           "entry": "निःशुल्क",
           "duration": "1–2 घंटे",
           "season": "अक्टूबर–मार्च"
-        }
+        },
+        "seoTitle": "अस्सी घाट वाराणसी: आरती का समय, सुबह-ए-बनारस, क्या करें और दूरी"
       }
-    }
+    },
+    "seoTitle": "Assi Ghat Varanasi: aarti time, Subah-e-Banaras, things to do & distance"
   },
   {
     "id": "manikarnika-ghat",
@@ -828,9 +830,11 @@
           "entry": "स्थल ₹25 नकद / ₹20 ऑनलाइन (भारतीय, सार्क, बिम्सटेक) · ₹300 / ₹250 (विदेशी); संग्रहालय ₹5",
           "duration": "2–3 घंटे (स्थल व संग्रहालय)",
           "season": "अक्टूबर–मार्च; बुद्ध पूर्णिमा (अप्रैल–मई)"
-        }
+        },
+        "seoTitle": "सारनाथ वाराणसी: टिकट, समय, संग्रहालय और कैसे पहुँचें"
       }
-    }
+    },
+    "seoTitle": "Sarnath Varanasi: ticket price, timings, museum & how to reach"
   },
   {
     "id": "mulagandha-kuti-vihar",
@@ -995,6 +999,11 @@
         "title": "LBSIM — Shastri ji's residence in Ramnagar dedicated to the nation as a memorial museum (27 Sep 2018)",
         "url": "https://www.lbsim.ac.in/news/shastiji-s-residence-dedicated-to-nation-as-memorial-museum",
         "accessed": "2026-11-06"
+      },
+      {
+        "title": "Incredible India — Ramnagar Fort (18th-century fort of Maharaja Balwant Singh; hours)",
+        "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/ramnagar-fort",
+        "accessed": "2026-11-24"
       }
     ],
     "i18n": {
@@ -1014,9 +1023,11 @@
           "entry": "₹50 (भारतीय) · ₹200 (विदेशी) · ₹20 बच्चे/छात्र",
           "duration": "1 से 2 घंटे",
           "season": "अक्टूबर से मार्च; रामलीला अक्टूबर में"
-        }
+        },
+        "seoTitle": "रामनगर किला वाराणसी: टिकट, समय, संग्रहालय और इतिहास"
       }
-    }
+    },
+    "seoTitle": "Ramnagar Fort Varanasi: ticket price, timings, museum & history"
   },
   {
     "id": "bhu-new-vishwanath",
@@ -1127,9 +1138,11 @@
           "entry": "निःशुल्क",
           "duration": "45 से 60 मिनट",
           "season": "अक्टूबर से मार्च"
-        }
+        },
+        "seoTitle": "बीएचयू विश्वनाथ मंदिर (नया विश्वनाथ मंदिर): समय, ऊँचाई, इतिहास"
       }
-    }
+    },
+    "seoTitle": "BHU Vishwanath Temple (New Vishwanath Mandir): timings, height, history"
   },
   {
     "id": "durga-kund",
@@ -1205,6 +1218,11 @@
         "title": "Amar Ujala — Sawan mela at Durgakund: swings in the Durga temple grounds, tableaux at Manas Mandir (6 Jul 2025)",
         "url": "https://www.amarujala.com/uttar-pradesh/varanasi/sawan-mela-tableau-depicting-the-deeds-of-lord-ram-and-lord-krishna-will-be-shown-varanasi-news-c-20-vns1021-1044191-2025-07-06",
         "accessed": "2026-11-06"
+      },
+      {
+        "title": "Incredible India — Durga Temple, Varanasi (built in the 18th century by Rani Bhabani; hours)",
+        "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/durga-temple",
+        "accessed": "2026-11-24"
       }
     ],
     "i18n": {
@@ -1223,9 +1241,11 @@
           "entry": "निःशुल्क",
           "duration": "30 से 45 मिनट",
           "season": "अक्टूबर से मार्च; नवरात्रि"
-        }
+        },
+        "seoTitle": "दुर्गा कुंड मंदिर वाराणसी: समय, इतिहास और लोकेशन"
       }
-    }
+    },
+    "seoTitle": "Durga Kund Mandir Varanasi: timings, history & location"
   },
   {
     "id": "sankat-mochan",
@@ -1458,9 +1478,11 @@
           "entry": "निःशुल्क",
           "duration": "30 से 45 मिनट",
           "season": "अक्टूबर से मार्च; भैरव अष्टमी (नवंबर-दिसंबर)"
-        }
+        },
+        "seoTitle": "काल भैरव मंदिर वाराणसी: दर्शन का समय, खुलने-बंद होने का समय, इतिहास"
       }
-    }
+    },
+    "seoTitle": "Kaal Bhairav Temple Varanasi: darshan timings, opening & closing time, history"
   },
   {
     "id": "tulsi-manas",

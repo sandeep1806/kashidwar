@@ -1,7 +1,7 @@
 {
   "slug": "kashi-tamil-sangamam-2026",
   "published": "2026-11-02",
-  "updated": "2026-11-22",
+  "updated": "2026-11-24",
   "photo": "projects/kashi-tamil-sangamam",
   "event": {
     "name_en": "Kashi Tamil Sangamam 2026 (KTS 5.0)",
@@ -275,6 +275,18 @@
       "a_en": "Colleges registered on the CICT portal (kts.cict.in) nominate one student each, who does a month of research on the Thirukkural theme from 15 December 2026 to 14 January 2027 and receives a ₹10,000 stipend after verification.",
       "q_hi": "केटीएस 5.0 का कॉलेज कार्यक्रम और वजीफ़ा क्या है?",
       "a_hi": "सीआईसीटी पोर्टल (kts.cict.in) पर रजिस्टर्ड कॉलेज एक-एक छात्र नामित करते हैं, जो 15 दिसंबर 2026 से 14 जनवरी 2027 तक तिरुक्कुरल विषय पर एक महीने का शोध करता है और सत्यापन के बाद ₹10,000 का वजीफ़ा पाता है।"
+    },
+    {
+      "q_en": "Is there a Kashi Tamil Sangamam 5.0 quiz?",
+      "a_en": "For the college programme, yes: institutions registered on kts.cict.in (extended to 27 November 2026) assess interested students with a 30-minute online test of 50 multiple-choice questions on the Thirukkural, 2 marks each with no negative marking, and nominate one student. A free 10-question practice test is on the same site.",
+      "q_hi": "क्या काशी तमिल संगमम 5.0 का कोई क्विज़ है?",
+      "a_hi": "कॉलेज कार्यक्रम के लिए हाँ: kts.cict.in पर रजिस्टर्ड संस्थान (तारीख़ 27 नवंबर 2026 तक बढ़ी) इच्छुक छात्रों का 30 मिनट का ऑनलाइन टेस्ट लेते हैं, जिसमें तिरुक्कुरल पर 50 बहुविकल्पीय प्रश्न होते हैं, हर प्रश्न 2 अंक का, कोई नकारात्मक अंक नहीं, और फिर एक छात्र को नामित करते हैं। उसी साइट पर 10 प्रश्नों का मुफ़्त अभ्यास टेस्ट भी है।"
+    },
+    {
+      "q_en": "What is the Kashi Tamil Sangamam contact number or email?",
+      "a_en": "For delegates from Tamil Nadu, the IIT Madras portal lists kts@ge.iitm.ac.in and 044-2257 9291 / 9292. For the college programme, CICT lists kts@cict.in and 044-22540125.",
+      "q_hi": "काशी तमिल संगमम का संपर्क नंबर या ईमेल क्या है?",
+      "a_hi": "तमिलनाडु के प्रतिनिधियों के लिए आईआईटी मद्रास के पोर्टल पर kts@ge.iitm.ac.in और 044-2257 9291 / 9292 दिए हैं। कॉलेज कार्यक्रम के लिए सीआईसीटी ने kts@cict.in और 044-22540125 दिए हैं।"
     }
   ],
   "sources": [
@@ -317,6 +329,11 @@
       "title": "All India Radio News — Kashi Tamil Sangamam 4.0 inaugurated in Varanasi (2 Dec 2025)",
       "url": "https://www.newsonair.gov.in/kashi-tamil-sangamam-4-0-inaugurated-in-varanasi",
       "accessed": "2026-11-22"
+    },
+    {
+      "title": "CICT — Kashi Tamil Sangamam 5.0 college programme: examination and contact",
+      "url": "https://kts.cict.in/contact",
+      "accessed": "2026-11-24"
     }
   ],
   "related": {
@@ -333,5 +350,5 @@
       "kashi-tamil-sangamam-festival"
     ]
   },
-  "notes": "Written 2 Nov 2026 from the PIB release of 22 Oct 2026 and BHU's KTS 5.0 site. Keywords from Google autocomplete on 2 Nov (hl=en and hl=hi): 'kashi tamil sangamam 5.0', '… 2026 registration (online, last date)', '… 2026 dates', '… 2026 venue (timings)', '… theme', 'काशी तमिल संगमम 2026', '… क्या है', '… स्थल'. Venues and times of the inauguration and valedictory not announced as of 2 Nov (BHU schedule says 'will be announced') — update when published, along with any Kashi Tamil Sangamam special trains. Unofficial 'registration' pages (job/exam sites) exist; only kashitamil.iitm.ac.in cited. 'free' not set: public access to the programmes is not announced. UPDATE 2026-11-22: registration closed (13 Nov); BHU schedule page (source 1, read 22 Nov) now gives the revised CICT timeline (institution registration by 18 Nov, assessment 23 Nov, nomination 24 Nov, inaugural 28 Nov and valedictory 12 Dec with virtual joining for colleges, research 15 Dec–14 Jan, ₹10,000 stipend via DBT) and the train plan (7 onward: CAPE 25 Nov & 3 Dec 11:45; MAS 28 Nov, 2 Dec, 8 Dec 04:15; CBE 29 Nov & 5 Dec 18:00; all arrive BSBS 23:15; 7 return from BSBS 23:00: to CAPE 1 & 9 Dec arr 11:30 on 4 & 12 Dec; to MAS 3, 7, 13 Dec arr 23:30 on 5, 9, 15 Dec; to CBE 5 & 11 Dec arr 08:30 on 8 & 14 Dec). No train numbers published. Venue for 2026 still not announced (search 22 Nov; a Drishti/aggregator claim of Namo Ghat was not confirmed by a primary source). Keywords from autocomplete: 'kashi tamil sangamam 2026 dates / venue / timings', 'kasi tamil sangamam express / train / train timings / route', Tamil 'காசி தமிழ் சங்கமம் ரயில்', 'நிறைவு விழா'. The trains section carries the house-ad slot (promo)."
+  "notes": "Written 2 Nov 2026 from the PIB release of 22 Oct 2026 and BHU's KTS 5.0 site. Keywords from Google autocomplete on 2 Nov (hl=en and hl=hi): 'kashi tamil sangamam 5.0', '… 2026 registration (online, last date)', '… 2026 dates', '… 2026 venue (timings)', '… theme', 'काशी तमिल संगमम 2026', '… क्या है', '… स्थल'. Venues and times of the inauguration and valedictory not announced as of 2 Nov (BHU schedule says 'will be announced') — update when published, along with any Kashi Tamil Sangamam special trains. Unofficial 'registration' pages (job/exam sites) exist; only kashitamil.iitm.ac.in cited. 'free' not set: public access to the programmes is not announced. UPDATE 2026-11-22: registration closed (13 Nov); BHU schedule page (source 1, read 22 Nov) now gives the revised CICT timeline (institution registration by 18 Nov, assessment 23 Nov, nomination 24 Nov, inaugural 28 Nov and valedictory 12 Dec with virtual joining for colleges, research 15 Dec–14 Jan, ₹10,000 stipend via DBT) and the train plan (7 onward: CAPE 25 Nov & 3 Dec 11:45; MAS 28 Nov, 2 Dec, 8 Dec 04:15; CBE 29 Nov & 5 Dec 18:00; all arrive BSBS 23:15; 7 return from BSBS 23:00: to CAPE 1 & 9 Dec arr 11:30 on 4 & 12 Dec; to MAS 3, 7, 13 Dec arr 23:30 on 5, 9, 15 Dec; to CBE 5 & 11 Dec arr 08:30 on 8 & 14 Dec). No train numbers published. Venue for 2026 still not announced (search 22 Nov; a Drishti/aggregator claim of Namo Ghat was not confirmed by a primary source). Keywords from autocomplete: 'kashi tamil sangamam 2026 dates / venue / timings', 'kasi tamil sangamam express / train / train timings / route', Tamil 'காசி தமிழ் சங்கமம் ரயில்', 'நிறைவு விழா'. The trains section carries the house-ad slot (promo). UPDATE 2026-11-24 (keyword.io / autocomplete gap check): Added quiz FAQ (kts.cict.in examination/practice pages; institution registration extended to 27 Nov) and contact FAQ (IIT Madras portal footer; CICT contact page; staff mobiles omitted)."
 }

@@ -1,7 +1,7 @@
 {
   "slug": "varanasi-to-sarnath",
   "published": "2026-09-27",
-  "updated": "2026-11-03",
+  "updated": "2026-11-24",
   "photo": "places/sarnath",
   "title_en": "Varanasi to Sarnath distance (11–13 km): how to reach, auto & cab fare",
   "title_hi": "वाराणसी से सारनाथ की दूरी 11–13 किमी: कैसे जाएं, ऑटो-बस किराया और टिकट",
@@ -284,6 +284,18 @@
       "a_en": "Uber operates in Varanasi, and Ola and Rapido are reported to as well. Cars are usually available at Cantt; availability is patchier from the old city and at festival times.",
       "q_hi": "क्या सारनाथ के लिए ओला और उबर मिलती हैं?",
       "a_hi": "वाराणसी में उबर चलती है, और ओला व रैपिडो के भी चलने की ख़बरें हैं। कैंट पर गाड़ी आम तौर पर मिल जाती है; पुराने शहर से और त्योहारों पर मिलना मुश्किल होता है।"
+    },
+    {
+      "q_en": "Is there a light and sound show at Sarnath?",
+      "a_en": "Yes. The UP tourism department set up a light and sound show at the Dhamek Stupa, narrated by Amitabh Bachchan (opened 2020). A 2024 visitor guide gives winter shows at 6:30 pm in Hindi and 7:30 pm in English (7 and 8 pm in summer), tickets of ₹100 for Indians and ₹150 for foreigners (more on weekends), sold the same day at the Tourist Police booth, not online. These are reported, not official, figures; confirm at the site.",
+      "q_hi": "क्या सारनाथ में लाइट एंड साउंड शो होता है?",
+      "a_hi": "हाँ। यूपी पर्यटन विभाग ने धमेख स्तूप पर लाइट एंड साउंड शो शुरू किया है, जिसमें अमिताभ बच्चन की आवाज़ है (2020 में शुरू)। 2024 की एक पर्यटक गाइड के अनुसार सर्दियों में शो शाम 6:30 बजे हिंदी में और 7:30 बजे अंग्रेज़ी में (गर्मियों में 7 और 8 बजे) होते हैं, टिकट भारतीयों के लिए ₹100 और विदेशियों के लिए ₹150 (वीकेंड पर ज़्यादा), जो उसी दिन टूरिस्ट पुलिस बूथ पर मिलते हैं, ऑनलाइन नहीं। ये रिपोर्ट किए गए आँकड़े हैं, आधिकारिक नहीं; मौके पर पुष्टि कर लें।"
+    },
+    {
+      "q_en": "Is there a zoo or deer park at Sarnath?",
+      "a_en": "Yes, the deer park and mini zoo beside the Buddhist site, run by the forest department, keeps spotted deer, blackbuck, barasingha, crocodiles, gharials, turtles and birds such as sarus cranes. In March 2026 tickets were ₹20 for over-12s and ₹10 for children aged 3 to 12. Check the day's timings at the gate.",
+      "q_hi": "क्या सारनाथ में चिड़ियाघर या हिरण पार्क है?",
+      "a_hi": "हाँ, बौद्ध स्थल के पास वन विभाग का हिरण पार्क और मिनी चिड़ियाघर है, जिसमें चीतल, काला हिरण, बारहसिंगा, मगरमच्छ, घड़ियाल, कछुए और सारस जैसे पक्षी हैं। मार्च 2026 में टिकट 12 साल से ऊपर के लिए ₹20 और 3 से 12 साल के बच्चों के लिए ₹10 था। उस दिन का समय गेट पर पूछ लें।"
     }
   ],
   "sources": [
@@ -351,6 +363,21 @@
       "title": "Drik Panchang — 2027 Hindu festivals calendar for Varanasi (Buddha Purnima)",
       "url": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?year=2027&geoname-id=1253405",
       "accessed": "2026-09-27"
+    },
+    {
+      "title": "Curly Tales — Sarnath now hosts a light and sound show in Amitabh Bachchan's voice (11 Nov 2020)",
+      "url": "https://curlytales.com/sarnath-in-uttar-pradesh-now-hosts-a-grand-light-sound-show-in-amitabh-bachchans-voice/amp/",
+      "accessed": "2026-11-24"
+    },
+    {
+      "title": "Visit Sarnath — Light and sound show timings and tickets (updated 14 Dec 2024)",
+      "url": "https://visitsarnath.in/light-sound-show-ticket/",
+      "accessed": "2026-11-24"
+    },
+    {
+      "title": "Khabar Lahariya — Sarnath mini zoo: tickets and animals (12 Mar 2026)",
+      "url": "https://khabarlahariya.org/mini-zoo-growing-curiosity-among-people-to-visit-the-mini-zoo-of-sarnath/",
+      "accessed": "2026-11-24"
     }
   ],
   "related": {
@@ -369,5 +396,5 @@
       "2-day"
     ]
   },
-  "notes": "Auto fares (~₹150 from Cantt, ~₹100 from Varanasi City) come only from Hindi Wikivoyage, not a newspaper or official tariff; section flagged unconfirmed. Travel-agency blogs give shared auto ₹30–60 and private sedan ₹600–800 one way — omitted as agency-only. No official Sarnath e-bus route/fare found (VCTSL fare page at uputd.gov.in had an expired certificate). ASI excavated-site fee ₹25/₹300 comes from the asi.nic.in Sarnath page as indexed by search; the page body could not be fetched directly (image-heavy), so worth a manual look. Museum hours conflict: 09:00–17:00 (sarnathmuseumasi.org) vs 10:00–17:00 (kashi.gov.in); both say closed Friday; museum fee ₹5 from museum site (no separate foreigner rate listed). Mulagandha Kuti Vihar hours not officially published (sources range 04:00–21:00 to sunrise–sunset); only free entry and ~18:00 evening chanting (site's own places.json) stated. Train list from erail mixes departures from Varanasi City (BCY) and Junction (BSB); no specific train numbers stated. Road distances are approximate (Wikipedia gives 8 km NE of Varanasi; Hindi Wikivoyage 13 km). Buddha Purnima 2027 date (20 May) taken from site's festival-dates.json (Drik Panchang/DoPT). Chaukhandi 'about a kilometre' is approximate (Wikipedia: roughly half a mile from Deer Park)."
+  "notes": "Auto fares (~₹150 from Cantt, ~₹100 from Varanasi City) come only from Hindi Wikivoyage, not a newspaper or official tariff; section flagged unconfirmed. Travel-agency blogs give shared auto ₹30–60 and private sedan ₹600–800 one way — omitted as agency-only. No official Sarnath e-bus route/fare found (VCTSL fare page at uputd.gov.in had an expired certificate). ASI excavated-site fee ₹25/₹300 comes from the asi.nic.in Sarnath page as indexed by search; the page body could not be fetched directly (image-heavy), so worth a manual look. Museum hours conflict: 09:00–17:00 (sarnathmuseumasi.org) vs 10:00–17:00 (kashi.gov.in); both say closed Friday; museum fee ₹5 from museum site (no separate foreigner rate listed). Mulagandha Kuti Vihar hours not officially published (sources range 04:00–21:00 to sunrise–sunset); only free entry and ~18:00 evening chanting (site's own places.json) stated. Train list from erail mixes departures from Varanasi City (BCY) and Junction (BSB); no specific train numbers stated. Road distances are approximate (Wikipedia gives 8 km NE of Varanasi; Hindi Wikivoyage 13 km). Buddha Purnima 2027 date (20 May) taken from site's festival-dates.json (Drik Panchang/DoPT). Chaukhandi 'about a kilometre' is approximate (Wikipedia: roughly half a mile from Deer Park). UPDATE 2026-11-24 (keyword.io / autocomplete gap check): Added light & sound show FAQ (existence/narrator from Curly Tales 2020; times/prices only from a 2024 visitor site, labelled reported) and deer park/mini zoo FAQ (Khabar Lahariya Mar 2026 prices and animals; forest dept per CZA record seen only as snippet; timings not verified, so not stated)."
 }
