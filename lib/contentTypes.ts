@@ -181,6 +181,8 @@ export interface Festival {
   where: string;
   /** Listed places named in `where` (links on the festival page) */
   placeIds: string[];
+  /** Who runs it, when an official organiser is verified (Event JSON-LD `organizer`) */
+  organizer?: { name: string; url: string };
   summary: string;
   /** Visitor tips; the longer visitor sections live in content/details/<locale>.json (lib/details.ts) */
   tips?: string[];

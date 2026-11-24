@@ -111,10 +111,14 @@ export default async function FestivalPage({ params }: PageProps<"/[locale]/fest
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       isAccessibleForFree: true,
+      // Free to attend: one zero-price offer (Google's optional "offers" field; no tickets are sold).
+      offers: { "@type": "Offer", price: 0, priceCurrency: "INR", availability: "https://schema.org/InStock", url: absolute(`/${locale}${path}`) },
+      ...(raw.organizer ? { organizer: { "@type": "Organization", name: raw.organizer.name, url: raw.organizer.url } } : {}),
       image: [absolute(photo ? `${photo.src}-${photo.widths.at(-1)}.webp` : `/media/og/og-${locale}.png`)],
       location: {
         "@type": "Place",
-        name: firstVenue ? names(loc, firstVenue).primary : where,
+        // One venue: its name. Several (Dev Deepawali's ghats): all of them, not just the first.
+        name: venues.length > 1 && raw.placeIds.length > 1 ? venues.map((v) => names(loc, v).primary).join(", ") : firstVenue ? names(loc, firstVenue).primary : where,
         address: { "@type": "PostalAddress", streetAddress: where, addressLocality: "Varanasi", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
         ...(firstVenue ? { geo: { "@type": "GeoCoordinates", latitude: firstVenue.lat, longitude: firstVenue.lng } } : {}),
       },

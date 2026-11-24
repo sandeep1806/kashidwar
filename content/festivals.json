@@ -27,6 +27,10 @@
       "dashashwamedh-ghat",
       "namo-ghat"
     ],
+    "organizer": {
+      "name": "Uttar Pradesh Tourism",
+      "url": "https://uptourism.gov.in/"
+    },
     "summary": "The night the gods are said to descend to bathe in the Ganga. More than a million earthen lamps line every step of every ghat, and the river carries thousands more. The Ganga Mahotsav runs on the ghats in the evenings just before it.",
     "image": "/media/festivals/dev-deepawali.jpg",
     "sources": [
@@ -170,6 +174,10 @@
     "placeIds": [
       "kashi-vishwanath"
     ],
+    "organizer": {
+      "name": "Shri Kashi Vishwanath Temple Trust",
+      "url": "https://shrikashivishwanath.org/"
+    },
     "summary": "Shiva's night in Shiva's own city. The temple stays open through the night for darshan, and that evening the Shiv Baraat, the wedding procession of Shiva, winds through the old city with music, ash-smeared ascetics and dancing crowds.",
     "image": "/media/festivals/maha-shivratri.jpg",
     "sources": [
@@ -269,6 +277,10 @@
       "namo-ghat",
       "assi-ghat"
     ],
+    "organizer": {
+      "name": "Uttar Pradesh Tourism",
+      "url": "https://uptourism.gov.in/"
+    },
     "summary": "Uttar Pradesh Tourism's riverside festival of classical music, dance and folk art, held on the evenings just before Dev Deepawali, with a crafts bazaar, a country-boat race and food stalls. In 2025 it ran on 1–4 November at Rajghat and Namo Ghat. The state government confirmed 2026 dates of 20–23 November at Namo Ghat, with a cultural programme each evening and the stage given mainly to local artists.",
     "image": "/media/festivals/ganga-mahotsav.jpg",
     "sources": [
@@ -1631,6 +1643,10 @@
       "namo-ghat",
       "bhu-new-vishwanath"
     ],
+    "organizer": {
+      "name": "Ministry of Education, Government of India",
+      "url": "https://www.education.gov.in/"
+    },
     "summary": "Two weeks of Tamil–Kashi exchange: delegations of students, artisans and pilgrims from Tamil Nadu, Carnatic music and bharatanatyam on the ghats, exhibitions of Tamil crafts and food. The fifth edition, on the Thirukkural, runs from 28 November to 12 December 2026.",
     "image": "/media/festivals/kashi-tamil-sangamam.jpg",
     "sources": [
