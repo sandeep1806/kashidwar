@@ -1,7 +1,7 @@
 {
   "slug": "dev-deepawali-2026",
   "published": "2026-09-27",
-  "updated": "2026-11-24",
+  "updated": "2026-11-26",
   "photo": "festivals/dev-deepawali",
   "title_en": "Dev Deepawali (Dev Diwali) 2026 Varanasi: 24 Nov, aarti time, drone show, boats",
   "title_hi": "देव दीपावली (देव दिवाली) 2026 कब है: 24 नवंबर, आरती का समय, ड्रोन शो, नाव",
@@ -303,6 +303,26 @@
         26,
         27
       ]
+    },
+    {
+      "id": "what-happened",
+      "heading_en": "What happened at Dev Deepawali 2026",
+      "heading_hi": "देव दीपावली 2026 में क्या हुआ",
+      "body_en": [
+        "Dev Deepawali 2026 was held on Kartik Purnima, Tuesday 24 November, which this year coincided with Guru Nanak Jayanti. Reports from the day put the lamp count at about 11 lakh earthen diyas, including roughly one lakh made from cow dung, lit across Varanasi's ghats, temples, ponds and reservoirs along with a 2,100-drone show and a laser display; crowd estimates ranged from about 10 to 15 lakh visitors and devotees over the evening.",
+        "The main lamp-lighting window ran from around 5:15 pm to 5:45 pm, followed by a Grand Ganga Aarti at Dashashwamedh Ghat from 6 pm to 7 pm. The four-day Ganga Mahotsav at Namo Ghat (20-23 November), with cultural performances each evening, preceded the main celebration as planned.",
+        "The practical notes below - timings, boat rules, traffic diversions and crowd-safety arrangements - are kept as they applied in 2026, as a guide to future editions."
+      ],
+      "body_hi": [
+        "देव दीपावली 2026 कार्तिक पूर्णिमा, मंगलवार 24 नवंबर को मनाई गई, जो इस वर्ष गुरु नानक जयंती के साथ पड़ी। उस दिन की रिपोर्टों के अनुसार वाराणसी के घाटों, मंदिरों, तालाबों और जलाशयों पर करीब 11 लाख मिट्टी के दीये जलाए गए, जिनमें से करीब एक लाख दीये गोबर से बने थे, साथ ही 2,100 ड्रोन का प्रदर्शन और लेज़र शो हुआ; शाम के दौरान करीब 10 से 15 लाख श्रद्धालुओं और पर्यटकों के पहुंचने का अनुमान था।",
+        "मुख्य दीप प्रज्वलन लगभग शाम 5:15 से 5:45 बजे के बीच हुआ, उसके बाद दशाश्वमेध घाट पर शाम 6 से 7 बजे तक भव्य गंगा आरती हुई। नमो घाट पर चार दिवसीय गंगा महोत्सव (20-23 नवंबर), जिसमें हर शाम सांस्कृतिक कार्यक्रम हुए, योजना के अनुसार मुख्य उत्सव से पहले संपन्न हुआ।",
+        "नीचे दी गई व्यावहारिक जानकारी - समय, नाव के नियम, यातायात डायवर्जन और भीड़-सुरक्षा व्यवस्था - 2026 में लागू रही, जिसे भविष्य के आयोजनों के लिए संदर्भ के तौर पर रखा गया है।"
+      ],
+      "sources": [
+        28,
+        29,
+        30
+      ]
     }
   ],
   "faq": [
@@ -561,6 +581,21 @@
       "title": "Free Press Journal — Dev Deepawali 2024: date, muhurat, history and rituals (14 Nov 2024)",
       "url": "https://www.freepressjournal.in/amp/lifestyle/dev-deepawali-2024-know-date-muhurat-time-history-rituals-and-everything-about-dev-diwali",
       "accessed": "2026-11-24"
+    },
+    {
+      "title": "India TV News — Kartik Purnima 2026: Varanasi celebrates Dev Deepawali with 11 lakh diyas (25 Nov 2026)",
+      "url": "https://www.indiatvnews.com/news/india/kartik-purnima-2026-varanasi-celebrates-dev-deepawali-with-11-lakh-diyas-as-full-moon-shines-across-india-2026-11-24-1060282",
+      "accessed": "2026-11-26"
+    },
+    {
+      "title": "Free Press Journal — UP's Varanasi Dev Deepawali 2026 to illuminate Kashi with 11 lakh diyas, 2,100 drones, laser shows (22 Nov 2026)",
+      "url": "https://www.freepressjournal.in/uttar-pradesh/ups-varanasi-dev-deepawali-2026-on-november-24-to-illuminate-kashi-with-11-lakh-diyas-2100-drones-laser-shows-grand-ganga-aarti-as-15-lakh-visitors-expected",
+      "accessed": "2026-11-26"
+    },
+    {
+      "title": "UNI India — Kashi Ganga Mahotsav held at Namo Ghat, 20-23 November 2026 (19 Nov 2026)",
+      "url": "https://www.uniindia.com/north-india/event-kashi-namo-ghat-mahotsav/251178",
+      "accessed": "2026-11-26"
     }
   ],
   "related": {
