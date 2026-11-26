@@ -225,6 +225,20 @@ FORCE=1 scripts/content-review.sh      # run even if today's review already ran
 | Sunday | new developments + projects + broken links + photo candidates | `claude-sonnet-5` | 80 turns |
 
 A run that changes no content opens no pull request; its report stays in `~/.local/state/kashidwar-review/`.
+
+**Search Console keyword pass.** Before the agent starts, the script writes a 28-day Search
+Console snapshot for that day's pages to `.review-tmp/gsc.json` (`scripts/gsc-snapshot.py`):
+top queries per page, low-CTR opportunities, sudden drops, and queries two pages compete for.
+The agent's first step (brief, step 0) rewrites up to five titles, descriptions or FAQs to match
+what people really search, and reports them in the pull request. Set it up once:
+
+```bash
+printf 'GSC_CREDENTIALS=%s\nGSC_SITE=https://kashidwar.com/\n' /path/to/service-account.json > ~/.local/state/kashidwar-review/gsc.env
+```
+
+The key stays with the script (the agent only sees the snapshot). The Google client libraries
+are installed into `~/.local/state/kashidwar-review/venv` on first use. Without `gsc.env` the
+review runs as before and skips the step.
 A run that changes content opens one pull request, waits for CI (build, lint, SEO checks) and
 merges it; the merge deploys the site (no approval step for content-review merges, see
 `deploy.yml`). If CI fails, the pull request stays open and the run reports the failure.

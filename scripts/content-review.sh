@@ -108,7 +108,30 @@ print(", ".join(x["id"] for x in p[(n-1)*q:n*q]))')
 Places to review this run (quarter ${SLICE} of 4, A–Z): ${IDS}."
 fi
 
-PROMPT="Today is ${TODAY} (Asia/Kolkata). Run type: ${KIND}. Focus for this run: ${FOCUS}.${SCOPE}
+# Search Console snapshot for the agent's keyword pass (brief, step 0). The service-account
+# key stays with the script: the agent only gets .review-tmp/gsc.json. Configure it once in
+# $STATE/gsc.env (GSC_CREDENTIALS=/path/key.json, optionally GSC_SITE=…); the Python client
+# libraries go into $STATE/venv on first use. No key, no snapshot: the run goes on without it.
+GSC_LINE="
+Search Console snapshot: not available this run, so skip the keyword pass (step 0)."
+if [ -f scripts/gsc-snapshot.py ] && { [ -f "$STATE/gsc.env" ] || [ -n "${GSC_CREDENTIALS:-}" ]; }; then
+  if ( set +u; [ -f "$STATE/gsc.env" ] && . "$STATE/gsc.env"; export GSC_CREDENTIALS GSC_SITE
+       if [ ! -x "$STATE/venv/bin/python" ]; then
+         python3 -m venv "$STATE/venv" && "$STATE/venv/bin/pip" -q install google-api-python-client google-auth
+       fi
+       mkdir -p .review-tmp
+       "$STATE/venv/bin/python" -I scripts/gsc-snapshot.py --out .review-tmp/gsc.json --focus "$FOCUS" --ids "${IDS:-}"
+     ) >>"$LOG" 2>&1; then
+    GSC_LINE="
+Search Console snapshot (last 28 days) is in .review-tmp/gsc.json: do the keyword pass (step 0)."
+    echo "Search Console snapshot ready." | tee -a "$LOG"
+  else
+    echo "Search Console snapshot failed (see $LOG); the review runs without it." | tee -a "$LOG"
+  fi
+fi
+unset GSC_CREDENTIALS   # never hand the key path to the agent
+
+PROMPT="Today is ${TODAY} (Asia/Kolkata). Run type: ${KIND}. Focus for this run: ${FOCUS}.${SCOPE}${GSC_LINE}
 Budget: at most ${TURNS} turns.
 Read .claude/content-review.md and carry out the review it describes for this focus only,
 following CLAUDE.md and DESIGN.md, and its budget rules (write the summary early, keep it
@@ -116,7 +139,7 @@ current, stop and finalise when about 80% of the turns are used). Edit only the 
 allows, keep the pull-request body in .content-review-pr.md, and do not commit, push or open
 a pull request yourself."
 
-ALLOWED="Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(awk:*),Bash(xargs:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(mkdir:*),Bash(python3:*),Bash(jq:*),Bash(git diff:*),Bash(git status:*),Bash(node scripts/check-links.mjs:*),Bash(node scripts/apply-ropeway-open.mjs:*)"
+ALLOWED="Read,Glob,Grep,Edit,MultiEdit,Write,WebSearch,WebFetch,TodoWrite,Bash(curl:*),Bash(grep:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(sort:*),Bash(uniq:*),Bash(awk:*),Bash(xargs:*),Bash(cat:*),Bash(ls:*),Bash(date:*),Bash(echo:*),Bash(sleep:*),Bash(mkdir:*),Bash(python3:*),Bash(jq:*),Bash(git diff:*),Bash(git status:*),Bash(git log:*),Bash(node scripts/check-links.mjs:*),Bash(node scripts/apply-ropeway-open.mjs:*)"
 DENIED="Bash(git push:*),Bash(git commit:*),Bash(git checkout:*),Bash(git reset:*),Bash(gh:*),Bash(npm:*),Bash(npx:*),Bash(rm:*)"
 
 # Project settings only (not your personal ~/.claude rules or hooks), no MCP servers:
