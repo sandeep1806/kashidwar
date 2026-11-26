@@ -65,6 +65,10 @@ under "What to check"):
 **Every run except `blog`, whatever its focus, also does 4b and 4c first** (upcoming major events and finished
 events): a big event is a traffic opportunity that cannot wait for its week in the rotation.
 
+**Every run, including `blog`, starts with step 0, the Search Console keyword pass**, when the
+prompt says a snapshot is available. Search traffic is the owner's top goal: a fact check that
+leaves a page's title missing what people actually search is only half done.
+
 Update a "last verified" date (`lastVerified` on projects, `updated` on guides, a festival
 date's verification fields) **only for entries you actually re-checked in this run**.
 
@@ -95,6 +99,67 @@ for reading or rewriting JSON when that is simpler than editing by hand, and `py
 json.tool <file>` to validate every file you touched.
 
 ## What to check
+
+### 0. Search Console keyword pass (every run, when the snapshot exists)
+
+The script puts the last 28 days of Google Search Console data in `.review-tmp/gsc.json` (read it
+with `jq` or `python3`; do not try to reach Search Console yourself). It holds:
+
+- `focus.pages`: this run's pages (the places in the prompt, the festivals, guides, projects or
+  blog posts of the focus), most missed clicks first. Each has `topQueries` (query, impressions,
+  clicks, CTR, position), `titleLivesIn` (the file and fields that hold its search title, or why
+  it cannot be edited here) and `flags`.
+- `opportunities`: query + page pairs on Google's first two pages with a CTR well under normal.
+- `drops`: pages whose impressions collapsed in the last 14 days against the 14 before.
+- `overlaps`: queries where two of our pages in the same language split the impressions.
+
+**Budget:** at most **5 pages** and about **15 turns**, before the focus checks. Take the first
+pages of `focus.pages`; skip pages under 50 impressions. In a `blog` run, use the snapshot only
+to keep the new post's title off queries another page already owns (see `overlaps`).
+
+For each page:
+
+1. **Read the page's current title and description** from `titleLivesIn`, and check
+   `git log --since=14.days -p -- <file>` for the same field: if the title or description was
+   changed in the last 14 days, leave it alone (Google needs time to re-rank) and only note it.
+2. **Find what searchers want.** Group `topQueries` by intent (date, timings, fare or ticket,
+   booking, route or distance, history, "in hindi", near me) and weigh by impressions. The
+   dominant phrasing, in the page's own language and script, should lead the title.
+   Romanised Hindi queries ("kab hai", "timings") on a `/hi/` page are normal: use the Devanagari
+   title and the most-searched English keyword (e.g. "timings", "route", "fare") only if it fits.
+3. **Rewrite when the title misses the top intent** or the CTR is under half the normal rate for
+   its position (`opportunities` shows these). Rules:
+   - Title: the searched phrase first, then the two or three answers people want (a number,
+     a time, a fare range), about 60 characters (Hindi up to about 65). Do not add "· Kashi": the
+     site adds it. Every number in the title must already be in the page's sourced content.
+   - Description: 120–155 characters, answers the main question in the first sentence with a
+     sourced fact, then says what else the page covers.
+   - One spelling per title. Never list misspellings or variants ("dipawali / dipawli / diwali"):
+     Google matches those itself, and stuffing hurts.
+   - Never change slugs, URLs, headings in the middle of a guide, or facts. Keep
+     each faith's own terminology (CLAUDE.md).
+   - English and Hindi move together (rule 4). For guides and blog posts, also update the
+     same slug's `title` and `description` in all 11 regional files in
+     `content/guides/i18n/` (rule 4). For a place whose regional `seoTitle` exists in
+     `content/i18n/entries/`, list it in `TRANSLATION_REVIEW.md` instead (rule 4).
+4. **When a top query is a question the page does not answer** (guides and blog posts only),
+   append an FAQ in the searcher's words with a sourced answer, as in 4d (append at the end;
+   translate into the regional files).
+5. **Flags:**
+   - `answered-in-google`: the page ranks 1–3 for a date question but gets no clicks, because
+     Google shows the date itself. Do not chase the date wording: make the title and description
+     promise what needs a click (timings, booking, prices, route, live updates).
+   - `dropped`: do not guess at the cause. List it under "Needs a human look" with the numbers,
+     and check whether the page is out of date (a past event still presented as upcoming is the
+     usual reason); if it is, fix the content as in 4c.
+6. **Pages you cannot edit** (`titleLivesIn.editable` is false: festival titles come from a
+   template, regional place titles live elsewhere): write the title you would use and why under
+   "Needs a human look".
+7. **Overlaps** among the focus pages: say which page should own the query under "Needs a human
+   look"; do not de-optimise a page yourself.
+
+Report every change in a "Search Console keyword pass" table (see Output). If no page needed a
+change, say which pages you looked at and why they were fine.
 
 ### 1. Projects — `content/projects.json`
 For every project: re-verify `status` (`completed` | `under_construction` | `announced`),
@@ -358,6 +423,13 @@ moves it out before committing and uses it as the PR description). Plain languag
 | What | Old → New | Source | Confidence |
 |---|---|---|---|
 | Ropeway: status | Under construction → Open (15 Nov 2026) | [PIB, 15 Nov 2026](https://…) | High — official |
+
+### Search Console keyword pass
+| Page | Top query (impressions, CTR, position) | Old → new title / description | Why |
+|---|---|---|---|
+| /hi/places/kaal-bhairav | shri kaal bhairav mandir varanasi timings (96, 0%, 9.3) | "…" → "…" | title had no timings |
+
+<pages looked at with no change, and why; drops and overlaps go under "Needs a human look">
 
 ### Re-verified, no change
 <list of entries whose lastVerified moved to today>
