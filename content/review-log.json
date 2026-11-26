@@ -198,5 +198,15 @@
     "costUsd": 3.16,
     "result": "success",
     "run": "local (scripts/content-review.sh)"
+  },
+  {
+    "date": "2026-11-26",
+    "kind": "Weekly",
+    "focus": "blog",
+    "model": "claude-opus-5-5",
+    "turns": 12,
+    "costUsd": 9.68,
+    "result": "success",
+    "run": "local (scripts/content-review.sh)"
   }
 ]
